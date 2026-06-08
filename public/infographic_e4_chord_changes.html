@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melody at Chord Changes — Infographic E4</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 6px; line-height: 1.4; max-width: 420px; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+/* TIMELINE SECTION */
+.timeline {
+  padding: 28px 40px 20px;
+}
+.tl-title {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: #9ca3af; margin-bottom: 16px; text-align: center;
+}
+
+/* Melody note + sustained line */
+.melody-track {
+  position: relative;
+  margin-bottom: 12px;
+  height: 60px;
+}
+.melody-label {
+  position: absolute;
+  left: 0; top: 50%; transform: translateY(-50%);
+  font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #9ca3af;
+  width: 65px;
+}
+.melody-line-wrap {
+  margin-left: 70px;
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.melody-sustained {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  left: 0; right: 0;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #d97b6a 0%, #d97b6a 100%);
+  opacity: 0.7;
+}
+/* note pill on melody line */
+.mel-note {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: #d97b6a;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 900; color: #fff;
+  box-shadow: 0 3px 10px rgba(217,123,106,0.5);
+  z-index: 2;
+}
+
+/* Chord blocks track */
+.chords-track {
+  margin-left: 70px;
+  display: flex;
+  gap: 0;
+  margin-bottom: 6px;
+}
+.chord-block {
+  flex: 1;
+  padding: 9px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.chord-block + .chord-block {
+  border-left: 2px dashed rgba(255,255,255,0.3);
+}
+.cb-name {
+  font-size: 14px; font-weight: 900; color: #fff; text-align: center;
+  margin-bottom: 2px;
+}
+.cb-notes {
+  font-size: 9px; font-weight: 600; color: rgba(255,255,255,0.65);
+  text-align: center;
+}
+
+/* behavior badges above melody */
+.behaviors-track {
+  margin-left: 70px;
+  display: flex;
+  position: relative;
+  margin-bottom: 8px;
+}
+.beh-slot {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.beh-badge {
+  font-size: 9.5px; font-weight: 800;
+  padding: 4px 10px; border-radius: 20px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  white-space: nowrap;
+  border: 1.5px solid;
+}
+.bb-stay   { background: #d6eafc; color: #1a5a8a; border-color: #93c5fd; }
+.bb-turn   { background: #fef3d0; color: #7a5200; border-color: #fde68a; }
+.bb-float  { background: #d9f5e4; color: #1e6b42; border-color: #86efac; }
+.bb-sink   { background: #ede9fe; color: #4b2d8c; border-color: #c4b5fd; }
+
+/* Change point markers */
+.change-marks {
+  margin-left: 70px;
+  position: relative;
+  height: 16px;
+}
+.change-mark {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cm-line {
+  width: 2px; height: 12px;
+  background: #d1d5db;
+}
+.cm-label {
+  font-size: 8px; font-weight: 700; color: #9ca3af;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* FOUR BEHAVIOR CARDS */
+.beh-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 4px 40px 24px;
+}
+.beh-card {
+  border-radius: 9px; overflow: hidden;
+  border: 1.5px solid #e8e8e4;
+}
+.bc-header {
+  padding: 10px 14px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.beh-stay-h  .bc-header { background: #d6eafc; }
+.beh-turn-h  .bc-header { background: #fef3d0; }
+.beh-float-h .bc-header { background: #d9f5e4; }
+.beh-sink-h  .bc-header { background: #ede9fe; }
+
+.bc-name {
+  font-size: 14px; font-weight: 900; text-transform: uppercase;
+}
+.beh-stay-h .bc-name   { color: #1a5a8a; }
+.beh-turn-h .bc-name   { color: #7a5200; }
+.beh-float-h .bc-name  { color: #1e6b42; }
+.beh-sink-h .bc-name   { color: #4b2d8c; }
+
+.bc-shift {
+  font-size: 10px; font-weight: 800;
+  padding: 3px 9px; border-radius: 20px;
+}
+.beh-stay-h  .bc-shift { background: rgba(90,172,223,0.2); color: #1a5a8a; }
+.beh-turn-h  .bc-shift { background: rgba(201,166,48,0.2); color: #7a5200; }
+.beh-float-h .bc-shift { background: rgba(91,168,104,0.2); color: #1e6b42; }
+.beh-sink-h  .bc-shift { background: rgba(138,107,200,0.2); color: #4b2d8c; }
+
+.bc-body {
+  padding: 10px 14px;
+  background: #fafaf8;
+  font-size: 11.5px; color: #374151; line-height: 1.5;
+}
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="module-tag">Module E · Infographic E4</div>
+      <h1>Melody at Chord Changes</h1>
+      <div class="header-sub">A sustained melody note held across four chord changes — watch how the same note shifts behavior at each change point.</div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <!-- TIMELINE -->
+  <div class="timeline">
+    <div class="tl-title">Timeline — Sustained RE held across four chord changes</div>
+
+    <!-- Behavior badges (above) -->
+    <div style="margin-left:70px; display:flex; margin-bottom:8px;">
+      <div style="flex:1; display:flex; justify-content:center;">
+        <div class="beh-badge bb-stay">Stay Sweet</div>
+      </div>
+      <div style="flex:1; display:flex; justify-content:center;">
+        <div class="beh-badge bb-turn">Turn Tense</div>
+      </div>
+      <div style="flex:1; display:flex; justify-content:center;">
+        <div class="beh-badge bb-float">Float Free</div>
+      </div>
+      <div style="flex:1; display:flex; justify-content:center;">
+        <div class="beh-badge bb-sink">Sink Deeper</div>
+      </div>
+    </div>
+
+    <!-- Melody line with sustained note -->
+    <div style="display:flex; align-items:center; margin-bottom:6px;">
+      <div style="width:70px; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#9ca3af;">Melody</div>
+      <div style="flex:1; position:relative; height:50px;">
+        <div style="position:absolute; top:50%; transform:translateY(-50%); left:0; right:0; height:8px; border-radius:4px; background:#d97b6a; opacity:0.6;"></div>
+        <div style="position:absolute; top:50%; transform:translateY(-50%); left:calc(25% - 20px); width:40px; height:40px; border-radius:50%; background:#d97b6a; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:900; color:#fff; box-shadow:0 3px 12px rgba(217,123,106,0.5); z-index:2;">RE</div>
+        <!-- Change markers -->
+        <div style="position:absolute; top:0; left:25%; width:2px; height:100%; background:#e5e7eb;"></div>
+        <div style="position:absolute; top:0; left:50%; width:2px; height:100%; background:#e5e7eb;"></div>
+        <div style="position:absolute; top:0; left:75%; width:2px; height:100%; background:#e5e7eb;"></div>
+      </div>
+    </div>
+
+    <!-- Zone track -->
+    <div style="display:flex; align-items:center; margin-bottom:6px;">
+      <div style="width:70px; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#9ca3af;">Zone</div>
+      <div style="flex:1; display:flex; gap:2px;">
+        <div style="flex:1; background:#d6eafc; border-radius:4px; padding:5px; text-align:center; font-size:10px; font-weight:800; color:#1a5a8a;">Z1 Sweet</div>
+        <div style="flex:1; background:#ede9fe; border-radius:4px; padding:5px; text-align:center; font-size:10px; font-weight:800; color:#4b2d8c;">Z4 Bitter</div>
+        <div style="flex:1; background:#d6eafc; border-radius:4px; padding:5px; text-align:center; font-size:10px; font-weight:800; color:#1a5a8a;">Z1 Sweet</div>
+        <div style="flex:1; background:#ede9fe; border-radius:4px; padding:5px; text-align:center; font-size:10px; font-weight:800; color:#4b2d8c;">Z4 Bitter</div>
+      </div>
+    </div>
+
+    <!-- Chord blocks -->
+    <div style="display:flex; align-items:center; margin-bottom:4px;">
+      <div style="width:70px; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#9ca3af;">Chord</div>
+      <div style="flex:1; display:flex; gap:2px;">
+        <div style="flex:1; background:#2d5fa8; border-radius:4px; padding:8px; text-align:center;">
+          <div style="font-size:14px; font-weight:900; color:#fff;">G7</div>
+          <div style="font-size:9px; color:rgba(255,255,255,0.65);">SO TI RE FA</div>
+        </div>
+        <div style="flex:1; background:#0f1e3c; border-radius:4px; padding:8px; text-align:center;">
+          <div style="font-size:14px; font-weight:900; color:#fff;">C</div>
+          <div style="font-size:9px; color:rgba(255,255,255,0.65);">DO MI SO</div>
+        </div>
+        <div style="flex:1; background:#3d8a5c; border-radius:4px; padding:8px; text-align:center;">
+          <div style="font-size:14px; font-weight:900; color:#fff;">Dm</div>
+          <div style="font-size:9px; color:rgba(255,255,255,0.65);">RE FA LA</div>
+        </div>
+        <div style="flex:1; background:#4b2d8c; border-radius:4px; padding:8px; text-align:center;">
+          <div style="font-size:14px; font-weight:900; color:#fff;">Am</div>
+          <div style="font-size:9px; color:rgba(255,255,255,0.65);">LA DO MI</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RE role row -->
+    <div style="display:flex; align-items:center;">
+      <div style="width:70px; font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#9ca3af;">RE is…</div>
+      <div style="flex:1; display:flex; gap:2px;">
+        <div style="flex:1; padding:6px; text-align:center; font-size:11px; color:#1a5a8a; font-weight:700; font-style:italic;">5th of G7<br><span style="font-size:9.5px; font-weight:500;">chord tone</span></div>
+        <div style="flex:1; padding:6px; text-align:center; font-size:11px; color:#4b2d8c; font-weight:700; font-style:italic;">outsider<br><span style="font-size:9.5px; font-weight:500;">non-chord tone</span></div>
+        <div style="flex:1; padding:6px; text-align:center; font-size:11px; color:#1a5a8a; font-weight:700; font-style:italic;">root of Dm<br><span style="font-size:9.5px; font-weight:500;">chord tone</span></div>
+        <div style="flex:1; padding:6px; text-align:center; font-size:11px; color:#4b2d8c; font-weight:700; font-style:italic;">outsider<br><span style="font-size:9.5px; font-weight:500;">non-chord tone</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOUR BEHAVIOR CARDS -->
+  <div class="beh-cards">
+    <div class="beh-card beh-stay-h">
+      <div class="bc-header">
+        <div class="bc-name">Stay Sweet</div>
+        <div class="bc-shift">Z1→Z1</div>
+      </div>
+      <div class="bc-body">Note stays a chord tone through the change. No emotional shift — the harmony moves, the note is carried. Creates calm stability at chord changes.</div>
+    </div>
+    <div class="beh-card beh-turn-h">
+      <div class="bc-header">
+        <div class="bc-name">Turn Tense</div>
+        <div class="bc-shift">Z1→Z4</div>
+      </div>
+      <div class="bc-body">Was supported, now floating outside the new chord. Sudden forward pull — the safe note becomes searching. Best for pre-chorus energy.</div>
+    </div>
+    <div class="beh-card beh-float-h">
+      <div class="bc-header">
+        <div class="bc-name">Float Free</div>
+        <div class="bc-shift">Z4→Z1</div>
+      </div>
+      <div class="bc-body">Was floating outside a chord; the new chord claims it. Sudden harmonic support — tension releases as the chord "arrives under" the melody.</div>
+    </div>
+    <div class="beh-card beh-sink-h">
+      <div class="bc-header">
+        <div class="bc-name">Sink Deeper</div>
+        <div class="bc-shift">Z2→Z4</div>
+      </div>
+      <div class="bc-body">Already tense — new chord makes it worse. Tension escalates at the change. Powerful for bridge climax; needs strong resolution to follow.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">The sustained melody note is always RE — only the chord changes, producing four different emotional behaviors</div>
+    <div class="footer-logo">AMF · Module E</div>
+  </div>
+
+</div>
+</body>
+</html>

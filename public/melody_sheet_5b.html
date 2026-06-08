@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chord Change Pillar Notes — Sheet 5B</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #e8e8e8; font-family: 'Inter', sans-serif;
+  display: flex; justify-content: center; padding: 32px 0;
+}
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12.5px; color: #8faacc; margin-top: 6px; line-height: 1.4; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 22px 40px 28px; }
+
+.def-box {
+  background: #f8f8f6;
+  border-radius: 9px;
+  padding: 13px 18px;
+  border-left: 4px solid #3F6FB6;
+  margin-bottom: 20px;
+  font-size: 13px; font-weight: 500;
+  color: #374151; line-height: 1.6;
+}
+.def-box strong { color: #0f1e3c; font-weight: 700; }
+
+/* Section headers */
+.sec-hdr {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  background: #0f1e3c;
+  padding: 6px 14px; border-radius: 5px;
+  display: inline-block; margin-bottom: 12px;
+}
+
+/* PILLAR RULES */
+.rules-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.rule-card {
+  border-radius: 9px;
+  padding: 12px 14px;
+  border: 1.5px solid;
+}
+.rc1 { background: #d6eafc; border-color: #93c5fd; }
+.rc2 { background: #fef3d0; border-color: #fde68a; }
+.rc3 { background: #f0fdf4; border-color: #86efac; }
+
+.rule-num {
+  font-size: 22px; font-weight: 900;
+  line-height: 1; margin-bottom: 6px;
+}
+.rc1 .rule-num { color: #1d4ed8; }
+.rc2 .rule-num { color: #92400e; }
+.rc3 .rule-num { color: #166534; }
+
+.rule-title {
+  font-size: 11px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+.rc1 .rule-title { color: #1d4ed8; }
+.rc2 .rule-title { color: #92400e; }
+.rc3 .rule-title { color: #166534; }
+
+.rule-body { font-size: 11.5px; color: #374151; line-height: 1.55; }
+.rule-body strong { color: #0d1424; }
+
+/* PILLAR NOTE TABLE */
+.pillar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 22px;
+  font-size: 12px;
+}
+.pillar-table th {
+  background: #0f1e3c;
+  color: rgba(255,255,255,0.7);
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 9px 12px; text-align: left;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.pillar-table th:last-child { border-right: none; }
+.pillar-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid #f0efe9;
+  border-right: 1px solid #f0efe9;
+  vertical-align: middle; line-height: 1.45;
+}
+.pillar-table td:last-child { border-right: none; }
+.pillar-table tr:last-child td { border-bottom: none; }
+
+.effect-good { color: #166534; font-weight: 600; }
+.effect-weak { color: #7a5200; font-style: italic; }
+
+/* inline pill */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 22px; min-width: 28px; padding: 0 7px;
+  border-radius: 11px; font-size: 10px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0,0,0,.2); margin: 0 2px;
+}
+
+/* VOICE LEADING TIP */
+.vl-tip {
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.vl-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: #7a9bd4; margin-bottom: 8px;
+}
+.vl-sequence {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.vl-arrow { font-size: 14px; color: rgba(255,255,255,0.3); }
+.vl-body { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.6; }
+.vl-body strong { color: #fff; }
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Module E · Sheet 5B</div>
+    <h1>Chord Change Pillar Notes</h1>
+    <div class="header-sub">How to choose the melody note that anchors each chord section — and what effect each choice creates</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <div class="def-box">
+      A <strong>pillar note</strong> is the melody note you deliberately place at a chord change — the note that anchors the new chord section. Every chord change in a song is an opportunity to choose: do you resolve, create forward motion, or escalate tension?
+    </div>
+
+    <!-- THREE RULES -->
+    <div class="sec-hdr">How to Choose Your Pillar Notes — 3 Rules</div>
+    <div class="rules-grid">
+      <div class="rule-card rc1">
+        <div class="rule-num">1</div>
+        <div class="rule-title">Smooth Handoff</div>
+        <div class="rule-body">Choose a note that <strong>IS in the incoming chord</strong> for a smooth, supported landing at the change. The listener feels the chord change happen without friction.</div>
+      </div>
+      <div class="rule-card rc2">
+        <div class="rule-num">2</div>
+        <div class="rule-title">Forward Motion</div>
+        <div class="rule-body">Choose an <strong>unstable chord tone</strong> (the 7th of a dominant chord, the 3rd of a tense chord) for grounded tension with forward pull. The chord catches the note but it still wants to move.</div>
+      </div>
+      <div class="rule-card rc3">
+        <div class="rule-num">3</div>
+        <div class="rule-title">Maximum Clarity</div>
+        <div class="rule-body">Choose the <strong>root of the new chord</strong> for maximum clarity and a decisive arrival. Strongest resolution — makes the chord change unmistakable and confident.</div>
+      </div>
+    </div>
+
+    <!-- PILLAR NOTE TABLE -->
+    <div class="sec-hdr">Pillar Note Table — Common Chords in C Major</div>
+    <table class="pillar-table">
+      <thead>
+        <tr>
+          <th>Chord</th>
+          <th>Strong Pillar Note</th>
+          <th>Emotional Effect</th>
+          <th>Weak Pillar Note</th>
+          <th>Emotional Effect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-size:15px; font-weight:900; color:#0f1e3c;">C</td>
+          <td>
+            <span class="np" style="background:#6bb8e8">DO</span> (root)
+          </td>
+          <td class="effect-good">Grounded anchor — "we've arrived"</td>
+          <td>
+            <span class="np" style="background:#8A6BC8">TI</span>
+          </td>
+          <td class="effect-weak">Restless even at rest — pulls away from the chord</td>
+        </tr>
+        <tr>
+          <td style="font-size:15px; font-weight:900; color:#0f1e3c;">G7</td>
+          <td>
+            <span class="np" style="background:#3F6FB6">SO</span> or <span class="np" style="background:#8A6BC8">TI</span>
+          </td>
+          <td class="effect-good">Irresistible pull toward home — dominant tension</td>
+          <td>
+            <span class="np" style="background:#c9a630">FA</span>
+          </td>
+          <td class="effect-weak">Extreme tension — FA over G7 is the loudest alarm bell in the key</td>
+        </tr>
+        <tr>
+          <td style="font-size:15px; font-weight:900; color:#0f1e3c;">Am</td>
+          <td>
+            <span class="np" style="background:#F29B38">LA</span> (root)
+          </td>
+          <td class="effect-good">Dark, bittersweet arrival — minor tonic feeling</td>
+          <td>
+            <span class="np" style="background:#6bb8e8">DO</span>
+          </td>
+          <td class="effect-weak">Floats above the minor — unstable, searching quality</td>
+        </tr>
+        <tr>
+          <td style="font-size:15px; font-weight:900; color:#0f1e3c;">F</td>
+          <td>
+            <span class="np" style="background:#c9a630">FA</span> (root) or <span class="np" style="background:#6bb8e8">DO</span>
+          </td>
+          <td class="effect-good">Warm, spacious arrival — F is the "breath" chord</td>
+          <td>
+            <span class="np" style="background:#8A6BC8">TI</span>
+          </td>
+          <td class="effect-weak">Bittersweet friction — TI clashes with the subdominant</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- VOICE LEADING TIP -->
+    <div class="vl-tip">
+      <div style="flex:1">
+        <div class="vl-label">Voice Leading Tip — Stepwise Pillar Notes</div>
+        <div class="vl-sequence">
+          <span class="np" style="background:#6bb8e8">DO</span>
+          <span class="vl-arrow">→</span>
+          <span class="np" style="background:#8A6BC8">TI</span>
+          <span class="vl-arrow">→</span>
+          <span class="np" style="background:#F29B38">LA</span>
+          <span class="vl-arrow">→</span>
+          <span class="np" style="background:#3F6FB6">SO</span>
+        </div>
+        <div class="vl-body">
+          Pillar notes that move by <strong>step</strong> (or half-step) between chord changes create smooth, singable lines that feel inevitable. This descending stepwise motion (DO→TI→LA→SO) is one of the most common patterns in pop and soul — it gives the melody a natural gravitational flow even as the chords shift underneath.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Pairs with Sheet 5A: <em>Four Chord-Change Behaviors</em> · Part of the Emotional Map of Melody series</div>
+    <div class="footer-logo">AMF · Module E</div>
+  </div>
+
+</div>
+</body>
+</html>

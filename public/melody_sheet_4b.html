@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Important Melody Notes Checklist — Sheet 4B</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #e8e8e8;
+  font-family: 'Inter', sans-serif;
+  display: flex; justify-content: center; padding: 32px 0;
+}
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12.5px; color: #8faacc; margin-top: 6px; line-height: 1.4; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 24px 40px 28px; }
+
+/* Five items */
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  border: 1.5px solid #e8e8e4;
+  background: #fafaf8;
+}
+
+.item-num {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  font-size: 18px; font-weight: 900;
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.i1 .item-num { background: #5aacdf; }
+.i2 .item-num { background: #3F6FB6; }
+.i3 .item-num { background: #c9a630; }
+.i4 .item-num { background: #8A6BC8; }
+.i5 .item-num { background: #7dc48a; }
+
+.item-content { flex: 1; }
+
+.item-title {
+  font-size: 15px; font-weight: 900;
+  color: #0f1e3c; text-transform: uppercase;
+  letter-spacing: 0.03em; margin-bottom: 6px;
+  line-height: 1.1;
+}
+
+.item-body {
+  font-size: 12px; color: #374151;
+  line-height: 1.6;
+}
+.item-body strong { color: #0d1424; font-weight: 700; }
+
+/* Two-column sub-items */
+.item-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+.split-ct {
+  background: #eff6ff;
+  border-radius: 6px;
+  padding: 8px 11px;
+  font-size: 11px; line-height: 1.5; color: #374151;
+}
+.split-nct {
+  background: #faf5ff;
+  border-radius: 6px;
+  padding: 8px 11px;
+  font-size: 11px; line-height: 1.5; color: #374151;
+}
+.split-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.split-ct .split-label { color: #1d4ed8; }
+.split-nct .split-label { color: #5b21b6; }
+
+/* inline note pill */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 20px; min-width: 26px; padding: 0 7px;
+  border-radius: 10px; font-size: 9.5px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0 2px;
+}
+
+/* QUICK AUDIT */
+.audit-section {
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 18px 22px;
+}
+.audit-label {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: #7a9bd4; margin-bottom: 14px;
+}
+.audit-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.audit-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 10px 11px;
+}
+.audit-note-name {
+  font-size: 10px; font-weight: 800;
+  color: #fff; text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.audit-check {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10.5px; color: rgba(255,255,255,0.65);
+  margin-bottom: 5px;
+}
+.check-box {
+  width: 14px; height: 14px;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Module D · Sheet 4B</div>
+    <h1>Important Melody Notes Checklist</h1>
+    <div class="header-sub">The 5 notes that carry the most emotional weight in any melody phrase — and how to make each one intentional</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <div class="item-list">
+
+      <!-- 1: FIRST NOTE -->
+      <div class="item i1">
+        <div class="item-num">1</div>
+        <div class="item-content">
+          <div class="item-title">First Note — The Emotional Entry Point</div>
+          <div class="item-body">The opening note of a phrase sets the listener's emotional orientation before a single other note is heard. This is the fastest shortcut to a strong or weak opening.</div>
+          <div class="item-split">
+            <div class="split-ct">
+              <div class="split-label">Chord Tone</div>
+              Confident, direct entry. Listener feels immediately oriented. Works well for choruses and hooks that need impact.
+            </div>
+            <div class="split-nct">
+              <div class="split-label">Non-Chord Tone</div>
+              Mysterious, questioning entry. Listener leans in. Works well for verse lines that need intrigue and forward motion.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: LAST NOTE -->
+      <div class="item i2">
+        <div class="item-num">2</div>
+        <div class="item-content">
+          <div class="item-title">Last Note — Resolution or Question?</div>
+          <div class="item-body">The final note of a phrase determines whether it feels <strong>closed</strong> (resolved) or <strong>open</strong> (unresolved). This one choice shapes the entire emotional arc of the phrase.</div>
+          <div class="item-split">
+            <div class="split-ct">
+              <div class="split-label">Closed Ending</div>
+              Land on <span class="np" style="background:#6bb8e8">DO</span> or <span class="np" style="background:#3F6FB6">SO</span> = full resolution. <span class="np" style="background:#7dc48a">MI</span> = warm completion. Best for chorus arrivals.
+            </div>
+            <div class="split-nct">
+              <div class="split-label">Open Ending</div>
+              Land on <span class="np" style="background:#d97b6a">RE</span> or <span class="np" style="background:#8A6BC8">TI</span> = question, yearning. Creates need for the next phrase. Best for verse endings.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: HIGHEST NOTE -->
+      <div class="item i3">
+        <div class="item-num">3</div>
+        <div class="item-content">
+          <div class="item-title">Highest Note — The Emotional Peak</div>
+          <div class="item-body">The highest note in a phrase is the melodic climax — the moment with the most singability and emotional visibility. Whatever zone it occupies becomes the dominant mood of the entire phrase, even if it's brief.</div>
+          <div class="item-body" style="margin-top:6px"><strong>Rule:</strong> The highest note should be placed deliberately, not accidentally. If your phrase climbs to <span class="np" style="background:#c9a630">FA</span> without intention, it creates Zone 4 tension that may not serve the section. If you want a euphoric chorus peak, aim your highest note at <span class="np" style="background:#6bb8e8">DO</span> or <span class="np" style="background:#7dc48a">MI</span> as a chord tone — Zone 1 at the apex creates a triumphant feeling.</div>
+        </div>
+      </div>
+
+      <!-- 4: LONGEST NOTE -->
+      <div class="item i4">
+        <div class="item-num">4</div>
+        <div class="item-content">
+          <div class="item-title">Longest Note — The Magnifying Glass</div>
+          <div class="item-body">Duration amplifies emotional effect. A note held for two beats receives far more emotional attention than a note lasting an 8th. The longest note in a phrase gets the most scrutiny from the listener's ear — its zone becomes the emotional color of that moment.</div>
+          <div class="item-body" style="margin-top:6px"><strong>Check deliberately:</strong> Is the longest note in Zone 1 (resolved warmth), Zone 2 (supported tension), Zone 3 (floating color), or Zone 4 (bitter edge)? Is that the emotion you want to hold longest in this section?</div>
+        </div>
+      </div>
+
+      <!-- 5: BEAT 1 NOTES -->
+      <div class="item i5">
+        <div class="item-num">5</div>
+        <div class="item-content">
+          <div class="item-title">Notes on Beat 1 — The Harmonic Downbeat</div>
+          <div class="item-body">Beat 1 is where chord changes typically occur. The melody note at beat 1 lands in the ear with full harmonic context — no other beat has as much harmonic weight. This note effectively defines the emotional character of each bar.</div>
+          <div class="item-split">
+            <div class="split-ct">
+              <div class="split-label">Chord Tone on Beat 1</div>
+              Stable, grounded bar. The melody reinforces the harmony. Gives the listener a place to land and breathe.
+            </div>
+            <div class="split-nct">
+              <div class="split-label">Non-Chord Tone on Beat 1</div>
+              Constant tension — the bar never quite settles. Powerful in small doses; exhausting if every bar does this.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- QUICK AUDIT -->
+    <div class="audit-section">
+      <div class="audit-label">Quick Audit — Check Your 5 Notes</div>
+      <div class="audit-grid">
+        <div class="audit-card">
+          <div class="audit-note-name">1 · First Note</div>
+          <div class="audit-check"><div class="check-box"></div>Zone identified?</div>
+          <div class="audit-check"><div class="check-box"></div>Intentional feel?</div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-note-name">2 · Last Note</div>
+          <div class="audit-check"><div class="check-box"></div>Zone identified?</div>
+          <div class="audit-check"><div class="check-box"></div>Open or closed?</div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-note-name">3 · Highest Note</div>
+          <div class="audit-check"><div class="check-box"></div>Zone identified?</div>
+          <div class="audit-check"><div class="check-box"></div>Placed deliberately?</div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-note-name">4 · Longest Note</div>
+          <div class="audit-check"><div class="check-box"></div>Zone identified?</div>
+          <div class="audit-check"><div class="check-box"></div>Correct emotion?</div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-note-name">5 · Beat 1 Notes</div>
+          <div class="audit-check"><div class="check-box"></div>Chord tones?</div>
+          <div class="audit-check"><div class="check-box"></div>Consistent feel?</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Pairs with Sheet 4A: <em>Context Changes Everything</em> · Part of the Emotional Map of Melody series</div>
+    <div class="footer-logo">AMF · Module D</div>
+  </div>
+
+</div>
+</body>
+</html>

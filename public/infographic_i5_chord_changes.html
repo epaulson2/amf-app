@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Melody Behaves at Chord Changes — Infographic I5</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 26px 40px 22px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 6px; line-height: 1.4; max-width: 480px; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 24px 40px 28px; }
+
+/* 4 LARGE BEHAVIOR PANELS */
+.beh-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.bp {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid;
+  transition: none;
+}
+.bp-stay  { border-color: #93c5fd; }
+.bp-turn  { border-color: #fde68a; }
+.bp-float { border-color: #86efac; }
+.bp-sink  { border-color: #c4b5fd; }
+
+.bp-header {
+  padding: 14px 18px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.bp-stay .bp-header  { background: #d6eafc; }
+.bp-turn .bp-header  { background: #fef3d0; }
+.bp-float .bp-header { background: #d9f5e4; }
+.bp-sink .bp-header  { background: #ede9fe; }
+
+.bp-name {
+  font-size: 18px; font-weight: 900; text-transform: uppercase;
+}
+.bp-stay  .bp-name  { color: #1a5a8a; }
+.bp-turn  .bp-name  { color: #7a5200; }
+.bp-float .bp-name  { color: #1e6b42; }
+.bp-sink  .bp-name  { color: #4b2d8c; }
+
+.zone-shift-badge {
+  font-size: 10px; font-weight: 800;
+  padding: 4px 12px; border-radius: 20px;
+  letter-spacing: 0.08em;
+}
+.bp-stay  .zone-shift-badge { background: rgba(90,172,223,0.2); color: #1a5a8a; }
+.bp-turn  .zone-shift-badge { background: rgba(201,166,48,0.2); color: #7a5200; }
+.bp-float .zone-shift-badge { background: rgba(91,168,104,0.2); color: #1e6b42; }
+.bp-sink  .zone-shift-badge { background: rgba(138,107,200,0.2); color: #4b2d8c; }
+
+.bp-body { padding: 14px 18px; background: #fafaf8; }
+
+/* Visual chord change diagram */
+.change-visual {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.chord-box {
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+.cb-chord-name {
+  font-size: 15px; font-weight: 900; color: #fff;
+  margin-bottom: 2px;
+}
+.cb-zone-tag {
+  font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.7);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.mel-note-badge {
+  position: absolute;
+  top: -14px; left: 50%; transform: translateX(-50%);
+  width: 28px; height: 28px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 900; color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.change-arrow {
+  font-size: 20px; color: #d1d5db; font-weight: 900;
+  flex-shrink: 0;
+}
+
+.bp-desc { font-size: 12px; color: #374151; line-height: 1.6; margin-bottom: 8px; }
+.bp-desc strong { color: #0d1424; }
+.bp-when { font-size: 11px; color: #9ca3af; font-style: italic; line-height: 1.5; }
+.bp-when strong { color: #374151; font-style: normal; }
+
+/* GUIDE BAR */
+.guide-bar {
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 16px 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.gb-title {
+  grid-column: 1/-1;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: #7a9bd4; margin-bottom: 4px;
+}
+.gb-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.5;
+}
+.gb-badge {
+  font-size: 9.5px; font-weight: 800;
+  padding: 2px 9px; border-radius: 12px; flex-shrink: 0;
+  text-transform: uppercase; margin-top: 2px;
+}
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Standalone Infographic I5</div>
+    <h1>How Melody Behaves<br>at Chord Changes</h1>
+    <div class="header-sub">When the chord changes under a held or repeated melody note, one of four things happens to its emotional quality. These four behaviors describe every possibility.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <div class="beh-panels">
+
+      <!-- STAY SWEET -->
+      <div class="bp bp-stay">
+        <div class="bp-header">
+          <div class="bp-name">Stay Sweet</div>
+          <div class="zone-shift-badge">Zone stays</div>
+        </div>
+        <div class="bp-body">
+          <div class="change-visual" style="margin-top:16px;">
+            <div class="chord-box" style="background:#2d5fa8;">
+              <div class="mel-note-badge" style="background:#3F6FB6">SO</div>
+              <div class="cb-chord-name">C</div>
+              <div class="cb-zone-tag">Z1 Sweet</div>
+            </div>
+            <div class="change-arrow">→</div>
+            <div class="chord-box" style="background:#2d5fa8;">
+              <div class="mel-note-badge" style="background:#3F6FB6">SO</div>
+              <div class="cb-chord-name">G</div>
+              <div class="cb-zone-tag">Z1 Sweet</div>
+            </div>
+          </div>
+          <div class="bp-desc">Both chords contain the melody note — it's a chord tone in both. <strong>No emotional shift.</strong> The harmony moves but the note is carried along safely with warmth throughout.</div>
+          <div class="bp-when"><strong>Use when:</strong> you need stable, confident chord changes. Great for chorus arrivals and sections that need to feel settled and grounded.</div>
+        </div>
+      </div>
+
+      <!-- TURN TENSE -->
+      <div class="bp bp-turn">
+        <div class="bp-header">
+          <div class="bp-name">Turn Tense</div>
+          <div class="zone-shift-badge">Zone worsens</div>
+        </div>
+        <div class="bp-body">
+          <div class="change-visual" style="margin-top:16px;">
+            <div class="chord-box" style="background:#2d5fa8;">
+              <div class="mel-note-badge" style="background:#7dc48a">MI</div>
+              <div class="cb-chord-name">C</div>
+              <div class="cb-zone-tag">Z1 Sweet</div>
+            </div>
+            <div class="change-arrow">→</div>
+            <div class="chord-box" style="background:#4b2d8c;">
+              <div class="mel-note-badge" style="background:#7dc48a">MI</div>
+              <div class="cb-chord-name">G7</div>
+              <div class="cb-zone-tag">Z4 Bitter</div>
+            </div>
+          </div>
+          <div class="bp-desc">Was a chord tone, now the new chord doesn't contain it. <strong>Sudden forward pull</strong> — a comfortable note becomes tense or searching at the change.</div>
+          <div class="bp-when"><strong>Use when:</strong> you need urgency at a chord change. Powerful for pre-choruses and climactic builds. The listener feels the floor shift.</div>
+        </div>
+      </div>
+
+      <!-- FLOAT FREE -->
+      <div class="bp bp-float">
+        <div class="bp-header">
+          <div class="bp-name">Float Free</div>
+          <div class="zone-shift-badge">Zone improves</div>
+        </div>
+        <div class="bp-body">
+          <div class="change-visual" style="margin-top:16px;">
+            <div class="chord-box" style="background:#4b2d8c;">
+              <div class="mel-note-badge" style="background:#c9a630">FA</div>
+              <div class="cb-chord-name">C</div>
+              <div class="cb-zone-tag">Z4 Bitter</div>
+            </div>
+            <div class="change-arrow">→</div>
+            <div class="chord-box" style="background:#3d8a5c;">
+              <div class="mel-note-badge" style="background:#c9a630">FA</div>
+              <div class="cb-chord-name">F</div>
+              <div class="cb-zone-tag">Z2 Tense</div>
+            </div>
+          </div>
+          <div class="bp-desc">Was floating outside the chord; the new chord <strong>claims it as a chord tone</strong>. Sudden harmonic support — the tension releases as the chord "arrives under" the melody.</div>
+          <div class="bp-when"><strong>Use when:</strong> you want release at a chord change. Letting the harmony arrive under a tense note creates a beautiful harmonic exhale.</div>
+        </div>
+      </div>
+
+      <!-- SINK DEEPER -->
+      <div class="bp bp-sink">
+        <div class="bp-header">
+          <div class="bp-name">Sink Deeper</div>
+          <div class="zone-shift-badge">Tension escalates</div>
+        </div>
+        <div class="bp-body">
+          <div class="change-visual" style="margin-top:16px;">
+            <div class="chord-box" style="background:#2d5fa8;">
+              <div class="mel-note-badge" style="background:#8A6BC8">TI</div>
+              <div class="cb-chord-name">G</div>
+              <div class="cb-zone-tag">Z2 Tense</div>
+            </div>
+            <div class="change-arrow">→</div>
+            <div class="chord-box" style="background:#4b2d8c;">
+              <div class="mel-note-badge" style="background:#8A6BC8">TI</div>
+              <div class="cb-chord-name">Dm</div>
+              <div class="cb-zone-tag">Z4 Bitter</div>
+            </div>
+          </div>
+          <div class="bp-desc">Already tense, the new chord makes it <strong>worse</strong>. Loses harmonic support at the change. Tension compounds — each chord change makes the note feel more stranded.</div>
+          <div class="bp-when"><strong>Use when:</strong> you need escalating drama. Best for bridge climax — but needs a strong Zone 1 arrival to release the accumulated tension.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- GUIDE BAR -->
+    <div class="guide-bar">
+      <div class="gb-title">Quick Reference — Which behavior to choose</div>
+      <div class="gb-item">
+        <div class="gb-badge" style="background:#d6eafc; color:#1a5a8a;">Stay Sweet</div>
+        Choose when stability serves the moment — sections that need confidence and warmth
+      </div>
+      <div class="gb-item">
+        <div class="gb-badge" style="background:#fef3d0; color:#7a5200;">Turn Tense</div>
+        Choose when you need sudden urgency — classic pre-chorus energy
+      </div>
+      <div class="gb-item">
+        <div class="gb-badge" style="background:#d9f5e4; color:#1e6b42;">Float Free</div>
+        Choose for release — letting the new chord resolve the melody creates satisfaction
+      </div>
+      <div class="gb-item">
+        <div class="gb-badge" style="background:#ede9fe; color:#4b2d8c;">Sink Deeper</div>
+        Choose for escalating drama — bridge climax, emotional peak, but resolve it after
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Every chord change in a song is a choice — which of these four behaviors serves the emotional moment?</div>
+    <div class="footer-logo">AMF · Standalone I5</div>
+  </div>
+
+</div>
+</body>
+</html>

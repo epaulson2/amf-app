@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Emotional Map of Melody — Full Color Poster</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 900px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+/* BIG HEADER */
+.poster-header {
+  background: #0f1e3c;
+  padding: 38px 48px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.poster-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(90,172,223,0.15) 0%, transparent 60%);
+}
+.ph-tag {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+  color: #7a9bd4; margin-bottom: 12px;
+}
+.ph-title {
+  font-size: 48px; font-weight: 900; color: #fff;
+  line-height: 1; text-transform: uppercase; letter-spacing: 0.01em;
+  margin-bottom: 12px;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+.ph-sub {
+  font-size: 14px; color: rgba(255,255,255,0.55);
+  line-height: 1.5; max-width: 480px; margin: 0 auto;
+}
+.rainbow-rule {
+  height: 5px;
+  background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%);
+}
+
+/* FOUR-ZONE MAP */
+.map-section { padding: 0; position: relative; }
+.zone-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 460px;
+}
+.zone-cell {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.z1 { background: #d6eafc; border-right: 2px solid rgba(255,255,255,0.6); border-bottom: 2px solid rgba(255,255,255,0.6); }
+.z2 { background: #fef3d0; border-bottom: 2px solid rgba(255,255,255,0.6); }
+.z3 { background: #d9f5e4; border-right: 2px solid rgba(255,255,255,0.6); }
+.z4 { background: #ede9fe; }
+
+/* Big zone number watermark */
+.zone-cell::before {
+  content: attr(data-n);
+  position: absolute;
+  right: 8px; bottom: -16px;
+  font-size: 150px; font-weight: 900;
+  opacity: 0.07; color: #000; line-height: 1;
+  pointer-events: none;
+}
+
+.zone-num {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+  opacity: 0.45; margin-bottom: 8px;
+}
+.zone-name {
+  font-size: 26px; font-weight: 900; text-transform: uppercase;
+  line-height: 1.05; margin-bottom: 10px;
+}
+.z1 .zone-name { color: #1a5a8a; }
+.z2 .zone-name { color: #7a5200; }
+.z3 .zone-name { color: #1e6b42; }
+.z4 .zone-name { color: #4b2d8c; }
+
+.zone-formula {
+  font-size: 11px; font-weight: 700;
+  opacity: 0.6; margin-bottom: 10px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+
+.zone-kws {
+  display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px;
+}
+.kw {
+  font-size: 11px; font-weight: 700;
+  padding: 3px 10px; border-radius: 99px;
+  text-transform: uppercase; letter-spacing: 0.07em;
+}
+.z1 .kw { background: rgba(90,172,223,0.25); color: #1a5a8a; }
+.z2 .kw { background: rgba(201,166,48,0.25); color: #7a5200; }
+.z3 .kw { background: rgba(91,168,104,0.25); color: #1e6b42; }
+.z4 .kw { background: rgba(138,107,200,0.25); color: #4b2d8c; }
+
+.zone-desc {
+  font-size: 12px; line-height: 1.55; color: #374151;
+  flex: 1;
+}
+
+.zone-examples {
+  display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px;
+}
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  font-size: 11px; font-weight: 900; color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+}
+
+/* AXIS LABELS - centered in map */
+.axis-layer {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 460px;
+  pointer-events: none;
+}
+.ax-h-line {
+  position: absolute;
+  top: 50%; left: 0; right: 0;
+  height: 1px; background: rgba(0,0,0,0.08);
+}
+.ax-v-line {
+  position: absolute;
+  left: 50%; top: 0; bottom: 0;
+  width: 1px; background: rgba(0,0,0,0.08);
+}
+.ax-label {
+  position: absolute;
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  background: rgba(255,255,255,0.85);
+  padding: 3px 10px; border-radius: 20px;
+}
+.ax-ct   { top: 8px; left: 50%; transform: translateX(-50%); color: #1d4ed8; }
+.ax-nct  { bottom: 8px; left: 50%; transform: translateX(-50%); color: #5b21b6; }
+.ax-stab { left: 10px; top: 50%; transform: translateY(-50%); color: #1d4ed8; }
+.ax-unst { right: 10px; top: 50%; transform: translateY(-50%); color: #92400e; }
+
+/* NOTE STRIP */
+.note-strip {
+  background: #0f1e3c;
+  padding: 18px 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.note-item {
+  display: flex; flex-direction: column; align-items: center; gap: 7px;
+}
+.ni-circle {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 900; color: #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.3);
+}
+.ni-rank {
+  font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.5);
+  letter-spacing: 0.08em;
+}
+.ni-kw {
+  font-size: 9.5px; font-weight: 700; color: rgba(255,255,255,0.7);
+  text-transform: uppercase; letter-spacing: 1.2px;
+}
+
+/* AMF BRAND FOOTER */
+.poster-footer {
+  background: #0f1e3c;
+  padding: 16px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.pf-brand {
+  font-size: 12px; font-weight: 900;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+.pf-brand strong { color: #fff; }
+.pf-note {
+  font-size: 10px; color: rgba(255,255,255,0.35); font-style: italic;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- POSTER HEADER -->
+  <div class="poster-header">
+    <div class="ph-tag">Aesthetic Melody Framework</div>
+    <div class="ph-title">The Emotional Map<br>of Melody</div>
+    <div class="ph-sub">Two questions. Four zones. Complete emotional control over every note you write.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <!-- ZONE MAP -->
+  <div class="map-section">
+    <div class="zone-map">
+
+      <div class="zone-cell z1" data-n="1">
+        <div class="zone-num">Zone 1</div>
+        <div class="zone-name">Sweet<br>Grounded</div>
+        <div class="zone-formula">Stable + Chord Tone</div>
+        <div class="zone-kws">
+          <span class="kw">Resolved</span>
+          <span class="kw">Warm</span>
+          <span class="kw">Arrived</span>
+        </div>
+        <div class="zone-desc">The harmony and melody fully agree. Maximum comfort. Essential for chorus arrivals and hook peaks — but overuse creates predictable, emotionally flat melody.</div>
+        <div class="zone-examples">
+          <span class="np" style="background:#3F6FB6">SO</span>
+          <span class="np" style="background:#7dc48a">MI</span>
+          <span class="np" style="background:#6bb8e8">DO</span>
+          <span style="font-size:11px; color:#4b5563; align-self:center; font-style:italic; margin-left:4px;">as chord tones</span>
+        </div>
+      </div>
+
+      <div class="zone-cell z2" data-n="2">
+        <div class="zone-num">Zone 2</div>
+        <div class="zone-name">Tense<br>Supported</div>
+        <div class="zone-formula">Unstable + Chord Tone</div>
+        <div class="zone-kws">
+          <span class="kw">Forward</span>
+          <span class="kw">Yearning</span>
+          <span class="kw">Leaning</span>
+        </div>
+        <div class="zone-desc">The chord catches the note but it still wants to move. Grounded tension with a clear direction. Soul, gospel, and R&B live heavily in Zone 2.</div>
+        <div class="zone-examples">
+          <span class="np" style="background:#c9a630">FA</span>
+          <span class="np" style="background:#d97b6a">RE</span>
+          <span class="np" style="background:#8A6BC8">TI</span>
+          <span style="font-size:11px; color:#4b5563; align-self:center; font-style:italic; margin-left:4px;">as chord tones</span>
+        </div>
+      </div>
+
+      <div class="zone-cell z3" data-n="3">
+        <div class="zone-num">Zone 3</div>
+        <div class="zone-name">Floating<br>Modern</div>
+        <div class="zone-formula">Stable + Non-Chord Tone</div>
+        <div class="zone-kws">
+          <span class="kw">Airy</span>
+          <span class="kw">Color</span>
+          <span class="kw">Spacious</span>
+        </div>
+        <div class="zone-desc">Doesn't belong to the chord, but stable in the key — so it floats rather than clashes. The note of jazz extensions, neo-soul, and contemporary pop sophistication.</div>
+        <div class="zone-examples">
+          <span class="np" style="background:#6bb8e8">DO</span>
+          <span class="np" style="background:#3F6FB6">SO</span>
+          <span class="np" style="background:#7dc48a">MI</span>
+          <span style="font-size:11px; color:#4b5563; align-self:center; font-style:italic; margin-left:4px;">outside chord</span>
+        </div>
+      </div>
+
+      <div class="zone-cell z4" data-n="4">
+        <div class="zone-num">Zone 4</div>
+        <div class="zone-name">Bitter<br>Edgy</div>
+        <div class="zone-formula">Unstable + Non-Chord Tone</div>
+        <div class="zone-kws">
+          <span class="kw">Dark</span>
+          <span class="kw">Raw</span>
+          <span class="kw">Urgent</span>
+        </div>
+        <div class="zone-desc">Maximum friction — the note wants resolution and the chord gives no support. Devastatingly powerful in small doses. Blues, rock, and emotional peak moments.</div>
+        <div class="zone-examples">
+          <span class="np" style="background:#8A6BC8">TI</span>
+          <span class="np" style="background:#c9a630">FA</span>
+          <span style="font-size:11px; color:#4b5563; align-self:center; font-style:italic; margin-left:4px;">outside chord</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Axis overlay -->
+    <div class="axis-layer">
+      <div class="ax-h-line"></div>
+      <div class="ax-v-line"></div>
+      <div class="ax-label ax-ct">↑ Chord Tone</div>
+      <div class="ax-label ax-nct">Non-Chord Tone ↓</div>
+      <div class="ax-label ax-stab">← Stable</div>
+      <div class="ax-label ax-unst">Unstable →</div>
+    </div>
+
+  </div>
+
+  <!-- NOTE STRIP -->
+  <div class="note-strip">
+    <div class="note-item">
+      <div class="ni-circle" style="background:#5aacdf">DO</div>
+      <div class="ni-rank">Rank 1</div>
+      <div class="ni-kw">Home</div>
+    </div>
+    <div class="note-item">
+      <div class="ni-circle" style="background:#3F6FB6">SO</div>
+      <div class="ni-rank">Rank 2</div>
+      <div class="ni-kw">Strong</div>
+    </div>
+    <div class="note-item">
+      <div class="ni-circle" style="background:#7dc48a">MI</div>
+      <div class="ni-rank">Rank 3</div>
+      <div class="ni-kw">Sweet</div>
+    </div>
+    <div class="note-item">
+      <div class="ni-circle" style="background:#F29B38">LA</div>
+      <div class="ni-rank">Rank 4</div>
+      <div class="ni-kw">Warm</div>
+    </div>
+    <div class="note-item">
+      <div class="ni-circle" style="background:#d97b6a">RE</div>
+      <div class="ni-rank">Rank 5</div>
+      <div class="ni-kw">Open</div>
+    </div>
+    <div class="note-item">
+      <div class="ni-circle" style="background:#8A6BC8">TI</div>
+      <div class="ni-rank">Rank 6</div>
+      <div class="ni-kw">Leading</div>
+    </div>
+    <div class="note-item">
+      <div class="ni-circle" style="background:#c9a630">FA</div>
+      <div class="ni-rank">Rank 7</div>
+      <div class="ni-kw">Tension</div>
+    </div>
+  </div>
+
+  <!-- BRAND FOOTER -->
+  <div class="poster-footer">
+    <div class="pf-brand"><strong>Aesthetic Melody Framework</strong> — Emotional Map of Melody</div>
+    <div class="pf-note">Zone placement changes when the chord changes — the same note can move between zones mid-phrase</div>
+  </div>
+
+</div>
+</body>
+</html>

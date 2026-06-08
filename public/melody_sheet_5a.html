@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four Chord-Change Behaviors — Sheet 5A</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #e8e8e8; font-family: 'Inter', sans-serif;
+  display: flex; justify-content: center; padding: 32px 0;
+}
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12.5px; color: #8faacc; margin-top: 6px; line-height: 1.4; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 22px 40px 28px; }
+
+.intro {
+  font-size: 13px; font-weight: 500; color: #374151;
+  line-height: 1.65; margin-bottom: 20px;
+  padding: 12px 16px;
+  background: #f8f8f6;
+  border-radius: 8px;
+  border-left: 3px solid #3F6FB6;
+}
+.intro strong { color: #0f1e3c; }
+
+/* 2x2 behavior grid */
+.beh-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 0;
+}
+
+.beh-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1.5px solid #e8e8e4;
+}
+
+.beh-header {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Header backgrounds per behavior */
+.beh-stay .beh-header   { background: #d6eafc; }
+.beh-turn .beh-header   { background: #fef3d0; }
+.beh-float .beh-header  { background: #d9f5e4; }
+.beh-sink .beh-header   { background: #ede9fe; }
+
+.beh-name {
+  font-size: 17px; font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.05; letter-spacing: 0.02em;
+}
+.beh-stay .beh-name   { color: #1a5a8a; }
+.beh-turn .beh-name   { color: #7a5200; }
+.beh-float .beh-name  { color: #1e6b42; }
+.beh-sink .beh-name   { color: #4b2d8c; }
+
+/* Zone shift badge */
+.zone-shift {
+  font-size: 10px; font-weight: 800;
+  padding: 4px 10px; border-radius: 20px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  white-space: nowrap;
+}
+.beh-stay .zone-shift   { background: rgba(90,172,223,0.2); color: #1a5a8a; }
+.beh-turn .zone-shift   { background: rgba(201,166,48,0.2); color: #7a5200; }
+.beh-float .zone-shift  { background: rgba(91,168,104,0.2); color: #1e6b42; }
+.beh-sink .zone-shift   { background: rgba(138,107,200,0.2); color: #4b2d8c; }
+
+.beh-body {
+  padding: 13px 16px;
+  background: #fafaf8;
+}
+
+.beh-desc {
+  font-size: 12px; color: #374151; line-height: 1.6;
+  margin-bottom: 10px;
+}
+.beh-desc strong { color: #0d1424; font-weight: 700; }
+
+/* Example row */
+.beh-example {
+  background: #f0f0ed;
+  border-radius: 7px;
+  padding: 9px 12px;
+  margin-bottom: 8px;
+}
+.ex-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: #9ca3af; margin-bottom: 5px;
+}
+.ex-body {
+  font-size: 11.5px; color: #374151; line-height: 1.5;
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+}
+.ex-body em { color: #6b7280; font-style: italic; }
+
+.beh-tip {
+  font-size: 11px; color: #6b7280; font-style: italic;
+  line-height: 1.5;
+}
+.beh-tip strong { color: #374151; font-style: normal; font-weight: 700; }
+
+/* inline pill */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 22px; min-width: 28px; padding: 0 7px;
+  border-radius: 11px; font-size: 10px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0,0,0,.2); margin: 0 2px;
+}
+
+/* chord divider arrow */
+.chord-arr {
+  font-size: 13px; color: #9ca3af; font-weight: 900;
+}
+.chord-label {
+  font-size: 9.5px; font-weight: 700; color: #9ca3af;
+  background: #e8e8e4; border-radius: 4px; padding: 1px 6px;
+  letter-spacing: 0.06em;
+}
+
+/* ztag */
+.ztag { display: inline-block; padding: 2px 8px; border-radius: 5px; font-size: 10.5px; font-weight: 700; vertical-align: middle; white-space: nowrap; }
+.zt1 { background: #d6eafc; color: #1a5a8a; }
+.zt2 { background: #fef3d0; color: #7a5200; }
+.zt3 { background: #d9f5e4; color: #1e6b42; }
+.zt4 { background: #ede9fe; color: #4b2d8c; }
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Module E · Sheet 5A</div>
+    <h1>Four Chord-Change Behaviors</h1>
+    <div class="header-sub">When the chord changes under a held or repeated melody note, one of four things happens to its emotional quality</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <div class="intro">
+      <strong>The chord is moving. The melody note is staying.</strong> This is one of the most powerful moments in any song — a single note whose emotional meaning transforms as the harmony shifts underneath it. These four behaviors describe every possibility.
+    </div>
+
+    <div class="beh-grid">
+
+      <!-- 1: STAY SWEET -->
+      <div class="beh-card beh-stay">
+        <div class="beh-header">
+          <div>
+            <div class="beh-name">Stay Sweet</div>
+            <div style="font-size:10.5px; color:#1a5a8a; font-weight:600; margin-top:2px;">Zone stays in 1 or improves</div>
+          </div>
+          <div class="zone-shift">Z1 → Z1</div>
+        </div>
+        <div class="beh-body">
+          <div class="beh-desc">
+            The note was a chord tone in the previous chord and remains a chord tone in the new chord. Both chords share this note — it stays stable and warm through the change. <strong>No emotional shift</strong> — the harmony moves but the note is carried along safely.
+          </div>
+          <div class="beh-example">
+            <div class="ex-label">Example</div>
+            <div class="ex-body">
+              <span class="np" style="background:#3F6FB6">SO</span>
+              held through
+              <span class="chord-label">C</span>
+              <span class="chord-arr">→</span>
+              <span class="chord-label">G</span>
+              change. SO is the 5th of C and the root of G. Zone stays <span class="ztag zt1">Zone 1</span> throughout.
+            </div>
+          </div>
+          <div class="beh-tip"><strong>Use it:</strong> For stability at chord changes — keeps energy calm. Great for chorus sections that need to feel settled and confident.</div>
+        </div>
+      </div>
+
+      <!-- 2: TURN TENSE -->
+      <div class="beh-card beh-turn">
+        <div class="beh-header">
+          <div>
+            <div class="beh-name">Turn Tense</div>
+            <div style="font-size:10.5px; color:#7a5200; font-weight:600; margin-top:2px;">Zone worsens or becomes more active</div>
+          </div>
+          <div class="zone-shift">Z1 → Z2/4</div>
+        </div>
+        <div class="beh-body">
+          <div class="beh-desc">
+            The note was grounded, but the new chord makes it a non-chord tone or an unstable degree without harmonic support. <strong>Sudden forward pull</strong> — a comfortable note becomes searching at the chord change.
+          </div>
+          <div class="beh-example">
+            <div class="ex-label">Example</div>
+            <div class="ex-body">
+              <span class="np" style="background:#7dc48a">MI</span>
+              held through
+              <span class="chord-label">C</span>
+              <span class="chord-arr">→</span>
+              <span class="chord-label">G7</span>.
+              MI is a chord tone of C (<span class="ztag zt1">Z1</span>). Over G7 it's a non-chord tone. Shifts to <span class="ztag zt4">Zone 4</span>.
+            </div>
+          </div>
+          <div class="beh-tip"><strong>Use it:</strong> To create sudden emotional urgency at a chord change. Extremely effective in pre-choruses and builds.</div>
+        </div>
+      </div>
+
+      <!-- 3: FLOAT FREE -->
+      <div class="beh-card beh-float">
+        <div class="beh-header">
+          <div>
+            <div class="beh-name">Float Free</div>
+            <div style="font-size:10.5px; color:#1e6b42; font-weight:600; margin-top:2px;">Tension releases, note becomes supported</div>
+          </div>
+          <div class="zone-shift">Z3/4 → Z1</div>
+        </div>
+        <div class="beh-body">
+          <div class="beh-desc">
+            The note was tense or floating outside the chord, but the new chord <strong>claims it as a chord tone</strong>. Suddenly the tension is released — the note that was searching finds harmonic support. This is the "ahhh" moment of harmonic resolution.
+          </div>
+          <div class="beh-example">
+            <div class="ex-label">Example</div>
+            <div class="ex-body">
+              <span class="np" style="background:#c9a630">FA</span>
+              held through
+              <span class="chord-label">C</span>
+              <span class="chord-arr">→</span>
+              <span class="chord-label">F</span>.
+              FA is a non-chord tone over C (<span class="ztag zt4">Z4</span>). Over F major, FA is the root! Shifts to <span class="ztag zt2">Zone 2</span>.
+            </div>
+          </div>
+          <div class="beh-tip"><strong>Use it:</strong> For release of tension at chord changes. Letting the chord "arrive under" a tense melody note creates a beautiful harmonic exhale.</div>
+        </div>
+      </div>
+
+      <!-- 4: SINK DEEPER -->
+      <div class="beh-card beh-sink">
+        <div class="beh-header">
+          <div>
+            <div class="beh-name">Sink Deeper</div>
+            <div style="font-size:10.5px; color:#4b2d8c; font-weight:600; margin-top:2px;">Tension escalates at the change</div>
+          </div>
+          <div class="zone-shift">Z2 → Z4</div>
+        </div>
+        <div class="beh-body">
+          <div class="beh-desc">
+            The note was already tense, and the chord change makes it worse — it loses harmonic support and its instability becomes raw. <strong>Tension compounds</strong> — each chord change makes the note feel more stranded and urgent.
+          </div>
+          <div class="beh-example">
+            <div class="ex-label">Example</div>
+            <div class="ex-body">
+              <span class="np" style="background:#8A6BC8">TI</span>
+              held through
+              <span class="chord-label">G</span>
+              <span class="chord-arr">→</span>
+              <span class="chord-label">Dm</span>.
+              TI is chord tone of G (<span class="ztag zt2">Z2</span>). Over Dm it's not in the chord at all — shifts to <span class="ztag zt4">Zone 4</span>. More bitter.
+            </div>
+          </div>
+          <div class="beh-tip"><strong>Use it:</strong> For escalating drama in bridge sections. But needs resolution — a melody that keeps sinking deeper needs a strong Zone 1 arrival to release.</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Pairs with Sheet 5B: <em>Chord Change Pillar Notes</em> · Part of the Emotional Map of Melody series</div>
+    <div class="footer-logo">AMF · Module E</div>
+  </div>
+
+</div>
+</body>
+</html>

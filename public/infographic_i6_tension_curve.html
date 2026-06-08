@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tension Curve — Verse/Chorus/Bridge — Infographic I6</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 28px 40px 24px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 28px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12.5px; color: #8faacc; margin-top: 6px; line-height: 1.4; max-width: 500px; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+/* CHART */
+.chart-section { padding: 24px 40px 8px; }
+.chart-wrap { display: flex; gap: 14px; }
+
+.y-labels {
+  width: 80px; flex-shrink: 0;
+  display: flex; flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.y-label {
+  font-size: 10px; font-weight: 700;
+  text-align: right;
+  display: flex; align-items: center; justify-content: flex-end; gap: 6px;
+}
+.y-dot { width: 10px; height: 10px; border-radius: 50%; }
+.y-l4 .y-dot { background: #8A6BC8; }
+.y-l3 .y-dot { background: #7dc48a; }
+.y-l2 .y-dot { background: #c9a630; }
+.y-l1 .y-dot { background: #5aacdf; }
+.y-l4 span { color: #4b2d8c; }
+.y-l3 span { color: #1e6b42; }
+.y-l2 span { color: #7a5200; }
+.y-l1 span { color: #1a5a8a; }
+
+.chart-main { flex: 1; position: relative; }
+
+.chart-bg {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 30px;
+  border: 1px solid #e8e8e4;
+  border-radius: 6px; overflow: hidden;
+}
+.zone-band { position: absolute; left: 0; right: 0; }
+.zb4 { top: 0%; height: 25%; background: rgba(138,107,200,0.12); }
+.zb3 { top: 25%; height: 25%; background: rgba(125,196,138,0.12); }
+.zb2 { top: 50%; height: 25%; background: rgba(201,166,48,0.12); }
+.zb1 { top: 75%; height: 25%; background: rgba(90,172,223,0.12); }
+
+.chart-svg-wrap {
+  position: relative;
+  height: 260px;
+  padding-bottom: 30px;
+}
+.chart-svg { width: 100%; height: 100%; display: block; }
+
+/* Section labels */
+.sec-labels {
+  display: flex;
+  padding: 0;
+  margin-top: 4px;
+}
+.sl {
+  flex: 1;
+  text-align: center;
+}
+.sl-name {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: #555;
+}
+.sl-sub { font-size: 8px; color: #aaa; }
+
+/* STRATEGY CARDS */
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 16px 40px 0;
+}
+.sg-card {
+  border-radius: 8px; padding: 12px 14px;
+  border-left: 3px solid;
+}
+.sg1  { background: #d6eafc; border-color: #5aacdf; }
+.sg2  { background: #fef3d0; border-color: #c9a630; }
+.sg3  { background: #ede9fe; border-color: #8A6BC8; }
+.sg4  { background: #d6eafc; border-color: #3F6FB6; }
+.sg5  { background: #fef3d0; border-color: #F29B38; }
+.sg6  { background: #f0fdf4; border-color: #7dc48a; }
+
+.sg-section { font-size: 9px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
+.sg1 .sg-section { color: #1a5a8a; }
+.sg2 .sg-section { color: #7a5200; }
+.sg3 .sg-section { color: #4b2d8c; }
+.sg4 .sg-section { color: #1e3a8a; }
+.sg5 .sg-section { color: #92400e; }
+.sg6 .sg-section { color: #166534; }
+.sg-text { font-size: 11px; color: #374151; line-height: 1.5; }
+
+.footer {
+  padding: 14px 40px 22px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Standalone Infographic I6</div>
+    <h1>Tension Curve<br>Verse · Chorus · Bridge</h1>
+    <div class="header-sub">The classic emotional arc of a pop/R&B song — from first note to final chord, mapped against the four emotional zones. Use as a reference poster for song structure decisions.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="chart-section">
+    <div class="chart-wrap">
+
+      <!-- Y-axis labels -->
+      <div class="y-labels">
+        <div class="y-label y-l4"><span>Bitter<br>Zone 4</span><div class="y-dot"></div></div>
+        <div class="y-label y-l3"><span>Float<br>Zone 3</span><div class="y-dot"></div></div>
+        <div class="y-label y-l2"><span>Tense<br>Zone 2</span><div class="y-dot"></div></div>
+        <div class="y-label y-l1"><span>Sweet<br>Zone 1</span><div class="y-dot"></div></div>
+      </div>
+
+      <div class="chart-main">
+        <div class="chart-svg-wrap">
+          <!-- Zone bands -->
+          <div class="chart-bg">
+            <div class="zone-band zb4"></div>
+            <div class="zone-band zb3"></div>
+            <div class="zone-band zb2"></div>
+            <div class="zone-band zb1"></div>
+          </div>
+
+          <svg class="chart-svg" viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+            <!-- Grid lines -->
+            <line x1="0" y1="50" x2="700" y2="50" stroke="rgba(0,0,0,0.05)" stroke-width="1"/>
+            <line x1="0" y1="100" x2="700" y2="100" stroke="rgba(0,0,0,0.05)" stroke-width="1"/>
+            <line x1="0" y1="150" x2="700" y2="150" stroke="rgba(0,0,0,0.05)" stroke-width="1"/>
+
+            <!-- Gradient fill under curve -->
+            <defs>
+              <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#8A6BC8" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#5aacdf" stop-opacity="0.1"/>
+              </linearGradient>
+            </defs>
+            <path d="M 35,185 C 55,180 85,168 110,162 C 135,156 155,125 175,118 C 195,111 220,138 250,148 C 280,158 305,162 325,162 C 345,162 365,155 385,150 C 410,143 430,30 455,18 C 480,6 505,140 530,150 C 555,160 580,178 615,184 L 615,200 L 35,200 Z"
+                  fill="url(#fillGrad)"/>
+
+            <!-- The curve -->
+            <path d="M 35,185 C 55,180 85,168 110,162 C 135,156 155,125 175,118 C 195,111 220,138 250,148 C 280,158 305,162 325,162 C 345,162 365,155 385,150 C 410,143 430,30 455,18 C 480,6 505,140 530,150 C 555,160 580,178 615,184"
+                  fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <defs>
+              <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#5aacdf"/>
+                <stop offset="20%" stop-color="#c9a630"/>
+                <stop offset="35%" stop-color="#5aacdf"/>
+                <stop offset="55%" stop-color="#c9a630"/>
+                <stop offset="65%" stop-color="#8A6BC8"/>
+                <stop offset="80%" stop-color="#5aacdf"/>
+                <stop offset="100%" stop-color="#7dc48a"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Data points -->
+            <circle cx="35" cy="185" r="5" fill="#5aacdf"/>
+            <circle cx="110" cy="162" r="5" fill="#3F6FB6"/>
+            <circle cx="175" cy="118" r="5" fill="#c9a630"/>
+            <circle cx="250" cy="148" r="5" fill="#5aacdf"/>
+            <circle cx="325" cy="162" r="5" fill="#3F6FB6"/>
+            <circle cx="385" cy="150" r="5" fill="#c9a630"/>
+            <circle cx="455" cy="18" r="7" fill="#8A6BC8" stroke="#fff" stroke-width="2.5"/>
+            <circle cx="530" cy="150" r="5" fill="#5aacdf"/>
+            <circle cx="615" cy="184" r="5" fill="#7dc48a"/>
+
+            <!-- Peak annotation -->
+            <text x="455" y="10" text-anchor="middle" font-size="9" font-weight="800" fill="#4b2d8c" font-family="Inter, sans-serif">BRIDGE PEAK</text>
+
+            <!-- Vertical dividers -->
+            <line x1="75" y1="195" x2="75" y2="205" stroke="#e5e7eb" stroke-width="1.5"/>
+            <line x1="145" y1="195" x2="145" y2="205" stroke="#e5e7eb" stroke-width="1.5"/>
+            <line x1="215" y1="195" x2="215" y2="205" stroke="#e5e7eb" stroke-width="1.5"/>
+            <line x1="290" y1="195" x2="290" y2="205" stroke="#e5e7eb" stroke-width="1.5"/>
+            <line x1="360" y1="195" x2="360" y2="205" stroke="#e5e7eb" stroke-width="1.5"/>
+            <line x1="420" y1="195" x2="420" y2="205" stroke="#e5e7eb" stroke-width="1.5"/>
+            <line x1="495" y1="195" x2="495" y2="205" stroke="#e5e7eb" stroke-width="1.5"/>
+            <line x1="572" y1="195" x2="572" y2="205" stroke="#e5e7eb" stroke-width="1.5"/>
+          </svg>
+        </div>
+
+        <!-- Section labels -->
+        <div class="sec-labels">
+          <div class="sl"><div class="sl-name">Intro</div></div>
+          <div class="sl"><div class="sl-name">Verse 1</div></div>
+          <div class="sl"><div class="sl-name">Pre-Ch</div></div>
+          <div class="sl"><div class="sl-name">Chorus</div></div>
+          <div class="sl"><div class="sl-name">Post-Ch</div></div>
+          <div class="sl"><div class="sl-name">Verse 2</div></div>
+          <div class="sl"><div class="sl-name">Bridge</div></div>
+          <div class="sl"><div class="sl-name">Final Ch</div></div>
+          <div class="sl"><div class="sl-name">Outro</div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- STRATEGY CARDS -->
+  <div class="strategy-grid">
+    <div class="sg-card sg1">
+      <div class="sg-section">Intro / Verse 1</div>
+      <div class="sg-text">Zone 1–2. Establish the key with stable chord tones. Leave openness for growth — don't peak too early. Keep a question in the phrase.</div>
+    </div>
+    <div class="sg-card sg2">
+      <div class="sg-section">Pre-Chorus</div>
+      <div class="sg-text">Shift toward Zone 2–3. Unstable notes and non-chord tones build expectation. The ear should be leaning forward into the chorus.</div>
+    </div>
+    <div class="sg-card sg3">
+      <div class="sg-section">Bridge</div>
+      <div class="sg-text">Zone 3–4 territory. Maximum contrast. Explore FA, TI as non-chord tones. This is the emotional climax — the furthest from home the song travels.</div>
+    </div>
+    <div class="sg-card sg4">
+      <div class="sg-section">Chorus</div>
+      <div class="sg-text">Land in Zone 1. The contrast with pre-chorus creates the "payoff" feeling. The hook note should be a stable chord tone — Zone 1 at the peak.</div>
+    </div>
+    <div class="sg-card sg5">
+      <div class="sg-section">Verse 2 / Post-Ch</div>
+      <div class="sg-text">Similar to Verse 1 but can tolerate slightly more tension — the listener knows the story now and can handle more complexity before the chorus.</div>
+    </div>
+    <div class="sg-card sg6">
+      <div class="sg-section">Final Chorus / Outro</div>
+      <div class="sg-text">Return to Zone 1. After bridge tension, the final chorus resolution feels cathartic. Outro descends gradually toward DO — let the listener land in peace.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">This arc shows the classic pop/R&B structure — different genres use different shapes (Slow Build, Explosive Start, etc.)</div>
+    <div class="footer-logo">AMF · Standalone I6</div>
+  </div>
+
+</div>
+</body>
+</html>

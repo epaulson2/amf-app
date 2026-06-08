@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet vs Bitter Balance Sheet — Sheet 6A</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12.5px; color: #8faacc; margin-top: 6px; line-height: 1.4; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 22px 40px 28px; }
+
+/* Spectrum bar */
+.spectrum-section { margin-bottom: 22px; }
+.spec-title {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: #9ca3af; margin-bottom: 10px;
+}
+.spec-bar-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+.spec-bar {
+  height: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #5aacdf 0%, #3F6FB6 25%, #7a8a9a 50%, #8A6BC8 75%, #4b2d8c 100%);
+}
+.spec-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.spec-label {
+  font-size: 10.5px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.spec-sweet { color: #1d4ed8; }
+.spec-balanced { color: #555; }
+.spec-bitter { color: #5b21b6; }
+.spec-positions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+.spec-pos {
+  font-size: 9px; font-weight: 600; color: #9ca3af;
+  text-align: center;
+  flex: 1;
+}
+
+/* Reference ratios table */
+.ratio-section { margin-bottom: 22px; }
+.section-hdr {
+  background: #0f1e3c; color: rgba(255,255,255,0.7);
+  font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 7px 14px; border-radius: 5px;
+  margin-bottom: 12px; display: inline-block;
+}
+
+.ratio-table {
+  width: 100%; border-collapse: collapse; font-size: 12px;
+}
+.ratio-table th {
+  background: #0f1e3c; color: rgba(255,255,255,0.7);
+  font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 9px 12px; text-align: left;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.ratio-table th:last-child { border-right: none; }
+.ratio-table td {
+  padding: 11px 12px; border-bottom: 1px solid #f0efe9;
+  border-right: 1px solid #f0efe9;
+  vertical-align: middle;
+}
+.ratio-table td:last-child { border-right: none; }
+.ratio-table tr:last-child td { border-bottom: none; }
+
+.section-name { font-size: 13px; font-weight: 900; color: #0f1e3c; }
+
+/* Mini bar for zone distribution */
+.dist-bar {
+  display: flex;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 1px;
+  min-width: 200px;
+}
+.db-z1 { background: #5aacdf; }
+.db-z2 { background: #c9a630; }
+.db-z3 { background: #7dc48a; }
+.db-z4 { background: #8A6BC8; }
+
+.dist-legend {
+  display: flex; gap: 8px; margin-top: 4px; flex-wrap: wrap;
+}
+.dl-item {
+  font-size: 9px; font-weight: 700;
+  display: flex; align-items: center; gap: 3px;
+}
+.dl-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+/* SELF-ASSESSMENT GRID */
+.audit-section { background: #f8f8f6; border-radius: 10px; padding: 18px 20px; border: 1px solid #e8e8e4; }
+.audit-title { font-size: 11px; font-weight: 800; color: #0f1e3c; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; }
+.note-slots {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.note-slot {
+  border: 1.5px dashed #ccc;
+  border-radius: 8px;
+  padding: 8px 6px;
+  text-align: center;
+  background: #fff;
+}
+.ns-label { font-size: 9px; font-weight: 700; color: #9ca3af; margin-bottom: 6px; letter-spacing: 0.08em; text-transform: uppercase; }
+.ns-note-box {
+  width: 100%; height: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  background: #f9fafb;
+  margin-bottom: 5px;
+}
+.ns-zone-dots {
+  display: flex; justify-content: space-between;
+  padding: 0 2px;
+}
+.nsd {
+  width: 10px; height: 10px; border-radius: 50%;
+  border: 1.5px solid;
+}
+.nsd1 { border-color: #5aacdf; }
+.nsd2 { border-color: #c9a630; }
+.nsd3 { border-color: #7dc48a; }
+.nsd4 { border-color: #8A6BC8; }
+
+.tally-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.tally-cell {
+  border-radius: 7px; padding: 8px 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+.tc1 { background: #d6eafc; }
+.tc2 { background: #fef3d0; }
+.tc3 { background: #d9f5e4; }
+.tc4 { background: #ede9fe; }
+.tc-label { font-size: 9.5px; font-weight: 700; }
+.tc1 .tc-label { color: #1a5a8a; }
+.tc2 .tc-label { color: #7a5200; }
+.tc3 .tc-label { color: #1e6b42; }
+.tc4 .tc-label { color: #4b2d8c; }
+.tc-count {
+  font-size: 18px; font-weight: 900;
+  opacity: 0.3;
+  margin-left: auto;
+}
+.tc1 .tc-count { color: #1a5a8a; }
+.tc2 .tc-count { color: #7a5200; }
+.tc3 .tc-count { color: #1e6b42; }
+.tc4 .tc-count { color: #4b2d8c; }
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Module F · Sheet 6A</div>
+    <h1>Sweet vs Bitter Balance Sheet</h1>
+    <div class="header-sub">How balanced is your melody's emotional weight? Reference ratios for common song sections + self-assessment grid</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- SPECTRUM BAR -->
+    <div class="spectrum-section">
+      <div class="spec-title">The Emotional Spectrum — Where Does Your Melody Land?</div>
+      <div class="spec-bar-wrap">
+        <div class="spec-bar"></div>
+      </div>
+      <div class="spec-positions">
+        <div class="spec-pos" style="color:#1d4ed8">Very<br>Sweet</div>
+        <div class="spec-pos" style="color:#3b82f6">Mostly<br>Sweet</div>
+        <div class="spec-pos" style="color:#6b7280">Balanced</div>
+        <div class="spec-pos" style="color:#7c3aed">Mostly<br>Bitter</div>
+        <div class="spec-pos" style="color:#4b2d8c">Very<br>Bitter</div>
+      </div>
+    </div>
+
+    <!-- REFERENCE RATIOS -->
+    <div class="ratio-section">
+      <div class="section-hdr">Reference Zone Distributions — By Song Section</div>
+      <table class="ratio-table">
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Zone Distribution</th>
+            <th>Visual</th>
+            <th>Emotional Goal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="section-name">Verse</div></td>
+            <td style="font-size:11px; line-height:1.6;">
+              50% <span style="color:#1a5a8a;font-weight:700">Sweet</span> · 30% <span style="color:#7a5200;font-weight:700">Tense</span><br>
+              15% <span style="color:#1e6b42;font-weight:700">Float</span> · 5% <span style="color:#4b2d8c;font-weight:700">Bitter</span>
+            </td>
+            <td>
+              <div class="dist-bar">
+                <div class="db-z1" style="width:50%"></div>
+                <div class="db-z2" style="width:30%"></div>
+                <div class="db-z3" style="width:15%"></div>
+                <div class="db-z4" style="width:5%"></div>
+              </div>
+            </td>
+            <td style="font-size:11.5px; color:#374151;">Openness and forward motion — not fully resolved</td>
+          </tr>
+          <tr>
+            <td><div class="section-name">Pre-Chorus</div></td>
+            <td style="font-size:11px; line-height:1.6;">
+              35% <span style="color:#1a5a8a;font-weight:700">Sweet</span> · 35% <span style="color:#7a5200;font-weight:700">Tense</span><br>
+              20% <span style="color:#1e6b42;font-weight:700">Float</span> · 10% <span style="color:#4b2d8c;font-weight:700">Bitter</span>
+            </td>
+            <td>
+              <div class="dist-bar">
+                <div class="db-z1" style="width:35%"></div>
+                <div class="db-z2" style="width:35%"></div>
+                <div class="db-z3" style="width:20%"></div>
+                <div class="db-z4" style="width:10%"></div>
+              </div>
+            </td>
+            <td style="font-size:11.5px; color:#374151;">Rising tension — building expectation before the drop</td>
+          </tr>
+          <tr>
+            <td><div class="section-name">Chorus (Hook)</div></td>
+            <td style="font-size:11px; line-height:1.6;">
+              60% <span style="color:#1a5a8a;font-weight:700">Sweet</span> · 25% <span style="color:#7a5200;font-weight:700">Tense</span><br>
+              10% <span style="color:#1e6b42;font-weight:700">Float</span> · 5% <span style="color:#4b2d8c;font-weight:700">Bitter</span>
+            </td>
+            <td>
+              <div class="dist-bar">
+                <div class="db-z1" style="width:60%"></div>
+                <div class="db-z2" style="width:25%"></div>
+                <div class="db-z3" style="width:10%"></div>
+                <div class="db-z4" style="width:5%"></div>
+              </div>
+            </td>
+            <td style="font-size:11.5px; color:#374151;">Maximum arrival — warm, confident, memorable</td>
+          </tr>
+          <tr>
+            <td><div class="section-name">Bridge</div></td>
+            <td style="font-size:11px; line-height:1.6;">
+              20% <span style="color:#1a5a8a;font-weight:700">Sweet</span> · 25% <span style="color:#7a5200;font-weight:700">Tense</span><br>
+              30% <span style="color:#1e6b42;font-weight:700">Float</span> · 25% <span style="color:#4b2d8c;font-weight:700">Bitter</span>
+            </td>
+            <td>
+              <div class="dist-bar">
+                <div class="db-z1" style="width:20%"></div>
+                <div class="db-z2" style="width:25%"></div>
+                <div class="db-z3" style="width:30%"></div>
+                <div class="db-z4" style="width:25%"></div>
+              </div>
+            </td>
+            <td style="font-size:11.5px; color:#374151;">Maximum contrast — explore dark/floating territory</td>
+          </tr>
+          <tr>
+            <td><div class="section-name">Outro</div></td>
+            <td style="font-size:11px; line-height:1.6;">
+              70% <span style="color:#1a5a8a;font-weight:700">Sweet</span> · 20% <span style="color:#7a5200;font-weight:700">Tense</span><br>
+              10% <span style="color:#1e6b42;font-weight:700">Float</span> · 0% <span style="color:#4b2d8c;font-weight:700">Bitter</span>
+            </td>
+            <td>
+              <div class="dist-bar">
+                <div class="db-z1" style="width:70%"></div>
+                <div class="db-z2" style="width:20%"></div>
+                <div class="db-z3" style="width:10%"></div>
+              </div>
+            </td>
+            <td style="font-size:11.5px; color:#374151;">Resolution and peace — the song is landing, let it land</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SELF-ASSESSMENT GRID -->
+    <div class="audit-section">
+      <div class="audit-title">Analyze Your Phrase — Mark Each Note's Zone Below</div>
+      <div class="note-slots">
+        <div class="note-slot"><div class="ns-label">Note 1</div><div class="ns-note-box"></div><div class="ns-zone-dots"><div class="nsd nsd1"></div><div class="nsd nsd2"></div><div class="nsd nsd3"></div><div class="nsd nsd4"></div></div></div>
+        <div class="note-slot"><div class="ns-label">Note 2</div><div class="ns-note-box"></div><div class="ns-zone-dots"><div class="nsd nsd1"></div><div class="nsd nsd2"></div><div class="nsd nsd3"></div><div class="nsd nsd4"></div></div></div>
+        <div class="note-slot"><div class="ns-label">Note 3</div><div class="ns-note-box"></div><div class="ns-zone-dots"><div class="nsd nsd1"></div><div class="nsd nsd2"></div><div class="nsd nsd3"></div><div class="nsd nsd4"></div></div></div>
+        <div class="note-slot"><div class="ns-label">Note 4</div><div class="ns-note-box"></div><div class="ns-zone-dots"><div class="nsd nsd1"></div><div class="nsd nsd2"></div><div class="nsd nsd3"></div><div class="nsd nsd4"></div></div></div>
+        <div class="note-slot"><div class="ns-label">Note 5</div><div class="ns-note-box"></div><div class="ns-zone-dots"><div class="nsd nsd1"></div><div class="nsd nsd2"></div><div class="nsd nsd3"></div><div class="nsd nsd4"></div></div></div>
+        <div class="note-slot"><div class="ns-label">Note 6</div><div class="ns-note-box"></div><div class="ns-zone-dots"><div class="nsd nsd1"></div><div class="nsd nsd2"></div><div class="nsd nsd3"></div><div class="nsd nsd4"></div></div></div>
+        <div class="note-slot"><div class="ns-label">Note 7</div><div class="ns-note-box"></div><div class="ns-zone-dots"><div class="nsd nsd1"></div><div class="nsd nsd2"></div><div class="nsd nsd3"></div><div class="nsd nsd4"></div></div></div>
+        <div class="note-slot"><div class="ns-label">Note 8</div><div class="ns-note-box"></div><div class="ns-zone-dots"><div class="nsd nsd1"></div><div class="nsd nsd2"></div><div class="nsd nsd3"></div><div class="nsd nsd4"></div></div></div>
+      </div>
+      <div class="tally-row">
+        <div class="tally-cell tc1">
+          <div><div class="tc-label">Zone 1 Sweet</div><div style="font-size:10px; color:#1a5a8a;">Count →</div></div>
+          <div class="tc-count">__</div>
+        </div>
+        <div class="tally-cell tc2">
+          <div><div class="tc-label">Zone 2 Tense</div><div style="font-size:10px; color:#7a5200;">Count →</div></div>
+          <div class="tc-count">__</div>
+        </div>
+        <div class="tally-cell tc3">
+          <div><div class="tc-label">Zone 3 Float</div><div style="font-size:10px; color:#1e6b42;">Count →</div></div>
+          <div class="tc-count">__</div>
+        </div>
+        <div class="tally-cell tc4">
+          <div><div class="tc-label">Zone 4 Bitter</div><div style="font-size:10px; color:#4b2d8c;">Count →</div></div>
+          <div class="tc-count">__</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Reference ratios are guidelines, not rules — great songs break these patterns intentionally · Part of the Emotional Map of Melody series</div>
+    <div class="footer-logo">AMF · Module F</div>
+  </div>
+
+</div>
+</body>
+</html>

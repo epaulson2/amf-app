@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Home Chicago — Melody Analysis — Infographic I8</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 26px 40px 22px; display: flex; align-items: flex-start; gap: 20px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 6px; line-height: 1.4; }
+.header-right { flex-shrink: 0; text-align: right; }
+.hr-tag { font-size: 9px; font-weight: 700; color: #7a9bd4; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px; }
+.hr-info { font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 22px 40px 28px; }
+
+/* Key context box */
+.key-box {
+  background: #f8f4e8;
+  border: 1.5px solid #c9a630;
+  border-radius: 9px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.kb-title { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #92400e; margin-bottom: 4px; }
+.kb-body { font-size: 12px; color: #374151; line-height: 1.6; }
+.kb-body strong { color: #0d1424; }
+.key-pill {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 20px; min-width: 26px; padding: 0 7px;
+  border-radius: 10px; font-size: 9.5px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0 2px;
+}
+
+/* Section header */
+.sec-hdr {
+  background: #0f1e3c;
+  color: rgba(255,255,255,0.7);
+  font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 5px;
+  margin-bottom: 12px; display: inline-block;
+}
+
+/* Phrase analysis block */
+.phrase {
+  background: #f8f8f6;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border: 1px solid #e8e8e4;
+}
+.phrase-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ph-lyrics {
+  font-size: 14px; font-weight: 700; color: #0f1e3c;
+  font-style: italic;
+}
+.ph-zone-bar {
+  display: flex; gap: 4px;
+}
+.pb-z { padding: 3px 8px; border-radius: 4px; font-size: 9.5px; font-weight: 800; }
+.pb-z1 { background: #d6eafc; color: #1a5a8a; }
+.pb-z2 { background: #fef3d0; color: #7a5200; }
+.pb-z3 { background: #d9f5e4; color: #1e6b42; }
+.pb-z4 { background: #ede9fe; color: #4b2d8c; }
+
+.note-row {
+  display: flex; align-items: center; gap: 6px; margin-bottom: 8px; flex-wrap: wrap;
+}
+.nr-chord-label { font-size: 9px; font-weight: 700; color: #9ca3af; background: #e8e8e4; padding: 2px 7px; border-radius: 4px; }
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 28px; min-width: 36px; padding: 0 9px;
+  border-radius: 14px; font-size: 11px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+.np-nct { border: 2.5px dashed rgba(255,255,255,0.5); }
+
+.phrase-callout {
+  display: flex; gap: 8px; align-items: flex-start;
+  background: #fff; border-radius: 7px; padding: 9px 12px;
+  border-left: 3px solid;
+}
+.pc-label { font-size: 9px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 2px; }
+.pc-body { font-size: 11.5px; color: #374151; line-height: 1.5; }
+.pc-body strong { color: #0d1424; }
+
+/* BALANCE ANALYSIS */
+.balance-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.bs-card {
+  background: #f8f8f6;
+  border-radius: 9px;
+  padding: 14px 16px;
+  border: 1px solid #e8e8e4;
+}
+.bsc-title { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #9ca3af; margin-bottom: 10px; }
+.zone-dist {
+  display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap;
+}
+.zd-item {
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+}
+.zd-bar-wrap { width: 36px; height: 60px; background: #e8e8e4; border-radius: 4px; overflow: hidden; display: flex; align-items: flex-end; }
+.zd-bar { width: 100%; border-radius: 4px; }
+.zd-pct { font-size: 9px; font-weight: 700; color: #6b7280; }
+.zd-name { font-size: 8.5px; font-weight: 700; text-transform: uppercase; }
+
+.pillar-list { display: flex; flex-direction: column; gap: 6px; }
+.pl-item { display: flex; align-items: center; gap: 8px; font-size: 11.5px; color: #374151; }
+.pl-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+/* WHAT MAKES IT MEMORABLE */
+.memorable {
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 16px 22px;
+}
+.mem-label { font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7a9bd4; margin-bottom: 12px; }
+.mem-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.mem-item { }
+.mem-title { font-size: 11px; font-weight: 800; color: #E8C45A; text-transform: uppercase; margin-bottom: 4px; }
+.mem-body { font-size: 11px; color: rgba(255,255,255,0.7); line-height: 1.5; }
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div style="flex:1">
+      <div class="module-tag">Standalone Infographic I8 · Month 1 Anchor Song</div>
+      <h1>Sweet Home Chicago<br>Melody Analysis</h1>
+      <div class="header-sub">The main vocal hook and first verse phrase analyzed note-by-note using the Emotional Map framework</div>
+    </div>
+    <div class="header-right">
+      <div class="hr-tag">Key</div>
+      <div class="hr-info" style="font-size:14px; font-weight:900; color:#fff;">E major</div>
+      <div style="margin-top:8px;">
+        <div class="hr-tag">Style</div>
+        <div class="hr-info">12-bar blues / Chicago blues</div>
+      </div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- KEY CONTEXT -->
+    <div class="key-box">
+      <div style="flex:1">
+        <div class="kb-title">Key Setup — E Major Solmization</div>
+        <div class="kb-body">In the key of <strong>E major</strong>: E=DO, F#=RE, G#=MI, A=FA, B=SO, C#=LA, D#=TI. The blue note (b7 = D natural) acts as a passing tone between LA and SO, borrowing from the minor/blues scale. This gives the melody its characteristic blues tension over a major key backing.</div>
+      </div>
+      <div style="display:flex; gap:5px; flex-shrink:0; flex-wrap:wrap; max-width:200px;">
+        <span class="key-pill" style="background:#6bb8e8">DO=E</span>
+        <span class="key-pill" style="background:#d97b6a">RE=F#</span>
+        <span class="key-pill" style="background:#7dc48a">MI=G#</span>
+        <span class="key-pill" style="background:#c9a630">FA=A</span>
+        <span class="key-pill" style="background:#3F6FB6">SO=B</span>
+        <span class="key-pill" style="background:#F29B38">LA=C#</span>
+        <span class="key-pill" style="background:#8A6BC8">TI=D#</span>
+        <span class="key-pill" style="background:#555">b7=D♮</span>
+      </div>
+    </div>
+
+    <!-- PHRASE ANALYSIS -->
+    <div class="sec-hdr">Phrase-by-Phrase Analysis</div>
+
+    <!-- Phrase 1: "Oh, baby don't you want to go" -->
+    <div class="phrase">
+      <div class="phrase-header">
+        <div class="ph-lyrics">"Oh, baby don't you want to go"</div>
+        <div class="ph-zone-bar">
+          <div class="pb-z pb-z1">Z1</div>
+          <div class="pb-z pb-z2">Z2</div>
+          <div class="pb-z pb-z4">Z4</div>
+        </div>
+      </div>
+      <div class="note-row">
+        <span class="nr-chord-label">E7 chord</span>
+        <span class="np" style="background:#3F6FB6">SO</span>
+        <span class="np" style="background:#3F6FB6">SO</span>
+        <span class="np" style="background:#F29B38">LA</span>
+        <span class="np np-nct" style="background:#555">b7</span>
+        <span class="np" style="background:#F29B38">LA</span>
+        <span class="np" style="background:#3F6FB6">SO</span>
+        <span class="np" style="background:#7dc48a">MI</span>
+        <span class="np" style="background:#6bb8e8">DO</span>
+        <span style="font-size:10px; color:#9ca3af; font-style:italic; margin-left:4px;">dashed = NCT/blue note</span>
+      </div>
+      <div class="phrase-callout" style="border-color:#5aacdf; background:#f0f8fe;">
+        <div style="flex:1">
+          <div class="pc-label" style="color:#1d4ed8;">Zone Analysis</div>
+          <div class="pc-body">Phrase opens on <strong>SO over E7</strong> — Zone 1 (Sweet). The pentatonic descent through LA → b7 (blue note passing tone) → LA → SO creates characteristic blues tension. The b7 over E7 is a non-chord tone in Zone 4 — but it's brief and passing, not a landing point. Final descent to MI → DO lands solidly in Zone 1. <strong>Classic blues resolution: tension then arrival.</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phrase 2: "Back to the land of California" -->
+    <div class="phrase">
+      <div class="phrase-header">
+        <div class="ph-lyrics">"Back to the land of California"</div>
+        <div class="ph-zone-bar">
+          <div class="pb-z pb-z2">Z2</div>
+          <div class="pb-z pb-z4">Z4</div>
+        </div>
+      </div>
+      <div class="note-row">
+        <span class="nr-chord-label">A7 chord (FA chord)</span>
+        <span class="np" style="background:#7dc48a">MI</span>
+        <span class="np" style="background:#F29B38">LA</span>
+        <span class="np" style="background:#F29B38">LA</span>
+        <span class="np np-nct" style="background:#555">b7</span>
+        <span class="np" style="background:#F29B38">LA</span>
+        <span class="np" style="background:#7dc48a">MI</span>
+        <span style="font-size:10px; color:#9ca3af; font-style:italic; margin-left:4px;">over the IV chord</span>
+      </div>
+      <div class="phrase-callout" style="border-color:#c9a630; background:#fdf9e8;">
+        <div style="flex:1">
+          <div class="pc-label" style="color:#92400e;">Zone Shift — IV Chord</div>
+          <div class="pc-body">Now over the A7 chord (the IV, which we call the FA chord). <strong>MI over A7</strong> = non-chord tone → Zone 3 (Floating). <strong>LA over A7</strong> = chord tone (root) → Zone 2 (Tense/Supported). The phrase oscillates between floating and grounded tension, landing on MI (Zone 3 over A7). This is why the IV chord verse sounds expressive and slightly unsettled.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phrase 3: "Sweet home Chicago" -->
+    <div class="phrase">
+      <div class="phrase-header">
+        <div class="ph-lyrics">"Sweet home Chicago" (the hook)</div>
+        <div class="ph-zone-bar">
+          <div class="pb-z pb-z1">Z1</div>
+        </div>
+      </div>
+      <div class="note-row">
+        <span class="nr-chord-label">E7 chord (back to I)</span>
+        <span class="np" style="background:#3F6FB6">SO</span>
+        <span class="np" style="background:#6bb8e8">DO</span>
+        <span class="np" style="background:#3F6FB6">SO</span>
+        <span style="font-size:10px; color:#9ca3af; font-style:italic; margin-left:4px;">the signature landing</span>
+      </div>
+      <div class="phrase-callout" style="border-color:#3b82f6; background:#eff6ff;">
+        <div style="flex:1">
+          <div class="pc-label" style="color:#1d4ed8;">The Hook Resolution</div>
+          <div class="pc-body"><strong>SO–DO–SO over E7</strong>: Both SO and DO are chord tones of E7 — Zone 1. After the tension of the IV chord phrases, this landing feels like exhaling. The hook phrase resolves to stable chord tones, which is why the words "Sweet home Chicago" feel like <em>arrival</em>. The three-note phrase is almost entirely Zone 1 — that's what makes it feel like coming home.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BALANCE ANALYSIS + PILLAR NOTES -->
+    <div class="balance-section" style="margin-top:16px;">
+
+      <div class="bs-card">
+        <div class="bsc-title">Zone Distribution — Full First Verse</div>
+        <div class="zone-dist">
+          <div class="zd-item">
+            <div class="zd-bar-wrap">
+              <div class="zd-bar" style="height:60%; background:#5aacdf;"></div>
+            </div>
+            <div class="zd-pct">60%</div>
+            <div class="zd-name" style="color:#1a5a8a;">Z1</div>
+          </div>
+          <div class="zd-item">
+            <div class="zd-bar-wrap">
+              <div class="zd-bar" style="height:20%; background:#c9a630;"></div>
+            </div>
+            <div class="zd-pct">20%</div>
+            <div class="zd-name" style="color:#7a5200;">Z2</div>
+          </div>
+          <div class="zd-item">
+            <div class="zd-bar-wrap">
+              <div class="zd-bar" style="height:10%; background:#7dc48a;"></div>
+            </div>
+            <div class="zd-pct">10%</div>
+            <div class="zd-name" style="color:#1e6b42;">Z3</div>
+          </div>
+          <div class="zd-item">
+            <div class="zd-bar-wrap">
+              <div class="zd-bar" style="height:10%; background:#8A6BC8;"></div>
+            </div>
+            <div class="zd-pct">10%</div>
+            <div class="zd-name" style="color:#4b2d8c;">Z4</div>
+          </div>
+        </div>
+        <div style="font-size:11px; color:#374151; line-height:1.5;">Heavily weighted toward Zone 1 — the hallmark of a memorable, singable blues hook. Zone 4 tension (blue notes) is brief and always passing, never landing. This ratio explains why the song feels both <em>emotionally expressive</em> (the blue note tension) and <em>easy to sing along with</em> (the Zone 1 landings).</div>
+      </div>
+
+      <div class="bs-card">
+        <div class="bsc-title">Pillar Note Strategy</div>
+        <div class="pillar-list">
+          <div class="pl-item">
+            <div class="pl-dot" style="background:#3F6FB6"></div>
+            <div><strong>Opening note: SO (B)</strong> — Zone 1 chord tone over E7. Confident, direct entry that immediately establishes the key's home tonality.</div>
+          </div>
+          <div class="pl-item">
+            <div class="pl-dot" style="background:#555"></div>
+            <div><strong>Tension point: b7 (D♮)</strong> — the blue note. Brief Zone 4 passing tone that adds blues character without disrupting the overall sweetness.</div>
+          </div>
+          <div class="pl-item">
+            <div class="pl-dot" style="background:#F29B38"></div>
+            <div><strong>IV chord anchor: LA (A)</strong> — root of A7, Zone 2. Grounds the IV chord while maintaining expressive tension.</div>
+          </div>
+          <div class="pl-item">
+            <div class="pl-dot" style="background:#6bb8e8"></div>
+            <div><strong>Hook landing: DO (E)</strong> — root over E7, Zone 1. Maximum resolution. The two-syllable "Chi-CA-go" lands on DO-SO — a triumphant arrival at home.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WHAT MAKES IT MEMORABLE -->
+    <div class="memorable">
+      <div class="mem-label">What Makes This Melody Memorable — AMF Analysis</div>
+      <div class="mem-grid">
+        <div class="mem-item">
+          <div class="mem-title">Zone Balance</div>
+          <div class="mem-body">60% Zone 1 gives it singability. The 10% Zone 4 (blue notes) gives it blues authenticity. The brief tension makes the Zone 1 landings feel earned rather than bland.</div>
+        </div>
+        <div class="mem-item">
+          <div class="mem-title">The Hook Note</div>
+          <div class="mem-body">The word "Chicago" lands on SO→DO — both Zone 1 chord tones. The title phrase is maximally resolved, which is why it sticks. The hook = the most grounded phrase in the song.</div>
+        </div>
+        <div class="mem-item">
+          <div class="mem-title">Contrast Shape</div>
+          <div class="mem-body">Tension in the verse phrases (b7 blue notes, IV chord floating) resolves to the hook. The emotional arc is: question → question → answer. Every phrase builds the need for "Chicago."</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Analysis in E major; same principles apply transposed to any key · Month 1 Anchor Song — Aesthetic Melody Framework</div>
+    <div class="footer-logo">AMF · Standalone I8</div>
+  </div>
+
+</div>
+</body>
+</html>

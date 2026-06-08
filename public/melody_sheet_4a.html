@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Context Changes Everything — Sheet 4A</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #e8e8e8;
+  font-family: 'Inter', sans-serif;
+  display: flex; justify-content: center; padding: 32px 0;
+}
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12.5px; color: #8faacc; margin-top: 6px; line-height: 1.4; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 24px 40px 28px; }
+
+/* Intro statement */
+.statement {
+  background: #f8f4e8;
+  border-left: 4px solid #c9a630;
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  font-size: 14px; font-weight: 700;
+  color: #0f1e3c;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+.statement em { color: #92400e; font-style: normal; }
+
+/* section header */
+.sec-hdr {
+  background: #0f1e3c;
+  color: rgba(255,255,255,0.7);
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* inline note pill */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 26px; min-width: 34px; padding: 0 9px;
+  border-radius: 13px; font-size: 11px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0,0,0,.22); margin: 0 2px;
+}
+.np-re { background: #d97b6a; }
+
+/* zone tags */
+.ztag { display: inline-block; padding: 2px 9px; border-radius: 5px; font-size: 11px; font-weight: 700; vertical-align: middle; white-space: nowrap; }
+.zt1 { background: #d6eafc; color: #1a5a8a; }
+.zt2 { background: #fef3d0; color: #7a5200; }
+.zt3 { background: #d9f5e4; color: #1e6b42; }
+.zt4 { background: #ede9fe; color: #4b2d8c; }
+
+/* RE hero */
+.re-hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.re-circle {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: #d97b6a;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(217,123,106,0.4);
+}
+.re-note { font-size: 26px; font-weight: 900; color: #fff; line-height: 1; }
+.re-sub { font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.75); margin-top: 3px; }
+
+/* Comparison table */
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  font-size: 12px;
+}
+.comp-table th {
+  background: #0f1e3c;
+  color: rgba(255,255,255,0.7);
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 10px 12px;
+  text-align: left;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.comp-table th:last-child { border-right: none; }
+.comp-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #f0efe9;
+  border-right: 1px solid #f0efe9;
+  vertical-align: middle;
+  line-height: 1.45;
+}
+.comp-table td:last-child { border-right: none; }
+.comp-table tr:last-child td { border-bottom: none; }
+
+/* Row zone highlights */
+.row-z4 td:first-child { border-left: 3px solid #a855f7; }
+.row-z2 td:first-child { border-left: 3px solid #f59e0b; }
+.row-z1 td:first-child { border-left: 3px solid #3b82f6; }
+.row-z3 td:first-child { border-left: 3px solid #22c55e; }
+
+.chord-name {
+  font-size: 14px; font-weight: 900; color: #0f1e3c;
+}
+.chord-notes-pills {
+  display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;
+}
+.ct-badge { display: inline-flex; align-items: center; justify-content: center;
+  height: 20px; min-width: 26px; padding: 0 6px;
+  border-radius: 10px; font-size: 9.5px; font-weight: 800;
+  color: #fff; }
+
+/* Takeaway box */
+.takeaway {
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.ta-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: #E8C45A; margin-bottom: 6px;
+}
+.ta-body {
+  font-size: 13px; font-weight: 700;
+  color: #fff; line-height: 1.6;
+}
+.ta-body em { color: #E8C45A; font-style: normal; }
+.ta-body p { margin-top: 8px; font-size: 11.5px; font-weight: 400; color: rgba(255,255,255,0.6); line-height: 1.6; font-style: italic; }
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Module D · Sheet 4A</div>
+    <h1>Context Changes Everything</h1>
+    <div class="header-sub">The same melody note can feel completely different depending on which chord is playing underneath it</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <div class="statement">
+      The note <span class="np np-re">RE</span> is always RE — but <em>what it feels like</em> is entirely determined by the chord underneath it. Watch what happens as we play the same RE over four different chords.
+    </div>
+
+    <!-- RE HERO + TABLE -->
+    <div class="re-hero">
+      <div class="re-circle">
+        <div class="re-note">RE</div>
+        <div class="re-sub">Same note</div>
+      </div>
+    </div>
+
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Chord</th>
+          <th>Chord Tones</th>
+          <th>RE Is…</th>
+          <th>Zone</th>
+          <th>Feels Like…</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-z4">
+          <td>
+            <div class="chord-name">C major</div>
+            <div style="font-size:10px; color:#9ca3af; margin-top:2px;">DO–MI–SO</div>
+          </td>
+          <td>
+            <div class="chord-notes-pills">
+              <span class="ct-badge" style="background:#6bb8e8">DO</span>
+              <span class="ct-badge" style="background:#7dc48a">MI</span>
+              <span class="ct-badge" style="background:#3F6FB6">SO</span>
+            </div>
+          </td>
+          <td style="font-weight:700; color:#5b21b6;">Non-chord tone</td>
+          <td><span class="ztag zt4">Zone 4 Bitter</span></td>
+          <td>Searching, unresolved — the chord gives no support</td>
+        </tr>
+        <tr class="row-z2">
+          <td>
+            <div class="chord-name">G7</div>
+            <div style="font-size:10px; color:#9ca3af; margin-top:2px;">SO–TI–RE–FA</div>
+          </td>
+          <td>
+            <div class="chord-notes-pills">
+              <span class="ct-badge" style="background:#3F6FB6">SO</span>
+              <span class="ct-badge" style="background:#8A6BC8">TI</span>
+              <span class="ct-badge" style="background:#d97b6a">RE</span>
+              <span class="ct-badge" style="background:#c9a630">FA</span>
+            </div>
+          </td>
+          <td style="font-weight:700; color:#92400e;">Chord tone (5th)</td>
+          <td><span class="ztag zt2">Zone 2 Tense</span></td>
+          <td>Leaning forward — supported but still pulling toward home</td>
+        </tr>
+        <tr class="row-z2" style="background:#fffdf8;">
+          <td>
+            <div class="chord-name">Dm</div>
+            <div style="font-size:10px; color:#9ca3af; margin-top:2px;">RE–FA–LA</div>
+          </td>
+          <td>
+            <div class="chord-notes-pills">
+              <span class="ct-badge" style="background:#d97b6a">RE</span>
+              <span class="ct-badge" style="background:#c9a630">FA</span>
+              <span class="ct-badge" style="background:#F29B38">LA</span>
+            </div>
+          </td>
+          <td style="font-weight:700; color:#92400e;">Chord tone (root!)</td>
+          <td><span class="ztag zt2">Zone 2 Tense</span></td>
+          <td>Grounded in <em>this</em> chord — RE is the anchor, not the outsider</td>
+        </tr>
+        <tr class="row-z4">
+          <td>
+            <div class="chord-name">Am</div>
+            <div style="font-size:10px; color:#9ca3af; margin-top:2px;">LA–DO–MI</div>
+          </td>
+          <td>
+            <div class="chord-notes-pills">
+              <span class="ct-badge" style="background:#F29B38">LA</span>
+              <span class="ct-badge" style="background:#6bb8e8">DO</span>
+              <span class="ct-badge" style="background:#7dc48a">MI</span>
+            </div>
+          </td>
+          <td style="font-weight:700; color:#5b21b6;">Non-chord tone</td>
+          <td><span class="ztag zt4">Zone 4 Bitter</span></td>
+          <td>Adds dark color — a 9th above the minor chord, floating and edgy</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- TAKEAWAY -->
+    <div class="takeaway">
+      <div style="flex:1">
+        <div class="ta-label">The Takeaway</div>
+        <div class="ta-body">
+          Always think <em>chord + note together</em> — never the note alone.
+          <p>RE is the same pitch in all four rows above. It is the chord context that decides whether RE resolves, supports, anchors, or floats. This is why skilled melody writers think in chord-note pairs at every structural moment — not just scale degrees in isolation.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Pairs with Sheet 4B: <em>Important Melody Notes Checklist</em> · Part of the Emotional Map of Melody series</div>
+    <div class="footer-logo">AMF · Module D</div>
+  </div>
+
+</div>
+</body>
+</html>

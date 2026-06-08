@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chord Tones vs Non-Chord Tones — Infographic C4</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #e8e8e8;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.page {
+  width: 850px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.14);
+}
+
+.header {
+  background: #0f1e3c;
+  padding: 26px 40px 22px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.module-tag {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.18em; color: #7a9bd4;
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.header h1 {
+  font-size: 26px; font-weight: 900;
+  color: #fff; line-height: 1.1;
+  text-transform: uppercase;
+}
+.header-sub {
+  font-size: 12px; color: #8faacc;
+  margin-top: 6px; line-height: 1.4; max-width: 420px;
+}
+.rainbow-rule {
+  height: 4px;
+  background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%);
+}
+
+/* MAIN VISUAL */
+.main-visual {
+  padding: 30px 40px 24px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* LEFT SIDE — IN THE CHORD */
+.side-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.side-title {
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  text-align: center;
+}
+.side-title-ct { color: #1d4ed8; }
+.side-title-nct { color: #5b21b6; }
+
+/* Triangle for chord tones */
+.chord-triangle {
+  position: relative;
+  width: 200px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.ct-row1 {
+  display: flex;
+  justify-content: center;
+}
+.ct-row2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.ct-row3 {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+}
+
+.np-big {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  font-size: 15px; font-weight: 900;
+  color: #fff;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.22);
+  position: relative;
+}
+
+.ct-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* IN THE CHORD badge */
+.in-chord-badge {
+  background: #eff6ff;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 11px; font-weight: 800;
+  color: #1d4ed8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+/* OUTSIDE THE CHORD — scattered layout */
+.nct-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  width: 220px;
+  padding: 10px;
+}
+
+.nct-note-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.np-medium {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  font-size: 13px; font-weight: 900;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  border: 2.5px dashed rgba(255,255,255,0.5);
+}
+
+.nct-note-label {
+  font-size: 9px; font-weight: 600;
+  color: #6b7280; text-align: center;
+}
+
+.out-chord-badge {
+  background: #faf5ff;
+  border: 2px solid #a855f7;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 11px; font-weight: 800;
+  color: #5b21b6;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+/* CENTER DIVIDER */
+.center-div {
+  width: 90px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 8px;
+}
+
+.div-line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(180deg, transparent, #ccc 20%, #ccc 80%, transparent);
+  min-height: 40px;
+}
+
+.div-text {
+  background: #f0f0ed;
+  border-radius: 8px;
+  padding: 10px 12px;
+  text-align: center;
+}
+.div-main {
+  font-size: 10px; font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #374151;
+  line-height: 1.3;
+}
+.div-sub {
+  font-size: 9px; color: #9ca3af;
+  margin-top: 3px;
+  font-style: italic;
+}
+
+/* KEY INSIGHT */
+.key-insight {
+  margin: 0 40px 22px;
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ki-icon {
+  font-size: 28px; flex-shrink: 0;
+  width: 44px; height: 44px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-style: normal;
+}
+.ki-text {
+  flex: 1;
+}
+.ki-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: #7a9bd4; margin-bottom: 4px;
+}
+.ki-body {
+  font-size: 13px; font-weight: 700;
+  color: #fff; line-height: 1.5;
+}
+.ki-body em { color: #E8C45A; font-style: normal; }
+
+/* QUICK REF GRID */
+.quick-ref {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0 40px 24px;
+}
+.qr-card {
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.z1-card { background: #d6eafc; }
+.z2-card { background: #fef3d0; }
+.z3-card { background: #d9f5e4; }
+.z4-card { background: #ede9fe; }
+
+.qr-zone {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  opacity: 0.55; margin-bottom: 4px;
+}
+.qr-name {
+  font-size: 13px; font-weight: 900;
+  text-transform: uppercase; line-height: 1.1;
+  margin-bottom: 4px;
+}
+.z1-card .qr-name { color: #1a5a8a; }
+.z2-card .qr-name { color: #7a5200; }
+.z3-card .qr-name { color: #1e6b42; }
+.z4-card .qr-name { color: #4b2d8c; }
+
+.qr-formula {
+  font-size: 9.5px; font-weight: 600;
+  opacity: 0.6; margin-bottom: 5px;
+}
+.qr-body {
+  font-size: 11px; color: #374151; line-height: 1.45;
+}
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e8e8e4;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="module-tag">Module C · Infographic C4</div>
+      <h1>Chord Tones vs<br>Non-Chord Tones</h1>
+      <div class="header-sub">Same key, same seven notes — but the chord playing underneath splits them into two groups with completely different emotional roles.</div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <!-- MAIN VISUAL -->
+  <div class="main-visual">
+
+    <!-- LEFT: IN THE CHORD -->
+    <div class="side-panel">
+      <div class="side-title side-title-ct">In the Chord</div>
+      <div class="chord-triangle">
+        <div class="ct-row1">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;">
+            <div class="np-big" style="background:#6bb8e8">DO</div>
+            <div class="ct-label" style="color:#1a5a8a">Root</div>
+          </div>
+        </div>
+        <div class="ct-row2" style="margin-top:14px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;">
+            <div class="np-big" style="background:#7dc48a">MI</div>
+            <div class="ct-label" style="color:#1e6b42">3rd</div>
+          </div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px;">
+            <div class="np-big" style="background:#3F6FB6">SO</div>
+            <div class="ct-label" style="color:#1e3a8a">5th</div>
+          </div>
+        </div>
+      </div>
+      <div class="in-chord-badge">✓ In the Chord<br><span style="font-size:9.5px; font-weight:600; letter-spacing:0.06em;">Harmony supports these notes</span></div>
+    </div>
+
+    <!-- CENTER DIVIDER -->
+    <div class="center-div">
+      <div class="div-line"></div>
+      <div class="div-text">
+        <div class="div-main">Same Key<br>Different<br>Relation-<br>ship</div>
+        <div class="div-sub">C major chord<br>over C key</div>
+      </div>
+      <div class="div-line"></div>
+    </div>
+
+    <!-- RIGHT: OUTSIDE THE CHORD -->
+    <div class="side-panel">
+      <div class="side-title side-title-nct">Outside the Chord</div>
+      <div class="nct-cluster" style="margin-top:8px;">
+        <div class="nct-note-item">
+          <div class="np-medium" style="background:#d97b6a">RE</div>
+          <div class="nct-note-label">2nd</div>
+        </div>
+        <div class="nct-note-item">
+          <div class="np-medium" style="background:#c9a630">FA</div>
+          <div class="nct-note-label">4th</div>
+        </div>
+        <div class="nct-note-item">
+          <div class="np-medium" style="background:#F29B38">LA</div>
+          <div class="nct-note-label">6th</div>
+        </div>
+        <div class="nct-note-item">
+          <div class="np-medium" style="background:#8A6BC8">TI</div>
+          <div class="nct-note-label">7th</div>
+        </div>
+      </div>
+      <div style="height: 14px;"></div>
+      <div class="out-chord-badge">✗ Outside the Chord<br><span style="font-size:9.5px; font-weight:600; letter-spacing:0.06em;">Harmony doesn't catch these</span></div>
+    </div>
+
+  </div>
+
+  <!-- KEY INSIGHT -->
+  <div class="key-insight">
+    <div class="ki-icon">🎯</div>
+    <div class="ki-text">
+      <div class="ki-label">The Key Insight</div>
+      <div class="ki-body">The chord under the melody determines which notes feel <em>grounded</em> and which create <em>tension</em>. Change the chord, and the same melody note shifts from resolved to searching — or from tense to anchored.</div>
+    </div>
+  </div>
+
+  <!-- FOUR ZONES QUICK REF -->
+  <div class="quick-ref">
+    <div class="qr-card z1-card">
+      <div class="qr-zone">Zone 1</div>
+      <div class="qr-name">Sweet<br>Grounded</div>
+      <div class="qr-formula">Stable + In chord</div>
+      <div class="qr-body">Maximum harmonic comfort. The note is home and the chord agrees.</div>
+    </div>
+    <div class="qr-card z2-card">
+      <div class="qr-zone">Zone 2</div>
+      <div class="qr-name">Tense<br>Supported</div>
+      <div class="qr-formula">Unstable + In chord</div>
+      <div class="qr-body">Chord catches the note but it still wants to move. Forward energy.</div>
+    </div>
+    <div class="qr-card z3-card">
+      <div class="qr-zone">Zone 3</div>
+      <div class="qr-name">Floating<br>Modern</div>
+      <div class="qr-formula">Stable + Outside chord</div>
+      <div class="qr-body">Calm in the key but the chord doesn't catch it. Airy and modern.</div>
+    </div>
+    <div class="qr-card z4-card">
+      <div class="qr-zone">Zone 4</div>
+      <div class="qr-name">Bitter<br>Edgy</div>
+      <div class="qr-formula">Unstable + Outside chord</div>
+      <div class="qr-body">Wants to move AND the chord doesn't help. Maximum tension.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Zone placement is always relative to both the key AND the current chord — never the note alone</div>
+    <div class="footer-logo">AMF · Module C</div>
+  </div>
+
+</div>
+</body>
+</html>

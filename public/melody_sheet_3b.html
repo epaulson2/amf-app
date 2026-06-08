@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Non-Chord Tone Survival Guide — Sheet 3B</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #e8e8e8;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.page {
+  width: 850px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.14);
+}
+
+/* HEADER */
+.header {
+  background: #0f1e3c;
+  padding: 24px 40px 20px;
+}
+.module-tag {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.18em; color: #7a9bd4;
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.header h1 {
+  font-size: 28px; font-weight: 900;
+  color: #fff; line-height: 1.1;
+  text-transform: uppercase;
+}
+.header-sub {
+  font-size: 12.5px; color: #8faacc;
+  margin-top: 6px; line-height: 1.4;
+}
+.rainbow-rule {
+  height: 4px;
+  background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%);
+}
+
+/* BODY */
+.body { padding: 24px 40px 28px; }
+
+/* 2x2 NCT TYPE GRID */
+.nct-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.nct-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1.5px solid #e8e8e4;
+}
+
+.nct-header {
+  padding: 12px 16px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nct-num {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 12px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nct-title {
+  font-size: 16px; font-weight: 900;
+  color: #fff; text-transform: uppercase;
+  line-height: 1.05; letter-spacing: 0.02em;
+}
+.nct-subtitle {
+  font-size: 10px; font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  margin-top: 2px;
+}
+
+/* Type colors */
+.nct-passing .nct-header  { background: #2d5fa8; }
+.nct-neighbor .nct-header { background: #1e6b42; }
+.nct-anticip .nct-header  { background: #7a5200; }
+.nct-suspend .nct-header  { background: #5b21b6; }
+
+.nct-body {
+  padding: 14px 16px;
+  background: #fafaf9;
+}
+
+/* Motion visualization */
+.motion-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.mb-note {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 28px; min-width: 36px; padding: 0 8px;
+  border-radius: 14px; font-size: 11px; font-weight: 900;
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+.mb-note.nct-note {
+  border: 2.5px dashed rgba(255,255,255,0.6);
+}
+.mb-arrow {
+  font-size: 13px; color: #9ca3af; font-weight: 900;
+}
+.mb-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: #9ca3af;
+  margin-left: 4px;
+}
+
+.nct-def {
+  font-size: 12px; font-weight: 500;
+  color: #374151; line-height: 1.6;
+  margin-bottom: 10px;
+}
+.nct-def strong { color: #0d1424; font-weight: 700; }
+
+.nct-example {
+  background: #f0f0ed;
+  border-radius: 7px;
+  padding: 9px 12px;
+  margin-bottom: 8px;
+}
+.nct-ex-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+.nct-ex-body {
+  font-size: 11.5px; color: #374151;
+  line-height: 1.55;
+}
+.nct-ex-body em { color: #6b7280; }
+
+.nct-use {
+  font-size: 11px; font-weight: 600;
+  color: #6b7280;
+  font-style: italic;
+  line-height: 1.5;
+}
+.nct-use strong { color: #374151; font-style: normal; }
+
+/* inline pill */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 20px; min-width: 26px; padding: 0 7px;
+  border-radius: 10px; font-size: 9.5px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0 2px;
+}
+
+/* RESOLUTION RULES */
+.resolution-section {
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 18px 22px;
+}
+.res-title {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: #7a9bd4; margin-bottom: 14px;
+}
+.res-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.res-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.res-type {
+  font-size: 11px; font-weight: 800;
+  color: #E8C45A; text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+.res-rule {
+  font-size: 11.5px; color: rgba(255,255,255,0.8);
+  line-height: 1.6;
+}
+.res-rule strong { color: #fff; }
+
+/* FOOTER */
+.footer {
+  padding: 12px 40px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e8e8e4;
+  margin-top: 20px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="module-tag">Module C · Sheet 3B</div>
+    <h1>Non-Chord Tone Survival Guide</h1>
+    <div class="header-sub">Four types of non-chord tones — how each moves, how each sounds, and when to use each one</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- 4 TYPE CARDS -->
+    <div class="nct-grid">
+
+      <!-- PASSING TONE -->
+      <div class="nct-card nct-passing">
+        <div class="nct-header">
+          <div class="nct-num">1</div>
+          <div>
+            <div class="nct-title">Passing Tone</div>
+            <div class="nct-subtitle">Moves by step between chord tones</div>
+          </div>
+        </div>
+        <div class="nct-body">
+          <div class="motion-bar">
+            <span class="mb-note" style="background:#6bb8e8">DO</span>
+            <span class="mb-arrow">→</span>
+            <span class="mb-note nct-note" style="background:#d97b6a;">RE</span>
+            <span class="mb-arrow">→</span>
+            <span class="mb-note" style="background:#7dc48a">MI</span>
+            <span class="mb-label">← NCT</span>
+          </div>
+          <div class="nct-def">
+            A non-chord tone that <strong>steps between two chord tones</strong> in a single direction. Brief, smooth, and melodic. The ear barely notices it as tension — it feels like motion, not conflict.
+          </div>
+          <div class="nct-example">
+            <div class="nct-ex-label">Example</div>
+            <div class="nct-ex-body">
+              <span class="np" style="background:#6bb8e8">DO</span> –
+              <span class="np" style="background:#d97b6a">RE</span> –
+              <span class="np" style="background:#7dc48a">MI</span>
+              over a C chord: RE is a passing tone. <em>Very common in singable pop melodies.</em>
+            </div>
+          </div>
+          <div class="nct-use"><strong>Use it when:</strong> you need stepwise motion that feels smooth and natural. Short duration only — passing tones on long beats become suspensions.</div>
+        </div>
+      </div>
+
+      <!-- NEIGHBOR TONE -->
+      <div class="nct-card nct-neighbor">
+        <div class="nct-header">
+          <div class="nct-num">2</div>
+          <div>
+            <div class="nct-title">Neighbor Tone</div>
+            <div class="nct-subtitle">Steps away from chord tone and returns</div>
+          </div>
+        </div>
+        <div class="nct-body">
+          <div class="motion-bar">
+            <span class="mb-note" style="background:#7dc48a">MI</span>
+            <span class="mb-arrow">→</span>
+            <span class="mb-note nct-note" style="background:#c9a630">FA</span>
+            <span class="mb-arrow">→</span>
+            <span class="mb-note" style="background:#7dc48a">MI</span>
+            <span class="mb-label">← NCT</span>
+          </div>
+          <div class="nct-def">
+            A non-chord tone that <strong>steps one degree away from a chord tone</strong> and immediately returns. Creates a shimmer or ornament effect — like a note briefly questioning its home before returning.
+          </div>
+          <div class="nct-example">
+            <div class="nct-ex-label">Example</div>
+            <div class="nct-ex-body">
+              <span class="np" style="background:#7dc48a">MI</span> –
+              <span class="np" style="background:#c9a630">FA</span> –
+              <span class="np" style="background:#7dc48a">MI</span>
+              over C chord: FA is an upper neighbor tone. <em>Creates a subtle moment of ache that resolves immediately.</em>
+            </div>
+          </div>
+          <div class="nct-use"><strong>Use it when:</strong> you want melodic ornamentation without harmonic disruption. Works well on beats 2 and 4 for rhythmic interest.</div>
+        </div>
+      </div>
+
+      <!-- ANTICIPATION -->
+      <div class="nct-card nct-anticip">
+        <div class="nct-header">
+          <div class="nct-num">3</div>
+          <div>
+            <div class="nct-title">Anticipation</div>
+            <div class="nct-subtitle">Arrives before the chord that owns it</div>
+          </div>
+        </div>
+        <div class="nct-body">
+          <div class="motion-bar">
+            <span style="font-size:9px; color:#9ca3af; font-weight:700; white-space:nowrap;">Chord: C</span>
+            <span class="mb-arrow" style="color:#e5e7eb">→</span>
+            <span class="mb-note nct-note" style="background:#3F6FB6">SO</span>
+            <span class="mb-arrow">|</span>
+            <span style="font-size:9px; color:#9ca3af; font-weight:700; white-space:nowrap;">Chord: G</span>
+            <span class="mb-label">← anticipates G</span>
+          </div>
+          <div class="nct-def">
+            A note that <strong>arrives early</strong> — before the chord change that would make it a chord tone. Over the current chord it's a non-chord tone, but it sets up the next harmony perfectly, creating rhythmic momentum.
+          </div>
+          <div class="nct-example">
+            <div class="nct-ex-label">Example</div>
+            <div class="nct-ex-body">
+              Melody hits <span class="np" style="background:#3F6FB6">SO</span> on the last 8th note of a C chord measure, while G major doesn't arrive until beat 1 of the next bar. SO anticipates the G chord. <em>Creates forward pull.</em>
+            </div>
+          </div>
+          <div class="nct-use"><strong>Use it when:</strong> you want rhythmic energy at chord changes. Very common in R&amp;B and funk — the melody "pushes" the chord. Keep it short (one 8th or quarter note max).</div>
+        </div>
+      </div>
+
+      <!-- SUSPENSION -->
+      <div class="nct-card nct-suspend">
+        <div class="nct-header">
+          <div class="nct-num">4</div>
+          <div>
+            <div class="nct-title">Suspension</div>
+            <div class="nct-subtitle">Held over from previous chord, resolves down</div>
+          </div>
+        </div>
+        <div class="nct-body">
+          <div class="motion-bar">
+            <span style="font-size:9px; color:#9ca3af; font-weight:700; white-space:nowrap;">Prev. chord</span>
+            <span class="mb-arrow">|</span>
+            <span class="mb-note nct-note" style="background:#d97b6a">RE</span>
+            <span class="mb-arrow">→</span>
+            <span class="mb-note" style="background:#6bb8e8">DO</span>
+            <span class="mb-label">held → resolves ↓</span>
+          </div>
+          <div class="nct-def">
+            A note <strong>held over from the previous chord</strong> into the new chord where it becomes a non-chord tone. Creates a "lean and fall" — the suspended note hangs in mid-air, then resolves downward by step. The most emotionally powerful NCT type.
+          </div>
+          <div class="nct-example">
+            <div class="nct-ex-label">Example</div>
+            <div class="nct-ex-body">
+              <span class="np" style="background:#d97b6a">RE</span> held through a chord change to C major. RE is not in C, so it hangs as a 9th. Then it falls to <span class="np" style="background:#6bb8e8">DO</span>. <em>The classic "ache and release" of gospel and soul.</em>
+            </div>
+          </div>
+          <div class="nct-use"><strong>Use it when:</strong> you need emotional weight at a chord change. The longer the suspension, the stronger the resolution payoff. <strong>Always resolve downward by step</strong> — unresolved suspensions feel like errors, not intentions.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RESOLUTION RULES -->
+    <div class="resolution-section">
+      <div class="res-title">Resolution Rules — How Each Type Must Resolve</div>
+      <div class="res-grid">
+        <div class="res-card">
+          <div class="res-type">Passing + Neighbor Tones</div>
+          <div class="res-rule">Short duration is the key. <strong>Keep them on weak beats or subdivision.</strong> They resolve by stepwise continuation (passing) or immediate return (neighbor). Duration creates the distinction between these and suspensions.</div>
+        </div>
+        <div class="res-card">
+          <div class="res-type">Anticipations</div>
+          <div class="res-rule">Resolution happens <strong>by chord arrival</strong>, not note movement. The next chord makes the anticipation "correct" retroactively. Keep anticipations to 1–2 subdivisions ahead of the beat — earlier feels like a wrong note, not a push.</div>
+        </div>
+        <div class="res-card">
+          <div class="res-type">Suspensions</div>
+          <div class="res-rule"><strong>Always resolve down by step.</strong> The downward resolution is the moment of release. Common patterns: 4–3 (FA→MI), 7–6 (TI→LA), 9–8 (RE→DO). Suspensions that don't resolve become dissonances that sound unintentional.</div>
+        </div>
+        <div class="res-card">
+          <div class="res-type">Duration Guide</div>
+          <div class="res-rule">
+            Passing/Neighbor = <strong>8th note or less</strong><br>
+            Anticipation = <strong>1–2 subdivisions</strong><br>
+            Suspension = <strong>quarter note or longer</strong><br>
+            Longer = more emotional weight on resolution
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-note">Pairs with Sheet 3A: <em>Chord Tone vs Non-Chord Tone</em> · Part of the Emotional Map of Melody series</div>
+    <div class="footer-logo">AMF · Module C</div>
+  </div>
+
+</div>
+</body>
+</html>

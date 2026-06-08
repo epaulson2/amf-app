@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Stability Ladder — Infographic B4</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #e8e8e8;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.page {
+  width: 850px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.14);
+}
+
+/* HEADER */
+.header {
+  background: #0f1e3c;
+  padding: 26px 40px 22px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.module-tag {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.18em; color: #7a9bd4;
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.header h1 {
+  font-size: 28px; font-weight: 900;
+  color: #fff; line-height: 1.1;
+  text-transform: uppercase; letter-spacing: 0.01em;
+}
+.header-sub {
+  font-size: 12.5px; color: #8faacc;
+  margin-top: 6px; font-weight: 400; line-height: 1.4;
+  max-width: 440px;
+}
+.header-badge {
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 10px 18px;
+  text-align: center;
+}
+.header-badge .num { font-size: 32px; font-weight: 900; color: #fff; line-height: 1; }
+.header-badge .lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #7a9bd4; text-transform: uppercase; margin-top: 3px; }
+
+.rainbow-rule {
+  height: 4px;
+  background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%);
+}
+
+/* READING DIRECTION */
+.direction-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: #f8f8f6;
+  border-bottom: 1px solid #e8e8e4;
+}
+.direction-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dir-arrow {
+  font-size: 20px;
+  font-weight: 900;
+}
+.dir-arrow-down { color: #3b82f6; }
+.dir-arrow-up   { color: #c9a630; }
+.dir-text {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.dir-text-blue { color: #1d4ed8; }
+.dir-text-amber { color: #92400e; }
+.dir-sub {
+  font-size: 10px; font-weight: 400;
+  color: #6b7280; font-style: italic;
+}
+
+/* MAIN LADDER */
+.ladder-section {
+  padding: 24px 40px 0;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.ladder-side-label {
+  width: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+}
+.side-label-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 9.5px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: #9ca3af;
+  white-space: nowrap;
+}
+.side-arrow {
+  font-size: 16px; color: #d1d5db;
+  margin-top: 8px;
+}
+
+.ladder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Each rung */
+.rung {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  position: relative;
+  min-height: 66px;
+}
+.rung:last-child { border-bottom: none; }
+
+.rung-rank {
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px; font-weight: 900;
+  color: rgba(255,255,255,0.7);
+  flex-shrink: 0;
+}
+
+.rung-note {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 10px 6px;
+}
+
+.note-circle {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 900;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.rung-content {
+  flex: 1;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.rung-keyword {
+  font-size: 14px; font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+}
+
+.rung-desc {
+  font-size: 11px; color: #4b5563;
+  line-height: 1.45;
+}
+
+.rung-stability {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  opacity: 0.55;
+  margin-top: 2px;
+}
+
+/* Rung colors */
+.rung-fa   { background: linear-gradient(90deg, #b8941e 0%, rgba(184,148,30,0.08) 40%, transparent 100%); }
+.rung-ti   { background: linear-gradient(90deg, #6d56b8 0%, rgba(109,86,184,0.08) 40%, transparent 100%); }
+.rung-re   { background: linear-gradient(90deg, #c46454 0%, rgba(196,100,84,0.08) 40%, transparent 100%); }
+.rung-la   { background: linear-gradient(90deg, #e08920 0%, rgba(224,137,32,0.08) 40%, transparent 100%); }
+.rung-mi   { background: linear-gradient(90deg, #5eb56a 0%, rgba(94,181,106,0.08) 40%, transparent 100%); }
+.rung-so   { background: linear-gradient(90deg, #2d5fa8 0%, rgba(45,95,168,0.08) 40%, transparent 100%); }
+.rung-do   { background: linear-gradient(90deg, #5aacdf 0%, rgba(90,172,223,0.08) 40%, transparent 100%); }
+
+.rung-fa .rung-keyword   { color: #92400e; }
+.rung-ti .rung-keyword   { color: #4b2d8c; }
+.rung-re .rung-keyword   { color: #9f3a2a; }
+.rung-la .rung-keyword   { color: #7a4f00; }
+.rung-mi .rung-keyword   { color: #1e6b42; }
+.rung-so .rung-keyword   { color: #1e3a8a; }
+.rung-do .rung-keyword   { color: #1a5a8a; }
+
+.rung-fa .rung-stability   { color: #92400e; }
+.rung-ti .rung-stability   { color: #4b2d8c; }
+.rung-re .rung-stability   { color: #9f3a2a; }
+.rung-la .rung-stability   { color: #7a4f00; }
+.rung-mi .rung-stability   { color: #1e6b42; }
+.rung-so .rung-stability   { color: #1e3a8a; }
+.rung-do .rung-stability   { color: #1a5a8a; }
+
+/* Tritone callout */
+.tritone-callout {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px 0 0;
+}
+
+.tritone-box {
+  background: #faf5ff;
+  border: 1.5px solid #c4b5fd;
+  border-radius: 10px;
+  padding: 12px 14px;
+  position: relative;
+}
+.tritone-title {
+  font-size: 9px; font-weight: 800;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: #5b21b6;
+  margin-bottom: 6px;
+}
+.tritone-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.tritone-arrow {
+  font-size: 22px; color: #8A6BC8;
+  font-weight: 900; line-height: 1;
+}
+.tritone-desc {
+  font-size: 10.5px; line-height: 1.55;
+  color: #4b5563;
+}
+.tritone-desc strong { color: #0d1424; }
+
+/* bracket lines connecting FA and TI */
+.bracket-line {
+  position: absolute;
+  right: -14px;
+  width: 14px;
+  border-right: 2px dashed #a855f7;
+}
+.bracket-top    { top: 50%; border-top: 2px dashed #a855f7; }
+.bracket-bottom { bottom: 50%; border-bottom: 2px dashed #a855f7; }
+
+/* BOTTOM ANCHORS */
+.anchors {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 40px 0;
+  gap: 12px;
+}
+.anchor-card {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-left: 3px solid;
+}
+.anchor-bottom {
+  background: #eff6ff;
+  border-color: #3b82f6;
+}
+.anchor-top {
+  background: #fdf9e8;
+  border-color: #c9a630;
+}
+.anchor-title {
+  font-size: 9px; font-weight: 800;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.anchor-bottom .anchor-title { color: #1d4ed8; }
+.anchor-top .anchor-title { color: #92400e; }
+.anchor-body {
+  font-size: 11.5px; line-height: 1.55;
+  color: #374151;
+}
+
+/* FOOTER */
+.footer {
+  padding: 14px 40px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.footer-note {
+  font-size: 10px; color: #aaa; font-style: italic;
+}
+.footer-logo {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: #ccc;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="module-tag">Module B · Infographic B4</div>
+      <h1>The Stability Ladder</h1>
+      <div class="header-sub">Seven notes. Seven levels of tension. The further up the ladder, the stronger the pull back to home.</div>
+    </div>
+    <div class="header-badge">
+      <div class="num">7</div>
+      <div class="lbl">Rungs</div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <!-- READING DIRECTION BAR -->
+  <div class="direction-bar">
+    <div class="direction-item">
+      <span class="dir-arrow dir-arrow-down">↓</span>
+      <div>
+        <div class="dir-text dir-text-blue">Descending = Resolution</div>
+        <div class="dir-sub">Moving down the ladder toward DO releases tension</div>
+      </div>
+    </div>
+    <div class="direction-item">
+      <div style="text-align:right">
+        <div class="dir-text dir-text-amber">Ascending = Tension ↑</div>
+        <div class="dir-sub">Moving up the ladder toward FA builds urgency</div>
+      </div>
+      <span class="dir-arrow dir-arrow-up">↑</span>
+    </div>
+  </div>
+
+  <!-- LADDER -->
+  <div class="ladder-section">
+
+    <!-- Side label: MOST TENSE at top -->
+    <div class="ladder-side-label">
+      <span class="side-label-text" style="color:#92400e">Most Tense</span>
+      <span class="side-arrow" style="color:#c9a630; transform:rotate(180deg); display:block; margin-bottom:auto; margin-top:4px">▲</span>
+    </div>
+
+    <div class="ladder">
+
+      <!-- FA - rank 7 (top = most tense) -->
+      <div class="rung rung-fa">
+        <div class="rung-rank" style="background:#c9a630; color:rgba(255,255,255,0.85)">7</div>
+        <div class="rung-note">
+          <div class="note-circle" style="background:#c9a630">FA</div>
+        </div>
+        <div class="rung-content">
+          <div class="rung-keyword">Tension Peak</div>
+          <div class="rung-desc">Maximum dissonance. Forms a tritone with TI — the most unstable interval in the key. The strongest ache in the scale.</div>
+          <div class="rung-stability">Subdominant · Rank 7 of 7</div>
+        </div>
+      </div>
+
+      <!-- TI - rank 6 -->
+      <div class="rung rung-ti" style="position:relative">
+        <div class="rung-rank" style="background:#8A6BC8; color:rgba(255,255,255,0.85)">6</div>
+        <div class="rung-note">
+          <div class="note-circle" style="background:#8A6BC8">TI</div>
+        </div>
+        <div class="rung-content">
+          <div class="rung-keyword">Leading Urgency</div>
+          <div class="rung-desc">Strong magnetic pull upward to DO. Tritone partner with FA. Together they are the most active tones in the key — the harmonic engine of dominant tension.</div>
+          <div class="rung-stability">Leading Tone · Rank 6 of 7</div>
+        </div>
+      </div>
+
+      <!-- RE - rank 5 -->
+      <div class="rung rung-re">
+        <div class="rung-rank" style="background:#d97b6a; color:rgba(255,255,255,0.85)">5</div>
+        <div class="rung-note">
+          <div class="note-circle" style="background:#d97b6a">RE</div>
+        </div>
+        <div class="rung-content">
+          <div class="rung-keyword">Open Yearning</div>
+          <div class="rung-desc">A question without an answer. Wants to fall back to DO or rise to MI. Forward-moving energy — perfect for verse phrases that keep listeners leaning in.</div>
+          <div class="rung-stability">Supertonic · Rank 5 of 7</div>
+        </div>
+      </div>
+
+      <!-- LA - rank 4 -->
+      <div class="rung rung-la">
+        <div class="rung-rank" style="background:#F29B38; color:rgba(255,255,255,0.85)">4</div>
+        <div class="rung-note">
+          <div class="note-circle" style="background:#F29B38">LA</div>
+        </div>
+        <div class="rung-content">
+          <div class="rung-keyword">Warm Border</div>
+          <div class="rung-desc">Moderate tension with emotional warmth. Can linger without full resolution. The soul and gospel note — holds feeling without forcing an answer.</div>
+          <div class="rung-stability">Submediant · Rank 4 of 7</div>
+        </div>
+      </div>
+
+      <!-- MI - rank 3 -->
+      <div class="rung rung-mi">
+        <div class="rung-rank" style="background:#7dc48a; color:rgba(255,255,255,0.85)">3</div>
+        <div class="rung-note">
+          <div class="note-circle" style="background:#7dc48a">MI</div>
+        </div>
+        <div class="rung-content">
+          <div class="rung-keyword">Sweet Stability</div>
+          <div class="rung-desc">Warm and settled. The 3rd partial of the overtone series — naturally consonant with DO. Emotionally bright and singable. Rest here feels earned and pleasant.</div>
+          <div class="rung-stability">Mediant · Rank 3 of 7</div>
+        </div>
+      </div>
+
+      <!-- SO - rank 2 -->
+      <div class="rung rung-so">
+        <div class="rung-rank" style="background:#3F6FB6; color:rgba(255,255,255,0.85)">2</div>
+        <div class="rung-note">
+          <div class="note-circle" style="background:#3F6FB6">SO</div>
+        </div>
+        <div class="rung-content">
+          <div class="rung-keyword">Strong Confidence</div>
+          <div class="rung-desc">The dominant — acoustically the closest partner to DO. Strong, forward-facing, and fully supported. Not home, but near it and confident. Power and resolve without full arrival.</div>
+          <div class="rung-stability">Dominant · Rank 2 of 7</div>
+        </div>
+      </div>
+
+      <!-- DO - rank 1 (bottom = most stable) -->
+      <div class="rung rung-do">
+        <div class="rung-rank" style="background:#5aacdf; color:rgba(255,255,255,0.85)">1</div>
+        <div class="rung-note">
+          <div class="note-circle" style="background:#5aacdf">DO</div>
+        </div>
+        <div class="rung-content">
+          <div class="rung-keyword">Home Base</div>
+          <div class="rung-desc">The tonic — maximum stability. The key center. Every other note in the key is defined by its relationship to DO. Landing here feels like arriving.</div>
+          <div class="rung-stability">Tonic · Rank 1 of 7 · Start here</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tritone callout (positioned between FA and TI rows) -->
+    <div class="tritone-callout" style="padding-top: 12px;">
+      <div class="tritone-box" style="margin-bottom: 12px;">
+        <div class="tritone-title">The Tritone Pair</div>
+        <div class="tritone-pills">
+          <div class="note-circle" style="background:#c9a630; width:32px; height:32px; font-size:12px;">FA</div>
+          <div class="tritone-arrow">↕</div>
+          <div class="note-circle" style="background:#8A6BC8; width:32px; height:32px; font-size:12px;">TI</div>
+        </div>
+        <div class="tritone-desc">
+          <strong>FA + TI = Tritone.</strong> The most dissonant interval in the key. FA pulls down to MI; TI pulls up to DO. Together they define the strongest harmonic tension available.
+        </div>
+      </div>
+    </div>
+
+    <!-- Side label: MOST STABLE at bottom -->
+    <div class="ladder-side-label">
+      <span class="side-arrow" style="color:#5aacdf; display:block; margin-bottom:4px; font-size:16px">▼</span>
+      <span class="side-label-text" style="color:#1d4ed8; margin-top:auto">Most Stable</span>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM ANCHORS -->
+  <div class="anchors">
+    <div class="anchor-card anchor-bottom">
+      <div class="anchor-title">Start Here — Home Base</div>
+      <div class="anchor-body">DO is the tonal center — the note every other scale degree is measured against. A melody that returns to DO feels resolved. Verse endings on RE or TI; chorus endings on DO or SO.</div>
+    </div>
+    <div class="anchor-card anchor-top">
+      <div class="anchor-title">Maximum Tension — Use With Intent</div>
+      <div class="anchor-body">FA at the top of the ladder isn't a mistake — it's a power tool. Blues, soul, and gospel use FA constantly for its ache. But FA needs resolution. It cannot be a resting point without creating listener fatigue.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-note">Stability order: DO(1) → SO(2) → MI(3) → LA(4) → RE(5) → TI(6) → FA(7) — based on acoustic consonance with the tonic</div>
+    <div class="footer-logo">AMF · Module B</div>
+  </div>
+
+</div>
+</body>
+</html>

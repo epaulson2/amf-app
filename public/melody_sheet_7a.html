@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section Tension Planner — Sheet 7A</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12.5px; color: #8faacc; margin-top: 6px; line-height: 1.4; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 22px 40px 28px; }
+
+/* PLANNING GRID */
+.plan-grid {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 22px;
+  font-size: 12px;
+}
+.plan-grid th {
+  background: #0f1e3c;
+  color: rgba(255,255,255,0.7);
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 9px 12px; text-align: left;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.plan-grid th:last-child { border-right: none; }
+.plan-grid td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #f0efe9;
+  border-right: 1px solid #f0efe9;
+  vertical-align: middle;
+}
+.plan-grid td:last-child { border-right: none; }
+.plan-grid tr:last-child td { border-bottom: none; }
+
+.section-name {
+  font-size: 13px; font-weight: 800;
+  color: #0f1e3c;
+}
+.section-hint {
+  font-size: 9.5px; color: #9ca3af;
+  font-style: italic; margin-top: 2px;
+}
+
+/* Zone selector dots */
+.zone-dots {
+  display: flex; gap: 6px; align-items: center;
+}
+.zd {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 2px solid;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 8px; font-weight: 900;
+  cursor: default;
+}
+.zd1 { border-color: #5aacdf; color: #5aacdf; background: rgba(90,172,223,0.1); }
+.zd2 { border-color: #c9a630; color: #c9a630; background: rgba(201,166,48,0.1); }
+.zd3 { border-color: #7dc48a; color: #7dc48a; background: rgba(125,196,138,0.1); }
+.zd4 { border-color: #8A6BC8; color: #8A6BC8; background: rgba(138,107,200,0.1); }
+
+/* Pillar note cell */
+.pillar-cell {
+  min-width: 90px;
+  height: 22px;
+  border: 1.5px dashed #d1d5db;
+  border-radius: 5px;
+  background: #fafaf8;
+}
+
+/* Distribution cell */
+.dist-placeholder {
+  height: 22px;
+  border: 1.5px dashed #d1d5db;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(90,172,223,0.1) 0%, rgba(201,166,48,0.1) 25%, rgba(125,196,138,0.1) 60%, rgba(138,107,200,0.1) 85%);
+}
+
+/* Notes cell */
+.notes-cell {
+  min-width: 130px;
+  height: 22px;
+  border: 1.5px dashed #d1d5db;
+  border-radius: 5px;
+  background: #fafaf8;
+}
+
+/* TENSION ARC SHAPES */
+.arcs-section { margin-top: 4px; }
+.arcs-title {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  background: #0f1e3c;
+  padding: 7px 14px; border-radius: 5px;
+  margin-bottom: 14px; display: inline-block;
+}
+.arcs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.arc-card {
+  background: #f8f8f6;
+  border-radius: 9px;
+  padding: 14px 16px;
+  border: 1px solid #e8e8e4;
+}
+.arc-title {
+  font-size: 12px; font-weight: 800;
+  color: #0f1e3c; text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* SVG arc diagrams */
+.arc-svg {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.arc-desc {
+  font-size: 11px; color: #374151; line-height: 1.5;
+}
+.arc-genre {
+  font-size: 10px; font-weight: 700; color: #9ca3af;
+  font-style: italic; margin-top: 4px;
+}
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Module G · Sheet 7A</div>
+    <h1>Section Tension Planner</h1>
+    <div class="header-sub">Map your melody's emotional arc before you write — set a target zone and pillar note for each song section</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <table class="plan-grid">
+      <thead>
+        <tr>
+          <th style="width:100px">Section</th>
+          <th style="width:90px">Target Zone</th>
+          <th style="width:110px">Pillar Note</th>
+          <th style="width:170px">Zone Distribution Goal</th>
+          <th>Notes / Intention</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="section-name">Intro</div><div class="section-hint">Set the scene</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+        <tr>
+          <td><div class="section-name">Verse 1</div><div class="section-hint">Story opens</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+        <tr>
+          <td><div class="section-name">Pre-Chorus</div><div class="section-hint">Tension rises</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+        <tr style="background:#eff6ff08;">
+          <td><div class="section-name" style="color:#1d4ed8;">Chorus</div><div class="section-hint">The payoff</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+        <tr>
+          <td><div class="section-name">Post-Chorus</div><div class="section-hint">Extend / land</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+        <tr>
+          <td><div class="section-name">Verse 2</div><div class="section-hint">Story deepens</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+        <tr style="background:#faf5ff08;">
+          <td><div class="section-name" style="color:#4b2d8c;">Bridge</div><div class="section-hint">Peak contrast</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+        <tr>
+          <td><div class="section-name">Final Chorus</div><div class="section-hint">Big arrival</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+        <tr>
+          <td><div class="section-name">Outro</div><div class="section-hint">Land + breathe</div></td>
+          <td><div class="zone-dots"><div class="zd zd1">1</div><div class="zd zd2">2</div><div class="zd zd3">3</div><div class="zd zd4">4</div></div></td>
+          <td><div class="pillar-cell"></div></td>
+          <td><div class="dist-placeholder"></div></td>
+          <td><div class="notes-cell"></div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- TENSION ARC SHAPES -->
+    <div class="arcs-section">
+      <div class="arcs-title">Tension Arc Shapes — Three Common Patterns</div>
+      <div class="arcs-grid">
+
+        <div class="arc-card">
+          <div class="arc-title">Classic Rise-Fall</div>
+          <svg class="arc-svg" width="100%" height="60" viewBox="0 0 200 60">
+            <polyline points="10,50 50,45 80,30 100,15 120,10 150,20 180,48" fill="none" stroke="#3F6FB6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="10" y="58" font-size="8" fill="#9ca3af">V1</text>
+            <text x="76" y="58" font-size="8" fill="#9ca3af">Pre</text>
+            <text x="108" y="58" font-size="8" fill="#9ca3af">Bri</text>
+            <text x="168" y="58" font-size="8" fill="#9ca3af">Outro</text>
+            <circle cx="120" cy="10" r="4" fill="#c9a630"/>
+          </svg>
+          <div class="arc-desc">Gentle rise through verse/pre-chorus, climax at bridge, return to resolution. The most universal pop structure.</div>
+          <div class="arc-genre">Genre: Pop, R&amp;B, Singer-songwriter</div>
+        </div>
+
+        <div class="arc-card">
+          <div class="arc-title">Slow Build</div>
+          <svg class="arc-svg" width="100%" height="60" viewBox="0 0 200 60">
+            <polyline points="10,52 40,50 70,46 100,38 130,25 155,12 185,10" fill="none" stroke="#8A6BC8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="10" y="58" font-size="8" fill="#9ca3af">Intro</text>
+            <text x="76" y="58" font-size="8" fill="#9ca3af">V1</text>
+            <text x="128" y="58" font-size="8" fill="#9ca3af">Cho</text>
+            <text x="175" y="58" font-size="8" fill="#9ca3af">Fin</text>
+            <circle cx="185" cy="10" r="4" fill="#8A6BC8"/>
+          </svg>
+          <div class="arc-desc">Tension increases progressively throughout the song — finale is the emotional peak. No release until the very end.</div>
+          <div class="arc-genre">Genre: Epic ballad, film scoring, progressive rock</div>
+        </div>
+
+        <div class="arc-card">
+          <div class="arc-title">Explosive Start</div>
+          <svg class="arc-svg" width="100%" height="60" viewBox="0 0 200 60">
+            <polyline points="10,10 30,12 55,25 80,35 110,40 140,38 165,28 185,12" fill="none" stroke="#d97b6a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="8" y="58" font-size="8" fill="#9ca3af">Ch1</text>
+            <text x="76" y="58" font-size="8" fill="#9ca3af">V1</text>
+            <text x="130" y="58" font-size="8" fill="#9ca3af">Bri</text>
+            <text x="176" y="58" font-size="8" fill="#9ca3af">Ch</text>
+            <circle cx="10" cy="10" r="4" fill="#d97b6a"/>
+          </svg>
+          <div class="arc-desc">Chorus first — maximum impact immediately, then verse provides contrast and depth. Attention-grabbing for streaming.</div>
+          <div class="arc-genre">Genre: Modern pop, dance, viral-optimized tracks</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Circle the target zone dot for each section, write your pillar note, then use as a guide while writing · Part of the Emotional Map of Melody series</div>
+    <div class="footer-logo">AMF · Module G</div>
+  </div>
+
+</div>
+</body>
+</html>

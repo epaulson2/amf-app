@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 4 Non-Chord Tone Types — Infographic I7</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 26px 40px 22px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 6px; line-height: 1.4; max-width: 440px; }
+.header-badge { flex-shrink: 0; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 10px 18px; text-align: center; }
+.header-badge .num { font-size: 32px; font-weight: 900; color: #fff; line-height: 1; }
+.header-badge .lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #7a9bd4; text-transform: uppercase; margin-top: 3px; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 22px 40px 28px; }
+
+/* 4 TYPE PANELS */
+.nct-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.nct-panel {
+  border-radius: 11px;
+  overflow: hidden;
+  border: 1.5px solid #e8e8e4;
+}
+
+.nct-header {
+  padding: 12px 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.np1 .nct-header { background: linear-gradient(135deg, #2d5fa8, #3d7acc); }
+.np2 .nct-header { background: linear-gradient(135deg, #1e6b42, #2d8a58); }
+.np3 .nct-header { background: linear-gradient(135deg, #7a5200, #a06a00); }
+.np4 .nct-header { background: linear-gradient(135deg, #5b21b6, #7c3aed); }
+
+.nct-num {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: rgba(255,255,255,0.2); color: #fff;
+  font-size: 14px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nct-title-wrap {}
+.nct-name {
+  font-size: 17px; font-weight: 900; color: #fff;
+  text-transform: uppercase; line-height: 1.05;
+}
+.nct-subtitle {
+  font-size: 10.5px; color: rgba(255,255,255,0.65);
+  margin-top: 2px; font-weight: 500;
+}
+
+.nct-body { padding: 14px 16px; background: #fafaf8; }
+
+/* Motion visualization using note pills */
+.motion-vis {
+  display: flex; align-items: center; gap: 6px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #f0f0ed;
+}
+.mv-note {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  font-size: 11px; font-weight: 900; color: #fff;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+.mv-nct { border: 2.5px dashed rgba(255,255,255,0.5) !important; }
+.mv-arrow { font-size: 14px; color: #9ca3af; font-weight: 900; }
+.mv-chord-label {
+  font-size: 8px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #9ca3af; background: #e8e8e4; padding: 2px 7px; border-radius: 4px;
+  white-space: nowrap;
+}
+.mv-change {
+  font-size: 12px; color: #bbb; margin: 0 2px;
+}
+.mv-note-label {
+  font-size: 8px; color: #aaa; font-weight: 600;
+  flex-shrink: 0;
+}
+
+.nct-def { font-size: 12px; color: #374151; line-height: 1.6; margin-bottom: 8px; }
+.nct-def strong { color: #0d1424; }
+
+.nct-desc-mini {
+  font-size: 11px; color: #6b7280; font-style: italic; line-height: 1.5;
+}
+.nct-desc-mini strong { color: #374151; font-style: normal; }
+
+/* SUMMARY BAR */
+.summary-bar {
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 16px 22px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.sb-item {
+  display: flex; flex-direction: column; gap: 4px;
+}
+.sb-name {
+  font-size: 11px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.sb1 .sb-name { color: #5aacdf; }
+.sb2 .sb-name { color: #7dc48a; }
+.sb3 .sb-name { color: #c9a630; }
+.sb4 .sb-name { color: #a855f7; }
+.sb-motion { font-size: 10px; color: rgba(255,255,255,0.55); }
+.sb-duration { font-size: 10px; font-weight: 700; }
+.sb1 .sb-duration { color: #5aacdf; }
+.sb2 .sb-duration { color: #7dc48a; }
+.sb3 .sb-duration { color: #c9a630; }
+.sb4 .sb-duration { color: #a855f7; }
+.sb-rule { font-size: 10px; color: rgba(255,255,255,0.45); line-height: 1.4; margin-top: 2px; }
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="module-tag">Standalone Infographic I7</div>
+      <h1>The 4 Non-Chord<br>Tone Types</h1>
+      <div class="header-sub">Four ways a melody note can sit outside the chord — each with a different motion, duration, and emotional character.</div>
+    </div>
+    <div class="header-badge">
+      <div class="num">4</div>
+      <div class="lbl">Types</div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <div class="nct-panels">
+
+      <!-- PASSING TONE -->
+      <div class="nct-panel np1">
+        <div class="nct-header">
+          <div class="nct-num">1</div>
+          <div class="nct-title-wrap">
+            <div class="nct-name">Passing Tone</div>
+            <div class="nct-subtitle">Steps between two chord tones — brief and smooth</div>
+          </div>
+        </div>
+        <div class="nct-body">
+          <div class="motion-vis">
+            <div class="mv-chord-label">C chord</div>
+            <div class="mv-note" style="background:#6bb8e8">DO</div>
+            <div class="mv-arrow">→</div>
+            <div class="mv-note mv-nct" style="background:#d97b6a">RE</div>
+            <div class="mv-arrow">→</div>
+            <div class="mv-note" style="background:#7dc48a">MI</div>
+            <div class="mv-note-label">← NCT</div>
+          </div>
+          <div class="nct-def">
+            A non-chord tone that <strong>steps between two chord tones in a single direction</strong>. The ear barely notices it as tension — it reads as motion, not conflict. Usually short (8th note or quarter note).
+          </div>
+          <div class="nct-desc-mini">
+            <strong>Sounds like:</strong> Smooth, flowing, singable. The most natural-sounding NCT — listeners don't notice it consciously but feel the melody move.<br>
+            <strong>Use when:</strong> You want stepwise motion that feels organic and effortless.
+          </div>
+        </div>
+      </div>
+
+      <!-- NEIGHBOR TONE -->
+      <div class="nct-panel np2">
+        <div class="nct-header">
+          <div class="nct-num">2</div>
+          <div class="nct-title-wrap">
+            <div class="nct-name">Neighbor Tone</div>
+            <div class="nct-subtitle">Steps away from chord tone and returns</div>
+          </div>
+        </div>
+        <div class="nct-body">
+          <div class="motion-vis">
+            <div class="mv-chord-label">C chord</div>
+            <div class="mv-note" style="background:#7dc48a">MI</div>
+            <div class="mv-arrow">→</div>
+            <div class="mv-note mv-nct" style="background:#c9a630">FA</div>
+            <div class="mv-arrow">→</div>
+            <div class="mv-note" style="background:#7dc48a">MI</div>
+            <div class="mv-note-label">← NCT</div>
+          </div>
+          <div class="nct-def">
+            Steps one degree away from a chord tone and <strong>immediately returns</strong> to where it started. Creates a shimmer or ornament effect — like the melody briefly questions its home then comes back.
+          </div>
+          <div class="nct-desc-mini">
+            <strong>Sounds like:</strong> Subtle shimmer, vocal ornamentation, vibrato-like motion. Warm and expressive without leaving home.<br>
+            <strong>Use when:</strong> You want melodic interest without harmonic disruption. Works on beats 2 and 4.
+          </div>
+        </div>
+      </div>
+
+      <!-- ANTICIPATION -->
+      <div class="nct-panel np3">
+        <div class="nct-header">
+          <div class="nct-num">3</div>
+          <div class="nct-title-wrap">
+            <div class="nct-name">Anticipation</div>
+            <div class="nct-subtitle">Arrives before the chord that owns it</div>
+          </div>
+        </div>
+        <div class="nct-body">
+          <div class="motion-vis">
+            <div class="mv-chord-label">C chord</div>
+            <div class="mv-note" style="background:#7dc48a">MI</div>
+            <div class="mv-arrow">→</div>
+            <div class="mv-note mv-nct" style="background:#3F6FB6">SO</div>
+            <div class="mv-change">|</div>
+            <div class="mv-chord-label">G chord</div>
+            <div class="mv-arrow" style="color:#3F6FB6">→</div>
+            <div class="mv-note" style="background:#3F6FB6">SO</div>
+            <div class="mv-note-label">early → lands</div>
+          </div>
+          <div class="nct-def">
+            A melody note that <strong>arrives before the chord change that would make it a chord tone</strong>. Over the current chord it's an NCT, but it's "correct" in the upcoming chord. Creates forward rhythmic energy.
+          </div>
+          <div class="nct-desc-mini">
+            <strong>Sounds like:</strong> Rhythmic push, forward drive, syncopation. Very common in R&amp;B and funk — the melody "pushes" the chord change.<br>
+            <strong>Use when:</strong> You want momentum and groove at chord changes. Keep the anticipation short (one 8th note).
+          </div>
+        </div>
+      </div>
+
+      <!-- SUSPENSION -->
+      <div class="nct-panel np4">
+        <div class="nct-header">
+          <div class="nct-num">4</div>
+          <div class="nct-title-wrap">
+            <div class="nct-name">Suspension</div>
+            <div class="nct-subtitle">Held over from previous chord, resolves down</div>
+          </div>
+        </div>
+        <div class="nct-body">
+          <div class="motion-vis">
+            <div class="mv-chord-label">Prev chord</div>
+            <div class="mv-note" style="background:#d97b6a">RE</div>
+            <div class="mv-change">|</div>
+            <div class="mv-chord-label">C chord</div>
+            <div class="mv-note mv-nct" style="background:#d97b6a; border-color:rgba(255,255,255,0.6)!important">RE</div>
+            <div class="mv-arrow">↓</div>
+            <div class="mv-note" style="background:#6bb8e8">DO</div>
+            <div class="mv-note-label">held → falls</div>
+          </div>
+          <div class="nct-def">
+            A note held over from the <strong>previous chord</strong> into a new chord where it becomes an NCT. Creates a "lean and fall" — the suspended note hangs in mid-air, then resolves <em>downward by step</em>. The most emotionally powerful NCT.
+          </div>
+          <div class="nct-desc-mini">
+            <strong>Sounds like:</strong> Ache, weight, emotional release. The longer the suspension, the stronger the resolution payoff. The signature sound of gospel and soul.<br>
+            <strong>Use when:</strong> You need emotional weight at chord changes. <strong>Always resolve down by step</strong> — never leave it unresolved.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SUMMARY BAR -->
+    <div class="summary-bar">
+      <div class="sb-item sb1">
+        <div class="sb-name">Passing</div>
+        <div class="sb-motion">Steps through in one direction</div>
+        <div class="sb-duration">Duration: very short</div>
+        <div class="sb-rule">Resolves by continuing the step motion</div>
+      </div>
+      <div class="sb-item sb2">
+        <div class="sb-name">Neighbor</div>
+        <div class="sb-motion">Steps away and returns</div>
+        <div class="sb-duration">Duration: short</div>
+        <div class="sb-rule">Resolves by returning to starting chord tone</div>
+      </div>
+      <div class="sb-item sb3">
+        <div class="sb-name">Anticipation</div>
+        <div class="sb-motion">Jumps ahead of chord change</div>
+        <div class="sb-duration">Duration: 1–2 subdivisions</div>
+        <div class="sb-rule">Resolves when the chord arrives to claim it</div>
+      </div>
+      <div class="sb-item sb4">
+        <div class="sb-name">Suspension</div>
+        <div class="sb-motion">Held over from previous chord</div>
+        <div class="sb-duration">Duration: quarter note or longer</div>
+        <div class="sb-rule">Always resolves downward by step</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Non-chord tones are tools, not mistakes — each type creates a specific emotional effect when used deliberately</div>
+    <div class="footer-logo">AMF · Standalone I7</div>
+  </div>
+
+</div>
+</body>
+</html>

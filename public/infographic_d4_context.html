@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Same Note, Different Chord — Infographic D4</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #e8e8e8;
+  font-family: 'Inter', sans-serif;
+  display: flex; justify-content: center; padding: 32px 0;
+}
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 6px; line-height: 1.4; max-width: 440px; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+/* CENTER RE */
+.center-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 40px 16px;
+  gap: 20px;
+}
+.center-note {
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  background: #d97b6a;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  box-shadow: 0 8px 28px rgba(217,123,106,0.45);
+  flex-shrink: 0;
+}
+.cn-note { font-size: 28px; font-weight: 900; color: #fff; line-height: 1; }
+.cn-sub { font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.75); margin-top: 3px; letter-spacing: 0.1em; text-transform: uppercase; }
+.center-desc {
+  font-size: 13px; font-weight: 700; color: #374151;
+  line-height: 1.5; max-width: 300px;
+}
+.center-desc em { color: #d97b6a; font-style: normal; }
+
+/* FOUR CONTEXT PANELS */
+.context-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 0 40px 24px;
+}
+
+.ctx-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid;
+}
+
+/* Zone color borders */
+.ctx-z4 { border-color: #c4b5fd; }
+.ctx-z2 { border-color: #fde68a; }
+
+.ctx-header {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ctx-z4 .ctx-header { background: #ede9fe; }
+.ctx-z2 .ctx-header { background: #fef3d0; }
+
+.ctx-chord-name {
+  font-size: 20px; font-weight: 900;
+  color: #0f1e3c;
+}
+.ctx-zone-badge {
+  font-size: 10px; font-weight: 800;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 20px;
+}
+.ctx-z4 .ctx-zone-badge { background: #ede9fe; color: #4b2d8c; border: 1.5px solid #c4b5fd; }
+.ctx-z2 .ctx-zone-badge { background: #fef3d0; color: #7a5200; border: 1.5px solid #fde68a; }
+
+.ctx-body {
+  padding: 14px 16px;
+  background: #fafaf9;
+}
+
+.ctx-tones {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.ctx-tone-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: #9ca3af; margin-right: 4px;
+}
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 26px; min-width: 34px; padding: 0 9px;
+  border-radius: 13px; font-size: 11px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0,0,0,.2); margin: 0 2px;
+}
+.np-re-highlight {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 30px; min-width: 38px; padding: 0 10px;
+  border-radius: 15px; font-size: 12px; font-weight: 900;
+  color: #fff; background: #d97b6a; vertical-align: middle;
+  box-shadow: 0 2px 8px rgba(217,123,106,.4);
+  border: 2.5px solid rgba(255,255,255,0.5);
+}
+
+.ctx-re-role {
+  font-size: 13px; font-weight: 800;
+  margin-bottom: 4px;
+}
+.ctx-z4 .ctx-re-role { color: #4b2d8c; }
+.ctx-z2 .ctx-re-role { color: #7a5200; }
+
+.ctx-feel {
+  font-size: 11.5px; color: #374151; line-height: 1.5;
+  font-style: italic;
+}
+
+/* KEY INSIGHT BAR */
+.insight-bar {
+  margin: 0 40px 20px;
+  background: #0f1e3c;
+  border-radius: 10px;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ib-note {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: #d97b6a;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(217,123,106,0.4);
+}
+.ib-note-name { font-size: 20px; font-weight: 900; color: #fff; }
+.ib-text { flex: 1; }
+.ib-label { font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7a9bd4; margin-bottom: 5px; }
+.ib-body { font-size: 13px; font-weight: 700; color: #fff; line-height: 1.5; }
+.ib-body em { color: #E8C45A; font-style: normal; }
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="module-tag">Module D · Infographic D4</div>
+      <h1>Same Note,<br>Different Chord</h1>
+      <div class="header-sub">RE (D) is the same pitch in every example below. Watch how the chord underneath it completely transforms its emotional role and zone placement.</div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <!-- CENTER NOTE -->
+  <div class="center-section">
+    <div class="center-note">
+      <div class="cn-note">RE</div>
+      <div class="cn-sub">Same pitch</div>
+    </div>
+    <div class="center-desc">
+      <em>RE</em> is always the same note. But its emotional character is entirely defined by the chord underneath it. Four chords, four completely different feelings.
+    </div>
+  </div>
+
+  <!-- 4 CONTEXT PANELS -->
+  <div class="context-grid">
+
+    <!-- C major — Zone 4 -->
+    <div class="ctx-card ctx-z4">
+      <div class="ctx-header">
+        <div class="ctx-chord-name">C major</div>
+        <div class="ctx-zone-badge">Zone 4 Bitter</div>
+      </div>
+      <div class="ctx-body">
+        <div class="ctx-tones">
+          <span class="ctx-tone-label">Chord:</span>
+          <span class="np" style="background:#6bb8e8">DO</span>
+          <span class="np" style="background:#7dc48a">MI</span>
+          <span class="np" style="background:#3F6FB6">SO</span>
+          <span style="margin-left:8px; font-size:10px; color:#9ca3af;">→</span>
+          <span class="np-re-highlight">RE</span>
+          <span style="font-size:10px; color:#9ca3af; font-style:italic; margin-left:4px;">not in chord</span>
+        </div>
+        <div class="ctx-re-role">Non-chord tone — Outsider</div>
+        <div class="ctx-feel">RE sits above C major with no harmonic support. Unstable scale degree + non-chord tone = maximum friction. Searching, unresolved, restless.</div>
+      </div>
+    </div>
+
+    <!-- G7 — Zone 2 -->
+    <div class="ctx-card ctx-z2">
+      <div class="ctx-header">
+        <div class="ctx-chord-name">G7</div>
+        <div class="ctx-zone-badge">Zone 2 Tense</div>
+      </div>
+      <div class="ctx-body">
+        <div class="ctx-tones">
+          <span class="ctx-tone-label">Chord:</span>
+          <span class="np" style="background:#3F6FB6">SO</span>
+          <span class="np" style="background:#8A6BC8">TI</span>
+          <span class="np-re-highlight">RE</span>
+          <span class="np" style="background:#c9a630">FA</span>
+          <span style="font-size:10px; color:#7a5200; font-style:italic; margin-left:4px;">RE is 5th</span>
+        </div>
+        <div class="ctx-re-role">Chord tone (5th) — Supported</div>
+        <div class="ctx-feel">RE belongs to G7 as the 5th. Harmonically supported, but RE is still an unstable scale degree. Leaning forward with momentum — grounded tension.</div>
+      </div>
+    </div>
+
+    <!-- Dm — Zone 2 (root!) -->
+    <div class="ctx-card ctx-z2">
+      <div class="ctx-header">
+        <div class="ctx-chord-name">Dm</div>
+        <div class="ctx-zone-badge">Zone 2 Tense</div>
+      </div>
+      <div class="ctx-body">
+        <div class="ctx-tones">
+          <span class="ctx-tone-label">Chord:</span>
+          <span class="np-re-highlight">RE</span>
+          <span class="np" style="background:#c9a630">FA</span>
+          <span class="np" style="background:#F29B38">LA</span>
+          <span style="font-size:10px; color:#7a5200; font-style:italic; margin-left:4px;">RE is root!</span>
+        </div>
+        <div class="ctx-re-role">Chord tone (root) — Anchored</div>
+        <div class="ctx-feel">RE is the root of Dm — the most important note in this chord. Maximum harmonic support. But RE is still an unstable key degree, so it still feels like it wants to move.</div>
+      </div>
+    </div>
+
+    <!-- Am — Zone 4 -->
+    <div class="ctx-card ctx-z4">
+      <div class="ctx-header">
+        <div class="ctx-chord-name">Am</div>
+        <div class="ctx-zone-badge">Zone 4 Bitter</div>
+      </div>
+      <div class="ctx-body">
+        <div class="ctx-tones">
+          <span class="ctx-tone-label">Chord:</span>
+          <span class="np" style="background:#F29B38">LA</span>
+          <span class="np" style="background:#6bb8e8">DO</span>
+          <span class="np" style="background:#7dc48a">MI</span>
+          <span style="margin-left:8px; font-size:10px; color:#9ca3af;">→</span>
+          <span class="np-re-highlight">RE</span>
+          <span style="font-size:10px; color:#9ca3af; font-style:italic; margin-left:4px;">not in chord</span>
+        </div>
+        <div class="ctx-re-role">Non-chord tone — Dark color</div>
+        <div class="ctx-feel">RE adds a minor 9th above Am — a dark, edgy color. Not in the chord, unstable in the key. Creates bitter, modern tension above the minor tonality.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- KEY INSIGHT -->
+  <div class="insight-bar">
+    <div class="ib-note">
+      <div class="ib-note-name">RE</div>
+    </div>
+    <div class="ib-text">
+      <div class="ib-label">The Essential Principle — Module D</div>
+      <div class="ib-body">Every important melody note requires <em>two questions</em>: What is its scale degree? <em>And what chord is under it?</em> Only when you answer both do you know its emotional zone — and know whether it serves your intention.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">RE stays the same pitch in all four examples — only the harmonic context changes its zone</div>
+    <div class="footer-logo">AMF · Module D</div>
+  </div>
+
+</div>
+</body>
+</html>

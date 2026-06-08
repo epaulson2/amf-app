@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melody Revision Checklist — Sheet 8A</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12.5px; color: #8faacc; margin-top: 6px; line-height: 1.4; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.body { padding: 22px 40px 28px; }
+
+/* STEPS */
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 13px 16px;
+  border-radius: 9px;
+  border: 1.5px solid #e8e8e4;
+  background: #fafaf8;
+}
+
+.step-check {
+  width: 28px; height: 28px;
+  border: 2px solid #d1d5db;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 1px;
+  display: flex; align-items: center; justify-content: center;
+}
+.step-check-inner {
+  font-size: 11px; font-weight: 900; color: #0f1e3c; opacity: 0;
+}
+
+.step-num {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #0f1e3c;
+  color: #fff;
+  font-size: 12px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-content { flex: 1; }
+.step-title {
+  font-size: 13px; font-weight: 800;
+  color: #0f1e3c; text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  display: flex; align-items: center; gap: 10px;
+}
+.step-desc {
+  font-size: 12px; color: #374151; line-height: 1.6;
+}
+.step-desc strong { color: #0d1424; font-weight: 700; }
+.step-desc em { color: #6b7280; }
+
+/* inline note pill */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 20px; min-width: 26px; padding: 0 7px;
+  border-radius: 10px; font-size: 9.5px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0 2px;
+}
+
+/* Step-specific accent colors */
+.s1 { border-color: #bfdbfe; }
+.s2 { border-color: #fde68a; }
+.s3 { border-color: #d9f5e4; }
+.s4 { border-color: #c9a630; border-color: #fde68a; }
+.s5 { border-color: #ede9fe; }
+.s6 { border-color: #d6eafc; }
+.s7 { border-color: #fef3d0; }
+.s8 { border-color: #f0fdf4; }
+
+/* RED FLAGS */
+.redflags {
+  background: #fff1f0;
+  border-radius: 10px;
+  padding: 18px 20px;
+  border: 1.5px solid #fecaca;
+}
+.rf-title {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: #dc2626; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.rf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.rf-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  border-radius: 7px;
+  border-left: 3px solid #f87171;
+}
+.rf-icon {
+  font-size: 14px; flex-shrink: 0;
+}
+.rf-text {
+  font-size: 11.5px; color: #374151; line-height: 1.55;
+}
+.rf-text strong { color: #dc2626; font-weight: 700; }
+
+.footer {
+  padding: 12px 40px 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="module-tag">Module H · Sheet 8A</div>
+    <h1>The 8-Step Melody Audit</h1>
+    <div class="header-sub">A complete revision workflow — apply this to any melody phrase to find and fix unintentional zone placements</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <div class="steps-list">
+
+      <div class="step-item s1">
+        <div class="step-check"><div class="step-check-inner">✓</div></div>
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Identify Every Note</div>
+          <div class="step-desc">Write out the DO-TI solmization for the entire phrase. Sing or play it slowly and name each note. <strong>Don't guess — be precise.</strong> If you're not sure which note is which, figure it out before continuing. The whole audit depends on accurate labeling.</div>
+        </div>
+      </div>
+
+      <div class="step-item s2">
+        <div class="step-check"><div class="step-check-inner">✓</div></div>
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Mark Each Chord</div>
+          <div class="step-desc">Write the chord playing under each melody note. For phrases with multiple chords, note exactly where each chord change occurs. <strong>Focus on the important notes</strong> (chord-change notes, held notes, start/end notes) — you don't need to analyze every 16th note passing tone.</div>
+        </div>
+      </div>
+
+      <div class="step-item s3">
+        <div class="step-check"><div class="step-check-inner">✓</div></div>
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Determine Chord Tone Status</div>
+          <div class="step-desc">For each important note, ask: is this note in the chord? The chord tones are the <strong>root, 3rd, 5th, and 7th</strong> of the current chord. Everything else is a non-chord tone. Mark each: CT (chord tone) or NCT (non-chord tone).</div>
+        </div>
+      </div>
+
+      <div class="step-item s4">
+        <div class="step-check"><div class="step-check-inner">✓</div></div>
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Map to Stability</div>
+          <div class="step-desc">Rank each important note on the stability ladder: <span class="np" style="background:#6bb8e8">DO</span>=1 <span class="np" style="background:#3F6FB6">SO</span>=2 <span class="np" style="background:#7dc48a">MI</span>=3 <span class="np" style="background:#F29B38">LA</span>=4 <span class="np" style="background:#d97b6a">RE</span>=5 <span class="np" style="background:#8A6BC8">TI</span>=6 <span class="np" style="background:#c9a630">FA</span>=7. Notes 1-3 are <em>stable</em>; notes 4-7 are <em>unstable</em>. This is the first axis of the Emotional Map.</div>
+        </div>
+      </div>
+
+      <div class="step-item s5">
+        <div class="step-check"><div class="step-check-inner">✓</div></div>
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <div class="step-title">Place Each Note in a Zone</div>
+          <div class="step-desc">Combine stability (Step 4) and chord tone status (Step 3) to get each note's zone: <strong>Stable + CT = Zone 1</strong> (Sweet) · <strong>Unstable + CT = Zone 2</strong> (Tense) · <strong>Stable + NCT = Zone 3</strong> (Float) · <strong>Unstable + NCT = Zone 4</strong> (Bitter). Label each important note with its zone number.</div>
+        </div>
+      </div>
+
+      <div class="step-item s6">
+        <div class="step-check"><div class="step-check-inner">✓</div></div>
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <div class="step-title">Check Zone Distribution</div>
+          <div class="step-desc">Tally up Zone 1/2/3/4 counts for this phrase. Compare to the <strong>Reference Zone Distributions</strong> on Sheet 6A for your section type. Is the balance appropriate for where this section sits in the song? Too much Zone 4 in a chorus is a red flag. Too much Zone 1 in a verse = potentially boring.</div>
+        </div>
+      </div>
+
+      <div class="step-item s7">
+        <div class="step-check"><div class="step-check-inner">✓</div></div>
+        <div class="step-num">7</div>
+        <div class="step-content">
+          <div class="step-title">Review the 5 Key Notes</div>
+          <div class="step-desc">Check the five most important notes (from Sheet 4B): <strong>First note, Last note, Highest note, Longest note, Beat 1 notes.</strong> For each: what zone is it in? Is that zone intentional? Does it match what that moment needs emotionally? If not, that's where to revise first.</div>
+        </div>
+      </div>
+
+      <div class="step-item s8">
+        <div class="step-check"><div class="step-check-inner">✓</div></div>
+        <div class="step-num">8</div>
+        <div class="step-content">
+          <div class="step-title">Sing It Back</div>
+          <div class="step-desc">After completing steps 1-7, sing or play the phrase while aware of the zone map you've created. Does it <strong>feel</strong> the way the zone map predicts? If the analysis says Zone 3 (floating, modern) but it actually feels harsh and tense — find the mismatch. The map is a tool; your ear is the judge.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RED FLAGS -->
+    <div class="redflags">
+      <div class="rf-title">⚠ Red Flags — Fix These Before Moving On</div>
+      <div class="rf-grid">
+        <div class="rf-item">
+          <div class="rf-icon">⚡</div>
+          <div class="rf-text">
+            <strong>3+ consecutive Zone 4 notes</strong> — listener fatigue. The ear needs contrast. Insert a Zone 1 or Zone 3 landing point, or shorten the bitter phrases.
+          </div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">🎯</div>
+          <div class="rf-text">
+            <strong>Chorus ending on TI or FA</strong> — no resolution. The hook needs to land. If the last important chorus note is Zone 4, the whole section feels incomplete.
+          </div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">💤</div>
+          <div class="rf-text">
+            <strong>All Zone 1, no tension</strong> — too safe, predictable, and emotionally flat. Add a non-chord tone or unstable degree in the middle of phrases to create motion.
+          </div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">😐</div>
+          <div class="rf-text">
+            <strong>No Zone 3 or 4 anywhere</strong> — the melody lacks color and interest. Even conservative hooks need some non-chord tones for personality and memorability.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">This audit works on any melody — original writing, covers, references, or your own revisions · Final module in the Emotional Map of Melody series</div>
+    <div class="footer-logo">AMF · Module H</div>
+  </div>
+
+</div>
+</body>
+</html>

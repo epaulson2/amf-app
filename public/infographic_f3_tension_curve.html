@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tension Curve — Infographic F3</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.14); }
+
+.header { background: #0f1e3c; padding: 24px 40px 20px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 6px; line-height: 1.4; max-width: 440px; }
+.rainbow-rule { height: 4px; background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%); }
+
+.chart-section { padding: 24px 40px 0; }
+
+/* Y-axis labels */
+.chart-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+.y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 8px 0;
+  width: 70px;
+  flex-shrink: 0;
+}
+.y-label {
+  font-size: 9.5px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  text-align: right;
+}
+.y-l-bitter  { color: #4b2d8c; }
+.y-l-float   { color: #1e6b42; }
+.y-l-tense   { color: #7a5200; }
+.y-l-sweet   { color: #1a5a8a; }
+
+.chart-area {
+  flex: 1;
+  position: relative;
+}
+
+/* SVG chart */
+.chart-svg {
+  width: 100%;
+  display: block;
+}
+
+/* Section labels below chart */
+.section-labels {
+  display: flex;
+  margin-top: 8px;
+}
+.sl-item {
+  flex: 1;
+  text-align: center;
+}
+.sl-name {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: #555;
+}
+.sl-abbr {
+  font-size: 8px; color: #aaa; margin-top: 1px;
+}
+
+/* Callout annotations */
+.callouts {
+  padding: 16px 40px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.callout-card {
+  border-radius: 8px;
+  padding: 11px 13px;
+  border-left: 3px solid;
+}
+.cc-intro { background: #d6eafc; border-color: #5aacdf; }
+.cc-verse { background: #fef3d0; border-color: #c9a630; }
+.cc-bridge{ background: #ede9fe; border-color: #8A6BC8; }
+.cc-chorus{ background: #d6eafc; border-color: #5aacdf; }
+.cc-outro { background: #f0fdf4; border-color: #7dc48a; }
+.cc-prechorus { background: #fef3d0; border-color: #F29B38; }
+
+.cc-section {
+  font-size: 9px; font-weight: 800;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.cc-intro .cc-section { color: #1a5a8a; }
+.cc-verse .cc-section { color: #7a5200; }
+.cc-bridge .cc-section { color: #4b2d8c; }
+.cc-chorus .cc-section { color: #1a5a8a; }
+.cc-outro .cc-section { color: #166534; }
+.cc-prechorus .cc-section { color: #92400e; }
+
+.cc-strategy {
+  font-size: 11px; color: #374151; line-height: 1.5;
+}
+
+.footer {
+  padding: 14px 40px 20px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e8e8e4; margin-top: 16px;
+}
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="module-tag">Module F · Infographic F3</div>
+      <h1>The Tension Curve</h1>
+      <div class="header-sub">Classic emotional tension arc across a full song structure. X-axis = song sections. Y-axis = tension level from Sweet (low) to Bitter (high).</div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <!-- CHART -->
+  <div class="chart-section">
+    <div class="chart-wrap">
+      <div class="y-axis">
+        <div class="y-label y-l-bitter">Bitter<br>Zone 4</div>
+        <div class="y-label y-l-float">Float<br>Zone 3</div>
+        <div class="y-label y-l-tense">Tense<br>Zone 2</div>
+        <div class="y-label y-l-sweet">Sweet<br>Zone 1</div>
+      </div>
+
+      <div class="chart-area">
+        <!-- SVG chart with tension curve -->
+        <svg class="chart-svg" viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+          <!-- Grid lines -->
+          <line x1="0" y1="40" x2="700" y2="40" stroke="#f0efe9" stroke-width="1"/>
+          <line x1="0" y1="90" x2="700" y2="90" stroke="#f0efe9" stroke-width="1"/>
+          <line x1="0" y1="140" x2="700" y2="140" stroke="#f0efe9" stroke-width="1"/>
+          <line x1="0" y1="185" x2="700" y2="185" stroke="#f0efe9" stroke-width="1"/>
+
+          <!-- Zone background bands -->
+          <rect x="0" y="0" width="700" height="40" fill="#ede9fe" opacity="0.3"/>
+          <rect x="0" y="40" width="700" height="50" fill="#d9f5e4" opacity="0.3"/>
+          <rect x="0" y="90" width="700" height="50" fill="#fef3d0" opacity="0.3"/>
+          <rect x="0" y="140" width="700" height="60" fill="#d6eafc" opacity="0.3"/>
+
+          <!-- Tension curve -->
+          <!-- Points: Intro=180, V1=160, Pre=120, Chorus=145, PostCh=165, V2=155, Bridge=25, FinalCh=150, Outro=185 -->
+          <!-- x positions: 0=40, 1=120, 2=200, 3=280, 4=360, 5=440, 6=520, 7=600, 8=680 -->
+          <path d="M 40,180 C 60,175 95,165 120,160 C 145,155 175,130 200,120 C 225,110 255,130 280,145 C 305,158 335,162 360,160 C 385,158 415,150 440,150 C 465,150 495,40 520,25 C 545,10 575,135 600,148 C 625,162 655,178 680,185"
+                fill="none" stroke="url(#curveGradient)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- Gradient definition -->
+          <defs>
+            <linearGradient id="curveGradient" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#5aacdf"/>
+              <stop offset="30%" stop-color="#c9a630"/>
+              <stop offset="60%" stop-color="#F29B38"/>
+              <stop offset="75%" stop-color="#8A6BC8"/>
+              <stop offset="90%" stop-color="#3F6FB6"/>
+              <stop offset="100%" stop-color="#5aacdf"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Data points -->
+          <circle cx="40" cy="180" r="5" fill="#5aacdf"/>
+          <circle cx="120" cy="160" r="5" fill="#3F6FB6"/>
+          <circle cx="200" cy="120" r="5" fill="#c9a630"/>
+          <circle cx="280" cy="145" r="5" fill="#5aacdf"/>
+          <circle cx="360" cy="160" r="5" fill="#7dc48a"/>
+          <circle cx="440" cy="150" r="5" fill="#c9a630"/>
+          <circle cx="520" cy="25" r="7" fill="#8A6BC8" stroke="#fff" stroke-width="2"/>
+          <circle cx="600" cy="148" r="5" fill="#5aacdf"/>
+          <circle cx="680" cy="185" r="5" fill="#7dc48a"/>
+
+          <!-- Peak label -->
+          <text x="520" y="16" text-anchor="middle" font-size="9" font-weight="800" fill="#4b2d8c" font-family="Inter, sans-serif">PEAK</text>
+
+          <!-- Vertical section dividers -->
+          <line x1="80" y1="200" x2="80" y2="210" stroke="#ddd" stroke-width="1"/>
+          <line x1="160" y1="200" x2="160" y2="210" stroke="#ddd" stroke-width="1"/>
+          <line x1="240" y1="200" x2="240" y2="210" stroke="#ddd" stroke-width="1"/>
+          <line x1="320" y1="200" x2="320" y2="210" stroke="#ddd" stroke-width="1"/>
+          <line x1="400" y1="200" x2="400" y2="210" stroke="#ddd" stroke-width="1"/>
+          <line x1="480" y1="200" x2="480" y2="210" stroke="#ddd" stroke-width="1"/>
+          <line x1="560" y1="200" x2="560" y2="210" stroke="#ddd" stroke-width="1"/>
+          <line x1="640" y1="200" x2="640" y2="210" stroke="#ddd" stroke-width="1"/>
+        </svg>
+
+        <!-- Section labels -->
+        <div class="section-labels">
+          <div class="sl-item"><div class="sl-name">Intro</div></div>
+          <div class="sl-item"><div class="sl-name">Verse 1</div></div>
+          <div class="sl-item"><div class="sl-name">Pre-Ch</div></div>
+          <div class="sl-item"><div class="sl-name">Chorus</div></div>
+          <div class="sl-item"><div class="sl-name">Post-Ch</div></div>
+          <div class="sl-item"><div class="sl-name">Verse 2</div></div>
+          <div class="sl-item"><div class="sl-name">Bridge</div></div>
+          <div class="sl-item"><div class="sl-name">Final Ch</div></div>
+          <div class="sl-item"><div class="sl-name">Outro</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CALLOUT ANNOTATIONS -->
+  <div class="callouts">
+    <div class="callout-card cc-intro">
+      <div class="cc-section">Intro → Verse 1</div>
+      <div class="cc-strategy">Start mid-Sweet — Zone 1 chord tones establish the key. Leave some openness so verse can have somewhere to go.</div>
+    </div>
+    <div class="callout-card cc-prechorus">
+      <div class="cc-section">Pre-Chorus</div>
+      <div class="cc-strategy">Shift toward Zone 2–3. Unstable notes and non-chord tones create urgency. The ear should be leaning forward.</div>
+    </div>
+    <div class="callout-card cc-chorus">
+      <div class="cc-section">Chorus</div>
+      <div class="cc-strategy">Land back in Zone 1 for the hook. The contrast with pre-chorus creates the "payoff" feeling. Chorus peak note = Zone 1 chord tone.</div>
+    </div>
+    <div class="callout-card cc-verse">
+      <div class="cc-section">Verse 2</div>
+      <div class="cc-strategy">Similar to Verse 1 but can push slightly higher tension — the listener now knows more of the story, can handle more complexity.</div>
+    </div>
+    <div class="callout-card cc-bridge">
+      <div class="cc-section">Bridge</div>
+      <div class="cc-strategy">Zone 3–4 territory. Maximum contrast — venture into floating, bitter, edgy zones. This is the emotional peak. FA and TI as non-chord tones work well here.</div>
+    </div>
+    <div class="callout-card cc-outro">
+      <div class="cc-section">Final Chorus → Outro</div>
+      <div class="cc-strategy">Return to Zone 1. After bridge tension, the final chorus resolution feels cathartic. Outro gradually descends toward DO — leave the listener at peace.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">This curve shows the classic pop/R&B arc — different genres use different shapes (see Section Planner 7A)</div>
+    <div class="footer-logo">AMF · Module F</div>
+  </div>
+
+</div>
+</body>
+</html>
