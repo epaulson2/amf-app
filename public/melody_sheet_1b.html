@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Read and Use the Emotional Map — Companion 1B</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #d4d0c8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 48px 24px;
+  gap: 32px;
+  flex-direction: column;
+}
+
+/* ── PAGE (reusable for both pages) ────────── */
+.page {
+  width: 900px;
+  background: #fafaf7;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 20px 80px rgba(0,0,0,.25);
+  align-self: center;
+}
+
+/* ── HEADER ──────────────────────────────── */
+.header {
+  background: #0d1424;
+  padding: 22px 48px 18px;
+}
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.header-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 4px; text-transform: uppercase;
+  color: #94a3b8;
+}
+.header-eyebrow {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 4px; text-transform: uppercase;
+  color: #E8C45A;
+  margin-bottom: 2px;
+}
+.header-title {
+  font-size: 26px; font-weight: 900;
+  color: #fff; letter-spacing: -.3px;
+  line-height: 1.15; text-align: center;
+  text-transform: uppercase;
+}
+.header-rule {
+  width: 100%; height: 3px; margin-top: 12px;
+  border-radius: 2px;
+  background: linear-gradient(90deg,
+    #6bb8e8 0%, #6bb8e8 14.3%, #3F6FB6 14.3%, #3F6FB6 28.6%,
+    #7dc48a 28.6%, #7dc48a 42.9%, #F29B38 42.9%, #F29B38 57.1%,
+    #d97b6a 57.1%, #d97b6a 71.4%, #8A6BC8 71.4%, #8A6BC8 85.7%,
+    #c9a630 85.7%, #c9a630 100%);
+}
+
+/* ── BODY ────────────────────────────────── */
+.body {
+  padding: 28px 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Intro paragraph */
+.intro {
+  font-size: 13px; font-weight: 400; color: #4b5563;
+  line-height: 1.7; margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9e9e4;
+}
+.intro strong { color: #0d1424; font-weight: 700; }
+
+/* Section block */
+.section {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #f0efe9;
+}
+.section:last-of-type { border-bottom: none; }
+
+/* Section number badge */
+.sec-num {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: #0d1424; color: #fff;
+  font-size: 12px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+.sec-body { flex: 1; }
+
+.sec-title {
+  font-size: 13px; font-weight: 800;
+  color: #0d1424; text-transform: uppercase;
+  letter-spacing: .5px; margin-bottom: 7px;
+  line-height: 1.2;
+}
+
+.sec-text {
+  font-size: 12px; font-weight: 400;
+  color: #374151; line-height: 1.75;
+}
+.sec-text + .sec-text { margin-top: 8px; }
+.sec-text strong { color: #0d1424; font-weight: 700; }
+.sec-text em { color: #6b7280; font-style: italic; }
+
+/* Callout box */
+.callout {
+  margin-top: 10px;
+  padding: 11px 15px;
+  border-radius: 9px;
+  border-left: 3px solid;
+  font-size: 11.5px; line-height: 1.65;
+  color: #1f2937;
+}
+.callout-blue   { background: #eff6ff; border-color: #3b82f6; }
+.callout-green  { background: #f0fdf4; border-color: #22c55e; }
+.callout-amber  { background: #fffbeb; border-color: #f59e0b; }
+.callout-purple { background: #faf5ff; border-color: #a855f7; }
+.callout-slate  { background: #f8fafc; border-color: #64748b; }
+
+.callout-title {
+  font-size: 9px; font-weight: 800;
+  letter-spacing: 2px; text-transform: uppercase;
+  opacity: .5; margin-bottom: 4px;
+}
+
+/* Inline note pill */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 20px; min-width: 28px; padding: 0 8px;
+  border-radius: 10px; font-size: 9.5px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  margin: 0 2px;
+}
+
+/* Zone tag */
+.ztag {
+  display: inline-block; padding: 1px 7px;
+  border-radius: 4px; font-size: 10px; font-weight: 700;
+  vertical-align: middle; margin: 0 3px;
+}
+
+/* Zone grid (section 3) */
+.zone-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+.zg-card {
+  padding: 10px 13px;
+  border-radius: 9px;
+  font-size: 11px; line-height: 1.6;
+}
+.zg-card .zg-name {
+  font-size: 12px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: .3px; margin-bottom: 3px;
+}
+.zg-card .zg-formula {
+  font-size: 10px; font-weight: 600; opacity: .6; margin-bottom: 5px;
+}
+.zg-card .zg-text { font-size: 11px; color: #374151; line-height: 1.55; }
+.zg1 { background: #d6eafc; }
+.zg1 .zg-name { color: #1d4ed8; }
+.zg2 { background: #fef3d0; }
+.zg2 .zg-name { color: #92400e; }
+.zg3 { background: #d9f5e4; }
+.zg3 .zg-name { color: #166534; }
+.zg4 { background: #ede9fe; }
+.zg4 .zg-name { color: #5b21b6; }
+
+/* Step list (section 5) */
+.step-list { margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+.step-row {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 12px; color: #374151; line-height: 1.5;
+}
+.step-badge {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: #0d1424; color: #fff;
+  font-size: 10px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Section usage table (section 6) */
+.usage-grid {
+  margin-top: 10px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.usage-row {
+  display: flex; align-items: baseline; gap: 10px;
+  font-size: 11.5px; line-height: 1.5;
+}
+.usage-section {
+  font-weight: 800; color: #0d1424;
+  min-width: 110px; flex-shrink: 0;
+}
+.usage-sep { color: #d1d5db; }
+.usage-desc { color: #4b5563; }
+
+/* Takeaway block (end) */
+.takeaway {
+  margin-top: 24px;
+  background: #0d1424;
+  border-radius: 12px;
+  padding: 20px 24px;
+  color: #fff;
+}
+.takeaway-label {
+  font-size: 8.5px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase;
+  color: #E8C45A; margin-bottom: 8px;
+}
+.takeaway-title {
+  font-size: 16px; font-weight: 800;
+  margin-bottom: 14px; line-height: 1.3;
+}
+.takeaway-q {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,.85);
+  margin-bottom: 8px; line-height: 1.5;
+}
+.tq-num {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(255,255,255,.12); color: #E8C45A;
+  font-size: 10px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+
+/* ── FOOTER ──────────────────────────────── */
+.footer {
+  border-top: 1px solid #e5e5e0;
+  padding: 9px 48px;
+  text-align: center;
+  font-size: 8.5px; color: #9ca3af; font-style: italic;
+  background: #fafaf7;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-inner">
+      <div class="header-eyebrow">Companion Sheet 1B</div>
+      <div class="header-title">How to Read and Use<br>the Emotional Map</div>
+      <div class="header-rule"></div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- INTRO -->
+    <p class="intro">
+      The master cheat sheet shows you <strong>what</strong> the Emotional Map is. This companion explains <strong>why</strong> it works, <strong>how</strong> to read it accurately, and <strong>how to use it</strong> while writing or analyzing a melody. Read this once — then keep the cheat sheet on your desk.
+    </p>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <div class="sec-num">1</div>
+      <div class="sec-body">
+        <div class="sec-title">Why a pitch name is not enough</div>
+        <p class="sec-text">
+          The note names C, D, E tell you <em>absolute frequency</em> — a position on the piano. They say nothing about emotional function. The same pitch can feel like home in one song and like ache in another.
+        </p>
+        <div class="callout callout-blue">
+          <div class="callout-title">Example</div>
+          The note <strong>C</strong> in C&nbsp;major&nbsp;=&nbsp;<span class="np" style="background:#6bb8e8">DO</span> <strong>home / arrival.</strong><br>
+          The note <strong>C</strong> in G&nbsp;major&nbsp;=&nbsp;<span class="np" style="background:#c9a630">FA</span> <strong>tension / ache — the strongest friction note.</strong><br>
+          Same pitch. Completely different emotional role.
+        </div>
+        <p class="sec-text" style="margin-top:10px">
+          Solmization (<strong>DO RE MI FA SO LA TI</strong>) replaces pitch names with <em>function labels</em>. They describe the note's role inside the current key — not where it sits on the keyboard.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <div class="sec-num">2</div>
+      <div class="sec-body">
+        <div class="sec-title">Why chord context matters</div>
+        <p class="sec-text">
+          Every melody note lands in front of a chord. The chord either <strong>catches</strong> the note or <strong>doesn't</strong>.
+        </p>
+        <p class="sec-text">
+          A <strong>chord tone</strong> (root, 3rd, or 5th of the current chord) feels expected — the harmony and melody agree. A <strong>non-chord tone</strong> sits outside the triad — the chord doesn't catch it. It floats, pushes, or adds color.
+        </p>
+        <div class="callout callout-slate">
+          <div class="callout-title">Same note — two different feelings</div>
+          <span class="np" style="background:#6bb8e8">DO</span> (C) over a <strong>C major chord</strong> → chord tone → <em>supported, resolved</em><br>
+          <span class="np" style="background:#6bb8e8">DO</span> (C) over a <strong>Dm chord</strong> → non-chord tone → <em>floating, airy, modern</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <div class="sec-num">3</div>
+      <div class="sec-body">
+        <div class="sec-title">How the four zones work</div>
+        <p class="sec-text">
+          The map's four zones are <strong>emotional colors</strong> — not grades. None is inherently good or bad. Each has a role.
+        </p>
+        <div class="zone-grid">
+          <div class="zg-card zg1">
+            <div class="zg-name">1 · Sweet / Grounded</div>
+            <div class="zg-formula">Stable + chord tone</div>
+            <div class="zg-text">Melody and harmony agree. Feels arrived, warm, confident. Essential for hooks and chorus peaks — but overuse creates predictable, "safe" melody.</div>
+          </div>
+          <div class="zg-card zg2">
+            <div class="zg-name">2 · Tense but Supported</div>
+            <div class="zg-formula">Unstable + chord tone</div>
+            <div class="zg-text">The chord catches the note, but the scale degree still wants motion. Feels expressive and emotional — grounded tension. Great for emotional verses and soul/gospel phrasing.</div>
+          </div>
+          <div class="zg-card zg3">
+            <div class="zg-name">3 · Floating / Modern</div>
+            <div class="zg-formula">Stable + non-chord tone</div>
+            <div class="zg-text">The melody note is calm inside the key but the chord doesn't quite catch it. Feels airy, unexpected, sophisticated. Common in contemporary R&amp;B and pop hooks.</div>
+          </div>
+          <div class="zg-card zg4">
+            <div class="zg-name">4 · Bitter / Edgy</div>
+            <div class="zg-formula">Unstable + non-chord tone</div>
+            <div class="zg-text">Maximum friction — the note wants resolution and the chord gives no support. Powerful when used intentionally. Needs resolution to avoid sounding simply harsh.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section">
+      <div class="sec-num">4</div>
+      <div class="sec-body">
+        <div class="sec-title">Why the map helps avoid generic melody</div>
+        <p class="sec-text">
+          A melody that always lands on chord tones at chord changes sounds <em>technically correct but emotionally flat</em>. The harmony confirms what the melody already says — nothing is surprising or expressive.
+        </p>
+        <div class="callout callout-amber">
+          <div class="callout-title">The Cake Shop Principle</div>
+          Too many chord tones in a melody is like a pastry shop that sells only frosted cake. Everything is technically sweet, but nothing has contrast or depth. <strong>Non-chord tones are the bitter and savory elements</strong> that make the sweetness meaningful. Balance is the goal — not elimination of either.
+        </div>
+        <p class="sec-text" style="margin-top:10px">
+          The map makes over-reliance on Zone 1 visible immediately. If every important note in a phrase maps to Zone 1, you have a diagnosis — not a rule violation.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section">
+      <div class="sec-num">5</div>
+      <div class="sec-body">
+        <div class="sec-title">How to analyze a melody</div>
+        <p class="sec-text">Apply this to the <em>emotionally important notes</em> — not every passing tone.</p>
+        <div class="step-list">
+          <div class="step-row"><div class="step-badge">1</div>Identify the key of the song or section.</div>
+          <div class="step-row"><div class="step-badge">2</div>Select the important notes: chord-change notes, repeated notes, long notes, start and end notes.</div>
+          <div class="step-row"><div class="step-badge">3</div>Label each selected note with its solmization syllable: DO, RE, MI, FA, SO, LA, or TI.</div>
+          <div class="step-row"><div class="step-badge">4</div>Identify the chord underneath each note. Determine chord tone (root, 3rd, 5th) or non-chord tone.</div>
+          <div class="step-row"><div class="step-badge">5</div>Place each note on the map. Trace the emotional path across the phrase or section.</div>
+        </div>
+        <div class="callout callout-green" style="margin-top:10px">
+          <div class="callout-title">What to look for</div>
+          A verse that lives in Zones 2–3 (floating, expressive) resolving to a chorus dominated by Zone 1 (sweet, grounded) is a classic emotional arc. The map makes this visible — and replicable.
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">Companion to <em>Emotional Map of Melody — Master Cheat Sheet (1A)</em> &nbsp;·&nbsp; Based on the framework by Tamas Bodzsar &nbsp;·&nbsp; Page 1 of 2</div>
+</div>
+
+
+<!-- ══════════ PAGE 2 ══════════ -->
+<div class="page">
+
+  <div class="header">
+    <div class="header-inner">
+      <div class="header-label">Companion 1B — continued</div>
+      <div class="header-title">How to Read and Use<br>the Emotional Map</div>
+      <div class="header-rule"></div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- SECTION 6 -->
+    <div class="section">
+      <div class="sec-num">6</div>
+      <div class="sec-body">
+        <div class="sec-title">How to write with the map</div>
+        <p class="sec-text">
+          Start by naming the <strong>emotional job</strong> of the section you're writing. The map converts emotional intent into concrete pitch decisions.
+        </p>
+        <div class="usage-grid">
+          <div class="usage-row">
+            <span class="usage-section">Chorus</span>
+            <span class="usage-sep">→</span>
+            <span class="usage-desc">Needs arrival and confidence. Lean on Zone 1 for the main hook note. The payoff should feel caught and resolved.</span>
+          </div>
+          <div class="usage-row">
+            <span class="usage-section">Verse</span>
+            <span class="usage-sep">→</span>
+            <span class="usage-desc">Needs openness and forward motion. Zones 2 and 3 work well — expressive but not resolved, keeping the listener leaning forward.</span>
+          </div>
+          <div class="usage-row">
+            <span class="usage-section">Pre-chorus</span>
+            <span class="usage-sep">→</span>
+            <span class="usage-desc">Needs rising tension. Shift toward Zones 2 and 4 to build expectation before the chorus release.</span>
+          </div>
+          <div class="usage-row">
+            <span class="usage-section">Bridge</span>
+            <span class="usage-sep">→</span>
+            <span class="usage-desc">Needs contrast. Often the most adventurous zone usage — a bridge landing heavily in Zone 4 before returning to a Zone 1 chorus is a powerful contrast move.</span>
+          </div>
+        </div>
+        <div class="callout callout-slate" style="margin-top:12px">
+          <div class="callout-title">Practical workflow</div>
+          Pick the important note at a chord change. Ask what emotional role you need at that moment. Choose a note that maps to the zone that matches. The map tells you <em>which specific pitch</em> in the current key and over the current chord creates that zone.
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="section">
+      <div class="sec-num">7</div>
+      <div class="sec-body">
+        <div class="sec-title">Common mistakes and how to fix them</div>
+        <div class="callout callout-amber" style="margin-bottom:10px">
+          <div class="callout-title">Mistake: Treating all notes equally</div>
+          The map is most powerful on <strong>structurally important notes</strong>. Analyzing every passing tone creates noise and wastes time. Chord-change notes, repeated notes, and phrase-ending notes carry the emotional weight.
+        </div>
+        <div class="callout callout-blue" style="margin-bottom:10px">
+          <div class="callout-title">Mistake: Confusing key solmization with chord solmization</div>
+          Always label the note against the <strong>key</strong> for stability (DO–TI), and separately compare it against the <strong>current chord</strong> for chord-tone status. These are two separate questions — do not conflate them.
+        </div>
+        <div class="callout callout-purple">
+          <div class="callout-title">Mistake: Treating zones as rules</div>
+          Zone 4 (Bitter/Edgy) is not a mistake — it is a tool. The question is never "is this zone allowed?" The question is "does this zone serve what this moment needs emotionally?" Every zone is available. The map helps you choose intentionally.
+        </div>
+      </div>
+    </div>
+
+    <!-- TAKEAWAY -->
+    <div class="takeaway">
+      <div class="takeaway-label">The Core Shift</div>
+      <div class="takeaway-title">Stop asking "Is this note in the key?"<br>Start asking three questions instead:</div>
+      <div class="takeaway-q">
+        <div class="tq-num">1</div>
+        What is this note's <strong>role inside the key?</strong> &nbsp;(stable or unstable — its solmization position)
+      </div>
+      <div class="takeaway-q">
+        <div class="tq-num">2</div>
+        Does the <strong>current chord support it?</strong> &nbsp;(chord tone or non-chord tone)
+      </div>
+      <div class="takeaway-q">
+        <div class="tq-num">3</div>
+        What does <strong>this moment need emotionally?</strong> &nbsp;(arrival, tension, openness, contrast, edge)
+      </div>
+      <p style="font-size:12px; color:rgba(255,255,255,.5); margin-top:14px; line-height:1.6; font-style:italic;">
+        These three questions, applied consistently to the important notes in a melody, give you more creative control over emotional effect than any set of patterns or rules.
+      </p>
+    </div>
+
+  </div>
+  <div class="footer">Companion to <em>Emotional Map of Melody — Master Cheat Sheet (1A)</em> &nbsp;·&nbsp; Based on the framework by Tamas Bodzsar &nbsp;·&nbsp; Page 2 of 2</div>
+</div>
+
+</body>
+</html>

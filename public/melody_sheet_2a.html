@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scale Degree Reference — Cheat Sheet 2A</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #d4d0c8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 48px 24px;
+}
+
+.page {
+  width: 900px;
+  background: #fafaf7;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 20px 80px rgba(0,0,0,.25);
+}
+
+/* ── HEADER ──────────────────────────────── */
+.header {
+  background: #0d1424;
+  padding: 22px 48px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.header-eyebrow {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 4px; text-transform: uppercase;
+  color: #E8C45A;
+}
+.header-title {
+  font-size: 30px; font-weight: 900;
+  color: #fff; letter-spacing: -.3px;
+  text-transform: uppercase;
+}
+.header-sub {
+  font-size: 12px; font-weight: 400;
+  color: rgba(255,255,255,.4);
+  font-style: italic;
+}
+.header-rule {
+  width: 100%; height: 3px; margin-top: 12px; border-radius: 2px;
+  background: linear-gradient(90deg,
+    #6bb8e8 0%, #6bb8e8 14.3%, #3F6FB6 14.3%, #3F6FB6 28.6%,
+    #7dc48a 28.6%, #7dc48a 42.9%, #F29B38 42.9%, #F29B38 57.1%,
+    #d97b6a 57.1%, #d97b6a 71.4%, #8A6BC8 71.4%, #8A6BC8 85.7%,
+    #c9a630 85.7%, #c9a630 100%);
+}
+
+/* ── STABILITY AXIS LABEL ────────────────── */
+.axis-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px 8px;
+  gap: 10px;
+  background: #fafaf7;
+  border-bottom: 1px solid #eeede8;
+}
+.axis-label {
+  font-size: 8.5px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  white-space: nowrap;
+}
+.axis-label.stable   { color: #1d4ed8; }
+.axis-label.unstable { color: #92400e; }
+.axis-gradient-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg,
+    #6bb8e8 0%, #3F6FB6 16%, #7dc48a 32%,
+    #F29B38 50%, #d97b6a 66%, #8A6BC8 82%, #c9a630 100%);
+  opacity: .65;
+}
+.axis-arrow { font-size: 11px; color: #94a3b8; }
+
+/* ── 7 NOTE COLUMNS ──────────────────────── */
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom: 1px solid #e9e9e4;
+}
+
+.note-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(0,0,0,.07);
+  position: relative;
+  overflow: hidden;
+}
+.note-col:last-child { border-right: none; }
+
+/* Colored header band */
+.nc-header {
+  padding: 16px 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+/* Large note pill */
+.nc-pill {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 900;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.22);
+  z-index: 1;
+  position: relative;
+}
+
+/* Rank badge */
+.nc-rank {
+  font-size: 8px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(255,255,255,.7);
+  background: rgba(0,0,0,.18);
+  border-radius: 20px;
+  padding: 2px 8px;
+  z-index: 1;
+}
+
+/* Emotional keyword */
+.nc-kw {
+  font-size: 13px; font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  text-align: center;
+  line-height: 1.1;
+  margin-top: 2px;
+  z-index: 1;
+}
+
+/* Description body */
+.nc-body {
+  padding: 10px 9px 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fafaf7;
+}
+
+.nc-phrase {
+  font-size: 9.5px;
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.nc-divider {
+  width: 24px; height: 1px;
+  background: #e5e7eb;
+  align-self: center;
+  margin: 1px 0;
+}
+
+.nc-use {
+  font-size: 8.5px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-align: center;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Column background tints */
+.col-do .nc-header   { background: linear-gradient(180deg, #5aacdf 0%, #7bc4f0 100%); }
+.col-so .nc-header   { background: linear-gradient(180deg, #2d5fa8 0%, #4472c0 100%); }
+.col-mi .nc-header   { background: linear-gradient(180deg, #5eb56a 0%, #7dca88 100%); }
+.col-la .nc-header   { background: linear-gradient(180deg, #e08920 0%, #f5a63a 100%); }
+.col-re .nc-header   { background: linear-gradient(180deg, #c46454 0%, #db8272 100%); }
+.col-ti .nc-header   { background: linear-gradient(180deg, #6d56b8 0%, #8d73d2 100%); }
+.col-fa .nc-header   { background: linear-gradient(180deg, #b8941e 0%, #d4ab2a 100%); }
+
+.col-do .nc-kw { color: #fff; }
+.col-so .nc-kw { color: #fff; }
+.col-mi .nc-kw { color: #fff; }
+.col-la .nc-kw { color: #fff; }
+.col-re .nc-kw { color: #fff; }
+.col-ti .nc-kw { color: #fff; }
+.col-fa .nc-kw { color: #fff; }
+
+/* Subtle column background tints */
+.col-do .nc-body { background: #f0f8fe; }
+.col-so .nc-body { background: #eef3fc; }
+.col-mi .nc-body { background: #f0faf2; }
+.col-la .nc-body { background: #fef7ed; }
+.col-re .nc-body { background: #fef3f1; }
+.col-ti .nc-body { background: #f5f0fe; }
+.col-fa .nc-body { background: #fdf9e8; }
+
+/* ── STABILITY LOGIC ─────────────────────── */
+.logic-section {
+  padding: 18px 28px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  border-bottom: 1px solid #e9e9e4;
+}
+
+.logic-card {
+  background: #f4f4f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.logic-title {
+  font-size: 8px; font-weight: 800;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: #9ca3af; margin-bottom: 7px;
+}
+.logic-text {
+  font-size: 11.5px; font-weight: 400;
+  color: #374151; line-height: 1.65;
+}
+.logic-text strong { color: #0d1424; font-weight: 700; }
+
+/* Inline note pills in text */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 18px; min-width: 24px; padding: 0 6px;
+  border-radius: 9px; font-size: 9px; font-weight: 900;
+  color: #fff; vertical-align: middle;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  margin: 0 1px;
+}
+
+/* ── QUICK REFERENCE GRID ────────────────── */
+.quick-ref {
+  padding: 14px 28px 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.qr-title {
+  grid-column: 1 / -1;
+  font-size: 8px; font-weight: 800;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: #9ca3af; margin-bottom: 2px;
+}
+
+.qr-card {
+  background: #f4f4f0;
+  border-radius: 9px;
+  padding: 10px 12px;
+  font-size: 11px;
+  color: #374151;
+  line-height: 1.6;
+}
+.qr-card strong { color: #0d1424; font-weight: 700; }
+.qr-card em { color: #6b7280; font-style: italic; }
+
+/* ── FOOTER ──────────────────────────────── */
+.footer {
+  border-top: 1px solid #e5e5e0;
+  padding: 9px 32px;
+  text-align: center;
+  font-size: 8.5px; color: #9ca3af; font-style: italic;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-eyebrow">Cheat Sheet 2A</div>
+    <div class="header-title">Scale Degree Reference</div>
+    <div class="header-sub">The emotional character of each solmization note — in order of stability</div>
+    <div class="header-rule"></div>
+  </div>
+
+  <!-- STABILITY AXIS -->
+  <div class="axis-bar">
+    <div class="axis-label stable">← Most Stable</div>
+    <div class="axis-arrow">←</div>
+    <div class="axis-gradient-bar"></div>
+    <div class="axis-arrow">→</div>
+    <div class="axis-label unstable">Most Tense →</div>
+  </div>
+
+  <!-- 7 NOTE COLUMNS -->
+  <div class="note-grid">
+
+    <!-- DO -->
+    <div class="note-col col-do">
+      <div class="nc-header">
+        <div class="nc-pill" style="background:#5aacdf">DO</div>
+        <div class="nc-rank">1 of 7 · Tonic</div>
+        <div class="nc-kw">Home</div>
+      </div>
+      <div class="nc-body">
+        <div class="nc-phrase">Home base. Arrival. Rest. The note that says "we're here."</div>
+        <div class="nc-divider"></div>
+        <div class="nc-use">Phrase endings, chorus peaks, moments of resolution</div>
+      </div>
+    </div>
+
+    <!-- SO -->
+    <div class="note-col col-so">
+      <div class="nc-header">
+        <div class="nc-pill" style="background:#3F6FB6">SO</div>
+        <div class="nc-rank">2 of 7 · Dominant</div>
+        <div class="nc-kw">Strong</div>
+      </div>
+      <div class="nc-body">
+        <div class="nc-phrase">Open and stable but not closed. Confident, forward-facing, not quite home.</div>
+        <div class="nc-divider"></div>
+        <div class="nc-use">Power phrases, pre-arrival resting points, masculine strength</div>
+      </div>
+    </div>
+
+    <!-- MI -->
+    <div class="note-col col-mi">
+      <div class="nc-header">
+        <div class="nc-pill" style="background:#5eb56a">MI</div>
+        <div class="nc-rank">3 of 7 · Mediant</div>
+        <div class="nc-kw">Sweet</div>
+      </div>
+      <div class="nc-body">
+        <div class="nc-phrase">Warm, clear, emotionally bright. The most "musical" resting tone after DO.</div>
+        <div class="nc-divider"></div>
+        <div class="nc-use">Gentle arrivals, emotional warmth, classic singable melodies</div>
+      </div>
+    </div>
+
+    <!-- LA -->
+    <div class="note-col col-la">
+      <div class="nc-header">
+        <div class="nc-pill" style="background:#e08920">LA</div>
+        <div class="nc-rank">4 of 7 · Submediant</div>
+        <div class="nc-kw">Warm</div>
+      </div>
+      <div class="nc-body">
+        <div class="nc-phrase">On the border. Emotional, slightly floating — stable enough to linger on, just restless enough to feel feeling.</div>
+        <div class="nc-divider"></div>
+        <div class="nc-use">Soulful phrases, emotional verses, bittersweet moments</div>
+      </div>
+    </div>
+
+    <!-- RE -->
+    <div class="note-col col-re">
+      <div class="nc-header">
+        <div class="nc-pill" style="background:#c46454">RE</div>
+        <div class="nc-rank">5 of 7 · Supertonic</div>
+        <div class="nc-kw">Open</div>
+      </div>
+      <div class="nc-body">
+        <div class="nc-phrase">Forward-moving, unresolved. Feels like a question waiting for an answer.</div>
+        <div class="nc-divider"></div>
+        <div class="nc-use">Rising phrases, forward motion, pre-chorus build, questions</div>
+      </div>
+    </div>
+
+    <!-- TI -->
+    <div class="note-col col-ti">
+      <div class="nc-header">
+        <div class="nc-pill" style="background:#6d56b8">TI</div>
+        <div class="nc-rank">6 of 7 · Leading Tone</div>
+        <div class="nc-kw">Leading</div>
+      </div>
+      <div class="nc-body">
+        <div class="nc-phrase">High tension — strongly pulls upward toward DO. The note that most urgently wants to resolve.</div>
+        <div class="nc-divider"></div>
+        <div class="nc-use">Climactic phrases, suspension build, dramatic tension</div>
+      </div>
+    </div>
+
+    <!-- FA -->
+    <div class="note-col col-fa">
+      <div class="nc-header">
+        <div class="nc-pill" style="background:#b8941e">FA</div>
+        <div class="nc-rank">7 of 7 · Subdominant</div>
+        <div class="nc-kw">Tension</div>
+      </div>
+      <div class="nc-body">
+        <div class="nc-phrase">The strongest friction note. Creates a tritone against TI — maximum dissonance inside the key.</div>
+        <div class="nc-divider"></div>
+        <div class="nc-use">Ache, blues moments, maximum harmonic color, modern edge</div>
+      </div>
+    </div>
+
+  </div><!-- /note-grid -->
+
+  <!-- STABILITY LOGIC -->
+  <div class="logic-section">
+    <div class="logic-card">
+      <div class="logic-title">Why is this the stability order?</div>
+      <div class="logic-text">
+        The order <span class="np" style="background:#5aacdf">DO</span> <span class="np" style="background:#3F6FB6">SO</span> <span class="np" style="background:#5eb56a">MI</span> <span class="np" style="background:#e08920">LA</span> <span class="np" style="background:#c46454">RE</span> <span class="np" style="background:#6d56b8">TI</span> <span class="np" style="background:#b8941e">FA</span> comes from acoustics and harmonic tension. <strong>DO</strong> is the tonic — the key's center of gravity. <strong>SO</strong> is the dominant, the strongest harmonic partner to DO. <strong>MI</strong> is the third — the note that defines major vs. minor. As you move right, notes create more friction against the tonic and dominant, making resolution feel increasingly urgent.
+      </div>
+    </div>
+    <div class="logic-card">
+      <div class="logic-title">The DO–FA tritone: why FA is the tensest</div>
+      <div class="logic-text">
+        <strong>FA</strong> and <strong>TI</strong> together form a <strong>tritone</strong> — an interval of three whole steps, the most dissonant interval in Western tonality. This is why FA (from below) and TI (from above) both exert such strong gravitational pull toward resolution: FA wants to fall to MI, and TI wants to rise to DO. They are the two "active" tones that define harmonic tension within the key.
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK REFERENCE -->
+  <div class="quick-ref">
+    <div class="qr-title">Writing with Scale Degrees</div>
+
+    <div class="qr-card">
+      <strong>For arrival and resolution</strong><br>
+      Land on <em>DO, SO, or MI</em> at phrase endings. DO = full stop. SO = open but strong. MI = warm and melodic. These three form the major triad — the most stable home base.
+    </div>
+
+    <div class="qr-card">
+      <strong>For forward motion and tension</strong><br>
+      Let phrases lean toward <em>RE, TI, or FA</em>. RE asks a question. TI pulls urgently upward. FA creates ache. End on these only when you want the listener leaning forward.
+    </div>
+
+    <div class="qr-card">
+      <strong>LA as the emotional wildcard</strong><br>
+      <em>LA</em> sits in the middle and earns its "warm / emotional" label by floating between stability and tension. Soul, gospel, and blues melodies use LA heavily — it feels open enough to hold emotion without resolving it.
+    </div>
+  </div>
+
+  <div class="footer">
+    Cheat Sheet 2A &nbsp;·&nbsp; Pairs with Companion 2B: <em>Why the Stability Order Matters</em> &nbsp;·&nbsp; Part of the Emotional Map of Melody series
+  </div>
+
+</div>
+</body>
+</html>
