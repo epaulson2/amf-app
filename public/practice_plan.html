@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMF 90-Day Practice Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e0e0e0; font-family: 'Inter', sans-serif; padding: 32px 0 64px; }
+
+.page {
+  width: 850px;
+  margin: 0 auto 28px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+}
+
+/* ── HEADER ── */
+.header {
+  background: #0f1e3c;
+  padding: 28px 44px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 7px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 6px; max-width: 460px; line-height: 1.5; }
+.header-stat { flex-shrink: 0; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 10px 18px; text-align: center; }
+.header-stat .n { font-size: 30px; font-weight: 900; color: #fff; line-height: 1; }
+.header-stat .l { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; color: #7a9bd4; text-transform: uppercase; margin-top: 3px; }
+.rainbow { height: 4px; background: linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%); }
+
+/* ── BODY TEXT ── */
+.body { padding: 32px 44px; }
+
+h2 { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7a9bd4; margin-bottom: 14px; margin-top: 28px; }
+h2:first-child { margin-top: 0; }
+h3 { font-size: 14px; font-weight: 700; color: #0f1e3c; margin-bottom: 6px; }
+p { font-size: 12.5px; line-height: 1.65; color: #333; margin-bottom: 10px; }
+p:last-child { margin-bottom: 0; }
+
+/* ── DAILY STRUCTURE BOX ── */
+.daily-box {
+  background: #0f1e3c;
+  border-radius: 8px;
+  padding: 22px 26px;
+  margin-bottom: 24px;
+}
+.daily-box-title { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7a9bd4; margin-bottom: 14px; }
+.daily-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.daily-row:last-child { margin-bottom: 0; }
+.daily-min {
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  min-width: 56px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.daily-step-name { font-size: 12.5px; font-weight: 700; color: #fff; min-width: 140px; flex-shrink: 0; }
+.daily-step-desc { font-size: 11.5px; color: #8faacc; line-height: 1.4; }
+
+/* ── PHASE CARDS ── */
+.phase-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+.phase-card { border-radius: 8px; padding: 16px 18px; }
+.phase-card.p1 { background: #d6eafc; }
+.phase-card.p2 { background: #fef3d0; }
+.phase-card.p3 { background: #d9f5e4; }
+.phase-num { font-size: 9px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 4px; }
+.p1 .phase-num { color: #1a5a8a; }
+.p2 .phase-num { color: #7a5200; }
+.p3 .phase-num { color: #1e6b42; }
+.phase-name { font-size: 16px; font-weight: 900; line-height: 1.1; text-transform: uppercase; margin-bottom: 6px; }
+.p1 .phase-name { color: #1a5a8a; }
+.p2 .phase-name { color: #7a5200; }
+.p3 .phase-name { color: #1e6b42; }
+.phase-days { font-size: 10px; font-weight: 600; margin-bottom: 8px; }
+.p1 .phase-days { color: #3a7ab8; }
+.p2 .phase-days { color: #a07020; }
+.p3 .phase-days { color: #2e8050; }
+.phase-goal { font-size: 11.5px; line-height: 1.5; color: #333; }
+
+/* ── PRINCIPLE GRID ── */
+.principle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
+.principle { background: #f5f7fa; border-radius: 6px; padding: 14px 16px; border-left: 3px solid #5aacdf; }
+.principle-title { font-size: 11.5px; font-weight: 700; color: #0f1e3c; margin-bottom: 4px; }
+.principle-body { font-size: 11px; color: #555; line-height: 1.5; }
+
+/* ── WEEK SECTIONS ── */
+.phase-header {
+  background: #0f1e3c;
+  margin: 0 -44px;
+  padding: 14px 44px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.phase-header-badge {
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.ph1 .phase-header-badge { background: #1a5a8a; color: #a8d4f5; }
+.ph2 .phase-header-badge { background: #7a5200; color: #f5d580; }
+.ph3 .phase-header-badge { background: #1e6b42; color: #8fe0b0; }
+.phase-header-text { font-size: 14px; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.04em; }
+.phase-header-sub { font-size: 11px; color: #8faacc; margin-top: 1px; }
+
+.week-block { margin-bottom: 26px; }
+.week-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.week-label::after { content: ''; flex: 1; height: 1px; background: #e8e8e8; }
+.week-focus { font-size: 13px; font-weight: 700; color: #0f1e3c; margin-bottom: 12px; }
+
+/* ── DAY LIST ── */
+.day-list { display: flex; flex-direction: column; gap: 6px; }
+.day-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+}
+.day-item:hover { background: #f4f7fc; }
+.day-num {
+  font-size: 10px;
+  font-weight: 700;
+  color: #bbb;
+  min-width: 36px;
+  flex-shrink: 0;
+  padding-top: 1px;
+  letter-spacing: 0.06em;
+}
+.day-content { flex: 1; }
+.day-title { font-size: 12.5px; font-weight: 700; color: #1a2a4a; margin-bottom: 2px; }
+.day-desc { font-size: 11px; color: #666; line-height: 1.45; }
+.day-badge {
+  flex-shrink: 0;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 99px;
+  align-self: flex-start;
+  margin-top: 1px;
+}
+.badge-drill { background: #e8f1fb; color: #2a5a9a; }
+.badge-ear { background: #fef3d0; color: #8a5c00; }
+.badge-compose { background: #d9f5e4; color: #1e6b42; }
+.badge-review { background: #ede9fe; color: #4b2d8c; }
+.badge-analysis { background: #f0f0f0; color: #555; }
+
+/* ── NOTE PILLS inline ── */
+.np {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: 50%;
+  font-size: 9px; font-weight: 900; color: #fff;
+  vertical-align: middle; margin: 0 1px;
+}
+
+/* ── CALL OUT ── */
+.callout {
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+.callout.blue { background: #d6eafc; border-left: 4px solid #5aacdf; }
+.callout.amber { background: #fef3d0; border-left: 4px solid #c9a630; }
+.callout.green { background: #d9f5e4; border-left: 4px solid #5ba868; }
+.callout.slate { background: #f0f2f6; border-left: 4px solid #8899bb; }
+.callout-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 5px; }
+.callout.blue .callout-title { color: #1a5a8a; }
+.callout.amber .callout-title { color: #7a5200; }
+.callout.green .callout-title { color: #1e6b42; }
+.callout.slate .callout-title { color: #445577; }
+.callout-body { font-size: 12px; line-height: 1.55; color: #333; }
+
+/* ── RED FLAGS ── */
+.red-flag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+.red-flag { background: #fff5f5; border: 1px solid #ffd0d0; border-radius: 6px; padding: 12px 14px; }
+.red-flag-icon { font-size: 10px; font-weight: 700; color: #cc3333; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 3px; }
+.red-flag-text { font-size: 11.5px; color: #444; line-height: 1.45; }
+
+/* ── MILESTONES ── */
+.milestone-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.milestone {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+}
+.milestone-check {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.milestone-body {}
+.milestone-title { font-size: 12.5px; font-weight: 700; color: #1a2a4a; margin-bottom: 2px; }
+.milestone-desc { font-size: 11px; color: #666; line-height: 1.45; }
+
+/* ── DARK TAKEAWAY ── */
+.takeaway-block {
+  background: #0f1e3c;
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin-top: 28px;
+}
+.takeaway-block h3 { color: #fff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 14px; }
+.takeaway-q { font-size: 13px; color: #c8d8f0; line-height: 1.6; margin-bottom: 8px; padding-left: 14px; border-left: 3px solid #3a6aaa; }
+
+/* ── FOOTER ── */
+.footer { padding: 14px 44px 22px; display: flex; justify-content: space-between; align-items: center; }
+.footer-note { font-size: 10px; color: #aaa; font-style: italic; }
+.footer-logo { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+
+/* ── PROGRESS BAR ── */
+.prog-row { display: flex; gap: 3px; margin-bottom: 20px; }
+.prog-seg {
+  height: 8px;
+  border-radius: 2px;
+  flex: 1;
+}
+.prog-p1 { background: #5aacdf; }
+.prog-p2 { background: #F29B38; }
+.prog-p3 { background: #5ba868; }
+
+/* ── TABLE ── */
+table { width: 100%; border-collapse: collapse; font-size: 11.5px; margin-bottom: 20px; }
+th { background: #0f1e3c; color: #8faacc; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 12px; text-align: left; }
+td { padding: 8px 12px; border-bottom: 1px solid #f0f0f0; color: #333; line-height: 1.45; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: #fafafa; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 1: OVERVIEW -->
+<div class="page">
+  <div class="header">
+    <div>
+      <div class="module-tag">Aesthetic Melody Framework · Practice Curriculum</div>
+      <h1>90-Day Practice Plan</h1>
+      <div class="header-sub">10–20 minutes a day to make the Emotional Map of Melody an instinctual part of your playing and composing.</div>
+    </div>
+    <div class="header-stat">
+      <div class="n">90</div>
+      <div class="l">Days</div>
+    </div>
+  </div>
+  <div class="rainbow"></div>
+
+  <div class="body">
+
+    <h2>How This Works</h2>
+    <p>The goal isn't to memorize facts — it's to build <strong>automatic pattern recognition</strong>. You want to hear a note over a chord and <em>instantly feel</em> its zone without thinking. That kind of internalization requires three things: daily repetition, ears-first learning (singing before analyzing), and composition output every single day, even if it's just one bar.</p>
+    <p>Every session follows the same 3-part structure. The content of Part 2 changes each week, but the container is always the same. That consistency is what builds the habit.</p>
+
+    <div class="daily-box">
+      <div class="daily-box-title">The Daily Practice Structure (Every Day, No Exceptions)</div>
+      <div class="daily-row">
+        <div class="daily-min">2 min</div>
+        <div class="daily-step-name">The Ladder Warmup</div>
+        <div class="daily-step-desc">Sing or hum DO–SO–MI–LA–RE–TI–FA over a single drone note. Forward once, backward once. This fires up the stability map in your ear before anything else.</div>
+      </div>
+      <div class="daily-row">
+        <div class="daily-min">12–15 min</div>
+        <div class="daily-step-name">Today's Drill</div>
+        <div class="daily-step-desc">The weekly focus exercise. Changes every week. Described in detail on the following pages.</div>
+      </div>
+      <div class="daily-row">
+        <div class="daily-min">3 min</div>
+        <div class="daily-step-name">Song Moment</div>
+        <div class="daily-step-desc">Apply today's concept to Sweet Home Chicago or a song you're currently working on. Even one phrase counts. This is what locks it in.</div>
+      </div>
+    </div>
+
+    <h2>The Three Phases</h2>
+    <div class="phase-row">
+      <div class="phase-card p1">
+        <div class="phase-num">Phase 1 · Days 1–30</div>
+        <div class="phase-name">Inner Ear</div>
+        <div class="phase-days">4 weeks</div>
+        <div class="phase-goal">Internalize the stability ladder and the four zones. You should be able to <em>sing</em> the stability order without thinking and label any note's zone over a static chord.</div>
+      </div>
+      <div class="phase-card p2">
+        <div class="phase-num">Phase 2 · Days 31–60</div>
+        <div class="phase-name">Chord Context</div>
+        <div class="phase-days">4 weeks</div>
+        <div class="phase-goal">Learn to hear chord tones vs. non-chord tones and track how a note's zone shifts as chords change underneath it. Context becomes automatic.</div>
+      </div>
+      <div class="phase-card p3">
+        <div class="phase-num">Phase 3 · Days 61–90</div>
+        <div class="phase-name">Composition</div>
+        <div class="phase-days">4 weeks</div>
+        <div class="phase-goal">Use the full framework while writing. Plan tension arcs, balance sheets, and revise existing melodies using the checklist. Instinct at full speed.</div>
+      </div>
+    </div>
+
+    <div class="prog-row">
+      <!-- 30 segments each phase -->
+      <div class="prog-seg prog-p1" style="flex:30"></div>
+      <div class="prog-seg prog-p2" style="flex:30"></div>
+      <div class="prog-seg prog-p3" style="flex:30"></div>
+    </div>
+
+    <h2>Five Principles That Make It Stick</h2>
+    <div class="principle-grid">
+      <div class="principle">
+        <div class="principle-title">Ears before eyes</div>
+        <div class="principle-body">Always sing or hum a concept before you look at it on paper. The map is a description of what your ear already senses — not a rule to memorize.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-title">One thing at a time</div>
+        <div class="principle-body">Each week has one focus. Do not try to apply all 8 modules simultaneously until Phase 3. Depth beats breadth for internalization.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-title">Compose every day</div>
+        <div class="principle-body">Even one bar. The Song Moment at the end of each session is non-negotiable. Composition converts knowledge into reflex.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-title">Spaced repetition</div>
+        <div class="principle-body">From Week 5 onward, the Ladder Warmup expands to include a quick review of the previous week's concept. Old skills get re-tested constantly.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-title">Slow down on confusion</div>
+        <div class="principle-body">If a week feels unclear, repeat it. The plan is a guide, not a deadline. Two weeks on context shifting beats one rushed week every time.</div>
+      </div>
+    </div>
+
+    <h2>Anchor Song</h2>
+    <div class="callout blue">
+      <div class="callout-title">Sweet Home Chicago — Robert Johnson / Eric Clapton</div>
+      <div class="callout-body">This is your reference song for the whole 90 days. Every Song Moment connects back to it (or a song you're currently working on). Sweet Home Chicago is ideal because it uses a simple I-IV-V blues form, has a singable vocal melody with clear phrase structure, and demonstrates almost every AMF concept naturally: stable landing notes, non-chord tone passing tones, zone 2 tension on the IV chord, resolution back to DO. You will know this melody's zone map from memory by Day 90.</div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer-note">Repeat any week that feels unsolid. Progress over schedule.</div>
+    <div class="footer-logo">AMF · Practice Plan · Page 1</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 2: PHASE 1 -->
+<div class="page">
+  <div class="header">
+    <div>
+      <div class="module-tag">Phase 1 · Days 1–30</div>
+      <h1>The Inner Ear</h1>
+      <div class="header-sub">Stability ladder → Zone identification. By Day 30 you should be able to label any note's zone over a static chord in under 3 seconds.</div>
+    </div>
+    <div class="header-stat">
+      <div class="n">4</div>
+      <div class="l">Weeks</div>
+    </div>
+  </div>
+  <div class="rainbow"></div>
+
+  <div class="body ph1">
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 1 · Days 1–7</div>
+      <div>
+        <div class="phase-header-text">The Stability Ladder</div>
+        <div class="phase-header-sub">Memorize DO–SO–MI–LA–RE–TI–FA as a physical, singable sequence</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">Day 1</div>
+          <div class="day-content">
+            <div class="day-title">Learn the Order</div>
+            <div class="day-desc">Sing DO–SO–MI–LA–RE–TI–FA over a root drone (any pitch). Say each name out loud. Repeat 10× forward, 5× backward. Don't rush — let each note ring in your ear.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 2</div>
+          <div class="day-content">
+            <div class="day-title">Feel the Pull</div>
+            <div class="day-desc">Play a root chord (C major works fine). Hold each note of the stability ladder one at a time, 5 seconds each. Notice: DO feels like landing. FA feels like falling off a cliff. That feeling is the data.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 3</div>
+          <div class="day-content">
+            <div class="day-title">Rank Without Looking</div>
+            <div class="day-desc">Blind drill: have someone (or a random number generator) call out a note name. Before looking at the sheet, say its stability rank (1–7). Check yourself. 20 rounds.</div>
+          </div>
+          <div class="day-badge badge-drill">Drill</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 4</div>
+          <div class="day-content">
+            <div class="day-title">Introduce the 4 Zones</div>
+            <div class="day-desc">Read Sheet 1A slowly. Don't memorize — just feel the logic. Play a C chord. Place each scale degree into its zone: DO over C = Zone 1. FA over C = Zone 2. Then hum each note and feel which zone it belongs to.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 5</div>
+          <div class="day-content">
+            <div class="day-title">Zone 1 Phrase</div>
+            <div class="day-desc">Compose a 4-note melody using only Zone 1 notes over C chord (DO, MI, SO). It will sound safe and resolved. That's the point — feel what "sweet and grounded" is made of.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 6</div>
+          <div class="day-content">
+            <div class="day-title">Tiny Tension Arc</div>
+            <div class="day-desc">Compose a 4-note phrase: Zone 1 → Zone 1 → Zone 2 → Zone 1. Land home. Feel the one moment of yearning and the release. This is the engine of melody — almost all hooks use this structure.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 7</div>
+          <div class="day-content">
+            <div class="day-title">Week 1 Review</div>
+            <div class="day-desc">Sing the full stability ladder from memory without looking. Play yesterday's phrase and label each note's zone out loud. If any zone assignment takes more than 3 seconds, spend 5 more minutes on that note.</div>
+          </div>
+          <div class="day-badge badge-review">Review</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 2 · Days 8–14</div>
+      <div>
+        <div class="phase-header-text">Zone Fluency</div>
+        <div class="phase-header-sub">Label, substitute, and target zones in real melodies</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">Day 8</div>
+          <div class="day-content">
+            <div class="day-title">Analyze a Known Melody</div>
+            <div class="day-desc">Pick a melody you know by heart (Happy Birthday, a pop hook, anything). Sing it over a static chord. Label each note's zone. Don't worry about chord changes yet — just pick one chord.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 9</div>
+          <div class="day-content">
+            <div class="day-title">Zone Substitution</div>
+            <div class="day-desc">Take a 4-note phrase from Day 5 or 6. Swap one note for a different note in a different zone. Sing both versions. Hear the emotional shift. The map is working when you can predict the change before you play it.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 10</div>
+          <div class="day-content">
+            <div class="day-title">Visit All 4 Zones</div>
+            <div class="day-desc">Compose an 8-note phrase that touches all 4 zones at least once over a C chord. The order is up to you. Afterward, identify: which zone felt most uncomfortable? That's your growth edge.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 11</div>
+          <div class="day-content">
+            <div class="day-title">Sweet Home Chicago: First Pass</div>
+            <div class="day-desc">Sing the first verse melody of Sweet Home Chicago over a C chord drone. Label each note's zone. Just zone 1 vs. "not zone 1" for now. Mark where the tension lives.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 12</div>
+          <div class="day-content">
+            <div class="day-title">Zone Targeting</div>
+            <div class="day-desc">Three mini-phrases: one that ends in Zone 1 (resolved), one that ends in Zone 2 (questioning), one that ends in Zone 4 (dark/tense). Same starting note for all three. Hear how the landing changes the whole phrase's meaning.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 13</div>
+          <div class="day-content">
+            <div class="day-title">Lightning Round</div>
+            <div class="day-desc">Speed drill: set a 60-second timer. Call out random scale degree names (or have a partner do it). Name the zone over a C chord as fast as possible. Goal: zero hesitation by the end.</div>
+          </div>
+          <div class="day-badge badge-drill">Drill</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">Day 14</div>
+          <div class="day-content">
+            <div class="day-title">Draw the Map From Memory</div>
+            <div class="day-desc">Put away all sheets. On blank paper, draw the 2×2 zone map with axis labels, fill in the zone names and their emotional keywords. Then check against Sheet 1A. Fix any gaps.</div>
+          </div>
+          <div class="day-badge badge-review">Review</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 3 · Days 15–21</div>
+      <div>
+        <div class="phase-header-text">Scale Degree Keywords</div>
+        <div class="phase-header-sub">One note per day — build the emotional vocabulary for each degree</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D15</div>
+          <div class="day-content">
+            <div class="day-title">DO Day — HOME</div>
+            <div class="day-desc">Play DO in every octave you have. Sing it. Compose a 4-note phrase that uses DO as the primary note. Experience: settled, grounded, complete. Stability rank: 1.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D16</div>
+          <div class="day-content">
+            <div class="day-title">SO Day — OPEN</div>
+            <div class="day-desc">SO (the 5th) is the second most stable note — it feels open and bright, not quite home but nearby. Compose a phrase that alternates DO and SO. Hear the difference between "home" and "the view from home."</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D17</div>
+          <div class="day-content">
+            <div class="day-title">MI Day — SWEET</div>
+            <div class="day-desc">MI is the 3rd — it gives the chord its major/happy quality. Compose a phrase that leads into MI as the final note. Hear how it feels warm and complete, slightly softer than DO.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D18</div>
+          <div class="day-content">
+            <div class="day-title">LA Day — LONGING</div>
+            <div class="day-desc">LA (the 6th) is the first "interesting" note — stable but not a chord tone on most chords. It has warmth and a slight nostalgic ache. Compose a blues phrase where LA is the peak note.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D19</div>
+          <div class="day-content">
+            <div class="day-title">RE Day — YEARNING</div>
+            <div class="day-desc">RE (the 2nd/9th) always wants to move — up to MI or down to DO. Compose a phrase where RE is held longer than feels comfortable. Hear the forward pull. This is tension with direction.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D20</div>
+          <div class="day-content">
+            <div class="day-title">TI Day — LEADING</div>
+            <div class="day-desc">TI (the 7th / leading tone) screams to resolve up to DO. It's the most directional note in the scale. Compose a phrase that ends on TI and DON'T resolve it. Hear the listener lean forward.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D21</div>
+          <div class="day-content">
+            <div class="day-title">FA Day — THE EDGE</div>
+            <div class="day-desc">FA (the 4th) forms the tritone with TI — the most dissonant interval in Western music. Play FA and TI simultaneously. That's the sound of maximum tension. Compose a phrase where FA resolves down to MI. Feel the release.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 4 · Days 22–30</div>
+      <div>
+        <div class="phase-header-text">Phase 1 Integration</div>
+        <div class="phase-header-sub">Combine stability + zones + keywords into fluid real-time analysis</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D22</div>
+          <div class="day-content">
+            <div class="day-title">Full Map Recall</div>
+            <div class="day-desc">Draw the 4-zone map AND the stability ladder from memory in under 60 seconds. Write each note in its zone. Check against the sheets. This is your Phase 1 benchmark.</div>
+          </div>
+          <div class="day-badge badge-review">Review</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D23–24</div>
+          <div class="day-content">
+            <div class="day-title">Analyze Two Songs</div>
+            <div class="day-desc">Pick two songs with clear vocal melodies. Sing the first phrase of each and label every note: name, stability rank (1–7), zone (1–4). Write it out. This is your first full analysis drill.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D25–26</div>
+          <div class="day-content">
+            <div class="day-title">Zone Arc Composition</div>
+            <div class="day-desc">Compose a 2-bar melody with a deliberate zone arc: start Zone 1, rise to Zone 2 or 4, resolve to Zone 1. This is a complete micro-song structure. Write 3 different versions. Pick the one that moves you most.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D27–28</div>
+          <div class="day-content">
+            <div class="day-title">Sweet Home Chicago: Full Verse Map</div>
+            <div class="day-desc">Map the entire first verse of Sweet Home Chicago note by note over a static drone. Identify: first note zone, highest note zone, last note zone. Note where FA or TI appear — those are the tension moments.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D29–30</div>
+          <div class="day-content">
+            <div class="day-title">Phase 1 Checkpoint</div>
+            <div class="day-desc">Can you (1) sing the stability ladder cold in under 5 sec? (2) name any note's zone over a C chord in under 3 sec? (3) explain the FA-TI tritone without notes? If yes to all three: Phase 1 complete. If no: repeat Week 1 drills for 3 days.</div>
+          </div>
+          <div class="day-badge badge-review">Review</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer-note">The Ladder Warmup never stops — it opens every session for all 90 days.</div>
+    <div class="footer-logo">AMF · Practice Plan · Page 2</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 3: PHASE 2 -->
+<div class="page">
+  <div class="header">
+    <div>
+      <div class="module-tag">Phase 2 · Days 31–60</div>
+      <h1>Chord Context</h1>
+      <div class="header-sub">Chord tones vs. non-chord tones. Zones shifting as chords move. Context becomes automatic — the same note feels different, and you hear why.</div>
+    </div>
+    <div class="header-stat">
+      <div class="n">4</div>
+      <div class="l">Weeks</div>
+    </div>
+  </div>
+  <div class="rainbow"></div>
+
+  <div class="body ph2">
+
+    <div class="callout amber">
+      <div class="callout-title">Phase 2 Shift: From Static to Dynamic</div>
+      <div class="callout-body">In Phase 1 you always analyzed notes over a single held chord. Phase 2 introduces <strong>movement</strong>. The chord changes, and the same melody note suddenly lives in a different zone. Your job is to track that shift in real time. Start slowly — one chord change at a time — and build speed over 4 weeks.</div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 5 · Days 31–37</div>
+      <div>
+        <div class="phase-header-text">Chord Tone Ear Training</div>
+        <div class="phase-header-sub">Instantly identify whether a note belongs to the chord or not</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D31</div>
+          <div class="day-content">
+            <div class="day-title">The Four Common Chords</div>
+            <div class="day-desc">In C major: C (DO-MI-SO), F (FA-LA-DO), G7 (SO-TI-RE-FA), Am (LA-DO-MI). Memorize which notes are in each. Sing the chord tones for each chord over the drone. This is your chord tone vocabulary for Phase 2.</div>
+          </div>
+          <div class="day-badge badge-drill">Drill</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D32–33</div>
+          <div class="day-content">
+            <div class="day-title">Chord Tone Test</div>
+            <div class="day-desc">Play a chord. Sing a scale degree. Before looking: is it a chord tone? Answer, then verify. 20 rounds per day across all 4 chords. Track your accuracy — you're aiming for 90%+ by Day 33.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D34–35</div>
+          <div class="day-content">
+            <div class="day-title">Non-Chord Tones as Color</div>
+            <div class="day-desc">Play C chord. Sing DO-MI-SO (chord tones — sweet). Now add RE between MI and SO. Hear how RE adds color without breaking the phrase. That's a passing tone. Repeat with the other 3 chords, adding one non-chord tone each time.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D36–37</div>
+          <div class="day-content">
+            <div class="day-title">Chord Tone Targeting</div>
+            <div class="day-desc">Compose a 4-bar melody over C-F-G-C (simple I-IV-V-I). Choose your landing note for each chord to always be a chord tone. Hear the solidity. Then swap one landing to a non-chord tone. Hear what shifts.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 6 · Days 38–44</div>
+      <div>
+        <div class="phase-header-text">Context Shifting</div>
+        <div class="phase-header-sub">The same note over different chords = different zones</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D38–39</div>
+          <div class="day-content">
+            <div class="day-title">RE in Four Contexts</div>
+            <div class="day-desc">Hold RE (D in C major) over: C chord → zone? F chord → zone? G7 chord → zone? Dm chord → zone? Write down the zone and chord-tone status for each. Sing RE over each chord in turn without stopping. Hear it shift.</div>
+          </div>
+          <div class="day-badge badge-ear">Ear</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D40–41</div>
+          <div class="day-content">
+            <div class="day-title">Pick Your Own Note</div>
+            <div class="day-desc">Choose any note. Run it through the same 4-chord test. Write down each zone. Notice which chords "accept" it (chord tone) and which "resist" it (non-chord tone). Do this with 3 different notes over 2 days.</div>
+          </div>
+          <div class="day-badge badge-drill">Drill</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D42–43</div>
+          <div class="day-content">
+            <div class="day-title">Sustained Note, Moving Chords</div>
+            <div class="day-desc">Compose a melody where you hold one note for 2 bars while the chord changes underneath. Hear the zone shift happen without touching the melody. This is a pro technique — it creates drama from harmony alone.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D44</div>
+          <div class="day-content">
+            <div class="day-title">Sweet Home Chicago: Chord Context Pass</div>
+            <div class="day-desc">Sing the verse melody with the actual chord changes (I7-IV7-V7 blues form). For each note, ask: is this a chord tone now? How does the zone change compared to your Phase 1 static analysis? Write down the differences.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 7 · Days 45–51</div>
+      <div>
+        <div class="phase-header-text">Non-Chord Tone Types</div>
+        <div class="phase-header-sub">Pass, Neighbor, Anticipation, Suspension — use each intentionally</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D45</div>
+          <div class="day-content">
+            <div class="day-title">Passing Tone</div>
+            <div class="day-desc">A passing tone moves by step between two chord tones. DO→RE→MI over C chord: RE is the passing tone. Compose 3 phrases using passing tones. Rule: keep them short (one beat max), always moving in one direction.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D46</div>
+          <div class="day-content">
+            <div class="day-title">Neighbor Tone</div>
+            <div class="day-desc">A neighbor tone steps away from a chord tone and returns. SO→LA→SO over C: LA is the neighbor tone — it adds shimmer. Compose 3 phrases with neighbor tones. This is one of the most-used ornaments in blues and jazz.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D47</div>
+          <div class="day-content">
+            <div class="day-title">Anticipation</div>
+            <div class="day-desc">An anticipation arrives one beat early — the melody hints at the next chord before it lands. Compose a 2-chord phrase where the melody note for chord 2 arrives on the last beat of chord 1. Hear the forward lean.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D48</div>
+          <div class="day-content">
+            <div class="day-title">Suspension</div>
+            <div class="day-desc">A suspension is held over from the previous chord and resolves downward. Classic: FA holds from F chord into C chord, then resolves down to MI. Compose one phrase with a suspension. This is one of the most emotional moves in melody writing.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D49–51</div>
+          <div class="day-content">
+            <div class="day-title">NCT Identification in Real Songs</div>
+            <div class="day-desc">Pick 3 melodies (different genres). Analyze one phrase from each: identify all non-chord tones and label their type (Passing / Neighbor / Anticipation / Suspension). Sweet Home Chicago has passing tones in the turnaround — find them.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 8 · Days 52–60</div>
+      <div>
+        <div class="phase-header-text">Chord Change Behaviors</div>
+        <div class="phase-header-sub">Track what happens to your melody note when the chord moves</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D52–53</div>
+          <div class="day-content">
+            <div class="day-title">Stay Sweet</div>
+            <div class="day-desc">Compose a melody that holds the same note through 2 chord changes and stays a chord tone both times (e.g. SO through C→G). Hear the stability. This is the "backbone note" technique — SO is the strongest backbone note in C major.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D54–55</div>
+          <div class="day-content">
+            <div class="day-title">Turn Tense / Float Free</div>
+            <div class="day-desc">Compose a phrase where the melody holds while the chord changes — once making it "turn tense" (was chord tone, now isn't), once "float free" (was non-chord, now the chord adopts it). Hear both directions of the shift.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D56–57</div>
+          <div class="day-content">
+            <div class="day-title">Pillar Notes</div>
+            <div class="day-desc">Compose a 4-chord progression. Choose one deliberate "landing note" for each chord — your pillar note. Make them chord tones. Then connect them with any passing tones you like. Hear how the pillars give the phrase a solid skeleton.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D58–60</div>
+          <div class="day-content">
+            <div class="day-title">Phase 2 Checkpoint + Full Verse Analysis</div>
+            <div class="day-desc">Sing the full verse of Sweet Home Chicago with chord changes. Label every note: name, chord-tone status (yes/no), zone. Identify: all 4 NCT types present. All 4 chord-change behaviors present. Zone arc of the phrase. If you can do this fluidly, Phase 2 is done.</div>
+          </div>
+          <div class="day-badge badge-review">Review</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer-note">From Day 31 onward, add a 30-second "previous week flash" to the Ladder Warmup: sing the chord tones of one chord cold.</div>
+    <div class="footer-logo">AMF · Practice Plan · Page 3</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 4: PHASE 3 -->
+<div class="page">
+  <div class="header">
+    <div>
+      <div class="module-tag">Phase 3 · Days 61–90</div>
+      <h1>Composition Fluency</h1>
+      <div class="header-sub">Plan zones before writing. Revise existing melodies. Compose complete multi-section songs using the full AMF framework at full speed.</div>
+    </div>
+    <div class="header-stat">
+      <div class="n">4</div>
+      <div class="l">Weeks</div>
+    </div>
+  </div>
+  <div class="rainbow"></div>
+
+  <div class="body ph3">
+
+    <div class="callout green">
+      <div class="callout-title">Phase 3: The Framework Disappears</div>
+      <div class="callout-body">The goal of Phase 3 is for the framework to become invisible. By Day 90, you shouldn't be thinking "what zone is this note?" — you should be <em>hearing</em> the zone before you even name it. The drills in this phase push you to use all 8 modules together in real composition time, so the instinct gets reinforced under the pressure of actually writing music.</div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 9 · Days 61–67</div>
+      <div>
+        <div class="phase-header-text">Sweet vs Bitter Balance</div>
+        <div class="phase-header-sub">Score your phrases — aim for section-appropriate zone ratios</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D61–62</div>
+          <div class="day-content">
+            <div class="day-title">Score Your Own Phrases</div>
+            <div class="day-desc">Take 3 phrases you've composed in Phases 1-2. Count how many notes are in each zone. Compute the percentage: Zone 1 / Zone 2 / Zone 3 / Zone 4. Compare to the Reference Ratios on Sheet 6A. Is your verse-level phrase verse-appropriate?</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D63–64</div>
+          <div class="day-content">
+            <div class="day-title">Section Targeting</div>
+            <div class="day-desc">Compose 3 phrases to hit specific zone ratios: one "verse" phrase (50% Sweet), one "chorus" phrase (60% Sweet + big peak), one "bridge" phrase (heavy Zone 3 and 4 = floating + bitter). Don't just count after — plan the zones before you write the notes.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D65–67</div>
+          <div class="day-content">
+            <div class="day-title">Contrast Two Sections</div>
+            <div class="day-desc">Write a verse AND a chorus for the same song concept. The chorus should have a noticeably higher Zone 1 ratio and the highest note should be a chord tone. Make them feel like they belong together but serve different emotional purposes.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 10 · Days 68–74</div>
+      <div>
+        <div class="phase-header-text">Tension Arc Planning</div>
+        <div class="phase-header-sub">Map the emotional arc before writing a note</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D68–69</div>
+          <div class="day-content">
+            <div class="day-title">Fill the Section Planner</div>
+            <div class="day-desc">Use Sheet 7A to plan a 4-section song: Intro / Verse / Chorus / Bridge. For each section: target zone, target pillar note, zone distribution goal. Write the plan BEFORE composing. Then spend 5 min writing just the verse melody from the plan.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D70–71</div>
+          <div class="day-content">
+            <div class="day-title">The Bridge Challenge</div>
+            <div class="day-desc">The bridge is where most writers fail — it either feels too similar to the verse or sounds random. Compose a bridge that is predominantly Zone 3 (Floating) and Zone 4 (Bitter). It should feel like it comes from a different emotional place, then lead back to the final chorus.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D72–74</div>
+          <div class="day-content">
+            <div class="day-title">Analyze a Complete Song</div>
+            <div class="day-desc">Choose a song with verse, chorus, and bridge. Map the zone arc for each section's opening phrase. Does the composer follow or break the Classic Rise-Fall arc? Write one paragraph on what makes the tension arc work in this song.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 11 · Days 75–81</div>
+      <div>
+        <div class="phase-header-text">The Revision Checklist</div>
+        <div class="phase-header-sub">Run the 8-step audit on real melodies — yours and others'</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D75–76</div>
+          <div class="day-content">
+            <div class="day-title">Audit a Melody You've Written</div>
+            <div class="day-desc">Take a melody you've written (from any point in this plan) and run it through all 8 steps of the Melody Revision Checklist (Sheet 8A). Identify: at least one thing to fix. Make the fix. Sing both versions. Hear the improvement.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D77–78</div>
+          <div class="day-content">
+            <div class="day-title">Find the Red Flags</div>
+            <div class="day-desc">Using the red-flag checklist from Sheet 8A, check your last 5 composed phrases for: 3+ consecutive Zone 4 notes, chorus ending on TI or FA, zero Zone 3/4 notes (too safe). Fix any that have a red flag. One fix per session.</div>
+          </div>
+          <div class="day-badge badge-drill">Drill</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D79–81</div>
+          <div class="day-content">
+            <div class="day-title">Peer Melody Audit</div>
+            <div class="day-desc">Find a melody from a published song and run the full 8-step audit as if you were giving the writer feedback. Identify 2 things that are deliberate and effective (explain why using AMF language). Identify 1 thing you would change.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase-header">
+      <div class="phase-header-badge">Week 12 · Days 82–90</div>
+      <div>
+        <div class="phase-header-text">Full Song + Final Assessment</div>
+        <div class="phase-header-sub">Compose a complete song using the full framework — then prove you don't need it</div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="day-list">
+        <div class="day-item">
+          <div class="day-num">D82–85</div>
+          <div class="day-content">
+            <div class="day-title">The 90-Day Song</div>
+            <div class="day-desc">Compose a complete original song: Intro / Verse / Pre-Chorus / Chorus / Bridge / Final Chorus. Use the Section Planner. Plan your zone arcs, pillar notes, and zone distribution for each section first. Then write. This is your capstone piece.</div>
+          </div>
+          <div class="day-badge badge-compose">Compose</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D86–87</div>
+          <div class="day-content">
+            <div class="day-title">Audit Your Own Song</div>
+            <div class="day-desc">Run the full 8-step Melody Revision Checklist on your 90-Day Song. Fix at least 2 things. Specifically check: does the chorus really feel more resolved than the verse? Does the bridge have enough zone contrast?</div>
+          </div>
+          <div class="day-badge badge-review">Review</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D88</div>
+          <div class="day-content">
+            <div class="day-title">Speed Drill: Full Framework</div>
+            <div class="day-desc">90-second timed drill. Call out 20 random scenarios: "RE over G7 — chord tone? Zone?" Answer before thinking. If any answer takes more than 2 seconds, you've found your last weak spot. Spend the remaining session time on it.</div>
+          </div>
+          <div class="day-badge badge-drill">Drill</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D89</div>
+          <div class="day-content">
+            <div class="day-title">Sweet Home Chicago: Final Full Analysis</div>
+            <div class="day-desc">Complete top-to-bottom analysis of Sweet Home Chicago using all 8 modules: zone map, NCT types identified, chord change behaviors labeled, tension arc plotted, balance sheet scored. Write a one-paragraph summary of what makes this melody work. Compare to Day 11's basic analysis.</div>
+          </div>
+          <div class="day-badge badge-analysis">Analysis</div>
+        </div>
+        <div class="day-item">
+          <div class="day-num">D90</div>
+          <div class="day-content">
+            <div class="day-title">The Instinct Test</div>
+            <div class="day-desc">Put away all sheets. Sit at your instrument. Improvise a 30-second melody over a I-IV-V-I chord progression. Afterward — without playing it back — describe what zones you visited, what your highest note was, how you handled each chord change. If you can describe it, you've internalized it.</div>
+          </div>
+          <div class="day-badge badge-review">Review</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Milestones — How You Know It's Working</h2>
+    <div class="milestone-list">
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 7 — Sing the ladder cold in &lt; 5 seconds</div>
+          <div class="milestone-desc">DO–SO–MI–LA–RE–TI–FA forward and backward without hesitation. This is your first real checkpoint.</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 14 — Draw the zone map from memory</div>
+          <div class="milestone-desc">All 4 zones, both axis labels, all 7 notes placed correctly. Under 90 seconds.</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 30 — Label any note's zone over a static chord in &lt; 3 seconds</div>
+          <div class="milestone-desc">The Phase 1 goal. Automatic zone assignment with no conscious calculation.</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 45 — Hear a chord change and predict the zone shift</div>
+          <div class="milestone-desc">Before looking at the sheet, you can say: "if the chord moves from C to F and I'm holding RE, I go from Zone 3 to Zone 1."</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 60 — Full verse analysis in real time while singing</div>
+          <div class="milestone-desc">Sing Sweet Home Chicago and internally track zones and chord tones simultaneously — no pausing to think.</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 90 — The Instinct Test passes</div>
+          <div class="milestone-desc">You improvise a melody and can describe it using AMF language without playing it back. The framework has become the ear.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="takeaway-block">
+      <h3>The Three Questions to Ask Every Time You Write a Melody</h3>
+      <div class="takeaway-q">Where is the tension in this phrase — and is it where I want it?</div>
+      <div class="takeaway-q">Does the landing note resolve, or does it leave the listener reaching for more?</div>
+      <div class="takeaway-q">If I described this phrase's zone arc out loud, would it match what the song needs emotionally?</div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer-note">Day 90 is the beginning, not the end — the framework keeps deepening every year you play.</div>
+    <div class="footer-logo">AMF · Practice Plan · Page 4</div>
+  </div>
+</div>
+
+</body>
+</html>
