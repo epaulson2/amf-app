@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 4 Emotional Zones of Melody</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #e8e8e8;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.page {
+  width: 850px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.14);
+}
+
+/* ── HEADER ─────────────────────────────────────────── */
+.header {
+  background: #0f1e3c;
+  padding: 26px 40px 22px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.header-left {}
+.module-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #7a9bd4;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.header h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.header-sub {
+  font-size: 12.5px;
+  color: #8faacc;
+  margin-top: 6px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 440px;
+}
+.header-badge {
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 10px 18px;
+  text-align: center;
+}
+.header-badge .num { font-size: 32px; font-weight: 900; color: #fff; line-height: 1; }
+.header-badge .lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #7a9bd4; text-transform: uppercase; margin-top: 3px; }
+
+.rainbow-rule {
+  height: 4px;
+  background: linear-gradient(90deg, #5aacdf 0%, #7dc48a 25%, #F29B38 55%, #8A6BC8 80%, #c9a630 100%);
+}
+
+/* ── AXIS WRAPPER ───────────────────────────────────── */
+.map-section {
+  padding: 28px 40px 0;
+}
+
+.axis-title-h {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.axis-title-h span.lbl { color: #222; }
+.axis-arrow { color: #bbb; font-size: 14px; }
+
+.h-axis-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px;
+  margin-bottom: 4px;
+}
+.h-axis-labels span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+/* the main grid + v-axis */
+.grid-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.v-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 28px;
+  flex-shrink: 0;
+  padding: 6px 0;
+}
+.v-axis-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666;
+  white-space: nowrap;
+}
+.v-axis-arrow {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* ── ZONE GRID ──────────────────────────────────────── */
+.zone-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 440px;
+}
+
+.zone {
+  padding: 18px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: visible;
+}
+.zone:nth-child(1) { border-right: 2px solid rgba(0,0,0,0.1); border-bottom: 2px solid rgba(0,0,0,0.1); }
+.zone:nth-child(2) { border-bottom: 2px solid rgba(0,0,0,0.1); }
+.zone:nth-child(3) { border-right: 2px solid rgba(0,0,0,0.1); }
+
+.z1 { background: #d6eafc; }
+.z2 { background: #fef3d0; }
+.z3 { background: #d9f5e4; }
+.z4 { background: #ede9fe; }
+
+/* faint big number */
+.zone::before {
+  content: attr(data-num);
+  position: absolute;
+  bottom: -10px;
+  right: 4px;
+  font-size: 110px;
+  font-weight: 900;
+  opacity: 0.07;
+  line-height: 1;
+  color: #000;
+  pointer-events: none;
+  user-select: none;
+}
+
+.zone-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.zone-color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.z1 .zone-color-dot { background: #5aacdf; }
+.z2 .zone-color-dot { background: #c9a630; }
+.z3 .zone-color-dot { background: #5ba868; }
+.z4 .zone-color-dot { background: #8A6BC8; }
+
+.zone-tag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.zone-name {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin-bottom: 6px;
+}
+.z1 .zone-name { color: #1a5a8a; }
+.z2 .zone-name { color: #7a5200; }
+.z3 .zone-name { color: #1e6b42; }
+.z4 .zone-name { color: #4b2d8c; }
+
+.zone-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.kw {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.z1 .kw { background: rgba(90,172,223,0.25); color: #1a5a8a; }
+.z2 .kw { background: rgba(201,166,48,0.25); color: #7a5200; }
+.z3 .kw { background: rgba(91,168,104,0.25); color: #1e6b42; }
+.z4 .kw { background: rgba(138,107,200,0.25); color: #4b2d8c; }
+
+.zone-desc {
+  font-size: 11px;
+  line-height: 1.45;
+  color: #333;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.note-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.np {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 900;
+  color: #fff;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+.np-context {
+  font-size: 10px;
+  color: #555;
+  align-self: center;
+  font-style: italic;
+}
+
+/* center divider label */
+.divider-h {
+  position: relative;
+  height: 0;
+  border-top: 2px dashed rgba(0,0,0,0.15);
+  margin: 0;
+}
+.divider-v-label {
+  text-align: center;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 6px 0 4px;
+}
+
+/* ── AXIS DEFS ──────────────────────────────────────── */
+.axis-defs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 18px 40px 0;
+}
+.axis-def {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 12px 16px;
+  border-left: 3px solid #ccc;
+}
+.axis-def.v-def { border-left-color: #5aacdf; }
+.axis-def.h-def { border-left-color: #c9a630; }
+.axis-def-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 4px;
+}
+.axis-def-body {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ── READING GUIDE ──────────────────────────────────── */
+.reading-guide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 14px 40px 0;
+}
+.guide-card {
+  background: #0f1e3c;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+.guide-q {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7a9bd4;
+  margin-bottom: 4px;
+}
+.guide-a {
+  font-size: 11.5px;
+  color: #e8edf5;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+/* ── FOOTER ─────────────────────────────────────────── */
+.footer {
+  padding: 14px 40px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-note {
+  font-size: 10px;
+  color: #aaa;
+  font-style: italic;
+}
+.footer-logo {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ccc;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="module-tag">Module A · Infographic A4</div>
+      <h1>The 4 Emotional<br>Zones of Melody</h1>
+      <div class="header-sub">Every melody note lands in one of four zones based on two things: how stable the note is in the key, and whether it belongs to the current chord.</div>
+    </div>
+    <div class="header-badge">
+      <div class="num">4</div>
+      <div class="lbl">Zones</div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <!-- MAP SECTION -->
+  <div class="map-section">
+
+    <!-- Horizontal axis title -->
+    <div class="axis-title-h">
+      <span class="axis-arrow">◀</span>
+      <span class="lbl">Stable</span>
+      <span style="color:#bbb;font-size:11px;font-weight:400;letter-spacing:0">— Stability Axis →</span>
+      <span class="lbl">Unstable</span>
+      <span class="axis-arrow">▶</span>
+    </div>
+
+    <div class="grid-row">
+      <!-- Vertical axis -->
+      <div class="v-axis">
+        <div class="v-axis-label">Chord Tone</div>
+        <div class="v-axis-arrow" style="transform:rotate(90deg)">▼</div>
+        <div class="v-axis-arrow" style="transform:rotate(-90deg)">▼</div>
+        <div class="v-axis-label">Non-Chord Tone</div>
+      </div>
+
+      <!-- Zone grid -->
+      <div class="zone-grid">
+
+        <!-- Z1: Sweet / Grounded — stable + chord tone (top-left) -->
+        <div class="zone z1" data-num="1">
+          <div class="zone-header">
+            <div class="zone-color-dot"></div>
+            <div class="zone-tag">Stable · Chord Tone</div>
+          </div>
+          <div class="zone-name">Sweet<br>Grounded</div>
+          <div class="zone-keywords">
+            <span class="kw">Resolved</span>
+            <span class="kw">Warm</span>
+            <span class="kw">Safe</span>
+            <span class="kw">Settled</span>
+          </div>
+          <div class="zone-desc">The note belongs to the chord <em>and</em> sits near the tonal center. Maximum harmonic comfort — listeners feel at home.</div>
+
+          <div class="note-pills">
+            <span class="np" style="background:#3F6FB6" title="SO">SO</span>
+            <span class="np" style="background:#7dc48a" title="MI">MI</span>
+            <span class="np" style="background:#6bb8e8" title="DO">DO</span>
+            <span class="np-context">as chord tones</span>
+          </div>
+        </div>
+
+        <!-- Z2: Tense / Supported — unstable + chord tone (top-right) -->
+        <div class="zone z2" data-num="2">
+          <div class="zone-header">
+            <div class="zone-color-dot"></div>
+            <div class="zone-tag">Unstable · Chord Tone</div>
+          </div>
+          <div class="zone-name">Tense<br>Supported</div>
+          <div class="zone-keywords">
+            <span class="kw">Forward</span>
+            <span class="kw">Yearning</span>
+            <span class="kw">Active</span>
+            <span class="kw">Leaning</span>
+          </div>
+          <div class="zone-desc">Harmonically supported by the chord, but an inherently unstable scale degree — it wants to move somewhere.</div>
+          <div class="note-pills">
+            <span class="np" style="background:#c9a630" title="FA">FA</span>
+            <span class="np" style="background:#d97b6a" title="RE">RE</span>
+            <span class="np" style="background:#8A6BC8" title="TI">TI</span>
+            <span class="np-context">as chord tones</span>
+          </div>
+        </div>
+
+        <!-- Z3: Floating / Modern — stable + non-chord tone (bottom-left) -->
+        <div class="zone z3" data-num="3">
+          <div class="zone-header">
+            <div class="zone-color-dot"></div>
+            <div class="zone-tag">Stable · Non-Chord Tone</div>
+          </div>
+          <div class="zone-name">Floating<br>Modern</div>
+          <div class="zone-keywords">
+            <span class="kw">Open</span>
+            <span class="kw">Color</span>
+            <span class="kw">Spacious</span>
+            <span class="kw">Interesting</span>
+          </div>
+          <div class="zone-desc">Doesn't belong to the chord, but stable in the key — so it floats rather than clashes. Great for jazz color and added extensions.</div>
+          <div class="note-pills">
+            <span class="np" style="background:#6bb8e8" title="DO">DO</span>
+            <span class="np" style="background:#3F6FB6" title="SO">SO</span>
+            <span class="np" style="background:#7dc48a" title="MI">MI</span>
+            <span class="np-context">outside the chord</span>
+          </div>
+        </div>
+
+        <!-- Z4: Bitter / Edgy — unstable + non-chord tone (bottom-right) -->
+        <div class="zone z4" data-num="4">
+          <div class="zone-header">
+            <div class="zone-color-dot"></div>
+            <div class="zone-tag">Unstable · Non-Chord Tone</div>
+          </div>
+          <div class="zone-name">Bitter<br>Edgy</div>
+          <div class="zone-keywords">
+            <span class="kw">Dark</span>
+            <span class="kw">Raw</span>
+            <span class="kw">Urgent</span>
+            <span class="kw">Dissonant</span>
+          </div>
+          <div class="zone-desc">The note clashes with the chord <em>and</em> it's an unstable scale degree. Maximum tension — powerful in small doses, exhausting if overused.</div>
+          <div class="note-pills">
+            <span class="np" style="background:#8A6BC8" title="TI">TI</span>
+            <span class="np" style="background:#c9a630" title="FA">FA</span>
+            <span class="np-context">outside the chord</span>
+          </div>
+        </div>
+
+      </div><!-- /zone-grid -->
+    </div><!-- /grid-row -->
+  </div><!-- /map-section -->
+
+  <!-- AXIS DEFINITIONS -->
+  <div class="axis-defs">
+    <div class="axis-def v-def">
+      <div class="axis-def-title">Stability Axis (Vertical)</div>
+      <div class="axis-def-body">How settled is this note in the key? Stable notes (DO, SO, MI) feel like home. Unstable notes (FA, TI, RE) feel like they need to move. This is about the note's place in the key — not the chord.</div>
+    </div>
+    <div class="axis-def h-def">
+      <div class="axis-def-title">Chord Relationship (Horizontal)</div>
+      <div class="axis-def-body">Is the note part of the chord currently playing? A chord tone has harmonic backing — it "fits." A non-chord tone floats above or collides with the chord — it adds color or tension depending on stability.</div>
+    </div>
+  </div>
+
+  <!-- READING GUIDE -->
+  <div class="reading-guide">
+    <div class="guide-card">
+      <div class="guide-q">Need resolution?</div>
+      <div class="guide-a">Land on Zone 1 — stable chord tones carry the feeling home.</div>
+    </div>
+    <div class="guide-card">
+      <div class="guide-q">Need drive / urgency?</div>
+      <div class="guide-a">Lean into Zone 2 — tense chord tones pull forward without falling apart.</div>
+    </div>
+    <div class="guide-card">
+      <div class="guide-q">Need dark intensity?</div>
+      <div class="guide-a">Use Zone 4 — but land back in Zone 1 or it collapses.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-note">Zone placement changes when the chord changes — the same note can move between zones mid-phrase.</div>
+    <div class="footer-logo">AMF · Module A</div>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>
