@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMF 90-Day Workbook</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; padding: 32px 0 64px; }
+
+.page {
+  width: 850px;
+  margin: 0 auto 28px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  padding: 0;
+}
+
+/* ── HEADER ── */
+.header {
+  background: #0f1e3c;
+  padding: 28px 44px 24px;
+}
+.header-flex { display: flex; justify-content: space-between; align-items: flex-end; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 7px; }
+.header h1 { font-size: 30px; font-weight: 900; color: #fff; line-height: 1.05; text-transform: uppercase; }
+.header h1.small { font-size: 22px; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 7px; max-width: 500px; line-height: 1.55; }
+.header-stat { flex-shrink: 0; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 10px 18px; text-align: center; }
+.header-stat .n { font-size: 30px; font-weight: 900; color: #fff; line-height: 1; }
+.header-stat .l { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; color: #7a9bd4; text-transform: uppercase; margin-top: 3px; }
+.rainbow { height: 4px; background: linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%); }
+
+/* ── BODY ── */
+.body { padding: 32px 40px 32px; }
+
+h2 { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7a9bd4; margin-bottom: 12px; margin-top: 26px; }
+h2:first-child { margin-top: 0; }
+h3 { font-size: 13px; font-weight: 700; color: #0f1e3c; margin-bottom: 6px; }
+p { font-size: 12px; line-height: 1.65; color: #333; margin-bottom: 8px; }
+
+/* ── WRITING LINES ── */
+.write-line {
+  border-bottom: 1px dotted #bbb;
+  height: 28px;
+  margin-bottom: 4px;
+  width: 100%;
+  display: block;
+}
+.write-line-short {
+  border-bottom: 1px dotted #bbb;
+  height: 28px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.write-area { margin-bottom: 10px; }
+
+/* ── WEEK HEADER BAR ── */
+.week-header {
+  background: #0f1e3c;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.week-badge {
+  background: rgba(255,255,255,0.15);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  color: #fff;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.phase-badge {
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.ph1 { background: #1a5a8a; color: #a8d4f5; }
+.ph2 { background: #7a5200; color: #f5d580; }
+.ph3 { background: #1e6b42; color: #8fe0b0; }
+.week-title { font-size: 16px; font-weight: 900; color: #fff; text-transform: uppercase; flex: 1; }
+.week-days { font-size: 10px; color: #8faacc; font-weight: 600; flex-shrink: 0; }
+
+/* ── LADDER WARMUP BOX ── */
+.ladder-warmup {
+  background: #f5f7fa;
+  border: 1px solid #e0e4ed;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin: 0 40px 14px;
+  font-size: 11px;
+  color: #556;
+  line-height: 1.4;
+}
+
+/* ── FOCUS BOX ── */
+.focus-box {
+  margin: 0 40px 14px;
+  background: #d6eafc;
+  border-left: 4px solid #5aacdf;
+  border-radius: 0 6px 6px 0;
+  padding: 10px 14px;
+}
+.focus-box.p2 { background: #fef3d0; border-left-color: #c9a630; }
+.focus-box.p3 { background: #d9f5e4; border-left-color: #5ba868; }
+.focus-label { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #1a5a8a; margin-bottom: 4px; }
+.focus-box.p2 .focus-label { color: #7a5200; }
+.focus-box.p3 .focus-label { color: #1e6b42; }
+.focus-text { font-size: 12px; font-weight: 600; color: #0f1e3c; line-height: 1.45; }
+
+/* ── DAILY LOG ── */
+.daily-section { padding: 0 40px; margin-bottom: 14px; }
+.section-label { font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7a9bd4; margin-bottom: 8px; }
+.day-row {
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  background: #fafafa;
+}
+.day-row-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.day-num-badge {
+  background: #0f1e3c;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.day-drill { font-size: 11.5px; font-weight: 600; color: #1a2a4a; flex: 1; line-height: 1.4; }
+.day-lines { margin-top: 4px; }
+.zone-checks {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #888;
+}
+.zone-circle {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid #ccc;
+  display: inline-block;
+}
+
+/* ── COMPOSE SPACE ── */
+.compose-section { padding: 0 40px; margin-bottom: 14px; }
+.compose-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #fff;
+}
+.compose-title { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #0f1e3c; margin-bottom: 10px; }
+.staff-group { margin-bottom: 14px; }
+.staff-line {
+  height: 1px;
+  background: #ddd;
+  margin-bottom: 9px;
+}
+.staff-lines { margin-bottom: 4px; }
+.zone-note-line {
+  border-bottom: 1px dotted #bbb;
+  height: 18px;
+  margin-bottom: 8px;
+  font-size: 9px;
+  color: #aaa;
+  padding-top: 2px;
+}
+
+/* ── REFLECTION ── */
+.reflection-section { padding: 0 40px; margin-bottom: 14px; }
+.reflection-prompt { font-size: 11.5px; font-weight: 600; color: #0f1e3c; margin-bottom: 3px; margin-top: 10px; }
+.reflection-prompt:first-child { margin-top: 0; }
+
+/* ── SONG MOMENT ── */
+.song-moment { padding: 0 40px; margin-bottom: 14px; font-size: 11.5px; color: #0f1e3c; }
+.song-moment-line { border-bottom: 1px dotted #bbb; display: inline-block; width: 340px; height: 22px; vertical-align: bottom; }
+
+/* ── NOTE CIRCLES (colored) ── */
+.nc {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: 50%;
+  font-size: 9px; font-weight: 900; color: #fff;
+  vertical-align: middle; margin: 0 2px;
+}
+.nc-do { background: #6bb8e8; }
+.nc-so { background: #3F6FB6; }
+.nc-mi { background: #7dc48a; }
+.nc-la { background: #F29B38; }
+.nc-re { background: #d97b6a; }
+.nc-ti { background: #8A6BC8; }
+.nc-fa { background: #c9a630; }
+
+/* ── MILESTONE LIST ── */
+.milestone-list { margin-bottom: 20px; }
+.milestone {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 6px;
+}
+.milestone-check {
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.milestone-body { flex: 1; }
+.milestone-title { font-size: 12px; font-weight: 700; color: #1a2a4a; margin-bottom: 2px; }
+.milestone-date { font-size: 10.5px; color: #999; }
+
+/* ── LADDER STRIP ── */
+.ladder-strip {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: #0f1e3c;
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+.ladder-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.ladder-circle {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 900; color: #fff;
+  margin-bottom: 4px;
+}
+.ladder-rank { font-size: 9px; font-weight: 700; color: #7a9bd4; }
+.ladder-arr { color: #445577; font-size: 12px; margin-bottom: 16px; }
+
+/* ── TEMPLATE PAGES ── */
+.template-label {
+  background: #fef3d0;
+  border: 1px solid #e0c060;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7a5200;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.grid-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+.grid-table th { background: #0f1e3c; color: #8faacc; font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 7px 10px; text-align: left; }
+.grid-table td { padding: 0 10px; border-bottom: 1px solid #f0f0f0; height: 28px; color: #333; vertical-align: middle; border-right: 1px solid #f0f0f0; }
+.grid-table td:last-child { border-right: none; }
+.grid-table tr:last-child td { border-bottom: none; }
+
+/* ── ZONE MAP GRID ── */
+.zone-map-blank {
+  width: 400px; height: 400px;
+  border: 2px solid #ddd;
+  margin: 0 auto 16px;
+  position: relative;
+  background: #fff;
+}
+.zone-map-blank::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 0; right: 0;
+  height: 1px; background: #ccc;
+}
+.zone-map-blank::before {
+  content: '';
+  position: absolute;
+  left: 50%; top: 0; bottom: 0;
+  width: 1px; background: #ccc;
+}
+.axis-label-h { text-align: center; font-size: 10px; color: #999; margin-bottom: 6px; }
+.axis-label-v {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 10px; color: #999;
+  position: absolute;
+  left: -30px; top: 50%;
+  transform: rotate(180deg) translateY(50%);
+}
+
+/* ── SECTION ANALYSIS TABLE ── */
+.section-table { width: 100%; border-collapse: collapse; font-size: 10.5px; margin-bottom: 14px; }
+.section-table th { background: #0f1e3c; color: #8faacc; font-size: 8.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 8px; text-align: left; }
+.section-table td { padding: 6px 8px; border-bottom: 1px solid #f0f0f0; border-right: 1px solid #f0f0f0; height: 32px; vertical-align: middle; }
+.section-table td:last-child { border-right: none; }
+.section-label-cell { font-size: 10px; font-weight: 700; color: #0f1e3c; width: 80px; }
+
+/* ── NOTE SLOTS (balance tally) ── */
+.note-slots { display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.note-slot {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  width: 72px;
+}
+.note-circle-blank {
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700; color: #ccc;
+}
+.note-slot-label { font-size: 9px; color: #888; font-weight: 600; }
+
+/* ── ARC PLANNER ── */
+.arc-boxes { display: flex; gap: 10px; margin-bottom: 12px; }
+.arc-box {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  background: #fafafa;
+  font-size: 10.5px;
+  color: #556;
+}
+.arc-box-label { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 6px; }
+.arc-line { border-bottom: 1px dotted #bbb; height: 22px; }
+
+/* ── FOOTER ── */
+.footer { padding: 10px 40px 18px; display: flex; justify-content: space-between; align-items: center; }
+.footer-note { font-size: 9px; color: #bbb; font-style: italic; }
+.footer-logo { font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ccc; }
+
+/* ── PRINT ── */
+@media print {
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; margin: 0; page-break-after: always; }
+  .page:last-child { page-break-after: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ PAGE 1: COVER + HOW TO USE ═══════ -->
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Aesthetic Melody Framework · Practice Curriculum</div>
+    <h1>AMF 90-Day Workbook</h1>
+    <div class="header-sub">Your personal practice journal for the Aesthetic Melody Framework.</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="body">
+
+    <h2>How to Use This Workbook</h2>
+    <div style="margin-bottom:18px;">
+      <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:9px;">
+        <div style="width:22px;height:22px;border-radius:50%;background:#0f1e3c;color:#fff;font-size:10px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">1</div>
+        <div style="font-size:12px;color:#333;line-height:1.6;">Use this alongside the 90-Day Practice Plan — one weekly page per week.</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:9px;">
+        <div style="width:22px;height:22px;border-radius:50%;background:#0f1e3c;color:#fff;font-size:10px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">2</div>
+        <div style="font-size:12px;color:#333;line-height:1.6;">The Ladder Warmup happens every session — it's printed at the top of every weekly page.</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:9px;">
+        <div style="width:22px;height:22px;border-radius:50%;background:#0f1e3c;color:#fff;font-size:10px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">3</div>
+        <div style="font-size:12px;color:#333;line-height:1.6;">Templates at the back (pages 14–18) can be photocopied or used multiple times.</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <div style="width:22px;height:22px;border-radius:50%;background:#0f1e3c;color:#fff;font-size:10px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">4</div>
+        <div style="font-size:12px;color:#333;line-height:1.6;">Write everything — composition sketches, analysis notes, observations. The act of writing is half the learning.</div>
+      </div>
+    </div>
+
+    <h2>6-Milestone Progress Tracker</h2>
+    <div class="milestone-list">
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 7 — Sing the stability ladder cold in under 5 seconds</div>
+          <div class="milestone-date">Date achieved: ________________________________</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 14 — Draw the zone map from memory</div>
+          <div class="milestone-date">Date achieved: ________________________________</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 30 — Label any note's zone over a static chord in under 3 seconds</div>
+          <div class="milestone-date">Date achieved: ________________________________</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 45 — Hear a chord change and predict the zone shift</div>
+          <div class="milestone-date">Date achieved: ________________________________</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 60 — Full verse analysis in real time while singing</div>
+          <div class="milestone-date">Date achieved: ________________________________</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-check"></div>
+        <div class="milestone-body">
+          <div class="milestone-title">Day 90 — The Instinct Test passes</div>
+          <div class="milestone-date">Date achieved: ________________________________</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Stability Ladder Reference</h2>
+    <div class="ladder-strip">
+      <div class="ladder-item">
+        <div class="ladder-circle" style="background:#6bb8e8;">DO</div>
+        <div class="ladder-rank">#1</div>
+      </div>
+      <div class="ladder-arr">→</div>
+      <div class="ladder-item">
+        <div class="ladder-circle" style="background:#3F6FB6;">SO</div>
+        <div class="ladder-rank">#2</div>
+      </div>
+      <div class="ladder-arr">→</div>
+      <div class="ladder-item">
+        <div class="ladder-circle" style="background:#7dc48a;">MI</div>
+        <div class="ladder-rank">#3</div>
+      </div>
+      <div class="ladder-arr">→</div>
+      <div class="ladder-item">
+        <div class="ladder-circle" style="background:#F29B38;">LA</div>
+        <div class="ladder-rank">#4</div>
+      </div>
+      <div class="ladder-arr">→</div>
+      <div class="ladder-item">
+        <div class="ladder-circle" style="background:#d97b6a;">RE</div>
+        <div class="ladder-rank">#5</div>
+      </div>
+      <div class="ladder-arr">→</div>
+      <div class="ladder-item">
+        <div class="ladder-circle" style="background:#8A6BC8;">TI</div>
+        <div class="ladder-rank">#6</div>
+      </div>
+      <div class="ladder-arr">→</div>
+      <div class="ladder-item">
+        <div class="ladder-circle" style="background:#c9a630;">FA</div>
+        <div class="ladder-rank">#7</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 1</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 2: WEEK 1 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 1</div>
+    <div class="phase-badge ph1">Phase 1 · Inner Ear</div>
+    <div class="week-title">The Stability Ladder</div>
+    <div class="week-days">Days 1–7</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Memorize DO–SO–MI–LA–RE–TI–FA as a physical, singable sequence. By Day 7 you should be able to sing it cold in under 5 seconds.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top">
+        <div class="day-num-badge">Day 1</div>
+        <div class="day-drill">Learn &amp; sing the order 10× forward, 5× backward</div>
+      </div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top">
+        <div class="day-num-badge">Day 2</div>
+        <div class="day-drill">Sing ladder over drone, feel the pull of each note</div>
+      </div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top">
+        <div class="day-num-badge">Day 3</div>
+        <div class="day-drill">Rank 20 random notes 1–7 without looking</div>
+      </div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top">
+        <div class="day-num-badge">Day 4</div>
+        <div class="day-drill">Read Sheet 1A, place each note in its zone over C chord</div>
+      </div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top">
+        <div class="day-num-badge">Day 5</div>
+        <div class="day-drill">Compose a 4-note phrase using only Zone 1 notes</div>
+      </div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group">
+        <div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div>
+        <div class="zone-note-line">Zone labels: </div>
+      </div>
+      <div class="staff-group">
+        <div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div>
+        <div class="zone-note-line">Zone labels: </div>
+      </div>
+      <div class="staff-group">
+        <div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div>
+        <div class="zone-note-line">Zone labels: </div>
+      </div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 2 · Week 1</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 3: WEEK 2 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 2</div>
+    <div class="phase-badge ph1">Phase 1 · Inner Ear</div>
+    <div class="week-title">Zone Fluency</div>
+    <div class="week-days">Days 8–14</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Label, substitute, and target zones in real melodies. Move fluidly between zone names and the emotional feel they create.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 8</div><div class="day-drill">Analyze a known melody, label each note's zone</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 9</div><div class="day-drill">Zone substitution — swap one note, hear the shift</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 10</div><div class="day-drill">Compose phrase visiting all 4 zones</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 11</div><div class="day-drill">Sweet Home Chicago — first pass, zone vs. not zone 1</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 12</div><div class="day-drill">Compose phrases ending in Zone 1, 2, and 4</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 3 · Week 2</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 4: WEEK 3 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 3</div>
+    <div class="phase-badge ph1">Phase 1 · Inner Ear</div>
+    <div class="week-title">Scale Degree Keywords</div>
+    <div class="week-days">Days 15–21</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">One note per day — build emotional vocabulary for each scale degree. By week's end, each note should have a word attached to it in your body.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 15</div><div class="day-drill">DO — HOME. Play in all octaves, compose using DO</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 16</div><div class="day-drill">SO — OPEN. Alternate DO and SO, hear the difference</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 17</div><div class="day-drill">MI — SWEET. Lead into MI as final note</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 18</div><div class="day-drill">LA — LONGING. Compose blues phrase with LA as peak</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 19</div><div class="day-drill">RE — YEARNING. Hold RE longer than comfortable, feel the pull</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 4 · Week 3</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 5: WEEK 4 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 4</div>
+    <div class="phase-badge ph1">Phase 1 · Inner Ear</div>
+    <div class="week-title">Phase 1 Integration</div>
+    <div class="week-days">Days 22–28</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Combine stability + zones + keywords. The three tools from Phase 1 should now work together in real-time analysis and composition.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 22</div><div class="day-drill">Draw the full map + ladder from memory in 60 sec</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 23</div><div class="day-drill">Analyze a melody — name, rank, zone for every note</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 24</div><div class="day-drill">Analyze a second melody</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 25</div><div class="day-drill">Compose 2-bar zone arc (Zone 1 → tension → Zone 1)</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 26</div><div class="day-drill">Write 3 versions, pick the one that moves you most</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 5 · Week 4</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 6: WEEK 5 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 5</div>
+    <div class="phase-badge ph2">Phase 2 · Context</div>
+    <div class="week-title">Chord Tone Ear Training</div>
+    <div class="week-days">Days 31–37</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box p2">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Instantly identify whether a note belongs to the chord. Chord tones are your anchor points — everything else is color.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 31</div><div class="day-drill">Memorize chord tones for C, F, G7, Am</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 32</div><div class="day-drill">Chord tone test — 20 rounds, play chord + sing note, is it in the chord?</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 33</div><div class="day-drill">20 more rounds, aim for 90% accuracy</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 34</div><div class="day-drill">Add passing tone between chord tones, hear the color</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 35</div><div class="day-drill">Compose I–IV–V–I melody with chord tone landings</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 6 · Week 5</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+
+<!-- ═══════ PAGE 7: WEEK 6 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 6</div>
+    <div class="phase-badge ph2">Phase 2 · Context</div>
+    <div class="week-title">Context Shifting</div>
+    <div class="week-days">Days 38–44</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box p2">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">The same note over different chords = different zones. Context is everything — practice hearing one note shift meaning as the harmony moves.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 38</div><div class="day-drill">Hold RE over C, F, G7, Dm — write zone for each</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 39</div><div class="day-drill">Sing RE over each chord in turn without stopping</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 40</div><div class="day-drill">Pick your own note, run it through 4 chords</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 41</div><div class="day-drill">Do the same with 2 more notes</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 42</div><div class="day-drill">Compose melody where one note is held while chord changes</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 7 · Week 6</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 8: WEEK 7 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 7</div>
+    <div class="phase-badge ph2">Phase 2 · Context</div>
+    <div class="week-title">Non-Chord Tone Types</div>
+    <div class="week-days">Days 45–51</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box p2">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Passing, Neighbor, Anticipation, Suspension — the four NCT types give color without losing direction. Practice each until it feels intentional.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 45</div><div class="day-drill">Passing tone — DO→RE→MI over C, compose 3 phrases</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 46</div><div class="day-drill">Neighbor tone — SO→LA→SO, compose 3 phrases</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 47</div><div class="day-drill">Anticipation — melody note arrives one beat early</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 48</div><div class="day-drill">Suspension — FA held into C chord, resolves to MI</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 49</div><div class="day-drill">Analyze Sweet Home Chicago for all NCT types</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 8 · Week 7</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 9: WEEK 8 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 8</div>
+    <div class="phase-badge ph2">Phase 2 · Context</div>
+    <div class="week-title">Chord Change Behaviors</div>
+    <div class="week-days">Days 52–58</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box p2">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Track what happens when the chord moves. Stay Sweet, Turn Tense, Float Free — three behaviors that tell you how to handle any note through a chord change.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 52</div><div class="day-drill">Stay Sweet — hold SO through C→G, hear stability</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 53</div><div class="day-drill">Compose a backbone-note phrase</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 54</div><div class="day-drill">Turn Tense — hold note that becomes non-chord on chord change</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 55</div><div class="day-drill">Float Free — hold note that chord change adopts</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 56</div><div class="day-drill">Sweet Home Chicago with chord changes — full context analysis</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 9 · Week 8</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 10: WEEK 9 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 9</div>
+    <div class="phase-badge ph3">Phase 3 · Architecture</div>
+    <div class="week-title">Sweet vs. Bitter Balance</div>
+    <div class="week-days">Days 61–67</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box p3">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Score your phrases, aim for section ratios. Verse ~50% Zone 1, Chorus ~60%, Bridge heavy on Zone 3+4. Balance is a design decision.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 61</div><div class="day-drill">Score 3 of your phrases — count notes per zone</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 62</div><div class="day-drill">Compare to reference ratios on Sheet 6A</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 63</div><div class="day-drill">Compose "verse" phrase targeting 50% Zone 1</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 64</div><div class="day-drill">Compose "chorus" phrase targeting 60% Zone 1</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 65</div><div class="day-drill">Compose "bridge" phrase with heavy Zone 3+4</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 10 · Week 9</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 11: WEEK 10 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 10</div>
+    <div class="phase-badge ph3">Phase 3 · Architecture</div>
+    <div class="week-title">Tension Arc Planning</div>
+    <div class="week-days">Days 68–74</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box p3">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Map the emotional arc before writing. The Section Planner forces intentional choices — every section should have a zone target before a note is sung.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 68</div><div class="day-drill">Fill Section Planner for a 4-section song</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 69</div><div class="day-drill">Write verse melody from the plan</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 70</div><div class="day-drill">Write chorus melody from the plan</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 71</div><div class="day-drill">Compose bridge — Zone 3 and 4 dominant</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 72</div><div class="day-drill">Analyze a complete song's tension arc</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 11 · Week 10</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 12: WEEK 11 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 11</div>
+    <div class="phase-badge ph3">Phase 3 · Architecture</div>
+    <div class="week-title">The Revision Checklist</div>
+    <div class="week-days">Days 75–81</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box p3">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Run the 8-step audit on real melodies — yours and published. The checklist turns vague dissatisfaction into specific, fixable problems.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 75</div><div class="day-drill">Run 8-step audit on one of your composed phrases</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 76</div><div class="day-drill">Identify and fix at least one thing</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 77</div><div class="day-drill">Check last 5 phrases for red flags</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 78</div><div class="day-drill">Fix any red flags found</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 79</div><div class="day-drill">Analyze a published song using full 8-step audit</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">This Week's Composition Sketch — Write a phrase using this week's concept. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Weekly Reflection</div>
+    <div class="reflection-prompt">What clicked this week:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What's still fuzzy:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 12 · Week 11</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 13: WEEK 12 ═══════ -->
+<div class="page">
+  <div class="week-header">
+    <div class="week-badge">Week 12</div>
+    <div class="phase-badge ph3">Phase 3 · Architecture</div>
+    <div class="week-title">Full Song + Final Assessment</div>
+    <div class="week-days">Days 82–90</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="ladder-warmup">▶ Open every session: Sing DO–SO–MI–LA–RE–TI–FA forward + backward over a drone. (2 min)</div>
+  <div class="focus-box p3">
+    <div class="focus-label">This Week's Focus</div>
+    <div class="focus-text">Compose your capstone piece. Plan first, write section by section from the plan, then run the full 8-step audit on the complete song.</div>
+  </div>
+  <div class="daily-section">
+    <div class="section-label">Daily Log</div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 82</div><div class="day-drill">Fill Section Planner for full song (Verse / Pre-Chorus / Chorus / Bridge)</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 83</div><div class="day-drill">Write verse + pre-chorus from plan</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 84</div><div class="day-drill">Write chorus from plan</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 85</div><div class="day-drill">Write bridge from plan</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+    <div class="day-row">
+      <div class="day-row-top"><div class="day-num-badge">Day 86</div><div class="day-drill">Run full 8-step audit on your 90-Day Song</div></div>
+      <div class="day-lines"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="zone-checks">Zone used: <div class="zone-circle"></div> 1 <div class="zone-circle"></div> 2 <div class="zone-circle"></div> 3 <div class="zone-circle"></div> 4</div>
+    </div>
+  </div>
+  <div class="compose-section">
+    <div class="compose-box">
+      <div class="compose-title">90-Day Song — Capstone Composition Sketch. Label each note's zone below the staff.</div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels (Verse): </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels (Chorus): </div></div>
+      <div class="staff-group"><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels (Bridge): </div></div>
+    </div>
+  </div>
+  <div class="reflection-section">
+    <div class="section-label">Final Reflection</div>
+    <div class="reflection-prompt">What changed most in how I hear melody:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">The concept that unlocked the most:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+    <div class="reflection-prompt">What I'll keep practicing beyond Day 90:</div>
+    <div class="write-line"></div><div class="write-line"></div>
+  </div>
+  <div class="song-moment">Sweet Home Chicago moment this week: <span class="song-moment-line"></span></div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 13 · Week 12</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 14: NOTE ANALYSIS GRID ═══════ -->
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Reusable Template · Page 14</div>
+    <h1 class="small">Note Analysis Grid</h1>
+    <div class="header-sub">Use for any melody. Photocopy or fill out digitally multiple times.</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="body">
+    <div class="template-label">TEMPLATE — Photocopy or use multiple times</div>
+    <p style="font-size:11px;color:#555;margin-bottom:14px;">Song: _________________________________ Key: ________ Chord: ________</p>
+    <table class="grid-table">
+      <thead>
+        <tr>
+          <th style="width:30px;">#</th>
+          <th>Note</th>
+          <th>Stability Rank (1–7)</th>
+          <th>Chord</th>
+          <th>Chord Tone? (Y/N)</th>
+          <th>Zone (1–4)</th>
+          <th>Emotional Quality</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>7</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>8</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>9</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>10</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-bottom:14px;">
+      <span style="font-size:11px;font-weight:600;color:#0f1e3c;">Phrase zone distribution:</span>
+      <span style="font-size:11px;color:#555;margin-left:8px;">Zone 1: _____</span>
+      <span style="font-size:11px;color:#555;margin-left:14px;">Zone 2: _____</span>
+      <span style="font-size:11px;color:#555;margin-left:14px;">Zone 3: _____</span>
+      <span style="font-size:11px;color:#555;margin-left:14px;">Zone 4: _____</span>
+    </div>
+    <div style="font-size:11px;font-weight:600;color:#0f1e3c;margin-bottom:6px;">Dominant feel of this phrase:</div>
+    <div class="write-line" style="width:500px;"></div>
+
+    <div style="height:28px;"></div>
+
+    <!-- Second copy on same page for efficiency -->
+    <div style="border-top:1px dashed #ddd;padding-top:18px;">
+      <p style="font-size:11px;color:#555;margin-bottom:14px;">Song: _________________________________ Key: ________ Chord: ________</p>
+      <table class="grid-table">
+        <thead>
+          <tr>
+            <th style="width:30px;">#</th>
+            <th>Note</th>
+            <th>Stability Rank (1–7)</th>
+            <th>Chord</th>
+            <th>Chord Tone? (Y/N)</th>
+            <th>Zone (1–4)</th>
+            <th>Emotional Quality</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>7</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>8</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>9</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>10</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <div style="margin-bottom:10px;">
+        <span style="font-size:11px;font-weight:600;color:#0f1e3c;">Phrase zone distribution:</span>
+        <span style="font-size:11px;color:#555;margin-left:8px;">Zone 1: _____</span>
+        <span style="font-size:11px;color:#555;margin-left:14px;">Zone 2: _____</span>
+        <span style="font-size:11px;color:#555;margin-left:14px;">Zone 3: _____</span>
+        <span style="font-size:11px;color:#555;margin-left:14px;">Zone 4: _____</span>
+      </div>
+      <div style="font-size:11px;font-weight:600;color:#0f1e3c;margin-bottom:6px;">Dominant feel of this phrase:</div>
+      <div class="write-line" style="width:500px;"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 14 · Note Analysis Grid</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 15: ZONE MAP ═══════ -->
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Reusable Template · Page 15</div>
+    <h1 class="small">Zone Map — Draw From Memory</h1>
+    <div class="header-sub">Cover your reference sheets. Fill in zone names, emotional keywords, axis labels, and which notes belong in each zone. Then check Sheet 1A.</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="body">
+    <div class="template-label">TEMPLATE — Photocopy or use multiple times</div>
+    <div style="text-align:center;margin-bottom:6px;">
+      <div style="font-size:10px;color:#999;margin-bottom:4px;">Horizontal Axis →</div>
+      <div style="position:relative;display:inline-block;">
+        <div style="writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);font-size:10px;color:#999;position:absolute;left:-28px;top:50%;transform:translateY(-50%) rotate(180deg);">Vertical Axis ↑</div>
+        <div class="zone-map-blank"></div>
+      </div>
+    </div>
+    <div style="max-width:500px;margin:0 auto 20px;">
+      <div style="font-size:11px;color:#555;margin-bottom:10px;">Axis 1 (horizontal): <div class="write-line" style="width:340px;display:inline-block;vertical-align:bottom;"></div></div>
+      <div style="font-size:11px;color:#555;margin-bottom:10px;">Axis 2 (vertical): <div class="write-line" style="width:352px;display:inline-block;vertical-align:bottom;"></div></div>
+      <div style="display:flex;gap:40px;">
+        <div style="font-size:11px;color:#555;">Time taken: <div class="write-line" style="width:90px;display:inline-block;vertical-align:bottom;"></div></div>
+        <div style="font-size:11px;color:#555;">Accuracy: <div class="write-line" style="width:90px;display:inline-block;vertical-align:bottom;"></div></div>
+      </div>
+    </div>
+    <div style="background:#f5f7fa;border-radius:6px;padding:14px 18px;margin-bottom:18px;">
+      <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px;">After checking — what did I miss or mix up?</div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <!-- Second attempt box -->
+    <div style="border-top:1px dashed #ddd;padding-top:18px;">
+      <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px;">Second Attempt — After Correction</div>
+      <div style="display:flex;gap:40px;margin-bottom:8px;">
+        <div style="font-size:11px;color:#555;">Date: <div class="write-line" style="width:120px;display:inline-block;vertical-align:bottom;"></div></div>
+        <div style="font-size:11px;color:#555;">Time taken: <div class="write-line" style="width:90px;display:inline-block;vertical-align:bottom;"></div></div>
+        <div style="font-size:11px;color:#555;">Accuracy: <div class="write-line" style="width:90px;display:inline-block;vertical-align:bottom;"></div></div>
+      </div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 15 · Zone Map</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 16: SONG ANALYSIS TEMPLATE ═══════ -->
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Reusable Template · Page 16</div>
+    <h1 class="small">Song Analysis Template</h1>
+    <div class="header-sub">Analyze any song using AMF language. Fill in one per song.</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="body">
+    <div class="template-label">TEMPLATE — Photocopy or use multiple times</div>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:16px;">
+      <div style="font-size:11px;color:#555;flex:2;">Song: <div class="write-line" style="width:220px;display:inline-block;vertical-align:bottom;"></div></div>
+      <div style="font-size:11px;color:#555;flex:2;">Artist: <div class="write-line" style="width:180px;display:inline-block;vertical-align:bottom;"></div></div>
+      <div style="font-size:11px;color:#555;flex:0.5;">Key: <div class="write-line" style="width:50px;display:inline-block;vertical-align:bottom;"></div></div>
+    </div>
+    <div style="font-size:11px;color:#555;margin-bottom:16px;">Chord progression: <div class="write-line" style="width:500px;display:inline-block;vertical-align:bottom;"></div></div>
+    <table class="section-table">
+      <thead>
+        <tr>
+          <th style="width:80px;">Section</th>
+          <th>First Note</th>
+          <th>Highest Note</th>
+          <th>Last Note</th>
+          <th>Dominant Zone</th>
+          <th>NCT Types Present</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="section-label-cell">Verse</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="section-label-cell">Chorus</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="section-label-cell">Bridge</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="section-label-cell">Other</td><td></td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11.5px;font-weight:600;color:#0f1e3c;margin-bottom:8px;">What makes this melody effective? (use AMF language):</div>
+      <div class="write-line"></div><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+    </div>
+    <div style="margin-bottom:18px;">
+      <div style="font-size:11.5px;font-weight:600;color:#0f1e3c;margin-bottom:8px;">One thing I would change:</div>
+      <div class="write-line"></div><div class="write-line"></div>
+    </div>
+    <!-- Second copy -->
+    <div style="border-top:1px dashed #ddd;padding-top:18px;">
+      <div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:16px;">
+        <div style="font-size:11px;color:#555;flex:2;">Song: <div class="write-line" style="width:220px;display:inline-block;vertical-align:bottom;"></div></div>
+        <div style="font-size:11px;color:#555;flex:2;">Artist: <div class="write-line" style="width:180px;display:inline-block;vertical-align:bottom;"></div></div>
+        <div style="font-size:11px;color:#555;flex:0.5;">Key: <div class="write-line" style="width:50px;display:inline-block;vertical-align:bottom;"></div></div>
+      </div>
+      <div style="font-size:11px;color:#555;margin-bottom:14px;">Chord progression: <div class="write-line" style="width:500px;display:inline-block;vertical-align:bottom;"></div></div>
+      <table class="section-table">
+        <thead>
+          <tr>
+            <th style="width:80px;">Section</th>
+            <th>First Note</th>
+            <th>Highest Note</th>
+            <th>Last Note</th>
+            <th>Dominant Zone</th>
+            <th>NCT Types Present</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="section-label-cell">Verse</td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="section-label-cell">Chorus</td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="section-label-cell">Bridge</td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="section-label-cell">Other</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11.5px;font-weight:600;color:#0f1e3c;margin-bottom:8px;">What makes this melody effective?</div>
+      <div class="write-line"></div><div class="write-line"></div>
+      <div style="font-size:11.5px;font-weight:600;color:#0f1e3c;margin-bottom:8px;margin-top:8px;">One thing I would change:</div>
+      <div class="write-line"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 16 · Song Analysis</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 17: PHRASE ARC PLANNER ═══════ -->
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Reusable Template · Page 17</div>
+    <h1 class="small">Phrase Arc Planner + Composition Space</h1>
+    <div class="header-sub">Plan your phrase before writing. Then use the staff lines below to notate it.</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="body">
+    <div class="template-label">TEMPLATE — Photocopy or use multiple times</div>
+    <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px;">Plan your phrase before writing:</div>
+    <div class="arc-boxes">
+      <div class="arc-box"><div class="arc-box-label">Note 1 Zone</div><div class="arc-line"></div></div>
+      <div class="arc-box"><div class="arc-box-label">Note 2 Zone</div><div class="arc-line"></div></div>
+      <div class="arc-box"><div class="arc-box-label">Note 3 Zone</div><div class="arc-line"></div></div>
+      <div class="arc-box"><div class="arc-box-label">Note 4 Zone</div><div class="arc-line"></div></div>
+    </div>
+    <div style="display:flex;gap:30px;margin-bottom:14px;flex-wrap:wrap;">
+      <div style="font-size:11px;color:#555;">Target feel: <div class="write-line" style="width:160px;display:inline-block;vertical-align:bottom;"></div></div>
+      <div style="font-size:11px;color:#555;">Section type: <div class="write-line" style="width:140px;display:inline-block;vertical-align:bottom;"></div></div>
+    </div>
+    <div style="display:flex;gap:30px;margin-bottom:18px;">
+      <div style="font-size:11px;color:#555;">Pillar note for this phrase: <div class="write-line" style="width:80px;display:inline-block;vertical-align:bottom;"></div></div>
+      <div style="font-size:11px;color:#555;">Chord: <div class="write-line" style="width:80px;display:inline-block;vertical-align:bottom;"></div></div>
+    </div>
+    <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px;">Composition Space</div>
+    <div class="compose-box" style="padding:14px;">
+      <div class="staff-group"><div style="font-size:9px;color:#aaa;margin-bottom:4px;">Staff 1</div><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div style="font-size:9px;color:#aaa;margin-bottom:4px;">Staff 2</div><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div style="font-size:9px;color:#aaa;margin-bottom:4px;">Staff 3</div><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+      <div class="staff-group"><div style="font-size:9px;color:#aaa;margin-bottom:4px;">Staff 4</div><div class="staff-lines"><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div><div class="staff-line"></div></div><div class="zone-note-line">Zone labels: </div></div>
+    </div>
+    <!-- second planner on same page -->
+    <div style="border-top:1px dashed #ddd;padding-top:14px;margin-top:8px;">
+      <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px;">Second Phrase Plan</div>
+      <div class="arc-boxes">
+        <div class="arc-box"><div class="arc-box-label">Note 1 Zone</div><div class="arc-line"></div></div>
+        <div class="arc-box"><div class="arc-box-label">Note 2 Zone</div><div class="arc-line"></div></div>
+        <div class="arc-box"><div class="arc-box-label">Note 3 Zone</div><div class="arc-line"></div></div>
+        <div class="arc-box"><div class="arc-box-label">Note 4 Zone</div><div class="arc-line"></div></div>
+      </div>
+      <div style="display:flex;gap:30px;margin-bottom:10px;">
+        <div style="font-size:11px;color:#555;">Target feel: <div class="write-line" style="width:150px;display:inline-block;vertical-align:bottom;"></div></div>
+        <div style="font-size:11px;color:#555;">Pillar note: <div class="write-line" style="width:70px;display:inline-block;vertical-align:bottom;"></div></div>
+        <div style="font-size:11px;color:#555;">Chord: <div class="write-line" style="width:70px;display:inline-block;vertical-align:bottom;"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 17 · Phrase Arc Planner</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 18: BALANCE TALLY + EXTRA REFLECTION ═══════ -->
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Reusable Template · Page 18</div>
+    <h1 class="small">Balance Tally Sheet + Extra Weekly Reflection</h1>
+    <div class="header-sub">Tally zone distribution for any phrase. Use the reflection below for overflow weeks.</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="body">
+    <div class="template-label">TEMPLATE — Photocopy or use multiple times</div>
+
+    <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px;">Note Slots — Write note name, zone, and chord tone status</div>
+    <div class="note-slots">
+      <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+      <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+      <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+      <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+      <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+      <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+      <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+      <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+    </div>
+
+    <div style="background:#f5f7fa;border-radius:6px;padding:14px 18px;margin-bottom:18px;">
+      <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:10px;">
+        <div style="font-size:11px;color:#555;">Zone 1: <span style="font-weight:700;color:#0f1e3c;">___</span></div>
+        <div style="font-size:11px;color:#555;">Zone 2: <span style="font-weight:700;color:#0f1e3c;">___</span></div>
+        <div style="font-size:11px;color:#555;">Zone 3: <span style="font-weight:700;color:#0f1e3c;">___</span></div>
+        <div style="font-size:11px;color:#555;">Zone 4: <span style="font-weight:700;color:#0f1e3c;">___</span></div>
+      </div>
+      <div style="display:flex;gap:30px;flex-wrap:wrap;margin-bottom:10px;">
+        <div style="font-size:11px;color:#555;">% Sweet (Z1+Z2): <div class="write-line" style="width:60px;display:inline-block;vertical-align:bottom;"></div>%</div>
+        <div style="font-size:11px;color:#555;">% Color/Tension (Z3+Z4): <div class="write-line" style="width:60px;display:inline-block;vertical-align:bottom;"></div>%</div>
+      </div>
+      <div style="font-size:11px;color:#555;margin-bottom:8px;">Target for this section type: <div class="write-line" style="width:260px;display:inline-block;vertical-align:bottom;"></div></div>
+      <div style="display:flex;gap:30px;align-items:center;">
+        <div style="font-size:11px;color:#555;font-weight:600;">Matches target?
+          <span style="border:2px solid #ccc;border-radius:4px;padding:2px 8px;margin-left:6px;font-size:11px;">Y</span>
+          <span style="border:2px solid #ccc;border-radius:4px;padding:2px 8px;margin-left:6px;font-size:11px;">N</span>
+        </div>
+      </div>
+      <div style="font-size:11px;color:#555;margin-top:10px;">What to adjust: <div class="write-line" style="width:380px;display:inline-block;vertical-align:bottom;"></div></div>
+    </div>
+
+    <!-- Second tally -->
+    <div style="border-top:1px dashed #ddd;padding-top:14px;margin-bottom:18px;">
+      <div class="note-slots">
+        <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+        <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+        <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+        <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+        <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+        <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+        <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+        <div class="note-slot"><div class="note-circle-blank"></div><div class="note-slot-label">Zone: ___</div><div class="note-slot-label">CT? Y/N</div></div>
+      </div>
+      <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:8px;">
+        <div style="font-size:11px;color:#555;">Zone 1: ___</div><div style="font-size:11px;color:#555;">Zone 2: ___</div><div style="font-size:11px;color:#555;">Zone 3: ___</div><div style="font-size:11px;color:#555;">Zone 4: ___</div>
+        <div style="font-size:11px;color:#555;">% Sweet: <div class="write-line" style="width:50px;display:inline-block;vertical-align:bottom;"></div>%</div>
+        <div style="font-size:11px;color:#555;">% Tension: <div class="write-line" style="width:50px;display:inline-block;vertical-align:bottom;"></div>%</div>
+        <div style="font-size:11px;color:#555;">Target: <div class="write-line" style="width:120px;display:inline-block;vertical-align:bottom;"></div></div>
+      </div>
+    </div>
+
+    <!-- Extra Weekly Reflection -->
+    <div style="border-top:2px solid #0f1e3c;padding-top:14px;">
+      <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px;">Extra Weekly Reflection — Week: _______</div>
+      <div class="reflection-prompt">What clicked this week:</div>
+      <div class="write-line"></div><div class="write-line"></div>
+      <div class="reflection-prompt">What's still fuzzy:</div>
+      <div class="write-line"></div><div class="write-line"></div>
+      <div class="reflection-prompt">I'll repeat or focus on next time:</div>
+      <div class="write-line"></div><div class="write-line"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-note">AMF 90-Day Workbook · Page 18 · Balance Tally + Reflection</div>
+    <div class="footer-logo">AMF · Aesthetic Melody Framework</div>
+  </div>
+</div>
+
+</body>
+</html>
+
