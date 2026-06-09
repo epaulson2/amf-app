@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Exotic Mode Borrowing</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.darkness-strip{display:flex;gap:2px;margin-bottom:20px;border-radius:6px;overflow:hidden}
+.ds-seg{flex:1;padding:12px 8px;text-align:center}
+.ds-seg-name{font-size:11px;font-weight:900;text-transform:uppercase;margin-bottom:3px;letter-spacing:0.04em}
+.ds-seg-char{font-size:9.5px;font-weight:600;opacity:0.7;letter-spacing:0.06em}
+.ds-seg-note{font-size:9px;font-weight:700;margin-top:3px;opacity:0.8}
+.rule-box{background:#f7f8fa;border-radius:6px;padding:10px 16px;margin-bottom:16px;border-left:3px solid #7a9bd4;font-size:12px;font-weight:600;color:#333;line-height:1.4}
+.modes-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.mode-card{border-radius:8px;overflow:hidden;border:1px solid rgba(0,0,0,0.1)}
+.mc-header{padding:12px 16px 10px}
+.mc-mode{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:3px;opacity:0.75}
+.mc-name{font-size:18px;font-weight:900;text-transform:uppercase;margin-bottom:2px}
+.mc-char{font-size:11px;font-style:italic;margin-bottom:4px}
+.mc-characteristic{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;font-family:monospace}
+.mc-body{background:#fff;padding:12px 16px}
+.mc-chords{display:flex;flex-direction:column;gap:8px}
+.mc-chord{display:flex;align-items:flex-start;gap:10px;padding:8px 10px;border-radius:6px;background:#f7f8fa}
+.mcc-name{font-size:14px;font-weight:800;font-family:monospace;flex-shrink:0;color:#0f1e3c;min-width:70px}
+.mcc-desc{font-size:11px;line-height:1.35;color:#555;flex:1}
+.mcc-song{font-size:10px;color:#888;font-style:italic;margin-top:2px}
+/* Mode colors */
+.m-lydian .mc-header{background:#e0f0ff}.m-lydian .mc-mode{color:#1a5a8a}.m-lydian .mc-name{color:#1a5a8a}.m-lydian .mc-char{color:#1a5a8a}.m-lydian .mc-characteristic{background:#d6eafc;color:#1a5a8a}
+.m-mixo .mc-header{background:#e8f5e9}.m-mixo .mc-mode{color:#1e6b42}.m-mixo .mc-name{color:#1e6b42}.m-mixo .mc-char{color:#1e6b42}.m-mixo .mc-characteristic{background:#d9f5e4;color:#1e6b42}
+.m-dorian .mc-header{background:#ede9fe}.m-dorian .mc-mode{color:#4b2d8c}.m-dorian .mc-name{color:#4b2d8c}.m-dorian .mc-char{color:#4b2d8c}.m-dorian .mc-characteristic{background:#e5dffe;color:#4b2d8c}
+.m-phryg .mc-header{background:#2a1b4a;color:#fff}.m-phryg .mc-mode{color:#b8a6e0}.m-phryg .mc-name{color:#e0d6f7}.m-phryg .mc-char{color:#b8a6e0}.m-phryg .mc-characteristic{background:#4b2d8c;color:#fff}
+.mix-note{background:#0f1e3c;border-radius:8px;padding:14px 20px;text-align:center}
+.mix-text{font-size:13px;font-weight:600;color:#e8edf5;line-height:1.4;font-style:italic}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 8 · Sheet 8B</div>
+    <h1>Exotic Mode Borrowing</h1>
+    <div class="header-sub">Beyond parallel minor — borrowing from Lydian, Mixolydian, Dorian, and Phrygian modes for specific coloristic effects. The key: only borrow chords that CONTAIN the characteristic note.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">The Darkness Hierarchy — Brightest to Darkest (left to right)</div>
+    <div class="darkness-strip">
+      <div class="ds-seg" style="background:#d6eafc"><div class="ds-seg-name" style="color:#1a5a8a">LYDIAN</div><div class="ds-seg-char" style="color:#1a5a8a">brightest</div><div class="ds-seg-note" style="color:#1a5a8a">#4 char.</div></div>
+      <div class="ds-seg" style="background:#e0f0ff"><div class="ds-seg-name" style="color:#1a5a8a">Ionian</div><div class="ds-seg-char" style="color:#1a5a8a">major</div><div class="ds-seg-note" style="color:#1a5a8a">baseline</div></div>
+      <div class="ds-seg" style="background:#d9f5e4"><div class="ds-seg-name" style="color:#1e6b42">Mixolydian</div><div class="ds-seg-char" style="color:#1e6b42">bluesy</div><div class="ds-seg-note" style="color:#1e6b42">♭7 char.</div></div>
+      <div class="ds-seg" style="background:#ede9fe"><div class="ds-seg-name" style="color:#4b2d8c">Dorian</div><div class="ds-seg-char" style="color:#4b2d8c">minor+</div><div class="ds-seg-note" style="color:#4b2d8c">nat.6 char.</div></div>
+      <div class="ds-seg" style="background:#e0d8f0"><div class="ds-seg-name" style="color:#4b2d8c">Aeolian</div><div class="ds-seg-char" style="color:#4b2d8c">natural minor</div><div class="ds-seg-note" style="color:#4b2d8c">♭6 char.</div></div>
+      <div class="ds-seg" style="background:#3a1d6e"><div class="ds-seg-name" style="color:#c8b8f0">PHRYGIAN</div><div class="ds-seg-char" style="color:#c8b8f0">darkest</div><div class="ds-seg-note" style="color:#c8b8f0">♭2 char.</div></div>
+      <div class="ds-seg" style="background:#1a0a30"><div class="ds-seg-name" style="color:#666">Locrian</div><div class="ds-seg-char" style="color:#666">unusable</div><div class="ds-seg-note" style="color:#666">× banned</div></div>
+    </div>
+
+    <div class="rule-box">The borrowing rule: <strong>Only use chords that CONTAIN the mode's characteristic note</strong>. Chords without the characteristic note add no modal color — they're redundant diatonic chords that don't signal the borrowed mode.</div>
+
+    <div class="modes-grid">
+      <div class="mode-card m-lydian">
+        <div class="mc-header">
+          <div class="mc-mode">Lydian Mode (#4 characteristic)</div>
+          <div class="mc-name">LYDIAN</div>
+          <div class="mc-char">"The brightest mode — floating, ethereal"</div>
+          <div class="mc-characteristic">#4 = F♯ in C Lydian</div>
+        </div>
+        <div class="mc-body">
+          <div class="mc-chords">
+            <div class="mc-chord">
+              <div class="mcc-name">II or D7</div>
+              <div><div class="mcc-desc">Most common Lydian borrow. Contains F♯. Dual function: Lydian color OR V7/V (secondary dominant). Extremely versatile.</div><div class="mcc-song">"Forget You" — CeeLo Green (D major chord in C context)</div></div>
+            </div>
+            <div class="mc-chord">
+              <div class="mcc-name">♯ivø7</div>
+              <div><div class="mcc-desc">F♯ø7 in C context. Darker sound from a bright mode — the tritone inside adds sophistication. Common in jazz-influenced pop.</div><div class="mcc-song">Jazz standards, neo-soul arrangements</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mode-card m-mixo">
+        <div class="mc-header">
+          <div class="mc-mode">Mixolydian Mode (♭7 characteristic)</div>
+          <div class="mc-name">MIXOLYDIAN</div>
+          <div class="mc-char">"Bluesy, rock, party — major with ♭7"</div>
+          <div class="mc-characteristic">♭7 = B♭ in C Mixolydian</div>
+        </div>
+        <div class="mc-body">
+          <div class="mc-chords">
+            <div class="mc-chord">
+              <div class="mcc-name">♭VII / ♭VIImaj7</div>
+              <div><div class="mcc-desc">B♭ or B♭maj7 in C. The most immediately recognizable rock/blues sound. Classic Mixolydian borrow — creates a bluesy, non-dominant ♭7 chord.</div><div class="mcc-song">"Rock With You" bridge — Michael Jackson</div></div>
+            </div>
+            <div class="mc-chord">
+              <div class="mcc-name">v-7 (nat.9)</div>
+              <div><div class="mcc-desc">Gm7 with natural A (9th) — available in Mixolydian because the 6th degree is natural. Softer, more sophisticated than v-7 from pure Aeolian.</div><div class="mcc-song">"Best Part" — Daniel Caesar</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mode-card m-dorian">
+        <div class="mc-header">
+          <div class="mc-mode">Dorian Mode (natural 6 characteristic — used in MINOR)</div>
+          <div class="mc-name">DORIAN</div>
+          <div class="mc-char">"Minor with natural 6 — dark but hopeful"</div>
+          <div class="mc-characteristic">nat.6 = F♯ in A Dorian</div>
+        </div>
+        <div class="mc-body">
+          <div class="mc-chords">
+            <div class="mc-chord">
+              <div class="mcc-name">IV or D7</div>
+              <div><div class="mcc-desc">In Am: D major or D7. The natural 6th (F♯) brightens the minor key. Lifts the mood while staying minor-centered. Dorian IV in Am = same as Lydian II in C — same chord, different context.</div><div class="mcc-song">"Earth Song" — MJ; "What Goes Around" — Timberlake</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mode-card m-phryg">
+        <div class="mc-header">
+          <div class="mc-mode">Phrygian Mode (♭2 characteristic)</div>
+          <div class="mc-name">PHRYGIAN</div>
+          <div class="mc-char">"Dark, exotic, Spanish — the ♭2 sound"</div>
+          <div class="mc-characteristic">♭2 = D♭ in C Phrygian</div>
+        </div>
+        <div class="mc-body">
+          <div class="mc-chords">
+            <div class="mc-chord">
+              <div class="mcc-name">♭II / ♭IImaj7</div>
+              <div><div class="mcc-desc">D♭ or D♭maj7 in C context. The most exotic, dramatic borrow. Approaches from a half step above tonic. Flamenco, cinematic, dramatic. Use sparingly for maximum effect.</div><div class="mcc-song">"Children of Sanchez" theme, flamenco-influenced R&B</div></div>
+            </div>
+            <div class="mc-chord">
+              <div class="mcc-name">♭VII-7</div>
+              <div><div class="mcc-desc">B♭m7 in Cm context. Dark, descending, cinematic. Used in film scores and dark R&B. Creates a heavy, weighty descent.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mix-note">
+      <div class="mix-text">"Mix and match: borrowing from multiple modes in one progression creates emotional arcs. A progression might start Lydian-bright, dip into parallel minor darkness, and rise back to Ionian — painting a complete emotional story using the full modal spectrum."</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

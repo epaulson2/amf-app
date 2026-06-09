@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Circle of Fifths</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.circle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px}
+.key-cell{border-radius:8px;padding:12px 10px;text-align:center;border:2px solid rgba(0,0,0,0.08);position:relative;cursor:default}
+.key-main{font-size:24px;font-weight:900;line-height:1;margin-bottom:4px}
+.key-sf{font-size:11px;font-weight:700;margin-bottom:3px}
+.key-rel{font-size:10px;font-style:italic;opacity:0.75}
+.key-pos{font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-bottom:4px}
+/* Color gradients: sharp=warm, flat=cool, neutral=white */
+.k-c   {background:#f5f5f5;border-color:#ddd;color:#0f1e3c}
+.k-g   {background:#fff8f0;border-color:#f0d0a0;color:#5a2800}
+.k-d   {background:#fff3e0;border-color:#f0c080;color:#5a2800}
+.k-a   {background:#ffead0;border-color:#e8a860;color:#4a1800}
+.k-e   {background:#ffe0b8;border-color:#e09040;color:#4a1800}
+.k-b   {background:#ffd4a0;border-color:#d87830;color:#3a1000}
+.k-fs  {background:#ffc890;border-color:#cc6820;color:#3a1000}
+.k-f   {background:#e8f0ff;border-color:#a0b8e0;color:#001a5a}
+.k-bb  {background:#dce8ff;border-color:#88a8d8;color:#001a5a}
+.k-eb  {background:#d0e0ff;border-color:#7098d0;color:#001870}
+.k-ab  {background:#c4d8ff;border-color:#5888c8;color:#001870}
+.k-db  {background:#b8d0ff;border-color:#4078c0;color:#001870}
+.arrows-section{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.arrow-card{background:#f7f8fa;border-radius:8px;padding:14px 18px;border-left:4px solid}
+.arrow-card.cw{border-left-color:#F29B38}
+.arrow-card.ccw{border-left-color:#6bb8e8}
+.arrow-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:6px}
+.arrow-main{font-size:13px;font-weight:700;color:#0f1e3c;margin-bottom:4px}
+.arrow-sub{font-size:11px;color:#666;line-height:1.4}
+.orders-section{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.order-box{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:12px 16px}
+.order-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:8px}
+.order-chips{display:flex;gap:4px;flex-wrap:wrap}
+.order-chip{padding:4px 10px;border-radius:4px;font-size:11px;font-weight:700;color:#fff;font-family:monospace}
+.sharp-chip{background:#F29B38}
+.flat-chip{background:#6bb8e8}
+.distance-callout{background:#0f1e3c;border-radius:8px;padding:16px 24px}
+.dist-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px}
+.dist-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dist-item{background:rgba(255,255,255,0.06);border-radius:6px;padding:10px 12px}
+.dist-main{font-size:13px;font-weight:700;color:#fff;margin-bottom:3px}
+.dist-sub{font-size:11px;color:#8faacc;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 2 · Infographic</div>
+    <h1>The Circle of Fifths</h1>
+    <div class="header-sub">All 12 major keys organized by harmonic distance — adjacent keys share 6 notes, opposite keys share almost none.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">12 Keys — Clockwise = +1 Sharp (Up a Perfect 5th)</div>
+    <div class="circle-grid">
+      <!-- Top row: C, G, D, A -->
+      <div class="key-cell k-c"><div class="key-pos">12 o'clock</div><div class="key-main">C</div><div class="key-sf" style="color:#888">♮ no sharps/flats</div><div class="key-rel">rel: A minor</div></div>
+      <div class="key-cell k-g"><div class="key-pos">1 o'clock</div><div class="key-main">G</div><div class="key-sf" style="color:#c45200">1 sharp: F♯</div><div class="key-rel">rel: E minor</div></div>
+      <div class="key-cell k-d"><div class="key-pos">2 o'clock</div><div class="key-main">D</div><div class="key-sf" style="color:#c45200">2 sharps: F♯ C♯</div><div class="key-rel">rel: B minor</div></div>
+      <div class="key-cell k-a"><div class="key-pos">3 o'clock</div><div class="key-main">A</div><div class="key-sf" style="color:#c45200">3♯: F♯ C♯ G♯</div><div class="key-rel">rel: F♯ minor</div></div>
+      <!-- Row 2: E, B, F#, F -->
+      <div class="key-cell k-e"><div class="key-pos">4 o'clock</div><div class="key-main">E</div><div class="key-sf" style="color:#c45200">4♯: + D♯</div><div class="key-rel">rel: C♯ minor</div></div>
+      <div class="key-cell k-b"><div class="key-pos">5 o'clock</div><div class="key-main">B</div><div class="key-sf" style="color:#c45200">5♯: + A♯</div><div class="key-rel">rel: G♯ minor</div></div>
+      <div class="key-cell k-fs"><div class="key-pos">6 o'clock</div><div class="key-main">F♯/G♭</div><div class="key-sf" style="color:#6b3000">6♯ / 6♭ — enharmonic</div><div class="key-rel">rel: D♯/E♭ min</div></div>
+      <div class="key-cell k-f"><div class="key-pos">11 o'clock</div><div class="key-main">F</div><div class="key-sf" style="color:#1a3a8a">1 flat: B♭</div><div class="key-rel">rel: D minor</div></div>
+      <!-- Row 3: Bb, Eb, Ab, Db -->
+      <div class="key-cell k-bb"><div class="key-pos">10 o'clock</div><div class="key-main">B♭</div><div class="key-sf" style="color:#1a3a8a">2♭: B♭ E♭</div><div class="key-rel">rel: G minor</div></div>
+      <div class="key-cell k-eb"><div class="key-pos">9 o'clock</div><div class="key-main">E♭</div><div class="key-sf" style="color:#1a3a8a">3♭: + A♭</div><div class="key-rel">rel: C minor</div></div>
+      <div class="key-cell k-ab"><div class="key-pos">8 o'clock</div><div class="key-main">A♭</div><div class="key-sf" style="color:#1a3a8a">4♭: + D♭</div><div class="key-rel">rel: F minor</div></div>
+      <div class="key-cell k-db"><div class="key-pos">7 o'clock</div><div class="key-main">D♭/C♯</div><div class="key-sf" style="color:#001870">5♭ / 7♯ — enharmonic</div><div class="key-rel">rel: B♭/A♯ min</div></div>
+    </div>
+
+    <div class="arrows-section">
+      <div class="arrow-card cw">
+        <div class="arrow-title">Clockwise ▶</div>
+        <div class="arrow-main">+1 Sharp · Up a Perfect 5th</div>
+        <div class="arrow-sub">C → G → D → A → E → B → F♯<br>Each step adds one sharp: F♯ C♯ G♯ D♯ A♯ E♯ B♯</div>
+      </div>
+      <div class="arrow-card ccw">
+        <div class="arrow-title">Counter-Clockwise ◀</div>
+        <div class="arrow-main">+1 Flat · Up a Perfect 4th</div>
+        <div class="arrow-sub">C → F → B♭ → E♭ → A♭ → D♭ → G♭<br>Each step adds one flat: B♭ E♭ A♭ D♭ G♭ C♭ F♭</div>
+      </div>
+    </div>
+
+    <div class="orders-section">
+      <div class="order-box">
+        <div class="order-title">Order of Sharps (FCGDAEB)</div>
+        <div class="order-chips">
+          <span class="order-chip sharp-chip">F♯</span>
+          <span class="order-chip sharp-chip">C♯</span>
+          <span class="order-chip sharp-chip">G♯</span>
+          <span class="order-chip sharp-chip">D♯</span>
+          <span class="order-chip sharp-chip">A♯</span>
+          <span class="order-chip sharp-chip">E♯</span>
+          <span class="order-chip sharp-chip">B♯</span>
+        </div>
+      </div>
+      <div class="order-box">
+        <div class="order-title">Order of Flats (BEADGCF)</div>
+        <div class="order-chips">
+          <span class="order-chip flat-chip">B♭</span>
+          <span class="order-chip flat-chip">E♭</span>
+          <span class="order-chip flat-chip">A♭</span>
+          <span class="order-chip flat-chip">D♭</span>
+          <span class="order-chip flat-chip">G♭</span>
+          <span class="order-chip flat-chip">C♭</span>
+          <span class="order-chip flat-chip">F♭</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="distance-callout">
+      <div class="dist-title">Harmonic Distance</div>
+      <div class="dist-grid">
+        <div class="dist-item"><div class="dist-main">Adjacent keys (C ↔ G)</div><div class="dist-sub">Share 6 of 7 notes. Closely related — key changes feel smooth and natural. One accidental difference.</div></div>
+        <div class="dist-item"><div class="dist-main">Tritone-apart keys (C ↔ F♯)</div><div class="dist-sub">Share only 0–1 notes. Maximum harmonic distance. Distant key changes are dramatic and disorienting.</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

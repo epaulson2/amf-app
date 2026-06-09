@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Tritone Symmetry</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:14px}
+.symmetry-diagram{display:grid;grid-template-columns:1fr 80px 1fr;align-items:center;gap:0;margin-bottom:24px}
+.chord-circle{border-radius:10px;padding:20px 18px}
+.cc-label{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:8px;opacity:0.7}
+.cc-name{font-size:28px;font-weight:900;font-family:monospace;margin-bottom:10px}
+.cc-notes{display:flex;flex-direction:column;gap:4px}
+.cc-note{padding:6px 14px;border-radius:4px;font-size:13px;font-weight:700;font-family:monospace;color:#fff;display:flex;align-items:center;justify-content:space-between}
+.cc-note-label{font-size:9.5px;opacity:0.7;margin-left:8px}
+.cc-g7{background:#fef3d0;border:2px solid rgba(201,166,48,0.4)}.cc-g7 .cc-label{color:#7a5200}.cc-g7 .cc-name{color:#7a5200}
+.cc-db7{background:#d6eafc;border:2px solid rgba(26,90,138,0.3)}.cc-db7 .cc-label{color:#1a5a8a}.cc-db7 .cc-name{color:#1a5a8a}
+.tritone-center{display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px}
+.tc-line{width:3px;height:80px;background:linear-gradient(to bottom,#c9a630,#d97b6a)}
+.tc-label{font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#d97b6a;text-align:center;line-height:1.3}
+.tritone-highlight{outline:3px solid #d97b6a;outline-offset:3px;border-radius:6px}
+.arrows-down{display:flex;justify-content:center;gap:120px;margin-bottom:20px}
+.arr-down{text-align:center}
+.arr-down-arrow{font-size:32px;font-weight:900}
+.arr-down-label{font-size:11px;font-weight:700;color:#555;margin-top:4px}
+.resolution-target{text-align:center;margin-bottom:24px}
+.rt-label{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#1a5a8a;margin-bottom:6px}
+.rt-chord{display:inline-block;background:#d6eafc;border:2px solid #1a5a8a;border-radius:10px;padding:14px 40px;font-size:26px;font-weight:900;font-family:monospace;color:#1a5a8a}
+.explanation-box{background:#0f1e3c;border-radius:8px;padding:18px 24px;margin-bottom:20px}
+.eb-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+.eb-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.eb-item{background:rgba(255,255,255,0.06);border-radius:6px;padding:12px 14px}
+.eb-approach{font-size:13px;font-weight:700;color:#fff;margin-bottom:4px}
+.eb-desc{font-size:11.5px;color:#8faacc;line-height:1.4}
+.banner{background:#fef3d0;border-left:4px solid #c9a630;border-radius:0 6px 6px 0;padding:14px 20px}
+.banner-text{font-size:13px;font-weight:700;color:#78350f;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 7 · Infographic</div>
+    <h1>Tritone Symmetry</h1>
+    <div class="header-sub">G7 and D♭7 share the exact same tritone — same notes, swapped roles. This is why a dominant chord can be substituted by the dominant chord a tritone away.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Shared Tritone — Both Resolve to C</div>
+    <div class="symmetry-diagram">
+      <div class="chord-circle cc-g7">
+        <div class="cc-label">The Original V7</div>
+        <div class="cc-name">G7</div>
+        <div class="cc-notes">
+          <div class="cc-note" style="background:#d97b6a" class="tritone-highlight">F<span class="cc-note-label">♭7 → tritone</span></div>
+          <div class="cc-note" style="background:#3F6FB6">D<span class="cc-note-label">5th</span></div>
+          <div class="cc-note" style="background:#7dc48a;outline:3px solid #d97b6a;outline-offset:2px;border-radius:4px">B<span class="cc-note-label">3rd → tritone</span></div>
+          <div class="cc-note" style="background:#3F6FB6">G<span class="cc-note-label">root</span></div>
+        </div>
+      </div>
+      <div class="tritone-center">
+        <div class="tc-line"></div>
+        <div class="tc-label">SAME<br>TRITONE<br>(B ↔ F)</div>
+        <div class="tc-line"></div>
+      </div>
+      <div class="chord-circle cc-db7">
+        <div class="cc-label">The Tritone Sub</div>
+        <div class="cc-name">D♭7</div>
+        <div class="cc-notes">
+          <div class="cc-note" style="background:#d97b6a;outline:3px solid #c9a630;outline-offset:2px;border-radius:4px">B<span class="cc-note-label">♭7 → tritone</span></div>
+          <div class="cc-note" style="background:#3F6FB6">A♭<span class="cc-note-label">5th</span></div>
+          <div class="cc-note" style="background:#7dc48a;outline:3px solid #c9a630;outline-offset:2px;border-radius:4px">F<span class="cc-note-label">3rd → tritone</span></div>
+          <div class="cc-note" style="background:#1a5a8a">D♭<span class="cc-note-label">root</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrows-down">
+      <div class="arr-down">
+        <div class="arr-down-arrow" style="color:#c9a630">↓</div>
+        <div class="arr-down-label">from P5 above<br>(G → C)</div>
+      </div>
+      <div class="arr-down">
+        <div class="arr-down-arrow" style="color:#1a5a8a">↓</div>
+        <div class="arr-down-label">from ½ step above<br>(D♭ → C)</div>
+      </div>
+    </div>
+
+    <div class="resolution-target">
+      <div class="rt-label">Both Resolve To</div>
+      <div class="rt-chord">Cmaj7</div>
+    </div>
+
+    <div class="explanation-box">
+      <div class="eb-title">Why It Works — Two Approaches to the Same Destination</div>
+      <div class="eb-compare">
+        <div class="eb-item">
+          <div class="eb-approach">G7 → C: Traditional</div>
+          <div class="eb-desc">Dominant arrives from a P5 above. The tritone (B↑ and F↓) collapse inward by half steps to C and E. Strong, direct, expected. The "authentic" resolution.</div>
+        </div>
+        <div class="eb-item">
+          <div class="eb-approach">D♭7 → C: Substitution</div>
+          <div class="eb-desc">Dominant arrives from a half step above. The bass slides down chromatically (D♭→C). Smooth, sophisticated, chromatic. Same tritone resolution — different approach direction.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="banner-text">"The tritone is the engine of dominant function — not the root. G7 and D♭7 have the same engine (B↔F), just pointed in different directions toward the same destination. This is why tritone substitution works: you're swapping engines, not destinations."</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

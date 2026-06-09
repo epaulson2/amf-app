@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — The Darkness Hierarchy</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:14px}
+.spectrum{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:20px}
+.sp-col{border-radius:6px;overflow:hidden;border:1px solid rgba(0,0,0,0.1)}
+.sp-header{padding:12px 8px;text-align:center}
+.sp-mode{font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:0.02em;margin-bottom:4px;line-height:1.1}
+.sp-char{font-size:10px;font-weight:700;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.06em}
+.sp-note-badge{display:inline-block;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:800;font-family:monospace}
+.sp-body{padding:10px 8px;background:#fff}
+.sp-chord{font-size:11px;font-weight:700;font-family:monospace;margin-bottom:2px;color:#0f1e3c}
+.sp-desc{font-size:9.5px;color:#666;line-height:1.3;margin-bottom:4px}
+.sp-sep{height:1px;background:#eee;margin:5px 0}
+/* Column colors */
+.col-lyd .sp-header{background:#d6eafc}.col-lyd .sp-mode{color:#1a5a8a}.col-lyd .sp-char{color:#1a5a8a}.col-lyd .sp-note-badge{background:#1a5a8a;color:#fff}
+.col-ion .sp-header{background:#e8f0ff}.col-ion .sp-mode{color:#2244aa}.col-ion .sp-char{color:#2244aa}.col-ion .sp-note-badge{background:#2244aa;color:#fff}
+.col-mix .sp-header{background:#d9f5e4}.col-mix .sp-mode{color:#1e6b42}.col-mix .sp-char{color:#1e6b42}.col-mix .sp-note-badge{background:#1e6b42;color:#fff}
+.col-dor .sp-header{background:#e8e0f8}.col-dor .sp-mode{color:#5035a0}.col-dor .sp-char{color:#5035a0}.col-dor .sp-note-badge{background:#5035a0;color:#fff}
+.col-aeo .sp-header{background:#ede9fe}.col-aeo .sp-mode{color:#4b2d8c}.col-aeo .sp-char{color:#4b2d8c}.col-aeo .sp-note-badge{background:#4b2d8c;color:#fff}
+.col-phr .sp-header{background:#2a1b4a}.col-phr .sp-mode{color:#d0b8f0}.col-phr .sp-char{color:#b8a0e0}.col-phr .sp-note-badge{background:#7a5bc8;color:#fff}
+.col-loc .sp-header{background:#1a0a30}.col-loc .sp-mode{color:#555}.col-loc .sp-char{color:#555}.col-loc .sp-note-badge{background:#333;color:#666}
+.col-loc .sp-chord{color:#888}.col-loc .sp-desc{color:#aaa}
+.rule-box{background:#f7f8fa;border-radius:8px;padding:14px 18px;margin-bottom:20px;border-left:4px solid #7a9bd4}
+.rule-text{font-size:12.5px;line-height:1.5;color:#333;font-weight:600}
+.backdoor-box{background:#0f1e3c;border-radius:8px;padding:16px 24px}
+.bd-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+.bd-main{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.bd-chord-box{padding:8px 14px;border-radius:6px;font-size:15px;font-weight:900;font-family:monospace;color:#fff;text-align:center}
+.bd-chord-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-top:3px;text-align:center;opacity:0.7}
+.bd-arrow{font-size:18px;color:#7a9bd4;font-weight:700}
+.bd-note{font-size:12px;color:#8faacc;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 8 · Infographic</div>
+    <h1>The Darkness Hierarchy</h1>
+    <div class="header-sub">Seven modes arranged from brightest (Lydian) to darkest (Phrygian). Locrian is marked unusable. Each column shows the mode's characteristic note and most useful borrowed chords.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">The Modal Spectrum — Brightest to Darkest</div>
+    <div class="spectrum">
+      <div class="sp-col col-lyd">
+        <div class="sp-header">
+          <div class="sp-mode">LYDIAN</div>
+          <div class="sp-char">Ethereal</div>
+          <div class="sp-note-badge">#4</div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-chord">II (D)</div>
+          <div class="sp-desc">Bright lift, also V7/V</div>
+          <div class="sp-sep"></div>
+          <div class="sp-chord">♯ivø7</div>
+          <div class="sp-desc">Dark contrast from bright</div>
+        </div>
+      </div>
+      <div class="sp-col col-ion">
+        <div class="sp-header">
+          <div class="sp-mode">Ionian</div>
+          <div class="sp-char">Baseline</div>
+          <div class="sp-note-badge">Major</div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-chord">I–vii°</div>
+          <div class="sp-desc">All 7 diatonic chords</div>
+          <div class="sp-sep"></div>
+          <div class="sp-chord">(home base)</div>
+          <div class="sp-desc">Nothing borrowed here</div>
+        </div>
+      </div>
+      <div class="sp-col col-mix">
+        <div class="sp-header">
+          <div class="sp-mode">Mixo-<br>lydian</div>
+          <div class="sp-char">Bluesy</div>
+          <div class="sp-note-badge">♭7</div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-chord">♭VII (B♭)</div>
+          <div class="sp-desc">Rock/blues feel</div>
+          <div class="sp-sep"></div>
+          <div class="sp-chord">v-7</div>
+          <div class="sp-desc">Soft minor dominant</div>
+        </div>
+      </div>
+      <div class="sp-col col-dor">
+        <div class="sp-header">
+          <div class="sp-mode">Dorian</div>
+          <div class="sp-char">Dark+Hope</div>
+          <div class="sp-note-badge">nat.6</div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-chord">IV (D)</div>
+          <div class="sp-desc">Bright in minor key</div>
+          <div class="sp-sep"></div>
+          <div class="sp-chord">IV7 (D7)</div>
+          <div class="sp-desc">Even brighter color</div>
+        </div>
+      </div>
+      <div class="sp-col col-aeo">
+        <div class="sp-header">
+          <div class="sp-mode">Aeolian</div>
+          <div class="sp-char">Natural minor</div>
+          <div class="sp-note-badge">♭6</div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-chord">♭VI (A♭)</div>
+          <div class="sp-desc">Epic, cinematic</div>
+          <div class="sp-sep"></div>
+          <div class="sp-chord">iv- (Fm)</div>
+          <div class="sp-desc">Dark subdominant</div>
+        </div>
+      </div>
+      <div class="sp-col col-phr">
+        <div class="sp-header">
+          <div class="sp-mode">PHRYGIAN</div>
+          <div class="sp-char">Darkest</div>
+          <div class="sp-note-badge">♭2</div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-chord">♭II (D♭)</div>
+          <div class="sp-desc">Exotic, dramatic</div>
+          <div class="sp-sep"></div>
+          <div class="sp-chord">♭IImaj7</div>
+          <div class="sp-desc">Lush dark exotic</div>
+        </div>
+      </div>
+      <div class="sp-col col-loc">
+        <div class="sp-header">
+          <div class="sp-mode">Locrian ×</div>
+          <div class="sp-char">Unusable</div>
+          <div class="sp-note-badge">♭5</div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-chord">—</div>
+          <div class="sp-desc">Unstable tonic, no usable chords</div>
+          <div class="sp-sep"></div>
+          <div class="sp-chord">—</div>
+          <div class="sp-desc">Avoid for borrowing</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rule-box">
+      <div class="rule-text">The borrowing rule: only borrow chords that CONTAIN the mode's characteristic note. Borrowing a chord that lacks the characteristic note adds no modal color — it's just a regular diatonic chord that doesn't signal the mode you're borrowing from.</div>
+    </div>
+
+    <div class="backdoor-box">
+      <div class="bd-title">The Backdoor ii-V — Dark Mode Summary in C Major</div>
+      <div class="bd-main">
+        <div>
+          <div class="bd-chord-box" style="background:#8A6BC8">Fm7</div>
+          <div class="bd-chord-label" style="color:#8A6BC8">iv- (Aeolian)</div>
+        </div>
+        <div class="bd-arrow">→</div>
+        <div>
+          <div class="bd-chord-box" style="background:#8A6BC8">Bb7</div>
+          <div class="bd-chord-label" style="color:#8A6BC8">♭VII7 (Mixolydian)</div>
+        </div>
+        <div class="bd-arrow">→</div>
+        <div>
+          <div class="bd-chord-box" style="background:#1a5a8a">Cmaj7</div>
+          <div class="bd-chord-label" style="color:#7a9bd4">I (Ionian)</div>
+        </div>
+      </div>
+      <div class="bd-note">The Backdoor ii-V uses borrowed chords from parallel minor (Fm7 from Aeolian, B♭7 from Mixolydian/Aeolian overlap) to arrive at the major tonic. The chromatic bass motion F→B♭→C creates a warm, inevitable feeling that's softer than the traditional ii-V-I but equally conclusive. This is the parallel-minor equivalent of the ii-V-I journey.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

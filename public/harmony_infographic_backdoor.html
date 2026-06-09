@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Two Paths to Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:14px}
+.two-paths{display:grid;grid-template-columns:1fr 2px 1fr;gap:24px;margin-bottom:20px;align-items:start}
+.path-divider{background:#e5e7eb;align-self:stretch}
+.path{border-radius:10px;overflow:hidden;border:2px solid rgba(0,0,0,0.1)}
+.path-header{padding:18px 20px 16px;text-align:center}
+.path-label{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:6px;opacity:0.7}
+.path-name{font-size:20px;font-weight:900;text-transform:uppercase;margin-bottom:6px;line-height:1.1}
+.path-chords{display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.pc-chord{padding:8px 12px;border-radius:6px;font-size:16px;font-weight:900;font-family:monospace;color:#fff;text-align:center}
+.pc-arrow{font-size:18px;font-weight:700}
+.path-bass{font-size:12px;font-family:monospace;font-weight:700;padding:6px 12px;border-radius:4px}
+.path-body{background:#fff;padding:16px 20px}
+.pb-fact{margin-bottom:10px;padding:10px 12px;border-radius:6px;border-left:3px solid}
+.pb-fact-title{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px}
+.pb-fact-body{font-size:12px;line-height:1.4;color:#555}
+.path-char{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}
+.pc-tag{padding:3px 10px;border-radius:20px;font-size:10px;font-weight:700;text-transform:uppercase}
+.path-song{font-size:11px;color:#888;font-style:italic}
+/* Standard path */
+.p-standard .path-header{background:#d9f5e4}.p-standard .path-label{color:#1e6b42}.p-standard .path-name{color:#1e6b42}.p-standard .path-bass{background:#d9f5e4;color:#1e6b42}.p-standard .pc-arrow{color:#1e6b42}.p-standard .pb-fact{border-left-color:#7dc48a;background:#f0faf2}.p-standard .pb-fact-title{color:#1e6b42}.p-standard .pc-tag{background:#d9f5e4;color:#1e6b42}
+/* Backdoor path */
+.p-backdoor .path-header{background:#ede9fe}.p-backdoor .path-label{color:#4b2d8c}.p-backdoor .path-name{color:#4b2d8c}.p-backdoor .path-bass{background:#ede9fe;color:#4b2d8c}.p-backdoor .pc-arrow{color:#4b2d8c}.p-backdoor .pb-fact{border-left-color:#8A6BC8;background:#f5f3fd}.p-backdoor .pb-fact-title{color:#4b2d8c}.p-backdoor .pc-tag{background:#ede9fe;color:#4b2d8c}
+.divider-banner{background:#0f1e3c;border-radius:6px;padding:14px 24px;margin-bottom:20px;text-align:center}
+.db-text{font-size:14px;font-weight:700;color:#e8edf5;line-height:1.4;font-style:italic}
+.comparison{background:#f7f8fa;border-radius:8px;padding:16px 20px}
+.comp-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:12px}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.comp-col{display:flex;flex-direction:column;gap:6px}
+.comp-item{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.4;color:#333}
+.comp-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:4px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Harmony OS · Standalone Infographic</div>
+    <h1>Two Paths to Home</h1>
+    <div class="header-sub">The standard ii-V-I and the Backdoor ii-V both resolve to Cmaj7 — but they take completely different emotional routes to get there.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="two-paths">
+      <div class="path p-standard">
+        <div class="path-header">
+          <div class="path-label">Path 1 — Standard</div>
+          <div class="path-name">The ii-V-I</div>
+          <div class="path-chords">
+            <div class="pc-chord" style="background:#1e6b42">Dm7</div>
+            <div class="pc-arrow">→</div>
+            <div class="pc-chord" style="background:#7a5200">G7</div>
+            <div class="pc-arrow">→</div>
+            <div class="pc-chord" style="background:#1a5a8a">Cmaj7</div>
+          </div>
+          <div class="path-bass">Bass: D → G → C</div>
+        </div>
+        <div class="path-body">
+          <div class="pb-fact">
+            <div class="pb-fact-title">Bass Motion</div>
+            <div class="pb-fact-body">Down a 5th (D→G), then down a 5th again (G→C). The "double fifth drop" — maximally conclusive, traditional Western motion.</div>
+          </div>
+          <div class="pb-fact">
+            <div class="pb-fact-title">Harmonic Character</div>
+            <div class="pb-fact-body">Crisp, direct, jazzy. The tritone inside G7 creates urgent, clear-cut tension that snaps directly into resolution. No ambiguity.</div>
+          </div>
+          <div class="path-char">
+            <span class="pc-tag">Crisp</span>
+            <span class="pc-tag">Direct</span>
+            <span class="pc-tag">Conclusive</span>
+            <span class="pc-tag">Jazzy</span>
+          </div>
+          <div class="path-song">Standard jazz cadences, "Autumn Leaves," countless standard tunes — the baseline of tonal harmony.</div>
+        </div>
+      </div>
+
+      <div class="path-divider"></div>
+
+      <div class="path p-backdoor">
+        <div class="path-header">
+          <div class="path-label">Path 2 — Backdoor</div>
+          <div class="path-name">The Backdoor ii-V-I</div>
+          <div class="path-chords">
+            <div class="pc-chord" style="background:#4b2d8c">Fm7</div>
+            <div class="pc-arrow">→</div>
+            <div class="pc-chord" style="background:#4b2d8c">Bb7</div>
+            <div class="pc-arrow">→</div>
+            <div class="pc-chord" style="background:#1a5a8a">Cmaj7</div>
+          </div>
+          <div class="path-bass">Bass: F → B♭ → C</div>
+        </div>
+        <div class="path-body">
+          <div class="pb-fact">
+            <div class="pb-fact-title">Bass Motion</div>
+            <div class="pb-fact-body">Down a 5th (F→B♭), then up a step (B♭→C). The bass "sneaks in" from below — a half step below tonic. Unexpected, warm, chromatic.</div>
+          </div>
+          <div class="pb-fact">
+            <div class="pb-fact-title">Harmonic Character</div>
+            <div class="pb-fact-body">Both Fm7 and B♭7 are borrowed from parallel minor — creating a consistently "borrowed" emotional warmth throughout the approach. Softer resolution.</div>
+          </div>
+          <div class="path-char">
+            <span class="pc-tag">Warm</span>
+            <span class="pc-tag">Smooth</span>
+            <span class="pc-tag">Cinematic</span>
+            <span class="pc-tag">Emotionally rich</span>
+          </div>
+          <div class="path-song">"Knocks Me Off My Feet" — Stevie Wonder. R&B ballads, neo-soul, gospel.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-banner">
+      <div class="db-text">"Both resolve to Cmaj7. The difference is the emotional temperature of the journey — standard ii-V-I = arriving by jet, Backdoor ii-V = arriving by a warm night drive."</div>
+    </div>
+
+    <div class="comparison">
+      <div class="comp-title">At a Glance — Key Differences</div>
+      <div class="comp-grid">
+        <div class="comp-col">
+          <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1e6b42;margin-bottom:6px">Standard ii-V-I</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#1e6b42"></div>Diatonic ii chord (Dm7 — in key)</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#1e6b42"></div>Tritone in V7 creates strong pull</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#1e6b42"></div>Bass descends by two 5ths</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#1e6b42"></div>Crisp, direct, "expected"</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#1e6b42"></div>Works in any style, especially jazz</div>
+        </div>
+        <div class="comp-col">
+          <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4b2d8c;margin-bottom:6px">Backdoor ii-V-I</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#4b2d8c"></div>Borrowed iv- chord (Fm7 — from minor)</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#4b2d8c"></div>B♭7 is tritone sub of E7 (SubV7/vi)</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#4b2d8c"></div>Bass: 5th down then step up to tonic</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#4b2d8c"></div>Warm, "surprising but inevitable"</div>
+          <div class="comp-item"><div class="comp-dot" style="background:#4b2d8c"></div>R&B, gospel, neo-soul, ballads</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Tritone Substitution</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.core-logic{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.cl-card{border-radius:8px;padding:16px 18px}
+.cl-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px}
+.cl-main{font-size:14px;font-weight:700;line-height:1.4;margin-bottom:6px}
+.cl-detail{font-size:12px;line-height:1.4;font-style:italic}
+.cl-g7{background:#fef3d0;border:1px solid rgba(201,166,48,0.3)}.cl-g7 .cl-title{color:#7a5200}.cl-g7 .cl-main{color:#7a5200}
+.cl-db7{background:#d6eafc;border:1px solid rgba(26,90,138,0.2)}.cl-db7 .cl-title{color:#1a5a8a}.cl-db7 .cl-main{color:#1a5a8a}
+.rule-banner{background:#0f1e3c;border-radius:6px;padding:12px 20px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.rb-badge{background:#d97b6a;color:#fff;padding:4px 12px;border-radius:4px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap}
+.rb-text{font-size:13px;font-weight:600;color:#e8edf5}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:20px}
+thead th{background:#0f1e3c;padding:9px 12px;font-size:9.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8faacc;text-align:left}
+tbody tr{border-bottom:1px solid #eee}
+tbody td{padding:9px 12px;vertical-align:middle;color:#1f2937}
+tbody tr:last-child{border-bottom:none}
+.original-row{background:#fef9ec}
+.sub-row{background:#edf3fc}
+.chord-main{font-size:13px;font-weight:800;font-family:monospace}
+.orig-badge{padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;background:#fef3d0;color:#7a5200}
+.sub-badge{padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;background:#d6eafc;color:#1a5a8a}
+.loc-badge{padding:2px 8px;border-radius:20px;font-size:10px;font-weight:700;background:#ede9fe;color:#4b2d8c}
+.target-badge{padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;background:#d9f5e4;color:#1e6b42}
+.guide-tones{background:#f7f8fa;border-radius:8px;padding:16px 20px;border-left:4px solid #d97b6a}
+.gt-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7c1800;margin-bottom:8px}
+.gt-text{font-size:12px;line-height:1.5;color:#333}
+.gt-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.gt-chip{padding:5px 12px;border-radius:4px;font-size:12px;font-weight:700;color:#fff}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 7 · Sheet 7B</div>
+    <h1>Tritone Substitution</h1>
+    <div class="header-sub">Two dominant chords share the same tritone — so they both resolve to the same target. The tritone sub arrives from a half step above instead of a P5 above.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Core Logic — The Shared Tritone</div>
+    <div class="core-logic">
+      <div class="cl-card cl-g7">
+        <div class="cl-title">G7 (the original V7)</div>
+        <div class="cl-main">Tritone: B (3rd) and F (♭7)</div>
+        <div class="cl-detail">B rises to C, F falls to E. Approaches target from a Perfect 5th above (G→C). Traditional, direct, powerful resolution.</div>
+      </div>
+      <div class="cl-card cl-db7">
+        <div class="cl-title">D♭7 (the tritone sub)</div>
+        <div class="cl-main">Tritone: F (3rd) and B (♭7)</div>
+        <div class="cl-detail">F "rises" to E, B "falls" to C. SAME notes, swapped roles. Approaches target from a half step above (D♭→C). Smooth, chromatic, sophisticated.</div>
+      </div>
+    </div>
+
+    <div class="rule-banner">
+      <div class="rb-badge">The Rule</div>
+      <div class="rb-text">All tritone substitutions are located a HALF STEP ABOVE their target chord. SubV7 of any target = the dominant chord a ♭2 above the target.</div>
+    </div>
+
+    <div class="section-label">All 6 Tritone Subs in C Major</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Original</th>
+          <th>Chord</th>
+          <th>SubV7</th>
+          <th>Chord</th>
+          <th>Location</th>
+          <th>Resolves To</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="original-row">
+          <td><span class="orig-badge">V7</span></td>
+          <td><span class="chord-main">G7</span></td>
+          <td><span class="sub-badge">SubV7</span></td>
+          <td><span class="chord-main">D♭7</span></td>
+          <td><span class="loc-badge">♭2 above C</span></td>
+          <td><span class="target-badge">Cmaj7 (I)</span></td>
+        </tr>
+        <tr class="sub-row">
+          <td><span class="orig-badge">V7/ii</span></td>
+          <td><span class="chord-main">A7</span></td>
+          <td><span class="sub-badge">SubV7/ii</span></td>
+          <td><span class="chord-main">E♭7</span></td>
+          <td><span class="loc-badge">♭2 above D</span></td>
+          <td><span class="target-badge">Dm7 (ii)</span></td>
+        </tr>
+        <tr class="original-row">
+          <td><span class="orig-badge">V7/iii</span></td>
+          <td><span class="chord-main">B7</span></td>
+          <td><span class="sub-badge">SubV7/iii</span></td>
+          <td><span class="chord-main">F7</span></td>
+          <td><span class="loc-badge">♭2 above E</span></td>
+          <td><span class="target-badge">Em7 (iii)</span></td>
+        </tr>
+        <tr class="sub-row">
+          <td><span class="orig-badge">V7/IV</span></td>
+          <td><span class="chord-main">C7</span></td>
+          <td><span class="sub-badge">SubV7/IV</span></td>
+          <td><span class="chord-main">G♭7</span></td>
+          <td><span class="loc-badge">♭2 above F</span></td>
+          <td><span class="target-badge">Fmaj7 (IV)</span></td>
+        </tr>
+        <tr class="original-row">
+          <td><span class="orig-badge">V7/V</span></td>
+          <td><span class="chord-main">D7</span></td>
+          <td><span class="sub-badge">SubV7/V</span></td>
+          <td><span class="chord-main">A♭7</span></td>
+          <td><span class="loc-badge">♭2 above G</span></td>
+          <td><span class="target-badge">G7 (V)</span></td>
+        </tr>
+        <tr class="sub-row">
+          <td><span class="orig-badge">V7/vi</span></td>
+          <td><span class="chord-main">E7</span></td>
+          <td><span class="sub-badge">SubV7/vi</span></td>
+          <td><span class="chord-main">B♭7</span></td>
+          <td><span class="loc-badge">♭2 above A</span></td>
+          <td><span class="target-badge">Am7 (vi)</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="guide-tones">
+      <div class="gt-title">Guide Tones — The Minimum for Dominant Identity</div>
+      <div class="gt-text">You don't need the root to convey dominant function. The 3rd and ♭7 (the "guide tones") are the core — they contain the tritone, which IS the dominant function. Pianists and guitarists often voice dominant chords with just guide tones for maximum clarity and voice-leading efficiency.</div>
+      <div class="gt-chips">
+        <div class="gt-chip" style="background:#7dc48a">3rd = major quality</div>
+        <div class="gt-chip" style="background:#d97b6a">♭7 = dominant quality</div>
+        <div class="gt-chip" style="background:#c9a630">3rd + ♭7 = tritone = dominant function</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

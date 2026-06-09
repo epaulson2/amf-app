@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — The Harmonic Acquisition Model</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:32px 40px 36px}
+.three-pillars{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:28px}
+.pillar{border-radius:12px;overflow:hidden;border:2px solid rgba(0,0,0,0.1)}
+.pillar-header{padding:24px 20px 20px;text-align:center}
+.pillar-icon{font-size:32px;font-weight:900;margin-bottom:8px;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;margin:0 auto 12px}
+.pillar-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:6px;opacity:0.7}
+.pillar-name{font-size:24px;font-weight:900;text-transform:uppercase;margin-bottom:6px;line-height:1.1}
+.pillar-body{background:#fff;padding:18px 20px}
+.pillar-lead{font-size:14px;font-weight:700;color:#0f1e3c;margin-bottom:8px;line-height:1.3}
+.pillar-desc{font-size:12px;line-height:1.5;color:#555}
+.pillar-how{margin-top:10px;padding:8px 12px;border-radius:6px;font-size:11px;font-weight:600;line-height:1.4}
+/* Playlist amber */
+.p-playlist .pillar-header{background:#fef3d0}.p-playlist .pillar-label{color:#7a5200}.p-playlist .pillar-name{color:#7a5200}.p-playlist .pillar-icon{background:#c9a630;color:#fff}.p-playlist .pillar-how{background:#fef3d0;color:#7a5200}
+/* Theory blue */
+.p-theory .pillar-header{background:#d6eafc}.p-theory .pillar-label{color:#1a5a8a}.p-theory .pillar-name{color:#1a5a8a}.p-theory .pillar-icon{background:#1a5a8a;color:#fff}.p-theory .pillar-how{background:#d6eafc;color:#1a5a8a}
+/* Immersion green */
+.p-immersion .pillar-header{background:#d9f5e4}.p-immersion .pillar-label{color:#1e6b42}.p-immersion .pillar-name{color:#1e6b42}.p-immersion .pillar-icon{background:#1e6b42;color:#fff}.p-immersion .pillar-how{background:#d9f5e4;color:#1e6b42}
+.center-target{text-align:center;margin-bottom:28px;padding:20px;background:#0f1e3c;border-radius:10px}
+.ct-arrows{display:flex;justify-content:center;gap:60px;margin-bottom:12px}
+.ct-arrow{font-size:22px;font-weight:900}
+.ct-badge{display:inline-block;padding:14px 40px;background:linear-gradient(135deg,#5aacdf,#7dc48a,#F29B38);border-radius:50px;font-size:22px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 4px 20px rgba(0,0,0,0.3);margin-bottom:8px}
+.ct-desc{font-size:13px;color:#8faacc;font-style:italic}
+.analogy-box{background:#f7f8fa;border-radius:8px;padding:18px 24px;margin-bottom:20px}
+.analogy-grid{display:grid;grid-template-columns:1fr 14px 1fr 14px 1fr 14px 1fr;align-items:center;gap:0;margin-bottom:12px}
+.analogy-item{text-align:center;padding:10px 8px;background:#fff;border-radius:6px;border:1px solid #e5e7eb}
+.ai-label{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#888;margin-bottom:4px}
+.ai-value{font-size:14px;font-weight:800;color:#0f1e3c;margin-bottom:2px}
+.ai-source{font-size:10px;color:#888;font-style:italic}
+.analogy-eq{font-size:16px;color:#bbb;text-align:center;font-weight:700}
+.analogy-result{text-align:center;padding:10px 8px;background:#0f1e3c;border-radius:6px}
+.ar-label{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7a9bd4;margin-bottom:4px}
+.ar-value{font-size:14px;font-weight:800;color:#fff}
+.quote-box{background:#0f1e3c;border-radius:8px;padding:16px 24px;text-align:center}
+.quote-text{font-size:16px;font-weight:700;color:#fff;font-style:italic;line-height:1.4}
+.quote-attr{font-size:11px;color:#7a9bd4;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Harmony OS · Core Framework</div>
+    <h1>The Harmonic Acquisition Model</h1>
+    <div class="header-sub">How to build genuine harmonic fluency — three components working together in a feedback loop, just like learning a spoken language.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="three-pillars">
+      <div class="pillar p-playlist">
+        <div class="pillar-header">
+          <div class="pillar-icon">♫</div>
+          <div class="pillar-label">Component 1</div>
+          <div class="pillar-name">Playlist</div>
+        </div>
+        <div class="pillar-body">
+          <div class="pillar-lead">25–50 of your favorite songs</div>
+          <div class="pillar-desc">Your existing musical loves provide the emotional context. Harness attention you already have — the songs you know deeply and feel strongly about.</div>
+          <div class="pillar-how">How: Build a playlist of songs you love and listen to obsessively. These become your analytical corpus. Don't start with theory exercises — start with music you care about.</div>
+        </div>
+      </div>
+      <div class="pillar p-theory">
+        <div class="pillar-header">
+          <div class="pillar-icon">𝄞</div>
+          <div class="pillar-label">Component 2</div>
+          <div class="pillar-name">Theory</div>
+        </div>
+        <div class="pillar-body">
+          <div class="pillar-lead">The language to label what you hear</div>
+          <div class="pillar-desc">Analyze your playlist. Assign functional labels. Name the chords, identify the cadences, spot the borrowed chords. Theory is vocabulary — useless without context.</div>
+          <div class="pillar-how">How: Transcribe or look up chord progressions from your playlist. Label each chord with its function (Green/Blue/Red). Identify ii-V-Is, secondary dominants, borrowed chords.</div>
+        </div>
+      </div>
+      <div class="pillar p-immersion">
+        <div class="pillar-header">
+          <div class="pillar-icon">◎</div>
+          <div class="pillar-label">Component 3</div>
+          <div class="pillar-name">Immersion</div>
+        </div>
+        <div class="pillar-body">
+          <div class="pillar-lead">Daily listening + playing the structures</div>
+          <div class="pillar-desc">Creates the feedback loop. Massive input of labeled, emotionally meaningful music builds pattern recognition — the same way immersion builds fluency in a spoken language.</div>
+          <div class="pillar-how">How: Play through progressions daily. Listen actively with theory labels in mind. Hum bass lines. Sing chord tones. The goal is automatic recognition, not conscious analysis.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-target">
+      <div class="ct-arrows">
+        <div class="ct-arrow" style="color:#c9a630">↘</div>
+        <div class="ct-arrow" style="color:#1a5a8a">↓</div>
+        <div class="ct-arrow" style="color:#1e6b42">↙</div>
+      </div>
+      <div class="ct-badge">HARMONIC FLUENCY</div>
+      <div class="ct-desc">All three components converge — hearing, naming, and feeling harmony become a single automatic response</div>
+    </div>
+
+    <div class="analogy-box">
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px">The Language Learning Analogy</div>
+      <div class="analogy-grid">
+        <div class="analogy-item"><div class="ai-label">Vocabulary</div><div class="ai-value">Theory</div><div class="ai-source">chord names + function</div></div>
+        <div class="analogy-eq">+</div>
+        <div class="analogy-item"><div class="ai-label">Context</div><div class="ai-value">Playlist</div><div class="ai-source">emotional + cultural</div></div>
+        <div class="analogy-eq">+</div>
+        <div class="analogy-item"><div class="ai-label">Daily Use</div><div class="ai-value">Immersion</div><div class="ai-source">listening + playing</div></div>
+        <div class="analogy-eq">=</div>
+        <div class="analogy-result"><div class="ar-label">Result</div><div class="ar-value">Fluency</div></div>
+      </div>
+      <div style="font-size:12px;color:#555;line-height:1.5">Just as a language learner needs vocabulary (theory), meaningful context (real conversations / your playlist), and constant exposure (immersion) — harmonic fluency emerges from the combination, not any single component alone.</div>
+    </div>
+
+    <div class="quote-box">
+      <div class="quote-text">"Massive input = massive output. The fastest path to harmonic fluency is flooding your ears with labeled, emotionally meaningful music every single day."</div>
+      <div class="quote-attr">— Harmony OS Core Principle</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

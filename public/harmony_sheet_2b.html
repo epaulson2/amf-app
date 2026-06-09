@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — The Three Minor Scales</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px}
+.minor-panel{border-radius:8px;overflow:hidden;border:2px solid rgba(0,0,0,0.08)}
+.panel-header{padding:14px 16px 12px}
+.panel-type{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;opacity:0.7;margin-bottom:4px}
+.panel-name{font-size:18px;font-weight:900;line-height:1.1;text-transform:uppercase}
+.panel-body{background:#fff;padding:14px 16px}
+.formula{font-size:13px;font-weight:700;font-family:monospace;margin-bottom:8px;color:#0f1e3c;letter-spacing:0.05em}
+.notes{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:10px}
+.note-chip{padding:4px 8px;border-radius:4px;font-size:11px;font-weight:700;color:#fff}
+.panel-fact{font-size:11px;line-height:1.4;color:#444;margin-bottom:6px;padding:8px 10px;background:#f7f8fa;border-radius:4px;border-left:3px solid}
+.char-tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px}
+.panel-why{font-size:10.5px;line-height:1.4;color:#555;font-style:italic}
+.natural{background:#f0ecfa}
+.natural .panel-header{background:#8A6BC8}
+.natural .panel-name{color:#fff}
+.natural .panel-type{color:rgba(255,255,255,0.7)}
+.natural .panel-fact{border-left-color:#8A6BC8}
+.natural .char-tag{background:#ede9fe;color:#4b2d8c}
+.harmonic{background:#fff8e6}
+.harmonic .panel-header{background:#c9a630}
+.harmonic .panel-name{color:#fff}
+.harmonic .panel-type{color:rgba(255,255,255,0.7)}
+.harmonic .panel-fact{border-left-color:#c9a630}
+.harmonic .char-tag{background:#fef3d0;color:#7a5200}
+.melodic{background:#f0faf2}
+.melodic .panel-header{background:#7dc48a}
+.melodic .panel-name{color:#fff}
+.melodic .panel-type{color:rgba(255,255,255,0.8)}
+.melodic .panel-fact{border-left-color:#7dc48a}
+.melodic .char-tag{background:#d9f5e4;color:#1e6b42}
+.highlight-chip{background:#d97b6a;font-weight:900}
+.parallel-relative{background:#f7f8fa;border-radius:8px;padding:18px 24px}
+.pr-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+.pr-card{background:#fff;border-radius:6px;padding:14px 16px;border:1px solid #e5e7eb}
+.pr-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:6px}
+.pr-example{font-size:14px;font-weight:800;color:#0f1e3c;margin-bottom:6px}
+.pr-desc{font-size:11.5px;line-height:1.4;color:#555}
+.pr-note{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 2 · Sheet 2B</div>
+    <h1>The Three Minor Scales</h1>
+    <div class="header-sub">Natural, harmonic, and melodic minor — each solving a different musical problem, each with its own emotional character.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Three Flavors of Minor</div>
+    <div class="three-col">
+
+      <div class="minor-panel natural">
+        <div class="panel-header">
+          <div class="panel-type">Natural Minor</div>
+          <div class="panel-name">Natural<br>Minor</div>
+        </div>
+        <div class="panel-body">
+          <div class="char-tag">Dark · Mellow · Aeolian</div>
+          <div class="formula">1 2 ♭3 4 5 ♭6 ♭7</div>
+          <div class="formula" style="font-size:11px;color:#666;margin-bottom:8px">W-H-W-W-H-W-W</div>
+          <div class="notes">
+            <span class="note-chip" style="background:#6bb8e8">A</span>
+            <span class="note-chip" style="background:#d97b6a">B</span>
+            <span class="note-chip" style="background:#8A6BC8">C</span>
+            <span class="note-chip" style="background:#3F6FB6">D</span>
+            <span class="note-chip" style="background:#3F6FB6">E</span>
+            <span class="note-chip" style="background:#c9a630">F</span>
+            <span class="note-chip" style="background:#7dc48a">G</span>
+          </div>
+          <div class="panel-fact" style="border-left-color:#8A6BC8">A natural minor uses the same 7 notes as C major — just starting on A. Called the <strong>relative minor</strong> of C major.</div>
+          <div class="panel-why">The most common minor. Used in pop, rock, folk. No alteration from the key signature needed. The ♭7 means the leading tone is a whole step below root — V chord is minor, less urgency.</div>
+        </div>
+      </div>
+
+      <div class="minor-panel harmonic">
+        <div class="panel-header">
+          <div class="panel-type">Harmonic Minor</div>
+          <div class="panel-name">Harmonic<br>Minor</div>
+        </div>
+        <div class="panel-body">
+          <div class="char-tag">Exotic · Tense · Classical</div>
+          <div class="formula">1 2 ♭3 4 5 ♭6 7</div>
+          <div class="formula" style="font-size:11px;color:#666;margin-bottom:8px">W-H-W-W-H-Aug2-H</div>
+          <div class="notes">
+            <span class="note-chip" style="background:#6bb8e8">A</span>
+            <span class="note-chip" style="background:#d97b6a">B</span>
+            <span class="note-chip" style="background:#8A6BC8">C</span>
+            <span class="note-chip" style="background:#3F6FB6">D</span>
+            <span class="note-chip" style="background:#3F6FB6">E</span>
+            <span class="note-chip" style="background:#c9a630">F</span>
+            <span class="note-chip highlight-chip">G♯</span>
+          </div>
+          <div class="panel-fact" style="border-left-color:#c9a630">The raised 7th creates an <strong>Augmented 2nd</strong> between ♭6 and 7 — the characteristic exotic sound. The V chord becomes MAJOR (E7), giving a leading tone for V→i.</div>
+          <div class="panel-why">Built to solve a harmonic problem: natural minor's V is minor (Em), which lacks the pull toward home. Raising the 7th makes V major (E) or dominant 7th (E7), creating proper V→i resolution.</div>
+        </div>
+      </div>
+
+      <div class="minor-panel melodic">
+        <div class="panel-header">
+          <div class="panel-type">Melodic Minor</div>
+          <div class="panel-name">Melodic<br>Minor</div>
+        </div>
+        <div class="panel-body">
+          <div class="char-tag">Smooth · Jazz · Singable</div>
+          <div class="formula">1 2 ♭3 4 5 6 7</div>
+          <div class="formula" style="font-size:11px;color:#666;margin-bottom:8px">W-H-W-W-W-W-H</div>
+          <div class="notes">
+            <span class="note-chip" style="background:#6bb8e8">A</span>
+            <span class="note-chip" style="background:#d97b6a">B</span>
+            <span class="note-chip" style="background:#8A6BC8">C</span>
+            <span class="note-chip" style="background:#3F6FB6">D</span>
+            <span class="note-chip" style="background:#3F6FB6">E</span>
+            <span class="note-chip highlight-chip">F♯</span>
+            <span class="note-chip highlight-chip">G♯</span>
+          </div>
+          <div class="panel-fact" style="border-left-color:#7dc48a">Both the 6th <em>and</em> 7th are raised, eliminating the awkward Augmented 2nd of harmonic minor. Makes ascending lines smoother for voices and instruments.</div>
+          <div class="panel-why">Jazz theory keeps this same scale ascending AND descending (unlike classical which descends as natural minor). Only differs from major in the ♭3 — that's what keeps it minor in character.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-label">Parallel vs. Relative</div>
+    <div class="parallel-relative">
+      <div style="font-size:12px;line-height:1.5;color:#555;margin-bottom:12px">Two ways to relate a major and minor scale — understanding both prevents confusion when analyzing music.</div>
+      <div class="pr-grid">
+        <div class="pr-card">
+          <div class="pr-title">Parallel (same root, different notes)</div>
+          <div class="pr-example">C major ↔ C minor</div>
+          <div class="pr-desc">Both start on C but use different notes. C major = bright; C minor = dark version of the same home. The ♭3, ♭6, ♭7 lower the character. Parallel comparison = same key center, different modes.</div>
+        </div>
+        <div class="pr-card">
+          <div class="pr-title">Relative (same notes, different root)</div>
+          <div class="pr-example">C major ↔ A minor</div>
+          <div class="pr-desc">Both use C-D-E-F-G-A-B but start in different places. A is the 6th degree of C major. Every major key has a relative minor starting on its 6th degree. Relative comparison = same key signature, different tonal center.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

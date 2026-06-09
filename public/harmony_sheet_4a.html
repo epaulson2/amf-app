@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Chord Inversions</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+.def-banner{background:#0f1e3c;border-radius:6px;padding:14px 20px;margin-bottom:20px;font-size:13px;font-weight:600;color:#e8edf5;line-height:1.4}
+.def-banner strong{color:#5aacdf}
+table{width:100%;border-collapse:collapse;margin-bottom:22px;font-size:12px}
+thead th{background:#0f1e3c;padding:9px 12px;font-size:9.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8faacc;text-align:left}
+tbody tr{border-bottom:1px solid #eee}
+tbody td{padding:10px 12px;vertical-align:middle;color:#1f2937}
+tbody tr:last-child{border-bottom:none}
+.pos-name{font-weight:800;font-size:13px}
+.bass-badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700}
+.stab-bar{display:inline-flex;gap:2px}
+.stab-dot{width:10px;height:10px;border-radius:2px}
+.stab-full{background:#6bb8e8}
+.stab-mid{background:#F29B38}
+.stab-low{background:#d97b6a}
+.stab-none{background:#e5e7eb}
+.notation{font-family:monospace;font-size:12px;font-weight:700;color:#0f1e3c}
+.char-text{font-style:italic;font-size:11px;color:#666;line-height:1.3}
+.table-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:8px}
+.functional-section{background:#f7f8fa;border-radius:8px;padding:18px 22px}
+.functional-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px}
+.func-card{background:#fff;border-radius:6px;padding:14px 16px;border:1px solid #e5e7eb;border-top:3px solid}
+.fc-num{font-size:26px;font-weight:900;margin-bottom:4px}
+.fc-name{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#555;margin-bottom:6px}
+.fc-chord{font-size:16px;font-weight:900;font-family:monospace;margin-bottom:4px}
+.fc-song{font-size:10px;color:#888;font-style:italic;margin-bottom:6px}
+.fc-desc{font-size:11px;line-height:1.4;color:#555}
+.row-root{background:#f0f7ff}
+.row-1st{background:#f5f5ff}
+.row-2nd{background:#fff8ee}
+.row-3rd{background:#fff2f0}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 4 · Sheet 4A</div>
+    <h1>Chord Inversions</h1>
+    <div class="header-sub">The same chord tones reordered — inversions create smooth bass lines, voice leading efficiency, and new emotional shades.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="def-banner">
+      An <strong>inversion</strong> places any chord tone other than the root in the lowest (bass) voice. The chord name doesn't change — only which note is on the bottom. Notated as <strong>Chord/Bass</strong> (e.g., C/E means C chord with E in the bass).
+    </div>
+
+    <div class="table-title">Triad Inversions — C Major (C-E-G)</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Bass Note</th>
+          <th>Stability</th>
+          <th>Notation</th>
+          <th>Character</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-root">
+          <td><span class="pos-name">Root Position</span></td>
+          <td><span class="bass-badge" style="background:#d6eafc;color:#1a5a8a">Root (C)</span></td>
+          <td><div class="stab-bar"><div class="stab-dot stab-full"></div><div class="stab-dot stab-full"></div><div class="stab-dot stab-full"></div></div> Most stable</td>
+          <td><span class="notation">C</span></td>
+          <td class="char-text">Grounded foundation. Strong arrival point. Use for beginnings, endings, and strong beats.</td>
+        </tr>
+        <tr class="row-1st">
+          <td><span class="pos-name">1st Inversion</span></td>
+          <td><span class="bass-badge" style="background:#ede9fe;color:#4b2d8c">3rd (E)</span></td>
+          <td><div class="stab-bar"><div class="stab-dot stab-full"></div><div class="stab-dot stab-mid"></div><div class="stab-dot stab-none"></div></div> Lighter</td>
+          <td><span class="notation">C/E</span></td>
+          <td class="char-text">Smooth, elegant, slightly softer. Excellent for harmonizing scale degree 3 in the melody (creates seamless motion in the bass).</td>
+        </tr>
+        <tr class="row-2nd">
+          <td><span class="pos-name">2nd Inversion</span></td>
+          <td><span class="bass-badge" style="background:#fef3d0;color:#7a5200">5th (G)</span></td>
+          <td><div class="stab-bar"><div class="stab-dot stab-mid"></div><div class="stab-dot stab-none"></div><div class="stab-dot stab-none"></div></div> Least stable</td>
+          <td><span class="notation">C/G</span></td>
+          <td class="char-text">Creates a P4 above the bass — contextually unstable. Used in specific contexts: cadential 6/4 (IV 2nd inv before V) or passing movement.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="table-title">7th Chord Inversions — G7 (G-B-D-F)</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Bass Note</th>
+          <th>Stability</th>
+          <th>Notation</th>
+          <th>Character</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-root">
+          <td><span class="pos-name">Root Position</span></td>
+          <td><span class="bass-badge" style="background:#d6eafc;color:#1a5a8a">Root (G)</span></td>
+          <td><div class="stab-bar"><div class="stab-dot stab-full"></div><div class="stab-dot stab-full"></div><div class="stab-dot stab-full"></div></div> Most stable</td>
+          <td><span class="notation">G7</span></td>
+          <td class="char-text">Full, strong dominant. Direct and powerful resolution drive.</td>
+        </tr>
+        <tr class="row-1st">
+          <td><span class="pos-name">1st Inversion</span></td>
+          <td><span class="bass-badge" style="background:#ede9fe;color:#4b2d8c">3rd (B)</span></td>
+          <td><div class="stab-bar"><div class="stab-dot stab-full"></div><div class="stab-dot stab-mid"></div><div class="stab-dot stab-none"></div></div> Lighter</td>
+          <td><span class="notation">G7/B</span></td>
+          <td class="char-text">Smoothes the bass line when harmonizing scale degree 7. Classic pop use: harmonizes B in the melody moving up to C (e.g., "Man in the Mirror").</td>
+        </tr>
+        <tr class="row-2nd">
+          <td><span class="pos-name">2nd Inversion</span></td>
+          <td><span class="bass-badge" style="background:#fef3d0;color:#7a5200">5th (D)</span></td>
+          <td><div class="stab-bar"><div class="stab-dot stab-mid"></div><div class="stab-dot stab-low"></div><div class="stab-dot stab-none"></div></div> Less stable</td>
+          <td><span class="notation">G7/D</span></td>
+          <td class="char-text">Less common. The D in the bass weakens dominant drive slightly. Used for passing motion or pedal tone contexts.</td>
+        </tr>
+        <tr class="row-3rd">
+          <td><span class="pos-name">3rd Inversion</span></td>
+          <td><span class="bass-badge" style="background:#fce8e4;color:#7c1800">♭7th (F)</span></td>
+          <td><div class="stab-dot stab-low"></div> Most active</td>
+          <td><span class="notation">G7/F</span></td>
+          <td class="char-text">The F (♭7) in the bass creates a harsh m2 against the expected resolution. Creates maximum forward pull. Used in Bach chorales and dramatic jazz passages.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="functional-section">
+      <div class="section-label" style="margin-bottom:0">Three Functional Inversions You'll Actually Use</div>
+      <div class="functional-grid">
+        <div class="func-card" style="border-top-color:#6bb8e8">
+          <div class="fc-num" style="color:#6bb8e8">1</div>
+          <div class="fc-name">I/3rd</div>
+          <div class="fc-chord">C/E</div>
+          <div class="fc-desc">Softens the harmonization of scale degree 3 in the melody. Creates a smooth descending bass line: C → C/E → F. Commonly used in pop ballads for a gentler Tonic chord.</div>
+        </div>
+        <div class="func-card" style="border-top-color:#d97b6a">
+          <div class="fc-num" style="color:#d97b6a">2</div>
+          <div class="fc-name">V/7th</div>
+          <div class="fc-chord">G/B</div>
+          <div class="fc-song">"Man in the Mirror" — MJ bridge</div>
+          <div class="fc-desc">Smooth harmonization of scale degree 7 ascending to 8 (B→C). The B in the bass rises stepwise to C — the most elegant possible bass resolution. Pop and gospel staple.</div>
+        </div>
+        <div class="func-card" style="border-top-color:#8A6BC8">
+          <div class="fc-num" style="color:#8A6BC8">3</div>
+          <div class="fc-name">iii/5th</div>
+          <div class="fc-chord">Em/B</div>
+          <div class="fc-song">"Shape of My Heart" — Sting</div>
+          <div class="fc-desc">Most melancholic harmonization of scale degree 5. Em/B creates a descending bass line feel (G→Em/B→C/E). The B in the bass sustains before resolving. Deeply introspective character.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Chord Function & Cadences</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.func-three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px}
+.func-card{border-radius:8px;padding:16px 18px}
+.fc-label{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:6px}
+.fc-title{font-size:18px;font-weight:900;margin-bottom:8px;text-transform:uppercase;line-height:1.1}
+.fc-primary{font-size:13px;font-weight:700;margin-bottom:4px}
+.fc-chords{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px}
+.fc-chip{padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700;font-family:monospace}
+.fc-desc{font-size:11px;line-height:1.4;font-style:italic}
+.tonic-card{background:#d6eafc}.tonic-card .fc-label{color:#1a5a8a}.tonic-card .fc-title{color:#1a5a8a}.tonic-card .fc-chip{background:rgba(90,172,223,0.25);color:#1a5a8a}.tonic-card .fc-desc{color:#1a5a8a}
+.sub-card{background:#d9f5e4}.sub-card .fc-label{color:#1e6b42}.sub-card .fc-title{color:#1e6b42}.sub-card .fc-chip{background:rgba(91,168,104,0.25);color:#1e6b42}.sub-card .fc-desc{color:#1e6b42}
+.dom-card{background:#fef3d0}.dom-card .fc-label{color:#7a5200}.dom-card .fc-title{color:#7a5200}.dom-card .fc-chip{background:rgba(201,166,48,0.25);color:#7a5200}.dom-card .fc-desc{color:#7a5200}
+.flow-arc{background:#0f1e3c;border-radius:8px;padding:16px 24px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.flow-node{text-align:center;flex:1}
+.flow-node-name{font-size:14px;font-weight:900;color:#fff;text-transform:uppercase}
+.flow-node-chords{font-size:11px;color:#7a9bd4;font-family:monospace;margin-top:3px}
+.flow-arrow{font-size:20px;color:#5aacdf;flex-shrink:0;font-weight:700}
+.flow-arrow-label{font-size:9px;color:#7a9bd4;text-align:center;margin-top:2px;letter-spacing:0.06em}
+.cadence-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cad-card{border-radius:8px;padding:14px 16px}
+.cad-name{font-size:14px;font-weight:900;margin-bottom:4px}
+.cad-motion{font-size:16px;font-weight:800;font-family:monospace;margin-bottom:6px}
+.cad-analogy{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:5px;opacity:0.7}
+.cad-desc{font-size:11px;line-height:1.4;font-style:italic}
+.cad-auth{background:#fef3d0;border:1px solid rgba(201,166,48,0.3)}.cad-auth .cad-name{color:#7a5200}.cad-auth .cad-motion{color:#7a5200}
+.cad-plag{background:#d9f5e4;border:1px solid rgba(91,168,104,0.3)}.cad-plag .cad-name{color:#1e6b42}.cad-plag .cad-motion{color:#1e6b42}
+.cad-half{background:#fef3d0;border:1px solid rgba(201,166,48,0.3)}.cad-half .cad-name{color:#7a5200}.cad-half .cad-motion{color:#7a5200}
+.cad-dec{background:#ede9fe;border:1px solid rgba(138,107,200,0.3)}.cad-dec .cad-name{color:#4b2d8c}.cad-dec .cad-motion{color:#4b2d8c}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 5 · Sheet 5B</div>
+    <h1>Chord Function &amp; Cadences</h1>
+    <div class="header-sub">Every chord belongs to one of three functional groups — and those groups follow a universal narrative arc from home to tension and back.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">The Three Functional Categories (Key of C Major)</div>
+    <div class="func-three">
+      <div class="func-card tonic-card">
+        <div class="fc-label">Function 1</div>
+        <div class="fc-title">Tonic<br>(Home)</div>
+        <div class="fc-primary">Primary: <strong>I (Cmaj7)</strong></div>
+        <div class="fc-chords">
+          <span class="fc-chip">I</span>
+          <span class="fc-chip">vi</span>
+          <span class="fc-chip">iii</span>
+        </div>
+        <div class="fc-desc">I is primary home. vi is the relative minor — shares 2 notes with I, so it sounds like home but with a sadder tint. iii shares stable tones but is rarely used today as a tonic chord.</div>
+      </div>
+      <div class="func-card sub-card">
+        <div class="fc-label">Function 2</div>
+        <div class="fc-title">Subdominant<br>(Departure)</div>
+        <div class="fc-primary">Primary: <strong>IV (Fmaj7)</strong></div>
+        <div class="fc-chords">
+          <span class="fc-chip">IV</span>
+          <span class="fc-chip">ii</span>
+          <span class="fc-chip">vii°</span>
+        </div>
+        <div class="fc-desc">IV is the classic departure — adds color and motion away from home. ii is the modern, jazzier subdominant (darker flavor). vii° is a contemporary option used in pop and neo-soul progressions.</div>
+      </div>
+      <div class="func-card dom-card">
+        <div class="fc-label">Function 3</div>
+        <div class="fc-title">Dominant<br>(Tension)</div>
+        <div class="fc-primary">Primary: <strong>V (G7)</strong></div>
+        <div class="fc-chords">
+          <span class="fc-chip">V</span>
+          <span class="fc-chip">vii°</span>
+        </div>
+        <div class="fc-desc">V7 contains the tritone — the engine of harmonic tension. Creates the strongest pull back to I. vii° is the classical dominant substitute but sounds dated in modern pop contexts. V7 is the go-to.</div>
+      </div>
+    </div>
+
+    <div class="flow-arc">
+      <div class="flow-node">
+        <div class="flow-node-name">Home</div>
+        <div class="flow-node-chords">I · vi · iii</div>
+        <div style="font-size:9px;color:#5aacdf;margin-top:3px">TONIC</div>
+      </div>
+      <div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-arrow-label">adds color<br>and motion</div>
+      </div>
+      <div class="flow-node">
+        <div class="flow-node-name">Departure</div>
+        <div class="flow-node-chords">IV · ii · vii°</div>
+        <div style="font-size:9px;color:#7dc48a;margin-top:3px">SUBDOMINANT</div>
+      </div>
+      <div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-arrow-label">creates<br>urgency</div>
+      </div>
+      <div class="flow-node">
+        <div class="flow-node-name">Tension</div>
+        <div class="flow-node-chords">V · vii°</div>
+        <div style="font-size:9px;color:#c9a630;margin-top:3px">DOMINANT</div>
+      </div>
+      <div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-arrow-label">resolves</div>
+      </div>
+      <div class="flow-node">
+        <div class="flow-node-name">Home</div>
+        <div class="flow-node-chords">I</div>
+        <div style="font-size:9px;color:#5aacdf;margin-top:3px">RESOLUTION</div>
+      </div>
+    </div>
+
+    <div class="section-label">The 4 Cadence Types</div>
+    <div class="cadence-grid">
+      <div class="cad-card cad-auth">
+        <div class="cad-name">Authentic Cadence</div>
+        <div class="cad-motion">V → I (or V7 → I)</div>
+        <div class="cad-analogy">The period at the end of a sentence</div>
+        <div class="cad-desc">The strongest resolution in Western music. PAC (Perfect Authentic Cadence): V7 → I in root position with scale degree 1 on top. IAC (Imperfect): V → I but 3rd or 5th on top — slightly softer landing.</div>
+      </div>
+      <div class="cad-card cad-plag">
+        <div class="cad-name">Plagal Cadence</div>
+        <div class="cad-motion">IV → I</div>
+        <div class="cad-analogy">The "Amen" cadence — peaceful, gentle</div>
+        <div class="cad-desc">The church cadence. Softer and more peaceful than authentic — no tritone tension driving the resolution. Common in gospel, hymns, and folk. Ends on a sigh rather than a full stop.</div>
+      </div>
+      <div class="cad-card cad-half">
+        <div class="cad-name">Half Cadence</div>
+        <div class="cad-motion">any chord → V</div>
+        <div class="cad-analogy">The question mark — creates anticipation</div>
+        <div class="cad-desc">Ends ON the dominant — pauses on tension instead of resolving it. Like a musical question mark: "something is coming." Often used at phrase midpoints before the answer phrase resolves fully.</div>
+      </div>
+      <div class="cad-card cad-dec">
+        <div class="cad-name">Deceptive Cadence</div>
+        <div class="cad-motion">V → vi (or V → ♭VI)</div>
+        <div class="cad-analogy">The plot twist — delays resolution</div>
+        <div class="cad-desc">V seems ready to resolve to I — but lands on vi instead. vi shares 2 notes with I (C-E share with Am's A-C-E), so it feels like home but with a sadder tint. Delays the full resolution beautifully. V → ♭VI is an even more dramatic deception.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

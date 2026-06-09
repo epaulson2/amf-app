@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Functional Harmony & Color System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.color-system{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px}
+.cs-card{border-radius:8px;overflow:hidden}
+.cs-header{padding:16px 18px 14px}
+.cs-badge{display:inline-block;padding:4px 10px;border-radius:4px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px}
+.cs-name{font-size:18px;font-weight:900;text-transform:uppercase;margin-bottom:6px}
+.cs-desc{font-size:12px;line-height:1.4}
+.cs-green .cs-header{background:#d9f5e4}.cs-green .cs-name{color:#1e6b42}.cs-green .cs-desc{color:#1e6b42}.cs-green .cs-badge{background:#1e6b42;color:#fff}
+.cs-blue .cs-header{background:#d6eafc}.cs-blue .cs-name{color:#1a5a8a}.cs-blue .cs-desc{color:#1a5a8a}.cs-blue .cs-badge{background:#1a5a8a;color:#fff}
+.cs-red .cs-header{background:#fce8e8}.cs-red .cs-name{color:#8a1a1a}.cs-red .cs-desc{color:#8a1a1a}.cs-red .cs-badge{background:#8a1a1a;color:#fff}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:20px}
+thead th{background:#0f1e3c;padding:9px 12px;font-size:9.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8faacc;text-align:left}
+tbody tr{border-bottom:1px solid #eee}
+tbody td{padding:10px 12px;vertical-align:middle;color:#1f2937}
+tbody tr:last-child{border-bottom:none}
+.deg-num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#fff;flex-shrink:0}
+.deg-cell{display:flex;align-items:center;gap:8px}
+.chord-main{font-size:14px;font-weight:800;font-family:monospace}
+.func-badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em}
+.func-tonic{background:#d6eafc;color:#1a5a8a}
+.func-sub{background:#d9f5e4;color:#1e6b42}
+.func-dom{background:#fef3d0;color:#7a5200}
+.color-dot{width:14px;height:14px;border-radius:3px;display:inline-block}
+.note-box{background:#f7f8fa;border-radius:6px;padding:14px 18px;border-left:4px solid #1e6b42}
+.note-text{font-size:12.5px;line-height:1.5;color:#333}
+.note-text strong{color:#0f1e3c}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 5 · Sheet 5A</div>
+    <h1>Functional Harmony</h1>
+    <div class="header-sub">The Harmony OS Color System — three categories that explain where every chord comes from and what it does emotionally.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">The Harmony OS Color System</div>
+    <div class="color-system">
+      <div class="cs-card cs-green">
+        <div class="cs-header">
+          <div class="cs-badge">GREEN</div>
+          <div class="cs-name">Diatonic</div>
+          <div class="cs-desc">Chords naturally in the key. Home base. Provide stability, coherence, and the foundation of all harmony. These are the 7 chords you get "for free" from the major scale.</div>
+        </div>
+      </div>
+      <div class="cs-card cs-blue">
+        <div class="cs-header">
+          <div class="cs-badge">BLUE</div>
+          <div class="cs-name">Secondary Dominant</div>
+          <div class="cs-desc">Non-diatonic dominant chords. Each contains a tritone. Create directed motion toward a specific diatonic target chord. "V7 of [target]" — borrowed from tonicized keys.</div>
+        </div>
+      </div>
+      <div class="cs-card cs-red">
+        <div class="cs-header">
+          <div class="cs-badge">RED</div>
+          <div class="cs-name">Modal Interchange</div>
+          <div class="cs-desc">Borrowed chords from parallel modes (same root, different scale). Create emotional contrast without leaving the key center. The "darkness dial" — adds depth, drama, surprise.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Diatonic Chord Chart — Key of C Major</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Degree</th>
+          <th>Triad</th>
+          <th>7th Chord</th>
+          <th>Function</th>
+          <th>Stability</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="deg-cell"><div class="deg-num" style="background:#6bb8e8">I</div><span style="font-weight:700">Tonic</span></div></td>
+          <td><span class="chord-main">C</span></td>
+          <td><span class="chord-main">Cmaj7</span></td>
+          <td><span class="func-badge func-tonic">Tonic</span></td>
+          <td style="font-size:11px;color:#888">Home, arrival</td>
+          <td><span class="color-dot" style="background:#1e6b42"></span> Green</td>
+        </tr>
+        <tr>
+          <td><div class="deg-cell"><div class="deg-num" style="background:#d97b6a">ii</div><span style="font-weight:700">Supertonic</span></div></td>
+          <td><span class="chord-main">Dm</span></td>
+          <td><span class="chord-main">Dm7</span></td>
+          <td><span class="func-badge func-sub">Subdominant</span></td>
+          <td style="font-size:11px;color:#888">Departure, motion</td>
+          <td><span class="color-dot" style="background:#1e6b42"></span> Green</td>
+        </tr>
+        <tr>
+          <td><div class="deg-cell"><div class="deg-num" style="background:#7dc48a">iii</div><span style="font-weight:700">Mediant</span></div></td>
+          <td><span class="chord-main">Em</span></td>
+          <td><span class="chord-main">Em7</span></td>
+          <td><span class="func-badge func-tonic">Tonic</span></td>
+          <td style="font-size:11px;color:#888">Tonic alternate</td>
+          <td><span class="color-dot" style="background:#1e6b42"></span> Green</td>
+        </tr>
+        <tr>
+          <td><div class="deg-cell"><div class="deg-num" style="background:#3F6FB6">IV</div><span style="font-weight:700">Subdominant</span></div></td>
+          <td><span class="chord-main">F</span></td>
+          <td><span class="chord-main">Fmaj7</span></td>
+          <td><span class="func-badge func-sub">Subdominant</span></td>
+          <td style="font-size:11px;color:#888">Departure, color</td>
+          <td><span class="color-dot" style="background:#1e6b42"></span> Green</td>
+        </tr>
+        <tr>
+          <td><div class="deg-cell"><div class="deg-num" style="background:#3F6FB6">V</div><span style="font-weight:700">Dominant</span></div></td>
+          <td><span class="chord-main">G</span></td>
+          <td><span class="chord-main">G7</span></td>
+          <td><span class="func-badge func-dom">Dominant</span></td>
+          <td style="font-size:11px;color:#888">Tension → Home</td>
+          <td><span class="color-dot" style="background:#1e6b42"></span> Green</td>
+        </tr>
+        <tr>
+          <td><div class="deg-cell"><div class="deg-num" style="background:#F29B38">vi</div><span style="font-weight:700">Submediant</span></div></td>
+          <td><span class="chord-main">Am</span></td>
+          <td><span class="chord-main">Am7</span></td>
+          <td><span class="func-badge func-tonic">Tonic</span></td>
+          <td style="font-size:11px;color:#888">Relative minor tonic</td>
+          <td><span class="color-dot" style="background:#1e6b42"></span> Green</td>
+        </tr>
+        <tr>
+          <td><div class="deg-cell"><div class="deg-num" style="background:#8A6BC8">vii°</div><span style="font-weight:700">Leading Tone</span></div></td>
+          <td><span class="chord-main">B°</span></td>
+          <td><span class="chord-main">Bø7</span></td>
+          <td><span class="func-badge func-sub">Sub/Dom</span></td>
+          <td style="font-size:11px;color:#888">Tension, less common</td>
+          <td><span class="color-dot" style="background:#1e6b42"></span> Green</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      <div class="note-text"><strong>The universal pattern:</strong> Major — minor — minor — Major — Major — minor — diminished. This exact quality sequence (maj-min-min-maj-maj-min-dim) is identical in ALL 12 major keys. Learn it in C major, transpose the pattern to any key.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

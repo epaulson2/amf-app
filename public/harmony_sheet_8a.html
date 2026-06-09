@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Parallel Minor Modal Interchange</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.def-banner{background:#ede9fe;border-left:4px solid #8A6BC8;border-radius:0 6px 6px 0;padding:14px 20px;margin-bottom:20px}
+.def-text{font-size:13px;font-weight:600;color:#0f1e3c;line-height:1.4}
+.def-text strong{color:#8A6BC8}
+.big-three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px}
+.bt-card{border-radius:8px;overflow:hidden;border:2px solid rgba(138,107,200,0.3)}
+.bt-header{background:#ede9fe;padding:14px 16px}
+.bt-borrowed{font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8A6BC8;margin-bottom:4px}
+.bt-chord{font-size:20px;font-weight:900;color:#4b2d8c;font-family:monospace;margin-bottom:2px}
+.bt-in-c{font-size:11px;color:#8A6BC8;font-family:monospace}
+.bt-body{background:#fff;padding:14px 16px}
+.bt-song{font-size:11px;color:#888;font-style:italic;margin-bottom:6px}
+.bt-char{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:6px}
+.bt-chip{padding:2px 7px;border-radius:20px;font-size:9.5px;font-weight:700;text-transform:uppercase;background:#ede9fe;color:#4b2d8c}
+.bt-note{font-size:11px;line-height:1.4;color:#444}
+.other-three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:20px}
+.ot-card{border-radius:8px;overflow:hidden;border:2px solid rgba(138,107,200,0.15)}
+.ot-header{background:#f5f3fd;padding:10px 14px}
+.ot-borrowed{font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8A6BC8;margin-bottom:3px}
+.ot-chord{font-size:16px;font-weight:900;color:#4b2d8c;font-family:monospace}
+.ot-in-c{font-size:10px;color:#8A6BC8;font-family:monospace}
+.ot-body{background:#fff;padding:10px 14px}
+.ot-note{font-size:11px;line-height:1.4;color:#555}
+.backdoor-box{background:#0f1e3c;border-radius:8px;padding:18px 24px}
+.bd-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.bd-chords{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.bd-chord{padding:10px 16px;border-radius:6px;font-size:16px;font-weight:900;font-family:monospace;color:#fff}
+.bd-arrow{font-size:18px;color:#7a9bd4;font-weight:700}
+.bd-label{display:block;font-size:10px;text-align:center;margin-top:4px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;opacity:0.7}
+.bd-details{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.bd-detail{background:rgba(255,255,255,0.06);border-radius:6px;padding:10px 12px}
+.bd-d-title{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#7a9bd4;margin-bottom:4px}
+.bd-d-text{font-size:11.5px;color:#e8edf5;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 8 · Sheet 8A</div>
+    <h1>Parallel Minor Modal Interchange</h1>
+    <div class="header-sub">Borrowing chords from C minor (or Aeolian) into C major — creating emotional contrast, darkness, and depth without changing the key center. Color category: RED.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="def-banner">
+      <div class="def-text"><strong>Modal Interchange</strong> = borrowing chords from the parallel minor (same root C, but minor scale notes) and placing them inside a C major context. The key center stays C — but the borrowed chord introduces notes from C minor, creating momentary emotional darkening or contrast.</div>
+    </div>
+
+    <div class="section-label">The Big Three — Core Borrowed Chords from C Minor</div>
+    <div class="big-three">
+      <div class="bt-card">
+        <div class="bt-header">
+          <div class="bt-borrowed">bVImaj7 — borrowed ♭VI</div>
+          <div class="bt-chord">Abmaj7</div>
+          <div class="bt-in-c">in C major: A♭ maj7</div>
+        </div>
+        <div class="bt-body">
+          <div class="bt-song">"Kiss from a Rose" — Seal</div>
+          <div class="bt-char"><span class="bt-chip">Dreamy</span><span class="bt-chip">Epic</span><span class="bt-chip">Emotional</span></div>
+          <div class="bt-note">The most lush borrowed chord. Classic arc: ♭VI-♭VII-I (A♭-B♭-C). Creates a sweeping cinematic feeling. The ♭VI note (A♭) is the characteristic borrowed pitch — introduces the darkness of the minor scale.</div>
+        </div>
+      </div>
+      <div class="bt-card">
+        <div class="bt-header">
+          <div class="bt-borrowed">iv-7 / iv-6 — borrowed iv</div>
+          <div class="bt-chord">Fm7/Fm6</div>
+          <div class="bt-in-c">in C major: F minor</div>
+        </div>
+        <div class="bt-body">
+          <div class="bt-song">Classic pop ballads, R&B, neo-soul</div>
+          <div class="bt-char"><span class="bt-chip">Dark</span><span class="bt-chip">Rich</span><span class="bt-chip">Expressive</span></div>
+          <div class="bt-note">The minor iv is the most emotionally resonant borrowed chord in pop. The ♭3 of the minor chord (A♭) is the borrowed pitch. <em>Fm6 is often sweeter than Fm7</em> — the major 6th (D natural) softens the darkness. Note: Fm6 = Dø7 in 1st inversion.</div>
+        </div>
+      </div>
+      <div class="bt-card">
+        <div class="bt-header">
+          <div class="bt-borrowed">iiø7 — half-dim ii</div>
+          <div class="bt-chord">Dm7♭5</div>
+          <div class="bt-in-c">in C major: borrowed from C Dorian</div>
+        </div>
+        <div class="bt-body">
+          <div class="bt-song">Gospel, R&B, neo-soul</div>
+          <div class="bt-char"><span class="bt-chip">Dark</span><span class="bt-chip">Yearning</span><span class="bt-chip">Sophisticated</span></div>
+          <div class="bt-note">The half-diminished ii chord from minor (vs. the diatonic Dm7 in major). Often placed over a pedal point (bass stays on C or D while chord changes). Rich, complex subdominant function with extra darkness.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">The Other Three — Darker and More Selective</div>
+    <div class="other-three">
+      <div class="ot-card">
+        <div class="ot-header">
+          <div class="ot-borrowed">bIIImaj7</div>
+          <div class="ot-chord">Ebmaj7</div>
+          <div class="ot-in-c">in C: E♭ maj7</div>
+        </div>
+        <div class="ot-body">
+          <div class="ot-note">"Tonic Imposter" — use carefully. Creates a brief sense of a parallel major key a minor 3rd above. Sounds ambiguous. Avoid placing directly after ♭VII7 (creates confusion). Best used sparingly.</div>
+        </div>
+      </div>
+      <div class="ot-card">
+        <div class="ot-header">
+          <div class="ot-borrowed">v-7 — minor v</div>
+          <div class="ot-chord">Gm7</div>
+          <div class="ot-in-c">in C: G minor (vs G7)</div>
+        </div>
+        <div class="ot-body">
+          <div class="ot-note">Heavier, more grounded than G7. No leading tone urgency — creates a floating, unresolved dominant feeling. Used in heavy soul and gospel. The natural 9th (A) isn't available in the parallel minor context.</div>
+        </div>
+      </div>
+      <div class="ot-card">
+        <div class="ot-header">
+          <div class="ot-borrowed">bVII7 — dual function</div>
+          <div class="ot-chord">Bb7</div>
+          <div class="ot-in-c">in C: B♭7 (two uses)</div>
+        </div>
+        <div class="ot-body">
+          <div class="ot-note"><strong>1. MI:</strong> B♭7→C = warm resolution from below (parallel minor ♭VII). <strong>2. Tritone Sub of E7:</strong> B♭7→Am7 is a tritone sub functioning as SubV7/vi. Understand context to determine which function is active.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdoor-box">
+      <div class="bd-title">The Backdoor ii-V — iv-7 · ♭VII7 · Imaj7</div>
+      <div class="bd-chords">
+        <div>
+          <div class="bd-chord" style="background:#8A6BC8">Fm7</div>
+          <div class="bd-label" style="color:#8A6BC8">iv- (borrowed)</div>
+        </div>
+        <div class="bd-arrow">→</div>
+        <div>
+          <div class="bd-chord" style="background:#8A6BC8">Bb7</div>
+          <div class="bd-label" style="color:#8A6BC8">♭VII7 (borrowed)</div>
+        </div>
+        <div class="bd-arrow">→</div>
+        <div>
+          <div class="bd-chord" style="background:#1a5a8a">Cmaj7</div>
+          <div class="bd-label" style="color:#7a9bd4">Imaj7 (home)</div>
+        </div>
+      </div>
+      <div class="bd-details">
+        <div class="bd-detail">
+          <div class="bd-d-title">Why It Works</div>
+          <div class="bd-d-text">B♭7 shares the tritone F-B — same tritone as E7 (V7/vi). But the bass motion F→B♭→C moves by down-a-5th then up-a-step instead of down-5th-down-5th. This creates an inevitable, warm chromatic slide into home.</div>
+        </div>
+        <div class="bd-detail">
+          <div class="bd-d-title">Character + Song Example</div>
+          <div class="bd-d-text">"Knocks Me Off My Feet" — Stevie Wonder. Warmer, smoother, and more emotionally rich than the standard ii-V-I. The borrowed quality (both Fm7 and B♭7 from parallel minor) creates consistent "borrowed" emotional temperature throughout.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

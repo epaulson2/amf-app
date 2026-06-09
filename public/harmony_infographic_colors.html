@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — The Color System in Action</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.three-defs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px}
+.def-card{border-radius:8px;padding:16px 18px}
+.dc-badge{display:inline-block;padding:4px 12px;border-radius:4px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;color:#fff}
+.dc-name{font-size:17px;font-weight:900;text-transform:uppercase;margin-bottom:6px;line-height:1.1}
+.dc-desc{font-size:11.5px;line-height:1.4;font-style:italic}
+.def-green{background:#d9f5e4}.def-green .dc-badge{background:#1e6b42}.def-green .dc-name{color:#1e6b42}.def-green .dc-desc{color:#1e6b42}
+.def-blue{background:#d6eafc}.def-blue .dc-badge{background:#1a5a8a}.def-blue .dc-name{color:#1a5a8a}.def-blue .dc-desc{color:#1a5a8a}
+.def-red{background:#fce8e8}.def-red .dc-badge{background:#8a1a1a}.def-red .dc-name{color:#8a1a1a}.def-red .dc-desc{color:#8a1a1a}
+.prog-section{margin-bottom:24px}
+.prog-title{font-size:11px;font-weight:700;color:#1f2937;margin-bottom:10px}
+.prog-grid{display:grid;grid-template-columns:repeat(9,1fr);gap:4px;margin-bottom:6px}
+.prog-chord{border-radius:6px;padding:10px 6px;text-align:center}
+.prog-chord-name{font-size:13px;font-weight:900;font-family:monospace;margin-bottom:3px}
+.prog-chord-func{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;opacity:0.75}
+.prog-g{background:#d9f5e4}.prog-g .prog-chord-name{color:#1e6b42}.prog-g .prog-chord-func{color:#1e6b42}
+.prog-b{background:#d6eafc}.prog-b .prog-chord-name{color:#1a5a8a}.prog-b .prog-chord-func{color:#1a5a8a}
+.prog-r{background:#fce8e8}.prog-r .prog-chord-name{color:#8a1a1a}.prog-r .prog-chord-func{color:#8a1a1a}
+.prog-legend{display:flex;gap:14px;font-size:11px}
+.pl-item{display:flex;align-items:center;gap:5px;font-weight:600;color:#555}
+.pl-dot{width:12px;height:12px;border-radius:3px}
+.songs-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px}
+.song-card{background:#f7f8fa;border-radius:8px;padding:14px 16px;border-left:4px solid}
+.sc-title{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px}
+.sc-song{font-size:13px;font-weight:800;color:#0f1e3c;margin-bottom:3px}
+.sc-artist{font-size:11px;color:#888;margin-bottom:6px;font-style:italic}
+.sc-desc{font-size:11px;line-height:1.4;color:#555}
+.sc-prog{display:flex;gap:3px;flex-wrap:wrap;margin-top:5px}
+.scp-g{padding:2px 7px;border-radius:4px;font-size:10px;font-weight:700;background:#d9f5e4;color:#1e6b42;font-family:monospace}
+.scp-b{padding:2px 7px;border-radius:4px;font-size:10px;font-weight:700;background:#d6eafc;color:#1a5a8a;font-family:monospace}
+.scp-r{padding:2px 7px;border-radius:4px;font-size:10px;font-weight:700;background:#fce8e8;color:#8a1a1a;font-family:monospace}
+.banner{background:#0f1e3c;border-radius:8px;padding:14px 24px;text-align:center}
+.banner-text{font-size:13px;font-weight:700;color:#e8edf5;font-style:italic;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Harmony OS · Standalone Infographic</div>
+    <h1>The Harmony OS Color System in Action</h1>
+    <div class="header-sub">Three categories — Green (Diatonic), Blue (Secondary Dominant), Red (Modal Interchange) — applied to real progressions and real songs.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="three-defs">
+      <div class="def-card def-green">
+        <div class="dc-badge">GREEN</div>
+        <div class="dc-name">Diatonic</div>
+        <div class="dc-desc">Naturally in the key. Seven chords from the major scale. Home base — stability, coherence, and the foundation of all harmony. No accidentals needed.</div>
+      </div>
+      <div class="def-card def-blue">
+        <div class="dc-badge">BLUE</div>
+        <div class="dc-name">Secondary Dominant</div>
+        <div class="dc-desc">Non-diatonic dominant chords. Each contains a tritone pointing at a specific diatonic target. V7/[target] — creates brief tonicization and directed forward momentum.</div>
+      </div>
+      <div class="def-card def-red">
+        <div class="dc-badge">RED</div>
+        <div class="dc-name">Modal Interchange</div>
+        <div class="dc-desc">Borrowed from parallel modes (same root, different scale). Creates emotional contrast and depth — the "darkness dial" — without leaving the key center.</div>
+      </div>
+    </div>
+
+    <div class="prog-section">
+      <div class="prog-title">Sample 9-Chord Progression in C Major — Color-Coded</div>
+      <div class="prog-grid">
+        <div class="prog-chord prog-g"><div class="prog-chord-name">Cmaj7</div><div class="prog-chord-func">I — Tonic</div></div>
+        <div class="prog-chord prog-g"><div class="prog-chord-name">Am7</div><div class="prog-chord-func">vi — Tonic</div></div>
+        <div class="prog-chord prog-g"><div class="prog-chord-name">Dm7</div><div class="prog-chord-func">ii — Sub</div></div>
+        <div class="prog-chord prog-g"><div class="prog-chord-name">G7</div><div class="prog-chord-func">V7 — Dom</div></div>
+        <div class="prog-chord prog-b"><div class="prog-chord-name">E7</div><div class="prog-chord-func">V7/vi — Blue</div></div>
+        <div class="prog-chord prog-g"><div class="prog-chord-name">Am7</div><div class="prog-chord-func">vi — Tonic</div></div>
+        <div class="prog-chord prog-r"><div class="prog-chord-name">Fm7</div><div class="prog-chord-func">iv- — Red</div></div>
+        <div class="prog-chord prog-r"><div class="prog-chord-name">Bb7</div><div class="prog-chord-func">♭VII7 — Red</div></div>
+        <div class="prog-chord prog-g"><div class="prog-chord-name">Cmaj7</div><div class="prog-chord-func">I — Tonic</div></div>
+      </div>
+      <div class="prog-legend">
+        <div class="pl-item"><div class="pl-dot" style="background:#1e6b42"></div>Green = Diatonic (home base)</div>
+        <div class="pl-item"><div class="pl-dot" style="background:#1a5a8a"></div>Blue = Secondary Dominant (tonicization)</div>
+        <div class="pl-item"><div class="pl-dot" style="background:#8a1a1a"></div>Red = Modal Interchange (borrowed)</div>
+      </div>
+    </div>
+
+    <div class="section-label">Real Songs — The Color System Applied</div>
+    <div class="songs-grid">
+      <div class="song-card" style="border-left-color:#1e6b42">
+        <div class="sc-title">Mostly Green</div>
+        <div class="sc-song">"I'm Yours"</div>
+        <div class="sc-artist">Jason Mraz</div>
+        <div class="sc-desc">Almost entirely diatonic. The bright, simple, singable character comes from staying in pure Green territory. One Blue chord (secondary dominant) adds brief color.</div>
+        <div class="sc-prog">
+          <span class="scp-g">I</span>
+          <span class="scp-g">V</span>
+          <span class="scp-g">vi</span>
+          <span class="scp-b">V7/V</span>
+          <span class="scp-g">IV</span>
+        </div>
+      </div>
+      <div class="song-card" style="border-left-color:#8a1a1a">
+        <div class="sc-title">Heavy Red</div>
+        <div class="sc-song">"Kiss from a Rose"</div>
+        <div class="sc-artist">Seal</div>
+        <div class="sc-desc">Extensively uses ♭VI, ♭VII — borrowed from parallel minor. The lush, cinematic, timeless quality comes from heavy Red borrowing creating constant emotional contrast against the major tonic.</div>
+        <div class="sc-prog">
+          <span class="scp-r">♭VI</span>
+          <span class="scp-r">♭VII</span>
+          <span class="scp-g">I</span>
+          <span class="scp-r">iv</span>
+        </div>
+      </div>
+      <div class="song-card" style="border-left-color:#8A6BC8">
+        <div class="sc-title">Mixed Green + Red</div>
+        <div class="sc-song">"Diary"</div>
+        <div class="sc-artist">Alicia Keys</div>
+        <div class="sc-desc">Alternates between diatonic Green stability and borrowed Red chords for emotional depth. The contrast between the bright sections and the darker borrowed moments creates the emotional arc.</div>
+        <div class="sc-prog">
+          <span class="scp-g">I</span>
+          <span class="scp-g">vi</span>
+          <span class="scp-r">iv</span>
+          <span class="scp-g">V</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="banner-text">"~95% of all Western harmony uses only these 3 categories. You don't need infinite complexity — you need to deeply understand Green, Blue, and Red, and when to use each one."</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

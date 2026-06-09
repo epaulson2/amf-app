@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Triad Types</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.triad-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px}
+.triad-card{border-radius:8px;overflow:hidden;border:2px solid rgba(0,0,0,0.1)}
+.tc-header{padding:14px 16px 12px}
+.tc-type{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:4px;opacity:0.8}
+.tc-name{font-size:20px;font-weight:900;text-transform:uppercase;line-height:1.1}
+.tc-body{background:#fff;padding:14px 16px}
+.tc-notes{font-size:16px;font-weight:800;color:#0f1e3c;margin-bottom:6px;font-family:monospace}
+.tc-formula{font-size:12px;font-weight:700;margin-bottom:6px;font-family:monospace}
+.tc-intervals{font-size:11px;color:#555;margin-bottom:8px}
+.tc-char{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px}
+.tc-char span{padding:2px 8px;border-radius:20px;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em}
+.tc-desc{font-size:11px;line-height:1.4;color:#555;font-style:italic}
+/* Major */
+.card-maj .tc-header{background:#6bb8e8}.card-maj .tc-type{color:rgba(255,255,255,0.8)}.card-maj .tc-name{color:#fff}
+.card-maj .tc-formula{color:#1a5a8a}.card-maj .tc-char span{background:#d6eafc;color:#1a5a8a}
+/* Minor */
+.card-min .tc-header{background:#8A6BC8}.card-min .tc-type{color:rgba(255,255,255,0.8)}.card-min .tc-name{color:#fff}
+.card-min .tc-formula{color:#4b2d8c}.card-min .tc-char span{background:#ede9fe;color:#4b2d8c}
+/* Diminished */
+.card-dim .tc-header{background:#c9a630}.card-dim .tc-type{color:rgba(255,255,255,0.8)}.card-dim .tc-name{color:#fff}
+.card-dim .tc-formula{color:#7a5200}.card-dim .tc-char span{background:#fef3d0;color:#7a5200}
+/* Augmented */
+.card-aug .tc-header{background:#F29B38}.card-aug .tc-type{color:rgba(255,255,255,0.8)}.card-aug .tc-name{color:#fff}
+.card-aug .tc-formula{color:#7c3500}.card-aug .tc-char span{background:#fff0e0;color:#7c3500}
+/* Sus2 */
+.card-sus2 .tc-header{background:#7dc48a}.card-sus2 .tc-type{color:rgba(255,255,255,0.8)}.card-sus2 .tc-name{color:#fff}
+.card-sus2 .tc-formula{color:#1e6b42}.card-sus2 .tc-char span{background:#d9f5e4;color:#1e6b42}
+/* Sus4 */
+.card-sus4 .tc-header{background:#d97b6a}.card-sus4 .tc-type{color:rgba(255,255,255,0.8)}.card-sus4 .tc-name{color:#fff}
+.card-sus4 .tc-formula{color:#7c1800}.card-sus4 .tc-char span{background:#fce8e4;color:#7c1800}
+.bottom-notes{background:#f7f8fa;border-radius:8px;padding:16px 20px}
+.bn-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bn-item{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:10px 14px}
+.bn-title{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#555;margin-bottom:4px}
+.bn-body{font-size:11.5px;line-height:1.4;color:#333}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 3 · Sheet 3A</div>
+    <h1>Triad Types</h1>
+    <div class="header-sub">The 6 essential triads — 4 quality-based and 2 suspended. Each has a distinct emotional signature built from two stacked 3rds (or 2nds and 4ths for sus chords).</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">The 6 Triad Types (all shown from root C)</div>
+    <div class="triad-grid">
+
+      <div class="triad-card card-maj">
+        <div class="tc-header"><div class="tc-type">Major</div><div class="tc-name">Major</div></div>
+        <div class="tc-body">
+          <div class="tc-notes">C – E – G</div>
+          <div class="tc-formula">1 – 3 – 5</div>
+          <div class="tc-intervals">M3 (4 semitones) + m3 (3 semitones)</div>
+          <div class="tc-char"><span>Bright</span><span>Stable</span><span>Happy</span></div>
+          <div class="tc-desc">The foundation of major harmony. Confident, resolved, culturally associated with happiness and completion.</div>
+        </div>
+      </div>
+
+      <div class="triad-card card-min">
+        <div class="tc-header"><div class="tc-type">Minor</div><div class="tc-name">Minor</div></div>
+        <div class="tc-body">
+          <div class="tc-notes">C – E♭ – G</div>
+          <div class="tc-formula">1 – ♭3 – 5</div>
+          <div class="tc-intervals">m3 (3 semitones) + M3 (4 semitones)</div>
+          <div class="tc-char"><span>Dark</span><span>Melancholic</span><span>Introspective</span></div>
+          <div class="tc-desc">The lowered 3rd is the only difference from major — yet completely changes the emotional character. Darker, softer, more inward.</div>
+        </div>
+      </div>
+
+      <div class="triad-card card-dim">
+        <div class="tc-header"><div class="tc-type">Diminished</div><div class="tc-name">Diminished</div></div>
+        <div class="tc-body">
+          <div class="tc-notes">C – E♭ – G♭</div>
+          <div class="tc-formula">1 – ♭3 – ♭5</div>
+          <div class="tc-intervals">m3 (3 semitones) + m3 (3 semitones)</div>
+          <div class="tc-char"><span>Tense</span><span>Unstable</span><span>Tritone</span></div>
+          <div class="tc-desc">Two stacked minor 3rds. Contains the tritone (♭3 to ♭5). Unstable by nature — functions as a passing or dominant substitute chord.</div>
+        </div>
+      </div>
+
+      <div class="triad-card card-aug">
+        <div class="tc-header"><div class="tc-type">Augmented</div><div class="tc-name">Augmented</div></div>
+        <div class="tc-body">
+          <div class="tc-notes">C – E – G♯</div>
+          <div class="tc-formula">1 – 3 – ♯5</div>
+          <div class="tc-intervals">M3 (4 semitones) + M3 (4 semitones)</div>
+          <div class="tc-char"><span>Dreamlike</span><span>Suspended</span><span>Unresolved</span></div>
+          <div class="tc-desc">Two stacked major 3rds. Symmetrical — no single root sounds "correct." Floaty and unresolved, yearning to move somewhere. Used in chromatic passing contexts.</div>
+        </div>
+      </div>
+
+      <div class="triad-card card-sus2">
+        <div class="tc-header"><div class="tc-type">Suspended 2nd</div><div class="tc-name">Sus2</div></div>
+        <div class="tc-body">
+          <div class="tc-notes">C – D – G</div>
+          <div class="tc-formula">1 – 2 – 5</div>
+          <div class="tc-intervals">M2 (2 semitones) + P4 (5 semitones)</div>
+          <div class="tc-char"><span>Open</span><span>Stationary</span><span>Spacious</span></div>
+          <div class="tc-desc">The 3rd is replaced by the 2nd — neither major nor minor. Low tension, ambient, "waiting." The 2nd creates gentle color without strong directional pull.</div>
+        </div>
+      </div>
+
+      <div class="triad-card card-sus4">
+        <div class="tc-header"><div class="tc-type">Suspended 4th</div><div class="tc-name">Sus4</div></div>
+        <div class="tc-body">
+          <div class="tc-notes">C – F – G</div>
+          <div class="tc-formula">1 – 4 – 5</div>
+          <div class="tc-intervals">P4 (5 semitones) + M2 (2 semitones)</div>
+          <div class="tc-char"><span>High Tension</span><span>Yearning</span><span>Wants to Resolve</span></div>
+          <div class="tc-desc">The 4th wants to "fall" down a half step to the 3rd. More tension than Sus2. Classic use: V7sus4 → V7 → I (see F/G voicings). "Desperado" by Eagles.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bottom-notes">
+      <div class="section-label" style="margin-bottom:10px">Key Distinctions</div>
+      <div class="bn-grid">
+        <div class="bn-item">
+          <div class="bn-title">Suspended chords have no 3rd</div>
+          <div class="bn-body">Without a 3rd, suspended chords are neither major nor minor — they're ambiguous by design. This creates a floating quality that resolves when the suspension "falls" to the 3rd (sus4→major) or lifts (sus2→major).</div>
+        </div>
+        <div class="bn-item">
+          <div class="bn-title">Sus4 has MORE tension than Sus2</div>
+          <div class="bn-body">The 4th degree is an inherently unstable scale tone that wants to resolve downward. The 2nd degree is also unstable but creates less urgency. Sus4 creates expectation; Sus2 creates openness.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

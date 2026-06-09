@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Functional Flow of Harmony</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.arc-container{display:grid;grid-template-columns:1fr 60px 1fr 60px 1fr 60px 1fr;align-items:center;gap:0;margin-bottom:24px}
+.arc-node{border-radius:10px;padding:18px 14px;text-align:center}
+.arc-node-label{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:6px;opacity:0.7}
+.arc-node-name{font-size:20px;font-weight:900;text-transform:uppercase;line-height:1.1;margin-bottom:8px}
+.arc-node-chords{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}
+.arc-chip{padding:4px 8px;border-radius:4px;font-size:11px;font-weight:700;font-family:monospace}
+.arc-arrow-col{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.arc-arrow{font-size:22px;font-weight:900}
+.arc-arrow-label{font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-align:center;line-height:1.2}
+/* Tonic blue */
+.node-tonic{background:#d6eafc}.node-tonic .arc-node-label{color:#1a5a8a}.node-tonic .arc-node-name{color:#1a5a8a}.node-tonic .arc-chip{background:rgba(90,172,223,0.3);color:#1a5a8a}
+/* Sub green */
+.node-sub{background:#d9f5e4}.node-sub .arc-node-label{color:#1e6b42}.node-sub .arc-node-name{color:#1e6b42}.node-sub .arc-chip{background:rgba(91,168,104,0.3);color:#1e6b42}
+/* Dom amber */
+.node-dom{background:#fef3d0}.node-dom .arc-node-label{color:#7a5200}.node-dom .arc-node-name{color:#7a5200}.node-dom .arc-chip{background:rgba(201,166,48,0.3);color:#7a5200}
+/* Resolution tonic again */
+.cadence-section{background:#f7f8fa;border-radius:8px;padding:18px 22px;margin-bottom:20px}
+.cadence-mini{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;margin-top:10px}
+.cad-mini{border-radius:6px;padding:12px 12px;border:1px solid rgba(0,0,0,0.08)}
+.cad-mini-name{font-size:11px;font-weight:800;margin-bottom:4px;text-transform:uppercase}
+.cad-mini-motion{font-size:12px;font-weight:700;font-family:monospace;margin-bottom:4px}
+.cad-mini-break{font-size:10px;line-height:1.3;font-style:italic}
+.banner-251{background:#0f1e3c;border-radius:8px;padding:18px 28px;text-align:center}
+.b251-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px}
+.b251-chords{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:8px}
+.b251-chord{padding:10px 18px;border-radius:6px;font-size:18px;font-weight:900;font-family:monospace;color:#fff}
+.b251-func{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-top:4px;text-align:center;opacity:0.8}
+.b251-arrow{font-size:20px;color:#5aacdf;font-weight:700}
+.b251-text{font-size:13px;color:#e8edf5;line-height:1.4;font-style:italic}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 5 · Infographic</div>
+    <h1>The Functional Flow of Harmony</h1>
+    <div class="header-sub">Every piece of music follows the same narrative arc — Home, Departure, Tension, Resolution. The ii-V-I completes this journey in just 3 chords.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">The Universal Harmonic Arc</div>
+    <div class="arc-container">
+      <div class="arc-node node-tonic">
+        <div class="arc-node-label">Stage 1</div>
+        <div class="arc-node-name">Home<br>(Tonic)</div>
+        <div class="arc-node-chords">
+          <span class="arc-chip">I</span>
+          <span class="arc-chip">iii</span>
+          <span class="arc-chip">vi</span>
+        </div>
+      </div>
+      <div class="arc-arrow-col">
+        <div class="arc-arrow" style="color:#1e6b42">→</div>
+        <div class="arc-arrow-label" style="color:#1e6b42">adds color<br>and motion</div>
+      </div>
+      <div class="arc-node node-sub">
+        <div class="arc-node-label">Stage 2</div>
+        <div class="arc-node-name">Departure<br>(Subdom.)</div>
+        <div class="arc-node-chords">
+          <span class="arc-chip">IV</span>
+          <span class="arc-chip">ii</span>
+          <span class="arc-chip">vii°</span>
+        </div>
+      </div>
+      <div class="arc-arrow-col">
+        <div class="arc-arrow" style="color:#7a5200">→</div>
+        <div class="arc-arrow-label" style="color:#7a5200">creates<br>urgency</div>
+      </div>
+      <div class="arc-node node-dom">
+        <div class="arc-node-label">Stage 3</div>
+        <div class="arc-node-name">Tension<br>(Dominant)</div>
+        <div class="arc-node-chords">
+          <span class="arc-chip">V</span>
+          <span class="arc-chip">vii°</span>
+        </div>
+      </div>
+      <div class="arc-arrow-col">
+        <div class="arc-arrow" style="color:#1a5a8a">→</div>
+        <div class="arc-arrow-label" style="color:#1a5a8a">resolves</div>
+      </div>
+      <div class="arc-node node-tonic">
+        <div class="arc-node-label">Stage 4</div>
+        <div class="arc-node-name">Resolution<br>(Tonic)</div>
+        <div class="arc-node-chords">
+          <span class="arc-chip">I</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cadence-section">
+      <div class="section-label" style="margin-bottom:0">The 4 Cadences — Where the Arc Breaks or Completes</div>
+      <div class="cadence-mini">
+        <div class="cad-mini" style="background:#fef3d0">
+          <div class="cad-mini-name" style="color:#7a5200">Authentic</div>
+          <div class="cad-mini-motion" style="color:#7a5200">V → I</div>
+          <div class="cad-mini-break" style="color:#7a5200">Arc completes fully. Stage 3 → Stage 4. Strongest resolution possible.</div>
+        </div>
+        <div class="cad-mini" style="background:#d9f5e4">
+          <div class="cad-mini-name" style="color:#1e6b42">Plagal</div>
+          <div class="cad-mini-motion" style="color:#1e6b42">IV → I</div>
+          <div class="cad-mini-break" style="color:#1e6b42">Arc skips tension. Stage 2 → Stage 4. Gentle, "Amen" feeling — no tritone pressure.</div>
+        </div>
+        <div class="cad-mini" style="background:#fef3d0">
+          <div class="cad-mini-name" style="color:#7a5200">Half</div>
+          <div class="cad-mini-motion" style="color:#7a5200">any → V</div>
+          <div class="cad-mini-break" style="color:#7a5200">Arc pauses on tension. Lands on Stage 3. Question mark — listener waits for resolution.</div>
+        </div>
+        <div class="cad-mini" style="background:#ede9fe">
+          <div class="cad-mini-name" style="color:#4b2d8c">Deceptive</div>
+          <div class="cad-mini-motion" style="color:#4b2d8c">V → vi</div>
+          <div class="cad-mini-break" style="color:#4b2d8c">Arc twists. Goes to Tonic alternate (vi) instead of I. Plot twist — feels like home but darker.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-251">
+      <div class="b251-label">The Most Efficient Complete Journey</div>
+      <div class="b251-chords">
+        <div>
+          <div class="b251-chord" style="background:#1e6b42">Dm7</div>
+          <div class="b251-func" style="color:#7dc48a">Departure</div>
+        </div>
+        <div class="b251-arrow">→</div>
+        <div>
+          <div class="b251-chord" style="background:#7a5200">G7</div>
+          <div class="b251-func" style="color:#c9a630">Tension</div>
+        </div>
+        <div class="b251-arrow">→</div>
+        <div>
+          <div class="b251-chord" style="background:#1a5a8a">Cmaj7</div>
+          <div class="b251-func" style="color:#5aacdf">Resolution</div>
+        </div>
+      </div>
+      <div class="b251-text">"The ii-V-I is the most efficient complete harmonic journey. Three chords, all three functions, maximum emotional clarity. Everything else in harmony is a variation, elaboration, or extension of this core idea."</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

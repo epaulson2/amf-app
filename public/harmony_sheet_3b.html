@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — 7th & 6th Chords</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.seventh-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
+.sc{border-radius:8px;overflow:hidden;border:2px solid rgba(0,0,0,0.1)}
+.sc-head{padding:12px 14px 10px}
+.sc-type{font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:3px;opacity:0.8}
+.sc-name{font-size:16px;font-weight:900;text-transform:uppercase;line-height:1.1}
+.sc-body{background:#fff;padding:12px 14px}
+.sc-notes{font-size:15px;font-weight:800;color:#0f1e3c;margin-bottom:4px;font-family:monospace}
+.sc-symbol{font-size:11px;font-weight:700;color:#555;margin-bottom:4px;font-family:monospace}
+.sc-char{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:5px}
+.sc-char span{padding:2px 7px;border-radius:20px;font-size:9px;font-weight:700;text-transform:uppercase}
+.sc-desc{font-size:10.5px;line-height:1.4;color:#555;font-style:italic}
+.sc-maj7 .sc-head{background:#7dc48a}.sc-maj7 .sc-char span{background:#d9f5e4;color:#1e6b42}.sc-maj7 .sc-type{color:rgba(255,255,255,0.8)}.sc-maj7 .sc-name{color:#fff}
+.sc-dom7 .sc-head{background:#d97b6a}.sc-dom7 .sc-char span{background:#fce8e4;color:#7c1800}.sc-dom7 .sc-type{color:rgba(255,255,255,0.8)}.sc-dom7 .sc-name{color:#fff}
+.sc-min7 .sc-head{background:#8A6BC8}.sc-min7 .sc-char span{background:#ede9fe;color:#4b2d8c}.sc-min7 .sc-type{color:rgba(255,255,255,0.8)}.sc-min7 .sc-name{color:#fff}
+.sc-halfdim .sc-head{background:#c9a630}.sc-halfdim .sc-char span{background:#fef3d0;color:#7a5200}.sc-halfdim .sc-type{color:rgba(255,255,255,0.8)}.sc-halfdim .sc-name{color:#fff}
+.sc-fulldim .sc-head{background:#3F6FB6}.sc-fulldim .sc-char span{background:#d6eafc;color:#1a5a8a}.sc-fulldim .sc-type{color:rgba(255,255,255,0.8)}.sc-fulldim .sc-name{color:#fff}
+.sc-mmaj7 .sc-head{background:#555}.sc-mmaj7 .sc-char span{background:#f5f5f5;color:#333}.sc-mmaj7 .sc-type{color:rgba(255,255,255,0.8)}.sc-mmaj7 .sc-name{color:#fff}
+.brightness-strip{background:#f7f8fa;border-radius:8px;padding:14px 18px;margin-bottom:20px}
+.bs-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:8px}
+.bs-track{display:flex;align-items:center;gap:0;height:32px;border-radius:6px;overflow:hidden}
+.bs-seg{flex:1;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;text-align:center}
+.bs-arrow{padding:0 8px;color:#888;font-size:18px}
+.sixth-section{background:#0f1e3c;border-radius:8px;padding:18px 24px}
+.sixth-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.sixth-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.sixth-card{background:rgba(255,255,255,0.06);border-radius:6px;padding:12px 14px}
+.sixth-name{font-size:16px;font-weight:900;color:#fff;margin-bottom:4px}
+.sixth-notes{font-size:13px;font-weight:700;color:#8faacc;font-family:monospace;margin-bottom:4px}
+.sixth-char{font-size:11px;color:#8faacc;font-style:italic;margin-bottom:6px}
+.sixth-identity{font-size:11px;color:#7a9bd4;background:rgba(90,172,223,0.15);border-radius:4px;padding:4px 8px}
+.sixth-table{width:100%;border-collapse:collapse}
+.sixth-table td{padding:6px 10px;font-size:11px;border-bottom:1px solid rgba(255,255,255,0.08);color:#fff}
+.sixth-table tr:last-child td{border-bottom:none}
+.sixth-table td:first-child{color:#7a9bd4;font-weight:700}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 3 · Sheet 3B</div>
+    <h1>7th &amp; 6th Chords</h1>
+    <div class="header-sub">Adding a 7th to any triad creates a richer 4-note sound. The type of 7th determines everything about function and emotional color.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">The 6 Seventh Chord Types (all from C)</div>
+    <div class="seventh-grid">
+
+      <div class="sc sc-maj7">
+        <div class="sc-head"><div class="sc-type">Major 7th</div><div class="sc-name">Maj7</div></div>
+        <div class="sc-body">
+          <div class="sc-notes">C–E–G–B</div>
+          <div class="sc-symbol">CΔ7 or Cmaj7</div>
+          <div class="sc-char"><span>Lush</span><span>Dreamy</span><span>Stable</span></div>
+          <div class="sc-desc">Major triad + major 7th. The 7th is only a half step below the root — creates beautiful tension that still feels resolved. Neo-soul, jazz, R&B staple.</div>
+        </div>
+      </div>
+
+      <div class="sc sc-dom7">
+        <div class="sc-head"><div class="sc-type">Dominant 7th</div><div class="sc-name">Dom7</div></div>
+        <div class="sc-body">
+          <div class="sc-notes">C–E–G–B♭</div>
+          <div class="sc-symbol">C7</div>
+          <div class="sc-char"><span>Tense</span><span>Driving</span><span>Tritone</span></div>
+          <div class="sc-desc">Major triad + minor 7th. The E and B♭ form a tritone (THE engine of dominant function). The most harmonically active chord — must resolve. All V chords are dom7.</div>
+        </div>
+      </div>
+
+      <div class="sc sc-min7">
+        <div class="sc-head"><div class="sc-type">Minor 7th</div><div class="sc-name">Min7</div></div>
+        <div class="sc-body">
+          <div class="sc-notes">C–E♭–G–B♭</div>
+          <div class="sc-symbol">Cm7</div>
+          <div class="sc-char"><span>Mellow</span><span>Jazzy</span><span>Introspective</span></div>
+          <div class="sc-desc">Minor triad + minor 7th. Soft and introspective — the 7th smooths the minor sound. Used for ii chords in the ii-V-I. Standard jazz and neo-soul texture chord.</div>
+        </div>
+      </div>
+
+      <div class="sc sc-halfdim">
+        <div class="sc-head"><div class="sc-type">Half-Diminished</div><div class="sc-name">Half-Dim</div></div>
+        <div class="sc-body">
+          <div class="sc-notes">C–E♭–G♭–B♭</div>
+          <div class="sc-symbol">Cø7 or Cm7♭5</div>
+          <div class="sc-char"><span>Dark</span><span>Yearning</span><span>Minor ii</span></div>
+          <div class="sc-desc">Diminished triad + minor 7th. The ii chord in minor key ii-V-i. Darker than minor 7th but not fully tense like full-dim. Used extensively in jazz standards.</div>
+        </div>
+      </div>
+
+      <div class="sc sc-fulldim">
+        <div class="sc-head"><div class="sc-type">Full Diminished</div><div class="sc-name">Dim7</div></div>
+        <div class="sc-body">
+          <div class="sc-notes">C–E♭–G♭–A</div>
+          <div class="sc-symbol">C°7</div>
+          <div class="sc-char"><span>Tense</span><span>Spooky</span><span>Symmetrical</span></div>
+          <div class="sc-desc">Diminished triad + diminished 7th (doubly diminished). Three stacked m3s — perfectly symmetrical. Only 3 unique sounds. Functions as rootless dominant 7♭9.</div>
+        </div>
+      </div>
+
+      <div class="sc sc-mmaj7">
+        <div class="sc-head"><div class="sc-type">Minor Major 7th</div><div class="sc-name">m(Δ7)</div></div>
+        <div class="sc-body">
+          <div class="sc-notes">C–E♭–G–B</div>
+          <div class="sc-symbol">Cm(Δ7) or CmM7</div>
+          <div class="sc-char"><span>Dark + Bright</span><span>Spy Movie</span><span>Complex</span></div>
+          <div class="sc-desc">Minor triad + major 7th. The half-step between the maj7 (B) and the root (C) creates acute tension inside a dark minor frame. Dramatic, complex, cinematic. "Spy movie chord."</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="brightness-strip">
+      <div class="bs-label">Brightness Ranking — Brightest to Darkest</div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <div class="bs-track" style="flex:1">
+          <div class="bs-seg" style="background:#7dc48a">Maj7</div>
+          <div class="bs-seg" style="background:#d97b6a">Dom7</div>
+          <div class="bs-seg" style="background:#8A6BC8">Min7</div>
+          <div class="bs-seg" style="background:#c9a630">ø7</div>
+          <div class="bs-seg" style="background:#3F6FB6">°7</div>
+        </div>
+        <div style="font-size:11px;color:#888;font-style:italic;white-space:nowrap">← brighter · darker →</div>
+      </div>
+    </div>
+
+    <div class="sixth-section">
+      <div class="sixth-title">6th Chords — The Hidden Enharmonic Identity</div>
+      <div class="sixth-grid">
+        <div class="sixth-card">
+          <div class="sixth-name">Major 6 (C6)</div>
+          <div class="sixth-notes">C–E–G–A</div>
+          <div class="sixth-char">"Stable, vintage, complete"</div>
+          <div class="sixth-identity">C6 = Am7 (same notes, different root)</div>
+        </div>
+        <div class="sixth-card">
+          <div class="sixth-name">Minor 6 (Cm6)</div>
+          <div class="sixth-notes">C–E♭–G–A</div>
+          <div class="sixth-char">"Dark, sophisticated, jazz"</div>
+          <div class="sixth-identity">Cm6 = Bø7 in 1st inversion (B–E♭–G–C)</div>
+        </div>
+      </div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7a9bd4;margin-bottom:6px">The Pattern: Major 6 = Minor 7 relationship</div>
+      <table class="sixth-table">
+        <tr><td>C6</td><td>=</td><td>Am7 (1st inv)</td><td>Share C-E-G-A</td></tr>
+        <tr><td>G6</td><td>=</td><td>Em7 (1st inv)</td><td>Share G-B-D-E</td></tr>
+        <tr><td>F6</td><td>=</td><td>Dm7 (1st inv)</td><td>Share F-A-C-D</td></tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — The ii-V-I Explained</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:14px}
+.main-chords{display:grid;grid-template-columns:1fr 60px 1fr 60px 1fr;align-items:center;gap:0;margin-bottom:24px}
+.chord-box{border-radius:10px;padding:20px 16px;text-align:center}
+.cb-func{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:8px;opacity:0.7}
+.cb-name{font-size:28px;font-weight:900;font-family:monospace;margin-bottom:6px}
+.cb-full{font-size:13px;font-weight:700;font-family:monospace;margin-bottom:10px}
+.cb-notes{display:flex;flex-direction:column;gap:3px;align-items:center}
+.cn{padding:5px 14px;border-radius:4px;font-size:12px;font-weight:700;color:#fff;font-family:monospace;text-align:left;width:110px}
+.cn.tritone-note{outline:3px solid #d97b6a;outline-offset:2px}
+.cb-arrow-col{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.big-arrow{font-size:24px;font-weight:900}
+.arrow-label{font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-align:center}
+.cb-dm7{background:#d9f5e4}.cb-dm7 .cb-func{color:#1e6b42}.cb-dm7 .cb-name{color:#1e6b42}
+.cb-g7{background:#fef3d0}.cb-g7 .cb-func{color:#7a5200}.cb-g7 .cb-name{color:#7a5200}
+.cb-cmaj7{background:#d6eafc}.cb-cmaj7 .cb-func{color:#1a5a8a}.cb-cmaj7 .cb-name{color:#1a5a8a}
+.tritone-label{background:#d97b6a;color:#fff;border-radius:4px;padding:4px 10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-top:8px;display:inline-block}
+.voice-leading{background:#f7f8fa;border-radius:8px;padding:18px 22px;margin-bottom:20px}
+.vl-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:12px}
+.vl-arrows{display:flex;justify-content:center;gap:40px;align-items:center}
+.vl-item{text-align:center}
+.vl-from{font-size:20px;font-weight:900;font-family:monospace}
+.vl-motion{font-size:14px;color:#d97b6a;font-weight:700;margin:4px 0}
+.vl-to{font-size:20px;font-weight:900;font-family:monospace}
+.vl-desc{font-size:10px;color:#888;font-style:italic;margin-top:4px}
+.vl-divider{width:1px;height:60px;background:#ddd}
+.minor-section{background:#ede9fe;border-radius:8px;padding:16px 20px;margin-bottom:20px}
+.minor-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4b2d8c;margin-bottom:8px}
+.minor-chords{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.mc{padding:8px 14px;border-radius:6px;font-size:16px;font-weight:900;font-family:monospace;color:#fff}
+.minor-note{font-size:12px;color:#4b2d8c;line-height:1.4}
+.banner{background:#0f1e3c;border-radius:8px;padding:16px 24px;text-align:center}
+.banner-text{font-size:14px;font-weight:700;color:#e8edf5;line-height:1.5;font-style:italic}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 6 · Infographic</div>
+    <h1>The ii-V-I Explained</h1>
+    <div class="header-sub">The most fundamental harmonic progression in Western music — and why the tritone inside the V7 chord is the engine that makes everything work.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Dm7 → G7 → Cmaj7 — Three Functions, One Journey</div>
+    <div class="main-chords">
+      <div class="chord-box cb-dm7">
+        <div class="cb-func">Subdominant · Departure</div>
+        <div class="cb-name">Dm7</div>
+        <div class="cb-full">ii chord</div>
+        <div class="cb-notes">
+          <div class="cn" style="background:#d97b6a">C (♭7)</div>
+          <div class="cn" style="background:#6bb8e8">A (5th)</div>
+          <div class="cn" style="background:#7dc48a">F (3rd)</div>
+          <div class="cn" style="background:#d97b6a">D (root)</div>
+        </div>
+      </div>
+      <div class="cb-arrow-col">
+        <div class="big-arrow" style="color:#1e6b42">→</div>
+      </div>
+      <div class="chord-box cb-g7">
+        <div class="cb-func">Dominant · Tension</div>
+        <div class="cb-name">G7</div>
+        <div class="cb-full">V7 chord</div>
+        <div class="cb-notes">
+          <div class="cn tritone-note" style="background:#d97b6a">F (♭7) ★</div>
+          <div class="cn" style="background:#3F6FB6">D (5th)</div>
+          <div class="cn tritone-note" style="background:#7dc48a">B (3rd) ★</div>
+          <div class="cn" style="background:#3F6FB6">G (root)</div>
+        </div>
+        <div class="tritone-label">THE ENGINE</div>
+      </div>
+      <div class="cb-arrow-col">
+        <div class="big-arrow" style="color:#7a5200">→</div>
+      </div>
+      <div class="chord-box cb-cmaj7">
+        <div class="cb-func">Tonic · Resolution</div>
+        <div class="cb-name">Cmaj7</div>
+        <div class="cb-full">I chord</div>
+        <div class="cb-notes">
+          <div class="cn" style="background:#8A6BC8">B (maj7)</div>
+          <div class="cn" style="background:#3F6FB6">G (5th)</div>
+          <div class="cn" style="background:#7dc48a">E (3rd)</div>
+          <div class="cn" style="background:#6bb8e8">C (root)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="voice-leading">
+      <div class="vl-title">Voice Leading — The Tritone Collapses Inward by Half Steps</div>
+      <div class="vl-arrows">
+        <div class="vl-item">
+          <div class="vl-from" style="color:#7dc48a">B (3rd of G7)</div>
+          <div class="vl-motion">↑ rises ½ step</div>
+          <div class="vl-to" style="color:#6bb8e8">C (root of Cmaj7)</div>
+          <div class="vl-desc">Leading tone rises to tonic</div>
+        </div>
+        <div class="vl-divider"></div>
+        <div class="vl-item">
+          <div class="vl-from" style="color:#d97b6a">F (♭7 of G7)</div>
+          <div class="vl-motion">↓ falls ½ step</div>
+          <div class="vl-to" style="color:#7dc48a">E (3rd of Cmaj7)</div>
+          <div class="vl-desc">♭7 resolves to major 3rd</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="minor-section">
+      <div class="minor-title">In Minor Keys — Bø7 → E7 → Am7</div>
+      <div class="minor-chords">
+        <div class="mc" style="background:#c9a630">Bø7</div>
+        <div style="font-size:16px;color:#4b2d8c;font-weight:700">→</div>
+        <div class="mc" style="background:#d97b6a">E7</div>
+        <div style="font-size:16px;color:#4b2d8c;font-weight:700">→</div>
+        <div class="mc" style="background:#8A6BC8">Am7</div>
+      </div>
+      <div class="minor-note">The V chord (E7) stays MAJOR even in minor context — this is critical. The major 3rd (G♯) provides the leading tone that pulls up to A, the root of Am7. Without the raised 7th (G♯ from harmonic minor), the resolution loses its pull.</div>
+    </div>
+
+    <div class="banner">
+      <div class="banner-text">"The ii-V-I is the engine. Everything else is decoration, extension, or variation. Master this one motion and you understand the engine behind 95% of Western harmony."</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

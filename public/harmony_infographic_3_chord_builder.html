@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Building Chords from Stacked Thirds</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.two-col{display:grid;grid-template-columns:1fr 280px;gap:20px}
+.stacks{display:flex;flex-direction:column;gap:10px}
+.chord-row{display:flex;align-items:center;gap:12px}
+.chord-label{width:110px;flex-shrink:0}
+.chord-name{font-size:13px;font-weight:800;color:#0f1e3c}
+.chord-sym{font-size:11px;color:#888;font-family:monospace}
+.blocks{display:flex;align-items:center;gap:3px}
+.block{height:36px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;border-radius:4px;padding:0 10px;white-space:nowrap}
+.b-m3{background:#8A6BC8;min-width:80px}
+.b-M3{background:#6bb8e8;min-width:90px}
+.b-note{width:34px;height:36px;background:#0f1e3c;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#fff;flex-shrink:0}
+.b-plus{color:#bbb;font-size:14px;font-weight:700}
+.chord-result{margin-left:8px;padding:5px 10px;border-radius:20px;font-size:11px;font-weight:700;color:#fff}
+.dim-symmetry{background:#0f1e3c;border-radius:8px;padding:18px}
+.ds-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.ds-stack{display:flex;flex-direction:column;align-items:center;gap:3px;margin-bottom:14px}
+.ds-block{height:34px;width:100%;background:#c9a630;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff}
+.ds-note{width:34px;height:34px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#fff}
+.ds-fact{font-size:11px;color:#8faacc;line-height:1.5;text-align:center}
+.ds-groups{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.ds-group{background:rgba(255,255,255,0.06);border-radius:4px;padding:6px 10px;font-size:11px;color:#fff;font-weight:600;text-align:center}
+.ds-group span{font-size:10px;color:#8faacc;display:block;margin-top:2px}
+.legend{display:flex;gap:12px;margin-bottom:14px;padding:10px 14px;background:#f7f8fa;border-radius:6px}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:11px;color:#555}
+.leg-box{width:20px;height:20px;border-radius:3px}
+.row-label{font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#888;width:110px;text-align:right;padding-right:8px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 3 · Infographic</div>
+    <h1>Building Chords from Stacked Thirds</h1>
+    <div class="header-sub">Every chord quality is determined by which thirds are stacked. Two intervals create a triad; a third interval creates a 7th chord.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Chord Formulas as Stacked Intervals</div>
+    <div class="legend">
+      <div class="leg-item"><div class="leg-box" style="background:#6bb8e8"></div>Major 3rd (M3) = 4 semitones</div>
+      <div class="leg-item"><div class="leg-box" style="background:#8A6BC8"></div>Minor 3rd (m3) = 3 semitones</div>
+      <div class="leg-item"><div class="leg-box" style="background:#0f1e3c"></div>Root note</div>
+    </div>
+
+    <div class="two-col">
+      <div class="stacks">
+        <!-- Major -->
+        <div class="chord-row">
+          <div class="chord-label"><div class="chord-name">Major</div><div class="chord-sym">C (C-E-G)</div></div>
+          <div class="blocks">
+            <div class="b-note">C</div>
+            <div class="b-plus">+</div>
+            <div class="block b-M3">M3 (C→E)</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3">m3 (E→G)</div>
+          </div>
+          <div class="chord-result" style="background:#6bb8e8">M3 + m3</div>
+        </div>
+        <!-- Minor -->
+        <div class="chord-row">
+          <div class="chord-label"><div class="chord-name">Minor</div><div class="chord-sym">Cm (C-E♭-G)</div></div>
+          <div class="blocks">
+            <div class="b-note">C</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3">m3 (C→E♭)</div>
+            <div class="b-plus">+</div>
+            <div class="block b-M3">M3 (E♭→G)</div>
+          </div>
+          <div class="chord-result" style="background:#8A6BC8">m3 + M3</div>
+        </div>
+        <!-- Diminished -->
+        <div class="chord-row">
+          <div class="chord-label"><div class="chord-name">Diminished</div><div class="chord-sym">C° (C-E♭-G♭)</div></div>
+          <div class="blocks">
+            <div class="b-note">C</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3">m3 (C→E♭)</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3">m3 (E♭→G♭)</div>
+          </div>
+          <div class="chord-result" style="background:#c9a630">m3 + m3</div>
+        </div>
+        <!-- Augmented -->
+        <div class="chord-row">
+          <div class="chord-label"><div class="chord-name">Augmented</div><div class="chord-sym">C+ (C-E-G♯)</div></div>
+          <div class="blocks">
+            <div class="b-note">C</div>
+            <div class="b-plus">+</div>
+            <div class="block b-M3">M3 (C→E)</div>
+            <div class="b-plus">+</div>
+            <div class="block b-M3">M3 (E→G♯)</div>
+          </div>
+          <div class="chord-result" style="background:#F29B38">M3 + M3</div>
+        </div>
+        <!-- Separator -->
+        <div style="height:1px;background:#eee;margin:4px 0"></div>
+        <!-- Dom7 -->
+        <div class="chord-row">
+          <div class="chord-label"><div class="chord-name">Dom7</div><div class="chord-sym">C7 (C-E-G-B♭)</div></div>
+          <div class="blocks">
+            <div class="b-note">C</div>
+            <div class="b-plus">+</div>
+            <div class="block b-M3" style="min-width:65px;font-size:10px">M3</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3" style="min-width:65px;font-size:10px">m3</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3" style="min-width:65px;background:#d97b6a;font-size:10px">m3 (♭7)</div>
+          </div>
+        </div>
+        <!-- Maj7 -->
+        <div class="chord-row">
+          <div class="chord-label"><div class="chord-name">Maj7</div><div class="chord-sym">CΔ7 (C-E-G-B)</div></div>
+          <div class="blocks">
+            <div class="b-note">C</div>
+            <div class="b-plus">+</div>
+            <div class="block b-M3" style="min-width:65px;font-size:10px">M3</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3" style="min-width:65px;font-size:10px">m3</div>
+            <div class="b-plus">+</div>
+            <div class="block b-M3" style="min-width:65px;background:#7dc48a;font-size:10px">M3 (maj7)</div>
+          </div>
+        </div>
+        <!-- Min7 -->
+        <div class="chord-row">
+          <div class="chord-label"><div class="chord-name">Min7</div><div class="chord-sym">Cm7 (C-E♭-G-B♭)</div></div>
+          <div class="blocks">
+            <div class="b-note">C</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3" style="min-width:65px;font-size:10px">m3</div>
+            <div class="b-plus">+</div>
+            <div class="block b-M3" style="min-width:65px;font-size:10px">M3</div>
+            <div class="b-plus">+</div>
+            <div class="block b-m3" style="min-width:65px;background:#d97b6a;font-size:10px">m3 (♭7)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dim-symmetry">
+        <div class="ds-title">Dim7 Symmetry</div>
+        <div style="text-align:center;margin-bottom:10px;font-size:11px;color:#8faacc">C°7: 3 stacked minor 3rds</div>
+        <div class="ds-stack">
+          <div class="ds-block">m3 (G♭→A = dim7)</div>
+          <div style="height:2px;background:rgba(255,255,255,0.15);width:80%"></div>
+          <div class="ds-block">m3 (E♭→G♭)</div>
+          <div style="height:2px;background:rgba(255,255,255,0.15);width:80%"></div>
+          <div class="ds-block">m3 (C→E♭)</div>
+          <div style="height:2px;background:rgba(255,255,255,0.15);width:80%"></div>
+          <div class="ds-note">C</div>
+        </div>
+        <div class="ds-fact">All 4 notes are equal. Any one can be "the root" — divides the octave into 4 equal parts.</div>
+        <div style="margin-top:12px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7a9bd4;margin-bottom:6px">Only 3 Unique Dim7 Sounds</div>
+        <div class="ds-groups">
+          <div class="ds-group">C – E♭ – G♭ – A<span>= 4 inversions of the same sound</span></div>
+          <div class="ds-group">C♯ – E – G – B♭<span>= 4 inversions of the same sound</span></div>
+          <div class="ds-group">D – F – A♭ – B<span>= 4 inversions of the same sound</span></div>
+        </div>
+        <div style="margin-top:10px;font-size:10.5px;color:#8faacc;line-height:1.4">The other 9 "dim7 chords" you might name are just inversions of these 3 sounds.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

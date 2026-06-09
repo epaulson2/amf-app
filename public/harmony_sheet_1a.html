@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — The 12 Intervals</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;margin-bottom:28px}
+thead tr{background:#0f1e3c}
+thead th{padding:9px 12px;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8faacc;text-align:left}
+tbody tr{border-bottom:1px solid #eee}
+tbody td{padding:10px 12px;font-size:12px;color:#1f2937;vertical-align:middle}
+tbody tr:last-child{border-bottom:none}
+.row-p{background:#eef4ff}
+.row-tritone{background:#fce8e4}
+.row-maj{background:#e8f4ff}
+.row-min{background:#f0ecfa}
+.interval-name{font-weight:700;font-size:13px}
+.abbrev{font-weight:700;color:#555;font-family:monospace;font-size:13px}
+.steps-badge{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;font-size:12px;font-weight:900;color:#fff}
+.char-text{font-style:italic;font-size:11px;color:#555;line-height:1.4}
+.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.def-box{background:#f7f7f7;border-radius:6px;padding:16px 18px;border-left:4px solid #ddd}
+.def-box.half{border-left-color:#d97b6a}
+.def-box.whole{border-left-color:#6bb8e8}
+.def-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#555;margin-bottom:6px}
+.def-body{font-size:12px;line-height:1.5;color:#333}
+.formula-box{background:#0f1e3c;border-radius:6px;padding:18px 24px}
+.formula-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.formula-steps{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.fs-step{display:inline-flex;align-items:center;justify-content:center;padding:5px 10px;border-radius:4px;font-size:11px;font-weight:700;color:#fff}
+.fs-w{background:#6bb8e8}
+.fs-h{background:#d97b6a}
+.fs-arrow{color:#8faacc;font-size:14px}
+.formula-notes{display:flex;gap:0;margin-top:8px}
+.note-block{flex:1;text-align:center;padding:6px 4px;font-size:12px;font-weight:700;color:#fff}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 1 · Sheet 1A</div>
+    <h1>The 12 Intervals</h1>
+    <div class="header-sub">Every musical distance between two notes — names, sizes, and the emotional quality each carries.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Complete Interval Reference</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Interval Name</th>
+          <th>Abbrev.</th>
+          <th style="text-align:center">Half Steps</th>
+          <th>Example from C</th>
+          <th>Character / Feel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-p">
+          <td><span class="interval-name">Unison / Octave</span></td>
+          <td><span class="abbrev">P1 / P8</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#3F6FB6">0/12</span></td>
+          <td>C → C (same or upper)</td>
+          <td class="char-text">Perfect consonance; grounded, complete, no tension</td>
+        </tr>
+        <tr class="row-min">
+          <td><span class="interval-name">Minor 2nd</span></td>
+          <td><span class="abbrev">m2</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#8A6BC8">1</span></td>
+          <td>C → D♭</td>
+          <td class="char-text">Maximum dissonance; friction, rub, urgency — horror film staple</td>
+        </tr>
+        <tr class="row-maj">
+          <td><span class="interval-name">Major 2nd</span></td>
+          <td><span class="abbrev">M2</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#6bb8e8">2</span></td>
+          <td>C → D</td>
+          <td class="char-text">Mild dissonance; stepwise motion, forward momentum, open</td>
+        </tr>
+        <tr class="row-min">
+          <td><span class="interval-name">Minor 3rd</span></td>
+          <td><span class="abbrev">m3</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#8A6BC8">3</span></td>
+          <td>C → E♭</td>
+          <td class="char-text">Soft consonance; minor quality, melancholy, introspective</td>
+        </tr>
+        <tr class="row-maj">
+          <td><span class="interval-name">Major 3rd</span></td>
+          <td><span class="abbrev">M3</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#6bb8e8">4</span></td>
+          <td>C → E</td>
+          <td class="char-text">Sweet consonance; major quality, brightness, stability, happiness</td>
+        </tr>
+        <tr class="row-p">
+          <td><span class="interval-name">Perfect 4th</span></td>
+          <td><span class="abbrev">P4</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#3F6FB6">5</span></td>
+          <td>C → F</td>
+          <td class="char-text">Open, ancient; stable in context, slightly ambiguous in isolation</td>
+        </tr>
+        <tr class="row-tritone">
+          <td><span class="interval-name">Tritone</span></td>
+          <td><span class="abbrev">Aug4/dim5</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#d97b6a">6</span></td>
+          <td>C → F♯/G♭</td>
+          <td class="char-text">Maximum instability; divides octave in half, dominant tension engine</td>
+        </tr>
+        <tr class="row-p">
+          <td><span class="interval-name">Perfect 5th</span></td>
+          <td><span class="abbrev">P5</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#3F6FB6">7</span></td>
+          <td>C → G</td>
+          <td class="char-text">Strong consonance; power, open, cornerstone of every chord</td>
+        </tr>
+        <tr class="row-min">
+          <td><span class="interval-name">Minor 6th</span></td>
+          <td><span class="abbrev">m6</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#8A6BC8">8</span></td>
+          <td>C → A♭</td>
+          <td class="char-text">Bittersweet; yearning, introspective — inversion of M3</td>
+        </tr>
+        <tr class="row-maj">
+          <td><span class="interval-name">Major 6th</span></td>
+          <td><span class="abbrev">M6</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#6bb8e8">9</span></td>
+          <td>C → A</td>
+          <td class="char-text">Warm, romantic; bright and uplifting — inversion of m3</td>
+        </tr>
+        <tr class="row-min">
+          <td><span class="interval-name">Minor 7th</span></td>
+          <td><span class="abbrev">m7</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#8A6BC8">10</span></td>
+          <td>C → B♭</td>
+          <td class="char-text">Mellow tension; jazzy, bluesy, mild dominant pull — inversion of M2</td>
+        </tr>
+        <tr class="row-maj">
+          <td><span class="interval-name">Major 7th</span></td>
+          <td><span class="abbrev">M7</span></td>
+          <td style="text-align:center"><span class="steps-badge" style="background:#7dc48a">11</span></td>
+          <td>C → B</td>
+          <td class="char-text">Lush, dreamy; half-step from resolution, beautiful suspension — inversion of m2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="bottom-grid">
+      <div class="def-box half">
+        <div class="def-title">Half Step (Semitone)</div>
+        <div class="def-body">The smallest interval in Western music. The distance between any two adjacent notes on a piano (including black keys). E→F and B→C are natural half steps — no black key needed.</div>
+      </div>
+      <div class="def-box whole">
+        <div class="def-title">Whole Step (Whole Tone)</div>
+        <div class="def-body">Two half steps combined. Skip one key on the piano. C→D, D→E, F→G, G→A, A→B are all whole steps. E→F♯ and B→C♯ are also whole steps.</div>
+      </div>
+    </div>
+
+    <div class="formula-box">
+      <div class="formula-title">Major Scale Formula — W-W-H-W-W-W-H</div>
+      <div class="formula-steps">
+        <span class="fs-step fs-w">W</span><span class="fs-arrow">→</span>
+        <span class="fs-step fs-w">W</span><span class="fs-arrow">→</span>
+        <span class="fs-step fs-h">H</span><span class="fs-arrow">→</span>
+        <span class="fs-step fs-w">W</span><span class="fs-arrow">→</span>
+        <span class="fs-step fs-w">W</span><span class="fs-arrow">→</span>
+        <span class="fs-step fs-w">W</span><span class="fs-arrow">→</span>
+        <span class="fs-step fs-h">H</span>
+      </div>
+      <div class="formula-notes">
+        <div class="note-block" style="background:#6bb8e8">C</div>
+        <div class="note-block" style="background:#d97b6a">D</div>
+        <div class="note-block" style="background:#7dc48a">E</div>
+        <div class="note-block" style="background:#3F6FB6">F</div>
+        <div class="note-block" style="background:#3F6FB6">G</div>
+        <div class="note-block" style="background:#F29B38">A</div>
+        <div class="note-block" style="background:#8A6BC8">B</div>
+        <div class="note-block" style="background:#6bb8e8">C</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

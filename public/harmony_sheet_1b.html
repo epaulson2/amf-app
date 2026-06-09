@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Interval Quality System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.progression-box{background:#f7f8fa;border-radius:8px;padding:20px 24px;margin-bottom:20px}
+.prog-title{font-size:11px;font-weight:700;color:#1f2937;margin-bottom:14px}
+.prog-track{display:flex;align-items:center;gap:0;margin-bottom:8px}
+.prog-step{flex:1;text-align:center;padding:14px 8px;font-size:13px;font-weight:800;color:#fff;position:relative}
+.prog-step:first-child{border-radius:6px 0 0 6px}
+.prog-step:last-child{border-radius:0 6px 6px 0}
+.prog-arrow{font-size:11px;color:#fff;position:absolute;right:-8px;top:50%;transform:translateY(-50%);z-index:1;background:inherit;padding:2px 0}
+.prog-step .label{font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.8;margin-top:2px;display:block}
+.prog-change{display:flex;justify-content:space-between;padding:0 2px;margin-top:6px}
+.prog-change span{font-size:10px;color:#888;font-style:italic;text-align:center;flex:1}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.inversion-box{background:#f7f8fa;border-radius:8px;padding:20px 24px;margin-bottom:20px}
+.inv-rule{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding:12px 16px;background:#0f1e3c;border-radius:6px}
+.inv-rule-text{font-size:13px;font-weight:700;color:#fff}
+.inv-rule-badge{background:#5aacdf;color:#0f1e3c;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:900}
+.inv-pairs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.inv-pair{background:#fff;border:2px solid #e5e7eb;border-radius:6px;padding:10px 16px;text-align:center;min-width:80px}
+.inv-pair-nums{font-size:20px;font-weight:900;color:#0f1e3c;line-height:1}
+.inv-pair-label{font-size:9px;color:#888;text-transform:uppercase;letter-spacing:0.1em;margin-top:3px}
+.quality-changes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.qc-card{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:10px 12px;text-align:center}
+.qc-arrow{font-size:14px;color:#888;margin:4px 0}
+.qc-from{font-size:13px;font-weight:800;color:#6bb8e8}
+.qc-to{font-size:13px;font-weight:800;color:#8A6BC8}
+.qc-perf{font-size:13px;font-weight:800;color:#3F6FB6}
+.qc-label{font-size:9px;color:#888;text-transform:uppercase;letter-spacing:0.1em}
+.examples-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ex-card{border-radius:6px;padding:12px 14px;border:1px solid #e5e7eb}
+.ex-card .original{font-size:18px;font-weight:900;margin-bottom:4px}
+.ex-card .arrow-line{font-size:13px;color:#888;margin-bottom:4px}
+.ex-card .inversion{font-size:18px;font-weight:900}
+.ex-card .ex-label{font-size:10px;color:#888;margin-top:6px;font-style:italic}
+.callout-box{background:#fef3d0;border-left:4px solid #c9a630;border-radius:0 6px 6px 0;padding:16px 20px}
+.callout-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a5200;margin-bottom:6px}
+.callout-body{font-size:12px;line-height:1.5;color:#78350f}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 1 · Sheet 1B</div>
+    <h1>Interval Quality System</h1>
+    <div class="header-sub">How intervals are classified by quality, how quality changes, and the symmetry of interval inversions.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Quality Progressions</div>
+    <div class="two-col">
+      <div class="progression-box">
+        <div class="prog-title">Major / Minor Intervals (2nds, 3rds, 6ths, 7ths)</div>
+        <div class="prog-track">
+          <div class="prog-step" style="background:#c9a630">dim<span class="label">Diminished</span></div>
+          <div class="prog-step" style="background:#8A6BC8;margin-left:3px">min<span class="label">Minor</span></div>
+          <div class="prog-step" style="background:#6bb8e8;margin-left:3px">MAJ<span class="label">Major</span></div>
+          <div class="prog-step" style="background:#F29B38;margin-left:3px">aug<span class="label">Augmented</span></div>
+        </div>
+        <div class="prog-change">
+          <span>lower 1 semitone</span>
+          <span>lower 1 semitone</span>
+          <span>raise 1 semitone</span>
+          <span>raise 1 semitone</span>
+        </div>
+        <div style="margin-top:10px;font-size:11px;color:#555;line-height:1.4">Major is the baseline. Lower by one half-step → Minor. Lower again → Diminished. Raise from Major by one half-step → Augmented.</div>
+      </div>
+      <div class="progression-box">
+        <div class="prog-title">Perfect Intervals (4ths, 5ths, Unison, Octave)</div>
+        <div class="prog-track">
+          <div class="prog-step" style="background:#c9a630">dim<span class="label">Diminished</span></div>
+          <div class="prog-step" style="background:#3F6FB6;margin-left:3px">PERF<span class="label">Perfect</span></div>
+          <div class="prog-step" style="background:#F29B38;margin-left:3px">aug<span class="label">Augmented</span></div>
+        </div>
+        <div style="margin-top:10px;font-size:11px;color:#555;line-height:1.4">Perfect intervals skip the Major/Minor distinction entirely. Perfect is the baseline. No "major" or "minor" — only Perfect, Diminished, or Augmented.</div>
+        <div style="margin-top:8px;padding:8px 12px;background:#fff;border-radius:4px;border-left:3px solid #d97b6a;font-size:11px;color:#333"><strong>P4 raised = Aug4 = Tritone.</strong> This is the dividing line between the two systems.</div>
+      </div>
+    </div>
+
+    <div class="section-label">The Inversion Rule</div>
+    <div class="inversion-box">
+      <div class="inv-rule">
+        <div class="inv-rule-badge">Original + Inversion = 9</div>
+        <div class="inv-rule-text">Flip any interval upside down — the two numbers always add up to 9. The quality flips too (except Perfect).</div>
+      </div>
+      <div class="inv-pairs">
+        <div class="inv-pair"><div class="inv-pair-nums">2 ↔ 7</div><div class="inv-pair-label">sum = 9</div></div>
+        <div class="inv-pair"><div class="inv-pair-nums">3 ↔ 6</div><div class="inv-pair-label">sum = 9</div></div>
+        <div class="inv-pair"><div class="inv-pair-nums">4 ↔ 5</div><div class="inv-pair-label">sum = 9</div></div>
+        <div class="inv-pair"><div class="inv-pair-nums">1 ↔ 8</div><div class="inv-pair-label">sum = 9</div></div>
+      </div>
+      <div class="quality-changes">
+        <div class="qc-card"><div class="qc-from">Major</div><div class="qc-arrow">↕</div><div class="qc-to">Minor</div><div class="qc-label">Quality inverts</div></div>
+        <div class="qc-card"><div class="qc-from" style="color:#F29B38">Aug</div><div class="qc-arrow">↕</div><div class="qc-to" style="color:#c9a630">Dim</div><div class="qc-label">Quality inverts</div></div>
+        <div class="qc-card"><div class="qc-perf">Perfect</div><div class="qc-arrow">↕</div><div class="qc-perf">Perfect</div><div class="qc-label">Stays Perfect</div></div>
+      </div>
+      <div class="section-label" style="margin-top:4px">Worked Examples</div>
+      <div class="examples-grid">
+        <div class="ex-card" style="background:#e8f4ff">
+          <div class="original" style="color:#6bb8e8">M3 (C→E)</div>
+          <div class="arrow-line">invert ↕</div>
+          <div class="inversion" style="color:#8A6BC8">m6 (E→C)</div>
+          <div class="ex-label">3 + 6 = 9 · Major → Minor</div>
+        </div>
+        <div class="ex-card" style="background:#f0ecfa">
+          <div class="original" style="color:#8A6BC8">m2 (C→D♭)</div>
+          <div class="arrow-line">invert ↕</div>
+          <div class="inversion" style="color:#7dc48a">M7 (D♭→C)</div>
+          <div class="ex-label">2 + 7 = 9 · Minor → Major</div>
+        </div>
+        <div class="ex-card" style="background:#eef4ff">
+          <div class="original" style="color:#3F6FB6">P5 (C→G)</div>
+          <div class="arrow-line">invert ↕</div>
+          <div class="inversion" style="color:#3F6FB6">P4 (G→C)</div>
+          <div class="ex-label">5 + 4 = 9 · Perfect → Perfect</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box">
+      <div class="callout-title">Why "Perfect"? — The Overtone Series</div>
+      <div class="callout-body">Perfect intervals (P4, P5, P8) appear very early in the natural overtone series — the physical overtones that ring when any note is played. They sound maximally open and stable because they ARE the building blocks of sound itself. Power chords in rock use only P5 + P8 because there's no 3rd to define major or minor — just pure, culturally universal power. The "Perfect" name reflects their privileged acoustic status.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

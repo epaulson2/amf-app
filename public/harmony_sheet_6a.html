@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Secondary Dominants</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+.def-banner{background:#d6eafc;border-left:4px solid #1a5a8a;border-radius:0 6px 6px 0;padding:14px 20px;margin-bottom:20px}
+.def-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#1a5a8a;margin-bottom:4px}
+.def-text{font-size:13px;font-weight:600;color:#0f1e3c;line-height:1.4}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:20px}
+thead th{background:#0f1e3c;padding:9px 12px;font-size:9.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8faacc;text-align:left}
+tbody tr{border-bottom:1px solid #eee}
+tbody td{padding:10px 12px;vertical-align:middle;color:#1f2937}
+tbody tr:last-child{border-bottom:none}
+tbody tr:nth-child(even){background:#f7f8fa}
+.name-badge{display:inline-block;background:#d6eafc;color:#1a5a8a;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;font-family:monospace}
+.scale-deg{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;flex-shrink:0}
+.chord-main{font-size:14px;font-weight:800;font-family:monospace}
+.arrow{color:#bbb;font-size:14px;padding:0 4px}
+.target-badge{display:inline-block;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;font-family:monospace;background:#d9f5e4;color:#1e6b42}
+.interp-badge{display:inline-block;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;font-family:monospace;background:#ede9fe;color:#4b2d8c}
+.rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.rule-card{border-radius:6px;padding:14px 16px}
+.rule-title{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px}
+.rule-text{font-size:12px;line-height:1.4;font-weight:600}
+.rule-ex{font-size:11px;font-style:italic;margin-top:4px;opacity:0.7}
+.rc-maj{background:#d9f5e4;border:1px solid rgba(30,107,66,0.2)}.rc-maj .rule-title{color:#1e6b42}.rc-maj .rule-text{color:#1e6b42}
+.rc-min{background:#ede9fe;border:1px solid rgba(75,45,140,0.2)}.rc-min .rule-title{color:#4b2d8c}.rc-min .rule-text{color:#4b2d8c}
+.novii-box{background:#fef3d0;border-left:4px solid #c9a630;border-radius:0 6px 6px 0;padding:12px 16px}
+.novii-title{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7a5200;margin-bottom:4px}
+.novii-text{font-size:12px;line-height:1.4;color:#78350f}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 6 · Sheet 6A</div>
+    <h1>Secondary Dominants</h1>
+    <div class="header-sub">Dominant chords built on non-diatonic roots — each one "tonicizes" a diatonic chord by placing a tritone-containing dominant just a P5 above it. Color category: BLUE.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="def-banner">
+      <div class="def-title">Definition</div>
+      <div class="def-text">A <strong>secondary dominant</strong> is any dominant 7th chord placed a Perfect 5th above a diatonic chord (the "target"). Named V7/[target] — "five-seven of [target]." Contains a tritone that resolves directly into the target chord, creating a brief moment of tonicization.</div>
+    </div>
+
+    <div class="section-label">All 6 Secondary Dominants in C Major</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Scale Deg.</th>
+          <th>Chord</th>
+          <th>Interpolated ii</th>
+          <th>Resolves To</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="name-badge">V7</span></td>
+          <td><div style="display:flex;align-items:center;gap:6px"><div class="scale-deg" style="background:#3F6FB6">5</div> G</div></td>
+          <td><span class="chord-main">G7</span></td>
+          <td><span class="interp-badge">Dm7</span></td>
+          <td><span class="target-badge">Cmaj7 (I)</span></td>
+        </tr>
+        <tr>
+          <td><span class="name-badge">V7/ii</span></td>
+          <td><div style="display:flex;align-items:center;gap:6px"><div class="scale-deg" style="background:#F29B38">6</div> A</div></td>
+          <td><span class="chord-main">A7</span></td>
+          <td><span class="interp-badge">Em7</span></td>
+          <td><span class="target-badge">Dm7 (ii)</span></td>
+        </tr>
+        <tr>
+          <td><span class="name-badge">V7/iii</span></td>
+          <td><div style="display:flex;align-items:center;gap:6px"><div class="scale-deg" style="background:#8A6BC8">7</div> B</div></td>
+          <td><span class="chord-main">B7</span></td>
+          <td><span class="interp-badge">F♯m7♭5</span></td>
+          <td><span class="target-badge">Em7 (iii)</span></td>
+        </tr>
+        <tr>
+          <td><span class="name-badge">V7/IV</span></td>
+          <td><div style="display:flex;align-items:center;gap:6px"><div class="scale-deg" style="background:#6bb8e8">1</div> C</div></td>
+          <td><span class="chord-main">C7</span></td>
+          <td><span class="interp-badge">Gm7</span></td>
+          <td><span class="target-badge">Fmaj7 (IV)</span></td>
+        </tr>
+        <tr>
+          <td><span class="name-badge">V7/V</span></td>
+          <td><div style="display:flex;align-items:center;gap:6px"><div class="scale-deg" style="background:#d97b6a">2</div> D</div></td>
+          <td><span class="chord-main">D7</span></td>
+          <td><span class="interp-badge">Am7</span></td>
+          <td><span class="target-badge">G7 (V)</span></td>
+        </tr>
+        <tr>
+          <td><span class="name-badge">V7/vi</span></td>
+          <td><div style="display:flex;align-items:center;gap:6px"><div class="scale-deg" style="background:#7dc48a">3</div> E</div></td>
+          <td><span class="chord-main">E7</span></td>
+          <td><span class="interp-badge">Bm7♭5</span></td>
+          <td><span class="target-badge">Am7 (vi)</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="rule-grid">
+      <div class="rule-card rc-maj">
+        <div class="rule-title">Resolving to MAJOR chord</div>
+        <div class="rule-text">Use a <strong>m7</strong> as the interpolated ii chord</div>
+        <div class="rule-ex">V7/IV: C7 ← Gm7 because IV (Fmaj7) is Major</div>
+      </div>
+      <div class="rule-card rc-min">
+        <div class="rule-title">Resolving to MINOR chord</div>
+        <div class="rule-text">Use a <strong>m7♭5 (half-dim)</strong> as the interpolated ii</div>
+        <div class="rule-ex">V7/vi: E7 ← Bm7♭5 because vi (Am7) is Minor</div>
+      </div>
+    </div>
+
+    <div class="novii-box">
+      <div class="novii-title">Why V7/vii° Doesn't Exist</div>
+      <div class="novii-text">The vii° chord is diminished — already maximally unstable and built on the leading tone. A diminished chord cannot be "tonicized" because there's no stable tonal center to point toward. Creating a V7 of vii° would require pointing tension at something that has no harmonic gravity of its own. Diminished structures are devices, not tonal goals.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

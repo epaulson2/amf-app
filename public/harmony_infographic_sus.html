@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Dominant Suspensions</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:14px}
+.two-sus{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.sus-card{border-radius:10px;overflow:hidden;border:2px solid rgba(0,0,0,0.1)}
+.sc-header{padding:18px 20px 16px;text-align:center}
+.sc-label{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:4px;opacity:0.7}
+.sc-chord{font-size:24px;font-weight:900;font-family:monospace;margin-bottom:4px}
+.sc-spelling{font-size:13px;font-family:monospace;font-weight:700;margin-bottom:8px;opacity:0.8}
+.sc-construction{font-size:11px;font-style:italic;opacity:0.75}
+.sc-body{background:#fff;padding:16px 20px}
+.sc-fact{margin-bottom:10px;padding:10px 12px;border-radius:6px;border-left:3px solid}
+.sc-fact-title{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px}
+.sc-fact-body{font-size:12px;line-height:1.4;color:#555}
+.intervals-grid{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:10px}
+.int-pill{padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;color:#fff}
+.char-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}
+.char-tag{padding:3px 9px;border-radius:20px;font-size:10px;font-weight:700;text-transform:uppercase}
+.dual-func{padding:8px 10px;border-radius:4px;font-size:11px;line-height:1.4;color:#555;background:#f7f8fa;border-left:2px solid #7a9bd4}
+/* sus4 styling */
+.sus-9{background:#d9f5e4;border-color:#7dc48a}.sus-9 .sc-label{color:#1e6b42}.sus-9 .sc-chord{color:#1e6b42}.sus-9 .sc-spelling{color:#1e6b42}.sus-9 .sc-construction{color:#1e6b42}
+.sus-9 .sc-fact{border-left-color:#7dc48a;background:#f0faf2}.sus-9 .sc-fact-title{color:#1e6b42}
+.sus-9 .char-tag{background:#d9f5e4;color:#1e6b42}
+/* sus13 styling */
+.sus-13{background:#d6eafc;border-color:#5aacdf}.sus-13 .sc-label{color:#1a5a8a}.sus-13 .sc-chord{color:#1a5a8a}.sus-13 .sc-spelling{color:#1a5a8a}.sus-13 .sc-construction{color:#1a5a8a}
+.sus-13 .sc-fact{border-left-color:#5aacdf;background:#eef5fc}.sus-13 .sc-fact-title{color:#1a5a8a}
+.sus-13 .char-tag{background:#d6eafc;color:#1a5a8a}
+.vs-g7{background:#fef3d0;border-radius:8px;padding:16px 20px;margin-bottom:20px}
+.vg-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7a5200;margin-bottom:10px}
+.vg-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.vg-item{background:#fff;border-radius:6px;padding:10px 12px;border:1px solid rgba(201,166,48,0.3)}
+.vg-chord{font-size:16px;font-weight:900;font-family:monospace;color:#7a5200;margin-bottom:4px}
+.vg-character{font-size:11px;line-height:1.4;color:#555}
+.resolution-flow{background:#0f1e3c;border-radius:8px;padding:16px 24px;text-align:center}
+.rf-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+.rf-flow{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.rf-step{padding:8px 14px;border-radius:6px;font-size:15px;font-weight:900;font-family:monospace;color:#fff;text-align:center}
+.rf-step-label{font-size:9px;text-align:center;margin-top:3px;color:#7a9bd4;font-weight:700;text-transform:uppercase;letter-spacing:0.06em}
+.rf-arrow{font-size:18px;color:#7a9bd4;font-weight:700}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Harmony OS · Standalone Infographic</div>
+    <h1>Hybrid Dominant Suspensions</h1>
+    <div class="header-sub">F/G and Fmaj7/G — two slash chord voicings that suspend dominant function without the tritone's urgency. The "floaty" approach to V before resolution.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="two-sus">
+      <div class="sus-card sus-9">
+        <div class="sc-header">
+          <div class="sc-label">Dominant Suspension 1</div>
+          <div class="sc-chord">F/G</div>
+          <div class="sc-spelling">G bass | F-A-C on top</div>
+          <div class="sc-construction">= G9sus4 (1, ♭7, 9, 4 from G)</div>
+        </div>
+        <div class="sc-body">
+          <div class="intervals-grid">
+            <div class="int-pill" style="background:#3F6FB6">1 (G)</div>
+            <div class="int-pill" style="background:#d97b6a">♭7 (F)</div>
+            <div class="int-pill" style="background:#7dc48a">9 (A)</div>
+            <div class="int-pill" style="background:#3F6FB6">4 (C)</div>
+          </div>
+          <div class="char-tags">
+            <span class="char-tag">Floaty</span>
+            <span class="char-tag">Questioning</span>
+            <span class="char-tag">Open</span>
+            <span class="char-tag">No tritone</span>
+          </div>
+          <div class="sc-fact">
+            <div class="sc-fact-title">The Sound</div>
+            <div class="sc-fact-body">No major 3rd (B) = no tritone = no sharp dominant urgency. The sus4 (C) and 9 (A) float above the G bass. Suspends you in an ambiguous, open space before resolution.</div>
+          </div>
+          <div class="sc-fact">
+            <div class="sc-fact-title">Resolution</div>
+            <div class="sc-fact-body">F/G → Cmaj7: the suspended 4th (C) can stay as the root of Cmaj7, while A falls to B (the maj7) or G. The resolution is smooth and inevitable but not urgent.</div>
+          </div>
+          <div class="dual-func"><strong>Dual function:</strong> Can function as V9sus4 (dominant prep) OR as Gm11 (ii- or vi- context) — the lack of tritone makes it harmonically ambiguous. Context determines function.</div>
+        </div>
+      </div>
+
+      <div class="sus-card sus-13">
+        <div class="sc-header">
+          <div class="sc-label">Dominant Suspension 2</div>
+          <div class="sc-chord">Fmaj7/G</div>
+          <div class="sc-spelling">G bass | F-A-C-E on top</div>
+          <div class="sc-construction">= G13sus4 (1, ♭7, 9, 4, 13 from G)</div>
+        </div>
+        <div class="sc-body">
+          <div class="intervals-grid">
+            <div class="int-pill" style="background:#3F6FB6">1 (G)</div>
+            <div class="int-pill" style="background:#d97b6a">♭7 (F)</div>
+            <div class="int-pill" style="background:#7dc48a">9 (A)</div>
+            <div class="int-pill" style="background:#3F6FB6">4 (C)</div>
+            <div class="int-pill" style="background:#F29B38">13 (E)</div>
+          </div>
+          <div class="char-tags">
+            <span class="char-tag">Brighter</span>
+            <span class="char-tag">Extended</span>
+            <span class="char-tag">Shimmer</span>
+            <span class="char-tag">13 adds light</span>
+          </div>
+          <div class="sc-fact">
+            <div class="sc-fact-title">The Sound</div>
+            <div class="sc-fact-body">Adding the major 7th of F (E = the 13th from G) brightens the sound considerably. More "sparkle" than F/G while keeping the suspended quality. The E is very close to the B we'd expect in a standard G7.</div>
+          </div>
+          <div class="sc-fact">
+            <div class="sc-fact-title">Resolution</div>
+            <div class="sc-fact-body">Fmaj7/G → Cmaj7: all upper voices resolve smoothly — E stays as the maj7 of Cmaj7, C becomes the root, A stays as the 6th or falls to G. Ultra-smooth voice leading.</div>
+          </div>
+          <div class="dual-func"><strong>Function:</strong> Always dominant — the 13th adds enough "reach" that this chord doesn't have the same ambiguity as F/G. Used when you want suspended warmth plus extended brightness before resolving.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vs-g7">
+      <div class="vg-title">Compare: Three Ways to Approach G→C Resolution</div>
+      <div class="vg-grid">
+        <div class="vg-item">
+          <div class="vg-chord">G7</div>
+          <div class="vg-character">Tritone (B↔F) creates strong, urgent, direct tension. The "expected" dominant. Snaps into resolution. Maximum clarity, minimum subtlety.</div>
+        </div>
+        <div class="vg-item">
+          <div class="vg-chord">F/G</div>
+          <div class="vg-character">No tritone — suspended, floating, questioning. Drifts into resolution rather than snapping. Smooth and ambiguous. R&B, gospel, neo-soul.</div>
+        </div>
+        <div class="vg-item">
+          <div class="vg-chord">Fmaj7/G</div>
+          <div class="vg-character">Suspended but brighter — the 13th adds shimmer without adding tritone urgency. The most extended and lush of the three. Jazz, neo-soul, smooth R&B.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resolution-flow">
+      <div class="rf-title">The Suspension Arc — From Open to Resolved</div>
+      <div class="rf-flow">
+        <div>
+          <div class="rf-step" style="background:#7dc48a">F/G</div>
+          <div class="rf-step-label">suspend</div>
+        </div>
+        <div class="rf-arrow">→</div>
+        <div>
+          <div class="rf-step" style="background:#d97b6a">G7</div>
+          <div class="rf-step-label">tension (optional)</div>
+        </div>
+        <div class="rf-arrow">→</div>
+        <div>
+          <div class="rf-step" style="background:#1a5a8a">Cmaj7</div>
+          <div class="rf-step-label">resolution</div>
+        </div>
+      </div>
+      <div style="font-size:11.5px;color:#8faacc;margin-top:10px;font-style:italic">The sus chord can resolve directly to Cmaj7 (skipping G7) OR move to G7 first for additional tension before final resolution — both are valid approaches with different emotional intensities.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

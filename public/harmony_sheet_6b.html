@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony OS — Cycle 5 & The ii-V-I</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.cycle-box{background:#0f1e3c;border-radius:8px;padding:18px 24px;margin-bottom:20px}
+.cycle-chain{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.cycle-node{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:#fff;flex-shrink:0}
+.cycle-arrow{color:#7a9bd4;font-size:16px;flex-shrink:0}
+.cycle-note{font-size:11px;color:#8faacc;line-height:1.4;margin-top:4px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.table-251{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:20px}
+.table-251 thead th{background:#0f1e3c;padding:9px 12px;font-size:9.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8faacc;text-align:left}
+.table-251 tbody tr{border-bottom:1px solid #eee}
+.table-251 tbody td{padding:9px 12px;vertical-align:middle;color:#1f2937}
+.table-251 tbody tr:last-child{border-bottom:none}
+.table-251 tbody tr.highlight-row{background:#d9f5e4}
+.num-badge{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;font-size:10px;font-weight:900;color:#fff;flex-shrink:0}
+.chord-sub{font-size:11px;font-weight:700;font-family:monospace}
+.func-sub{font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:20px}
+.fs-dep{background:#d9f5e4;color:#1e6b42}
+.fs-ten{background:#fef3d0;color:#7a5200}
+.fs-res{background:#d6eafc;color:#1a5a8a}
+.vl-box{background:#fce8e4;border-radius:8px;padding:18px 22px}
+.vl-title{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7c1800;margin-bottom:12px}
+.vl-diagram{display:flex;align-items:center;gap:16px;justify-content:center}
+.vl-chord{text-align:center}
+.vl-chord-name{font-size:18px;font-weight:900;font-family:monospace;margin-bottom:4px}
+.vl-notes{display:flex;flex-direction:column;gap:3px;align-items:center}
+.vl-note{padding:4px 12px;border-radius:4px;font-size:13px;font-weight:700;font-family:monospace;color:#fff}
+.vl-arrow-col{display:flex;flex-direction:column;gap:3px;align-items:center}
+.vl-arr{font-size:13px;font-weight:700}
+.vl-note-desc{font-size:9.5px;color:#666;text-align:center;font-style:italic;margin-top:2px}
+.vl-explanation{font-size:12px;line-height:1.5;color:#78350f;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module 6 · Sheet 6B</div>
+    <h1>Cycle 5 &amp; The ii-V-I</h1>
+    <div class="header-sub">The Cycle of 5ths is the master progression grid — every ii-V-I relationship lives inside it. Any 3 consecutive nodes = a complete harmonic journey.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Cycle 5 — Scale Degrees 1-4-7-3-6-2-5-1</div>
+    <div class="cycle-box">
+      <div class="cycle-chain">
+        <div class="cycle-node" style="background:#6bb8e8">1</div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node" style="background:#3F6FB6">4</div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node" style="background:#8A6BC8">7</div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node" style="background:#7dc48a">3</div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node" style="background:#F29B38">6</div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node" style="background:#d97b6a">2</div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node" style="background:#3F6FB6">5</div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node" style="background:#6bb8e8">1</div>
+      </div>
+      <div class="cycle-note">Each arrow = down a Perfect 5th (or up a Perfect 4th). Any 3 consecutive nodes form a ii-V-I relationship. The cycle contains all 6 possible ii-V-I sequences in C major.</div>
+    </div>
+
+    <div class="section-label">The 6 ii-V-I Sequences Extracted from Cycle 5</div>
+    <table class="table-251">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>ii (Subdominant)</th>
+          <th>V (Dominant)</th>
+          <th>I (Resolution)</th>
+          <th>Target</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td><span class="num-badge" style="background:#1e6b42">1</span></td>
+          <td><span class="chord-sub">Dm7</span> <span class="func-sub fs-dep">ii</span></td>
+          <td><span class="chord-sub">G7</span> <span class="func-sub fs-ten">V7</span></td>
+          <td><span class="chord-sub">Cmaj7</span> <span class="func-sub fs-res">I</span></td>
+          <td style="font-size:11px;color:#888">The classic ii-V-I</td>
+        </tr>
+        <tr>
+          <td><span class="num-badge" style="background:#1a5a8a">2</span></td>
+          <td><span class="chord-sub">Gm7</span></td>
+          <td><span class="chord-sub">C7</span> <span class="func-sub fs-ten">V7/IV</span></td>
+          <td><span class="chord-sub">Fmaj7</span></td>
+          <td style="font-size:11px;color:#888">Resolves to IV</td>
+        </tr>
+        <tr>
+          <td><span class="num-badge" style="background:#7a5200">3</span></td>
+          <td><span class="chord-sub">F♯m7♭5</span></td>
+          <td><span class="chord-sub">B7</span> <span class="func-sub fs-ten">V7/iii</span></td>
+          <td><span class="chord-sub">Em7</span></td>
+          <td style="font-size:11px;color:#888">Resolves to iii</td>
+        </tr>
+        <tr>
+          <td><span class="num-badge" style="background:#4b2d8c">4</span></td>
+          <td><span class="chord-sub">Bm7♭5</span></td>
+          <td><span class="chord-sub">E7</span> <span class="func-sub fs-ten">V7/vi</span></td>
+          <td><span class="chord-sub">Am7</span></td>
+          <td style="font-size:11px;color:#888">Resolves to vi (minor 251)</td>
+        </tr>
+        <tr>
+          <td><span class="num-badge" style="background:#F29B38">5</span></td>
+          <td><span class="chord-sub">Em7</span></td>
+          <td><span class="chord-sub">A7</span> <span class="func-sub fs-ten">V7/ii</span></td>
+          <td><span class="chord-sub">Dm7</span></td>
+          <td style="font-size:11px;color:#888">Resolves to ii</td>
+        </tr>
+        <tr>
+          <td><span class="num-badge" style="background:#d97b6a">6</span></td>
+          <td><span class="chord-sub">Am7</span></td>
+          <td><span class="chord-sub">D7</span> <span class="func-sub fs-ten">V7/V</span></td>
+          <td><span class="chord-sub">G7</span></td>
+          <td style="font-size:11px;color:#888">Resolves to V</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="vl-box">
+      <div class="vl-title">The ii-V-I Voice Leading Diagram — The Tritone Collapses Inward</div>
+      <div class="vl-diagram">
+        <div class="vl-chord">
+          <div class="vl-chord-name" style="color:#1e6b42">Dm7</div>
+          <div class="vl-notes">
+            <div class="vl-note" style="background:#d97b6a">C (♭7)</div>
+            <div class="vl-note" style="background:#6bb8e8">A (5th)</div>
+            <div class="vl-note" style="background:#3F6FB6">F (3rd)</div>
+            <div class="vl-note" style="background:#d97b6a">D (root)</div>
+          </div>
+          <div class="vl-note-desc">Departure</div>
+        </div>
+        <div class="vl-arrow-col">
+          <div style="font-size:20px;color:#888;padding:30px 0">→</div>
+        </div>
+        <div class="vl-chord">
+          <div class="vl-chord-name" style="color:#7a5200">G7</div>
+          <div class="vl-notes">
+            <div class="vl-note" style="background:#d97b6a">F (♭7)</div>
+            <div class="vl-note" style="background:#3F6FB6">D (5th)</div>
+            <div class="vl-note" style="background:#7dc48a">B (3rd) ★</div>
+            <div class="vl-note" style="background:#3F6FB6">G (root)</div>
+          </div>
+          <div class="vl-note-desc">Tension — The Engine</div>
+        </div>
+        <div class="vl-arrow-col">
+          <div style="font-size:18px;color:#d97b6a;font-weight:700;padding:12px 0">↑</div>
+          <div style="font-size:18px;color:#d97b6a;font-weight:700;padding:12px 0">↓</div>
+        </div>
+        <div class="vl-chord">
+          <div class="vl-chord-name" style="color:#1a5a8a">Cmaj7</div>
+          <div class="vl-notes">
+            <div class="vl-note" style="background:#7dc48a">E (3rd)</div>
+            <div class="vl-note" style="background:#6bb8e8">C (root)</div>
+          </div>
+          <div class="vl-note-desc">Resolution</div>
+        </div>
+      </div>
+      <div class="vl-explanation"><strong>The tritone engine:</strong> G7's tritone is B (the major 3rd) and F (the ♭7). B rises by a half step to C (the root of Cmaj7). F falls by a half step to E (the major 3rd of Cmaj7). The tritone doesn't just create tension — it physically collapses inward by the smallest possible motion. This is why ii-V-I is so satisfying and inevitable.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
