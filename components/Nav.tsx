@@ -9,6 +9,7 @@ const navLinks = [
   { href: '/systems', label: 'Systems' },
   { href: '/genre-labs', label: 'Genre Labs' },
   { href: '/curriculum', label: 'Curriculum' },
+  { href: '/materials', label: 'Materials' },
   { href: '/practice', label: 'Practice Plan' },
   { href: '/pedagogy', label: 'Pedagogy' },
   { href: '/technology', label: 'Technology' },
