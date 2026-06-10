@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voicings OS — Badge Style Sample</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #e8e8e8; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 32px 0; }
+.page { width: 850px; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.13); }
+
+/* ── HEADER ── */
+.header { background: #0f1e3c; padding: 26px 44px 22px; display: flex; justify-content: space-between; align-items: flex-end; }
+.module-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: #7a9bd4; text-transform: uppercase; margin-bottom: 7px; }
+.header h1 { font-size: 26px; font-weight: 900; color: #fff; line-height: 1.1; text-transform: uppercase; }
+.header-sub { font-size: 12px; color: #8faacc; margin-top: 5px; }
+.rainbow { height: 4px; background: linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%); }
+.body { padding: 32px 44px; }
+
+/* ── PIANO KEYBOARD ── */
+.piano-wrap { display: inline-flex; gap: 0; align-items: flex-start; }
+
+.octave {
+  position: relative;
+  display: flex;
+}
+
+/* White keys */
+.wk {
+  width: 28px;
+  height: 96px;
+  background: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* Black keys */
+.bk {
+  position: absolute;
+  width: 17px;
+  height: 60px;
+  background: #222;
+  border-radius: 0 0 4px 4px;
+  z-index: 2;
+  top: 0;
+}
+
+/* Black key positions (28px per white key) */
+.bk.cs { left: 19px; }
+.bk.ds { left: 47px; }
+.bk.fs { left: 103px; }
+.bk.gs { left: 131px; }
+.bk.as { left: 159px; }
+
+/* ── NOTE BADGE ── */
+.badge {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 3px 4px;
+  color: #fff;
+  white-space: nowrap;
+  min-width: 19px;
+  text-align: center;
+  line-height: 1.2;
+  z-index: 3;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+
+/* Badge on black keys — sits at bottom of black key */
+.bk .badge {
+  bottom: 4px;
+  font-size: 8px;
+  min-width: 13px;
+  padding: 2px 3px;
+}
+
+.badge.root    { background: #3F6FB6; }
+.badge.tone    { background: #6bb8e8; }
+.badge.tension { background: #F29B38; }
+.badge.avoid   { background: #d97b6a; }
+.badge.minor   { background: #8A6BC8; }
+
+/* ── LAYOUT ── */
+.section-title { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #7a9bd4; margin-bottom: 14px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+.card { background: #f8f9fc; border-radius: 8px; padding: 18px 20px; border: 1px solid #eee; }
+.card-title { font-size: 13px; font-weight: 800; color: #0f1e3c; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+.card-sub { font-size: 11px; color: #888; margin-bottom: 14px; line-height: 1.4; }
+.card-formula { font-size: 11px; font-weight: 700; color: #555; margin-top: 10px; }
+
+/* ── LEGEND ── */
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; align-items: center; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #555; font-weight: 600; }
+.legend-badge { border-radius: 4px; padding: 2px 7px; font-size: 9px; font-weight: 800; color: #fff; }
+
+/* ── RULE CALLOUT ── */
+.rule-box { background: #0f1e3c; border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; }
+.rule-box-label { font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7a9bd4; margin-bottom: 6px; }
+.rule-box-text { font-size: 12.5px; color: #e8edf5; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div>
+      <div class="module-tag">Module VA · Sheet VA2 — Badge Style Sample</div>
+      <h1>Left Hand Straddles</h1>
+      <div class="header-sub">What to play in the left hand — and what to avoid</div>
+    </div>
+  </div>
+  <div class="rainbow"></div>
+
+  <div class="body">
+
+    <div class="rule-box">
+      <div class="rule-box-label">The Rule</div>
+      <div class="rule-box-text">Never octaves — they sound bottom-heavy and amateur. Use a wide interval straddle instead: the root plus one other note that defines the chord quality.</div>
+    </div>
+
+    <div class="section-title">Left Hand Straddle Options</div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div class="legend-item"><span class="legend-badge" style="background:#3F6FB6">R</span> Root</div>
+      <div class="legend-item"><span class="legend-badge" style="background:#6bb8e8">7</span> 7th</div>
+      <div class="legend-item"><span class="legend-badge" style="background:#7dc48a">9</span> 9th</div>
+      <div class="legend-item"><span class="legend-badge" style="background:#F29B38">6</span> 6th</div>
+      <div class="legend-item"><span class="legend-badge" style="background:#8A6BC8">5</span> 5th</div>
+    </div>
+
+    <div class="grid-2">
+
+      <!-- Card 1: Root + 7 -->
+      <div class="card">
+        <div class="card-title">7th Chord — Root + 7</div>
+        <div class="card-sub">Most common straddle. Works on maj7, min7, dom7.</div>
+        <div class="piano-wrap">
+          <div class="octave">
+            <!-- White keys -->
+            <div class="wk">
+              <div class="badge root">R</div>
+                          </div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk">
+              <div class="badge tone">7</div>
+              
+            </div>
+            <!-- Black keys -->
+            <div class="bk cs"></div>
+            <div class="bk ds"></div>
+            <div class="bk fs"></div>
+            <div class="bk gs"></div>
+            <div class="bk as"></div>
+          </div>
+        </div>
+        <div class="card-formula">Cmaj7 — C + B &nbsp;|&nbsp; Dm7 — D + C &nbsp;|&nbsp; G7 — G + F</div>
+      </div>
+
+      <!-- Card 2: Root + 9 -->
+      <div class="card">
+        <div class="card-title">7th Chord — Root + 9</div>
+        <div class="card-sub">Adds warmth. Works on dominant and minor chords.</div>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk">
+              <div class="badge root">R</div>
+                          </div>
+            <div class="wk">
+              <div class="badge" style="background:#7dc48a">9</div>
+                          </div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="bk cs"></div>
+            <div class="bk ds"></div>
+            <div class="bk fs"></div>
+            <div class="bk gs"></div>
+            <div class="bk as"></div>
+          </div>
+        </div>
+        <div class="card-formula">C7 — C + D &nbsp;|&nbsp; Cm7 — C + D &nbsp;|&nbsp; G7 — G + A</div>
+      </div>
+
+      <!-- Card 3: Root + 6 -->
+      <div class="card">
+        <div class="card-title">6th Chord — Root + 6</div>
+        <div class="card-sub">Vintage, complete sound. Great for tonic major chords.</div>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk">
+              <div class="badge root">R</div>
+                          </div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk">
+              <div class="badge" style="background:#F29B38">6</div>
+              
+            </div>
+            <div class="wk"></div>
+            <div class="bk cs"></div>
+            <div class="bk ds"></div>
+            <div class="bk fs"></div>
+            <div class="bk gs"></div>
+            <div class="bk as"></div>
+          </div>
+        </div>
+        <div class="card-formula">C6 — C + A &nbsp;|&nbsp; F6 — F + D &nbsp;|&nbsp; Cm6 — C + A</div>
+      </div>
+
+      <!-- Card 4: Root + 5 + 7 -->
+      <div class="card">
+        <div class="card-title">Fuller — Root + 5 + 7</div>
+        <div class="card-sub">Add the 5th for a fuller, more grounded bottom end.</div>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk">
+              <div class="badge root">R</div>
+                          </div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk"></div>
+            <div class="wk">
+              <div class="badge" style="background:#8A6BC8">5</div>
+              
+            </div>
+            <div class="wk"></div>
+            <div class="wk">
+              <div class="badge tone">7</div>
+              
+            </div>
+            <div class="bk cs"></div>
+            <div class="bk ds"></div>
+            <div class="bk fs"></div>
+            <div class="bk gs"></div>
+            <div class="bk as"></div>
+          </div>
+        </div>
+        <div class="card-formula">Cmaj7 — C + G + B &nbsp;|&nbsp; Dm7 — D + A + C</div>
+      </div>
+
+    </div>
+
+    <!-- Bonus: showing black key badge example -->
+    <div class="section-title">Black Key Example — Bb7 (bVII dominant)</div>
+    <div class="card" style="margin-bottom: 0;">
+      <div class="card-title">Bb7 — Root + b7</div>
+      <div class="card-sub">Root on a black key — badge sits cleanly on the key without coloring it.</div>
+      <div class="piano-wrap">
+        <div class="octave">
+          <div class="wk"></div>
+          <div class="wk"></div>
+          <div class="wk"></div>
+          <div class="wk"></div>
+          <div class="wk"></div>
+          <div class="wk">
+            <div class="badge" style="background:#7dc48a">b7</div>
+            
+          </div>
+          <div class="wk"></div>
+          <!-- Bb black key with root badge -->
+          <div class="bk cs"></div>
+          <div class="bk ds"></div>
+          <div class="bk fs"></div>
+          <div class="bk gs"></div>
+          <div class="bk as">
+            <div class="badge root">R</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-formula">Bb7 — Bb (black key root) + Ab (b7, also a black key shown below)</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

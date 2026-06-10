@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combined Reference · Sheet C2 | Section Design Blueprint</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:26px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+.intro-text{font-size:12px;color:#374151;line-height:1.6;margin-bottom:20px;background:#f7f8fc;border-radius:6px;padding:12px 16px;border-left:4px solid #7a9bd4}
+
+/* System tag mini badges */
+.sys-tag{display:inline-flex;align-items:center;gap:4px;font-size:8px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;padding:2px 6px;border-radius:3px;vertical-align:middle;margin-left:4px}
+.sys-amf{background:#d6eafc;color:#1a5a8a}
+.sys-harmony{background:#fef3d0;color:#7a5200}
+.sys-voicings{background:#d9f5e4;color:#1e6b42}
+
+/* Blueprint table */
+.bp-table{width:100%;border-collapse:collapse;margin-bottom:24px}
+.bp-table thead tr{background:#0f1e3c}
+.bp-table thead th{padding:9px 10px;font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8faacc;text-align:left;vertical-align:top;line-height:1.4}
+.bp-table tbody tr{border-bottom:2px solid #e0e4ea}
+.bp-table tbody td{padding:11px 10px;font-size:11px;color:#1f2937;vertical-align:top;line-height:1.4}
+
+/* Section row label */
+.section-row-label{font-size:13px;font-weight:900;color:#0f1e3c;display:block;margin-bottom:3px;text-transform:uppercase;letter-spacing:0.03em}
+.section-row-sub{font-size:9px;color:#6b7280;font-weight:500}
+
+/* Zone distribution bars */
+.zone-bars{display:flex;flex-direction:column;gap:4px}
+.zone-bar-row{display:flex;align-items:center;gap:6px}
+.zone-bar-label{font-size:9px;font-weight:700;width:14px;color:#6b7280}
+.zone-bar-track{flex:1;height:8px;background:#e5e7eb;border-radius:4px;overflow:hidden}
+.zone-bar-fill{height:100%;border-radius:4px}
+.zone-bar-pct{font-size:9px;font-weight:600;color:#6b7280;width:28px;text-align:right}
+.z1-fill{background:#6bb8e8}
+.z2-fill{background:#F29B38}
+.z3-fill{background:#7dc48a}
+.z4-fill{background:#8A6BC8}
+
+/* Chord pool */
+.chord-list{font-size:11px;line-height:1.5;color:#1f2937}
+.chord-primary{font-weight:700;color:#0f1e3c}
+.chord-secondary{font-weight:400;color:#6b7280;font-size:10px}
+
+/* Constraint */
+.constraint-text{font-size:11px;line-height:1.4;color:#b91c1c;background:#fff4f2;border-radius:4px;padding:6px 8px;border-left:3px solid #d97b6a}
+
+/* Texture */
+.texture-text{font-size:11px;line-height:1.4;color:#1e6b42;background:#f0faf4;border-radius:4px;padding:6px 8px}
+
+/* Row colors */
+.row-verse{background:#fafbfd}
+.row-prechorus{background:#fff8f0}
+.row-chorus{background:#f0f8ff}
+.row-bridge{background:#f5f2ff}
+.row-outro{background:#f0fff6}
+
+/* Worked example */
+.example-box{background:#0f1e3c;border-radius:8px;padding:18px 24px;margin-top:4px}
+.example-title{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:12px}
+.example-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px}
+.example-col{border-left:3px solid #2a3f6a;padding-left:10px}
+.example-col-title{font-size:8px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#8faacc;margin-bottom:6px}
+.example-col-body{font-size:11px;color:#c8d8f0;line-height:1.5}
+.example-col strong{color:#fff}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Combined Reference · Sheet C2</div>
+    <h1>Section Design Blueprint</h1>
+    <div class="header-sub">From emotional intention to note choice — all three systems in one planning step</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="intro-text">
+      Use this sheet to design any song section from top down. Each column represents one system's contribution to the same decision — the emotional goal (what you feel), the harmonic scaffold (Harmony OS), the texture and tension density (Voicings OS), and what to protect against.
+    </div>
+
+    <div class="section-label">Section Blueprint — All Five Song Sections</div>
+    <table class="bp-table">
+      <thead>
+        <tr>
+          <th style="width:90px">Section</th>
+          <th style="width:120px">
+            Emotional Goal<br>
+            <span class="sys-tag sys-amf">AMF</span>
+          </th>
+          <th style="width:140px">
+            AMF Zone Distribution<br>
+            <span class="sys-tag sys-amf">AMF</span>
+          </th>
+          <th style="width:160px">
+            Harmony OS Chord Pool<br>
+            <span class="sys-tag sys-harmony">HARMONY</span>
+          </th>
+          <th style="width:130px">
+            Voicings OS Texture + Tension<br>
+            <span class="sys-tag sys-voicings">VOICINGS</span>
+          </th>
+          <th>
+            Key Constraint<br>
+            <span style="color:#6b7280;font-size:8px;font-weight:400;letter-spacing:0">what to protect</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- VERSE -->
+        <tr class="row-verse">
+          <td>
+            <span class="section-row-label">Verse</span>
+            <span class="section-row-sub">bars 1–8</span>
+          </td>
+          <td style="font-size:11px;line-height:1.5">Grounded storytelling, low stakes. Let the lyric carry the weight.</td>
+          <td>
+            <div class="zone-bars">
+              <div class="zone-bar-row"><span class="zone-bar-label">Z1</span><div class="zone-bar-track"><div class="zone-bar-fill z1-fill" style="width:50%"></div></div><span class="zone-bar-pct">50%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z2</span><div class="zone-bar-track"><div class="zone-bar-fill z2-fill" style="width:30%"></div></div><span class="zone-bar-pct">30%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z3</span><div class="zone-bar-track"><div class="zone-bar-fill z3-fill" style="width:15%"></div></div><span class="zone-bar-pct">15%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z4</span><div class="zone-bar-track"><div class="zone-bar-fill z4-fill" style="width:5%"></div></div><span class="zone-bar-pct">5%</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="chord-list">
+              <span class="chord-primary">Tonic + Subdominant</span><br>
+              <span class="chord-secondary">One secondary dominant (e.g. V/ii) for forward motion. Avoid heavy modal interchange.</span>
+            </div>
+          </td>
+          <td><div class="texture-text">Guide tones or thin 3-note voicings. Low tension density — 9th as maximum extension.</div></td>
+          <td><div class="constraint-text">Avoid Zone 4 entirely. Don't preview chorus-level sweetness here — save it.</div></td>
+        </tr>
+
+        <!-- PRE-CHORUS -->
+        <tr class="row-prechorus">
+          <td>
+            <span class="section-row-label">Pre-Chorus</span>
+            <span class="section-row-sub">bars 9–12</span>
+          </td>
+          <td style="font-size:11px;line-height:1.5">Building urgency. Rising stakes. The listener should lean forward.</td>
+          <td>
+            <div class="zone-bars">
+              <div class="zone-bar-row"><span class="zone-bar-label">Z1</span><div class="zone-bar-track"><div class="zone-bar-fill z1-fill" style="width:35%"></div></div><span class="zone-bar-pct">35%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z2</span><div class="zone-bar-track"><div class="zone-bar-fill z2-fill" style="width:35%"></div></div><span class="zone-bar-pct">35%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z3</span><div class="zone-bar-track"><div class="zone-bar-fill z3-fill" style="width:20%"></div></div><span class="zone-bar-pct">20%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z4</span><div class="zone-bar-track"><div class="zone-bar-fill z4-fill" style="width:10%"></div></div><span class="zone-bar-pct">10%</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="chord-list">
+              <span class="chord-primary">Subdominant → Dominant</span><br>
+              <span class="chord-secondary">Secondary dominants encouraged. Increase harmonic rhythm slightly. End on an open V or V/vi.</span>
+            </div>
+          </td>
+          <td><div class="texture-text">Medium texture. Begin adding 9th and 11th tensions. Slightly fuller left hand voicing.</div></td>
+          <td><div class="constraint-text">Don't resolve to I — maintain forward momentum. Any resolution here kills the chorus impact.</div></td>
+        </tr>
+
+        <!-- CHORUS -->
+        <tr class="row-chorus">
+          <td>
+            <span class="section-row-label">Chorus</span>
+            <span class="section-row-sub">Hook · bars 13–20</span>
+          </td>
+          <td style="font-size:11px;line-height:1.5">Maximum emotional payoff. Memorability above all. The sweetest, most grounded moment in the song.</td>
+          <td>
+            <div class="zone-bars">
+              <div class="zone-bar-row"><span class="zone-bar-label">Z1</span><div class="zone-bar-track"><div class="zone-bar-fill z1-fill" style="width:60%"></div></div><span class="zone-bar-pct">60%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z2</span><div class="zone-bar-track"><div class="zone-bar-fill z2-fill" style="width:25%"></div></div><span class="zone-bar-pct">25%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z3</span><div class="zone-bar-track"><div class="zone-bar-fill z3-fill" style="width:10%"></div></div><span class="zone-bar-pct">10%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z4</span><div class="zone-bar-track"><div class="zone-bar-fill z4-fill" style="width:5%"></div></div><span class="zone-bar-pct">5%</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="chord-list">
+              <span class="chord-primary">Tonic-forward progressions</span><br>
+              <span class="chord-secondary">I–IV–V, I–V–vi–IV, or simpler. Avoid complexity — the melody is the star. No modal interchange here.</span>
+            </div>
+          </td>
+          <td><div class="texture-text">Fuller voicings. Moderate tensions (9, 13). Thicker left hand. Register should sit above verse range.</div></td>
+          <td><div class="constraint-text">Highest melody note must be a chord tone. No Zone 4 at all. Don't let the harmony outshine the hook.</div></td>
+        </tr>
+
+        <!-- BRIDGE -->
+        <tr class="row-bridge">
+          <td>
+            <span class="section-row-label">Bridge</span>
+            <span class="section-row-sub">bars 29–36</span>
+          </td>
+          <td style="font-size:11px;line-height:1.5">Contrast, darkness, emotional peak before final release. The listener should feel slightly lost.</td>
+          <td>
+            <div class="zone-bars">
+              <div class="zone-bar-row"><span class="zone-bar-label">Z1</span><div class="zone-bar-track"><div class="zone-bar-fill z1-fill" style="width:20%"></div></div><span class="zone-bar-pct">20%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z2</span><div class="zone-bar-track"><div class="zone-bar-fill z2-fill" style="width:25%"></div></div><span class="zone-bar-pct">25%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z3</span><div class="zone-bar-track"><div class="zone-bar-fill z3-fill" style="width:30%"></div></div><span class="zone-bar-pct">30%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z4</span><div class="zone-bar-track"><div class="zone-bar-fill z4-fill" style="width:25%"></div></div><span class="zone-bar-pct">25%</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="chord-list">
+              <span class="chord-primary">Modal Interchange heavy</span><br>
+              <span class="chord-secondary">bVI, iv-, bVII, bIII. Phrygian/Dorian borrowing. Tritone subs OK. Slow harmonic rhythm to let darkness breathe.</span>
+            </div>
+          </td>
+          <td><div class="texture-text">Thin guide tones with rhythmic space. High tension density — b9, #11, b13 all available. Let the tension hang.</div></td>
+          <td><div class="constraint-text">Avoid strong resolution — keep listener in suspended state. No return to Imaj7 until final chorus arrives.</div></td>
+        </tr>
+
+        <!-- OUTRO -->
+        <tr class="row-outro">
+          <td>
+            <span class="section-row-label">Outro</span>
+            <span class="section-row-sub">Resolution · final</span>
+          </td>
+          <td style="font-size:11px;line-height:1.5">Completion, peace, earned rest. The emotional debt from the bridge is repaid here.</td>
+          <td>
+            <div class="zone-bars">
+              <div class="zone-bar-row"><span class="zone-bar-label">Z1</span><div class="zone-bar-track"><div class="zone-bar-fill z1-fill" style="width:70%"></div></div><span class="zone-bar-pct">70%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z2</span><div class="zone-bar-track"><div class="zone-bar-fill z2-fill" style="width:20%"></div></div><span class="zone-bar-pct">20%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z3</span><div class="zone-bar-track"><div class="zone-bar-fill z3-fill" style="width:10%"></div></div><span class="zone-bar-pct">10%</span></div>
+              <div class="zone-bar-row"><span class="zone-bar-label">Z4</span><div class="zone-bar-track"><div class="zone-bar-fill z4-fill" style="width:0%"></div></div><span class="zone-bar-pct">0%</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="chord-list">
+              <span class="chord-primary">Pure diatonic — tonic prolongation</span><br>
+              <span class="chord-secondary">I–IV–I or simple tonic drone. Slow harmonic rhythm. No borrowed chords. Let the I chord breathe.</span>
+            </div>
+          </td>
+          <td><div class="texture-text">Guide tones only, or single-note melody. No extended tensions. Slow harmonic rhythm. Register often drops below verse.</div></td>
+          <td><div class="constraint-text">Zero Zone 4. No borrowed chords. No avoid notes. Any tension here breaks the sense of earned resolution.</div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="example-box">
+      <div class="example-title">Worked Example — Bridge in the Key of C</div>
+      <div class="example-grid">
+        <div class="example-col">
+          <div class="example-col-title"><span class="sys-tag sys-amf" style="margin-left:0">AMF</span> Zone Target</div>
+          <div class="example-col-body">20% Z1 · 25% Z2 · 30% Z3 · 25% Z4<br><br>Melody notes: <strong>FA–TI–RE–MI</strong> over two bars — mostly floating and tense, brief sweet arrival at MI before pulling away again.</div>
+        </div>
+        <div class="example-col">
+          <div class="example-col-title"><span class="sys-tag sys-harmony" style="margin-left:0">HARMONY</span> Chord Pool</div>
+          <div class="example-col-body">Bar 1: <strong>Fm7</strong> (iv-7 — parallel minor)<br>Bar 2: <strong>Abmaj7</strong> (bVI — parallel minor)<br>Bar 3: <strong>Bb7</strong> (bVII — backdoor)<br>Bar 4: <strong>G7</strong> (V7 — tension peak before chorus return)</div>
+        </div>
+        <div class="example-col">
+          <div class="example-col-title"><span class="sys-tag sys-voicings" style="margin-left:0">VOICINGS</span> Texture</div>
+          <div class="example-col-body">Guide tones only (3rds + 7ths). Add b9 on G7 for maximum tension. <strong>Rhythmic space between chords</strong> — don't fill every beat. Let silence carry weight.</div>
+        </div>
+        <div class="example-col">
+          <div class="example-col-title">Combined Result</div>
+          <div class="example-col-body"><strong>FA over Fm7</strong> = CT/root (Zone 2, grounded tension)<br><strong>TI over Abmaj7</strong> = NCT/#11 (Zone 2, pensive)<br><strong>RE over Bb7</strong> = NCT/3rd (Zone 3, floating)<br><strong>MI over G7</strong> = NCT/13th (Zone 2, tense-bright)</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

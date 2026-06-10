@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combined Reference · Sheet C1 | Every Note, Every Context</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:26px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+
+/* System badges row */
+.sys-badges{display:flex;gap:12px;margin-bottom:24px;align-items:stretch}
+.sys-badge{flex:1;border-radius:8px;padding:12px 16px}
+.sys-badge-label{font-size:9px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:4px}
+.sys-badge-desc{font-size:11px;font-weight:500;line-height:1.4}
+.sys-amf{background:#d6eafc;color:#1a5a8a}
+.sys-harmony{background:#fef3d0;color:#7a5200}
+.sys-voicings{background:#d9f5e4;color:#1e6b42}
+
+/* Section label */
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+
+/* Main reference table */
+.ref-table{width:100%;border-collapse:collapse;margin-bottom:24px;font-size:11px}
+.ref-table thead tr{background:#0f1e3c}
+.ref-table thead th{padding:9px 10px;font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8faacc;text-align:left;vertical-align:middle}
+.ref-table tbody tr{border-bottom:1px solid #eee}
+.ref-table tbody tr:last-child{border-bottom:none}
+.ref-table tbody td{padding:9px 10px;vertical-align:middle;font-size:11px;color:#1f2937;line-height:1.3}
+
+/* Note pill */
+.note-pill{display:inline-flex;align-items:center;justify-content:center;height:28px;min-width:38px;border-radius:14px;font-size:12px;font-weight:900;color:#fff;padding:0 8px}
+
+/* Cell content */
+.cell-content{display:flex;flex-direction:column;gap:3px}
+.zone-badge{display:inline-flex;align-items:center;gap:4px;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;margin-bottom:2px;line-height:1.3}
+.zone1{background:#d6eafc;color:#1a5a8a}
+.zone2{background:#fef3d0;color:#7a5200}
+.zone3{background:#d9f5e4;color:#1e6b42}
+.zone4{background:#ede9fe;color:#4b2d8c}
+.ct-badge{display:inline-block;font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;background:#e8f4ff;color:#1a5a8a;margin-bottom:1px}
+.nct-badge{display:inline-block;font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;background:#fff3e0;color:#7a5200;margin-bottom:1px}
+.avoid-badge{display:inline-block;font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;background:#fde8e4;color:#b91c1c;margin-bottom:1px}
+.tension-label{font-size:10px;font-weight:600;color:#374151}
+.emo-label{font-size:10px;color:#6b7280;font-style:italic}
+
+/* Bottom callout */
+.callout-dark{background:#0f1e3c;border-radius:8px;padding:18px 24px;margin-top:4px}
+.callout-dark-title{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px}
+.callout-dark-body{font-size:12px;color:#c8d8f0;line-height:1.6}
+.callout-dark strong{color:#fff}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Combined Reference · Sheet C1</div>
+    <h1>Every Note, Every Context</h1>
+    <div class="header-sub">AMF zone + Harmony OS function + Voicings OS tension — unified in one lookup</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="sys-badges">
+      <div class="sys-badge sys-amf">
+        <div class="sys-badge-label">AMF Melody Framework</div>
+        <div class="sys-badge-desc">Stability rank + emotional zone. Where does this note sit on the map of emotional tension?</div>
+      </div>
+      <div class="sys-badge sys-harmony">
+        <div class="sys-badge-label">Harmony OS</div>
+        <div class="sys-badge-desc">Chord tone or non-chord tone. Is this note claimed by the chord, or floating above it?</div>
+      </div>
+      <div class="sys-badge sys-voicings">
+        <div class="sys-badge-label">Voicings OS</div>
+        <div class="sys-badge-desc">Available tension / chord tone / avoid. How should this note behave in the voicing?</div>
+      </div>
+    </div>
+
+    <div class="section-label">Unified Reference — Key of C Major · 7 Scale Degrees × 4 Chord Contexts</div>
+    <table class="ref-table">
+      <thead>
+        <tr>
+          <th style="width:72px">Note</th>
+          <th>Over Imaj7<br><span style="color:#5a7aaa;font-size:8px;font-weight:500;letter-spacing:0">Cmaj7</span></th>
+          <th>Over IVmaj7<br><span style="color:#5a7aaa;font-size:8px;font-weight:500;letter-spacing:0">Fmaj7</span></th>
+          <th>Over V7<br><span style="color:#5a7aaa;font-size:8px;font-weight:500;letter-spacing:0">G7</span></th>
+          <th>Over vi-7<br><span style="color:#5a7aaa;font-size:8px;font-weight:500;letter-spacing:0">Am7</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- DO -->
+        <tr>
+          <td><span class="note-pill" style="background:#6bb8e8">DO</span><br><span style="font-size:9px;color:#6b7280">Rank 1 · Home</span></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · Root</span>
+            <span class="emo-label">Grounded</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · 5th</span>
+            <span class="emo-label">Open, solid</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone4">Zone 4</span>
+            <span class="avoid-badge">NCT · AVOID</span>
+            <span class="tension-label">4th = Avoid</span>
+            <span class="emo-label">Harsh clash</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · b3rd</span>
+            <span class="emo-label">Dark, warm</span>
+          </div></td>
+        </tr>
+        <!-- SO -->
+        <tr style="background:#f9fbff">
+          <td><span class="note-pill" style="background:#3F6FB6">SO</span><br><span style="font-size:9px;color:#6b7280">Rank 2 · Strong</span></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · 5th</span>
+            <span class="emo-label">Open, warm</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone3">Zone 3</span>
+            <span class="nct-badge">NCT · 9th</span>
+            <span class="tension-label">9 = Tension</span>
+            <span class="emo-label">Floating</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · Root</span>
+            <span class="emo-label">Anchored</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone3">Zone 3</span>
+            <span class="nct-badge">NCT · b7th</span>
+            <span class="tension-label">b7 = Color</span>
+            <span class="emo-label">Moody</span>
+          </div></td>
+        </tr>
+        <!-- MI -->
+        <tr>
+          <td><span class="note-pill" style="background:#7dc48a">MI</span><br><span style="font-size:9px;color:#6b7280">Rank 3 · Sweet</span></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · 3rd</span>
+            <span class="emo-label">Sweet, clear</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone3">Zone 3</span>
+            <span class="nct-badge">NCT · maj7</span>
+            <span class="tension-label">maj7 = Tension</span>
+            <span class="emo-label">Floating</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone2">Zone 2</span>
+            <span class="nct-badge">NCT · 13th</span>
+            <span class="tension-label">13 = Tension</span>
+            <span class="emo-label">Tense-bright</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · 5th</span>
+            <span class="emo-label">Gentle</span>
+          </div></td>
+        </tr>
+        <!-- LA -->
+        <tr style="background:#f9fbff">
+          <td><span class="note-pill" style="background:#F29B38">LA</span><br><span style="font-size:9px;color:#6b7280">Rank 4 · Warm</span></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone3">Zone 3</span>
+            <span class="nct-badge">NCT · 13th</span>
+            <span class="tension-label">13 = Tension</span>
+            <span class="emo-label">Colorful</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · 3rd</span>
+            <span class="emo-label">Warm, settled</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone2">Zone 2</span>
+            <span class="nct-badge">NCT · 9th</span>
+            <span class="tension-label">9 = Tension</span>
+            <span class="emo-label">Yearning</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · Root</span>
+            <span class="emo-label">Melancholy</span>
+          </div></td>
+        </tr>
+        <!-- RE -->
+        <tr>
+          <td><span class="note-pill" style="background:#d97b6a">RE</span><br><span style="font-size:9px;color:#6b7280">Rank 5 · Yearning</span></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone3">Zone 3</span>
+            <span class="nct-badge">NCT · 9th</span>
+            <span class="tension-label">9 = Tension</span>
+            <span class="emo-label">Searching</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone3">Zone 3</span>
+            <span class="nct-badge">NCT · 13th</span>
+            <span class="tension-label">13 = Tension</span>
+            <span class="emo-label">Floating</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone1">Zone 1</span>
+            <span class="ct-badge">CT · 5th</span>
+            <span class="emo-label">Neutral hold</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone3">Zone 3</span>
+            <span class="nct-badge">NCT · 11th</span>
+            <span class="tension-label">11 = Tension</span>
+            <span class="emo-label">Misty</span>
+          </div></td>
+        </tr>
+        <!-- TI -->
+        <tr style="background:#f9fbff">
+          <td><span class="note-pill" style="background:#8A6BC8">TI</span><br><span style="font-size:9px;color:#6b7280">Rank 6 · Leading</span></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone2">Zone 2</span>
+            <span class="ct-badge">CT · maj7</span>
+            <span class="tension-label">7th = Chord Tone</span>
+            <span class="emo-label">Leading tone</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone2">Zone 2</span>
+            <span class="nct-badge">NCT · #11</span>
+            <span class="tension-label">#11 = Tension</span>
+            <span class="emo-label">Pensive</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone2">Zone 2</span>
+            <span class="ct-badge">CT · 3rd</span>
+            <span class="emo-label">Tense-driving</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone2">Zone 2</span>
+            <span class="nct-badge">NCT · 9th</span>
+            <span class="tension-label">9 = Tension</span>
+            <span class="emo-label">Reaching</span>
+          </div></td>
+        </tr>
+        <!-- FA -->
+        <tr>
+          <td><span class="note-pill" style="background:#c9a630">FA</span><br><span style="font-size:9px;color:#6b7280">Rank 7 · Tension</span></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone4">Zone 4</span>
+            <span class="avoid-badge">NCT · AVOID</span>
+            <span class="tension-label">4th = Avoid</span>
+            <span class="emo-label">Harsh</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone2">Zone 2</span>
+            <span class="ct-badge">CT · Root</span>
+            <span class="emo-label">Grounded-tense</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone2">Zone 2</span>
+            <span class="ct-badge">CT · b7th</span>
+            <span class="emo-label">Tense-supported</span>
+          </div></td>
+          <td><div class="cell-content">
+            <span class="zone-badge zone4">Zone 4</span>
+            <span class="avoid-badge">NCT · b6th</span>
+            <span class="tension-label">b6 = Avoid</span>
+            <span class="emo-label">Dark edge</span>
+          </div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-dark">
+      <div class="callout-dark-title">The Key Insight</div>
+      <div class="callout-dark-body">
+        <strong>RE's stability rank never changes (Rank 5 — Yearning).</strong> But RE over G7 is a chord tone (harmonically supported, Zone 1 — the chord catches it), while RE over Cmaj7 is a non-chord tone (floating, Zone 3 — nothing holds it). Same note, same emotional character, fundamentally different experience depending on what the harmony is doing underneath.
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

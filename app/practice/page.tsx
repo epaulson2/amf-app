@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'AMF — 90-Day Practice Plan',
+  title: 'Melody OS — 90-Day Practice Plan',
   description: 'A 10–20 minute daily practice plan to make the Emotional Map of Melody instinctual — 3 phases, 90 days, ears-first.',
 }
 
@@ -12,7 +12,7 @@ export default function PracticePage() {
       <div className="py-14 px-4 sm:px-6" style={{ backgroundColor: '#0f172a' }}>
         <div className="max-w-3xl mx-auto">
           <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: '#7a9bd4' }}>
-            Aesthetic Melody Framework · Practice Curriculum
+            Melody OS · Practice Curriculum
           </p>
           <h1 className="text-white text-4xl sm:text-5xl font-extrabold tracking-tight mb-4 uppercase">
             90-Day Practice Plan

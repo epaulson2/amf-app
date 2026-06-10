@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emotional Map of Melody — Master Cheat Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #e8eaf0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.page {
+  width: 860px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── HEADER ─────────────────────────────────────────────── */
+.header {
+  background: #0f172a;
+  padding: 30px 48px 26px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8FCDF4, #3F6FB6, #9FD5A6, #F29B38, #E98C7A, #8A6BC8, #E8C45A);
+}
+.header-eyebrow {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #E8C45A;
+  margin-bottom: 8px;
+}
+.header-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+.header-tagline {
+  font-size: 12px;
+  color: rgba(255,255,255,0.38);
+  margin-top: 7px;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ── BODY ────────────────────────────────────────────────── */
+.body {
+  padding: 22px 36px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ── CORE IDEA ───────────────────────────────────────────── */
+.core-row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+.core-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 14px;
+  border-right: 1px solid #e2e8f0;
+  min-width: 160px;
+}
+.section-eyebrow {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+.core-body {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #475569;
+  line-height: 1.4;
+}
+.dim-cards {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+.dim-card {
+  flex: 1;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dim-badge {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: #0f172a;
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.dim-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.3;
+}
+.dim-text span {
+  font-size: 10px;
+  font-weight: 400;
+  color: #64748b;
+  display: block;
+  margin-top: 1px;
+}
+
+/* ── THE MAP ─────────────────────────────────────────────── */
+.map-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.map-card {
+  position: relative;
+  height: 310px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1.5px solid #dde1e9;
+}
+
+/* Quadrant tints */
+.q { position: absolute; width: 50%; height: 50%; }
+.q1 { top: 0; left: 0;    background: #c7deff; opacity: .28; }
+.q2 { bottom: 0; left: 0;  background: #bbf7d0; opacity: .30; }
+.q3 { top: 0; right: 0;    background: #fef08a; opacity: .30; }
+.q4 { bottom: 0; right: 0; background: #ddd6fe; opacity: .38; }
+
+/* Axis lines */
+.ax-line-v {
+  position: absolute; left: 50%; top: 0; bottom: 0;
+  width: 1px; background: rgba(15,23,41,.12);
+}
+.ax-line-h {
+  position: absolute; top: 50%; left: 0; right: 0;
+  height: 1px; background: rgba(15,23,41,.12);
+}
+
+/* Axis labels */
+.ax-label {
+  position: absolute;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #64748b;
+}
+.ax-ct  { top: 9px;    left: 50%; transform: translateX(-50%); }
+.ax-nct { bottom: 9px; left: 50%; transform: translateX(-50%); }
+.ax-st  {
+  left: 10px; top: 50%; transform: translateY(-50%);
+  font-size: 8px; letter-spacing: 2px; white-space: nowrap;
+}
+.ax-un  {
+  right: 10px; top: 50%; transform: translateY(-50%);
+  font-size: 8px; letter-spacing: 2px; white-space: nowrap;
+}
+
+/* Arrow heads on axis */
+.ax-arrow {
+  position: absolute;
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1;
+}
+.ax-arrow.up    { top: 7px;    left: 50%; transform: translateX(-50%); margin-left: -28px; }
+.ax-arrow.down  { bottom: 7px; left: 50%; transform: translateX(-50%); margin-left: -28px; }
+.ax-arrow.left  { left: 34px;  top: 50%; transform: translateY(-50%); }
+.ax-arrow.right { right: 34px; top: 50%; transform: translateY(-50%); }
+
+/* Zone label cards */
+.zone {
+  position: absolute;
+  padding: 9px 13px;
+  border-radius: 9px;
+  z-index: 3;
+  max-width: 210px;
+}
+.zone-num  { font-size: 8px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; opacity: .5; margin-bottom: 2px; }
+.zone-name { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; line-height: 1.2; }
+.zone-sub  { font-size: 9.5px; font-weight: 500; margin-top: 2px; opacity: .65; }
+.zone-ex   { font-size: 8.5px; font-style: italic; margin-top: 3px; opacity: .45; }
+
+.z1 { top: 13px; left: 44px; background: rgba(196,221,255,.55); color: #1d4ed8; }
+.z2 { bottom: 13px; left: 44px; background: rgba(187,247,208,.55); color: #15803d; }
+.z3 { top: 13px; right: 44px; background: rgba(253,224,71,.45); color: #92400e; text-align: right; }
+.z4 { bottom: 13px; right: 44px; background: rgba(221,214,254,.55); color: #5b21b6; text-align: right; }
+
+/* Note strip */
+.note-strip-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.note-strip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.note-pill {
+  width: 52px;
+  height: 34px;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.22);
+  position: relative;
+  z-index: 5;
+  font-family: 'Inter', sans-serif;
+}
+/* Stability gradient bar behind notes */
+.stab-bar {
+  width: calc(7 * 52px + 6 * 5px);
+  height: 5px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #8FCDF4 0%, #3F6FB6 14%, #9FD5A6 28%, #F29B38 50%, #E98C7A 64%, #8A6BC8 78%, #E8C45A 100%);
+  opacity: 0.45;
+}
+
+/* ── FLAVOR GUIDE ────────────────────────────────────────── */
+.flavor-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 11px;
+  padding: 10px 18px;
+}
+.flavor-label {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-right: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.flavor-notes {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.fn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.fn-pill {
+  height: 28px;
+  min-width: 38px;
+  padding: 0 11px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px;
+  font-weight: 900;
+  box-shadow: 0 2px 6px rgba(0,0,0,.18);
+}
+.fn-word {
+  font-size: 9px;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: .2px;
+}
+
+/* ── BOTTOM GRID ─────────────────────────────────────────── */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.35fr;
+  gap: 12px;
+}
+.bcard {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 11px;
+  padding: 13px 15px;
+}
+.bcard-title {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Focus notes */
+.focus-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11px;
+  color: #334155;
+  margin-bottom: 6px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.focus-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.focus-note {
+  font-size: 9.5px;
+  color: #94a3b8;
+  font-style: italic;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Steps */
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 11px;
+  color: #334155;
+  margin-bottom: 7px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.step-num {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: #0f172a;
+  color: white;
+  font-size: 9.5px;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Tips */
+.tip-item {
+  margin-bottom: 6px;
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: #334155;
+}
+.tip-cue {
+  color: #64748b;
+  font-style: italic;
+}
+.tip-arrow { color: #94a3b8; margin: 0 3px; }
+.tip-ans { color: #1e293b; font-weight: 700; }
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+.footer {
+  text-align: center;
+  font-size: 8.5px;
+  color: #94a3b8;
+  font-style: italic;
+  padding: 10px 36px 14px;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-eyebrow">Master Cheat Sheet</div>
+    <div class="header-title">Emotional Map of Melody</div>
+    <div class="header-tagline">How a melody note gets its emotional meaning</div>
+  </div>
+
+  <div class="body">
+
+    <!-- CORE IDEA -->
+    <div class="core-row">
+      <div class="core-intro">
+        <div class="section-eyebrow">Core Idea</div>
+        <div class="core-body">A melody note gets its feel from <strong>2 relationships:</strong></div>
+      </div>
+      <div class="dim-cards">
+        <div class="dim-card">
+          <div class="dim-badge">1</div>
+          <div class="dim-text">Key relationship
+            <span>Stable or unstable scale degree?</span>
+          </div>
+        </div>
+        <div class="dim-card">
+          <div class="dim-badge">2</div>
+          <div class="dim-text">Chord relationship
+            <span>Chord tone or non-chord tone?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THE MAP -->
+    <div class="map-wrap">
+      <div class="section-eyebrow" style="margin-bottom:0">The Map &nbsp;·&nbsp; <span style="font-weight:400;letter-spacing:0;text-transform:none;color:#94a3b8;font-size:10px">hue = scale degree &nbsp;·&nbsp; vertical position = chord relationship</span></div>
+      <div class="map-card">
+        <!-- Quadrant tints -->
+        <div class="q q1"></div>
+        <div class="q q2"></div>
+        <div class="q q3"></div>
+        <div class="q q4"></div>
+        <!-- Axis lines -->
+        <div class="ax-line-v"></div>
+        <div class="ax-line-h"></div>
+        <!-- Axis labels -->
+        <div class="ax-label ax-ct">↑ &nbsp;Chord Tone</div>
+        <div class="ax-label ax-nct">Non-Chord Tone &nbsp;↓</div>
+        <div class="ax-label ax-st">← STABLE</div>
+        <div class="ax-label ax-un">UNSTABLE →</div>
+        <!-- Zone cards -->
+        <div class="zone z1">
+          <div class="zone-num">Zone 1</div>
+          <div class="zone-name">Sweet / Grounded</div>
+          <div class="zone-sub">Stable + chord tone</div>
+          <div class="zone-ex">Ex: G over C &nbsp;(SO over C)</div>
+        </div>
+        <div class="zone z2">
+          <div class="zone-num">Zone 2</div>
+          <div class="zone-name">Floating / Modern</div>
+          <div class="zone-sub">Stable + non-chord tone</div>
+          <div class="zone-ex">Ex: C over Dm &nbsp;(DO over Dm)</div>
+        </div>
+        <div class="zone z3">
+          <div class="zone-num">Zone 3</div>
+          <div class="zone-name">Tense but&nbsp;Supported</div>
+          <div class="zone-sub">Unstable + chord tone</div>
+          <div class="zone-ex">Ex: F over Dm &nbsp;(FA over Dm)</div>
+        </div>
+        <div class="zone z4">
+          <div class="zone-num">Zone 4</div>
+          <div class="zone-name">Bitter / Edgy</div>
+          <div class="zone-sub">Unstable + non-chord tone</div>
+          <div class="zone-ex">Ex: B over Dm &nbsp;(TI over Dm)</div>
+        </div>
+        <!-- Note strip -->
+        <div class="note-strip-wrap">
+          <div class="note-strip">
+            <div class="note-pill" style="background:#6bb8e8;color:#fff;">DO</div>
+            <div class="note-pill" style="background:#3F6FB6;color:#fff;">SO</div>
+            <div class="note-pill" style="background:#7dc48a;color:#fff;">MI</div>
+            <div class="note-pill" style="background:#F29B38;color:#fff;">LA</div>
+            <div class="note-pill" style="background:#d97b6a;color:#fff;">RE</div>
+            <div class="note-pill" style="background:#8A6BC8;color:#fff;">TI</div>
+            <div class="note-pill" style="background:#c9a630;color:#fff;">FA</div>
+          </div>
+          <div class="stab-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLAVOR GUIDE -->
+    <div class="flavor-row">
+      <div class="flavor-label">Solmization<br>Flavor Guide</div>
+      <div class="flavor-notes">
+        <div class="fn">
+          <div class="fn-pill" style="background:#6bb8e8;color:#fff;">DO</div>
+          <div class="fn-word">home</div>
+        </div>
+        <div class="fn">
+          <div class="fn-pill" style="background:#3F6FB6;color:#fff;">SO</div>
+          <div class="fn-word">strong</div>
+        </div>
+        <div class="fn">
+          <div class="fn-pill" style="background:#7dc48a;color:#fff;">MI</div>
+          <div class="fn-word">sweet</div>
+        </div>
+        <div class="fn">
+          <div class="fn-pill" style="background:#F29B38;color:#fff;">LA</div>
+          <div class="fn-word">warm</div>
+        </div>
+        <div class="fn">
+          <div class="fn-pill" style="background:#d97b6a;color:#fff;">RE</div>
+          <div class="fn-word">open</div>
+        </div>
+        <div class="fn">
+          <div class="fn-pill" style="background:#8A6BC8;color:#fff;">TI</div>
+          <div class="fn-word">leading</div>
+        </div>
+        <div class="fn">
+          <div class="fn-pill" style="background:#c9a630;color:#fff;">FA</div>
+          <div class="fn-word">tension</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM GRID -->
+    <div class="bottom-grid">
+
+      <!-- Focus on These Notes -->
+      <div class="bcard">
+        <div class="bcard-title">Focus on These Notes</div>
+        <div class="focus-item"><div class="focus-dot"></div>Notes at chord changes</div>
+        <div class="focus-item"><div class="focus-dot"></div>Repeated notes</div>
+        <div class="focus-item"><div class="focus-dot"></div>Longer held notes</div>
+        <div class="focus-item"><div class="focus-dot"></div>Starting notes</div>
+        <div class="focus-item"><div class="focus-dot"></div>Ending / arrival notes</div>
+        <div class="focus-note">These shape the melody's emotional backbone — passing notes matter less.</div>
+      </div>
+
+      <!-- Fast Analysis -->
+      <div class="bcard">
+        <div class="bcard-title">Fast Analysis</div>
+        <div class="step-item"><div class="step-num">1</div>Find the key</div>
+        <div class="step-item"><div class="step-num">2</div>Label the note as DO – TI</div>
+        <div class="step-item"><div class="step-num">3</div>Identify the chord underneath</div>
+        <div class="step-item"><div class="step-num">4</div>Chord tone or non-chord tone?</div>
+        <div class="step-item"><div class="step-num">5</div>Place it on the map — read its zone</div>
+      </div>
+
+      <!-- Writing / Revision Tips -->
+      <div class="bcard">
+        <div class="bcard-title">Writing &amp; Revision Tips</div>
+        <div class="tip-item"><span class="tip-cue">Need arrival?</span><span class="tip-arrow">→</span><span class="tip-ans">stable + chord tone</span></div>
+        <div class="tip-item"><span class="tip-cue">Need modern color?</span><span class="tip-arrow">→</span><span class="tip-ans">stable + non-chord tone</span></div>
+        <div class="tip-item"><span class="tip-cue">Need tension with support?</span><span class="tip-arrow">→</span><span class="tip-ans">unstable + chord tone</span></div>
+        <div class="tip-item"><span class="tip-cue">Need edge?</span><span class="tip-arrow">→</span><span class="tip-ans">unstable + non-chord tone</span></div>
+        <div class="tip-item"><span class="tip-cue">Too safe / generic?</span><span class="tip-arrow">→</span><span class="tip-ans">add non-chord tones at key moments</span></div>
+        <div class="tip-item"><span class="tip-cue">Too harsh?</span><span class="tip-arrow">→</span><span class="tip-ans">resolve unstable non-chord tones faster</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Concept based on <em>The Emotional Map of Melody</em> by Tamas Bodzsar. Colors use the custom palette developed for this project.
+  </div>
+
+</div>
+</body>
+</html>

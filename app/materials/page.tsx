@@ -55,8 +55,8 @@ const TYPE_BG: Record<ItemType, string> = {
 const SYSTEMS: System[] = [
   {
     id: 'amf',
-    label: 'Melodic Framework',
-    description: 'The Aesthetic Melody Framework — emotional zones, scale degree stability, chord tone relationships, and tension planning.',
+    label: 'Melody OS',
+    description: 'Melody OS — emotional zones, scale degree stability, chord tone relationships, and tension planning for melody writing.',
     color: '#d6eafc',
     textColor: '#1a5a8a',
     bundlePdf: '/amf_complete_materials.zip',

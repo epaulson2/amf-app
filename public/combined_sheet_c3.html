@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combined Reference · Sheet C3 | Melody × Harmony Convergence</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:26px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:16px}
+
+/* System tags */
+.sys-tag{display:inline-flex;align-items:center;font-size:8px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;padding:2px 6px;border-radius:3px}
+.sys-amf{background:#d6eafc;color:#1a5a8a}
+.sys-voicings{background:#d9f5e4;color:#1e6b42}
+
+/* 2x2 grid of panels */
+.panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.panel{border-radius:10px;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+
+/* Panel 1 — Amplified Tension */
+.panel1{background:#ede9fe}
+/* Panel 2 — Supported Tension */
+.panel2{background:#fef3d0}
+/* Panel 3 — Floating Color */
+.panel3{background:#d9f5e4}
+/* Panel 4 — Grounded Resolution */
+.panel4{background:#d6eafc}
+
+.panel-sys-row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.panel-title{font-size:18px;font-weight:900;line-height:1.1;text-transform:uppercase;letter-spacing:-0.2px}
+.panel1 .panel-title{color:#4b2d8c}
+.panel2 .panel-title{color:#7a5200}
+.panel3 .panel-title{color:#1e6b42}
+.panel4 .panel-title{color:#1a5a8a}
+.panel-desc{font-size:11px;line-height:1.5;color:#374151}
+.panel1 .panel-desc{color:#3b0764}
+.panel2 .panel-desc{color:#6b4500}
+.panel3 .panel-desc{color:#14532d}
+.panel4 .panel-desc{color:#1a3a5c}
+.panel-example{font-size:11px;font-weight:700;line-height:1.4;padding:8px 12px;border-radius:6px;background:rgba(255,255,255,0.55)}
+.panel-use{font-size:10px;line-height:1.4;padding:7px 11px;border-radius:6px;border-left:3px solid rgba(0,0,0,0.12);background:rgba(255,255,255,0.4);color:#374151;font-style:italic}
+.panel-use strong{font-style:normal;color:#0f1e3c}
+
+/* Piano keyboard */
+.piano-wrap{display:inline-flex;gap:0;align-items:flex-start;margin:6px 0}
+.octave{position:relative;display:flex}
+.wk{width:24px;height:80px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;z-index:1}
+.bk{position:absolute;width:15px;height:50px;background:#222;border-radius:0 0 4px 4px;z-index:2;top:0}
+.bk.cs{left:16px}.bk.ds{left:40px}.bk.fs{left:88px}.bk.gs{left:112px}.bk.as{left:136px}
+.badge{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);border-radius:3px;font-size:8px;font-weight:800;padding:2px 3px;color:#fff;white-space:nowrap;min-width:16px;text-align:center;line-height:1.2;z-index:3;pointer-events:none}
+.bk .badge{bottom:3px;font-size:7px;min-width:11px;padding:1px 2px}
+.badge.root{background:#3F6FB6}
+.badge.tone{background:#6bb8e8}
+.badge.tension{background:#F29B38}
+.badge.avoid{background:#d97b6a}
+.badge.minor{background:#8A6BC8}
+
+/* Bottom rule callout */
+.callout-rule{background:#0f1e3c;border-radius:8px;padding:16px 24px;margin-top:4px}
+.callout-rule-body{font-size:12px;color:#c8d8f0;line-height:1.6;text-align:center}
+.callout-rule strong{color:#fff}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Combined Reference · Sheet C3</div>
+    <h1>Melody × Harmony Convergence</h1>
+    <div class="header-sub">How AMF stability and Voicings OS tensions combine to create emotional intensity</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">Four Convergence Types — When Both Systems Pull the Same Direction</div>
+
+    <div class="panel-grid">
+
+      <!-- Panel 1: Amplified Tension -->
+      <div class="panel panel1">
+        <div class="panel-sys-row">
+          <span class="sys-tag sys-amf">AMF: Unstable</span>
+          <span>+</span>
+          <span class="sys-tag sys-voicings">VOICINGS: Avoid Note</span>
+        </div>
+        <div class="panel-title">Maximum Dissonance</div>
+        <div class="panel-desc">The melody note is inherently unstable in the key AND clashes with the voicing. Both systems push in the same direction — away from resolution. Every listener leans forward.</div>
+        <div class="panel-example">
+          Example: <strong>FA (rank 7) over Cmaj7</strong><br>
+          FA is the most unstable scale degree in C major AND it's the avoid note (4th) on Imaj7. Both AMF and Voicings OS say the same thing: get out.<br><br>
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk"><span class="badge root">R</span></div>
+              <div class="bk cs"></div>
+              <div class="wk"></div>
+              <div class="bk ds"></div>
+              <div class="wk"><span class="badge tone">3</span></div>
+              <div class="wk"><span class="badge avoid">AV</span></div>
+              <div class="bk fs"></div>
+              <div class="wk"><span class="badge tone">5</span></div>
+              <div class="bk gs"></div>
+              <div class="wk"></div>
+              <div class="bk as"></div>
+              <div class="wk"><span class="badge tone">7</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-use"><strong>Use:</strong> Single beats only. Resolve immediately down to MI for maximum release. Don't sustain.</div>
+      </div>
+
+      <!-- Panel 2: Supported Tension -->
+      <div class="panel panel2">
+        <div class="panel-sys-row">
+          <span class="sys-tag sys-amf">AMF: Unstable</span>
+          <span>+</span>
+          <span class="sys-tag sys-voicings">VOICINGS: Chord Tone</span>
+        </div>
+        <div class="panel-title">Caught by the Chord</div>
+        <div class="panel-desc">The melody note is inherently unstable — it wants to move. But the chord claims it, providing harmonic support. Creates forward motion without collapse. The tension has direction and a container.</div>
+        <div class="panel-example">
+          Example: <strong>RE (rank 5) as 5th of G7</strong><br>
+          RE naturally yearns and searches, but G7 holds it as a chord tone. The instability is real, but the harmonic floor is solid underneath.<br><br>
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk"><span class="badge root">R</span></div>
+              <div class="bk cs"></div>
+              <div class="wk"><span class="badge tone">9</span></div>
+              <div class="bk ds"></div>
+              <div class="wk"></div>
+              <div class="wk"><span class="badge tone">3</span></div>
+              <div class="bk fs"></div>
+              <div class="wk"><span class="badge tone">5</span></div>
+              <div class="bk gs"></div>
+              <div class="wk"></div>
+              <div class="bk as"></div>
+              <div class="wk"><span class="badge tone">b7</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-use"><strong>Use:</strong> The workhorse of tension. Most hook melodies live here — yearning but controlled. Sustain freely; resolve when dramatically right.</div>
+      </div>
+
+      <!-- Panel 3: Floating Color -->
+      <div class="panel panel3">
+        <div class="panel-sys-row">
+          <span class="sys-tag sys-amf">AMF: Stable</span>
+          <span>+</span>
+          <span class="sys-tag sys-voicings">VOICINGS: Available Tension</span>
+        </div>
+        <div class="panel-title">Stable Note as Color</div>
+        <div class="panel-desc">The melody note is harmonically stable in the key, but it's not a chord tone — it floats above the harmony as an available tension. Stability prevents harshness; non-chord-tone status adds modern color. Expressive without risk.</div>
+        <div class="panel-example">
+          Example: <strong>DO (rank 1) as 9th of Bb7 (bVII7)</strong><br>
+          DO is the most stable note in C major, but over borrowed Bb7 it floats as a lush 9th tension. Open, expansive, modern.<br><br>
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk"><span class="badge tension">9</span></div>
+              <div class="bk cs"></div>
+              <div class="wk"></div>
+              <div class="bk ds"></div>
+              <div class="wk"></div>
+              <div class="wk"><span class="badge root">R</span></div>
+              <div class="bk fs"></div>
+              <div class="wk"></div>
+              <div class="bk gs"></div>
+              <div class="wk"><span class="badge tone">3</span></div>
+              <div class="bk as"></div>
+              <div class="wk"><span class="badge tone">b7</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-use"><strong>Use:</strong> Jazz color and extended harmony. Soul and R&amp;B writers use this constantly on borrowed chords. Sustain freely — the stability prevents harshness.</div>
+      </div>
+
+      <!-- Panel 4: Grounded Resolution -->
+      <div class="panel panel4">
+        <div class="panel-sys-row">
+          <span class="sys-tag sys-amf">AMF: Stable</span>
+          <span>+</span>
+          <span class="sys-tag sys-voicings">VOICINGS: Chord Tone</span>
+        </div>
+        <div class="panel-title">Pure Zone 1 — Home</div>
+        <div class="panel-desc">Both systems agree: this note is exactly where it belongs. Maximum emotional resolution and sweetness. The "arrived" feeling. When the melody and harmony both say "home," the listener exhales.</div>
+        <div class="panel-example">
+          Example: <strong>SO (rank 2) as 5th of Cmaj7</strong><br>
+          SO is stable in the key (rank 2, "strong") and a chord tone in the voicing. Both systems pull toward rest.<br><br>
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk"><span class="badge root">R</span></div>
+              <div class="bk cs"></div>
+              <div class="wk"></div>
+              <div class="bk ds"></div>
+              <div class="wk"><span class="badge tone">3</span></div>
+              <div class="wk"></div>
+              <div class="bk fs"></div>
+              <div class="wk"><span class="badge tone">5</span></div>
+              <div class="bk gs"></div>
+              <div class="wk"></div>
+              <div class="bk as"></div>
+              <div class="wk"><span class="badge tone">7</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-use"><strong>Use:</strong> Chorus endings, final resolutions, moments of earned peace. The note that closes a phrase without question marks.</div>
+      </div>
+
+    </div><!-- /panel-grid -->
+
+    <div class="callout-rule">
+      <div class="callout-rule-body">
+        The intensity of any melodic moment comes from <strong>how aligned or opposed these two systems are</strong>.<br>
+        When both say "tension" — the listener holds their breath. &nbsp;·&nbsp; When both say "home" — they exhale.
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
