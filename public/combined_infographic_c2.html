@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combined Infographic C2 | The Composer's Decision Stack</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:26px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 28px}
+
+/* System tags */
+.sys-tag{display:inline-flex;align-items:center;font-size:8px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0}
+.sys-amf{background:#d6eafc;color:#1a5a8a}
+.sys-harmony{background:#fef3d0;color:#7a5200}
+.sys-voicings{background:#d9f5e4;color:#1e6b42}
+.sys-all{background:#f0e6ff;color:#4b2d8c}
+
+/* Flowchart */
+.flow-stack{display:flex;flex-direction:column;gap:0;margin-bottom:20px}
+
+.flow-level{display:flex;align-items:stretch;border-radius:0;overflow:hidden;margin-bottom:0}
+.flow-level:first-child{border-radius:10px 10px 0 0}
+.flow-level:last-child{border-radius:0 0 10px 10px}
+
+.flow-num{width:48px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:rgba(255,255,255,0.7)}
+
+.flow-content{flex:1;padding:14px 18px;display:grid;grid-template-columns:160px 1fr 1fr;gap:12px;align-items:center}
+.flow-content-wide{flex:1;padding:14px 18px;display:grid;grid-template-columns:160px 1fr 1fr;gap:12px;align-items:center}
+
+/* Question column */
+.flow-q{font-size:14px;font-weight:900;color:#fff;line-height:1.2;letter-spacing:-0.2px}
+.flow-q-sub{font-size:10px;color:rgba(255,255,255,0.6);font-weight:400;margin-top:3px}
+
+/* Tool column */
+.flow-tool-label{font-size:8px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:4px}
+.flow-tool-name{font-size:11px;font-weight:700;color:rgba(255,255,255,0.9);line-height:1.3}
+
+/* Action column */
+.flow-action-label{font-size:8px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:4px}
+.flow-action-body{font-size:11px;color:rgba(255,255,255,0.85);line-height:1.3}
+
+/* Arrow between levels */
+.flow-arrow{display:flex;justify-content:center;align-items:center;height:20px;background:transparent;position:relative;z-index:2}
+.flow-arrow-icon{width:2px;background:rgba(0,0,0,0.2);height:100%;position:relative}
+.flow-arrow-icon::after{content:'';position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid rgba(0,0,0,0.2)}
+
+/* Level backgrounds */
+.l1{background:#0f1e3c}
+.l2{background:#7a5200}
+.l3{background:#1a5a8a}
+.l4{background:#1e6b42}
+.l5{background:#4b2d8c}
+.l6{background:#0f1e3c}
+
+/* Level number circles */
+.ln1{background:rgba(255,255,255,0.08)}
+.ln2{background:rgba(255,255,255,0.1)}
+.ln3{background:rgba(255,255,255,0.1)}
+.ln4{background:rgba(255,255,255,0.1)}
+.ln5{background:rgba(255,255,255,0.1)}
+.ln6{background:rgba(255,255,255,0.08)}
+
+/* Multi-badge row */
+.multi-badge{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+
+/* Bottom callout */
+.callout-bottom{background:#f7f8fc;border-radius:8px;padding:16px 24px;border-left:4px solid #7a9bd4}
+.callout-bottom-body{font-size:12px;color:#374151;line-height:1.6}
+.callout-bottom strong{color:#0f1e3c}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Combined Infographic C2</div>
+    <h1>The Composer's Decision Stack</h1>
+    <div class="header-sub">The order in which to apply all three systems when writing or improvising</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="flow-stack">
+
+      <!-- Level 1 -->
+      <div class="flow-level l1">
+        <div class="flow-num ln1">1</div>
+        <div class="flow-content">
+          <div>
+            <div style="margin-bottom:6px"><span class="sys-tag sys-amf">AMF Melody</span></div>
+            <div class="flow-q">Emotional Intention</div>
+            <div class="flow-q-sub">What should this section feel like?</div>
+          </div>
+          <div>
+            <div class="flow-tool-label">Tool</div>
+            <div class="flow-tool-name">Section Design Blueprint<br><span style="font-size:10px;color:rgba(255,255,255,0.5);font-weight:400">(Sheet C2)</span></div>
+          </div>
+          <div>
+            <div class="flow-action-label">Action</div>
+            <div class="flow-action-body">Choose zone distribution target — % Sweet (Z1) / Tense (Z2) / Floating (Z3) / Bitter (Z4)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-arrow"><div class="flow-arrow-icon"></div></div>
+
+      <!-- Level 2 -->
+      <div class="flow-level l2">
+        <div class="flow-num ln2">2</div>
+        <div class="flow-content">
+          <div>
+            <div style="margin-bottom:6px"><span class="sys-tag sys-harmony">Harmony OS</span></div>
+            <div class="flow-q">Harmonic Scaffold</div>
+            <div class="flow-q-sub">What chords serve this emotional arc?</div>
+          </div>
+          <div>
+            <div class="flow-tool-label">Tool</div>
+            <div class="flow-tool-name">Diatonic chord chart +<br>Modal interchange chart</div>
+          </div>
+          <div>
+            <div class="flow-action-label">Action</div>
+            <div class="flow-action-body">Choose functional chord pool — Tonic / Subdominant / Dominant mix + any borrowed chords needed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-arrow"><div class="flow-arrow-icon"></div></div>
+
+      <!-- Level 3 -->
+      <div class="flow-level l3">
+        <div class="flow-num ln3">3</div>
+        <div class="flow-content">
+          <div>
+            <div style="margin-bottom:6px"><span class="sys-tag sys-amf">AMF Melody</span></div>
+            <div class="flow-q">Melody Zone Targets</div>
+            <div class="flow-q-sub">Which melody notes land in the right zones over these chords?</div>
+          </div>
+          <div>
+            <div class="flow-tool-label">Tool</div>
+            <div class="flow-tool-name">Every Note, Every Context<br><span style="font-size:10px;color:rgba(255,255,255,0.5);font-weight:400">(Sheet C1)</span></div>
+          </div>
+          <div>
+            <div class="flow-action-label">Action</div>
+            <div class="flow-action-body">Choose scale degrees whose zone placement matches your emotional target — check each note against each chord</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-arrow"><div class="flow-arrow-icon"></div></div>
+
+      <!-- Level 4 -->
+      <div class="flow-level l4">
+        <div class="flow-num ln4">4</div>
+        <div class="flow-content">
+          <div>
+            <div style="margin-bottom:6px"><span class="sys-tag sys-voicings">Voicings OS</span></div>
+            <div class="flow-q">Voicing Texture</div>
+            <div class="flow-q-sub">How dense or thin should the harmony be?</div>
+          </div>
+          <div>
+            <div class="flow-tool-label">Tool</div>
+            <div class="flow-tool-name">C2 column 4 +<br>Texture Spectrum (VD2)</div>
+          </div>
+          <div>
+            <div class="flow-action-label">Action</div>
+            <div class="flow-action-body">Choose guide tones / full 7ths / extended voicings based on the section's energy level and density target</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-arrow"><div class="flow-arrow-icon"></div></div>
+
+      <!-- Level 5 -->
+      <div class="flow-level l5">
+        <div class="flow-num ln5">5</div>
+        <div class="flow-content">
+          <div>
+            <div style="margin-bottom:6px"><span class="sys-tag sys-voicings">Voicings OS</span></div>
+            <div class="flow-q">Tension Selection</div>
+            <div class="flow-q-sub">Which tensions amplify what the melody is already doing?</div>
+          </div>
+          <div>
+            <div class="flow-tool-label">Tool</div>
+            <div class="flow-tool-name">Diatonic Tension Chart (VB2) +<br>Convergence Sheet (C3)</div>
+          </div>
+          <div>
+            <div class="flow-action-label">Action</div>
+            <div class="flow-action-body">Choose tensions that reinforce your melody's zone — don't fight it, amplify it. Add b9 to increase tension, 9 to add color without push.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-arrow"><div class="flow-arrow-icon"></div></div>
+
+      <!-- Level 6 -->
+      <div class="flow-level l6">
+        <div class="flow-num ln6">6</div>
+        <div class="flow-content">
+          <div>
+            <div style="margin-bottom:6px">
+              <div class="multi-badge">
+                <span class="sys-tag sys-amf">AMF</span>
+                <span class="sys-tag sys-harmony">HARMONY</span>
+                <span class="sys-tag sys-voicings">VOICINGS</span>
+              </div>
+            </div>
+            <div class="flow-q">The Note</div>
+            <div class="flow-q-sub">The final note, in its voicing position</div>
+          </div>
+          <div>
+            <div class="flow-tool-label">Tool</div>
+            <div class="flow-tool-name">Every Note, Every Context<br><span style="font-size:10px;color:rgba(255,255,255,0.5);font-weight:400">(Sheet C1)</span></div>
+          </div>
+          <div>
+            <div class="flow-action-label">Result</div>
+            <div class="flow-action-body">The note arrives already understood — you chose it for reasons, not by accident. Three systems agree on its emotional meaning.</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /flow-stack -->
+
+    <div class="callout-bottom">
+      <div class="callout-bottom-body">
+        You don't have to run through all 6 levels consciously every time. With practice, <strong>levels 3–5 become instinct</strong>. The stack is a scaffold to build on — a way of understanding why a note choice works, not a checklist to complete before playing. When you're stuck, start at Level 1 and work down.
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

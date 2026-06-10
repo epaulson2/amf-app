@@ -279,6 +279,33 @@ const SYSTEMS: System[] = [
       },
     ],
   },
+  {
+    id: 'synthesis',
+    label: 'Synthesis',
+    description: 'Cross-system documents that combine AMF Melody, Harmony OS, and Voicings OS to produce genuinely new insight. These are not module-by-module combinations — they are purpose-built references addressing gaps where all three systems together reveal something none reveals alone.',
+    color: '#f0e6ff',
+    textColor: '#4b2d8c',
+    bundlePdf: '/combined_materials.zip',
+    modules: [
+      {
+        id: 'syn-refs', label: 'Cross-System References',
+        items: [
+          { title: 'Sheet C1: Every Note, Every Context', type: 'sheet', html: '/combined_sheet_c1.html', pdf: '/combined_sheet_c1.pdf' },
+          { title: 'Sheet C2: Section Design Blueprint', type: 'sheet', html: '/combined_sheet_c2.html', pdf: '/combined_sheet_c2.pdf' },
+          { title: 'Sheet C3: Melody × Harmony Convergence', type: 'sheet', html: '/combined_sheet_c3.html', pdf: '/combined_sheet_c3.pdf' },
+          { title: 'Sheet C4: Modal Interchange Zone Shifter', type: 'sheet', html: '/combined_sheet_c4.html', pdf: '/combined_sheet_c4.pdf' },
+        ],
+      },
+      {
+        id: 'syn-infographics', label: 'Cross-System Infographics',
+        items: [
+          { title: 'Infographic C1: Three Lenses on One Note (RE over 4 chords)', type: 'infographic', html: '/combined_infographic_c1.html', pdf: '/combined_infographic_c1.pdf' },
+          { title: "Infographic C2: The Composer's Decision Stack", type: 'infographic', html: '/combined_infographic_c2.html', pdf: '/combined_infographic_c2.pdf' },
+          { title: 'Infographic C3: Zone Shift Map — Borrowed Chords in Action', type: 'infographic', html: '/combined_infographic_c3.html', pdf: '/combined_infographic_c3.pdf' },
+        ],
+      },
+    ],
+  },
 ]
 
 export default function MaterialsPage() {
