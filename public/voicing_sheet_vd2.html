@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voicings OS — +1 Voicings Decision Tree</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+
+/* Decision tree */
+.decision-tree{margin-bottom:24px}
+.dt-step{display:flex;align-items:flex-start;gap:16px;margin-bottom:12px}
+.dt-num{width:32px;height:32px;border-radius:50%;background:#0f1e3c;color:#fff;font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.dt-content{flex:1}
+.dt-question{font-size:14px;font-weight:700;color:#0f1e3c;margin-bottom:6px}
+.dt-options{display:flex;gap:8px;flex-wrap:wrap}
+.dt-option{display:inline-flex;align-items:center;justify-content:center;height:28px;padding:0 12px;border-radius:6px;font-size:11px;font-weight:700;color:#fff;background:#3F6FB6;cursor:default}
+.dt-option.green{background:#7dc48a}
+.dt-option.purple{background:#8A6BC8}
+.dt-option.amber{background:#c9a630}
+.dt-connector{margin-left:16px;height:16px;border-left:2px dashed #d1d5db}
+
+/* Piano keyboard (small) */
+.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:8px 0}
+.octave{position:relative;display:flex;height:68px}
+.wk{width:21px;height:68px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 4px 4px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:7px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
+.bk{position:absolute;width:13px;height:43px;background:#1a1a1a;border-radius:0 0 3px 3px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:6px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
+.bk.cs{left:14px}.bk.ds{left:35px}.bk.fs{left:77px}.bk.gs{left:98px}.bk.as{left:119px}
+.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
+.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
+.wk[data-color="tension"]{background:#F29B38;color:#fff;border-color:#d07a1a}
+.bk[data-color="root"]{background:#3F6FB6}
+.bk[data-color="tone"]{background:#5a9fd4}
+.bk[data-color="tension"]{background:#e08020}
+.wk .kl{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:2px;padding:1px 3px}
+.bk .kl{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:6px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:2px;padding:1px 2px}
+
+/* Example voicings */
+.examples-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.ex-card{background:#f7f8fc;border-radius:8px;padding:14px;border-top:3px solid #3F6FB6}
+.ex-card:nth-child(2){border-top-color:#7dc48a}
+.ex-card:nth-child(3){border-top-color:#8A6BC8}
+.ex-card:nth-child(4){border-top-color:#F29B38}
+.ex-name{font-size:14px;font-weight:900;color:#0f1e3c;margin-bottom:2px}
+.ex-desc{font-size:10px;color:#6b7280;margin-bottom:8px;line-height:1.3}
+.ex-spelling{font-size:10px;font-weight:700;color:#374151;font-family:monospace;background:#eef2ff;padding:3px 8px;border-radius:4px;display:inline-block;margin-top:4px}
+
+/* Legend */
+.legend{display:flex;gap:14px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:10px;color:#374151;font-weight:600}
+.legend-swatch{width:12px;height:12px;border-radius:3px}
+
+/* Final callout */
+.callout-dark{background:#0f1e3c;border-radius:8px;padding:16px 22px}
+.callout-dark-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px}
+.callout-dark-body{font-size:12px;color:#c8d8ee;line-height:1.6}
+.callout-dark strong{color:#fff}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module VD · Sheet VD2</div>
+    <h1>+1 Voicings</h1>
+    <div class="header-sub">Once voice-leading is in your hands, add ONE tension to every chord. Four questions, then play.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">The Four Questions — Answer Them in Order</div>
+    <div class="decision-tree">
+
+      <div class="dt-step">
+        <div class="dt-num">1</div>
+        <div class="dt-content">
+          <div class="dt-question">What LEFT HAND STRADDLE?</div>
+          <div class="dt-options">
+            <span class="dt-option">1 + 7</span>
+            <span class="dt-option green">1 + 9</span>
+            <span class="dt-option purple">1 + 5 + 7</span>
+            <span class="dt-option amber">1 + 6</span>
+          </div>
+        </div>
+      </div>
+      <div class="dt-connector"></div>
+
+      <div class="dt-step">
+        <div class="dt-num">2</div>
+        <div class="dt-content">
+          <div class="dt-question">FULL 7th chord or GUIDE TONES?</div>
+          <div class="dt-options">
+            <span class="dt-option">Full — R · 3 · 5 · 7</span>
+            <span class="dt-option green">Guide — R · 3 · 7</span>
+          </div>
+        </div>
+      </div>
+      <div class="dt-connector"></div>
+
+      <div class="dt-step">
+        <div class="dt-num">3</div>
+        <div class="dt-content">
+          <div class="dt-question">What POSITION based on the previous chord?</div>
+          <div class="dt-options">
+            <span class="dt-option">P1</span>
+            <span class="dt-option green">P2</span>
+            <span class="dt-option purple">P3</span>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-top:6px;font-style:italic">Should become automatic with practice — follow the P3→P2→P1 cycle (see Sheet VC1)</div>
+        </div>
+      </div>
+      <div class="dt-connector"></div>
+
+      <div class="dt-step">
+        <div class="dt-num">4</div>
+        <div class="dt-content">
+          <div class="dt-question">What available TENSION on this chord?</div>
+          <div class="dt-options">
+            <span class="dt-option amber">9</span>
+            <span class="dt-option amber">11</span>
+            <span class="dt-option amber">#11</span>
+            <span class="dt-option amber">13</span>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-top:6px;font-style:italic">Reference Sheet VB2 for the available tension on each chord</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-label">Four Example Voicings — C Major</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch" style="background:#3F6FB6"></div>Root (LH)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#6bb8e8"></div>Chord Tones</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#F29B38"></div>Tension</div>
+    </div>
+    <div class="examples-grid">
+
+      <!-- Cmaj9 P1 -->
+      <div class="ex-card">
+        <div class="ex-name">Cmaj9</div>
+        <div class="ex-desc">P1 · Full 7th · 1+7 straddle · 9 tension</div>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+            <div class="bk cs"></div>
+            <div class="wk" data-color="tension">D<span class="kl">9</span></div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div class="ex-spelling">LH: C+B &nbsp;|&nbsp; RH: E-G-B-D</div>
+      </div>
+
+      <!-- Cmaj13 P2 -->
+      <div class="ex-card">
+        <div class="ex-name">Cmaj13</div>
+        <div class="ex-desc">P2 · Full 7th · 1+9 straddle · 13 tension</div>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+            <div class="bk cs"></div>
+            <div class="wk">D</div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="bk gs"></div>
+            <div class="wk" data-color="tension">A<span class="kl">13</span></div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div class="ex-spelling">LH: C+D &nbsp;|&nbsp; RH: G-B-E-A</div>
+      </div>
+
+      <!-- Dm9 guide tones -->
+      <div class="ex-card">
+        <div class="ex-name">Dm9</div>
+        <div class="ex-desc">Guide tones · 1+7 straddle · 9 tension</div>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk" data-color="tone">C<span class="kl">b7</span></div>
+            <div class="bk cs"></div>
+            <div class="wk" data-color="root">D<span class="kl">LH</span></div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tension">E<span class="kl">9</span></div>
+            <div class="wk" data-color="tone">F<span class="kl">b3</span></div>
+            <div class="bk fs"></div>
+            <div class="wk">G</div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk">B</div>
+          </div>
+        </div>
+        <div class="ex-spelling">LH: D+C &nbsp;|&nbsp; RH: F-C-E</div>
+      </div>
+
+      <!-- Am11 guide tones -->
+      <div class="ex-card">
+        <div class="ex-name">Am11</div>
+        <div class="ex-desc">Guide tones · 1+7 straddle · 11 tension</div>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk" data-color="tone">C<span class="kl">b3</span></div>
+            <div class="bk cs"></div>
+            <div class="wk" data-color="tension">D<span class="kl">11</span></div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">5</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk" data-color="tone">G<span class="kl">b7</span></div>
+            <div class="bk gs"></div>
+            <div class="wk" data-color="root">A<span class="kl">LH</span></div>
+            <div class="bk as"></div>
+            <div class="wk">B</div>
+          </div>
+        </div>
+        <div class="ex-spelling">LH: A+G &nbsp;|&nbsp; RH: C-G-B</div>
+      </div>
+
+    </div>
+
+    <div class="callout-dark">
+      <div class="callout-dark-title">This is ONE Exercise</div>
+      <div class="callout-dark-body">Every combination from these four questions produces a beautiful, professional voicing. The options feel loose by design — <strong>gravitate toward what you like</strong>. Your ear is the judge. Master this exercise and you will sound professional immediately. The tension adds the color; the position handles the voice leading; the straddle establishes the harmonic foundation. All three working together = a complete voicing.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

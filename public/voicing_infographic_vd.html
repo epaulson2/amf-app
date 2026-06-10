@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voicings OS — The Texture Spectrum</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+
+/* Piano keyboard */
+.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:8px 0;justify-content:center}
+.octave{position:relative;display:flex;height:72px}
+.wk{width:21px;height:72px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 4px 4px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:7px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
+.bk{position:absolute;width:13px;height:45px;background:#1a1a1a;border-radius:0 0 3px 3px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:6px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
+.bk.cs{left:14px}.bk.ds{left:35px}.bk.fs{left:77px}.bk.gs{left:98px}.bk.as{left:119px}
+.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
+.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
+.wk[data-color="tension"]{background:#F29B38;color:#fff;border-color:#d07a1a}
+.wk[data-color="extra"]{background:#7dc48a;color:#fff;border-color:#5aaa6a}
+.bk[data-color="root"]{background:#3F6FB6}
+.bk[data-color="tone"]{background:#5a9fd4}
+.bk[data-color="tension"]{background:#e08020}
+.wk .kl{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:2px;padding:1px 3px}
+
+/* Spectrum bar */
+.spectrum-bar{height:12px;border-radius:6px;background:linear-gradient(90deg,#e8f0ff 0%,#6bb8e8 40%,#F29B38 70%,#7dc48a 100%);margin-bottom:6px}
+.spectrum-labels{display:flex;justify-content:space-between;font-size:10px;font-weight:700;color:#6b7280;margin-bottom:20px}
+
+/* 4-stop spectrum display */
+.spectrum-stops{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;margin-bottom:24px;position:relative}
+.spectrum-stops::before{content:'';position:absolute;top:24px;left:10%;right:10%;height:3px;background:linear-gradient(90deg,#3F6FB6,#6bb8e8,#F29B38,#7dc48a);z-index:0;border-radius:2px}
+.stop-card{background:#f7f8fc;border-radius:8px;padding:12px 10px;text-align:center;border-bottom:3px solid #3F6FB6;position:relative;z-index:1}
+.stop-card:nth-child(2){border-bottom-color:#6bb8e8}
+.stop-card:nth-child(3){border-bottom-color:#F29B38}
+.stop-card:nth-child(4){border-bottom-color:#7dc48a}
+.stop-label{font-size:8px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#9ca3af;margin-bottom:4px}
+.stop-name{font-size:13px;font-weight:900;color:#0f1e3c;margin-bottom:2px;line-height:1.2}
+.stop-formula{font-size:10px;color:#6b7280;font-family:monospace;margin-bottom:8px}
+.note-count{display:inline-flex;align-items:center;justify-content:center;height:22px;min-width:22px;padding:0 7px;border-radius:11px;font-size:10px;font-weight:700;color:#fff;background:#3F6FB6;margin-bottom:8px}
+.stop-card:nth-child(2) .note-count{background:#6bb8e8}
+.stop-card:nth-child(3) .note-count{background:#F29B38}
+.stop-card:nth-child(4) .note-count{background:#7dc48a}
+
+/* Key insights */
+.insights-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.insight-card{border-radius:8px;padding:14px 16px}
+.ic-blue{background:#d6eafc;border-left:4px solid #3F6FB6}
+.ic-amber{background:#fef3d0;border-left:4px solid #c9a630}
+.ic-title{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px}
+.ic-blue .ic-title{color:#1a5a8a}
+.ic-amber .ic-title{color:#7a5200}
+.ic-body{font-size:12px;line-height:1.5;color:#1f2937}
+.ic-body strong{font-weight:700}
+
+/* Final callout */
+.callout-dark{background:#0f1e3c;border-radius:8px;padding:16px 22px}
+.callout-dark-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px}
+.callout-dark-body{font-size:12px;color:#c8d8ee;line-height:1.6}
+.callout-dark strong{color:#fff}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module VD · Infographic</div>
+    <h1>Texture Control — From Thin to Thick</h1>
+    <div class="header-sub">Professional players don't just use more notes — they move freely across the texture spectrum with intention.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="spectrum-bar"></div>
+    <div class="spectrum-labels">
+      <span>← THIN / Advanced</span>
+      <span>FULL / Rich →</span>
+    </div>
+
+    <div class="spectrum-stops">
+
+      <!-- Stop 1: Guide Tones only -->
+      <div class="stop-card">
+        <div class="stop-label">Stop 1 — Thin</div>
+        <div class="stop-name">Guide Tones</div>
+        <div class="stop-formula">R · 3 · 7</div>
+        <span class="note-count">3 notes</span>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">R</span></div>
+            <div class="bk cs"></div>
+            <div class="wk">D</div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk">G</div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:#6b7280;margin-top:4px">Cmaj7 bare</div>
+      </div>
+
+      <!-- Stop 2: Guide Tones + 1 Tension -->
+      <div class="stop-card">
+        <div class="stop-label">Stop 2</div>
+        <div class="stop-name">Guide + Tension</div>
+        <div class="stop-formula">R · 3 · 7 · T</div>
+        <span class="note-count">4 notes</span>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">R</span></div>
+            <div class="bk cs"></div>
+            <div class="wk" data-color="tension">D<span class="kl">9</span></div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk">G</div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:#6b7280;margin-top:4px">Cmaj9</div>
+      </div>
+
+      <!-- Stop 3: Full 7th + Tension -->
+      <div class="stop-card">
+        <div class="stop-label">Stop 3</div>
+        <div class="stop-name">Full + Tension</div>
+        <div class="stop-formula">R · 3 · 5 · 7 · T</div>
+        <span class="note-count">5 notes</span>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">R</span></div>
+            <div class="bk cs"></div>
+            <div class="wk" data-color="tension">D<span class="kl">9</span></div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:#6b7280;margin-top:4px">Cmaj9 full</div>
+      </div>
+
+      <!-- Stop 4: Extended -->
+      <div class="stop-card">
+        <div class="stop-label">Stop 4 — Full</div>
+        <div class="stop-name">Extended</div>
+        <div class="stop-formula">R · 3 · 5 · 7 · 9 · 13</div>
+        <span class="note-count">6+ notes</span>
+        <div class="piano-wrap">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">R</span></div>
+            <div class="bk cs"></div>
+            <div class="wk" data-color="tension">D<span class="kl">9</span></div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="bk gs"></div>
+            <div class="wk" data-color="extra">A<span class="kl">13</span></div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:#6b7280;margin-top:4px">Cmaj13</div>
+      </div>
+
+    </div>
+
+    <div class="insights-grid">
+
+      <div class="insight-card ic-blue">
+        <div class="ic-title">Simple ≠ Beginner</div>
+        <div class="ic-body">Using <strong>3-note guide tones</strong> is not beginner playing — it's an advanced choice. Bill Evans played thin. Keith Jarrett plays thin when he wants space. Only using thick chords shows you don't yet control your texture.</div>
+      </div>
+
+      <div class="insight-card ic-amber">
+        <div class="ic-title">The Intermediate Plateau</div>
+        <div class="ic-body">Most intermediate pianists default to full chords all the time. <strong>Fluency means moving freely</strong> across the spectrum based on musical intention — not defaulting to maximum notes. Thin texture = open, spacious, modern. Thick = full, complete, rich.</div>
+      </div>
+
+    </div>
+
+    <div class="callout-dark">
+      <div class="callout-dark-title">The Real Skill</div>
+      <div class="callout-dark-body">Advanced players don't just use <strong>MORE notes</strong>. They <strong>control how thin or thick the texture is in real time</strong> based on emotional intention. A sparse two-bar phrase with thin guide tones, followed by a full chord with a 13th, creates contrast and drama. Knowing when to use each — that's the skill.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

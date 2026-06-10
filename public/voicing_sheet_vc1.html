@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voicings OS — Position Theory</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+
+/* Piano keyboard */
+.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:10px 0}
+.octave{position:relative;display:flex;height:86px}
+.wk{width:26px;height:86px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:5px;font-size:9px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
+.bk{position:absolute;width:16px;height:54px;background:#1a1a1a;border-radius:0 0 4px 4px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;font-size:8px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
+.bk.cs{left:17px}.bk.ds{left:43px}.bk.fs{left:91px}.bk.gs{left:117px}.bk.as{left:143px}
+.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
+.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
+.bk[data-color="root"]{background:#3F6FB6}
+.bk[data-color="tone"]{background:#5a9fd4}
+.wk .kl{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 4px}
+
+/* Concept box */
+.concept{background:#f4f8ff;border-radius:8px;padding:16px 20px;margin-bottom:22px;border-left:4px solid #6bb8e8}
+.concept-text{font-size:13px;color:#1f2937;line-height:1.6}
+.concept-text strong{color:#0f1e3c;font-weight:700}
+
+/* Three positions side by side */
+.position-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px}
+.pos-panel{background:#f7f8fc;border-radius:8px;padding:14px 14px 12px;text-align:center;border-top:3px solid #3F6FB6}
+.pos-panel:nth-child(2){border-top-color:#6bb8e8}
+.pos-panel:nth-child(3){border-top-color:#7dc48a}
+.pos-name{font-size:20px;font-weight:900;color:#0f1e3c;margin-bottom:2px}
+.pos-label{font-size:10px;font-weight:700;color:#7a9bd4;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px}
+.pos-spelling{font-size:13px;font-weight:700;color:#374151;margin-top:8px;font-family:monospace;background:#eef2ff;padding:4px 10px;border-radius:4px}
+.pos-rh{font-size:10px;color:#6b7280;margin-top:4px}
+
+/* Rule box */
+.rule-box{background:#0f1e3c;border-radius:8px;padding:18px 24px;margin-bottom:22px}
+.rule-box-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+.rule-text{font-size:13px;font-weight:600;color:#c8d8ee;line-height:1.6}
+.rule-text strong{color:#F29B38;font-weight:900}
+.cycle-arrow{color:#c8d8ee;font-size:22px;margin:0 8px}
+.cycle-flow{display:flex;align-items:center;justify-content:center;margin-top:10px}
+.cycle-badge{background:rgba(255,255,255,0.12);color:#fff;font-size:14px;font-weight:900;padding:6px 16px;border-radius:6px}
+
+/* Voice leading example */
+.vl-example{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;margin-bottom:0}
+.vl-chord{background:#f7f8fc;border-radius:8px;padding:14px;text-align:center}
+.vl-chord-name{font-size:15px;font-weight:900;color:#0f1e3c;margin-bottom:4px}
+.vl-pos-badge{font-size:10px;font-weight:700;color:#7a9bd4;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px}
+.vl-spelling{font-size:12px;font-weight:700;color:#374151;background:#eef2ff;padding:3px 10px;border-radius:4px;display:inline-block}
+.vl-arrow{font-size:28px;color:#9ca3af;text-align:center}
+
+/* Bottom note */
+.bottom-note{background:#fff8f0;border-left:4px solid #F29B38;border-radius:0 6px 6px 0;padding:12px 16px;margin-top:16px;font-size:12px;color:#374151;line-height:1.5}
+.bottom-note strong{color:#0f1e3c}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module VC · Sheet VC1</div>
+    <h1>Position Theory</h1>
+    <div class="header-sub">Think of any 7th chord as a TRIAD OVER A ROOT. Three positions — the foundation of smooth voice leading.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="concept">
+      <div class="concept-text">Any 7th chord = <strong>Root in the left hand</strong> + <strong>a triad on top in the right hand</strong>.<br>
+      Example: Cmaj7 = C (left hand root) + an E minor triad (E-G-B) in the right hand.<br>
+      That upper triad can sit in 3 different positions — and moving through those positions is how you voice-lead smoothly through any chord progression.</div>
+    </div>
+
+    <div class="section-label">Three Positions of Cmaj7</div>
+    <div class="position-grid">
+
+      <!-- Position 1 -->
+      <div class="pos-panel">
+        <div class="pos-name">P1</div>
+        <div class="pos-label">Root Position Triad</div>
+        <div class="piano-wrap" style="justify-content:center">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+            <div class="bk cs"></div>
+            <div class="wk">D</div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div class="pos-spelling">C · E · G · B</div>
+        <div class="pos-rh">RH: E-G-B (root position)</div>
+      </div>
+
+      <!-- Position 2 -->
+      <div class="pos-panel">
+        <div class="pos-name">P2</div>
+        <div class="pos-label">1st Inversion Triad</div>
+        <div class="piano-wrap" style="justify-content:center">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+            <div class="bk cs"></div>
+            <div class="wk">D</div>
+            <div class="bk ds"></div>
+            <div class="wk">E</div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div style="position:relative">
+          <div class="piano-wrap" style="justify-content:center;margin-top:2px">
+            <div class="octave">
+              <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+              <div class="bk cs"></div>
+              <div class="wk">D</div>
+              <div class="bk ds"></div>
+              <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="pos-spelling">C · G · B · E</div>
+        <div class="pos-rh">RH: G-B-E (1st inv)</div>
+      </div>
+
+      <!-- Position 3 -->
+      <div class="pos-panel">
+        <div class="pos-name">P3</div>
+        <div class="pos-label">2nd Inversion Triad</div>
+        <div class="piano-wrap" style="justify-content:center">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+            <div class="bk cs"></div>
+            <div class="wk">D</div>
+            <div class="bk ds"></div>
+            <div class="wk">E</div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk">G</div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div style="position:relative">
+          <div class="piano-wrap" style="justify-content:center;margin-top:2px">
+            <div class="octave">
+              <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+              <div class="bk cs"></div>
+              <div class="wk">D</div>
+              <div class="bk ds"></div>
+              <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+              <div class="wk">F</div>
+              <div class="bk fs"></div>
+              <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="pos-spelling">C · B · E · G</div>
+        <div class="pos-rh">RH: B-E-G (2nd inv)</div>
+      </div>
+
+    </div>
+
+    <div class="rule-box">
+      <div class="rule-box-title">Voice Leading Rule Through Cycle 5</div>
+      <div class="rule-text">When chord roots move in ascending 4ths (Cycle 5), follow this pattern — it minimizes voice movement:</div>
+      <div class="cycle-flow" style="margin-top:12px">
+        <div class="cycle-badge">P3</div>
+        <span class="cycle-arrow">→</span>
+        <div class="cycle-badge">P2</div>
+        <span class="cycle-arrow">→</span>
+        <div class="cycle-badge">P1</div>
+        <span class="cycle-arrow">→</span>
+        <div class="cycle-badge">P3</div>
+        <span class="cycle-arrow">→</span>
+        <div class="cycle-badge">P2</div>
+        <span class="cycle-arrow">→</span>
+        <div class="cycle-badge">P1</div>
+        <span class="cycle-arrow">→ ···</span>
+      </div>
+    </div>
+
+    <div class="section-label">Example — Cmaj7 → Fmaj7 (Ascending 4th)</div>
+    <div class="vl-example">
+      <div class="vl-chord">
+        <div class="vl-chord-name">Cmaj7</div>
+        <div class="vl-pos-badge">Position 1</div><br>
+        <div class="piano-wrap" style="justify-content:center">
+          <div class="octave">
+            <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+            <div class="bk cs"></div>
+            <div class="wk">D</div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
+            <div class="wk">F</div>
+            <div class="bk fs"></div>
+            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="bk gs"></div>
+            <div class="wk">A</div>
+            <div class="bk as"></div>
+            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+          </div>
+        </div>
+        <div class="vl-spelling">C · E · G · B</div>
+      </div>
+      <div class="vl-arrow">→</div>
+      <div class="vl-chord">
+        <div class="vl-chord-name">Fmaj7</div>
+        <div class="vl-pos-badge">Position 3</div><br>
+        <div class="piano-wrap" style="justify-content:center">
+          <div class="octave">
+            <div class="wk" data-color="tone">C<span class="kl">5</span></div>
+            <div class="bk cs"></div>
+            <div class="wk">D</div>
+            <div class="bk ds"></div>
+            <div class="wk" data-color="tone">E<span class="kl">7</span></div>
+            <div class="wk" data-color="root">F<span class="kl">LH</span></div>
+            <div class="bk fs"></div>
+            <div class="wk">G</div>
+            <div class="bk gs"></div>
+            <div class="wk" data-color="tone">A<span class="kl">3</span></div>
+            <div class="bk as"></div>
+            <div class="wk">B</div>
+          </div>
+        </div>
+        <div class="vl-spelling">F · E · A · C</div>
+      </div>
+    </div>
+
+    <div class="bottom-note"><strong>Notice:</strong> E stays put (common tone), G moves to A (half step), B moves to C (half step). Three notes move by step or stay — this is smooth voice leading. When roots move in 4ths, adjacent positions minimize voice movement automatically.</div>
+
+  </div>
+</div>
+</body>
+</html>

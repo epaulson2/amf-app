@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voicings OS — Grace Notes</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+
+/* Piano keyboard */
+.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:10px 0}
+.octave{position:relative;display:flex;height:80px}
+.wk{width:24px;height:80px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 4px 4px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;font-size:8px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
+.bk{position:absolute;width:15px;height:50px;background:#1a1a1a;border-radius:0 0 3px 3px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:7px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
+.bk.cs{left:16px}.bk.ds{left:40px}.bk.fs{left:88px}.bk.gs{left:112px}.bk.as{left:136px}
+.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
+.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
+.wk[data-color="grace"]{background:#F29B38;color:#fff;border-color:#d07a1a}
+.wk[data-color="target"]{background:#7dc48a;color:#fff;border-color:#5aaa6a}
+.bk[data-color="grace"]{background:#e08020}
+.bk[data-color="target"]{background:#5aaa6a}
+.wk .kl{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 4px}
+.bk .kl{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 3px}
+
+/* Quality sections */
+.quality-section{border-radius:8px;padding:16px 20px;margin-bottom:16px}
+.qs-major{background:#d6eafc}
+.qs-minor{background:#ede9fe}
+.qs-dom{background:#fef3d0}
+.qs-title{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}
+.qs-title span{font-size:12px;color:#374151;font-weight:400;letter-spacing:0;text-transform:none}
+.qs-major .qs-title{color:#1a5a8a}
+.qs-minor .qs-title{color:#4b2d8c}
+.qs-dom .qs-title{color:#7a5200}
+
+/* Grace note rows within quality sections */
+.gn-row{display:flex;align-items:center;gap:16px;margin-bottom:12px}
+.gn-row:last-of-type{margin-bottom:0}
+.gn-keyboard{flex-shrink:0}
+.gn-desc{flex:1}
+.gn-motion{font-size:13px;font-weight:700;color:#0f1e3c;margin-bottom:2px}
+.gn-arrow-badge{display:inline-flex;align-items:center;gap:6px;margin-bottom:4px}
+.from-badge{display:inline-flex;align-items:center;justify-content:center;height:22px;padding:0 9px;border-radius:11px;font-size:11px;font-weight:700;color:#fff;background:#F29B38}
+.to-badge{display:inline-flex;align-items:center;justify-content:center;height:22px;padding:0 9px;border-radius:11px;font-size:11px;font-weight:700;color:#fff;background:#7dc48a}
+.gn-context{font-size:11px;color:#555;line-height:1.4}
+.motion-arrow{font-size:16px;color:#9ca3af}
+
+/* Summary badge */
+.summary-badge{display:inline-flex;align-items:center;gap:8px;margin-top:8px;background:rgba(0,0,0,0.08);padding:6px 12px;border-radius:6px;font-size:12px;font-weight:700;color:#0f1e3c}
+
+/* Callout */
+.callout{background:#0f1e3c;border-radius:8px;padding:16px 22px;margin-top:4px}
+.callout-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:8px}
+.callout-body{font-size:12px;color:#c8d8ee;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module VD · Sheet VD1</div>
+    <h1>Grace Notes</h1>
+    <div class="header-sub">Chromatic approach tones that add expression and flavor at the onset of chord tones.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="section-label">What a Grace Note Is</div>
+    <p style="font-size:13px;color:#374151;line-height:1.6;margin-bottom:20px">A grace note quickly plays a note <em>leading into</em> a chord tone at the onset of the chord — like a brief approach that resolves immediately into the target note. It adds expression, bluesy feel, and life to chord attacks. Three patterns cover 90% of situations.</p>
+
+    <!-- MAJOR / MAJ7 -->
+    <div class="quality-section qs-major">
+      <div class="qs-title">Major &amp; Maj7 Chords <span>— Cmaj7, Fmaj7, etc.</span></div>
+
+      <div class="gn-row">
+        <div class="gn-keyboard">
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk" data-color="root">C</div>
+              <div class="bk cs"></div>
+              <div class="wk" data-color="grace">D<span class="kl">→</span></div>
+              <div class="bk ds"></div>
+              <div class="wk" data-color="target">E<span class="kl">3rd</span></div>
+              <div class="wk">F</div>
+              <div class="bk fs"></div>
+              <div class="wk">G</div>
+            </div>
+          </div>
+        </div>
+        <div class="gn-desc">
+          <div class="gn-arrow-badge">
+            <span class="from-badge">2</span>
+            <span class="motion-arrow">→</span>
+            <span class="to-badge">3</span>
+          </div>
+          <div class="gn-motion">D slides into E</div>
+          <div class="gn-context">Approach the major 3rd from below by one whole step. Bright, jazzy grace — creates a lift into the chord.</div>
+        </div>
+      </div>
+
+      <div class="gn-row">
+        <div class="gn-keyboard">
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk" data-color="root">C</div>
+              <div class="bk cs"></div>
+              <div class="wk">D</div>
+              <div class="bk ds"></div>
+              <div class="wk" data-color="tone">E</div>
+              <div class="wk">F</div>
+              <div class="bk fs"></div>
+              <div class="wk">G</div>
+              <div class="bk gs"></div>
+              <div class="wk" data-color="grace">A<span class="kl">→</span></div>
+              <div class="bk as"></div>
+              <div class="wk" data-color="target">B<span class="kl">7th</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="gn-desc">
+          <div class="gn-arrow-badge">
+            <span class="from-badge">6</span>
+            <span class="motion-arrow">→</span>
+            <span class="to-badge">7</span>
+          </div>
+          <div class="gn-motion">A slides into B</div>
+          <div class="gn-context">Approach the major 7th from below by one whole step. Soulful, warm feel — works especially well in slow ballads.</div>
+        </div>
+      </div>
+
+      <div class="summary-badge">2 → 3 &nbsp;&nbsp; or &nbsp;&nbsp; 6 → 7</div>
+    </div>
+
+    <!-- MINOR / MIN7 -->
+    <div class="quality-section qs-minor">
+      <div class="qs-title">Minor &amp; Min7 Chords <span>— Dm7, Am7, Cm7, etc.</span></div>
+
+      <div class="gn-row">
+        <div class="gn-keyboard">
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk" data-color="root">C</div>
+              <div class="bk cs"></div>
+              <div class="wk" data-color="grace">D<span class="kl">→</span></div>
+              <div class="bk ds"></div>
+              <div class="wk" data-color="target" style="background:#8A6BC8;border-color:#6a4ba8">Eb<span class="kl">b3</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="gn-desc">
+          <div class="gn-arrow-badge">
+            <span class="from-badge">2</span>
+            <span class="motion-arrow">→</span>
+            <span class="to-badge" style="background:#8A6BC8">b3</span>
+          </div>
+          <div class="gn-motion">D slides into Eb (on Cm7)</div>
+          <div class="gn-context">Whole step approach into the minor 3rd. Captures the blues tension between major and minor. Most expressive minor grace.</div>
+        </div>
+      </div>
+
+      <div class="gn-row">
+        <div class="gn-keyboard">
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk" data-color="root">C</div>
+              <div class="bk cs"></div>
+              <div class="wk">D</div>
+              <div class="bk ds"></div>
+              <div class="wk">Eb</div>
+              <div class="wk" data-color="grace">F<span class="kl">→</span></div>
+              <div class="bk fs"></div>
+              <div class="wk" data-color="target">G<span class="kl">5th</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="gn-desc">
+          <div class="gn-arrow-badge">
+            <span class="from-badge">4</span>
+            <span class="motion-arrow">→</span>
+            <span class="to-badge">5</span>
+          </div>
+          <div class="gn-motion">F slides into G</div>
+          <div class="gn-context">Approach the 5th from below by a whole step. Slightly more subtle — adds rhythmic articulation without the blues flavor.</div>
+        </div>
+      </div>
+
+      <div class="summary-badge">2 → b3 &nbsp;&nbsp; or &nbsp;&nbsp; 4 → 5</div>
+    </div>
+
+    <!-- DOMINANT -->
+    <div class="quality-section qs-dom">
+      <div class="qs-title">Dominant Chords <span>— G7, C7, F7, etc.</span></div>
+
+      <div class="gn-row">
+        <div class="gn-keyboard">
+          <div class="piano-wrap">
+            <div class="octave">
+              <div class="wk" data-color="root">C</div>
+              <div class="bk cs"></div>
+              <div class="wk">D</div>
+              <div class="bk ds" data-color="grace"><span class="kl">b3 →</span></div>
+              <div class="wk" data-color="target">E<span class="kl">3rd</span></div>
+              <div class="wk">F</div>
+              <div class="bk fs"></div>
+              <div class="wk">G</div>
+            </div>
+          </div>
+        </div>
+        <div class="gn-desc">
+          <div class="gn-arrow-badge">
+            <span class="from-badge">b3</span>
+            <span class="motion-arrow">→</span>
+            <span class="to-badge">3</span>
+          </div>
+          <div class="gn-motion">Eb slides into E (on C7)</div>
+          <div class="gn-context">The blues grace note — approaching the major 3rd from a half step below using the flat third. This is THE characteristic dominant blues move. Sounds like classic R&amp;B and blues piano.</div>
+        </div>
+      </div>
+
+      <div class="summary-badge">b3 → 3 &nbsp;&nbsp; (the blues grace)</div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Why Grace Notes Work</div>
+      <div class="callout-body">Grace notes are chromatic approach tones. They work because the ear hears the <em>motion into</em> the chord tone — not the dissonance of the passing note itself. The faster the grace note, the stronger the arrival on the chord tone feels. Use them at chord attacks for color, not as sustained notes.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

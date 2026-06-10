@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voicings OS — Modal Interchange Tension System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:28px 40px 32px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+
+/* Piano keyboard */
+.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:10px 0}
+.octave{position:relative;display:flex;height:84px}
+.wk{width:25px;height:84px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;font-size:8px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
+.bk{position:absolute;width:15px;height:52px;background:#1a1a1a;border-radius:0 0 4px 4px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:7px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
+.bk.cs{left:17px}.bk.ds{left:42px}.bk.fs{left:92px}.bk.gs{left:117px}.bk.as{left:142px}
+.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
+.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
+.wk[data-color="tension"]{background:#F29B38;color:#fff;border-color:#d07a1a}
+.bk[data-color="root"]{background:#3F6FB6}
+.bk[data-color="tone"]{background:#5a9fd4}
+.bk[data-color="tension"]{background:#e08020}
+.wk .kl{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 4px}
+.bk .kl{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 3px}
+
+/* Rule box */
+.rule-box{background:#0f1e3c;border-radius:8px;padding:18px 24px;margin-bottom:22px}
+.rule-box-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+.rule-steps{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rs-step{background:rgba(255,255,255,0.1);color:#fff;font-size:12px;font-weight:700;padding:6px 14px;border-radius:6px}
+.rs-arrow{color:#7a9bd4;font-size:16px}
+
+/* Walkthrough box */
+.walkthrough{background:#f4f0ff;border-radius:8px;padding:18px 22px;margin-bottom:22px;border-left:4px solid #8A6BC8}
+.wt-title{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4b2d8c;margin-bottom:12px}
+.wt-step{display:flex;align-items:baseline;gap:10px;margin-bottom:8px;font-size:12px;color:#374151;line-height:1.5}
+.wt-label{font-size:9px;font-weight:700;color:#8A6BC8;text-transform:uppercase;letter-spacing:0.08em;min-width:100px;flex-shrink:0}
+.wt-value{flex:1}
+.wt-value strong{color:#0f1e3c;font-weight:700}
+
+/* Reference table */
+table{width:100%;border-collapse:collapse;margin-bottom:22px}
+thead tr{background:#0f1e3c}
+thead th{padding:9px 12px;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8faacc;text-align:left}
+tbody tr{border-bottom:1px solid #eee}
+tbody td{padding:9px 12px;font-size:11px;color:#1f2937;vertical-align:middle}
+tbody tr:last-child{border-bottom:none}
+tbody tr:nth-child(even){background:#f9fafb}
+.mi-badge{background:#ede9fe;color:#4b2d8c;font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px}
+.fn-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px}
+.fn-tonic{color:#1a5a8a;background:#d6eafc}
+.fn-sub{color:#1e6b42;background:#d9f5e4}
+.fn-dom{color:#7a5200;background:#fef3d0}
+.t-pill{display:inline-flex;align-items:center;justify-content:center;height:20px;padding:0 7px;border-radius:10px;font-size:10px;font-weight:700;color:#fff;background:#F29B38;margin-right:2px}
+
+/* Keyboard example */
+.keyboard-example{background:#f7f8fc;border-radius:8px;padding:16px 20px;margin-bottom:16px}
+.ke-title{font-size:11px;font-weight:700;color:#0f1e3c;margin-bottom:4px}
+.ke-sub{font-size:10px;color:#6b7280;margin-bottom:8px}
+.legend-row{display:flex;gap:14px;align-items:center;margin-top:8px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:10px;color:#374151;font-weight:600}
+.legend-swatch{width:12px;height:12px;border-radius:2px}
+
+/* Callout */
+.callout{background:#fff8f0;border-left:4px solid #F29B38;border-radius:0 6px 6px 0;padding:12px 16px;margin-top:4px}
+.callout-body{font-size:12px;color:#374151;line-height:1.5}
+.callout-body strong{color:#0f1e3c}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module VE · Sheet VE1</div>
+    <h1>MI Tension System</h1>
+    <div class="header-sub">Modal interchange chords don't need a new tension set — use parent-key logic instead.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="rule-box">
+      <div class="rule-box-title">The Parent-Key Rule</div>
+      <div class="rule-steps">
+        <div class="rs-step">What mode am I borrowing from?</div>
+        <div class="rs-arrow">→</div>
+        <div class="rs-step">Find its RELATIVE MAJOR (parent key)</div>
+        <div class="rs-arrow">→</div>
+        <div class="rs-step">Use THAT key's tension sets</div>
+      </div>
+    </div>
+
+    <div class="walkthrough">
+      <div class="wt-title">Walkthrough — Borrowing from C Minor (Parallel Minor of C)</div>
+      <div class="wt-step"><span class="wt-label">Borrowing from:</span><div class="wt-value">Parallel minor of C = <strong>C minor</strong></div></div>
+      <div class="wt-step"><span class="wt-label">Parent key:</span><div class="wt-value">Relative major of C minor = <strong>E♭ major</strong> (3 flats)</div></div>
+      <div class="wt-step"><span class="wt-label">Therefore:</span><div class="wt-value">Use <strong>E♭ major's tension sets</strong> for all borrowed chords</div></div>
+      <div class="wt-step"><span class="wt-label">Example 1:</span><div class="wt-value"><strong>A♭maj7 (bVImaj7 in C)</strong> = IVmaj7 in E♭ → available tensions: 9, #11, 13</div></div>
+      <div class="wt-step"><span class="wt-label">Example 2:</span><div class="wt-value"><strong>Fm7 (iv-7 in C)</strong> = ii-7 in E♭ → available tensions: 9, 11</div></div>
+      <div class="wt-step"><span class="wt-label">Example 3:</span><div class="wt-value"><strong>B♭7 (bVII7 in C)</strong> = V7 in E♭ → available tensions: 9, 13</div></div>
+    </div>
+
+    <div class="section-label">Parent Key Reference — Most Common MI Sources</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Mode Borrowed</th>
+          <th>Parent Key</th>
+          <th>Example Chord in C</th>
+          <th>Parent Function</th>
+          <th>Available Tensions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="mi-badge">Parallel Minor</span></td>
+          <td><strong>E♭ major</strong></td>
+          <td><strong>A♭maj7</strong> (bVImaj7)</td>
+          <td><span class="fn-badge fn-sub">IVmaj7 in E♭</span></td>
+          <td><span class="t-pill">9</span><span class="t-pill">#11</span><span class="t-pill">13</span></td>
+        </tr>
+        <tr>
+          <td><span class="mi-badge">Parallel Minor</span></td>
+          <td><strong>E♭ major</strong></td>
+          <td><strong>Fm7</strong> (iv-7)</td>
+          <td><span class="fn-badge fn-sub">ii-7 in E♭</span></td>
+          <td><span class="t-pill">9</span><span class="t-pill">11</span></td>
+        </tr>
+        <tr>
+          <td><span class="mi-badge">Parallel Minor</span></td>
+          <td><strong>E♭ major</strong></td>
+          <td><strong>B♭7</strong> (bVII7)</td>
+          <td><span class="fn-badge fn-dom">V7 in E♭</span></td>
+          <td><span class="t-pill">9</span><span class="t-pill">13</span></td>
+        </tr>
+        <tr>
+          <td><span class="mi-badge">Parallel Minor</span></td>
+          <td><strong>E♭ major</strong></td>
+          <td><strong>E♭maj7</strong> (bIIImaj7)</td>
+          <td><span class="fn-badge fn-tonic">Imaj7 in E♭</span></td>
+          <td><span class="t-pill">9</span><span class="t-pill">13</span></td>
+        </tr>
+        <tr>
+          <td><span class="mi-badge">Lydian</span></td>
+          <td><strong>C major</strong></td>
+          <td><strong>D7</strong> (II7)</td>
+          <td><span class="fn-badge fn-dom">V7/V in C</span></td>
+          <td><span class="t-pill">9</span><span class="t-pill">13</span></td>
+        </tr>
+        <tr>
+          <td><span class="mi-badge">Mixolydian</span></td>
+          <td><strong>F major</strong></td>
+          <td><strong>B♭</strong> (bVII)</td>
+          <td><span class="fn-badge fn-sub">IVmaj7 in F</span></td>
+          <td><span class="t-pill">9</span><span class="t-pill">#11</span><span class="t-pill">13</span></td>
+        </tr>
+        <tr>
+          <td><span class="mi-badge">Phrygian</span></td>
+          <td><strong>A♭ major</strong></td>
+          <td><strong>D♭maj7</strong> (bII)</td>
+          <td><span class="fn-badge fn-sub">IVmaj7 in A♭</span></td>
+          <td><span class="t-pill">9</span><span class="t-pill">#11</span><span class="t-pill">13</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="keyboard-example">
+      <div class="ke-title">A♭maj7 in C major — Tensions from E♭ major (IVmaj7 logic)</div>
+      <div class="ke-sub">Chord tones: A♭ · C · E♭ · G. Available tensions: B♭ (9), D (nat13 / #11), F (13)</div>
+      <div class="piano-wrap">
+        <div class="octave">
+          <div class="wk" data-color="tone">C<span class="kl">3rd</span></div>
+          <div class="bk cs"></div>
+          <div class="wk" data-color="tension">D<span class="kl">#11</span></div>
+          <div class="bk ds"></div>
+          <div class="wk" data-color="tone">Eb<span class="kl">5th</span></div>
+          <div class="wk" data-color="tension">F<span class="kl">13</span></div>
+          <div class="bk fs"></div>
+          <div class="wk" data-color="tone">G<span class="kl">7th</span></div>
+          <div class="bk gs" data-color="root"><span class="kl">Root</span></div>
+          <div class="wk">A</div>
+          <div class="bk as" data-color="tension"><span class="kl">9th</span></div>
+          <div class="wk">B</div>
+        </div>
+      </div>
+      <div class="legend-row">
+        <div class="legend-item"><div class="legend-swatch" style="background:#3F6FB6"></div>Root (A♭)</div>
+        <div class="legend-item"><div class="legend-swatch" style="background:#6bb8e8"></div>Chord Tones</div>
+        <div class="legend-item"><div class="legend-swatch" style="background:#F29B38"></div>Available Tensions (9, #11, 13)</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-body"><strong>This logic works for ALL modes</strong> — just find the relative major (parent key) and look up what function the borrowed chord performs there. The whole-step rule still applies within the parent key. You never need to memorize a new tension set for modal interchange.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

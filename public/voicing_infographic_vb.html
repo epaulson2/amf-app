@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voicings OS — Diatonic Tensions Visual Map</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:850px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f1e3c;padding:26px 40px 22px}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;color:#7a9bd4;text-transform:uppercase;margin-bottom:6px}
+.header h1{font-size:28px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:12px;color:#8faacc;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#5aacdf 0%,#7dc48a 25%,#F29B38 55%,#8A6BC8 80%,#c9a630 100%)}
+.body{padding:24px 40px 28px}
+.section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
+
+/* 2-octave piano — full width */
+.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:12px 0;justify-content:center}
+.octave{position:relative;display:flex;height:90px}
+.wk{width:28px;height:90px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:5px;font-size:9px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
+.bk{position:absolute;width:17px;height:56px;background:#1a1a1a;border-radius:0 0 4px 4px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;font-size:8px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
+.bk.cs{left:19px}.bk.ds{left:47px}.bk.fs{left:103px}.bk.gs{left:131px}.bk.as{left:159px}
+.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
+.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
+.wk[data-color="tension"]{background:#F29B38;color:#fff;border-color:#d07a1a}
+.wk[data-color="avoid"]{background:#d97b6a;color:#fff;border-color:#b85a4a}
+.bk[data-color="root"]{background:#3F6FB6}
+.bk[data-color="tone"]{background:#5a9fd4}
+.bk[data-color="tension"]{background:#e08020}
+.wk .kl{position:absolute;top:-24px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 4px}
+.bk .kl{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 3px}
+
+/* Legend */
+.legend{display:flex;gap:18px;align-items:center;margin-bottom:14px;justify-content:center}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:#374151;font-weight:600}
+.legend-swatch{width:14px;height:14px;border-radius:3px}
+
+/* Chord-note grid below keyboard */
+.note-map{margin:20px 0;border-radius:8px;overflow:hidden;border:1px solid #e5e7eb}
+.nm-header{display:grid;grid-template-columns:80px repeat(14,1fr);background:#0f1e3c}
+.nm-header div{padding:6px 4px;font-size:9px;font-weight:700;color:#8faacc;text-align:center;border-right:1px solid rgba(255,255,255,0.08)}
+.nm-header div:last-child{border-right:none}
+.nm-row{display:grid;grid-template-columns:80px repeat(14,1fr);border-bottom:1px solid #f0f0f0}
+.nm-row:last-child{border-bottom:none}
+.nm-row:nth-child(even){background:#f9fafb}
+.nm-label{padding:8px 8px;font-size:11px;font-weight:700;color:#0f1e3c;display:flex;align-items:center;border-right:1px solid #e5e7eb}
+.nm-cell{padding:4px 2px;display:flex;align-items:center;justify-content:center;border-right:1px solid #f0f0f0}
+.nm-cell:last-child{border-right:none}
+.cell-root{width:20px;height:20px;border-radius:50%;background:#3F6FB6;font-size:8px;font-weight:900;color:#fff;display:flex;align-items:center;justify-content:center}
+.cell-tone{width:20px;height:20px;border-radius:50%;background:#6bb8e8;font-size:8px;font-weight:900;color:#fff;display:flex;align-items:center;justify-content:center}
+.cell-tension{width:20px;height:20px;border-radius:3px;background:#F29B38;font-size:7px;font-weight:900;color:#fff;display:flex;align-items:center;justify-content:center}
+.cell-avoid{width:20px;height:20px;border-radius:3px;background:#d97b6a;font-size:7px;font-weight:700;color:#fff;display:flex;align-items:center;justify-content:center}
+.cell-empty{width:20px;height:20px}
+
+/* Insight callout */
+.insight{background:#fff8f0;border-left:4px solid #F29B38;border-radius:0 6px 6px 0;padding:14px 18px;margin-top:16px}
+.insight-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#d07a1a;margin-bottom:6px}
+.insight-body{font-size:12px;color:#374151;line-height:1.6}
+.insight-body strong{color:#0f1e3c}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="module-tag">Module VB · Infographic</div>
+    <h1>Diatonic Tension System — C Major</h1>
+    <div class="header-sub">Which notes are available tensions on each chord — all 7 diatonic chords at a glance.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+  <div class="body">
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch" style="background:#3F6FB6"></div>Root</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#6bb8e8"></div>Chord Tone</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#F29B38;border-radius:3px"></div>Available Tension</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#d97b6a;border-radius:3px"></div>Avoid Note</div>
+    </div>
+
+    <!-- 2-octave piano showing C major scale -->
+    <div class="piano-wrap">
+      <!-- Octave 1 (showing all tensions from Cmaj7) -->
+      <div class="octave">
+        <div class="wk" data-color="root">C<span class="kl">C</span></div>
+        <div class="bk cs"></div>
+        <div class="wk" data-color="tension">D<span class="kl">D</span></div>
+        <div class="bk ds"></div>
+        <div class="wk" data-color="tone">E<span class="kl">E</span></div>
+        <div class="wk" data-color="avoid">F<span class="kl">F</span></div>
+        <div class="bk fs"></div>
+        <div class="wk" data-color="tone">G<span class="kl">G</span></div>
+        <div class="bk gs"></div>
+        <div class="wk" data-color="tension">A<span class="kl">A</span></div>
+        <div class="bk as"></div>
+        <div class="wk" data-color="tone">B<span class="kl">B</span></div>
+      </div>
+      <!-- Octave 2 -->
+      <div class="octave">
+        <div class="wk" data-color="root">C<span class="kl">C</span></div>
+        <div class="bk cs"></div>
+        <div class="wk" data-color="tension">D<span class="kl">D</span></div>
+        <div class="bk ds"></div>
+        <div class="wk" data-color="tone">E<span class="kl">E</span></div>
+        <div class="wk" data-color="avoid">F<span class="kl">F</span></div>
+        <div class="bk fs"></div>
+        <div class="wk" data-color="tone">G<span class="kl">G</span></div>
+        <div class="bk gs"></div>
+        <div class="wk" data-color="tension">A<span class="kl">A</span></div>
+        <div class="bk as"></div>
+        <div class="wk" data-color="tone">B<span class="kl">B</span></div>
+      </div>
+    </div>
+
+    <div class="section-label" style="margin-top:18px">Tension Map — C Major All 7 Chords</div>
+
+    <!-- Note map grid -->
+    <div class="note-map">
+      <div class="nm-header">
+        <div>Chord</div>
+        <div>C</div><div>D</div><div>E</div><div>F</div><div>G</div><div>A</div><div>B</div>
+        <div>9</div><div>11</div><div>#11</div><div>13</div><div>b9</div><div>b13</div><div>Avoid</div>
+      </div>
+      <!-- Cmaj7 -->
+      <div class="nm-row">
+        <div class="nm-label" style="font-size:10px">Cmaj7<br><span style="color:#7a9bd4;font-size:9px">Imaj7</span></div>
+        <div class="nm-cell"><div class="cell-root">R</div></div>
+        <div class="nm-cell"><div class="cell-tension">9✓</div></div>
+        <div class="nm-cell"><div class="cell-tone">3</div></div>
+        <div class="nm-cell"><div class="cell-avoid">4✗</div></div>
+        <div class="nm-cell"><div class="cell-tone">5</div></div>
+        <div class="nm-cell"><div class="cell-tension">13✓</div></div>
+        <div class="nm-cell"><div class="cell-tone">7</div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-avoid">F</div></div>
+      </div>
+      <!-- Dm7 -->
+      <div class="nm-row">
+        <div class="nm-label" style="font-size:10px">Dm7<br><span style="color:#7a9bd4;font-size:9px">ii-7</span></div>
+        <div class="nm-cell"><div class="cell-tone">7</div></div>
+        <div class="nm-cell"><div class="cell-root">R</div></div>
+        <div class="nm-cell"><div class="cell-tension">9✓</div></div>
+        <div class="nm-cell"><div class="cell-tone">b3</div></div>
+        <div class="nm-cell"><div class="cell-tension">11✓</div></div>
+        <div class="nm-cell"><div class="cell-tone">5</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty">—</div></div>
+      </div>
+      <!-- Fmaj7 -->
+      <div class="nm-row">
+        <div class="nm-label" style="font-size:10px">Fmaj7<br><span style="color:#7a9bd4;font-size:9px">IVmaj7</span></div>
+        <div class="nm-cell"><div class="cell-tone">5</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-tone">7</div></div>
+        <div class="nm-cell"><div class="cell-root">R</div></div>
+        <div class="nm-cell"><div class="cell-tension">9✓</div></div>
+        <div class="nm-cell"><div class="cell-tone">3</div></div>
+        <div class="nm-cell"><div class="cell-tension">#11✓</div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty">—</div></div>
+      </div>
+      <!-- G7 -->
+      <div class="nm-row">
+        <div class="nm-label" style="font-size:10px">G7<br><span style="color:#7a9bd4;font-size:9px">V7</span></div>
+        <div class="nm-cell"><div class="cell-avoid">4✗</div></div>
+        <div class="nm-cell"><div class="cell-tone">5</div></div>
+        <div class="nm-cell"><div class="cell-tension">13✓</div></div>
+        <div class="nm-cell"><div class="cell-tone">b7</div></div>
+        <div class="nm-cell"><div class="cell-root">R</div></div>
+        <div class="nm-cell"><div class="cell-tension">9✓</div></div>
+        <div class="nm-cell"><div class="cell-tone">3</div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-tension">✓</div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-empty"></div></div>
+        <div class="nm-cell"><div class="cell-avoid">C</div></div>
+      </div>
+    </div>
+
+    <div class="insight">
+      <div class="insight-title">Key Insight — Context Determines Everything</div>
+      <div class="insight-body">The note <strong>D</strong> is an available tension (9th) on Cmaj7, ii-7, and IVmaj7 — but it is the <strong>ROOT</strong> of Dm7. The same physical key means completely different things depending on which chord is sounding underneath it. This is why tension theory requires knowing the chord function, not just the note name.</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
