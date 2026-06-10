@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhythm Code OS — The Son Clave: Rhythm That Conquered the World</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1200px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f172a;padding:26px 48px 22px}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:10px}
+.header h1{font-size:28px;font-weight:900;color:#fff;text-transform:uppercase}
+.header-sub{font-size:13px;color:#94a3b8;margin-top:6px}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.body{padding:28px 48px 32px;background:#fef3d0}
+.section-label{font-size:9px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#78350f;margin-bottom:10px}
+.card{background:#fff;border-radius:8px;padding:18px 22px;border:1px solid #fde68a;margin-bottom:20px}
+.grid-wrap{display:inline-block}
+.grid-row{display:flex;gap:3px;margin-bottom:2px}
+.grid-cell{width:36px;height:36px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;border:2px solid transparent}
+.cell-db{background:#1e3a5f;border-color:#3F6FB6;color:#3F6FB6}
+.cell-ub{background:#1e293b;border-color:#475569;color:#475569}
+.cell-clave{background:#ea580c;color:#fff;border-color:#ea580c}
+.cell-tresillo{background:#F29B38;color:#fff;border-color:#F29B38}
+.cell-label{font-size:10px;color:#64748b;text-align:center;min-width:36px;padding-top:3px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:20px}
+.clave-viz{display:flex;gap:24px;align-items:flex-start;margin-bottom:16px}
+.measure-block{text-align:center}
+.measure-title{font-size:9px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#78350f;margin-bottom:6px}
+.divider{width:2px;background:#fde68a;border-radius:2px;margin:8px 4px}
+.callout{background:#fde8d8;border-left:4px solid #ea580c;border-radius:8px;padding:16px 20px;margin-bottom:20px}
+.callout-title{font-size:10px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:#9a3412;margin-bottom:8px}
+.callout-text{font-size:13px;color:#431407;line-height:1.6}
+.variation-card{background:#fff;border-radius:8px;padding:14px 16px;border:1px solid #fde68a;border-top:3px solid #ea580c}
+.var-title{font-size:12px;font-weight:800;color:#1f2937;margin-bottom:6px}
+.var-sub{font-size:11px;color:#6b7280;line-height:1.4}
+.footer-tag{text-align:center;padding:14px;background:#0f172a}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="system-tag">Rhythm Code OS · Module C</div>
+    <h1>The Son Clave: Rhythm That Conquered the World</h1>
+    <div class="header-sub">A 5-note pattern found in every genre from salsa to metal — the mathematical foundation of groove</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- Tresillo -->
+    <p class="section-label">Step 1: The Tresillo — Building Block</p>
+    <div class="card" style="margin-bottom:20px">
+      <p style="font-size:14px;font-weight:700;color:#1f2937;margin-bottom:10px">3 notes placed at <strong>maximum distance</strong> in 8 positions (positions 1, 4, 7)</p>
+      <div class="grid-wrap" style="margin-bottom:12px">
+        <div class="grid-row">
+          <div class="cell-tresillo grid-cell">●</div>
+          <div class="cell-ub grid-cell">·</div>
+          <div class="cell-db grid-cell">·</div>
+          <div class="cell-tresillo grid-cell">●</div>
+          <div class="cell-db grid-cell">·</div>
+          <div class="cell-db grid-cell">·</div>
+          <div class="cell-tresillo grid-cell">●</div>
+          <div class="cell-ub grid-cell">·</div>
+        </div>
+        <div class="grid-row">
+          <div class="cell-label" style="color:#F29B38;font-weight:800">1★</div>
+          <div class="cell-label">+</div>
+          <div class="cell-label">2</div>
+          <div class="cell-label" style="color:#F29B38;font-weight:800">+★</div>
+          <div class="cell-label">3</div>
+          <div class="cell-label">+</div>
+          <div class="cell-label" style="color:#F29B38;font-weight:800">4★</div>
+          <div class="cell-label">+</div>
+        </div>
+      </div>
+      <p style="font-family:monospace;font-size:15px;color:#78350f;letter-spacing:3px;font-weight:700;margin-bottom:10px">1 0 0 1 0 0 1 0</p>
+      <p style="font-size:12px;color:#475569;line-height:1.5">
+        <strong>Found in:</strong> "Hound Dog" (Elvis Presley) · "Despacito" (Luis Fonsi) · "Shape of You" (Ed Sheeran) · virtually all reggaeton beats<br>
+        The tresillo = one half of the son clave. It is the most evenly distributed 3-note pattern possible in 8 positions.
+      </p>
+    </div>
+
+    <!-- Son Clave -->
+    <p class="section-label">The Son Clave — 5 Notes Over Two Measures</p>
+    <div class="card" style="border:2px solid #ea580c;margin-bottom:20px">
+      <div class="two-col">
+        <div>
+          <div class="measure-title">3-2 Son Clave (3-side first)</div>
+          <div class="clave-viz">
+            <div class="measure-block">
+              <div style="font-size:8px;color:#64748b;margin-bottom:4px">M1 — 3 notes</div>
+              <div class="grid-wrap">
+                <div class="grid-row">
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-ub grid-cell">·</div>
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-ub grid-cell">·</div>
+                </div>
+                <div class="grid-row">
+                  <div class="cell-label" style="color:#ea580c">1</div>
+                  <div class="cell-label">+</div>
+                  <div class="cell-label">2</div>
+                  <div class="cell-label" style="color:#ea580c">+</div>
+                  <div class="cell-label">3</div>
+                  <div class="cell-label" style="color:#ea580c">+</div>
+                  <div class="cell-label">4</div>
+                  <div class="cell-label">+</div>
+                </div>
+              </div>
+              <p style="font-family:monospace;font-size:11px;color:#78350f;margin-top:4px">1 0 0 1 0 1 0 0</p>
+            </div>
+            <div class="divider"></div>
+            <div class="measure-block">
+              <div style="font-size:8px;color:#64748b;margin-bottom:4px">M2 — 2 notes</div>
+              <div class="grid-wrap">
+                <div class="grid-row">
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-ub grid-cell">·</div>
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-ub grid-cell">·</div>
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-ub grid-cell">·</div>
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-ub grid-cell">·</div>
+                </div>
+                <div class="grid-row">
+                  <div class="cell-label">1</div><div class="cell-label">+</div>
+                  <div class="cell-label" style="color:#ea580c">2</div><div class="cell-label">+</div>
+                  <div class="cell-label" style="color:#ea580c">3</div><div class="cell-label">+</div>
+                  <div class="cell-label">4</div><div class="cell-label">+</div>
+                </div>
+              </div>
+              <p style="font-family:monospace;font-size:11px;color:#78350f;margin-top:4px">0 0 1 0 1 0 0 0</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="measure-title">2-3 Son Clave (2-side first)</div>
+          <div class="clave-viz">
+            <div class="measure-block">
+              <div style="font-size:8px;color:#64748b;margin-bottom:4px">M1 — 2 notes</div>
+              <div class="grid-wrap">
+                <div class="grid-row">
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-ub grid-cell">·</div>
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-ub grid-cell">·</div>
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-ub grid-cell">·</div>
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-ub grid-cell">·</div>
+                </div>
+                <div class="grid-row">
+                  <div class="cell-label">1</div><div class="cell-label">+</div>
+                  <div class="cell-label" style="color:#ea580c">2</div><div class="cell-label">+</div>
+                  <div class="cell-label" style="color:#ea580c">3</div><div class="cell-label">+</div>
+                  <div class="cell-label">4</div><div class="cell-label">+</div>
+                </div>
+              </div>
+              <p style="font-family:monospace;font-size:11px;color:#78350f;margin-top:4px">0 0 1 0 1 0 0 0</p>
+            </div>
+            <div class="divider"></div>
+            <div class="measure-block">
+              <div style="font-size:8px;color:#64748b;margin-bottom:4px">M2 — 3 notes</div>
+              <div class="grid-wrap">
+                <div class="grid-row">
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-ub grid-cell">·</div>
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-clave grid-cell">●</div>
+                  <div class="cell-db grid-cell">·</div>
+                  <div class="cell-ub grid-cell">·</div>
+                </div>
+                <div class="grid-row">
+                  <div class="cell-label" style="color:#ea580c">1</div>
+                  <div class="cell-label">+</div>
+                  <div class="cell-label">2</div>
+                  <div class="cell-label" style="color:#ea580c">+</div>
+                  <div class="cell-label">3</div>
+                  <div class="cell-label" style="color:#ea580c">+</div>
+                  <div class="cell-label">4</div>
+                  <div class="cell-label">+</div>
+                </div>
+              </div>
+              <p style="font-family:monospace;font-size:11px;color:#78350f;margin-top:4px">1 0 0 1 0 1 0 0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:#fff7ed;border-radius:6px;padding:10px 14px;border-top:2px solid #fde68a;margin-top:8px">
+        <p style="font-size:12px;color:#78350f;line-height:1.5">
+          <strong>3-2</strong> = the 3-note measure comes FIRST · <strong>2-3</strong> = the 2-note measure comes FIRST<br>
+          The direction is set by the kick drum or the first melodic motif — and stays <strong>constant throughout the song</strong>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Variations -->
+    <p class="section-label">Clave Variations</p>
+    <div class="three-col">
+      <div class="variation-card" style="border-top-color:#ea580c">
+        <div class="var-title">Son Clave</div>
+        <p style="font-family:monospace;font-size:11px;color:#78350f;margin-bottom:6px">M1: 1 0 0 1 0 1 0 0</p>
+        <div class="var-sub">Most common pattern. Foundation of salsa, pop, funk. Five notes maximally distributed across two measures.</div>
+      </div>
+      <div class="variation-card" style="border-top-color:#F29B38">
+        <div class="var-title">Rumba Clave</div>
+        <p style="font-family:monospace;font-size:11px;color:#78350f;margin-bottom:6px">M1: 1 0 0 1 0 0 1 0</p>
+        <div class="var-sub">Third note shifted one position later. Used in Michael Jackson's "Thriller." Slightly heavier, more grounded feel.</div>
+      </div>
+      <div class="variation-card" style="border-top-color:#3F6FB6">
+        <div class="var-title">Bossa Nova Clave</div>
+        <p style="font-family:monospace;font-size:11px;color:#78350f;margin-bottom:6px">Brazilian variant, 5 notes over 2 bars</p>
+        <div class="var-sub">Found in "Girl from Ipanema" (João Gilberto) and "Maple Leaf Rag" (Scott Joplin). Light, flowing feel.</div>
+      </div>
+    </div>
+
+    <!-- History callout -->
+    <div class="callout">
+      <div class="callout-title">History: The Rhythm That Conquered the World</div>
+      <div class="callout-text">
+        <strong>First written record:</strong> Baghdad, 1258 AD — Safi al-Din's "Kitāb al-Adwār." The pattern was already established music theory in the Islamic world over 750 years ago.<br><br>
+        <strong>African roots:</strong> The same pattern appears in Ghana's kpanlogo music and multiple West African percussion traditions — predating its written documentation by centuries.<br><br>
+        <strong>Today:</strong> Found in ALL genres — pop, hip-hop, rock, country, EDM, jazz, classical, metal. It is <strong>mathematically optimal</strong>: the most even distribution of 5 notes across 16 positions. The listener's brain finds it naturally satisfying.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-tag">
+    <span style="background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px">Rhythm Code OS · Module C</span>
+  </div>
+</div>
+</body>
+</html>

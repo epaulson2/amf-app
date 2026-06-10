@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rhythm Code OS — The Language of Rhythm: Binary Grid</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1200px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f172a;padding:26px 48px 22px}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:10px}
+.header h1{font-size:30px;font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase;letter-spacing:0.01em}
+.header-sub{font-size:13px;color:#94a3b8;margin-top:6px;font-weight:400;line-height:1.4}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.body{padding:32px 48px 36px;background:#fff7ed}
+.section-label{font-size:9px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#9a3412;margin-bottom:10px}
+
+/* Big insight card */
+.insight-card{background:#0f172a;border-radius:10px;padding:24px 32px;margin-bottom:24px;border-left:5px solid #ea580c}
+.insight-main{font-size:22px;font-weight:900;color:#fff;margin-bottom:8px}
+.insight-sub{font-size:13px;color:#94a3b8;line-height:1.5}
+.insight-sub span{color:#F29B38;font-weight:700}
+
+/* Binary grid */
+.grid-wrap{display:inline-block}
+.grid-row{display:flex;gap:3px;margin-bottom:2px}
+.grid-cell{width:36px;height:36px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;border:2px solid transparent}
+.cell-db{background:#1e3a5f;border-color:#3F6FB6;color:#3F6FB6}
+.cell-ub{background:#1e293b;border-color:#475569;color:#475569}
+.cell-on-db{background:#3F6FB6;color:#fff;border-color:#3F6FB6}
+.cell-on-ub{background:#F29B38;color:#fff;border-color:#F29B38}
+.cell-label{font-size:10px;color:#64748b;text-align:center;min-width:36px;padding-top:3px}
+
+/* Two-col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
+.card{background:#fff;border-radius:8px;padding:18px 22px;border:1px solid #fed7aa}
+
+/* Position table */
+.pos-table{width:100%;border-collapse:collapse;margin-bottom:24px;border-radius:8px;overflow:hidden}
+.pos-table th{padding:10px 12px;font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;text-align:center}
+.pos-table td{padding:10px 12px;font-size:12px;text-align:center;font-weight:600;border-top:1px solid #fed7aa}
+.pos-db{background:#1e3a5f;color:#93c5fd}
+.pos-ub{background:#1e293b;color:#fbbf24}
+.pos-db-light{background:#dbeafe;color:#1e3a5f}
+.pos-ub-light{background:#fef3c7;color:#78350f}
+
+/* Rule box */
+.rule-box{background:#fde8d8;border-radius:8px;padding:16px 20px;border-left:4px solid #ea580c;margin-bottom:16px}
+.rule-title{font-size:10px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:#9a3412;margin-bottom:6px}
+.rule-text{font-size:13px;color:#431407;line-height:1.5}
+
+.example-label{font-size:11px;font-weight:700;color:#9a3412;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.08em}
+.binary-display{font-family:monospace;font-size:18px;font-weight:900;color:#ea580c;letter-spacing:3px;margin-bottom:10px}
+
+.footer-tag{text-align:center;padding:14px;background:#0f172a}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="system-tag">Rhythm Code OS · Module A</div>
+    <h1>The Language of Rhythm: Binary Grid</h1>
+    <div class="header-sub">Book: "The Rhythm Code" by Tamas Bodzsar · The foundational notation system</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- Big Insight -->
+    <div class="insight-card">
+      <div class="insight-main">Rhythm = WHERE notes START, not how long they last</div>
+      <div class="insight-sub">
+        Traditional music schools teach rhythm <span>VALUES</span> (duration: whole note, quarter note, eighth note).<br>
+        The Rhythm Code teaches rhythm <span>PLACEMENT</span> — which of the 8 positions in a measure does a note start on?<br>
+        Binary system: <span>1 = a note starts here</span> &nbsp;·&nbsp; <span>0 = no note starts here</span>
+      </div>
+    </div>
+
+    <!-- 8-position grid -->
+    <p class="section-label">The 8-Position Grid</p>
+    <div class="card" style="margin-bottom:24px">
+      <p style="font-size:13px;color:#431407;margin-bottom:14px;font-weight:600">A 4/4 measure divided into 8 positions — the 8th note is the smallest unit</p>
+      <div class="grid-wrap">
+        <div class="grid-row">
+          <div class="cell-on-db grid-cell">●</div>
+          <div class="cell-ub grid-cell">·</div>
+          <div class="cell-on-db grid-cell">●</div>
+          <div class="cell-ub grid-cell">·</div>
+          <div class="cell-on-db grid-cell">●</div>
+          <div class="cell-ub grid-cell">·</div>
+          <div class="cell-on-db grid-cell">●</div>
+          <div class="cell-ub grid-cell">·</div>
+        </div>
+        <div class="grid-row">
+          <div class="cell-label">1</div>
+          <div class="cell-label">+</div>
+          <div class="cell-label">2</div>
+          <div class="cell-label">+</div>
+          <div class="cell-label">3</div>
+          <div class="cell-label">+</div>
+          <div class="cell-label">4</div>
+          <div class="cell-label">+</div>
+        </div>
+      </div>
+      <div style="margin-top:12px;font-size:12px;color:#475569">
+        <span style="display:inline-flex;align-items:center;gap:6px;margin-right:20px">
+          <span style="width:14px;height:14px;background:#3F6FB6;border-radius:3px;display:inline-block"></span>
+          <strong>Downbeats</strong> (1, 2, 3, 4) — the 4 main beats, heavy and grounded
+        </span>
+        <span style="display:inline-flex;align-items:center;gap:6px">
+          <span style="width:14px;height:14px;background:#1e293b;border:1.5px solid #475569;border-radius:3px;display:inline-block"></span>
+          <strong>Upbeats</strong> (+) — the "and" between beats, light and forward-pulling
+        </span>
+      </div>
+      <p style="margin-top:10px;font-size:11px;color:#64748b;font-style:italic">Same grid works at ANY tempo — we always use the 8th-note grid regardless of speed</p>
+    </div>
+
+    <!-- Reading binary notation -->
+    <p class="section-label">Reading Binary Notation — Two Examples</p>
+    <div class="two-col">
+      <div class="card">
+        <div class="example-label">Example A — Beat 1 only</div>
+        <div class="binary-display">10000000</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-on-db grid-cell">●</div>
+            <div class="cell-ub grid-cell">·</div>
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div>
+            <div class="cell-label">+</div>
+            <div class="cell-label">2</div>
+            <div class="cell-label">+</div>
+            <div class="cell-label">3</div>
+            <div class="cell-label">+</div>
+            <div class="cell-label">4</div>
+            <div class="cell-label">+</div>
+          </div>
+        </div>
+        <p style="font-size:12px;color:#475569;margin-top:10px">Note starts on beat 1 only. Could be a whole note or a short 8th note — both look identical in binary.</p>
+      </div>
+
+      <div class="card">
+        <div class="example-label">Example B — Beat 2 only</div>
+        <div class="binary-display">00100000</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+            <div class="cell-on-db grid-cell">●</div>
+            <div class="cell-ub grid-cell">·</div>
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div>
+            <div class="cell-label">+</div>
+            <div class="cell-label">2</div>
+            <div class="cell-label">+</div>
+            <div class="cell-label">3</div>
+            <div class="cell-label">+</div>
+            <div class="cell-label">4</div>
+            <div class="cell-label">+</div>
+          </div>
+        </div>
+        <p style="font-size:12px;color:#475569;margin-top:10px">Note starts on beat 2 only. Duration doesn't matter — only the starting position is recorded.</p>
+      </div>
+    </div>
+
+    <!-- Key rule -->
+    <div class="rule-box" style="margin-bottom:24px">
+      <div class="rule-title">The Fundamental Rule</div>
+      <div class="rule-text">A long whole note and a short 8th note are <strong>IDENTICAL</strong> in binary notation — both show a single 1 at their starting position. Duration is irrelevant to the Rhythm Code system. Only WHERE notes start determines the rhythmic quality of music.</div>
+    </div>
+
+    <!-- Position names table -->
+    <p class="section-label">Position Names Reference</p>
+    <table class="pos-table">
+      <tr>
+        <th class="pos-db" style="border-right:1px solid #334155">Pos 1</th>
+        <th class="pos-ub" style="border-right:1px solid #334155">Pos 2</th>
+        <th class="pos-db" style="border-right:1px solid #334155">Pos 3</th>
+        <th class="pos-ub" style="border-right:1px solid #334155">Pos 4</th>
+        <th class="pos-db" style="border-right:1px solid #334155">Pos 5</th>
+        <th class="pos-ub" style="border-right:1px solid #334155">Pos 6</th>
+        <th class="pos-db" style="border-right:1px solid #334155">Pos 7</th>
+        <th class="pos-ub">Pos 8</th>
+      </tr>
+      <tr>
+        <td class="pos-db-light" style="border-right:1px solid #dbeafe">Beat 1</td>
+        <td class="pos-ub-light" style="border-right:1px solid #fef3c7">And 1</td>
+        <td class="pos-db-light" style="border-right:1px solid #dbeafe">Beat 2</td>
+        <td class="pos-ub-light" style="border-right:1px solid #fef3c7">And 2</td>
+        <td class="pos-db-light" style="border-right:1px solid #dbeafe">Beat 3</td>
+        <td class="pos-ub-light" style="border-right:1px solid #fef3c7">And 3</td>
+        <td class="pos-db-light" style="border-right:1px solid #dbeafe">Beat 4</td>
+        <td class="pos-ub-light">And 4</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="footer-tag">
+    <span style="background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px">Rhythm Code OS · Module A</span>
+  </div>
+</div>
+</body>
+</html>

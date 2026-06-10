@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhythm Code OS — Building a Groove: The 4-Step Process</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1200px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f172a;padding:26px 48px 22px}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:10px}
+.header h1{font-size:28px;font-weight:900;color:#fff;text-transform:uppercase}
+.header-sub{font-size:13px;color:#94a3b8;margin-top:6px}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.body{padding:28px 48px 32px;background:#d9f5e4}
+.section-label{font-size:9px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#166534;margin-bottom:10px}
+.card{background:#fff;border-radius:8px;padding:16px 22px;border:1px solid #86efac;margin-bottom:16px}
+.step-header{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.step-badge{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;flex-shrink:0}
+.step-title{font-size:14px;font-weight:800;color:#0f172a}
+.step-subtitle{font-size:11px;color:#6b7280;margin-top:2px}
+.grid-wrap{display:inline-block}
+.grid-row{display:flex;gap:3px;margin-bottom:2px}
+.grid-cell{width:34px;height:34px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;border:2px solid transparent}
+.cell-db{background:#1e3a5f;border-color:#3F6FB6;color:#3F6FB6}
+.cell-ub{background:#1e293b;border-color:#475569;color:#475569}
+.cell-on-db{background:#3F6FB6;color:#fff;border-color:#3F6FB6}
+.cell-on-ub{background:#F29B38;color:#fff;border-color:#F29B38}
+.cell-new{background:#16a34a;color:#fff;border-color:#16a34a}
+.cell-avoid{background:#450a0a;border-color:#dc2626;color:#f87171}
+.cell-removed{background:#1e293b;border-color:#dc2626;color:#dc2626;opacity:0.5}
+.cell-antic{background:#9333ea;color:#fff;border-color:#9333ea}
+.cell-label{font-size:9px;color:#64748b;text-align:center;min-width:34px;padding-top:2px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.change-note{display:inline-flex;align-items:center;gap:6px;background:#d9f5e4;border-radius:4px;padding:4px 10px;font-size:11px;font-weight:700;color:#166534;margin-top:8px}
+.five-guidelines{display:grid;grid-template-columns:1fr;gap:8px;margin-top:0}
+.guide-card{background:#fff;border-radius:6px;padding:12px 16px;border-left:4px solid #16a34a;display:flex;align-items:flex-start;gap:12px}
+.guide-num{font-size:20px;font-weight:900;color:#16a34a;flex-shrink:0}
+.guide-text{font-size:12px;color:#1f2937;line-height:1.5}
+.footer-tag{text-align:center;padding:14px;background:#0f172a}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="system-tag">Rhythm Code OS · Module E</div>
+    <h1>Building a Groove: The 4-Step Process</h1>
+    <div class="header-sub">Start with all downbeats. Apply 4 steps. Arrive at a groove that works with the Rhythm Code map.</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- Concept -->
+    <div class="card" style="border-left:5px solid #16a34a;margin-bottom:16px">
+      <p style="font-size:16px;font-weight:900;color:#0f172a;margin-bottom:6px">"Start with a boring downbeat melody. Apply 4 steps. Get a groove."</p>
+      <p style="font-size:12px;color:#475569;line-height:1.5">Each step adds a specific type of anticipation from the Rhythm Code map. We use the 2-3 clave orientation in this example — the same logic applies to 3-2.</p>
+    </div>
+
+    <!-- Step 0 -->
+    <div class="card">
+      <div class="step-header">
+        <div class="step-badge" style="background:#1e293b;color:#64748b">0</div>
+        <div><div class="step-title">The Boring Version</div><div class="step-subtitle">All downbeats. Zero anticipations. Monotonous.</div></div>
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start">
+        <div>
+          <div style="font-size:8px;color:#64748b;margin-bottom:3px">M1</div>
+          <div class="grid-wrap">
+            <div class="grid-row">
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            </div>
+            <div class="grid-row">
+              <div class="cell-label">1</div><div class="cell-label">+</div>
+              <div class="cell-label">2</div><div class="cell-label">+</div>
+              <div class="cell-label">3</div><div class="cell-label">+</div>
+              <div class="cell-label">4</div><div class="cell-label">+</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:8px;color:#64748b;margin-bottom:3px">M2</div>
+          <div class="grid-wrap">
+            <div class="grid-row">
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            </div>
+            <div class="grid-row">
+              <div class="cell-label">1</div><div class="cell-label">+</div>
+              <div class="cell-label">2</div><div class="cell-label">+</div>
+              <div class="cell-label">3</div><div class="cell-label">+</div>
+              <div class="cell-label">4</div><div class="cell-label">+</div>
+            </div>
+          </div>
+        </div>
+        <div style="flex:1;padding:12px 16px;background:#fee2e2;border-radius:6px;align-self:center">
+          <p style="font-size:12px;color:#991b1b"><strong>Problem:</strong> All notes on downbeats (1, 2, 3, 4). Sound: mechanical, dull, no forward motion. Like a march, not a groove.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="card" style="border:2px solid #9333ea">
+      <div class="step-header">
+        <div class="step-badge" style="background:#6b21a8;color:#e9d5ff">1</div>
+        <div><div class="step-title">Add the Quarter Note Anticipation</div><div class="step-subtitle">The strongest single move. Take beat 1 of M2 — move it to "and of 4" in M1.</div></div>
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start">
+        <div>
+          <div style="font-size:8px;color:#64748b;margin-bottom:3px">M1 — note added at "and of 4"</div>
+          <div class="grid-wrap">
+            <div class="grid-row">
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-antic grid-cell">●</div>
+            </div>
+            <div class="grid-row">
+              <div class="cell-label">1</div><div class="cell-label">+</div>
+              <div class="cell-label">2</div><div class="cell-label">+</div>
+              <div class="cell-label">3</div><div class="cell-label">+</div>
+              <div class="cell-label">4</div><div class="cell-label" style="color:#9333ea;font-weight:800">★+</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:8px;color:#64748b;margin-bottom:3px">M2 — beat 1 is now empty (anticipated)</div>
+          <div class="grid-wrap">
+            <div class="grid-row">
+              <div class="cell-db grid-cell" style="border-color:#9333ea;color:#9333ea">∅</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            </div>
+            <div class="grid-row">
+              <div class="cell-label" style="color:#9333ea">1∅</div><div class="cell-label">+</div>
+              <div class="cell-label">2</div><div class="cell-label">+</div>
+              <div class="cell-label">3</div><div class="cell-label">+</div>
+              <div class="cell-label">4</div><div class="cell-label">+</div>
+            </div>
+          </div>
+        </div>
+        <div style="flex:1;padding:12px 16px;background:#f5f3ff;border-radius:6px;align-self:center;border:1px solid #c4b5fd">
+          <p style="font-size:12px;color:#4c1d95"><strong>Effect:</strong> The strongest anticipation. The listener hears beat 1 of the new measure arrive early — creating powerful forward momentum. Do this step first, every time.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="card">
+      <div class="step-header">
+        <div class="step-badge" style="background:#166534;color:#d9f5e4">2</div>
+        <div><div class="step-title">Anticipate the 3-Side First Beat</div><div class="step-subtitle">For 2-3 clave: beat 1 of M2 was already handled. Also anticipate the first clave note of the 3-side.</div></div>
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start">
+        <div>
+          <div style="font-size:8px;color:#64748b;margin-bottom:3px">M1 — anticipate beat 2 of M2 (move to "and of 1" of M1)</div>
+          <div class="grid-wrap">
+            <div class="grid-row">
+              <div class="cell-on-db grid-cell">●</div><div class="cell-new grid-cell">●</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-antic grid-cell">●</div>
+            </div>
+            <div class="grid-row">
+              <div class="cell-label">1</div><div class="cell-label" style="color:#16a34a;font-weight:800">+★</div>
+              <div class="cell-label">2</div><div class="cell-label">+</div>
+              <div class="cell-label">3</div><div class="cell-label">+</div>
+              <div class="cell-label">4</div><div class="cell-label" style="color:#9333ea;font-weight:800">+★</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:8px;color:#64748b;margin-bottom:3px">M2 — beat 2 now empty (anticipated from M1)</div>
+          <div class="grid-wrap">
+            <div class="grid-row">
+              <div class="cell-db grid-cell" style="border-color:#9333ea;color:#9333ea">∅</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-db grid-cell" style="border-color:#16a34a;color:#16a34a">∅</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            </div>
+            <div class="grid-row">
+              <div class="cell-label" style="color:#9333ea">1∅</div><div class="cell-label">+</div>
+              <div class="cell-label" style="color:#16a34a">2∅</div><div class="cell-label">+</div>
+              <div class="cell-label">3</div><div class="cell-label">+</div>
+              <div class="cell-label">4</div><div class="cell-label">+</div>
+            </div>
+          </div>
+        </div>
+        <div style="flex:1;padding:12px 16px;background:#d9f5e4;border-radius:6px;align-self:center">
+          <p style="font-size:12px;color:#14532d"><strong>Effect:</strong> Eliminates the "dumb" downbeat entrances on the 3-side. The melody now has built-in forward motion — it leans into the next position rather than landing flat.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="card">
+      <div class="step-header">
+        <div class="step-badge" style="background:#991b1b;color:#fee2e2">3</div>
+        <div><div class="step-title">Move Stops at AVOID Positions</div><div class="step-subtitle">Find any stops on red (✕) positions. Move them one position earlier to an upbeat.</div></div>
+      </div>
+      <div class="two-col">
+        <div>
+          <p style="font-size:11px;color:#6b7280;margin-bottom:8px">Before: stop on beat 4 of M1 (AVOID position)</p>
+          <div class="grid-wrap">
+            <div class="grid-row">
+              <div class="cell-db grid-cell">·</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-db grid-cell">·</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-db grid-cell">·</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-avoid grid-cell">✕</div><div class="cell-ub grid-cell">·</div>
+            </div>
+            <div class="grid-row">
+              <div class="cell-label">1</div><div class="cell-label">+</div>
+              <div class="cell-label">2</div><div class="cell-label">+</div>
+              <div class="cell-label">3</div><div class="cell-label">+</div>
+              <div class="cell-label" style="color:#dc2626">4✕</div><div class="cell-label">+</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p style="font-size:11px;color:#16a34a;font-weight:700;margin-bottom:8px">After: moved to "and of 3" (STRONG position)</p>
+          <div class="grid-wrap">
+            <div class="grid-row">
+              <div class="cell-db grid-cell">·</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-db grid-cell">·</div><div class="cell-ub grid-cell">·</div>
+              <div class="cell-db grid-cell">·</div><div class="cell-new grid-cell">●</div>
+              <div class="cell-db grid-cell">·</div><div class="cell-ub grid-cell">·</div>
+            </div>
+            <div class="grid-row">
+              <div class="cell-label">1</div><div class="cell-label">+</div>
+              <div class="cell-label">2</div><div class="cell-label">+</div>
+              <div class="cell-label">3</div><div class="cell-label" style="color:#16a34a;font-weight:800">+★</div>
+              <div class="cell-label">4</div><div class="cell-label">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="change-note">✓ Each AVOID → upbeat conversion adds groove. Clean up ALL avoid stops.</div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="card">
+      <div class="step-header">
+        <div class="step-badge" style="background:#0369a1;color:#e0f2fe">4</div>
+        <div><div class="step-title">Anticipate Beat 3 of the 3-Side</div><div class="step-subtitle">Add an anticipation at "and of beat 2" of the 3-side. This is the final groove signature.</div></div>
+      </div>
+      <p style="font-size:12px;color:#475569;margin-bottom:10px">In the 3-side (M2 for 2-3 clave), move the stop that was on beat 3 to the "and of 2" instead. This creates the characteristic funk anticipation that signals to the listener "this is the 3-side."</p>
+      <div class="change-note" style="background:#e0f2fe;color:#0369a1">✓ Groove complete. Both measures now have characteristic anticipation signatures.</div>
+    </div>
+
+    <!-- 5 guidelines -->
+    <p class="section-label">The 5 Practical Guidelines</p>
+    <div class="five-guidelines">
+      <div class="guide-card">
+        <div class="guide-num">1</div>
+        <div class="guide-text"><strong>Even 3 notes can suggest the clave.</strong> You don't need a dense melody — sparse patterns can imply the clave just as clearly as busy ones.</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">2</div>
+        <div class="guide-text"><strong>Not all instruments need to match the clave all the time.</strong> Create contrast. Let the verse be loosely clave-aligned; tighten it for the chorus.</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">3</div>
+        <div class="guide-text"><strong>Build longer grooves</strong> using the 2-measure clave as a foundation. 4, 8, and 16-measure cycles all rest on the same 2-measure clave pattern.</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">4</div>
+        <div class="guide-text"><strong>Verse without clave, chorus with clave</strong> creates energy contrast. The tighter clave alignment in the chorus is what makes it "lift off."</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">5</div>
+        <div class="guide-text"><strong>Your intuition is the final judge.</strong> The Rhythm Code is a descriptive system — it describes what works, not prescribes what you must do. If it sounds good, it IS good.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-tag">
+    <span style="background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px">Rhythm Code OS · Module E</span>
+  </div>
+</div>
+</body>
+</html>

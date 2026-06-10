@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhythm Code OS — Module D Infographic: The Rhythm Code Map</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1400px;height:900px;background:#0f172a;box-shadow:0 4px 24px rgba(0,0,0,0.3);display:flex;flex-direction:column}
+.header{padding:20px 48px 12px;display:flex;align-items:center;justify-content:space-between}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px}
+.header h1{font-size:30px;font-weight:900;color:#fff;text-transform:uppercase;margin-top:6px}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.body{flex:1;padding:16px 32px 16px;display:flex;gap:20px}
+.maps-col{flex:1;display:flex;flex-direction:column;gap:14px}
+.side-col{width:280px;display:flex;flex-direction:column;gap:12px}
+.map-panel{background:#1e293b;border-radius:10px;padding:16px 20px}
+.panel-title{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
+.map-wrap{display:flex;gap:4px;align-items:flex-start}
+.map-cell{width:46px;height:50px;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;font-weight:900;border:2px solid transparent}
+.cell-strong{background:#14532d;border-color:#16a34a;color:#4ade80}
+.cell-medium{background:#78350f;border-color:#d97706;color:#fbbf24}
+.cell-avoid{background:#450a0a;border-color:#dc2626;color:#f87171}
+.cell-empty{background:#0f172a;border-color:#334155;color:#334155}
+.cell-empty-db{background:#1e3a5f;border-color:#3F6FB6;color:#3F6FB6}
+.map-cell-label{font-size:8px;text-align:center;min-width:46px;padding-top:2px;color:#64748b}
+.cell-state{font-size:7px;font-weight:800;margin-top:1px}
+.divider{width:3px;background:#0f172a;margin:0 6px;border-radius:2px}
+.song-card{background:#0f172a;border-radius:8px;padding:12px 14px;border-left:3px solid #ea580c}
+.song-title{font-size:12px;font-weight:800;color:#fff;margin-bottom:4px}
+.song-detail{font-size:11px;color:#94a3b8;line-height:1.4}
+.legend-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:10px}
+.leg-cell{width:18px;height:18px;border-radius:3px;border:2px solid transparent;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div>
+      <div class="system-tag">Rhythm Code OS · Module D</div>
+      <h1>The Rhythm Code Map</h1>
+    </div>
+    <div style="text-align:right">
+      <div class="legend-row" style="justify-content:flex-end">
+        <div class="legend-item">
+          <div class="leg-cell cell-strong">★</div><span style="color:#4ade80">STRONG</span>
+        </div>
+        <div class="legend-item">
+          <div class="leg-cell cell-medium">●</div><span style="color:#fbbf24">MEDIUM</span>
+        </div>
+        <div class="legend-item">
+          <div class="leg-cell cell-avoid">✕</div><span style="color:#f87171">AVOID</span>
+        </div>
+        <div class="legend-item">
+          <div class="leg-cell cell-empty-db">·</div><span style="color:#93c5fd">Downbeat empty</span>
+        </div>
+      </div>
+      <p style="font-size:12px;color:#94a3b8">♦ = clave note &nbsp;·&nbsp; ↑ = quarter note anticipation</p>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+    <div class="maps-col">
+
+      <!-- 2-3 Map -->
+      <div class="map-panel">
+        <div class="panel-title" style="color:#F29B38">2-3 Orientation — 2-note side first</div>
+        <div style="display:flex;gap:10px;align-items:flex-start">
+          <div>
+            <div style="font-size:10px;font-weight:800;color:#94a3b8;margin-bottom:6px;text-align:center">M1 — 2-side</div>
+            <div class="map-wrap">
+              <div style="text-align:center"><div class="map-cell cell-medium">●<div class="cell-state">MED</div></div><div class="map-cell-label">1</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty">·</div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">2</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty">·</div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">3</div></div>
+              <div style="text-align:center"><div class="map-cell cell-medium">●<div class="cell-state">MED</div></div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-avoid">✕</div><div class="map-cell-label" style="color:#f87171">4</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong" style="border-color:#9333ea">↑<div class="cell-state" style="color:#c4b5fd">QNA</div></div><div class="map-cell-label" style="color:#c4b5fd">+</div></div>
+            </div>
+          </div>
+          <div class="divider" style="height:80px;align-self:center"></div>
+          <div>
+            <div style="font-size:10px;font-weight:800;color:#94a3b8;margin-bottom:6px;text-align:center">M2 — 3-side</div>
+            <div class="map-wrap">
+              <div style="text-align:center"><div class="map-cell cell-medium">●<div class="cell-state">ANT</div></div><div class="map-cell-label">1</div></div>
+              <div style="text-align:center"><div class="map-cell cell-medium">●<div class="cell-state">MED</div></div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty-db">·</div><div class="map-cell-label">2</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-avoid">✕</div><div class="map-cell-label" style="color:#f87171">3</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty-db">·</div><div class="map-cell-label">4</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty">·</div><div class="map-cell-label">+</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3-2 Map -->
+      <div class="map-panel">
+        <div class="panel-title" style="color:#3F6FB6">3-2 Orientation — 3-note side first</div>
+        <div style="display:flex;gap:10px;align-items:flex-start">
+          <div>
+            <div style="font-size:10px;font-weight:800;color:#94a3b8;margin-bottom:6px;text-align:center">M1 — 3-side</div>
+            <div class="map-wrap">
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">1</div></div>
+              <div style="text-align:center"><div class="map-cell cell-medium">●<div class="cell-state">MED</div></div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty-db">·</div><div class="map-cell-label">2</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-avoid">✕</div><div class="map-cell-label" style="color:#f87171">3</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty-db">·</div><div class="map-cell-label">4</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong" style="border-color:#9333ea">↑<div class="cell-state" style="color:#c4b5fd">QNA</div></div><div class="map-cell-label" style="color:#c4b5fd">+</div></div>
+            </div>
+          </div>
+          <div class="divider" style="height:80px;align-self:center"></div>
+          <div>
+            <div style="font-size:10px;font-weight:800;color:#94a3b8;margin-bottom:6px;text-align:center">M2 — 2-side</div>
+            <div class="map-wrap">
+              <div style="text-align:center"><div class="map-cell cell-medium">●<div class="cell-state">ANT</div></div><div class="map-cell-label">1</div></div>
+              <div style="text-align:center"><div class="map-cell cell-medium">●<div class="cell-state">MED</div></div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">2</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty">·</div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★<div class="cell-state">♦</div></div><div class="map-cell-label" style="color:#4ade80">3</div></div>
+              <div style="text-align:center"><div class="map-cell cell-medium">●<div class="cell-state">MED</div></div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-avoid">✕</div><div class="map-cell-label" style="color:#f87171">4</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty">·</div><div class="map-cell-label">+</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Side col -->
+    <div class="side-col">
+      <p style="font-size:11px;font-weight:800;color:#94a3b8;text-transform:uppercase;letter-spacing:0.1em">Songs That Prove It</p>
+
+      <div class="song-card">
+        <div class="song-title">"Happy" — Pharrell Williams</div>
+        <div class="song-detail">2-3 clave. 13/16 stops on STRONG positions. Near-perfect Rhythm Code alignment.</div>
+      </div>
+      <div class="song-card" style="border-left-color:#F29B38">
+        <div class="song-title">"Mother Popcorn" — James Brown</div>
+        <div class="song-detail">2-3 clave. The horn stabs and vocal stops map directly onto the 2-3 Rhythm Code map positions.</div>
+      </div>
+      <div class="song-card" style="border-left-color:#0891b2">
+        <div class="song-title">"Corner of the Earth" — Jamiroquai</div>
+        <div class="song-detail">2-3 clave in vocal melody. Stop pattern follows the map with remarkable fidelity throughout verse and chorus.</div>
+      </div>
+
+      <div style="background:#1e293b;border-radius:8px;padding:14px 16px;margin-top:auto">
+        <p style="font-size:11px;font-weight:800;color:#fff;margin-bottom:8px">Using the Map</p>
+        <p style="font-size:11px;color:#94a3b8;line-height:1.6">
+          1. Find stop positions<br>
+          2. Overlay the map<br>
+          3. Move AVOID stops to upbeats<br>
+          4. Maximize STRONG stops<br><br>
+          <span style="font-style:italic;color:#64748b">"If it sounds good, it IS good."</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

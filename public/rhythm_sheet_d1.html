@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhythm Code OS — The Rhythm Code Map</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1400px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f172a;padding:26px 48px 22px}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:10px}
+.header h1{font-size:30px;font-weight:900;color:#fff;text-transform:uppercase}
+.header-sub{font-size:13px;color:#94a3b8;margin-top:6px}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.body{padding:28px 48px 32px;background:#fee2e2}
+.section-label{font-size:9px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#991b1b;margin-bottom:10px}
+.card{background:#fff;border-radius:8px;padding:18px 22px;border:1px solid #fca5a5;margin-bottom:20px}
+/* Map cells */
+.map-wrap{display:flex;gap:6px;align-items:flex-start;margin-bottom:6px}
+.map-cell{width:48px;height:48px;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:18px;font-weight:900;border:2px solid transparent;position:relative}
+.cell-strong{background:#14532d;border-color:#16a34a;color:#4ade80}
+.cell-medium{background:#78350f;border-color:#d97706;color:#fbbf24}
+.cell-avoid{background:#450a0a;border-color:#dc2626;color:#f87171}
+.cell-empty{background:#1e293b;border-color:#334155;color:#334155}
+.cell-empty-db{background:#1e3a5f;border-color:#3F6FB6;color:#3F6FB6}
+.map-cell-label{font-size:8px;color:#64748b;text-align:center;min-width:48px;padding-top:2px}
+.map-state{font-size:8px;margin-top:1px;font-weight:700}
+.measure-block{text-align:center}
+.measure-title{font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;padding:3px 10px;border-radius:4px;display:inline-block}
+.map-divider{width:3px;background:#fee2e2;border-radius:2px;margin:0 8px}
+.two-maps{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.three-insights{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:20px}
+.insight-card{background:#fff;border-radius:8px;padding:14px 16px;border-top:3px solid #ea580c;border:1px solid #fca5a5;border-top:3px solid}
+.five-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:0}
+.step-card{background:#fff;border-radius:8px;padding:12px;border:1px solid #fca5a5}
+.step-num{font-size:20px;font-weight:900;color:#ea580c}
+.step-text{font-size:11px;color:#475569;line-height:1.4;margin-top:4px}
+.legend{display:flex;gap:16px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:#475569}
+.legend-cell{width:22px;height:22px;border-radius:4px;border:2px solid transparent;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}
+.footer-tag{text-align:center;padding:14px;background:#0f172a}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="system-tag">Rhythm Code OS · Module D</div>
+    <h1>The Rhythm Code Map</h1>
+    <div class="header-sub">16 positions · 3 states · the complete guide to where stops should land</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- Intro -->
+    <div class="card" style="border-left:5px solid #ea580c;margin-bottom:20px">
+      <p class="section-label">Beyond the Clave</p>
+      <p style="font-size:18px;font-weight:900;color:#0f172a;margin-bottom:8px">The clave has 5 notes. But there are 16 positions. What about the other 11?</p>
+      <p style="font-size:13px;color:#475569;line-height:1.6">
+        The Rhythm Code maps ALL 16 positions across two measures. Three states: <strong style="color:#16a34a">STRONG</strong> (ideal stop positions) · <strong style="color:#d97706">MEDIUM</strong> (occasional) · <strong style="color:#dc2626">AVOID</strong> (weak positions for stops)
+      </p>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-cell cell-strong">★</div><span><strong style="color:#16a34a">STRONG</strong> — ideal stop position. Clave notes and quarter note anticipation.</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-cell cell-medium">●</div><span><strong style="color:#d97706">MEDIUM</strong> — acceptable. Occasional stops OK.</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-cell cell-avoid">✕</div><span><strong style="color:#dc2626">AVOID</strong> — weak. Stops here sound awkward.</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-cell cell-empty-db">·</div><span>Empty downbeat position</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-cell cell-empty">·</div><span>Empty upbeat position</span>
+      </div>
+    </div>
+
+    <div class="two-maps">
+
+      <!-- 2-3 Map -->
+      <div class="card" style="margin-bottom:0">
+        <div class="section-label">2-3 Orientation Map</div>
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div class="measure-block">
+            <div class="measure-title" style="background:#1e3a5f;color:#93c5fd">2-side (M1) — 2 clave notes</div>
+            <div class="map-wrap">
+              <!-- Pos 1: MEDIUM -->
+              <div style="text-align:center">
+                <div class="map-cell cell-medium">●<div class="map-state">MED</div></div>
+                <div class="map-cell-label">1</div>
+              </div>
+              <!-- Pos 2: empty ub -->
+              <div style="text-align:center">
+                <div class="map-cell cell-empty">·</div>
+                <div class="map-cell-label">+</div>
+              </div>
+              <!-- Pos 3: STRONG clave -->
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">2♦</div>
+              </div>
+              <!-- Pos 4: empty ub -->
+              <div style="text-align:center">
+                <div class="map-cell cell-empty">·</div>
+                <div class="map-cell-label">+</div>
+              </div>
+              <!-- Pos 5: STRONG clave -->
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">3♦</div>
+              </div>
+              <!-- Pos 6: MEDIUM -->
+              <div style="text-align:center">
+                <div class="map-cell cell-medium">●<div class="map-state">MED</div></div>
+                <div class="map-cell-label">+</div>
+              </div>
+              <!-- Pos 7: AVOID -->
+              <div style="text-align:center">
+                <div class="map-cell cell-avoid">✕</div>
+                <div class="map-cell-label">4</div>
+              </div>
+              <!-- Pos 8: STRONG (qn anticipation) -->
+              <div style="text-align:center">
+                <div class="map-cell cell-strong" style="border-color:#9333ea">↑</div>
+                <div class="map-cell-label" style="color:#9333ea;font-size:8px">+★QNA</div>
+              </div>
+            </div>
+          </div>
+          <div class="map-divider" style="height:80px;align-self:center"></div>
+          <div class="measure-block">
+            <div class="measure-title" style="background:#78350f;color:#fef3c7">3-side (M2) — 3 clave notes</div>
+            <div class="map-wrap">
+              <!-- Pos 9: MEDIUM (anticipated) -->
+              <div style="text-align:center">
+                <div class="map-cell cell-medium">●<div class="map-state">MED</div></div>
+                <div class="map-cell-label">1(ant)</div>
+              </div>
+              <!-- Pos 10: MEDIUM -->
+              <div style="text-align:center">
+                <div class="map-cell cell-medium">●<div class="map-state">MED</div></div>
+                <div class="map-cell-label">+</div>
+              </div>
+              <!-- Pos 11: empty db -->
+              <div style="text-align:center">
+                <div class="map-cell cell-empty-db">·</div>
+                <div class="map-cell-label">2</div>
+              </div>
+              <!-- Pos 12: STRONG clave -->
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">+♦</div>
+              </div>
+              <!-- Pos 13: AVOID -->
+              <div style="text-align:center">
+                <div class="map-cell cell-avoid">✕</div>
+                <div class="map-cell-label">3</div>
+              </div>
+              <!-- Pos 14: STRONG clave -->
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">+♦</div>
+              </div>
+              <!-- Pos 15: empty db -->
+              <div style="text-align:center">
+                <div class="map-cell cell-empty-db">·</div>
+                <div class="map-cell-label">4</div>
+              </div>
+              <!-- Pos 16: empty ub -->
+              <div style="text-align:center">
+                <div class="map-cell cell-empty">·</div>
+                <div class="map-cell-label">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3-2 Map -->
+      <div class="card" style="margin-bottom:0">
+        <div class="section-label">3-2 Orientation Map</div>
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div class="measure-block">
+            <div class="measure-title" style="background:#78350f;color:#fef3c7">3-side (M1) — 3 clave notes</div>
+            <div class="map-wrap">
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">1♦</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-medium">●<div class="map-state">MED</div></div>
+                <div class="map-cell-label">+</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-empty-db">·</div>
+                <div class="map-cell-label">2</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">+♦</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-avoid">✕</div>
+                <div class="map-cell-label">3</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">+♦</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-empty-db">·</div>
+                <div class="map-cell-label">4</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-strong" style="border-color:#9333ea">↑</div>
+                <div class="map-cell-label" style="color:#9333ea;font-size:8px">+★QNA</div>
+              </div>
+            </div>
+          </div>
+          <div class="map-divider" style="height:80px;align-self:center"></div>
+          <div class="measure-block">
+            <div class="measure-title" style="background:#1e3a5f;color:#93c5fd">2-side (M2) — 2 clave notes</div>
+            <div class="map-wrap">
+              <div style="text-align:center">
+                <div class="map-cell cell-medium">●<div class="map-state">MED</div></div>
+                <div class="map-cell-label">1(ant)</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-medium">●<div class="map-state">MED</div></div>
+                <div class="map-cell-label">+</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">2♦</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-empty">·</div>
+                <div class="map-cell-label">+</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-strong">★</div>
+                <div class="map-cell-label">3♦</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-medium">●<div class="map-state">MED</div></div>
+                <div class="map-cell-label">+</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-avoid">✕</div>
+                <div class="map-cell-label">4</div>
+              </div>
+              <div style="text-align:center">
+                <div class="map-cell cell-empty">·</div>
+                <div class="map-cell-label">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Three insights -->
+    <p class="section-label">Key Insights from the Map</p>
+    <div class="three-insights">
+      <div class="insight-card" style="border-top-color:#16a34a">
+        <p style="font-size:11px;font-weight:800;color:#16a34a;margin-bottom:6px">2-Side Structure</p>
+        <p style="font-size:12px;color:#475569;line-height:1.5">THREE strong positions on the 2-side: the two clave notes (beat 2 and beat 3) plus the quarter note anticipation at "and of 4." The 2-side is rhythmically rich.</p>
+      </div>
+      <div class="insight-card" style="border-top-color:#d97706">
+        <p style="font-size:11px;font-weight:800;color:#d97706;margin-bottom:6px">3-Side Structure</p>
+        <p style="font-size:12px;color:#475569;line-height:1.5">TWO strong positions on the 3-side: the clave notes that are NOT the first beat. The first beat of the 3-side is usually anticipated — felt as beat 1 but arrived early from "and of 4."</p>
+      </div>
+      <div class="insight-card" style="border-top-color:#9333ea">
+        <p style="font-size:11px;font-weight:800;color:#9333ea;margin-bottom:6px">Quarter Note Anticipation (↑)</p>
+        <p style="font-size:12px;color:#475569;line-height:1.5">Position 8 ("and of 4") in BOTH orientations is STRONG. This is the quarter note anticipation — the most powerful single position in the Rhythm Code. Set a stop here whenever possible.</p>
+      </div>
+    </div>
+
+    <!-- How to use -->
+    <p class="section-label">How to Use the Map</p>
+    <div class="five-steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-text">Identify the clave orientation of your song (2-3 or 3-2)</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-text">Transcribe the main melody or bass line in the binary grid</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-text">Find all stops — overlay the Rhythm Code map</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-text">Move stops at AVOID (✕) positions one step to an upbeat</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="color:#94a3b8">★</div>
+        <div class="step-text" style="font-style:italic">"It's a guide, not a rule — if it sounds good, it IS good."</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-tag">
+    <span style="background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px">Rhythm Code OS · Module D</span>
+  </div>
+</div>
+</body>
+</html>

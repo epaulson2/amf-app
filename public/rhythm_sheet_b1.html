@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhythm Code OS — Stops</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1200px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f172a;padding:26px 48px 22px}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:10px}
+.header h1{font-size:30px;font-weight:900;color:#fff;text-transform:uppercase}
+.header-sub{font-size:13px;color:#94a3b8;margin-top:6px}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.body{padding:32px 48px 36px;background:#fde8d8}
+.section-label{font-size:9px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#9a3412;margin-bottom:10px}
+.card{background:#fff;border-radius:8px;padding:18px 22px;border:1px solid #fca5a5;margin-bottom:20px}
+.grid-wrap{display:inline-block}
+.grid-row{display:flex;gap:3px;margin-bottom:2px}
+.grid-cell{width:36px;height:36px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;border:2px solid transparent}
+.cell-db{background:#1e3a5f;border-color:#3F6FB6;color:#3F6FB6}
+.cell-ub{background:#1e293b;border-color:#475569;color:#475569}
+.cell-on-db{background:#3F6FB6;color:#fff;border-color:#3F6FB6}
+.cell-on-ub{background:#F29B38;color:#fff;border-color:#F29B38}
+.cell-stop{background:#16a34a;color:#fff;border-color:#16a34a}
+.cell-label{font-size:10px;color:#64748b;text-align:center;min-width:36px;padding-top:3px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.four-col{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:20px}
+.type-card{background:#fff;border-radius:8px;padding:16px;border:1px solid #fca5a5;border-top:3px solid #ea580c}
+.type-title{font-size:11px;font-weight:800;color:#1f2937;margin-bottom:8px}
+.type-binary{font-family:monospace;font-size:13px;letter-spacing:2px;color:#6b7280;margin-bottom:8px}
+.callout{background:#fff;border-left:4px solid #ea580c;border-radius:8px;padding:18px 22px;margin-bottom:20px}
+.callout-title{font-size:10px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:#9a3412;margin-bottom:8px}
+.callout-text{font-size:13px;color:#431407;line-height:1.6}
+.clarify-box{background:#0f172a;border-radius:8px;padding:18px 22px;margin-bottom:0}
+.stop-indicator{display:inline-block;width:22px;height:22px;background:#16a34a;border-radius:4px;text-align:center;line-height:22px;color:#fff;font-size:14px;font-weight:900;margin-right:6px}
+.footer-tag{text-align:center;padding:14px;background:#0f172a}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="system-tag">Rhythm Code OS · Module B</div>
+    <h1>Stops</h1>
+    <div class="header-sub">The last note before silence — where musical phrases land and the Rhythm Code reveals its hidden structure</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- Definition -->
+    <div class="card" style="border-left:5px solid #ea580c;margin-bottom:20px">
+      <p class="section-label">Definition</p>
+      <p style="font-size:20px;font-weight:900;color:#0f172a;margin-bottom:10px">A STOP = a starting point with <span style="color:#16a34a">NO NOTE</span> starting directly after it</p>
+      <p style="font-size:13px;color:#475569;line-height:1.6">
+        At least one empty position (0) follows a stop in the binary grid.<br>
+        In musical terms: the <strong>last note before a rest or a space</strong>.<br>
+        Binary indicator: the last <span style="color:#3F6FB6;font-weight:700">●</span> before one or more <span style="color:#475569">·</span>'s
+      </p>
+    </div>
+
+    <!-- 4 types -->
+    <p class="section-label">Types of Stops</p>
+    <div class="four-col">
+      <div class="type-card">
+        <div class="type-title">1. Long Held Note</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-stop grid-cell">●</div>
+            <div class="cell-ub grid-cell">·</div>
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label">+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+        </div>
+        <div class="type-binary">1 0 0 0 …</div>
+        <p style="font-size:11px;color:#6b7280">Starting point of a held note. The note rings long — but only the first position counts.</p>
+      </div>
+      <div class="type-card">
+        <div class="type-title">2. Short Note before Rest</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-on-db grid-cell">●</div>
+            <div class="cell-stop grid-cell">●</div>
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label">+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+        </div>
+        <div class="type-binary">1 1 0 0 …</div>
+        <p style="font-size:11px;color:#6b7280">The second note is the stop — short note followed immediately by silence.</p>
+      </div>
+      <div class="type-card">
+        <div class="type-title">3. Last of a Series</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-on-db grid-cell">●</div>
+            <div class="cell-on-ub grid-cell">●</div>
+            <div class="cell-on-db grid-cell">●</div>
+            <div class="cell-stop grid-cell">●</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label">+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+        </div>
+        <div class="type-binary">1 1 1 1 0</div>
+        <p style="font-size:11px;color:#6b7280">A fast run — the LAST note of the run is the stop. The phrase "lands" here.</p>
+      </div>
+      <div class="type-card">
+        <div class="type-title">4. Upbeat Stop</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-stop grid-cell">●</div>
+            <div class="cell-db grid-cell">·</div>
+            <div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label">+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+        </div>
+        <div class="type-binary">0 1 0 0 …</div>
+        <p style="font-size:11px;color:#6b7280">Stop falls on an upbeat (+). Ambiguous, energetic landing — often an anticipation.</p>
+      </div>
+    </div>
+
+    <!-- Visual example -->
+    <p class="section-label">How to Find Stops — Visual Example</p>
+    <div class="card" style="margin-bottom:20px">
+      <p style="font-size:12px;color:#475569;margin-bottom:12px">Find all stops in this two-measure melody. Stops are shown in <span style="color:#16a34a;font-weight:700">green</span>:</p>
+      <div class="grid-wrap">
+        <div style="font-size:10px;color:#64748b;margin-bottom:4px;font-weight:700">MEASURE 1</div>
+        <div class="grid-row">
+          <div class="cell-on-db grid-cell">●</div>
+          <div class="cell-ub grid-cell">·</div>
+          <div class="cell-on-db grid-cell">●</div>
+          <div class="cell-on-ub grid-cell">●</div>
+          <div class="cell-stop grid-cell">●</div>
+          <div class="cell-ub grid-cell">·</div>
+          <div class="cell-db grid-cell">·</div>
+          <div class="cell-stop grid-cell">●</div>
+        </div>
+        <div class="grid-row">
+          <div class="cell-label">1</div><div class="cell-label">+</div>
+          <div class="cell-label">2</div><div class="cell-label">+</div>
+          <div class="cell-label">3</div><div class="cell-label">+</div>
+          <div class="cell-label">4</div><div class="cell-label">+</div>
+        </div>
+      </div>
+      <div style="margin-top:12px;font-size:12px;color:#475569;line-height:1.8">
+        <strong style="color:#3F6FB6">Beat 1</strong> → followed by beat 2: NOT a stop (another note comes right after)<br>
+        <strong style="color:#3F6FB6">Beat 2</strong> → followed by and2: NOT a stop (run of 3 notes coming)<br>
+        <strong style="color:#F29B38">And 2</strong> → followed by beat 3: NOT a stop (another note right after)<br>
+        <span style="color:#16a34a;font-weight:700">★ Beat 3</span> → followed by silence: <strong>STOP</strong> — phrase lands here<br>
+        <span style="color:#16a34a;font-weight:700">★ And 4</span> → followed by silence (end of measure): <strong>STOP</strong> — anticipation stop
+      </div>
+    </div>
+
+    <!-- Why stops matter -->
+    <div class="callout" style="margin-bottom:20px">
+      <div class="callout-title">Why Stops Matter</div>
+      <div class="callout-text">
+        "Stops are where the musical phrase <strong>LANDS</strong> — like the period at the end of a sentence."<br><br>
+        The Rhythm Code reveals that stops <strong>cluster around specific positions</strong> — not randomly. In successful songs across all genres, stops consistently fall on the same set of 5–7 positions out of the 16 available. <strong>Analyzing stops unlocks the hidden system in successful songs.</strong>
+      </div>
+    </div>
+
+    <!-- NOT a stop -->
+    <p class="section-label">NOT a Stop — Important Clarification</p>
+    <div class="clarify-box">
+      <div class="grid-row" style="margin-bottom:8px">
+        <div class="cell-ub grid-cell">·</div>
+        <div class="cell-on-db grid-cell" style="opacity:0.5">●</div>
+        <div class="cell-on-ub grid-cell">●</div>
+        <div class="cell-ub grid-cell">·</div>
+      </div>
+      <p style="font-size:13px;color:#94a3b8;margin-top:4px">
+        The first <span style="color:#93c5fd">●</span> at position 2 is <strong style="color:#f87171">NOT a stop</strong> — because another <span style="color:#fbbf24">●</span> follows it immediately at position 3.<br>
+        <strong style="color:#4ade80">Only the LAST note before a rest is the stop.</strong>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-tag">
+    <span style="background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px">Rhythm Code OS · Module B</span>
+  </div>
+</div>
+</body>
+</html>

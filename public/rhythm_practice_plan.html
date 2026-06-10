@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhythm Code OS — 60-Day Practice Plan</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1400px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+.header{background:#0f172a;padding:32px 56px 28px}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:12px}
+.header h1{font-size:36px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:0.02em}
+.header-sub{font-size:14px;color:#94a3b8;margin-top:8px;line-height:1.5}
+.header-meta{display:flex;gap:24px;margin-top:16px}
+.meta-chip{background:#1e293b;border-radius:6px;padding:8px 16px;font-size:12px;font-weight:700;color:#F29B38}
+.rainbow-rule{height:5px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.body{padding:36px 56px 40px;background:#fff}
+.section-label{font-size:9px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#9a3412;margin-bottom:12px}
+.card{background:#f8fafc;border-radius:10px;padding:20px 24px;border:1px solid #e2e8f0;margin-bottom:24px}
+.four-col{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:28px}
+.phase-card{border-radius:10px;padding:18px 20px}
+.phase-num{font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;opacity:0.8}
+.phase-title{font-size:16px;font-weight:900;margin-bottom:6px}
+.phase-days{font-size:12px;font-weight:700;margin-bottom:10px;opacity:0.7}
+.phase-list{font-size:11px;line-height:1.8;list-style:none}
+.phase-list li::before{content:"→ ";font-weight:700}
+.weeks-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
+.week-card{background:#fff;border-radius:8px;padding:14px 18px;border:1px solid #e2e8f0;border-left:4px solid #ea580c}
+.week-num{font-size:10px;font-weight:800;color:#ea580c;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px}
+.week-title{font-size:13px;font-weight:700;color:#0f172a;margin-bottom:6px}
+.week-desc{font-size:12px;color:#475569;line-height:1.5}
+.songs-card{background:#0f172a;border-radius:10px;padding:20px 24px;margin-bottom:28px}
+.songs-title{font-size:12px;font-weight:800;color:#F29B38;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px}
+.songs-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.song-item{background:#1e293b;border-radius:6px;padding:10px 12px}
+.song-name{font-size:12px;font-weight:700;color:#fff;margin-bottom:3px}
+.song-meta{font-size:10px;color:#94a3b8}
+.milestones{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:28px}
+.milestone-card{background:#0f172a;border-radius:10px;padding:16px 18px;text-align:center}
+.milestone-day{font-size:28px;font-weight:900;color:#ea580c;margin-bottom:4px}
+.milestone-text{font-size:11px;color:#94a3b8;line-height:1.5}
+.daily-card{background:#fff7ed;border-radius:10px;padding:20px 24px;border:1px solid #fed7aa;margin-bottom:28px}
+.daily-row{display:flex;gap:16px;align-items:flex-start}
+.daily-item{flex:1;background:#fff;border-radius:6px;padding:12px;border:1px solid #fed7aa}
+.daily-time{font-size:20px;font-weight:900;color:#ea580c}
+.daily-title{font-size:12px;font-weight:700;color:#0f172a;margin:3px 0}
+.daily-desc{font-size:11px;color:#6b7280;line-height:1.4}
+.footer-tag{text-align:center;padding:16px;background:#0f172a}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="system-tag">Rhythm Code OS · Practice Plan</div>
+    <h1>60-Day Practice Plan</h1>
+    <div class="header-sub">A structured daily practice guide for making the Rhythm Code instinctual.<br>Book: "The Rhythm Code" by Tamas Bodzsar</div>
+    <div class="header-meta">
+      <div class="meta-chip">10–15 min/day</div>
+      <div class="meta-chip">4 phases</div>
+      <div class="meta-chip">18 weekly drills</div>
+      <div class="meta-chip">5 anchor songs</div>
+      <div class="meta-chip">4 milestones</div>
+    </div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+
+    <!-- Daily structure -->
+    <p class="section-label">Daily Session Structure (Every Day)</p>
+    <div class="daily-card">
+      <div class="daily-row">
+        <div class="daily-item">
+          <div class="daily-time">2 min</div>
+          <div class="daily-title">Pulse Lock</div>
+          <div class="daily-desc">Put on a song. Find the beat. Clap on 1, 2, 3, 4. Then try to clap the tresillo (positions 1, and2, beat4). This trains your ear to hear the pulse before the theory.</div>
+        </div>
+        <div class="daily-item">
+          <div class="daily-time">10–13 min</div>
+          <div class="daily-title">Today's Drill</div>
+          <div class="daily-desc">See the weekly drill for this week. Each week has a specific focus rotating through the four phases. Do the drill fully — don't rush it.</div>
+        </div>
+        <div class="daily-item">
+          <div class="daily-time">2–3 min</div>
+          <div class="daily-title">Apply to Your Project</div>
+          <div class="daily-desc">Take today's concept and apply it to something you are currently working on — your own song, a cover, or a composition exercise. One direct application per session.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Phases -->
+    <p class="section-label">The 4 Phases</p>
+    <div class="four-col">
+      <div class="phase-card" style="background:#fff7ed;border:2px solid #ea580c">
+        <div class="phase-num" style="color:#ea580c">Phase 1</div>
+        <div class="phase-title" style="color:#431407">Hear the Grid</div>
+        <div class="phase-days" style="color:#9a3412">Days 1–15</div>
+        <ul class="phase-list" style="color:#431407">
+          <li>Binary notation fluency</li>
+          <li>Upbeats vs. downbeats</li>
+          <li>Quality sensitivity (boring vs. groovy)</li>
+          <li>8-position grid reading</li>
+        </ul>
+      </div>
+      <div class="phase-card" style="background:#fde8d8;border:2px solid #F29B38">
+        <div class="phase-num" style="color:#F29B38">Phase 2</div>
+        <div class="phase-title" style="color:#431407">Stops & Anticipations</div>
+        <div class="phase-days" style="color:#9a3412">Days 16–30</div>
+        <ul class="phase-list" style="color:#431407">
+          <li>Stop detection in melodies</li>
+          <li>Anticipation identification</li>
+          <li>Quarter note anticipation ear training</li>
+          <li>Stop vs. non-stop distinction</li>
+        </ul>
+      </div>
+      <div class="phase-card" style="background:#fef3c7;border:2px solid #d97706">
+        <div class="phase-num" style="color:#d97706">Phase 3</div>
+        <div class="phase-title" style="color:#431407">Find the Clave</div>
+        <div class="phase-days" style="color:#9a3412">Days 31–45</div>
+        <ul class="phase-list" style="color:#431407">
+          <li>Tresillo recognition across genres</li>
+          <li>2-3 vs. 3-2 orientation ID</li>
+          <li>Transcribing clave from songs</li>
+          <li>Clave in stops and starting points</li>
+        </ul>
+      </div>
+      <div class="phase-card" style="background:#d9f5e4;border:2px solid #16a34a">
+        <div class="phase-num" style="color:#16a34a">Phase 4</div>
+        <div class="phase-title" style="color:#14532d">Build With the Code</div>
+        <div class="phase-days" style="color:#166534">Days 46–60</div>
+        <ul class="phase-list" style="color:#14532d">
+          <li>Rhythm Code map application</li>
+          <li>4-step groove building method</li>
+          <li>Original groove composition</li>
+          <li>Multi-instrument Rhythm Code writing</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Week-by-week drills -->
+    <p class="section-label">Week-by-Week Drills (18 Weeks)</p>
+    <div class="weeks-grid">
+      <div class="week-card" style="border-left-color:#ea580c">
+        <div class="week-num">Week 1 · Phase 1</div>
+        <div class="week-title">Binary Transcription</div>
+        <div class="week-desc">Take 3 songs. Write the first 2 measures of the main melody in binary notation (mark ● where notes start). Compare your transcriptions — do they look similar to each other?</div>
+      </div>
+      <div class="week-card" style="border-left-color:#ea580c">
+        <div class="week-num">Week 2 · Phase 1</div>
+        <div class="week-title">Upbeat/Downbeat Audit</div>
+        <div class="week-desc">Mark U or D under each note in a 2-measure melody. Count the ratio. Then shift 2 notes from D to U (one position earlier). Listen to both versions. Note the difference in feel.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#ea580c">
+        <div class="week-num">Week 3 · Phase 1</div>
+        <div class="week-title">The Quality Test</div>
+        <div class="week-desc">Play or sing a melody with ALL notes on downbeats. Then systematically shift 1, then 2, then 3 notes to upbeats. Record each version. Hear how the energy changes with each shift.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#ea580c">
+        <div class="week-num">Week 4 · Phase 1 — Checkpoint</div>
+        <div class="week-title">Phase 1 Check</div>
+        <div class="week-desc">Can you instantly label every position (1, +, 2, +, 3, +, 4, +) on any song in real time? Put on 5 different songs and call out positions aloud as you listen. If yes, move to Phase 2.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#F29B38">
+        <div class="week-num">Week 5 · Phase 2</div>
+        <div class="week-title">Stop Hunting</div>
+        <div class="week-desc">Identify all stops in 3 melodies — mark them in the binary grid. Then record: how many stops per phrase? What positions do they fall on? Are there patterns?</div>
+      </div>
+      <div class="week-card" style="border-left-color:#F29B38">
+        <div class="week-num">Week 6 · Phase 2</div>
+        <div class="week-title">Anticipation Spotting</div>
+        <div class="week-desc">Find every anticipation in a verse + chorus of one song. Mark: is each upbeat stop followed by an empty downbeat? That's an anticipation. Count regular vs. quarter note anticipations.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#F29B38">
+        <div class="week-num">Week 7 · Phase 2</div>
+        <div class="week-title">Quarter Note Anticipation Hunt</div>
+        <div class="week-desc">Find 5 songs that use the quarter note anticipation (note on "and of 4," beat 1 of next measure empty). Examples to start: "Beautiful Day" (U2), "Say" (John Mayer), "I'm Every Woman" (Whitney).</div>
+      </div>
+      <div class="week-card" style="border-left-color:#F29B38">
+        <div class="week-num">Week 8 · Phase 2 — Checkpoint</div>
+        <div class="week-title">Phase 2 Check</div>
+        <div class="week-desc">Can you find stops and anticipations in a song WITHOUT looking at notation — just by listening? Test on "Happy" (Pharrell). Identify 5 stops and 3 anticipations by ear alone.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#d97706">
+        <div class="week-num">Week 9 · Phase 3</div>
+        <div class="week-title">Tresillo in Songs</div>
+        <div class="week-desc">Find the tresillo (1 0 0 1 0 0 1 0) in 5 songs. Required: "Hound Dog" (Elvis), "Shape of You" (Ed Sheeran), "Despacito" (Luis Fonsi). Choose 2 more from any genre.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#d97706">
+        <div class="week-num">Week 10 · Phase 3</div>
+        <div class="week-title">Clap the Clave</div>
+        <div class="week-desc">For 5 songs, clap the 3-2 or 2-3 son clave as you listen. Does it fit? Does it feel natural? Use "Happy" and "Get Up" as warm-up — these have very clear clave patterns to match against.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#d97706">
+        <div class="week-num">Week 11 · Phase 3</div>
+        <div class="week-title">Clave Direction ID</div>
+        <div class="week-desc">Identify 2-3 vs. 3-2 for 5 different songs using only the kick drum and bass. The direction is usually set by where the first clave note falls relative to the measure structure.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#d97706">
+        <div class="week-num">Week 12 · Phase 3 — Checkpoint</div>
+        <div class="week-title">Phase 3 Check</div>
+        <div class="week-desc">Transcribe a full verse of one song in binary notation. Mark which stops land on clave positions. Is it 2-3 or 3-2? Can you identify this in under 2 minutes of listening?</div>
+      </div>
+      <div class="week-card" style="border-left-color:#16a34a">
+        <div class="week-num">Week 13 · Phase 4</div>
+        <div class="week-title">Overlay the Map</div>
+        <div class="week-desc">Take a transcribed melody and mark STRONG / MEDIUM / AVOID for each stop using the Rhythm Code map. Count how many stops fall on each category. Compare "Happy" to "Get Up."</div>
+      </div>
+      <div class="week-card" style="border-left-color:#16a34a">
+        <div class="week-num">Week 14 · Phase 4</div>
+        <div class="week-title">Find the Off-Clave Rhythm Code Note</div>
+        <div class="week-desc">Find 2 songs where a stop fits the Rhythm Code map (STRONG position) but is NOT a clave note. This reveals positions the map covers that the clave itself doesn't include.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#16a34a">
+        <div class="week-num">Week 15 · Phase 4</div>
+        <div class="week-title">The 4-Step Method</div>
+        <div class="week-desc">Take a simple melody you composed (or borrow a boring one). Apply all 4 steps: add QNA, anticipate the 3-side first beat, remove AVOID stops, anticipate beat 3. Compare before and after by recording both.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#16a34a">
+        <div class="week-num">Week 16 · Phase 4</div>
+        <div class="week-title">Compose 3 Bass Lines</div>
+        <div class="week-desc">Write 3 original bass lines using the Rhythm Code. One 2-3 clave, one 3-2 clave, one of your choice. Record them. Play them back. Evaluate which stops land on STRONG positions.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#16a34a">
+        <div class="week-num">Week 17 · Phase 4</div>
+        <div class="week-title">Full Song Groove</div>
+        <div class="week-desc">Write all 4 parts (kick drum, bass, guitar/keys, vocal melody) for a 2-measure groove using the Rhythm Code. Most stops should land on STRONG positions. Record and evaluate.</div>
+      </div>
+      <div class="week-card" style="border-left-color:#16a34a;border:2px solid #16a34a">
+        <div class="week-num" style="color:#16a34a">Week 18 · Phase 4 — FINAL</div>
+        <div class="week-title">Composition + Assessment</div>
+        <div class="week-desc">Compose a complete song section (verse + chorus, 16+ measures) using everything learned. Record it. Transcribe it. Map the stops. Calculate your STRONG/MEDIUM/AVOID ratio. Celebrate the result.</div>
+      </div>
+    </div>
+
+    <!-- Anchor songs -->
+    <p class="section-label">The 5 Anchor Songs</p>
+    <div class="songs-card">
+      <div class="songs-title">Recommended Analysis Songs — Learn These First</div>
+      <div class="songs-grid">
+        <div class="song-item">
+          <div class="song-name">"Happy"</div>
+          <div class="song-meta">Pharrell Williams</div>
+          <div style="font-size:10px;color:#4ade80;margin-top:4px;font-weight:700">2-3 Clave · Very clear · Start here</div>
+        </div>
+        <div class="song-item">
+          <div class="song-name">"Get Up"</div>
+          <div class="song-meta">James Brown</div>
+          <div style="font-size:10px;color:#F29B38;margin-top:4px;font-weight:700">2-3 Clave · Historic · Funk reference</div>
+        </div>
+        <div class="song-item">
+          <div class="song-name">"Single Ladies"</div>
+          <div class="song-meta">Beyoncé</div>
+          <div style="font-size:10px;color:#F29B38;margin-top:4px;font-weight:700">2-3 Clave · Pop + R&amp;B · Modern</div>
+        </div>
+        <div class="song-item">
+          <div class="song-name">"Every Teardrop"</div>
+          <div class="song-meta">Coldplay</div>
+          <div style="font-size:10px;color:#93c5fd;margin-top:4px;font-weight:700">3-2 Clave · Rock · Guitar + vocal</div>
+        </div>
+        <div class="song-item" style="border:1px solid #ea580c">
+          <div class="song-name">Your choice</div>
+          <div class="song-meta">Any genre you love</div>
+          <div style="font-size:10px;color:#ea580c;margin-top:4px;font-weight:700">Pick one anchor song from your genre</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestones -->
+    <p class="section-label">The 4 Milestones</p>
+    <div class="milestones">
+      <div class="milestone-card">
+        <div class="milestone-day">Day 15</div>
+        <div class="milestone-text">"Can you label upbeats vs. downbeats in ANY song in real time — while just listening?"</div>
+      </div>
+      <div class="milestone-card">
+        <div class="milestone-day">Day 30</div>
+        <div class="milestone-text">"Can you find stops and anticipations in a song without notation — by ear alone?"</div>
+      </div>
+      <div class="milestone-card">
+        <div class="milestone-day">Day 45</div>
+        <div class="milestone-text">"Can you clap the clave while listening to 5 different songs across 5 different genres?"</div>
+      </div>
+      <div class="milestone-card" style="border:2px solid #16a34a">
+        <div class="milestone-day" style="color:#4ade80">Day 60</div>
+        <div class="milestone-text">"Have you composed a groove using the 4-step Rhythm Code method and recorded it?"</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-tag">
+    <span style="background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px">Rhythm Code OS · Practice Plan</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhythm Code OS — Workbook</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1400px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.14)}
+/* Cover */
+.cover{background:#0f172a;padding:60px 56px;min-height:320px;display:flex;flex-direction:column;justify-content:center}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:16px}
+.cover h1{font-size:48px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:0.02em;line-height:1.05}
+.cover-sub{font-size:16px;color:#94a3b8;margin-top:12px}
+.cover-accent{height:5px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%);margin-top:24px;border-radius:3px;width:240px}
+/* Sections */
+.section{padding:36px 56px;border-bottom:3px solid #f1f5f9}
+.section-num{font-size:9px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:#9a3412;margin-bottom:8px}
+.section-title{font-size:24px;font-weight:900;color:#0f172a;margin-bottom:6px}
+.section-desc{font-size:13px;color:#64748b;margin-bottom:20px;line-height:1.5}
+/* Binary grid (blank) */
+.blank-grid-wrap{margin-bottom:20px}
+.blank-grid-title{font-size:11px;font-weight:700;color:#475569;margin-bottom:8px}
+.blank-grid-row{display:flex;gap:3px;margin-bottom:2px}
+.blank-cell{width:40px;height:40px;border-radius:6px;border:2px dashed #cbd5e1;background:#f8fafc;display:flex;align-items:center;justify-content:center;color:#cbd5e1;font-size:14px}
+.blank-cell-label{font-size:10px;color:#94a3b8;text-align:center;min-width:40px;padding-top:3px}
+.song-field{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.song-field label{font-size:12px;font-weight:700;color:#475569;width:100px;flex-shrink:0}
+.field-line{flex:1;height:1px;background:#e2e8f0;position:relative}
+.field-line::after{content:'';position:absolute;bottom:-8px;left:0;right:0;height:1px;background:#e2e8f0}
+.note-field{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:10px 12px;min-height:48px;margin-bottom:14px}
+.note-label{font-size:10px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px}
+/* Rhythm Code Map (pre-printed) */
+.map-cell{width:42px;height:42px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;border:2px solid transparent}
+.cell-strong{background:#14532d;border-color:#16a34a;color:#4ade80}
+.cell-medium{background:#78350f;border-color:#d97706;color:#fbbf24}
+.cell-avoid{background:#450a0a;border-color:#dc2626;color:#f87171}
+.cell-empty{background:#1e293b;border-color:#334155;color:#334155}
+.cell-empty-db{background:#1e3a5f;border-color:#3F6FB6;color:#3F6FB6}
+.map-cell-label{font-size:9px;color:#64748b;text-align:center;min-width:42px;padding-top:3px}
+.map-row{display:flex;gap:3px;margin-bottom:2px}
+/* Step grids for 4-step method */
+.step-grid-card{background:#f8fafc;border-radius:8px;padding:14px 18px;border:1px solid #e2e8f0;margin-bottom:14px}
+.step-grid-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#9a3412;margin-bottom:8px}
+/* 4-col instruments */
+.instrument-section{margin-bottom:16px}
+.instrument-label{font-size:12px;font-weight:700;color:#0f172a;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.inst-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:9px;font-weight:800;padding:2px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:0.08em}
+/* Progress checkpoints */
+.checkpoint-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.checkpoint-card{background:#0f172a;border-radius:10px;padding:18px 16px;text-align:center}
+.checkpoint-day{font-size:26px;font-weight:900;color:#ea580c}
+.checkpoint-desc{font-size:11px;color:#94a3b8;margin-top:6px;line-height:1.4;margin-bottom:12px}
+.check-box{width:20px;height:20px;border:2px solid #475569;border-radius:4px;margin:8px auto 6px}
+.date-line{border-top:1px solid #334155;padding-top:8px;font-size:10px;color:#475569}
+/* Count table */
+.count-table{width:100%;border-collapse:collapse;margin-bottom:14px}
+.count-table th{background:#0f172a;color:#94a3b8;padding:8px 12px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-align:left}
+.count-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;font-size:12px}
+.count-cell{min-width:80px;border-bottom:2px dashed #cbd5e1;display:inline-block;height:20px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.footer-tag{text-align:center;padding:16px;background:#0f172a}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Cover -->
+  <div class="cover">
+    <div class="system-tag">Rhythm Code OS · Workbook</div>
+    <h1>Rhythm Code OS<br>Workbook</h1>
+    <div class="cover-sub">Your hands-on companion to "The Rhythm Code" by Tamas Bodzsar<br>Transcribe · Analyze · Build · Compose</div>
+    <div class="cover-accent"></div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <!-- SECTION 1: Binary Transcription Templates -->
+  <div class="section">
+    <div class="section-num">Section 1</div>
+    <div class="section-title">Binary Transcription Templates</div>
+    <div class="section-desc">Transcribe a song here. Mark ● where notes start. Leave · for empty positions. Use these grids to build your binary reading fluency.</div>
+
+    <!-- Template 1 -->
+    <div class="song-field">
+      <label>Song:</label><div class="field-line"></div>
+      <label style="margin-left:24px">Artist:</label><div class="field-line"></div>
+      <label style="margin-left:24px">Instrument:</label><div class="field-line"></div>
+    </div>
+    <div class="blank-grid-wrap">
+      <div class="blank-grid-title">Measure 1</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+    <div class="blank-grid-wrap" style="margin-top:14px">
+      <div class="blank-grid-title">Measure 2</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+    <div class="note-field"><div class="note-label">Notes:</div></div>
+
+    <!-- Template 2 -->
+    <div class="song-field" style="margin-top:20px">
+      <label>Song:</label><div class="field-line"></div>
+      <label style="margin-left:24px">Artist:</label><div class="field-line"></div>
+      <label style="margin-left:24px">Instrument:</label><div class="field-line"></div>
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="blank-grid-wrap">
+          <div class="blank-grid-title">Measure 1</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="blank-grid-wrap">
+          <div class="blank-grid-title">Measure 2</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: Stop Detection -->
+  <div class="section">
+    <div class="section-num">Section 2</div>
+    <div class="section-title">Stop Detection Worksheet</div>
+    <div class="section-desc">Transcribe the melody, then circle the STOPS — the last note before silence in each phrase. Count where they fall.</div>
+
+    <div class="two-col" style="margin-bottom:20px">
+      <div>
+        <div class="song-field">
+          <label>Song:</label><div class="field-line"></div>
+        </div>
+        <div class="blank-grid-wrap">
+          <div class="blank-grid-title">Measure 1 — circle all stops</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+          </div>
+        </div>
+        <div class="blank-grid-wrap" style="margin-top:10px">
+          <div class="blank-grid-title">Measure 2 — circle all stops</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="note-label" style="margin-bottom:8px;font-size:11px;font-weight:700;color:#475569">Stop Count</div>
+        <table class="count-table">
+          <tr><th>Category</th><th>Count</th></tr>
+          <tr><td style="color:#16a34a;font-weight:700">Stops on STRONG positions</td><td><span class="count-cell"></span></td></tr>
+          <tr><td style="color:#d97706;font-weight:700">Stops on MEDIUM positions</td><td><span class="count-cell"></span></td></tr>
+          <tr><td style="color:#dc2626;font-weight:700">Stops on AVOID positions</td><td><span class="count-cell"></span></td></tr>
+          <tr><td>Total stops found</td><td><span class="count-cell"></span></td></tr>
+        </table>
+        <div class="note-field"><div class="note-label">What patterns do you see?</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: Clave Identification -->
+  <div class="section">
+    <div class="section-num">Section 3</div>
+    <div class="section-title">Clave Identification Worksheet</div>
+    <div class="section-desc">Transcribe the melody's stops, then compare against the clave pattern. Which orientation fits best?</div>
+
+    <div class="song-field">
+      <label>Song:</label><div class="field-line"></div>
+      <label style="margin-left:24px">Artist:</label><div class="field-line"></div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="blank-grid-title" style="font-size:11px;font-weight:700;color:#475569;margin-bottom:8px">My Transcription (mark stops with ●)</div>
+        <div class="blank-grid-wrap">
+          <div class="blank-grid-title" style="font-size:9px;color:#94a3b8">M1</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+          </div>
+        </div>
+        <div class="blank-grid-wrap" style="margin-top:10px">
+          <div class="blank-grid-title" style="font-size:9px;color:#94a3b8">M2</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="blank-grid-title" style="font-size:11px;font-weight:700;color:#475569;margin-bottom:8px">The Clave (2-3 or 3-2? — fill in)</div>
+        <div class="blank-grid-wrap">
+          <div class="blank-grid-title" style="font-size:9px;color:#94a3b8">M1</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+          </div>
+        </div>
+        <div style="margin-top:14px;background:#f8fafc;border-radius:6px;padding:12px 14px;border:1px solid #e2e8f0">
+          <p style="font-size:12px;font-weight:700;color:#475569;margin-bottom:8px">Does my stop pattern match? Circle one:</p>
+          <p style="font-size:16px;font-weight:900;color:#ea580c;letter-spacing:12px">2-3 &nbsp;&nbsp; 3-2 &nbsp;&nbsp; ?</p>
+          <div class="note-field" style="margin-top:10px;min-height:36px"><div class="note-label">Evidence:</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: Rhythm Code Map Overlay -->
+  <div class="section">
+    <div class="section-num">Section 4</div>
+    <div class="section-title">Rhythm Code Map Overlay</div>
+    <div class="section-desc">Use the pre-printed map below. Write your melody stops in the blank cells. Evaluate each stop against the map.</div>
+
+    <div class="two-col">
+      <div>
+        <p style="font-size:11px;font-weight:700;color:#475569;margin-bottom:8px">The Rhythm Code Map (2-3 orientation)</p>
+        <div style="display:flex;gap:4px;align-items:flex-start;margin-bottom:14px">
+          <div>
+            <div style="font-size:8px;color:#64748b;margin-bottom:4px;text-align:center">M1</div>
+            <div class="map-row">
+              <div style="text-align:center"><div class="map-cell cell-medium">●</div><div class="map-cell-label">1</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty">·</div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★</div><div class="map-cell-label" style="color:#4ade80">2</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty">·</div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★</div><div class="map-cell-label" style="color:#4ade80">3</div></div>
+              <div style="text-align:center"><div class="map-cell cell-medium">●</div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-avoid">✕</div><div class="map-cell-label" style="color:#f87171">4</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong" style="border-color:#9333ea">↑</div><div class="map-cell-label" style="color:#c4b5fd">+</div></div>
+            </div>
+          </div>
+          <div style="width:2px;background:#e2e8f0;margin:20px 4px 0"></div>
+          <div>
+            <div style="font-size:8px;color:#64748b;margin-bottom:4px;text-align:center">M2</div>
+            <div class="map-row">
+              <div style="text-align:center"><div class="map-cell cell-medium">●</div><div class="map-cell-label">1</div></div>
+              <div style="text-align:center"><div class="map-cell cell-medium">●</div><div class="map-cell-label">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty-db">·</div><div class="map-cell-label">2</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★</div><div class="map-cell-label" style="color:#4ade80">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-avoid">✕</div><div class="map-cell-label" style="color:#f87171">3</div></div>
+              <div style="text-align:center"><div class="map-cell cell-strong">★</div><div class="map-cell-label" style="color:#4ade80">+</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty-db">·</div><div class="map-cell-label">4</div></div>
+              <div style="text-align:center"><div class="map-cell cell-empty">·</div><div class="map-cell-label">+</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="note-field" style="margin-bottom:12px;min-height:60px"><div class="note-label">Which stops in my melody are on AVOID positions?</div></div>
+        <div class="note-field" style="min-height:60px"><div class="note-label">Which stops are on STRONG positions?</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: 4-Step Groove Development -->
+  <div class="section">
+    <div class="section-num">Section 5</div>
+    <div class="section-title">4-Step Groove Development</div>
+    <div class="section-desc">Transform a boring all-downbeat pattern into a groove by applying each step. Fill in each grid as you go.</div>
+
+    <div class="step-grid-card" style="border-left:4px solid #475569">
+      <div class="step-grid-label">Step 0: My Boring Version (all downbeats)</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+
+    <div class="step-grid-card" style="border-left:4px solid #9333ea">
+      <div class="step-grid-label">Step 1: After — Quarter Note Anticipation added</div>
+      <div style="display:flex;gap:20px">
+        <div>
+          <div style="font-size:8px;color:#94a3b8;margin-bottom:3px">M1</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell" style="border-color:#9333ea">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label" style="color:#9333ea">★+</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:8px;color:#94a3b8;margin-bottom:3px">M2 (beat 1 now empty)</div>
+          <div class="blank-grid-row">
+            <div class="blank-cell" style="border-color:#9333ea">∅</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+            <div class="blank-cell">·</div><div class="blank-cell">·</div>
+          </div>
+          <div class="blank-grid-row">
+            <div class="blank-cell-label" style="color:#9333ea">1∅</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+            <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-grid-card" style="border-left:4px solid #16a34a">
+      <div class="step-grid-label">Step 2: After — 3-side first beat anticipated</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+
+    <div class="step-grid-card" style="border-left:4px solid #dc2626">
+      <div class="step-grid-label">Step 3: After — AVOID stops removed / moved to upbeats</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+
+    <div class="step-grid-card" style="border-left:4px solid #16a34a;border:2px solid #16a34a">
+      <div class="step-grid-label" style="color:#16a34a">Step 4: Groove Complete — Beat 3 of 3-side anticipated</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">1</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6: Composition -->
+  <div class="section">
+    <div class="section-num">Section 6</div>
+    <div class="section-title">Composition — My Rhythm Code Song</div>
+    <div class="section-desc">Write all 4 parts using the Rhythm Code. Most stops should land on STRONG positions.</div>
+
+    <div style="display:flex;gap:20px;margin-bottom:20px;flex-wrap:wrap">
+      <div class="song-field" style="flex:1;min-width:200px;margin-bottom:0"><label>Song Title:</label><div class="field-line"></div></div>
+      <div class="song-field" style="flex:0.5;min-width:120px;margin-bottom:0"><label>Key:</label><div class="field-line"></div></div>
+      <div class="song-field" style="flex:0.5;min-width:120px;margin-bottom:0"><label>Clave:</label><div class="field-line" style="max-width:80px"></div><span style="font-size:11px;color:#9a3412;font-weight:700;margin-left:8px">2-3 / 3-2</span></div>
+      <div class="song-field" style="flex:0.5;min-width:120px;margin-bottom:0"><label>Tempo:</label><div class="field-line"></div></div>
+    </div>
+
+    <div class="instrument-section">
+      <div class="instrument-label"><div class="inst-tag">Kick</div> Kick Drum Pattern</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">M1:1</div><div class="blank-cell-label">+</div><div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div><div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">M2:1</div><div class="blank-cell-label">+</div><div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div><div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+
+    <div class="instrument-section">
+      <div class="instrument-label"><div class="inst-tag">Bass</div> Bass Line</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">M1:1</div><div class="blank-cell-label">+</div><div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div><div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">M2:1</div><div class="blank-cell-label">+</div><div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div><div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+
+    <div class="instrument-section">
+      <div class="instrument-label"><div class="inst-tag">Guitar / Keys</div> Chord Stab / Melody</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">M1:1</div><div class="blank-cell-label">+</div><div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div><div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">M2:1</div><div class="blank-cell-label">+</div><div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div><div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+
+    <div class="instrument-section">
+      <div class="instrument-label"><div class="inst-tag">Vocal</div> Vocal Melody</div>
+      <div class="blank-grid-row">
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+        <div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div><div class="blank-cell">·</div>
+      </div>
+      <div class="blank-grid-row">
+        <div class="blank-cell-label">M1:1</div><div class="blank-cell-label">+</div><div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div><div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">M2:1</div><div class="blank-cell-label">+</div><div class="blank-cell-label">2</div><div class="blank-cell-label">+</div>
+        <div class="blank-cell-label">3</div><div class="blank-cell-label">+</div><div class="blank-cell-label">4</div><div class="blank-cell-label">+</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: Progress Checkpoints -->
+  <div class="section" style="border-bottom:none">
+    <div class="section-num">Section 7</div>
+    <div class="section-title">Progress Checkpoints</div>
+    <div class="section-desc">Track your four major milestones across the 60-day plan.</div>
+    <div class="checkpoint-row">
+      <div class="checkpoint-card">
+        <div class="checkpoint-day">Day 15</div>
+        <div class="checkpoint-desc">Can you label upbeats vs. downbeats in any song in real time — just by listening?</div>
+        <div class="check-box"></div>
+        <div class="date-line">Date completed: ___________</div>
+      </div>
+      <div class="checkpoint-card">
+        <div class="checkpoint-day">Day 30</div>
+        <div class="checkpoint-desc">Can you find stops and anticipations in a song without notation — by ear alone?</div>
+        <div class="check-box"></div>
+        <div class="date-line">Date completed: ___________</div>
+      </div>
+      <div class="checkpoint-card">
+        <div class="checkpoint-day">Day 45</div>
+        <div class="checkpoint-desc">Can you clap the clave while listening to 5 different songs across 5 different genres?</div>
+        <div class="check-box"></div>
+        <div class="date-line">Date completed: ___________</div>
+      </div>
+      <div class="checkpoint-card" style="border:2px solid #16a34a">
+        <div class="checkpoint-day" style="color:#4ade80">Day 60</div>
+        <div class="checkpoint-desc">Have you composed a groove using the 4-step Rhythm Code method and recorded it?</div>
+        <div class="check-box" style="border-color:#16a34a"></div>
+        <div class="date-line">Date completed: ___________</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-tag">
+    <span style="background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px">Rhythm Code OS · Workbook</span>
+  </div>
+</div>
+</body>
+</html>

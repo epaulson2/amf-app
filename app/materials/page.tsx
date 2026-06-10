@@ -306,6 +306,60 @@ const SYSTEMS: System[] = [
       },
     ],
   },
+  {
+    id: 'rhythm',
+    label: 'Rhythm Code OS',
+    description: 'Rhythm Code OS — the binary grid system from "The Rhythm Code" by Tamas Bodzsar. Teaches rhythm as starting points (not duration), the son clave, the Rhythm Code map, and a 4-step method for building grooves that work.',
+    color: '#fde8d8',
+    textColor: '#9a3412',
+    modules: [
+      {
+        id: 'rc-moda', label: 'Module A — The Grid',
+        items: [
+          { title: 'Sheet A1: The Language of Rhythm: Binary Grid', type: 'sheet', html: '/rhythm_sheet_a1.html', pdf: '/rhythm_sheet_a1.pdf' },
+          { title: 'Sheet A2: Upbeats vs. Downbeats', type: 'companion', html: '/rhythm_sheet_a2.html', pdf: '/rhythm_sheet_a2.pdf' },
+          { title: 'Infographic: Module A — The Binary Grid', type: 'infographic', html: '/rhythm_infographic_a.html', pdf: '/rhythm_infographic_a.pdf' },
+        ],
+      },
+      {
+        id: 'rc-modb', label: 'Module B — Stops & Anticipations',
+        items: [
+          { title: 'Sheet B1: Stops', type: 'sheet', html: '/rhythm_sheet_b1.html', pdf: '/rhythm_sheet_b1.pdf' },
+          { title: 'Sheet B2: Anticipations', type: 'companion', html: '/rhythm_sheet_b2.html', pdf: '/rhythm_sheet_b2.pdf' },
+          { title: 'Infographic: Module B — Stops & Anticipations', type: 'infographic', html: '/rhythm_infographic_b.html', pdf: '/rhythm_infographic_b.pdf' },
+        ],
+      },
+      {
+        id: 'rc-modc', label: 'Module C — The Son Clave',
+        items: [
+          { title: 'Sheet C1: The Son Clave: Rhythm That Conquered the World', type: 'sheet', html: '/rhythm_sheet_c1.html', pdf: '/rhythm_sheet_c1.pdf' },
+          { title: 'Sheet C2: The Clave Across Genres', type: 'companion', html: '/rhythm_sheet_c2.html', pdf: '/rhythm_sheet_c2.pdf' },
+          { title: 'Infographic: Module C — The Son Clave', type: 'infographic', html: '/rhythm_infographic_c.html', pdf: '/rhythm_infographic_c.pdf' },
+        ],
+      },
+      {
+        id: 'rc-modd', label: 'Module D — The Rhythm Code Map',
+        items: [
+          { title: 'Sheet D1: The Rhythm Code Map', type: 'sheet', html: '/rhythm_sheet_d1.html', pdf: '/rhythm_sheet_d1.pdf' },
+          { title: 'Infographic: Module D — The Rhythm Code Map', type: 'infographic', html: '/rhythm_infographic_d.html', pdf: '/rhythm_infographic_d.pdf' },
+        ],
+      },
+      {
+        id: 'rc-mode', label: 'Module E — Building Grooves',
+        items: [
+          { title: 'Sheet E1: Building a Groove: The 4-Step Process', type: 'sheet', html: '/rhythm_sheet_e1.html', pdf: '/rhythm_sheet_e1.pdf' },
+          { title: 'Infographic: Module E — Building a Groove', type: 'infographic', html: '/rhythm_infographic_e.html', pdf: '/rhythm_infographic_e.pdf' },
+        ],
+      },
+      {
+        id: 'rc-practice', label: 'Practice & Workbook',
+        items: [
+          { title: '60-Day Practice Plan', type: 'sheet', html: '/rhythm_practice_plan.html', pdf: '/rhythm_practice_plan.pdf' },
+          { title: 'Rhythm Code OS Workbook', type: 'workbook', html: '/rhythm_workbook.html', pdf: '/rhythm_workbook.pdf' },
+        ],
+      },
+    ],
+  },
 ]
 
 export default function MaterialsPage() {

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhythm Code OS — Module E Infographic: Building a Groove</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#e8e8e8;font-family:system-ui,sans-serif;display:flex;justify-content:center;padding:32px 0}
+.page{width:1200px;height:800px;background:#0f172a;box-shadow:0 4px 24px rgba(0,0,0,0.3);display:flex;flex-direction:column}
+.header{padding:20px 48px 12px}
+.system-tag{display:inline-block;background:#fde8d8;color:#9a3412;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:6px}
+.header h1{font-size:30px;font-weight:900;color:#fff;text-transform:uppercase}
+.header-sub{font-size:13px;color:#4ade80;font-weight:700;margin-top:4px}
+.rainbow-rule{height:4px;background:linear-gradient(90deg,#ea580c 0%,#F29B38 30%,#d97706 60%,#3F6FB6 100%)}
+.body{flex:1;padding:16px 32px 16px;display:flex;flex-direction:column;gap:14px}
+.steps-row{display:flex;gap:8px;align-items:stretch}
+.step-panel{flex:1;background:#1e293b;border-radius:10px;padding:14px;display:flex;flex-direction:column}
+.step-num{font-size:22px;font-weight:900;margin-bottom:4px}
+.step-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px}
+.arrow{display:flex;align-items:center;color:#475569;font-size:24px;padding:0 2px;flex-shrink:0}
+.grid-wrap{display:inline-block}
+.grid-row{display:flex;gap:2px;margin-bottom:2px}
+.grid-cell{width:28px;height:28px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;border:2px solid transparent}
+.cell-db{background:#1e3a5f;border-color:#3F6FB6;color:#3F6FB6}
+.cell-ub{background:#0f172a;border-color:#334155;color:#334155}
+.cell-on-db{background:#3F6FB6;color:#fff;border-color:#3F6FB6}
+.cell-on-ub{background:#F29B38;color:#fff;border-color:#F29B38}
+.cell-new{background:#16a34a;color:#fff;border-color:#16a34a}
+.cell-avoid{background:#450a0a;border-color:#dc2626;color:#f87171}
+.cell-antic{background:#9333ea;color:#fff;border-color:#9333ea}
+.cell-label{font-size:8px;color:#475569;text-align:center;min-width:28px}
+.verdict{font-size:12px;font-weight:800;margin-top:8px;padding:4px 8px;border-radius:4px;text-align:center}
+.guidelines-row{display:flex;gap:8px}
+.guide-chip{flex:1;background:#1e293b;border-radius:8px;padding:10px 12px;border-left:3px solid #16a34a}
+.guide-num{font-size:16px;font-weight:900;color:#16a34a}
+.guide-text{font-size:10px;color:#94a3b8;line-height:1.4;margin-top:3px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="system-tag">Rhythm Code OS · Module E</div>
+    <h1>Building a Groove</h1>
+    <div class="header-sub">4 steps from boring to groovy — using the Rhythm Code map</div>
+  </div>
+  <div class="rainbow-rule"></div>
+
+  <div class="body">
+    <div class="steps-row">
+
+      <!-- Step 0 -->
+      <div class="step-panel" style="border:1px solid #334155">
+        <div class="step-num" style="color:#475569">0</div>
+        <div class="step-label" style="color:#64748b">BORING</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label">+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+          <div class="grid-row" style="margin-top:2px">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">3</div><div class="cell-label">+</div>
+            <div class="cell-label">4</div><div class="cell-label">+</div>
+          </div>
+        </div>
+        <div class="verdict" style="background:#1e293b;color:#475569">All downbeats. Zero energy.</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <!-- Step 1 -->
+      <div class="step-panel" style="border:2px solid #9333ea">
+        <div class="step-num" style="color:#9333ea">1</div>
+        <div class="step-label" style="color:#c4b5fd">MOVING</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label">+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+          <div class="grid-row" style="margin-top:2px">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            <div class="cell-on-db grid-cell">●</div><div class="cell-antic grid-cell">●</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">3</div><div class="cell-label">+</div>
+            <div class="cell-label">4</div><div class="cell-label" style="color:#9333ea;font-weight:800">★+</div>
+          </div>
+        </div>
+        <div class="verdict" style="background:#3b0764;color:#c4b5fd">QNA added. Beat 1 M2 empty.</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <!-- Step 2 -->
+      <div class="step-panel" style="border:1px solid #16a34a">
+        <div class="step-num" style="color:#16a34a">2</div>
+        <div class="step-label" style="color:#4ade80">ANTICIPATING</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-new grid-cell">●</div>
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label" style="color:#16a34a">★+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+          <div class="grid-row" style="margin-top:2px">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+            <div class="cell-on-db grid-cell">●</div><div class="cell-antic grid-cell">●</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">3</div><div class="cell-label">+</div>
+            <div class="cell-label">4</div><div class="cell-label" style="color:#9333ea">★+</div>
+          </div>
+        </div>
+        <div class="verdict" style="background:#14532d;color:#4ade80">3-side first beat anticipated.</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <!-- Step 3 -->
+      <div class="step-panel" style="border:1px solid #dc2626">
+        <div class="step-num" style="color:#dc2626">3</div>
+        <div class="step-label" style="color:#f87171">CLEAN</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-new grid-cell">●</div>
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label" style="color:#16a34a">★+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+          <div class="grid-row" style="margin-top:2px">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-new grid-cell">●</div>
+            <div class="cell-db grid-cell" style="border-color:#dc2626;opacity:0.4">·</div><div class="cell-antic grid-cell">●</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">3</div><div class="cell-label" style="color:#16a34a">★+</div>
+            <div class="cell-label" style="color:#dc2626">4✕</div><div class="cell-label" style="color:#9333ea">★+</div>
+          </div>
+        </div>
+        <div class="verdict" style="background:#450a0a;color:#f87171">AVOID stop removed.</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <!-- Step 4 -->
+      <div class="step-panel" style="border:2px solid #16a34a">
+        <div class="step-num" style="color:#4ade80">4</div>
+        <div class="step-label" style="color:#4ade80">GROOVY ✓</div>
+        <div class="grid-wrap">
+          <div class="grid-row">
+            <div class="cell-on-db grid-cell">●</div><div class="cell-new grid-cell">●</div>
+            <div class="cell-on-db grid-cell">●</div><div class="cell-ub grid-cell">·</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">1</div><div class="cell-label" style="color:#16a34a">★+</div>
+            <div class="cell-label">2</div><div class="cell-label">+</div>
+          </div>
+          <div class="grid-row" style="margin-top:2px">
+            <div class="cell-db grid-cell">·</div><div class="cell-new grid-cell">●</div>
+            <div class="cell-db grid-cell">·</div><div class="cell-antic grid-cell">●</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell-label">3</div><div class="cell-label" style="color:#16a34a">★+</div>
+            <div class="cell-label">4</div><div class="cell-label" style="color:#9333ea">★+</div>
+          </div>
+        </div>
+        <div class="verdict" style="background:#14532d;color:#4ade80">Beat 3 anticipated. Groove!</div>
+      </div>
+    </div>
+
+    <!-- Guidelines -->
+    <div class="guidelines-row">
+      <div class="guide-chip">
+        <div class="guide-num">1</div>
+        <div class="guide-text">Even 3 notes can suggest the clave</div>
+      </div>
+      <div class="guide-chip">
+        <div class="guide-num">2</div>
+        <div class="guide-text">Not all parts need clave all the time</div>
+      </div>
+      <div class="guide-chip">
+        <div class="guide-num">3</div>
+        <div class="guide-text">Build longer grooves on the 2-bar clave</div>
+      </div>
+      <div class="guide-chip">
+        <div class="guide-num">4</div>
+        <div class="guide-text">Verse loose, chorus tight = energy contrast</div>
+      </div>
+      <div class="guide-chip">
+        <div class="guide-num">5</div>
+        <div class="guide-text">Your ear is the final judge</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
