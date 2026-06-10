@@ -17,17 +17,20 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
 .body{padding:28px 40px 32px}
 .section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
 
-/* Piano keyboard - medium size */
-.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:8px auto;justify-content:center}
-.octave{position:relative;display:flex;height:76px}
-.wk{width:22px;height:76px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 4px 4px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;font-size:8px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
-.bk{position:absolute;width:14px;height:48px;background:#1a1a1a;border-radius:0 0 3px 3px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:7px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
-.bk.cs{left:15px}.bk.ds{left:37px}.bk.fs{left:81px}.bk.gs{left:103px}.bk.as{left:125px}
-.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
-.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
-.bk[data-color="root"]{background:#3F6FB6}
-.bk[data-color="tone"]{background:#5a9fd4}
-.wk .kl{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:2px;padding:1px 3px}
+/* Piano keyboard */
+.piano-wrap{display:inline-flex;gap:0;align-items:flex-start;margin:12px 0}
+.octave{position:relative;display:flex}
+.wk{width:28px;height:96px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;z-index:1}
+.bk{position:absolute;width:17px;height:60px;background:#222;border-radius:0 0 4px 4px;z-index:2;top:0}
+.bk.cs{left:19px}.bk.ds{left:47px}.bk.fs{left:103px}.bk.gs{left:131px}.bk.as{left:159px}
+.badge{position:absolute;bottom:5px;left:50%;transform:translateX(-50%);border-radius:4px;font-size:9px;font-weight:800;padding:3px 4px;color:#fff;white-space:nowrap;min-width:19px;text-align:center;line-height:1.2;z-index:3;font-family:'Inter',sans-serif;letter-spacing:0;pointer-events:none}
+.bk .badge{bottom:4px;font-size:8px;min-width:13px;padding:2px 3px}
+.badge.root{background:#3F6FB6}
+.badge.tone{background:#6bb8e8}
+.badge.tension{background:#F29B38}
+.badge.avoid{background:#d97b6a}
+.badge.minor{background:#8A6BC8}
+
 
 /* 4-chord cycle display */
 .cycle-display{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:0;align-items:start;margin-bottom:24px}
@@ -97,18 +100,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cb-rn">Imaj7</div>
         <div class="piano-wrap">
           <div class="octave">
-            <div class="wk" data-color="root">C<span class="kl">LH</span></div>
+            <div class="wk"><div class="badge root">LH</div></div>
             <div class="bk cs"></div>
-            <div class="wk">D</div>
+            <div class="wk"></div>
             <div class="bk ds"></div>
-            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
-            <div class="wk">F</div>
+            <div class="wk"><div class="badge tone">3</div></div>
+            <div class="wk"></div>
             <div class="bk fs"></div>
-            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="wk"><div class="badge tone">5</div></div>
             <div class="bk gs"></div>
-            <div class="wk">A</div>
+            <div class="wk"></div>
             <div class="bk as"></div>
-            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+            <div class="wk"><div class="badge tone">7</div></div>
           </div>
         </div>
         <div class="cb-spelling">E · G · B</div>
@@ -122,18 +125,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cb-rn">IVmaj7</div>
         <div class="piano-wrap">
           <div class="octave">
-            <div class="wk" data-color="tone">C<span class="kl">5</span></div>
+            <div class="wk"><div class="badge tone">5</div></div>
             <div class="bk cs"></div>
-            <div class="wk">D</div>
+            <div class="wk"></div>
             <div class="bk ds"></div>
-            <div class="wk" data-color="tone">E<span class="kl">7</span></div>
-            <div class="wk" data-color="root">F<span class="kl">LH</span></div>
+            <div class="wk"><div class="badge tone">7</div></div>
+            <div class="wk"><div class="badge root">LH</div></div>
             <div class="bk fs"></div>
-            <div class="wk">G</div>
+            <div class="wk"></div>
             <div class="bk gs"></div>
-            <div class="wk" data-color="tone">A<span class="kl">3</span></div>
+            <div class="wk"><div class="badge tone">3</div></div>
             <div class="bk as"></div>
-            <div class="wk">B</div>
+            <div class="wk"></div>
           </div>
         </div>
         <div class="cb-spelling">E · A · C</div>
@@ -147,18 +150,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cb-rn">viiø7</div>
         <div class="piano-wrap">
           <div class="octave">
-            <div class="wk">C</div>
+            <div class="wk"></div>
             <div class="bk cs"></div>
-            <div class="wk" data-color="tone">D<span class="kl">b3</span></div>
+            <div class="wk"><div class="badge tone">b3</div></div>
             <div class="bk ds"></div>
-            <div class="wk">E</div>
-            <div class="wk" data-color="tone">F<span class="kl">b5</span></div>
+            <div class="wk"></div>
+            <div class="wk"><div class="badge tone">b5</div></div>
             <div class="bk fs"></div>
-            <div class="wk">G</div>
+            <div class="wk"></div>
             <div class="bk gs"></div>
-            <div class="wk" data-color="tone">A<span class="kl">b7</span></div>
+            <div class="wk"><div class="badge tone">b7</div></div>
             <div class="bk as"></div>
-            <div class="wk" data-color="root">B<span class="kl">LH</span></div>
+            <div class="wk"><div class="badge root">LH</div></div>
           </div>
         </div>
         <div class="cb-spelling">A · D · F</div>
@@ -172,18 +175,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cb-rn">iii-7</div>
         <div class="piano-wrap">
           <div class="octave">
-            <div class="wk">C</div>
+            <div class="wk"></div>
             <div class="bk cs"></div>
-            <div class="wk" data-color="tone">D<span class="kl">b7</span></div>
+            <div class="wk"><div class="badge tone">b7</div></div>
             <div class="bk ds"></div>
-            <div class="wk" data-color="root">E<span class="kl">LH</span></div>
-            <div class="wk">F</div>
+            <div class="wk"><div class="badge root">LH</div></div>
+            <div class="wk"></div>
             <div class="bk fs"></div>
-            <div class="wk" data-color="tone">G<span class="kl">b3</span></div>
+            <div class="wk"><div class="badge tone">b3</div></div>
             <div class="bk gs"></div>
-            <div class="wk">A</div>
+            <div class="wk"></div>
             <div class="bk as"></div>
-            <div class="wk" data-color="tone">B<span class="kl">5</span></div>
+            <div class="wk"><div class="badge tone">5</div></div>
           </div>
         </div>
         <div class="cb-spelling">G · B · D</div>

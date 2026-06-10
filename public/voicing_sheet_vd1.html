@@ -18,19 +18,19 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
 .section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
 
 /* Piano keyboard */
-.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:10px 0}
-.octave{position:relative;display:flex;height:80px}
-.wk{width:24px;height:80px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 4px 4px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;font-size:8px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
-.bk{position:absolute;width:15px;height:50px;background:#1a1a1a;border-radius:0 0 3px 3px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:7px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
-.bk.cs{left:16px}.bk.ds{left:40px}.bk.fs{left:88px}.bk.gs{left:112px}.bk.as{left:136px}
-.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
-.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
-.wk[data-color="grace"]{background:#F29B38;color:#fff;border-color:#d07a1a}
-.wk[data-color="target"]{background:#7dc48a;color:#fff;border-color:#5aaa6a}
-.bk[data-color="grace"]{background:#e08020}
-.bk[data-color="target"]{background:#5aaa6a}
-.wk .kl{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 4px}
-.bk .kl{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 3px}
+.piano-wrap{display:inline-flex;gap:0;align-items:flex-start;margin:12px 0}
+.octave{position:relative;display:flex}
+.wk{width:28px;height:96px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;z-index:1}
+.bk{position:absolute;width:17px;height:60px;background:#222;border-radius:0 0 4px 4px;z-index:2;top:0}
+.bk.cs{left:19px}.bk.ds{left:47px}.bk.fs{left:103px}.bk.gs{left:131px}.bk.as{left:159px}
+.badge{position:absolute;bottom:5px;left:50%;transform:translateX(-50%);border-radius:4px;font-size:9px;font-weight:800;padding:3px 4px;color:#fff;white-space:nowrap;min-width:19px;text-align:center;line-height:1.2;z-index:3;font-family:'Inter',sans-serif;letter-spacing:0;pointer-events:none}
+.bk .badge{bottom:4px;font-size:8px;min-width:13px;padding:2px 3px}
+.badge.root{background:#3F6FB6}
+.badge.tone{background:#6bb8e8}
+.badge.tension{background:#F29B38}
+.badge.avoid{background:#d97b6a}
+.badge.minor{background:#8A6BC8}
+
 
 /* Quality sections */
 .quality-section{border-radius:8px;padding:16px 20px;margin-bottom:16px}
@@ -85,14 +85,14 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="gn-keyboard">
           <div class="piano-wrap">
             <div class="octave">
-              <div class="wk" data-color="root">C</div>
+              <div class="wk"><div class="badge root">C</div></div>
               <div class="bk cs"></div>
-              <div class="wk" data-color="grace">D<span class="kl">→</span></div>
+              <div class="wk"><div class="badge tension">→</div></div>
               <div class="bk ds"></div>
-              <div class="wk" data-color="target">E<span class="kl">3rd</span></div>
-              <div class="wk">F</div>
+              <div class="wk"><div class="badge tone">3rd</div></div>
+              <div class="wk"></div>
               <div class="bk fs"></div>
-              <div class="wk">G</div>
+              <div class="wk"></div>
             </div>
           </div>
         </div>
@@ -111,18 +111,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="gn-keyboard">
           <div class="piano-wrap">
             <div class="octave">
-              <div class="wk" data-color="root">C</div>
+              <div class="wk"><div class="badge root">C</div></div>
               <div class="bk cs"></div>
-              <div class="wk">D</div>
+              <div class="wk"></div>
               <div class="bk ds"></div>
-              <div class="wk" data-color="tone">E</div>
-              <div class="wk">F</div>
+              <div class="wk"><div class="badge tone">E</div></div>
+              <div class="wk"></div>
               <div class="bk fs"></div>
-              <div class="wk">G</div>
+              <div class="wk"></div>
               <div class="bk gs"></div>
-              <div class="wk" data-color="grace">A<span class="kl">→</span></div>
+              <div class="wk"><div class="badge tension">→</div></div>
               <div class="bk as"></div>
-              <div class="wk" data-color="target">B<span class="kl">7th</span></div>
+              <div class="wk"><div class="badge tone">7th</div></div>
             </div>
           </div>
         </div>
@@ -148,11 +148,11 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="gn-keyboard">
           <div class="piano-wrap">
             <div class="octave">
-              <div class="wk" data-color="root">C</div>
+              <div class="wk"><div class="badge root">C</div></div>
               <div class="bk cs"></div>
-              <div class="wk" data-color="grace">D<span class="kl">→</span></div>
+              <div class="wk"><div class="badge tension">→</div></div>
               <div class="bk ds"></div>
-              <div class="wk" data-color="target" style="background:#8A6BC8;border-color:#6a4ba8">Eb<span class="kl">b3</span></div>
+              <div class="wk"><div class="badge tone">b3</div></div>
             </div>
           </div>
         </div>
@@ -171,14 +171,14 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="gn-keyboard">
           <div class="piano-wrap">
             <div class="octave">
-              <div class="wk" data-color="root">C</div>
+              <div class="wk"><div class="badge root">C</div></div>
               <div class="bk cs"></div>
-              <div class="wk">D</div>
+              <div class="wk"></div>
               <div class="bk ds"></div>
-              <div class="wk">Eb</div>
-              <div class="wk" data-color="grace">F<span class="kl">→</span></div>
+              <div class="wk"></div>
+              <div class="wk"><div class="badge tension">→</div></div>
               <div class="bk fs"></div>
-              <div class="wk" data-color="target">G<span class="kl">5th</span></div>
+              <div class="wk"><div class="badge tone">5th</div></div>
             </div>
           </div>
         </div>
@@ -204,14 +204,14 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="gn-keyboard">
           <div class="piano-wrap">
             <div class="octave">
-              <div class="wk" data-color="root">C</div>
+              <div class="wk"><div class="badge root">C</div></div>
               <div class="bk cs"></div>
-              <div class="wk">D</div>
-              <div class="bk ds" data-color="grace"><span class="kl">b3 →</span></div>
-              <div class="wk" data-color="target">E<span class="kl">3rd</span></div>
-              <div class="wk">F</div>
+              <div class="wk"></div>
+              <div class="bk ds"><div class="badge tension">b3 →</div></div>
+              <div class="wk"><div class="badge tone">3rd</div></div>
+              <div class="wk"></div>
               <div class="bk fs"></div>
-              <div class="wk">G</div>
+              <div class="wk"></div>
             </div>
           </div>
         </div>

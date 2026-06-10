@@ -18,19 +18,19 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
 .section-label{font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a9bd4;margin-bottom:10px}
 
 /* Piano keyboard */
-.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:8px 0;justify-content:center}
-.octave{position:relative;display:flex;height:72px}
-.wk{width:21px;height:72px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 4px 4px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:7px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
-.bk{position:absolute;width:13px;height:45px;background:#1a1a1a;border-radius:0 0 3px 3px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:6px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
-.bk.cs{left:14px}.bk.ds{left:35px}.bk.fs{left:77px}.bk.gs{left:98px}.bk.as{left:119px}
-.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
-.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
-.wk[data-color="tension"]{background:#F29B38;color:#fff;border-color:#d07a1a}
-.wk[data-color="extra"]{background:#7dc48a;color:#fff;border-color:#5aaa6a}
-.bk[data-color="root"]{background:#3F6FB6}
-.bk[data-color="tone"]{background:#5a9fd4}
-.bk[data-color="tension"]{background:#e08020}
-.wk .kl{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:2px;padding:1px 3px}
+.piano-wrap{display:inline-flex;gap:0;align-items:flex-start;margin:12px 0}
+.octave{position:relative;display:flex}
+.wk{width:28px;height:96px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;z-index:1}
+.bk{position:absolute;width:17px;height:60px;background:#222;border-radius:0 0 4px 4px;z-index:2;top:0}
+.bk.cs{left:19px}.bk.ds{left:47px}.bk.fs{left:103px}.bk.gs{left:131px}.bk.as{left:159px}
+.badge{position:absolute;bottom:5px;left:50%;transform:translateX(-50%);border-radius:4px;font-size:9px;font-weight:800;padding:3px 4px;color:#fff;white-space:nowrap;min-width:19px;text-align:center;line-height:1.2;z-index:3;font-family:'Inter',sans-serif;letter-spacing:0;pointer-events:none}
+.bk .badge{bottom:4px;font-size:8px;min-width:13px;padding:2px 3px}
+.badge.root{background:#3F6FB6}
+.badge.tone{background:#6bb8e8}
+.badge.tension{background:#F29B38}
+.badge.avoid{background:#d97b6a}
+.badge.minor{background:#8A6BC8}
+
 
 /* Spectrum bar */
 .spectrum-bar{height:12px;border-radius:6px;background:linear-gradient(90deg,#e8f0ff 0%,#6bb8e8 40%,#F29B38 70%,#7dc48a 100%);margin-bottom:6px}
@@ -95,18 +95,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <span class="note-count">3 notes</span>
         <div class="piano-wrap">
           <div class="octave">
-            <div class="wk" data-color="root">C<span class="kl">R</span></div>
+            <div class="wk"><div class="badge root">R</div></div>
             <div class="bk cs"></div>
-            <div class="wk">D</div>
+            <div class="wk"></div>
             <div class="bk ds"></div>
-            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
-            <div class="wk">F</div>
+            <div class="wk"><div class="badge tone">3</div></div>
+            <div class="wk"></div>
             <div class="bk fs"></div>
-            <div class="wk">G</div>
+            <div class="wk"></div>
             <div class="bk gs"></div>
-            <div class="wk">A</div>
+            <div class="wk"></div>
             <div class="bk as"></div>
-            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+            <div class="wk"><div class="badge tone">7</div></div>
           </div>
         </div>
         <div style="font-size:10px;color:#6b7280;margin-top:4px">Cmaj7 bare</div>
@@ -120,18 +120,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <span class="note-count">4 notes</span>
         <div class="piano-wrap">
           <div class="octave">
-            <div class="wk" data-color="root">C<span class="kl">R</span></div>
+            <div class="wk"><div class="badge root">R</div></div>
             <div class="bk cs"></div>
-            <div class="wk" data-color="tension">D<span class="kl">9</span></div>
+            <div class="wk"><div class="badge tension">9</div></div>
             <div class="bk ds"></div>
-            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
-            <div class="wk">F</div>
+            <div class="wk"><div class="badge tone">3</div></div>
+            <div class="wk"></div>
             <div class="bk fs"></div>
-            <div class="wk">G</div>
+            <div class="wk"></div>
             <div class="bk gs"></div>
-            <div class="wk">A</div>
+            <div class="wk"></div>
             <div class="bk as"></div>
-            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+            <div class="wk"><div class="badge tone">7</div></div>
           </div>
         </div>
         <div style="font-size:10px;color:#6b7280;margin-top:4px">Cmaj9</div>
@@ -145,18 +145,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <span class="note-count">5 notes</span>
         <div class="piano-wrap">
           <div class="octave">
-            <div class="wk" data-color="root">C<span class="kl">R</span></div>
+            <div class="wk"><div class="badge root">R</div></div>
             <div class="bk cs"></div>
-            <div class="wk" data-color="tension">D<span class="kl">9</span></div>
+            <div class="wk"><div class="badge tension">9</div></div>
             <div class="bk ds"></div>
-            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
-            <div class="wk">F</div>
+            <div class="wk"><div class="badge tone">3</div></div>
+            <div class="wk"></div>
             <div class="bk fs"></div>
-            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="wk"><div class="badge tone">5</div></div>
             <div class="bk gs"></div>
-            <div class="wk">A</div>
+            <div class="wk"></div>
             <div class="bk as"></div>
-            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+            <div class="wk"><div class="badge tone">7</div></div>
           </div>
         </div>
         <div style="font-size:10px;color:#6b7280;margin-top:4px">Cmaj9 full</div>
@@ -170,18 +170,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <span class="note-count">6+ notes</span>
         <div class="piano-wrap">
           <div class="octave">
-            <div class="wk" data-color="root">C<span class="kl">R</span></div>
+            <div class="wk"><div class="badge root">R</div></div>
             <div class="bk cs"></div>
-            <div class="wk" data-color="tension">D<span class="kl">9</span></div>
+            <div class="wk"><div class="badge tension">9</div></div>
             <div class="bk ds"></div>
-            <div class="wk" data-color="tone">E<span class="kl">3</span></div>
-            <div class="wk">F</div>
+            <div class="wk"><div class="badge tone">3</div></div>
+            <div class="wk"></div>
             <div class="bk fs"></div>
-            <div class="wk" data-color="tone">G<span class="kl">5</span></div>
+            <div class="wk"><div class="badge tone">5</div></div>
             <div class="bk gs"></div>
-            <div class="wk" data-color="extra">A<span class="kl">13</span></div>
+            <div class="wk"><div class="badge tension">13</div></div>
             <div class="bk as"></div>
-            <div class="wk" data-color="tone">B<span class="kl">7</span></div>
+            <div class="wk"><div class="badge tone">7</div></div>
           </div>
         </div>
         <div style="font-size:10px;color:#6b7280;margin-top:4px">Cmaj13</div>

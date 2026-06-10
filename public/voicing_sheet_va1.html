@@ -27,23 +27,21 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
 .thing-desc{font-size:11px;color:#6b7280;line-height:1.4}
 
 /* Piano keyboard */
-.piano-wrap{display:flex;gap:0;align-items:flex-start;margin:12px 0}
-.octave{position:relative;display:flex;height:90px}
-.wk{width:26px;height:90px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:5px;font-size:9px;font-weight:700;color:#999;font-family:'Inter',sans-serif;box-sizing:border-box;z-index:1}
-.bk{position:absolute;width:16px;height:56px;background:#1a1a1a;border-radius:0 0 4px 4px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;font-size:8px;font-weight:700;color:rgba(255,255,255,0.6);font-family:'Inter',sans-serif;box-sizing:border-box}
-.bk.cs{left:17px}.bk.ds{left:43px}.bk.fs{left:91px}.bk.gs{left:117px}.bk.as{left:143px}
-.wk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
-.wk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
-.wk[data-color="tension"]{background:#F29B38;color:#fff;border-color:#d07a1a}
-.wk[data-color="avoid"]{background:#d97b6a;color:#fff;border-color:#b85a4a}
-.bk[data-color="root"]{background:#3F6FB6}
-.bk[data-color="tone"]{background:#5a9fd4}
-.bk[data-color="tension"]{background:#e08020}
-.bk[data-color="avoid"]{background:#c06050}
+.piano-wrap{display:inline-flex;gap:0;align-items:flex-start;margin:12px 0}
+.octave{position:relative;display:flex}
+.wk{width:28px;height:96px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 5px 5px;position:relative;flex-shrink:0;z-index:1}
+.bk{position:absolute;width:17px;height:60px;background:#222;border-radius:0 0 4px 4px;z-index:2;top:0}
+.bk.cs{left:19px}.bk.ds{left:47px}.bk.fs{left:103px}.bk.gs{left:131px}.bk.as{left:159px}
+.badge{position:absolute;bottom:5px;left:50%;transform:translateX(-50%);border-radius:4px;font-size:9px;font-weight:800;padding:3px 4px;color:#fff;white-space:nowrap;min-width:19px;text-align:center;line-height:1.2;z-index:3;font-family:'Inter',sans-serif;letter-spacing:0;pointer-events:none}
+.bk .badge{bottom:4px;font-size:8px;min-width:13px;padding:2px 3px}
+.badge.root{background:#3F6FB6}
+.badge.tone{background:#6bb8e8}
+.badge.tension{background:#F29B38}
+.badge.avoid{background:#d97b6a}
+.badge.minor{background:#8A6BC8}
+
 
 /* Interval label above key */
-.wk .kl{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 4px}
-.bk .kl{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ccc;border-radius:3px;padding:1px 3px}
 
 /* Tension reference table */
 table{width:100%;border-collapse:collapse;margin-bottom:20px}
@@ -105,18 +103,18 @@ tbody tr:last-child{border-bottom:none}
     </div>
     <div class="piano-wrap">
       <div class="octave">
-        <div class="wk" data-color="root">C<span class="kl">R</span></div>
-        <div class="bk cs" data-color="avoid"><span class="kl">b9</span></div>
-        <div class="wk" data-color="tension">D<span class="kl">9</span></div>
-        <div class="bk ds" data-color="tension"><span class="kl">#9</span></div>
-        <div class="wk">E</div>
-        <div class="wk" data-color="tension">F<span class="kl">11</span></div>
-        <div class="bk fs" data-color="tension"><span class="kl">#11</span></div>
-        <div class="wk">G</div>
-        <div class="bk gs" data-color="tension"><span class="kl">b13</span></div>
-        <div class="wk" data-color="tension">A<span class="kl">13</span></div>
+        <div class="wk"><div class="badge root">R</div></div>
+        <div class="bk cs"><div class="badge avoid">b9</div></div>
+        <div class="wk"><div class="badge tension">9</div></div>
+        <div class="bk ds"><div class="badge tension">#9</div></div>
+        <div class="wk"></div>
+        <div class="wk"><div class="badge tension">11</div></div>
+        <div class="bk fs"><div class="badge tension">#11</div></div>
+        <div class="wk"></div>
+        <div class="bk gs"><div class="badge tension">b13</div></div>
+        <div class="wk"><div class="badge tension">13</div></div>
         <div class="bk as"></div>
-        <div class="wk">B</div>
+        <div class="wk"></div>
       </div>
     </div>
 

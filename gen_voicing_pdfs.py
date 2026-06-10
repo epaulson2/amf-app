@@ -13,10 +13,10 @@ async def make_pdf(page, name):
         if (!els.length) return null;
         let h = 0;
         els.forEach(el => { h += el.getBoundingClientRect().height + 28; });
-        return { width: els[0].getBoundingClientRect().width, height: h, count: els.length };
+        return { width: els[0].getBoundingClientRect().width, height: h };
     }""")
     if not info:
-        print(f"  ✗ {name} — no .page found"); return
+        print(f"  x {name}"); return
     await page.evaluate("""() => {
         document.body.style.background = 'white';
         document.body.style.padding = '0';
@@ -29,19 +29,18 @@ async def make_pdf(page, name):
     await page.set_viewport_size({"width": int(info['width']), "height": int(info['height']) + 100})
     await page.pdf(path=f"{PUBLIC}/{name}.pdf", width=f"{int(info['width'])}px",
                    height=f"{int(info['height'])}px", print_background=True, scale=1.0)
-    size_kb = os.path.getsize(f'{PUBLIC}/{name}.pdf') // 1024
-    print(f"  ✓ {name}.pdf ({size_kb}KB, vector)")
+    print(f"  ok {name}.pdf ({os.path.getsize(f'{PUBLIC}/{name}.pdf')//1024}KB)")
 
 async def main():
     targets = sorted([os.path.splitext(os.path.basename(f))[0]
-                      for f in glob.glob(f"{PUBLIC}/voicing_*.html")])
-    print(f"Found {len(targets)} voicing HTML files")
+                      for f in glob.glob(f"{PUBLIC}/voicing_*.html")
+                      if 'sample' not in f])
+    print(f"Generating {len(targets)} PDFs...")
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         pg = await browser.new_page()
         for name in targets:
             await make_pdf(pg, name)
         await browser.close()
-    print(f"\nDone — {len(targets)} PDFs generated")
 
 asyncio.run(main())

@@ -37,21 +37,9 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
 .cp-notes{font-size:9px;color:#9ca3af;margin-bottom:8px;font-weight:600;letter-spacing:0.06em}
 
 /* Mini piano keyboard */
-.mini-piano{display:flex;gap:0;align-items:flex-start;margin-bottom:8px}
-.mini-oct{position:relative;display:flex;height:64px}
-.mwk{width:22px;height:64px;background:#fff;border:1.5px solid #ccc;border-radius:0 0 4px 4px;position:relative;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:8px;font-weight:700;color:#999;box-sizing:border-box;z-index:1;font-family:'Inter',sans-serif}
-.mbk{position:absolute;width:14px;height:40px;background:#1a1a1a;border-radius:0 0 3px 3px;z-index:2;top:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-size:7px;font-weight:700;color:rgba(255,255,255,0.6);box-sizing:border-box;font-family:'Inter',sans-serif}
-.mbk.cs{left:15px}.mbk.ds{left:37px}.mbk.fs{left:81px}.mbk.gs{left:103px}.mbk.as{left:125px}
-.mwk[data-color="root"]{background:#3F6FB6;color:#fff;border-color:#2a5090}
-.mwk[data-color="tone"]{background:#6bb8e8;color:#fff;border-color:#4a9cc8}
-.mwk[data-color="tension"]{background:#F29B38;color:#fff;border-color:#d07a1a}
-.mwk[data-color="avoid"]{background:#d97b6a;color:#fff;border-color:#b85a4a}
-.mbk[data-color="root"]{background:#3F6FB6}
-.mbk[data-color="tone"]{background:#5a9fd4}
-.mbk[data-color="tension"]{background:#e08020}
-.mbk[data-color="avoid"]{background:#c06050}
-.mwk .mkl{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:7px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ddd;border-radius:2px;padding:1px 3px}
-.mbk .mkl{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:6px;font-weight:700;color:#333;white-space:nowrap;background:#fff;border:1px solid #ddd;border-radius:2px;padding:1px 2px}
+.mini-piano{display:inline-flex;gap:0;align-items:flex-start;margin-bottom:8px}
+.mini-oct{position:relative;display:flex}
+.mbk.gs{left:103px}.mbk.as{left:125px}
 
 /* Tension tags */
 .tension-tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
@@ -62,6 +50,14 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
 .legend{display:flex;gap:16px;align-items:center;margin-bottom:18px;flex-wrap:wrap}
 .legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:#374151;font-weight:600}
 .legend-swatch{width:14px;height:14px;border-radius:3px}
+
+.badge{position:absolute;bottom:5px;left:50%;transform:translateX(-50%);border-radius:4px;font-size:9px;font-weight:800;padding:3px 4px;color:#fff;white-space:nowrap;min-width:19px;text-align:center;line-height:1.2;z-index:3;font-family:'Inter',sans-serif;letter-spacing:0;pointer-events:none}
+.bk .badge{bottom:4px;font-size:8px;min-width:13px;padding:2px 3px}
+.badge.root{background:#3F6FB6}
+.badge.tone{background:#6bb8e8}
+.badge.tension{background:#F29B38}
+.badge.avoid{background:#d97b6a}
+.badge.minor{background:#8A6BC8}
 </style>
 </head>
 <body>
@@ -93,18 +89,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cp-notes">C · E · G · B</div>
         <div class="mini-piano">
           <div class="mini-oct">
-            <div class="mwk" data-color="root">C<span class="mkl">R</span></div>
-            <div class="mbk cs"></div>
-            <div class="mwk" data-color="tension">D<span class="mkl">9</span></div>
-            <div class="mbk ds"></div>
-            <div class="mwk" data-color="tone">E<span class="mkl">3</span></div>
-            <div class="mwk" data-color="avoid">F<span class="mkl">✗</span></div>
-            <div class="mbk fs"></div>
-            <div class="mwk" data-color="tone">G<span class="mkl">5</span></div>
-            <div class="mbk gs"></div>
-            <div class="mwk" data-color="tension">A<span class="mkl">13</span></div>
-            <div class="mbk as"></div>
-            <div class="mwk" data-color="tone">B<span class="mkl">7</span></div>
+            <div class="wk"><div class="badge root">R</div></div>
+            <div class="bk cs"></div>
+            <div class="wk"><div class="badge tension">9</div></div>
+            <div class="bk ds"></div>
+            <div class="wk"><div class="badge tone">3</div></div>
+            <div class="wk"><div class="badge avoid">✗</div></div>
+            <div class="bk fs"></div>
+            <div class="wk"><div class="badge tone">5</div></div>
+            <div class="bk gs"></div>
+            <div class="wk"><div class="badge tension">13</div></div>
+            <div class="bk as"></div>
+            <div class="wk"><div class="badge tone">7</div></div>
           </div>
         </div>
         <div class="tension-tags"><span class="t-tag">9</span><span class="t-tag">13</span><span class="t-tag avoid">4 avoid</span></div>
@@ -117,18 +113,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cp-notes">D · F · A · C</div>
         <div class="mini-piano">
           <div class="mini-oct">
-            <div class="mwk">C</div>
-            <div class="mbk cs"></div>
-            <div class="mwk" data-color="root">D<span class="mkl">R</span></div>
-            <div class="mbk ds"></div>
-            <div class="mwk" data-color="tension">E<span class="mkl">9</span></div>
-            <div class="mwk" data-color="tone">F<span class="mkl">b3</span></div>
-            <div class="mbk fs"></div>
-            <div class="mwk" data-color="tension">G<span class="mkl">11</span></div>
-            <div class="mbk gs"></div>
-            <div class="mwk" data-color="tone">A<span class="mkl">5</span></div>
-            <div class="mbk as"></div>
-            <div class="mwk">B</div>
+            <div class="wk"></div>
+            <div class="bk cs"></div>
+            <div class="wk"><div class="badge root">R</div></div>
+            <div class="bk ds"></div>
+            <div class="wk"><div class="badge tension">9</div></div>
+            <div class="wk"><div class="badge tone">b3</div></div>
+            <div class="bk fs"></div>
+            <div class="wk"><div class="badge tension">11</div></div>
+            <div class="bk gs"></div>
+            <div class="wk"><div class="badge tone">5</div></div>
+            <div class="bk as"></div>
+            <div class="wk"></div>
           </div>
         </div>
         <div class="tension-tags"><span class="t-tag">9</span><span class="t-tag">11</span></div>
@@ -141,18 +137,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cp-notes">E · G · B · D</div>
         <div class="mini-piano">
           <div class="mini-oct">
-            <div class="mwk">C</div>
-            <div class="mbk cs"></div>
-            <div class="mwk">D</div>
-            <div class="mbk ds"></div>
-            <div class="mwk" data-color="root">E<span class="mkl">R</span></div>
-            <div class="mwk" data-color="tone">F<span class="mkl">b3</span></div>
-            <div class="mbk fs"></div>
-            <div class="mwk" data-color="tone">G<span class="mkl">b3</span></div>
-            <div class="mbk gs"></div>
-            <div class="mwk" data-color="tension">A<span class="mkl">11</span></div>
-            <div class="mbk as"></div>
-            <div class="mwk" data-color="tone">B<span class="mkl">5</span></div>
+            <div class="wk"></div>
+            <div class="bk cs"></div>
+            <div class="wk"></div>
+            <div class="bk ds"></div>
+            <div class="wk"><div class="badge root">R</div></div>
+            <div class="wk"><div class="badge tone">b3</div></div>
+            <div class="bk fs"></div>
+            <div class="wk"><div class="badge tone">b3</div></div>
+            <div class="bk gs"></div>
+            <div class="wk"><div class="badge tension">11</div></div>
+            <div class="bk as"></div>
+            <div class="wk"><div class="badge tone">5</div></div>
           </div>
         </div>
         <div class="tension-tags"><span class="t-tag">11</span></div>
@@ -165,18 +161,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cp-notes">F · A · C · E</div>
         <div class="mini-piano">
           <div class="mini-oct">
-            <div class="mwk">C</div>
-            <div class="mbk cs"></div>
-            <div class="mwk">D</div>
-            <div class="mbk ds"></div>
-            <div class="mwk" data-color="tone">E<span class="mkl">7</span></div>
-            <div class="mwk" data-color="root">F<span class="mkl">R</span></div>
-            <div class="mbk fs"></div>
-            <div class="mwk" data-color="tension">G<span class="mkl">9</span></div>
-            <div class="mbk gs"></div>
-            <div class="mwk" data-color="tone">A<span class="mkl">3</span></div>
-            <div class="mbk as"></div>
-            <div class="mwk">B</div>
+            <div class="wk"></div>
+            <div class="bk cs"></div>
+            <div class="wk"></div>
+            <div class="bk ds"></div>
+            <div class="wk"><div class="badge tone">7</div></div>
+            <div class="wk"><div class="badge root">R</div></div>
+            <div class="bk fs"></div>
+            <div class="wk"><div class="badge tension">9</div></div>
+            <div class="bk gs"></div>
+            <div class="wk"><div class="badge tone">3</div></div>
+            <div class="bk as"></div>
+            <div class="wk"></div>
           </div>
         </div>
         <div class="tension-tags"><span class="t-tag">9</span><span class="t-tag">#11</span><span class="t-tag">13</span></div>
@@ -193,18 +189,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cp-notes">G · B · D · F</div>
         <div class="mini-piano">
           <div class="mini-oct">
-            <div class="mwk" data-color="avoid">C<span class="mkl">✗ 4</span></div>
-            <div class="mbk cs"></div>
-            <div class="mwk" data-color="tone">D<span class="mkl">5</span></div>
-            <div class="mbk ds"></div>
-            <div class="mwk" data-color="tension">E<span class="mkl">13</span></div>
-            <div class="mwk" data-color="tone">F<span class="mkl">b7</span></div>
-            <div class="mbk fs"></div>
-            <div class="mwk" data-color="root">G<span class="mkl">R</span></div>
-            <div class="mbk gs"></div>
-            <div class="mwk" data-color="tension">A<span class="mkl">9</span></div>
-            <div class="mbk as"></div>
-            <div class="mwk" data-color="tone">B<span class="mkl">3</span></div>
+            <div class="wk"><div class="badge avoid">✗ 4</div></div>
+            <div class="bk cs"></div>
+            <div class="wk"><div class="badge tone">5</div></div>
+            <div class="bk ds"></div>
+            <div class="wk"><div class="badge tension">13</div></div>
+            <div class="wk"><div class="badge tone">b7</div></div>
+            <div class="bk fs"></div>
+            <div class="wk"><div class="badge root">R</div></div>
+            <div class="bk gs"></div>
+            <div class="wk"><div class="badge tension">9</div></div>
+            <div class="bk as"></div>
+            <div class="wk"><div class="badge tone">3</div></div>
           </div>
         </div>
         <div class="tension-tags"><span class="t-tag">9</span><span class="t-tag">13</span><span class="t-tag avoid">4 avoid</span></div>
@@ -217,18 +213,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cp-notes">A · C · E · G</div>
         <div class="mini-piano">
           <div class="mini-oct">
-            <div class="mwk" data-color="tone">C<span class="mkl">b3</span></div>
-            <div class="mbk cs"></div>
-            <div class="mwk" data-color="tension">D<span class="mkl">11</span></div>
-            <div class="mbk ds"></div>
-            <div class="mwk" data-color="tone">E<span class="mkl">5</span></div>
-            <div class="mwk">F</div>
-            <div class="mbk fs"></div>
-            <div class="mwk" data-color="tone">G<span class="mkl">b7</span></div>
-            <div class="mbk gs"></div>
-            <div class="mwk" data-color="root">A<span class="mkl">R</span></div>
-            <div class="mbk as"></div>
-            <div class="mwk" data-color="tension">B<span class="mkl">9</span></div>
+            <div class="wk"><div class="badge tone">b3</div></div>
+            <div class="bk cs"></div>
+            <div class="wk"><div class="badge tension">11</div></div>
+            <div class="bk ds"></div>
+            <div class="wk"><div class="badge tone">5</div></div>
+            <div class="wk"></div>
+            <div class="bk fs"></div>
+            <div class="wk"><div class="badge tone">b7</div></div>
+            <div class="bk gs"></div>
+            <div class="wk"><div class="badge root">R</div></div>
+            <div class="bk as"></div>
+            <div class="wk"><div class="badge tension">9</div></div>
           </div>
         </div>
         <div class="tension-tags"><span class="t-tag">9</span><span class="t-tag">11</span></div>
@@ -241,18 +237,18 @@ body{background:#e8e8e8;font-family:'Inter',sans-serif;display:flex;justify-cont
         <div class="cp-notes">B · D · F · A</div>
         <div class="mini-piano">
           <div class="mini-oct">
-            <div class="mwk" data-color="tone">C<span class="mkl">b9?</span></div>
-            <div class="mbk cs"></div>
-            <div class="mwk" data-color="tone">D<span class="mkl">b3</span></div>
-            <div class="mbk ds"></div>
-            <div class="mwk" data-color="tension">E<span class="mkl">11</span></div>
-            <div class="mwk" data-color="tone">F<span class="mkl">b5</span></div>
-            <div class="mbk fs"></div>
-            <div class="mwk" data-color="tension">G<span class="mkl">b13</span></div>
-            <div class="mbk gs"></div>
-            <div class="mwk" data-color="tone">A<span class="mkl">b7</span></div>
-            <div class="mbk as"></div>
-            <div class="mwk" data-color="root">B<span class="mkl">R</span></div>
+            <div class="wk"><div class="badge tone">b9?</div></div>
+            <div class="bk cs"></div>
+            <div class="wk"><div class="badge tone">b3</div></div>
+            <div class="bk ds"></div>
+            <div class="wk"><div class="badge tension">11</div></div>
+            <div class="wk"><div class="badge tone">b5</div></div>
+            <div class="bk fs"></div>
+            <div class="wk"><div class="badge tension">b13</div></div>
+            <div class="bk gs"></div>
+            <div class="wk"><div class="badge tone">b7</div></div>
+            <div class="bk as"></div>
+            <div class="wk"><div class="badge root">R</div></div>
           </div>
         </div>
         <div class="tension-tags"><span class="t-tag">11</span><span class="t-tag">b13</span></div>
