@@ -1,7 +1,7 @@
-# Plogger Asset Inventory — Comprehensive Plan
+# AMF Asset Inventory — Comprehensive Plan
 
-**Status:** Active — Phase 1 complete, Phase 7 (Synthesis) added — June 11, 2026  
-**Repo:** `epaulson2/amf-app`  
+**Status:** Active — Three-tier model, Phase 1 complete — June 11, 2026
+**Repo:** `epaulson2/amf-app`
 **Owner:** AMF curriculum build
 
 ---
@@ -12,26 +12,35 @@
 2. [Problem Statement](#2-problem-statement)
 3. [What We Are Building](#3-what-we-are-building)
 4. [Asset Types](#4-asset-types)
-5. [Database Architecture](#5-database-architecture)
-6. [Nano Banana JSON Spec Format](#6-nano-banana-json-spec-format)
-7. [Phase Plan](#7-phase-plan)
-8. [Catalog — Known Tables](#8-catalog--known-tables)
-9. [Catalog — Known Diagrams](#9-catalog--known-diagrams)
-10. [Metadata Schema](#10-metadata-schema)
-11. [Query Interface](#11-query-interface)
-12. [Integration with AMF Materials](#12-integration-with-amf-materials)
-13. [Phase 7 — Cross-Source Synthesis](#13-phase-7--cross-source-synthesis)
-14. [Open Questions](#14-open-questions)
+5. [Three-Tier Source Model](#5-three-tier-source-model)
+6. [Tier 2 — External Source Documents](#6-tier-2--external-source-documents)
+7. [Tier 3 — AMF Originals](#7-tier-3--amf-originals)
+8. [Database Architecture](#8-database-architecture)
+9. [Nano Banana JSON Spec Format](#9-nano-banana-json-spec-format)
+10. [Phase Plan](#10-phase-plan)
+11. [Catalog — Known Tables](#11-catalog--known-tables)
+12. [Catalog — Known Diagrams](#12-catalog--known-diagrams)
+13. [Metadata Schema](#13-metadata-schema)
+14. [Query Interface](#14-query-interface)
+15. [Integration with AMF Materials](#15-integration-with-amf-materials)
+16. [Key Synthesis Targets (Phase 8 Examples)](#16-key-synthesis-targets-phase-8-examples)
+17. [Open Questions](#17-open-questions)
 
 ---
 
 ## 1. Executive Summary
 
-The Plogger Method book contains dozens of tables and visual diagrams that encode core music theory concepts. Right now, each one is embedded in a single chapter and cannot be reused. When we build AMF curriculum materials — practice sheets, infographics, lesson plans — we have to recreate these elements from scratch every time, with no single source of truth.
+The AMF teaching system draws on multiple source documents — the Plogger Method book, the Emotional Melody Map, the Rhythm Code, Harmony OS, Voicings OS, and the Beato Book — plus original assets we create ourselves. Right now, every table and diagram across all of these sources exists only as an image in a scanned PDF or ZIP archive. There is no single source of truth. When we build sprint infographics, practice sheets, or lesson plans, we recreate these elements from scratch every time.
 
-This plan creates a **searchable asset inventory**: a dedicated PostgreSQL database where every table in the book is stored as a real relational table (queryable, filterable, linkable), and every diagram is stored as a Nano Banana JSON spec (deterministic, editable, re-renderable). Both types carry rich metadata: chapter, page, primary topics, secondary topics, and format. Any future material can query the inventory by topic, pull the exact asset, and use it directly.
+This plan creates a **unified, searchable asset inventory** covering all AMF teaching sources, organized into three tiers:
 
-**End state:** `SELECT * FROM asset_registry WHERE primary_topic = 'interference_pulsation'` returns the asset, its metadata, and its storage location — and we can render it immediately.
+- **Tier 1 — Plogger (Foundation):** Every table and diagram from the Plogger Method book. This is the perceptual language layer that everything else builds on.
+- **Tier 2 — External Sources:** Tables and diagrams from the four chamber source documents and the Beato Book. Cataloged as-is first, no synthesis yet.
+- **Tier 3 — AMF Originals:** Assets we create ourselves — synthesized enrichments of Tier 1/2 diagrams, bridging diagrams that connect concepts across sources, and new media (infographics, reference cards, worksheets, posters).
+
+All tables are stored as real relational SQL tables in the `amf_assets` PostgreSQL database. All diagrams are stored as Nano Banana JSON specs — deterministic, editable, and re-renderable. Both types carry rich metadata: tier, source name, chapter, page, topics, and format.
+
+**End state:** `SELECT * FROM asset_registry WHERE primary_topic = 'interference_pulsation' AND tier = 'plogger'` returns the asset, its metadata, and its storage location — and we can render it immediately.
 
 ---
 
@@ -39,116 +48,229 @@ This plan creates a **searchable asset inventory**: a dedicated PostgreSQL datab
 
 ### Current state
 
-- Tables and diagrams exist only as images in a scanned PDF.
+- Tables and diagrams exist only as images embedded in scanned PDFs across five separate source documents.
 - Any reuse requires re-photographing or redrawing from scratch.
 - No consistency — the same concept may be rendered differently each time.
 - No searchability — finding "the di-chord pulsation table" requires knowing which page of which chapter to look at.
 - No editability — if a label needs to change, the whole image must be replaced.
+- No cross-source linkage — concepts from the Rhythm Code and the Plogger Pictograph have visual overlap but no shared representation.
 
 ### What this costs us
 
-When building a sprint infographic that needs the Interference Pulsation classification table, we currently spend time re-creating it manually. When the AMF app needs the Di-Chord Pictograph legend, we hunt for the right photo. Multiply this across 25+ chapters and hundreds of material pieces, and it compounds into significant friction.
+When building a sprint infographic that needs the Interference Pulsation classification table, we currently spend time recreating it manually. When the AMF app needs the Di-Chord Pictograph legend, we hunt for the right photo. When we want to synthesize a diagram that shows Plogger di-chords overlaid with Emotional Melody Map zones, we have no base spec to build on. Multiply this friction across five source documents, nine phases of curriculum, and hundreds of material pieces.
 
 ### The fix
 
-Extract once. Store structured. Query always.
+Extract once. Store structured. Query always. Build originals on a stable foundation.
 
 ---
 
 ## 3. What We Are Building
 
-### Component A — Plogger Asset Database (`plogger_assets` PostgreSQL DB)
+### Component A — AMF Asset Database (`amf_assets` PostgreSQL DB)
 
 A dedicated database (separate from `elderle_db`) with three layers:
 
-1. **Asset Registry** — one row per asset (table or diagram), with all metadata
-2. **Table Storage** — one normalized relational table per Plogger data table
+1. **Asset Registry** — one row per asset (any tier, any type), with full metadata including tier, source name, and synthesis lineage
+2. **Table Storage** — one normalized relational table per source data table
 3. **Diagram Spec Storage** — one JSON record per diagram, containing the full Nano Banana rendering spec
 
 ### Component B — Diagram Image Library
 
-Each diagram JSON spec is submitted to Nano Banana (Google AI Studio, Gemini 2.0 Flash) to generate a rendered image. Images are stored in `public/plogger-assets/` in the amf-app repo and linked back to the registry row.
+Each diagram JSON spec is submitted to Nano Banana (Google AI Studio, Gemini 2.0 Flash) to generate a rendered image. Images are stored in `public/amf-assets/<tier>/` in the amf-app repo and linked back to the registry row.
+
+Tier subdirectories:
+- `public/amf-assets/plogger/` — Tier 1 rendered images
+- `public/amf-assets/external/` — Tier 2 rendered images
+- `public/amf-assets/amf-original/` — Tier 3 rendered images
 
 ### Component C — Query Interface
 
 SQL patterns (documented in this plan) for common retrieval operations:
-- By chapter
+- By tier
+- By source name
 - By primary topic
 - By secondary topic
-- By asset type (table vs. diagram)
-- By format (can be used in infographic? sprint sheet? lesson plan?)
+- By asset type (table, diagram, infographic, etc.)
+- By format tag (infographic, sprint sheet, reference card, etc.)
+- By synthesis lineage (which Tier 3 assets derive from a given Tier 1/2 asset)
 
 ---
 
 ## 4. Asset Types
 
-### Tables
+The `asset_type` field supports an expanded vocabulary covering all content formats across all three tiers:
 
-Structured data where rows and columns carry discrete values. Stored as real relational SQL tables. Can be joined, filtered, aggregated.
-
-**Examples from the Plogger book:**
-- Di-Chord Complete Reference (ch.9) — all 11 di-chords, name, semitones, inversion pair
-- Interference Pulsation Classification (ch.11) — di-chord → pulsation type → Hz → visual feel
-- F/O Factor Table (ch.12) — di-chord → fundamental/octave factor → weight
-- Harmonicity Table (ch.13) — di-chord → harmonicity level → blend quality
-- Diatonic Triad Reference (ch.23) — scale degree → Roman numeral → triad type → component degrees
-- 7th Chord Inversion Tables (ch.22) — inversion type → interval stack per chord type
-- Heptachord Mode Table (ch.18/19) — mode name → scale degrees → characteristic quality
-- Pythagorean Ordering Table (ch.23) — F–C–G–D–A–E–B with degree mappings
-
-### Diagrams
-
-Visual representations where spatial layout, shape, color, and symbol carry meaning. Stored as Nano Banana JSON specs. Each element in the diagram is a named, typed attribute.
-
-**Examples from the Plogger book:**
-- Di-Chord Pictograph — shape=pulsation type, shadow=F/O factor, color=harmonicity; one glyph per di-chord
-- Interference Pulsation Wave Visualizations — jagged/rounded/straight waveform drawings per pulsation type
-- Heptachord Keyboard Map — keyboard with color-coded keys per function (tonic, dissonant, modal, perfect)
-- Conjunct Finger Mapping — hand diagram with function per finger
-- Inversion Stack Diagrams — chord-tone stack with bass marker and inversion label
-- Tracking Page Template — the blank listener-response grid
-- Bach Chorale Analysis Notation Example — SATB staff layout with bracket notation
-- Di-Chord Number Line — 0–12 bracket notation showing inversion pairs
+| Type | Description |
+|------|-------------|
+| `table` | Structured data in row/column format. Stored as a real relational SQL table. |
+| `diagram` | Visual representation where spatial layout, shape, color, and symbol carry meaning. Stored as a Nano Banana JSON spec. |
+| `infographic` | Multi-panel visual designed for standalone use. May combine data from multiple tables and diagrams. |
+| `reference_card` | Compact single-page reference — quick lookup, not a teaching artifact. |
+| `worksheet` | Student-facing exercise, drill, or fill-in format. |
+| `poster` | Large-format visual designed to be printed and displayed. |
+| `notation_example` | Musical notation excerpt illustrating a specific concept. |
+| `annotation_layer` | A JSON overlay that adds labels, color bands, or callouts to an existing diagram spec. Not a standalone image. |
 
 ---
 
-## 5. Database Architecture
+## 5. Three-Tier Source Model
 
-### Database: `plogger_assets`
+### Tier 1 — Plogger (Foundation)
+
+The backbone of the AMF perceptual language system. Every table and diagram from the Plogger Method book is extracted, stored, and indexed.
+
+- **Tables:** Stored as real relational SQL tables in `amf_assets`. Each row is queryable.
+- **Diagrams:** Stored as Nano Banana JSON specs. Every visual element is a named, editable key.
+- **Source:** `amf-build-reference.md` (the comprehensive chapter-by-chapter build reference). Phase 1 sweep is complete — 60 assets cataloged (46 tables, 14 diagrams).
+
+**Why Tier 1 is the foundation:** The Plogger system provides the perceptual vocabulary (di-chords, interference pulsation, F/O factor, harmonicity, the Pictograph) that every other chamber and curriculum layer builds on. Tier 2 and Tier 3 assets are only meaningful in relation to Tier 1 constructs.
+
+### Tier 2 — External Sources
+
+Tables and diagrams from the four chamber source documents and the Beato Book. These are cataloged as-is first — no synthesis, no enrichment, no combination with Tier 1. Just inventory.
+
+Same treatment as Tier 1: tables become real SQL tables, diagrams become JSON specs. Metadata tracks source name, source file, and page number.
+
+See Section 6 for the full list of Tier 2 sources and their file paths.
+
+### Tier 3 — AMF Originals
+
+Assets we create ourselves. Three subtypes, each with its own purpose:
+
+1. **Synthesized** — An existing Tier 1 or Tier 2 diagram enriched with concepts from another source. The base spec is already in the database; synthesis adds new JSON element layers (annotation layers, color bands, callout labels). Version-bumped, not replaced.
+
+2. **Bridging** — A new diagram that explicitly connects two concepts from different sources that have no shared visual yet. Designed from scratch, not derived from a single base.
+
+3. **New media** — Infographics, reference cards, posters, worksheets — whatever print format best serves the concept. Not limited to diagram-style visuals.
+
+See Section 7 for full subtype descriptions and examples.
+
+---
+
+## 6. Tier 2 — External Source Documents
+
+Each external source document gets a dedicated Phase 2 sweep (one agent per source, run in parallel). Output is appended to `docs/PLOGGER_ASSET_MANIFEST.md` under a new section per source.
+
+| Source | `source_name` value | File path | Notes |
+|--------|---------------------|-----------|-------|
+| Emotional Melody Map | `'Emotional Melody Map'` | `docs/uploads/emotional_map_module1.pdf`, `docs/uploads/emotional_map_cheat_sheet_1_master.pdf` | Two files; catalog both |
+| Rhythm Code | `'Rhythm Code'` | `docs/uploads/TheRhythmCode2022-lvqkbv.pdf` | Single PDF |
+| Harmony OS | `'Harmony OS'` | `docs/uploads/harmony_os_materials.zip` | ZIP archive; extract before sweep |
+| Voicings OS | `'Voicings OS'` | `docs/uploads/voicing_os_materials.zip` | ZIP archive; extract before sweep |
+| Beato Book | `'Beato Book'` | `docs/uploads/The Beato Book 2.3.pdf` | 58MB — scope to harmony, voicings, and ear training chapters only |
+
+### Beato Book scoping strategy
+
+The Beato Book is 58MB and covers far more ground than AMF needs. The Phase 2 sweep agent for the Beato Book is scoped to:
+- Chapters on harmony and functional chord progressions
+- Chapters on voicings and chord voicing technique
+- Chapters on ear training and interval recognition
+- Any chapter that cross-references or overlaps with Plogger concepts (di-chords, harmonic movement, inversion)
+
+Chapters on melody writing, song analysis, and advanced jazz theory are deferred unless they surface a directly relevant table or diagram.
+
+---
+
+## 7. Tier 3 — AMF Originals
+
+### Subtype A — Synthesized
+
+A Tier 1 or Tier 2 diagram enriched with concepts from one or more other sources. The base JSON spec already exists in `diagram_specs`. Synthesis adds new element layers.
+
+**How it works:**
+1. Read the base spec
+2. Read the source documents that contribute new concepts
+3. Write a synthesis spec: new element keys only, structured as an `annotation_layer` asset in the registry
+4. Merge into the base spec as new JSON element layers
+5. Version-bump the spec (`version: "2.0"`)
+6. Re-render; store as `<slug>_v2.png`
+7. Registry entry: `tier = 'amf_original'`, `synthesis_sources = ['base_slug', 'source_slug']`
+
+**Example:** Di-Chord Pictograph + AMF Architecture V2 sprint sequence → Pictograph glyphs each labeled "introduced Sprint X"
+
+### Subtype B — Bridging
+
+A new diagram that explicitly fills a conceptual gap between two source concepts that have no shared visual. Designed from scratch — no single base spec.
+
+**How it works:**
+1. Identify the gap (e.g., di-chord bracket numbers have no visual connection to harmonic root movement sequence)
+2. Design the bridging diagram as a new Nano Banana JSON spec
+3. Full registry entry: `tier = 'amf_original'`, `bridges_concepts = ['concept_A_slug', 'concept_B_slug']`
+
+**Example:** Di-chord bracket numbers mapped onto harmonic root movement sequence as a matrix diagram
+
+### Subtype C — New Media
+
+Infographics, reference cards, posters, worksheets, or any other print format that best serves a concept not yet covered by a table or diagram.
+
+**How it works:**
+1. Design session: identify what format best serves the concept (is it a poster-size reference? a fill-in worksheet? a compact reference card?)
+2. Write the Nano Banana JSON spec for the chosen format
+3. Registry entry: `asset_type` reflects the format (`infographic`, `reference_card`, `worksheet`, `poster`, etc.), `tier = 'amf_original'`
+
+**Example:** A sprint-by-sprint harmonic movement reference card showing which di-chords are targeted in each AMF sprint
+
+---
+
+## 8. Database Architecture
+
+### Database: `amf_assets`
 
 ```sql
 -- Create database
-CREATE DATABASE plogger_assets;
+CREATE DATABASE amf_assets;
 ```
+
+SQL script location: `docs/sql/amf_assets_schema.sql`
 
 ---
 
-### 5.1 Asset Registry Table
+### 8.1 Asset Registry Table
 
-The central index. Every table and diagram has exactly one row here.
+The central index. Every table, diagram, infographic, reference card, worksheet, and poster across all three tiers has exactly one row here.
 
 ```sql
 CREATE TABLE asset_registry (
-    id              SERIAL PRIMARY KEY,
-    slug            VARCHAR(100) UNIQUE NOT NULL,   -- e.g. 'di_chord_pulsation_table'
-    title           VARCHAR(255) NOT NULL,
-    asset_type      VARCHAR(20) NOT NULL CHECK (asset_type IN ('table', 'diagram')),
-    chapter         INTEGER,
-    page_start      INTEGER,
-    page_end        INTEGER,
-    primary_topics  TEXT[],                          -- e.g. ARRAY['interference_pulsation', 'di_chord']
-    secondary_topics TEXT[],                         -- e.g. ARRAY['wave_shape', 'perceptual_language']
-    format_tags     TEXT[],                          -- e.g. ARRAY['infographic', 'sprint_sheet', 'reference']
-    storage_ref     TEXT,                            -- table name OR diagram_specs.slug
-    image_path      TEXT,                            -- public/plogger-assets/<filename>.png (diagrams only)
-    notes           TEXT,
-    created_at      TIMESTAMP DEFAULT NOW()
+    id                  SERIAL PRIMARY KEY,
+    slug                VARCHAR(100) UNIQUE NOT NULL,   -- e.g. 'di_chord_pulsation_table'
+    title               VARCHAR(255) NOT NULL,
+    asset_type          VARCHAR(30) NOT NULL CHECK (asset_type IN (
+                            'table', 'diagram', 'infographic', 'reference_card',
+                            'worksheet', 'poster', 'notation_example', 'annotation_layer'
+                        )),
+    tier                VARCHAR(20) NOT NULL CHECK (tier IN ('plogger', 'external', 'amf_original')),
+    source_name         VARCHAR(100),                   -- e.g. 'Plogger Method', 'Rhythm Code',
+                                                        --   'Emotional Melody Map', 'Beato Book', 'AMF'
+    chapter             INTEGER,
+    page_start          INTEGER,
+    page_end            INTEGER,
+    primary_topics      TEXT[],                         -- e.g. ARRAY['interference_pulsation', 'di_chord']
+    secondary_topics    TEXT[],                         -- e.g. ARRAY['wave_shape', 'perceptual_language']
+    format_tags         TEXT[],                         -- e.g. ARRAY['infographic', 'sprint_sheet']
+    storage_ref         TEXT,                           -- table name OR diagram_specs.slug
+    image_path          TEXT,                           -- public/amf-assets/<tier>/<filename>.png
+    synthesis_sources   TEXT[],                         -- Tier 3 only: Tier 1/2 asset slugs this derives from
+    bridges_concepts    TEXT[],                         -- Tier 3 bridging only: conceptual gap being filled
+    notes               TEXT,
+    created_at          TIMESTAMP DEFAULT NOW()
 );
+
+-- Indexes
+CREATE INDEX idx_asset_registry_tier ON asset_registry (tier);
+CREATE INDEX idx_asset_registry_source_name ON asset_registry (source_name);
+CREATE INDEX idx_asset_registry_asset_type ON asset_registry (asset_type);
+CREATE INDEX idx_asset_registry_chapter ON asset_registry (chapter);
+CREATE INDEX idx_asset_registry_primary_topics ON asset_registry USING GIN (primary_topics);
+CREATE INDEX idx_asset_registry_secondary_topics ON asset_registry USING GIN (secondary_topics);
+CREATE INDEX idx_asset_registry_format_tags ON asset_registry USING GIN (format_tags);
+CREATE INDEX idx_asset_registry_synthesis_sources ON asset_registry USING GIN (synthesis_sources);
+CREATE INDEX idx_asset_registry_bridges_concepts ON asset_registry USING GIN (bridges_concepts);
 ```
 
 ---
 
-### 5.2 Diagram Specs Table
+### 8.2 Diagram Specs Table
 
 Stores the full Nano Banana JSON spec for each diagram. The JSON is the single source of truth — the image is derived from it.
 
@@ -157,7 +279,10 @@ CREATE TABLE diagram_specs (
     id              SERIAL PRIMARY KEY,
     slug            VARCHAR(100) UNIQUE NOT NULL,
     title           VARCHAR(255),
-    spec            JSONB NOT NULL,                 -- full Nano Banana JSON spec
+    tier            VARCHAR(20) NOT NULL CHECK (tier IN ('plogger', 'external', 'amf_original')),
+    source_name     VARCHAR(100),
+    spec            JSONB NOT NULL,                     -- full Nano Banana JSON spec
+    spec_version    VARCHAR(10) DEFAULT '1.0',
     render_model    VARCHAR(100) DEFAULT 'gemini-2.0-flash',
     last_rendered   TIMESTAMP,
     render_notes    TEXT,
@@ -167,11 +292,11 @@ CREATE TABLE diagram_specs (
 
 ---
 
-### 5.3 Individual Data Tables (Star Schema)
+### 8.3 Individual Data Tables (Star Schema)
 
-Each Plogger table gets its own normalized SQL table. Below are the confirmed tables from chapters already in the build reference.
+Each source table gets its own normalized SQL table. Tables from Tier 1 are documented below. Tier 2 table schemas will be defined during Phase 2 sweeps when their structure is confirmed from source PDFs.
 
-#### `di_chords` — Complete Di-Chord Reference (Ch.9)
+#### `di_chords` — Complete Di-Chord Reference (Tier 1, Ch.9)
 
 ```sql
 CREATE TABLE di_chords (
@@ -183,7 +308,7 @@ CREATE TABLE di_chords (
 );
 ```
 
-#### `di_chord_pulsation` — Interference Pulsation Classification (Ch.11)
+#### `di_chord_pulsation` — Interference Pulsation Classification (Tier 1, Ch.11)
 
 ```sql
 CREATE TABLE di_chord_pulsation (
@@ -196,7 +321,7 @@ CREATE TABLE di_chord_pulsation (
 );
 ```
 
-#### `di_chord_fo_factor` — F/O Factor (Ch.12)
+#### `di_chord_fo_factor` — F/O Factor (Tier 1, Ch.12)
 
 ```sql
 CREATE TABLE di_chord_fo_factor (
@@ -208,7 +333,7 @@ CREATE TABLE di_chord_fo_factor (
 );
 ```
 
-#### `di_chord_harmonicity` — Harmonicity (Ch.13)
+#### `di_chord_harmonicity` — Harmonicity (Tier 1, Ch.13)
 
 ```sql
 CREATE TABLE di_chord_harmonicity (
@@ -220,7 +345,7 @@ CREATE TABLE di_chord_harmonicity (
 );
 ```
 
-#### `di_chord_pictograph` — Full Pictograph Properties (Ch.10-14)
+#### `di_chord_pictograph` — Full Pictograph Properties (Tier 1, Ch.10-14)
 
 Composite view of all three sound factors per di-chord.
 
@@ -237,7 +362,7 @@ CREATE TABLE di_chord_pictograph (
 );
 ```
 
-#### `diatonic_triads` — Diatonic Triad Reference (Ch.23)
+#### `diatonic_triads` — Diatonic Triad Reference (Tier 1, Ch.23)
 
 ```sql
 CREATE TABLE diatonic_triads (
@@ -254,7 +379,7 @@ CREATE TABLE diatonic_triads (
 );
 ```
 
-#### `chord_inversions_7th` — 7th Chord Inversion Tables (Ch.22)
+#### `chord_inversions_7th` — 7th Chord Inversion Tables (Tier 1, Ch.22)
 
 ```sql
 CREATE TABLE chord_inversions_7th (
@@ -271,7 +396,7 @@ CREATE TABLE chord_inversions_7th (
 );
 ```
 
-#### `heptachord_modes` — Mode Reference (Ch.18-20)
+#### `heptachord_modes` — Mode Reference (Tier 1, Ch.18-20)
 
 ```sql
 CREATE TABLE heptachord_modes (
@@ -284,7 +409,7 @@ CREATE TABLE heptachord_modes (
 );
 ```
 
-#### `bach_chorale_sequences` — The 10 Harmonization Sequences (Ch.23)
+#### `bach_chorale_sequences` — The 10 Harmonization Sequences (Tier 1, Ch.23)
 
 ```sql
 CREATE TABLE bach_chorale_sequences (
@@ -298,7 +423,7 @@ CREATE TABLE bach_chorale_sequences (
 
 ---
 
-## 6. Nano Banana JSON Spec Format
+## 9. Nano Banana JSON Spec Format
 
 Diagrams are stored as structured JSON where every visual element is a named, typed attribute. The schema follows the pattern established in `queen-city-redline/docs/reference/JSON_PROMPT_SCHEMA.md`, adapted for educational diagrams rather than character generation.
 
@@ -308,6 +433,7 @@ Diagrams are stored as structured JSON where every visual element is a named, ty
 - `image_locked: true` on any element prevents modification unless intentional
 - Every renderable attribute is a key — changing the key changes the output deterministically
 - The spec is the single source of truth; the image is a derived artifact
+- For Tier 3 synthesized assets, new element layers are additive — they do not replace existing elements
 
 ### Diagram JSON Structure
 
@@ -316,6 +442,8 @@ Diagrams are stored as structured JSON where every visual element is a named, ty
   "task": "Create educational music theory diagram",
   "diagram_id": "di_chord_pictograph_legend",
   "version": "1.0",
+  "tier": "plogger",
+  "source_name": "Plogger Method",
   "canvas": {
     "width": 800,
     "height": 600,
@@ -370,157 +498,203 @@ Diagrams are stored as structured JSON where every visual element is a named, ty
 3. **Shape names map to drawing primitives** — `jagged_waveform`, `rounded_waveform`, `straight_line`, `filled_circle`, `outlined_square`, `arrow`, `bracket`, `staff_line`, etc.
 4. **Position is described relationally** — `top-center`, `below:shape_dissonant`, `right-of:label_block` — not pixel coordinates (which break on resize)
 5. **Version field** — increment when the spec changes; old images become stale by comparison
+6. **Tier and source_name** — embedded in the spec so every rendered image carries provenance
 
 ---
 
-## 7. Phase Plan
+## 10. Phase Plan
 
-### Phase 1 — Comprehensive Sweep (Light Agent)
+### Phase 1 — Tier 1 Sweep ✅ COMPLETE
 
-**Goal:** Catalog every table and diagram in the Plogger book. This is the discovery phase — no extraction yet.
+**Goal:** Catalog every table and diagram in the Plogger Method book.
 
-**Input:** `amf-build-reference.md` (covers all chapters) + any available uploaded PDFs
+**Input:** `amf-build-reference.md` (covers all chapters)
 
-**Output:** A manifest in `docs/PLOGGER_ASSET_MANIFEST.md` with one row per asset:
-- Chapter number
-- Page number(s)
-- Asset type (table / diagram)
-- Working title
-- One-sentence description
-- Completeness flag (fully captured in build reference? / partially? / not at all?)
+**Output:** `docs/PLOGGER_ASSET_MANIFEST.md` — one row per asset, with chapter, page, asset type, working title, description, and completeness flag.
 
-**Agent type:** Explore agent reading `amf-build-reference.md` end to end
-
-**Estimated assets:** 25–40 (based on chapters already analyzed)
+**Result:** 60 assets cataloged — 46 tables, 14 diagrams.
 
 ---
 
-### Phase 2 — Database Setup
+### Phase 2 — Tier 2 Sweep
 
-**Goal:** Create the `plogger_assets` database and all schema tables.
+**Goal:** Catalog every table and diagram in each external source document. No extraction yet — discovery only.
+
+**One agent per source, run in parallel:**
+
+| Agent | Source | Input file(s) |
+|-------|--------|---------------|
+| Agent A | Emotional Melody Map | `emotional_map_module1.pdf`, `emotional_map_cheat_sheet_1_master.pdf` |
+| Agent B | Rhythm Code | `TheRhythmCode2022-lvqkbv.pdf` |
+| Agent C | Harmony OS | `harmony_os_materials.zip` (extract first) |
+| Agent D | Voicings OS | `voicing_os_materials.zip` (extract first) |
+| Agent E | Beato Book | `The Beato Book 2.3.pdf` — scoped to harmony, voicings, and ear training chapters |
+
+**Output:** Each agent appends its findings to `docs/PLOGGER_ASSET_MANIFEST.md` under a new `## [Source Name]` section, in the same format as Phase 1.
+
+---
+
+### Phase 3 — Database Setup
+
+**Goal:** Create the `amf_assets` database and all schema tables.
 
 **Steps:**
-1. `CREATE DATABASE plogger_assets` on `127.0.0.1:5432`
-2. Run all `CREATE TABLE` statements from Section 5
-3. Create indexes on `primary_topics` (GIN for array search), `chapter`, `asset_type`
-4. Verify with `\dt` and `\d tablename`
+1. `CREATE DATABASE amf_assets` on `127.0.0.1:5432`
+2. Run all `CREATE TABLE` statements from Section 8
+3. Create all GIN indexes on array fields (`primary_topics`, `secondary_topics`, `format_tags`, `synthesis_sources`, `bridges_concepts`)
+4. Create B-tree indexes on `tier`, `source_name`, `asset_type`, `chapter`
+5. Verify with `\dt` and `\d tablename`
 
-**SQL script:** `docs/sql/plogger_assets_schema.sql` (to be created)
-
----
-
-### Phase 3 — Table Extraction (Parallel Agents by Chapter Group)
-
-**Goal:** Populate each relational table with data extracted from the book.
-
-**Source:** `amf-build-reference.md` for chapters already captured; source PDFs/photos for gaps.
-
-**Chapter groups (parallel):**
-- Batch A: Ch.9-14 → `di_chords`, `di_chord_pulsation`, `di_chord_fo_factor`, `di_chord_harmonicity`, `di_chord_pictograph`
-- Batch B: Ch.22 → `chord_inversions_7th`
-- Batch C: Ch.23 → `diatonic_triads`, `bach_chorale_sequences`
-- Batch D: Ch.18-20 → `heptachord_modes`
-- Batch E: Any remaining tables discovered in Phase 1
-
-**Output:** `INSERT` statements + registry entries in `asset_registry`
+**SQL script:** `docs/sql/amf_assets_schema.sql`
 
 ---
 
-### Phase 4 — Diagram Decomposition (Heavier Model)
+### Phase 4 — Tier 1 Table Extraction (Parallel by Chapter Group)
 
-**Goal:** For each diagram identified in the manifest, produce a Nano Banana JSON spec.
+**Goal:** Populate each Tier 1 relational table with data extracted from `amf-build-reference.md`.
+
+**Parallel batches:**
+
+| Batch | Chapters | Tables |
+|-------|----------|--------|
+| A | Ch.9-14 | `di_chords`, `di_chord_pulsation`, `di_chord_fo_factor`, `di_chord_harmonicity`, `di_chord_pictograph` |
+| B | Ch.22 | `chord_inversions_7th` |
+| C | Ch.23 | `diatonic_triads`, `bach_chorale_sequences` |
+| D | Ch.18-20 | `heptachord_modes` |
+| E | Ch.25 | `clef_transposition`, `transposing_instruments` |
+| F | Remaining | Any additional tables from Phase 1 manifest not covered above |
+
+**Output:** `INSERT` statements + `asset_registry` rows for each table (tier = 'plogger', source_name = 'Plogger Method').
+
+---
+
+### Phase 5 — Tier 2 Table Extraction
+
+**Goal:** Populate relational tables for external source tables discovered in Phase 2.
+
+**Same approach as Phase 4:** one agent per source, parallel. Each agent reads the manifest section for its source, extracts the table data, writes `CREATE TABLE` + `INSERT` statements, and inserts `asset_registry` rows (tier = 'external', source_name = source document name).
+
+---
+
+### Phase 6 — Diagram Decomposition (All Tiers)
+
+**Goal:** For each diagram in the manifest (Tier 1 and Tier 2), produce a Nano Banana JSON spec.
 
 **Process per diagram:**
-1. Read the diagram description from `amf-build-reference.md`
+1. Read the diagram description from the manifest and the source document
 2. Identify all visual elements (shapes, labels, colors, layout, text)
 3. Map each element to a JSON attribute with explicit `source: "text"` values
 4. Write spec to `diagram_specs` table and to `docs/diagram-specs/<slug>.json`
-5. Insert registry row pointing to the spec
+5. Insert `asset_registry` row pointing to the spec
 
-**Priority order:**
+**Priority order — Tier 1 first:**
 1. Di-Chord Pictograph (most reused — appears in Ch.10, Ch.23, and every sprint)
-2. Interference Pulsation Wave Diagram (Ch.11)
+2. Interference Pulsation Waveforms (Ch.11)
 3. Heptachord Keyboard Map (Ch.18-20)
 4. 7th Chord Inversion Stack Diagrams (Ch.22)
-5. Diatonic Triad Harmonization Chart (Ch.23)
-6. Conjunct Finger Map (Ch.16-17)
-7. Remaining diagrams from manifest
+5. Tracking Page Template
+
+Tier 2 diagrams follow after Tier 1 top 5 are complete.
 
 ---
 
-### Phase 5 — Image Generation
+### Phase 7 — Image Generation
 
-**Goal:** Submit each JSON spec to Nano Banana and store rendered images.
+**Goal:** Submit all JSON specs to Nano Banana and store rendered images.
 
 **Process:**
 1. For each spec in `diagram_specs`, prepare the JSON prompt
 2. Submit to Gemini 2.0 Flash via Google AI Studio (Nano Banana process)
-3. Save output image to `public/plogger-assets/<slug>.png`
+3. Save output image to `public/amf-assets/<tier>/<slug>.png`
 4. Update `asset_registry.image_path` and `diagram_specs.last_rendered`
 
-**Note:** This phase requires manual submission through the Nano Banana / AI Studio UI per the established SOP. Each spec is designed to be submitted exactly as-is.
+**Note:** This phase requires submission through the Nano Banana / AI Studio UI per the established SOP in `queen-city-redline/.pipeline/deterministic-2d-visual-asset-generation-using-jso/mprd.md`. Read that file in full (1784 lines) before submitting the first spec. Key question to resolve: does the JSON go directly into the AI Studio prompt, or is there a template wrapper?
 
 ---
 
-### Phase 6 — Query Interface Documentation
+### Phase 8 — Tier 3 Synthesis and Originals
 
-**Goal:** Document SQL patterns for common retrieval operations.
+**Two-part phase.**
 
-**Queries to document:**
-- Find all assets for a given topic
-- Find all assets needed for a given chapter
-- Pull the full di-chord property set for a given semitone value
-- Find all diagrams suitable for use in an infographic
-- Pull the complete inversion table for a given chord type and inversion
+**Part A — Synthesized**
 
----
+For each Tier 1 and Tier 2 diagram (starting with the top 5 priority Tier 1 diagrams):
 
-## 8. Catalog — Known Tables
+1. **Overlap audit** (one agent per diagram): read the diagram spec + all source documents that have conceptual overlap; produce a synthesis spec listing what to add, where, in what JSON key
+2. **Spec update**: merge synthesis additions into the existing JSON spec as new element layers; version-bump to `"2.0"`
+3. **Re-render**: submit updated spec to Nano Banana; store as `<slug>_v2.png`
+4. **Registry update**: insert a new `asset_registry` row with `tier = 'amf_original'`, `synthesis_sources[] = [base_slug, ...]`
 
-Based on chapters fully analyzed in `amf-build-reference.md`. This is the Phase 1 starting manifest — the comprehensive sweep will extend it.
+**Part B — Bridging and New Media**
 
-| # | Title | Chapter | Pages | Storage Table | Status |
-|---|-------|---------|-------|---------------|--------|
-| T-01 | Di-Chord Complete Reference | 9 | 101-105 | `di_chords` | Partially captured |
-| T-02 | Interference Pulsation Classification | 11 | 112-114 | `di_chord_pulsation` | Captured |
-| T-03 | F/O Factor Classification | 12 | 121-125 | `di_chord_fo_factor` | Partially captured |
-| T-04 | Harmonicity Classification | 13 | 126-130 | `di_chord_harmonicity` | Partially captured |
-| T-05 | Di-Chord Pictograph Properties | 10-14 | Various | `di_chord_pictograph` | Partially captured |
-| T-06 | Diatonic Triad Reference | 23 | 264 | `diatonic_triads` | Captured |
-| T-07 | 7th Chord Root Position | 22 | 249-253 | `chord_inversions_7th` | Captured |
-| T-08 | 7th Chord 1st Inversion | 22 | 249-253 | `chord_inversions_7th` | Captured |
-| T-09 | 7th Chord 2nd Inversion | 22 | 249-253 | `chord_inversions_7th` | Captured |
-| T-10 | 7th Chord 3rd Inversion | 22 | 249-253 | `chord_inversions_7th` | Captured |
-| T-11 | Bach Chorale 10 Sequences | 23 | 266-269 | `bach_chorale_sequences` | Captured |
-| T-12 | Heptachord Mode Reference | 18-20 | TBD | `heptachord_modes` | Partially captured |
-| T-13 | Pythagorean Ordering Reference | 23 | 265 | `heptachord_modes` | Captured |
+1. **Gap identification**: design session to identify conceptual connections that exist in the curriculum but have no visual yet
+2. **Bridging diagrams**: new Nano Banana JSON specs designed from scratch; registry entry with `bridges_concepts[]` populated
+3. **New media**: infographics, reference cards, worksheets, or posters for concepts not covered by any existing asset; registry entry with appropriate `asset_type`
+
+See Section 16 for specific synthesis targets confirmed in the architecture conversation.
 
 ---
 
-## 9. Catalog — Known Diagrams
+### Phase 9 — Query Interface and Integration
 
-| # | Title | Chapter | Pages | Spec Slug | Status |
-|---|-------|---------|-------|-----------|--------|
-| D-01 | Di-Chord Pictograph — Full Grid | 10-14 | ~115 | `di_chord_pictograph_grid` | Not started |
-| D-02 | Interference Pulsation Waveforms | 11 | 112-113 | `pulsation_waveforms` | Not started |
-| D-03 | F/O Factor Visual | 12 | 121 | `fo_factor_visual` | Not started |
-| D-04 | Harmonicity Blend Visual | 13 | 126 | `harmonicity_visual` | Not started |
-| D-05 | Heptachord Keyboard Color Map | 18-20 | TBD | `heptachord_keyboard_map` | Not started |
-| D-06 | Conjunct Finger Mapping | 16-17 | TBD | `conjunct_finger_map` | Not started |
-| D-07 | 7th Chord Inversion Stack — Dom7 | 22 | 249 | `inversion_stack_dom7` | Not started |
-| D-08 | 7th Chord Inversion Stack — Min7 | 22 | 250 | `inversion_stack_min7` | Not started |
-| D-09 | Di-Chord Number Line | 9 | 101 | `dichord_number_line` | Not started |
-| D-10 | SATB Harmonization Template | 23 | 267 | `satb_harmonization_template` | Not started |
-| D-11 | Tracking Page Grid Template | TBD | TBD | `tracking_page_template` | Not started |
-| D-12 | Pythagorean Mode Cluster Map | 23 | 265 | `pythagorean_mode_clusters` | Not started |
+**Goal:** Document all SQL patterns and connect the inventory to the AMF app build pipeline.
+
+**Deliverables:**
+- SQL query catalog documented in this plan (Section 14) — updated after Phases 4-8 complete
+- `gen_infographic_pdfs.py` updated to accept asset slugs and pull rendered images from `public/amf-assets/`
+- API endpoint design: `GET /api/amf-assets?tier=plogger&topic=di_chord&format=infographic`
 
 ---
 
-## 10. Metadata Schema
+## 11. Catalog — Known Tables
 
-Every asset in the registry carries this metadata. These are the official topic tag vocabularies.
+Phase 1 sweep results. Tier 1 (Plogger Method) only. Phase 2 will extend this with Tier 2 entries.
 
-### Primary Topics (controlled vocabulary)
+| # | Title | Tier | Source | Chapter | Pages | Storage Table | Status |
+|---|-------|------|--------|---------|-------|---------------|--------|
+| T-01 | Di-Chord Complete Reference | Tier 1 | Plogger Method | 9 | 101-105 | `di_chords` | Partially captured |
+| T-02 | Interference Pulsation Classification | Tier 1 | Plogger Method | 11 | 112-114 | `di_chord_pulsation` | Captured |
+| T-03 | F/O Factor Classification | Tier 1 | Plogger Method | 12 | 121-125 | `di_chord_fo_factor` | Partially captured |
+| T-04 | Harmonicity Classification | Tier 1 | Plogger Method | 13 | 126-130 | `di_chord_harmonicity` | Partially captured |
+| T-05 | Di-Chord Pictograph Properties | Tier 1 | Plogger Method | 10-14 | Various | `di_chord_pictograph` | Partially captured |
+| T-06 | Diatonic Triad Reference | Tier 1 | Plogger Method | 23 | 264 | `diatonic_triads` | Captured |
+| T-07 | 7th Chord Root Position | Tier 1 | Plogger Method | 22 | 249-253 | `chord_inversions_7th` | Captured |
+| T-08 | 7th Chord 1st Inversion | Tier 1 | Plogger Method | 22 | 249-253 | `chord_inversions_7th` | Captured |
+| T-09 | 7th Chord 2nd Inversion | Tier 1 | Plogger Method | 22 | 249-253 | `chord_inversions_7th` | Captured |
+| T-10 | 7th Chord 3rd Inversion | Tier 1 | Plogger Method | 22 | 249-253 | `chord_inversions_7th` | Captured |
+| T-11 | Bach Chorale 10 Sequences | Tier 1 | Plogger Method | 23 | 266-269 | `bach_chorale_sequences` | Captured |
+| T-12 | Heptachord Mode Reference | Tier 1 | Plogger Method | 18-20 | TBD | `heptachord_modes` | Partially captured |
+| T-13 | Pythagorean Ordering Reference | Tier 1 | Plogger Method | 23 | 265 | `heptachord_modes` | Captured |
+
+---
+
+## 12. Catalog — Known Diagrams
+
+Phase 1 sweep results. Tier 1 (Plogger Method) only. Phase 2 will extend this with Tier 2 entries.
+
+| # | Title | Tier | Source | Chapter | Pages | Spec Slug | Status |
+|---|-------|------|--------|---------|-------|-----------|--------|
+| D-01 | Di-Chord Pictograph — Full Grid | Tier 1 | Plogger Method | 10-14 | ~115 | `di_chord_pictograph_grid` | Not started |
+| D-02 | Interference Pulsation Waveforms | Tier 1 | Plogger Method | 11 | 112-113 | `pulsation_waveforms` | Not started |
+| D-03 | F/O Factor Visual | Tier 1 | Plogger Method | 12 | 121 | `fo_factor_visual` | Not started |
+| D-04 | Harmonicity Blend Visual | Tier 1 | Plogger Method | 13 | 126 | `harmonicity_visual` | Not started |
+| D-05 | Heptachord Keyboard Color Map | Tier 1 | Plogger Method | 18-20 | TBD | `heptachord_keyboard_map` | Not started |
+| D-06 | Conjunct Finger Mapping | Tier 1 | Plogger Method | 16-17 | TBD | `conjunct_finger_map` | Not started |
+| D-07 | 7th Chord Inversion Stack — Dom7 | Tier 1 | Plogger Method | 22 | 249 | `inversion_stack_dom7` | Not started |
+| D-08 | 7th Chord Inversion Stack — Min7 | Tier 1 | Plogger Method | 22 | 250 | `inversion_stack_min7` | Not started |
+| D-09 | Di-Chord Number Line | Tier 1 | Plogger Method | 9 | 101 | `dichord_number_line` | Not started |
+| D-10 | SATB Harmonization Template | Tier 1 | Plogger Method | 23 | 267 | `satb_harmonization_template` | Not started |
+| D-11 | Tracking Page Grid Template | Tier 1 | Plogger Method | TBD | TBD | `tracking_page_template` | Not started |
+| D-12 | Pythagorean Mode Cluster Map | Tier 1 | Plogger Method | 23 | 265 | `pythagorean_mode_clusters` | Not started |
+| D-13 | Heptachord Shift House Plan | Tier 1 | Plogger Method | 18-20 | TBD | `heptachord_shift_house_plan` | Not started |
+
+---
+
+## 13. Metadata Schema
+
+Every asset in the registry carries this metadata. These are the official controlled vocabularies.
+
+### Primary Topics
 
 ```
 di_chord
@@ -539,9 +713,12 @@ tracking_page
 bach_chorale
 mode
 transposition
+emotional_melody
+voicing_technique
+functional_harmony
 ```
 
-### Secondary Topics (controlled vocabulary)
+### Secondary Topics
 
 ```
 wave_shape
@@ -557,37 +734,52 @@ pythagorean_ordering
 conjunct_disjunct
 functional_harmony
 ear_training
+sprint_sequence
+zone_mapping
+annotation
 ```
 
-### Format Tags (controlled vocabulary)
+### Format Tags
 
 ```
-infographic          -- can be used as a standalone infographic panel
-sprint_sheet         -- appropriate for a sprint practice sheet
-lesson_plan          -- appropriate for lesson plan reference
+infographic          -- standalone infographic panel
+sprint_sheet         -- sprint practice sheet
+lesson_plan          -- lesson plan reference
 quick_reference      -- compact reference card format
 exercise             -- student exercise or drill
-illustration         -- explanatory illustration, not data table
+illustration         -- explanatory illustration, not data
 data_table           -- pure data, row/column format
+poster               -- large-format print display
+worksheet            -- student fill-in format
 ```
 
 ---
 
-## 11. Query Interface
+## 14. Query Interface
 
-### Find all assets for a topic
+### Find all Plogger assets for a topic
 
 ```sql
 SELECT id, slug, title, asset_type, chapter, page_start
 FROM asset_registry
-WHERE 'interference_pulsation' = ANY(primary_topics)
+WHERE tier = 'plogger'
+  AND 'interference_pulsation' = ANY(primary_topics)
 ORDER BY chapter;
+```
+
+### Find all assets across all tiers for a topic
+
+```sql
+SELECT id, slug, title, tier, source_name, asset_type, chapter
+FROM asset_registry
+WHERE 'di_chord' = ANY(primary_topics)
+ORDER BY tier, chapter;
 ```
 
 ### Find everything needed to build a di-chord infographic
 
 ```sql
-SELECT slug, title, asset_type, image_path, storage_ref
+SELECT slug, title, tier, asset_type, image_path, storage_ref
 FROM asset_registry
 WHERE primary_topics && ARRAY['di_chord', 'pictograph', 'interference_pulsation']
   AND 'infographic' = ANY(format_tags);
@@ -621,129 +813,160 @@ WHERE chord_type = 'dominant_7th'
 ORDER BY CASE inversion WHEN 'root' THEN 1 WHEN 'first' THEN 2 WHEN 'second' THEN 3 WHEN 'third' THEN 4 END;
 ```
 
+### Find all Tier 3 assets derived from a specific Tier 1 base
+
+```sql
+SELECT slug, title, asset_type, synthesis_sources, bridges_concepts
+FROM asset_registry
+WHERE tier = 'amf_original'
+  AND 'di_chord_pictograph_grid' = ANY(synthesis_sources);
+```
+
+### Find all bridging diagrams and what conceptual gap each fills
+
+```sql
+SELECT slug, title, bridges_concepts
+FROM asset_registry
+WHERE tier = 'amf_original'
+  AND bridges_concepts IS NOT NULL
+  AND array_length(bridges_concepts, 1) > 0
+ORDER BY slug;
+```
+
 ### Find assets not yet rendered (diagrams only)
 
 ```sql
-SELECT ar.slug, ar.title, ar.chapter
+SELECT ar.slug, ar.title, ar.tier, ar.chapter
 FROM asset_registry ar
 LEFT JOIN diagram_specs ds ON ar.storage_ref = ds.slug
-WHERE ar.asset_type = 'diagram'
+WHERE ar.asset_type IN ('diagram', 'infographic', 'poster', 'reference_card', 'worksheet')
   AND (ds.last_rendered IS NULL OR ar.image_path IS NULL)
-ORDER BY ar.chapter;
+ORDER BY ar.tier, ar.chapter;
+```
+
+### Find all external source assets (Tier 2) by source
+
+```sql
+SELECT slug, title, asset_type, chapter, page_start
+FROM asset_registry
+WHERE tier = 'external'
+  AND source_name = 'Rhythm Code'
+ORDER BY chapter;
 ```
 
 ---
 
-## 12. Integration with AMF Materials
+## 15. Integration with AMF Materials
 
 ### How sprint materials will use the inventory
 
 When building a sprint infographic (e.g., Sprint 2 — [5] movements):
 
 ```sql
--- Find all assets relevant to Sprint 2 topics
-SELECT slug, title, image_path, asset_type
+-- Find all assets relevant to Sprint 2 topics, suitable for infographic use
+SELECT slug, title, tier, image_path, asset_type
 FROM asset_registry
 WHERE primary_topics && ARRAY['di_chord', 'interference_pulsation']
   AND 'infographic' = ANY(format_tags);
 ```
 
-The infographic generator (`gen_infographic_pdfs.py`) will be updated to accept asset slugs as inputs and pull rendered images from `public/plogger-assets/`.
+The infographic generator (`gen_infographic_pdfs.py`) will be updated to accept asset slugs as inputs and pull rendered images from `public/amf-assets/<tier>/`.
 
 ### How lesson plans will use the inventory
 
-A lesson plan referencing the di-chord system will pull the Interference Pulsation waveform diagram and the Pulsation Classification table in one query — no recreation needed.
+A lesson plan referencing the di-chord system pulls the Interference Pulsation waveform diagram and the Pulsation Classification table in one query — no recreation needed. If a synthesized (Tier 3) version of that diagram exists with sprint annotations, it is preferred over the base Tier 1 version.
+
+```sql
+-- Prefer synthesized versions when available
+SELECT slug, title, tier, image_path
+FROM asset_registry
+WHERE 'di_chord' = ANY(primary_topics)
+  AND asset_type = 'diagram'
+ORDER BY tier DESC;   -- 'plogger' < 'external' < 'amf_original' alphabetically;
+                      -- adjust with CASE for explicit tier priority if needed
+```
 
 ### How the AMF app will use the inventory
 
-API endpoint (future): `GET /api/plogger-assets?topic=di_chord&format=infographic` returns assets with image URLs, ready to embed in any curriculum component.
+API endpoint (Phase 9): `GET /api/amf-assets?tier=plogger&topic=di_chord&format=infographic`
+
+Returns assets with image URLs, tier, source name, and metadata — ready to embed in any curriculum component.
 
 ---
 
-## 13. Phase 7 — Cross-Source Synthesis
+## 16. Key Synthesis Targets (Phase 8 Examples)
 
-### The Idea
+These are the confirmed synthesis targets from AMF architecture conversations. Each becomes a Tier 3 asset in Phase 8.
 
-Once a diagram exists as a deterministic JSON spec, it costs almost nothing to extend it. Every visual element is already a named, editable key. Adding a new annotation layer — a color band, a callout label, a secondary axis — is a JSON edit, not a redraw. This makes synthesis with other sources essentially free once Phase 5 is complete.
+### Synthesized (Subtype A)
 
-**The goal:** Each Plogger diagram becomes a richer teaching artifact by absorbing relevant concepts from the other sources in the AMF ecosystem. And conversely, concepts from other sources get visual anchors they currently lack.
+**Di-Chord Pictograph + AMF Architecture V2 sprint sequence**
+- Base: `di_chord_pictograph_grid` (Tier 1)
+- Synthesis source: AMF Architecture V2 harmonic movement sequence
+- Addition: "first introduced in Sprint X" label per di-chord glyph; highlight [5][7] as Sprint 2-3 targets, [3][4] as Sprint 5-7 targets
+- Output slug: `di_chord_pictograph_sprint_annotated`
 
----
+**Heptachord Keyboard Map + Melody Zone system**
+- Base: `heptachord_keyboard_map` (Tier 1)
+- Synthesis source: Melody Zone system (Zone 1-4 stability ladder)
+- Addition: Zone 1-4 color coding overlaid on di-chord function; Zone 1 = chord tones, Zone 3 = dissonant passing tones, Zone 2 = modal color tones
+- Output slug: `heptachord_keyboard_melody_zones`
 
-### Other Sources to Synthesize Against
+**Pulsation Waveforms + Melody Zone system**
+- Base: `pulsation_waveforms` (Tier 1)
+- Synthesis source: Melody Zone system
+- Addition: color bands mapping dissonant di-chords → Zone 3-4, perfect di-chords → Zone 1-2
+- Output slug: `pulsation_waveforms_zone_bands`
 
-| Source | Location | What It Contributes |
-|--------|----------|---------------------|
-| AMF Architecture V2 | `AMF_ARCHITECTURE_V2.md` | Di-chord movements as harmonic atoms; sprint-by-sprint learning sequence; mastery criteria |
-| AMF Curriculum Content | `app/curriculum/` | Spiral threads; melody zones; rhythm code; anchor songs |
-| Beato Book Blend-In Map | `amf-build-reference.md` Part C | 10 Beato items with chamber/sprint mappings |
-| The Tracking Page protocols | `amf-build-reference.md` Ch.16 | 6 protocols; how each di-chord class is trained in context |
-| Melody Zone system | `amf-build-reference.md` Part C | Zone 1–4 stability ladder; chord-tone vs. tension language |
+**7th Chord Inversion Stacks + Functional Harmony**
+- Base: `inversion_stack_dom7` (Tier 1)
+- Synthesis source: AMF Architecture V2 Sprint 8 tritone content
+- Addition: functional harmony labels per chord type (V7 = dominant, ii7 = pre-dominant); tritone resolution path annotated in dominant 7th stack
+- Output slug: `inversion_stack_dom7_functional`
 
----
+**Heptachord Shift House Plan + Sprint Map**
+- Base: `heptachord_shift_house_plan` (Tier 1)
+- Synthesis source: AMF Architecture V2 sprint-by-sprint mode introduction sequence
+- Addition: each room annotated with which sprint introduces it
+- Output slug: `heptachord_shift_house_sprint_map`
 
-### Synthesis Pass — What Changes Per Diagram
+### Bridging (Subtype B)
 
-**Di-Chord Pictograph (D-04):**
-- Add sprint annotations: which di-chords are introduced in which sprint (from AMF Architecture V2 harmonic movement sequence)
-- Highlight the [5] and [7] group (P4/P5) as Sprint 2–3 targets; [3][4] as Sprint 5–7 targets
-- Add a "first encountered in" label per di-chord glyph
+**Di-Chord numbers mapped onto harmonic root movement sequence**
+- No existing base spec covers this connection
+- Gap: di-chord bracket numbers exist in the Pictograph; harmonic root movement sequence exists in AMF Architecture V2; no visual connects them
+- Design: matrix or arc diagram with di-chord numbers as nodes, root movement as edges
+- Output slug: `dichord_harmonic_root_movement_matrix`
+- `bridges_concepts`: `['di_chord_pictograph_grid', 'harmonic_root_movement_sequence']`
 
-**Interference Pulsation Waveforms (D-02 / D-05):**
-- Add a color band from the melody zone system: dissonant di-chords map to Zone 3–4 (Tense/Wildcard); perfect map to Zone 1–2 (Sweet/Bitter)
-- Annotate which waveform types appear in the Tracking Page protocols
+### New Media (Subtype C)
 
-**Heptachord Keyboard Map (D-05):**
-- Overlay the melody zone color coding: chord tones (Zone 1) vs. dissonant passing tones (Zone 3) vs. modal color tones (Zone 2)
-- Add conjunct finger labels from Ch.20
-
-**Heptachord Shift House Plan (D-12):**
-- Annotate which shifts correspond to which AMF sprint (modes are introduced sprint by sprint)
-- Link each room to its Beato Book page reference from the Blend-In Map
-
-**7th Chord Inversion Stacks (D-07 / D-08):**
-- Add functional harmony label per chord type (V7 = dominant function, ii7 = pre-dominant, etc.)
-- Annotate the tritone resolution path in the dominant 7th stack — connects to AMF Architecture V2 Sprint 8 ([6] tritone)
-
-**Transposition Clef Table (T-45 from Ch.25):**
-- This is a table, not a diagram, but it synthesizes directly with Ch.8's 8-clef system
-- A diagram version could show a wheel or matrix with clefs as nodes and di-chords as edges
-
----
-
-### Phase 7 Process
-
-1. **Overlap audit** (one agent per diagram): read the diagram spec + all source documents listed above; identify every concept overlap and produce a synthesis spec — what to add, where, in what JSON key
-2. **Spec update** (per diagram): merge synthesis additions into the existing Nano Banana JSON spec as new element layers; version bump the spec
-3. **Re-render**: submit updated specs to Nano Banana; store versioned images (`<slug>_v2.png`)
-4. **Registry update**: tag all synthesized assets with `synthesis_sources[]` field listing which external sources contributed
+**Transposition Clef wheel/matrix diagram**
+- The clef transposition table (Ch.25) currently exists as a data table only
+- New media design: wheel or matrix with clefs as nodes, di-chords as edges showing transposition intervals
+- `asset_type`: `diagram` (not a table)
+- Output slug: `transposition_clef_wheel`
 
 ---
 
-### What This Unlocks
+## 17. Open Questions
 
-- A single Di-Chord Pictograph that also functions as a sprint roadmap
-- A keyboard diagram that teaches di-chords, melody zones, AND finger technique simultaneously
-- Visual assets that can be dropped into sprint materials and already carry cross-system context — no explanation needed in surrounding text
+1. **Ch.9 pages 106–109** — still not captured; extraction for those pages waits for source photos or a higher-resolution scan.
 
----
-
-## 14. Open Questions
-
-1. **Ch.9 pages 106–109** — still not captured; extraction for those pages waits for source photos.
-
-2. **Diagram rendering toolchain** — Nano Banana (Gemini 2.0 Flash) via Google AI Studio is the rendering target. The full SOP is in `queen-city-redline/.pipeline/deterministic-2d-visual-asset-generation-using-jso/mprd.md`. That file needs to be read in full (1784 lines) before Phase 4 begins. Key question: does the JSON go directly into the AI Studio prompt, or is there a template wrapper?
+2. **Diagram rendering toolchain** — Nano Banana (Gemini 2.0 Flash) via Google AI Studio is the rendering target. The full SOP is in `queen-city-redline/.pipeline/deterministic-2d-visual-asset-generation-using-jso/mprd.md` (1784 lines). This must be read in full before Phase 6 begins. Key unresolved question: does the JSON go directly into the AI Studio prompt, or is there a template wrapper?
 
 3. **Color system for di-chord diagrams** — The Plogger book uses a specific color system for the Pictograph (color = harmonicity). The actual hex values need to be confirmed from source photos before locking the diagram specs.
 
-4. **Image dimensions and DPI** — Sprint sheets are generated at 96dpi web resolution. If Plogger assets need to be print-quality (for workbook PDFs), a second render pass at higher resolution may be needed.
+4. **Image dimensions and DPI** — Sprint sheets are generated at 96dpi web resolution. If AMF assets need to be print-quality (for workbook PDFs), a second render pass at higher resolution may be needed.
 
-5. **Table completeness** — Several tables (F/O Factor, Harmonicity) are "partially captured" in the build reference — we have the structure but not every row value. Phase 3 extraction will identify exactly which rows are missing.
+5. **Table completeness** — Several Tier 1 tables (F/O Factor, Harmonicity) are "partially captured" in the build reference — we have the structure but not every row value. Phase 4 extraction will identify exactly which rows are missing.
 
-6. **Synthesis ordering** — Phase 7 works best if it starts with the highest-reuse diagrams (Di-Chord Pictograph, Keyboard Map). But the overlap audit needs all source documents to be stable first. Recommend running Phase 7 after Phase 5 is complete for the top 5 priority diagrams.
+6. **Synthesis ordering** — Phase 8 Part A works best if it starts with the highest-reuse diagrams (Di-Chord Pictograph, Keyboard Map). The overlap audit needs all source documents to be stable first. Recommendation: run Phase 8 after Phase 7 is complete for the top 5 Tier 1 priority diagrams.
+
+7. **Beato Book scoping strategy** — 58MB is too large to sweep in full. The Phase 2 agent is currently scoped to harmony, voicings, and ear training chapters. Open question: is there a chapter-by-chapter table of contents available that would let us pre-filter to the most relevant 20% of the book before the sweep agent runs?
 
 ---
 
-*This document is a living plan. It will be updated as phases complete.*  
-*File: `docs/PLOGGER_ASSET_INVENTORY_PLAN.md`*  
+*This document is a living plan. It will be updated as phases complete.*
+*File: `docs/PLOGGER_ASSET_INVENTORY_PLAN.md`*
 *GitHub: `https://github.com/epaulson2/amf-app`*
