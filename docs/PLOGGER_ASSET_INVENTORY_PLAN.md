@@ -1,6 +1,6 @@
 # Plogger Asset Inventory — Comprehensive Plan
 
-**Status:** Draft — June 11, 2026  
+**Status:** Active — Phase 1 complete, Phase 7 (Synthesis) added — June 11, 2026  
 **Repo:** `epaulson2/amf-app`  
 **Owner:** AMF curriculum build
 
@@ -20,7 +20,8 @@
 10. [Metadata Schema](#10-metadata-schema)
 11. [Query Interface](#11-query-interface)
 12. [Integration with AMF Materials](#12-integration-with-amf-materials)
-13. [Open Questions](#13-open-questions)
+13. [Phase 7 — Cross-Source Synthesis](#13-phase-7--cross-source-synthesis)
+14. [Open Questions](#14-open-questions)
 
 ---
 
@@ -659,17 +660,87 @@ API endpoint (future): `GET /api/plogger-assets?topic=di_chord&format=infographi
 
 ---
 
-## 13. Open Questions
+## 13. Phase 7 — Cross-Source Synthesis
 
-1. **Chapters not yet fully photographed** — Ch.25 (Transposition), Ch.21 exercises, Ch.9 pages 106-109 are partially or fully missing from the build reference. Phase 1 sweep will flag these gaps; extraction for those chapters waits for source photos.
+### The Idea
 
-2. **Diagram rendering toolchain** — Nano Banana (Gemini 2.0 Flash) via Google AI Studio is the rendering target. The full SOP is in `queen-city-redline/.pipeline/deterministic-2d-visual-asset-generation-using-jso/mprd.md`. That file needs to be read in full (it is 1784 lines) before Phase 4 begins. Key question: does the JSON go directly into the AI Studio prompt, or is there a template wrapper?
+Once a diagram exists as a deterministic JSON spec, it costs almost nothing to extend it. Every visual element is already a named, editable key. Adding a new annotation layer — a color band, a callout label, a secondary axis — is a JSON edit, not a redraw. This makes synthesis with other sources essentially free once Phase 5 is complete.
+
+**The goal:** Each Plogger diagram becomes a richer teaching artifact by absorbing relevant concepts from the other sources in the AMF ecosystem. And conversely, concepts from other sources get visual anchors they currently lack.
+
+---
+
+### Other Sources to Synthesize Against
+
+| Source | Location | What It Contributes |
+|--------|----------|---------------------|
+| AMF Architecture V2 | `AMF_ARCHITECTURE_V2.md` | Di-chord movements as harmonic atoms; sprint-by-sprint learning sequence; mastery criteria |
+| AMF Curriculum Content | `app/curriculum/` | Spiral threads; melody zones; rhythm code; anchor songs |
+| Beato Book Blend-In Map | `amf-build-reference.md` Part C | 10 Beato items with chamber/sprint mappings |
+| The Tracking Page protocols | `amf-build-reference.md` Ch.16 | 6 protocols; how each di-chord class is trained in context |
+| Melody Zone system | `amf-build-reference.md` Part C | Zone 1–4 stability ladder; chord-tone vs. tension language |
+
+---
+
+### Synthesis Pass — What Changes Per Diagram
+
+**Di-Chord Pictograph (D-04):**
+- Add sprint annotations: which di-chords are introduced in which sprint (from AMF Architecture V2 harmonic movement sequence)
+- Highlight the [5] and [7] group (P4/P5) as Sprint 2–3 targets; [3][4] as Sprint 5–7 targets
+- Add a "first encountered in" label per di-chord glyph
+
+**Interference Pulsation Waveforms (D-02 / D-05):**
+- Add a color band from the melody zone system: dissonant di-chords map to Zone 3–4 (Tense/Wildcard); perfect map to Zone 1–2 (Sweet/Bitter)
+- Annotate which waveform types appear in the Tracking Page protocols
+
+**Heptachord Keyboard Map (D-05):**
+- Overlay the melody zone color coding: chord tones (Zone 1) vs. dissonant passing tones (Zone 3) vs. modal color tones (Zone 2)
+- Add conjunct finger labels from Ch.20
+
+**Heptachord Shift House Plan (D-12):**
+- Annotate which shifts correspond to which AMF sprint (modes are introduced sprint by sprint)
+- Link each room to its Beato Book page reference from the Blend-In Map
+
+**7th Chord Inversion Stacks (D-07 / D-08):**
+- Add functional harmony label per chord type (V7 = dominant function, ii7 = pre-dominant, etc.)
+- Annotate the tritone resolution path in the dominant 7th stack — connects to AMF Architecture V2 Sprint 8 ([6] tritone)
+
+**Transposition Clef Table (T-45 from Ch.25):**
+- This is a table, not a diagram, but it synthesizes directly with Ch.8's 8-clef system
+- A diagram version could show a wheel or matrix with clefs as nodes and di-chords as edges
+
+---
+
+### Phase 7 Process
+
+1. **Overlap audit** (one agent per diagram): read the diagram spec + all source documents listed above; identify every concept overlap and produce a synthesis spec — what to add, where, in what JSON key
+2. **Spec update** (per diagram): merge synthesis additions into the existing Nano Banana JSON spec as new element layers; version bump the spec
+3. **Re-render**: submit updated specs to Nano Banana; store versioned images (`<slug>_v2.png`)
+4. **Registry update**: tag all synthesized assets with `synthesis_sources[]` field listing which external sources contributed
+
+---
+
+### What This Unlocks
+
+- A single Di-Chord Pictograph that also functions as a sprint roadmap
+- A keyboard diagram that teaches di-chords, melody zones, AND finger technique simultaneously
+- Visual assets that can be dropped into sprint materials and already carry cross-system context — no explanation needed in surrounding text
+
+---
+
+## 14. Open Questions
+
+1. **Ch.9 pages 106–109** — still not captured; extraction for those pages waits for source photos.
+
+2. **Diagram rendering toolchain** — Nano Banana (Gemini 2.0 Flash) via Google AI Studio is the rendering target. The full SOP is in `queen-city-redline/.pipeline/deterministic-2d-visual-asset-generation-using-jso/mprd.md`. That file needs to be read in full (1784 lines) before Phase 4 begins. Key question: does the JSON go directly into the AI Studio prompt, or is there a template wrapper?
 
 3. **Color system for di-chord diagrams** — The Plogger book uses a specific color system for the Pictograph (color = harmonicity). The actual hex values need to be confirmed from source photos before locking the diagram specs.
 
 4. **Image dimensions and DPI** — Sprint sheets are generated at 96dpi web resolution. If Plogger assets need to be print-quality (for workbook PDFs), a second render pass at higher resolution may be needed.
 
 5. **Table completeness** — Several tables (F/O Factor, Harmonicity) are "partially captured" in the build reference — we have the structure but not every row value. Phase 3 extraction will identify exactly which rows are missing.
+
+6. **Synthesis ordering** — Phase 7 works best if it starts with the highest-reuse diagrams (Di-Chord Pictograph, Keyboard Map). But the overlap audit needs all source documents to be stable first. Recommend running Phase 7 after Phase 5 is complete for the top 5 priority diagrams.
 
 ---
 

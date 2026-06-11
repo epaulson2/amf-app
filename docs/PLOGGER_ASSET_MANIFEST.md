@@ -1,8 +1,8 @@
 # Plogger Asset Manifest — Comprehensive Sweep
 
-**Status:** Phase 1 Complete — June 11, 2026  
-**Source:** Full read of `amf-build-reference.md`  
-**Total assets cataloged:** 58 (44 tables, 14 diagrams)
+**Status:** Phase 1 Complete + Ch.21/25 source updates applied — June 11, 2026  
+**Source:** Full read of `amf-build-reference.md` + source PDFs (Ch.21 exercises p.243–248, Ch.25 p.287–293)  
+**Total assets cataloged:** 60 (46 tables, 14 diagrams)
 
 ---
 
@@ -62,6 +62,8 @@
 | T-42 | Essential Piano Exercise Types | Part F | TBD | FULL | — |
 | T-43 | 20-Song Repertoire | Part G | TBD | FULL | Songs 1–12 by sprint; 13–20 by chapter |
 | T-44 | Four Zones Stability Ladder | Part C — Melody | TBD | FULL | Sweet/Bitter/Tense/Wildcard + di-chord equivalents |
+| T-45 | Clef Transposition Reference Table | Ch.25 | p.288 | FULL | Direction/interval/di-chord → clef + key sig alteration; 12 rows |
+| T-46 | Transposing Instruments Reference | Ch.25 | p.289–290 | FULL | 6 instrument keys (Bb/D/A/Eb/F/G) with written vs. sounding pitch rules |
 
 ---
 
@@ -92,9 +94,9 @@
 
 | Type | Total | FULL | PARTIAL | REFERENCE_ONLY |
 |------|-------|------|---------|----------------|
-| Tables | 44 | 41 | 2 | 1 |
+| Tables | 46 | 43 | 2 | 1 |
 | Diagrams | 14 | 2 | 1 | 11 |
-| **All assets** | **58** | **43** | **3** | **12** |
+| **All assets** | **60** | **45** | **3** | **12** |
 
 ---
 
@@ -105,7 +107,6 @@
 - Ch.6 (Pythagorean Ordering of Fifths) — F–C–G–D–A–E–B sequence described in prose; no formatted table or labeled diagram
 - Ch.7 (Interval Spelling at the Keyboard) — exercise lists in prose; no tables or diagrams
 - Ch.9 (Di-Chord Numbers) — content is prose and exercise descriptions
-- Ch.25 (Transposition) — extremely brief; no tables or diagrams
 - Part H (Preserved AMF Techniques) — numbered list only
 - Part I (Design Anti-Patterns) — bulleted list only
 
@@ -134,8 +135,6 @@ These diagrams are referenced frequently in the build reference and are the high
 | Ch.10–14 | Di-Chord Pictograph image |
 | Ch.16 | Tracking Page music notation (p.153) and progress chart (p.169) |
 | Ch.24 / App. C | Heptachord Shift House Plan floor diagram |
-| Ch.25 | Entire chapter — only two sentences in build reference; source photos needed |
-| Ch.21 | Exercise list thin (only Ex.21-1 listed) |
 | Ch.22 | Exercise list entirely missing |
 | Ch.9 | Pages 106–109 not captured (uploaded PDF only had p.101–105) |
 
