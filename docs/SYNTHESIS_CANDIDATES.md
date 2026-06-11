@@ -6,6 +6,43 @@
 
 ---
 
+## Executive Summary
+
+We have cataloged 173 assets across all five source documents — the Plogger Method book, Rhythm Code, Harmony OS, Voicings OS, and the Emotional Melody Map. Every asset has been tagged with the concepts it teaches and loaded into a searchable database. This document presents 45 ideas for new visual assets we could build by combining what already exists, rather than creating everything from scratch.
+
+The 45 candidates fall into three categories, described below. None of them has been built yet — this is the vetting step. The goal is to agree on which ones are worth making before any creative work begins.
+
+**The single most important insight from this analysis:** the Plogger Method is a complete and rigorous system for training the ear, but it is almost entirely self-contained. It has no visual bridges to the four chambers (Melody, Harmony, Voicings, Rhythm). Students who finish Plogger and then open Harmony OS or Voicings OS for the first time are encountering a different vocabulary, a different visual language, and different conceptual framing — with no map connecting where they came from to where they are going. The 23 bridging candidates are that map.
+
+---
+
+## What Each Section Means
+
+### Enrichment Candidates (9 items)
+These take an existing Plogger diagram and add a layer of information from one of the chamber sources, making a richer version of something that already exists. Think of it as annotating a diagram you already have rather than drawing a new one. Example: the Lap Map already shows where to tap on your body — an enrichment would overlay the exact grid position numbers from the Rhythm Code system, so students see the physical gesture and the rhythmic grid at the same time.
+
+The score (0.29–0.43) measures how much conceptual overlap exists between the two source assets. Higher score = stronger justification for combining them.
+
+All 9 enrichment candidates involve the Lap Map or keyboard diagrams being combined with Rhythm Code grid notation. This makes sense: Plogger's physical rhythmic tools and Rhythm Code's notational grid are teaching the same underlying thing from different angles.
+
+### Bridging Candidates (23 items)
+These are entirely new diagrams for concepts that exist in the chamber materials but have **no equivalent in Plogger**. A student coming out of Plogger has never seen these concepts visualized. Without a bridge diagram, they encounter them cold.
+
+These are ranked by how foundational the missing concept is. The top candidates — subdivision, groove, harmony, clave, chord quality — are not optional vocabulary. They are prerequisites for the chambers. The lower-ranked items (tritone substitution, spread voicing, drop voicing) are chamber-specific and can wait until a student is actively in that chamber's sprint.
+
+**Recommendation:** The top 10–12 bridging candidates (IDs 10–21) are the highest-leverage investment in this entire 45-item list. They are the missing connective tissue of the curriculum.
+
+### New Media Candidates (13 items)
+These are cases where a concept is well-covered by existing assets — multiple sources teach it — but there is nothing a student can hold in their hand and drill from. No quick-reference card, no fill-in worksheet, no poster. These are the printable/physical learning tools the curriculum is missing.
+
+The score here represents how well-covered the underlying concept already is (how many existing assets address it). A score of 1.00 means the concept is covered everywhere — the only gap is the hands-on artifact.
+
+The top candidates here — the di-chord quick-reference card (ID 33), the modes reference card (ID 35), the sprint roadmap poster (ID 37), and the tracking page poster (ID 43) — are things students would use every single session. They have the highest daily-use value of anything in this list.
+
+---
+
+---
+
 ## Enrichment Candidates (ranked by overlap score)
 
 Enrichment candidates combine two existing assets into a richer, unified reference — the base asset gains context or annotation from the overlap asset.
