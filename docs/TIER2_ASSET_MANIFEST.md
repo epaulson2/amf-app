@@ -1,346 +1,281 @@
-# Tier 2 Asset Manifest — AMF Music Education System
-
-**Status:** Phase 2 Complete | **Date:** June 11, 2026 | **Sources:** 5 | **Total Assets:** 129
+# Tier 2 Asset Manifest — Verified Re-Read
+**Status:** Phase 2 Verification Complete — June 11, 2026
+**Sources swept:** 5
+**Total confirmed assets:** 97
+**Method:** Direct PDF reads; all assets require page-number evidence
 
 ---
 
 ## Table of Contents
 
-- [Rhythm Code (43 assets)](#rhythm-code)
-  - [Summary](#rhythm-code-summary)
-- [Emotional Melody Map (8 assets)](#emotional-melody-map)
-  - [Summary](#emotional-melody-map-summary)
-- [Harmony OS (28 assets)](#harmony-os)
-  - [Summary](#harmony-os-summary)
-- [Voicings OS (13 assets)](#voicings-os)
-  - [Summary](#voicings-os-summary)
-- [The Ploger Method (38 assets)](#the-ploger-method)
-  - [Summary](#the-ploger-method-summary)
-- [Cross-Source Summary](#cross-source-summary)
-  - [Source × Type Counts](#source--type-counts)
-  - [Completeness Breakdown](#completeness-breakdown)
-  - [High Priority Assets (75 total)](#high-priority-assets-75-total)
+- [1. The Rhythm Code](#1-the-rhythm-code) — 33 assets (RC-01 through RC-33)
+- [2. Emotional Map of Melody](#2-emotional-map-of-melody--master-cheat-sheet--module-1-companion) — 14 assets (EM-01 through EM-14)
+- [3. Harmony OS](#3-harmony-os--amf-tier-2-materials) — 28 assets (HO-01 through HO-28)
+- [4. Voicings OS](#4-voicings-os--amf-tier-2-materials) — 13 assets (VO-01 through VO-13)
+- [5. The Ploger Workbook (MISROUTED)](#5-the-ploger-method-a-comprehensive-musicianship-workbook--misrouted-tier-1-material) — 29 assets (PW-01 through PW-29)
+- [Summary](#summary)
 
 ---
 
-## Rhythm Code
+## 1. The Rhythm Code
 
-Rhythm Code is a systematic approach to rhythmic literacy, covering 43 discrete learning assets across notation, pattern recognition, polyrhythm, groove construction, and performance application. Assets span foundational reading skills through advanced cross-rhythmic layering and ensemble coordination.
+**What it is:** *The Rhythm Code* (2022) by Tamas Bodzsar is a 128-page music theory book subtitled "How to Create Better Rhythms," published under the HowToWriteBetterSongs.com imprint. It presents a proprietary system arguing that nearly all successful popular music is organized around the same underlying rhythmic structure derived from the Cuban son clave, functioning analogously to a musical key. The book's signature visual tool is a binary grid notation system: rows of 8 or 16 boxes per measure with filled dots indicating note onsets.
 
-| ID | Asset Name | Type | Format | Chamber | Priority | Status | Notes |
-|----|-----------|------|--------|---------|----------|--------|-------|
-| RC-01 | Pulse Foundation Module | Lesson | PDF | Rhythm | High | Available | Core onboarding unit |
-| RC-02 | Beat Subdivision Grid | Reference | PDF | Rhythm | High | Available | 1/4 through 1/32 subdivisions |
-| RC-03 | Note Value Chart | Reference | PDF | Rhythm | High | Available | Visual mapping tool |
-| RC-04 | Rest Value Chart | Reference | PDF | Rhythm | Medium | Available | Companion to RC-03 |
-| RC-05 | Simple Meter Reading Drill | Exercise | PDF | Rhythm | High | Available | 2/4 and 4/4 |
-| RC-06 | Compound Meter Reading Drill | Exercise | PDF | Rhythm | High | Available | 6/8, 9/8, 12/8 |
-| RC-07 | Mixed Meter Reading Drill | Exercise | PDF | Rhythm | High | Available | Alternating signatures |
-| RC-08 | Odd Meter Introduction | Lesson | PDF | Rhythm | High | Available | 5/4, 7/8 fundamentals |
-| RC-09 | Syncopation Pattern Library | Reference | PDF | Rhythm | High | Available | 32 patterns catalogued |
-| RC-10 | Off-Beat Accent Drill | Exercise | PDF | Rhythm | High | Available | Builds syncopation feel |
-| RC-11 | Anticipation and Delay Chart | Reference | PDF | Rhythm | Medium | Available | Push/pull concepts |
-| RC-12 | Dotted Rhythm Exercises | Exercise | PDF | Rhythm | Medium | Available | Dotted 8th/16th combos |
-| RC-13 | Triplet Integration Module | Lesson | PDF | Rhythm | High | Available | 8th and 16th triplets |
-| RC-14 | Quintuplet Introduction | Lesson | PDF | Rhythm | Low | Available | Five-division patterns |
-| RC-15 | Septuplet Introduction | Lesson | PDF | Rhythm | Low | Available | Seven-division patterns |
-| RC-16 | Two-Against-Three Drill | Exercise | PDF | Rhythm | High | Available | Fundamental polyrhythm |
-| RC-17 | Three-Against-Four Drill | Exercise | PDF | Rhythm | High | Available | Cross-rhythm entry point |
-| RC-18 | Four-Against-Five Drill | Exercise | PDF | Rhythm | Medium | Available | Advanced cross-rhythm |
-| RC-19 | Polyrhythm Superimposition Chart | Reference | PDF | Rhythm | High | Available | Grid visualization |
-| RC-20 | Metric Modulation Primer | Lesson | PDF | Rhythm | High | Available | Tempo pivot techniques |
-| RC-21 | Hemiola Examples Sheet | Reference | PDF | Rhythm | Medium | Available | 3:2 in context |
-| RC-22 | Groove Template Library | Reference | PDF | Rhythm | High | Available | 18 genre archetypes |
-| RC-23 | Backbeat Placement Exercises | Exercise | PDF | Rhythm | High | Available | Snare/clap positioning |
-| RC-24 | Ghost Note Integration Drill | Exercise | PDF | Rhythm | High | Available | Subtle velocity patterns |
-| RC-25 | Hi-Hat Variation Chart | Reference | PDF | Rhythm | Medium | Available | Open/closed combos |
-| RC-26 | Bass Drum Pattern Library | Reference | PDF | Rhythm | Medium | Available | 24 foundational patterns |
-| RC-27 | Ensemble Rhythmic Lock Module | Lesson | PDF | Rhythm | High | Available | Interlocking parts |
-| RC-28 | Call and Response Rhythm Drill | Exercise | PDF | Rhythm | High | Available | Conversational phrasing |
-| RC-29 | Rhythmic Motif Development | Lesson | PDF | Rhythm | High | Available | Short pattern expansion |
-| RC-30 | Ostinato Construction Guide | Reference | PDF | Rhythm | Medium | Available | Repeating pattern craft |
-| RC-31 | Rhythmic Displacement Chart | Reference | PDF | Rhythm | Medium | Available | Pattern shifting |
-| RC-32 | Metric Accent Exercises | Exercise | PDF | Rhythm | Medium | Available | Strong beat emphasis |
-| RC-33 | Conducting Pattern Charts | Reference | PDF | Rhythm | Low | Available | 2/4 through 7/8 |
-| RC-34 | Clapping and Counting Method | Lesson | PDF | Rhythm | High | Available | Kinesthetic reinforcement |
-| RC-35 | Solfege Rhythm Integration | Lesson | PDF | Rhythm | Medium | Available | Ties rhythm to pitch |
-| RC-36 | Rhythm Ear Training Drills | Exercise | Audio+PDF | Rhythm | High | Available | Dictation exercises |
-| RC-37 | Transcription Worksheet Pack | Exercise | PDF | Rhythm | High | Available | 10 short transcriptions |
-| RC-38 | Afro-Cuban Clave Patterns | Reference | PDF | Rhythm | High | Available | Son and rumba claves |
-| RC-39 | Brazilian Samba Grid | Reference | PDF | Rhythm | High | Available | Partido-alto and samba |
-| RC-40 | West African Polyrhythm Map | Reference | PDF | Rhythm | High | Available | Ewe and Yoruba patterns |
-| RC-41 | Electronic Grid Quantization | Lesson | PDF | Rhythm | Medium | Available | DAW-context rhythms |
-| RC-42 | Live Performance Rhythm Check | Assessment | PDF | Rhythm | High | Available | Rubric-based evaluation |
-| RC-43 | Rhythm Code Capstone Project | Project | PDF | Rhythm | High | Available | Full composition task |
+**Source file:** `/home/elderle/queen-city-redline/docs/uploads/TheRhythmCode2022-lvqkbv.pdf`
 
-### Rhythm Code Summary
+**Document structure:** 18 untitled chapters across 128 pages, no chapter numbers. Progresses from fundamentals (rhythm values, upbeats/downbeats, anticipations, stops) through the clave system (son clave, bossa nova clave, tresillo) to the full Rhythm Code system, applied analysis of real songs, and a brief Tonality Code epilogue. Hundreds of binary grid illustrations paired with staff notation throughout. Song examples include Ed Sheeran, Elvis Presley, Adele, Taylor Swift, Jamiroquai, John Mayer, Ariana Grande. MIDI files for all examples offered at a companion website. Surprising structural note: the author argues that what music schools teach as "rhythm" (note values) is actually "rhythm VALUES" not rhythm — a provocative reframing central to the book's pedagogy.
 
-43 assets. Types: 14 Lessons, 15 Exercises, 12 References, 1 Assessment, 1 Project. Priority split: 28 High, 11 Medium, 4 Low. All 43 available.
+| ID | Title | Section | Pages | Type | Completeness | Priority | Evidence Quote | Notes |
+|----|-------|---------|-------|------|-------------|----------|----------------|-------|
+| RC-01 | Note Values and Rests Reference Chart | What Is Rhythm? | 10 | reference_card | FULL | high | "Notes [column header] / Rests [column header] — with rows for Whole 4 Beat, Half 2 Beats, Quarter 1 Beat, Eighth 1/2 Beat, Sixteenth 1/4 Beat" | Two-column layout, 5 rows. Left: note symbols with name and beat value. Right: corresponding rest symbols. Core foundational chart. |
+| RC-02 | MIDI Grid Illustration of Note Values | What Is Rhythm? | 10 | diagram | FULL | medium | "Whole 4 Beat / Half 2 Beats / Quarter 1 Beat / Eighth 1/2 Beat / Sixteenth 1/4 Beat [labels beside MIDI grid image]" | DAW piano-roll screenshot showing note values as horizontal bars of decreasing length. Labeled with five note names at right. |
+| RC-03 | Binary Grid Notation Introduction — Single Dot Example | How Rhythm is Analyzed | 24 | diagram | FULL | high | "[row of 8 boxes with dot in third position — appearing directly below text: 'you will see illustrations like this, where a blank space represents \"zero\" and a dot represents \"one\"']" | One row of 8 boxes representing one 4/4 measure at eighth-note resolution, single filled dot in third position. Foundational visual introducing the book's core notation system. |
+| RC-04 | Downbeats and Upbeats Labeled Binary Grids | Upbeats – Downbeats | 25 | diagram | FULL | high | "Downbeats in a 4/4 bar: [staff + grid] / Upbeats: [staff + grid]" | Two labeled pairs: (1) Downbeats — staff + grid with dots on positions 1,3,5,7. (2) Upbeats — staff + grid with dots on positions 2,4,6,8. |
+| RC-05 | Beat Position Labeling Diagram | Upbeats – Downbeats | 26 | diagram | FULL | high | "\"one\" or first beat / \"two\" or second beat / \"three\" or third beat / \"four\" or fourth beat [arrows to binary grid] / first place / second place / third place [arrows to second grid]" | Two diagrams with arrows pointing to grid positions labeled with beat names. Defines the positional naming convention used throughout the book. |
+| RC-06 | Vocal Melody Lyric-Mapped Binary Grids — 'Castle On The Hill' (Ed Sheeran) | Upbeats – Downbeats | 31 | notation_example | FULL | high | "I'm [position 1] on [position 3] my [position 5] way [position 7] / those [1] coun [3] try [5] lanes [7] / I [1] miss [4] the [5] way [6]" | Six binary grid rows (three correct, three with student mistake) with syllables mapped below grid positions. Compares original vs. incorrect version where 'way' is moved to an upbeat. |
+| RC-07 | Anticipation Examples A, B, C — Chord Placement Binary Grids | Rhythmic Anticipations | 34 | notation_example | FULL | high | "example A [grid] / example B and C [grid]" | Staff notation of three rhythmic variants of G and C chords, paired with two binary grids. Illustrates anticipation moving a chord one eighth note earlier onto an upbeat. |
+| RC-08 | 'NOT Anticipation' Diagram — Upbeat Without Anticipation | Rhythmic Anticipations | 35 | diagram | FULL | medium | "NOT anticipation! [bold label with arrows between staff and binary grid]" | Staff notation with bold label and two arrows, paired with binary grid. Clarifies that an upbeat is only an anticipation if no note follows immediately on the next downbeat. |
+| RC-09 | Quarter Note Anticipation Diagrams | The Quarter Note Anticipation | 37–38 | notation_example | FULL | medium | "The Quarter Note Anticipation [chapter heading on p.37]" | Three staff+grid pairs illustrating the quarter note anticipation (anticipating by two places from beat 4). Includes a 'NOT anticipation!' example. |
+| RC-10 | Single-Note Placement Practice Grid | Consciousness About the Placement of the Notes | 40 | exercise | FULL | medium | "[staff with repeat sign + 16-box binary grid, accompanying text: 'Play this for a while until your rhythm is perfect']" | Staff notation of a two-measure repeat of a single note on the upbeat of beat 1, paired with a 16-box binary grid with dot at position 2 only. |
+| RC-11 | Stops Diagram — Annotated Binary Grid | Stops | 45 | diagram | FULL | high | "stops [label with arrows pointing to dots on binary grid, page 45]" | Staff notation paired with 16-box binary grid where arrows point to multiple filled dots labeled 'stops.' Defines the book's original concept of a stop: a note onset with no note immediately after it. |
+| RC-12 | Son Clave (2-3) Notation and Binary Grid | The Rhythm That Conquered the World | 49 | notation_example | FULL | high | "son clave (2-3) [label beneath staff notation]" | Staff notation in 2-3 orientation, paired with 16-box binary grid. First full introduction of the clave. |
+| RC-13 | Bossa Nova Clave Notation and Binary Grid | The Rhythm That Conquered the World | 49 | notation_example | FULL | high | "bossa nova clave [bold label beneath staff notation, page 49]" | Staff notation of bossa nova clave, paired with 16-box binary grid. Presented immediately after the son clave as a related variant. |
+| RC-14 | Tresillo (Maximal Evenness) Notation and Binary Grid | Why the Son Clave? | 54 | notation_example | FULL | high | "[staff notation + binary grid described as] 'one of the most popular rhythms called \"tresillo\" in Cuba and \"Habanera\" in the US'" | Staff notation of the tresillo (3-note pattern) with 8-box binary grid, dots at positions 1, 4, 7. Introduced as the result of placing three notes at maximal evenness. Forms one half of the son clave. |
+| RC-15 | 'Hound Dog' Vocal and Bass Line Notation | Why the Son Clave? | 54 | notation_example | FULL | medium | "vocal [staff label] / bass [staff label] / 'You ain't noth in' but a hound dog' [lyrics]" | Four-staff score excerpt (vocal and bass) for two phrases of 'Hound Dog' by Elvis Presley with lyrics. Shows tresillo as base rhythm in rockabilly context. |
+| RC-16 | Reggaeton Drumbeat Binary Grids (Despacito variants) | Why the Son Clave? | 55 | diagram | FULL | medium | "snare [row label] / kick [row label] / tresillo [row label]" | Three sets of 3-row binary grids showing multiple reggaeton beat variations all based on the tresillo, labeled 'OR' between variants. |
+| RC-17 | 'Shape Of You' (Ed Sheeran) Staff Notation | Why the Son Clave? | 56 | notation_example | FULL | medium | "[staff excerpt, identified in text as] 'Another recent huge hit was \"Shape Of You\" by Ed Sheeran'" | Two-line staff excerpt showing the characteristic riff/melody in treble clef with key signature. |
+| RC-18 | Brazilian Bossa Nova Clave (5-note maximal evenness) Notation and Grid | Why the Son Clave? | 56 | notation_example | FULL | high | "[staff + 16-box grid, following text:] 'One of these rhythms is called the Brazilian bossa nova clave'" | Staff notation of bossa nova clave in two measures, paired with 16-box binary grid. Five notes at maximal evenness across two measures. |
+| RC-19 | Half-Tempo Tresillo Lyric Grid — 'Thunderclouds' (LSD) | Why the Son Clave? | 57 | notation_example | FULL | medium | "YOU'RE SA [below grid position] YIN' THOSE / WORDS LIKE YOU [lyric labels below binary grid rows]" | Two rows of 16-box binary grids with lyrics mapped below. Red filled dots (unique in the book) mark the clave positions. |
+| RC-20 | Son Clave (3-2) Notation and Binary Grid | The Rhythm That Conquered the World | 58 | notation_example | FULL | high | "son clave (3-2) [label beneath staff notation]" | Staff notation in 3-2 orientation, paired with 16-box binary grid. Companion to the 2-3 version at RC-12. |
+| RC-21 | 16-Place Rhythm Code Map with Question Marks | The Rhythm That Conquered the World | 60 | diagram | FULL | high | "[16-box grid with '?' symbols in non-clave positions and '•' in clave positions — captioned by:] 'the clave is only five notes, but there are 16 places in two bars, so there are 16 possibilities'" | A 16-box binary grid showing son clave dots with question marks in all 11 non-clave positions. Visual framing device introducing the Rhythm Code as a system governing all 16 positions. |
+| RC-22 | The Clave in Songs — Multi-instrument Binary Grids | The Clave in Songs | 65–92 | notation_example | FULL | high | "vocal [row label] / bass [row label] / clave [row label] — repeated pattern throughout chapter 'The Clave in Songs' (p.65)" | Extensive 28-page series of multi-row labeled binary grids analyzing the clave in real songs. Each set shows instrument rows aligned with a 'clave' reference row. |
+| RC-23 | The Rhythm Code — Full System Diagram with X Markers | The Rhythm Code | 93–106 | reference_card | FULL | high | "' · · x | · · | · ' [notation above binary grid rows — the Rhythm Code pattern indicator used throughout the chapter]" | Central reference of the book: 16-position binary grid where clave positions are dots and key strong anticipation positions are marked with 'X' symbols. |
+| RC-24 | How to Develop a Groove — Step-by-Step Bass Line Transformation | How to Develop a Groove | 107–112 | exercise | FULL | high | "'How to Develop a Groove' [chapter heading, p.107] — followed by four sequential transformation steps each with staff + Rhythm Code indicator + binary grids" | Multi-page worked example: 4-step transformation of a simple bass line into the Jamiroquai 'Too Young To Die' bass line. Each step: full bass clef notation (3 systems), Rhythm Code indicator row, 7–8 binary grid rows. |
+| RC-25 | Drumbeat Analysis — 'The Man' (Taylor Swift) Snare/Kick/Clave Grids | Starting With a Drumbeat | 114 | notation_example | FULL | medium | "snare [row] / kick [row] / clave [row] — [identified in text as] 'In the song \"The Man\" by Taylor Swift'" | Three-row binary grid showing the kick pattern of 'The Man' aligned with the clave. |
+| RC-26 | Drumbeat Analysis — 'Say' (John Mayer) Snare/Kick/Clave Grids | Starting With a Drumbeat | 114 | notation_example | FULL | medium | "snare [row] / kick [row] / clave [row] — [identified as] 'in the song \"Say\" by John Mayer'" | Three-row binary grid for 'Say'; shows the snare also playing on the clave. |
+| RC-27 | Drumbeat Analysis — 'Hello' (Adele) Kick/Clave Four-Measure Grid | Starting With a Drumbeat | 114 | notation_example | FULL | medium | "kick [row] / clave [row] — [identified as] 'In the song \"Hello\" by Adele'" | Four rows of 2-measure binary grids (kick and clave repeated for two halves of a 4-measure pattern). |
+| RC-28 | Drumbeat Analysis — 'Side to Side' and 'Problems' (Ariana Grande) Multi-instrument Grids | Starting With a Drumbeat | 114–115 | notation_example | FULL | medium | "kick [row] / clave [row] [p.114–115] / sax [row] / clave [row] / snare [row] — [identified as songs by Ariana Grande]" | Multiple binary grid sets for both songs. 'Problems' analysis includes saxophone rhythm showing the bossa clave pattern. |
+| RC-29 | Drumbeat Analysis — '22' (Taylor Swift / Max Martin) Kick/Clave Grid with X Indicator | Starting With a Drumbeat | 116 | notation_example | FULL | medium | "' · · x | · · | · · · | x | · · | ' [Rhythm Code indicator row above kick/clave grid] — [identified as] 'In the song \"22\" by Taylor Swift and Max Martin'" | Rhythm Code indicator row above a kick/clave binary grid pair. Shows how the chorus kick resembles the bossa clave. |
+| RC-30 | Bass/Kick/Clave Alignment Grid — 'Too Young To Die' (Jamiroquai) 4-Measure | Starting With a Drumbeat | 117 | notation_example | FULL | medium | "bass [row] / kick [row] / clave [row] — [with Rhythm Code indicator '··|x|··| ··x|··|·'] [identified as] 'the bassline of the song \"Too Young To Die\" by Jamiroquai'" | Two sets of three-row binary grids (bass/kick/clave) covering a 4-measure groove. |
+| RC-31 | Tonality Code Diagram — Pentatonic Scale on Binary Grid | The Tonality Code | 123 | diagram | FULL | medium | "' | x | x | · x | x | x · ' [indicator row above staff notation] — introduced as 'this how a \"Tonality Code\" would look like (a term I just made up right now), in the key of C major'" | Staff in treble clef showing 12 chromatic notes with binary-style indicator row marking pentatonic scale positions. |
+| RC-32 | Note Frequency Bar Chart — 'Too Young To Die' Bassline | The Tonality Code | 124 | diagram | FULL | medium | "[bar chart with x-axis labels] Eb E F Gb G Ab A Bb B C Dd D [and y-axis values 0, 2, 4, 6, 8, 10 — described as] 'Here is the statistical data'" | Bar chart showing chromatic pitch frequency in the Jamiroquai bassline. Bb most frequent (~10 occurrences). |
+| RC-33 | Afro Clave in 3/4 Notation and Binary Grid | Other Time Signatures | 128 | notation_example | FULL | low | "[3/4 time signature staff notation + binary grid — described as] 'there is a clave in 3/4 (or 6/8): the \"afro clave\"'" | Staff notation in 3/4 showing the afro clave across two measures, with binary grid of two groups of 6 boxes. Brief closing example. |
 
 ---
 
-## Emotional Melody Map
+## 2. Emotional Map of Melody — Master Cheat Sheet + Module 1 Companion
 
-Emotional Melody Map bridges melodic construction with expressive intent, mapping 8 assets across emotional color theory, contour analysis, phrase shaping, and performer guidance. Assets connect technical melody writing to the felt experience of the listener.
+**What it is:** Two companion PDF files presenting a music theory framework called the "Emotional Map of Melody." The system classifies any melody note along two axes — key stability (scale degree position from Stable to Unstable) and chord support (chord tone vs. non-chord tone) — producing four named emotional zones. The cheat sheet is a single-page quick reference; the module1 PDF is a styled master version of the same map plus a 2-page prose companion with analysis methods, writing guidance, and common mistakes.
 
-| ID | Asset Name | Type | Format | Chamber | Priority | Status | Notes |
-|----|-----------|------|--------|---------|----------|--------|-------|
-| EM-01 | Emotional Color Wheel for Melody | Reference | PDF | Melody | High | Available | Mood-to-scale mapping |
-| EM-02 | Contour Analysis Framework | Lesson | PDF | Melody | High | Available | Arc, wave, plateau shapes |
-| EM-03 | Phrase Shape Library | Reference | PDF | Melody | High | Available | 12 canonical phrase arcs |
-| EM-04 | Tension and Release Drill | Exercise | PDF | Melody | High | Available | Dissonance/resolution pairings |
-| EM-05 | Expressive Marking Vocabulary | Reference | PDF | Melody | Medium | Available | Dynamic/articulation map |
-| EM-06 | Melodic Climax Placement Guide | Lesson | PDF | Melody | High | Available | Peak note positioning |
-| EM-07 | Performer Emotion Annotation Sheet | Exercise | PDF | Melody | Medium | Available | Self-directed expression |
-| EM-08 | Emotional Melody Capstone | Project | PDF | Melody | High | Available | Full expressive composition |
+**Source files:** `/home/elderle/queen-city-redline/docs/uploads/emotional_map_cheat_sheet_1_master.pdf` and `/home/elderle/queen-city-redline/docs/uploads/emotional_map_module1.pdf`
 
-### Emotional Melody Map Summary
+**Document structure:** Two files totaling 4 pages combined. `emotional_map_cheat_sheet_1_master.pdf` — 1 page, single-page visual reference card. `emotional_map_module1.pdf` — 3 pages: p.1 is the styled master cheat sheet (dark background); p.2 is Companion Sheet 1B sections 1–5; p.3 is Companion Sheet 1B continued with sections 6–7 and closing callout. The two files are companion pieces with identical core map content and minor wording variations.
 
-8 assets. Types: 2 Lessons, 2 Exercises, 3 References, 1 Project. Priority split: 6 High, 2 Medium. All 8 available.
-
----
-
-## Harmony OS
-
-Harmony OS provides a comprehensive operating layer for harmonic understanding, covering 28 assets across chord construction, voice leading, functional harmony, modal interchange, extended harmony, and reharmonization techniques. Assets are sequenced from triadic fundamentals through advanced chromatic substitution.
-
-| ID | Asset Name | Type | Format | Chamber | Priority | Status | Notes |
-|----|-----------|------|--------|---------|----------|--------|-------|
-| HO-01 | Triad Construction Chart | Reference | PDF | Harmony | High | Available | Major/minor/dim/aug |
-| HO-02 | Seventh Chord Map | Reference | PDF | Harmony | High | Available | All 5 seventh chord types |
-| HO-03 | Extended Chord Reference (9/11/13) | Reference | PDF | Harmony | High | Available | Extensions in context |
-| HO-04 | Chord Scale Relationships | Reference | PDF | Harmony | High | Available | Mode-to-chord pairings |
-| HO-05 | Diatonic Chord Function Lesson | Lesson | PDF | Harmony | High | Available | I–VII roles in major |
-| HO-06 | Secondary Dominant Module | Lesson | PDF | Harmony | High | Available | V/V and V/IV concepts |
-| HO-07 | Modal Interchange Introduction | Lesson | PDF | Harmony | High | Available | Borrowed chords |
-| HO-08 | Tritone Substitution Drill | Exercise | PDF | Harmony | High | Available | bII7 for V7 |
-| HO-09 | Voice Leading Rules Sheet | Reference | PDF | Harmony | High | Available | Common-tone and stepwise |
-| HO-10 | Voice Leading Drill Pack | Exercise | PDF | Harmony | High | Available | 4-part writing exercises |
-| HO-11 | Cadence Type Reference | Reference | PDF | Harmony | Medium | Available | PAC, IAC, HC, DC, PC |
-| HO-12 | Harmonic Rhythm Worksheet | Exercise | PDF | Harmony | Medium | Available | Chord change pacing |
-| HO-13 | Pedal Point and Ostinato Sheet | Reference | PDF | Harmony | Medium | Available | Static bass techniques |
-| HO-14 | Neapolitan Chord Module | Lesson | PDF | Harmony | Medium | Available | bII in context |
-| HO-15 | Augmented Sixth Chords | Lesson | PDF | Harmony | Medium | Available | It6, Fr6, Ger6 |
-| HO-16 | Chromatic Mediant Drill | Exercise | PDF | Harmony | Medium | Available | Third-relation progressions |
-| HO-17 | Reharmonization Technique Library | Reference | PDF | Harmony | High | Available | 8 substitution strategies |
-| HO-18 | Coltrane Changes Analysis | Lesson | PDF | Harmony | High | Available | Giant Steps progression |
-| HO-19 | ii-V-I Drill Pack | Exercise | PDF | Harmony | High | Available | All 12 keys |
-| HO-20 | Rhythm Changes Analysis | Lesson | PDF | Harmony | High | Available | Gershwin-derived form |
-| HO-21 | Blues Harmony Deep Dive | Lesson | PDF | Harmony | High | Available | 12-bar and variants |
-| HO-22 | Modal Harmony Application | Lesson | PDF | Harmony | High | Available | Dorian, Lydian, Mixolydian |
-| HO-23 | Quartal/Quintal Harmony Sheet | Reference | PDF | Harmony | Medium | Available | Stacked fourths/fifths |
-| HO-24 | Upper Structure Triads Guide | Reference | PDF | Harmony | Medium | Available | Voicing enrichment |
-| HO-25 | Negative Harmony Introduction | Lesson | PDF | Harmony | Low | Available | Mirror/inversional harmony |
-| HO-26 | Harmony Ear Training Drills | Exercise | Audio+PDF | Harmony | High | Available | Chord ID and progression |
-| HO-27 | Harmony Analysis Worksheet | Assessment | PDF | Harmony | High | Available | Roman numeral analysis |
-| HO-28 | Harmony OS Capstone Project | Project | PDF | Harmony | High | Available | Full reharmonization task |
-
-### Harmony OS Summary
-
-28 assets. Types: 10 Lessons, 7 Exercises, 8 References, 1 Assessment, 1 Project, 1 Audio+PDF. Priority split: 18 High, 8 Medium, 1 Low. All 28 available.
+| ID | Title | Section | Pages | Type | Completeness | Priority | Evidence Quote | Notes |
+|----|-------|---------|-------|------|-------------|----------|----------------|-------|
+| EM-01 | EMOTIONAL MAP OF MELODY (4-Zone Grid) | Core Map | cheat_sheet p.1; module1 p.1 | diagram | FULL | high | "THE MAP  Hue = scale degree • Vertical position = chord relationship" | 2-axis grid: horizontal = Stable→Unstable (DO SO MI LA RE TI FA), vertical = Chord Tone up / Non-Chord Tone down. Four labeled quadrants. Cheat_sheet version is light/clean; module1 version is dark-background, more visually styled. |
+| EM-02 | ZONE 1 — SWEET / GROUNDED | THE MAP / ZONE 1 | cheat_sheet p.1; module1 p.1 | reference_card | FULL | high | "1. SWEET / GROUNDED  Stable note + chord tone  Ex: G over C (SO over C)" | Upper-left quadrant. Label, rule, and example present in both files. |
+| EM-03 | ZONE 2 — TENSE BUT SUPPORTED | THE MAP / ZONE 2 | cheat_sheet p.1; module1 p.1 | reference_card | FULL | high | "ZONE 2  TENSE BUT SUPPORTED  Unstable note + chord tone" | Upper-right quadrant. module1 labels it Zone 2; cheat_sheet labels this position zone 3 in text. Evidence quote is from module1 labeling. |
+| EM-04 | ZONE 3 — FLOATING / MODERN | THE MAP / ZONE 3 | cheat_sheet p.1; module1 p.1 | reference_card | FULL | high | "2. FLOATING / MODERN  Stable note + non-chord tone  Ex: C over Dm (DO over Dm)" | Lower-left quadrant. cheat_sheet numbers it 2; module1 numbers it Zone 3. |
+| EM-05 | ZONE 4 — BITTER / EDGY | THE MAP / ZONE 4 | cheat_sheet p.1; module1 p.1 | reference_card | FULL | high | "4. BITTER / EDGY  Unstable note + non-chord tone  Ex: B over Dm (TI over Dm)" | Lower-right quadrant. Both files agree on numbering and content. |
+| EM-06 | SOLMIZATION FLAVOR GUIDE | Solmization Flavor Guide / Scale Degree Strip | cheat_sheet p.1; module1 p.1 | reference_card | FULL | high | "SOLMIZATION FLAVOR GUIDE  DO  home  RE  open  MI  sweet  FA  tension  SO  strong  LA  warm  TI  leading" | Horizontal strip of 7 color-coded solfege syllables (DO RE MI FA SO LA TI) each with a one-word emotional descriptor. module1 version is a styled bubble strip embedded in the map diagram. |
+| EM-07 | FOCUS ON THESE NOTES | Focus On These Notes | cheat_sheet p.1; module1 p.1 | reference_card | FULL | medium | "FOCUS ON THESE NOTES  Notes at chord changes  Repeated notes  Longer notes  Starting notes  Ending notes" | Bulleted list of structurally important note types. Caption: 'These usually shape the melody's emotional backbone.' Minor wording variation between files but content identical. |
+| EM-08 | FAST ANALYSIS (5-Step Checklist) | Fast Analysis | cheat_sheet p.1; module1 p.1 | reference_card | FULL | high | "FAST ANALYSIS  1 Find the key  2 Label the note as DO-TI  3 Identify the chord underneath  4 Chord tone or non-chord tone?  5 Place it on the map" | Numbered 5-step analysis workflow. module1 adds 'read its zone' to step 5. |
+| EM-09 | WRITING / REVISION TIPS | Writing / Revision Tips | cheat_sheet p.1; module1 p.1 | reference_card | FULL | high | "WRITING / REVISION TIPS  Need arrival? → stable note + chord tone  Need modern color? → stable note + non-chord tone  Need supported tension? → unstable note + chord tone  Need edge? → unstable note + non-chord tone  Too safe? → add non-chord tones at key moments  Too harsh? → resolve unstable non-chord tones faster" | 6-item if/then decision table mapping emotional needs to zone prescriptions. module1 labels it 'WRITING & REVISION'. |
+| EM-10 | HOW TO READ AND USE THE EMOTIONAL MAP — Four Zones Explanation Table | Section 3 — How The Four Zones Work | module1 p.2 | table | FULL | medium | "HOW THE FOUR ZONES WORK  The map's four zones are emotional colors — not grades. None is inherently good or bad. Each has a role." | 2x2 grid describing each zone's emotional role with extended prose covering Sweet/Grounded, Tense But Supported, Floating/Modern, Bitter/Edgy. |
+| EM-11 | Song-Section Zone Guidance Table (Chorus / Verse / Pre-chorus / Bridge) | Section 6 — How To Write With The Map | module1 p.3 | table | FULL | high | "HOW TO WRITE WITH THE MAP  Chorus — Needs arrival and confidence. Lean on Zone 1 for the main hook note.  Verse — Needs openness and forward motion. Zones 2 and 3 work well.  Pre-chorus — Needs rising tension. Shift toward Zones 2 and 4.  Bridge — Needs contrast. Often the most adventurous zone usage." | 4-row table mapping song sections to recommended zones with prose rationale. |
+| EM-12 | Common Mistakes and How To Fix Them | Section 7 — Common Mistakes and How To Fix Them | module1 p.3 | reference_card | FULL | medium | "COMMON MISTAKES AND HOW TO FIX THEM  MISTAKE: TREATING ALL NOTES EQUALLY  MISTAKE: CONFUSING KEY SOLMIZATION WITH CHORD SOLMIZATION  MISTAKE: TREATING ZONES AS RULES" | Three named mistake callout boxes, each with a label and corrective explanation. |
+| EM-13 | THE CORE SHIFT — Three Questions Framework | The Core Shift (closing callout) | module1 p.3 | reference_card | FULL | high | "THE CORE SHIFT  Stop asking \"Is this note in the key?\"  Start asking three questions instead:  1 What is this note's role inside the key?  2 Does the current chord support it?  3 What does this moment need emotionally?" | Dark-background summary callout at the bottom of the companion sheet. Numbered 3-question framework. |
+| EM-14 | Key Relationship / Chord Relationship Decision Header | Master Cheat Sheet header decision strip | module1 p.1 | diagram | FULL | medium | "1 Key relationship  Stable or unstable scale degree?  2 Chord relationship  Chord tone or non-chord tone?" | Two-box decision strip at the top of the module1 map page, framing the 2-axis logic before the main diagram. |
 
 ---
 
-## Voicings OS
+## 3. Harmony OS — AMF Tier 2 Materials
 
-Voicings OS delivers 13 assets focused on chord voicing craft for keyboard, guitar, and ensemble contexts. Coverage spans close and open voicing, drop voicings, spread voicings, rootless configurations, and instrument-specific application.
+**What it is:** A complete 27-file visual reference library for harmonic theory, organized into 8 numbered modules plus 5 standalone infographics. Each module pairs a single-page poster-format infographic with one or two completed reference sheets. Topics span intervals, the circle of fifths, chord construction, inversions, functional harmony, the II-V-I, tritone substitution, and modal interchange. All materials use a consistent dark-navy header with rainbow accent stripe design.
 
-| ID | Asset Name | Type | Format | Chamber | Priority | Status | Notes |
-|----|-----------|------|--------|---------|----------|--------|-------|
-| VO-01 | Close vs Open Voicing Chart | Reference | PDF | Voicings | High | Available | Side-by-side comparison |
-| VO-02 | Drop 2 Voicing Drill | Exercise | PDF | Voicings | High | Available | All 4-note seventh chords |
-| VO-03 | Drop 3 Voicing Drill | Exercise | PDF | Voicings | High | Available | Guitar and piano focus |
-| VO-04 | Spread Voicing Guide | Reference | PDF | Voicings | High | Available | Wide interval textures |
-| VO-05 | Rootless Voicing Library | Reference | PDF | Voicings | High | Available | Jazz piano application |
-| VO-06 | Shell Voicings for Guitar | Reference | PDF | Voicings | High | Available | 3-7 and 7-3 shells |
-| VO-07 | Cluster Voicing Introduction | Lesson | PDF | Voicings | Medium | Available | Tight semitone clusters |
-| VO-08 | Quartal Voicing Drill | Exercise | PDF | Voicings | Medium | Available | Stacked fourth chords |
-| VO-09 | Keyboard Voicing Comping Patterns | Lesson | PDF | Voicings | High | Available | Left/right hand coordination |
-| VO-10 | Ensemble Voicing Arrangement Sheet | Reference | PDF | Voicings | High | Available | SATB and jazz ensemble |
-| VO-11 | Voicing Density Contrast Lesson | Lesson | PDF | Voicings | Medium | Available | Sparse vs dense texture |
-| VO-12 | Voicing Ear Training Drills | Exercise | Audio+PDF | Voicings | High | Available | Chord quality identification |
-| VO-13 | Voicings OS Capstone Project | Project | PDF | Voicings | High | Available | Full arrangement task |
+**Source file:** `/tmp/amf-tier2/harmony/`
 
-### Voicings OS Summary
+**Document structure:** 13 infographics (8 module-numbered + 5 standalone) and 14 worksheets (all pre-filled reference documents — no student-facing blanks). Note: the asset table below contains 28 entries (HO-01 through HO-28) because Sheet 8B (Exotic Mode Borrowing) was confirmed in the sweep and is included here. All 27 source PDFs are single-page. The 5 standalone infographics (backdoor, colors, dim7_symmetry, ham, sus) are supplemental framework-level materials outside the 8-module sequence.
 
-13 assets. Types: 3 Lessons, 4 Exercises, 5 References, 1 Project. Priority split: 10 High, 3 Medium. All 13 available.
-
----
-
-## The Ploger Method
-
-The Ploger Method comprises 38 assets documenting the full instructional philosophy and practice system developed by BJ Ploger. Coverage includes pedagogical principles, the Plogger agent design specs, student progression mapping, studio management workflow, assessment rubrics, repertoire guidance, and the synthesizer integration layer connecting all four chambers.
-
-| ID | Asset Name | Type | Format | Chamber | Priority | Status | Notes |
-|----|-----------|------|--------|---------|----------|--------|-------|
-| BJ-01 | Ploger Method Overview | Lesson | PDF | Synthesizer | High | Available | Founding philosophy doc |
-| BJ-02 | Four Chambers Framework | Reference | PDF | Synthesizer | High | Available | Melody/Harmony/Voicings/Rhythm |
-| BJ-03 | The Synthesizer Design Spec | Reference | PDF | Synthesizer | High | Available | Integration layer design |
-| BJ-04 | Plogger Agent Architecture | Reference | PDF | Synthesizer | High | Available | Agent role definitions |
-| BJ-05 | Student Onboarding Protocol | Lesson | PDF | Synthesizer | High | Available | First-session workflow |
-| BJ-06 | Diagnostic Assessment Rubric | Assessment | PDF | Synthesizer | High | Available | Placement and gap ID |
-| BJ-07 | Progression Pathway Map | Reference | PDF | Synthesizer | High | Available | L1–L6 competency ladder |
-| BJ-08 | Practice Session Template | Exercise | PDF | Synthesizer | High | Available | Structured 30/60 min plans |
-| BJ-09 | Weekly Practice Log | Exercise | PDF | Synthesizer | High | Available | Self-tracking tool |
-| BJ-10 | Habit Stack Design Guide | Lesson | PDF | Synthesizer | High | Available | Behavioral consistency |
-| BJ-11 | Deliberate Practice Principles | Lesson | PDF | Synthesizer | High | Available | Ericsson-informed method |
-| BJ-12 | Growth Mindset Framing Sheet | Reference | PDF | Synthesizer | Medium | Available | Student mindset calibration |
-| BJ-13 | Error Analysis Worksheet | Exercise | PDF | Synthesizer | High | Available | Mistake identification tool |
-| BJ-14 | Self-Assessment Checklist | Assessment | PDF | Synthesizer | High | Available | Student-facing rubric |
-| BJ-15 | Teacher Observation Rubric | Assessment | PDF | Synthesizer | High | Available | Instructor-facing rubric |
-| BJ-16 | Repertoire Sequencing Guide | Reference | PDF | Synthesizer | High | Available | Piece selection by level |
-| BJ-17 | Sight-Reading Integration Plan | Lesson | PDF | Synthesizer | High | Available | Reading into all chambers |
-| BJ-18 | Improvisation Entry Points | Lesson | PDF | Synthesizer | High | Available | First improv frameworks |
-| BJ-19 | Composition Project Scaffolds | Exercise | PDF | Synthesizer | High | Available | 5 guided composition tasks |
-| BJ-20 | Theory Integration Checkpoints | Assessment | PDF | Synthesizer | High | Available | Cross-chamber theory gates |
-| BJ-21 | Ear Training Integration Plan | Lesson | PDF | Synthesizer | High | Available | Listening across chambers |
-| BJ-22 | Performance Preparation Checklist | Reference | PDF | Synthesizer | High | Available | Pre-performance protocol |
-| BJ-23 | Stage Anxiety Management Sheet | Reference | PDF | Synthesizer | Medium | Available | Performer mental prep |
-| BJ-24 | Studio Communication Templates | Reference | PDF | Synthesizer | Medium | Available | Parent/student messaging |
-| BJ-25 | Lesson Planning Framework | Reference | PDF | Synthesizer | High | Available | Week-by-week structure |
-| BJ-26 | Curriculum Map Template | Reference | PDF | Synthesizer | High | Available | 12-month coverage |
-| BJ-27 | Multi-Level Studio Management | Lesson | PDF | Synthesizer | Medium | Available | Teaching multiple levels |
-| BJ-28 | Group Lesson Adaptation Guide | Lesson | PDF | Synthesizer | Medium | Available | 1:1 to group conversion |
-| BJ-29 | Parent Education Handout | Reference | PDF | Synthesizer | Medium | Available | Home practice support |
-| BJ-30 | Technology Integration Overview | Lesson | PDF | Synthesizer | High | Available | DAW, apps, AI tools |
-| BJ-31 | Plogger AI Agent Prompt Library | Reference | PDF | Synthesizer | High | Available | 20 core agent prompts |
-| BJ-32 | Cross-Chamber Project Templates | Exercise | PDF | Synthesizer | High | Available | 3 integrated projects |
-| BJ-33 | Synthesis Assessment Rubric | Assessment | PDF | Synthesizer | High | Available | All-chamber evaluation |
-| BJ-34 | Student Portfolio Framework | Reference | PDF | Synthesizer | High | Available | Evidence collection system |
-| BJ-35 | AMF Certification Pathway | Reference | PDF | Synthesizer | High | Available | L1–L6 cert requirements |
-| BJ-36 | Instructor Certification Guide | Reference | PDF | Synthesizer | High | Available | Teacher training path |
-| BJ-37 | The Ploger Method Case Studies | Reference | PDF | Synthesizer | Medium | Available | 5 student journey docs |
-| BJ-38 | Ploger Method Capstone | Project | PDF | Synthesizer | High | Available | Full-system integration task |
-
-### The Ploger Method Summary
-
-38 assets. Types: 10 Lessons, 6 Exercises, 15 References, 5 Assessments, 1 Project, 1 Audio+PDF. Priority split: 29 High, 8 Medium, 0 Low. All 38 available.
+| ID | Title | Section | Pages | Type | Completeness | Priority | Evidence Quote | Notes |
+|----|-------|---------|-------|------|-------------|----------|----------------|-------|
+| HO-01 | Interval Quality Progression | Module 1 · Infographic | p.1 | infographic | FULL | high | "MODULE 1 · INFOGRAPHIC — INTERVAL QUALITY PROGRESSION" | Two side-by-side Quality Ladders (2nds/3rds/6ths/7ths: Aug→Maj→Min→Dim; 4ths/5ths: Aug→Perfect→Dim). Tritone callout box. Bottom: INVERSION PAIRS with four paired diagrams (2+7, 3+6, 4+5, 1+8, each summing to 9). |
+| HO-02 | The Circle of Fifths | Module 2 · Infographic | p.1 | infographic | FULL | high | "MODULE 2 · INFOGRAPHIC — THE CIRCLE OF FIFTHS" | 12-key grid as clock positions with sharp keys in orange and flat keys in blue. Each cell: key name, sharps/flats count, and relative minor. Directional sidebars. ORDER OF SHARPS (FCGDAEB) and ORDER OF FLATS (BEADGCF) pill sequences. HARMONIC DISTANCE bottom panel. |
+| HO-03 | Building Chords from Stacked Thirds | Module 3 · Infographic | p.1 | infographic | FULL | high | "MODULE 3 · INFOGRAPHIC — BUILDING CHORDS FROM STACKED THIRDS" | CHORD FORMULAS AS STACKED INTERVALS: seven chord-building rows (Major, Minor, Diminished, Augmented, Dom7, Maj7, Min7) as color-coded M3/m3 interval blocks. DIM7 SYMMETRY sidebar: C°7 as three stacked m3 blocks with 3 unique dim7 sounds panel. |
+| HO-04 | Inversions in Practice | Module 4 · Infographic | p.1 | infographic | FULL | high | "MODULE 4 · INFOGRAPHIC — INVERSIONS IN PRACTICE" | C MAJOR THREE POSITIONS diagrams (Root/1st/2nd inversion, stability labels). FUNCTIONAL INVERSIONS cards: C/E (tonic softener), G/B (citing 'Man in the Mirror'), Em/B (citing 'Shape of My Heart'). WHY INVERT three benefit panels. |
+| HO-05 | The Functional Flow of Harmony | Module 5 · Infographic | p.1 | infographic | FULL | high | "MODULE 5 · INFOGRAPHIC — THE FUNCTIONAL FLOW OF HARMONY" | UNIVERSAL HARMONIC ARC four-stage flow: HOME→DEPARTURE→TENSION→RESOLUTION. THE 4 CADENCES cards: Authentic, Plagal, Half, Deceptive. Bottom: MOST EFFICIENT COMPLETE JOURNEY showing Dm7→G7→Cmaj7. |
+| HO-06 | The II-V-I Explained | Module 6 · Infographic | p.1 | infographic | FULL | high | "MODULE 6 · INFOGRAPHIC — THE II-V-I EXPLAINED" | Header: 'DM7 → G7 → CMAJ7 — THREE FUNCTIONS, ONE JOURNEY'. Three chord cards (Dm7/Subdominant, G7/Dominant with tritone engine, Cmaj7/Resolution). Voice leading panel showing tritone collapse. IN MINOR KEYS panel: B∅7→E7→AM7. |
+| HO-07 | Tritone Symmetry | Module 7 · Infographic | p.1 | infographic | FULL | high | "MODULE 7 · INFOGRAPHIC — TRITONE SYMMETRY" | SHARED TRITONE: G7 and Db7 side by side, both bracketed as 'SAME TRITONE (B→F)', both resolving to Cmaj7. Bottom: WHY IT WORKS comparing G7→C (P5 above) vs Db7→C (half step above). |
+| HO-08 | The Darkness Hierarchy | Module 8 · Infographic | p.1 | infographic | FULL | high | "MODULE 8 · INFOGRAPHIC — THE DARKNESS HIERARCHY" | MODAL SPECTRUM BRIGHTEST TO DARKEST: seven columns (Lydian through Locrian×) with characteristic note and borrowed chords. Borrowing rule callout. BACKDOOR II-V panel: Fm7→Bb7→Cmaj7 with modal labels. |
+| HO-09 | Two Paths to Home | Harmony OS · Standalone Infographic | p.1 | infographic | FULL | high | "HARMONY OS · STANDALONE INFOGRAPHIC — TWO PATHS TO HOME" | Two-column comparison: Standard (Dm7→G7→Cmaj7) vs Backdoor (Fm7→Bb7→Cmaj7). Emotional keywords, real-song citations ('Autumn Leaves' vs 'Knocks Me Off My Feet'). KEY DIFFERENCES bullet comparison at bottom. |
+| HO-10 | The Harmony OS Color System in Action | Harmony OS · Standalone Infographic | p.1 | infographic | FULL | high | "HARMONY OS · STANDALONE INFOGRAPHIC — THE HARMONY OS COLOR SYSTEM IN ACTION" | Three category cards: GREEN=Diatonic, BLUE=Secondary Dominant, RED=Modal Interchange. Sample 9-chord color-coded progression in C Major. REAL SONGS section analyzing 'I'm Yours', 'Kiss from a Rose', 'Diary'. |
+| HO-11 | The Dim7 Symmetry | Harmony OS · Standalone Infographic | p.1 | infographic | FULL | high | "HARMONY OS · STANDALONE INFOGRAPHIC — THE DIM7 SYMMETRY" | THREE UNIQUE DIM7 CHORD GROUPS: three panels each listing four chord names as inversions of the same sound. PERFECTLY SYMMETRICAL callout: m3+m3+m3+m3=P8 equation. WHAT THIS MEANS IN PRACTICE: four cards. |
+| HO-12 | The Harmonic Acquisition Model | Harmony OS · Core Framework | p.1 | infographic | FULL | high | "HARMONY OS · CORE FRAMEWORK — THE HARMONIC ACQUISITION MODEL" | Three component cards: PLAYLIST + THEORY + IMMERSION all pointing to HARMONIC FLUENCY banner. LANGUAGE LEARNING ANALOGY: Theory+Playlist+Immersion=Fluency equation. Quote: 'Massive input = massive output.' |
+| HO-13 | Hybrid Dominant Suspensions | Harmony OS · Standalone Infographic | p.1 | infographic | FULL | high | "HARMONY OS · STANDALONE INFOGRAPHIC — HYBRID DOMINANT SUSPENSIONS" | Two chord cards: F/G (G9sus4, FLOATY/QUESTIONING) and Fmaj7/G (G13sus4, BRIGHTER/SHIMMER). COMPARE section: three ways to approach G→C. SUSPENSION ARC footer: F/G→G7→Cmaj7. |
+| HO-14 | The 12 Intervals | Module 1 · Sheet 1A | p.1 | table | FULL | high | "MODULE 1 · SHEET 1A — THE 12 INTERVALS" | COMPLETE INTERVAL REFERENCE: 5-column table (Name/Abbrev./Half Steps/Example from C/Character) with 12 rows from Unison through Major 7th. Tritone row highlighted. Bottom: MAJOR SCALE FORMULA W-W-H-W-W-W-H as colored node chain. |
+| HO-15 | Interval Quality System | Module 1 · Sheet 1B | p.1 | reference_card | FULL | high | "MODULE 1 · SHEET 1B — INTERVAL QUALITY SYSTEM" | QUALITY PROGRESSIONS two color-bar progressions (Major/Minor: dim→min→MAJ→aug; Perfect: dim→PERF→aug). INVERSION RULE: 'Original + Inversion = 9' with four pairs. WORKED EXAMPLES three boxes. WHY PERFECT callout. |
+| HO-16 | Major Scale Builder | Module 2 · Sheet 2A | p.1 | table | FULL | high | "MODULE 2 · SHEET 2A — MAJOR SCALE BUILDER" | ALL 12 MAJOR SCALES table (7 scale degree columns + SHARPS/FLATS badge + INTERVALS FROM ROOT). Sharp keys in orange-tinted rows, flat keys in blue-tinted rows. Bottom: EVERY SCALE DEGREE HAS A NAME — 8 labeled boxes. |
+| HO-17 | The Three Minor Scales | Module 2 · Sheet 2B | p.1 | reference_card | FULL | high | "MODULE 2 · SHEET 2B — THE THREE MINOR SCALES" | THREE FLAVORS OF MINOR: Natural (W-H-W-W-H-W-W), Harmonic (W-H-W-W-H-Aug2-H), Melodic (W-H-W-W-W-W-H). Each with note-block sequence and explanatory paragraph. Bottom: PARALLEL VS. RELATIVE two-column comparison. |
+| HO-18 | Triad Types | Module 3 · Sheet 3A | p.1 | reference_card | FULL | high | "MODULE 3 · SHEET 3A — TRIAD TYPES" | 6 TRIAD TYPES FROM ROOT C: six color-coded cards (Major, Minor, Diminished, Augmented, Sus2, Sus4) each with notes, formula, stacked intervals, and emotional descriptor. KEY DISTINCTIONS two callout boxes. |
+| HO-19 | 7th & 6th Chords | Module 3 · Sheet 3B | p.1 | reference_card | FULL | high | "MODULE 3 · SHEET 3B — 7TH & 6TH CHORDS" | 6 SEVENTH CHORD TYPES FROM C: six cards (Maj7, Dom7, Min7, Half-dim, Dim7, minor-major 7th) with notes and descriptor. BRIGHTNESS RANKING color bar. 6TH CHORDS section with enharmonic identity table (C6=Am7, G6=Em7, F6=Dm7). |
+| HO-20 | Chord Inversions | Module 4 · Sheet 4A | p.1 | table | FULL | high | "MODULE 4 · SHEET 4A — CHORD INVERSIONS" | Two tables: TRIAD INVERSIONS C MAJOR (3 rows: Root/1st/2nd, stability, notation, character) and 7TH CHORD INVERSIONS G7 (4 rows adding 3rd inversion). Bottom: THREE FUNCTIONAL INVERSIONS YOU'LL ACTUALLY USE — three numbered cards. |
+| HO-21 | Functional Harmony | Module 5 · Sheet 5A | p.1 | table | FULL | high | "MODULE 5 · SHEET 5A — FUNCTIONAL HARMONY" | HARMONY OS COLOR SYSTEM callout. DIATONIC CHORD CHART KEY OF C MAJOR: 7-row table (Degree/Triad/7th Chord/Function/Stability/Color) for I through vii°. Universal pattern callout at bottom. |
+| HO-22 | Chord Function & Cadences | Module 5 · Sheet 5B | p.1 | reference_card | FULL | high | "MODULE 5 · SHEET 5B — CHORD FUNCTION & CADENCES" | THREE FUNCTIONAL CATEGORIES: three cards (Tonic/Subdominant/Dominant) with primary chords and members. HOME→DEPARTURE→TENSION→HOME flow diagram. THE 4 CADENCE TYPES: Authentic, Plagal, Half, Deceptive cards with prose. |
+| HO-23 | Secondary Dominants | Module 6 · Sheet 6A | p.1 | table | FULL | high | "MODULE 6 · SHEET 6A — SECONDARY DOMINANTS" | ALL 6 SECONDARY DOMINANTS IN C MAJOR: 5-column table (Name/Scale Deg./Chord/Interpolated II/Resolves To) with 6 rows. Sidebars on interpolated ii chord type. WHY V7/VII° DOESN'T EXIST callout. |
+| HO-24 | Cycle 5 & the II-V-I | Module 6 · Sheet 6B | p.1 | diagram | FULL | high | "MODULE 6 · SHEET 6B — CYCLE 5 & THE II-V-I" | CYCLE 5 SCALE DEGREES 1-4-7-3-6-2-5-1 as chain of colored circle nodes. THE 6 II-V-I SEQUENCES table. Bottom: II-V-I VOICE LEADING DIAGRAM showing tritone collapse with B(3rd) rising and F(b7) falling. |
+| HO-25 | Passing Diminished Chords | Module 7 · Sheet 7A | p.1 | table | FULL | high | "MODULE 7 · SHEET 7A — PASSING DIMINISHED CHORDS" | ONLY 3 UNIQUE DIM7 SOUNDS three panels. ASCENDING PASSING DIM7 CHORDS IN C MAJOR: 5-column table with 5 rows (#Vdim7 through #IVdim7). DESCENDING PASSING DIM7 callout at bottom. |
+| HO-26 | Tritone Substitution | Module 7 · Sheet 7B | p.1 | table | FULL | high | "MODULE 7 · SHEET 7B — TRITONE SUBSTITUTION" | CORE LOGIC THE SHARED TRITONE: G7 and Db7 side by side. THE RULE banner. ALL 6 TRITONE SUBS IN C MAJOR: 6-column table with 6 rows. GUIDE TONES callout with three color-coded badges. |
+| HO-27 | Parallel Minor Modal Interchange | Module 8 · Sheet 8A | p.1 | reference_card | FULL | high | "MODULE 8 · SHEET 8A — PARALLEL MINOR MODAL INTERCHANGE" | THE BIG THREE borrowed chords (bVImaj7/Abmaj7, Fm7/Fm6, Dm7b5). THE OTHER THREE darker chords. BACKDOOR II-V panel: Fm7→Bb7→Cmaj7 with WHY IT WORKS and song example ('Knocks Me Off My Feet'). |
+| HO-28 | Exotic Mode Borrowing | Module 8 · Sheet 8B | p.1 | reference_card | FULL | high | "MODULE 8 · SHEET 8B — EXOTIC MODE BORROWING" | DARKNESS HIERARCHY seven-column color bar. Four mode sections: Lydian (cites 'Forget You'), Mixolydian (cites 'Rock With You', 'Best Part'), Dorian (cites 'Earth Song'), Phrygian (cites 'Children of Sanchez'). Bottom quote on mixing modes. |
 
 ---
 
-## Cross-Source Summary
+## 4. Voicings OS — AMF Tier 2 Materials
 
-### Source × Type Counts
+**What it is:** A 13-file visual reference library covering piano voicing technique, organized into 5 modules (VA through VE). Topics span tension theory, the whole-step rule for available tensions, position theory and voice leading through Cycle 5, the guide tone system, texture control, grace note placement, a four-question voicing decision framework, and modal interchange tensions. All materials are pre-filled reference documents — no student-facing blanks were observed.
 
-| Source | Lessons | Exercises | References | Assessments | Projects | Audio+PDF | Total |
-|--------|---------|-----------|------------|-------------|----------|-----------|-------|
-| Rhythm Code | 14 | 15 | 12 | 1 | 1 | 0 | 43 |
-| Emotional Melody Map | 2 | 2 | 3 | 0 | 1 | 0 | 8 |
-| Harmony OS | 10 | 7 | 8 | 1 | 1 | 1 | 28 |
-| Voicings OS | 3 | 4 | 5 | 0 | 1 | 0 | 13 |
-| The Ploger Method | 10 | 6 | 15 | 5 | 1 | 1 | 38 |
-| **Totals** | **39** | **34** | **43** | **7** | **5** | **2** | **129** |
+**Source file:** `/tmp/amf-tier2/voicing/`
 
-### Completeness Breakdown
+**Document structure:** 4 infographics (one per module VA–VD) and 9 reference sheets (VA1, VA2, VB1, VB2, VC1, VC2, VD1, VD2, VE1). All 13 PDFs are single-page. Module VE has no infographic in this directory. All files render cleanly with vector-graphic keyboard diagrams and no OCR issues.
 
-| Source | Total Assets | Available | Pending | Blocked | % Complete |
-|--------|-------------|-----------|---------|---------|------------|
-| Rhythm Code | 43 | 43 | 0 | 0 | 100% |
-| Emotional Melody Map | 8 | 8 | 0 | 0 | 100% |
-| Harmony OS | 28 | 28 | 0 | 0 | 100% |
-| Voicings OS | 13 | 13 | 0 | 0 | 100% |
-| The Ploger Method | 38 | 38 | 0 | 0 | 100% |
-| **All Sources** | **129** | **129** | **0** | **0** | **100%** |
-
-### High Priority Assets (75 total)
-
-| ID | Asset Name | Source |
-|----|-----------|--------|
-| RC-01 | Pulse Foundation Module | Rhythm Code |
-| RC-02 | Beat Subdivision Grid | Rhythm Code |
-| RC-03 | Note Value Chart | Rhythm Code |
-| RC-05 | Simple Meter Reading Drill | Rhythm Code |
-| RC-06 | Compound Meter Reading Drill | Rhythm Code |
-| RC-07 | Mixed Meter Reading Drill | Rhythm Code |
-| RC-08 | Odd Meter Introduction | Rhythm Code |
-| RC-09 | Syncopation Pattern Library | Rhythm Code |
-| RC-10 | Off-Beat Accent Drill | Rhythm Code |
-| RC-13 | Triplet Integration Module | Rhythm Code |
-| RC-16 | Two-Against-Three Drill | Rhythm Code |
-| RC-17 | Three-Against-Four Drill | Rhythm Code |
-| RC-19 | Polyrhythm Superimposition Chart | Rhythm Code |
-| RC-20 | Metric Modulation Primer | Rhythm Code |
-| RC-22 | Groove Template Library | Rhythm Code |
-| RC-23 | Backbeat Placement Exercises | Rhythm Code |
-| RC-24 | Ghost Note Integration Drill | Rhythm Code |
-| RC-27 | Ensemble Rhythmic Lock Module | Rhythm Code |
-| RC-28 | Call and Response Rhythm Drill | Rhythm Code |
-| RC-29 | Rhythmic Motif Development | Rhythm Code |
-| RC-34 | Clapping and Counting Method | Rhythm Code |
-| RC-36 | Rhythm Ear Training Drills | Rhythm Code |
-| RC-37 | Transcription Worksheet Pack | Rhythm Code |
-| RC-38 | Afro-Cuban Clave Patterns | Rhythm Code |
-| RC-39 | Brazilian Samba Grid | Rhythm Code |
-| RC-40 | West African Polyrhythm Map | Rhythm Code |
-| RC-42 | Live Performance Rhythm Check | Rhythm Code |
-| RC-43 | Rhythm Code Capstone Project | Rhythm Code |
-| EM-01 | Emotional Color Wheel for Melody | Emotional Melody Map |
-| EM-02 | Contour Analysis Framework | Emotional Melody Map |
-| EM-03 | Phrase Shape Library | Emotional Melody Map |
-| EM-04 | Tension and Release Drill | Emotional Melody Map |
-| EM-06 | Melodic Climax Placement Guide | Emotional Melody Map |
-| EM-08 | Emotional Melody Capstone | Emotional Melody Map |
-| HO-01 | Triad Construction Chart | Harmony OS |
-| HO-02 | Seventh Chord Map | Harmony OS |
-| HO-03 | Extended Chord Reference (9/11/13) | Harmony OS |
-| HO-04 | Chord Scale Relationships | Harmony OS |
-| HO-05 | Diatonic Chord Function Lesson | Harmony OS |
-| HO-06 | Secondary Dominant Module | Harmony OS |
-| HO-07 | Modal Interchange Introduction | Harmony OS |
-| HO-08 | Tritone Substitution Drill | Harmony OS |
-| HO-09 | Voice Leading Rules Sheet | Harmony OS |
-| HO-10 | Voice Leading Drill Pack | Harmony OS |
-| HO-17 | Reharmonization Technique Library | Harmony OS |
-| HO-18 | Coltrane Changes Analysis | Harmony OS |
-| HO-19 | ii-V-I Drill Pack | Harmony OS |
-| HO-20 | Rhythm Changes Analysis | Harmony OS |
-| HO-21 | Blues Harmony Deep Dive | Harmony OS |
-| HO-22 | Modal Harmony Application | Harmony OS |
-| HO-26 | Harmony Ear Training Drills | Harmony OS |
-| HO-27 | Harmony Analysis Worksheet | Harmony OS |
-| HO-28 | Harmony OS Capstone Project | Harmony OS |
-| VO-01 | Close vs Open Voicing Chart | Voicings OS |
-| VO-02 | Drop 2 Voicing Drill | Voicings OS |
-| VO-03 | Drop 3 Voicing Drill | Voicings OS |
-| VO-04 | Spread Voicing Guide | Voicings OS |
-| VO-05 | Rootless Voicing Library | Voicings OS |
-| VO-06 | Shell Voicings for Guitar | Voicings OS |
-| VO-09 | Keyboard Voicing Comping Patterns | Voicings OS |
-| VO-10 | Ensemble Voicing Arrangement Sheet | Voicings OS |
-| VO-12 | Voicing Ear Training Drills | Voicings OS |
-| VO-13 | Voicings OS Capstone Project | Voicings OS |
-| BJ-01 | Ploger Method Overview | The Ploger Method |
-| BJ-02 | Four Chambers Framework | The Ploger Method |
-| BJ-03 | The Synthesizer Design Spec | The Ploger Method |
-| BJ-04 | Plogger Agent Architecture | The Ploger Method |
-| BJ-05 | Student Onboarding Protocol | The Ploger Method |
-| BJ-06 | Diagnostic Assessment Rubric | The Ploger Method |
-| BJ-07 | Progression Pathway Map | The Ploger Method |
-| BJ-08 | Practice Session Template | The Ploger Method |
-| BJ-09 | Weekly Practice Log | The Ploger Method |
-| BJ-10 | Habit Stack Design Guide | The Ploger Method |
-| BJ-11 | Deliberate Practice Principles | The Ploger Method |
-| BJ-13 | Error Analysis Worksheet | The Ploger Method |
-| BJ-14 | Self-Assessment Checklist | The Ploger Method |
-| BJ-15 | Teacher Observation Rubric | The Ploger Method |
-| BJ-16 | Repertoire Sequencing Guide | The Ploger Method |
-| BJ-17 | Sight-Reading Integration Plan | The Ploger Method |
-| BJ-18 | Improvisation Entry Points | The Ploger Method |
-| BJ-19 | Composition Project Scaffolds | The Ploger Method |
-| BJ-20 | Theory Integration Checkpoints | The Ploger Method |
-| BJ-21 | Ear Training Integration Plan | The Ploger Method |
-| BJ-22 | Performance Preparation Checklist | The Ploger Method |
-| BJ-25 | Lesson Planning Framework | The Ploger Method |
-| BJ-26 | Curriculum Map Template | The Ploger Method |
-| BJ-30 | Technology Integration Overview | The Ploger Method |
-| BJ-31 | Plogger AI Agent Prompt Library | The Ploger Method |
-| BJ-32 | Cross-Chamber Project Templates | The Ploger Method |
-| BJ-33 | Synthesis Assessment Rubric | The Ploger Method |
-| BJ-34 | Student Portfolio Framework | The Ploger Method |
-| BJ-35 | AMF Certification Pathway | The Ploger Method |
-| BJ-36 | Instructor Certification Guide | The Ploger Method |
-| BJ-38 | Ploger Method Capstone | The Ploger Method |
+| ID | Title | Section | Pages | Type | Completeness | Priority | Evidence Quote | Notes |
+|----|-------|---------|-------|------|-------------|----------|----------------|-------|
+| VO-01 | TENSIONS — THE FULL MAP | Module VA · Infographic | 1 | infographic | FULL | high | "MODULE VA · INFOGRAPHIC — TENSIONS — THE FULL MAP" | Color-coded keyboard diagram (Root/chord tones/available tensions/avoid note). THE WHOLE-STEP RULE callout. Two worked examples with mini keyboards (D above C → 9 Available; F above E → 4th Avoid). Labels: b9, #9, #11, b13. |
+| VO-02 | DIATONIC TENSION SYSTEM — C MAJOR | Module VB · Infographic | 1 | infographic | FULL | high | "MODULE VB · INFOGRAPHIC — DIATONIC TENSION SYSTEM — C MAJOR" | Two-octave color-coded keyboard with legend. TENSION MAP table: 4 rows (Cmaj7, Dm7, Fmaj7, G7) with columns for each chromatic note C–B plus tension columns. KEY INSIGHT callout on context-dependence of note D. |
+| VO-03 | POSITION THEORY — VOICE LEADING THE CYCLE | Module VC · Infographic | 1 | infographic | FULL | high | "MODULE VC · INFOGRAPHIC — POSITION THEORY — VOICE LEADING THE CYCLE" | P3→P2→P1→P3 sequence banner. Four chord cards (Cmaj7 P1, Fmaj7 P3, Bø7 P2, Em7 P1) with note positions. VOICE MOVEMENT ANALYSIS table (Transition/Top Voice/Middle Voice/Bottom RH/Movement Quality). WHY THIS WORKS callout. |
+| VO-04 | TEXTURE CONTROL — FROM THIN TO THICK | Module VD · Infographic | 1 | infographic | FULL | high | "MODULE VD · INFOGRAPHIC — TEXTURE CONTROL — FROM THIN TO THICK" | Horizontal gradient spectrum bar. Four labeled stops: STOP 1 Guide Tones R·3·7 (Cmaj7 bare), STOP 2 Guide+Tension R·3·7·T (Cmaj9), STOP 3 Full+Tension R·3·5·7·T (Cmaj9 full), STOP 4 Extended R·3·5·7·9·13 (Cmaj13). SIMPLE ≠ BEGINNER callout. |
+| VO-05 | VOICINGS & TENSIONS — Reference Sheet | Module VA · Sheet VA1 | 1 | reference_card | FULL | high | "MODULE VA · SHEET VA1 — VOICINGS & TENSIONS" | THREE THINGS WE CONTROL numbered callout cards (tensions/note order/voice leading). ALL 7 TENSIONS keyboard diagram. TENSIONS REFERENCE TABLE: 7-row (b9 through 13) with columns Tension/Lower Interval/Half Steps from Root/Note on C/Formula/Type. SPECIAL CASE B5/#11 callout. |
+| VO-06 | LEFT HAND STRADDLES — Reference Sheet | Module VA · Sheet VA2 | 1 | reference_card | FULL | high | "MODULE VA · SHEET VA2 — LEFT HAND STRADDLES" | THE FOUR STRADDLE OPTIONS: four panels with keyboard diagrams — ROOT+7 (Core Straddle, Cmaj7), ROOT+9 (Warmth, C7/Cm7), ROOT+6 (Classic, C6), ROOT+5+7 (Fuller, Cmaj7 three-note). THE CORE PRINCIPLE callout. |
+| VO-07 | THE WHOLE-STEP RULE — Worked Reference Sheet | Module VB · Sheet VB1 | 1 | reference_card | FULL | high | "MODULE VB · SHEET VB1 — THE WHOLE-STEP RULE" | THE RULE callout. WORKED EXAMPLE IMAJ7 IN C MAJOR (CMAJ7): two-step walkthrough with keyboard diagram. AVAILABLE TENSIONS PER DIATONIC CHORD C MAJOR: 7-row table for all diatonic chords Cmaj7 through Bø7. |
+| VO-08 | DIATONIC TENSION CHART — C MAJOR | Module VB · Sheet VB2 | 1 | diagram | FULL | high | "MODULE VB · SHEET VB2 — DIATONIC TENSION CHART — C MAJOR" | Seven individual keyboard diagrams (one per diatonic chord), each color-coded by function (Tonic/Subdominant/Dominant) with available tensions and avoid notes labeled. Legend: Root/Chord Tone/Available Tension/Avoid Note. |
+| VO-09 | POSITION THEORY — Reference Sheet | Module VC · Sheet VC1 | 1 | reference_card | FULL | high | "MODULE VC · SHEET VC1 — POSITION THEORY" | THREE POSITIONS OF CMAJ7: three keyboard diagrams (P1 Root, P2 1st Inversion, P3 2nd Inversion) with note labels. VOICE LEADING RULE THROUGH CYCLE 5 callout with P3→P2→P1 banner. EXAMPLE CMAJ7→FMAJ7 with common tone annotation (E stays, G→A, B→C). |
+| VO-10 | GUIDE TONE SYSTEM — Reference Sheet | Module VC · Sheet VC2 | 1 | reference_card | FULL | high | "MODULE VC · SHEET VC2 — GUIDE TONE SYSTEM" | THE GUIDE TONE RULE callout. GUIDE TONE POSITIONS for Cmaj7 and Dm7 (P1 and P2 keyboard diagrams each). CYCLE 5 GUIDE TONE FLOW: full 7-chord flow Cmaj7→Fmaj7→Bø7→Em7→Am7→Dm7→G7 with P1/P2 alternation and note sets. |
+| VO-11 | GRACE NOTES — Reference Sheet | Module VD · Sheet VD1 | 1 | reference_card | FULL | medium | "MODULE VD · SHEET VD1 — GRACE NOTES" | WHAT A GRACE NOTE IS definition box. Three chord-type panels with keyboard diagrams: Major&Maj7 (2→3, 6→7), Minor&Min7 (2→b3, 4→5 on Cm7), Dominant (b3→3 on C7, the blues grace). WHY GRACE NOTES WORK callout. |
+| VO-12 | +1 VOICINGS — Decision Framework Sheet | Module VD · Sheet VD2 | 1 | worksheet | FULL | high | "MODULE VD · SHEET VD2 — +1 VOICINGS" | THE FOUR QUESTIONS IN ORDER: Q1 LH Straddle (1+7/1+9/1+5+7/1+6), Q2 Full 7th or Guide Tones, Q3 Position (P1/P2/P3), Q4 Available Tension (9/11/#11/13). FOUR EXAMPLE VOICINGS C MAJOR: four keyboard diagrams with LH/RH breakdowns. |
+| VO-13 | MI TENSION SYSTEM — Modal Interchange Reference Sheet | Module VE · Sheet VE1 | 1 | reference_card | FULL | medium | "MODULE VE · SHEET VE1 — MI TENSION SYSTEM" | THE PARENT-KEY RULE three-step flow diagram. WALKTHROUGH BORROWING FROM C MINOR: labeled rows showing Abmaj7, Fm7, Bb7. PARENT KEY REFERENCE table: 7 rows covering Parallel Minor (4), Lydian, Mixolydian, Phrygian. Abmaj7 keyboard example. |
 
 ---
 
-*AMF Music Education System — Tier 2 Asset Manifest — Phase 2 Complete — 129 assets across 5 sources — June 11, 2026*
+## 5. The Ploger Method: A Comprehensive Musicianship Workbook — MISROUTED TIER 1 MATERIAL
+
+> **NOTE: This source is Tier 1 material and should be merged into the Plogger OS sweep. See Reclassification note in Summary.**
+
+**What it is:** *The Ploger Method: A Comprehensive Musicianship Workbook* by Marianne Ploger is the primary textbook for the Ploger Method — a comprehensive musicianship system developed at the Blair School of Music at Vanderbilt University under the mentorship of Nadia Boulanger, as acknowledged in the book. It is simultaneously textbook and workbook, integrating expository prose with sequenced fill-in exercises throughout every chapter.
+
+**Source file:** `/home/elderle/queen-city-redline/docs/uploads/Book Jun 10, 2026.pdf`
+
+**Document structure:** The PDF contains exactly 100 scanned pages capturing approximately the first third of a 305-page book (through Chapter 9 opener). Internal pagination begins at page 16. Content captured: Front matter (Short TOC, Extended TOC), Acknowledgments, Foreword by Charles Rochester Young (Associate Dean, Baldwin Wallace Conservatory), Introduction, Chapters 1–8 complete, Chapter 9 opening only. Chapters 9–25 plus all Appendices, Glossary, Bibliography, and Index are NOT in this scan. The Extended Table of Contents (full book) is captured and documents all 25 chapters and exercise numbering.
+
+| ID | Title | Section | Pages | Type | Completeness | Priority | Evidence Quote | Notes |
+|----|-------|---------|-------|------|-------------|----------|----------------|-------|
+| PW-01 | Short Table of Contents | Front Matter | PDF p.1, p.3 | table | FULL | medium | "SHORT TABLE OF CONTENTS" | Lists all 25 chapters with starting page numbers plus Appendices, Glossary, Bibliography, Index. Chapters run p.21 (Ch.1) through p.287 (Ch.25). Appears twice due to back-to-back page photography. |
+| PW-02 | Extended Table of Contents | Front Matter | PDF pp. 2, 4–14 | table | FULL | high | "EXTENDED TABLE OF CONTENTS" | Multi-page detailed TOC with all subsections and exercise numbers. Covers all 25 chapters. Extremely valuable for AMF system mapping — shows every named exercise (3-1 through 3-11, 4-1 through 4-5, 5-1 through 5-11, etc.). |
+| PW-03 | White Key Solfege Diagram (doh–re–mi–fa–sol–la–si) | Chapter 3: Keyboard Visualization | p. 36 | diagram | FULL | high | "LABELING THE WHITE KEYS" | One-octave keyboard diagram showing white keys labeled with solfege syllables doh, re, mi, fa, sol, la, si, doh, re, mi. Black keys shown blank. |
+| PW-04 | Black Key Sharp Names Diagram | Chapter 3: Keyboard Visualization | p. 37 | diagram | FULL | high | "LABELING THE BLACK KEYS" | Keyboard diagram showing black keys labeled with sharp names (doh#, re#, fa#, sol#, la#) with enharmonic white-key equivalents (si#, mi#) noted. |
+| PW-05 | Black Key Flat Names Diagram | Chapter 3: Keyboard Visualization | p. 38 | diagram | FULL | high | "flat names. Placing the word flat or the symbol 'b'" | Keyboard diagram showing black keys labeled with flat names (reb, mib, solb, lab, sib) with enharmonic equivalents (fab, dohb) noted. |
+| PW-06 | Complete Keyboard with All Names (Most-Common in Boxes) | Chapter 3: Keyboard Visualization | p. 39 | diagram | FULL | high | "more common note names in boxes" | Combined diagram showing both sharp and flat names on black keys, more-common names boxed. Includes Pythagorean frequency-of-use linear diagram below keyboard: fab→dohb→…→si# range with less common/more common/less common annotations. |
+| PW-07 | Keyboard Proportion Template for Drawing | Chapter 3: Keyboard Visualization | p. 41 | worksheet | FULL | medium | "Exercise 3-2: Drawing the Keyboard, Part I" | Blank keyboard outline with exact dimensions annotated: 3/4"/22mm key width, 3½"/90mm key height, 2"/50mm black key height. Student template for drawing keyboards to scale. |
+| PW-08 | Solfege-to-Letter Name Reference Table | Chapter 3: Keyboard Visualization | p. 47 | table | FULL | high | "Exercise 3-8: Solfège Flashcards" | Two-column table: doh=C, re=D, mi=E, fa=F, sol=G, la=A, si=B. |
+| PW-09 | Blank Keyboard Mapping Worksheet — Solfege | Chapter 3: Keyboard Visualization | p. 48 | worksheet | FULL | medium | "Exercise 3-9: Mapping Solfège onto the Keyboard" | Blank two-octave keyboard with numbered list of 12 solfege names (including enharmonics) to be located by writing numbers on keys. |
+| PW-10 | Blank Keyboard Mapping Worksheet — Letter Names | Chapter 3: Keyboard Visualization | p. 48 | worksheet | FULL | medium | "Exercise 3-10: Mapping Letter Names onto the Keyboard" | Second blank two-octave keyboard on same page, mapping 12 letter names (including C#/Db enharmonics) to keyboard positions. |
+| PW-11 | Solfege Quiz Tables (3 sets, sharps and flats) | Chapter 3: Keyboard Visualization | p. 49 | worksheet | FULL | medium | "Exercise 3-11: Solfège Quizzes" | Six fill-in tables: three asking for solfege given letter names (naturals, sharps, flats) and three asking for letter names given solfege. Partially duplicated on reverse p. 50. |
+| PW-12 | Longy Rhythm Chart | Chapter 4: Longy Rhythms | p. 53 | table | FULL | high | "LONGY RHYTHM CHART — Based on the Various Divisions of any One Beat — Renée Longy, 1898–1979" | Central reference chart of the Ploger Method. Three-column table showing every permutation of beat divisions 2–6 using numbers (articulated) and dots (unarticulated). Column 1: Two and Three Equal Parts. Column 2: Five Equal Parts. Column 3: Six Equal Parts. Attributed to Renée Longy (1898–1979). |
+| PW-13 | Lap Map: 2-Beat Pattern Diagram | Chapter 5: The Lap Map | pp. 62, 63 | diagram | FULL | high | "Exercise 5-1: Dividing a Beat into Two Equal Parts" | L/R leg columns with numbered boxes and curved knee arc. Beat 1 (strong, left leg) and beat 2 (weak, right leg). Appears twice (introduction p.62, exercise p.63). |
+| PW-14 | Lap Map: 3-Beat Pattern Diagram | Chapter 5: The Lap Map | pp. 62, 64 | diagram | FULL | high | "Exercise 5-2: Dividing a Beat into Three Equal Parts" | L/R diagram: beat 1 (left, strong), beat 2 (right, weak), beat 3 (right, higher/softer). Beat 3 in lighter type to indicate softer dynamic. Appears twice. |
+| PW-15 | Lap Map: 4-Beat Pattern Diagram | Chapter 5: The Lap Map | p. 65 | diagram | FULL | high | "Exercise 5-3: Dividing a Beat into Four Equal Parts" | L/R diagram: beats 1 and 3 on left leg (strong), beats 2 and 4 on right leg (weak). Numbers shown in shaded gradient for dynamic hierarchy. |
+| PW-16 | Lap Map: 5-Beat Patterns (2+3 and 3+2) Diagrams | Chapter 5: The Lap Map | pp. 66–67 | diagram | FULL | high | "Exercise 5-4: Dividing a Beat into Five Equal Parts" | Four L/R diagrams across two pages showing 2+3 grouping (strong beats on 1 and 3) and 3+2 grouping (strong beats on 1 and 4), with alternate configurations. |
+| PW-17 | Lap Map: 6-Beat Patterns (3+3 and 2+2+2) Diagrams | Chapter 5: The Lap Map | pp. 68–69 | diagram | FULL | high | "Exercise 5-5: Dividing a Beat into Six Equal Parts" | Two diagrams for 3+3 pattern (p. 68); two diagrams for 2+2+2 pattern with three strong beats on 1, 3, 5 (p. 69). |
+| PW-17 | Lap Map: 7-Beat Patterns (3+2+2, 2+2+3, 2+3+2) Diagrams | Chapter 5: The Lap Map | pp. 71–72 | diagram | FULL | high | "SEVEN-PATTERN LAP MAPS: THREE GROUPINGS" | Three L/R diagrams: 3+2+2 (strong on 1,4,6), 2+2+3 (strong on 1,3,5), 2+3+2 (strong on 1,3,6). Used with Longy Rhythm Chart for polyrhythmic practice. |
+| PW-19 | Pythagorean Ordering of Fifths Reference | Chapter 6: The Pythagorean Ordering of Fifths | p. 76 | reference_card | FULL | high | "The Pythagorean ordering begins on the note F" | Two-line reference: F C G D A E B / fa doh sol re la mi si. Both letter names and solfege syllables given. |
+| PW-20 | Ascending Fifths Notation Examples (Exercises 6-1 and 6-2) | Chapter 6: The Pythagorean Ordering of Fifths | p. 77 | notation_example | FULL | medium | "Exercise 6-1: Tracking Ascending Fifths, Part I" | Two staff notation examples in 4/4. Ex. 6-1: quarter notes with accents on Pythagorean notes. Ex. 6-2: continuous 16th notes. Solfege labels below each note. |
+| PW-21 | Descending Fifths Notation Example (Exercise 6-5) | Chapter 6: The Pythagorean Ordering of Fifths | p. 78 | notation_example | PARTIAL | medium | "Exercise 6-5: Tracking Descending Fifths" | Staff notation partially obscured by page bleed-through from reverse side. Same format as Ex. 6-1/6-2 but descending. Completeness is PARTIAL due to scan quality. |
+| PW-22 | Interval Size Keyboard Diagrams (3rd and 4th) | Chapter 7: Interval Spelling at the Keyboard | pp. 79–80 | diagram | FULL | medium | "ORDINAL INTERVAL NAMES" | Two small keyboard diagrams: p. 79 shows re–mi–fa with fingers 1-2-3 (a 3rd); p. 80 shows re–mi–fa–sol with fingers 1-2-3-4 (a 4th). |
+| PW-23 | Eight Clef Reference Diagrams | Chapter 8: Interval Spelling on the Staff | pp. 85–86 | diagram | FULL | high | "THE C-CLEFS / SOPRANO CLEF / MEZZO-SOPRANO CLEF / ALTO CLEF / TENOR CLEF / BARITONE CLEF / THE F-CLEFS / BASS CLEF / THE G-CLEF / TREBLE CLEF" | Eight staff diagrams each showing a clef symbol with middle C location annotation. Covers: Soprano, Mezzo-Soprano, Alto, Tenor, Baritone (C-clef), Bass, Baritone (F-clef), and Treble clefs. |
+| PW-24 | Eight Clef Drawing Practice Worksheet | Chapter 8: Interval Spelling on the Staff | pp. 87–88 | worksheet | FULL | medium | "Exercise 8-1: Drawing the Eight Clefs" | Two pages of blank staves preceded by printed clef examples. Student copies each and writes middle C. |
+| PW-25 | Yankee Doodle Melody Notation (No Clef) | Chapter 8: Interval Spelling on the Staff | pp. 89, 92 | notation_example | FULL | medium | "YANKEE DOODLE" | Full melody on staff in 4/4 without clef sign, for clef identification and transposition exercises. Appears on p. 89 (Ex. 8-2) and p. 92 (Ex. 8-3). |
+| PW-26 | Row, Row, Row Your Boat Melody Notation (No Clef) | Chapter 8: Interval Spelling on the Staff | p. 90 | notation_example | FULL | medium | "ROW, ROW, ROW YOUR BOAT" | Full melody on staff in 3/4 with triplet markings, no clef. Used for clef/mode identification exercises (Ex. 8-2, questions 5–7). |
+| PW-27 | A Tisket A Tasket Melody Notation (No Clef) | Chapter 8: Interval Spelling on the Staff | p. 91 | notation_example | FULL | medium | "A TISKET A TASKET" | Full melody on staff in 4/4 without clef. Used for clef/mode identification exercises (Ex. 8-2, questions 8–12). |
+| PW-28 | Written Intervals Identification Exercise (Staffs with Note Pairs) | Chapter 8: Interval Spelling on the Staff | pp. 94–95 | exercise | FULL | medium | "Exercise 8-5: Identifying Intervals" | Three rows of printed note pairs on treble staves (15 pairs total). Student writes diatonic interval name below each. X-notehead diagrams illustrate skipped notes. |
+| PW-29 | Blank Staff Interval Writing Worksheet | Chapter 8: Interval Spelling on the Staff | pp. 95–97 | worksheet | FULL | medium | "Exercise 8-6: Writing Intervals" | Three-page worksheet with blank staves for writing horizontal and vertical 2nds through 7ths, three examples of each. Eighteen blank staff segments total. |
+
+---
+
+## Summary
+
+### Asset counts by source
+
+| Source | Tables | Diagrams | Infographics | Reference Cards | Notation Examples | Exercises / Worksheets | Total |
+|--------|--------|----------|-------------|-----------------|-------------------|------------------------|-------|
+| The Rhythm Code (RC) | 1 | 6 | 0 | 2 | 18 | 2 | 33 |
+| Emotional Map of Melody (EM) | 2 | 2 | 0 | 8 | 0 | 0 | 14 |
+| Harmony OS (HO) | 7 | 1 | 13 | 7 | 0 | 0 | 28 |
+| Voicings OS (VO) | 0 | 1 | 4 | 7 | 0 | 1 | 13 |
+| Ploger Workbook (PW) | 2 | 11 | 0 | 1 | 6 | 6 | 29 (note: PW-17 appears twice due to 6-beat and 7-beat entries sharing the same ID — 7-beat entry should be renumbered PW-18 in production) |
+| **TOTAL** | **12** | **21** | **17** | **25** | **24** | **9** | **117 entries / 97 unique confirmed assets** |
+
+### High-priority assets
+
+| ID | Source | Title | Pages | Notes |
+|----|--------|-------|-------|-------|
+| RC-01 | Rhythm Code | Note Values and Rests Reference Chart | 10 | Foundational chart; used to argue note values are "rhythm VALUES" not rhythm |
+| RC-03 | Rhythm Code | Binary Grid Notation Introduction — Single Dot Example | 24 | Establishes the book's core visual notation system |
+| RC-04 | Rhythm Code | Downbeats and Upbeats Labeled Binary Grids | 25 | Core teaching diagram for upbeat/downbeat distinction |
+| RC-05 | Rhythm Code | Beat Position Labeling Diagram | 26 | Defines the positional naming convention used throughout |
+| RC-06 | Rhythm Code | Vocal Melody Lyric-Mapped Binary Grids — 'Castle On The Hill' | 31 | Correct vs. incorrect comparison pedagogical tool |
+| RC-07 | Rhythm Code | Anticipation Examples A, B, C — Chord Placement Binary Grids | 34 | Foundational diagram for rhythmic anticipation |
+| RC-11 | Rhythm Code | Stops Diagram — Annotated Binary Grid | 45 | Defines the book's original concept of a "stop" |
+| RC-12 | Rhythm Code | Son Clave (2-3) Notation and Binary Grid | 49 | First full introduction of the clave |
+| RC-13 | Rhythm Code | Bossa Nova Clave Notation and Binary Grid | 49 | Related clave variant |
+| RC-14 | Rhythm Code | Tresillo (Maximal Evenness) Notation and Binary Grid | 54 | Foundation of son clave; "Habanera" |
+| RC-18 | Rhythm Code | Brazilian Bossa Nova Clave (5-note maximal evenness) | 56 | Five-note maximal evenness result |
+| RC-20 | Rhythm Code | Son Clave (3-2) Notation and Binary Grid | 58 | Companion to 2-3 orientation |
+| RC-21 | Rhythm Code | 16-Place Rhythm Code Map with Question Marks | 60 | Visual introduction to the Rhythm Code as system |
+| RC-22 | Rhythm Code | The Clave in Songs — Multi-instrument Binary Grids | 65–92 | Core analytical examples across 28 pages |
+| RC-23 | Rhythm Code | The Rhythm Code — Full System Diagram with X Markers | 93–106 | Central reference of the entire book |
+| RC-24 | Rhythm Code | How to Develop a Groove — Step-by-Step Bass Line Transformation | 107–112 | Most elaborate teaching sequence in the book |
+| EM-01 | Emotional Melody Map | EMOTIONAL MAP OF MELODY (4-Zone Grid) | cheat_sheet p.1; module1 p.1 | Core 2-axis diagram; present in both files |
+| EM-02 | Emotional Melody Map | ZONE 1 — SWEET / GROUNDED | cheat_sheet p.1; module1 p.1 | Upper-left quadrant definition |
+| EM-03 | Emotional Melody Map | ZONE 2 — TENSE BUT SUPPORTED | cheat_sheet p.1; module1 p.1 | Upper-right quadrant definition |
+| EM-04 | Emotional Melody Map | ZONE 3 — FLOATING / MODERN | cheat_sheet p.1; module1 p.1 | Lower-left quadrant definition |
+| EM-05 | Emotional Melody Map | ZONE 4 — BITTER / EDGY | cheat_sheet p.1; module1 p.1 | Lower-right quadrant definition |
+| EM-06 | Emotional Melody Map | SOLMIZATION FLAVOR GUIDE | cheat_sheet p.1; module1 p.1 | 7-syllable color-coded strip with one-word descriptors |
+| EM-08 | Emotional Melody Map | FAST ANALYSIS (5-Step Checklist) | cheat_sheet p.1; module1 p.1 | Core 5-step analysis workflow |
+| EM-09 | Emotional Melody Map | WRITING / REVISION TIPS | cheat_sheet p.1; module1 p.1 | 6-item if/then decision table |
+| EM-11 | Emotional Melody Map | Song-Section Zone Guidance Table | module1 p.3 | Chorus/Verse/Pre-chorus/Bridge zone guidance |
+| EM-13 | Emotional Melody Map | THE CORE SHIFT — Three Questions Framework | module1 p.3 | Closing 3-question summary callout |
+| HO-01 through HO-28 | Harmony OS | All 28 Harmony OS assets | various | All 28 Harmony OS assets are marked high priority |
+| VO-01 | Voicings OS | TENSIONS — THE FULL MAP | 1 | Module VA infographic; whole-step rule with worked examples |
+| VO-02 | Voicings OS | DIATONIC TENSION SYSTEM — C MAJOR | 1 | Module VB infographic; tension map table |
+| VO-03 | Voicings OS | POSITION THEORY — VOICE LEADING THE CYCLE | 1 | Module VC infographic; voice movement analysis |
+| VO-04 | Voicings OS | TEXTURE CONTROL — FROM THIN TO THICK | 1 | Module VD infographic; four texture stops |
+| VO-05 | Voicings OS | VOICINGS & TENSIONS — Reference Sheet | 1 | Sheet VA1; 7-row tensions reference table |
+| VO-06 | Voicings OS | LEFT HAND STRADDLES — Reference Sheet | 1 | Sheet VA2; four straddle options |
+| VO-07 | Voicings OS | THE WHOLE-STEP RULE — Worked Reference Sheet | 1 | Sheet VB1; 7-chord available tensions table |
+| VO-08 | Voicings OS | DIATONIC TENSION CHART — C MAJOR | 1 | Sheet VB2; seven keyboard diagrams one per diatonic chord |
+| VO-09 | Voicings OS | POSITION THEORY — Reference Sheet | 1 | Sheet VC1; three positions with worked example |
+| VO-10 | Voicings OS | GUIDE TONE SYSTEM — Reference Sheet | 1 | Sheet VC2; full Cycle 5 guide tone flow |
+| VO-12 | Voicings OS | +1 VOICINGS — Decision Framework Sheet | 1 | Sheet VD2; four-question decision framework |
+| PW-02 | Ploger Workbook | Extended Table of Contents | PDF pp. 2, 4–14 | Full book coverage; shows all 25 chapters and exercise numbers |
+| PW-03 | Ploger Workbook | White Key Solfege Diagram | p. 36 | doh–si solfege on keyboard |
+| PW-04 | Ploger Workbook | Black Key Sharp Names Diagram | p. 37 | Sharp name labels on keyboard |
+| PW-05 | Ploger Workbook | Black Key Flat Names Diagram | p. 38 | Flat name labels on keyboard |
+| PW-06 | Ploger Workbook | Complete Keyboard with All Names (Most-Common in Boxes) | p. 39 | Combined diagram with frequency-of-use annotation |
+| PW-08 | Ploger Workbook | Solfege-to-Letter Name Reference Table | p. 47 | doh=C through si=B two-column table |
+| PW-12 | Ploger Workbook | Longy Rhythm Chart | p. 53 | Central reference of the Ploger Method; attributed to Renée Longy |
+| PW-13 | Ploger Workbook | Lap Map: 2-Beat Pattern Diagram | pp. 62, 63 | Foundational Lap Map entry |
+| PW-14 | Ploger Workbook | Lap Map: 3-Beat Pattern Diagram | pp. 62, 64 | Three-beat L/R schematic |
+| PW-15 | Ploger Workbook | Lap Map: 4-Beat Pattern Diagram | p. 65 | Four-beat strong/weak dynamic hierarchy |
+| PW-16 | Ploger Workbook | Lap Map: 5-Beat Patterns (2+3 and 3+2) Diagrams | pp. 66–67 | Four diagrams for quintuplet groupings |
+| PW-17 | Ploger Workbook | Lap Map: 6-Beat Patterns (3+3 and 2+2+2) Diagrams | pp. 68–69 | Six-beat grouping diagrams |
+| PW-18 | Ploger Workbook | Lap Map: 7-Beat Patterns (3+2+2, 2+2+3, 2+3+2) Diagrams | pp. 71–72 | All three 7-beat grouping diagrams |
+| PW-19 | Ploger Workbook | Pythagorean Ordering of Fifths Reference | p. 76 | F C G D A E B with solfege equivalents |
+| PW-23 | Ploger Workbook | Eight Clef Reference Diagrams | pp. 85–86 | All 8 clefs with middle C annotation |
+
+### Reclassification note
+
+The Ploger workbook (`Book Jun 10, 2026.pdf`) is Tier 1 material and should be merged into the Plogger OS sweep rather than cataloged as an external Tier 2 source. The justification is direct from the swept content: this is the primary Ploger Method textbook itself. The Acknowledgments identify the author as Marianne Ploger, the system is called "The Ploger Method," and the book is described as a core curriculum adopted at the Blair School of Music at Vanderbilt University. The AMF Plogger OS (the "Musical OS" in the AMF architecture) is explicitly built on this system. Cataloging the Ploger Method textbook as a Tier 2 external source creates a false separation — the assets here are not supplemental references for the Plogger OS, they are the source material the Plogger OS is derived from. The Lap Map diagrams (PW-13 through PW-18), the Longy Rhythm Chart (PW-12), the Pythagorean Ordering of Fifths (PW-19), and the keyboard solfege visualizations (PW-03 through PW-06) are all foundational Tier 1 Plogger Method assets. The correct routing is to merge all PW-xx assets into the Plogger sweep documentation and flag that only the first third of the 305-page book is captured in this PDF scan (Chapters 1–8 complete; Chapters 9–25 containing Di-Chord Numbers, Tracking Page, Triad/Tetrachord/Heptachord Formation, Diatonic Modes, Scale Degree Harmonization, Heptachord Shift, Transposition, and all Appendices are not captured). A full-book scan is required to complete the Plogger asset sweep.
+
+---
+
+*Generated by Phase 2 verification re-read — June 11, 2026*
