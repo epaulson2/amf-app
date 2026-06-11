@@ -8,22 +8,40 @@
 
 ## Table of Contents
 
+**Vision & Architecture**
 1. [Executive Summary](#1-executive-summary)
 2. [Problem Statement](#2-problem-statement)
-3. [What We Are Building](#3-what-we-are-building)
-4. [Asset Types](#4-asset-types)
-5. [Three-Tier Source Model](#5-three-tier-source-model)
-6. [Tier 2 — External Source Documents](#6-tier-2--external-source-documents)
-7. [Tier 3 — AMF Originals](#7-tier-3--amf-originals)
-8. [Database Architecture](#8-database-architecture)
-9. [Nano Banana JSON Spec Format](#9-nano-banana-json-spec-format)
+3. [What We Are Building](#3-what-we-are-building) — Asset DB · Diagram Library · Query Interface
+4. [Asset Types](#4-asset-types) — 8 types: table, diagram, infographic, reference card, worksheet, poster, notation example, annotation layer
+
+**Source Model**
+5. [Three-Tier Source Model](#5-three-tier-source-model) — Tier 1: Plogger · Tier 2: External · Tier 3: AMF Originals
+6. [Tier 2 — External Source Documents](#6-tier-2--external-source-documents) — Rhythm Code · Emotional Map · Harmony OS · Voicings OS · Beato Book
+7. [Tier 3 — AMF Originals](#7-tier-3--amf-originals) — Synthesized · Bridging · New Media
+
+**Technical Spec**
+8. [Database Architecture](#8-database-architecture) — `amf_assets` DB · asset_registry · diagram_specs · 15 Tier 1 data tables
+9. [Nano Banana JSON Spec Format](#9-nano-banana-json-spec-format) — Deterministic diagram specs · source:"text" vs source:"image"
+
+**Execution**
 10. [Phase Plan](#10-phase-plan)
-11. [Catalog — Known Tables](#11-catalog--known-tables)
-12. [Catalog — Known Diagrams](#12-catalog--known-diagrams)
-13. [Metadata Schema](#13-metadata-schema)
-14. [Query Interface](#14-query-interface)
-15. [Integration with AMF Materials](#15-integration-with-amf-materials)
-16. [Key Synthesis Targets (Phase 8 Examples)](#16-key-synthesis-targets-phase-8-examples)
+    - [Phase 1 — Tier 1 Sweep ✅](#phase-1--tier-1-sweep--complete) — 60 assets cataloged
+    - [Phase 2 — Tier 2 Sweep](#phase-2--tier-2-sweep) — 5 external sources, parallel agents
+    - [Phase 3 — Database Setup](#phase-3--database-setup) — Create `amf_assets`, run schema
+    - [Phase 4 — Tier 1 Data Extraction](#phase-4--tier-1-data-extraction) — Populate all Tier 1 tables
+    - [Phase 5 — Tier 2 Data Extraction](#phase-5--tier-2-data-extraction) — Populate Tier 2 tables
+    - [Phase 6 — Diagram Decomposition](#phase-6--diagram-decomposition) — Nano Banana JSON specs for all diagrams
+    - [Phase 7 — Image Generation](#phase-7--image-generation) — Render specs via Gemini 2.0 Flash
+    - [Phase 8 — Tier 3 Synthesis & Originals](#phase-8--tier-3-synthesis--originals) — Enrich, bridge, create new media
+    - [Phase 9 — Query Interface & Integration](#phase-9--query-interface--integration) — SQL patterns, generator script updates
+
+**Reference**
+11. [Catalog — Known Tables](#11-catalog--known-tables) — T-01 through T-46 (Tier 1)
+12. [Catalog — Known Diagrams](#12-catalog--known-diagrams) — D-01 through D-14 (Tier 1)
+13. [Metadata Schema](#13-metadata-schema) — Full field reference for asset_registry
+14. [Query Interface](#14-query-interface) — Example SQL patterns by use case
+15. [Integration with AMF Materials](#15-integration-with-amf-materials) — Sprint sheets, generator scripts
+16. [Key Synthesis Targets](#16-key-synthesis-targets-phase-8-examples) — 5 confirmed Phase 8 targets
 17. [Open Questions](#17-open-questions)
 
 ---
