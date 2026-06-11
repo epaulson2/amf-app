@@ -26,14 +26,15 @@
 **Execution**
 10. [Phase Plan](#10-phase-plan)
     - [Phase 1 — Tier 1 Sweep ✅](#phase-1--tier-1-sweep--complete) — 60 assets cataloged
-    - [Phase 2 — Tier 2 Sweep](#phase-2--tier-2-sweep) — 5 external sources, parallel agents
-    - [Phase 3 — Database Setup](#phase-3--database-setup) — Create `amf_assets`, run schema
-    - [Phase 4 — Tier 1 Data Extraction](#phase-4--tier-1-data-extraction) — Populate all Tier 1 tables
-    - [Phase 5 — Tier 2 Data Extraction](#phase-5--tier-2-data-extraction) — Populate Tier 2 tables
-    - [Phase 6 — Diagram Decomposition](#phase-6--diagram-decomposition) — Nano Banana JSON specs for all diagrams
-    - [Phase 7 — Image Generation](#phase-7--image-generation) — Render specs via Gemini 2.0 Flash
-    - [Phase 8 — Tier 3 Synthesis & Originals](#phase-8--tier-3-synthesis--originals) — Enrich, bridge, create new media
-    - [Phase 9 — Query Interface & Integration](#phase-9--query-interface--integration) — SQL patterns, generator script updates
+    - [Phase 2 — Tier 2 Sweep ✅](#phase-2--tier-2-sweep) — 120 assets verified across 5 sources
+    - [Phase 3 — Database Setup ✅](#phase-3--database-setup) — `amf_assets` DB, 17 tables live
+    - [Phase 4 — Tier 1 Data Extraction ✅](#phase-4--tier-1-data-extraction--complete) — 16 tables populated, 60 registry rows
+    - [Phase 5 — Tier 2 Data Extraction](#phase-5--tier-2-data-extraction) — Populate Tier 2 tables with semantic tags
+    - [Phase 6 — Semantic Indexing](#phase-6--semantic-indexing) — Pre-compute synthesis candidates (DB only, no PDFs)
+    - [Phase 7 — Diagram Decomposition](#phase-7--diagram-decomposition) — Nano Banana JSON specs for all diagrams
+    - [Phase 8 — Image Generation](#phase-8--image-generation) — Render specs via Gemini 2.0 Flash
+    - [Phase 9 — Tier 3 Synthesis & Originals](#phase-9--tier-3-synthesis-and-originals) — DB-driven enrichment, bridging, new media; user vets candidates first
+    - [Phase 10 — Query Interface & Integration](#phase-10--query-interface-and-integration) — SQL patterns, generator script updates
 
 **Reference**
 11. [Catalog — Known Tables](#11-catalog--known-tables) — T-01 through T-46 (Tier 1)
@@ -567,100 +568,144 @@ Diagrams are stored as structured JSON where every visual element is a named, ty
 
 ---
 
-### Phase 4 — Tier 1 Table Extraction (Parallel by Chapter Group)
+### Phase 4 — Tier 1 Data Extraction ✅ COMPLETE
 
-**Goal:** Populate each Tier 1 relational table with data extracted from `amf-build-reference.md`.
+**Goal:** Populate all Tier 1 relational tables AND enrich every `asset_registry` row with full semantic metadata — topics, di-chord associations, concept tags. This metadata is the foundation Phase 6 (Semantic Indexing) builds on.
 
-**Parallel batches:**
+**Extraction agents run in parallel by chapter group. Each agent must:**
+1. Populate its target tables with exact values from `amf-build-reference.md`
+2. Insert `asset_registry` rows with fully populated `primary_topics[]` and `secondary_topics[]` arrays — not left null
 
-| Batch | Chapters | Tables |
-|-------|----------|--------|
-| A | Ch.9-14 | `di_chords`, `di_chord_pulsation`, `di_chord_fo_factor`, `di_chord_harmonicity`, `di_chord_pictograph` |
-| B | Ch.22 | `chord_inversions_7th` |
-| C | Ch.23 | `diatonic_triads`, `bach_chorale_sequences` |
-| D | Ch.18-20 | `heptachord_modes` |
-| E | Ch.25 | `clef_transposition`, `transposing_instruments` |
-| F | Remaining | Any additional tables from Phase 1 manifest not covered above |
+**Semantic tag vocabulary for Tier 1:**
+`di_chord` · `pulsation` · `fo_factor` · `harmonicity` · `triad` · `inversion` · `mode` · `heptachord` · `melodic_gesture` · `rhythm` · `transposition` · `overtone` · `voice_leading` · `figured_bass` · `ear_training` · `keyboard` · `harmony` · `melody_zone`
 
-**Output:** `INSERT` statements + `asset_registry` rows for each table (tier = 'plogger', source_name = 'Plogger Method').
+**Result:** 16/17 tables populated · 60 asset_registry rows (46 tables, 14 diagrams) · `diagram_specs` empty (filled in Phase 7)
 
 ---
 
-### Phase 5 — Tier 2 Table Extraction
+### Phase 5 — Tier 2 Data Extraction
 
-**Goal:** Populate relational tables for external source tables discovered in Phase 2.
+**Goal:** Same as Phase 4 for external sources. Extract structured data from Tier 2 source PDFs and populate `asset_registry` with full semantic tags — so Phase 6 can cross-reference Tier 1 and Tier 2 assets without opening any PDF.
 
-**Same approach as Phase 4:** one agent per source, parallel. Each agent reads the manifest section for its source, extracts the table data, writes `CREATE TABLE` + `INSERT` statements, and inserts `asset_registry` rows (tier = 'external', source_name = source document name).
+**One agent per source, parallel:**
 
----
+| Agent | Source | `source_name` | Notes |
+|-------|--------|---------------|-------|
+| A | Rhythm Code | `Rhythm Code` | Focus on groove grids, clave patterns, subdivision charts |
+| B | Emotional Melody Map | `Emotional Melody Map` | Zone maps, tension/release frameworks, key note charts |
+| C | Harmony OS | `Harmony OS` | Chord quality, functional flow, ii-V-I, tritone sub |
+| D | Voicings OS | `Voicings OS` | Drop voicings, shell voicings, voice leading charts |
+| E | Ploger Workbook | `Plogger Method` (tier='plogger') | Reclassified as Tier 1 — merge into Tier 1 asset_registry |
 
-### Phase 6 — Diagram Decomposition (All Tiers)
-
-**Goal:** For each diagram in the manifest (Tier 1 and Tier 2), produce a Nano Banana JSON spec.
-
-**Process per diagram:**
-1. Read the diagram description from the manifest and the source document
-2. Identify all visual elements (shapes, labels, colors, layout, text)
-3. Map each element to a JSON attribute with explicit `source: "text"` values
-4. Write spec to `diagram_specs` table and to `docs/diagram-specs/<slug>.json`
-5. Insert `asset_registry` row pointing to the spec
-
-**Priority order — Tier 1 first:**
-1. Di-Chord Pictograph (most reused — appears in Ch.10, Ch.23, and every sprint)
-2. Interference Pulsation Waveforms (Ch.11)
-3. Heptachord Keyboard Map (Ch.18-20)
-4. 7th Chord Inversion Stack Diagrams (Ch.22)
-5. Tracking Page Template
-
-Tier 2 diagrams follow after Tier 1 top 5 are complete.
+**Each agent output:**
+- `asset_registry` rows with `tier='external'`, rich `primary_topics[]`, `secondary_topics[]`
+- `CREATE TABLE` + `INSERT` for any source-specific structured data tables worth querying
 
 ---
 
-### Phase 7 — Image Generation
+### Phase 6 — Semantic Indexing
 
-**Goal:** Submit all JSON specs to Nano Banana and store rendered images.
+**Goal:** Pre-compute all synthesis candidates from the fully-tagged `asset_registry`. No PDFs opened. Agents read only the DB. Output goes into the `synthesis_candidates` table for user review before any creation work begins.
+
+**`synthesis_candidates` table:**
+```sql
+CREATE TABLE synthesis_candidates (
+    id                  SERIAL PRIMARY KEY,
+    base_slug           VARCHAR(100) REFERENCES asset_registry(slug),
+    overlap_slug        VARCHAR(100) REFERENCES asset_registry(slug),
+    overlap_score       NUMERIC(4,2),   -- 0.0-1.0, based on shared topic count
+    shared_topics       TEXT[],
+    synthesis_rationale TEXT,           -- plain English: "Both cover di_chord + ear_training;
+                                        --   adding Rhythm Code clave grid to Plogger pulsation
+                                        --   diagram would show rhythmic feel of each interval"
+    candidate_type      VARCHAR(30),    -- 'enrichment' | 'bridging' | 'new_media'
+    status              VARCHAR(20)     -- 'pending' | 'approved' | 'rejected' | 'complete'
+);
+```
 
 **Process:**
-1. For each spec in `diagram_specs`, prepare the JSON prompt
-2. Submit to Gemini 2.0 Flash via Google AI Studio (Nano Banana process)
-3. Save output image to `public/amf-assets/<tier>/<slug>.png`
+1. **Topic overlap agent** — for every Tier 1 diagram in `asset_registry`, query for all Tier 2 assets that share ≥2 `primary_topics`. Score = shared_topics / total unique topics. Insert into `synthesis_candidates`.
+2. **Gap detection agent** — scan all topics present in Tier 2 but absent from any Tier 1 asset; flag as `candidate_type='bridging'` — these are concepts that need a new diagram, not an enrichment.
+3. **New media agent** — identify topics with ≥3 source assets but no `worksheet` or `reference_card` in any tier; flag as `candidate_type='new_media'`.
+
+**Output:** Populated `synthesis_candidates` table. **User reviews and approves candidates before Phase 9 begins.** Rejected candidates stay in the table as `status='rejected'` for audit trail.
+
+---
+
+### Phase 7 — Diagram Decomposition (All Tiers)
+
+**Goal:** For each diagram in `asset_registry` (Tier 1 priority first), produce a Nano Banana JSON spec and store it in `diagram_specs`. This is the only phase that touches source documents — to extract visual element descriptions for diagrams not yet fully documented.
+
+**Process per diagram:**
+1. Read the diagram's `asset_registry` row — all metadata already present from Phase 4/5
+2. Read the source document description for that diagram only (targeted read, not a full sweep)
+3. Produce Nano Banana JSON spec: every visual element as a named JSON attribute with `source: "text"`
+4. Write to `diagram_specs` table + `docs/diagram-specs/<slug>.json`
+
+**Priority order:**
+1. Di-Chord Pictograph — D-04 (most reused in entire book)
+2. Lap Map — D-03 (rhythm training, every early sprint)
+3. Tracking Page — D-08 (6 protocols built on it)
+4. Heptachord Shift House Plan — D-12 (14 rooms, fully described)
+5. Interference Pulsation Waveforms — D-05
+
+Tier 2 diagrams after Tier 1 top 5.
+
+**Note:** Read `queen-city-redline/.pipeline/deterministic-2d-visual-asset-generation-using-jso/mprd.md` in full before starting. This SOP governs how JSON specs are structured and submitted.
+
+---
+
+### Phase 8 — Image Generation
+
+**Goal:** Submit all `diagram_specs` JSON specs to Nano Banana and store rendered images.
+
+**Process:**
+1. For each spec in `diagram_specs`, prepare the JSON prompt per the Nano Banana SOP
+2. Submit to Gemini 2.0 Flash via Google AI Studio
+3. Save to `public/amf-assets/<tier>/<slug>.png`
 4. Update `asset_registry.image_path` and `diagram_specs.last_rendered`
 
-**Note:** This phase requires submission through the Nano Banana / AI Studio UI per the established SOP in `queen-city-redline/.pipeline/deterministic-2d-visual-asset-generation-using-jso/mprd.md`. Read that file in full (1784 lines) before submitting the first spec. Key question to resolve: does the JSON go directly into the AI Studio prompt, or is there a template wrapper?
+---
+
+### Phase 9 — Tier 3 Synthesis and Originals
+
+**This phase is entirely DB-driven. No agent opens a source PDF.** All knowledge needed for synthesis was extracted and tagged in Phases 4–5. Synthesis candidates were pre-ranked in Phase 6.
+
+**Part A — Enrichment (Synthesized diagrams)**
+
+For each `synthesis_candidates` row with `status='approved'` and `candidate_type='enrichment'`:
+
+1. **Spec agent**: reads only `diagram_specs` (base diagram JSON) + `asset_registry` rows for all `overlap_slug` assets (topic metadata only). Produces a list of new element layers to add: what JSON key, what value, what position.
+2. **Merge**: apply new layers to the existing spec, version-bump to `"2.0"`, write back to `diagram_specs`
+3. **Re-render**: submit updated spec → store as `<slug>_v2.png`
+4. **Registry**: new `asset_registry` row: `tier='amf_original'`, `synthesis_sources[]` = base + overlap slugs
+
+**Part B — Bridging diagrams**
+
+For each `synthesis_candidates` row with `candidate_type='bridging'` and `status='approved'`:
+
+1. **Design agent**: reads only the `synthesis_candidates.synthesis_rationale` + `asset_registry` topic rows. Produces a new Nano Banana JSON spec from scratch. No source documents.
+2. **Registry**: `tier='amf_original'`, `bridges_concepts[]` populated from the gap analysis
+
+**Part C — New Media**
+
+For each `synthesis_candidates` row with `candidate_type='new_media'` and `status='approved'`:
+
+1. **Design agent**: produces a new JSON spec for an infographic, reference card, worksheet, or poster — format chosen based on how the concept is best taught
+2. **Registry**: `asset_type` = chosen format, `tier='amf_original'`
+
+See Section 16 for specific synthesis targets already identified.
 
 ---
 
-### Phase 8 — Tier 3 Synthesis and Originals
-
-**Two-part phase.**
-
-**Part A — Synthesized**
-
-For each Tier 1 and Tier 2 diagram (starting with the top 5 priority Tier 1 diagrams):
-
-1. **Overlap audit** (one agent per diagram): read the diagram spec + all source documents that have conceptual overlap; produce a synthesis spec listing what to add, where, in what JSON key
-2. **Spec update**: merge synthesis additions into the existing JSON spec as new element layers; version-bump to `"2.0"`
-3. **Re-render**: submit updated spec to Nano Banana; store as `<slug>_v2.png`
-4. **Registry update**: insert a new `asset_registry` row with `tier = 'amf_original'`, `synthesis_sources[] = [base_slug, ...]`
-
-**Part B — Bridging and New Media**
-
-1. **Gap identification**: design session to identify conceptual connections that exist in the curriculum but have no visual yet
-2. **Bridging diagrams**: new Nano Banana JSON specs designed from scratch; registry entry with `bridges_concepts[]` populated
-3. **New media**: infographics, reference cards, worksheets, or posters for concepts not covered by any existing asset; registry entry with appropriate `asset_type`
-
-See Section 16 for specific synthesis targets confirmed in the architecture conversation.
-
----
-
-### Phase 9 — Query Interface and Integration
+### Phase 10 — Query Interface and Integration
 
 **Goal:** Document all SQL patterns and connect the inventory to the AMF app build pipeline.
 
 **Deliverables:**
-- SQL query catalog documented in this plan (Section 14) — updated after Phases 4-8 complete
-- `gen_infographic_pdfs.py` updated to accept asset slugs and pull rendered images from `public/amf-assets/`
-- API endpoint design: `GET /api/amf-assets?tier=plogger&topic=di_chord&format=infographic`
+- SQL query catalog in Section 14 — updated after Phases 4-9 complete
+- `gen_infographic_pdfs.py` updated to accept asset slugs and pull from `public/amf-assets/`
+- API endpoint: `GET /api/amf-assets?tier=plogger&topic=di_chord&format=infographic`
 
 ---
 

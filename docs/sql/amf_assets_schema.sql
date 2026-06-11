@@ -208,3 +208,25 @@ CREATE TABLE overtone_series (
     string_ratio    VARCHAR(20),
     frequency_ratio NUMERIC(8,4)
 );
+
+-- ============================================================
+-- SYNTHESIS CANDIDATES — pre-computed in Phase 6, user-vetted
+-- before any Phase 9 creation work begins
+-- ============================================================
+
+CREATE TABLE synthesis_candidates (
+    id                  SERIAL PRIMARY KEY,
+    base_slug           VARCHAR(100) NOT NULL REFERENCES asset_registry(slug),
+    overlap_slug        VARCHAR(100) NOT NULL REFERENCES asset_registry(slug),
+    overlap_score       NUMERIC(4,2),       -- 0.0–1.0, shared topics / total unique topics
+    shared_topics       TEXT[],
+    synthesis_rationale TEXT,               -- plain English: what to add, where, why
+    candidate_type      VARCHAR(30) CHECK (candidate_type IN ('enrichment', 'bridging', 'new_media')),
+    status              VARCHAR(20) DEFAULT 'pending' CHECK (status IN ('pending', 'approved', 'rejected', 'complete')),
+    user_notes          TEXT,
+    created_at          TIMESTAMP DEFAULT NOW()
+);
+
+CREATE INDEX idx_sc_base_slug ON synthesis_candidates (base_slug);
+CREATE INDEX idx_sc_status    ON synthesis_candidates (status);
+CREATE INDEX idx_sc_score     ON synthesis_candidates (overlap_score DESC);
