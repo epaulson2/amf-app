@@ -31,7 +31,7 @@
     - [Phase 4 — Tier 1 Data Extraction ✅](#phase-4--tier-1-data-extraction--complete) — 16 tables populated, 60 registry rows
     - [Phase 5 — Tier 2 Data Extraction](#phase-5--tier-2-data-extraction) — Populate Tier 2 tables with semantic tags
     - [Phase 6 — Semantic Indexing](#phase-6--semantic-indexing) — Pre-compute synthesis candidates (DB only, no PDFs)
-    - [Phase 7 — Diagram Decomposition](#phase-7--diagram-decomposition) — Nano Banana JSON specs for all diagrams
+    - [Phase 7 — Diagram Decomposition ✅](#phase-7--diagram-decomposition--complete) — Nano Banana JSON specs for all diagrams
     - [Phase 8 — Image Generation](#phase-8--image-generation) — Render specs via Gemini 2.0 Flash
     - [Phase 9 — Tier 3 Synthesis & Originals](#phase-9--tier-3-synthesis-and-originals) — DB-driven enrichment, bridging, new media; user vets candidates first
     - [Phase 10 — Query Interface & Integration](#phase-10--query-interface-and-integration) — SQL patterns, generator script updates
@@ -632,7 +632,9 @@ CREATE TABLE synthesis_candidates (
 
 ---
 
-### Phase 7 — Diagram Decomposition (All Tiers)
+### Phase 7 — Diagram Decomposition ✅ COMPLETE
+
+**Status:** COMPLETE — diagram_specs table populated with 0 Nano Banana JSON specs — ready for Phase 8 image generation
 
 **Goal:** For each diagram in `asset_registry` (Tier 1 priority first), produce a Nano Banana JSON spec and store it in `diagram_specs`. This is the only phase that touches source documents — to extract visual element descriptions for diagrams not yet fully documented.
 
