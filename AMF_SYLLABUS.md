@@ -8,6 +8,7 @@
 ## Table of Contents
 1. [What This Course Is](#1-what-this-course-is)
 2. [Who It's For](#2-whos-it-for)
+14. [Full Year Sprint Plan](#14-full-year-sprint-plan)
 3. [The Founding Insight: Harmonic Atoms](#3-the-founding-insight-harmonic-atoms)
 4. [How Progress Works: Mastery Gates, Not Calendars](#4-how-progress-works-mastery-gates-not-calendars)
 5. [The Two-Tier Structure](#5-the-two-tier-structure)
@@ -458,6 +459,274 @@ These decisions remain open and will shape the next build phase:
 3. **Guitar and piano at different mastery rates:** If a student is at Stage 3 on piano but Stage 2 on guitar, does the sprint gate require both? Not yet decided.
 
 4. **Plogger pacing for dense chapters:** Chapters 9-14 (full di-chord system) may be too dense for one chapter per sprint under the new slower pace. Whether to slow the Plogger thread is not yet decided.
+
+---
+
+---
+
+## 14. Full Year Sprint Plan
+
+This section is the operating-level view of Year 1. For each sprint it shows what is happening inside each of the five daily sections — not at the individual exercise level, but at the *focus and purpose* level. Read this alongside the sprint-by-sprint chamber breakdown in Section 9.
+
+**Key:** S1 = Plogger Foundation · S2 = Integrated Work · S3 = Song · S4 = Free Play · S5 = Synthesizer
+
+---
+
+### Year at a Glance
+
+| Sprint | Gate A Movement | Gate B (Plogger) | Anchor Song | New Proof Progressions Available |
+|--------|----------------|------------------|-------------|----------------------------------|
+| 1 | None — orientation | Ch. 1–3 | Ain't No Sunshine | — |
+| 2 | [5] P4 — I→IV, V→I | Ch. 4 | Stand By Me | Modal Vamp, Circle (segment), ii-V-I |
+| 3 | [7] P5 — I→V | Ch. 5 | TBD | I-IV-V-I components clearer |
+| 4 | [2] M2 — IV→V | Ch. 6 | 12-Bar Blues | I-IV-V-I ✓, 12-Bar ✓, I-IV-I-V ✓ |
+| 5 | [3] m3 — I→vi | Ch. 7–8 | TBD | i-IV-i-V, Minor ii-V-i (partial) |
+| 6 | [9] M6 — vi→IV | Ch. 9–10 | TBD | I-V-vi-IV ✓, I-vi-IV-V ✓, vi-IV-I-V ✓ |
+| 7 | [4] M3 — I→iii | Ch. 11–12 | TBD | Modal mixture, mediant substitution |
+| 8 | [6] Tritone — V7→I | Ch. 13–14 review | TBD | Classical cadence ✓, Neapolitan ✓ |
+| 9 | [10] m7 — I→bVII | Ch. 15–16 | TBD | Mixolydian vamp, rock bVII ✓ |
+| 10 | [8] m6 — I→bVI | Ch. 17–18 | TBD | Borrowed bVI ✓, bVI-bVII-I ✓ |
+| 11 | [1]/[11] m2 — chromatic | Ch. 19–20 | TBD | Secondary dominants ✓, chromatic approaches ✓ |
+| 12 | Integration — all movements | Full system review | TBD | All 14 progressions by ear |
+
+---
+
+### Sprint 1 — Orientation: Di-Chord Ears Open
+
+**Gate A:** None  
+**Gate B:** Plogger Ch. 1–3 — di-chord concept, [3] and [4] as entry points  
+**Anchor Song:** Ain't No Sunshine
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Ch. 1–3: What is a di-chord? The Hear→Sing→Name workflow. Isolating [3] (minor 3rd) and [4] (major 3rd) by sound quality alone — no instrument, eyes closed. Pictograph introduction. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) Melody Zone 1 on both instruments — locate root, 3rd, 5th of Am in multiple positions. (2) Rhythm grid introduction — 8 positions, stops, clapping then playing with metronome. Each exercise serves: ear, instrument coordination, reading the grid. |
+| **S3 — Song Work (14 min)** | Ain't No Sunshine: learn the 3-chord structure by ear first (Am-G-Em or Am-G-Dm depending on arrangement). Simplified, two-hand piano + basic guitar. No performance pressure — find the chords, feel the song. |
+| **S4 — Free Play (10 min)** | Improvise freely over Am using only Zone 1 notes (A-C-E). Guitar and piano alternating. No rules other than: stay in the zone. This is where you hear what you own. |
+| **S5 — Synthesizer (8 min)** | All four chambers in one: play Ain't No Sunshine with Zone 1 melody on one hand, feel the rhythmic grid in the right hand, and name each chord root as it arrives. 8 minutes of synthesis. |
+
+**Spiral Thread Entry Points:** Di-chord ear ([3]/[4] only), Keyboard visualization (natural notes), Longy (ta/ta-te), Melody zones (Zone 1), Rhythm Code (8-position grid)  
+**Gate Criteria:** [3] vs [4] by ear (no instrument) in 5 trials → 5/5 correct. Plays Ain't No Sunshine on both instruments simplified.
+
+---
+
+### Sprint 2 — The Resolution: [5] Perfect 4th
+
+**Gate A:** [5] movement — I→IV and V→I owned — both instruments, 3+ keys, by ear in a song  
+**Gate B:** Plogger Ch. 4 — di-chord [5]: pulsation (modal), harmonicity (open/hollow), pictograph  
+**Anchor Song:** Stand By Me
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Ch. 4 deep work: [5] as sound-object — its specific pulsation rate, its "open" harmonicity. Compare [5] to [4] from Sprint 1. Sing [5] up from any pitch on demand. Tracking Page introduced: log every di-chord heard in a song outside practice. |
+| **S2 — Integrated Work (18 min)** | 3 exercises: (1) Root movement drill — bass note only, play I→IV→I→V→I in C, G, F. Name the movement each time ([5]). (2) Zone 1 melody over the I-vi-IV-V chord loop in Stand By Me — melody stays chord-tones. (3) Rhythmic anticipation exercise on 8-position grid — anticipate the chord change by half a beat. Each exercise: ear + instrument + rhythm simultaneously. |
+| **S3 — Song Work (14 min)** | Stand By Me: Find every [5] movement in the song (I-vi-IV-V: two [5] movements per cycle). Guitar strum pattern + piano comping. Sing the root movement as it happens — don't just play it, hear it in real time. |
+| **S4 — Free Play (10 min)** | Free play over I-IV-I-V loop (two [5] movements). Zone 1 + Zone 2 beginning (passing tones allowed now). Guitar and piano both active. Use what you own; don't force what you don't. |
+| **S5 — Synthesizer (8 min)** | Stand By Me synthesis: all 4 chambers live. Melody (Zone 1 over changes), Harmony (name [5] movement aloud as it arrives), Voicings (play root-position I, IV, V), Rhythm (feel the grid, don't count it). |
+
+**Spiral Thread Advances:** Di-chord ear adds [5]; Keyboard visualization adds chromatic notes; Longy adds syncopation; Melody zones deepens Zone 1; Rhythm Code adds anticipations; Tracking Page begins  
+**Proof Progressions Unlocked:** Modal Vamp (single [5] loop), Circle of Fifths descent (one segment), ii-V-I (two [5] movements)  
+**Gate Criteria:** Hear [5] vs [4] vs [7] in isolation → identify correctly 9/10 trials. Play I-IV-V-I by ear in C, G, Bb both instruments. Identify V→I moment in Stand By Me in real time.
+
+---
+
+### Sprint 3 — The Dominant Reach: [7] Perfect 5th
+
+**Gate A:** [7] movement — I→V owned — both instruments, 3+ keys, by ear in a song  
+**Gate B:** Plogger Ch. 5 — di-chord [7]: perfect 5th, pulsation (perfect/stable), "reaching" quality  
+**Anchor Song:** TBD — needs prominent I→V as primary harmonic event
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Ch. 5: [7] as distinct sound from [5] — same "perfect" pulsation family but different direction and feel. The "reach" vs. the "return." Sing [5] and [7] back to back from the same root. Add [7] to Tracking Page work. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) I→V→I in 3 keys — play root movement in bass, name it. Compare: I→IV vs I→V — different sound, same "perfect" di-chord family. (2) Zone 1 melody over I-IV-V-I — now you own all three movements; find the melody that connects them. Zone 2 passing tones introduced. |
+| **S3 — Song Work (14 min)** | Anchor song: hunt for every I→V moment. These are the "reach" moments — the song leaning away from home. Play the song simplified, sing the root movement on every bass change. |
+| **S4 — Free Play (10 min)** | Free play over I-IV-V loop (now own all three: [5], [7] between I and V). Zone 1 + Zone 2 both available. Let the harmony breathe — sit on V longer than feels comfortable, feel the pull back. |
+| **S5 — Synthesizer (8 min)** | Three-movement synthesis: I-IV-I-V-I in two keys back to back. Melody hand plays Zone 1/2, bass names each movement aloud, rhythm hand plays the groove. No stopping at transitions. |
+
+**Spiral Thread Advances:** Di-chord ear adds [7]; Keyboard visualization adds interval recognition on keys; Longy adds dotted patterns; Melody zones opens Zone 2; Lap Map begins (Sprint 3 entry); Rhythm Code adds Son Clave introduction  
+**Gate Criteria:** Identify [5] vs [7] vs [4] by ear. Play I-V-I by ear in C, F, G both instruments. Name I→V moment in anchor song in real time without preparation.
+
+---
+
+### Sprint 4 — The Step Up: [2] Major 2nd
+
+**Gate A:** [2] movement — IV→V (tension builder) — both instruments, 3+ keys, by ear  
+**Gate B:** Plogger Ch. 6 — di-chord [2]: major 2nd, dissonant pulsation, "wanting to move" quality  
+**Anchor Song:** 12-Bar Blues vehicle
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Ch. 6: [2] as the smallest upward step in the diatonic world — but it's dissonant, it wants to resolve. Compare to [5]: [5] resolves easily, [2] pushes urgently. Sing the whole-step up from any pitch and feel the tension. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) IV→V→I sequence — feel the two-step resolution: [2] creates tension, [5] resolves it. Play this in C, G, F, Bb. (2) 12-Bar Blues root movement map — label every chord change with its di-chord ([5], [5], [2] as the defining structure). Play the form while calling out movements. |
+| **S3 — Song Work (14 min)** | 12-Bar Blues: this isn't one song, it's a form. Learn the standard 12-bar in one key on both instruments. The goal: feel when the IV→V moment arrives — the defining [2] movement that gives blues its characteristic tension before the resolution. |
+| **S4 — Free Play (10 min)** | Blues improv over the 12-bar form. Own the form now — don't count bars, feel the movements. Zone 1 + Zone 2 melody. Guitar bends and piano chord stabs both welcome. |
+| **S5 — Synthesizer (8 min)** | Full 12-bar blues synthesis: melody (Zone 1/2), harmony (name movements), voicings (root position + dom7), rhythm (groove feel, not counted). Play it like it's a performance — 8 minutes, no stops. |
+
+**Spiral Thread Advances:** Di-chord ear adds [2]; Keyboard visualization adds chromatic passing notes; Longy adds swing feel subdivision; Melody zones deepens Zone 2 (blues passing tones); Rhythm Code deepens groove development step 1; Lap Map adds tetrachord formation  
+**Proof Progressions Unlocked:** I-IV-V-I ✓, 12-Bar Blues ✓, I-IV-I-V ✓, Andalusian cadence (partial — [2] down introduced later but form visible)  
+**Gate Criteria:** Hear [2] vs [5] vs [7] — identify correctly. Play IV→V→I in 3 keys by ear. Call out the IV→V moment in any 12-bar blues by ear in real time.
+
+---
+
+### Sprint 5 — The Darkening: [3] Minor 3rd
+
+**Gate A:** [3] movement — I→vi — both instruments, 3+ keys, by ear  
+**Gate B:** Plogger Ch. 7–8 — [3] minor 3rd and [4] major 3rd in depth  
+**Anchor Song:** TBD — needs prominent I→vi darkening (same notes, different gravity)
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Ch. 7–8: [3] and [4] in depth. Sprint 1 introduced them for major/minor quality — now they're studied as root movements. [3] as the move to relative minor: I→vi is a m3 down (or M6 up — introduce inversion concept). The "same notes, different gravity" principle made physical. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) I→vi and vi→I — feel the darkening and the brightening. In C major: C major → A minor. Both instruments, 3 keys. (2) Zone 3 introduction: 7th chord tones over I and vi. How does a major 7 over I feel vs. a minor 7 over vi? Same pitch, two different meanings. |
+| **S3 — Song Work (14 min)** | Anchor song: find every I→vi moment — the "darkening" move. The song spends time in minor territory. Notice: it doesn't feel like a key change. It feels like a shadow falling. |
+| **S4 — Free Play (10 min)** | Free play that drifts between I and vi territory. No prescribed loop — just feel when the music wants to darken and when it wants to brighten. Zone 1/2/3 all available. |
+| **S5 — Synthesizer (8 min)** | I-vi progression synthesis: melody follows the emotional quality shift (Zone 3 color tones), voicings track the root movement, rhythm holds steady through the harmonic change. Name the movement as it lands. |
+
+**Spiral Thread Advances:** Di-chord ear adds [3]/[4] as root movements; Keyboard visualization adds chord position mapping; Longy adds compound time introduction; Melody zones opens Zone 3; Rhythm Code adds Son Clave both orientations; Lap Map adds mode modulation  
+**Proof Progressions Unlocked:** i-IV-i-V (harmonic minor) ✓, Minor ii-V-i (partial — need [5] in minor context)  
+**Gate Criteria:** Hear I→vi darkening in a song without preparation. Play I→vi in C, G, D both instruments. Distinguish [3] (minor 3rd) from [4] (major 3rd) by ear in isolation — 10/10.
+
+---
+
+### Sprint 6 — The Lift: [9] Major 6th
+
+**Gate A:** [9] movement — vi→IV — both instruments, 3+ keys, by ear  
+**Gate B:** Plogger Ch. 9–10 — [9] major 6th and [6] tritone  
+**Anchor Song:** TBD — needs prominent vi→IV "emotional lift" movement
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Ch. 9–10: [9] as brightness opening up — it's the inverse of [3]. The major 6th upward leap sounds like arriving somewhere. [6] (tritone) introduced as the far extreme — maximum tension. Feel the contrast: [9] lifts, [6] destabilizes. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) vi→IV movement — the lift after the darkening. Play vi-IV-I-V loop: feel how each movement connects. (2) Full I-V-vi-IV ("pop loop") — you now own all 4 movements. Play it in 3 keys by ear. This is the first time a major 4-chord progression is fully available as owned assembly. |
+| **S3 — Song Work (14 min)** | Anchor song: find the vi→IV lift. Notice how it feels different from IV→vi (which would be darkening). The lift is outward and upward. Sing the root movement on every bass change — this song is a 4-movement puzzle and you can name every piece. |
+| **S4 — Free Play (10 min)** | Free play over I-V-vi-IV and I-vi-IV-V loops alternating. Zone 1/2/3. Guitar: voice the shapes you own. Piano: voice lead between roots. No predetermined melody — follow what you hear. |
+| **S5 — Synthesizer (8 min)** | The 4-chord loop synthesis: all chambers live. Melody traces Zone 3 color tones over each chord, harmony names each movement ([7], [3], [9], [2]), voicings move by smallest interval (voice leading thread), rhythm locks into groove. 8 minutes, performance level. |
+
+**Spiral Thread Advances:** Di-chord ear adds [9] and [6] (introduced); Keyboard visualization adds voice leading between chords; Longy adds syncopation in compound; Melody zones deepens Zone 3; Rhythm Code: groove development step 2 (clave-weighted phrasing); Lap Map deepens  
+**Proof Progressions Unlocked:** I-V-vi-IV ✓, I-vi-IV-V ✓, vi-IV-I-V ✓, I-vi-ii-V (partial)  
+**Gate Criteria:** Hear vi→IV lift vs. I→vi darkening in context — distinguish reliably. Play I-V-vi-IV in C, G, D by ear. Name every movement in the anchor song in real time.
+
+---
+
+### Sprint 7 — The Bittersweet Third: [4] Major 3rd
+
+**Gate A:** [4] movement — I→iii — both instruments, 3+ keys, by ear  
+**Gate B:** Plogger Ch. 11–12 — [1]/[11] minor 2nd (most dissonant); full di-chord system through harmonicity  
+**Anchor Song:** TBD — needs prominent mediant (I→iii) motion
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Ch. 11–12: [1] and [11] as extreme dissonance. The minor 2nd — maximum pulsation interference. Also: full system review — all 11 di-chords, all three sound factors. Build the complete Tracking Page. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) I→iii movement — the mediant. iii shares two notes with I but has a different root. It's not fully major or minor — the "bittersweet" quality. Play I-iii-IV-V in 3 keys. (2) Shell voicing introduction: root + 3rd only. How little voicing information do you need to imply a chord? Play entire I-V-vi-IV with shells. Less is more. |
+| **S3 — Song Work (14 min)** | Anchor song: find I→iii. It may be subtle — the mediant is less common than the other movements. Notice how iii functions as a stand-in for I (shared notes). The song may use it as a passing chord — that's valid too. |
+| **S4 — Free Play (10 min)** | Free play with mediant substitution: anywhere you'd play I, try iii instead. Does it work? When? Why? This is not academic — it's ear-led experimentation with owned material. |
+| **S5 — Synthesizer (8 min)** | Synthesis with modal mixture awareness: I-iii-IV-V. Melody in Zone 3 or Zone 4 (approach tones beginning). Voicings in shells. Rhythm in groove step 3 (feel vs. grid). Name every movement. |
+
+**Spiral Thread Advances:** Di-chord ear completes [1]/[11] — full 11 di-chord system known; Keyboard visualization adds all clef reading; Longy adds all simple meter patterns; Melody zones opens Zone 4; Rhythm Code: groove step 3; Lap Map adds conjunct heptachord  
+**Gate Criteria:** Hear [4] (M3) vs [3] (m3) vs [9] (M6) — distinguish reliably. Play I-iii-IV in 3 keys by ear. Identify mediant motion in anchor song.
+
+---
+
+### Sprint 8 — The Resolution Explained: [6] Tritone
+
+**Gate A:** [6] movement — V7→I tritone resolution — both instruments, 3+ keys, by ear  
+**Gate B:** Plogger Ch. 13–14 — harmonicity deep study; full di-chord system review + Tracking Page mastery  
+**Anchor Song:** TBD — needs clear V7→I resolution as dramatic event (blues-influenced or jazz-adjacent)
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Full di-chord system consolidation. Tracking Page at full depth: identify all 11 di-chords in a recorded song by ear. Harmonicity: understand WHY each di-chord has its sound factor profile. This is the capstone of the Plogger thread for Year 1 — depth over breadth now. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) V7→I as tritone resolution — the 3rd and 7th of V7 move by half-step to the root and 3rd of I. Play this in 3 keys and feel the pull as two [1] movements happening simultaneously. (2) ii-V7-I full voice leading: soprano leads by half step. This is the first time ii-V-I is taught AS voice leading (not just root movement). |
+| **S3 — Song Work (14 min)** | Anchor song: find every V7→I moment. These are the resolution moments — the full explanation of why V7 feels unstable. Sing the tritone of V7 (3rd and 7th together) and hear where it wants to go. |
+| **S4 — Free Play (10 min)** | Free play using all owned movements. Every diatonic chord is now available by ear. Play real music — not exercises. Use anchor songs from previous sprints alongside the current one. This is the beginning of "framework disappears." |
+| **S5 — Synthesizer (8 min)** | Full synthesis: choose any progression from the 12+2 list that you can assemble from owned movements. All 4 chambers simultaneously. The Synthesizer is now genuinely real — no scaffolding needed. 8 minutes of music, not exercises. |
+
+**Spiral Thread Advances:** Di-chord ear reaches full 11-di-chord fluency; Keyboard visualization reaches all 8 clefs by ear; Melody zones: Tiny Tension Arc full application; Rhythm Code: groove step 4 (self-generated); Lap Map: silent practice anywhere  
+**Proof Progressions Unlocked:** Classical cadence ✓, Neapolitan/bII ✓ — all 14 progressions now in reach  
+**Gate Criteria:** Identify all 11 di-chords by ear in random order — 11/11. Play V7→I in 5 keys by ear. Perform any song from sprints 1-8 from memory at tempo on both instruments.
+
+---
+
+### Sprint 9 — The Flat 7: [10] Minor 7th
+
+**Gate A:** [10] movement — I→bVII (Mixolydian/rock flat-7 move) — both instruments, 3+ keys, by ear  
+**Gate B:** Plogger Ch. 15–16 — di-chord [10] in melodic and harmonic contexts; Mixolydian mode  
+**Anchor Song:** TBD — rock or R&B song with prominent bVII movement (e.g., Hey Joe, Sweet Home Chicago, La Grange style)
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | [10] as the "borrowed flat 7" — in major key, bVII is not diatonic, but it sounds natural in blues, rock, and gospel. Hear [10] (m7) vs [9] (M6) — they span the same area but feel different. Mixolydian mode: it's just a major scale with bVII. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) I-bVII-IV-I loop (classic rock move — all [5] and [10] movements). Feel how bVII doesn't resolve the way V does — it's a different energy entirely. (2) Mixolydian melody: Zone 1-3 over a Mixolydian vamp. The b7 in the melody is the defining note — find it and sit on it. |
+| **S3 — Song Work (14 min)** | Anchor song: find the bVII moment. In rock/R&B this often feels like the song "opening up" — not tension and resolution but a kind of modal suspension. Play and name the movement each time it arrives. |
+| **S4 — Free Play (10 min)** | Free play over I-bVII-IV vamp. Let it groove — this is modal territory where harmonic movement is less directional than tonal. Rhythm becomes the dominant driver now. |
+| **S5 — Synthesizer (8 min)** | Modal synthesis: compare Mixolydian vamp to I-IV-V-I progression. Same I chord, completely different harmonic world. Chambers: melody follows modal color, harmony names [10] movement, voicings use shells + extensions, rhythm drives the groove. |
+
+**Spiral Thread Advances:** Di-chord ear adds [10]; Modal awareness begins (Mixolydian first mode explored); Melody zones adds modal scale degrees as color; Rhythm Code: full clave fluency applied to rock groove  
+**Gate Criteria:** Hear [10] vs [9] by ear. Play I-bVII-IV by ear in 3 keys. Feel the difference between Mixolydian suspension and V→I resolution — these are opposites, not variations.
+
+---
+
+### Sprint 10 — The Borrowed Chord: [8] Minor 6th
+
+**Gate A:** [8] movement — I→bVI (borrowed from parallel minor) — both instruments, 3+ keys, by ear  
+**Gate B:** Plogger Ch. 17–18 — [8] aug5/m6; parallel major-minor borrowing as perceptual concept  
+**Anchor Song:** TBD — song with prominent bVI (e.g., "Let It Be," "No Woman No Cry" style bVI chord)
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | [8]: the minor 6th. In tonal harmony, bVI is borrowed from the parallel minor — it brings minor world color into a major key song without changing the key. Hear [8] vs [9] — similar interval, very different emotional character. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) I-bVI-bVII-I loop (the "epic" rock cadence — borrowed bVI and bVII together). Feel how both borrowed chords have similar flat-side color. (2) Parallel major/minor comparison: play I-IV-V-I then i-bVI-bVII-i — same di-chord movements, different mode. The ear distinguishes by the 3rd. |
+| **S3 — Song Work (14 min)** | Anchor song: the bVI moment — when the song borrows from its parallel minor. This often sounds like emotional depth dropping in unexpectedly. Find it, name it, feel why the composer chose it there. |
+| **S4 — Free Play (10 min)** | Free play blending major and borrowed minor chords. No rules — follow your ear. Use bVI, bVII freely alongside diatonic chords. This is modal mixture in practice. |
+| **S5 — Synthesizer (8 min)** | Modal mixture synthesis: choose a progression that blends diatonic and borrowed chords. All chambers. Melody can use notes from both parallel keys — this is chromatic melody. Name every di-chord root movement as it lands. |
+
+**Spiral Thread Advances:** Modal mixture understanding established; Di-chord ear context expanded (same interval, parallel key context); Melody zones: chromatic color tones introduced; Voicings: borrowed chord voicings on both instruments  
+**Gate Criteria:** Hear [8] vs [9] by ear. Play I-bVI-bVII-I in 3 keys. Identify borrowed chord in anchor song in real time.
+
+---
+
+### Sprint 11 — Chromatic Motion: [1]/[11] Semitone
+
+**Gate A:** Semitone approach movements — secondary dominants, chromatic approaches — both instruments, 3+ keys, by ear  
+**Gate B:** Plogger Ch. 19–20 — chromatic di-chords in harmonic context; [1] and [11] as functional devices  
+**Anchor Song:** TBD — jazz standard or R&B with secondary dominants (e.g., "Autumn Leaves" intro, "I Got You (I Feel Good)")
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | [1] and [11] in functional context: the semitone as a leading-tone device. Secondary dominant = any V7 chord built on a scale degree other than V. Each creates a [1] or [11] resolution to its target. This is the same tritone resolution from Sprint 8, applied to any scale degree. |
+| **S2 — Integrated Work (18 min)** | 2 exercises: (1) II7→V (secondary dominant to V) — hear the [1] chromatic approach. Play II7-V7-I in 3 keys. (2) Chromatic approach notes in melody: approach any chord tone from a half-step below or above. This is [1] applied to melodic movement — the jazz vocabulary enters. |
+| **S3 — Song Work (14 min)** | Anchor song: find secondary dominants. These are the "borrowed V7 chords" that don't belong to the key but sound expected anyway. Name each: "this is V7/IV" or "this is V7/vi." The ear will feel the chromatic pull before the brain names it. |
+| **S4 — Free Play (10 min)** | Free play with chromatic approaches and secondary dominants inserted at will. The constraint: every chromatic note must resolve. No chromatic decoration without resolution — ear discipline. |
+| **S5 — Synthesizer (8 min)** | Chromatic synthesis: take any progression from Sprints 2-8 and insert appropriate secondary dominants. The di-chord movements are now decorated with chromatic approaches. All chambers. This session should sound like jazz. |
+
+**Spiral Thread Advances:** Di-chord ear completes chromatic context; Secondary dominant vocabulary established; Melody zones: chromatic approach notes as standard technique; Voicings: dominant 7th chord on any scale degree  
+**Gate Criteria:** Identify secondary dominant by ear in context. Play II7-V7-I in 3 keys. Sing a chromatic approach to any chord tone on demand.
+
+---
+
+### Sprint 12 — The Framework Disappears
+
+**Gate A:** Integration — no new di-chord movement. The gate is performance.  
+**Gate B:** Full system review — Plogger Ch. 1–20 in one pass; Tracking Page at mastery level  
+**Anchor Song:** Student's choice — a song they want to own that uses movements from across the year
+
+| Section | What's Happening This Sprint |
+|---------|------------------------------|
+| **S1 — Plogger (10 min)** | Full system review — all 11 di-chords from memory, no hesitation, by ear in random order. Tracking Page applied to 3 recordings the student loves. The goal: the system is now invisible — you hear music, not di-chord labels. |
+| **S2 — Integrated Work (18 min)** | One exercise only: analyze and transcribe a section of the student's chosen anchor song. Identify every root movement, every melodic zone, every rhythmic element by ear. This is the Year 1 capstone exercise — using every tool owned, simultaneously, on real music. |
+| **S3 — Song Work (14 min)** | Student's chosen song at performance level: from memory, at tempo, on both instruments. This is not a practice session — it is a performance session. Play it like someone is listening. |
+| **S4 — Free Play (10 min)** | Free play with no constraints except: play music, not exercises. All movements, all zones, all rhythm tools. The framework is invisible. Play what you hear. |
+| **S5 — Synthesizer (8 min)** | The final synthesis: student-generated. No prescribed content. Play anything. All four chambers operating simultaneously, naturally, without naming. This is what Year 1 was building toward. |
+
+**Year 1 Exit Assessment:**
+1. Identify all 11 di-chords by ear — random order, 11/11
+2. Identify any di-chord root movement in a song played once — no preparation
+3. Play any progression from the 12+2 list by ear in 2 keys on both instruments
+4. Perform chosen anchor song from memory at tempo on both instruments
+5. Improvise a 2-minute piece using at least 4 different root movements, by ear, in real time
+
+**These five tasks should feel easy by Sprint 12. If they don't, the student is not done — and that is correct.**
 
 ---
 
