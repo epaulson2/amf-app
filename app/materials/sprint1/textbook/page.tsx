@@ -50,6 +50,7 @@ function SourceReadings({ items }: { items: Array<{ source: string; location: st
 const TOC = [
   { id: 'intro', label: 'Introduction' },
   { id: 'source-readings', label: 'Source Readings' },
+  { id: 'reading-schedule', label: 'Daily Reading Schedule' },
   { id: 'part1', label: 'Part 1 — Musical OS' },
   { id: 'dichord', label: '· What a Di-Chord Is' },
   { id: 'sound-factors', label: '· The Three Sound Factors' },
@@ -296,6 +297,144 @@ export default function TextbookPage() {
                   </table>
                 </div>
 
+              </div>
+            </section>
+
+            {/* Daily Reading Schedule */}
+            <section id="reading-schedule">
+              <H2 id="reading-schedule">Daily Reading Schedule</H2>
+              <P>This textbook is a companion to practice, not a prerequisite. Do not read it cover to cover before starting — the concepts only land after your ear has encountered the sounds they describe. The schedule below tells you exactly what to read before each day&apos;s practice session. Budget 10–20 minutes of reading before your 60-minute session.</P>
+
+              <div className="space-y-6 my-6">
+
+                {/* Week 1 */}
+                <div className="rounded-xl border border-blue-200 overflow-hidden">
+                  <div className="px-4 py-3 font-bold text-sm text-white bg-blue-600">Week 1 — Foundations</div>
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-blue-50 border-b border-blue-100">
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-20">Day</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">Textbook Reading</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">Source Reading</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-48">Why today</th>
+                    </tr></thead>
+                    <tbody className="divide-y divide-blue-50">
+                      {[
+                        ['1', 'Introduction + Source Readings list', 'Plogger Ch.9 (p.101) — Di-Chord Numbers', 'Understand the sprint goal and the bracket system before your first session'],
+                        ['2', 'Part 1: What a Di-Chord Is', 'Plogger Ch.3 (p.31) — Keyboard Visualization', 'You heard [3] and [4] yesterday — now understand the system they belong to'],
+                        ['3', 'Part 1: The Three Sound Factors', 'Plogger Ch.11 (p.112) — Interference Pulsation', 'You can now attach the pulsation/shadow/color concepts to sounds you\'ve heard'],
+                        ['4', 'Part 1: [3] and [4] Focus + Hear→Sing→Name', 'Plogger Ch.12–14 (p.121) — F/O Factor + Harmonicity', 'Deepen the [3] vs. [4] distinction with all three factors now understood'],
+                        ['5', 'Part 1: The Pictograph System', '(continue Ch.12–14 if needed)', 'You have 4 days of ear contact — the visual encoding system now has something to encode'],
+                        ['6', 'Part 2: Zone System + Zone 1 in Detail', 'Emotional Map Module 1 — Zone introduction', 'S2 instrument work is underway — understand what Zone 1 means for melody'],
+                        ['7', 'Part 4: Guitar + Piano shapes', 'Guitar Theory: Open Chords section', 'A week of playing shapes — now understand the di-chord content inside each voicing'],
+                      ].map(([day, text, source, why]) => (
+                        <tr key={day} className="hover:bg-blue-50/50">
+                          <td className="px-4 py-2.5 font-bold text-blue-700">{day}</td>
+                          <td className="px-4 py-2.5 text-slate-800">{text}</td>
+                          <td className="px-4 py-2.5 text-slate-600 text-xs">{source}</td>
+                          <td className="px-4 py-2.5 text-xs text-slate-400 italic">{why}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Week 2 */}
+                <div className="rounded-xl border border-green-200 overflow-hidden">
+                  <div className="px-4 py-3 font-bold text-sm text-white bg-green-600">Week 2 — Harmony, Rhythm, and the Anchor Song</div>
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-green-50 border-b border-green-100">
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-20">Day</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">Textbook Reading</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">Source Reading</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-48">Why today</th>
+                    </tr></thead>
+                    <tbody className="divide-y divide-green-50">
+                      {[
+                        ['8', 'Part 5: How the Rhythm Code Grid Works', 'Rhythm Code: Introduction + Binary Grid', 'Rhythm work deepens in Week 2 — understand the grid concept now'],
+                        ['9', 'Part 5: Longy + Rhythm of Ain\'t No Sunshine', 'Plogger Ch.4 (p.51) — Longy Rhythms', 'Connect the syllable system to the grid before today\'s S2 work'],
+                        ['10', 'Part 3: What Harmonic Function Means', 'Plogger Ch.21 (p.237) — Triads and Inversions', 'Enough ear experience to appreciate why function differs from content'],
+                        ['11', 'Part 3: Minor Keys + Root Movement', '(continue Ch.21 if needed)', 'You\'re playing Am-G-Em transitions daily — now understand the di-chord root movements'],
+                        ['12', 'Part 6: The Anchor Song — full section', 'Plogger Ch.5 (p.61) — The Lap Map', 'Structured song work begins today in S3 — read the full analysis'],
+                        ['13', 'Part 3: 14-Movement Vocabulary preview', 'Plogger Ch.16 (p.151) — The Tracking Page', 'See the big picture of where the harmonic system goes after Sprint 1'],
+                        ['14', 'Re-read: Part 1 [3] and [4] Focus', 'Plogger p.153 — the Tracking Page itself', 'End of Week 2 — re-read the gate skill section with fresh ears'],
+                      ].map(([day, text, source, why]) => (
+                        <tr key={day} className="hover:bg-green-50/50">
+                          <td className="px-4 py-2.5 font-bold text-green-700">{day}</td>
+                          <td className="px-4 py-2.5 text-slate-800">{text}</td>
+                          <td className="px-4 py-2.5 text-slate-600 text-xs">{source}</td>
+                          <td className="px-4 py-2.5 text-xs text-slate-400 italic">{why}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Week 3 */}
+                <div className="rounded-xl border border-amber-200 overflow-hidden">
+                  <div className="px-4 py-3 font-bold text-sm text-white bg-amber-600">Week 3 — Deepening and Re-Reading</div>
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-amber-50 border-b border-amber-100">
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-20">Day</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">Textbook Reading</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">Source Reading</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-48">Why today</th>
+                    </tr></thead>
+                    <tbody className="divide-y divide-amber-50">
+                      {[
+                        ['15', 'Re-read: Part 1 Sound Factors — listen for new details', 'Plogger Ch.15 (p.140) — Di-Chords in Melodic Contexts', 'Two weeks in — passages that felt abstract now describe sounds you recognize'],
+                        ['16', 'Re-read: Part 2 Zone 1 — focus on gesture recognition', 'Plogger Ch.20 (p.226) — Heptachord Formation', 'Gesture recognition is starting to click — the re-read lands differently now'],
+                        ['17', 'Re-read: Part 4 Voicings — notice di-chord relationships in shapes', 'Catch up on any source chapter you skipped', 'You can now hear [3] inside Am on guitar — re-reading confirms what your ear discovered'],
+                        ['18', 'Re-read: Part 5 Rhythm + Part 6 Anchor Song', 'Catch up on any source chapter you skipped', 'Song work and rhythm are deepening — the re-read connects concepts you now own'],
+                        ['19', 'Part 1: The Tracking Page (if not yet read)', 'Plogger Ch.8 (p.84) — Interval Spelling on Staff', 'Tracking Page protocols 1 and 2 should be in your sessions by now'],
+                        ['20', 'Re-read: Part 3 Root Movement', 'Re-read Rhythm Code Binary Grid', 'Root movement recognition is developing — this re-read will feel like a different text'],
+                        ['21', 'Free choice — revisit the section that felt least clear', 'Free choice source chapter', 'Trust your instinct on what needs reinforcement before the gate approach'],
+                      ].map(([day, text, source, why]) => (
+                        <tr key={day} className="hover:bg-amber-50/50">
+                          <td className="px-4 py-2.5 font-bold text-amber-700">{day}</td>
+                          <td className="px-4 py-2.5 text-slate-800">{text}</td>
+                          <td className="px-4 py-2.5 text-slate-600 text-xs">{source}</td>
+                          <td className="px-4 py-2.5 text-xs text-slate-400 italic">{why}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Week 4 */}
+                <div className="rounded-xl border border-purple-200 overflow-hidden">
+                  <div className="px-4 py-3 font-bold text-sm text-white bg-purple-600">Week 4 — Gate Approach and Closing</div>
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-purple-50 border-b border-purple-100">
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-20">Day</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">Textbook Reading</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">Source Reading</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-48">Why today</th>
+                    </tr></thead>
+                    <tbody className="divide-y divide-purple-50">
+                      {[
+                        ['22', 'Re-read: Part 1 [3] and [4] Focus — this is the gate standard', 'Re-read Plogger Ch.14 (p.135) — complete di-chord review', 'Gate week — know exactly what Stage 3 on [3]/[4] means'],
+                        ['23', 'Re-read: Part 6 Anchor Song — what should you be able to do?', 'Re-read Plogger Ch.9 (p.101)', 'Check yourself against the end-of-sprint abilities listed in the textbook'],
+                        ['24', 'Re-read: Part 2 Zone 1 — can you locate without hunting?', 'Free choice', 'Zone 1 fluency is part of the gate — honest self-check against the text'],
+                        ['25', 'Free choice — weakest area', 'Free choice', 'You know what needs work — use reading time to reinforce it'],
+                        ['26', 'Closing: What Owning Sprint 1 Feels Like', 'Re-read Plogger Ch.16 (p.151)', 'Read the closing before your final gate sessions — set the target clearly'],
+                        ['27', 'Light review only — no new reading', 'Light review only', 'Focus on practice, not reading — the concepts should be in your body by now'],
+                        ['28', 'Sprint 1 exit self-assessment (no reading — reflect)', '—', 'Gate day — everything you\'ve read should be audible, not intellectual'],
+                      ].map(([day, text, source, why]) => (
+                        <tr key={day} className="hover:bg-purple-50/50">
+                          <td className="px-4 py-2.5 font-bold text-purple-700">{day}</td>
+                          <td className="px-4 py-2.5 text-slate-800">{text}</td>
+                          <td className="px-4 py-2.5 text-slate-600 text-xs">{source}</td>
+                          <td className="px-4 py-2.5 text-xs text-slate-400 italic">{why}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-600 mt-6">
+                <strong className="text-slate-800">Reading SOP:</strong> Read the assigned section <em>before</em> your practice session. Budget 10–20 minutes. Week 3+ re-reads will feel faster and land deeper — that is the point. The textbook describes sounds; practicing creates the sounds; re-reading after practicing connects the two. If a section still feels abstract, that is a signal to spend more practice time on that material, not more reading time.
               </div>
             </section>
 
