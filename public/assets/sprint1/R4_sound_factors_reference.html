@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Di-Chord Sound Factor Reference — All 11 Di-Chords</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: #F8F5F0;
+    color: #1A1A1A;
+    padding: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+    color: #111;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  }
+
+  thead th {
+    background: #2C2C2C;
+    color: #E8E0D4;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 2px solid #111;
+  }
+
+  /* Group header rows */
+  tr.group-header td {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  tr.group-dissonant td { background: #922B21; }
+  tr.group-modal    td { background: #5B2C6F; }
+  tr.group-perfect  td { background: #1E8449; }
+
+  /* Data rows */
+  tr.row-data td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #EDE8E0;
+    vertical-align: middle;
+  }
+
+  tr.row-data:last-child td { border-bottom: none; }
+
+  tr.row-data:nth-child(even) td { background: #FAFAF8; }
+  tr.row-data:nth-child(odd)  td { background: #FFFFFF; }
+
+  /* Sprint 1 highlight — left border on [3] and [4] */
+  tr.sprint1-focus td:first-child {
+    border-left: 4px solid #C0A020;
+    padding-left: 6px;
+  }
+  tr.sprint1-focus td {
+    background: #FDFBF3 !important;
+  }
+
+  /* Di-chord badge */
+  .badge {
+    display: inline-block;
+    width: 34px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.02em;
+  }
+
+  /* Common name */
+  .common-name {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  /* Pulsation cell */
+  .pulse-tag {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 2px 7px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 4px;
+  }
+  .pulse-dissonant { background: #922B21; }
+  .pulse-modal     { background: #5B2C6F; }
+  .pulse-perfect   { background: #1E8449; }
+
+  .fo-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-style: italic;
+    color: #555;
+  }
+
+  /* Harmonicity cell */
+  .harm-tag {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .harm-non-harmonic  { color: #7B241C; }
+  .harm-harmonic      { color: #1A5276; }
+  .harm-neutral       { color: #616A6B; }
+  .harm-false-harmonic{ color: #7D6608; }
+
+  /* Perceptual summary */
+  .perceptual {
+    font-size: 11.5px;
+    color: #333;
+    font-style: italic;
+  }
+
+  .sprint1-badge {
+    display: inline-block;
+    background: #C0A020;
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+  }
+
+  /* Legend */
+  .legend {
+    margin-top: 18px;
+    border: 1px solid #CFCAC0;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 12px 16px;
+  }
+
+  .legend-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #444;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #E0DBD0;
+    padding-bottom: 5px;
+  }
+
+  .legend-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .legend-factor {
+    background: #F4F1EB;
+    border-radius: 3px;
+    padding: 8px 10px;
+  }
+
+  .legend-factor-name {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #222;
+    margin-bottom: 4px;
+  }
+
+  .legend-factor-desc {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.45;
+  }
+
+  .legend-sub {
+    font-size: 10px;
+    color: #777;
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  /* Footer note */
+  .footer-note {
+    margin-top: 10px;
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>Di-Chord Sound Factor Reference — All 11 Di-Chords</h1>
+<p class="subtitle">Three-factor perceptual model: Pulsation · Fundamental/Octave (F/O) · Harmonicity &nbsp;|&nbsp; ★ = Sprint 1 Focus</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:68px">Di-Chord</th>
+      <th style="width:110px">Common Name</th>
+      <th style="width:190px">Pulsation</th>
+      <th style="width:150px">F/O Factor</th>
+      <th style="width:130px">Harmonicity</th>
+      <th>Perceptual Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- DISSONANT GROUP -->
+    <tr class="group-header group-dissonant">
+      <td colspan="6">Dissonant Family — maximum to strong tension</td>
+    </tr>
+
+    <!-- [1] m2 -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#922B21">[1]</span></td>
+      <td class="common-name">Minor 2nd</td>
+      <td>
+        <span class="pulse-tag pulse-dissonant">Dissonant</span>
+      </td>
+      <td>
+        <span class="fo-tag">Fundamental — upper note refers <em>down</em> toward root</span>
+      </td>
+      <td><span class="harm-tag harm-non-harmonic">Non-harmonic</span><br><span style="font-size:10px;color:#888">overtones clash</span></td>
+      <td class="perceptual">Maximum tension — buzzes urgently</td>
+    </tr>
+
+    <!-- [2] M2 -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#E59866">[2]</span></td>
+      <td class="common-name">Major 2nd</td>
+      <td>
+        <span class="pulse-tag pulse-dissonant">Dissonant</span>
+      </td>
+      <td>
+        <span class="fo-tag">Fundamental — upper note refers <em>down</em> toward root</span>
+      </td>
+      <td><span class="harm-tag harm-harmonic">Harmonic</span><br><span style="font-size:10px;color:#888">overtones align</span></td>
+      <td class="perceptual">Strong tension — pushes hard to resolve</td>
+    </tr>
+
+    <!-- [11] M7 -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#922B21">[11]</span></td>
+      <td class="common-name">Major 7th</td>
+      <td>
+        <span class="pulse-tag pulse-dissonant">Dissonant</span>
+      </td>
+      <td>
+        <span class="fo-tag">Octave — upper note refers <em>up</em> toward octave</span>
+      </td>
+      <td><span class="harm-tag harm-non-harmonic">Non-harmonic</span><br><span style="font-size:10px;color:#888">overtones clash</span></td>
+      <td class="perceptual">Extreme tension — almost painful</td>
+    </tr>
+
+    <!-- [10] m7 -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#E59866">[10]</span></td>
+      <td class="common-name">Minor 7th</td>
+      <td>
+        <span class="pulse-tag pulse-dissonant">Dissonant</span>
+      </td>
+      <td>
+        <span class="fo-tag">Octave — upper note refers <em>up</em> toward octave</span>
+      </td>
+      <td><span class="harm-tag harm-harmonic">Harmonic</span><br><span style="font-size:10px;color:#888">overtones align</span></td>
+      <td class="perceptual">Moderate tension — restless</td>
+    </tr>
+
+    <!-- MODAL GROUP -->
+    <tr class="group-header group-modal">
+      <td colspan="6">Modal Family — gentle wave, warm or bright color</td>
+    </tr>
+
+    <!-- [3] m3 — SPRINT 1 -->
+    <tr class="row-data sprint1-focus">
+      <td><span class="badge" style="background:#5B2C6F">[3]</span></td>
+      <td class="common-name">Minor 3rd <span class="sprint1-badge">Sprint 1</span></td>
+      <td>
+        <span class="pulse-tag pulse-modal">Modal</span>
+      </td>
+      <td>
+        <span class="fo-tag">Fundamental — upper note refers <em>down</em> toward root</span>
+      </td>
+      <td><span class="harm-tag harm-non-harmonic">Non-harmonic</span><br><span style="font-size:10px;color:#888">overtones clash</span></td>
+      <td class="perceptual">Gentle wave — warm minor quality</td>
+    </tr>
+
+    <!-- [4] M3 — SPRINT 1 -->
+    <tr class="row-data sprint1-focus">
+      <td><span class="badge" style="background:#A569BD">[4]</span></td>
+      <td class="common-name">Major 3rd <span class="sprint1-badge">Sprint 1</span></td>
+      <td>
+        <span class="pulse-tag pulse-modal">Modal</span>
+      </td>
+      <td>
+        <span class="fo-tag">Fundamental — upper note refers <em>down</em> toward root</span>
+      </td>
+      <td><span class="harm-tag harm-harmonic">Harmonic</span><br><span style="font-size:10px;color:#888">overtones align</span></td>
+      <td class="perceptual">Gentle wave — bright major quality</td>
+    </tr>
+
+    <!-- [8] m6 -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#5B2C6F">[8]</span></td>
+      <td class="common-name">Minor 6th</td>
+      <td>
+        <span class="pulse-tag pulse-modal">Modal</span>
+      </td>
+      <td>
+        <span class="fo-tag">Octave — upper note refers <em>up</em> toward octave</span>
+      </td>
+      <td><span class="harm-tag harm-non-harmonic">Non-harmonic</span><br><span style="font-size:10px;color:#888">overtones clash</span></td>
+      <td class="perceptual">Gentle wave — dark heavy minor color</td>
+    </tr>
+
+    <!-- [9] M6 -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#A569BD">[9]</span></td>
+      <td class="common-name">Major 6th</td>
+      <td>
+        <span class="pulse-tag pulse-modal">Modal</span>
+      </td>
+      <td>
+        <span class="fo-tag">Octave — upper note refers <em>up</em> toward octave</span>
+      </td>
+      <td><span class="harm-tag harm-false-harmonic">False-harmonic</span><br><span style="font-size:10px;color:#888">appears harmonic, slightly unstable</span></td>
+      <td class="perceptual">Gentle wave — open lifting color</td>
+    </tr>
+
+    <!-- PERFECT GROUP -->
+    <tr class="group-header group-perfect">
+      <td colspan="6">Perfect Family — nearly still to frozen stability</td>
+    </tr>
+
+    <!-- [5] P4 -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#1E8449">[5]</span></td>
+      <td class="common-name">Perfect 4th</td>
+      <td>
+        <span class="pulse-tag pulse-perfect">Perfect</span>
+      </td>
+      <td>
+        <span class="fo-tag">Fundamental — upper note refers <em>down</em> toward root</span>
+      </td>
+      <td><span class="harm-tag harm-non-harmonic">Non-harmonic</span><br><span style="font-size:10px;color:#888">overtones clash — dense color</span></td>
+      <td class="perceptual">Nearly still — open hollow stability</td>
+    </tr>
+
+    <!-- [6] TT -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#808B96">[6]</span></td>
+      <td class="common-name">Tritone</td>
+      <td>
+        <span class="pulse-tag pulse-perfect">Perfect</span>
+      </td>
+      <td>
+        <span class="fo-tag">Both — splits octave, refers <em>neither</em> way</span>
+      </td>
+      <td><span class="harm-tag harm-neutral">Neutral</span><br><span style="font-size:10px;color:#888">neither — frozen ambiguity</span></td>
+      <td class="perceptual">Frozen — ambiguous, splits the octave</td>
+    </tr>
+
+    <!-- [7] P5 -->
+    <tr class="row-data">
+      <td><span class="badge" style="background:#52BE80">[7]</span></td>
+      <td class="common-name">Perfect 5th</td>
+      <td>
+        <span class="pulse-tag pulse-perfect">Perfect</span>
+      </td>
+      <td>
+        <span class="fo-tag">Octave — upper note refers <em>up</em> toward octave</span>
+      </td>
+      <td><span class="harm-tag harm-harmonic">Harmonic</span><br><span style="font-size:10px;color:#888">overtones align — clear color</span></td>
+      <td class="perceptual">Nearly still — full resonant stability</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="legend-title">Three-Factor Legend</div>
+  <div class="legend-grid">
+
+    <div class="legend-factor">
+      <div class="legend-factor-name">Pulsation</div>
+      <div class="legend-factor-desc">The rate at which beating between overtones creates a felt sense of motion or stillness.</div>
+      <div class="legend-sub">
+        <span style="color:#922B21;font-weight:bold">Dissonant</span> — fast beating, strong tension<br>
+        <span style="color:#5B2C6F;font-weight:bold">Modal</span> — slow wave, gentle color<br>
+        <span style="color:#1E8449;font-weight:bold">Perfect</span> — near stillness or frozen
+      </div>
+    </div>
+
+    <div class="legend-factor">
+      <div class="legend-factor-name">F/O Factor</div>
+      <div class="legend-factor-desc">Which pole of the octave the upper note gravitates toward — the root (Fundamental) or the octave above.</div>
+      <div class="legend-sub">
+        <strong>Fundamental</strong> — upper note pulls down toward root ([1]–[5])<br>
+        <strong>Both</strong> — pulls equally neither way ([6])<br>
+        <strong>Octave</strong> — upper note pulls up toward octave ([7]–[11])
+      </div>
+    </div>
+
+    <div class="legend-factor">
+      <div class="legend-factor-name">Harmonicity</div>
+      <div class="legend-factor-desc">Whether the overtone series of the two notes aligns (harmonic) or clashes (non-harmonic), affecting color density.</div>
+      <div class="legend-sub">
+        <span style="color:#1A5276;font-weight:bold">Harmonic</span> — overtones align, clear open color<br>
+        <span style="color:#7B241C;font-weight:bold">Non-harmonic</span> — overtones clash, dense heavy color<br>
+        <span style="color:#616A6B;font-weight:bold">Neutral</span> — frozen ambiguity ([6])<br>
+        <span style="color:#7D6608;font-weight:bold">False-harmonic</span> — appears harmonic, slight instability ([9])
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<p class="footer-note">AMF Sprint 1 · Di-Chord Sound Factor Reference · R4 · 2026</p>
+
+</body>
+</html>

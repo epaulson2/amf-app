@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zone 1 — Am — Piano Keyboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: #f8f6f2;
+    color: #222;
+    padding: 32px 40px;
+    width: 1122px; /* A4 landscape ~297mm at 96dpi */
+    min-height: 794px;
+  }
+
+  /* ── Header ── */
+  .header {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    color: #1a1a1a;
+  }
+  .header .subtitle {
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+    font-style: italic;
+  }
+
+  /* ── Keyboard wrapper ── */
+  .keyboard-section {
+    margin-bottom: 10px;
+  }
+  .octave-labels {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 4px;
+  }
+  .octave-label {
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .octave-label:first-child { margin-right: 4px; }
+
+  .keyboard-outer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .keyboard {
+    position: relative;
+    display: flex;
+    user-select: none;
+  }
+
+  /* White key */
+  .wkey {
+    position: relative;
+    width: 40px;
+    height: 140px;
+    background: white;
+    border: 1.5px solid #bbb;
+    border-top: 2px solid #999;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    cursor: default;
+    z-index: 1;
+    transition: filter 0.1s;
+  }
+  .wkey.plain {
+    color: #aaa;
+  }
+
+  /* Black key */
+  .bkey {
+    position: absolute;
+    width: 26px;
+    height: 90px;
+    background: #333;
+    border: 1.5px solid #111;
+    border-radius: 0 0 4px 4px;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 9px;
+    font-weight: 600;
+    color: transparent;
+    cursor: default;
+  }
+
+  /* Highlighted key colors */
+  .root     { background: #5B2C6F; border-color: #3d1a4f; color: #fff; }
+  .minor3rd { background: #A569BD; border-color: #7d4d93; color: #fff; }
+  .fifth    { background: #52BE80; border-color: #2e8b57; color: #fff; }
+
+  /* Five-finger bracket above keyboard */
+  .bracket-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    position: relative;
+    height: 28px;
+  }
+  .bracket-svg {
+    position: absolute;
+  }
+
+  /* ── Di-chord labels section ── */
+  .dichord-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .dichord-svg-container {
+    position: relative;
+    width: 800px;
+    height: 100px;
+  }
+
+  /* ── Five-finger position section ── */
+  .ffp-section {
+    background: white;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 28px;
+    margin-bottom: 28px;
+  }
+  .ffp-section h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+  }
+
+  .finger-grid {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+    align-items: flex-end;
+  }
+  .finger-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .finger-name {
+    font-size: 10px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .finger-key {
+    width: 44px;
+    height: 54px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid rgba(0,0,0,0.15);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+  }
+  .finger-key .interval {
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 2px;
+    opacity: 0.85;
+  }
+  .finger-key.plain-key {
+    background: #e0ddd8;
+    color: #555;
+    border-color: #bbb;
+  }
+  .finger-key.root     { background: #5B2C6F; }
+  .finger-key.minor3rd { background: #A569BD; }
+  .finger-key.fifth    { background: #52BE80; }
+
+  .ffp-note {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.6;
+    font-style: italic;
+    margin-top: 8px;
+    border-left: 3px solid #A569BD;
+    padding-left: 10px;
+  }
+
+  .chord-box {
+    margin-top: 14px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .chord-hand {
+    flex: 1;
+    min-width: 220px;
+  }
+  .chord-hand h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 8px;
+  }
+  .chord-keys {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+  }
+  .chord-key {
+    width: 44px;
+    height: 54px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid rgba(0,0,0,0.15);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+  }
+  .chord-key .role {
+    font-size: 9px;
+    font-weight: normal;
+    margin-top: 2px;
+    opacity: 0.85;
+  }
+
+  /* ── Comparison table ── */
+  .compare-section {
+    background: white;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 28px;
+  }
+  .compare-section h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+  th {
+    background: #2c2c2c;
+    color: #fff;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:nth-child(even) td { background: #fafafa; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+  }
+  .badge.root     { background: #5B2C6F; }
+  .badge.minor3rd { background: #A569BD; }
+  .badge.fifth    { background: #52BE80; }
+  .badge.neutral  { background: #888; }
+
+  /* ── Legend ── */
+  .legend {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: #333;
+  }
+  .legend-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<div class="header">
+  <h1>Zone 1 — Am — Piano Keyboard</h1>
+  <div class="subtitle">Chord tones across two octaves. Five-finger position puts [3] and [7] under your fingers naturally.</div>
+</div>
+
+<!-- ═══════════════════════════ LEGEND ═══════════════════════════ -->
+<div class="legend">
+  <div class="legend-item">
+    <div class="legend-dot" style="background:#5B2C6F;"></div>
+    <span><strong>A</strong> — Root [1]</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-dot" style="background:#A569BD;"></div>
+    <span><strong>C</strong> — Minor 3rd [3]</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-dot" style="background:#52BE80;"></div>
+    <span><strong>E</strong> — Perfect 5th [7]</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-dot" style="background:white; border:1.5px solid #bbb;"></div>
+    <span>Non-chord white key</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-dot" style="background:#333; border:1px solid #111;"></div>
+    <span>Non-chord black key</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ BRACKET (five-finger span) ═══════════════════════════ -->
+<!--
+  White key positions (0-indexed, two octaves):
+  Octave C3: C3=0, D3=1, E3=2, F3=3, G3=4, A3=5, B3=6
+  Octave C4: C4=7, D4=8, E4=9, F4=10, G4=11, A4=12, B4=13
+  Key width = 40px. Total width = 14 × 40 = 560px.
+  Five-finger position A3(5) to E3(2)... actually A to E spans A(idx5) B(6) C(7) D(8) E(9) across octave boundary.
+  Center offset = (1122 - 560) / 2 = 281px (accounting for body padding 40px each side gives keyboard left = 40px + (1042-560)/2 = 40+241=281px from page left)
+  But the bracket SVG is relative to keyboard-outer div center.
+  A3 left edge = 5*40 = 200px from keyboard start
+  E4 right edge = (9+1)*40 = 400px from keyboard start
+  bracket spans 200px to 400px (200px wide)
+-->
+
+<div class="keyboard-section">
+  <!-- Five-finger bracket -->
+  <div class="bracket-container">
+    <svg class="bracket-svg" width="560" height="28" style="left: calc(50% - 280px);">
+      <!-- Bracket above A3(x=200) to E4(x=400) -->
+      <line x1="200" y1="24" x2="200" y2="10" stroke="#888" stroke-width="1.5"/>
+      <line x1="200" y1="10" x2="400" y2="10" stroke="#888" stroke-width="1.5"/>
+      <line x1="400" y1="10" x2="400" y2="24" stroke="#888" stroke-width="1.5"/>
+      <text x="300" y="8" text-anchor="middle" font-size="10" fill="#666" font-family="Georgia,serif" font-style="italic">five-finger position (A–E)</text>
+    </svg>
+  </div>
+
+  <!-- Piano keyboard -->
+  <div class="keyboard-outer">
+    <div class="keyboard" id="piano"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ DI-CHORD LABELS ═══════════════════════════ -->
+<div class="dichord-section">
+  <svg width="800" height="110" viewBox="0 0 800 110">
+    <!--
+      Three di-chord markers below the keyboard.
+      Map note positions to approximate x centers (keyboard is 560px wide, centered in 800px svg = offset 120px):
+      offset = 120
+      A3 center = offset + 5*40 + 20 = 120+200+20 = 340
+      C4 center = offset + 7*40 + 20 = 120+280+20 = 420
+      E4 center = offset + 9*40 + 20 = 120+360+20 = 500
+      A4 center = offset + 12*40 + 20 = 120+480+20 = 620
+    -->
+
+    <!-- Dot markers for note positions -->
+    <circle cx="340" cy="12" r="6" fill="#5B2C6F"/>
+    <text x="340" y="9" text-anchor="middle" font-size="9" fill="white" font-family="Georgia,serif" font-weight="bold">A</text>
+
+    <circle cx="420" cy="12" r="6" fill="#A569BD"/>
+    <text x="420" y="9" text-anchor="middle" font-size="9" fill="white" font-family="Georgia,serif" font-weight="bold">C</text>
+
+    <circle cx="500" cy="12" r="6" fill="#52BE80"/>
+    <text x="500" y="9" text-anchor="middle" font-size="9" fill="white" font-family="Georgia,serif" font-weight="bold">E</text>
+
+    <!-- A → C arc -->
+    <path d="M 340 18 Q 380 50 420 18" fill="none" stroke="#7d4d93" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="380" y="56" text-anchor="middle" font-size="11" fill="#5B2C6F" font-family="Georgia,serif" font-weight="bold">[3] minor 3rd</text>
+    <text x="380" y="70" text-anchor="middle" font-size="10" fill="#555" font-family="Georgia,serif">modal, dark — the minor quality</text>
+
+    <!-- C → E arc -->
+    <path d="M 420 18 Q 460 50 500 18" fill="none" stroke="#3a9e6a" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="460" y="56" text-anchor="middle" font-size="11" fill="#2e8b57" font-family="Georgia,serif" font-weight="bold">[4] major 3rd</text>
+    <text x="460" y="70" text-anchor="middle" font-size="10" fill="#555" font-family="Georgia,serif">modal, light — quality within the 5th</text>
+
+    <!-- A → E arc (larger) -->
+    <path d="M 340 18 Q 420 88 500 18" fill="none" stroke="#52BE80" stroke-width="2" stroke-dasharray="6,3"/>
+    <text x="420" y="100" text-anchor="middle" font-size="11" fill="#2e8b57" font-family="Georgia,serif" font-weight="bold">[7] perfect 5th — perfect, light — open stability</text>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════ FIVE-FINGER POSITION ═══════════════════════════ -->
+<div class="ffp-section">
+  <h2>Five-Finger Position — A Minor</h2>
+
+  <div class="finger-grid">
+    <div class="finger-cell">
+      <div class="finger-name">Thumb</div>
+      <div class="finger-key root">A<span class="interval">root</span></div>
+      <div style="font-size:10px;color:#888;margin-top:3px;">1</div>
+    </div>
+    <div style="display:flex;align-items:center;padding-bottom:20px;color:#bbb;font-size:18px;">→</div>
+    <div class="finger-cell">
+      <div class="finger-name">Index</div>
+      <div class="finger-key plain-key">B<span class="interval" style="color:#999;">step</span></div>
+      <div style="font-size:10px;color:#888;margin-top:3px;">2</div>
+    </div>
+    <div style="display:flex;align-items:center;padding-bottom:20px;color:#bbb;font-size:18px;">→</div>
+    <div class="finger-cell">
+      <div class="finger-name">Middle</div>
+      <div class="finger-key minor3rd">C<span class="interval">[3]</span></div>
+      <div style="font-size:10px;color:#888;margin-top:3px;">3</div>
+    </div>
+    <div style="display:flex;align-items:center;padding-bottom:20px;color:#bbb;font-size:18px;">→</div>
+    <div class="finger-cell">
+      <div class="finger-name">Ring</div>
+      <div class="finger-key plain-key">D<span class="interval" style="color:#999;">step</span></div>
+      <div style="font-size:10px;color:#888;margin-top:3px;">4</div>
+    </div>
+    <div style="display:flex;align-items:center;padding-bottom:20px;color:#bbb;font-size:18px;">→</div>
+    <div class="finger-cell">
+      <div class="finger-name">Pinky</div>
+      <div class="finger-key fifth">E<span class="interval">[7]</span></div>
+      <div style="font-size:10px;color:#888;margin-top:3px;">5</div>
+    </div>
+  </div>
+
+  <p class="ffp-note">
+    In five-finger position, your thumb sits on A (root). Your middle finger naturally lands on C (the minor 3rd — [3]). Your pinky reaches E (the 5th — [7]). The [3] di-chord is built into the physical hand position.
+  </p>
+
+  <div class="chord-box">
+    <div class="chord-hand">
+      <h3>Am Chord — Left Hand (Root Position)</h3>
+      <div class="chord-keys">
+        <div class="chord-key root">A<span class="role">root</span></div>
+        <div class="chord-key minor3rd">C<span class="role">[3]</span></div>
+        <div class="chord-key fifth">E<span class="role">[7]</span></div>
+      </div>
+    </div>
+    <div class="chord-hand">
+      <h3>Am Chord — Right Hand (Root Position)</h3>
+      <div class="chord-keys">
+        <div class="chord-key root">A<span class="role">root</span></div>
+        <div class="chord-key minor3rd">C<span class="role">[3]</span></div>
+        <div class="chord-key fifth">E<span class="role">[7]</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ COMPARISON TABLE ═══════════════════════════ -->
+<div class="compare-section">
+  <h2>Zone 1 — Am — Guitar vs. Piano Position Reference</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Note</th>
+        <th>Role</th>
+        <th>Interval Label</th>
+        <th>Di-chord Quality</th>
+        <th>Guitar (string/fret)</th>
+        <th>Piano (key)</th>
+        <th>Five-Finger (finger)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>A</strong></td>
+        <td><span class="badge root">Root</span></td>
+        <td>[1]</td>
+        <td>—</td>
+        <td>5th string, open (A2) · 4th string, 7th fret (A3) · 1st string, 5th fret (A4)</td>
+        <td>A3 · A4 (highlighted purple)</td>
+        <td>Thumb (1)</td>
+      </tr>
+      <tr>
+        <td><strong>C</strong></td>
+        <td><span class="badge minor3rd">Minor 3rd</span></td>
+        <td>[3]</td>
+        <td>modal, dark — the minor quality</td>
+        <td>5th string, 3rd fret (C3) · 2nd string, 1st fret (C4) · 3rd string, 5th fret (C4)</td>
+        <td>C4 · C5 (highlighted medium purple)</td>
+        <td>Middle (3)</td>
+      </tr>
+      <tr>
+        <td><strong>E</strong></td>
+        <td><span class="badge fifth">Perfect 5th</span></td>
+        <td>[7]</td>
+        <td>perfect, light — open stability</td>
+        <td>6th string, open (E2) · 4th string, 2nd fret (E3) · 1st string, open (E4)</td>
+        <td>E3 · E4 (highlighted green)</td>
+        <td>Pinky (5)</td>
+      </tr>
+      <tr>
+        <td><em>B</em></td>
+        <td><span class="badge neutral">Step</span></td>
+        <td>—</td>
+        <td>passing / tension</td>
+        <td>2nd string, open (B3) · 5th string, 2nd fret (B2)</td>
+        <td>B3 · B4 (white, unmarked)</td>
+        <td>Index (2)</td>
+      </tr>
+      <tr>
+        <td><em>D</em></td>
+        <td><span class="badge neutral">Step</span></td>
+        <td>—</td>
+        <td>passing / resolution target</td>
+        <td>4th string, open (D3) · 2nd string, 3rd fret (D4)</td>
+        <td>D3 · D4 (white, unmarked)</td>
+        <td>Ring (4)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══════════════════════════ KEYBOARD RENDER SCRIPT ═══════════════════════════ -->
+<script>
+  /*
+    Two octaves: C3–B3 (octave 3) then C4–B4 (octave 4)
+    Each octave: C C# D Eb E F F# G Ab A Bb B
+    White keys:  C  D  E  F  G  A  B
+    Black keys:  C#=between C&D, Eb=between D&E, F#=between F&G, Ab=between G&A, Bb=between A&B
+  */
+
+  const NOTE_ROLE = {
+    'A': 'root',
+    'C': 'minor3rd',
+    'E': 'fifth'
+  };
+
+  const WHITE_NOTES = ['C','D','E','F','G','A','B'];
+
+  // Black key definitions: [label, insertAfterWhiteIndex (0-based within octave)]
+  // C#=after C(0), Eb=after D(1), F#=after F(3), Ab=after G(4), Bb=after A(5)
+  const BLACK_KEYS = [
+    { name: 'C#', afterIdx: 0 },
+    { name: 'Eb', afterIdx: 1 },
+    { name: 'F#', afterIdx: 3 },
+    { name: 'Ab', afterIdx: 4 },
+    { name: 'Bb', afterIdx: 5 },
+  ];
+
+  const WHITE_W = 40;
+  const BLACK_W = 26;
+  const WHITE_H = 140;
+  const BLACK_H = 90;
+
+  const piano = document.getElementById('piano');
+  const totalWhite = 14; // 7 per octave × 2
+  const totalWidth = totalWhite * WHITE_W;
+
+  piano.style.width = totalWidth + 'px';
+  piano.style.height = WHITE_H + 'px';
+  piano.style.position = 'relative';
+
+  function buildOctave(octaveNum, startWhiteIdx) {
+    // White keys
+    WHITE_NOTES.forEach((note, i) => {
+      const x = (startWhiteIdx + i) * WHITE_W;
+      const role = NOTE_ROLE[note];
+      const div = document.createElement('div');
+      div.className = 'wkey' + (role ? ' ' + role : ' plain');
+      div.style.position = 'absolute';
+      div.style.left = x + 'px';
+      div.style.top = '0px';
+
+      if (role) {
+        div.textContent = note + octaveNum;
+      } else {
+        div.textContent = note;
+      }
+      piano.appendChild(div);
+    });
+
+    // Black keys
+    BLACK_KEYS.forEach(bk => {
+      const whiteX = (startWhiteIdx + bk.afterIdx) * WHITE_W;
+      // Position black key so its center aligns between the two adjacent white keys
+      const x = whiteX + WHITE_W - BLACK_W / 2;
+      const div = document.createElement('div');
+      div.className = 'bkey';
+      div.style.left = x + 'px';
+      piano.appendChild(div);
+    });
+  }
+
+  buildOctave(3, 0);  // C3–B3
+  buildOctave(4, 7);  // C4–B4
+</script>
+
+</body>
+</html>

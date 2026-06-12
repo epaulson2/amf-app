@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Di-Chord Root Movements — The Harmonic Spine</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #F8F9FA;
+    color: #1C2833;
+    width: 794px;
+    min-height: 1123px;
+    margin: 0 auto;
+    padding: 36px 40px 40px;
+  }
+
+  /* ─── Header ─── */
+  .page-header {
+    text-align: center;
+    margin-bottom: 22px;
+    border-bottom: 2px solid #2C3E50;
+    padding-bottom: 14px;
+  }
+  .page-header h1 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    color: #1C2833;
+  }
+  .page-header .subtitle {
+    font-size: 12.5px;
+    color: #5D6D7E;
+    margin-top: 5px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* ─── Sprint-1 Highlight Box ─── */
+  .sprint1-box {
+    background: #EBF5FB;
+    border: 2px solid #2E86C1;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 22px;
+  }
+  .sprint1-box .box-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1A5276;
+    margin-bottom: 8px;
+  }
+  .sprint1-box .you-are-here {
+    font-size: 15px;
+    font-weight: 800;
+    color: #1A5276;
+    margin-bottom: 10px;
+  }
+  .sprint1-box .own-line {
+    font-size: 12.5px;
+    color: #1C2833;
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+  .own-line strong { font-weight: 700; }
+
+  /* song movements grid */
+  .song-movements {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .song-move {
+    background: white;
+    border: 1.5px solid #AED6F1;
+    border-radius: 7px;
+    padding: 8px 12px;
+    flex: 1;
+    min-width: 190px;
+  }
+  .song-move .move-chord {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1A5276;
+    margin-bottom: 3px;
+  }
+  .song-move .move-desc {
+    font-size: 11px;
+    color: #5D6D7E;
+    margin-bottom: 4px;
+  }
+  .song-move .move-badge {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+  }
+  .song-move .move-own {
+    font-size: 10.5px;
+    color: #7F8C8D;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  /* ─── Timeline container ─── */
+  .timeline-section {
+    margin-bottom: 22px;
+  }
+  .timeline-heading {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7F8C8D;
+    margin-bottom: 10px;
+  }
+
+  /* each rung */
+  .rung {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 6px;
+    position: relative;
+  }
+  /* vertical connector line between rungs */
+  .rung:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 60px;
+    top: 100%;
+    width: 2px;
+    height: 6px;
+    background: #D5D8DC;
+    z-index: 0;
+  }
+
+  .rung-sprint {
+    width: 72px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #7F8C8D;
+    text-align: right;
+    padding-right: 12px;
+    flex-shrink: 0;
+  }
+  .rung-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    z-index: 1;
+    margin-right: 0;
+  }
+  .rung-body {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background: white;
+    border: 1.5px solid #EAECEE;
+    border-radius: 8px;
+    padding: 9px 14px;
+    margin-left: 10px;
+    gap: 14px;
+  }
+  .rung-body.coming-next {
+    border-color: #A9DFBF;
+    background: #F9FFF9;
+  }
+  .rung-body.later {
+    border-color: #EAECEE;
+    background: #FDFEFE;
+    opacity: 0.85;
+  }
+  .rung-body.advanced {
+    border-color: #EAECEE;
+    background: #FDFEFE;
+    opacity: 0.65;
+  }
+
+  .rung-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .rung-info {
+    flex: 1;
+  }
+  .rung-interval {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #1C2833;
+    margin-bottom: 2px;
+  }
+  .rung-examples {
+    font-size: 11.5px;
+    color: #5D6D7E;
+  }
+  .rung-tag {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 3px 9px;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+  .tag-coming {
+    background: #D5F5E3;
+    color: #1E8449;
+  }
+  .tag-later {
+    background: #F2F3F4;
+    color: #808B96;
+  }
+  .tag-advanced {
+    background: #F2F3F4;
+    color: #AAB7B8;
+  }
+
+  /* ─── Insight Box ─── */
+  .insight-box {
+    background: #1C2833;
+    color: white;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-top: 4px;
+  }
+  .insight-box .insight-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #85C1E9;
+    margin-bottom: 8px;
+  }
+  .insight-box .insight-text {
+    font-size: 13px;
+    line-height: 1.65;
+    color: #ECF0F1;
+  }
+  .insight-box .insight-text em {
+    color: #85C1E9;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* ─── Footer ─── */
+  .page-footer {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 10px;
+    color: #AAB7B8;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<div class="page-header">
+  <h1>Di-Chord Root Movements — The Harmonic Spine</h1>
+  <p class="subtitle">Every chord movement is a di-chord you already know by sound. Sprint by sprint, you learn to own each one.</p>
+</div>
+
+<!-- ═══ SPRINT 1 BOX ═══ -->
+<div class="sprint1-box">
+  <div class="box-label">You Are Here</div>
+  <div class="you-are-here">Sprint 1 — Ain't No Sunshine</div>
+
+  <p class="own-line">You already <strong>own [3] and [4]</strong> by sound (the quality di-chords from the Plogger system).</p>
+  <p class="own-line">In Ain't No Sunshine you are <strong>hearing</strong> these root movements — your ear is already filing them — but you don't own them as movements yet. That comes sprint by sprint.</p>
+
+  <div class="song-movements">
+    <div class="song-move">
+      <div class="move-chord">Am → G</div>
+      <div class="move-desc">root moves down a whole step</div>
+      <span class="move-badge" style="background:#E59866;">[2] down (or [10] up)</span>
+      <div class="move-own">own it in Sprint 4</div>
+    </div>
+    <div class="song-move">
+      <div class="move-chord">G → Em</div>
+      <div class="move-desc">root moves down a minor 3rd</div>
+      <span class="move-badge" style="background:#5B2C6F;">[3] down</span>
+      <div class="move-own">own it in Sprint 5</div>
+    </div>
+    <div class="song-move">
+      <div class="move-chord">Em → Am</div>
+      <div class="move-desc">root moves up a perfect 4th</div>
+      <span class="move-badge" style="background:#1E8449;">[5] up</span>
+      <div class="move-own">own it in Sprint 2 — coming next</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TIMELINE ═══ -->
+<div class="timeline-section">
+  <div class="timeline-heading">The Harmonic Movement Sequence</div>
+
+  <!-- Sprint 2 -->
+  <div class="rung">
+    <div class="rung-sprint">Sprint 2</div>
+    <div class="rung-dot" style="background:#1E8449;"></div>
+    <div class="rung-body coming-next">
+      <div class="rung-badge" style="background:#1E8449;">[5]</div>
+      <div class="rung-info">
+        <div class="rung-interval">Perfect 4th (P4)</div>
+        <div class="rung-examples">I→IV (opens) &nbsp;·&nbsp; V→I (resolves) &nbsp;·&nbsp; Em→Am in Ain't No Sunshine</div>
+      </div>
+      <div class="rung-tag tag-coming">Coming Next</div>
+    </div>
+  </div>
+
+  <!-- Sprint 3 -->
+  <div class="rung">
+    <div class="rung-sprint">Sprint 3</div>
+    <div class="rung-dot" style="background:#52BE80;"></div>
+    <div class="rung-body coming-next">
+      <div class="rung-badge" style="background:#52BE80;">[7]</div>
+      <div class="rung-info">
+        <div class="rung-interval">Perfect 5th (P5)</div>
+        <div class="rung-examples">I→V (dominant reach)</div>
+      </div>
+      <div class="rung-tag tag-coming">Coming Next</div>
+    </div>
+  </div>
+
+  <!-- Sprint 4 -->
+  <div class="rung">
+    <div class="rung-sprint">Sprint 4</div>
+    <div class="rung-dot" style="background:#E59866;"></div>
+    <div class="rung-body later">
+      <div class="rung-badge" style="background:#E59866;">[2]</div>
+      <div class="rung-info">
+        <div class="rung-interval">Major 2nd (M2)</div>
+        <div class="rung-examples">IV→V (tension) &nbsp;·&nbsp; V→vi (deceptive) &nbsp;·&nbsp; Am→G in Ain't No Sunshine</div>
+      </div>
+      <div class="rung-tag tag-later">Later</div>
+    </div>
+  </div>
+
+  <!-- Sprint 5 -->
+  <div class="rung">
+    <div class="rung-sprint">Sprint 5</div>
+    <div class="rung-dot" style="background:#5B2C6F;"></div>
+    <div class="rung-body later">
+      <div class="rung-badge" style="background:#5B2C6F;">[3]</div>
+      <div class="rung-info">
+        <div class="rung-interval">Minor 3rd (m3)</div>
+        <div class="rung-examples">I→vi (darkening) &nbsp;·&nbsp; G→Em in Ain't No Sunshine</div>
+      </div>
+      <div class="rung-tag tag-later">Later</div>
+    </div>
+  </div>
+
+  <!-- Sprint 6 -->
+  <div class="rung">
+    <div class="rung-sprint">Sprint 6</div>
+    <div class="rung-dot" style="background:#A569BD;"></div>
+    <div class="rung-body later">
+      <div class="rung-badge" style="background:#A569BD;">[9]</div>
+      <div class="rung-info">
+        <div class="rung-interval">Major 6th (M6)</div>
+        <div class="rung-examples">vi→IV (lift)</div>
+      </div>
+      <div class="rung-tag tag-later">Later</div>
+    </div>
+  </div>
+
+  <!-- Sprint 7 -->
+  <div class="rung">
+    <div class="rung-sprint">Sprint 7</div>
+    <div class="rung-dot" style="background:#A569BD;"></div>
+    <div class="rung-body later">
+      <div class="rung-badge" style="background:#A569BD;">[4]</div>
+      <div class="rung-info">
+        <div class="rung-interval">Major 3rd (M3)</div>
+        <div class="rung-examples">I→iii (mediant)</div>
+      </div>
+      <div class="rung-tag tag-later">Later</div>
+    </div>
+  </div>
+
+  <!-- Sprint 8 -->
+  <div class="rung">
+    <div class="rung-sprint">Sprint 8</div>
+    <div class="rung-dot" style="background:#808B96;"></div>
+    <div class="rung-body later">
+      <div class="rung-badge" style="background:#808B96;">[6]</div>
+      <div class="rung-info">
+        <div class="rung-interval">Tritone (TT)</div>
+        <div class="rung-examples">V7→I (resolution)</div>
+      </div>
+      <div class="rung-tag tag-later">Later</div>
+    </div>
+  </div>
+
+  <!-- Sprints 9–12 -->
+  <div class="rung">
+    <div class="rung-sprint">Sprint 9–12</div>
+    <div class="rung-dot" style="background:#888;"></div>
+    <div class="rung-body advanced">
+      <div class="rung-badge" style="background:#888; font-size:12px;">[10][8][1][11]</div>
+      <div class="rung-info">
+        <div class="rung-interval">Chromatic Movements</div>
+        <div class="rung-examples">Minor 7th · Minor 6th · Minor 2nd · Major 7th</div>
+      </div>
+      <div class="rung-tag tag-advanced">Advanced</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ INSIGHT BOX ═══ -->
+<div class="insight-box">
+  <div class="insight-label">The Insight — Plogger to Harmony Connection</div>
+  <p class="insight-text">
+    When you learn <em>[5]</em> in Sprint 2, you are not learning a new sound. You are <em>naming</em> a sound you already know from the Plogger system. The harmonic movement sequence and the di-chord ear training system are <em>the same ear</em>, operating at two different levels. Every sprint adds one more movement to the map — until every chord change you hear has a number, a color, and a name.
+  </p>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<div class="page-footer">AMF — Harmony Chamber · Sprint 1 Supplement · E3</div>
+
+</body>
+</html>

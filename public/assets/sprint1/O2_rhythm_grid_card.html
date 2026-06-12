@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rhythm Code — 8-Position Grid Reference Card</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: #f5f0e8;
+    color: #1a1a1a;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 12mm 14mm;
+  }
+
+  /* ── Header ── */
+  .card-header {
+    text-align: center;
+    border-bottom: 3px solid #1a1a1a;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+  }
+  .card-header h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  .card-header .subtitle {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #555;
+    margin-top: 3px;
+  }
+
+  /* ── Section titles ── */
+  .section-title {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    border-left: 3px solid #888;
+    padding-left: 7px;
+  }
+
+  /* ── Grid system ── */
+  .grid-row {
+    display: flex;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .grid-row.labeled {
+    margin-bottom: 2px;
+  }
+
+  .grid-cell {
+    width: 56px;
+    height: 56px;
+    border: 2px solid #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  /* Downbeat positions: 1,3,5,7 */
+  .grid-cell.downbeat {
+    background: #2a2a2a;
+    color: #fff;
+    border-color: #2a2a2a;
+  }
+
+  /* And-positions: 2,4,6,8 */
+  .grid-cell.andpos {
+    background: #c8c0b0;
+    color: #3a3a3a;
+    border-color: #999;
+  }
+
+  /* Filled (ON) */
+  .grid-cell.on-dark {
+    background: #1a3a5c;
+    color: #fff;
+    border-color: #1a3a5c;
+  }
+
+  .grid-cell.on-accent {
+    background: #c0392b;
+    color: #fff;
+    border-color: #c0392b;
+  }
+
+  /* Empty (OFF) */
+  .grid-cell.off {
+    background: #fff;
+    color: #bbb;
+    border-color: #bbb;
+    border-style: dashed;
+  }
+
+  /* Blank practice grid */
+  .grid-cell.blank {
+    background: #fff;
+    border: 2px solid #ccc;
+  }
+
+  /* ── Position number labels ── */
+  .label-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 2px;
+  }
+  .label-cell {
+    width: 56px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #333;
+    flex-shrink: 0;
+  }
+
+  /* ── Sub-label rows ── */
+  .sublabel-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+  .sublabel-cell {
+    width: 56px;
+    text-align: center;
+    font-size: 9px;
+    color: #666;
+    flex-shrink: 0;
+    line-height: 1.3;
+  }
+  .sublabel-cell.beat-label {
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 10px;
+  }
+
+  /* ── Pattern rows ── */
+  .pattern-block {
+    margin-bottom: 14px;
+  }
+
+  .pattern-name-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+  }
+
+  .pattern-name {
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 110px;
+    color: #1a1a1a;
+  }
+
+  .pattern-desc {
+    font-size: 10px;
+    color: #666;
+    font-style: italic;
+  }
+
+  .longy-row {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+  }
+  .longy-cell {
+    width: 56px;
+    text-align: center;
+    font-size: 10px;
+    color: #c0392b;
+    font-style: italic;
+    flex-shrink: 0;
+    font-weight: 600;
+  }
+
+  /* ── Practice grids ── */
+  .practice-section {
+    margin-top: 4px;
+  }
+
+  .practice-grid-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .practice-item {
+    margin-bottom: 14px;
+  }
+
+  .practice-label {
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    width: 484px; /* 8 * 56px + 7 * 4px = 476px */
+  }
+
+  .practice-name-line {
+    font-size: 10px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+
+  /* ── Legend ── */
+  .legend-block {
+    margin-top: 16px;
+    border: 2px solid #1a1a1a;
+    padding: 10px 14px;
+    background: #fff;
+  }
+
+  .legend-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+  }
+
+  .legend-box {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #1a1a1a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .legend-box.filled { background: #1a3a5c; border-color: #1a3a5c; color: #fff; }
+  .legend-box.empty  { background: #fff; border: 2px dashed #bbb; }
+  .legend-box.anticipation { background: #c0392b; border-color: #c0392b; color: #fff; font-size: 9px; }
+
+  .longy-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 11px;
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid #ddd;
+  }
+  .longy-term {
+    color: #c0392b;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  /* ── Rule box ── */
+  .rule-box {
+    margin-top: 14px;
+    background: #1a1a1a;
+    color: #f5f0e8;
+    padding: 10px 16px;
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .rule-box strong {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* ── Divider ── */
+  .divider {
+    height: 1px;
+    background: #ccc;
+    margin: 14px 0;
+  }
+
+  /* position indicator dot */
+  .pos-num {
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  /* silence dash */
+  .dash {
+    font-size: 22px;
+    font-weight: 300;
+    color: #bbb;
+  }
+
+  @media print {
+    body { width: 210mm; padding: 10mm 12mm; }
+    .rule-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .grid-cell.on-dark { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .grid-cell.on-accent { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .grid-cell.downbeat { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .grid-cell.andpos { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════════ -->
+<div class="card-header">
+  <h1>Rhythm Code — 8-Position Grid</h1>
+  <div class="subtitle">Sprint 1 Reference Card &nbsp;·&nbsp; Ain't No Sunshine &nbsp;·&nbsp; AMF Music Education</div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 1 — THE GRID EXPLAINED
+═══════════════════════════════════════════════ -->
+<div class="section-title">Section 1 — The Grid Explained</div>
+
+<p style="font-size:11px; color:#444; margin-bottom:10px; line-height:1.6;">
+  Every measure is divided into <strong>8 equal positions</strong>. Each position is either
+  <strong>ON</strong> (you play) or <strong>OFF</strong> (silence). This is the binary view of rhythm.
+</p>
+
+<!-- Position number labels -->
+<div class="label-row">
+  <div class="label-cell">1</div>
+  <div class="label-cell">2</div>
+  <div class="label-cell">3</div>
+  <div class="label-cell">4</div>
+  <div class="label-cell">5</div>
+  <div class="label-cell">6</div>
+  <div class="label-cell">7</div>
+  <div class="label-cell">8</div>
+</div>
+
+<!-- The master grid row -->
+<div class="grid-row labeled">
+  <div class="grid-cell downbeat"><span class="pos-num">1</span></div>
+  <div class="grid-cell andpos"><span class="pos-num">2</span></div>
+  <div class="grid-cell downbeat"><span class="pos-num">3</span></div>
+  <div class="grid-cell andpos"><span class="pos-num">4</span></div>
+  <div class="grid-cell downbeat"><span class="pos-num">5</span></div>
+  <div class="grid-cell andpos"><span class="pos-num">6</span></div>
+  <div class="grid-cell downbeat"><span class="pos-num">7</span></div>
+  <div class="grid-cell andpos"><span class="pos-num">8</span></div>
+</div>
+
+<!-- Beat labels -->
+<div class="sublabel-row" style="margin-top:5px;">
+  <div class="sublabel-cell beat-label">Beat 1<br>Downbeat</div>
+  <div class="sublabel-cell">"and 1"</div>
+  <div class="sublabel-cell beat-label">Beat 2</div>
+  <div class="sublabel-cell">"and 2"</div>
+  <div class="sublabel-cell beat-label">Beat 3<br><em style="font-size:8px;color:#c0392b;">Backbeat</em></div>
+  <div class="sublabel-cell">"and 3"</div>
+  <div class="sublabel-cell beat-label">Beat 4</div>
+  <div class="sublabel-cell">"and 4"<br><em style="font-size:8px;color:#c0392b;">Anticipation</em></div>
+</div>
+
+<!-- Longy row for master grid -->
+<div class="longy-row">
+  <div class="longy-cell">ta</div>
+  <div class="longy-cell">te</div>
+  <div class="longy-cell">ta</div>
+  <div class="longy-cell">te</div>
+  <div class="longy-cell">ta</div>
+  <div class="longy-cell">te</div>
+  <div class="longy-cell">ta</div>
+  <div class="longy-cell">te</div>
+</div>
+
+<div style="display:flex; gap:32px; margin-top:8px; font-size:10px; color:#555; line-height:1.7;">
+  <div><span style="display:inline-block; width:14px; height:14px; background:#2a2a2a; vertical-align:middle; margin-right:5px;"></span><strong>Dark boxes</strong> = downbeats (positions 1,3,5,7) — quarter-note pulse</div>
+  <div><span style="display:inline-block; width:14px; height:14px; background:#c8c0b0; border:1px solid #999; vertical-align:middle; margin-right:5px;"></span><strong>Gray boxes</strong> = "and" positions (2,4,6,8) — eighth-note subdivisions</div>
+</div>
+
+<div class="divider"></div>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 2 — THREE SPRINT 1 PATTERNS
+═══════════════════════════════════════════════ -->
+<div class="section-title">Section 2 — Sprint 1 Patterns (Ain't No Sunshine)</div>
+
+<!-- ── Pattern 1: Basic Strum ── -->
+<div class="pattern-block">
+  <div class="pattern-name-row">
+    <div class="pattern-name">Basic Strum</div>
+    <div class="pattern-desc">Quarter notes only — steady pulse, positions 1 3 5 7</div>
+  </div>
+
+  <div class="label-row">
+    <div class="label-cell" style="font-size:10px;color:#999;">1</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">2</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">3</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">4</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">5</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">6</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">7</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">8</div>
+  </div>
+
+  <div class="grid-row">
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+  </div>
+
+  <div class="longy-row">
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+  </div>
+
+  <div style="font-size:10px; color:#666; margin-top:4px; margin-left:2px;">
+    Count aloud: <em>"1 &nbsp;– &nbsp;2 &nbsp;– &nbsp;3 &nbsp;– &nbsp;4 &nbsp;–"</em>
+  </div>
+</div>
+
+<!-- ── Pattern 2: Groove Feel ── -->
+<div class="pattern-block">
+  <div class="pattern-name-row">
+    <div class="pattern-name">Groove Feel</div>
+    <div class="pattern-desc">Add position 8 — the <em>anticipation</em> that creates forward momentum</div>
+  </div>
+
+  <div class="label-row">
+    <div class="label-cell" style="font-size:10px;color:#999;">1</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">2</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">3</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">4</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">5</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">6</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">7</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">8</div>
+  </div>
+
+  <div class="grid-row">
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell on-accent" style="font-size:9px; font-weight:900; letter-spacing:-0.5px;">ANT</div>
+  </div>
+
+  <div class="longy-row">
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell">te</div>
+  </div>
+
+  <div style="font-size:10px; color:#666; margin-top:4px; margin-left:2px;">
+    Count: <em>"1 &nbsp;– &nbsp;2 &nbsp;– &nbsp;3 &nbsp;– &nbsp;4 &nbsp;<strong style="color:#c0392b;">and</strong>"</em>
+    &nbsp;— position 8 "lands early" into the next bar. That pull is the groove.
+  </div>
+</div>
+
+<!-- ── Pattern 3: Stop-Time ── -->
+<div class="pattern-block">
+  <div class="pattern-name-row">
+    <div class="pattern-name">Stop-Time</div>
+    <div class="pattern-desc">Position 1 only — the "I know" pattern. Space is the statement.</div>
+  </div>
+
+  <div class="label-row">
+    <div class="label-cell" style="font-size:10px;color:#999;">1</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">2</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">3</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">4</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">5</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">6</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">7</div>
+    <div class="label-cell" style="font-size:10px;color:#999;">8</div>
+  </div>
+
+  <div class="grid-row">
+    <div class="grid-cell on-dark"></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+    <div class="grid-cell off"><span class="dash">–</span></div>
+  </div>
+
+  <div class="longy-row">
+    <div class="longy-cell">ta</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+    <div class="longy-cell" style="color:#bbb;">·</div>
+  </div>
+
+  <div style="font-size:10px; color:#666; margin-top:4px; margin-left:2px;">
+    One hit. Seven stops. The silence is part of the rhythm — not absence, but choice.
+  </div>
+</div>
+
+<div class="divider"></div>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 3 — BLANK PRACTICE GRIDS
+═══════════════════════════════════════════════ -->
+<div class="section-title">Section 3 — Write Your Own Patterns</div>
+
+<p style="font-size:10px; color:#555; margin-bottom:12px;">
+  Fill each box: shade it to play, leave it empty for silence. Write the Longy syllables below. Name your pattern.
+</p>
+
+<!-- Practice grids — 2 columns × 3 rows = 6 grids -->
+<div style="display:flex; flex-direction:column; gap:14px;">
+
+  <!-- Row A -->
+  <div style="display:flex; gap:24px;">
+
+    <!-- Practice Grid 1 -->
+    <div class="practice-item">
+      <div class="practice-name-line">Pattern name: ___________________________</div>
+      <div class="label-row">
+        <div class="label-cell" style="font-size:9px;color:#aaa;">1</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">2</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">3</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">4</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">5</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">6</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">7</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">8</div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+      </div>
+      <div class="longy-row" style="margin-top:4px;">
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+      </div>
+    </div>
+
+    <!-- Practice Grid 2 -->
+    <div class="practice-item">
+      <div class="practice-name-line">Pattern name: ___________________________</div>
+      <div class="label-row">
+        <div class="label-cell" style="font-size:9px;color:#aaa;">1</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">2</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">3</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">4</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">5</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">6</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">7</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">8</div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+      </div>
+      <div class="longy-row" style="margin-top:4px;">
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Row B -->
+  <div style="display:flex; gap:24px;">
+
+    <!-- Practice Grid 3 -->
+    <div class="practice-item">
+      <div class="practice-name-line">Pattern name: ___________________________</div>
+      <div class="label-row">
+        <div class="label-cell" style="font-size:9px;color:#aaa;">1</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">2</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">3</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">4</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">5</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">6</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">7</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">8</div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+      </div>
+      <div class="longy-row" style="margin-top:4px;">
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+      </div>
+    </div>
+
+    <!-- Practice Grid 4 -->
+    <div class="practice-item">
+      <div class="practice-name-line">Pattern name: ___________________________</div>
+      <div class="label-row">
+        <div class="label-cell" style="font-size:9px;color:#aaa;">1</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">2</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">3</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">4</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">5</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">6</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">7</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">8</div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+      </div>
+      <div class="longy-row" style="margin-top:4px;">
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Row C -->
+  <div style="display:flex; gap:24px;">
+
+    <!-- Practice Grid 5 -->
+    <div class="practice-item">
+      <div class="practice-name-line">Pattern name: ___________________________</div>
+      <div class="label-row">
+        <div class="label-cell" style="font-size:9px;color:#aaa;">1</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">2</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">3</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">4</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">5</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">6</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">7</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">8</div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+      </div>
+      <div class="longy-row" style="margin-top:4px;">
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+      </div>
+    </div>
+
+    <!-- Practice Grid 6 -->
+    <div class="practice-item">
+      <div class="practice-name-line">Pattern name: ___________________________</div>
+      <div class="label-row">
+        <div class="label-cell" style="font-size:9px;color:#aaa;">1</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">2</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">3</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">4</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">5</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">6</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">7</div>
+        <div class="label-cell" style="font-size:9px;color:#aaa;">8</div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+        <div class="grid-cell blank"></div>
+      </div>
+      <div class="longy-row" style="margin-top:4px;">
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+        <div class="longy-cell" style="color:#ddd; font-style:normal;">___</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 4 — LEGEND
+═══════════════════════════════════════════════ -->
+<div class="section-title">Section 4 — Legend</div>
+
+<div class="legend-block">
+  <div class="legend-title">Symbols</div>
+
+  <div class="legend-items">
+    <div class="legend-item">
+      <div class="legend-box filled"></div>
+      <span><strong>Filled box</strong> = PLAY</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box empty"></div>
+      <span><strong>Empty box</strong> = SILENCE (stop)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box anticipation">8</div>
+      <span><strong>Red box at pos 8</strong> = ANTICIPATION (landing early)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#2a2a2a; border-color:#2a2a2a; color:#fff; font-size:9px;">D</div>
+      <span><strong>Dark box</strong> = Downbeat position (1,3,5,7)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#c8c0b0; border-color:#999; color:#555; font-size:9px;">A</div>
+      <span><strong>Gray box</strong> = "And" position (2,4,6,8)</span>
+    </div>
+  </div>
+
+  <div class="longy-legend">
+    <span><span class="longy-term">ta</span> = one quarter note (fills 2 positions, or one as eighth)</span>
+    <span><span class="longy-term">ta-te</span> = two eighth notes (one per adjacent position)</span>
+    <span><span class="longy-term">ta-a</span> = held quarter note (two positions, one sound)</span>
+    <span><span class="longy-term">ka</span> = 16th-note feel added between positions</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     RULE BOX
+═══════════════════════════════════════════════ -->
+<div class="rule-box">
+  <strong>Rule:</strong> Every rhythm you play can be written as a selection from 8 positions.<br>
+  Before you play it — see it on the grid.
+</div>
+
+</body>
+</html>

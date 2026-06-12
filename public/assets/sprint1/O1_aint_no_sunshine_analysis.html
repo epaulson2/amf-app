@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ain't No Sunshine — Sprint 1 Anchor Song Analysis</title>
+<style>
+  /* ── Reset & Base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 10pt;
+    background: #fafaf8;
+    color: #1a1a1a;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 10mm 12mm 8mm;
+  }
+
+  @media print {
+    body { background: #fff; padding: 8mm 10mm 6mm; }
+    @page { size: A4 portrait; margin: 8mm 10mm; }
+  }
+
+  /* ── Typography ── */
+  h1 {
+    font-size: 15pt;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: #1a1a1a;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 8.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+  }
+  .subtitle {
+    font-size: 9pt;
+    color: #5a5a5a;
+    font-style: italic;
+    margin-top: 2px;
+  }
+
+  /* ── Header ── */
+  .page-header {
+    border-bottom: 2.5px solid #2d1b5e;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .amf-badge {
+    font-size: 7.5pt;
+    font-weight: 700;
+    color: #fff;
+    background: #2d1b5e;
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    align-self: flex-start;
+  }
+
+  /* ── Section containers ── */
+  .section {
+    margin-bottom: 9px;
+    border: 1px solid #d8d0e8;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .section-header {
+    background: #2d1b5e;
+    color: #fff;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-header h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 8pt;
+    letter-spacing: 1.5px;
+  }
+  .section-label {
+    font-size: 7pt;
+    color: #c0aee8;
+    font-style: italic;
+    margin-left: auto;
+  }
+  .section-body {
+    padding: 7px 10px;
+    background: #fff;
+  }
+
+  /* ── Section 1: Chord Map ── */
+  .chord-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+  }
+  .chord-row {
+    display: contents;
+  }
+  .chord-bar {
+    border: 1.5px solid;
+    border-radius: 3px;
+    padding: 4px 5px;
+    text-align: center;
+    min-height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .chord-bar.am {
+    background: #2d1b5e;
+    border-color: #1a0f3a;
+    color: #fff;
+  }
+  .chord-bar.em {
+    background: #5a3a9a;
+    border-color: #3d2270;
+    color: #fff;
+  }
+  .chord-bar.gm {
+    background: #9a7acc;
+    border-color: #7a5aac;
+    color: #fff;
+  }
+  .bar-chord {
+    font-size: 11pt;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.2px;
+  }
+  .bar-root {
+    font-size: 7pt;
+    opacity: 0.85;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+  .bar-notes {
+    font-size: 6.5pt;
+    opacity: 0.8;
+    margin-top: 2px;
+    letter-spacing: 0.3px;
+  }
+  .bar-num {
+    font-size: 5.5pt;
+    opacity: 0.6;
+    text-align: left;
+    line-height: 1;
+  }
+
+  /* ── Section 2: Root Movements ── */
+  .movements-row {
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .movement-card {
+    flex: 1;
+    border: 1.5px solid #d8d0e8;
+    border-radius: 4px;
+    padding: 6px 8px;
+    text-align: center;
+    position: relative;
+  }
+  .movement-arrow {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #2d1b5e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    line-height: 1.2;
+  }
+  .movement-arrow .chord-from {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #2d1b5e;
+  }
+  .movement-arrow .chord-to {
+    font-size: 11pt;
+    font-weight: 700;
+  }
+  .movement-arrow .arr {
+    font-size: 10pt;
+    color: #888;
+  }
+  .movement-interval {
+    display: inline-block;
+    background: #2d1b5e;
+    color: #fff;
+    font-size: 9.5pt;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin: 4px 0 3px;
+    font-family: 'Courier New', monospace;
+  }
+  .movement-name {
+    font-size: 7.5pt;
+    color: #555;
+    margin-bottom: 3px;
+  }
+  .movement-direction {
+    font-size: 7pt;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 3px;
+  }
+  .sprint-badge {
+    display: inline-block;
+    font-size: 6.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-top: 2px;
+  }
+  .sprint-badge.s2 { background: #ffe4b5; color: #8b5a00; border: 1px solid #d4a040; }
+  .sprint-badge.s5 { background: #d4edda; color: #1a5c2e; border: 1px solid #5cb85c; }
+  .sprint-badge.s4 { background: #d1ecf1; color: #0c5460; border: 1px solid #17a2b8; }
+
+  /* ── Section 3: Zone 1 Melody ── */
+  .zone1-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+  }
+  .zone1-table th {
+    background: #f0ecf8;
+    padding: 4px 8px;
+    text-align: left;
+    font-size: 7.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #3a2870;
+    border-bottom: 1.5px solid #c8bce8;
+    border-right: 1px solid #e0d8f0;
+  }
+  .zone1-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #ede8f5;
+    border-right: 1px solid #ede8f5;
+    vertical-align: middle;
+  }
+  .zone1-table tr:last-child td { border-bottom: none; }
+  .zone1-table td:last-child, .zone1-table th:last-child { border-right: none; }
+  .note-chip {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 9.5pt;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 1px;
+  }
+  .chip-root { background: #2d1b5e; color: #fff; }
+  .chip-3rd  { background: #5a3a9a; color: #fff; }
+  .chip-5th  { background: #9a7acc; color: #fff; }
+  .zone1-tag {
+    font-size: 7.5pt;
+    color: #2a7a2a;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .interval-tag {
+    font-size: 7pt;
+    color: #666;
+    font-family: 'Courier New', monospace;
+    margin-left: 2px;
+  }
+
+  /* ── Section 4: Rhythm Grid ── */
+  .rhythm-pair {
+    display: flex;
+    gap: 12px;
+  }
+  .rhythm-block {
+    flex: 1;
+  }
+  .rhythm-label {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #2d1b5e;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .rhythm-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 3px;
+    margin-bottom: 3px;
+  }
+  .beat-box {
+    border: 1.5px solid #c8bce8;
+    border-radius: 3px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #f8f5ff;
+    cursor: default;
+  }
+  .beat-box.active-hit {
+    background: #2d1b5e;
+    border-color: #2d1b5e;
+  }
+  .beat-box .hit-marker {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+  }
+  .beat-box .pos-num {
+    font-size: 5pt;
+    color: #bbb;
+    position: absolute;
+    bottom: 1px;
+    line-height: 1;
+  }
+  .beat-box.active-hit .pos-num { color: #a090d0; }
+  .beat-box.rest-box {
+    background: #f8f5ff;
+    border-style: dashed;
+    border-color: #d8d0e8;
+  }
+  .rhythm-subtext {
+    text-align: center;
+    font-size: 6.5pt;
+    color: #888;
+    font-style: italic;
+    margin-top: 1px;
+  }
+  .beat-labels {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 3px;
+    margin-bottom: 2px;
+  }
+  .beat-label-cell {
+    text-align: center;
+    font-size: 6pt;
+    color: #999;
+    font-family: 'Courier New', monospace;
+  }
+  .beat-label-cell.downbeat { color: #2d1b5e; font-weight: 700; font-size: 6.5pt; }
+
+  /* ── Section 5: Practice Log ── */
+  .log-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+  }
+  .log-table th {
+    background: #f0ecf8;
+    padding: 4px 8px;
+    text-align: left;
+    font-size: 7pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #3a2870;
+    border-bottom: 1.5px solid #c8bce8;
+    border-right: 1px solid #e0d8f0;
+  }
+  .log-table th:last-child { border-right: none; }
+  .log-table td {
+    padding: 0;
+    border-bottom: 1px solid #ede8f5;
+    border-right: 1px solid #ede8f5;
+    height: 22px;
+    vertical-align: middle;
+  }
+  .log-table td:last-child { border-right: none; }
+  .log-table tr:last-child td { border-bottom: none; }
+  .log-input-line {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 3px 6px;
+    font-size: 8pt;
+    color: #999;
+    font-style: italic;
+  }
+  .log-table tr:nth-child(even) td { background: #fcfbff; }
+
+  /* ── Divider ── */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, #c8bce8, #ede8f5, #c8bce8);
+    margin: 1px 0;
+  }
+
+  /* ── Misc ── */
+  .legend-row {
+    display: flex;
+    gap: 10px;
+    font-size: 7pt;
+    color: #666;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .legend-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     PAGE HEADER
+     ════════════════════════════════════════════════════════════════════ -->
+<div class="page-header">
+  <div class="header-row">
+    <div>
+      <h1>Ain't No Sunshine — Sprint 1 Anchor Song Analysis</h1>
+      <div class="subtitle">Bill Withers, 1971 &nbsp;·&nbsp; Key: A minor &nbsp;·&nbsp; Chords: Am, Em, G</div>
+    </div>
+    <div class="amf-badge">AMF · S1</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 1 — CHORD MAP
+     ════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <h2>1 — Chord Map</h2>
+    <span class="section-label">Used in: S3 Song Work · S5 Synthesizer</span>
+  </div>
+  <div class="section-body">
+    <div class="chord-grid">
+
+      <!-- Bar row labels helper (invisible) -->
+      <!-- ROW 1: bars 1–4 (all Am) -->
+      <div class="chord-bar am">
+        <div class="bar-num">1</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+      <div class="chord-bar am">
+        <div class="bar-num">2</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+      <div class="chord-bar am">
+        <div class="bar-num">3</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+      <div class="chord-bar am">
+        <div class="bar-num">4</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+
+      <!-- ROW 2: bars 5–8 (Am Am Em Em) -->
+      <div class="chord-bar am">
+        <div class="bar-num">5</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+      <div class="chord-bar am">
+        <div class="bar-num">6</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+      <div class="chord-bar em">
+        <div class="bar-num">7</div>
+        <div class="bar-chord">Em</div>
+        <div class="bar-root">Root: E</div>
+        <div class="bar-notes">E · G · B</div>
+      </div>
+      <div class="chord-bar em">
+        <div class="bar-num">8</div>
+        <div class="bar-chord">Em</div>
+        <div class="bar-root">Root: E</div>
+        <div class="bar-notes">E · G · B</div>
+      </div>
+
+      <!-- ROW 3: bars 9–12 (G G Am Am) -->
+      <div class="chord-bar gm">
+        <div class="bar-num">9</div>
+        <div class="bar-chord">G</div>
+        <div class="bar-root">Root: G</div>
+        <div class="bar-notes">G · B · D</div>
+      </div>
+      <div class="chord-bar gm">
+        <div class="bar-num">10</div>
+        <div class="bar-chord">G</div>
+        <div class="bar-root">Root: G</div>
+        <div class="bar-notes">G · B · D</div>
+      </div>
+      <div class="chord-bar am">
+        <div class="bar-num">11</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+      <div class="chord-bar am">
+        <div class="bar-num">12</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+
+      <!-- ROW 4: bars 13–16 (Am Am Em G) — full repeat cycle -->
+      <div class="chord-bar am">
+        <div class="bar-num">13</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+      <div class="chord-bar am">
+        <div class="bar-num">14</div>
+        <div class="bar-chord">Am</div>
+        <div class="bar-root">Root: A</div>
+        <div class="bar-notes">A · C · E</div>
+      </div>
+      <div class="chord-bar em">
+        <div class="bar-num">15</div>
+        <div class="bar-chord">Em</div>
+        <div class="bar-root">Root: E</div>
+        <div class="bar-notes">E · G · B</div>
+      </div>
+      <div class="chord-bar gm">
+        <div class="bar-num">16</div>
+        <div class="bar-chord">G</div>
+        <div class="bar-root">Root: G</div>
+        <div class="bar-notes">G · B · D</div>
+      </div>
+
+    </div><!-- .chord-grid -->
+
+    <div class="legend-row">
+      <div class="legend-chip"><span class="legend-dot" style="background:#2d1b5e;"></span> Am — dark purple</div>
+      <div class="legend-chip"><span class="legend-dot" style="background:#5a3a9a;"></span> Em — medium purple</div>
+      <div class="legend-chip"><span class="legend-dot" style="background:#9a7acc;"></span> G — light purple</div>
+      <div style="margin-left:auto; color:#888; font-style:italic;">Sprint 1 simplified form · repeat from bar 1</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 2 — ROOT MOVEMENTS
+     ════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <h2>2 — Root Movements</h2>
+    <span class="section-label">Di-chord brackets · own by Sprint</span>
+  </div>
+  <div class="section-body">
+    <div class="movements-row">
+
+      <!-- Am → Em -->
+      <div class="movement-card">
+        <div class="movement-arrow">
+          <span class="chord-from" style="color:#2d1b5e;">Am</span>
+          <span class="arr">→</span>
+          <span class="chord-to" style="color:#5a3a9a;">Em</span>
+        </div>
+        <div>
+          <span class="movement-interval">[5]</span>
+        </div>
+        <div class="movement-name">Perfect 4th</div>
+        <div class="movement-direction">A down to E (descending)</div>
+        <span class="sprint-badge s2">Own in Sprint 2 ★</span>
+      </div>
+
+      <!-- Em → G -->
+      <div class="movement-card">
+        <div class="movement-arrow">
+          <span class="chord-from" style="color:#5a3a9a;">Em</span>
+          <span class="arr">→</span>
+          <span class="chord-to" style="color:#9a7acc;">G</span>
+        </div>
+        <div>
+          <span class="movement-interval">[3]</span>
+        </div>
+        <div class="movement-name">Minor 3rd</div>
+        <div class="movement-direction">E up to G (ascending)</div>
+        <span class="sprint-badge s5">Own in Sprint 5 ★</span>
+      </div>
+
+      <!-- G → Am -->
+      <div class="movement-card">
+        <div class="movement-arrow">
+          <span class="chord-from" style="color:#9a7acc;">G</span>
+          <span class="arr">→</span>
+          <span class="chord-to" style="color:#2d1b5e;">Am</span>
+        </div>
+        <div>
+          <span class="movement-interval">[2]</span>
+        </div>
+        <div class="movement-name">Major 2nd</div>
+        <div class="movement-direction">G up to A (ascending)</div>
+        <span class="sprint-badge s4">Own in Sprint 4 ★</span>
+      </div>
+
+    </div><!-- .movements-row -->
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 3 — ZONE 1 MELODY NOTES
+     ════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <h2>3 — Zone 1 Melody Notes</h2>
+    <span class="section-label">Bill Withers stays in chord tones — the reason this song is Sprint 1</span>
+  </div>
+  <div class="section-body">
+    <table class="zone1-table">
+      <thead>
+        <tr>
+          <th style="width:10%;">Chord</th>
+          <th style="width:16%;">Root</th>
+          <th style="width:20%;">3rd</th>
+          <th style="width:20%;">5th</th>
+          <th>Melody stays in…</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:#2d1b5e;">Am</strong></td>
+          <td><span class="note-chip chip-root">A</span> <span class="interval-tag">[1]</span></td>
+          <td><span class="note-chip chip-3rd">C</span> <span class="interval-tag">[3] minor 3rd</span></td>
+          <td><span class="note-chip chip-5th">E</span> <span class="interval-tag">[7] perfect 5th</span></td>
+          <td><span class="zone1-tag">Zone 1 — chord tones only</span></td>
+        </tr>
+        <tr>
+          <td><strong style="color:#5a3a9a;">Em</strong></td>
+          <td><span class="note-chip chip-root">E</span> <span class="interval-tag">[1]</span></td>
+          <td><span class="note-chip chip-3rd">G</span> <span class="interval-tag">[3] minor 3rd</span></td>
+          <td><span class="note-chip chip-5th">B</span> <span class="interval-tag">[7] perfect 5th</span></td>
+          <td><span class="zone1-tag">Zone 1 — chord tones only</span></td>
+        </tr>
+        <tr>
+          <td><strong style="color:#7a5aac;">G</strong></td>
+          <td><span class="note-chip chip-root">G</span> <span class="interval-tag">[1]</span></td>
+          <td><span class="note-chip chip-3rd">B</span> <span class="interval-tag">[4] major 3rd</span></td>
+          <td><span class="note-chip chip-5th">D</span> <span class="interval-tag">[7] perfect 5th</span></td>
+          <td><span class="zone1-tag">Zone 1 — chord tones only</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top:5px; font-size:7pt; color:#888; font-style:italic;">
+      Interval tags: [1]=root, [3]=minor 3rd, [4]=major 3rd, [7]=perfect 5th — using AMF interval numbers from root
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 4 — RHYTHM GRID
+     ════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <h2>4 — Rhythm Grid</h2>
+    <span class="section-label">8-position grid per bar · write syllables or strums in empty boxes</span>
+  </div>
+  <div class="section-body">
+    <div class="rhythm-pair">
+
+      <!-- LEFT: Basic verse feel -->
+      <div class="rhythm-block">
+        <div class="rhythm-label">Basic Verse Feel</div>
+        <!-- position labels -->
+        <div class="beat-labels">
+          <div class="beat-label-cell downbeat">1</div>
+          <div class="beat-label-cell">+</div>
+          <div class="beat-label-cell downbeat">2</div>
+          <div class="beat-label-cell">+</div>
+          <div class="beat-label-cell downbeat">3</div>
+          <div class="beat-label-cell">+</div>
+          <div class="beat-label-cell downbeat">4</div>
+          <div class="beat-label-cell">+</div>
+        </div>
+        <div class="rhythm-grid">
+          <!-- pos 1: active -->
+          <div class="beat-box active-hit">
+            <span class="hit-marker">▼</span>
+            <span class="pos-num">1</span>
+          </div>
+          <!-- pos 2: rest -->
+          <div class="beat-box rest-box">
+            <span class="pos-num">+</span>
+          </div>
+          <!-- pos 3: active -->
+          <div class="beat-box active-hit">
+            <span class="hit-marker">▼</span>
+            <span class="pos-num">2</span>
+          </div>
+          <!-- pos 4: rest -->
+          <div class="beat-box rest-box">
+            <span class="pos-num">+</span>
+          </div>
+          <!-- pos 5: active -->
+          <div class="beat-box active-hit">
+            <span class="hit-marker">▼</span>
+            <span class="pos-num">3</span>
+          </div>
+          <!-- pos 6: rest -->
+          <div class="beat-box rest-box">
+            <span class="pos-num">+</span>
+          </div>
+          <!-- pos 7: active -->
+          <div class="beat-box active-hit">
+            <span class="hit-marker">▼</span>
+            <span class="pos-num">4</span>
+          </div>
+          <!-- pos 8: rest -->
+          <div class="beat-box rest-box">
+            <span class="pos-num">+</span>
+          </div>
+        </div>
+        <div class="rhythm-subtext">Positions 1, 2, 3, 4 active · steady quarter-note groove</div>
+      </div>
+
+      <!-- RIGHT: Stop-time feel -->
+      <div class="rhythm-block">
+        <div class="rhythm-label">Stop-Time Feel &nbsp;<span style="font-size:7pt;font-weight:400;color:#888;">("I know × 26")</span></div>
+        <!-- position labels -->
+        <div class="beat-labels">
+          <div class="beat-label-cell downbeat">1</div>
+          <div class="beat-label-cell">+</div>
+          <div class="beat-label-cell downbeat">2</div>
+          <div class="beat-label-cell">+</div>
+          <div class="beat-label-cell downbeat">3</div>
+          <div class="beat-label-cell">+</div>
+          <div class="beat-label-cell downbeat">4</div>
+          <div class="beat-label-cell">+</div>
+        </div>
+        <div class="rhythm-grid">
+          <!-- pos 1: HIT -->
+          <div class="beat-box active-hit">
+            <span class="hit-marker">▼</span>
+            <span class="pos-num">1</span>
+          </div>
+          <!-- all others: silence / space -->
+          <div class="beat-box rest-box"><span class="pos-num">+</span></div>
+          <div class="beat-box rest-box"><span class="pos-num">2</span></div>
+          <div class="beat-box rest-box"><span class="pos-num">+</span></div>
+          <div class="beat-box rest-box"><span class="pos-num">3</span></div>
+          <div class="beat-box rest-box"><span class="pos-num">+</span></div>
+          <div class="beat-box rest-box"><span class="pos-num">4</span></div>
+          <div class="beat-box rest-box"><span class="pos-num">+</span></div>
+        </div>
+        <div class="rhythm-subtext">Position 1 ONLY · all other positions: silence</div>
+      </div>
+
+    </div><!-- .rhythm-pair -->
+
+    <div style="margin-top:6px; font-size:7pt; color:#aaa; font-style:italic; text-align:center;">
+      Dashed boxes = silence / space · Write your own rhythms in the empty boxes during practice
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 5 — PRACTICE LOG
+     ════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <h2>5 — Practice Log</h2>
+    <span class="section-label">Fill in during / after each practice session</span>
+  </div>
+  <div class="section-body" style="padding-top:5px;">
+    <table class="log-table">
+      <thead>
+        <tr>
+          <th style="width:14%;">Date</th>
+          <th style="width:22%;">Section (S3 / S5 / free)</th>
+          <th style="width:46%;">What I noticed</th>
+          <th style="width:18%;">Stage &nbsp;<span style="font-weight:400;font-style:italic;">(1 / 2 / 3)</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="log-input-line">__ / __ / ____</span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+        </tr>
+        <tr>
+          <td><span class="log-input-line">__ / __ / ____</span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+        </tr>
+        <tr>
+          <td><span class="log-input-line">__ / __ / ____</span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+        </tr>
+        <tr>
+          <td><span class="log-input-line">__ / __ / ____</span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+        </tr>
+        <tr>
+          <td><span class="log-input-line">__ / __ / ____</span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+          <td><span class="log-input-line"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

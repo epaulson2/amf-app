@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Three Pulsation Families</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: #0e0e0e;
+    color: #e8e4dc;
+    width: 297mm;
+    min-height: 210mm;
+    padding: 10mm 10mm 8mm;
+    font-size: 12px;
+  }
+
+  /* ── TOP HEADER ── */
+  .header {
+    text-align: center;
+    margin-bottom: 8mm;
+  }
+  .header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #f0ece2;
+    margin-bottom: 4px;
+  }
+  .header .subtitle {
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+    letter-spacing: 0.03em;
+  }
+
+  /* ── THREE COLUMNS ── */
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6mm;
+    margin-bottom: 6mm;
+  }
+
+  .column {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-dissonant { border-color: #922B21; }
+  .col-modal     { border-color: #5B2C6F; }
+  .col-perfect   { border-color: #1E8449; }
+
+  /* column header */
+  .col-header {
+    padding: 8px 12px 7px;
+    text-align: center;
+  }
+  .col-dissonant .col-header { background: #922B21; }
+  .col-modal     .col-header { background: #5B2C6F; }
+  .col-perfect   .col-header { background: #1E8449; }
+
+  .col-header .col-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #fff;
+  }
+  .col-header .col-sub {
+    font-size: 10px;
+    color: rgba(255,255,255,0.78);
+    margin-top: 2px;
+    font-style: italic;
+  }
+
+  /* wave panel */
+  .wave-panel {
+    background: #141414;
+    padding: 10px 12px 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .wave-label {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  /* sensation */
+  .sensation {
+    padding: 8px 12px 6px;
+    font-size: 10.5px;
+    color: #b0a898;
+    line-height: 1.55;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-style: italic;
+    background: #111;
+  }
+
+  /* di-chord list */
+  .dichord-list {
+    padding: 7px 12px 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    background: #0e0e0e;
+  }
+
+  .dichord-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .badge {
+    flex-shrink: 0;
+    width: 28px;
+    height: 22px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+  }
+  .col-dissonant .badge { background: #6B1F1A; border: 1px solid #922B21; }
+  .col-modal     .badge { background: #3D1A5C; border: 1px solid #5B2C6F; }
+  .col-perfect   .badge { background: #155E35; border: 1px solid #1E8449; }
+
+  .badge.sprint-entry {
+    background: #5B2C6F;
+    border: 1px solid #a066c8;
+    box-shadow: 0 0 6px rgba(160,102,200,0.45);
+  }
+
+  .dichord-feel {
+    font-size: 10px;
+    color: #c0b8ac;
+    line-height: 1.45;
+  }
+  .dichord-feel .feel-label {
+    font-size: 9px;
+    color: #666;
+    margin-top: 1px;
+  }
+
+  .sprint-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 8.5px;
+    color: #a066c8;
+    background: rgba(91,44,111,0.18);
+    border: 1px solid rgba(160,102,200,0.3);
+    border-radius: 3px;
+    padding: 1px 5px;
+    margin-top: 2px;
+  }
+
+  /* ── BOTTOM BANNER ── */
+  .bottom-banner {
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
+    padding: 8px 14px;
+    text-align: center;
+  }
+  .bottom-banner .why-label {
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 3px;
+  }
+  .bottom-banner p {
+    font-size: 11px;
+    color: #9a9080;
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .bottom-banner strong { color: #c8bfb0; font-style: normal; }
+</style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<div class="header">
+  <h1>The Three Pulsation Families</h1>
+  <div class="subtitle">Acoustic interference rate determines the pulsation category of every di-chord</div>
+</div>
+
+<!-- ══ COLUMNS ══ -->
+<div class="columns">
+
+  <!-- ─ DISSONANT ─ -->
+  <div class="column col-dissonant">
+    <div class="col-header">
+      <div class="col-title">Dissonant — 8Hz</div>
+      <div class="col-sub">Fast interference — you feel the clash</div>
+    </div>
+    <div class="wave-panel">
+      <div class="wave-label">Waveform — ~8 beats/sec</div>
+      <svg width="200" height="56" viewBox="0 0 200 56" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="56" fill="#0a0a0a" rx="3"/>
+        <!-- jagged zigzag — many tight peaks -->
+        <polyline
+          points="0,28 8,10 16,46 24,8 32,48 40,10 48,44 56,10 64,46 72,8 80,48 88,10 96,44 104,8 112,48 120,10 128,44 136,10 144,46 152,10 160,48 168,8 176,46 184,10 192,48 200,28"
+          fill="none" stroke="#c0392b" stroke-width="1.6" stroke-linejoin="round"/>
+        <!-- frequency label -->
+        <text x="100" y="54" text-anchor="middle" font-size="8" fill="#666" font-family="monospace">8 Hz — fast buzz</text>
+      </svg>
+    </div>
+    <div class="sensation">
+      "Like two voices fighting. The acoustic interference beats 8 times per second — fast enough to feel as buzz or roughness."
+    </div>
+    <div class="dichord-list">
+
+      <div class="dichord-row">
+        <div class="badge">[1]</div>
+        <div class="dichord-feel">
+          Maximum tension
+          <div class="feel-label">Buzzes, clashes, urgent</div>
+        </div>
+      </div>
+
+      <div class="dichord-row">
+        <div class="badge">[2]</div>
+        <div class="dichord-feel">
+          Strong tension
+          <div class="feel-label">Pushes hard to resolve</div>
+        </div>
+      </div>
+
+      <div class="dichord-row">
+        <div class="badge">[10]</div>
+        <div class="dichord-feel">
+          Moderate tension
+          <div class="feel-label">Restless, wants movement</div>
+        </div>
+      </div>
+
+      <div class="dichord-row">
+        <div class="badge">[11]</div>
+        <div class="dichord-feel">
+          Extreme tension
+          <div class="feel-label">Almost painful dissonance</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ─ MODAL ─ -->
+  <div class="column col-modal">
+    <div class="col-header">
+      <div class="col-title">Modal — 4Hz</div>
+      <div class="col-sub">Gentle wave — quality di-chords</div>
+    </div>
+    <div class="wave-panel">
+      <div class="wave-label">Waveform — ~4 beats/sec</div>
+      <svg width="200" height="56" viewBox="0 0 200 56" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="56" fill="#0a0a0a" rx="3"/>
+        <!-- smooth sine — ~3 cycles across 200px -->
+        <path
+          d="M0,28
+             C6,28 10,12 17,10 C24,8 30,28 33,34 C36,40 40,46 50,46
+             C60,46 63,36 67,28 C71,20 75,8 83,8
+             C91,8 95,28 100,34 C105,40 109,46 116,46
+             C123,46 126,36 133,28 C140,20 143,8 150,8
+             C157,8 163,28 167,34 C171,40 175,46 183,46
+             C191,46 195,36 200,28"
+          fill="none" stroke="#8e44ad" stroke-width="1.8" stroke-linejoin="round"/>
+        <text x="100" y="54" text-anchor="middle" font-size="8" fill="#666" font-family="monospace">4 Hz — gentle oscillation</text>
+      </svg>
+    </div>
+    <div class="sensation">
+      "A gentle oscillation. Slow enough to feel as warmth (dark) or brightness (light) rather than tension."
+    </div>
+    <div class="dichord-list">
+
+      <div class="dichord-row">
+        <div class="badge sprint-entry">[3]</div>
+        <div class="dichord-feel">
+          Gentle wave — warm minor quality
+          <div class="feel-label">Dark, intimate color</div>
+          <div class="sprint-note">★ Sprint 1 entry point</div>
+        </div>
+      </div>
+
+      <div class="dichord-row">
+        <div class="badge sprint-entry">[4]</div>
+        <div class="dichord-feel">
+          Gentle wave — bright major quality
+          <div class="feel-label">Open, lifted color</div>
+          <div class="sprint-note">★ Sprint 1 entry point</div>
+        </div>
+      </div>
+
+      <div class="dichord-row">
+        <div class="badge">[8]</div>
+        <div class="dichord-feel">
+          Gentle wave — dark, heavy minor color
+          <div class="feel-label">Dense, weighted quality</div>
+        </div>
+      </div>
+
+      <div class="dichord-row">
+        <div class="badge">[9]</div>
+        <div class="dichord-feel">
+          Gentle wave — open, lifting major color
+          <div class="feel-label">Airy, expansive quality</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ─ PERFECT ─ -->
+  <div class="column col-perfect">
+    <div class="col-header">
+      <div class="col-title">Perfect — 2Hz</div>
+      <div class="col-sub">Nearly still — stability and openness</div>
+    </div>
+    <div class="wave-panel">
+      <div class="wave-label">Waveform — ~2 beats/sec</div>
+      <svg width="200" height="56" viewBox="0 0 200 56" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="56" fill="#0a0a0a" rx="3"/>
+        <!-- very slow wave [5][7] — 1 gentle cycle across 200px -->
+        <path
+          d="M0,28 C25,28 40,16 60,14 C80,12 95,28 100,32 C105,36 120,44 140,44 C160,44 175,28 200,28"
+          fill="none" stroke="#27ae60" stroke-width="1.8" stroke-opacity="0.7"
+          stroke-dasharray="none"/>
+        <!-- flat line for [6] — tritone -->
+        <line x1="0" y1="28" x2="200" y2="28"
+              stroke="#27ae60" stroke-width="1.4" stroke-opacity="0.35" stroke-dasharray="4 3"/>
+        <!-- labels -->
+        <text x="30" y="11" text-anchor="middle" font-size="7.5" fill="#27ae60" fill-opacity="0.6" font-family="monospace">[5][7]</text>
+        <text x="155" y="24" text-anchor="middle" font-size="7.5" fill="#27ae60" fill-opacity="0.45" font-family="monospace">[6] flat</text>
+        <text x="100" y="54" text-anchor="middle" font-size="8" fill="#666" font-family="monospace">2 Hz — nearly still</text>
+      </svg>
+    </div>
+    <div class="sensation">
+      "So slow the wave nearly disappears. What you feel is spaciousness and stability rather than oscillation."
+    </div>
+    <div class="dichord-list">
+
+      <div class="dichord-row">
+        <div class="badge">[5]</div>
+        <div class="dichord-feel">
+          Nearly still
+          <div class="feel-label">Open, hollow stability</div>
+        </div>
+      </div>
+
+      <div class="dichord-row">
+        <div class="badge">[6]</div>
+        <div class="dichord-feel">
+          Frozen
+          <div class="feel-label">Neither stable nor tense; splits the octave</div>
+        </div>
+      </div>
+
+      <div class="dichord-row">
+        <div class="badge">[7]</div>
+        <div class="dichord-feel">
+          Nearly still
+          <div class="feel-label">Full, resonant stability</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /columns -->
+
+<!-- ══ BOTTOM BANNER ══ -->
+<div class="bottom-banner">
+  <div class="why-label">Why This Matters</div>
+  <p>
+    <strong>Pulsation is the first thing you hear.</strong>
+    Before you hear quality (major/minor) or direction, you hear whether an interval is
+    <strong>buzzing</strong>, <strong>waving</strong>, or <strong>floating</strong>.
+  </p>
+</div>
+
+</body>
+</html>

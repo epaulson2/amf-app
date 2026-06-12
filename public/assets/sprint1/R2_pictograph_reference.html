@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Di-Chord Pictograph System — All 11 Di-Chords</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: #F8F8F6;
+    color: #1a1a1a;
+    width: 794px;
+    margin: 0 auto;
+    padding: 32px 28px;
+    min-height: 1123px;
+  }
+
+  /* ── Header ── */
+  .page-header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+  }
+  .page-header h1 {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+  }
+  .page-header .subtitle {
+    font-size: 11px;
+    color: #555;
+    margin-top: 5px;
+    letter-spacing: 0.02em;
+  }
+  .subtitle strong { color: #222; }
+
+  /* ── Family section ── */
+  .family-section {
+    margin-bottom: 22px;
+  }
+
+  .family-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 10px;
+  }
+  .family-header .family-name {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .family-header .family-hz {
+    font-size: 11px;
+    color: rgba(255,255,255,0.80);
+    font-style: italic;
+  }
+  .family-header .family-members {
+    font-size: 12px;
+    color: rgba(255,255,255,0.90);
+    margin-left: auto;
+    font-family: monospace;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── Family colors ── */
+  .dissonant-header { background: #922B21; }
+  .modal-header      { background: #5B2C6F; }
+  .perfect-header    { background: #1E8449; }
+
+  /* ── Tile row ── */
+  .tile-row {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  /* ── Individual tile ── */
+  .tile {
+    width: 160px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.10);
+    flex-shrink: 0;
+  }
+  .tile.sprint1-focus {
+    border: 2.5px solid #F1C40F;
+    box-shadow: 0 0 0 2px rgba(241,196,15,0.35), 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  /* tile top color bar */
+  .tile-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    color: #fff;
+  }
+  .tile-bracket {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 0.02em;
+  }
+  .sprint-star {
+    font-size: 14px;
+    color: #F1C40F;
+    line-height: 1;
+  }
+
+  /* tile common name */
+  .tile-name {
+    font-size: 10px;
+    text-align: center;
+    padding: 4px 6px 2px;
+    font-style: italic;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* wave SVG area */
+  .tile-wave {
+    padding: 6px 8px 4px;
+    display: flex;
+    justify-content: center;
+    background: #FAFAFA;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* shadow / direction row */
+  .tile-shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px 6px 2px;
+    font-size: 10px;
+    color: #333;
+    border-bottom: 1px dotted #eee;
+  }
+  .tile-shadow .arrow { font-size: 13px; font-weight: bold; }
+  .tile-shadow .shadow-label { font-size: 9px; color: #777; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* meta rows */
+  .tile-meta {
+    padding: 3px 7px;
+    font-size: 9px;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    border-bottom: 1px dotted #eee;
+  }
+  .tile-meta:last-child { border-bottom: none; }
+  .tile-meta .meta-key { color: #888; text-transform: uppercase; letter-spacing: 0.04em; }
+  .tile-meta .meta-val { font-weight: bold; color: #222; text-transform: capitalize; }
+  .meta-val.harmonic    { color: #1E8449; }
+  .meta-val.non-harmonic { color: #922B21; }
+  .meta-val.false-harmonic { color: #E59866; }
+  .meta-val.neutral     { color: #808B96; }
+
+  /* ── Legend ── */
+  .legend {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-top: 18px;
+    background: #fff;
+  }
+  .legend-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+  }
+  .legend-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .legend-factor {
+    font-size: 10px;
+  }
+  .legend-factor h4 {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  .legend-factor ul {
+    list-style: none;
+    line-height: 1.8;
+    color: #333;
+  }
+  .legend-factor ul li::before {
+    content: "• ";
+    color: #888;
+  }
+
+  /* ── Footer ── */
+  .page-footer {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 9px;
+    color: #aaa;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════ PAGE HEADER ════════════════ -->
+<div class="page-header">
+  <h1>Di-Chord Pictograph System — All 11 Di-Chords</h1>
+  <p class="subtitle">
+    Each di-chord has three visual factors:
+    <strong>Shape (pulsation)</strong> &nbsp;·&nbsp;
+    <strong>Shadow (F/O factor)</strong> &nbsp;·&nbsp;
+    <strong>Color (harmonicity)</strong>
+  </p>
+</div>
+
+<!-- ════════════════ DISSONANT FAMILY ════════════════ -->
+<div class="family-section">
+  <div class="family-header dissonant-header">
+    <span class="family-name">Dissonant</span>
+    <span class="family-hz">8 Hz pulsation</span>
+    <span class="family-members">[1] [2] [10] [11]</span>
+  </div>
+  <div class="tile-row">
+
+    <!-- [1] minor 2nd -->
+    <div class="tile">
+      <div class="tile-top" style="background:#922B21;">
+        <span class="tile-bracket">[1]</span>
+      </div>
+      <div class="tile-name">minor 2nd</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <polyline points="0,30 13,8 26,30 39,8 52,30 65,8 78,30 91,8 104,30 117,8 130,30"
+            fill="none" stroke="#922B21" stroke-width="2.2" stroke-linejoin="miter"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8592;</span>
+        <span class="shadow-label">Fundamental</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">dark</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val non-harmonic">non-harmonic</span></div>
+    </div>
+
+    <!-- [2] major 2nd -->
+    <div class="tile">
+      <div class="tile-top" style="background:#E59866;">
+        <span class="tile-bracket">[2]</span>
+      </div>
+      <div class="tile-name">major 2nd</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <polyline points="0,30 13,8 26,30 39,8 52,30 65,8 78,30 91,8 104,30 117,8 130,30"
+            fill="none" stroke="#E59866" stroke-width="2.2" stroke-linejoin="miter"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8592;</span>
+        <span class="shadow-label">Fundamental</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">light</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val harmonic">harmonic</span></div>
+    </div>
+
+    <!-- [10] minor 7th -->
+    <div class="tile">
+      <div class="tile-top" style="background:#E59866;">
+        <span class="tile-bracket">[10]</span>
+      </div>
+      <div class="tile-name">minor 7th</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <polyline points="0,30 13,8 26,30 39,8 52,30 65,8 78,30 91,8 104,30 117,8 130,30"
+            fill="none" stroke="#E59866" stroke-width="2.2" stroke-linejoin="miter"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8594;</span>
+        <span class="shadow-label">Octave</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">light</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val harmonic">harmonic</span></div>
+    </div>
+
+    <!-- [11] major 7th -->
+    <div class="tile">
+      <div class="tile-top" style="background:#922B21;">
+        <span class="tile-bracket">[11]</span>
+      </div>
+      <div class="tile-name">major 7th</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <polyline points="0,30 13,8 26,30 39,8 52,30 65,8 78,30 91,8 104,30 117,8 130,30"
+            fill="none" stroke="#922B21" stroke-width="2.2" stroke-linejoin="miter"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8594;</span>
+        <span class="shadow-label">Octave</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">dark</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val non-harmonic">non-harmonic</span></div>
+    </div>
+
+  </div><!-- .tile-row -->
+</div><!-- .family-section -->
+
+
+<!-- ════════════════ MODAL FAMILY ════════════════ -->
+<div class="family-section">
+  <div class="family-header modal-header">
+    <span class="family-name">Modal</span>
+    <span class="family-hz">4 Hz pulsation</span>
+    <span class="family-members">[3] [4] [8] [9]</span>
+  </div>
+  <div class="tile-row">
+
+    <!-- [3] minor 3rd — SPRINT 1 FOCUS -->
+    <div class="tile sprint1-focus">
+      <div class="tile-top" style="background:#5B2C6F;">
+        <span class="tile-bracket">[3]</span>
+        <span class="sprint-star" title="Sprint 1 Focus">&#9733;</span>
+      </div>
+      <div class="tile-name">minor 3rd</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <path d="M0,30 C16,30 16,8 33,8 C49,8 49,30 65,30 C81,30 81,8 97,8 C113,8 113,30 130,30"
+            fill="none" stroke="#5B2C6F" stroke-width="2.2"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8592;</span>
+        <span class="shadow-label">Fundamental</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">dark</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val non-harmonic">non-harmonic</span></div>
+    </div>
+
+    <!-- [4] major 3rd — SPRINT 1 FOCUS -->
+    <div class="tile sprint1-focus">
+      <div class="tile-top" style="background:#A569BD;">
+        <span class="tile-bracket">[4]</span>
+        <span class="sprint-star" title="Sprint 1 Focus">&#9733;</span>
+      </div>
+      <div class="tile-name">major 3rd</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <path d="M0,30 C16,30 16,8 33,8 C49,8 49,30 65,30 C81,30 81,8 97,8 C113,8 113,30 130,30"
+            fill="none" stroke="#A569BD" stroke-width="2.2"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8592;</span>
+        <span class="shadow-label">Fundamental</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">light</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val harmonic">harmonic</span></div>
+    </div>
+
+    <!-- [8] minor 6th -->
+    <div class="tile">
+      <div class="tile-top" style="background:#5B2C6F;">
+        <span class="tile-bracket">[8]</span>
+      </div>
+      <div class="tile-name">minor 6th</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <path d="M0,30 C16,30 16,8 33,8 C49,8 49,30 65,30 C81,30 81,8 97,8 C113,8 113,30 130,30"
+            fill="none" stroke="#5B2C6F" stroke-width="2.2"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8594;</span>
+        <span class="shadow-label">Octave</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">dark</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val non-harmonic">non-harmonic</span></div>
+    </div>
+
+    <!-- [9] major 6th -->
+    <div class="tile">
+      <div class="tile-top" style="background:#A569BD;">
+        <span class="tile-bracket">[9]</span>
+      </div>
+      <div class="tile-name">major 6th</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <path d="M0,30 C16,30 16,8 33,8 C49,8 49,30 65,30 C81,30 81,8 97,8 C113,8 113,30 130,30"
+            fill="none" stroke="#A569BD" stroke-width="2.2"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8594;</span>
+        <span class="shadow-label">Octave</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">light</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val false-harmonic">false-harmonic</span></div>
+    </div>
+
+  </div><!-- .tile-row -->
+</div><!-- .family-section -->
+
+
+<!-- ════════════════ PERFECT FAMILY ════════════════ -->
+<div class="family-section">
+  <div class="family-header perfect-header">
+    <span class="family-name">Perfect</span>
+    <span class="family-hz">2 Hz pulsation</span>
+    <span class="family-members">[5] [6] [7]</span>
+  </div>
+  <div class="tile-row">
+
+    <!-- [5] perfect 4th -->
+    <div class="tile">
+      <div class="tile-top" style="background:#1E8449;">
+        <span class="tile-bracket">[5]</span>
+      </div>
+      <div class="tile-name">perfect 4th</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <path d="M0,26 C32,26 32,16 65,16 C98,16 98,26 130,26"
+            fill="none" stroke="#1E8449" stroke-width="2.2"/>
+          <line x1="0" y1="30" x2="130" y2="30" stroke="#1E8449" stroke-width="0.6" stroke-dasharray="4,4" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8592;</span>
+        <span class="shadow-label">Fundamental</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">dark</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val non-harmonic">non-harmonic</span></div>
+    </div>
+
+    <!-- [6] tritone -->
+    <div class="tile">
+      <div class="tile-top" style="background:#808B96;">
+        <span class="tile-bracket">[6]</span>
+      </div>
+      <div class="tile-name">tritone</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <path d="M0,24 C32,24 32,18 65,18 C98,18 98,24 130,24"
+            fill="none" stroke="#808B96" stroke-width="2.2"/>
+          <line x1="0" y1="30" x2="130" y2="30" stroke="#808B96" stroke-width="0.6" stroke-dasharray="4,4" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8592;</span>
+        <span class="shadow-label" style="margin:0 3px;">Both</span>
+        <span class="arrow">&#8594;</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">neutral</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val neutral">neutral</span></div>
+    </div>
+
+    <!-- [7] perfect 5th -->
+    <div class="tile">
+      <div class="tile-top" style="background:#52BE80;">
+        <span class="tile-bracket">[7]</span>
+      </div>
+      <div class="tile-name">perfect 5th</div>
+      <div class="tile-wave">
+        <svg width="130" height="38" viewBox="0 0 130 38">
+          <path d="M0,26 C32,26 32,16 65,16 C98,16 98,26 130,26"
+            fill="none" stroke="#52BE80" stroke-width="2.2"/>
+          <line x1="0" y1="30" x2="130" y2="30" stroke="#52BE80" stroke-width="0.6" stroke-dasharray="4,4" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="tile-shadow">
+        <span class="arrow">&#8594;</span>
+        <span class="shadow-label">Octave</span>
+      </div>
+      <div class="tile-meta"><span class="meta-key">Color</span><span class="meta-val">light</span></div>
+      <div class="tile-meta"><span class="meta-key">Harmony</span><span class="meta-val harmonic">harmonic</span></div>
+    </div>
+
+  </div><!-- .tile-row -->
+</div><!-- .family-section -->
+
+
+<!-- ════════════════ LEGEND ════════════════ -->
+<div class="legend">
+  <div class="legend-title">Visual Factor Reference</div>
+  <div class="legend-grid">
+
+    <div class="legend-factor">
+      <h4>Factor 1 — Shape (Pulsation)</h4>
+      <ul>
+        <li><strong>Jagged zigzag</strong> — Dissonant (8 Hz)</li>
+        <li><strong>Smooth curve</strong> — Modal (4 Hz)</li>
+        <li><strong>Flat / gentle</strong> — Perfect (2 Hz)</li>
+      </ul>
+    </div>
+
+    <div class="legend-factor">
+      <h4>Factor 2 — Shadow (F/O Factor)</h4>
+      <ul>
+        <li><strong>&#8592; Left arrow</strong> — Fundamental side</li>
+        <li><strong>&#8594; Right arrow</strong> — Octave side</li>
+        <li><strong>&#8592;&#8594; Both</strong> — Equidistant (tritone)</li>
+      </ul>
+    </div>
+
+    <div class="legend-factor">
+      <h4>Factor 3 — Color (Harmonicity)</h4>
+      <ul>
+        <li><strong style="color:#922B21">Dark shade</strong> — Non-harmonic</li>
+        <li><strong style="color:#52BE80">Light shade</strong> — Harmonic</li>
+        <li><strong style="color:#808B96">Neutral gray</strong> — Neutral / tritone</li>
+        <li><strong style="color:#E59866">Mid shade</strong> — False-harmonic [9]</li>
+      </ul>
+    </div>
+
+  </div><!-- .legend-grid -->
+
+  <div style="margin-top:10px; font-size:9.5px; color:#666; border-top:1px dotted #ddd; padding-top:8px;">
+    <strong style="color:#F1C40F;">&#9733; Sprint 1 Focus</strong> — Di-chords [3] and [4] (minor 3rd / major 3rd) are the primary learning targets for Sprint 1.
+    The gold border identifies them throughout all course materials.
+  </div>
+</div>
+
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<div class="page-footer">
+  AMF Sprint 1 Reference &nbsp;·&nbsp; Di-Chord Pictograph System &nbsp;·&nbsp; R2
+</div>
+
+</body>
+</html>

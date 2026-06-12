@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zone 1 — Am — Guitar Fretboard</title>
+<style>
+  @page { size: A4 landscape; margin: 12mm; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f5f0;
+    color: #1a1a2e;
+    padding: 18px 22px;
+    width: 297mm;
+    min-height: 210mm;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #1a1a2e;
+    margin-bottom: 3px;
+  }
+
+  .subtitle {
+    font-size: 0.82rem;
+    color: #555;
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+
+  /* ── FRETBOARD WRAPPER ── */
+  .fretboard-wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .fretboard-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  /* Column widths: label col + 13 fret cols */
+  .fretboard-table col.label-col { width: 44px; }
+  .fretboard-table col.fret-col  { width: calc((100% - 44px) / 13); }
+
+  /* Fret header row */
+  .fret-header th {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #777;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #bbb;
+  }
+  .fret-header th.label-th { /* empty corner */ }
+
+  /* String rows */
+  .string-row td {
+    position: relative;
+    height: 38px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .string-label {
+    text-align: right;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #333;
+    padding-right: 6px;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  /* Fret cell: the string line runs through the middle */
+  .fret-cell {
+    position: relative;
+    vertical-align: middle;
+  }
+
+  /* The string line (horizontal) */
+  .fret-cell::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 2px solid #aaa;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  /* Nut (thick line after open column) */
+  .fret-cell.fret-0::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; bottom: 0; right: 0;
+    width: 4px;
+    background: #333;
+    z-index: 1;
+  }
+
+  /* Fret lines (thin vertical) for frets 1–12 */
+  .fret-cell.fret-n::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; bottom: 0; right: 0;
+    width: 2px;
+    background: #bbb;
+    z-index: 1;
+  }
+
+  /* Inlay dots at frets 3, 5, 7, 9, 12 — shown in the middle two string rows */
+  .inlay-dot {
+    position: absolute;
+    width: 8px; height: 8px;
+    background: #d4c5a9;
+    border-radius: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  /* Note circle */
+  .note-circle {
+    position: absolute;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.5);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    cursor: default;
+  }
+
+  /* Color scheme */
+  .note-A { background: #5B2C6F; }           /* root — dark purple */
+  .note-C { background: #8E44AD; }           /* minor 3rd — medium purple */
+  .note-E { background: #1E8449; }           /* 5th — dark green */
+
+  /* Chord box overlay — drawn with SVG absolutely positioned */
+  .chord-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* ── DI-CHORD SECTION ── */
+  .dichord-section {
+    margin-top: 18px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .dichord-section h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+  }
+
+  .dichord-table {
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    min-width: 400px;
+  }
+
+  .dichord-table th {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.76rem;
+  }
+
+  .dichord-table td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dichord-table tr:last-child td { border-bottom: none; }
+  .dichord-table tr:nth-child(even) td { background: #f0eaf8; }
+
+  .interval-badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.78rem;
+    color: #fff;
+  }
+
+  .badge-root-3rd { background: #5B2C6F; }
+  .badge-root-5th { background: #1E8449; }
+  .badge-3rd-5th  { background: #A569BD; }
+
+  /* ── LEGEND ── */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    margin-top: 14px;
+    font-size: 0.76rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .legend-circle {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .legend-line {
+    width: 28px; height: 4px;
+    flex-shrink: 0;
+    border-radius: 2px;
+  }
+
+  /* Am chord box dashed rectangle */
+  .chord-box-label {
+    position: absolute;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #c0392b;
+    background: rgba(248,245,240,0.85);
+    padding: 1px 4px;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 15;
+  }
+
+  /* string thickness visual */
+  .str-6::before { border-top-width: 3px !important; }
+  .str-5::before { border-top-width: 2.5px !important; }
+  .str-4::before { border-top-width: 2px !important; }
+  .str-3::before { border-top-width: 1.5px !important; }
+  .str-2::before { border-top-width: 1.5px !important; }
+  .str-1::before { border-top-width: 1px !important; }
+
+  .open-label {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.58rem;
+    color: #888;
+    font-style: italic;
+    z-index: 2;
+  }
+
+  .muted-x {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+    color: #c0392b;
+    font-weight: 700;
+    z-index: 3;
+    line-height: 1;
+  }
+</style>
+</head>
+<body>
+
+<h1>Zone 1 — Am — Guitar Fretboard</h1>
+<p class="subtitle">Chord tones (root, 3rd, 5th) of Am across the neck. The Am chord shape is highlighted.</p>
+
+<div class="fretboard-wrapper" id="fbWrapper">
+
+<table class="fretboard-table" id="fbTable">
+  <colgroup>
+    <col class="label-col">
+    <!-- frets 0–12 -->
+    <col class="fret-col"><col class="fret-col"><col class="fret-col">
+    <col class="fret-col"><col class="fret-col"><col class="fret-col">
+    <col class="fret-col"><col class="fret-col"><col class="fret-col">
+    <col class="fret-col"><col class="fret-col"><col class="fret-col">
+    <col class="fret-col">
+  </colgroup>
+
+  <!-- Fret number header -->
+  <thead>
+    <tr class="fret-header">
+      <th class="label-th"></th>
+      <th>Open</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+      <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th>
+    </tr>
+  </thead>
+
+  <tbody id="fretboardBody">
+    <!-- Rows injected by JS -->
+  </tbody>
+</table>
+
+<!-- SVG overlay for chord box and di-chord lines -->
+<svg class="chord-overlay" id="chordSvg" xmlns="http://www.w3.org/2000/svg"></svg>
+
+</div><!-- /fretboard-wrapper -->
+
+<!-- Di-Chord Section -->
+<div class="dichord-section">
+  <div>
+    <h2>Di-Chord Relationships within Am</h2>
+    <table class="dichord-table">
+      <thead>
+        <tr>
+          <th>Pair</th>
+          <th>Symbol</th>
+          <th>Interval</th>
+          <th>Quality</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Root A → minor 3rd C</strong></td>
+          <td><span class="interval-badge badge-root-3rd">[3]</span></td>
+          <td>Minor 3rd</td>
+          <td>Modal — dark</td>
+          <td><span style="display:inline-block;width:16px;height:16px;border-radius:50%;background:#5B2C6F;vertical-align:middle;"></span></td>
+        </tr>
+        <tr>
+          <td><strong>Root A → 5th E</strong></td>
+          <td><span class="interval-badge badge-root-5th">[7]</span></td>
+          <td>Perfect 5th</td>
+          <td>Perfect — stable</td>
+          <td><span style="display:inline-block;width:16px;height:16px;border-radius:50%;background:#1E8449;vertical-align:middle;"></span></td>
+        </tr>
+        <tr>
+          <td><strong>minor 3rd C → 5th E</strong></td>
+          <td><span class="interval-badge badge-3rd-5th">[4]</span></td>
+          <td>Major 3rd</td>
+          <td>Modal — light</td>
+          <td><span style="display:inline-block;width:16px;height:16px;border-radius:50%;background:#A569BD;vertical-align:middle;"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div>
+    <h2>Legend</h2>
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-circle" style="background:#5B2C6F;"></div>
+        <span><strong>A</strong> — Root (Zone 1)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-circle" style="background:#8E44AD;"></div>
+        <span><strong>C</strong> — minor 3rd [3] (Zone 1)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-circle" style="background:#1E8449;"></div>
+        <span><strong>E</strong> — Perfect 5th [7] (Zone 1)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background:#5B2C6F;"></div>
+        <span>A→C di-chord [3]</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background:#1E8449;"></div>
+        <span>A→E di-chord [7]</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background:#A569BD;"></div>
+        <span>C→E di-chord [4]</span>
+      </div>
+      <div class="legend-item">
+        <div style="width:28px;height:14px;border:2px dashed #c0392b;border-radius:3px;"></div>
+        <span>Am chord shape (frets 0–2)</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ────────────────────────────────────────────────────────────────
+// DATA
+// ────────────────────────────────────────────────────────────────
+
+// String definitions: [stringNum, displayName, openNote, cssClass]
+// Displayed top-to-bottom: low E (6) first
+const STRINGS = [
+  { num: 6, name: 'E2 (6)', openNote: 'E', cls: 'str-6' },
+  { num: 5, name: 'A2 (5)', openNote: 'A', cls: 'str-5' },
+  { num: 4, name: 'D3 (4)', openNote: 'D', cls: 'str-4' },
+  { num: 3, name: 'G3 (3)', openNote: 'G', cls: 'str-3' },
+  { num: 2, name: 'B2 (2)', openNote: 'B', cls: 'str-2' },
+  { num: 1, name: 'e4 (1)', openNote: 'E', cls: 'str-1' },
+];
+
+// Chromatic scale
+const CHROMATIC = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+
+function noteAtFret(openNote, fret) {
+  const idx = CHROMATIC.indexOf(openNote);
+  return CHROMATIC[(idx + fret) % 12];
+}
+
+// Zone 1 notes
+const ZONE1 = { 'A': 'note-A', 'C': 'note-C', 'E': 'note-E' };
+
+// Am chord shape positions: [stringNum, fret]
+const AM_CHORD = [
+  // string 6 is optional/muted — we'll mark it X
+  { s: 5, f: 0 },  // A root
+  { s: 4, f: 2 },  // E 5th
+  { s: 3, f: 2 },  // A root
+  { s: 2, f: 1 },  // C minor 3rd
+  { s: 1, f: 0 },  // E 5th
+];
+
+// Inlay frets (show dot in G3 row = index 3, i.e. 4th row from top, 0-indexed)
+const INLAY_FRETS = [3, 5, 7, 9, 12]; // 12 gets double dot later
+
+// Inlay rows (row index 0-5, we put dot between rows 2 and 3 = row 3 for single inlay)
+// For simplicity, render inlay dot in string 3 cell (index 3 from top)
+const INLAY_ROW_IDX = 3; // G string row
+
+// ────────────────────────────────────────────────────────────────
+// BUILD TABLE
+// ────────────────────────────────────────────────────────────────
+const tbody = document.getElementById('fretboardBody');
+
+// Maps for cell lookup: cellMap[stringNum][fret] = <td>
+const cellMap = {};
+
+STRINGS.forEach((str, rowIdx) => {
+  const tr = document.createElement('tr');
+  tr.className = `string-row ${str.cls}`;
+  cellMap[str.num] = {};
+
+  // Label cell
+  const labelTd = document.createElement('td');
+  labelTd.className = 'string-label';
+  labelTd.textContent = str.name;
+  tr.appendChild(labelTd);
+
+  for (let fret = 0; fret <= 12; fret++) {
+    const td = document.createElement('td');
+    td.className = `fret-cell ${str.cls} ` + (fret === 0 ? 'fret-0' : 'fret-n');
+    td.dataset.string = str.num;
+    td.dataset.fret = fret;
+
+    const note = noteAtFret(str.openNote, fret);
+
+    // Inlay dot
+    if (INLAY_FRETS.includes(fret) && rowIdx === INLAY_ROW_IDX) {
+      const dot = document.createElement('div');
+      dot.className = 'inlay-dot';
+      td.appendChild(dot);
+      if (fret === 12) {
+        // double dot — add a second
+        const dot2 = document.createElement('div');
+        dot2.className = 'inlay-dot';
+        dot2.style.top = '25%';
+        td.appendChild(dot2);
+        dot.style.top = '75%';
+      }
+    }
+
+    // Zone 1 note circle
+    if (ZONE1[note]) {
+      const circle = document.createElement('div');
+      circle.className = `note-circle ${ZONE1[note]}`;
+      circle.textContent = note;
+      circle.title = `String ${str.num}, Fret ${fret}: ${note}`;
+      td.appendChild(circle);
+    }
+
+    cellMap[str.num][fret] = td;
+    tr.appendChild(td);
+  }
+
+  tbody.appendChild(tr);
+});
+
+// ────────────────────────────────────────────────────────────────
+// CHORD BOX OVERLAY + DI-CHORD LINES (SVG)
+// ────────────────────────────────────────────────────────────────
+function getCellCenter(stringNum, fret) {
+  const td = cellMap[stringNum][fret];
+  if (!td) return null;
+  const wrapper = document.getElementById('fbWrapper');
+  const wRect = wrapper.getBoundingClientRect();
+  const rect = td.getBoundingClientRect();
+  return {
+    x: rect.left - wRect.left + rect.width / 2,
+    y: rect.top - wRect.top + rect.height / 2,
+  };
+}
+
+function getCellRect(stringNum, fret) {
+  const td = cellMap[stringNum][fret];
+  if (!td) return null;
+  const wrapper = document.getElementById('fbWrapper');
+  const wRect = wrapper.getBoundingClientRect();
+  const rect = td.getBoundingClientRect();
+  return {
+    x: rect.left - wRect.left,
+    y: rect.top - wRect.top,
+    w: rect.width,
+    h: rect.height,
+  };
+}
+
+function drawOverlay() {
+  const svg = document.getElementById('chordSvg');
+  const wrapper = document.getElementById('fbWrapper');
+  const wRect = wrapper.getBoundingClientRect();
+  svg.setAttribute('width', wRect.width);
+  svg.setAttribute('height', wRect.height);
+  svg.innerHTML = '';
+
+  function makePath(d, stroke, strokeW, dasharray, opacity) {
+    const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    p.setAttribute('d', d);
+    p.setAttribute('stroke', stroke);
+    p.setAttribute('stroke-width', strokeW);
+    p.setAttribute('fill', 'none');
+    if (dasharray) p.setAttribute('stroke-dasharray', dasharray);
+    if (opacity) p.setAttribute('opacity', opacity);
+    svg.appendChild(p);
+    return p;
+  }
+
+  function makeText(x, y, text, fill, fontSize, fontWeight) {
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    t.setAttribute('x', x);
+    t.setAttribute('y', y);
+    t.setAttribute('fill', fill);
+    t.setAttribute('font-size', fontSize || '10');
+    t.setAttribute('font-weight', fontWeight || '600');
+    t.setAttribute('font-family', 'Segoe UI, Arial, sans-serif');
+    t.setAttribute('text-anchor', 'middle');
+    t.textContent = text;
+    svg.appendChild(t);
+  }
+
+  function makeLine(x1, y1, x2, y2, stroke, sw) {
+    const l = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    l.setAttribute('x1', x1); l.setAttribute('y1', y1);
+    l.setAttribute('x2', x2); l.setAttribute('y2', y2);
+    l.setAttribute('stroke', stroke);
+    l.setAttribute('stroke-width', sw || 2);
+    svg.appendChild(l);
+    return l;
+  }
+
+  // ── Chord box: dashed rectangle around frets 0–2, strings 1–5 ──
+  const topLeft  = getCellRect(5, 0);  // string 5 open (top of chord)
+  const botRight = getCellRect(1, 2);  // string 1 fret 2 (bottom-right of chord region)
+
+  if (topLeft && botRight) {
+    const pad = 4;
+    const rx = topLeft.x + 2;
+    const ry = topLeft.y + pad;
+    const rw = (botRight.x + botRight.w) - topLeft.x - 2;
+    const rh = (botRight.y + botRight.h) - topLeft.y - pad * 2;
+
+    const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('x', rx);
+    rect.setAttribute('y', ry);
+    rect.setAttribute('width', rw);
+    rect.setAttribute('height', rh);
+    rect.setAttribute('fill', 'rgba(192,57,43,0.05)');
+    rect.setAttribute('stroke', '#c0392b');
+    rect.setAttribute('stroke-width', '1.8');
+    rect.setAttribute('stroke-dasharray', '6 3');
+    rect.setAttribute('rx', '4');
+    svg.appendChild(rect);
+
+    // Label "Am"
+    makeText(rx + rw / 2, ry - 4, 'Am chord shape', '#c0392b', '11', '700');
+  }
+
+  // Muted X on string 6
+  const str6open = getCellCenter(6, 0);
+  if (str6open) {
+    makeText(str6open.x, str6open.y + 4, '×', '#c0392b', '18', '900');
+  }
+
+  // ── Di-chord connecting lines within Am chord shape ──
+  // Positions in Am:
+  //   A root: str5 f0, str3 f2
+  //   C 3rd:  str2 f1
+  //   E 5th:  str4 f2, str1 f0
+
+  // Helper to draw a curved bracket line between two note positions
+  function diChordArc(s1, f1, s2, f2, color, label) {
+    const p1 = getCellCenter(s1, f1);
+    const p2 = getCellCenter(s2, f2);
+    if (!p1 || !p2) return;
+
+    // Draw slightly curved line
+    const midX = (p1.x + p2.x) / 2;
+    const midY = (p1.y + p2.y) / 2;
+    const dx = p2.x - p1.x;
+    const dy = p2.y - p1.y;
+    const len = Math.sqrt(dx * dx + dy * dy);
+    // offset perpendicular
+    const curveMag = len * 0.18;
+    const nx = -dy / len;
+    const ny = dx / len;
+    const cx = midX + nx * curveMag + 30;
+    const cy = midY + ny * curveMag;
+
+    const d = `M ${p1.x} ${p1.y} Q ${cx} ${cy} ${p2.x} ${p2.y}`;
+    makePath(d, color, 2, '4 2', 0.85);
+
+    // Label midpoint along curve (approx)
+    const lx = midX + nx * curveMag * 0.7 + 32;
+    const ly = midY + ny * curveMag * 0.7;
+    const badge = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    badge.setAttribute('x', lx - 12);
+    badge.setAttribute('y', ly - 8);
+    badge.setAttribute('width', 24);
+    badge.setAttribute('height', 16);
+    badge.setAttribute('rx', 8);
+    badge.setAttribute('fill', color);
+    svg.appendChild(badge);
+    makeText(lx, ly + 4, label, '#fff', '10', '700');
+  }
+
+  // A (str5 f0) → C (str2 f1): [3]
+  diChordArc(5, 0, 2, 1, '#5B2C6F', '[3]');
+
+  // A (str5 f0) → E (str4 f2): [7]
+  diChordArc(5, 0, 4, 2, '#1E8449', '[7]');
+
+  // A (str3 f2) → E (str1 f0): [7]  -- secondary
+  diChordArc(3, 2, 1, 0, '#1E8449', '[7]');
+
+  // C (str2 f1) → E (str1 f0): [4]
+  diChordArc(2, 1, 1, 0, '#A569BD', '[4]');
+
+  // C (str2 f1) → E (str4 f2): [4]
+  diChordArc(2, 1, 4, 2, '#A569BD', '[4]');
+}
+
+// Run after layout settles
+window.addEventListener('load', () => {
+  setTimeout(drawOverlay, 120);
+});
+window.addEventListener('resize', () => {
+  setTimeout(drawOverlay, 60);
+});
+</script>
+
+</body>
+</html>
