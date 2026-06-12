@@ -49,6 +49,7 @@ function SourceReadings({ items }: { items: Array<{ source: string; location: st
 
 const TOC = [
   { id: 'intro', label: 'Introduction' },
+  { id: 'source-readings', label: 'Source Readings' },
   { id: 'part1', label: 'Part 1 — Musical OS' },
   { id: 'dichord', label: '· What a Di-Chord Is' },
   { id: 'sound-factors', label: '· The Three Sound Factors' },
@@ -181,6 +182,123 @@ export default function TextbookPage() {
               <P>By the end of Sprint 1, you will be able to do five things that you cannot fully do right now. You will be able to hear a major third and a minor third and know immediately which is which. You will be able to locate Zone 1 — the chord tones — of any chord on both instruments. You will understand the difference between a chord&apos;s name and a chord&apos;s function. You will have a working feel for the 8-position rhythmic grid and what it means for a song to groove. And you will be able to play &quot;Ain&apos;t No Sunshine&quot; in a simplified but musical form on both guitar and piano. Not perfectly. Musically.</P>
             </section>
 
+            {/* Source Readings */}
+            <section id="source-readings">
+              <H2 id="source-readings">Source Readings for Sprint 1</H2>
+              <P>Before or alongside working through this textbook, read the following sections in the original source materials. The AMF content assumes familiarity with these chapters — they are the foundation this sprint is built on. Page numbers refer to the physical book.</P>
+
+              <div className="space-y-4 my-6">
+
+                <div className="rounded-xl border border-slate-200 overflow-hidden">
+                  <div className="px-4 py-3 font-bold text-sm text-white" style={{background:'#0f172a'}}>
+                    Plogger Method — <span className="font-normal opacity-80">Primary source for the Musical OS</span>
+                  </div>
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-slate-50 border-b border-slate-200">
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-40">Chapter / Pages</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">What to read</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-32">Relevant to</th>
+                    </tr></thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {[
+                        ['Ch.3 — p.31', 'Keyboard Visualization — how to build and use the mental keyboard', 'Part 1'],
+                        ['Ch.4 — p.51', 'Longy Rhythms — ta and ta-te, the foundational syllabic rhythm system', 'Part 5'],
+                        ['Ch.5 — p.61', 'The Lap Map — physical groove embodiment paired with Longy', 'Part 5'],
+                        ['Ch.9 — p.101', 'Di-Chord Numbers — the cardinal semitone system and bracket notation', 'Part 1'],
+                        ['Ch.10 — p.110', 'The Sonic Properties of Di-Chords — overview of all three factors', 'Part 1'],
+                        ['Ch.11 — p.112', 'Interference Pulsation — 8Hz/4Hz/2Hz categories, wave shapes', 'Part 1'],
+                        ['Ch.12–14 — p.121–135', 'F/O Factor, Harmonicity, and complete di-chord review table', 'Part 1'],
+                        ['Ch.15 — p.140', 'Di-Chords in Melodic Contexts — gestural quality and expressiveness', 'Part 2'],
+                        ['Ch.16 — p.151 (incl. p.153)', 'The Tracking Page — all 6 protocols; use p.153 directly in practice', 'Part 1'],
+                        ['Ch.20 — p.226', 'Heptachord Formation — conjunct (five-finger) position setup', 'Part 4'],
+                        ['Ch.21 — p.237', 'Triads and Their Inversions — chord structure as di-chord stacks', 'Part 3'],
+                      ].map(([loc, desc, rel]) => (
+                        <tr key={loc} className="hover:bg-slate-50">
+                          <td className="px-4 py-2 font-mono text-xs text-amber-800 whitespace-nowrap">{loc}</td>
+                          <td className="px-4 py-2 text-slate-700">{desc}</td>
+                          <td className="px-4 py-2 text-xs text-slate-400">{rel}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="rounded-xl border border-slate-200 overflow-hidden">
+                  <div className="px-4 py-3 font-bold text-sm text-white" style={{background:'#1E8449'}}>
+                    The Rhythm Code — <span className="font-normal opacity-80">Tamas Bodzsar</span>
+                  </div>
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-slate-50 border-b border-slate-200">
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-40">Section</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">What to read</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-32">Relevant to</th>
+                    </tr></thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {[
+                        ['Introduction', 'Rhythm as starting points (not durations) — the foundational premise', 'Part 5'],
+                        ['Binary Grid chapter', '8-position grid structure, stops, anticipations, on/off notation', 'Part 5'],
+                      ].map(([loc, desc, rel]) => (
+                        <tr key={loc} className="hover:bg-slate-50">
+                          <td className="px-4 py-2 font-mono text-xs text-amber-800 whitespace-nowrap">{loc}</td>
+                          <td className="px-4 py-2 text-slate-700">{desc}</td>
+                          <td className="px-4 py-2 text-xs text-slate-400">{rel}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="rounded-xl border border-slate-200 overflow-hidden">
+                  <div className="px-4 py-3 font-bold text-sm text-white" style={{background:'#5B2C6F'}}>
+                    Emotional Map of Melody — <span className="font-normal opacity-80">Zone system source</span>
+                  </div>
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-slate-50 border-b border-slate-200">
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-40">Module</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">What to read</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-32">Relevant to</th>
+                    </tr></thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {[
+                        ['Module 1', 'Zone system introduction — four zones, stability ladder, chord-tone vs. non-chord-tone', 'Part 2'],
+                      ].map(([loc, desc, rel]) => (
+                        <tr key={loc} className="hover:bg-slate-50">
+                          <td className="px-4 py-2 font-mono text-xs text-amber-800 whitespace-nowrap">{loc}</td>
+                          <td className="px-4 py-2 text-slate-700">{desc}</td>
+                          <td className="px-4 py-2 text-xs text-slate-400">{rel}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="rounded-xl border border-slate-200 overflow-hidden">
+                  <div className="px-4 py-3 font-bold text-sm text-white" style={{background:'#1a5a8a'}}>
+                    Guitar Theory Course — <span className="font-normal opacity-80">Instrument-specific reference</span>
+                  </div>
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-slate-50 border-b border-slate-200">
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-40">Section</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600">What to read</th>
+                      <th className="text-left px-4 py-2 font-semibold text-slate-600 w-32">Relevant to</th>
+                    </tr></thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {[
+                        ['Open Chords', 'Am, G, Em, Dm fingerings — string-by-string note content, common errors', 'Part 4'],
+                      ].map(([loc, desc, rel]) => (
+                        <tr key={loc} className="hover:bg-slate-50">
+                          <td className="px-4 py-2 font-mono text-xs text-amber-800 whitespace-nowrap">{loc}</td>
+                          <td className="px-4 py-2 text-slate-700">{desc}</td>
+                          <td className="px-4 py-2 text-xs text-slate-400">{rel}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </section>
+
             {/* Part 1 */}
             <section id="part1">
               <H2 id="part1">Part 1: The Musical OS — How Plogger Works</H2>
@@ -213,11 +331,6 @@ export default function TextbookPage() {
               </div>
               <P>Eleven sounds. Each one a distinct perceptual character. Not positions on a page — sounds in the world.</P>
               <P>The reason the Plogger Method uses the keyboard as its cognitive tool is precisely because the keyboard makes these eleven distances visible. The piano keyboard shows twelve semitones in one octave, repeated across the full instrument. It is the one instrument where semitone count is directly visible as physical distance. When you can visualize a keyboard clearly and fluently, you can count di-chords in your mind without touching an instrument. That mental keyboard is the working surface on which all Plogger exercises run.</P>
-
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.9 — p.101', topic: 'Di-Chord Numbers — the cardinal semitone system, bracket notation, inversion law' },
-                { source: 'Plogger Method', location: 'Ch.3 — p.31', topic: 'Keyboard Visualization — mental keyboard as the working surface for all di-chord exercises' },
-              ]} />
 
               <H3 id="sound-factors">The Three Sound Factors</H3>
               <P>A di-chord is not one-dimensional. Saying that <BC>[3]</BC> is a minor third tells you the semitone count — that is the first dimension. But it does not tell you how the interval feels, what its acoustic behavior is, or how to distinguish it from other intervals in the same neighborhood. For that you need three sound factors, each of which addresses a different physical property of what two simultaneously sounding notes do.</P>
@@ -286,12 +399,6 @@ export default function TextbookPage() {
 
               <Asset file="R4_sound_factors_reference.html" title="Di-Chord Sound Factors Reference — All 11" height={500} />
 
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.10 — p.110', topic: 'The Sonic Properties of Di-Chords — conceptual overview of all three factors' },
-                { source: 'Plogger Method', location: 'Ch.11 — p.112', topic: 'Interference Pulsation — 8Hz/4Hz/2Hz categories, wave shapes, dissonant/modal/perfect families' },
-                { source: 'Plogger Method', location: 'Ch.12–14 — p.121–135', topic: 'Fundamental/Octave Factor, Harmonicity, and complete di-chord review table' },
-              ]} />
-
               <H3 id="sprint1-focus">Sprint 1 Focus: [3] and [4] — The Quality Di-Chords</H3>
               <P>Sprint 1 begins with <BC>[3]</BC> and <BC>[4]</BC> because these two di-chords encode the most fundamental distinction in Western music: minor versus major. When you hear a chord and feel that it is minor — that specific quality of weight and inwardness — what you are hearing is a minor third sitting inside the chord. When you hear a chord as major — that open, bright, resolved quality — you are hearing a major third. The quality question is a <BC>[3]</BC> versus <BC>[4]</BC> question. Everything else in harmony builds from this.</P>
               <P><BC>[3]</BC> — the minor third — is modal (4Hz, rounded wave), refers down toward the fundamental, and is non-harmonic (dark). The non-harmonic quality means the upper note stands apart from the lower note&apos;s overtone family. The notes attract each other. Combined with the 4Hz modal beating, <BC>[3]</BC> has a quality that is both flowing (modal) and slightly closed (non-harmonic, fundamental-referring). This is the sound of minor — perceptually contracted and inward.</P>
@@ -302,11 +409,6 @@ export default function TextbookPage() {
               <P>The Hear → Sing → Name workflow is the method. First, you hear the di-chord and simply listen — not to analyze, but to receive the sound. Then you sing it, forcing your body to produce the interval rather than just perceive it. Then you name it. Naming is not difficult at this point because you have already heard and produced the interval — the name is just the label for something you already know. Plogger&apos;s sequence ensures that the ear leads and the label follows — never the reverse.</P>
 
               <Asset file="O3_hear_sing_name_cycle.html" title="Hear → Sing → Name Practice Cycle" height={360} />
-
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.14 Review — p.135', topic: 'Complete di-chord table; [3] and [4] properties in full detail' },
-                { source: 'Plogger Method', location: 'Ch.11 — p.112', topic: 'Pulsation categories — where [3] and [4] sit in the modal family' },
-              ]} />
 
               <H3 id="pictograph">The Pictograph System</H3>
               <P>The Plogger Pictograph is a visual encoding of all three sound factors for each di-chord, drawn as a stylized rendering of the bracket number itself. Each di-chord has a visual glyph that encodes its pulsation, F/O factor, and harmonicity simultaneously, using three visual properties:</P>
@@ -319,11 +421,6 @@ export default function TextbookPage() {
 
               <Asset file="R2_pictograph_reference.html" title="Di-Chord Pictograph Reference — All 11 Di-Chords" height={600} />
 
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.11–13 — p.112–120', topic: 'Pictograph construction — pulsation outlines, shadow direction, harmonicity color; progressive drawing exercises' },
-                { source: 'Plogger Method', location: 'Ch.14 Review — p.135', topic: 'Complete Pictograph for all 11 di-chords; fluency check exercises' },
-              ]} />
-
               <H3 id="tracking-page">The Tracking Page</H3>
               <P>The Tracking Page is one of the two most important tools in the entire Plogger Method. Plogger himself writes that &quot;next to visualizing the keyboard, the Tracking Page is the most important means of developing fluency and accuracy in connecting your mind with your ear and your eye.&quot;</P>
               <P>It is a specific page in the Plogger book — page 153 — containing ten melodic lines built around specific di-chord types. No clefs are printed on these lines. You choose a starting note each day, which determines the mode. Seven different starting notes, seven different modes, the same ten melodic lines. One starting note per day of the week.</P>
@@ -331,11 +428,6 @@ export default function TextbookPage() {
               <P>The full six protocols are not all introduced at once. In Sprint 1, you begin with Protocols 1 and 2. The deeper protocols arrive as your di-chord ear develops through later sprints. By the time you reach Protocol 6 in Sprint 12, you are working the Tracking Page with all six protocols in seven modes simultaneously.</P>
               <P>The reason the Tracking Page works is captured in Plogger&apos;s distinction between reading by rote and reading by di-chord. Reading by rote means identifying individual notes one at a time. Reading by di-chord means accessing the relationships between notes, the intervals of movement, &quot;where expression, affect, and meaning are found.&quot; The Tracking Page trains the latter.</P>
 
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.16 — p.151', topic: 'The Tracking Page — complete explanation, all 6 protocols, 7-mode framework, recording progress' },
-                { source: 'Plogger Method', location: 'p.153', topic: 'The Tracking Page itself — 10 melodic lines, no clefs printed; use this page directly in practice' },
-                { source: 'Plogger Method', location: 'Ch.8 — p.84', topic: 'Reading by di-chord vs. reading by rote — the foundational reading principle' },
-              ]} />
             </section>
 
             {/* Part 2 */}
@@ -352,10 +444,6 @@ export default function TextbookPage() {
                 <li><strong>Zone 4:</strong> Approach tones — chromatic notes used to approach chord tones from a half step above or below. (Enters Sprint 7)</li>
               </ul>
               <P>The zones are a spiral thread — Zone 1 enters in Sprint 1 and the system deepens sprint by sprint. You do not learn all four zones in Sprint 1. You establish Zone 1 as a complete, fluent skill before Zone 2 is introduced.</P>
-
-              <SourceReadings items={[
-                { source: 'Emotional Map of Melody', location: 'Module 1 — Zone System Introduction', topic: 'Four zones, stability ladder, chord-tone vs. non-chord-tone distinction, tension and release mechanics' },
-              ]} />
 
               <H3 id="zone1-detail">Zone 1 in Detail</H3>
               <P>Zone 1 contains exactly three notes for any given chord: the root, the third, and the fifth. These are the building blocks of a triad, and they carry specific functions worth understanding in depth.</P>
@@ -393,10 +481,6 @@ export default function TextbookPage() {
               <P>A melodic gesture is a shaped movement in melody — two notes connected by a specific di-chord interval, carrying a direction and a character. Sprint 1 is exposure to the concept of melodic gesture, not mastery of it. The full gesture vocabulary is a later sprint project, beginning with the Tracking Page&apos;s deep protocols in Sprint 7. What you are doing in Sprint 1 is priming your ear to notice that melody moves by intervals — that a step up from E to G in the Am context is a <BC>[3]</BC> gesture, and that it has a quality you can hear and eventually name.</P>
               <P>The most immediate access to melodic gesture in Sprint 1 is through singing. When you sing the melody of &quot;Ain&apos;t No Sunshine,&quot; you are producing melodic gestures with your voice. The up-step from the root to the third of Am — from A to C — is a <BC>[3]</BC>. The fall from E back down to A — a <BC>[5]</BC> — gives a suspended, hanging quality.</P>
 
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.15 — p.140', topic: 'Di-Chords in Melodic Contexts — gestural quality, ascending vs. descending character, expressiveness instruction' },
-              ]} />
-
               <H3 id="pitch-first">Pitch Before Rhythm</H3>
               <P>The AMF sequences pitch location before rhythmic complexity for a specific reason. Before you can feel the rhythm of a melody fully, you need to know where the notes live in musical space. If you are spending cognitive attention locating pitches, you cannot also feel the time and groove that the rhythm requires. These are competing cognitive loads. By establishing Zone 1 fluency — by getting to the point where you can locate A, C, and E over Am without conscious searching — you free up attention for rhythm.</P>
             </section>
@@ -428,11 +512,6 @@ export default function TextbookPage() {
 
               <Asset file="E3_root_movement_preview.html" title="Di-Chord → Root Movement Preview — Plogger to Harmony Bridge" height={380} />
 
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.21 — p.237', topic: 'Triads and Their Inversions — triad construction as di-chord stacks; chord quality expressed through di-chord content' },
-                { source: 'Plogger Method', location: 'Ch.23 — p.262', topic: 'Scale Degree Harmonization — diatonic triad reference; harmonic function in context' },
-              ]} />
-
               <H3 id="fourteen-movements">The 14-Movement Vocabulary — A Preview</H3>
               <P>The AMF&apos;s harmonic spine is built from fourteen di-chord root movements, not from chord progressions as memorized units. The sequence of movements, organized by perceptual accessibility, begins with <BC>[5]</BC> (perfect fourth — Sprint 2), then <BC>[7]</BC> (perfect fifth — Sprint 3), <BC>[2]</BC> (major second — Sprint 4), <BC>[3]</BC> (minor third — Sprint 5), <BC>[9]</BC> (major sixth — Sprint 6), <BC>[4]</BC> (major third — Sprint 7), and <BC>[6]</BC> (tritone — Sprint 8). Sprints 9–12 extend into chromatic territory. Each sprint owns one movement deeply before adding another.</P>
               <P>Progressions are not memorized as patterns. They are heard as combinations of owned sounds. This is the difference between learning a sequence and understanding a language. In Sprint 1 you are not yet speaking the language — you are learning your first words.</P>
@@ -452,10 +531,6 @@ export default function TextbookPage() {
               <P><strong>Dm:</strong> Index finger on first fret, first string (E → F); middle finger on second fret, third string (G → A); ring finger on third fret, second string (B → D). Open fourth string (D). Do not play strings 5 or 6. Every minor chord contains a <BC>[3]</BC> between its root and third. This is what your ear is learning to recognize as the minor quality sound.</P>
 
               <Asset file="E1_zone1_guitar_fretboard.html" title="Zone 1 Guitar Fretboard — Open Position Chord Shapes" height={480} />
-
-              <SourceReadings items={[
-                { source: 'Guitar Theory Course', location: 'Open Chords — Am, G, Em, Dm', topic: 'Open position chord fingerings, string-by-string note content, common voicing errors and corrections' },
-              ]} />
 
               <H3 id="piano">Piano: Five-Finger Position</H3>
               <P>The five-finger position — sometimes called the conjunct heptachord position — is the foundational hand position. Both hands meet at the tonic note, each index finger on the same pitch. From there, the right hand extends upward and the left hand extends downward.</P>
@@ -483,10 +558,6 @@ export default function TextbookPage() {
               <P>The ring finger always plays the third degree of the scale — your weakest non-pinky finger is the finger that determines major or minor quality. In A minor, the right ring finger rests on C — a <BC>[3]</BC> from A. The physical sensation under your ring finger encodes the quality of the mode. For Sprint 1, establish two positions: C major (tonic on middle C) and A minor (tonic on A above middle C).</P>
 
               <Asset file="E2_zone1_piano_keyboard.html" title="Zone 1 Piano Keyboard — Five-Finger Position" height={400} />
-
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.20 — p.226', topic: 'Heptachord Formation — conjunct heptachord position (five-finger position), finger-to-degree mapping, hand position setup' },
-              ]} />
 
               <H3 id="parallel">Parallel Practice</H3>
               <P>Playing the same chord on both instruments in the same practice session creates a specific kind of learning that neither instrument alone produces. The chord&apos;s di-chord content is the same on both instruments — Am is A-C-E regardless of guitar or keyboard. But the physical experience is completely different. On guitar, Am is a grip. On piano, Am is three keys pressed — a cleaner attack, the chord laid out visually as a span across the keyboard. When you move between the two instruments and find the same <BC>[3]</BC> quality in both, you are reinforcing the di-chord as a perceptual object independent of any physical medium. This is the beginning of genuine musical abstraction.</P>
@@ -519,19 +590,9 @@ export default function TextbookPage() {
 
               <Asset file="O2_rhythm_grid_card.html" title="Rhythm Code 8-Position Grid Card" height={580} />
 
-              <SourceReadings items={[
-                { source: 'The Rhythm Code', location: 'Introduction — Binary Grid Concept', topic: 'Rhythm as starting points (not durations), 8-position grid structure, stops and anticipations' },
-                { source: 'Plogger Method', location: 'Ch.4 — p.51', topic: 'Longy Rhythms — foundational rhythmic vocabulary, ta/ta-te syllable system, Longy chart exercises' },
-              ]} />
-
               <H3 id="longy">Longy: ta and ta-te</H3>
               <P>The Longy system is a syllabic encoding of rhythm. <strong>ta</strong> is a single undivided beat — a quarter note in simple time. <strong>ta-te</strong> is a beat divided into two equal parts — two eighth notes. The syllable carries the duration: you cannot say &quot;ta&quot; too quickly and still produce the correct rhythm, because the physical act of pronouncing the syllable occupies time.</P>
               <P>In Sprint 1 you are working with exactly two Longy patterns: <strong>ta</strong> and <strong>ta-te</strong>. Everything else in the Longy system is built from these two foundations. The Longy system and the Rhythm Code grid operate at different levels and both are necessary. Longy answers: what is this rhythm, and how is it notated? The Rhythm Code answers: does this rhythm feel good, and where does it sit in the groove?</P>
-
-              <SourceReadings items={[
-                { source: 'Plogger Method', location: 'Ch.4 — p.51', topic: 'Longy Rhythms — ta and ta-te introduced; integration with Lap Map for groove embodiment' },
-                { source: 'Plogger Method', location: 'Ch.5 — p.61', topic: 'The Lap Map — physical groove embodiment that pairs with Longy notation' },
-              ]} />
 
               <H3 id="ans-rhythm">The Rhythm of Ain&apos;t No Sunshine</H3>
               <P>&quot;Ain&apos;t No Sunshine&quot; has one of the most instructive rhythmic structures in the popular song repertoire for a beginning groove study, specifically because of its use of silence. The famous &quot;I know&quot; section — approximately twenty-six repetitions of the phrase &quot;I know&quot; — is rhythmically remarkable. Between each &quot;I know,&quot; there is a rhythmic gap — a stop. The stops are not empty. They are rhythmically active silences. The listener&apos;s ear fills in the beat, continues the pulse internally, and experiences the next &quot;I know&quot; as arriving exactly where it should.</P>
