@@ -2,22 +2,25 @@
 
 import { useState, useCallback } from 'react'
 import dynamic from 'next/dynamic'
-import { DICHORDS, getDiChord, useAudioEngine, DEFAULT_MIX, type Timbre, type SoundFactorMix } from '@/lib/audio'
+import {
+  getDiChord, useAudioEngine, DEFAULT_MIX, INSTRUMENT_PRESETS, DEFAULT_INSTRUMENT,
+  type SoundFactorMix, type InstrumentId,
+} from '@/lib/audio'
 import FactorPanels from './components/FactorPanels'
 
-const DiChordGrid        = dynamic(() => import('./components/DiChordGrid'),        { ssr: false })
-const DrillMode          = dynamic(() => import('./components/DrillMode'),          { ssr: false })
-const FactorMixControls  = dynamic(() => import('./components/FactorMixControls'),  { ssr: false })
+const DiChordGrid       = dynamic(() => import('./components/DiChordGrid'),       { ssr: false })
+const DrillMode         = dynamic(() => import('./components/DrillMode'),         { ssr: false })
+const FactorMixControls = dynamic(() => import('./components/FactorMixControls'), { ssr: false })
 
 type Tab = 'explorer' | 'drill'
 
 export default function EarTrainingPage() {
-  const [tab, setTab]                     = useState<Tab>('explorer')
+  const [tab, setTab]                         = useState<Tab>('explorer')
   const [selectedBracket, setSelectedBracket] = useState(3)
-  const [timbre, setTimbre]               = useState<Timbre>('sine')
-  const [rootMidi]                        = useState(57)   // A3
-  const [isPlaying, setIsPlaying]         = useState(false)
-  const [mix, setMix]                     = useState<SoundFactorMix>(DEFAULT_MIX)
+  const [rootMidi]                            = useState(57)   // A3
+  const [isPlaying, setIsPlaying]             = useState(false)
+  const [mix, setMix]                         = useState<SoundFactorMix>(DEFAULT_MIX)
+  const [instrumentId, setInstrumentId]       = useState<InstrumentId>(DEFAULT_INSTRUMENT)
 
   const { isReady, start, synth } = useAudioEngine()
   const dichord = getDiChord(selectedBracket)
@@ -39,24 +42,14 @@ export default function EarTrainingPage() {
     setIsPlaying(false)
   }, [synth])
 
-  const handleTimbreChange = useCallback((t: Timbre) => {
-    setTimbre(t)
-    // Harmonicity slider maps to timbre roughly — keep in sync
-    const harmMap: Record<Timbre, number> = { sine: 0, triangle: 3, sawtooth: 8, complex: 6 }
-    const newMix = { ...mix, harmonicity: harmMap[t] }
-    setMix(newMix)
-    synth?.setMix(newMix)
-  }, [synth, mix])
-
   const handleMixChange = useCallback((newMix: SoundFactorMix) => {
     setMix(newMix)
-    // Sync timbre display to harmonicity level
-    const t: Timbre = newMix.harmonicity < 2.5 ? 'sine'
-      : newMix.harmonicity < 5 ? 'triangle'
-      : newMix.harmonicity < 7.5 ? 'sawtooth'
-      : 'complex'
-    setTimbre(t)
     synth?.setMix(newMix)
+  }, [synth])
+
+  const handleInstrumentChange = useCallback((id: InstrumentId) => {
+    setInstrumentId(id)
+    synth?.setInstrument(INSTRUMENT_PRESETS[id])
   }, [synth])
 
   return (
@@ -110,7 +103,6 @@ export default function EarTrainingPage() {
                   </p>
                   <p className="text-xs mt-0.5" style={{ color: '#475569' }}>{dichord.feel}</p>
                 </div>
-                {/* Play / Stop button */}
                 <button
                   onClick={isPlaying ? handleStop : handlePlay}
                   className="rounded-lg font-semibold transition-all"
@@ -129,24 +121,24 @@ export default function EarTrainingPage() {
               <DiChordGrid selected={selectedBracket} onSelect={handleSelect} />
             </div>
 
-            {/* Sound Factor Mix — dimmers */}
-            <FactorMixControls mix={mix} onChange={handleMixChange} />
-
-            {/* Three factor visualizations (reflect current mix) */}
-            <FactorPanels
-              dichord={dichord}
-              timbre={timbre}
+            {/* Instrument + Sound Factor Mix */}
+            <FactorMixControls
               mix={mix}
-              onTimbreChange={handleTimbreChange}
+              onChange={handleMixChange}
+              instrumentId={instrumentId}
+              onInstrumentChange={handleInstrumentChange}
             />
+
+            {/* Three factor visualizations */}
+            <FactorPanels dichord={dichord} mix={mix} />
 
             {/* Reference row */}
             <div className="rounded-xl p-4" style={{ background: '#1e293b', border: '1px solid rgba(255,255,255,0.06)' }}>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                 {[
-                  { label: 'Bracket', value: `[${selectedBracket}]` },
-                  { label: 'Semitones', value: dichord.semitones },
-                  { label: 'Pulsation', value: `${dichord.pulsationHz} Hz` },
+                  { label: 'Bracket',    value: `[${selectedBracket}]` },
+                  { label: 'Semitones',  value: dichord.semitones },
+                  { label: 'Pulsation',  value: `${dichord.pulsationHz} Hz` },
                   { label: 'F/O Shadow', value: dichord.foDirection === 'down' ? '↓ Down' : dichord.foDirection === 'up' ? '↑ Up' : '↕ Both' },
                 ].map(item => (
                   <div key={item.label}>

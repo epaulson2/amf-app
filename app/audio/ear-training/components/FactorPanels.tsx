@@ -1,15 +1,13 @@
 'use client'
 
-import type { DiChord, Timbre, SoundFactorMix } from '@/lib/audio'
+import type { DiChord, SoundFactorMix } from '@/lib/audio'
 import PulsationViz from './PulsationViz'
 import HarmonicityViz from './HarmonicityViz'
 import FOFactorViz from './FOFactorViz'
 
 interface FactorPanelsProps {
   dichord: DiChord
-  timbre: Timbre
   mix: SoundFactorMix
-  onTimbreChange: (t: Timbre) => void
 }
 
 function MixBadge({ value, color }: { value: number; color: string }) {
@@ -24,7 +22,7 @@ function MixBadge({ value, color }: { value: number; color: string }) {
   )
 }
 
-export default function FactorPanels({ dichord, timbre, mix, onTimbreChange }: FactorPanelsProps) {
+export default function FactorPanels({ dichord, mix }: FactorPanelsProps) {
   return (
     <div className="space-y-3">
       <p className="text-xs font-bold tracking-widest uppercase" style={{ color: '#334155' }}>
@@ -43,7 +41,7 @@ export default function FactorPanels({ dichord, timbre, mix, onTimbreChange }: F
             <span className="text-xs font-semibold" style={{ color: '#7c3aed' }}>Harmonicity</span>
             <MixBadge value={mix.harmonicity} color="#7c3aed" />
           </div>
-          <HarmonicityViz dichord={dichord} timbre={timbre} onTimbreChange={onTimbreChange} />
+          <HarmonicityViz dichord={dichord} mixLevel={mix.harmonicity} />
         </div>
         <div className="space-y-2">
           <div className="flex items-center justify-between px-1">

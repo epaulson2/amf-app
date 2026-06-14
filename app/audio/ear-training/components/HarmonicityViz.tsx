@@ -1,19 +1,11 @@
 'use client'
 
-import type { DiChord, Timbre } from '@/lib/audio'
+import type { DiChord } from '@/lib/audio'
 
 interface HarmonicityVizProps {
   dichord: DiChord
-  timbre: Timbre
-  onTimbreChange: (t: Timbre) => void
+  mixLevel: number  // 0–10 from harmonicity dimmer
 }
-
-const TIMBRES: { value: Timbre; label: string }[] = [
-  { value: 'sine',     label: 'Sine' },
-  { value: 'triangle', label: 'Triangle' },
-  { value: 'sawtooth', label: 'Sawtooth' },
-  { value: 'complex',  label: 'Complex' },
-]
 
 const LEVEL_LABELS: Record<string, string> = {
   'very-low': 'Very Low',
@@ -24,9 +16,15 @@ const LEVEL_LABELS: Record<string, string> = {
   'high':     'High',
 }
 
-export default function HarmonicityViz({ dichord, timbre, onTimbreChange }: HarmonicityVizProps) {
+const ORDER_LABELS = ['', 'Clean', 'Clean', 'Mild', 'Rich', 'Very Rich']
+
+export default function HarmonicityViz({ dichord, mixLevel }: HarmonicityVizProps) {
   const score = dichord.harmonicityScore
-  const colorLabel = dichord.isHarmonic ? 'Harmonic (open/light)' : dichord.bracket === 6 ? 'Neutral' : 'Non-harmonic (closed/dark)'
+  const colorLabel = dichord.isHarmonic
+    ? 'Harmonic (open/light)'
+    : dichord.bracket === 6 ? 'Neutral' : 'Non-harmonic (closed/dark)'
+
+  const order = 1 + Math.round((mixLevel / 10) * 4)
 
   return (
     <div className="rounded-xl p-4" style={{ background: '#0f172a', border: '1px solid rgba(148,163,184,0.15)' }}>
@@ -37,24 +35,18 @@ export default function HarmonicityViz({ dichord, timbre, onTimbreChange }: Harm
         {LEVEL_LABELS[dichord.harmonicity]} — {colorLabel}
       </p>
 
-      {/* Gradient bar */}
-      <div style={{ position: 'relative', marginBottom: 8 }}>
+      {/* Di-chord inherent harmonicity bar */}
+      <div style={{ position: 'relative', marginBottom: 14 }}>
         <div style={{
-          height: 16,
-          borderRadius: 8,
+          height: 16, borderRadius: 8,
           background: 'linear-gradient(90deg, #1e1e2e 0%, #312e81 20%, #4f46e5 40%, #7c3aed 60%, #a78bfa 80%, #ddd6fe 100%)',
           border: '1px solid rgba(255,255,255,0.08)',
         }} />
-        {/* Marker */}
         <div style={{
-          position: 'absolute',
-          top: -4,
-          left: `${score}%`,
-          transform: 'translateX(-50%)',
-          width: 4,
-          height: 24,
-          background: '#f1f5f9',
-          borderRadius: 2,
+          position: 'absolute', top: -4,
+          left: `${score}%`, transform: 'translateX(-50%)',
+          width: 4, height: 24,
+          background: '#f1f5f9', borderRadius: 2,
           boxShadow: '0 0 6px rgba(241,245,249,0.5)',
         }} />
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
@@ -63,28 +55,33 @@ export default function HarmonicityViz({ dichord, timbre, onTimbreChange }: Harm
         </div>
       </div>
 
-      {/* Timbre slider */}
-      <div className="mt-4">
+      {/* Chebyshev richness indicator */}
+      <div className="mt-3">
         <p className="text-xs mb-2" style={{ color: '#64748b' }}>
-          Timbre — drag toward Sawtooth to hear harmonicity
+          Richness added — Chebyshev order {order}
         </p>
         <div className="flex gap-1">
-          {TIMBRES.map(t => (
-            <button
-              key={t.value}
-              onClick={() => onTimbreChange(t.value)}
-              className="flex-1 rounded py-1 text-xs font-semibold transition-all"
+          {[1, 2, 3, 4, 5].map(o => (
+            <div
+              key={o}
+              className="flex-1 rounded py-1 text-center"
               style={{
-                background: timbre === t.value ? 'rgba(148,163,184,0.2)' : 'transparent',
-                color: timbre === t.value ? '#f1f5f9' : '#475569',
-                border: `1px solid ${timbre === t.value ? 'rgba(148,163,184,0.3)' : 'rgba(148,163,184,0.1)'}`,
-                cursor: 'pointer',
+                background: o <= order ? 'rgba(124,58,237,0.25)' : 'rgba(124,58,237,0.06)',
+                border: `1px solid ${o <= order ? 'rgba(124,58,237,0.5)' : 'rgba(124,58,237,0.1)'}`,
+                fontSize: '0.65rem',
+                color: o <= order ? '#a78bfa' : '#334155',
+                transition: 'all 0.15s',
               }}
             >
-              {t.label}
-            </button>
+              {o}
+            </div>
           ))}
         </div>
+        <p className="text-xs mt-2" style={{ color: '#475569', lineHeight: 1.4 }}>
+          {order === 1
+            ? 'Clean — instrument timbre unchanged'
+            : `${ORDER_LABELS[order]} — adds harmonic ${order > 3 ? 'saturation' : 'color'} on top of instrument`}
+        </p>
       </div>
     </div>
   )

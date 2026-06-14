@@ -1,6 +1,6 @@
 export interface SoundFactorMix {
-  pulsation: number    // 0–10: 0=masked (short+wet), 10=exposed (long+dry sine)
-  harmonicity: number  // 0–10: 0=sine (smooth/fused), 10=sawtooth (rough/gritty)
+  pulsation: number    // 0–10: 0=masked (short+wet), 10=exposed (long+dry)
+  harmonicity: number  // 0–10: 0=clean (Chebyshev order 1), 10=harmonically rich (order 5)
   foFactor: number     // 0–10: 0=balanced (no doubling), 10=shadow note prominent
 }
 
@@ -10,6 +10,53 @@ export type PulsationFamily = 'dissonant' | 'modal' | 'perfect'
 export type FODirection = 'down' | 'both' | 'up'
 export type HarmonicityLevel = 'very-low' | 'low' | 'med-low' | 'medium' | 'med-high' | 'high'
 export type Timbre = 'sine' | 'triangle' | 'sawtooth' | 'complex'
+
+// ── Instrument presets ────────────────────────────────────────────────────────
+export type InstrumentId = 'pad' | 'piano' | 'guitar' | 'strings' | 'organ'
+
+export interface InstrumentPreset {
+  id: InstrumentId
+  label: string
+  icon: string
+  description: string
+  oscillatorType: OscillatorType
+  envelope: { attack: number; decay: number; sustain: number; release: number }
+}
+
+export const INSTRUMENT_PRESETS: Record<InstrumentId, InstrumentPreset> = {
+  pad: {
+    id: 'pad', label: 'Synth Pad', icon: '◎',
+    description: 'Neutral — pure analysis mode',
+    oscillatorType: 'sine',
+    envelope: { attack: 0.05, decay: 0.1, sustain: 0.85, release: 1.2 },
+  },
+  piano: {
+    id: 'piano', label: 'Piano', icon: '♪',
+    description: 'Fast attack, natural percussive decay',
+    oscillatorType: 'triangle',
+    envelope: { attack: 0.01, decay: 0.8, sustain: 0.3, release: 1.5 },
+  },
+  guitar: {
+    id: 'guitar', label: 'Guitar', icon: '♩',
+    description: 'Pluck — sharp attack, fast decay',
+    oscillatorType: 'sawtooth',
+    envelope: { attack: 0.005, decay: 0.4, sustain: 0.1, release: 0.8 },
+  },
+  strings: {
+    id: 'strings', label: 'Strings', icon: '≋',
+    description: 'Slow bow — long attack, sustained',
+    oscillatorType: 'sawtooth',
+    envelope: { attack: 0.4, decay: 0.2, sustain: 0.8, release: 1.8 },
+  },
+  organ: {
+    id: 'organ', label: 'Organ', icon: '⊞',
+    description: 'Instant on/off — Hammond feel',
+    oscillatorType: 'square',
+    envelope: { attack: 0.01, decay: 0.01, sustain: 1.0, release: 0.05 },
+  },
+}
+
+export const DEFAULT_INSTRUMENT: InstrumentId = 'pad'
 
 export interface DiChord {
   bracket: number

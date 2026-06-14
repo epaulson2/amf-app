@@ -1,10 +1,13 @@
 'use client'
 
-import type { SoundFactorMix } from '@/lib/audio'
+import type { SoundFactorMix, InstrumentId, InstrumentPreset } from '@/lib/audio'
+import { INSTRUMENT_PRESETS } from '@/lib/audio'
 
 interface FactorMixControlsProps {
   mix: SoundFactorMix
   onChange: (mix: SoundFactorMix) => void
+  instrumentId: InstrumentId
+  onInstrumentChange: (id: InstrumentId) => void
 }
 
 const FACTORS = [
@@ -15,18 +18,18 @@ const FACTORS = [
     trackColor: 'rgba(220,38,38,0.6)',
     description: 'Amplitude beating rate between the two tones',
     minLabel: 'Masked — short notes, wet reverb',
-    maxLabel: 'Exposed — long sine, dry signal',
-    tip: 'At max: use sine timbre and listen for the wave-like wobble. Slow for [5][7], faster for [3][4].',
+    maxLabel: 'Exposed — long sustain, dry signal',
+    tip: 'Turn up to hear the wave-like wobble. Slow for [5][7], faster for [3][4], fastest for [1][2].',
   },
   {
     key: 'harmonicity' as keyof SoundFactorMix,
     label: 'Harmonicity',
     color: '#7c3aed',
     trackColor: 'rgba(124,58,237,0.6)',
-    description: 'Spectral fusion — how rough or smooth the interval sounds',
-    minLabel: 'Smooth — pure sine waves',
-    maxLabel: 'Rough — sawtooth, gritty',
-    tip: 'Compare [4] (brighter, more fused) vs [3] (darker, more closed) with harmonicity raised.',
+    description: 'Harmonic richness added on top of the instrument timbre',
+    minLabel: 'Clean — pure instrument sound',
+    maxLabel: 'Rich — saturated with harmonics',
+    tip: 'Compare [4] vs [3] with richness up — the open vs closed quality becomes more pronounced.',
   },
   {
     key: 'foFactor' as keyof SoundFactorMix,
@@ -40,12 +43,52 @@ const FACTORS = [
   },
 ] as const
 
-export default function FactorMixControls({ mix, onChange }: FactorMixControlsProps) {
+const INSTRUMENT_ORDER: InstrumentId[] = ['pad', 'piano', 'guitar', 'strings', 'organ']
+
+export default function FactorMixControls({ mix, onChange, instrumentId, onInstrumentChange }: FactorMixControlsProps) {
   const set = (key: keyof SoundFactorMix, value: number) =>
     onChange({ ...mix, [key]: value })
 
   return (
     <div className="rounded-xl p-5" style={{ background: '#1e293b', border: '1px solid rgba(255,255,255,0.06)' }}>
+
+      {/* Instrument selector */}
+      <div className="mb-6">
+        <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: '#64748b' }}>
+          Instrument Voice
+        </p>
+        <div className="flex gap-2 flex-wrap">
+          {INSTRUMENT_ORDER.map(id => {
+            const preset: InstrumentPreset = INSTRUMENT_PRESETS[id]
+            const active = instrumentId === id
+            return (
+              <button
+                key={id}
+                onClick={() => onInstrumentChange(id)}
+                className="rounded-lg px-3 py-2 text-sm font-semibold transition-all"
+                style={{
+                  background: active ? 'rgba(99,102,241,0.2)' : 'rgba(99,102,241,0.05)',
+                  color: active ? '#a5b4fc' : '#475569',
+                  border: `1px solid ${active ? 'rgba(99,102,241,0.5)' : 'rgba(99,102,241,0.1)'}`,
+                  cursor: 'pointer',
+                }}
+                title={preset.description}
+              >
+                <span style={{ marginRight: 4 }}>{preset.icon}</span>
+                {preset.label}
+              </button>
+            )
+          })}
+        </div>
+        <p className="text-xs mt-2" style={{ color: '#334155' }}>
+          {INSTRUMENT_PRESETS[instrumentId].description}
+        </p>
+      </div>
+
+      {/* Divider */}
+      <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', marginBottom: 20 }} />
+
+      {/* Header */}
       <div className="flex items-center justify-between mb-5">
         <div>
           <p className="text-xs font-bold tracking-widest uppercase" style={{ color: '#64748b' }}>
@@ -64,6 +107,7 @@ export default function FactorMixControls({ mix, onChange }: FactorMixControlsPr
         </button>
       </div>
 
+      {/* Three factor sliders */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {FACTORS.map(f => {
           const val = mix[f.key]
@@ -92,60 +136,34 @@ export default function FactorMixControls({ mix, onChange }: FactorMixControlsPr
 
               {/* Slider track */}
               <div style={{ position: 'relative', marginBottom: 6 }}>
-                {/* Background track */}
                 <div style={{
-                  height: 8,
-                  borderRadius: 4,
-                  background: '#0f172a',
-                  border: '1px solid rgba(255,255,255,0.06)',
-                  position: 'relative',
-                  overflow: 'hidden',
+                  height: 8, borderRadius: 4,
+                  background: '#0f172a', border: '1px solid rgba(255,255,255,0.06)',
+                  position: 'relative', overflow: 'hidden',
                 }}>
-                  {/* Filled portion */}
                   <div style={{
-                    position: 'absolute',
-                    left: 0, top: 0, bottom: 0,
+                    position: 'absolute', left: 0, top: 0, bottom: 0,
                     width: `${pct}%`,
                     background: `linear-gradient(90deg, ${f.color}88, ${f.color})`,
-                    borderRadius: 4,
-                    transition: 'width 0.05s',
+                    borderRadius: 4, transition: 'width 0.05s',
                   }} />
                 </div>
-
-                {/* Native range input overlaid */}
                 <input
-                  type="range"
-                  min={0}
-                  max={10}
-                  step={1}
-                  value={val}
+                  type="range" min={0} max={10} step={1} value={val}
                   onChange={e => set(f.key, Number(e.target.value))}
                   style={{
-                    position: 'absolute',
-                    top: -6,
-                    left: 0,
-                    width: '100%',
-                    height: 20,
-                    opacity: 0,
-                    cursor: 'pointer',
-                    margin: 0,
+                    position: 'absolute', top: -6, left: 0,
+                    width: '100%', height: 20,
+                    opacity: 0, cursor: 'pointer', margin: 0,
                   }}
                 />
-
-                {/* Visible thumb */}
                 <div style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: `calc(${pct}% - 8px)`,
-                  transform: 'translateY(-50%)',
-                  width: 18,
-                  height: 18,
-                  borderRadius: '50%',
-                  background: '#f1f5f9',
-                  border: `2px solid ${f.color}`,
+                  position: 'absolute', top: '50%',
+                  left: `calc(${pct}% - 8px)`, transform: 'translateY(-50%)',
+                  width: 18, height: 18, borderRadius: '50%',
+                  background: '#f1f5f9', border: `2px solid ${f.color}`,
                   boxShadow: `0 0 8px ${f.color}66`,
-                  pointerEvents: 'none',
-                  transition: 'left 0.05s',
+                  pointerEvents: 'none', transition: 'left 0.05s',
                 }} />
               </div>
 
@@ -165,11 +183,9 @@ export default function FactorMixControls({ mix, onChange }: FactorMixControlsPr
                   <div
                     key={i}
                     style={{
-                      width: 2,
-                      height: i % 5 === 0 ? 6 : 3,
+                      width: 2, height: i % 5 === 0 ? 6 : 3,
                       background: i <= val ? f.color : '#1e293b',
-                      borderRadius: 1,
-                      transition: 'background 0.1s',
+                      borderRadius: 1, transition: 'background 0.1s',
                     }}
                   />
                 ))}
