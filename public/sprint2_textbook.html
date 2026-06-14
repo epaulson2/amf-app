@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMF Sprint 2 Mini Textbook — Autumn Leaves</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Georgia','Times New Roman',serif;background:#f0ede8;color:#1e293b;font-size:12px;line-height:1.35;}
+.page{width:794px;min-height:1123px;margin:24px auto;background:#fff;padding:32px 44px;box-shadow:0 4px 24px rgba(0,0,0,0.10);page-break-after:always;position:relative;}
+h1{font-size:30px;font-weight:900;line-height:1.2;letter-spacing:-0.02em;}
+h2{font-size:16px;font-weight:800;line-height:1.25;margin-bottom:4px;margin-top:8px;}
+h3{font-size:13px;font-weight:700;margin-bottom:3px;margin-top:7px;}
+h4{font-size:11px;font-weight:700;margin-bottom:3px;margin-top:8px;text-transform:uppercase;letter-spacing:0.05em;}
+p{margin-bottom:4px;}
+ul,ol{margin:0 0 6px 16px;}
+li{margin-bottom:2px;}
+strong{font-weight:700;}
+em{font-style:italic;}
+.os-header{background:#004d40;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;}
+.os-tag{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.75;}
+.os-title{font-size:13px;font-weight:800;}
+.os-bg{background:#e0f2f1;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.os-rule{height:3px;background:#00796b;border-radius:2px;margin:7px 0;}
+.os-text{color:#004d40;}
+.os-box{border-left:4px solid #00796b;padding:8px 12px;background:#f0faf9;border-radius:0 8px 8px 0;margin:8px 0;}
+.mel-header{background:#1e3a8a;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.mel-bg{background:#dbeafe;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.mel-rule{height:3px;background:#3b82f6;border-radius:2px;margin:10px 0;}
+.mel-text{color:#1e3a8a;}
+.mel-box{border-left:4px solid #3b82f6;padding:8px 12px;background:#eff6ff;border-radius:0 8px 8px 0;margin:8px 0;}
+.har-header{background:#78350f;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.har-bg{background:#fef3c7;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.har-rule{height:3px;background:#d97706;border-radius:2px;margin:10px 0;}
+.har-text{color:#78350f;}
+.har-box{border-left:4px solid #d97706;padding:8px 12px;background:#fffbeb;border-radius:0 8px 8px 0;margin:8px 0;}
+.rhy-header{background:#9a3412;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.rhy-bg{background:#fde8d8;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.rhy-text{color:#9a3412;}
+.rhy-box{border-left:4px solid #ea580c;padding:8px 12px;background:#fff8f5;border-radius:0 8px 8px 0;margin:8px 0;}
+.voi-header{background:#166534;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.voi-bg{background:#dcfce7;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.voi-text{color:#166534;}
+.voi-box{border-left:4px solid #16a34a;padding:8px 12px;background:#f0fdf4;border-radius:0 8px 8px 0;margin:8px 0;}
+.syn-header{background:#4b2d8c;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.syn-bg{background:#f0e6ff;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.syn-text{color:#4b2d8c;}
+.syn-box{border-left:4px solid #8b5cf6;padding:8px 12px;background:#f5f0ff;border-radius:0 8px 8px 0;margin:8px 0;}
+.stage{border-radius:8px;padding:8px 12px;margin:7px 0;border-left:5px solid;}
+.stage-1{background:#fff8e1;border-color:#f59e0b;}.stage-1 .stage-label{color:#b45309;}
+.stage-2{background:#fff0f0;border-color:#ef4444;}.stage-2 .stage-label{color:#b91c1c;}
+.stage-3{background:#f0fdf4;border-color:#22c55e;}.stage-3 .stage-label{color:#15803d;}
+.stage-label{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
+.non-dia{background:#fdf4ff;border:2px solid #c084fc;border-radius:10px;padding:10px 14px;margin:10px 0;}
+.non-dia-title{font-size:10px;font-weight:800;letter-spacing:.1em;color:#7e22ce;text-transform:uppercase;margin-bottom:4px;}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12px;}
+th{padding:5px 8px;text-align:left;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;border-bottom:2px solid #e2e8f0;}
+td{padding:5px 8px;border-bottom:1px solid #f1f5f9;vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#fafafa;}
+.rainbow{height:4px;background:linear-gradient(90deg,#00796b 0%,#3b82f6 22%,#d97706 50%,#8b5cf6 78%,#ea580c 100%);border-radius:2px;margin:10px 0;}
+.cover-swatch{display:flex;gap:6px;margin:24px 0;}
+.swatch{height:8px;flex:1;border-radius:2px;}
+.cover-meta{font-size:11px;color:#64748b;letter-spacing:.08em;text-transform:uppercase;}
+.cover-subtitle{font-size:17px;color:#475569;margin:10px 0 24px;}
+.toc-group{margin-bottom:18px;}
+.toc-group-title{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;padding-bottom:4px;border-bottom:2px solid;}
+.toc-item{display:flex;justify-content:space-between;padding:5px 0;font-size:13px;border-bottom:1px dotted #e2e8f0;}
+.toc-item span:first-child{max-width:80%;}
+.toc-pg{color:#94a3b8;font-size:12px;}
+.chord-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0;}
+.chord-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 12px;min-width:90px;text-align:center;}
+.chord-name{font-size:17px;font-weight:900;margin-bottom:3px;}
+.chord-detail{font-size:11px;color:#64748b;}
+.page-footer{position:absolute;bottom:22px;left:44px;right:44px;display:flex;justify-content:space-between;font-size:10px;color:#94a3b8;letter-spacing:.05em;}
+.lyric-line{font-style:italic;font-size:13px;color:#475569;margin-left:16px;}
+.chord-above{font-size:11px;font-weight:700;color:#78350f;letter-spacing:.05em;}
+@media print{body{background:white;}.page{box-shadow:none;margin:0;page-break-after:always;}}
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- PAGE 1: COVER -->
+<!-- ============================================================ -->
+<div class="page">
+  <div style="margin-bottom:12px;">
+    <span class="cover-meta">AMF · Acoustic Music Foundation · Sprint 2 of 12</span>
+  </div>
+
+  <div class="rainbow" style="margin-bottom:28px;"></div>
+
+  <h1 style="font-size:38px;margin-bottom:6px;">Sprint 2 Mini Textbook</h1>
+  <p class="cover-subtitle">Autumn Leaves · G Major / E Minor · ~100 BPM</p>
+
+  <div class="cover-swatch">
+    <div class="swatch" style="background:#004d40;" title="Musical OS"></div>
+    <div class="swatch" style="background:#1e3a8a;" title="Melody Chamber"></div>
+    <div class="swatch" style="background:#78350f;" title="Harmony Chamber"></div>
+    <div class="swatch" style="background:#9a3412;" title="Rhythm Chamber"></div>
+    <div class="swatch" style="background:#166534;" title="Voicings Chamber"></div>
+    <div class="swatch" style="background:#4b2d8c;" title="The Synthesizer"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px;">
+
+    <div class="os-bg">
+      <div class="os-header" style="margin-bottom:10px;"><span class="os-tag">Musical OS</span><span class="os-title">Plogger</span></div>
+      <p style="font-size:13px;color:#004d40;margin:0;"><strong>Ch.3:</strong> Keyboard Visualization — all 12 chromatic notes by landmark, eyes closed, under 2 seconds per note.<br><br><strong>Ch.4:</strong> Longy Rhythms complete system — ta, ta-te, ta-fe-te-fe, dotted patterns, speak at 80 BPM without losing pulse.</p>
+    </div>
+
+    <div class="mel-bg">
+      <div class="mel-header" style="margin-bottom:10px;"><span class="os-tag" style="color:rgba(255,255,255,0.75);">Primary</span><span class="os-title">Melody Chamber</span></div>
+      <p style="font-size:13px;color:#1e3a8a;margin:0;"><strong>Stability Ladder deepened.</strong><br><br>All four chord-change behaviors introduced: Stay Sweet, Turn Tense, Float Free, Sink Deeper. Identify each by ear in Autumn Leaves.</p>
+    </div>
+
+    <div class="har-bg">
+      <div class="har-header" style="margin-bottom:10px;"><span class="os-tag" style="color:rgba(255,255,255,0.75);">Secondary</span><span class="os-title">Harmony Chamber</span></div>
+      <p style="font-size:13px;color:#78350f;margin:0;"><strong>Progressions #1 and #2 introduced.</strong><br><br>I–IV–V–I (fundamental cadence) and I–V–vi–IV ("four chord song"). Play both in G major on guitar and piano at 90 BPM.</p>
+    </div>
+
+    <div class="rhy-bg">
+      <div class="rhy-header" style="margin-bottom:10px;"><span class="os-tag" style="color:rgba(255,255,255,0.75);">Rhythm</span><span class="os-title">Rhythm Chamber</span></div>
+      <p style="font-size:13px;color:#9a3412;margin:0;"><strong>Longy Rhythms full system.</strong><br><br>Dotted rhythms, syncopated patterns, compound beats. Apply Longy syllables to Autumn Leaves. Travis picking Stage 1–2 on guitar.</p>
+    </div>
+
+  </div>
+
+  <div style="margin-top:28px;padding:16px 20px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;">
+    <p style="font-size:12px;color:#64748b;margin:0;"><strong style="color:#1e293b;">Anchor Song:</strong> Autumn Leaves (Jazz Standard) &nbsp;&nbsp; <strong style="color:#1e293b;">Key:</strong> G major / E minor &nbsp;&nbsp; <strong style="color:#1e293b;">Chords:</strong> Am7 · D7 · Gmaj7 · Cmaj7 · F#m7b5 · B7 · Em &nbsp;&nbsp; <strong style="color:#1e293b;">Tempo:</strong> ~100 BPM</p>
+  </div>
+
+  <div style="margin-top:28px;">
+    <p style="font-size:12px;color:#94a3b8;font-style:italic;">"The falling leaves drift by my window..." — Every note you learn to hear is a leaf you catch before it hits the ground.</p>
+  </div>
+
+  <div class="rainbow" style="margin-top:32px;"></div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 1</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 2: TABLE OF CONTENTS -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="os-header"><span class="os-tag">Sprint 2</span><span class="os-title">Table of Contents</span></div>
+
+  <p style="color:#475569;font-size:13px;margin-bottom:24px;">Ten pages covering all five active chambers for this sprint. Color bands indicate which part of the AMF system each section belongs to.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+
+    <div>
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#004d40;border-color:#00796b;">Musical OS · Plogger</div>
+        <div class="toc-item"><span>Ch.3 — Keyboard Visualization Mastery</span><span class="toc-pg">3</span></div>
+        <div class="toc-item"><span>12 Chromatic Notes by Landmark</span><span class="toc-pg">3</span></div>
+        <div class="toc-item"><span>Ch.4 — Longy Rhythms Full System</span><span class="toc-pg">4</span></div>
+        <div class="toc-item"><span>Longy + Rhythm Code: How They Work Together</span><span class="toc-pg">4</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#1e3a8a;border-color:#3b82f6;">Melody Chamber</div>
+        <div class="toc-item"><span>Stability Ladder Deepened</span><span class="toc-pg">5</span></div>
+        <div class="toc-item"><span>Zone Recap: Sweet, Bitter, Tense, Wildcard</span><span class="toc-pg">5</span></div>
+        <div class="toc-item"><span>Four Chord-Change Behaviors</span><span class="toc-pg">5</span></div>
+        <div class="toc-item"><span>Stay Sweet · Turn Tense · Float Free · Sink Deeper</span><span class="toc-pg">5</span></div>
+        <div class="toc-item"><span>Duration Amplifies Zone</span><span class="toc-pg">5</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#78350f;border-color:#d97706;">Harmony Chamber</div>
+        <div class="toc-item"><span>Progression #1 — I–IV–V–I Fundamental Cadence</span><span class="toc-pg">6</span></div>
+        <div class="toc-item"><span>Progression #2 — I–V–vi–IV Four Chord Song</span><span class="toc-pg">6</span></div>
+        <div class="toc-item"><span>What These Progressions Feel Like</span><span class="toc-pg">6</span></div>
+        <div class="toc-item"><span>Exercises: Both instruments at 90 BPM</span><span class="toc-pg">6</span></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#78350f;border-color:#d97706;">Song Analysis</div>
+        <div class="toc-item"><span>Autumn Leaves — Two Keys at Once</span><span class="toc-pg">7</span></div>
+        <div class="toc-item"><span>Full Chord Cycle Breakdown</span><span class="toc-pg">7</span></div>
+        <div class="toc-item"><span>Melody Zone Map by Measure</span><span class="toc-pg">7</span></div>
+        <div class="toc-item"><span>What to Listen For — Listening Checklist</span><span class="toc-pg">7</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#9a3412;border-color:#ea580c;">Rhythm Chamber</div>
+        <div class="toc-item"><span>Longy Rhythms in Practice</span><span class="toc-pg">8</span></div>
+        <div class="toc-item"><span>Complete Syllable Reference Table</span><span class="toc-pg">8</span></div>
+        <div class="toc-item"><span>Dotted Rhythms and Syncopation</span><span class="toc-pg">8</span></div>
+        <div class="toc-item"><span>Applying Longy to Autumn Leaves</span><span class="toc-pg">8</span></div>
+        <div class="toc-item"><span>Travis Picking — Stages 1 and 2</span><span class="toc-pg">8</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#166534;border-color:#16a34a;">Voicings Chamber</div>
+        <div class="toc-item"><span>Root Position + Inversions: Deepening Sprint 1</span><span class="toc-pg">9</span></div>
+        <div class="toc-item"><span>Voicing the Autumn Leaves Chords</span><span class="toc-pg">9</span></div>
+        <div class="toc-item"><span>Voice Economy Exercises</span><span class="toc-pg">9</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#334155;border-color:#94a3b8;">Quick Reference + Milestones</div>
+        <div class="toc-item"><span>All Sprint 2 Concepts — Compact Grid</span><span class="toc-pg">10</span></div>
+        <div class="toc-item"><span>Sprint 2 Exit Milestones</span><span class="toc-pg">10</span></div>
+        <div class="toc-item"><span>Sprint 3 Preview — Girl from Ipanema</span><span class="toc-pg">10</span></div>
+        <div class="toc-item"><span>North Star Quote</span><span class="toc-pg">10</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:24px;padding:14px 18px;background:#fafafa;border-radius:8px;border:1px solid #e2e8f0;">
+    <p style="font-size:12px;color:#64748b;margin:0;"><strong style="color:#1e293b;">How to use this book:</strong> Read each section before touching your instrument. Then close the book and play. Come back to check. The goal is to hear the concept before you can execute it — "hear before you play" is not a suggestion, it is the method.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 2</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 3: MUSICAL OS — PLOGGER CH.3 KEYBOARD VISUALIZATION -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="os-header"><span class="os-tag">Musical OS · Plogger</span><span class="os-title">Chapter 3 — Keyboard Visualization Mastery</span></div>
+
+  <p class="os-text">Plogger is the Musical OS — the layer underneath all chambers. You do not play notes on a keyboard. You navigate a map you have already memorized. Chapter 3 completes that map for all 12 chromatic notes.</p>
+
+  <div class="os-rule"></div>
+
+  <h2 class="os-text" style="margin-top:0;">The Landmark System</h2>
+
+  <p>The keyboard is not random — it is organized by two repeating groups of black keys. These groups are your GPS anchors. Once you internalize them, every white and black key has a permanent address.</p>
+
+  <div class="os-bg">
+    <h4 class="os-text">Two-Black-Key Group</h4>
+    <p style="margin-bottom:8px;">Look for any pair of black keys. These three white keys surround them:</p>
+    <ul style="margin-bottom:0;">
+      <li><strong>C</strong> — white key immediately to the <em>left</em> of the two-black-key group</li>
+      <li><strong>D</strong> — white key in the <em>middle</em> between the two black keys</li>
+      <li><strong>E</strong> — white key immediately to the <em>right</em> of the two-black-key group</li>
+    </ul>
+  </div>
+
+  <div class="os-bg" style="margin-top:0;">
+    <h4 class="os-text">Three-Black-Key Group</h4>
+    <p style="margin-bottom:8px;">Look for any cluster of three black keys. These four white keys surround them:</p>
+    <ul style="margin-bottom:0;">
+      <li><strong>F</strong> — white key immediately to the <em>left</em> of the three-black-key group</li>
+      <li><strong>G</strong> — white key between the <em>first and second</em> black keys</li>
+      <li><strong>A</strong> — white key between the <em>second and third</em> black keys</li>
+      <li><strong>B</strong> — white key immediately to the <em>right</em> of the three-black-key group</li>
+    </ul>
+  </div>
+
+  <h3 class="os-text">Fixed-Do Solfège — The Naming Layer</h3>
+  <p>AMF uses fixed-do solfège. This means every note has a permanent syllable name regardless of key. These syllables are your inner voice for the keyboard map:</p>
+
+  <table>
+    <thead><tr><th>Note</th><th>Syllable</th><th>Landmark</th><th>Black-Key Group</th></tr></thead>
+    <tbody>
+      <tr><td><strong>C</strong></td><td>Doh</td><td>Left edge of 2-black group</td><td>2-black</td></tr>
+      <tr><td><strong>D</strong></td><td>Re</td><td>Middle of 2-black group</td><td>2-black</td></tr>
+      <tr><td><strong>E</strong></td><td>Mi</td><td>Right edge of 2-black group</td><td>2-black</td></tr>
+      <tr><td><strong>F</strong></td><td>Fa</td><td>Left edge of 3-black group</td><td>3-black</td></tr>
+      <tr><td><strong>G</strong></td><td>Sol</td><td>First gap in 3-black group</td><td>3-black</td></tr>
+      <tr><td><strong>A</strong></td><td>La</td><td>Second gap in 3-black group</td><td>3-black</td></tr>
+      <tr><td><strong>B</strong></td><td>Si</td><td>Right edge of 3-black group</td><td>3-black</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="os-text">The 5 Black Keys (Sharps/Flats)</h3>
+  <p>Each black key sits between two white keys. Name it by its neighbors: C#/Db sits between C and D. Memorize by group:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;">
+    <div class="os-box"><strong>2-Black Group:</strong> C#/Db (left black), D#/Eb (right black)</div>
+    <div class="os-box"><strong>3-Black Group:</strong> F#/Gb (left black), G#/Ab (middle black), A#/Bb (right black)</div>
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 — Discovering · Hear Before You Play</div>
+    <strong>Landmark Anchor Drill:</strong> Play any C on your instrument. Sing "Doh." Move to D — sing "Re." Don't look at note names yet. Navigate by the shape of the black-key groups. Ask: <em>am I next to two black keys, or three?</em> That question always gives you your address.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 — Perfecting · Hear Before You Play</div>
+    <strong>Eyes-Closed Target:</strong> Someone calls a note name. You find it on your instrument without looking. Start with the 7 white keys, then add sharps and flats one at a time. Target: &lt;2 seconds per note for all 12 chromatic pitches by sprint end.
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 — Fluent · Hear Before You Play</div>
+    <strong>Random-Note Singing:</strong> Before playing a note, sing its solfège syllable. Then play and match. If your sung pitch was already close to the actual pitch — even one note — you are building inner hearing. This is the ultimate Ch.3 exit: navigate + sing + land in &lt;2 seconds.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 3</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 4: MUSICAL OS — PLOGGER CH.4 LONGY RHYTHMS -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="os-header"><span class="os-tag">Musical OS · Plogger</span><span class="os-title">Chapter 4 — Longy Rhythms: The Complete System</span></div>
+
+  <p class="os-text">Longy Rhythms answer the question: <strong>what kind of note is this?</strong> The Rhythm Code (from Sprint 1) answers: <strong>where does it sit in the measure?</strong> These two systems work together — Longy names the shape, Rhythm Code gives the address. Both are required for complete rhythmic literacy.</p>
+
+  <div class="os-rule"></div>
+
+  <h2 class="os-text" style="margin-top:0;">The Core Syllable Rule</h2>
+  <div class="os-box">
+    <strong>Say the syllable EXACTLY when the note sounds.</strong> Not before. Not after. The syllable is not a label — it IS the attack. Your mouth and your hands are synchronized at the moment of contact.
+  </div>
+
+  <h3 class="os-text">Complete Longy Syllable Reference</h3>
+
+  <table>
+    <thead><tr><th>Syllable(s)</th><th>Rhythm Type</th><th>Duration</th><th>Note Count</th></tr></thead>
+    <tbody>
+      <tr><td><strong>ta</strong></td><td>Quarter note</td><td>1 beat</td><td>1 note per beat</td></tr>
+      <tr><td><strong>ta — — —</strong></td><td>Half note</td><td>2 beats</td><td>Hold for 2 beats (say "ta" once)</td></tr>
+      <tr><td><strong>ta — — — — — —</strong></td><td>Whole note</td><td>4 beats</td><td>Hold for full measure</td></tr>
+      <tr><td><strong>ta-te</strong></td><td>Two eighth notes</td><td>1 beat split in half</td><td>2 notes per beat</td></tr>
+      <tr><td><strong>ta-fe-te-fe</strong></td><td>Four sixteenth notes</td><td>1 beat split in quarters</td><td>4 notes per beat</td></tr>
+      <tr><td><strong>ta-ki-da</strong></td><td>Compound / triplet</td><td>1 beat split in thirds</td><td>3 notes per beat</td></tr>
+      <tr><td><strong>ta— te</strong></td><td>Dotted quarter + eighth</td><td>3/4 beat + 1/4 beat</td><td>Long-short pair</td></tr>
+      <tr><td><strong>ta-fe — fe</strong></td><td>Eighth + two sixteenths</td><td>Syncopated</td><td>Short-short-short + rest</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="os-text">Dotted Rhythms — The Long-Short Feel</h3>
+  <p>A dotted quarter note lasts 1.5 beats. It is followed by an eighth note (0.5 beats) to complete the 2-beat pair. The syllables for this pattern are: <strong>ta— te</strong> — say "ta" with a long lean, then "te" quick and light on the back half.</p>
+
+  <div class="os-bg">
+    <h4 class="os-text">Dotted Rhythm in Autumn Leaves</h4>
+    <p>The opening melodic motif of Autumn Leaves is built on a dotted-quarter + eighth pattern. When you hear or sing the main theme, you are already speaking Longy:</p>
+    <p style="font-family:monospace;font-size:14px;letter-spacing:3px;color:#004d40;margin-bottom:4px;">ta— te | ta ta | ta— te | ta ---</p>
+    <p style="font-size:12px;color:#64748b;margin:0;">Feel the long lean on "ta—" and the quick release on "te". The melody breathes because of the dot.</p>
+  </div>
+
+  <h3 class="os-text">Syncopated Patterns</h3>
+  <p>Syncopation means a note lands where you normally do not expect one — on the "and" positions rather than the downbeats. The <em>held</em> note crosses the beat rather than landing on it.</p>
+
+  <div class="os-box">
+    <strong>Anticipation Pattern:</strong> The note attacks on the "and" of beat 4 (position 8), but the ear hears it as "early beat 1." The Longy syllable "te" falls at position 8 — a slight push forward, leaning into the next beat before it arrives.
+  </div>
+
+  <h3 class="os-text">How Longy and Rhythm Code Work Together</h3>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;">
+    <div class="os-bg">
+      <h4 class="os-text">Longy Asks: "What shape?"</h4>
+      <p style="margin:0;">Is this note a quarter, an eighth, a dotted quarter? Longy gives you the syllable for its duration and tells you how to speak it aloud in real time.</p>
+    </div>
+    <div class="os-bg">
+      <h4 class="os-text">Rhythm Code Asks: "Where in the bar?"</h4>
+      <p style="margin:0;">Is this note on position 1 (beat 1), position 4 (beat 2-and), position 8 (beat 4-and)? The 8-position grid gives every note an address.</p>
+    </div>
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 — Discovering · Hear Before You Play</div>
+    <strong>Speak Before You Play:</strong> Take any 4-beat rhythm you know. Speak it in Longy syllables without an instrument. If you can say "ta-te ta ta ta— te ta ---" and feel where the beats are, you are ready for S2.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 — Perfecting · Hear Before You Play</div>
+    <strong>80 BPM Drill:</strong> Set a metronome to 80 BPM. Speak all Longy patterns including dotted and syncopated without losing the pulse. If the pulse slips when syllables get fast, slow down 10 BPM and rebuild from there.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 4</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 5: MELODY CHAMBER -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="mel-header"><span class="os-tag" style="color:rgba(255,255,255,0.75);">Primary Chamber</span><span class="os-title">Melody Chamber — Chord-Change Behaviors</span></div>
+
+  <p class="mel-text">Last sprint you learned the four zones: Sweet (1, 3, 5), Bitter (7, 2), Tense (4), and Wildcard (6). This sprint you learn what happens to a melody note <strong>when the chord changes underneath it.</strong> The same pitch can mean completely different things in different harmonic contexts — these four behaviors describe every possible shift.</p>
+
+  <div class="mel-rule"></div>
+
+  <h2 class="mel-text" style="margin-top:0;">Zone Recap — Stability Ladder</h2>
+
+  <table>
+    <thead><tr><th>Zone</th><th>Scale Degrees</th><th>Feeling</th><th>What It Wants</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Zone 1 — Sweet</strong></td><td>1, 3, 5</td><td>Stable, home, resolved</td><td>Can stay or move — no urgency</td></tr>
+      <tr><td><strong>Zone 2 — Bitter</strong></td><td>7, 2</td><td>Mild tension, close to home</td><td>Gentle pull toward Zone 1</td></tr>
+      <tr><td><strong>Zone 3 — Tense</strong></td><td>4</td><td>Strong pull, demands resolution</td><td>Strong pull toward 3</td></tr>
+      <tr><td><strong>Zone 4 — Wildcard</strong></td><td>6 (La)</td><td>Context-dependent</td><td>Dreamy over major / brighter over minor</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="mel-text">The Four Chord-Change Behaviors</h2>
+  <p>When a chord changes, your melody note gets a new harmonic context. Its zone identity can shift — the same pitch may now be a chord tone, a tension note, or something in between. Here are the four things that can happen:</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;">
+
+    <div class="mel-box">
+      <h4 class="mel-text">1 — Stay Sweet</h4>
+      <p style="margin-bottom:4px;">The melody note was Zone 1 on the old chord. It is <em>still</em> Zone 1 on the new chord. The harmony changed but the note stayed home. Feeling: continuous warmth, no tension introduced.</p>
+      <p style="font-size:11px;color:#64748b;margin:0;font-style:italic;">Example: holding G over Gmaj7 → over Cmaj7. G is scale degree 5 on both. Pure sweetness, both sides.</p>
+    </div>
+
+    <div class="mel-box">
+      <h4 class="mel-text">2 — Turn Tense</h4>
+      <p style="margin-bottom:4px;">The melody note was Zone 1. The chord changes and now the same note is Zone 3 (scale degree 4 of the new chord). Tension is introduced without moving a finger. Feeling: sudden urgency, desire to resolve.</p>
+      <p style="font-size:11px;color:#64748b;margin:0;font-style:italic;">Example: F over Cmaj7 (deg 4, tense) when chord was Gmaj7 (deg 7, bitter). Zone tightened.</p>
+    </div>
+
+    <div class="mel-box">
+      <h4 class="mel-text">3 — Float Free</h4>
+      <p style="margin-bottom:4px;">The melody note moves into Zone 2 as the chord changes — neither fully home nor urgently tense. It sits in a comfortable middle distance. Feeling: open, slightly suspended, like a question mark.</p>
+      <p style="font-size:11px;color:#64748b;margin:0;font-style:italic;">The melody "floats" above the chord without committing to resolution or tension. Common in jazz — Zone 2 notes as color tones.</p>
+    </div>
+
+    <div class="mel-box">
+      <h4 class="mel-text">4 — Sink Deeper</h4>
+      <p style="margin-bottom:4px;">The note steps further into tension as the chord changes — from Zone 2 into Zone 3, or from Zone 3 into an even more dissonant relationship. Feeling: mounting pressure, dramatic pull toward resolution.</p>
+      <p style="font-size:11px;color:#64748b;margin:0;font-style:italic;">Classic "Sink Deeper": a mildly tense note becomes the tritone (deg 4 against V7) — frozen and urgent.</p>
+    </div>
+
+  </div>
+
+  <h3 class="mel-text">Duration Amplifies Zone</h3>
+  <div class="mel-box">
+    <p style="margin-bottom:0;">A short note in Zone 3 passes through tension quickly. A <strong>long note in Zone 3</strong> forces the listener to sit in that tension — it demands resolution louder and louder with each passing beat. Conversely, a long note in Zone 1 communicates deep resolution — an arrival, not a passing through. <strong>The Longy system gives you the tools to control duration. The Zone system tells you what that duration is saying.</strong></p>
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 — Discovering · Hear Before You Play</div>
+    <strong>Listen First:</strong> Put on any recording of Autumn Leaves. For the first full chorus, only listen for tension and release. Don't count chords. Just feel: does this moment want to move, or does it feel like home? You are hearing zones before you name them.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 — Perfecting · Hear Before You Play</div>
+    <strong>Behavior Hunt:</strong> On your second listen, try to identify at least one example of each behavior. Call it out: "that held note just became tense — that's Turn Tense." Verification comes before instrument practice.
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 — Fluent · Hear Before You Play</div>
+    <strong>Play the Behaviors:</strong> Over the Autumn Leaves chord cycle, improvise using only Zone 1 notes. Then deliberately introduce a Turn Tense moment by holding a note across a chord change. Feel it pull. Resolve it. Repeat with Float Free and Sink Deeper.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 5</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 6: HARMONY CHAMBER -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="har-header"><span class="os-tag" style="color:rgba(255,255,255,0.75);">Secondary Chamber</span><span class="os-title">Harmony Chamber — Progressions #1 and #2</span></div>
+
+  <p class="har-text">The Harmony Chamber tracks 12 + 2 progressions — the foundational harmonic moves that appear across all of music history. This sprint introduces the two most universal progressions. Every musician must know these in their hands and ears before any other harmonic theory matters.</p>
+
+  <div class="har-rule"></div>
+
+  <h2 class="har-text" style="margin-top:0;">Progression #1 — I–IV–V–I: The Fundamental Cadence</h2>
+
+  <p>This progression is the basis of Western tonal music. It appears in Bach chorales, country songs, blues heads, and movie scores. The functional logic: <strong>I is home, IV creates gentle motion away, V creates the strongest possible pull back, I resolves.</strong></p>
+
+  <div class="har-bg">
+    <h4 class="har-text">In G Major</h4>
+    <div class="chord-row">
+      <div class="chord-card"><div class="chord-name">G</div><div class="chord-detail">I — Tonic</div><div class="chord-detail">Home</div></div>
+      <div class="chord-card"><div class="chord-name">C</div><div class="chord-detail">IV — Subdominant</div><div class="chord-detail">Away</div></div>
+      <div class="chord-card"><div class="chord-name">D</div><div class="chord-detail">V — Dominant</div><div class="chord-detail">Tension</div></div>
+      <div class="chord-card"><div class="chord-name">G</div><div class="chord-detail">I — Tonic</div><div class="chord-detail">Home</div></div>
+    </div>
+    <p style="font-size:13px;margin:0;color:#78350f;">The V → I resolution is the single most powerful move in tonal music. The dominant chord contains the leading tone (scale degree 7 in G = F#) which is 1 half-step below the tonic. That half-step pull is why V → I feels inevitable.</p>
+  </div>
+
+  <div class="har-box">
+    <strong>What it sounds like:</strong> The "Amen" cadence at the end of hymns. The ending of "Twist and Shout." The resolution in almost every country song chorus. You have heard this thousands of times — now you know its name.
+  </div>
+
+  <h2 class="har-text">Progression #2 — I–V–vi–IV: The Four Chord Song</h2>
+
+  <p>This progression underlies more popular songs than any other. It introduces the <strong>vi chord (minor)</strong> — the relative minor, which is the emotional center of Sprint 2's anchor song. When vi appears, the music takes on a wistful, bittersweet quality.</p>
+
+  <div class="har-bg">
+    <h4 class="har-text">In G Major</h4>
+    <div class="chord-row">
+      <div class="chord-card"><div class="chord-name">G</div><div class="chord-detail">I — Tonic</div><div class="chord-detail">Bright home</div></div>
+      <div class="chord-card"><div class="chord-name">D</div><div class="chord-detail">V — Dominant</div><div class="chord-detail">Tension</div></div>
+      <div class="chord-card"><div class="chord-name">Em</div><div class="chord-detail">vi — Relative minor</div><div class="chord-detail">Wistful shadow</div></div>
+      <div class="chord-card"><div class="chord-name">C</div><div class="chord-detail">IV — Subdominant</div><div class="chord-detail">Warm departure</div></div>
+    </div>
+    <p style="font-size:13px;margin:0;color:#78350f;">Notice: Em is the relative minor of G major. It shares all the same notes. When you move to Em, you are not leaving the key — you are looking at the same key from a different angle. The emotional color shifts from bright to shadow without any new notes.</p>
+  </div>
+
+  <div class="har-box">
+    <strong>Why this matters for Autumn Leaves:</strong> The E minor chord in this progression is the same Em that is the tonal center of the second half of Autumn Leaves. You are already meeting this harmonic world in I–V–vi–IV. When you play Autumn Leaves, you will recognize Em's feeling because you have been practicing it here.
+  </div>
+
+  <h3 class="har-text">Practice Targets — Both Instruments, 90 BPM</h3>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 — Discovering · Hear Before You Play</div>
+    <strong>Hear First:</strong> Before playing, sing the bass notes of both progressions: G–C–D–G, then G–D–E–C. Feel where the lowest note wants to go. The ear leads, the hands follow.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 — Perfecting · Hear Before You Play</div>
+    <strong>Four Chords, One Beat Each:</strong> Play I–IV–V–I in G major, one chord per beat at 60 BPM (guitar: simple strums; piano: root + 5th in left hand, chord in right). Once smooth, move to 90 BPM. Then repeat with I–V–vi–IV.
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 — Fluent · Hear Before You Play</div>
+    <strong>Identify in Real Music:</strong> Find one song you know well that uses I–IV–V–I and one that uses I–V–vi–IV. Verify with your ear — does the progression feel right? Recognizing these by ear is the S3 exit for this section.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 6</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 7: SONG ANALYSIS — AUTUMN LEAVES -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="har-header"><span class="os-tag" style="color:rgba(255,255,255,0.75);">Song Analysis</span><span class="os-title">Autumn Leaves — Two Keys in One Song</span></div>
+
+  <p class="har-text">Autumn Leaves is not a jazz standard that lives in one key. It lives in <strong>two keys simultaneously</strong> — G major and E minor — which are relative keys (they share the same 7 notes). The first half resolves to the major key. The second half resolves to the minor key. Together they complete a full harmonic world.</p>
+
+  <div class="har-rule"></div>
+
+  <h2 class="har-text" style="margin-top:0;">The Full Chord Cycle</h2>
+
+  <div class="har-bg">
+    <h4 class="har-text" style="margin-bottom:12px;">First Half — Resolves to G Major (bright)</h4>
+    <div class="chord-row">
+      <div class="chord-card"><div class="chord-name" style="color:#1e3a8a;">Am7</div><div class="chord-detail">ii in G major</div><div class="chord-detail">Gentle motion</div></div>
+      <div class="chord-card"><div class="chord-name" style="color:#78350f;">D7</div><div class="chord-detail">V7 in G major</div><div class="chord-detail">Strong pull home</div></div>
+      <div class="chord-card"><div class="chord-name" style="color:#166534;">Gmaj7</div><div class="chord-detail">I in G major</div><div class="chord-detail">Bright arrival</div></div>
+      <div class="chord-card"><div class="chord-name" style="color:#166534;">Cmaj7</div><div class="chord-detail">IV in G major</div><div class="chord-detail">Warm departure</div></div>
+    </div>
+    <p style="font-size:12px;color:#64748b;margin:0;"><em>Note: Am7–D7–Gmaj7 is a ii–V–I in G major. This pattern is used here as a drill vehicle — it helps you hear and practice the chord connections. In the context of Autumn Leaves, what matters is that these four chords together describe the G major tonal world.</em></p>
+  </div>
+
+  <div class="har-bg" style="margin-top:0;">
+    <h4 class="har-text" style="margin-bottom:12px;">Second Half — Resolves to E Minor (shadowed)</h4>
+    <div class="chord-row">
+      <div class="chord-card"><div class="chord-name" style="color:#4b2d8c;">F#m7b5</div><div class="chord-detail">ii° in E minor</div><div class="chord-detail">Dark motion</div></div>
+      <div class="chord-card"><div class="chord-name" style="color:#9a3412;">B7</div><div class="chord-detail">V7 in E minor</div><div class="chord-detail">Pull to minor home</div></div>
+      <div class="chord-card"><div class="chord-name" style="color:#004d40;">Em</div><div class="chord-detail">i in E minor</div><div class="chord-detail">Shadow home</div></div>
+    </div>
+    <p style="font-size:12px;color:#64748b;margin:0;"><em>F#m7b5 is a half-diminished chord — the naturally occurring ii chord in minor keys. Its sound is more angular and unstable than Am7 in the major half. B7 is the dominant with a raised 7th (D#) — this "borrowed" note is what makes the pull to Em feel complete.</em></p>
+  </div>
+
+  <h2 class="har-text">Melody Zone Map — What to Hear</h2>
+
+  <table>
+    <thead><tr><th>Chord</th><th>Key Context</th><th>Melody Zones Available</th><th>Chord-Change Behavior to Watch For</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Am7</strong></td><td>G major, ii chord</td><td>A(1), C(3), E(5) = Sweet; B(2), G(7) = Bitter</td><td>Float Free from Gmaj7 resolution</td></tr>
+      <tr><td><strong>D7</strong></td><td>G major, V7 chord</td><td>D(1), F#(3), A(5) = Sweet; C(7) = Bitter</td><td>Turn Tense if melody holds C or F#</td></tr>
+      <tr><td><strong>Gmaj7</strong></td><td>G major, I chord</td><td>G(1), B(3), D(5) = Sweet; F#(7) = Bitter</td><td>Stay Sweet if melody arrived on G or D</td></tr>
+      <tr><td><strong>Cmaj7</strong></td><td>G major, IV chord</td><td>C(1), E(3), G(5) = Sweet; B(7) = Bitter</td><td>Stay Sweet or Float Free from Gmaj7</td></tr>
+      <tr><td><strong>F#m7b5</strong></td><td>E minor, ii° chord</td><td>F#(1), A(3), C(5) = Sweet; G#(2) = Bitter</td><td>Sink Deeper from major half brightness</td></tr>
+      <tr><td><strong>B7</strong></td><td>E minor, V7 chord</td><td>B(1), D#(3), F#(5) = Sweet; A(7) = Bitter</td><td>Turn Tense — D# creates sharp pull to Em</td></tr>
+      <tr><td><strong>Em</strong></td><td>E minor, i chord</td><td>E(1), G(3), B(5) = Sweet; D(7) = Bitter</td><td>Stay Sweet — shadow home arrived</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="har-text">Listening Checklist — Active Listening Protocol</h3>
+
+  <div class="har-box">
+    <ol style="margin:0 0 0 16px;">
+      <li>First listen: feel only. Bright moments vs. shadow moments. No analysis.</li>
+      <li>Second listen: find the exact moment the song "tips" from the major world to the minor world. What note in the melody signals it?</li>
+      <li>Third listen: identify one "Turn Tense" moment — a melody note that was home on the previous chord and suddenly feels pulled.</li>
+      <li>Fourth listen: find the longest note in the melody. Is it in Zone 1 (resolution) or Zone 3 (tension)? What does that tell you about the composer's intention?</li>
+      <li>Fifth listen: hum along without the recording. You now own the melody.</li>
+    </ol>
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 — Perfecting · Hear Before You Play</div>
+    <strong>Two-Key Awareness Drill:</strong> Play through the full Autumn Leaves chord cycle once slowly. After each chord, say out loud: "major world" or "minor world." The boundary is between Cmaj7 and F#m7b5. That moment is the entire emotional arc of the song compressed into one chord change.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 7</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 8: RHYTHM CHAMBER -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="rhy-header"><span class="os-tag" style="color:rgba(255,255,255,0.75);">Rhythm Chamber</span><span class="os-title">Longy Rhythms in Practice + Travis Picking</span></div>
+
+  <p class="rhy-text">Rhythm is not decoration. It is the structure that makes melody and harmony legible. This sprint you complete the Longy Rhythms system and apply it directly to Autumn Leaves. You also begin Travis picking on guitar — the fingerpicking pattern that turns a single guitar into bass + melody + accompaniment simultaneously.</p>
+
+  <div style="height:3px;background:#ea580c;border-radius:2px;margin:20px 0;"></div>
+
+  <h2 class="rhy-text" style="margin-top:0;">The 8-Position Grid (Rhythm Code Recap)</h2>
+
+  <p>Every 4/4 measure contains 8 positions. Beats land on odd positions (1, 3, 5, 7). The "ands" land on even positions (2, 4, 6, 8). Every note you play has an address on this grid.</p>
+
+  <div class="rhy-bg">
+    <h4 class="rhy-text">Grid Visualization</h4>
+    <table style="font-family:monospace;font-size:13px;">
+      <thead><tr><th>Position</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr></thead>
+      <tbody>
+        <tr><td>Beat Name</td><td>1</td><td>1-and</td><td>2</td><td>2-and</td><td>3</td><td>3-and</td><td>4</td><td>4-and</td></tr>
+        <tr><td>Longy (quarter)</td><td>ta</td><td></td><td>ta</td><td></td><td>ta</td><td></td><td>ta</td><td></td></tr>
+        <tr><td>Longy (8ths)</td><td>ta</td><td>te</td><td>ta</td><td>te</td><td>ta</td><td>te</td><td>ta</td><td>te</td></tr>
+        <tr><td>Longy (dotted+8th)</td><td>ta</td><td></td><td>te</td><td>ta</td><td></td><td>te</td><td>ta</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="rhy-text">Applying Longy to Autumn Leaves</h2>
+
+  <p>The opening motif of Autumn Leaves (the famous descending melody) is built on dotted quarter + eighth note pairs. In Longy:</p>
+
+  <div class="rhy-bg">
+    <p style="font-family:monospace;font-size:15px;letter-spacing:3px;color:#9a3412;margin-bottom:6px;">
+      ta— te &nbsp; ta— te &nbsp; ta— te &nbsp; ta ---
+    </p>
+    <p style="font-size:13px;color:#475569;margin-bottom:4px;">Translated: Long-short, Long-short, Long-short, Hold.</p>
+    <p style="font-size:12px;color:#94a3b8;margin:0;">Speak this aloud until it feels like breathing. Then sing the melody using the words "ta" and "te." Then play. Three passes before you judge your accuracy.</p>
+  </div>
+
+  <div class="rhy-box">
+    <strong>The Syncopated Turnaround:</strong> When the second half of the progression resolves to Em, the melody often anticipates the downbeat — landing on position 8 of the previous measure. This anticipation is what gives Autumn Leaves its forward momentum even at slow tempos. In Longy: the "te" at the end of one bar becomes the expressive arrival of the next bar's motif.
+  </div>
+
+  <h2 class="rhy-text">Travis Picking — Stages 1 and 2 (Guitar)</h2>
+
+  <p>Travis picking (named after Merle Travis) alternates bass notes with melody or strummed notes using the thumb and fingers independently. It transforms a single guitar into a self-contained arrangement: bass voice + inner voice + melody.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0;">
+    <div class="stage stage-1" style="margin:0;">
+      <div class="stage-label">S1 — Discovering · Hear Before You Play</div>
+      <strong>Pattern Foundation:</strong><br>
+      Thumb alternates between bass strings (strings 6/4 or 5/4 depending on chord root). Fingers play a simple melody or strum on beats 2 and 4. Thumb: ta ta ta ta. Fingers: on beats 2 and 4 only. Tempo target: 60 BPM, no stops, for 16 bars.
+    </div>
+    <div class="stage stage-2" style="margin:0;">
+      <div class="stage-label">S2 — Perfecting · Hear Before You Play</div>
+      <strong>Independent Voices:</strong><br>
+      Thumb continues its alternating bass pattern while fingers add a syncopated strum or melody note on position 6 (the "3-and"). Thumb never stops. Fingers react to the melody. Target: G major chord, Travis pattern, 80 BPM for 32 bars without the thumb losing independence.
+    </div>
+  </div>
+
+  <div class="rhy-box">
+    <strong>The Travis Rule:</strong> The thumb is a metronome. It never reacts to the melody. The melody is carried by the fingers. If the thumb slows down when the melody gets complicated, you have not yet achieved Stage 1 independence. Go slower. The thumb is the floor — it does not bend.
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 — Discovering · Hear Before You Play</div>
+    <strong>Listen to a Travis picker first:</strong> Find a recording of Merle Travis, Chet Atkins, or Tommy Emmanuel playing any simple song. Isolate what the thumb is doing — it is as steady as a bassist. The melody on top is completely independent. You are hearing the target before you pursue it.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 8</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 9: VOICINGS CHAMBER — DEEPENING SPRINT 1 -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="voi-header"><span class="os-tag" style="color:rgba(255,255,255,0.75);">Voicings Chamber</span><span class="os-title">Root Position + Inversions — Deepening Sprint 1</span></div>
+
+  <p class="voi-text">No new voicing concepts are introduced this sprint. Instead you deepen the root position and inversion work from Sprint 1 by applying it directly to the Autumn Leaves chord set. The goal is not new vocabulary — it is fluency with what you already know across a set of real musical chords.</p>
+
+  <div style="height:3px;background:#16a34a;border-radius:2px;margin:10px 0;"></div>
+
+  <h2 class="voi-text" style="margin-top:0;">The Autumn Leaves Chord Set — Voicing Overview</h2>
+
+  <p>You have seven chords to voice this sprint. Each can be played in root position (root on the bottom) or in up to three inversions. The goal by sprint end: play every chord in at least two positions, connecting smoothly from one to the next with minimal hand movement.</p>
+
+  <table>
+    <thead><tr><th>Chord</th><th>Notes</th><th>Root Position</th><th>First Inversion</th><th>Voice Economy Tip</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Am7</strong></td><td>A–C–E–G</td><td>A on bottom</td><td>C on bottom</td><td>Piano: LH root A, RH C–E–G (compact 3-note voicing)</td></tr>
+      <tr><td><strong>D7</strong></td><td>D–F#–A–C</td><td>D on bottom</td><td>F# on bottom</td><td>Piano: drop the 5th (A) — voice D–F#–C; still complete D7 sound</td></tr>
+      <tr><td><strong>Gmaj7</strong></td><td>G–B–D–F#</td><td>G on bottom</td><td>B on bottom</td><td>Guitar: standard Gmaj7 open voicing — keep pinky on high B for smoothness to next chord</td></tr>
+      <tr><td><strong>Cmaj7</strong></td><td>C–E–G–B</td><td>C on bottom</td><td>E on bottom</td><td>Piano: LH C, RH E–G–B; common "open voicing" — warmest Cmaj7 sound</td></tr>
+      <tr><td><strong>F#m7b5</strong></td><td>F#–A–C–E</td><td>F# on bottom</td><td>A on bottom</td><td>Piano: F# bass alone in LH, A–C–E in RH. The gap between bass and chord creates the half-diminished tension.</td></tr>
+      <tr><td><strong>B7</strong></td><td>B–D#–F#–A</td><td>B on bottom</td><td>D# on bottom</td><td>Guitar: standard B7 open form. Piano: LH B, RH D#–F#–A compact. The D# is the leading tone — let it ring clearly.</td></tr>
+      <tr><td><strong>Em</strong></td><td>E–G–B</td><td>E on bottom</td><td>G on bottom</td><td>Simplest voicing — three notes. Piano: E–B in LH (open 5th), G–B in RH. Guitar: open Em chord.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="voi-text">Voice Economy — The Core Principle</h2>
+
+  <div class="voi-box">
+    <strong>Voice Economy means: use the fewest notes needed to communicate the chord's identity, and move each voice as little as possible from chord to chord.</strong> You do not need to play all four notes of every chord. The root and the characteristic interval (usually the 7th or the 3rd) tell the full story. Dropping the 5th almost never weakens a chord's identity.
+  </div>
+
+  <h3 class="voi-text">Smooth Voice Leading — The Am7 to D7 Connection</h3>
+
+  <p>The most important voice-leading moment in Autumn Leaves is the transition from Am7 to D7. In compact voicing:</p>
+
+  <div class="voi-bg">
+    <p style="font-family:monospace;font-size:13px;margin-bottom:6px;">Am7: &nbsp; A — C — E — G<br>D7: &nbsp;&nbsp; D — F# — (A) — C</p>
+    <p style="color:#166534;margin-bottom:4px;">Notice: <strong>G (top note of Am7) moves down one step to F# (3rd of D7).</strong> <strong>C stays in place</strong> — it is the 3rd of Am7 and the 7th of D7. Only two voices need to move.</p>
+    <p style="font-size:12px;color:#64748b;margin:0;">This is exactly why voice economy and smooth voice leading work together: when you strip chords to essential voices, the common tones and stepwise motion become visible.</p>
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 — Discovering · Hear Before You Play</div>
+    <strong>Root Position First:</strong> Play all seven chords in root position in the order: Am7 – D7 – Gmaj7 – Cmaj7 – F#m7b5 – B7 – Em. One chord per beat, slow tempo. Listen for the tension and release cycle as the cycle completes. Don't rush to inversions until root position is easy.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 — Perfecting · Hear Before You Play</div>
+    <strong>Smooth Connection Drill:</strong> Play Am7 in first inversion (C on bottom) then D7 in root position. Listen: does the top voice move smoothly? Find the voicing pair that moves the least from chord to chord throughout the full Autumn Leaves cycle. Write it down. That is your performance voicing.
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 — Fluent · Hear Before You Play</div>
+    <strong>Full Cycle, Both Hands Independent (Piano) / Both Picking Patterns (Guitar):</strong> Play all seven chords with smooth voice leading at 80 BPM. No position is "correct" — the target is no audible bump between chord changes. The connection sounds inevitable, not effortful.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 9</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 10: QUICK REFERENCE CARD -->
+<!-- ============================================================ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:4px;">
+    <h1 style="font-size:22px;">Sprint 2 Quick Reference Card</h1>
+    <span style="font-size:11px;color:#94a3b8;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;">Autumn Leaves · G Maj / E Min · ~100 BPM</span>
+  </div>
+  <div class="rainbow" style="margin-bottom:16px;"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;">
+
+    <!-- Musical OS -->
+    <div style="border:1px solid #00796b;border-radius:8px;padding:12px 14px;">
+      <div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#00796b;margin-bottom:8px;">Musical OS · Plogger</div>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>Ch.3 — Keyboard Landmarks:</strong><br>2-black group: C left · D middle · E right<br>3-black group: F left · G–A middle · B right<br>Fixed-do: C=Doh, D=Re, E=Mi, F=Fa, G=Sol, A=La, B=Si</p>
+      <p style="font-size:12px;margin:0;"><strong>Ch.4 — Longy Syllables:</strong><br>ta=quarter · ta-te=2 eighths · ta-fe-te-fe=4 sixteenths<br>ta-ki-da=triplet · ta— te=dotted quarter+eighth<br><em>Rule: syllable sounds EXACTLY when note attacks</em></p>
+    </div>
+
+    <!-- Melody Chamber -->
+    <div style="border:1px solid #3b82f6;border-radius:8px;padding:12px 14px;">
+      <div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#1e3a8a;margin-bottom:8px;">Melody Chamber</div>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>Zones:</strong> Z1 Sweet (1,3,5) · Z2 Bitter (7,2) · Z3 Tense (4) · Z4 Wildcard (6)</p>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>Four Behaviors on Chord Change:</strong></p>
+      <ul style="font-size:12px;margin:0 0 0 14px;">
+        <li><strong>Stay Sweet</strong> — Z1 stays Z1 across the change</li>
+        <li><strong>Turn Tense</strong> — Z1 becomes Z3 when chord moves</li>
+        <li><strong>Float Free</strong> — note lands in Z2, neither home nor urgent</li>
+        <li><strong>Sink Deeper</strong> — tension increases across change</li>
+      </ul>
+      <p style="font-size:12px;margin-top:6px;margin-bottom:0;"><strong>Duration Rule:</strong> Long note in Z3 = deep tension. Long note in Z1 = deep resolution.</p>
+    </div>
+
+    <!-- Harmony Chamber -->
+    <div style="border:1px solid #d97706;border-radius:8px;padding:12px 14px;">
+      <div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#78350f;margin-bottom:8px;">Harmony Chamber</div>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>#1 I–IV–V–I (G maj):</strong> G – C – D – G<br>Fundamental cadence. V→I = strongest resolution in tonal music.</p>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>#2 I–V–vi–IV (G maj):</strong> G – D – Em – C<br>Four chord song. vi (Em) = relative minor = same notes, shadow feeling.</p>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>Autumn Leaves — Major Half:</strong> Am7 – D7 – Gmaj7 – Cmaj7</p>
+      <p style="font-size:12px;margin:0;"><strong>Autumn Leaves — Minor Half:</strong> F#m7b5 – B7 – Em</p>
+    </div>
+
+    <!-- Rhythm Chamber -->
+    <div style="border:1px solid #ea580c;border-radius:8px;padding:12px 14px;">
+      <div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#9a3412;margin-bottom:8px;">Rhythm Chamber</div>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>8-Position Grid:</strong> Pos 1,3,5,7 = beats · Pos 2,4,6,8 = "ands"</p>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>Autumn Leaves Motif:</strong> ta— te · ta— te · ta— te · ta---<br>(dotted quarter + eighth pattern — the falling leaves)</p>
+      <p style="font-size:12px;margin-bottom:6px;"><strong>Anticipation:</strong> Note attacks on position 8, sounds like "early beat 1." Forward momentum without rushing.</p>
+      <p style="font-size:12px;margin:0;"><strong>Travis Picking Rule:</strong> Thumb = metronome (never bends). Fingers = melody (reactive). S1: alternating bass + strum on 2&amp;4. S2: add melody on 3-and.</p>
+    </div>
+
+  </div>
+
+  <!-- Sprint 2 Milestones -->
+  <div style="border:2px solid #1e293b;border-radius:10px;padding:14px 16px;margin-bottom:12px;">
+    <div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#334155;margin-bottom:10px;">Sprint 2 Exit Milestones — Can You?</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+      <div style="font-size:12px;"><span style="color:#00796b;font-weight:800;">[ ]</span> All 12 chromatic notes by landmark, eyes closed, &lt;2 sec/note</div>
+      <div style="font-size:12px;"><span style="color:#00796b;font-weight:800;">[ ]</span> Speak all Longy patterns including dotted at 80 BPM, no pulse loss</div>
+      <div style="font-size:12px;"><span style="color:#1e3a8a;font-weight:800;">[ ]</span> Identify by ear which chord-change behavior is occurring in Autumn Leaves</div>
+      <div style="font-size:12px;"><span style="color:#78350f;font-weight:800;">[ ]</span> I–IV–V–I in G major on both instruments at 90 BPM</div>
+      <div style="font-size:12px;"><span style="color:#78350f;font-weight:800;">[ ]</span> I–V–vi–IV in G major on both instruments at 90 BPM</div>
+      <div style="font-size:12px;"><span style="color:#9a3412;font-weight:800;">[ ]</span> Autumn Leaves full verse progression on both instruments</div>
+      <div style="font-size:12px;"><span style="color:#9a3412;font-weight:800;">[ ]</span> Travis picking S1 at 80 BPM without thumb losing independence</div>
+      <div style="font-size:12px;"><span style="color:#166534;font-weight:800;">[ ]</span> All 7 Autumn Leaves chords in at least two positions, smooth voice leading</div>
+    </div>
+  </div>
+
+  <!-- Sprint 3 Preview -->
+  <div class="syn-bg" style="padding:12px 14px;margin-bottom:12px;">
+    <div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#4b2d8c;margin-bottom:6px;">Sprint 3 Preview — The Girl from Ipanema (Jobim)</div>
+    <p style="font-size:12px;color:#4b2d8c;margin:0;"><strong>Plogger:</strong> Ch.5 Lap Map (hands-on-lap = silent keyboard) + Ch.6 Pythagorean Ordering (F–C–G–D–A–E–B). <strong>Melody:</strong> 5 Key Notes Framework (first, last, highest, longest, beat-1 note) + Tiny Tension Arc. <strong>Harmony:</strong> The Gb major bridge section — a Heptachord Shift a half-step above home. The single most beautiful chromatic sidetrack in bossa nova. The return to F major feels like waking up.</p>
+  </div>
+
+  <!-- North Star -->
+  <div style="text-align:center;padding:14px;border-top:2px solid #e2e8f0;margin-top:4px;">
+    <p style="font-size:14px;font-style:italic;color:#475569;margin-bottom:4px;">"You do not hear notes. You hear relationships. The note is nothing. The space between this note and the next one — that is everything."</p>
+    <p style="font-size:11px;color:#94a3b8;margin:0;letter-spacing:.06em;text-transform:uppercase;">AMF North Star · Sprint 2</p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 2 · Autumn Leaves</span>
+    <span>Page 10</span>
+  </div>
+</div>
+
+</body>
+</html>

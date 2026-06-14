@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AMF Sprint 1 — Mini Textbook</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Georgia','Times New Roman',serif;background:#f0ede8;color:#1e293b;font-size:14px;line-height:1.75;}
+.page{width:794px;min-height:1123px;margin:24px auto;background:#fff;padding:64px 72px;box-shadow:0 4px 24px rgba(0,0,0,0.10);page-break-after:always;position:relative;}
+h1{font-size:30px;font-weight:900;line-height:1.2;letter-spacing:-0.02em;}
+h2{font-size:20px;font-weight:800;line-height:1.3;margin-bottom:10px;margin-top:30px;}
+h3{font-size:16px;font-weight:700;margin-bottom:8px;margin-top:22px;}
+h4{font-size:13px;font-weight:700;margin-bottom:6px;margin-top:16px;text-transform:uppercase;letter-spacing:0.05em;}
+p{margin-bottom:13px;}
+ul,ol{margin:0 0 13px 22px;}
+li{margin-bottom:5px;}
+strong{font-weight:700;}
+em{font-style:italic;}
+
+/* ── SYSTEM COLORS ── */
+/* Musical OS / Plogger — Deep Teal */
+.os-header{background:#004d40;color:#fff;padding:8px 16px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;}
+.os-tag{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.75;}
+.os-title{font-size:14px;font-weight:800;}
+.os-bg{background:#e0f2f1;border-radius:10px;padding:18px 22px;margin:16px 0;}
+.os-rule{height:3px;background:#00796b;border-radius:2px;margin:20px 0;}
+.os-text{color:#004d40;}
+.os-box{border-left:4px solid #00796b;padding:14px 18px;background:#f0faf9;border-radius:0 8px 8px 0;margin:14px 0;}
+
+/* Melody Chamber — Blue */
+.mel-header{background:#1e3a8a;color:#fff;padding:8px 16px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;}
+.mel-bg{background:#dbeafe;border-radius:10px;padding:18px 22px;margin:16px 0;}
+.mel-rule{height:3px;background:#3b82f6;border-radius:2px;margin:20px 0;}
+.mel-text{color:#1e3a8a;}
+.mel-box{border-left:4px solid #3b82f6;padding:14px 18px;background:#eff6ff;border-radius:0 8px 8px 0;margin:14px 0;}
+
+/* Harmony Chamber — Amber */
+.har-header{background:#78350f;color:#fff;padding:8px 16px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;}
+.har-bg{background:#fef3c7;border-radius:10px;padding:18px 22px;margin:16px 0;}
+.har-rule{height:3px;background:#d97706;border-radius:2px;margin:20px 0;}
+.har-text{color:#78350f;}
+.har-box{border-left:4px solid #d97706;padding:14px 18px;background:#fffbeb;border-radius:0 8px 8px 0;margin:14px 0;}
+
+/* Rhythm Chamber — Rust */
+.rhy-header{background:#9a3412;color:#fff;padding:8px 16px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;}
+.rhy-bg{background:#fde8d8;border-radius:10px;padding:18px 22px;margin:16px 0;}
+
+/* Stage callouts */
+.stage{border-radius:8px;padding:14px 18px;margin:12px 0;border-left:5px solid;}
+.stage-1{background:#fff8e1;border-color:#f59e0b;}.stage-1 .stage-label{color:#b45309;}
+.stage-2{background:#fff0f0;border-color:#ef4444;}.stage-2 .stage-label{color:#b91c1c;}
+.stage-3{background:#f0fdf4;border-color:#22c55e;}.stage-3 .stage-label{color:#15803d;}
+.stage-label{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;}
+
+/* Non-diatonic callout */
+.non-dia{background:#fdf4ff;border:2px solid #c084fc;border-radius:10px;padding:14px 18px;margin:16px 0;}
+.non-dia-title{font-size:10px;font-weight:800;letter-spacing:.1em;color:#7e22ce;text-transform:uppercase;margin-bottom:6px;}
+
+/* Tables */
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px;}
+th{padding:9px 12px;text-align:left;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;border-bottom:2px solid #e2e8f0;}
+td{padding:9px 12px;border-bottom:1px solid #f1f5f9;vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#fafafa;}
+
+/* Rainbow rule */
+.rainbow{height:4px;background:linear-gradient(90deg,#00796b 0%,#3b82f6 22%,#d97706 50%,#8b5cf6 78%,#ea580c 100%);border-radius:2px;margin:22px 0;}
+
+/* Cover page */
+.cover-swatch{display:flex;gap:6px;margin:24px 0;}
+.swatch{height:8px;flex:1;border-radius:2px;}
+.cover-meta{font-size:11px;color:#64748b;letter-spacing:.08em;text-transform:uppercase;}
+.cover-subtitle{font-size:17px;color:#475569;margin:10px 0 24px;}
+
+/* TOC */
+.toc-group{margin-bottom:18px;}
+.toc-group-title{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;padding-bottom:4px;border-bottom:2px solid;}
+.toc-item{display:flex;justify-content:space-between;padding:5px 0;font-size:13px;border-bottom:1px dotted #e2e8f0;}
+.toc-item span:first-child{max-width:80%;}
+.toc-pg{color:#94a3b8;font-size:12px;}
+
+/* Key point circle */
+.kp{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;font-size:11px;font-weight:800;flex-shrink:0;margin-right:6px;}
+
+/* Chord diagram */
+.chord-row{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0;}
+.chord-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;min-width:100px;text-align:center;}
+.chord-name{font-size:18px;font-weight:900;margin-bottom:4px;}
+.chord-detail{font-size:11px;color:#64748b;}
+
+/* Footer */
+.page-footer{position:absolute;bottom:30px;left:72px;right:72px;display:flex;justify-content:space-between;font-size:10px;color:#94a3b8;letter-spacing:.05em;}
+
+/* Song analysis */
+.lyric-line{font-style:italic;font-size:13px;color:#475569;margin-left:16px;}
+.chord-above{font-size:11px;font-weight:700;color:#78350f;letter-spacing:.05em;}
+
+@media print{
+  body{background:white;}
+  .page{box-shadow:none;margin:0;page-break-after:always;}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ COVER PAGE -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;">
+  <div class="cover-meta" style="margin-bottom:12px;">The Adaptable Musician's Framework</div>
+  <h1 style="font-size:42px;line-height:1.1;max-width:580px;">Sprint 1<br><span style="color:#004d40;">Mini Textbook</span></h1>
+  <div class="cover-subtitle">Everything you need to know before you practice</div>
+  <div class="cover-swatch">
+    <div class="swatch" style="background:#004d40;" title="Musical OS"></div>
+    <div class="swatch" style="background:#1e3a8a;" title="Melody Chamber"></div>
+    <div class="swatch" style="background:#78350f;" title="Harmony Chamber"></div>
+    <div class="swatch" style="background:#9a3412;" title="Rhythm Chamber"></div>
+    <div class="swatch" style="background:#4b2d8c;" title="The Synthesizer"></div>
+  </div>
+  <div style="margin-top:32px;max-width:520px;">
+    <div class="os-bg" style="margin-bottom:14px;">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#004d40;margin-bottom:6px;">Musical OS — Plogger Method</div>
+      <strong>Chapters 1–3:</strong> The Three Stages of Learning · The Three Causes of Error · Beginning Keyboard Visualization
+    </div>
+    <div class="mel-bg" style="margin-bottom:14px;">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1e3a8a;margin-bottom:6px;">Melody Chamber</div>
+      Why notes feel the way they do · Zone 1 — Stable Notes · Major vs. Minor Quality
+    </div>
+    <div class="har-bg">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#78350f;margin-bottom:6px;">Harmony Chamber + Anchor Song</div>
+      Your first harmonic universe · "Ain't No Sunshine" — chord and melody analysis
+    </div>
+  </div>
+  <div style="position:absolute;bottom:64px;left:72px;right:72px;">
+    <div class="rainbow"></div>
+    <div class="cover-meta">Month 1 · Anchor Song: Ain't No Sunshine — Bill Withers · A minor</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ TABLE OF CONTENTS -->
+<div class="page">
+  <div class="cover-meta" style="margin-bottom:6px;">Sprint 1 Mini Textbook</div>
+  <h1 style="margin-bottom:6px;">Table of Contents</h1>
+  <div class="rainbow"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:8px;">
+
+    <div>
+      <div class="toc-group">
+        <div class="toc-group-title os-text" style="border-color:#00796b;">Part 1 — The Musical OS</div>
+        <div class="toc-item"><span>1.1 · The Three Stages of Learning</span><span class="toc-pg">3</span></div>
+        <div class="toc-item"><span>1.2 · The Three Causes of Error</span><span class="toc-pg">4</span></div>
+        <div class="toc-item"><span>1.3 · Beginning Keyboard Visualization</span><span class="toc-pg">5</span></div>
+      </div>
+      <div class="toc-group">
+        <div class="toc-group-title mel-text" style="border-color:#3b82f6;">Part 2 — Melody Chamber</div>
+        <div class="toc-item"><span>2.1 · Why Notes Feel the Way They Do</span><span class="toc-pg">6</span></div>
+        <div class="toc-item"><span>2.2 · Zone 1 — The Stable Notes</span><span class="toc-pg">6</span></div>
+        <div class="toc-item"><span>2.3 · Major vs. Minor — The Acoustic Truth</span><span class="toc-pg">7</span></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="toc-group">
+        <div class="toc-group-title har-text" style="border-color:#d97706;">Part 3 — Harmony Chamber</div>
+        <div class="toc-item"><span>3.1 · Your First Harmonic Universe</span><span class="toc-pg">8</span></div>
+        <div class="toc-item"><span>3.2 · "Ain't No Sunshine" — Analysis</span><span class="toc-pg">9</span></div>
+        <div class="toc-item"><span>3.3 · What to Listen For</span><span class="toc-pg">9</span></div>
+      </div>
+      <div class="toc-group">
+        <div class="toc-group-title rhy-text" style="border-color:#ea580c;">Rhythm Chamber</div>
+        <div class="toc-item"><span>4.1 · Two Lenses on the Same Rhythm</span><span class="toc-pg">9</span></div>
+        <div class="toc-item"><span>4.2 · The Binary Grid</span><span class="toc-pg">9</span></div>
+        <div class="toc-item"><span>4.3 · Stops + Anticipations</span><span class="toc-pg">9</span></div>
+      </div>
+      <div class="toc-group">
+        <div class="toc-group-title" style="border-color:#64748b;color:#64748b;">Sprint 1 Reference</div>
+        <div class="toc-item"><span>Quick Reference Card</span><span class="toc-pg">10</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:32px;">
+    <div class="os-bg">
+      <h3 style="color:#004d40;margin-top:0;">What this textbook is for</h3>
+      <p style="margin-bottom:8px;">This is your <em>knowledge layer</em> for Sprint 1. Read it before you start Week 1 and refer back to any section whenever you want to understand the <em>why</em> behind an exercise in your practice plan.</p>
+      <p style="margin-bottom:0;">The practice plan tells you <strong>what to do.</strong> This textbook tells you <strong>why it works</strong> — and why it matters for your playing.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:24px;">
+    <h3>How the color system works</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px;">
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;background:#e0f2f1;">
+        <div style="width:12px;height:12px;border-radius:3px;background:#004d40;flex-shrink:0;"></div>
+        <div><strong style="color:#004d40;font-size:12px;">TEAL</strong> <span style="font-size:12px;">= Musical OS (Plogger)</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;background:#dbeafe;">
+        <div style="width:12px;height:12px;border-radius:3px;background:#1e3a8a;flex-shrink:0;"></div>
+        <div><strong style="color:#1e3a8a;font-size:12px;">BLUE</strong> <span style="font-size:12px;">= Melody Chamber</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;background:#fef3c7;">
+        <div style="width:12px;height:12px;border-radius:3px;background:#78350f;flex-shrink:0;"></div>
+        <div><strong style="color:#78350f;font-size:12px;">AMBER</strong> <span style="font-size:12px;">= Harmony Chamber</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;background:#fde8d8;">
+        <div style="width:12px;height:12px;border-radius:3px;background:#9a3412;flex-shrink:0;"></div>
+        <div><strong style="color:#9a3412;font-size:12px;">RUST</strong> <span style="font-size:12px;">= Rhythm Chamber</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;background:#f0fdf4;">
+        <div style="width:12px;height:12px;border-radius:3px;background:#166534;flex-shrink:0;"></div>
+        <div><strong style="color:#166534;font-size:12px;">GREEN</strong> <span style="font-size:12px;">= Voicings Chamber</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;background:#f0e6ff;">
+        <div style="width:12px;height:12px;border-radius:3px;background:#4b2d8c;flex-shrink:0;"></div>
+        <div><strong style="color:#4b2d8c;font-size:12px;">PURPLE</strong> <span style="font-size:12px;">= The Synthesizer</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF · Sprint 1 Textbook</span><span>Table of Contents</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE: THREE STAGES -->
+<div class="page">
+  <div class="os-header"><span class="os-tag">Musical OS · Ch.1</span><span class="os-title">The Three Stages of Learning</span></div>
+
+  <p>Before we get to a single chord, scale, or song, you need the most important tool in this entire system: a map of how learning actually works. The Ploger Method begins here — and everything else in the AMF builds on this foundation.</p>
+
+  <p>Every skill you will ever practice — a fingerpicking pattern, a chord change, a new scale — passes through exactly three stages. The failure to recognize which stage you're in, and to try to skip stages, is the single most common cause of stalled musical development.</p>
+
+  <div class="stage stage-1">
+    <div class="stage-label">Stage 1 — Roughing In</div>
+    <strong>Mental state:</strong> Exploration. First contact. You are making the shape of the skill, not perfecting it.
+    <br/><br/>
+    Think of a sculptor roughing out a block of stone — you establish where the nose goes before you carve the fine detail. Errors are expected. Stopping to correct every error during Stage 1 is one of the most damaging things you can do to your learning. It creates anxiety, slows acquisition, and can form permanent inhibitions.
+    <br/><br/>
+    <strong>The rule:</strong> Keep moving. Do not stop at errors. The goal is contact with the territory, not mastery of it.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">Stage 2 — Perfecting</div>
+    <strong>Mental state:</strong> Precision. Now you isolate problems and remove them one by one.
+    <br/><br/>
+    You slow down deliberately. You identify exactly where an error occurs (not approximately — precisely which note, which finger, which transition). You correct it, test it, and solidify it. This is where most of practice time lives — and it is where most people get stuck. <em>Being able to do something slowly and carefully is not fluency.</em> It is still Stage 2.
+    <br/><br/>
+    <strong>The trap:</strong> Staying in Stage 2 indefinitely. Comfortable slow playing feels like progress but produces no forward motion toward real musicianship.
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">Stage 3 — Achieving Fluency</div>
+    <strong>Mental state:</strong> Automaticity. The skill is available at full speed without conscious attention.
+    <br/><br/>
+    The brain has transferred the skill from executive (conscious) processing to procedural (automatic) processing. You can now combine this skill with others — because you can read, finger, listen, and feel the time simultaneously when none of those sub-skills are demanding your attention.
+    <br/><br/>
+    <strong>The key law:</strong> A skill must be fluent before it can serve musical expression. Until fluency, the skill is consuming attention that should be going toward music.
+  </div>
+
+  <div class="os-box">
+    <h4 style="color:#004d40;margin-top:0;">Apply this immediately</h4>
+    Before every exercise in your practice plan, ask: <em>"What stage am I in right now?"</em> Label it. This single habit will transform how you practice, because each stage requires a completely different mental state — and you cannot be in two stages at once.
+  </div>
+
+  <p>In this textbook, every concept will be labeled with the stage at which you're likely to encounter it in Sprint 1. In the practice plan, every exercise will be labeled S1, S2, or S3.</p>
+
+  <div class="page-footer"><span>AMF · Sprint 1 Textbook</span><span>Part 1 · Musical OS</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE: THREE CAUSES -->
+<div class="page">
+  <div class="os-header"><span class="os-tag">Musical OS · Ch.2</span><span class="os-title">The Three Causes of Error</span></div>
+
+  <p>The Three Stages tell you <em>where</em> you are in learning. The Three Causes of Error tell you <em>why</em> a specific error is happening — and therefore exactly how to fix it. This is one of the most sophisticated ideas in music pedagogy, and it is almost entirely absent from standard music education.</p>
+
+  <p><strong>The critical insight:</strong> Different causes require different remedies. "Practice it again slowly" is only the right answer for one of three causes. If you apply it to the wrong cause, you will practice for hours without fixing the problem.</p>
+
+  <div class="os-bg" style="margin:18px 0;">
+    <h3 style="color:#004d40;margin-top:0;">Cause 1: Reaction</h3>
+    <p><strong>What it is:</strong> Your processing speed is slower than the music's speed. The skill has not reached fluency (Stage 3). The information arrives faster than your brain can handle it.</p>
+    <p><strong>How to identify it:</strong> Errors cluster at complex moments. You feel "late." The fast passages are the problem, not the slow ones.</p>
+    <p style="margin-bottom:0;"><strong>The fix:</strong> Return to Stage 2/3 practice on the specific under-fluent sub-skill. Slow practice IS the correct remedy here — because this is a speed/fluency problem.</p>
+  </div>
+
+  <div class="os-bg" style="margin:18px 0;">
+    <h3 style="color:#004d40;margin-top:0;">Cause 2: Anticipation</h3>
+    <p><strong>What it is:</strong> Your attention is already on a future event — a difficult chord coming up, a high note — while your hands are executing the present event. Because attention has left the present, execution of the present suffers.</p>
+    <p><strong>How to identify it:</strong> Errors cluster <em>just before</em> difficult passages, not at them. You "knew" the mistake was coming before it happened.</p>
+    <p style="margin-bottom:0;"><strong>The fix:</strong> Narrow-focus practice — be fully present, note by note. Practicing slowly does <em>not</em> fix Anticipation. You can anticipate slowly just as easily as quickly.</p>
+  </div>
+
+  <div class="os-bg" style="margin:18px 0;">
+    <h3 style="color:#004d40;margin-top:0;">Cause 3: Looking Back</h3>
+    <p><strong>What it is:</strong> You make an error, and your attention returns to it — even a fraction of a second later. The moment attention goes backward, the next events are missed, causing further errors. This is the "unraveling" phenomenon.</p>
+    <p><strong>How to identify it:</strong> One small error leads to a cascade. You say "I knew I was going to mess up from that point on."</p>
+    <p style="margin-bottom:0;"><strong>The fix:</strong> Train playing-through-errors as a separate skill. The past event is gone. The only recoverable moment is the present one. This must be practiced deliberately — it will not happen on its own.</p>
+  </div>
+
+  <div class="os-box">
+    <h4 style="color:#004d40;margin-top:0;">The single most important takeaway from Ch.2</h4>
+    <em>"Practicing slowly"</em> only addresses Reaction errors. It does nothing for Anticipation or Looking Back. A student who can identify the cause of their own errors has gained something more valuable than any technical correction.
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 Textbook</span><span>Part 1 · Musical OS</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE: KEYBOARD VIZ -->
+<div class="page">
+  <div class="os-header"><span class="os-tag">Musical OS · Ch.3</span><span class="os-title">Beginning Keyboard Visualization</span></div>
+
+  <p>The piano keyboard is not just an instrument. In this system, it is your <strong>universal reference map</strong> for all pitch relationships — regardless of whether your primary instrument is piano or guitar. Every interval, every chord, every scale becomes spatially clear on the keyboard. Your goal in this system is to have a vivid, instant mental image of the keyboard available at all times — eyes closed, mid-improvisation, while listening to a recording.</p>
+
+  <p>We begin with the most fundamental skill: knowing where every note is, instantly.</p>
+
+  <h3 class="os-text">The Black-Key Landmark Method</h3>
+  <p>There are two groups of black keys that repeat across the keyboard. These groups are your navigation anchors — everything else is located relative to them.</p>
+
+  <div class="os-bg">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <div>
+        <h4 style="color:#004d40;margin-top:0;">The Group of Two Black Keys</h4>
+        <ul style="margin-left:16px;">
+          <li><strong>C</strong> is immediately to the <strong>left</strong> of this group</li>
+          <li><strong>D</strong> is <strong>between</strong> the two black keys</li>
+          <li><strong>E</strong> is immediately to the <strong>right</strong></li>
+        </ul>
+        <p style="margin-top:10px;margin-bottom:0;font-size:12px;color:#004d40;">Memory: <em>C comes before the pair</em></p>
+      </div>
+      <div>
+        <h4 style="color:#004d40;margin-top:0;">The Group of Three Black Keys</h4>
+        <ul style="margin-left:16px;">
+          <li><strong>F</strong> is immediately to the <strong>left</strong> of this group</li>
+          <li><strong>G, A</strong> fill the two gaps within the group</li>
+          <li><strong>B</strong> is immediately to the <strong>right</strong></li>
+        </ul>
+        <p style="margin-top:10px;margin-bottom:0;font-size:12px;color:#004d40;">Memory: <em>F comes before the trio</em></p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="os-text">Fixed-Do Solfège</h3>
+  <p>This system uses <strong>fixed-do</strong> solfège throughout. This means the syllables always refer to the same pitch class — they are not relative to a key.</p>
+  <table>
+    <thead><tr><th>Syllable</th><th>doh</th><th>re</th><th>mi</th><th>fa</th><th>sol</th><th>la</th><th>si</th></tr></thead>
+    <tbody><tr><td><strong>Note</strong></td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>A</td><td>B</td></tr></tbody>
+  </table>
+  <p>When you sing or speak a note name in this system, you use the solfège syllable. Not "A" — but "la." This trains your ear to connect the syllable with the pitch class directly.</p>
+
+  <h3 class="os-text">Sprint 1 Mastery Target</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0;">
+    <div class="stage stage-1"><div class="stage-label">Week 1 Target — Stage 1</div>Know the landmark rule for C and F. Can locate them on the keyboard with prompting.</div>
+    <div class="stage stage-2"><div class="stage-label">Week 2 Target — Stage 2</div>Name all 7 natural notes (C D E F G A B) by their group relationship. Eyes open.</div>
+    <div class="stage stage-3"><div class="stage-label">Sprint Exit Target — Stage 3</div>Name any natural note instantly, eyes closed. Find any pitch on the keyboard without looking.</div>
+  </div>
+
+  <div class="os-box">
+    <h4 style="color:#004d40;margin-top:0;">Why guitar players do this too</h4>
+    The keyboard is your mental model of pitch space — not a piano skill. When you hear an interval, you're visualizing it on the keyboard. When you improvise on guitar, the most fluent players are mentally tracking the keyboard while their hands work the fretboard. Building this map now means every other system (zones, di-chords, heptachords) has a physical spatial home.
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 Textbook</span><span>Part 1 · Musical OS</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE: MELODY CHAMBER -->
+<div class="page">
+  <div class="mel-header"><span class="os-tag">Melody Chamber · Sprint 1</span><span class="os-title">Why Notes Feel the Way They Do</span></div>
+
+  <p>Every note you play over a chord has a specific emotional quality — not by convention, not by culture, but by physics. This is the foundational insight of the Melody Chamber: the emotional character of a note is not arbitrary. It comes from the acoustic relationship between that note and the chord underneath it.</p>
+
+  <h2 class="mel-text">The Stability Ladder</h2>
+  <p>Think of the notes in any key arranged on a ladder from most stable to most tense. Not all notes feel equal. Some feel like <em>home</em>. Some feel like they're <em>reaching</em>. Some feel like they <em>must move</em>.</p>
+
+  <div class="mel-bg">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div>
+        <h3 style="color:#1e3a8a;margin-top:0;">Zone 1 — The Sweet Notes</h3>
+        <p><strong>Notes:</strong> 1 (tonic), 3 (third), 5 (fifth)</p>
+        <p>In A minor: <strong>A, C, E</strong></p>
+        <p>These are the chord tones — the notes that make up the Am chord itself. When you land on one of these notes over Am, you are home. The melody is resting. This is your Zone 1 — stable, resolved, sweet.</p>
+        <p style="margin-bottom:0;">In Ain't No Sunshine: the melody rests on <strong>A</strong> and <strong>E</strong> at phrase endings. That landing is Zone 1 doing its job.</p>
+      </div>
+      <div>
+        <h3 style="color:#1e3a8a;margin-top:0;">The Other Zones (Coming in Sprint 2–3)</h3>
+        <p><strong>Zone 2</strong> (Bitter): scale degrees 7 and 2 — mild tension, close to home</p>
+        <p><strong>Zone 3</strong> (Tense): scale degree 4 — active tension, wants to move</p>
+        <p><strong>Zone 4</strong> (Wildcard): scale degree 6 — context-dependent</p>
+        <p style="margin-bottom:0;">For Sprint 1 we focus on Zone 1. Mastering "home" is the prerequisite for understanding everything else.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="mel-text" style="margin-top:24px;">Major vs. Minor — The Acoustic Reality</h2>
+  <p>This is one of the most important things in this entire textbook. The reason a major chord sounds <em>open and bright</em> and a minor chord sounds <em>closed and poignant</em> is not a cultural convention. It is acoustic physics.</p>
+
+  <p>Every pitch produces a natural stack of overtones — frequencies that ring above the fundamental. The most important of these are: the <strong>octave</strong>, the <strong>perfect fifth</strong>, and the <strong>major third</strong>. These three notes appear naturally, without any human decision, in the overtone series of any vibrating string or column of air.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;">
+    <div style="background:#fafffe;border:2px solid #3b82f6;border-radius:10px;padding:16px;">
+      <h4 style="color:#1e3a8a;margin-top:0;">A major chord</h4>
+      <p>The third above the root is a <strong>major third</strong> — 4 semitones. This interval is present in the overtone series of the root note. The chord is acoustically <em>telling the truth about the physics of the root</em>. It sounds open, expanding, "alkaline." The root is confirmed and extended.</p>
+    </div>
+    <div style="background:#fff5f5;border:2px solid #94a3b8;border-radius:10px;padding:16px;">
+      <h4 style="color:#1e3a8a;margin-top:0;">A minor chord</h4>
+      <p>The third above the root is a <strong>minor third</strong> — 3 semitones. This interval does <em>not</em> appear in the natural overtone series. The chord is acoustically <em>contradicting the physics of the root</em>. It sounds closed, contracting, "acidic" — the minor quality is the sound of that contradiction. Poignant, vulnerable, tense.</p>
+    </div>
+  </div>
+
+  <div class="mel-box">
+    <h4 style="color:#1e3a8a;margin-top:0;">The practice implication</h4>
+    When you play Am today and hear that closed, poignant quality — you are hearing the acoustic physics of a non-harmonic third. Your job over the coming months is to make that hearing conscious, fluent, and immediate. Not "Am sounds sad." But: "I hear the 3-semitone interval over the root, and I feel its contraction."
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 Textbook</span><span>Part 2 · Melody Chamber</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE: HARMONY -->
+<div class="page">
+  <div class="har-header"><span class="os-tag">Harmony Chamber · Sprint 1</span><span class="os-title">Your First Harmonic Universe</span></div>
+
+  <p>Every song exists within a <strong>harmonic universe</strong> — a collection of notes and chords that the listener experiences as belonging together. Your ear learned to recognize these universes long before you ever studied music. Sprint 1 gives you the tools to understand what your ear has always known.</p>
+
+  <h2 class="har-text">A Minor — The Universe of Ain't No Sunshine</h2>
+  <p>The song lives in <strong>A natural minor</strong> (A Aeolian) — a seven-note collection centered on A. The ear hears A as home. Every other note is understood in relation to that home.</p>
+
+  <p>The notes of A minor: <strong>A · B · C · D · E · F · G</strong></p>
+
+  <p>The chords naturally built from those notes include Am, Bm°, C, Dm, Em, F, and G. But Ain't No Sunshine uses just a few of them:</p>
+
+  <div class="chord-row">
+    <div class="chord-card">
+      <div class="chord-name" style="color:#78350f;">Am</div>
+      <div class="chord-detail">A · C · E</div>
+      <div class="chord-detail">Home chord · i</div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name" style="color:#78350f;">Em</div>
+      <div class="chord-detail">E · G · B</div>
+      <div class="chord-detail">Moving away · v</div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name" style="color:#78350f;">G</div>
+      <div class="chord-detail">G · B · D</div>
+      <div class="chord-detail">Breath of major · VII</div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name" style="color:#78350f;">E7</div>
+      <div class="chord-detail">E · G# · B · D</div>
+      <div class="chord-detail">Pulls home hard · V7</div>
+    </div>
+  </div>
+
+  <div class="har-box">
+    <h4 style="color:#78350f;margin-top:0;">Notice the E7</h4>
+    The G# in E7 is not in the A minor scale — it's a <em>raised note</em>, borrowed from harmonic minor. This single note creates a strong pull back to Am. When you hear that E7 → Am movement in the song, you're hearing centuries of harmonic practice distilled into one gesture: the leading tone pulling home.
+  </div>
+
+  <h2 class="har-text">The Emotional Arc of the Progression</h2>
+  <p>Ain't No Sunshine moves through its chords in a way that creates a specific emotional shape. Understanding this shape is the beginning of harmonic literacy.</p>
+
+  <table>
+    <thead>
+      <tr><th>Chord</th><th>Function</th><th>Emotional Quality</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Am (3 bars)</strong></td><td>Home</td><td>Settled, resigned, heavy — the weight of longing</td></tr>
+      <tr><td><strong>Em</strong></td><td>Movement</td><td>Slightly unsettled — same quality (minor), but a step away from home</td></tr>
+      <tr><td><strong>G</strong></td><td>Breath</td><td>A flash of major brightness — brief, bittersweet relief</td></tr>
+      <tr><td><strong>Am</strong></td><td>Return</td><td>Back home — but now the return feels heavier for having left</td></tr>
+    </tbody>
+  </table>
+
+  <p>The song's harmonic genius is in its <em>restraint</em>. Three chords. The progression repeats. And the weight accumulates with each pass — partly because of the lyric, but also because the harmony itself creates the feeling of circling without resolution.</p>
+
+  <div class="page-footer"><span>AMF · Sprint 1 Textbook</span><span>Part 3 · Harmony Chamber</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE: SONG ANALYSIS -->
+<div class="page">
+  <div class="har-header"><span class="os-tag">Harmony Chamber · Sprint 1</span><span class="os-title">"Ain't No Sunshine" — Deep Analysis</span></div>
+
+  <h2 class="har-text">Song Overview</h2>
+  <table>
+    <tbody>
+      <tr><td><strong>Artist</strong></td><td>Bill Withers</td></tr>
+      <tr><td><strong>Released</strong></td><td>1971</td></tr>
+      <tr><td><strong>Key</strong></td><td>A minor (A Aeolian, with harmonic minor inflection)</td></tr>
+      <tr><td><strong>Tempo</strong></td><td>~97 BPM</td></tr>
+      <tr><td><strong>Form</strong></td><td>Intro / Verse / "I know" section / Verse / Outro</td></tr>
+      <tr><td><strong>Primary chords</strong></td><td>Am – Em – G – Am</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="har-text">Chord Structure — The Verse</h2>
+  <p>The verse repeats a simple four-bar pattern with variations:</p>
+  <div class="har-bg" style="font-family:monospace;font-size:13px;line-height:2;">
+    <div><span class="chord-above">Am</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="chord-above">Em</span></div>
+    <div class="lyric-line">"Ain't no sunshine when she's gone"</div>
+    <div style="margin-top:8px;"><span class="chord-above">Am</span></div>
+    <div class="lyric-line">"It's not warm when she's away"</div>
+    <div style="margin-top:8px;"><span class="chord-above">Am</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="chord-above">G</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="chord-above">Am</span></div>
+    <div class="lyric-line">"Ain't no sunshine when she's gone"</div>
+    <div style="margin-top:8px;"><span class="chord-above">Em</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="chord-above">Am</span></div>
+    <div class="lyric-line">"And she's always gone too long, anytime she goes away"</div>
+  </div>
+
+  <h2 class="har-text" style="margin-top:20px;">Melody Analysis — Zone Mapping</h2>
+  <p>The melody of Ain't No Sunshine is primarily Zone 1 (stable chord tones) at phrase endings, with Zone 2 notes creating the reaching quality in the middle of phrases. This is the Tiny Tension Arc at work — the melody moves away from home (Zone 2) and returns (Zone 1).</p>
+
+  <div class="mel-bg">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div>
+        <h4 style="color:#1e3a8a;margin-top:0;">Phrase endings (Zone 1 — Home)</h4>
+        <p>The melody frequently lands on <strong>A</strong> (the tonic — home) or <strong>E</strong> (the fifth — open but stable). These landings create the resigned, settled quality of the song. Notice: the song doesn't fight. It keeps coming home.</p>
+      </div>
+      <div>
+        <h4 style="color:#1e3a8a;margin-top:0;">Mid-phrase motion (Zone 2 — Reaching)</h4>
+        <p>The melody reaches up to <strong>G</strong> and <strong>B</strong> within phrases — notes that are slightly unstable, that carry longing. These notes make the phrase feel like it's searching before it settles. The yearning is built into the pitch choices.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="har-text" style="margin-top:20px;">What to Listen For — Your Assignment</h2>
+  <p>Before you play a single note of this song, listen to it three times this week with different intentions:</p>
+
+  <div class="har-bg">
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="background:#78350f;color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0;margin-top:2px;">1</div>
+        <div><strong>Listen for the minor quality.</strong> Feel the closed, poignant character of every Am chord. Notice how it's different from the brief G major — that single bar of major feels like a window opening.</div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="background:#78350f;color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0;margin-top:2px;">2</div>
+        <div><strong>Listen for where the melody lands.</strong> When a phrase ends, notice the feeling — settled (Zone 1) or open (still reaching). Try to feel the difference without knowing the note names yet.</div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="background:#78350f;color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0;margin-top:2px;">3</div>
+        <div><strong>Listen for the "I know" section.</strong> This is a pure Am vamp — just one chord, repeated, while the lyrics pile up. Notice how the harmony creates stasis — the chord isn't going anywhere, and neither is the narrator.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 Textbook</span><span>Part 3 · Harmony Chamber</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE: RHYTHM CHAMBER -->
+<div class="page">
+  <div class="rhy-header"><span class="os-tag">Rhythm Chamber · Sprint 1</span><span class="os-title">Two Lenses on the Same Rhythm</span></div>
+
+  <p>The Rhythm Chamber has two tools that work together — and in this system, they're always used together. One names the rhythm. The other places it in the groove. Neither is complete without the other.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:18px 0;">
+    <div class="os-bg" style="border-radius:10px;padding:16px 18px;">
+      <h3 style="color:#004d40;margin-top:0;">Tool 1: Longy Rhythms (Plogger Ch.4)</h3>
+      <p style="font-size:13px;"><strong>Answers:</strong> "What rhythm is this?"</p>
+      <p style="font-size:13px;">A syllabic system where every note gets a spoken syllable that sounds <em>exactly</em> when it occurs. Speak <em>ta</em> and the note is on the beat. Speak <em>ta-te</em> and you've divided the beat in two. The syllable IS the rhythm — in real time.</p>
+      <p style="font-size:13px;margin-bottom:0;"><strong>Level:</strong> Notation / perception. Tells you what is written or heard.</p>
+    </div>
+    <div class="rhy-bg" style="border-radius:10px;padding:16px 18px;">
+      <h3 style="color:#9a3412;margin-top:0;">Tool 2: The Rhythm Code (Tamas Bodzsar)</h3>
+      <p style="font-size:13px;"><strong>Answers:</strong> "Does this rhythm groove?"</p>
+      <p style="font-size:13px;">A groove-placement system based on a fundamental insight: <em>rhythm is starting points, not duration values.</em> Where a note begins on the 8-position grid determines whether it sits naturally or creates rhythmic tension.</p>
+      <p style="font-size:13px;margin-bottom:0;"><strong>Level:</strong> Feel / groove. Tells you what it sounds like against the pulse.</p>
+    </div>
+  </div>
+
+  <h2 style="color:#9a3412;">The Binary Grid — Your Groove Map</h2>
+  <p>In 4/4 time, every measure can be divided into <strong>8 equal positions</strong> (each position = one 8th note). Every note you play begins on one of these 8 positions. Where it begins — not how long it lasts — is what defines the rhythm.</p>
+
+  <div class="rhy-bg" style="border-radius:10px;padding:16px 20px;margin:14px 0;">
+    <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin-bottom:12px;">
+      <div style="text-align:center;background:#9a3412;color:#fff;border-radius:6px;padding:8px 4px;font-weight:900;font-size:13px;">1</div>
+      <div style="text-align:center;background:#c4553a;color:#fff;border-radius:6px;padding:8px 4px;font-weight:700;font-size:12px;">+</div>
+      <div style="text-align:center;background:#9a3412;color:#fff;border-radius:6px;padding:8px 4px;font-weight:900;font-size:13px;">2</div>
+      <div style="text-align:center;background:#c4553a;color:#fff;border-radius:6px;padding:8px 4px;font-weight:700;font-size:12px;">+</div>
+      <div style="text-align:center;background:#9a3412;color:#fff;border-radius:6px;padding:8px 4px;font-weight:900;font-size:13px;">3</div>
+      <div style="text-align:center;background:#c4553a;color:#fff;border-radius:6px;padding:8px 4px;font-weight:700;font-size:12px;">+</div>
+      <div style="text-align:center;background:#9a3412;color:#fff;border-radius:6px;padding:8px 4px;font-weight:900;font-size:13px;">4</div>
+      <div style="text-align:center;background:#c4553a;color:#fff;border-radius:6px;padding:8px 4px;font-weight:700;font-size:12px;">+</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin-bottom:10px;">
+      <div style="text-align:center;font-size:10px;font-weight:700;color:#9a3412;">Pos 1</div>
+      <div style="text-align:center;font-size:10px;font-weight:700;color:#9a3412;">Pos 2</div>
+      <div style="text-align:center;font-size:10px;font-weight:700;color:#9a3412;">Pos 3</div>
+      <div style="text-align:center;font-size:10px;font-weight:700;color:#9a3412;">Pos 4</div>
+      <div style="text-align:center;font-size:10px;font-weight:700;color:#9a3412;">Pos 5</div>
+      <div style="text-align:center;font-size:10px;font-weight:700;color:#9a3412;">Pos 6</div>
+      <div style="text-align:center;font-size:10px;font-weight:700;color:#9a3412;">Pos 7</div>
+      <div style="text-align:center;font-size:10px;font-weight:700;color:#9a3412;">Pos 8</div>
+    </div>
+    <p style="font-size:12px;margin-bottom:0;">Positions 1, 3, 5, 7 = the beats (ta syllables). Positions 2, 4, 6, 8 = the "ands" (te syllables). A note starting on position 1 feels grounded. A note starting on position 2 feels lifted. <em>Same pitch, completely different feeling</em> — because of where it starts.</p>
+  </div>
+
+  <h2 style="color:#9a3412;margin-top:20px;">Stops + Anticipations — Sprint 1 Intro</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0;">
+    <div style="border-left:4px solid #9a3412;padding:12px 16px;background:#fff8f5;border-radius:0 8px 8px 0;">
+      <h4 style="color:#9a3412;margin-top:0;">Stops</h4>
+      <p style="font-size:13px;">The <strong>last note before a rest</strong>. The stop is the most important note in any rhythmic phrase — it defines where the phrase lands. A strong stop creates punctuation. A weak stop creates ambiguity.</p>
+      <p style="font-size:13px;margin-bottom:0;">In Ain't No Sunshine: "gone—" is a stop. The word lands and rests. That landing is intentional and musical.</p>
+    </div>
+    <div style="border-left:4px solid #9a3412;padding:12px 16px;background:#fff8f5;border-radius:0 8px 8px 0;">
+      <h4 style="color:#9a3412;margin-top:0;">Anticipations</h4>
+      <p style="font-size:13px;">A note that starts <strong>one 8th note early</strong> — on position 8 instead of position 1. Instead of landing on the beat, you arrive just before it. This creates the "push" feeling that makes music feel alive and forward-moving rather than mechanical.</p>
+      <p style="font-size:13px;margin-bottom:0;">Most popular music uses anticipations constantly. When a chord change "feels" exciting, it's often because it arrived 1/8 note early.</p>
+    </div>
+  </div>
+
+  <h2 style="color:#9a3412;margin-top:20px;">The Combined Lens — How to Use Both Tools Together</h2>
+  <div class="rhy-bg" style="border-radius:10px;padding:16px 20px;">
+    <p style="font-size:13px;margin-bottom:10px;">Take any rhythmic pattern and read it with both tools simultaneously:</p>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;">
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <div style="background:#9a3412;color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;margin-top:1px;">1</div>
+        <div><strong>Longy speaks it:</strong> "ta · ta-te · ta · ta" — now you know what rhythmic values are present</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <div style="background:#9a3412;color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;margin-top:1px;">2</div>
+        <div><strong>Rhythm Code places it:</strong> "note starts pos 1 · note starts pos 3, note starts pos 4 · note starts pos 5 · note starts pos 7" — now you know where each note lives in the groove</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <div style="background:#9a3412;color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;margin-top:1px;">3</div>
+        <div><strong>Ask:</strong> Where is the stop? Is there an anticipation? Do any notes start on the "and" positions (2, 4, 6, 8)?</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <div style="background:#9a3412;color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;margin-top:1px;">4</div>
+        <div><strong>Play it:</strong> Every note lands exactly where the grid says it should — not from reading notation, but from internalizing the position.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 Textbook</span><span>Rhythm Chamber</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE: REFERENCE CARD -->
+<div class="page">
+  <h1 style="font-size:22px;margin-bottom:4px;">Sprint 1 — Quick Reference Card</h1>
+  <div class="rainbow"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+
+    <div class="os-bg">
+      <h3 style="color:#004d40;margin-top:0;">The Musical OS (Plogger)</h3>
+      <p style="font-size:12px;"><strong>Three Stages:</strong><br/>
+      S1 = Roughing In (explore, don't stop at errors)<br/>
+      S2 = Perfecting (slow, isolate, remove errors)<br/>
+      S3 = Fluency (automatic, at tempo)</p>
+      <p style="font-size:12px;margin-bottom:0;"><strong>Three Causes of Error:</strong><br/>
+      Reaction = too fast (fluency problem)<br/>
+      Anticipation = attention on future event<br/>
+      Looking Back = attention on past error</p>
+    </div>
+
+    <div class="os-bg">
+      <h3 style="color:#004d40;margin-top:0;">Keyboard Visualization</h3>
+      <p style="font-size:12px;margin-bottom:8px;"><strong>Two black keys:</strong> C (left) · D (middle) · E (right)</p>
+      <p style="font-size:12px;margin-bottom:8px;"><strong>Three black keys:</strong> F (left) · G, A (middle) · B (right)</p>
+      <p style="font-size:12px;"><strong>Fixed-do solfège:</strong><br/>
+      doh=C · re=D · mi=E · fa=F · sol=G · la=A · si=B</p>
+    </div>
+
+    <div class="mel-bg">
+      <h3 style="color:#1e3a8a;margin-top:0;">Melody Chamber</h3>
+      <p style="font-size:12px;"><strong>Zone 1 (Sweet/Stable):</strong> degrees 1, 3, 5 = chord tones<br/>
+      In A minor: A, C, E</p>
+      <p style="font-size:12px;"><strong>Major vs. Minor:</strong><br/>
+      Major 3rd (4 semitones) = in overtone series = <em>open, alkaline</em><br/>
+      Minor 3rd (3 semitones) = NOT in series = <em>closed, acidic</em></p>
+      <p style="font-size:12px;margin-bottom:0;"><strong>Hear before you play.</strong> Every note.</p>
+    </div>
+
+    <div class="har-bg">
+      <h3 style="color:#78350f;margin-top:0;">Harmony Chamber</h3>
+      <p style="font-size:12px;"><strong>Ain't No Sunshine chords:</strong><br/>
+      Am (i) · Em (v) · G (VII) · E7 (V7 — harmonic minor)</p>
+      <p style="font-size:12px;"><strong>Chord qualities:</strong><br/>
+      Am · Em = minor (closed, acidic [3/7] quality)<br/>
+      G = major (open, alkaline [4/7] quality)<br/>
+      E7 = dominant 7th (tension wants to resolve to Am)</p>
+    </div>
+
+    <div style="grid-column:span 2;" class="rhy-bg">
+      <h3 style="color:#9a3412;margin-top:0;">Rhythm Chamber — Two Tools, Used Together</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;">
+        <div>
+          <strong style="color:#9a3412;">Longy Rhythms (Plogger Ch.4) — "What is it?"</strong><br/>
+          ta = quarter · ta-te = two eighths · ta-fe-te-fe = four sixteenths<br/>
+          Speak syllables exactly when each note sounds.
+        </div>
+        <div>
+          <strong style="color:#9a3412;">Rhythm Code — "Where does it sit?"</strong><br/>
+          8 positions per measure (pos 1=beat 1, pos 2="and" of 1, etc.)<br/>
+          Stop = last note before rest · Anticipation = starts on pos 8 (1/8 early)
+        </div>
+      </div>
+      <div style="margin-top:10px;padding:8px 12px;background:rgba(154,52,18,0.1);border-radius:6px;font-size:12px;">
+        <strong>Combined drill:</strong> Speak Longy syllables → identify grid position → find the stop → ask: is there an anticipation?
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:20px;">
+    <h3>Sprint 1 Milestones</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:10px;">
+      <div style="border:1px solid #e2e8f0;border-radius:8px;padding:12px;">
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin-bottom:6px;">By Week 2</div>
+        <div style="font-size:12px;">Know all keyboard landmarks by name. Play Am progression on both instruments.</div>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-radius:8px;padding:12px;">
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin-bottom:6px;">By Week 3</div>
+        <div style="font-size:12px;">Distinguish major vs. minor by ear instantly. Zone 1 notes fluent in A minor.</div>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-radius:8px;padding:12px;">
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin-bottom:6px;">Sprint Exit</div>
+        <div style="font-size:12px;">Ain't No Sunshine complete on both instruments. Keyboard visualization fluent.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:20px;background:#0f172a;color:#fff;border-radius:10px;padding:20px;">
+    <h3 style="color:#e2e8f0;margin-top:0;">The North Star</h3>
+    <p style="font-size:13px;color:#cbd5e1;margin-bottom:0;">Everything in this system — every exercise, every concept, every sprint — is working toward one thing: <strong style="color:#fff;">the framework disappears.</strong> The theory becomes invisible because it has become instinct. You will know you're getting there when you stop thinking in systems and start thinking in music.</p>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 Textbook</span><span>Quick Reference</span></div>
+</div>
+
+</body>
+</html>

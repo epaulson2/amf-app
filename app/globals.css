@@ -85,3 +85,9 @@ body {
   color: #0f172a;
   font-weight: 600;
 }
+
+/* AMF Audio — pulsation wave animation */
+@keyframes wave-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

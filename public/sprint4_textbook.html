@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMF Sprint 4 Mini Textbook — Superstition</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Georgia','Times New Roman',serif;background:#f0ede8;color:#1e293b;font-size:12px;line-height:1.35;}
+.page{width:794px;min-height:1123px;margin:24px auto;background:#fff;padding:32px 44px;box-shadow:0 4px 24px rgba(0,0,0,0.10);page-break-after:always;position:relative;}
+h1{font-size:30px;font-weight:900;line-height:1.2;letter-spacing:-0.02em;}
+h2{font-size:16px;font-weight:800;line-height:1.25;margin-bottom:4px;margin-top:8px;}
+h3{font-size:13px;font-weight:700;margin-bottom:3px;margin-top:7px;}
+h4{font-size:11px;font-weight:700;margin-bottom:3px;margin-top:8px;text-transform:uppercase;letter-spacing:0.05em;}
+p{margin-bottom:4px;}
+ul,ol{margin:0 0 6px 16px;}
+li{margin-bottom:2px;}
+strong{font-weight:700;}
+em{font-style:italic;}
+.os-header{background:#004d40;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;}
+.os-tag{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.75;}
+.os-title{font-size:13px;font-weight:800;}
+.os-bg{background:#e0f2f1;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.os-rule{height:3px;background:#00796b;border-radius:2px;margin:7px 0;}
+.os-text{color:#004d40;}
+.os-box{border-left:4px solid #00796b;padding:8px 12px;background:#f0faf9;border-radius:0 8px 8px 0;margin:8px 0;}
+.mel-header{background:#1e3a8a;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.mel-bg{background:#dbeafe;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.mel-rule{height:3px;background:#3b82f6;border-radius:2px;margin:10px 0;}
+.mel-text{color:#1e3a8a;}
+.mel-box{border-left:4px solid #3b82f6;padding:8px 12px;background:#eff6ff;border-radius:0 8px 8px 0;margin:8px 0;}
+.har-header{background:#78350f;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.har-bg{background:#fef3c7;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.har-rule{height:3px;background:#d97706;border-radius:2px;margin:10px 0;}
+.har-text{color:#78350f;}
+.har-box{border-left:4px solid #d97706;padding:8px 12px;background:#fffbeb;border-radius:0 8px 8px 0;margin:8px 0;}
+.rhy-header{background:#9a3412;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.rhy-bg{background:#fde8d8;border-radius:10px;padding:7px 12px;margin:7px 0;}
+.rhy-text{color:#9a3412;}
+.rhy-box{border-left:4px solid #ea580c;padding:8px 12px;background:#fff8f5;border-radius:0 8px 8px 0;margin:8px 0;}
+.voi-header{background:#166534;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.voi-bg{background:#dcfce7;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.voi-text{color:#166534;}
+.voi-box{border-left:4px solid #16a34a;padding:8px 12px;background:#f0fdf4;border-radius:0 8px 8px 0;margin:8px 0;}
+.syn-header{background:#4b2d8c;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.syn-bg{background:#f0e6ff;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.syn-text{color:#4b2d8c;}
+.syn-box{border-left:4px solid #8b5cf6;padding:8px 12px;background:#f5f0ff;border-radius:0 8px 8px 0;margin:8px 0;}
+.stage{border-radius:8px;padding:8px 12px;margin:7px 0;border-left:5px solid;}
+.stage-1{background:#fff8e1;border-color:#f59e0b;}.stage-1 .stage-label{color:#b45309;}
+.stage-2{background:#fff0f0;border-color:#ef4444;}.stage-2 .stage-label{color:#b91c1c;}
+.stage-3{background:#f0fdf4;border-color:#22c55e;}.stage-3 .stage-label{color:#15803d;}
+.stage-label{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
+.non-dia{background:#fdf4ff;border:2px solid #c084fc;border-radius:10px;padding:10px 14px;margin:10px 0;}
+.non-dia-title{font-size:10px;font-weight:800;letter-spacing:.1em;color:#7e22ce;text-transform:uppercase;margin-bottom:4px;}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12px;}
+th{padding:5px 8px;text-align:left;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;border-bottom:2px solid #e2e8f0;}
+td{padding:5px 8px;border-bottom:1px solid #f1f5f9;vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#fafafa;}
+.rainbow{height:4px;background:linear-gradient(90deg,#00796b 0%,#3b82f6 22%,#d97706 50%,#8b5cf6 78%,#ea580c 100%);border-radius:2px;margin:10px 0;}
+.cover-swatch{display:flex;gap:6px;margin:24px 0;}
+.swatch{height:8px;flex:1;border-radius:2px;}
+.cover-meta{font-size:11px;color:#64748b;letter-spacing:.08em;text-transform:uppercase;}
+.cover-subtitle{font-size:17px;color:#475569;margin:10px 0 24px;}
+.toc-group{margin-bottom:18px;}
+.toc-group-title{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;padding-bottom:4px;border-bottom:2px solid;}
+.toc-item{display:flex;justify-content:space-between;padding:5px 0;font-size:13px;border-bottom:1px dotted #e2e8f0;}
+.toc-item span:first-child{max-width:80%;}
+.toc-pg{color:#94a3b8;font-size:12px;}
+.chord-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0;}
+.chord-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 12px;min-width:90px;text-align:center;}
+.chord-name{font-size:17px;font-weight:900;margin-bottom:3px;}
+.chord-detail{font-size:11px;color:#64748b;}
+.page-footer{position:absolute;bottom:22px;left:44px;right:44px;display:flex;justify-content:space-between;font-size:10px;color:#94a3b8;letter-spacing:.05em;}
+.lyric-line{font-style:italic;font-size:13px;color:#475569;margin-left:16px;}
+.chord-above{font-size:11px;font-weight:700;color:#78350f;letter-spacing:.05em;}
+@media print{body{background:white;}.page{box-shadow:none;margin:0;page-break-after:always;}}
+
+/* Additional layout helpers */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0;}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0;}
+.cover-box{border-radius:10px;padding:12px 16px;margin-bottom:8px;}
+.cover-box-title{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
+.zone-pill{display:inline-block;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:700;margin:2px 3px;}
+.clef-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0;}
+.clef-card{border:1px solid #e2e8f0;border-radius:8px;padding:10px;text-align:center;background:#fafafa;}
+.clef-symbol{font-size:22px;margin-bottom:4px;}
+.clef-name{font-size:11px;font-weight:700;color:#1e293b;}
+.clef-note{font-size:10px;color:#64748b;margin-top:2px;}
+.interval-row{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;}
+.int-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:8px 12px;text-align:center;min-width:78px;}
+.int-num{font-size:16px;font-weight:900;color:#004d40;}
+.int-name{font-size:10px;color:#64748b;margin-top:2px;}
+.int-feel{font-size:10px;font-style:italic;color:#475569;}
+.groove-step{display:flex;align-items:flex-start;gap:10px;margin:7px 0;padding:7px 12px;border-radius:8px;background:#fff8f5;}
+.groove-num{background:#9a3412;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0;}
+.grid-vis{display:flex;gap:4px;margin:12px 0;align-items:center;}
+.grid-cell{width:36px;height:36px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;border:1px solid #e2e8f0;flex-shrink:0;}
+.grid-beat{background:#9a3412;color:#fff;}
+.grid-and{background:#fde8d8;color:#9a3412;}
+.grid-active{background:#7c3aed;color:#fff;}
+.grid-rest{background:#f1f5f9;color:#94a3b8;}
+.milestone-item{display:flex;align-items:flex-start;gap:8px;padding:5px 0;border-bottom:1px solid #f1f5f9;}
+.milestone-check{width:16px;height:16px;border:2px solid #d1d5db;border-radius:4px;flex-shrink:0;margin-top:2px;}
+.milestone-text{font-size:12px;}
+.qr-section{margin-bottom:12px;}
+.qr-title{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px;padding-bottom:3px;border-bottom:2px solid #e2e8f0;}
+</style>
+</head>
+<body>
+
+<!-- ============================================================ PAGE 1: COVER ============================================================ -->
+<div class="page">
+  <div class="cover-meta">Advanced Music Framework &nbsp;·&nbsp; Sprint 4 of 14</div>
+
+  <div style="margin-top:36px;">
+    <h1 style="font-size:38px;color:#1e293b;">Superstition</h1>
+    <div class="cover-subtitle">Sprint 4 Mini Textbook &mdash; Eb Dorian Modal Vamp<br>
+      Stevie Wonder &nbsp;·&nbsp; ~100 BPM &nbsp;·&nbsp; Eb-F-Gb-Ab-Bb-C-Db</div>
+  </div>
+
+  <div class="cover-swatch">
+    <div class="swatch" style="background:#004d40;"></div>
+    <div class="swatch" style="background:#1e3a8a;"></div>
+    <div class="swatch" style="background:#78350f;"></div>
+    <div class="swatch" style="background:#9a3412;"></div>
+    <div class="swatch" style="background:#166534;"></div>
+    <div class="swatch" style="background:#4b2d8c;"></div>
+  </div>
+
+  <div class="rainbow"></div>
+
+  <div class="two-col" style="margin-top:24px;">
+    <div class="cover-box os-bg">
+      <div class="cover-box-title os-text">Musical OS &mdash; Plogger</div>
+      <ul style="font-size:13px;margin-left:16px;">
+        <li><strong>Ch.7</strong> — Interval Spelling at Keyboard</li>
+        <li><strong>Ch.8</strong> — All 8 Clefs on Staff</li>
+        <li><strong>Ch.9</strong> — Di-Chord Numbers intro ([1]&ndash;[11])</li>
+        <li>Pythagorean method: no formulas needed</li>
+      </ul>
+    </div>
+    <div class="cover-box mel-bg">
+      <div class="cover-box-title mel-text">Melody Chamber</div>
+      <ul style="font-size:13px;margin-left:16px;">
+        <li><strong>Duration Amplifies Zone</strong></li>
+        <li>Zone 3 (4) in Dorian context</li>
+        <li>Long note tension vs. long note resolution</li>
+        <li>Dorian's raised 6 &mdash; sweet or bitter?</li>
+      </ul>
+    </div>
+    <div class="cover-box har-bg">
+      <div class="cover-box-title har-text">Harmony Chamber</div>
+      <ul style="font-size:13px;margin-left:16px;">
+        <li>Prog #4: <strong>ii-V-I</strong> as drill vehicle</li>
+        <li>Consolidate #1&ndash;#4 across all sprints</li>
+        <li>Prog #5 (vi-IV-I-V) preview</li>
+        <li>Modal vamp vs. functional harmony</li>
+      </ul>
+    </div>
+    <div class="cover-box rhy-bg">
+      <div class="cover-box-title rhy-text">Rhythm Chamber</div>
+      <ul style="font-size:13px;margin-left:16px;">
+        <li><strong>Son Clave 2-3</strong> orientation added</li>
+        <li>Groove development: 4-step process</li>
+        <li>Superstition clav pattern study</li>
+        <li>Stops + anticipations + clave sync</li>
+      </ul>
+    </div>
+    <div class="cover-box voi-bg">
+      <div class="cover-box-title voi-text">Voicings Chamber</div>
+      <ul style="font-size:13px;margin-left:16px;">
+        <li>Triad shapes by <strong>stringset</strong> (guitar)</li>
+        <li>All inversions on all 4 string sets</li>
+        <li>Beato pp.&nbsp;93&ndash;100</li>
+        <li>Piano: arpeggios + Dorian heptachord</li>
+      </ul>
+    </div>
+    <div class="cover-box" style="background:#fdf4ff;border:1px solid #c084fc;">
+      <div class="cover-box-title" style="color:#7e22ce;">Song Focus</div>
+      <ul style="font-size:13px;margin-left:16px;">
+        <li>Eb7 &rarr; Ab7 &rarr; Bb7 modal vamp</li>
+        <li>Dorian raised-6 quality (C natural)</li>
+        <li>Clav groove rhythm breakdown</li>
+        <li>Verse groove on both instruments</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="os-box" style="margin-top:24px;">
+    <strong>Sprint 4 North Star:</strong> Feel the pull of the flat-7 (Db) and the lift of the natural-6 (C) &mdash; that tension/release is the soul of Dorian. By the end of this sprint you will be able to lock into the Superstition groove and hear exactly where each note lives.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 1</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 2: TABLE OF CONTENTS ============================================================ -->
+<div class="page">
+  <div class="os-header">
+    <span class="os-tag">Navigation</span>
+    <span class="os-title">Table of Contents</span>
+  </div>
+
+  <h1 style="margin-bottom:8px;">Sprint 4 Contents</h1>
+  <p style="color:#64748b;font-size:13px;margin-bottom:28px;">Anchor Song: <em>Superstition</em> &mdash; Stevie Wonder &nbsp;|&nbsp; Key: Eb Dorian &nbsp;|&nbsp; Tempo: ~100 BPM</p>
+
+  <div class="two-col">
+    <div>
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#004d40;border-color:#00796b;">Musical OS &mdash; Plogger</div>
+        <div class="toc-item"><span>Ch.7 Interval Spelling at Keyboard</span><span class="toc-pg">3</span></div>
+        <div class="toc-item"><span>Ch.8 Interval Spelling on Staff, All 8 Clefs</span><span class="toc-pg">3</span></div>
+        <div class="toc-item"><span>Ch.9 Di-Chord Numbers Intro</span><span class="toc-pg">4</span></div>
+        <div class="toc-item"><span>Pythagorean Method Drill</span><span class="toc-pg">4</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#1e3a8a;border-color:#3b82f6;">Melody Chamber</div>
+        <div class="toc-item"><span>Duration Amplifies Zone</span><span class="toc-pg">5</span></div>
+        <div class="toc-item"><span>Zone 3 (4) in Dorian Mode</span><span class="toc-pg">5</span></div>
+        <div class="toc-item"><span>Five Key Notes Review</span><span class="toc-pg">5</span></div>
+        <div class="toc-item"><span>Melody Exercises: S1&ndash;S3</span><span class="toc-pg">5</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#78350f;border-color:#d97706;">Harmony Chamber</div>
+        <div class="toc-item"><span>Progressions #1&ndash;#4 Consolidated</span><span class="toc-pg">6</span></div>
+        <div class="toc-item"><span>Prog #4: ii-V-I as Drill Vehicle</span><span class="toc-pg">6</span></div>
+        <div class="toc-item"><span>Modal Vamp vs. Functional Harmony</span><span class="toc-pg">6</span></div>
+        <div class="toc-item"><span>Prog #5 Preview (Sprint 5)</span><span class="toc-pg">6</span></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#7e22ce;border-color:#c084fc;">Song Analysis</div>
+        <div class="toc-item"><span>Superstition: Chord Breakdown</span><span class="toc-pg">7</span></div>
+        <div class="toc-item"><span>Eb Dorian Explained</span><span class="toc-pg">7</span></div>
+        <div class="toc-item"><span>Melody Zone Map</span><span class="toc-pg">7</span></div>
+        <div class="toc-item"><span>What to Listen For</span><span class="toc-pg">7</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#9a3412;border-color:#ea580c;">Rhythm Chamber</div>
+        <div class="toc-item"><span>Son Clave 2-3 Orientation</span><span class="toc-pg">8</span></div>
+        <div class="toc-item"><span>Groove Development 4-Step Process</span><span class="toc-pg">8</span></div>
+        <div class="toc-item"><span>Superstition Clav Pattern</span><span class="toc-pg">8</span></div>
+        <div class="toc-item"><span>Rhythm Exercises: S1&ndash;S3</span><span class="toc-pg">8</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#166534;border-color:#16a34a;">Voicings Chamber</div>
+        <div class="toc-item"><span>Triad Shapes by Stringset (Guitar)</span><span class="toc-pg">9</span></div>
+        <div class="toc-item"><span>All Inversions on 4 String Sets</span><span class="toc-pg">9</span></div>
+        <div class="toc-item"><span>Piano: Dorian Heptachord + Arpeggios</span><span class="toc-pg">9</span></div>
+        <div class="toc-item"><span>Shell Voicing ii-V-I in C and G</span><span class="toc-pg">9</span></div>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title" style="border-color:#e2e8f0;">Quick Reference Card</div>
+        <div class="toc-item"><span>All Sprint 4 Concepts at a Glance</span><span class="toc-pg">10</span></div>
+        <div class="toc-item"><span>Sprint 4 Exit Milestones</span><span class="toc-pg">10</span></div>
+        <div class="toc-item"><span>Sprint 5 Preview</span><span class="toc-pg">10</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rainbow"></div>
+
+  <div class="har-box">
+    <strong class="har-text">How to use this textbook:</strong> Each page corresponds to one chamber of the AMF system. Work through the Musical OS section first (it builds the vocabulary), then dive into whichever chamber matches your practice goal for the day. The Quick Reference Card on page 10 is your daily warm-up companion.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 2</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 3: MUSICAL OS — PLOGGER Ch.7 & Ch.8 ============================================================ -->
+<div class="page">
+  <div class="os-header">
+    <span class="os-tag">Musical OS</span>
+    <span class="os-title">Plogger Ch.7 &amp; Ch.8 &mdash; Interval Spelling</span>
+  </div>
+
+  <h2 class="os-text">Chapter 7: Interval Spelling at the Keyboard</h2>
+
+  <p>An <strong>interval</strong> is the distance between two notes. In Ch.7 you learn to identify and spell any interval using only the keyboard layout &mdash; no formulas, no counting half-steps mechanically.</p>
+
+  <div class="os-bg">
+    <h4 class="os-text">The Pythagorean Method (Review from Ch.6)</h4>
+    <p style="margin-bottom:8px;">Arrange the seven note names in this order: <strong style="color:#004d40;font-size:16px;">F &mdash; C &mdash; G &mdash; D &mdash; A &mdash; E &mdash; B</strong></p>
+    <ul>
+      <li><strong>Left = flat side</strong> (F is the flattest). <strong>Right = sharp side</strong> (B is the sharpest).</li>
+      <li>Adjacent letters in this chain share <strong>six of seven</strong> scale notes &mdash; they are maximally close.</li>
+      <li>To spell an interval: find both notes on the chain. Count the steps between them. The count tells you the interval quality.</li>
+      <li><strong>One step apart</strong> = perfect fifth (or fourth, depending on direction). <strong>Two steps apart</strong> = major second. <strong>Three steps</strong> = major sixth.</li>
+    </ul>
+  </div>
+
+  <div class="os-box">
+    <strong>Keyboard anchor rule:</strong> The two-black-key group = C (left), D (middle), E (right). The three-black-key group = F (left), G, A (middle two), B (right). Knowing this by sight lets you place any note instantly.
+  </div>
+
+  <h3 class="os-text">Sprint 4 Interval Targets</h3>
+  <p>By end of sprint, identify <em>any</em> interval on the keyboard using the Pythagorean chain &mdash; no counting half-steps one by one.</p>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 &mdash; Discovering</div>
+    <strong>Hear before you play.</strong> Sing the interval "F up to C" (perfect 5th). Then find F and C on the keyboard. Notice they are one step apart on the Pythagorean chain (F&ndash;C). Repeat with G&ndash;D, C&ndash;G. These are all P5ths. Recognize the sound before the name.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 &mdash; Perfecting</div>
+    <strong>Hear before you play.</strong> Pick any two white keys at random. Before naming the interval, sing the distance first. Then use the Pythagorean chain to confirm. Practice: Eb to Bb (P5), Eb to Ab (P4), Eb to C (maj6 = raised 6 of Dorian!).
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 &mdash; Fluent</div>
+    <strong>Hear before you play.</strong> Teacher names any two notes. You name the interval in under 2 seconds, using only the chain. Include enharmonic pairs: Db = C# (one step to left of D on chain). Target: all diatonic intervals in Eb Dorian fluently.
+  </div>
+
+  <div class="os-rule"></div>
+
+  <h2 class="os-text">Chapter 8: All 8 Clefs on the Staff</h2>
+  <p>Western notation uses eight clefs to position notes on the staff. Every clef is an anchor: it fixes one specific line to a specific note, and all other notes follow from there.</p>
+
+  <div class="clef-grid">
+    <div class="clef-card">
+      <div class="clef-symbol">𝄞</div>
+      <div class="clef-name">Treble</div>
+      <div class="clef-note">G on line 2</div>
+    </div>
+    <div class="clef-card">
+      <div class="clef-symbol">𝄢</div>
+      <div class="clef-name">Bass</div>
+      <div class="clef-note">F on line 4</div>
+    </div>
+    <div class="clef-card" style="background:#e0f2f1;">
+      <div class="clef-symbol" style="font-size:18px;font-weight:900;">B</div>
+      <div class="clef-name">Soprano</div>
+      <div class="clef-note">C on line 1</div>
+    </div>
+    <div class="clef-card" style="background:#e0f2f1;">
+      <div class="clef-symbol" style="font-size:18px;font-weight:900;">M-S</div>
+      <div class="clef-name">Mezzo-Soprano</div>
+      <div class="clef-note">C on line 2</div>
+    </div>
+    <div class="clef-card" style="background:#e0f2f1;">
+      <div class="clef-symbol" style="font-size:18px;font-weight:900;">A</div>
+      <div class="clef-name">Alto</div>
+      <div class="clef-note">C on line 3</div>
+    </div>
+    <div class="clef-card" style="background:#e0f2f1;">
+      <div class="clef-symbol" style="font-size:18px;font-weight:900;">T</div>
+      <div class="clef-name">Tenor</div>
+      <div class="clef-note">C on line 4</div>
+    </div>
+    <div class="clef-card" style="background:#e0f2f1;">
+      <div class="clef-symbol" style="font-size:18px;font-weight:900;">Bar</div>
+      <div class="clef-name">Baritone</div>
+      <div class="clef-note">C on line 5</div>
+    </div>
+    <div class="clef-card">
+      <div class="clef-symbol" style="font-size:18px;">X</div>
+      <div class="clef-name">Percussion</div>
+      <div class="clef-note">No pitch anchor</div>
+    </div>
+  </div>
+
+  <div class="os-box">
+    <strong>C-clef insight:</strong> The C clef (soprano, mezzo-soprano, alto, tenor, baritone) is a <em>movable</em> clef &mdash; it slides up and down the staff to place middle C wherever the range works best for the instrument. The clef symbol always marks the exact line where middle C sits.
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 &mdash; Discovering</div>
+    <strong>Hear before you play.</strong> Look at a treble-clef staff. Sing middle C. Now imagine it sliding down to the bass clef. It sits on the first ledger line above. This is the same pitch &mdash; just notated differently. Repeat this mental shift for soprano and alto clef.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 3</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 4: MUSICAL OS — Ch.9 Di-Chord Numbers ============================================================ -->
+<div class="page">
+  <div class="os-header">
+    <span class="os-tag">Musical OS</span>
+    <span class="os-title">Plogger Ch.9 &mdash; Di-Chord Numbers</span>
+  </div>
+
+  <h2 class="os-text">Chapter 9: Di-Chord Numbers &mdash; Introduction</h2>
+
+  <p>Traditional interval names (minor 3rd, perfect 5th) were designed for written notation. <strong>Di-Chord Numbers</strong> are designed for <em>hearing</em> and <em>playing</em>. They give each interval a number [1]&ndash;[11] that describes its emotional character directly.</p>
+
+  <p class="os-text"><strong>Di</strong> = two (from Latin <em>dis</em>). A di-chord is any two-note sound. The number captures what the interval <em>feels like</em> to the ear.</p>
+
+  <div class="interval-row">
+    <div class="int-card">
+      <div class="int-num">[1]</div>
+      <div class="int-name">Min 2nd</div>
+      <div class="int-feel">Tense, urgent</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[2]</div>
+      <div class="int-name">Maj 2nd</div>
+      <div class="int-feel">Tense, stepping</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[3]</div>
+      <div class="int-name">Min 3rd</div>
+      <div class="int-feel">Modal, closed</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[4]</div>
+      <div class="int-name">Maj 3rd</div>
+      <div class="int-feel">Modal, open</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[5]</div>
+      <div class="int-name">P4th</div>
+      <div class="int-feel">Suspended</div>
+    </div>
+    <div class="int-card" style="background:#fdf4ff;border-color:#c084fc;">
+      <div class="int-num" style="color:#7e22ce;">[6]</div>
+      <div class="int-name">Tritone</div>
+      <div class="int-feel">Frozen, unstable</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[7]</div>
+      <div class="int-name">P5th</div>
+      <div class="int-feel">Stable, open</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[8]</div>
+      <div class="int-name">Min 6th</div>
+      <div class="int-feel">Closed, darker</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[9]</div>
+      <div class="int-name">Maj 6th</div>
+      <div class="int-feel">Open, bright</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[10]</div>
+      <div class="int-name">Min 7th</div>
+      <div class="int-feel">Tense, leaning</div>
+    </div>
+    <div class="int-card">
+      <div class="int-num">[11]</div>
+      <div class="int-name">Maj 7th</div>
+      <div class="int-feel">Extremely tense</div>
+    </div>
+  </div>
+
+  <div class="os-bg">
+    <h4 class="os-text">Why Di-Chord Numbers Matter for Superstition</h4>
+    <p style="margin-bottom:8px;">The Eb7 chord in Superstition contains two di-chord intervals that define its sound:</p>
+    <ul>
+      <li><strong>Eb to Db</strong> = a [10] minor 7th. This is the "blues lean" &mdash; tense, wanting to resolve down.</li>
+      <li><strong>Eb to C</strong> = a [9] major 6th. This is the Dorian raised-6 &mdash; open, surprisingly bright for a minor chord.</li>
+      <li><strong>Eb to Bb</strong> = a [7] perfect 5th. Stable, the harmonic foundation.</li>
+      <li>These three intervals stacked = the emotional color of the entire song groove.</li>
+    </ul>
+  </div>
+
+  <div class="os-rule"></div>
+
+  <h3 class="os-text">Di-Chord Sprint 4 Drill: Eb Dorian Context</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>From Eb to&hellip;</th>
+        <th>Di-Chord #</th>
+        <th>Traditional Name</th>
+        <th>Feel in Superstition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>F</strong></td><td>[2]</td><td>Maj 2nd</td><td>Stepping away, mild tension</td></tr>
+      <tr><td><strong>Gb</strong></td><td>[3]</td><td>Min 3rd</td><td>Minor quality confirmed &mdash; modal, closed</td></tr>
+      <tr><td><strong>Ab</strong></td><td>[4]</td><td>Maj 3rd (+ octave = P4)</td><td>P4 = suspended lift going to IV chord</td></tr>
+      <tr><td><strong>Bb</strong></td><td>[7]</td><td>P5th</td><td>Stable foundation of Eb7</td></tr>
+      <tr><td><strong>C</strong></td><td>[9]</td><td>Maj 6th</td><td><strong>The Dorian note</strong> &mdash; bright, jazzy surprise</td></tr>
+      <tr><td><strong>Db</strong></td><td>[10]</td><td>Min 7th</td><td>The blues lean of the dominant 7th</td></tr>
+    </tbody>
+  </table>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 &mdash; Discovering</div>
+    <strong>Hear before you play.</strong> Play Eb alone. Then play Eb + C together. That is a [9] major 6th. Notice the surprising brightness. Now play Eb + Db. That is a [10] minor 7th. Notice the lean, the wanting-to-move. These two intervals tell you everything about Dorian's character.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 &mdash; Perfecting</div>
+    <strong>Hear before you play.</strong> Name each di-chord before playing. Go through the Eb Dorian scale (Eb F Gb Ab Bb C Db) singing each interval from Eb. Match your sung interval to the number before touching the keys or strings.
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 &mdash; Fluent</div>
+    <strong>Hear before you play.</strong> Teacher plays any two notes from Eb Dorian. You name the di-chord number within 2 seconds by ear only. Then confirm at the keyboard. No looking at the chart.
+  </div>
+
+  <div class="non-dia" style="margin-top:18px;">
+    <div class="non-dia-title">Ch.9 Scope Note</div>
+    This sprint introduces [1]&ndash;[11] as a vocabulary. Mastery of all eleven by ear is a longer arc &mdash; Sprint 4 exit target is recognition of the six intervals present in Eb Dorian ([2],[3],[4],[7],[9],[10]) and naming the tritone [6] as "frozen / unstable." Full Di-Chord fluency develops across Sprints 4&ndash;6.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 4</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 5: MELODY CHAMBER ============================================================ -->
+<div class="page">
+  <div class="mel-header">
+    <span class="os-tag">Chamber 1</span>
+    <span class="os-title">Melody Chamber &mdash; Duration Amplifies Zone</span>
+  </div>
+
+  <h2 class="mel-text">Duration Amplifies Zone</h2>
+
+  <p>You already know the four zones: Zone 1 (Sweet: 1, 3, 5), Zone 2 (Bitter: 7, 2), Zone 3 (Tense: 4), Zone 4 (Wildcard: 6). This sprint reveals a critical hidden dimension: <strong>how long you hold a note changes how much tension it creates.</strong></p>
+
+  <div class="mel-bg">
+    <h4 class="mel-text">The Duration Rule</h4>
+    <div class="two-col" style="margin-top:0;">
+      <div>
+        <p><strong>Long note in Z1 (Sweet):</strong> Deep, settled resolution. Feels like coming home and staying. The longer you hold 1 or 5, the more grounded the phrase.</p>
+        <p><strong>Short note in Z1:</strong> Passes through &mdash; sweet but not anchored. A quick 1 doesn&rsquo;t land with the same weight.</p>
+      </div>
+      <div>
+        <p><strong>Long note in Z3 (Tense: 4):</strong> <em>Much</em> more tension. A held 4 (Ab in Eb Dorian) insists on resolution. It doesn&rsquo;t let the listener relax.</p>
+        <p><strong>Short note in Z3:</strong> Passes through lightly. A quick 4 creates movement without demanding resolution.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="mel-text">Zone 3 in Eb Dorian Context</h3>
+
+  <p>In Eb Dorian, the scale degree 4 = <strong>Ab</strong>. When Stevie Wonder&rsquo;s vocal line lands on Ab and holds it over an Eb7 chord, you feel the pull immediately. The longer it stays, the more the ear screams for resolution.</p>
+
+  <div class="mel-box">
+    <strong>Dorian 4 (Ab over Eb7):</strong> This note is NOT in the Eb7 chord (Eb, Gb, Bb, Db). It sits a half step above the chord&rsquo;s 3rd (Gb) and a whole step below the 5th (Bb). Held long, it creates a suspended-fourth feeling. When it resolves down to Gb or up to Bb, the release is physical.
+  </div>
+
+  <h3 class="mel-text">The Dorian Raised-6 (Zone 4 Wildcard)</h3>
+
+  <p>Dorian&rsquo;s defining note is its <strong>natural 6 &mdash; C natural</strong> (not Cb as in natural minor / Aeolian). In Eb Dorian this is C. Its zone status depends entirely on context:</p>
+
+  <table style="margin-top:10px;">
+    <thead>
+      <tr><th>Context</th><th>Note</th><th>Zone Feel</th><th>Quality</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Over Eb7 (tonic)</td><td>C (natural 6)</td><td>Z4 Wildcard</td><td>Bright, jazzy, unexpected warmth</td></tr>
+      <tr><td>Over Ab7 (IV chord)</td><td>C (maj3rd of Ab)</td><td>Z1 Sweet</td><td>Fully resolved, inside the chord</td></tr>
+      <tr><td>Held long over Eb7</td><td>C natural</td><td>Z4 leaning Z2</td><td>Dreamy tension, wants to resolve to Bb or Eb</td></tr>
+    </tbody>
+  </table>
+
+  <div class="mel-rule"></div>
+
+  <h3 class="mel-text">Five Key Notes Review &mdash; Applied to Superstition</h3>
+
+  <table>
+    <thead>
+      <tr><th>Key Note</th><th>Role</th><th>Superstition Application</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>First note</strong></td><td>Establishes zone</td><td>Often Eb (Z1) or Gb (Z1 minor 3rd) &mdash; sets minor-modal frame</td></tr>
+      <tr><td><strong>Last note</strong></td><td>Closes or continues phrase</td><td>Phrases ending on Eb = closed; ending on Db or F = open, groove continues</td></tr>
+      <tr><td><strong>Highest note</strong></td><td>Emotional peak</td><td>Peaks often on Bb (Z1 fifth) or C (Z4 Dorian note)</td></tr>
+      <tr><td><strong>Longest note</strong></td><td>Duration amplifies zone</td><td>Long Gb = settled minor. Long Ab = maximum tension (Z3)</td></tr>
+      <tr><td><strong>Beat 1 note</strong></td><td>Rhythmic anchor</td><td>Eb on beat 1 = strong landing; Gb on beat 1 = forward lean</td></tr>
+    </tbody>
+  </table>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 &mdash; Discovering</div>
+    <strong>Hear before you play.</strong> Listen to Superstition (0:00&ndash;0:30). Focus only on the vocal melody. Track the longest note in each phrase. What zone does it land in? Does it feel resolved or tense?
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 &mdash; Perfecting</div>
+    <strong>Hear before you play.</strong> Sing the first verse melody on scale degree numbers (1, 3, 5, etc.) without an instrument. When you reach a long note, name its zone before continuing. Cross-check against the chord underneath.
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 &mdash; Fluent</div>
+    <strong>Hear before you play.</strong> Improvise a 4-bar phrase over the Eb7 vamp. Deliberately use a long note in Z3 (Ab) followed by resolution to Z1 (Gb or Bb). Can you make a listener lean forward and then release? Record and listen back.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 5</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 6: HARMONY CHAMBER ============================================================ -->
+<div class="page">
+  <div class="har-header">
+    <span class="os-tag">Chamber 2</span>
+    <span class="os-title">Harmony Chamber &mdash; Progressions #1&ndash;#4 Consolidated</span>
+  </div>
+
+  <h2 class="har-text">Sprint 4 Harmony Overview</h2>
+  <p>Sprints 2&ndash;4 introduced four core progressions. This sprint completes the consolidation. By exit you should be able to identify and play all four on both instruments.</p>
+
+  <div class="har-bg">
+    <h4 class="har-text">The 4 Progressions &mdash; Sprint 4 Checkpoint</h4>
+    <table style="margin-top:6px;">
+      <thead>
+        <tr><th>Prog #</th><th>Name</th><th>Formula</th><th>Sound Character</th><th>Introduced</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>#1</strong></td><td>I-IV-V-I</td><td>Tonic &rarr; Sub &rarr; Dom &rarr; Tonic</td><td>Fundamental cadence, complete circle</td><td>Sprint 2</td></tr>
+        <tr><td><strong>#2</strong></td><td>I-V-vi-IV</td><td>Tonic &rarr; Dom &rarr; Rel Min &rarr; Sub</td><td>"Four chord" pop universal, emotional</td><td>Sprint 2</td></tr>
+        <tr><td><strong>#3</strong></td><td>12-Bar Blues</td><td>I-I-I-I / IV-IV-I-I / V-IV-I-V</td><td>Blues foundation, cyclical, dance-floor</td><td>Sprint 3</td></tr>
+        <tr><td><strong>#4</strong></td><td>ii-V-I</td><td>ii &rarr; V7 &rarr; I</td><td>Jazz drill vehicle &mdash; tight resolution</td><td>Sprint 4</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="har-text">Progression #4: ii-V-I &mdash; Drill Vehicle, Not Harmonic Spine</h3>
+
+  <div class="har-box">
+    <strong>Critical framing:</strong> ii-V-I is a <em>drill vehicle</em> &mdash; a useful exercise for practicing voice leading and jazz vocabulary. It is <strong>one of fourteen progressions</strong> in the AMF system, not the foundation of music. Real songs use it as a moment, not as their entire structure.
+  </div>
+
+  <p>In Eb major the ii-V-I is: <strong>Fm7 &rarr; Bb7 &rarr; Ebmaj7</strong>. In C major: <strong>Dm7 &rarr; G7 &rarr; Cmaj7</strong>. In G major: <strong>Am7 &rarr; D7 &rarr; Gmaj7</strong>.</p>
+
+  <div class="mel-bg" style="background:#fff7ed;">
+    <h4 class="har-text">Why ii-V-I Works (Mechanically)</h4>
+    <ul>
+      <li>The <strong>ii chord</strong> (Fm7 in Eb) introduces the 4th scale degree (Ab) &mdash; a Zone 3 note that creates tension.</li>
+      <li>The <strong>V7 chord</strong> (Bb7) contains the tritone [6] between its 3rd (D) and 7th (Ab). Tritone = frozen, must resolve.</li>
+      <li>The <strong>I chord</strong> (Ebmaj7) resolves both tensions simultaneously. The tritone dissolves. Zone 3 resolves to Zone 1.</li>
+      <li>Result: the motion from ii to V7 to I is the most efficient tension-and-release mechanism in tonal harmony.</li>
+    </ul>
+  </div>
+
+  <h3 class="har-text">Piano Drill: Shell Voicing ii-V-I</h3>
+
+  <p><strong>Shell voicing</strong> = root + 3rd + 7th only (no 5th). This is the advanced-beginner piano target for Sprint 4.</p>
+
+  <div class="chord-row">
+    <div class="chord-card">
+      <div class="chord-name har-text">Dm7</div>
+      <div class="chord-detail">ii in C major<br>D + F + C</div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name har-text">G7</div>
+      <div class="chord-detail">V7 in C major<br>G + B + F</div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name har-text">Cmaj7</div>
+      <div class="chord-detail">I in C major<br>C + E + B</div>
+    </div>
+    <div class="chord-card" style="border-color:#d97706;">
+      <div class="chord-name har-text">Am7</div>
+      <div class="chord-detail">ii in G major<br>A + C + G</div>
+    </div>
+    <div class="chord-card" style="border-color:#d97706;">
+      <div class="chord-name har-text">D7</div>
+      <div class="chord-detail">V7 in G major<br>D + F# + C</div>
+    </div>
+    <div class="chord-card" style="border-color:#d97706;">
+      <div class="chord-name har-text">Gmaj7</div>
+      <div class="chord-detail">I in G major<br>G + B + F#</div>
+    </div>
+  </div>
+
+  <div class="har-rule"></div>
+
+  <h3 class="har-text">Modal Vamp vs. Functional Harmony</h3>
+
+  <p>Superstition does <strong>not</strong> use ii-V-I as its harmonic engine. It uses a <strong>modal vamp</strong> &mdash; a groove that establishes a tonal center (Eb) without needing to "resolve" to it. The chord moves (Eb7&rarr;Ab7&rarr;Bb7) create motion and color, but there is no cadence, no resolution point. The tonic never goes away.</p>
+
+  <table>
+    <thead>
+      <tr><th></th><th>Functional Harmony (ii-V-I)</th><th>Modal Vamp (Superstition)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Tonic</strong></td><td>Destination, arrived at</td><td>Home you never leave</td></tr>
+      <tr><td><strong>Chords</strong></td><td>Each chord has a role (tension/release)</td><td>Chords are color, not direction</td></tr>
+      <tr><td><strong>Time feel</strong></td><td>Drives forward toward cadence</td><td>Circular, hypnotic, groove-based</td></tr>
+      <tr><td><strong>Emotion</strong></td><td>Journey with destination</td><td>Present tense, immersive</td></tr>
+    </tbody>
+  </table>
+
+  <div class="har-box" style="margin-top:16px;">
+    <strong>Progression #5 Preview (Sprint 5):</strong> vi-IV-I-V &mdash; heard in "What&rsquo;s Going On" and hundreds of soul/R&amp;B songs. Begins on the vi (relative minor), creates a different emotional starting point than I-V-vi-IV even though it uses the same four chords in a different order.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 6</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 7: SONG ANALYSIS — SUPERSTITION ============================================================ -->
+<div class="page">
+  <div class="syn-header">
+    <span class="os-tag">Song Analysis</span>
+    <span class="os-title">Superstition &mdash; Stevie Wonder (1972)</span>
+  </div>
+
+  <h2>Eb Dorian Modal Vamp &mdash; Full Breakdown</h2>
+
+  <h3 class="har-text">Chord Structure</h3>
+  <p>The harmony in Superstition is built on a single modal center: <strong>Eb Dorian</strong>. The primary progression circles through three dominant-7th chords:</p>
+
+  <div class="chord-row">
+    <div class="chord-card" style="border-color:#004d40;">
+      <div class="chord-name" style="color:#004d40;">Eb7</div>
+      <div class="chord-detail">Tonic chord<br>Eb-Gb-Bb-Db<br>4 bars (verse)</div>
+    </div>
+    <div class="chord-card" style="border-color:#1e3a8a;">
+      <div class="chord-name" style="color:#1e3a8a;">Ab7</div>
+      <div class="chord-detail">IV chord<br>Ab-C-Eb-Gb<br>Color / lift</div>
+    </div>
+    <div class="chord-card" style="border-color:#78350f;">
+      <div class="chord-name" style="color:#78350f;">Bb7</div>
+      <div class="chord-detail">V chord<br>Bb-D-F-Ab<br>Maximum tension</div>
+    </div>
+  </div>
+
+  <p><strong>Full progression (12-bar-adjacent, but modal):</strong></p>
+  <div class="os-bg" style="font-family:monospace;font-size:12px;line-height:1.7;">
+    Eb7 | Eb7 | Eb7 | Eb7<br>
+    Ab7 | Ab7 | Eb7 | Eb7<br>
+    Bb7 | Ab7 | Eb7 | (turnaround)
+  </div>
+
+  <div class="har-box">
+    <strong>Why dominant 7ths on every chord?</strong> In Dorian, the tonic chord naturally carries a minor 7th (Db in Eb7). When this same quality extends to IV (Ab7) and V (Bb7), the music stays in one modal world without any chord functioning as a "dominant that resolves." Every chord is equally tense and equally at home. This is the Dorian paradox.
+  </div>
+
+  <h3 class="har-text">Eb Dorian Explained</h3>
+
+  <div class="mel-bg">
+    <h4 class="mel-text">Dorian Scale: Eb-F-Gb-Ab-Bb-C-Db</h4>
+    <div class="two-col">
+      <div>
+        <p><strong>vs. Eb Natural Minor (Aeolian):</strong> Eb-F-Gb-Ab-Bb-<strong style="color:#e11d48;">Cb</strong>-Db</p>
+        <p>Dorian raises the 6th degree: Cb &rarr; C natural. That single change creates the "jazzy minor" color.</p>
+      </div>
+      <div>
+        <p><strong>The raised 6 (C natural)</strong> creates a major 6th above Eb &mdash; di-chord [9]. Bright, unexpected. It&rsquo;s why Dorian sounds simultaneously minor <em>and</em> hopeful.</p>
+      </div>
+    </div>
+    <p style="margin-bottom:0;margin-top:8px;"><strong>Mode brightness ranking (Pythagorean / Ch.6):</strong> Lydian &gt; Ionian &gt; Mixolydian &gt; <strong>Dorian</strong> &gt; Aeolian &gt; Phrygian &gt; Locrian. Dorian sits exactly in the middle &mdash; the most balanced minor mode.</p>
+  </div>
+
+  <h3 class="har-text">Melody Zone Map &mdash; Eb Dorian</h3>
+
+  <table>
+    <thead>
+      <tr><th>Scale Degree</th><th>Note</th><th>Zone</th><th>Character in Superstition</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>1</strong></td><td>Eb</td><td><span class="zone-pill" style="background:#dbeafe;color:#1e3a8a;">Z1 Sweet</span></td><td>Home, settled, landing point</td></tr>
+      <tr><td><strong>2</strong></td><td>F</td><td><span class="zone-pill" style="background:#fef3c7;color:#78350f;">Z2 Bitter</span></td><td>Mild stepping tension</td></tr>
+      <tr><td><strong>3</strong></td><td>Gb</td><td><span class="zone-pill" style="background:#dbeafe;color:#1e3a8a;">Z1 Sweet</span></td><td>Minor-quality anchor, inside Eb7</td></tr>
+      <tr><td><strong>4</strong></td><td>Ab</td><td><span class="zone-pill" style="background:#fde8d8;color:#9a3412;">Z3 Tense</span></td><td>Suspended pull &mdash; demands resolution (esp. when held)</td></tr>
+      <tr><td><strong>5</strong></td><td>Bb</td><td><span class="zone-pill" style="background:#dbeafe;color:#1e3a8a;">Z1 Sweet</span></td><td>Stable 5th, harmonic foundation</td></tr>
+      <tr><td><strong>6</strong></td><td>C</td><td><span class="zone-pill" style="background:#dcfce7;color:#166534;">Z4 Wild</span></td><td>The Dorian note &mdash; bright surprise, context-dependent</td></tr>
+      <tr><td><strong>7</strong></td><td>Db</td><td><span class="zone-pill" style="background:#fef3c7;color:#78350f;">Z2 Bitter</span></td><td>Flat-7 blues lean, inside Eb7 chord</td></tr>
+    </tbody>
+  </table>
+
+  <h3>What to Listen For</h3>
+
+  <div class="three-col">
+    <div class="os-box" style="margin:0;">
+      <h4 class="os-text">The Clav Groove</h4>
+      <p style="font-size:12px;">The clavinet IS the rhythm section. Listen for the anticipations &mdash; notes that hit on the "and" of 4 (position 8 of the grid) rather than beat 1. This is what makes the groove feel like it&rsquo;s always leaning forward.</p>
+    </div>
+    <div class="mel-box" style="margin:0;">
+      <h4 class="mel-text">The Flat-7 (Db)</h4>
+      <p style="font-size:12px;">The Db in the Eb7 chord is your Zone 2 blues note. When the melody hits Db and holds it, you hear the characteristic "lean" of blues-funk. It&rsquo;s inside the chord but never feels fully resolved.</p>
+    </div>
+    <div class="har-box" style="margin:0;">
+      <h4 class="har-text">IV chord Arrival</h4>
+      <p style="font-size:12px;">When Eb7 moves to Ab7, the C natural (Dorian raised-6) suddenly becomes the 3rd of Ab7 &mdash; fully inside the chord. Zone 4 Wildcard becomes Zone 1 Sweet. Chord changes transform a note&rsquo;s meaning.</p>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 7</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 8: RHYTHM CHAMBER ============================================================ -->
+<div class="page">
+  <div class="rhy-header">
+    <span class="os-tag">Chamber 3</span>
+    <span class="os-title">Rhythm Chamber &mdash; Son Clave 2-3 + Groove Development</span>
+  </div>
+
+  <h2 class="rhy-text">Son Clave: 2-3 Orientation</h2>
+
+  <p>In Sprint 3 you learned the <strong>3-2 clave</strong> &mdash; the three-side comes first. Sprint 4 adds the <strong>2-3 orientation</strong>, which flips the two measures. Same five notes, different starting point, completely different groove feel.</p>
+
+  <div class="rhy-bg">
+    <h4 class="rhy-text">Binary Grid Reminder</h4>
+    <p style="font-size:12px;margin-bottom:6px;">Each measure = 8 grid positions. Odd positions (1,3,5,7) = beats. Even positions (2,4,6,8) = "ands."</p>
+    <div style="margin-bottom:8px;">
+      <p style="font-size:12px;font-weight:700;color:#9a3412;margin-bottom:6px;">3-2 CLAVE (Sprint 3 &mdash; review):</p>
+      <div class="grid-vis">
+        <div class="grid-cell grid-beat">1</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-active">2</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-active">3</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-rest">4</div><div class="grid-cell grid-active">+</div>
+        <span style="font-size:12px;color:#9a3412;font-weight:700;margin:0 8px;">|</span>
+        <div class="grid-cell grid-active">1</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-rest">2</div><div class="grid-cell grid-active">+</div>
+        <div class="grid-cell grid-rest">3</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-rest">4</div><div class="grid-cell grid-rest">+</div>
+      </div>
+      <p style="font-size:11px;color:#64748b;">Three side: beats 1, 2, 3-and / Two side: beat 1, 2-and</p>
+    </div>
+    <div>
+      <p style="font-size:12px;font-weight:700;color:#9a3412;margin-bottom:6px;">2-3 CLAVE (Sprint 4 &mdash; new):</p>
+      <div class="grid-vis">
+        <div class="grid-cell grid-active">1</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-rest">2</div><div class="grid-cell grid-active">+</div>
+        <div class="grid-cell grid-rest">3</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-rest">4</div><div class="grid-cell grid-rest">+</div>
+        <span style="font-size:12px;color:#9a3412;font-weight:700;margin:0 8px;">|</span>
+        <div class="grid-cell grid-beat">1</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-active">2</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-active">3</div><div class="grid-cell grid-rest">+</div>
+        <div class="grid-cell grid-rest">4</div><div class="grid-cell grid-active">+</div>
+      </div>
+      <p style="font-size:11px;color:#64748b;">Two side first: beat 1, 2-and / Three side second: beats 1, 2, 3-and</p>
+    </div>
+  </div>
+
+  <div class="rhy-box">
+    <strong>Orientation matters:</strong> 3-2 clave front-loads the three-side and feels like it&rsquo;s pushing forward. 2-3 clave holds back in measure one and then surges in measure two. Superstition&rsquo;s clav pattern lives closer to the 2-3 feel &mdash; the first beat of the pattern is sparse, and the density builds into the second measure.
+  </div>
+
+  <h2 class="rhy-text" style="margin-top:10px;">Groove Development: 4-Step Process</h2>
+
+  <div class="groove-step">
+    <div class="groove-num">1</div>
+    <div>
+      <strong>Boring:</strong> Play the chord or bass note on every beat, evenly. Pure quarter notes, no swing. This establishes the harmonic rhythm before adding any groove. Play Eb7 quarter notes for 2 minutes at 100 BPM.
+    </div>
+  </div>
+
+  <div class="groove-step">
+    <div class="groove-num">2</div>
+    <div>
+      <strong>Anticipations:</strong> Move the first note of the second measure to the "and of 4" in the first measure (position 8). Instead of landing on beat 1, you arrive early. This single change creates forward motion. Add one anticipation at a time.
+    </div>
+  </div>
+
+  <div class="groove-step">
+    <div class="groove-num">3</div>
+    <div>
+      <strong>Stops:</strong> The last note before a rest is rhythmically the most important note. Add a &ldquo;stop&rdquo; &mdash; a note that hits and then is deliberately silenced. The silence after the stop creates space, and the silence is where the groove breathes.
+    </div>
+  </div>
+
+  <div class="groove-step">
+    <div class="groove-num">4</div>
+    <div>
+      <strong>Clave Sync:</strong> Layer your groove against the 2-3 clave pattern. Your strongest hits should complement (not duplicate) the clave beats. Where the clave is silent, your groove can fill. Where the clave hits, your groove confirms or creates space.
+    </div>
+  </div>
+
+  <h3 class="rhy-text">Superstition Clav Pattern Study</h3>
+
+  <p>The clavinet riff in Superstition is one of the most analyzed grooves in funk history. Its key rhythmic features:</p>
+
+  <div class="two-col">
+    <div>
+      <ul>
+        <li><strong>Strong offbeat feel</strong> &mdash; many attacks land on the "ands," not on the downbeats</li>
+        <li><strong>16th-note subdivisions</strong> &mdash; the riff lives in the space between beats</li>
+        <li><strong>Call-and-response structure</strong> &mdash; the riff asks a question; the rest answers</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><strong>Minimal left hand</strong> &mdash; the left hand provides the Eb7 chord foundation while the right hand riffs</li>
+        <li><strong>Damped articulation</strong> &mdash; most notes are short (staccato), not held</li>
+        <li><strong>Three chord centers</strong>: riff on Eb, lift to Ab, tension to Bb</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 &mdash; Discovering</div>
+    <strong>Hear before you play.</strong> Listen to the intro of Superstition (0:00&ndash;0:08, just the clav). Clap along with only the <em>downbeats</em> (1, 2, 3, 4). Notice how the clav avoids landing directly on your clap. That gap between your clap and the clav attack IS the groove.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 &mdash; Perfecting</div>
+    <strong>Hear before you play.</strong> Tap the clav rhythm on your lap using the Lap Map (Ch.5). Count the 8-position grid out loud while tapping. Identify which positions are active. Then transfer to your instrument.
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 &mdash; Fluent</div>
+    <strong>Hear before you play.</strong> Play the verse groove (simplified version: Eb7 with anticipation on &ldquo;and of 4&rdquo;) at 80 BPM without stopping for 2 minutes. Add one stop. Add one anticipation. Keep the groove circular &mdash; it should feel like it loops indefinitely.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 8</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 9: VOICINGS CHAMBER ============================================================ -->
+<div class="page">
+  <div class="voi-header">
+    <span class="os-tag">Chamber 4</span>
+    <span class="os-title">Voicings Chamber &mdash; Triad Shapes by Stringset</span>
+  </div>
+
+  <h2 class="voi-text">Guitar: All Inversions on All 4 String Sets</h2>
+
+  <p>Sprint 4 primary voicing content: triads on every string set, in all three inversions. This is the foundational voicing vocabulary for guitar &mdash; Beato pp.&nbsp;93&ndash;100.</p>
+
+  <div class="voi-bg">
+    <h4 class="voi-text">Why String Sets Matter</h4>
+    <p>A <strong>string set</strong> is any group of three adjacent strings. On a standard-tuned guitar there are four three-string sets: strings 6-5-4, strings 5-4-3, strings 4-3-2, and strings 3-2-1. Learning the same triad on all four string sets means you can play any harmony anywhere on the neck without shifting positions.</p>
+    <p style="margin-bottom:0;">Each string set has a different voicing spread and register character: the 6-5-4 set sounds <em>thick and low</em>; the 3-2-1 set sounds <em>bright and singing</em>.</p>
+  </div>
+
+  <h3 class="voi-text">Triad Inversions Review</h3>
+
+  <table>
+    <thead>
+      <tr><th>Inversion</th><th>Bottom Note</th><th>Eb major example</th><th>Eb minor example</th><th>Character</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Root position</strong></td><td>Root (1)</td><td>Eb-Gb-Bb &rarr; Eb on bottom</td><td>Eb-Gb-Bb &rarr; Eb on bottom</td><td>Stable, definitive</td></tr>
+      <tr><td><strong>1st inversion</strong></td><td>3rd (3 or b3)</td><td>Gb-Bb-Eb &rarr; Gb on bottom</td><td>Gb-Bb-Eb &rarr; Gb on bottom</td><td>Lighter, floating</td></tr>
+      <tr><td><strong>2nd inversion</strong></td><td>5th (5)</td><td>Bb-Eb-Gb &rarr; Bb on bottom</td><td>Bb-Eb-Gb &rarr; Bb on bottom</td><td>Most unstable, wants to move</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="voi-text">String Set Shapes &mdash; Eb Minor Triad (Eb-Gb-Bb)</h3>
+  <p style="font-size:12px;color:#64748b;margin-bottom:8px;">Fret positions are illustrative for one voicing per set; multiple positions exist across the neck.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div class="voi-box">
+      <h4 class="voi-text">Strings 6-5-4 (Low Set)</h4>
+      <p style="font-size:12px;">Thick, dark voicing. Root position has Eb on string 6 (11th fret). 1st inversion: Gb on string 6 (2nd fret). 2nd inversion: Bb on string 6 (6th fret). Use for rhythm guitar foundation &mdash; locks with bass.</p>
+    </div>
+    <div class="voi-box">
+      <h4 class="voi-text">Strings 5-4-3 (Mid-Low Set)</h4>
+      <p style="font-size:12px;">Warm, full. Root position: Eb on string 5 (6th fret). 1st inversion: Gb on string 5 (9th fret). 2nd inversion: Bb on string 5 (1st fret). Works well for chord melody and chord-soloing.</p>
+    </div>
+    <div class="voi-box">
+      <h4 class="voi-text">Strings 4-3-2 (Mid-High Set)</h4>
+      <p style="font-size:12px;">Clear, mid-range. Root position: Eb on string 4 (1st fret). 1st inversion: Gb on string 4 (4th fret). 2nd inversion: Bb on string 4 (8th fret). Essential for fills and melodic comping.</p>
+    </div>
+    <div class="voi-box">
+      <h4 class="voi-text">Strings 3-2-1 (High Set)</h4>
+      <p style="font-size:12px;">Bright, singing, cuts through. Root position: Eb on string 3 (8th fret). 1st inversion: Gb on string 3 (11th fret). 2nd inversion: Bb on string 3 (3rd fret). Use for high lead parts and arpeggiated passages.</p>
+    </div>
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 &mdash; Discovering</div>
+    <strong>Hear before you play.</strong> Pick one string set (start with 3-2-1). Play the three Eb minor inversions slowly, one after another. Before playing each shape, sing the three notes (Eb, Gb, Bb in some order) out loud. Notice how the same three notes sound different depending on which note is on the bottom.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 &mdash; Perfecting</div>
+    <strong>Hear before you play.</strong> On one string set, cycle root → 1st → 2nd → root at 60 BPM. Then do the same for Ab minor and Bb minor. Target: all three inversions on two string sets at 80 BPM.
+  </div>
+
+  <div class="voi-rule" style="height:3px;background:#16a34a;border-radius:2px;margin:10px 0;"></div>
+
+  <h2 class="voi-text">Piano: Dorian Heptachord + Shell Voicing</h2>
+
+  <div class="two-col">
+    <div>
+      <h3 class="voi-text">Eb Dorian Heptachord</h3>
+      <p style="font-size:12px;">All 7 notes stacked: Eb-F-Gb-Ab-Bb-C-Db. LH: Eb-Gb-Bb (triad). RH: Db-Eb-F (top cluster). Play as arpeggios bottom to top. Listen for C natural (raised 6) floating above the minor texture.</p>
+    </div>
+    <div>
+      <h3 class="voi-text">Shell Voicing Drill</h3>
+      <p style="font-size:12px;"><strong>Shell = root + 3rd + 7th</strong> (omit 5th). Eb7: Eb+Gb+Db · Ab7: Ab+C+Gb · Bb7: Bb+D+Ab. Note: Ab7's 3rd is C natural — the Dorian raised-6!</p>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 9</span>
+  </div>
+</div>
+
+<!-- ============================================================ PAGE 10: QUICK REFERENCE CARD ============================================================ -->
+<div class="page">
+  <h1 style="font-size:22px;margin-bottom:4px;">Sprint 4 Quick Reference Card</h1>
+  <p class="cover-meta" style="margin-bottom:8px;">Superstition &nbsp;·&nbsp; Eb Dorian &nbsp;·&nbsp; ~100 BPM &nbsp;·&nbsp; All chambers at a glance</p>
+  <div class="rainbow"></div>
+
+  <div class="two-col" style="margin-top:8px;gap:10px;">
+
+    <!-- LEFT COLUMN -->
+    <div>
+      <div class="qr-section">
+        <div class="qr-title" style="color:#004d40;border-color:#00796b;">Musical OS &mdash; Plogger Ch.7-9</div>
+        <table>
+          <tbody>
+            <tr><td><strong>Ch.7</strong></td><td>Interval spelling at keyboard via Pythagorean chain F-C-G-D-A-E-B</td></tr>
+            <tr><td><strong>Ch.8</strong></td><td>8 clefs: treble (G/ln2), bass (F/ln4), soprano C/ln1, mezzo C/ln2, alto C/ln3, tenor C/ln4, baritone C/ln5, percussion (no pitch)</td></tr>
+            <tr><td><strong>Ch.9</strong></td><td>[1]=min2 tense · [3]=min3 modal · [6]=tritone frozen · [7]=P5 stable · [9]=maj6 open · [10]=min7 tense</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="qr-section">
+        <div class="qr-title" style="color:#1e3a8a;border-color:#3b82f6;">Melody Chamber</div>
+        <table>
+          <tbody>
+            <tr><td><strong>Z1 Sweet</strong></td><td>1, 3, 5 = Eb, Gb, Bb</td></tr>
+            <tr><td><strong>Z2 Bitter</strong></td><td>7, 2 = Db, F</td></tr>
+            <tr><td><strong>Z3 Tense</strong></td><td>4 = Ab &mdash; long note = maximum tension</td></tr>
+            <tr><td><strong>Z4 Wild</strong></td><td>6 = C (Dorian raised-6)</td></tr>
+            <tr><td><strong>Duration rule</strong></td><td>Long Z3 = strong tension; long Z1 = deep resolution</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="qr-section">
+        <div class="qr-title" style="color:#78350f;border-color:#d97706;">Harmony Chamber</div>
+        <table>
+          <tbody>
+            <tr><td><strong>#1</strong></td><td>I-IV-V-I: fundamental cadence</td></tr>
+            <tr><td><strong>#2</strong></td><td>I-V-vi-IV: pop universal</td></tr>
+            <tr><td><strong>#3</strong></td><td>12-Bar Blues: I-I-I-I/IV-IV-I-I/V-IV-I-V</td></tr>
+            <tr><td><strong>#4</strong></td><td>ii-V-I: jazz drill vehicle (NOT harmonic spine)</td></tr>
+            <tr><td><strong>#5 preview</strong></td><td>vi-IV-I-V (Sprint 5 &mdash; What&rsquo;s Going On)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="qr-section">
+        <div class="qr-title" style="color:#9a3412;border-color:#ea580c;">Rhythm Chamber</div>
+        <table>
+          <tbody>
+            <tr><td><strong>3-2 clave</strong></td><td>Three-side (pos 1,2,3+) THEN two-side (1,2+)</td></tr>
+            <tr><td><strong>2-3 clave</strong></td><td>Two-side (pos 1,2+) THEN three-side (1,2,3+)</td></tr>
+            <tr><td><strong>Groove steps</strong></td><td>Boring &rarr; anticipations &rarr; stops &rarr; clave sync</td></tr>
+            <tr><td><strong>Anticipation</strong></td><td>Note starts on position 8 (&ldquo;and of 4&rdquo;) = pushes</td></tr>
+            <tr><td><strong>Stop</strong></td><td>Last note before rest = most important rhythmically</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <div class="qr-section">
+        <div class="qr-title" style="color:#166534;border-color:#16a34a;">Voicings Chamber</div>
+        <table>
+          <tbody>
+            <tr><td><strong>4 string sets</strong></td><td>6-5-4 (dark) · 5-4-3 (warm) · 4-3-2 (mid) · 3-2-1 (bright)</td></tr>
+            <tr><td><strong>3 inversions</strong></td><td>Root (1 bass) · 1st (3/b3 bass) · 2nd (5 bass)</td></tr>
+            <tr><td><strong>Shell voicing</strong></td><td>Root + 3rd + 7th (no 5th)</td></tr>
+            <tr><td><strong>Eb7 shell</strong></td><td>Eb + Gb + Db</td></tr>
+            <tr><td><strong>Ab7 shell</strong></td><td>Ab + C + Gb (C = Dorian raised-6!)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="qr-section">
+        <div class="qr-title" style="color:#7e22ce;border-color:#c084fc;">Superstition Cheat Sheet</div>
+        <table>
+          <tbody>
+            <tr><td><strong>Key/Mode</strong></td><td>Eb Dorian: Eb-F-Gb-Ab-Bb-C-Db</td></tr>
+            <tr><td><strong>Tonic chord</strong></td><td>Eb7 = Eb-Gb-Bb-Db</td></tr>
+            <tr><td><strong>IV chord</strong></td><td>Ab7 = Ab-C-Eb-Gb</td></tr>
+            <tr><td><strong>V chord</strong></td><td>Bb7 = Bb-D-F-Ab</td></tr>
+            <tr><td><strong>Dorian signal</strong></td><td>C natural (raised-6) = bright in minor</td></tr>
+            <tr><td><strong>Groove feel</strong></td><td>2-3 clave, 16th-note offbeats, clav staccato</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="qr-section">
+        <div class="qr-title" style="border-color:#e2e8f0;">Sprint 4 Exit Milestones</div>
+        <div class="milestone-item"><div class="milestone-check"></div><div class="milestone-text">Interval Spelling: identify any keyboard interval via Pythagorean method &lt;2 sec, no formulas</div></div>
+        <div class="milestone-item"><div class="milestone-check"></div><div class="milestone-text">All 8 clefs: can read notes in treble, bass, soprano, mezzo-soprano, alto, tenor, baritone, percussion</div></div>
+        <div class="milestone-item"><div class="milestone-check"></div><div class="milestone-text">Di-Chord Numbers: [1]&ndash;[7] named + associated with traditional interval name</div></div>
+        <div class="milestone-item"><div class="milestone-check"></div><div class="milestone-text">All 4 progressions (#1&ndash;#4) on both instruments, including ii-V-I shell voicings in C and G</div></div>
+        <div class="milestone-item"><div class="milestone-check"></div><div class="milestone-text">Triad shapes by stringset: guitar &mdash; all inversions on 3 string sets at 80 BPM</div></div>
+        <div class="milestone-item"><div class="milestone-check"></div><div class="milestone-text">Superstition: verse groove on both instruments, Dorian modal feel established</div></div>
+        <div class="milestone-item"><div class="milestone-check"></div><div class="milestone-text">Duration Amplifies Zone: demonstrate long Z3 note (Ab) changing tension vs. long Z1 note (Eb)</div></div>
+      </div>
+
+      <div class="qr-section">
+        <div class="qr-title" style="color:#1e3a8a;border-color:#3b82f6;">Sprint 5 Preview: What&rsquo;s Going On</div>
+        <p style="font-size:12px;color:#475569;">Marvin Gaye &nbsp;·&nbsp; Eb major &nbsp;·&nbsp; Plogger Ch.9 complete + Ch.10&ndash;11 (Di-Chord pulsation + harmonicity) &nbsp;·&nbsp; Harmony progressions #5&ndash;#7 &nbsp;·&nbsp; Zone Distribution Ratios by section &nbsp;·&nbsp; vi-IV-I-V as new primary progression</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rainbow"></div>
+
+  <div class="syn-box" style="text-align:center;padding:10px 16px;">
+    <div style="font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#7e22ce;margin-bottom:8px;">Sprint 4 North Star</div>
+    <p style="font-size:15px;font-style:italic;color:#1e293b;margin-bottom:0;">&ldquo;The flat-7 (Db) leans; the raised-6 (C) lifts. Hold the tonic long enough and you don&rsquo;t need to go anywhere else. That is the whole secret of Dorian.&rdquo;</p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 &mdash; Superstition</span>
+    <span>Page 10</span>
+  </div>
+</div>
+
+</body>
+</html>

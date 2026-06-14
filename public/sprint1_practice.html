@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AMF Sprint 1 — Daily Practice Plan + Workbook</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Helvetica Neue','Arial',sans-serif;background:#f0ede8;color:#1e293b;font-size:12px;line-height:1.55;}
+.page{width:794px;min-height:1123px;margin:24px auto;background:#fff;padding:44px 56px;box-shadow:0 4px 24px rgba(0,0,0,0.10);page-break-after:always;position:relative;}
+h1{font-size:26px;font-weight:900;line-height:1.2;letter-spacing:-0.02em;}
+h2{font-size:17px;font-weight:800;line-height:1.3;margin-bottom:6px;margin-top:18px;}
+h3{font-size:13px;font-weight:700;margin-bottom:5px;margin-top:12px;}
+h4{font-size:10.5px;font-weight:800;margin-bottom:3px;margin-top:7px;text-transform:uppercase;letter-spacing:.07em;}
+p{margin-bottom:7px;font-size:12px;}
+ul,ol{margin:0 0 7px 16px;}
+li{margin-bottom:2px;font-size:12px;}
+strong{font-weight:700;}
+em{font-style:italic;}
+
+.os-bg{background:#e0f2f1;} .os-text{color:#004d40;}
+.mel-bg{background:#dbeafe;} .mel-text{color:#1e3a8a;}
+.har-bg{background:#fef3c7;} .har-text{color:#78350f;}
+.rhy-bg{background:#fde8d8;} .rhy-text{color:#9a3412;}
+.syn-bg{background:#f0e6ff;} .syn-text{color:#4b2d8c;}
+
+.section-bar{display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:8px;margin-bottom:8px;}
+.section-bar .num{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;flex-shrink:0;}
+.section-bar .label{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.7;}
+.section-bar .title{font-size:12px;font-weight:800;}
+.section-bar .time{margin-left:auto;font-size:10px;font-weight:700;opacity:.6;white-space:nowrap;}
+
+.exercise{border-radius:8px;padding:9px 12px;margin:6px 0;border-left:4px solid;}
+.exercise-title{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;}
+.exercise-time{font-size:9px;font-weight:700;padding:2px 6px;border-radius:10px;display:inline-block;}
+.stage-badge{font-size:8.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 5px;border-radius:10px;display:inline-block;margin-left:3px;}
+.s1{background:#fff8e1;color:#b45309;} .s2{background:#fff0f0;color:#b91c1c;} .s3{background:#f0fdf4;color:#15803d;}
+
+.inst-header{display:flex;align-items:center;gap:8px;padding:7px 0 5px;}
+.inst-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.inst-name{font-size:15px;font-weight:900;}
+.inst-meta{font-size:9.5px;font-weight:600;color:#64748b;letter-spacing:.05em;text-transform:uppercase;}
+
+.workbook-page{background:#fafaf8;border:2px dashed #d1d5db;border-radius:10px;padding:12px 16px;margin:10px 0;}
+.write-line{border-bottom:1px solid #e2e8f0;margin:6px 0;height:22px;}
+.write-box{border:1px solid #e2e8f0;border-radius:6px;height:52px;margin:6px 0;background:#fff;}
+.checkbox-item{display:flex;align-items:flex-start;gap:10px;padding:5px 0;border-bottom:1px solid #f1f5f9;}
+.cb{width:16px;height:16px;border:2px solid #94a3b8;border-radius:3px;flex-shrink:0;margin-top:1px;}
+
+table{width:100%;border-collapse:collapse;margin:6px 0;font-size:11px;}
+th{padding:5px 8px;text-align:left;font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid #e2e8f0;background:#f8fafc;}
+td{padding:5px 8px;border-bottom:1px solid #f1f5f9;vertical-align:top;}
+
+.rainbow{height:3px;background:linear-gradient(90deg,#00796b 0%,#3b82f6 22%,#d97706 50%,#8b5cf6 78%,#ea580c 100%);border-radius:2px;margin:10px 0;}
+
+.sprint-meta{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#64748b;}
+.week-tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
+.cont-tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:800;background:#f1f5f9;color:#475569;letter-spacing:.06em;text-transform:uppercase;}
+
+.log-row{display:grid;grid-template-columns:76px 94px 1fr 74px;gap:8px;padding:5px 0;border-bottom:1px solid #f1f5f9;align-items:start;}
+.log-header{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#94a3b8;}
+
+.page-footer{position:absolute;bottom:24px;left:60px;right:60px;display:flex;justify-content:space-between;font-size:10px;color:#94a3b8;letter-spacing:.04em;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+
+@media print{
+  body{background:white;}
+  .page{box-shadow:none;margin:0;page-break-after:always;}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ COVER PAGE ═══════ -->
+<div class="page" style="display:flex;flex-direction:column;justify-content:center;">
+  <div style="margin-bottom:32px;">
+    <div class="sprint-meta" style="margin-bottom:10px;">Adaptable Musician's Framework · Sprint 1 · Weeks 1–4</div>
+    <h1 style="font-size:36px;line-height:1.1;margin-bottom:8px;">Daily Practice Plan<br/><span style="color:#00796b;">+ Workbook</span></h1>
+    <p style="font-size:15px;color:#475569;margin-top:12px;">Your complete practice guide for Sprint 1. One hour each: Guitar and Piano.<br/>Five sections per instrument. All four chambers from Day 1.</p>
+  </div>
+  <div class="rainbow"></div>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:20px 0;">
+    <div style="background:#e0f2f1;padding:10px 12px;border-radius:8px;text-align:center;">
+      <div style="font-size:18px;margin-bottom:4px;">🧠</div>
+      <div style="font-size:9px;font-weight:800;color:#004d40;text-transform:uppercase;letter-spacing:.06em;">Section 1</div>
+      <div style="font-size:11px;font-weight:700;color:#004d40;">Plogger</div>
+      <div style="font-size:10px;color:#64748b;">10 min</div>
+    </div>
+    <div style="background:#dbeafe;padding:10px 12px;border-radius:8px;text-align:center;">
+      <div style="font-size:18px;margin-bottom:4px;">🔗</div>
+      <div style="font-size:9px;font-weight:800;color:#1e3a8a;text-transform:uppercase;letter-spacing:.06em;">Section 2</div>
+      <div style="font-size:11px;font-weight:700;color:#1e3a8a;">Integrated</div>
+      <div style="font-size:10px;color:#64748b;">18 min</div>
+    </div>
+    <div style="background:#fef3c7;padding:10px 12px;border-radius:8px;text-align:center;">
+      <div style="font-size:18px;margin-bottom:4px;">🎵</div>
+      <div style="font-size:9px;font-weight:800;color:#78350f;text-transform:uppercase;letter-spacing:.06em;">Section 3</div>
+      <div style="font-size:11px;font-weight:700;color:#78350f;">Song Work</div>
+      <div style="font-size:10px;color:#64748b;">14 min</div>
+    </div>
+    <div style="background:#fde8d8;padding:10px 12px;border-radius:8px;text-align:center;">
+      <div style="font-size:18px;margin-bottom:4px;">🎸</div>
+      <div style="font-size:9px;font-weight:800;color:#9a3412;text-transform:uppercase;letter-spacing:.06em;">Section 4</div>
+      <div style="font-size:11px;font-weight:700;color:#9a3412;">Jamming</div>
+      <div style="font-size:10px;color:#64748b;">10 min</div>
+    </div>
+    <div style="background:#f0e6ff;padding:10px 12px;border-radius:8px;text-align:center;">
+      <div style="font-size:18px;margin-bottom:4px;">✨</div>
+      <div style="font-size:9px;font-weight:800;color:#4b2d8c;text-transform:uppercase;letter-spacing:.06em;">Section 5</div>
+      <div style="font-size:11px;font-weight:700;color:#4b2d8c;">Synthesizer</div>
+      <div style="font-size:10px;color:#64748b;">8 min</div>
+    </div>
+  </div>
+  <div style="margin:20px 0;padding:16px 20px;background:#f8fafc;border-radius:10px;border-left:4px solid #00796b;">
+    <h3 style="color:#004d40;margin-top:0;font-size:13px;">Sprint 1 Anchor Song: Ain't No Sunshine — Bill Withers</h3>
+    <p style="font-size:12px;margin-bottom:4px;">Progression: Am – Em – G – Am · Key: A minor · Tempo: 76 BPM</p>
+    <p style="font-size:12px;margin-bottom:0;color:#64748b;">This song appears in every section of every week. You won't just learn it — you'll learn <em>through</em> it.</p>
+  </div>
+  <div style="margin-top:20px;padding:14px 18px;background:#0f172a;border-radius:10px;">
+    <p style="color:#94a3b8;font-size:11px;margin-bottom:4px;"><strong style="color:#fff;">The Non-Negotiable:</strong> Hear or sing every note before you play it. Every exercise.</p>
+    <p style="color:#94a3b8;font-size:11px;margin-bottom:0;"><strong style="color:#fff;">Three Definitions of Done:</strong> Mastery (9/10, no hesitation, at tempo) · Progressive (better than last time) · Performance Ready (from memory, in front of someone, without stopping)</p>
+  </div>
+  <div class="page-footer"><span>AMF · Sprint 1</span><span>Daily Practice Plan + Workbook</span></div>
+</div>
+
+<!-- ═══════ WEEK 1 — LEARNING FOR THE DAY ═══════ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <div class="week-tag" style="background:#004d40;color:#fff;">Week 1</div>
+    <h1 style="font-size:22px;margin-bottom:0;">Learning for the Day</h1>
+  </div>
+  <p style="color:#64748b;font-size:12px;margin-bottom:0;">Read once before each practice session this week. These are the conceptual foundations for Sprint 1.</p>
+  <div class="rainbow"></div>
+
+  <div class="os-bg" style="border-radius:10px;padding:14px 18px;margin-bottom:12px;">
+    <div style="display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:800;background:#004d40;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;">Musical OS · Plogger Ch. 1–2</div>
+    <h3 style="color:#004d40;margin-top:4px;">The Three Stages of Learning</h3>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px;">
+      <div style="background:#fff;padding:10px 12px;border-radius:8px;border-top:3px solid #b45309;"><div style="font-size:9px;font-weight:800;color:#b45309;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Stage 1</div><div style="font-size:12px;font-weight:700;margin-bottom:3px;">Discovery</div><div style="font-size:11px;color:#475569;">First contact. No pressure to be right. Keep going — don't stop.</div></div>
+      <div style="background:#fff;padding:10px 12px;border-radius:8px;border-top:3px solid #b91c1c;"><div style="font-size:9px;font-weight:800;color:#b91c1c;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Stage 2</div><div style="font-size:12px;font-weight:700;margin-bottom:3px;">Consolidation</div><div style="font-size:11px;color:#475569;">Sometimes know it. Slow down. Repetition is the tool here.</div></div>
+      <div style="background:#fff;padding:10px 12px;border-radius:8px;border-top:3px solid #15803d;"><div style="font-size:9px;font-weight:800;color:#15803d;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Stage 3</div><div style="font-size:12px;font-weight:700;margin-bottom:3px;">Mastery</div><div style="font-size:11px;color:#475569;">Always know. Automatic. 9/10 at full tempo, no hesitation.</div></div>
+    </div>
+    <p style="font-size:11px;color:#004d40;margin-top:8px;margin-bottom:0;"><strong>The rule:</strong> Always stay at your actual stage. Never perform in Stage 1. Never coast in Stage 3.</p>
+  </div>
+
+  <div class="mel-bg" style="border-radius:10px;padding:14px 18px;margin-bottom:12px;">
+    <div style="display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:800;background:#1e3a8a;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;">Melody Chamber — Zone System</div>
+    <h3 style="color:#1e3a8a;margin-top:4px;">The Four Zones in A Minor</h3>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px;">
+      <div style="background:#fff;padding:8px 10px;border-radius:8px;border-top:3px solid #3b82f6;"><div style="font-size:9px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:.06em;">Z1 — Sweet</div><div style="font-size:12px;font-weight:700;margin:2px 0;">A · C · E</div><div style="font-size:10px;color:#475569;">Stable. Home. These notes always feel right.</div></div>
+      <div style="background:#fff;padding:8px 10px;border-radius:8px;border-top:3px solid #6366f1;"><div style="font-size:9px;font-weight:800;color:#6366f1;text-transform:uppercase;letter-spacing:.06em;">Z2 — Bitter</div><div style="font-size:12px;font-weight:700;margin:2px 0;">B · G</div><div style="font-size:10px;color:#475569;">Reaching. Mild tension. Pulls back to Z1.</div></div>
+      <div style="background:#fff;padding:8px 10px;border-radius:8px;border-top:3px solid #8b5cf6;"><div style="font-size:9px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:.06em;">Z3 — Tense</div><div style="font-size:12px;font-weight:700;margin:2px 0;">D · F</div><div style="font-size:10px;color:#475569;">Strong pull. Demands resolution to Z1.</div></div>
+      <div style="background:#fff;padding:8px 10px;border-radius:8px;border-top:3px solid #94a3b8;"><div style="font-size:9px;font-weight:800;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;">Z4 — Wild</div><div style="font-size:12px;font-weight:700;margin:2px 0;">G# · Bb</div><div style="font-size:10px;color:#475569;">Outside the key. Use intentionally.</div></div>
+    </div>
+    <p style="font-size:11px;color:#1e3a8a;margin-top:8px;margin-bottom:0;"><strong>Tiny Tension Arc:</strong> Z1 → Z1 → Z2 → Z1. Stability · Stability · Reach · Home. The minimum complete musical statement.</p>
+  </div>
+
+  <div class="har-bg" style="border-radius:10px;padding:14px 18px;margin-bottom:12px;">
+    <div style="display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:800;background:#78350f;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;">Harmony Chamber — Di-Chord Quality</div>
+    <h3 style="color:#78350f;margin-top:4px;">Major vs. Minor — The Acoustic Truth</h3>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px;">
+      <div style="background:#fff;padding:8px 10px;border-radius:8px;"><div style="font-size:9px;font-weight:800;color:#b91c1c;text-transform:uppercase;letter-spacing:.06em;">[3] Minor 3rd</div><div style="font-size:12px;margin:2px 0;">A + C = Am quality</div><div style="font-size:10px;color:#475569;">Non-harmonic. Closed. Acidic.</div></div>
+      <div style="background:#fff;padding:8px 10px;border-radius:8px;"><div style="font-size:9px;font-weight:800;color:#15803d;text-transform:uppercase;letter-spacing:.06em;">[4] Major 3rd</div><div style="font-size:12px;margin:2px 0;">A + C# = A major</div><div style="font-size:10px;color:#475569;">Harmonic. Open. Alkaline.</div></div>
+      <div style="background:#fff;padding:8px 10px;border-radius:8px;"><div style="font-size:9px;font-weight:800;color:#1e3a8a;text-transform:uppercase;letter-spacing:.06em;">[7] Perfect 5th</div><div style="font-size:12px;margin:2px 0;">A + E = pure open</div><div style="font-size:10px;color:#475569;">Perfectly stable. The "open" interval.</div></div>
+    </div>
+  </div>
+
+  <div class="rhy-bg" style="border-radius:10px;padding:14px 18px;">
+    <div style="display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:800;background:#9a3412;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;">Rhythm Chamber — Two Lenses</div>
+    <h3 style="color:#9a3412;margin-top:4px;">Longy Syllables + Rhythm Code Grid</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px;">
+      <div style="background:#fff;padding:10px 12px;border-radius:8px;"><div style="font-size:10px;font-weight:800;color:#9a3412;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Longy — "What is it?"</div><p style="font-size:11px;margin-bottom:4px;">Name the rhythm by how it sounds.</p><div style="font-size:12px;"><strong>ta</strong> = quarter note &nbsp;·&nbsp; <strong>ta-te</strong> = two eighths<br/><strong>ta---te</strong> = dotted quarter + eighth</div></div>
+      <div style="background:#fff;padding:10px 12px;border-radius:8px;"><div style="font-size:10px;font-weight:800;color:#9a3412;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Rhythm Code — "Where does it sit?"</div><p style="font-size:11px;margin-bottom:4px;">8 positions per 4/4 bar: 1=beat1, 2="and"1, 3=beat2, 4="and"2, etc.</p><div style="font-size:12px;"><strong>Stop</strong> = last note before a rest. &nbsp;<strong>Anticipation</strong> = note starting on an "and."</div></div>
+    </div>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 · Week 1</span><span>Learning for the Day</span></div>
+</div>
+
+<!-- ═══════ GUITAR — PAGE A (Sections 1–3) ═══════ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+    <div class="week-tag" style="background:#004d40;color:#fff;">Week 1</div>
+    <div class="week-tag" style="background:#1e3a8a;color:#fff;">Guitar · 1 Hour</div>
+    <div class="cont-tag">Sections 1–2</div>
+  </div>
+  <div class="inst-header">
+    <div class="inst-icon" style="background:#e0f2f1;">🎸</div>
+    <div><div class="inst-name">Guitar Practice</div><div class="inst-meta">Steel-String Acoustic · Returning Intermediate</div></div>
+  </div>
+  <div class="rainbow"></div>
+
+  <!-- SECTION 1 -->
+  <div class="section-bar os-bg" style="border-left:4px solid #00796b;">
+    <div class="num" style="background:#004d40;">1</div>
+    <div><div class="label">Section 1</div><div class="title os-text">Plogger Foundation</div></div>
+    <div class="time">10 min</div>
+  </div>
+
+  <div class="exercise" style="background:#f0faf9;border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title os-text">Keyboard Visualization Drill</span>
+      <span class="exercise-time" style="background:#e0f2f1;color:#004d40;">5 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:6px;">Close your eyes. Picture the keyboard. Answer aloud — no hesitation:</p>
+    <ol style="margin-left:16px;margin-bottom:6px;font-size:12px;">
+      <li>C is to the ___ of the two black keys.</li>
+      <li>D is ___ the two black keys.</li>
+      <li>F is to the ___ of the three black keys.</li>
+      <li>Name all natural notes: C · D · E · ___ · G · A · ___</li>
+      <li>Solfège for A? For C? For G?</li>
+    </ol>
+    <p style="margin-bottom:0;font-size:11.5px;color:#004d40;"><strong>Target:</strong> No hesitation. Any pause = Stage 2 work next session.</p>
+  </div>
+
+  <div class="exercise" style="background:#f0faf9;border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title os-text">Longy + Rhythm Code — Two Lenses, One Pattern</span>
+      <span class="exercise-time" style="background:#e0f2f1;color:#004d40;">5 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:6px;">Metronome 70 BPM. Read each pattern with <strong>both tools at once</strong> — Longy names it, Rhythm Code places it on the 8-position grid.</p>
+    <table>
+      <thead><tr><th>Pattern</th><th>Longy Syllables</th><th>Grid Positions</th><th>Stop? Anticipation?</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Quarter notes</strong></td><td>ta · ta · ta · ta</td><td>1 · 3 · 5 · 7</td><td>Stop = pos 7</td></tr>
+        <tr><td><strong>Quarter + two eighths</strong></td><td>ta · ta · ta-te · ta</td><td>1 · 3 · 5,6 · 7</td><td>Pos 6 = "and" = lifted feel</td></tr>
+        <tr><td><strong>Four eighths/beat</strong></td><td>ta-te · ta-te · ta-te · ta-te</td><td>All 8 positions</td><td>Stop = pos 8 (last "and")</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-bottom:0;font-size:11.5px;"><strong>Apply to Ain't No Sunshine:</strong> Clap "Ain't no sunshine when she's gone." Speak Longy. Which grid positions? Where is the stop after "gone"? Does any note start on an "and" (anticipation)?</p>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section-bar mel-bg" style="border-left:4px solid #3b82f6;margin-top:12px;">
+    <div class="num" style="background:#1e3a8a;">2</div>
+    <div><div class="label">Section 2</div><div class="title mel-text">Integrated Work</div></div>
+    <div class="time">18 min</div>
+  </div>
+
+  <div class="exercise" style="background:#eff6ff;border-color:#3b82f6;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title mel-text">Reconnection — Open Chords + Alternating Bass</span>
+      <span class="exercise-time" style="background:#dbeafe;color:#1e3a8a;">8 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:5px;"><strong>Right hand THUMB ONLY for first 4 minutes.</strong> Thumb independence must be automatic before anything else is added.</p>
+    <ul style="margin-left:16px;margin-bottom:5px;">
+      <li>G chord → Alternate: string 6 (beat 1) · string 4 (beat 3). 60 BPM, 4 bars.</li>
+      <li>C chord → Alternate: string 5 (beat 1) · string 4 (beat 3). 4 bars.</li>
+      <li>Am chord → Alternate: string 5 (beat 1) · string 3 (beat 3). 4 bars.</li>
+    </ul>
+    <p style="margin-bottom:0;font-size:11.5px;"><strong>Add one finger:</strong> After thumb on beat 1, index plucks string 1 on the "and" of beat 1. Pattern: Thumb-INDEX · Thumb · Thumb-INDEX · Thumb. 4 bars on Am. <span class="mel-text">Hear before you play: sing the root note before each chord change.</span></p>
+  </div>
+
+  <div class="exercise" style="background:#eff6ff;border-color:#3b82f6;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title mel-text">Major/Minor Ear Training — Di-Chord Foundation</span>
+      <span class="exercise-time" style="background:#dbeafe;color:#1e3a8a;">5 min</span>
+      <span class="stage-badge s2">S2</span>
+    </div>
+    <p style="margin-bottom:5px;">Play Am. Hold — feel the closed, acidic quality. Play A major (A-C#-E). Hold — feel the open quality. Alternate 8 times, eyes closed. Before each: <em>anticipate</em> the sound, then play and check.</p>
+    <p style="margin-bottom:0;font-size:11.5px;color:#1e3a8a;">Repeat with Em vs. E major. Feel [3] (minor third) vs. [4] (major third) as physical sensations.</p>
+  </div>
+
+  <div class="exercise" style="background:#eff6ff;border-color:#3b82f6;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title mel-text">Am Progression — Clean Transitions</span>
+      <span class="exercise-time" style="background:#dbeafe;color:#1e3a8a;">5 min</span>
+      <span class="stage-badge s2">S2</span>
+    </div>
+    <p style="margin-bottom:0;">Play Am–Em–G–Am. Two down-strums per chord, 70 BPM. <strong>No gap between chords.</strong> The next chord must be forming before the current one releases. Diagnose errors: late on Em = Reaction (slow down). Knew you'd miss G while still on Em = Anticipation (stay present).</p>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 · Week 1</span><span>Guitar Practice — Sections 1–2</span></div>
+</div>
+
+<!-- ═══════ GUITAR — PAGE B (Sections 4–5) ═══════ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+    <div class="week-tag" style="background:#004d40;color:#fff;">Week 1</div>
+    <div class="week-tag" style="background:#9a3412;color:#fff;">Guitar · continued</div>
+    <div class="cont-tag">Sections 3–5</div>
+  </div>
+  <div class="inst-header">
+    <div class="inst-icon" style="background:#fef3c7;">🎸</div>
+    <div><div class="inst-name">Guitar Practice</div><div class="inst-meta">Song Work · Rhythm Chamber · The Synthesizer</div></div>
+  </div>
+  <div class="rainbow"></div>
+
+  <!-- SECTION 3 -->
+  <div class="section-bar har-bg" style="border-left:4px solid #d97706;">
+    <div class="num" style="background:#78350f;">3</div>
+    <div><div class="label">Section 3</div><div class="title har-text">Song Learning / Practice</div></div>
+    <div class="time">14 min</div>
+  </div>
+
+  <div class="exercise" style="background:#fffbeb;border-color:#d97706;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title har-text">Ain't No Sunshine — Guitar, Week 1</span>
+      <span class="exercise-time" style="background:#fef3c7;color:#78350f;">14 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:5px;"><strong>Step 1 (3 min):</strong> Play verse progression (Am–Em–G–Am), 4 down-strums per chord, 80 BPM. No stopping. Keep pulse even through rough transitions.</p>
+    <p style="margin-bottom:5px;"><strong>Step 2 (7 min):</strong> Add alternating bass from Section 2. Bass note beats 1 and 3, treble (index) beats 2 and 4. Work through chord changes until bass doesn't break during transitions.</p>
+    <p style="margin-bottom:0;"><strong>Step 3 (4 min):</strong> Play along with the recording if available. Match the feel. Stage 1 — exploration, not performance.</p>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section-bar rhy-bg" style="border-left:4px solid #ea580c;margin-top:7px;">
+    <div class="num" style="background:#9a3412;">4</div>
+    <div><div class="label">Section 4</div><div class="title rhy-text">Jamming / Free Play</div></div>
+    <div class="time">10 min</div>
+  </div>
+
+  <div class="exercise" style="background:#fff8f5;border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title rhy-text">Rhythm Code Groove Drill — Ain't No Sunshine</span>
+      <span class="exercise-time" style="background:#fde8d8;color:#9a3412;">5 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:5px;">Hold an Am chord. Apply both lenses to the anchor song's groove:</p>
+    <p style="margin-bottom:5px;"><strong>Step 1:</strong> Clap "Ain't no sunshine when she's gone." Speak Longy syllables aloud while clapping.</p>
+    <p style="margin-bottom:5px;"><strong>Step 2:</strong> Find where "gone" lands — that's the <strong>Stop</strong>. Last note before the rest. Feel the phrase settle there.</p>
+    <p style="margin-bottom:5px;"><strong>Step 3:</strong> Try shifting "when she's" to start one eighth note early (anticipation). Does it feel more pushed, more alive?</p>
+    <p style="margin-bottom:0;font-size:11.5px;color:#9a3412;">The point: hearing how grid position changes the feel of the same notes. Rhythm Code in action.</p>
+  </div>
+
+  <div class="exercise" style="background:#fff8f5;border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title rhy-text">Pentatonic Improv + Free Play</span>
+      <span class="exercise-time" style="background:#fde8d8;color:#9a3412;">5 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:5px;"><strong>3 min:</strong> A minor pentatonic over Am–Em–G–Am. Sing before you play. Notice Zone 1 (home: A, C, E) vs. reaching notes (D, G).</p>
+    <p style="margin-bottom:0;"><strong>2 min:</strong> Free play. No rules. Just you and the guitar.</p>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section-bar syn-bg" style="border-left:4px solid #8b5cf6;margin-top:7px;">
+    <div class="num" style="background:#4b2d8c;">5</div>
+    <div><div class="label">Section 5</div><div class="title syn-text">The Synthesizer</div></div>
+    <div class="time">8 min</div>
+  </div>
+
+  <div class="exercise" style="background:#f5f0ff;border-color:#8b5cf6;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title syn-text">All Systems — Zone 1 Arpeggio + Rhythm Grid</span>
+      <span class="exercise-time" style="background:#f0e6ff;color:#4b2d8c;">8 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:8px;">This is where all four chambers meet simultaneously in one simple exercise.</p>
+    <div style="background:#f0e6ff;border-radius:8px;padding:9px 12px;margin-bottom:8px;">
+      <p style="font-size:12px;font-weight:700;color:#4b2d8c;margin-bottom:8px;">The Exercise: Play the three Zone 1 notes of Am (A · C · E) as a slow arpeggio — one note per beat — while simultaneously engaging all four systems:</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px;">
+        <div style="background:#e0f2f1;padding:6px 9px;border-radius:6px;"><strong style="color:#004d40;">Musical OS:</strong> Name the di-chord aloud: A=[0] (unison), C=[3] (minor/closed), E=[7] (open).</div>
+        <div style="background:#dbeafe;padding:6px 9px;border-radius:6px;"><strong style="color:#1e3a8a;">Melody:</strong> All Zone 1. Feel pure stability — no tension, pure home.</div>
+        <div style="background:#fef3c7;padding:6px 9px;border-radius:6px;"><strong style="color:#78350f;">Harmony:</strong> You're arpeggating Am — harmonic content expressed melodically.</div>
+        <div style="background:#fde8d8;padding:6px 9px;border-radius:6px;"><strong style="color:#9a3412;">Rhythm:</strong> Pass 1 = ta·ta·ta. Pass 2 = ta-te·ta-te·ta. Pass 3 = dotted feel.</div>
+      </div>
+    </div>
+    <p style="margin-bottom:0;font-size:12px;color:#4b2d8c;"><strong>The insight:</strong> Same three notes · Same chord · Same zones — completely different character from rhythm alone. Four chambers, one gesture.</p>
+  </div>
+
+  <div style="margin-top:8px;padding:7px 12px;background:#f8fafc;border-radius:8px;border-left:3px solid #94a3b8;">
+    <p style="font-size:11.5px;color:#64748b;margin-bottom:0;"><strong style="color:#1e293b;">Guitar session complete — 60 min.</strong> Before closing: speak one Longy pattern, sing one Zone 1 note, name the di-chord quality of the minor third you played today.</p>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 · Week 1</span><span>Guitar Practice — Sections 4–5</span></div>
+</div>
+
+<!-- ═══════ PIANO — PAGE A (Sections 1–3) ═══════ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+    <div class="week-tag" style="background:#004d40;color:#fff;">Week 1</div>
+    <div class="week-tag" style="background:#1e3a8a;color:#fff;">Piano · 1 Hour</div>
+    <div class="cont-tag">Sections 1–2</div>
+  </div>
+  <div class="inst-header">
+    <div class="inst-icon" style="background:#dbeafe;">🎹</div>
+    <div><div class="inst-name">Piano Practice</div><div class="inst-meta">Acoustic Piano · Advanced Beginner</div></div>
+  </div>
+  <div class="rainbow"></div>
+
+  <!-- SECTION 1 -->
+  <div class="section-bar os-bg" style="border-left:4px solid #00796b;">
+    <div class="num" style="background:#004d40;">1</div>
+    <div><div class="label">Section 1</div><div class="title os-text">Plogger Foundation</div></div>
+    <div class="time">10 min</div>
+  </div>
+
+  <div class="exercise" style="background:#f0faf9;border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title os-text">Keyboard Visualization + Touch</span>
+      <span class="exercise-time" style="background:#e0f2f1;color:#004d40;">4 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:5px;">You have the actual keyboard — use it physically. Trace answers with your finger as you answer aloud:</p>
+    <ol style="margin-left:16px;margin-bottom:5px;font-size:12px;">
+      <li>Touch C. Now touch every C across the keyboard. How many are there?</li>
+      <li>Touch F on three different octaves. Confirm: F is always left of the three-black group.</li>
+      <li>Starting from middle C, name every white key going up: doh re mi fa sol la si doh.</li>
+      <li>Close eyes. Find middle C by feel alone — landmark method, no peeking.</li>
+    </ol>
+  </div>
+
+  <div class="exercise" style="background:#f0faf9;border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title os-text">Longy + Rhythm Code at the Keyboard</span>
+      <span class="exercise-time" style="background:#e0f2f1;color:#004d40;">6 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:6px;">Same combined drill as guitar — but the piano lets you hear it immediately. 70 BPM. Speak syllables while playing single notes on middle C:</p>
+    <table>
+      <thead><tr><th>Pattern</th><th>Longy Syllables</th><th>Grid Positions</th><th>What you hear</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Quarters</strong></td><td>ta · ta · ta · ta</td><td>1 · 3 · 5 · 7</td><td>Steady. Even. All beat positions.</td></tr>
+        <tr><td><strong>Eighths</strong></td><td>ta-te · ta-te · ta-te · ta-te</td><td>All 8 positions</td><td>Twice as active. Every "and" filled.</td></tr>
+        <tr><td><strong>Mix</strong></td><td>ta · ta-te · ta · ta-te</td><td>1 · 3,4 · 5 · 7,8</td><td>Quarter + pair alternating.</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-bottom:0;font-size:11.5px;"><strong>Apply to Ain't No Sunshine:</strong> Clap the vocal rhythm at the keyboard lid. Speak Longy. Then play it on a single note (C). Find the Stop after "gone" — mark its grid position.</p>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section-bar mel-bg" style="border-left:4px solid #3b82f6;margin-top:12px;">
+    <div class="num" style="background:#1e3a8a;">2</div>
+    <div><div class="label">Section 2</div><div class="title mel-text">Integrated Work</div></div>
+    <div class="time">18 min</div>
+  </div>
+
+  <div class="exercise" style="background:#eff6ff;border-color:#3b82f6;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title mel-text">Chord Transitions — Inversions + Voice Economy</span>
+      <span class="exercise-time" style="background:#dbeafe;color:#1e3a8a;">8 min</span>
+      <span class="stage-badge s2">S2</span>
+    </div>
+    <p style="margin-bottom:5px;">Chords: Am · Dm · E7 · Am. Make transitions conscious and ear-connected.</p>
+    <p style="margin-bottom:5px;"><strong>Step 1 (2 min):</strong> Play each chord and speak quality: "Am — minor, closed" · "Dm — minor, closed" · "E7 — dominant seventh, tense."</p>
+    <p style="margin-bottom:5px;"><strong>Step 2 (3 min):</strong> LH plays root notes (A·D·E·A), quarter notes, 65 BPM. RH plays chords with inversions — no RH jump larger than a 3rd. Am root (A-C-E) → Dm 1st inv (F-A-D, A stays) → E7 shell (E-G#-D) → Am.</p>
+    <p style="margin-bottom:0;font-size:11.5px;"><strong>Step 3 (3 min):</strong> Hear before you play. Sing the root note of the incoming chord before each change. Then play it.</p>
+  </div>
+
+  <div class="exercise" style="background:#eff6ff;border-color:#3b82f6;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title mel-text">Major/Minor Ear Training at Keyboard</span>
+      <span class="exercise-time" style="background:#dbeafe;color:#1e3a8a;">6 min</span>
+      <span class="stage-badge s2">S2</span>
+    </div>
+    <p style="margin-bottom:5px;">Play A (single note). Then C above it — non-harmonic, closed, acidic. Now C# above A — harmonic, open. Alternate A+C → A+C# → A+C → A+C#, 8 times. Eyes closed. Predict the quality before each.</p>
+    <p style="margin-bottom:0;font-size:11.5px;color:#1e3a8a;">Extend to full chords: Am vs. A major, 8 alternations. Not "Am = sad" — "Am = non-harmonic third."</p>
+  </div>
+
+  <div class="exercise" style="background:#eff6ff;border-color:#3b82f6;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title mel-text">Two-Hand Independence — LH Pulse + RH Chords</span>
+      <span class="exercise-time" style="background:#dbeafe;color:#1e3a8a;">4 min</span>
+      <span class="stage-badge s2">S2</span>
+    </div>
+    <p style="margin-bottom:0;">LH plays A in steady quarter notes, 65 BPM. RH plays Am chord on beats 1 and 3. LH pulse must not break when RH changes rhythm. Then RH on every beat. Then RH on 2 and 4 only. The LH is the metronome — RH must not pull it off the pulse.</p>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 · Week 1</span><span>Piano Practice — Sections 1–2</span></div>
+</div>
+
+<!-- ═══════ PIANO — PAGE B (Sections 4–5) ═══════ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+    <div class="week-tag" style="background:#004d40;color:#fff;">Week 1</div>
+    <div class="week-tag" style="background:#9a3412;color:#fff;">Piano · continued</div>
+    <div class="cont-tag">Sections 3–5</div>
+  </div>
+  <div class="inst-header">
+    <div class="inst-icon" style="background:#fef3c7;">🎹</div>
+    <div><div class="inst-name">Piano Practice</div><div class="inst-meta">Song Work · Rhythm Chamber · The Synthesizer</div></div>
+  </div>
+  <div class="rainbow"></div>
+
+  <!-- SECTION 3 -->
+  <div class="section-bar har-bg" style="border-left:4px solid #d97706;">
+    <div class="num" style="background:#78350f;">3</div>
+    <div><div class="label">Section 3</div><div class="title har-text">Song Learning / Practice</div></div>
+    <div class="time">14 min</div>
+  </div>
+
+  <div class="exercise" style="background:#fffbeb;border-color:#d97706;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title har-text">Ain't No Sunshine — Piano, Week 1</span>
+      <span class="exercise-time" style="background:#fef3c7;color:#78350f;">14 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:5px;"><strong>Step 1 (5 min):</strong> Map the chord progression. LH = single bass notes below middle C (A·E·G·A). RH = Am–Em–G–Am root position. Get positions comfortable. 60 BPM.</p>
+    <p style="margin-bottom:4px;"><strong>Step 2 (5 min):</strong> Apply inversions for voice economy. No RH jump larger than a 3rd. Am (A-C-E) → Em 1st inv (G-B-E, E common tone) → G (G-B-D, B stays) → Am.</p>
+    <p style="margin-bottom:0;"><strong>Step 3 (4 min):</strong> Add LH bass notes on roots (A·E·G·A). RH smooth chords. 70 BPM. Keep going — don't stop.</p>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section-bar rhy-bg" style="border-left:4px solid #ea580c;margin-top:7px;">
+    <div class="num" style="background:#9a3412;">4</div>
+    <div><div class="label">Section 4</div><div class="title rhy-text">Jamming / Free Play</div></div>
+    <div class="time">10 min</div>
+  </div>
+
+  <div class="exercise" style="background:#fff8f5;border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title rhy-text">Rhythm Code Groove Drill — Piano + Ain't No Sunshine</span>
+      <span class="exercise-time" style="background:#fde8d8;color:#9a3412;">5 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:4px;">LH holds Am drone. RH taps "Ain't no sunshine when she's gone" on the keyboard lid — just tapping, not playing notes.</p>
+    <p style="margin-bottom:4px;"><strong>Step 1:</strong> Speak Longy syllables while tapping. Identify grid positions.</p>
+    <p style="margin-bottom:4px;"><strong>Step 2:</strong> Find the Stop — where does "gone" land? Feel the phrase settle there.</p>
+    <p style="margin-bottom:0;"><strong>Step 3:</strong> Play the rhythm on a single note (A) while LH holds Am. Try starting "when she's" one eighth early — does the phrase feel more alive?</p>
+  </div>
+
+  <div class="exercise" style="background:#fff8f5;border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title rhy-text">Chord Tone Improv + Free Play</span>
+      <span class="exercise-time" style="background:#fde8d8;color:#9a3412;">5 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:5px;"><strong>3 min:</strong> LH holds Am. RH improvises using only A, C, E (Zone 1). Rule: sing every note before RH plays it. Audiation first, fingers second.</p>
+    <p style="margin-bottom:0;"><strong>2 min:</strong> Free play. No rules. Explore.</p>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section-bar syn-bg" style="border-left:4px solid #8b5cf6;margin-top:7px;">
+    <div class="num" style="background:#4b2d8c;">5</div>
+    <div><div class="label">Section 5</div><div class="title syn-text">The Synthesizer</div></div>
+    <div class="time">8 min</div>
+  </div>
+
+  <div class="exercise" style="background:#f5f0ff;border-color:#8b5cf6;">
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+      <span class="exercise-title syn-text">All Systems — Zone 1 Arpeggio + Two Hands</span>
+      <span class="exercise-time" style="background:#f0e6ff;color:#4b2d8c;">8 min</span>
+      <span class="stage-badge s1">S1</span>
+    </div>
+    <p style="margin-bottom:8px;">Same concept as guitar — but the piano lets both hands work simultaneously, making each system immediately audible.</p>
+    <div style="background:#f0e6ff;border-radius:8px;padding:9px 12px;margin-bottom:8px;">
+      <p style="font-size:12px;font-weight:700;color:#4b2d8c;margin-bottom:8px;">The Exercise: LH holds Am chord (root position, sustained). RH arpeggates Zone 1 notes (A · C · E) — one note per beat — engaging all four chambers:</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px;">
+        <div style="background:#e0f2f1;padding:8px 10px;border-radius:6px;"><strong style="color:#004d40;">Musical OS:</strong> Name each di-chord aloud as RH plays. A=[0] (unison), C=[3] (minor/closed), E=[7] (open).</div>
+        <div style="background:#dbeafe;padding:8px 10px;border-radius:6px;"><strong style="color:#1e3a8a;">Melody:</strong> All Zone 1. Feel pure stability — you are playing the notes of least tension against the chord.</div>
+        <div style="background:#fef3c7;padding:8px 10px;border-radius:6px;"><strong style="color:#78350f;">Harmony:</strong> RH spells the Am chord melodically while LH holds it harmonically. Same content, two simultaneous voices.</div>
+        <div style="background:#fde8d8;padding:8px 10px;border-radius:6px;"><strong style="color:#9a3412;">Rhythm:</strong> Pass 1 = ta·ta·ta. Pass 2 = ta-te·ta-te·ta (eighths on A+C, quarter on E). Pass 3 = try a dotted feel.</div>
+      </div>
+    </div>
+    <p style="margin-bottom:0;font-size:12px;color:#4b2d8c;"><strong>The insight:</strong> LH gives you the harmonic anchor while RH explores the rhythmic surface. Same three notes, completely different character — that's the Synthesizer at work.</p>
+  </div>
+
+  <div style="margin-top:8px;padding:7px 12px;background:#f8fafc;border-radius:8px;border-left:3px solid #94a3b8;">
+    <p style="font-size:11.5px;color:#64748b;margin-bottom:0;"><strong style="color:#1e293b;">Piano session complete — 60 min.</strong> Before closing the lid: name the di-chord quality of the C you played against A today. Play it once more. Feel open or closed?</p>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 · Week 1</span><span>Piano Practice — Sections 4–5</span></div>
+</div>
+
+<!-- ═══════ WORKBOOK — PAGE A ═══════ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <div class="week-tag" style="background:#4b2d8c;color:#fff;">Week 1 Workbook</div>
+    <h2 style="font-size:18px;margin:0;">Practice Log + Reflection</h2>
+  </div>
+  <div class="rainbow"></div>
+
+  <div class="workbook-page">
+    <h3 style="margin-top:0;color:#4b2d8c;">My Goals for Week 1</h3>
+    <div style="font-size:12px;color:#64748b;margin-bottom:5px;">My guitar focus this week:</div>
+    <div class="write-line"></div>
+    <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">My piano focus this week:</div>
+    <div class="write-line"></div>
+    <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">The Plogger concept I want to really understand this week:</div>
+    <div class="write-line"></div>
+    <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">The rhythm pattern I want to nail this week (Longy name):</div>
+    <div class="write-line"></div>
+  </div>
+
+  <div class="workbook-page">
+    <h3 style="margin-top:0;color:#4b2d8c;">Daily Practice Log — Week 1</h3>
+    <p style="font-size:11px;color:#64748b;margin-bottom:8px;">Fill in each day after you practice. Even 5 words is enough. G = guitar, P = piano.</p>
+    <div class="log-row">
+      <div class="log-header">Date</div>
+      <div class="log-header">Time G / P</div>
+      <div class="log-header">One thing I noticed or discovered</div>
+      <div class="log-header">Stage I'm in</div>
+    </div>
+    <div class="log-row"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="log-row"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="log-row"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="log-row"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="log-row"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="log-row"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="log-row"><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+  </div>
+
+  <div class="workbook-page">
+    <h3 style="margin-top:0;color:#9a3412;">Rhythm Log — Longy + Rhythm Code</h3>
+    <p style="font-size:11px;color:#64748b;margin-bottom:8px;">Track which patterns you worked on. Circle your stage for each.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:12px;">
+      <div>
+        <div style="font-weight:700;margin-bottom:4px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#64748b;">Pattern</div>
+        <div style="padding:5px 0;border-bottom:1px solid #f1f5f9;">ta · ta · ta · ta</div>
+        <div style="padding:5px 0;border-bottom:1px solid #f1f5f9;">ta-te · ta-te · ta-te · ta-te</div>
+        <div style="padding:5px 0;border-bottom:1px solid #f1f5f9;">ta · ta-te · ta · ta-te</div>
+        <div style="padding:5px 0;">Ain't No Sunshine vocal rhythm</div>
+      </div>
+      <div>
+        <div style="font-weight:700;margin-bottom:4px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#64748b;">Stage this week</div>
+        <div style="padding:5px 0;border-bottom:1px solid #f1f5f9;">S1 &nbsp;&nbsp; S2 &nbsp;&nbsp; S3</div>
+        <div style="padding:5px 0;border-bottom:1px solid #f1f5f9;">S1 &nbsp;&nbsp; S2 &nbsp;&nbsp; S3</div>
+        <div style="padding:5px 0;border-bottom:1px solid #f1f5f9;">S1 &nbsp;&nbsp; S2 &nbsp;&nbsp; S3</div>
+        <div style="padding:5px 0;">S1 &nbsp;&nbsp; S2 &nbsp;&nbsp; S3</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 · Week 1</span><span>Workbook — Page A</span></div>
+</div>
+
+<!-- ═══════ WORKBOOK — PAGE B ═══════ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <div class="week-tag" style="background:#4b2d8c;color:#fff;">Week 1 Workbook</div>
+    <h2 style="font-size:18px;margin:0;">Song Log + Weekly Reflection</h2>
+  </div>
+  <div class="rainbow"></div>
+
+  <div class="workbook-page">
+    <h3 style="margin-top:0;color:#78350f;">Ain't No Sunshine — Song Work Log</h3>
+    <div class="two-col" style="gap:12px;">
+      <div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;">What I can play this week (guitar):</div>
+        <div class="write-line"></div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">Chord change still rough (guitar):</div>
+        <div class="write-line"></div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;">What I can play this week (piano):</div>
+        <div class="write-line"></div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">Chord change still rough (piano):</div>
+        <div class="write-line"></div>
+      </div>
+    </div>
+    <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">What I hear in the song now that I didn't before:</div>
+    <div class="write-box" style="height:44px;"></div>
+    <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">Where I found the Stop in "gone" (grid position: ___) and what it felt like to land there:</div>
+    <div class="write-line"></div>
+  </div>
+
+  <div class="workbook-page">
+    <h3 style="margin-top:0;color:#4b2d8c;">Weekly Reflection — End of Week 1</h3>
+    <div class="two-col" style="gap:14px;">
+      <div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;">What clicked this week?</div>
+        <div class="write-box"></div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">What am I still in Stage 1 on?</div>
+        <div class="write-box"></div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;">What's moving toward Stage 3?</div>
+        <div class="write-box"></div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">One moment this week when the music felt natural:</div>
+        <div class="write-box"></div>
+      </div>
+    </div>
+    <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:7px;">My error pattern this week (circle one):</div>
+    <div style="display:flex;gap:8px;margin-top:4px;">
+      <div style="border:2px solid #e2e8f0;border-radius:8px;padding:7px 12px;font-size:12px;text-align:center;flex:1;"><strong>Reaction</strong><br/><span style="color:#64748b;font-size:11px;">Going too fast</span></div>
+      <div style="border:2px solid #e2e8f0;border-radius:8px;padding:7px 12px;font-size:12px;text-align:center;flex:1;"><strong>Anticipation</strong><br/><span style="color:#64748b;font-size:11px;">Thinking ahead</span></div>
+      <div style="border:2px solid #e2e8f0;border-radius:8px;padding:7px 12px;font-size:12px;text-align:center;flex:1;"><strong>Looking Back</strong><br/><span style="color:#64748b;font-size:11px;">Dwelling on errors</span></div>
+      <div style="border:2px solid #e2e8f0;border-radius:8px;padding:7px 12px;font-size:12px;text-align:center;flex:1;"><strong>Mix of all three</strong><br/><span style="color:#64748b;font-size:11px;">(common in Week 1)</span></div>
+    </div>
+  </div>
+
+  <div class="workbook-page syn-bg" style="border-color:#8b5cf6;">
+    <h3 style="margin-top:0;color:#4b2d8c;">Synthesizer Check — Section 5 Reflection</h3>
+    <div class="two-col" style="gap:12px;margin-top:8px;">
+      <div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;">Did the Zone 1 arpeggio feel different from playing scales? How?</div>
+        <div class="write-box" style="background:#fff;height:44px;"></div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;">One word for the [3] interval (C over A) you heard:</div>
+        <div class="write-line" style="background:#fff;margin-top:14px;"></div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:7px;">Which rhythm pass changed the feel most?</div>
+        <div class="write-line" style="background:#fff;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1 · Week 1</span><span>Workbook — Page B</span></div>
+</div>
+
+<!-- ═══════ WEEKS 2–4 — PAGE A ═══════ -->
+<div class="page">
+  <h1 style="font-size:22px;margin-bottom:6px;">Weeks 2–4 — Concept Progression</h1>
+  <p style="color:#64748b;font-size:12px;margin-bottom:12px;">Each week follows the same 5-section structure. The Plogger exercises and chamber concepts advance. The anchor song deepens.</p>
+  <div class="rainbow"></div>
+
+  <div style="border:2px solid #e2e8f0;border-radius:10px;padding:14px 18px;margin-bottom:14px;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+      <div class="week-tag" style="background:#004d40;color:#fff;">Week 2</div>
+      <h3 style="margin:0;font-size:14px;">Keyboard Mastery · Three Causes · Zone 1 Fluency</h3>
+    </div>
+    <div class="two-col" style="gap:12px;">
+      <div class="os-bg" style="padding:10px 12px;border-radius:8px;">
+        <h4 style="color:#004d40;margin-top:0;">Plogger (Section 1)</h4>
+        <p style="font-size:12px;margin-bottom:4px;"><strong>Ch.2 — Three Causes:</strong> Diagnose your own errors by cause before fixing them. Write one example of each cause from Week 1.</p>
+        <p style="font-size:12px;margin-bottom:4px;"><strong>Ch.3 Complete:</strong> All 12 note names by landmark. Eyes-closed drills. Target: name any note in &lt;2 seconds.</p>
+        <p style="font-size:12px;margin-bottom:0;"><strong>Longy + Rhythm Code:</strong> All Week 1 patterns plus dotted quarter+eighth (ta---te). Map the full Ain't No Sunshine verse rhythm to the grid.</p>
+      </div>
+      <div>
+        <div class="mel-bg" style="padding:10px 12px;border-radius:8px;margin-bottom:8px;">
+          <h4 style="color:#1e3a8a;margin-top:0;">Melody (Section 2)</h4>
+          <p style="font-size:12px;margin-bottom:0;"><strong>Zone 1 fluency:</strong> Over Am drone, play only A/C/E. Sing before each note. Find them in 2+ positions on both instruments. Target: immediate location.</p>
+        </div>
+        <div class="har-bg" style="padding:10px 12px;border-radius:8px;margin-bottom:8px;">
+          <h4 style="color:#78350f;margin-top:0;">Harmony (Sections 2–3)</h4>
+          <p style="font-size:12px;margin-bottom:0;"><strong>Am progression at 90 BPM:</strong> No gaps. Guitar: Travis picking intro (thumb alternating + first treble note). Piano: Shell voicing Am with simple LH bass (A quarter notes).</p>
+        </div>
+        <div class="syn-bg" style="padding:10px 12px;border-radius:8px;">
+          <h4 style="color:#4b2d8c;margin-top:0;">Synthesizer (Section 5)</h4>
+          <p style="font-size:12px;margin-bottom:0;"><strong>Rhythm variation:</strong> Add ta-te on A-C, then quarter on E. Can you hear when [3] feels "brighter" at a faster rhythmic position vs. sitting on a slow beat?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border:2px solid #e2e8f0;border-radius:10px;padding:14px 18px;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+      <div class="week-tag" style="background:#9a3412;color:#fff;">Week 3</div>
+      <h3 style="margin:0;font-size:14px;">Longy Rhythms Deep · Zones 1–3 · Chord Changes at Tempo</h3>
+    </div>
+    <div class="two-col" style="gap:12px;">
+      <div class="os-bg" style="padding:10px 12px;border-radius:8px;">
+        <h4 style="color:#004d40;margin-top:0;">Plogger (Section 1)</h4>
+        <p style="font-size:12px;margin-bottom:4px;"><strong>Ch.4 Longy deep:</strong> All Week 1 patterns plus dotted quarter+eighth, eighth+dotted quarter (ta te---), syncopated off-beat eighths. Apply all to Ain't No Sunshine.</p>
+        <p style="font-size:12px;margin-bottom:0;"><strong>Ch.3 consolidation:</strong> Eyes-closed — all 12 chromatic notes. No hesitation on C#/Db, F#/Gb.</p>
+      </div>
+      <div>
+        <div class="mel-bg" style="padding:10px 12px;border-radius:8px;margin-bottom:8px;">
+          <h4 style="color:#1e3a8a;margin-top:0;">Melody — Zones 1–3</h4>
+          <p style="font-size:12px;margin-bottom:0;"><strong>Zone 2 (B, G over Am):</strong> Reaching but not tense. <strong>Zone 3 (D over Am):</strong> Strong pull to resolve. Tiny Tension Arc: A–A–B–A (Z1–Z1–Z2–Z1). Sing it. Then play it.</p>
+        </div>
+        <div class="har-bg" style="padding:10px 12px;border-radius:8px;margin-bottom:8px;">
+          <h4 style="color:#78350f;margin-top:0;">Harmony — Full Song Form</h4>
+          <p style="font-size:12px;margin-bottom:0;"><strong>"I know" section:</strong> Pure Am vamp — 26 repetitions. Play as a groove: Am repeating with rhythmic LH pattern (piano) / Travis picking (guitar). Groove through repetition.</p>
+        </div>
+        <div class="rhy-bg" style="padding:10px 12px;border-radius:8px;">
+          <h4 style="color:#9a3412;margin-top:0;">Rhythm Code (Section 4)</h4>
+          <p style="font-size:12px;margin-bottom:0;"><strong>Strong vs. Medium positions:</strong> Positions 1,3,5,7 = strong beats. 2,4,6,8 = "and" positions. Which positions does the "I know" vocal pattern use? Mark them on a blank grid.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:7px;padding:10px 12px;background:#f5f0ff;border-radius:8px;border-left:3px solid #8b5cf6;">
+      <h4 style="color:#4b2d8c;margin-top:0;">Synthesizer (Section 5) — Week 3</h4>
+      <p style="font-size:12px;margin-bottom:0;">Build the Tiny Tension Arc as a multi-chamber event: Zone 1 notes + Am harmonic context + a specific Longy rhythm pattern (ta-te·ta·ta-te·ta). Four chambers, one phrase. Sing it first, then play it.</p>
+    </div>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1</span><span>Weeks 2–4 — Page A</span></div>
+</div>
+
+<!-- ═══════ WEEKS 2–4 — PAGE B ═══════ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <div class="week-tag" style="background:#004d40;color:#fff;">Week 4</div>
+    <h1 style="font-size:22px;margin-bottom:0;">Integration Week · Full Song · Sprint Exit</h1>
+  </div>
+  <div class="rainbow"></div>
+
+  <div class="os-bg" style="padding:14px 18px;border-radius:10px;margin-bottom:14px;">
+    <h3 style="color:#004d40;margin-top:0;font-size:14px;">Week 4 Mission: Put It All Together</h3>
+    <p style="font-size:12px;margin-bottom:0;">No new concepts this week — deepen what you have. By end of Week 4 you should be able to: play through Ain't No Sunshine completely on both instruments, apply Longy syllables to its main rhythmic patterns, identify the Am minor quality by ear instantly, improvise a simple phrase using Zone 1–2 notes over the Am vamp, and complete the Synthesizer Section 5 with all four chambers simultaneously.</p>
+  </div>
+
+  <div class="two-col" style="gap:12px;margin-bottom:10px;">
+    <div style="border:1px solid #e2e8f0;border-radius:10px;padding:14px 16px;">
+      <h3 style="color:#004d40;margin-top:0;font-size:13px;">🎸 Guitar Week 4 Focus</h3>
+      <ul style="margin-left:16px;font-size:12px;margin-bottom:10px;">
+        <li>Travis picking clean at 80 BPM over 4-chord loop</li>
+        <li>Full song form with alternating bass — no stopping</li>
+        <li>Record yourself once. Listen back.</li>
+        <li>Section 5: Zone 1 arpeggio over full Am–Em–G–Am with rhythm variations</li>
+      </ul>
+      <div style="background:#e0f2f1;padding:8px 10px;border-radius:6px;font-size:11.5px;color:#004d40;"><strong>Synthesizer Challenge:</strong> Play Zone 1 arpeggio (A·C·E) over the full progression. Notice: C is [3] over Am but becomes [8] over Em. Hear the di-chord shift as the bass changes.</div>
+    </div>
+    <div style="border:1px solid #e2e8f0;border-radius:10px;padding:14px 16px;">
+      <h3 style="color:#1e3a8a;margin-top:0;font-size:13px;">🎹 Piano Week 4 Focus</h3>
+      <ul style="margin-left:16px;font-size:12px;margin-bottom:10px;">
+        <li>Conjunct Am heptachord: ascending + descending without looking</li>
+        <li>Full verse progression LH+RH at 80 BPM, inversions throughout</li>
+        <li>Chord tone improv RH over LH chords</li>
+        <li>"I know" section as groove for 2 full minutes</li>
+      </ul>
+      <div style="background:#dbeafe;padding:8px 10px;border-radius:6px;font-size:11.5px;color:#1e3a8a;"><strong>Synthesizer Challenge:</strong> LH holds each chord of the progression while RH plays Zone 1 arpeggio. Notice how the di-chord relationships change with the bass.</div>
+    </div>
+  </div>
+
+  <div style="border:2px solid #e2e8f0;border-radius:10px;padding:14px 18px;margin-bottom:14px;">
+    <h3 style="margin-top:0;font-size:14px;">Week 4 Jam Prompt — Full Integration</h3>
+    <p style="font-size:12px;margin-bottom:0;">Improvise over Am–Em–G–Am for 5 minutes with no planning. When you land on a note, name its zone. When you play a chord, name one di-chord interval in it. When you feel a groove, identify the grid position of the first note. You are not stopping to analyze — you are practicing awareness in motion. This is what The Synthesizer becomes at Stage 3.</p>
+  </div>
+
+  <div style="border:2px solid #8b5cf6;border-radius:10px;padding:14px 18px;margin-bottom:14px;background:#f5f0ff;">
+    <h3 style="margin-top:0;color:#4b2d8c;font-size:14px;">Week 4 Synthesizer — Full Circuit</h3>
+    <p style="font-size:12px;margin-bottom:0;"><strong>Guitar:</strong> Travis picking and Zone 1 melodic improvisation simultaneously — picking hand delivers the Rhythm Code groove while fretting hand thinks in zones. &nbsp;|&nbsp; <strong>Piano:</strong> LH bass in Rhythm Code positions + RH chord tone melody in zones. Name one di-chord interval each time you change bass notes.</p>
+  </div>
+
+  <div style="padding:14px 18px;background:#0f172a;border-radius:10px;">
+    <p style="color:#94a3b8;font-size:12px;margin-bottom:0;"><strong style="color:#fff;">Sprint 2 Preview:</strong> Autumn Leaves (Eb / G minor). Plogger Ch.3 complete + Ch.4 Longy full. New chamber concepts: I-IV-V-I and I-V-vi-IV. Lap Map introduction begins.</p>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1</span><span>Weeks 2–4 — Page B</span></div>
+</div>
+
+<!-- ═══════ EXIT ASSESSMENT ═══════ -->
+<div class="page">
+  <h1 style="font-size:22px;margin-bottom:6px;">Sprint 1 — Exit Assessment</h1>
+  <p style="color:#64748b;font-size:12px;margin-bottom:12px;">Complete at the end of Week 4. Be honest — this is for you, not for anyone else.</p>
+  <div class="rainbow"></div>
+
+  <div class="two-col" style="gap:16px;margin-bottom:14px;">
+    <div>
+      <div class="os-bg" style="padding:12px 14px;border-radius:10px;margin-bottom:12px;">
+        <h3 style="color:#004d40;margin-top:0;font-size:13px;">Musical OS Checklist</h3>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I can explain the Three Stages in my own words and identify which stage I'm in</div></div>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I can identify which of the Three Causes produced a specific error this week</div></div>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I can name all 7 natural notes using keyboard landmarks without hesitation</div></div>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I can locate any natural note on the piano keyboard with eyes closed</div></div>
+        <div class="checkbox-item" style="border:0;"><div class="cb"></div><div style="font-size:12px;">I can speak Longy rhythm syllables at 70 BPM without losing pulse</div></div>
+      </div>
+      <div class="mel-bg" style="padding:12px 14px;border-radius:10px;margin-bottom:12px;">
+        <h3 style="color:#1e3a8a;margin-top:0;font-size:13px;">Melody Checklist</h3>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I can hear major vs. minor quality instantly — I feel the open vs. closed difference</div></div>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I know Zone 1 notes in A minor (A, C, E) and can find them on both instruments</div></div>
+        <div class="checkbox-item" style="border:0;"><div class="cb"></div><div style="font-size:12px;">I can improvise over Am vamp using Zone 1 notes, singing before I play</div></div>
+      </div>
+      <div class="rhy-bg" style="padding:12px 14px;border-radius:10px;">
+        <h3 style="color:#9a3412;margin-top:0;font-size:13px;">Rhythm Checklist</h3>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I can speak ta / ta-te / ta-fe-te-fe at 70 BPM without losing pulse</div></div>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I can identify the Stop in Ain't No Sunshine by ear</div></div>
+        <div class="checkbox-item" style="border:0;"><div class="cb"></div><div style="font-size:12px;">I can find grid positions 1–8 for a simple rhythm and know beats vs. "ands"</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="har-bg" style="padding:12px 14px;border-radius:10px;margin-bottom:12px;">
+        <h3 style="color:#78350f;margin-top:0;font-size:13px;">Harmony Checklist</h3>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I know the chord progression of Ain't No Sunshine and can play it on both instruments</div></div>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I understand why E7 creates tension and Am creates resolution</div></div>
+        <div class="checkbox-item" style="border:0;"><div class="cb"></div><div style="font-size:12px;">I can hear the difference between minor chords (Am, Em) and major chord (G)</div></div>
+      </div>
+      <div style="padding:12px 14px;border-radius:10px;border:2px solid #0f172a;margin-bottom:12px;">
+        <h3 style="margin-top:0;font-size:13px;">Performance Ready?</h3>
+        <p style="font-size:11.5px;color:#475569;margin-bottom:8px;">Can you play Ain't No Sunshine all the way through, from memory, without stopping?</p>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;"><strong>Guitar</strong> — alternating bass or Travis-style fingerpicking</div></div>
+        <div class="checkbox-item" style="border:0;"><div class="cb"></div><div style="font-size:12px;"><strong>Piano</strong> — LH bass notes + RH chord voicings with inversions</div></div>
+      </div>
+      <div class="syn-bg" style="padding:12px 14px;border-radius:10px;border:2px solid #8b5cf6;">
+        <h3 style="color:#4b2d8c;margin-top:0;font-size:13px;">Synthesizer Checklist</h3>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I completed the Zone 1 arpeggio exercise using all four chambers simultaneously at least once</div></div>
+        <div class="checkbox-item"><div class="cb"></div><div style="font-size:12px;">I can describe what [3] sounds like acoustically (non-harmonic, closed, acidic)</div></div>
+        <div class="checkbox-item" style="border:0;"><div class="cb"></div><div style="font-size:12px;">I noticed how A · C · E feel different when the rhythm changes beneath them</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="workbook-page">
+    <h3 style="margin-top:0;color:#4b2d8c;">Sprint 1 Final Reflection</h3>
+    <div class="two-col" style="gap:14px;">
+      <div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;">The biggest thing I learned this month:</div>
+        <div class="write-box" style="height:44px;"></div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">What surprised me most:</div>
+        <div class="write-box" style="height:44px;"></div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;">My focus for Sprint 2:</div>
+        <div class="write-box" style="height:44px;"></div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:5px;margin-top:8px;">One moment this month when I felt like a musician:</div>
+        <div class="write-box" style="height:44px;"></div>
+      </div>
+    </div>
+    <div style="margin-top:8px;padding:7px 12px;background:#0f172a;border-radius:8px;">
+      <p style="color:#94a3b8;font-size:11.5px;margin-bottom:0;"><strong style="color:#fff;">Sprint 2 Preview:</strong> Autumn Leaves (Eb / G minor). Plogger Ch.3 complete + Ch.4 Longy full. New chamber concepts: I-IV-V-I and I-V-vi-IV. Lap Map introduction begins.</p>
+    </div>
+  </div>
+
+  <div class="page-footer"><span>AMF · Sprint 1</span><span>Exit Assessment</span></div>
+</div>
+
+</body>
+</html>

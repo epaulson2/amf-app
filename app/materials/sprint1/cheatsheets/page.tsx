@@ -1,5 +1,7 @@
 'use client'
 
+import DiChordPictograph from '@/app/DiChordPictograph'
+
 const BC = ({ children }: { children: React.ReactNode }) => (
   <code className="font-mono text-sm px-1.5 py-0.5 rounded bg-slate-100 text-slate-800">{children}</code>
 )
@@ -98,6 +100,7 @@ export default function Sprint1CheatsheetsPage() {
                 <li><strong>Pulsation:</strong> 4 Hz (modal — smooth, flowing)</li>
                 <li><strong>F/O Factor:</strong> Refers down (shadow left)</li>
                 <li><strong>Harmonicity:</strong> Non-harmonic (dark, closed)</li>
+                <li><strong>Pull character:</strong> Steady weight — notes attract across the non-harmonic gap, dense and inward.</li>
                 <li><strong>Feel:</strong> Warm but shadowed. Notes attract. Minor chords sound minor because of <BC>[3]</BC> between root and third.</li>
                 <li><strong>At the piano:</strong> A + C (3 semitones)</li>
               </ul>
@@ -108,13 +111,14 @@ export default function Sprint1CheatsheetsPage() {
                 <li><strong>Pulsation:</strong> 4 Hz (modal — same as [3])</li>
                 <li><strong>F/O Factor:</strong> Refers down (shadow left — same)</li>
                 <li><strong>Harmonicity:</strong> Harmonic (light, open)</li>
+                <li><strong>Pull character:</strong> Deep gravity — harmonic kinship gives the pull acoustic belonging, not just attraction.</li>
                 <li><strong>Feel:</strong> Bright and warm. Notes push apart. Major chords sound major because of <BC>[4]</BC> between root and third.</li>
                 <li><strong>At the piano:</strong> A + C# (4 semitones)</li>
               </ul>
             </div>
           </div>
           <div className="p-4 rounded-lg bg-slate-50 border border-slate-200 text-sm text-slate-700">
-            <strong>The only difference:</strong> <BC>[3]</BC> and <BC>[4]</BC> are twins in two of three properties (same pulsation, same shadow direction). The only difference is harmonicity — closed vs. open, dark vs. light. Learn to hear this one distinction and you can tell major from minor by ear, instantly, forever.
+            <strong>The only difference:</strong> <BC>[3]</BC> and <BC>[4]</BC> are twins in two of three properties (same pulsation, same shadow direction). The only difference is harmonicity — closed vs. open, dark vs. light. This one difference also changes the pull character: <BC>[3]</BC> is <em>steady weight</em> (attraction across a non-harmonic gap), <BC>[4]</BC> is <em>deep gravity</em> (acoustic kinship, belonging). Learn to hear both the color and the pull texture — together they give you major vs. minor by ear, instantly, forever.
           </div>
           <div className="mt-6">
             <Asset file="R1_focus_card_3_4.html" title="R1 — [3]/[4] Focus Card" height={380} />
@@ -128,18 +132,29 @@ export default function Sprint1CheatsheetsPage() {
               <p className="text-sm font-black text-red-900 mb-1">1. Pulsation</p>
               <p className="text-xs text-red-800">The beating/flickering when two notes sound together. Fast = tense. Slow = stable.</p>
               <div className="mt-2 space-y-1 text-xs">
-                <p><span className="font-bold" style={{ color: '#922B21' }}>8 Hz (Dissonant):</span> [1] [2] [6] [10] [11]</p>
+                <p><span className="font-bold" style={{ color: '#922B21' }}>8 Hz (Dissonant):</span> [1] [2] [10] [11]</p>
                 <p><span className="font-bold" style={{ color: '#5B2C6F' }}>4 Hz (Modal):</span> [3] [4] [8] [9]</p>
-                <p><span className="font-bold" style={{ color: '#1E8449' }}>2 Hz (Perfect):</span> [5] [7]</p>
+                <p><span className="font-bold" style={{ color: '#1E8449' }}>2 Hz (Perfect):</span> [5] [6] [7]</p>
               </div>
             </div>
             <div className="p-4 rounded-lg bg-blue-50 border border-blue-200">
               <p className="text-sm font-black text-blue-900 mb-1">2. F/O Factor (Shadow)</p>
-              <p className="text-xs text-blue-800">Direction the interval &ldquo;refers&rdquo; — toward the fundamental or toward the octave.</p>
-              <div className="mt-2 space-y-1 text-xs">
+              <p className="text-xs text-blue-800">Direction the interval &ldquo;refers&rdquo; — toward the fundamental or toward the octave. Pull intensity varies within each group by urgency + bond strength.</p>
+              <div className="mt-2 space-y-1.5 text-xs">
                 <p><strong>Refers DOWN ↓:</strong> [1]–[5]</p>
-                <p><strong>Refers BOTH ↕:</strong> [6]</p>
+                <div className="pl-2 text-[10px] text-blue-700 space-y-0.5">
+                  <p>[1] acute urgency &nbsp;·&nbsp; [2] urgent + rooted</p>
+                  <p>[3] steady weight &nbsp;·&nbsp; [4] deep gravity</p>
+                  <p>[5] calm suspension</p>
+                </div>
+                <p><strong>Refers BOTH ↕:</strong> [6] — no direction</p>
                 <p><strong>Refers UP ↑:</strong> [7]–[11]</p>
+                <div className="pl-2 text-[10px] text-blue-700 space-y-0.5">
+                  <p>[7] deep stillness &nbsp;·&nbsp; [8] upward weight</p>
+                  <p>[9] warm drift &nbsp;·&nbsp; [10] urgent + upward</p>
+                  <p>[11] acute pressure</p>
+                </div>
+                <p className="text-[10px] text-blue-600 pt-1 border-t border-blue-200">Pull = urgency (wave shape) + bond strength (color)</p>
               </div>
             </div>
             <div className="p-4 rounded-lg bg-green-50 border border-green-200">
@@ -152,7 +167,7 @@ export default function Sprint1CheatsheetsPage() {
               </div>
             </div>
           </div>
-          <Asset file="R4_sound_factors_reference.html" title="R4 — Di-Chord Sound Factors Reference" height={500} />
+          <div className="mt-4"><DiChordPictograph /></div>
           <div className="mt-6">
             <Asset file="R3_pulsation_diagram.html" title="R3 — Pulsation Wave Diagram" height={400} />
           </div>
@@ -161,7 +176,7 @@ export default function Sprint1CheatsheetsPage() {
         {/* Card 4: Pictograph */}
         <CheatCard title="The Di-Chord Pictograph" color="#0f172a">
           <p className="text-sm text-slate-600 mb-4">Each di-chord has a unique visual glyph encoding all three sound factors. <strong>Shape</strong> = pulsation class. <strong>Shadow direction</strong> = F/O factor. <strong>Fill color</strong> = harmonicity.</p>
-          <Asset file="R2_pictograph_reference.html" title="R2 — Full Pictograph Reference" height={600} />
+          <DiChordPictograph />
         </CheatCard>
 
         {/* Card 5: Hear → Sing → Name */}

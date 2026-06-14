@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMF Sprint 4 — Superstition (Eb Dorian) Daily Practice Plan + Workbook</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Helvetica Neue','Arial',sans-serif;background:#f0ede8;color:#1e293b;font-size:12px;line-height:1.35;}
+.page{width:794px;min-height:1123px;margin:24px auto;background:#fff;padding:30px 42px;box-shadow:0 4px 24px rgba(0,0,0,0.10);page-break-after:always;position:relative;}
+h1{font-size:24px;font-weight:900;line-height:1.2;letter-spacing:-0.02em;}
+h2{font-size:15px;font-weight:800;line-height:1.25;margin-bottom:4px;margin-top:10px;}
+h3{font-size:12px;font-weight:700;margin-bottom:3px;margin-top:8px;}
+h4{font-size:10px;font-weight:800;margin-bottom:2px;margin-top:6px;text-transform:uppercase;letter-spacing:.07em;}
+p{margin-bottom:4px;font-size:12px;}
+ul,ol{margin:0 0 4px 15px;}
+li{margin-bottom:1px;font-size:12px;}
+strong{font-weight:700;}
+em{font-style:italic;}
+.os-bg{background:#e0f2f1;} .os-text{color:#004d40;}
+.mel-bg{background:#dbeafe;} .mel-text{color:#1e3a8a;}
+.har-bg{background:#fef3c7;} .har-text{color:#78350f;}
+.rhy-bg{background:#fde8d8;} .rhy-text{color:#9a3412;}
+.voi-bg{background:#dcfce7;} .voi-text{color:#166534;}
+.syn-bg{background:#f0e6ff;} .syn-text{color:#4b2d8c;}
+.section-bar{display:flex;align-items:center;gap:8px;padding:5px 10px;border-radius:8px;margin-bottom:6px;}
+.section-bar .num{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;flex-shrink:0;}
+.section-bar .label{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.7;}
+.section-bar .title{font-size:12px;font-weight:800;}
+.section-bar .time{margin-left:auto;font-size:10px;font-weight:700;opacity:.6;white-space:nowrap;}
+.exercise{border-radius:8px;padding:7px 10px;margin:5px 0;border-left:4px solid;}
+.exercise-title{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;}
+.exercise-time{font-size:9px;font-weight:700;padding:2px 6px;border-radius:10px;display:inline-block;}
+.stage-badge{font-size:8.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 5px;border-radius:10px;display:inline-block;margin-left:3px;}
+.s1{background:#fff8e1;color:#b45309;} .s2{background:#fff0f0;color:#b91c1c;} .s3{background:#f0fdf4;color:#15803d;}
+.inst-header{display:flex;align-items:center;gap:8px;padding:7px 0 5px;}
+.inst-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.inst-name{font-size:15px;font-weight:900;}
+.inst-meta{font-size:9.5px;font-weight:600;color:#64748b;letter-spacing:.05em;text-transform:uppercase;}
+.workbook-page{background:#fafaf8;border:2px dashed #d1d5db;border-radius:10px;padding:12px 16px;margin:10px 0;}
+.write-line{border-bottom:1px solid #e2e8f0;margin:6px 0;height:22px;}
+.write-box{border:1px solid #e2e8f0;border-radius:6px;height:52px;margin:6px 0;background:#fff;}
+.checkbox-item{display:flex;align-items:flex-start;gap:8px;padding:2px 0;border-bottom:1px solid #f1f5f9;}
+.cb{width:16px;height:16px;border:2px solid #94a3b8;border-radius:3px;flex-shrink:0;margin-top:1px;}
+table{width:100%;border-collapse:collapse;margin:6px 0;font-size:11px;}
+th{padding:5px 8px;text-align:left;font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid #e2e8f0;background:#f8fafc;}
+td{padding:5px 8px;border-bottom:1px solid #f1f5f9;vertical-align:top;}
+.rainbow{height:3px;background:linear-gradient(90deg,#00796b 0%,#3b82f6 22%,#d97706 50%,#8b5cf6 78%,#ea580c 100%);border-radius:2px;margin:10px 0;}
+.sprint-meta{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#64748b;}
+.week-tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
+.cont-tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:800;background:#f1f5f9;color:#475569;letter-spacing:.06em;text-transform:uppercase;}
+.log-row{display:grid;grid-template-columns:76px 94px 1fr 74px;gap:8px;padding:5px 0;border-bottom:1px solid #f1f5f9;align-items:start;}
+.log-header{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#94a3b8;}
+.page-footer{position:absolute;bottom:14px;left:42px;right:42px;display:flex;justify-content:space-between;font-size:10px;color:#94a3b8;letter-spacing:.04em;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+@media print{body{background:white;}.page{box-shadow:none;margin:0;page-break-after:always;}}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 1 — COVER -->
+<div class="page">
+  <div class="sprint-meta" style="margin-bottom:8px;">AMF · ADAPTIVE MUSIC FRAMEWORK · SPRINT 4 OF 8</div>
+  <div class="rainbow"></div>
+  <h1 style="margin-top:10px;">Superstition<br><span style="font-size:18px;color:#64748b;">Eb Dorian · ~100 BPM · 4 Weeks</span></h1>
+  <p style="font-size:12px;color:#64748b;margin-top:4px;">Daily Practice Plan + Workbook — Guitar &amp; Piano</p>
+  <div class="rainbow" style="margin-top:10px;"></div>
+
+  <!-- Section overview boxes -->
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px;">
+    <div class="os-bg" style="border-radius:10px;padding:10px 8px;text-align:center;">
+      <div style="font-size:18px;font-weight:900;color:#004d40;">S1</div>
+      <div class="os-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;">Plogger</div>
+      <div style="font-size:20px;font-weight:900;color:#00796b;margin:4px 0;">10</div>
+      <div style="font-size:9px;color:#004d40;">min</div>
+    </div>
+    <div class="mel-bg" style="border-radius:10px;padding:10px 8px;text-align:center;">
+      <div style="font-size:18px;font-weight:900;color:#1e3a8a;">S2</div>
+      <div class="mel-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;">Integrated</div>
+      <div style="font-size:20px;font-weight:900;color:#2563eb;margin:4px 0;">18</div>
+      <div style="font-size:9px;color:#1e3a8a;">min</div>
+    </div>
+    <div style="background:#fde8d8;border-radius:10px;padding:10px 8px;text-align:center;">
+      <div style="font-size:18px;font-weight:900;color:#9a3412;">S3</div>
+      <div class="rhy-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;">Song Work</div>
+      <div style="font-size:20px;font-weight:900;color:#ea580c;margin:4px 0;">14</div>
+      <div style="font-size:9px;color:#9a3412;">min</div>
+    </div>
+    <div class="voi-bg" style="border-radius:10px;padding:10px 8px;text-align:center;">
+      <div style="font-size:18px;font-weight:900;color:#166534;">S4</div>
+      <div class="voi-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;">Jamming</div>
+      <div style="font-size:20px;font-weight:900;color:#16a34a;margin:4px 0;">10</div>
+      <div style="font-size:9px;color:#166534;">min</div>
+    </div>
+    <div class="syn-bg" style="border-radius:10px;padding:10px 8px;text-align:center;">
+      <div style="font-size:18px;font-weight:900;color:#4b2d8c;">S5</div>
+      <div class="syn-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;">Synthesizer</div>
+      <div style="font-size:20px;font-weight:900;color:#7c3aed;margin:4px 0;">8</div>
+      <div style="font-size:9px;color:#4b2d8c;">min</div>
+    </div>
+  </div>
+
+  <!-- Anchor song box -->
+  <div style="background:#1e293b;border-radius:12px;padding:14px 18px;margin-top:14px;display:flex;gap:18px;align-items:center;">
+    <div style="font-size:30px;">🎵</div>
+    <div>
+      <div style="font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#94a3b8;">Anchor Song — Sprint 4</div>
+      <div style="font-size:17px;font-weight:900;color:#fff;margin:2px 0;">Superstition — Stevie Wonder</div>
+      <div style="font-size:11px;color:#cbd5e1;margin-top:2px;">Eb Dorian (Eb–F–Gb–Ab–Bb–C–Db) · ~100 BPM · Modal vamp on Eb7 · Strong offbeat / clav-driven groove</div>
+    </div>
+  </div>
+
+  <!-- Chamber focus summary -->
+  <div class="two-col" style="margin-top:12px;">
+    <div style="background:#fef3c7;border-radius:10px;padding:10px 12px;">
+      <div class="har-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Primary — Harmony Chamber</div>
+      <p style="font-size:11px;color:#78350f;margin:0;">Progressions #1–#4 consolidated: I-IV-V-I, I-V-vi-IV, 12-Bar Blues, ii-V-I. All four internalized across sprints 2–4. ii-V-I = drill vehicle only.</p>
+    </div>
+    <div class="mel-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="mel-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Secondary — Melody Chamber</div>
+      <p style="font-size:11px;color:#1e3a8a;margin:0;">Duration Amplifies Zone — how note length shapes tension. Zone 3 (4̂) introduced in Dorian context. Hear before you play.</p>
+    </div>
+    <div class="voi-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="voi-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Voicings Chamber</div>
+      <p style="font-size:11px;color:#166534;margin:0;">Triad shapes by stringset (guitar) — all inversions on all 4 string sets. Beato pp. 93–100. Piano: triad arpeggios + shell voicings in 5 keys.</p>
+    </div>
+    <div class="rhy-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="rhy-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Rhythm Chamber</div>
+      <p style="font-size:11px;color:#9a3412;margin:0;">Son Clave 2-3 added to 3-2. Groove development 4-step: boring → anticipations → stops → clave sync. Superstition clav pattern as primary groove.</p>
+    </div>
+  </div>
+
+  <!-- Non-negotiables strip -->
+  <div style="background:#0f172a;border-radius:10px;padding:10px 16px;margin-top:12px;display:flex;gap:18px;align-items:center;">
+    <div style="font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#f59e0b;white-space:nowrap;">NON-NEG.</div>
+    <div style="font-size:10.5px;color:#e2e8f0;"><strong style="color:#86efac;">1.</strong> Sing before you play — every exercise, every day.</div>
+    <div style="font-size:10.5px;color:#e2e8f0;"><strong style="color:#86efac;">2.</strong> Anchor song appears in every section.</div>
+    <div style="font-size:10.5px;color:#e2e8f0;"><strong style="color:#86efac;">3.</strong> Slow is fast — never outpace your ears.</div>
+  </div>
+
+  <!-- Plogger chapters -->
+  <div class="os-bg" style="border-radius:10px;padding:10px 14px;margin-top:12px;">
+    <div class="os-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Plogger Foundation — Sprint 4</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+      <div><strong class="os-text" style="font-size:10px;">Ch.7:</strong> <span style="font-size:11px;">Interval Spelling at Keyboard — Pythagorean method, no formulas</span></div>
+      <div><strong class="os-text" style="font-size:10px;">Ch.8:</strong> <span style="font-size:11px;">Interval Spelling on Staff — all 8 clefs (treble, bass, S, MS, A, T, Bar, Perc)</span></div>
+      <div><strong class="os-text" style="font-size:10px;">Ch.9:</strong> <span style="font-size:11px;">Di-Chord Numbers intro — [1]–[7] named, associated with traditional interval names</span></div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Superstition · Eb Dorian</span>
+    <span>Page 1 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 2 — WEEK 1 LEARNING FOR THE DAY -->
+<div class="page">
+  <div class="sprint-meta">Week 1 — Learning for the Day</div>
+  <div class="rainbow"></div>
+  <h2 style="margin-top:8px;">Read this before you practice — Week 1 conceptual anchors</h2>
+  <p style="font-size:11px;color:#64748b;">These are the ideas your hands will be enacting. Read, hum, tap, then open your instrument.</p>
+
+  <div class="two-col" style="margin-top:10px;">
+
+    <!-- Plogger Ch.7 -->
+    <div class="os-bg" style="border-radius:10px;padding:12px 14px;">
+      <div class="os-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Plogger Ch.7 — Interval Spelling at Keyboard</div>
+      <p style="font-size:11px;color:#004d40;">The Pythagorean method: F–C–G–D–A–E–B is the natural ordering of the seven white notes by fifths. To name any interval, find both notes in this chain and count the steps between them. A "2nd" skips one letter; a "5th" skips four. <strong>No formulas. No memorisation of half-steps.</strong> You navigate the chain.</p>
+      <p style="font-size:11px;color:#004d40;">Superstition context: Eb–Bb is a 5th. Eb–Ab is a 4th. Every note in the Eb7 chord is a di-chord relationship you will spell this week.</p>
+    </div>
+
+    <!-- Plogger Ch.8 -->
+    <div class="os-bg" style="border-radius:10px;padding:12px 14px;">
+      <div class="os-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Plogger Ch.8 — All 8 Clefs</div>
+      <p style="font-size:11px;color:#004d40;">The 8 clefs are: Treble (G-clef, 2nd line), Bass (F-clef, 4th line), Soprano (C-clef, 1st line), Mezzo-Soprano (C-clef, 2nd line), Alto (C-clef, 3rd line), Tenor (C-clef, 4th line), Baritone (C-clef, 5th line / F-clef, 3rd line), Percussion (neutral).</p>
+      <p style="font-size:11px;color:#004d40;">The C-clef family all share one anchor: middle C sits on the clef's pointer line. From there, everything else counts up or down. <strong>One rule, 5 clefs.</strong></p>
+    </div>
+
+    <!-- Melody: Duration Amplifies Zone -->
+    <div class="mel-bg" style="border-radius:10px;padding:12px 14px;">
+      <div class="mel-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Melody — Duration Amplifies Zone</div>
+      <p style="font-size:11px;color:#1e3a8a;">A half-note on Zone 2 creates more tension than a quarter-note on Zone 2. Duration doesn't change the zone — it amplifies it. The longer you hold a tense note, the more the ear wants it to move.</p>
+      <p style="font-size:11px;color:#1e3a8a;">Zone 3 in Dorian: the 4̂ (Ab over Eb7) is mildly dissonant — the Dorian characteristic note is actually the natural 6̂ (C), which is Zone 2. Ab sits as a strong passing colour. <strong>Hear before you play.</strong></p>
+    </div>
+
+    <!-- Harmony: Progression Consolidation -->
+    <div class="har-bg" style="border-radius:10px;padding:12px 14px;">
+      <div class="har-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Harmony — 4 Progressions Consolidated</div>
+      <p style="font-size:11px;color:#78350f;">This sprint locks in all four progressions you've been building since Sprint 2. The ii-V-I (Progression #4) is a <em>drill vehicle</em> — it tests your ear on root movement by 5th/4th and voice-leading smoothness. It is not the spine of music. Superstition is built on a modal vamp — Eb7 as home — which uses <em>none</em> of these progressions in the traditional sense.</p>
+      <p style="font-size:11px;color:#78350f;">Your job: know all four cold, then hear that Superstition lives outside them.</p>
+    </div>
+
+    <!-- Voicings: Triad Stringsets -->
+    <div class="voi-bg" style="border-radius:10px;padding:12px 14px;">
+      <div class="voi-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Voicings — Triad Shapes by Stringset</div>
+      <p style="font-size:11px;color:#166534;">A triad has 3 notes and 3 inversions. On guitar, those 3 notes can live on any 3 adjacent strings (strings 1-2-3, 2-3-4, 3-4-5, or 4-5-6). Each stringset produces different physical shapes but the same harmonic content. <strong>Learn the shapes physically before connecting them theoretically.</strong></p>
+      <p style="font-size:11px;color:#166534;">On piano: triad arpeggios (root → 3rd → 5th → 8va, then back down) build the same finger-memory for inversion shapes.</p>
+    </div>
+
+    <!-- Rhythm: Son Clave + Superstition -->
+    <div class="rhy-bg" style="border-radius:10px;padding:12px 14px;">
+      <div class="rhy-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Rhythm — Son Clave + Superstition Groove</div>
+      <p style="font-size:11px;color:#9a3412;"><strong>3-2 clave (from Sprint 3):</strong> 3 strokes in bar 1, 2 strokes in bar 2.<br><strong>2-3 clave (Sprint 4 new):</strong> Same pattern, bars flipped — 2 strokes lead, 3 follow. Both are equally valid orientations.</p>
+      <p style="font-size:11px;color:#9a3412;">The Superstition clav riff lives in a 2-3 feel: the anticipation before beat 1 is bar 2's energy pulling forward. <strong>Groove development 4-step:</strong> start boring (on the beat) → add anticipations → add stops → sync with clave. Never skip step 1.</p>
+    </div>
+
+  </div>
+
+  <!-- Di-chord intro box -->
+  <div class="os-bg" style="border-radius:10px;padding:10px 14px;margin-top:10px;">
+    <div class="os-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Plogger Ch.9 Intro — Di-Chord Numbers [1]–[7]</div>
+    <table>
+      <tr><th>Number</th><th>Traditional Name</th><th>Quality Note</th><th>Example (from Eb)</th></tr>
+      <tr><td><strong>[1]</strong></td><td>Unison / Octave</td><td>Most stable — same pitch</td><td>Eb–Eb</td></tr>
+      <tr><td><strong>[2]</strong></td><td>Major 2nd</td><td>Active, wants to move</td><td>Eb–F</td></tr>
+      <tr><td><strong>[3]</strong></td><td>Minor 3rd</td><td>Non-harmonic, closed</td><td>Eb–Gb</td></tr>
+      <tr><td><strong>[4]</strong></td><td>Major 3rd</td><td>Harmonic, open</td><td>Eb–G (not in Dorian)</td></tr>
+      <tr><td><strong>[5]</strong></td><td>Perfect 4th</td><td>Stable but directional</td><td>Eb–Ab</td></tr>
+      <tr><td><strong>[6]</strong></td><td>Tritone</td><td>Maximum tension</td><td>Eb–A</td></tr>
+      <tr><td><strong>[7]</strong></td><td>Perfect 5th</td><td>Most stable open interval</td><td>Eb–Bb</td></tr>
+    </table>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Week 1 — Conceptual Foundation</span>
+    <span>Page 2 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 3 — GUITAR WEEK 1 S1+S2 -->
+<div class="page">
+  <div class="inst-header">
+    <div class="inst-icon" style="background:#1e293b;">🎸</div>
+    <div>
+      <div class="inst-name">Guitar — Week 1</div>
+      <div class="inst-meta">Returning intermediate · Eb Dorian · Triad inversions by stringset begins</div>
+    </div>
+    <div style="margin-left:auto;" class="week-tag har-bg har-text">Week 1</div>
+  </div>
+  <div class="rainbow"></div>
+
+  <!-- S1 Plogger -->
+  <div class="section-bar os-bg" style="margin-top:8px;">
+    <div class="num" style="background:#00796b;">1</div>
+    <div>
+      <div class="label os-text">Section 1</div>
+      <div class="title os-text">Plogger Foundation — Ch.7 Interval Spelling + Ch.8 All Clefs + Ch.9 Di-Chord Intro</div>
+    </div>
+    <div class="time os-text">10 min</div>
+  </div>
+
+  <div class="exercise os-bg" style="border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title os-text">Ch.7 — Keyboard Pythagorean Walk</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time os-bg os-text">3 min</span>
+    </div>
+    <p style="font-size:11px;">Lay your fretting hand on your leg, palm down (Lap Map position). Name: Eb, Bb, F, C, G in the F–C–G–D–A–E–B chain. Count aloud: "Eb is 3 flats left of F. Bb is 2 flats left of F." Confirm each interval in the chain by counting letter-steps. No keyboard needed — your lap IS the keyboard. <strong>Hear before you play.</strong></p>
+    <p style="font-size:11px;">Then: call out 5 random intervals from Eb (Eb→Ab, Eb→Bb, Eb→F, Eb→Gb, Eb→C). Spell each using only the chain. Say the di-chord number aloud.</p>
+  </div>
+
+  <div class="exercise os-bg" style="border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title os-text">Ch.8 — Clef Flash (Treble + Bass this week)</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time os-bg os-text">4 min</span>
+    </div>
+    <p style="font-size:11px;">On a blank staff (or paper grid): draw a treble clef. Place Eb4, F4, Gb4, Ab4, Bb4, C5, Db5 — the Superstition Eb Dorian scale. Name each note aloud. Then redraw the same 7 notes in bass clef. Every note of Superstition is now visible in two clefs.</p>
+    <p style="font-size:11px;">Mnemonic check: Treble lines = E-G-B-D-F ("Every Good Boy"). Bass lines = G-B-D-F-A. Both start one ledger below: middle C (C4) is one ledger below treble staff, one ledger above bass staff.</p>
+  </div>
+
+  <div class="exercise os-bg" style="border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title os-text">Ch.9 — Di-Chord Number Naming (Eb context)</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time os-bg os-text">3 min</span>
+    </div>
+    <p style="font-size:11px;">Play two notes on guitar. Identify the di-chord number using the Pythagorean chain. Start with Eb–Bb (answer: [7] P5). Then Eb–Ab ([5] P4), Eb–Gb ([3] m3), Eb–F ([2] M2). <strong>Sing both notes before naming.</strong> The interval lives in your ear, not on the fretboard.</p>
+  </div>
+
+  <!-- S2 Integrated Work -->
+  <div class="section-bar mel-bg" style="margin-top:12px;">
+    <div class="num" style="background:#2563eb;">2</div>
+    <div>
+      <div class="label mel-text">Section 2</div>
+      <div class="title mel-text">Integrated Work — Voicings + Harmony + Melody + Rhythm</div>
+    </div>
+    <div class="time mel-text">18 min</div>
+  </div>
+
+  <div class="exercise voi-bg" style="border-color:#16a34a;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title voi-text">Voicings: Triad Root Position — Strings 1-2-3 (Eb Major)</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time voi-bg voi-text">5 min</span>
+    </div>
+    <p style="font-size:11px;">Eb major triad root position on strings 1-2-3: Bb (string 1, fret 6), G (string 2, fret 8), Eb (string 3, fret 6). <em>This is actually a 2nd inversion — the root Eb is on the bottom, but let's confirm:</em> root = Eb (string 3), 3rd = G (string 2), 5th = Bb (string 1). Root position confirmed.</p>
+    <p style="font-size:11px;"><strong>Hear before you play:</strong> sing Eb–G–Bb before placing fingers. Play slowly. Listen for the major quality. Then play 1st inversion (G–Bb–Eb, bottom to top) on same string set. Shift each note up: G (s3, fret 5), Bb (s2, fret 3), Eb (s1, fret 11 or low fret with bar). Compare the sound — same notes, different colour. <strong>Sing before you play each shape.</strong></p>
+  </div>
+
+  <div class="exercise har-bg" style="border-color:#d97706;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title har-text">Harmony: All 4 Progressions — Quick Recall in Eb</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time har-bg har-text">5 min</span>
+    </div>
+    <p style="font-size:11px;">Play all four progressions in Eb, open chord/barre shapes. One strum per chord, focus on hearing root movement:</p>
+    <ul style="font-size:11px;color:#78350f;">
+      <li><strong>I-IV-V-I:</strong> Eb – Ab – Bb – Eb. Root movement: up 4th, up 2nd, down 5th. Feel: strong cadence.</li>
+      <li><strong>I-V-vi-IV:</strong> Eb – Bb – Cm – Ab. Root movement: down 4th, down 3rd, down 3rd. Feel: pop/rock resolution.</li>
+      <li><strong>12-Bar Blues (Eb):</strong> Eb7–Eb7–Eb7–Eb7 / Ab7–Ab7–Eb7–Eb7 / Bb7–Ab7–Eb7–Eb7. Sing the root of each chord before you play it.</li>
+      <li><strong>ii-V-I (drill vehicle):</strong> Fm7–Bb7–Eb (in Eb). This is a jazz exercise. It is not Superstition. Note: Superstition uses Eb7 as a modal home — not a dominant chord resolving somewhere. Keep these separate in your ear.</li>
+    </ul>
+  </div>
+
+  <div class="exercise mel-bg" style="border-color:#2563eb;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title mel-text">Melody: Duration Amplifies Zone — Single-String Demo</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time mel-bg mel-text">4 min</span>
+    </div>
+    <p style="font-size:11px;">Over a sustained Eb7 drone (open low Eb + ring-out or backing track): play Ab (Zone 3, the 4̂) as a quarter note. Then hold it as a whole note. Notice: the tension feels heavier, more expectant. The zone doesn't change — duration amplifies it. <strong>Sing before you play.</strong></p>
+    <p style="font-size:11px;">Now play Bb (Zone 1, the 5̂ — stable) as a quarter, then a whole note. The stability also amplifies. Duration is a volume knob on tension — not a zone-changer.</p>
+  </div>
+
+  <div class="exercise rhy-bg" style="border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title rhy-text">Rhythm: Son Clave 2-3 Introduction</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time rhy-bg rhy-text">4 min</span>
+    </div>
+    <p style="font-size:11px;">Clap 3-2 clave first (review): Beat 1, beat 2-and, beat 3 (bar 1) | Beat 1-and, beat 3 (bar 2).</p>
+    <p style="font-size:11px;">Now 2-3: Beat 1-and, beat 3 (bar 1) | Beat 1, beat 2-and, beat 3 (bar 2). The 2-bar phrase just flipped which bar leads. Tap foot on 1 and 3 while clapping clave. Say Longy syllables: "ta-te / ta / ta-te / ta / ta" across the 2 bars. The Superstition clav feel has this 2-3 orientation.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Guitar Week 1 · Sections 1–2</span>
+    <span>Page 3 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 4 — GUITAR WEEK 1 S3-S5 -->
+<div class="page">
+  <div class="inst-header">
+    <div class="inst-icon" style="background:#1e293b;">🎸</div>
+    <div>
+      <div class="inst-name">Guitar — Week 1 (continued)</div>
+      <div class="inst-meta">Sections 3–5 · Song Work · Jamming · Synthesizer</div>
+    </div>
+    <div style="margin-left:auto;" class="week-tag har-bg har-text">Week 1</div>
+  </div>
+  <div class="rainbow"></div>
+
+  <!-- S3 Song Work -->
+  <div class="section-bar rhy-bg" style="margin-top:8px;">
+    <div class="num" style="background:#ea580c;">3</div>
+    <div>
+      <div class="label rhy-text">Section 3</div>
+      <div class="title rhy-text">Song Learning — Superstition (Eb Dorian)</div>
+    </div>
+    <div class="time rhy-text">14 min</div>
+  </div>
+
+  <div class="exercise rhy-bg" style="border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title rhy-text">Groove Step 1: Boring — On the Beat</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time rhy-bg rhy-text">4 min</span>
+    </div>
+    <p style="font-size:11px;">Before anything, <strong>listen to Superstition</strong> once through. Notice: the clav enters on the "and" of beat 4 of the intro. It never plays on the downbeat of beat 1. This is the groove.</p>
+    <p style="font-size:11px;">Now, deliberately ignore that. Play Eb7 (x6878x or your preferred barre) on beats 1-2-3-4, quarter notes, tempo ~80 BPM. Boring is the foundation. Foot taps on every beat. Say "one–two–three–four" aloud. This is Step 1 of groove development: establish the pulse before you syncopate it.</p>
+  </div>
+
+  <div class="exercise rhy-bg" style="border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title rhy-text">Groove Step 2: Add Anticipations</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time rhy-bg rhy-text">5 min</span>
+    </div>
+    <p style="font-size:11px;">Keep the foot tap. Now play Eb7 on beat 1, then anticipate beat 3 — strum on the "and" of 2 instead. Pattern: strum (1) – rest – strum (and-2) – strum (3) – rest – strum (and-4). <strong>Sing before you play each strum</strong> — "ta… ta-te ta… ta-te." This is Longy for the pattern.</p>
+    <p style="font-size:11px;">Notice: the song now has forward momentum. The ear expects beat 3 to arrive but it came early — that's anticipation. Superstition's clav riff is built on this energy.</p>
+  </div>
+
+  <div class="exercise rhy-bg" style="border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title rhy-text">Eb Dorian Sound — Modal Feel Check</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time rhy-bg rhy-text">5 min</span>
+    </div>
+    <p style="font-size:11px;">Play the Eb Dorian scale ascending: Eb–F–Gb–Ab–Bb–C–Db–Eb. Use one string (low Eb string: frets 0-2-3-5-7-9-10-12, or equivalent position). <strong>Sing each note as you play.</strong> The characteristic Dorian sound: minor 3rd (Gb) but natural 6th (C). That C is what makes Dorian sound brighter than Aeolian (natural minor).</p>
+    <p style="font-size:11px;">Now play just: Eb–Gb–C–Eb. Hear the Dorian "flavour" — the minor chord with the bright 6th. This is Superstition's harmonic home.</p>
+  </div>
+
+  <!-- S4 Jamming -->
+  <div class="section-bar voi-bg" style="margin-top:10px;">
+    <div class="num" style="background:#16a34a;">4</div>
+    <div>
+      <div class="label voi-text">Section 4</div>
+      <div class="title voi-text">Free Play / Jamming</div>
+    </div>
+    <div class="time voi-text">10 min</div>
+  </div>
+
+  <div class="exercise voi-bg" style="border-color:#16a34a;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title voi-text">Eb Dorian Improv — Zones Only</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time voi-bg voi-text">10 min</span>
+    </div>
+    <p style="font-size:11px;">Set a loop or have someone hold Eb7. Improvise using only the Eb Dorian scale. Your only rule: before each note, decide its zone in your head (or say it aloud). Zone 1 = stable (Eb, Bb). Zone 2 = colour (F, Gb, C, Db). Zone 3 = tension (Ab = 4̂ in Dorian context). <strong>Sing before you play — always.</strong></p>
+    <p style="font-size:11px;">Play long notes (whole, half). Notice how holding a Zone 2 note longer creates more tension than a quick passing tone. This is duration amplifying zone. No speed, no licks — just intention.</p>
+  </div>
+
+  <!-- S5 Synthesizer -->
+  <div class="section-bar syn-bg" style="margin-top:10px;">
+    <div class="num" style="background:#7c3aed;">5</div>
+    <div>
+      <div class="label syn-text">Section 5</div>
+      <div class="title syn-text">The Synthesizer — Connect Everything</div>
+    </div>
+    <div class="time syn-text">8 min</div>
+  </div>
+
+  <div class="exercise syn-bg" style="border-color:#7c3aed;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title syn-text">Week 1 Synthesis Circuit</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time syn-bg syn-text">8 min</span>
+    </div>
+    <p style="font-size:11px;">Play this circuit once through at ~80 BPM. Each step = 30 seconds:</p>
+    <ol style="font-size:11px;color:#4b2d8c;">
+      <li><strong>Spell:</strong> Say aloud: "Eb to Bb is a [7] — Perfect Fifth. Eb to Ab is a [5] — Perfect Fourth." Then play both intervals on guitar and sing them.</li>
+      <li><strong>Groove:</strong> Play Eb7 vamp with Step 2 anticipations (and-2, and-4). Foot on 1-2-3-4. 30 seconds.</li>
+      <li><strong>Triad:</strong> Play Eb major root position on strings 1-2-3. Sing the triad (Eb–G–Bb). Play 1st inversion. Sing again.</li>
+      <li><strong>Zone:</strong> Over the vamp, play one long Ab (4 beats). Name it: "Zone 3 in Dorian. Duration amplifies tension."</li>
+      <li><strong>Anchor:</strong> Hum the Superstition riff. Play it on guitar — just the rhythm, approximate pitches. Connect: this song = Eb Dorian = modal vamp = clav groove.</li>
+      <li><strong>Reflect (1 min):</strong> Say one thing that clicked today. Write it in the workbook.</li>
+    </ol>
+  </div>
+
+  <!-- Session complete callout -->
+  <div style="background:#0f172a;border-radius:10px;padding:12px 16px;margin-top:14px;display:flex;align-items:center;gap:14px;">
+    <div style="font-size:24px;">✅</div>
+    <div>
+      <div style="font-size:11px;font-weight:900;color:#86efac;letter-spacing:.06em;text-transform:uppercase;">Session Complete — Guitar Week 1</div>
+      <div style="font-size:11px;color:#e2e8f0;margin-top:3px;">60 minutes. Log today's session in the Workbook (Page 7). Rate your groove feel, interval-spelling confidence, and zone awareness on a 1–5 scale. Rest your fretting hand.</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Guitar Week 1 · Sections 3–5</span>
+    <span>Page 4 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 5 — PIANO WEEK 1 S1+S2 -->
+<div class="page">
+  <div class="inst-header">
+    <div class="inst-icon" style="background:#1e293b;">🎹</div>
+    <div>
+      <div class="inst-name">Piano — Week 1</div>
+      <div class="inst-meta">Advanced beginner · Eb Dorian · Arpeggios intro · Shell voicings ii-V-I</div>
+    </div>
+    <div style="margin-left:auto;" class="week-tag har-bg har-text">Week 1</div>
+  </div>
+  <div class="rainbow"></div>
+
+  <!-- S1 Plogger -->
+  <div class="section-bar os-bg" style="margin-top:8px;">
+    <div class="num" style="background:#00796b;">1</div>
+    <div>
+      <div class="label os-text">Section 1</div>
+      <div class="title os-text">Plogger Foundation — Ch.7 Interval Spelling + Ch.8 All Clefs + Ch.9 Di-Chord Intro</div>
+    </div>
+    <div class="time os-text">10 min</div>
+  </div>
+
+  <div class="exercise os-bg" style="border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title os-text">Ch.7 — Keyboard Pythagorean: At the Piano</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time os-bg os-text">3 min</span>
+    </div>
+    <p style="font-size:11px;">Place your right hand on the keyboard, thumb on Eb4 (middle Eb). Say aloud: "F–C–G–D–A–E–B is my chain." Find Eb in this chain: between Ab and Bb, it is 3 steps left of F. Now identify these intervals from Eb4 by counting letter-steps: Eb→Bb (skip E-F-G-A = 4 steps = 5th = [7]), Eb→Ab (skip E-F-G = 3 steps = 4th = [5]), Eb→Gb (skip E-F = 2 steps = 3rd = [3]). <strong>Play each interval and sing it before naming it.</strong></p>
+  </div>
+
+  <div class="exercise os-bg" style="border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title os-text">Ch.8 — Clef Flash: Treble + Bass + Alto</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time os-bg os-text">4 min</span>
+    </div>
+    <p style="font-size:11px;">On paper or staff notebook: write the Eb Dorian scale (Eb–F–Gb–Ab–Bb–C–Db) in treble clef (right hand range), then in bass clef (left hand range, starting Eb2 or Eb3). This is your practical piano reading this week.</p>
+    <p style="font-size:11px;">Then attempt Alto clef: the C-clef pointer sits on line 3 — that's middle C (C4). Count up: Eb is a minor 3rd above C, so it sits on the 4th space of alto clef. Write Eb there. <strong>One rule (C-clef pointer = middle C) gets you into every C-clef variant.</strong></p>
+  </div>
+
+  <div class="exercise os-bg" style="border-color:#00796b;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title os-text">Ch.9 — Di-Chord Numbers: Play and Name</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time os-bg os-text">3 min</span>
+    </div>
+    <p style="font-size:11px;">Play each di-chord from Eb4 with right hand. Sing both notes, then name the number: Eb+Bb = [7] stable open. Eb+Gb = [3] non-harmonic closed. Eb+Ab = [5] directional stable. Eb+F = [2] active. Eb+C = a 6th — count: E-F-G-A-B-C = 6 letter-steps. What di-chord number is a 6th? Beyond [7] means compound — note this as an extension. <strong>Hear before you play. Always.</strong></p>
+  </div>
+
+  <!-- S2 Integrated Work -->
+  <div class="section-bar mel-bg" style="margin-top:12px;">
+    <div class="num" style="background:#2563eb;">2</div>
+    <div>
+      <div class="label mel-text">Section 2</div>
+      <div class="title mel-text">Integrated Work — Voicings + Harmony + Melody + Rhythm</div>
+    </div>
+    <div class="time mel-text">18 min</div>
+  </div>
+
+  <div class="exercise voi-bg" style="border-color:#16a34a;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title voi-text">Voicings: Dorian Heptachord + Triad Arpeggios</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time voi-bg voi-text">6 min</span>
+    </div>
+    <p style="font-size:11px;"><strong>Dorian heptachord (both hands, separately then together):</strong> RH: thumb on Eb4, play Eb–F–Gb–Ab–Bb–C–Db–Eb5. Fingering: 1-2-3-1-2-3-4-5. LH: pinky on Eb3, play same scale ascending. Fingering: 5-4-3-2-1-3-2-1. <strong>Sing each note as you play.</strong> Go slowly — 60 BPM one note per beat.</p>
+    <p style="font-size:11px;"><strong>Triad arpeggio — Eb major, C minor:</strong> RH, root position. Eb major: Eb4–G4–Bb4–Eb5 (then back down). C minor: C4–Eb4–G4–C5. Play legato, listen for the quality difference. Sing: "do–mi–sol" for major, "do–me–sol" for minor (using solfège).</p>
+  </div>
+
+  <div class="exercise har-bg" style="border-color:#d97706;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title har-text">Harmony: Shell Voicings ii-V-I in C and G</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time har-bg har-text">5 min</span>
+    </div>
+    <p style="font-size:11px;">Shell voicings = root + 3rd + 7th (omit 5th). In C: ii = Dm7 (D–F–C), V = G7 (G–B–F), I = Cmaj7 (C–E–B) or C (C–E–G). In G: ii = Am7 (A–C–G), V = D7 (D–F#–C), I = Gmaj7 (G–B–F#). LH plays root, RH plays 3rd+7th (two-note voicing).</p>
+    <p style="font-size:11px;"><strong>Voice-leading focus:</strong> in G7 → Cmaj7, the F (7th of G7) moves down a half-step to E (3rd of Cmaj7). The B (3rd of G7) holds as the 7th of Cmaj7. That smooth movement IS why ii-V-I sounds inevitable. Hear it. <strong>Sing each voice as you move it.</strong></p>
+    <p style="font-size:11px;"><em>Reminder: ii-V-I is a drill vehicle. Superstition does not use this progression. Keep your ear calibrated.</em></p>
+  </div>
+
+  <div class="exercise mel-bg" style="border-color:#2563eb;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title mel-text">Melody: Duration Amplifies Zone — Piano Demo</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time mel-bg mel-text">3 min</span>
+    </div>
+    <p style="font-size:11px;">LH holds Eb7 (Eb–Bb–Db–G, shell or full). RH plays Ab4 (Zone 3, the 4̂): first as a quarter note, then hold for 4 beats using sustain pedal. Hear how duration deepens the tension. Then resolve to Bb (Zone 1) — immediate release. <strong>Sing before you play every note.</strong></p>
+  </div>
+
+  <div class="exercise rhy-bg" style="border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title rhy-text">Rhythm: Superstition LH Groove Pattern</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time rhy-bg rhy-text">4 min</span>
+    </div>
+    <p style="font-size:11px;">LH only, no RH. Play Eb3 on beat 1 (whole note feel, let ring). Then Eb3 on the "and" of 2. Then Bb2 on beat 4. Pattern: Eb (1) — Eb (and-2) — Bb (4). This is the broken-chord bass pattern underlying the Superstition feel. Say Longy: "ta… ta-te… ta." Repeat for 2 minutes at 80 BPM. Foot taps every beat.</p>
+    <p style="font-size:11px;"><strong>Hear before you play:</strong> sing the pattern — "Eb… Eb… Bb" — before your hand moves.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Piano Week 1 · Sections 1–2</span>
+    <span>Page 5 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 6 — PIANO WEEK 1 S3-S5 -->
+<div class="page">
+  <div class="inst-header">
+    <div class="inst-icon" style="background:#1e293b;">🎹</div>
+    <div>
+      <div class="inst-name">Piano — Week 1 (continued)</div>
+      <div class="inst-meta">Sections 3–5 · Song Work · Jamming · Synthesizer</div>
+    </div>
+    <div style="margin-left:auto;" class="week-tag har-bg har-text">Week 1</div>
+  </div>
+  <div class="rainbow"></div>
+
+  <!-- S3 Song Work -->
+  <div class="section-bar rhy-bg" style="margin-top:8px;">
+    <div class="num" style="background:#ea580c;">3</div>
+    <div>
+      <div class="label rhy-text">Section 3</div>
+      <div class="title rhy-text">Song Learning — Superstition (Eb Dorian)</div>
+    </div>
+    <div class="time rhy-text">14 min</div>
+  </div>
+
+  <div class="exercise rhy-bg" style="border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title rhy-text">Groove Step 1: Boring — LH Only, On the Beat</span>
+      <span class="stage-badge s1">S1</span>
+      <span class="exercise-time rhy-bg rhy-text">4 min</span>
+    </div>
+    <p style="font-size:11px;"><strong>Listen to Superstition.</strong> Then: LH plays Eb3 on every beat 1, 2, 3, 4. Whole pattern is quarter notes. Foot taps with LH. This is deliberately boring — that is the point. Establish pulse before syncopating. 80 BPM. <strong>Sing "Eb–Eb–Eb–Eb" before your hand moves.</strong></p>
+  </div>
+
+  <div class="exercise rhy-bg" style="border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title rhy-text">Groove Step 2: Add Offbeat RH Chord Stabs</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time rhy-bg rhy-text">5 min</span>
+    </div>
+    <p style="font-size:11px;">LH continues: Eb3 on beat 1, Eb3 on and-2, Bb2 on beat 4 (the groove from S2). Now add RH: play Eb7 chord stab (Gb4–Bb4–Db5) on the "and" of 2 and "and" of 4 — the offbeats. This is the keyboard-stab feel of Superstition.</p>
+    <p style="font-size:11px;">Coordinate: LH Eb (beat 1) — LH Eb + RH stab (and-2) — LH Bb + RH stab (and-4). <strong>Sing the RH chord stab rhythm before playing:</strong> "rest-TA, rest-TA" (where TA = the stab on the and).</p>
+  </div>
+
+  <div class="exercise rhy-bg" style="border-color:#ea580c;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title rhy-text">Eb Dorian Scale — Modal Identity</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time rhy-bg rhy-text">5 min</span>
+    </div>
+    <p style="font-size:11px;">Both hands together: play Eb Dorian scale (Eb–F–Gb–Ab–Bb–C–Db–Eb) in contrary motion — RH ascends while LH descends from Eb4. They mirror each other and land on Eb3 and Eb5 simultaneously. <strong>Sing each note.</strong></p>
+    <p style="font-size:11px;">Pause. Play just Eb + Gb + C (root, m3, M6 of Dorian). This three-note cluster defines the Dorian sound. Hear it. Name it: "Dorian means minor 3rd + natural 6th." Superstition = this sound.</p>
+  </div>
+
+  <!-- S4 Jamming -->
+  <div class="section-bar voi-bg" style="margin-top:10px;">
+    <div class="num" style="background:#16a34a;">4</div>
+    <div>
+      <div class="label voi-text">Section 4</div>
+      <div class="title voi-text">Free Play / Jamming</div>
+    </div>
+    <div class="time voi-text">10 min</div>
+  </div>
+
+  <div class="exercise voi-bg" style="border-color:#16a34a;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title voi-text">Eb Dorian Improv — LH Vamp + RH Zones</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time voi-bg voi-text">10 min</span>
+    </div>
+    <p style="font-size:11px;">LH: loop the Superstition groove pattern (Eb–Eb–Bb with offbeat feel). RH: improvise freely in Eb Dorian. Your only rule: name the zone of each note before you play it. Zone 1 (stable: Eb, Bb), Zone 2 (colour: F, Gb, C, Db), Zone 3 (tension: Ab). <strong>Sing before you play. Always.</strong></p>
+    <p style="font-size:11px;">Experiment: hold a Zone 2 note for a full bar. Hear the tension accumulate. Resolve to Zone 1. Notice the release. This is duration amplifying zone — in real time, in Superstition's musical world.</p>
+  </div>
+
+  <!-- S5 Synthesizer -->
+  <div class="section-bar syn-bg" style="margin-top:10px;">
+    <div class="num" style="background:#7c3aed;">5</div>
+    <div>
+      <div class="label syn-text">Section 5</div>
+      <div class="title syn-text">The Synthesizer — Connect Everything</div>
+    </div>
+    <div class="time syn-text">8 min</div>
+  </div>
+
+  <div class="exercise syn-bg" style="border-color:#7c3aed;">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+      <span class="exercise-title syn-text">Week 1 Synthesis Circuit — Piano</span>
+      <span class="stage-badge s2">S2</span>
+      <span class="exercise-time syn-bg syn-text">8 min</span>
+    </div>
+    <ol style="font-size:11px;color:#4b2d8c;">
+      <li><strong>Spell + Play:</strong> Eb→Bb = [7], play it. Eb→Ab = [5], play it. Eb→Gb = [3], play it. Sing each before playing.</li>
+      <li><strong>Arpeggio:</strong> Eb major triad arpeggio (Eb–G–Bb–Eb), root position, both hands separately. Then C minor (C–Eb–G–C).</li>
+      <li><strong>Shell Voicing:</strong> Play ii-V-I in C (Dm7–G7–Cmaj7) with shell voicings. Sing the 3rd as it moves: F→B→E (Dm7→G7→Cmaj7). That half-step B→E movement IS the cadence.</li>
+      <li><strong>Groove:</strong> Play Superstition groove (LH broken Eb7 + RH offbeat stabs) for 30 seconds at 85 BPM.</li>
+      <li><strong>Zone:</strong> Over the groove, hold Ab (Zone 3) for 4 beats. Name: "4̂ in Dorian, duration amplifies tension." Resolve to Bb (Zone 1).</li>
+      <li><strong>Reflect (1 min):</strong> What connected for you today? Say it aloud, then write it in the workbook.</li>
+    </ol>
+  </div>
+
+  <!-- Session complete callout -->
+  <div style="background:#0f172a;border-radius:10px;padding:12px 16px;margin-top:14px;display:flex;align-items:center;gap:14px;">
+    <div style="font-size:24px;">✅</div>
+    <div>
+      <div style="font-size:11px;font-weight:900;color:#86efac;letter-spacing:.06em;text-transform:uppercase;">Session Complete — Piano Week 1</div>
+      <div style="font-size:11px;color:#e2e8f0;margin-top:3px;">60 minutes. Log today's session in the Workbook (Page 7). Rate your heptachord fluency, shell voicing clarity, and groove coordination on a 1–5 scale. Stretch your wrists.</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Piano Week 1 · Sections 3–5</span>
+    <span>Page 6 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 7 — WORKBOOK PAGE A -->
+<div class="page">
+  <div class="sprint-meta">Workbook Page A — Week 1</div>
+  <div class="rainbow"></div>
+  <h2 style="margin-top:8px;">Week 1 Goals + Daily Practice Log</h2>
+
+  <!-- Week 1 goals -->
+  <div class="workbook-page">
+    <h3 style="margin-top:0;">My Week 1 Goals (write in your own words)</h3>
+    <p style="font-size:10.5px;color:#64748b;">What do you want to be able to do by the end of Week 1 that you cannot do now?</p>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+  </div>
+
+  <!-- Daily practice log -->
+  <h3 style="margin-top:12px;">Daily Practice Log</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Date</th>
+        <th>Instrument</th>
+        <th>Minutes</th>
+        <th>Groove Feel (1–5)</th>
+        <th>Interval Recall (1–5)</th>
+        <th>Zone Awareness (1–5)</th>
+        <th>Notes / Win</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Day 1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>Day 2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>Day 3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>Day 4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>Day 5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>Day 6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>Day 7</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Rhythm log -->
+  <h3 style="margin-top:12px;">Rhythm Log — Son Clave Practice</h3>
+  <div class="workbook-page">
+    <p style="font-size:10.5px;color:#64748b;margin-bottom:6px;">Each day, check which clave orientation you practiced. Add a note on feel.</p>
+    <table>
+      <thead>
+        <tr><th>Day</th><th>3-2 Clave</th><th>2-3 Clave</th><th>Superstition Groove Steps</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Day 1</td><td>☐</td><td>☐</td><td>Step ____</td><td>&nbsp;</td></tr>
+        <tr><td>Day 2</td><td>☐</td><td>☐</td><td>Step ____</td><td>&nbsp;</td></tr>
+        <tr><td>Day 3</td><td>☐</td><td>☐</td><td>Step ____</td><td>&nbsp;</td></tr>
+        <tr><td>Day 4</td><td>☐</td><td>☐</td><td>Step ____</td><td>&nbsp;</td></tr>
+        <tr><td>Day 5</td><td>☐</td><td>☐</td><td>Step ____</td><td>&nbsp;</td></tr>
+        <tr><td>Day 6</td><td>☐</td><td>☐</td><td>Step ____</td><td>&nbsp;</td></tr>
+        <tr><td>Day 7</td><td>☐</td><td>☐</td><td>Step ____</td><td>&nbsp;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Eb Dorian quick reference -->
+  <div style="background:#1e293b;border-radius:10px;padding:10px 16px;margin-top:12px;">
+    <div style="font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:6px;">Eb Dorian Quick Reference — Keep This Visible</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;">
+      <div style="background:#334155;border-radius:6px;padding:6px 8px;">
+        <div style="font-size:9px;color:#94a3b8;text-transform:uppercase;">Scale</div>
+        <div style="font-size:10.5px;color:#e2e8f0;font-weight:700;">Eb F Gb Ab Bb C Db</div>
+      </div>
+      <div style="background:#334155;border-radius:6px;padding:6px 8px;">
+        <div style="font-size:9px;color:#94a3b8;text-transform:uppercase;">Zones (Z1=stable)</div>
+        <div style="font-size:10.5px;color:#e2e8f0;font-weight:700;">Eb Bb / F Gb C Db / Ab</div>
+      </div>
+      <div style="background:#334155;border-radius:6px;padding:6px 8px;">
+        <div style="font-size:9px;color:#94a3b8;text-transform:uppercase;">Chords in Song</div>
+        <div style="font-size:10.5px;color:#e2e8f0;font-weight:700;">Eb7 | Ab7 | Bb7</div>
+      </div>
+      <div style="background:#334155;border-radius:6px;padding:6px 8px;">
+        <div style="font-size:9px;color:#94a3b8;text-transform:uppercase;">BPM Target</div>
+        <div style="font-size:10.5px;color:#e2e8f0;font-weight:700;">~100 BPM / start 80</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Workbook Page A · Week 1</span>
+    <span>Page 7 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 8 — WORKBOOK PAGE B -->
+<div class="page">
+  <div class="sprint-meta">Workbook Page B — Week 1</div>
+  <div class="rainbow"></div>
+  <h2 style="margin-top:8px;">Song Work Log + Weekly Reflection + Synthesizer Check</h2>
+
+  <!-- Song work log -->
+  <div class="workbook-page">
+    <h3 style="margin-top:0;">Superstition — Song Work Log</h3>
+    <p style="font-size:10.5px;color:#64748b;margin-bottom:6px;">Track what you worked on each day. Check off when you can do it without stopping.</p>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div><strong style="font-size:11px;">Listened to Superstition start-to-finish with full attention</strong><br><span style="font-size:10.5px;color:#64748b;">Note the clav entry point, the offbeat feel, the Eb7 modal vamp</span></div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div><strong style="font-size:11px;">Groove Step 1: Can play boring quarter-note Eb7 vamp at 80 BPM</strong></div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div><strong style="font-size:11px;">Groove Step 2: Can add anticipations (and-2, and-4) without losing foot tap</strong></div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div><strong style="font-size:11px;">Can sing Eb Dorian scale from memory (Eb–F–Gb–Ab–Bb–C–Db)</strong></div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div><strong style="font-size:11px;">Can identify the Dorian "colour" note: C (natural 6th, Eb Dorian)</strong></div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div><strong style="font-size:11px;">Can demonstrate Duration Amplifies Zone on instrument: Zone 3 held vs. quick</strong></div>
+    </div>
+  </div>
+
+  <!-- Weekly reflection -->
+  <div class="workbook-page" style="margin-top:12px;">
+    <h3 style="margin-top:0;">Weekly Reflection (end of Week 1)</h3>
+    <h4>What clicked this week?</h4>
+    <div class="write-box"></div>
+    <h4>What still feels muddy?</h4>
+    <div class="write-box"></div>
+    <h4>One moment where "hear before you play" actually changed something:</h4>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <h4>The most surprising thing about Superstition's groove:</h4>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+  </div>
+
+  <!-- Synthesizer full check -->
+  <div class="syn-bg" style="border-radius:10px;padding:12px 14px;margin-top:12px;">
+    <div class="syn-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">End-of-Week 1 Synthesizer Check</div>
+    <p style="font-size:11px;color:#4b2d8c;">Can you connect these dots without looking at notes?</p>
+    <div class="checkbox-item" style="border-color:#e9d5ff;">
+      <div class="cb" style="border-color:#7c3aed;"></div>
+      <div style="font-size:11px;color:#4b2d8c;">Eb→Bb = [7] Perfect Fifth. Eb→Ab = [5] Perfect Fourth. I can spell these using the F-C-G-D-A-E-B chain.</div>
+    </div>
+    <div class="checkbox-item" style="border-color:#e9d5ff;">
+      <div class="cb" style="border-color:#7c3aed;"></div>
+      <div style="font-size:11px;color:#4b2d8c;">Treble clef lines = E-G-B-D-F. Bass clef lines = G-B-D-F-A. Middle C = ledger line between both.</div>
+    </div>
+    <div class="checkbox-item" style="border-color:#e9d5ff;">
+      <div class="cb" style="border-color:#7c3aed;"></div>
+      <div style="font-size:11px;color:#4b2d8c;">Eb Dorian = minor 3rd (Gb) + natural 6th (C). That natural 6th is what makes Dorian "brighter" than natural minor.</div>
+    </div>
+    <div class="checkbox-item" style="border-color:#e9d5ff;">
+      <div class="cb" style="border-color:#7c3aed;"></div>
+      <div style="font-size:11px;color:#4b2d8c;">ii-V-I is a drill vehicle. Superstition uses a modal vamp — Eb7 as home, not as a dominant chord resolving somewhere.</div>
+    </div>
+    <div class="checkbox-item" style="border-color:#e9d5ff;">
+      <div class="cb" style="border-color:#7c3aed;"></div>
+      <div style="font-size:11px;color:#4b2d8c;">Duration amplifies zone: holding Zone 3 longer makes the tension heavier — the zone itself doesn't change.</div>
+    </div>
+    <div class="checkbox-item" style="border-color:#e9d5ff;">
+      <div class="cb" style="border-color:#7c3aed;"></div>
+      <div style="font-size:11px;color:#4b2d8c;">3-2 clave: 3 strokes bar 1, 2 strokes bar 2. 2-3 clave: same pattern, bars flipped. Superstition leans 2-3.</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Workbook Page B · Week 1</span>
+    <span>Page 8 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 9 — WEEKS 2–3 CONCEPT PROGRESSION -->
+<div class="page">
+  <div class="sprint-meta">Weeks 2 &amp; 3 — Concept Progression</div>
+  <div class="rainbow"></div>
+  <h2 style="margin-top:8px;">Building on Week 1</h2>
+
+  <!-- WEEK 2 -->
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;margin-top:12px;">
+    <div class="week-tag" style="background:#dbeafe;color:#1e3a8a;">Week 2</div>
+    <h3 style="margin:0;">Deepen — Add complexity to established patterns</h3>
+  </div>
+
+  <div class="two-col">
+    <div class="os-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="os-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Plogger — Ch.8 Full: All 8 Clefs</div>
+      <p style="font-size:11px;color:#004d40;">Add C-clef family: Soprano (C on line 1), Mezzo-Soprano (C on line 2), Alto (C on line 3), Tenor (C on line 4), Baritone (C on line 5). Anchor: the pointer line = middle C. Drill: write Eb in each of the 5 C-clefs. One rule, five positions.</p>
+      <p style="font-size:11px;color:#004d40;"><strong>Superstition anchor:</strong> Find Eb4 in each C-clef on staff paper. Say aloud which line/space it occupies in each.</p>
+    </div>
+
+    <div class="har-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="har-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Harmony — 4 Progressions in 3 Keys</div>
+      <p style="font-size:11px;color:#78350f;">Expand all four progressions beyond Eb: play in C (easy reference key) and G (sharp key). Each progression, each key, one pass. Goal: the progressions feel like shapes in your ear and hands — not formulas you compute.</p>
+      <p style="font-size:11px;color:#78350f;"><strong>ii-V-I drill:</strong> Fm7–Bb7–Eb (Eb), Dm7–G7–C (C), Am7–D7–G (G). Shell voicings only, piano. Barre chords, guitar. <em>Not the spine of music. Sing before you play.</em></p>
+    </div>
+
+    <div class="voi-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="voi-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Voicings — Add Strings 2-3-4 (Guitar) / 1st Inversion Arpeggios (Piano)</div>
+      <p style="font-size:11px;color:#166534;"><strong>Guitar:</strong> Move Eb major and C minor triads to strings 2-3-4. Root position, then 1st and 2nd inversions. Physical feel is different from strings 1-2-3 — notice how the shapes change. Same notes, different hand position.</p>
+      <p style="font-size:11px;color:#166534;"><strong>Piano:</strong> Triad arpeggios in 1st inversion (3rd on bottom): C major 1st inv = E–G–C–E. All 4 keys (C, G, F, Bb). Sing before you play each arpeggio.</p>
+    </div>
+
+    <div class="rhy-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="rhy-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Rhythm — Groove Steps 3 &amp; 4 + Superstition Section B</div>
+      <p style="font-size:11px;color:#9a3412;"><strong>Step 3 — Stops:</strong> Add one beat of silence per bar. Silence IS rhythm. On guitar: mute Eb7 on beat 3. On piano: lift hands completely on beat 2. The groove continues in your body even when the instrument is quiet.</p>
+      <p style="font-size:11px;color:#9a3412;"><strong>Step 4 — Clave sync:</strong> Play your groove while clapping clave simultaneously (or have a metronome pulse the clave pattern). Notice where your groove aligns with clave and where it doesn't. Superstition's clav is the clave. <strong>Sing before you play.</strong></p>
+    </div>
+
+    <div class="mel-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="mel-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Melody — Tiny Tension Arc in Eb Dorian</div>
+      <p style="font-size:11px;color:#1e3a8a;">Compose a 4-note melody over Eb7 using Zone logic: Z1→Z2→Z3→Z1. Example: Eb (Z1) → Gb (Z2) → Ab (Z3) → Eb (Z1). <strong>Sing it first.</strong> Then play it. Change note durations: what happens when you make the Z3 (Ab) a half note instead of a quarter? Duration amplifies the tension arc.</p>
+      <p style="font-size:11px;color:#1e3a8a;"><strong>Anchor:</strong> Find this arc somewhere in the Superstition melody. Can you hear Stevie Wonder use Z3 (Ab) as a tension point?</p>
+    </div>
+
+    <div class="syn-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="syn-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Week 2 Synthesizer — All Chambers Connected</div>
+      <p style="font-size:11px;color:#4b2d8c;">At session end: play all 4 progressions in Eb (30 sec each). Then play Superstition groove at 90 BPM. Then improvise a 4-bar melody over the vamp — use at least one Zone 3 note held for 2 beats. Finish: state aloud which clef you feel most confident in and which feels shakiest.</p>
+    </div>
+  </div>
+
+  <!-- WEEK 3 -->
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;margin-top:16px;">
+    <div class="week-tag" style="background:#fde8d8;color:#9a3412;">Week 3</div>
+    <h3 style="margin:0;">Consolidate — Full tempo, all stringsets, ii-V-I in 5 keys</h3>
+  </div>
+
+  <div class="two-col">
+    <div class="os-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="os-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Plogger — Ch.9 Di-Chord Numbers Fluency</div>
+      <p style="font-size:11px;color:#004d40;">Call-and-response drill: partner (or self) plays two notes anywhere on keyboard. Identify di-chord number instantly — no counting. Target: [1] through [7] in under 2 seconds each. If slower, return to Pythagorean chain. Speed = familiarity, not memorisation. <strong>Sing before you name.</strong></p>
+    </div>
+
+    <div class="har-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="har-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Harmony — ii-V-I in 5 Keys (Piano) / CAGED + Stringset Triads (Guitar)</div>
+      <p style="font-size:11px;color:#78350f;"><strong>Piano:</strong> Shell voicing ii-V-I in C, G, F, Bb, D. Each key: 2 passes, hands together, at 70 BPM. Voice-lead: 3rd of V7 becomes 7th of I. Sing the resolution each time.<br><strong>Guitar:</strong> Play Eb chord in 3 CAGED positions. Then play Eb major triad shapes across all 4 string sets (1-2-3, 2-3-4, 3-4-5, 4-5-6). 80 BPM, one shape per bar. <strong>Sing before each shape.</strong></p>
+    </div>
+
+    <div class="rhy-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="rhy-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Rhythm — Full Groove at 95 BPM + Clave Sync</div>
+      <p style="font-size:11px;color:#9a3412;">All 4 groove steps running simultaneously: anticipations + stops + clave alignment. Both instruments at 95 BPM. Target: 2 minutes continuous without losing the clave feel. If you lose it — back to Step 1, boring, rebuild. Never force tempo. <strong>Hear before you play.</strong></p>
+    </div>
+
+    <div class="mel-bg" style="border-radius:10px;padding:10px 12px;">
+      <div class="mel-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;">Melody — 5 Key Notes Analysis: Superstition</div>
+      <p style="font-size:11px;color:#1e3a8a;">Identify 5 significant notes in the Superstition verse melody. For each: (1) scale degree name, (2) zone, (3) duration in the original. Map to AMF: is Stevie using Duration Amplifies Zone intentionally? Where are the tension peaks in the vocal? <strong>Sing the melody before analyzing.</strong></p>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Weeks 2–3 Concept Progression</span>
+    <span>Page 9 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 10 — WEEK 4 INTEGRATION -->
+<div class="page">
+  <div class="sprint-meta">Week 4 — Integration Only</div>
+  <div class="rainbow"></div>
+  <h2 style="margin-top:8px;">Week 4: No New Concepts — Lock In What You Have</h2>
+  <p style="font-size:11.5px;color:#64748b;margin-bottom:12px;">Week 4 is purely integration. Every session this week reinforces what you built in Weeks 1–3. If something feels solid — play it musically, not just correctly. If something feels shaky — slow it down and rebuild. <strong>Hear before you play. Sing before you play. Always.</strong></p>
+
+  <!-- Guitar Week 4 goals -->
+  <div class="two-col">
+    <div style="border:2px solid #1e293b;border-radius:10px;padding:12px 14px;">
+      <div class="inst-header" style="padding:0 0 6px;">
+        <div class="inst-icon" style="background:#1e293b;width:24px;height:24px;font-size:12px;">🎸</div>
+        <div class="inst-name" style="font-size:13px;">Guitar — Week 4 Goals</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">All 4 string-set triad shapes (Eb major) at 80 BPM — root, 1st, 2nd inversion on each. Smooth, no pauses between inversions.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">CAGED: play Eb chord in 3 positions and name the CAGED shape for each.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">All 4 progressions in Eb, one pass each, no stopping — I-IV-V-I, I-V-vi-IV, 12-Bar Blues, ii-V-I (drill vehicle).</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">Superstition groove at 95+ BPM with groove Steps 1–4 all present.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">Improvise over Eb7 vamp for 2 minutes using zones intentionally. At least one held Zone 3 note per 8 bars.</div>
+      </div>
+    </div>
+
+    <div style="border:2px solid #1e293b;border-radius:10px;padding:12px 14px;">
+      <div class="inst-header" style="padding:0 0 6px;">
+        <div class="inst-icon" style="background:#1e293b;width:24px;height:24px;font-size:12px;">🎹</div>
+        <div class="inst-name" style="font-size:13px;">Piano — Week 4 Goals</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">Eb Dorian heptachord, hands together, 60 BPM. Clean legato, no pauses.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">Triad arpeggios (major + minor, all inversions) in C, G, F, Bb — both hands separately at 70 BPM.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">Shell voicing ii-V-I in 5 keys (C, G, F, Bb, D). Sing the resolving voice (3rd of V7 → 7th of I) each time.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">Superstition groove: LH broken Eb7 + RH offbeat stabs at 95 BPM. 2 minutes continuous.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;">Improvise over LH vamp with RH in Eb Dorian, naming zones before each phrase.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Week 4 jam prompt -->
+  <div style="background:#1e293b;border-radius:10px;padding:12px 16px;margin-top:12px;">
+    <div style="font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">Week 4 Jam Prompt — Superstition Integration</div>
+    <p style="font-size:11px;color:#e2e8f0;">Set up a ~95 BPM Eb7 loop (or play along with the recording). Aim for a 5-minute continuous session where you:</p>
+    <ol style="font-size:11px;color:#cbd5e1;">
+      <li>Establish the groove (boring) — 30 seconds</li>
+      <li>Add anticipations — stay for 60 seconds</li>
+      <li>Add melody over the top — use Eb Dorian zones</li>
+      <li>Play one ii-V-I lick (Fm7–Bb7–Eb) as a transition — hear how it sounds DIFFERENT from the modal vamp world</li>
+      <li>Return to the modal vamp and land on a long Zone 3 (Ab) — let it breathe, then resolve to Eb (Zone 1)</li>
+    </ol>
+    <p style="font-size:11px;color:#94a3b8;margin-top:4px;"><em>No stopping. No correcting. No judgment. Just the music.</em></p>
+  </div>
+
+  <!-- Synthesizer full circuit -->
+  <div class="syn-bg" style="border-radius:10px;padding:12px 14px;margin-top:12px;">
+    <div class="syn-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Week 4 Synthesizer Full Circuit — Every Session</div>
+    <div class="two-col">
+      <div>
+        <h4 class="syn-text">Plogger Check (2 min)</h4>
+        <p style="font-size:11px;color:#4b2d8c;">Name 3 intervals from Eb using only the Pythagorean chain. Write Eb in treble, bass, and one C-clef. Name di-chord numbers [1]–[7] from flash card or partner.</p>
+        <h4 class="syn-text" style="margin-top:8px;">Harmony Check (2 min)</h4>
+        <p style="font-size:11px;color:#4b2d8c;">Play all 4 progressions in Eb. No stopping. Hear the emotional arc of each — not just the chord names.</p>
+      </div>
+      <div>
+        <h4 class="syn-text">Song Check (2 min)</h4>
+        <p style="font-size:11px;color:#4b2d8c;">Play Superstition groove at 95 BPM for 90 seconds. Then improvise 30 seconds of melody over it. Anchor: this is Eb Dorian, modal vamp, not any of the 4 progressions.</p>
+        <h4 class="syn-text" style="margin-top:8px;">Reflection (2 min)</h4>
+        <p style="font-size:11px;color:#4b2d8c;">State: What was your strongest moment this session? What still needs work? Write one sentence in the workbook. Keep it specific and honest.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sprint 5 preview -->
+  <div style="border:2px dashed #94a3b8;border-radius:10px;padding:10px 14px;margin-top:12px;">
+    <div style="font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#64748b;margin-bottom:5px;">Sprint 5 Preview — What's Going On (Marvin Gaye, Eb Major)</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+      <div><strong style="font-size:10.5px;">Plogger:</strong><br><span style="font-size:10.5px;color:#64748b;">Ch.9 complete + Ch.10–11: Di-Chord pulsation + harmonicity</span></div>
+      <div><strong style="font-size:10.5px;">Harmony:</strong><br><span style="font-size:10.5px;color:#64748b;">Progressions #5–#7 added. vi-IV-I-V (Prog #5) introduced.</span></div>
+      <div><strong style="font-size:10.5px;">Melody:</strong><br><span style="font-size:10.5px;color:#64748b;">Zone Distribution Ratios by song section</span></div>
+    </div>
+    <p style="font-size:10.5px;color:#94a3b8;margin-top:5px;margin-bottom:0;"><em>Key shift: Eb Dorian → Eb Major. Same root, different mode. Your ear will feel the brightness difference immediately.</em></p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Week 4 — Integration</span>
+    <span>Page 10 of 11</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ PAGE 11 — EXIT ASSESSMENT -->
+<div class="page">
+  <div class="sprint-meta">Sprint 4 — Exit Assessment</div>
+  <div class="rainbow"></div>
+  <h2 style="margin-top:8px;">Sprint Exit Assessment — Can you do these things?</h2>
+  <p style="font-size:11px;color:#64748b;margin-bottom:6px;">Complete at the end of Week 4. Mark each item honestly. These are the Sprint 4 exit targets. <em>Partial credit is real progress — note the specifics.</em></p>
+
+  <!-- Plogger -->
+  <div class="os-bg" style="border-radius:10px;padding:7px 12px;margin-bottom:6px;">
+    <div class="os-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Plogger — Musical OS Targets</div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div style="font-size:11px;color:#004d40;"><strong>Interval Spelling (Ch.7):</strong> Can identify any interval on keyboard using Pythagorean method only — no formula, no half-step counting. Time target: under 3 seconds per interval.</div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div style="font-size:11px;color:#004d40;"><strong>All 8 Clefs (Ch.8):</strong> Can read notes in treble, bass, soprano, mezzo-soprano, alto, tenor, baritone, and percussion clefs. For C-clef variants: the pointer line = middle C — one rule applied confidently.</div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div style="font-size:11px;color:#004d40;"><strong>Di-Chord Numbers (Ch.9 intro):</strong> Can name di-chord numbers [1] through [7] and associate each with its traditional interval name. Can hear [7] (P5) vs [3] (m3) vs [6] (tritone) as distinct sounds.</div>
+    </div>
+  </div>
+
+  <!-- Harmony -->
+  <div class="har-bg" style="border-radius:10px;padding:7px 12px;margin-bottom:6px;">
+    <div class="har-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Harmony Chamber — 4 Progressions Internalized</div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div style="font-size:11px;color:#78350f;"><strong>I-IV-V-I (Prog #1):</strong> Can play in at least 3 keys on both instruments. Can hear the "strong cadence" quality. Can hum the root movement.</div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div style="font-size:11px;color:#78350f;"><strong>I-V-vi-IV (Prog #2):</strong> Can play in at least 3 keys. Can identify this as the "pop/rock" progression emotionally. Can find it in a song by ear.</div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div style="font-size:11px;color:#78350f;"><strong>12-Bar Blues (Prog #3):</strong> Can play in Eb (the Superstition key) fluently. Can sing the root movement of all 12 bars. Knows the IV-bar and V-bar positions.</div>
+    </div>
+    <div class="checkbox-item">
+      <div class="cb"></div>
+      <div style="font-size:11px;color:#78350f;"><strong>ii-V-I (Prog #4 — drill vehicle):</strong> Can play shell voicings ii-V-I in at least 5 keys (piano) or barre chord shapes in 3 keys (guitar). Can sing the voice-leading resolution. Understands this is NOT the spine of music — it is a drill vehicle for hearing root movement and voice-leading.</div>
+    </div>
+  </div>
+
+  <!-- Voicings + Rhythm side by side -->
+  <div class="two-col">
+    <div class="voi-bg" style="border-radius:10px;padding:7px 10px;">
+      <div class="voi-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Voicings Chamber</div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#166534;"><strong>Guitar:</strong> All inversions on strings 1-2-3 and 2-3-4 for Eb major and C minor triads at 80 BPM. Can name root/1st/2nd inversion while playing.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#166534;"><strong>Guitar:</strong> Eb major on all 4 string sets (bonus: C minor too). Shapes feel different; sound same.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#166534;"><strong>Piano:</strong> Triad arpeggios, all inversions, in C-G-F-Bb. Both hands separately at 70 BPM. Sings each arpeggio before playing.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#166534;"><strong>Piano:</strong> Shell voicings ii-V-I in 5 keys. Voice-lead the 3rd of V → 7th of I. Smooth, no gap.</div>
+      </div>
+    </div>
+
+    <div class="rhy-bg" style="border-radius:10px;padding:7px 10px;">
+      <div class="rhy-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Rhythm Chamber</div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#9a3412;"><strong>Son Clave 3-2:</strong> Can clap confidently with foot on beat 1-3. Can speak Longy syllables while clapping.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#9a3412;"><strong>Son Clave 2-3:</strong> Can flip the pattern orientation. Understands which bar leads in 2-3 vs 3-2.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#9a3412;"><strong>Superstition groove:</strong> Verse groove on both instruments at 95 BPM. All 4 groove steps present. Eb7 modal Dorian feel established — not a static chord, a living groove.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#9a3412;"><strong>Groove development:</strong> Can demonstrate all 4 steps (boring → anticipations → stops → clave sync) as a teaching sequence.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Melody + Song -->
+  <div class="two-col" style="margin-top:6px;">
+    <div class="mel-bg" style="border-radius:10px;padding:7px 10px;">
+      <div class="mel-text" style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;">Melody Chamber</div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#1e3a8a;"><strong>Duration Amplifies Zone:</strong> Can demonstrate with instrument — hold a Zone 3 note for 4 beats vs. 1 beat, explain the difference in tension.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#1e3a8a;"><strong>Zone 3 in Dorian context:</strong> Can name the 4̂ (Ab in Eb Dorian) as Zone 3. Can place it in a musical phrase that resolves to Zone 1.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;color:#1e3a8a;"><strong>Tiny Tension Arc:</strong> Can compose and play a Z1→Z2→Z3→Z1 4-note melody in Eb Dorian. Sings before playing.</div>
+      </div>
+    </div>
+
+    <div style="border:2px solid #1e293b;border-radius:10px;padding:7px 10px;">
+      <div style="font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;color:#1e293b;">Performance Ready Check</div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;"><strong>Can play Superstition verse groove from memory</strong> — no sheet music, just the feel and the key. 95 BPM or close.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;"><strong>Eb Dorian sounds like home:</strong> when you play Eb7, it doesn't feel like it "needs to go somewhere" — it IS somewhere.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;"><strong>"Hear before you play" is a reflex</strong> — you notice when you DON'T do it, and you stop to sing first.</div>
+      </div>
+      <div class="checkbox-item">
+        <div class="cb"></div>
+        <div style="font-size:11px;"><strong>ii-V-I sounds different</strong> from the Superstition modal vamp in your ear. You can explain why.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final reflection -->
+  <div class="workbook-page" style="margin-top:6px;">
+    <h3 style="margin-top:0;">Sprint 4 Final Reflection</h3>
+    <h4>What does Eb Dorian sound like now, compared to Week 1?</h4>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <h4>One thing you will carry into Sprint 5 (What's Going On, Eb Major):</h4>
+    <div class="write-line"></div>
+    <div class="write-line"></div>
+    <h4>Most important musical insight from Sprint 4:</h4>
+    <div class="write-box"></div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF Sprint 4 · Superstition · Eb Dorian — Exit Assessment</span>
+    <span>Page 11 of 11</span>
+  </div>
+</div>
+
+</body>
+</html>

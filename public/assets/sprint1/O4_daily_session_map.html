@@ -7,317 +7,186 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html, body {
-    width: 100%;
-    height: 100%;
-    background: #f5f3ef;
-    font-family: 'Inter', sans-serif;
-  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; background: #f5f3ef; font-family: 'Inter', sans-serif; }
 
   @media print {
-    html, body {
-      background: white;
-    }
-    .page {
-      box-shadow: none !important;
-    }
+    html, body { background: white; }
+    .page { box-shadow: none !important; }
   }
 
   .page {
     width: 210mm;
-    min-height: 148mm;
+    min-height: 155mm;
     margin: 12mm auto;
     background: white;
     box-shadow: 0 2px 20px rgba(0,0,0,0.12);
-    padding: 8mm 9mm 6mm;
+    padding: 7mm 9mm 6mm;
     display: flex;
     flex-direction: column;
     gap: 0;
   }
 
-  /* HEADER */
+  /* ── HEADER ─────────────────────────────────────────────────── */
   .header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     padding-bottom: 4px;
-    border-bottom: 2px solid #1a1a2e;
+    border-bottom: 2.5px solid #1a1a2e;
     margin-bottom: 5px;
   }
+  .header h1 { font-size: 13.5pt; font-weight: 800; color: #1a1a2e; letter-spacing: -0.3px; }
+  .header .subtitle { font-size: 7.5pt; color: #666; font-weight: 400; margin-top: 1px; }
+  .header-right { font-size: 7pt; color: #888; text-align: right; }
 
-  .header-left h1 {
-    font-size: 13.5pt;
-    font-weight: 800;
-    color: #1a1a2e;
-    letter-spacing: -0.3px;
-  }
-
-  .header-left .subtitle {
-    font-size: 7.5pt;
-    color: #666;
-    font-weight: 400;
-    margin-top: 1px;
-  }
-
-  .header-right {
-    font-size: 7pt;
-    color: #888;
-    text-align: right;
-  }
-
-  /* SECTIONS GRID */
-  .sections {
+  /* ── FLOW BAR ────────────────────────────────────────────────── */
+  .flow-bar {
     display: flex;
-    flex-direction: column;
-    gap: 3.5px;
-    flex: 1;
-  }
-
-  /* BAND */
-  .band {
-    display: grid;
-    grid-template-columns: 3px 52px 1fr 68px 76px;
-    align-items: stretch;
-    min-height: 22mm;
-    border-radius: 3px;
-    overflow: hidden;
+    align-items: center;
     background: #fafafa;
-    border: 1px solid #ebebeb;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    padding: 3px 8px;
+    margin-bottom: 6px;
+    font-size: 6.5pt;
+    color: #555;
+    gap: 4px;
+  }
+  .flow-step {
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .flow-arrow { color: #bbb; font-size: 9pt; }
+  .flow-note { margin-left: auto; font-size: 6pt; color: #999; font-style: italic; }
+
+  /* ── BLOCK BANDS ─────────────────────────────────────────────── */
+  .block {
+    display: grid;
+    grid-template-columns: 4px 62px 1fr 78px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 4px;
   }
 
-  .band-accent {
-    width: 3px;
-    flex-shrink: 0;
-  }
+  .block-accent { width: 4px; }
 
-  .band-label {
+  .block-label {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4px 3px;
-    background: rgba(0,0,0,0.025);
-    border-right: 1px solid #e8e8e8;
-  }
-
-  .band-label .section-id {
-    font-size: 13pt;
-    font-weight: 800;
-    line-height: 1;
-  }
-
-  .band-label .section-name {
-    font-size: 6pt;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    color: #555;
+    padding: 5px 4px;
+    background: rgba(0,0,0,0.02);
+    border-right: 1px solid #eee;
     text-align: center;
-    margin-top: 2px;
-    line-height: 1.2;
   }
+  .block-num { font-size: 16pt; font-weight: 800; line-height: 1; }
+  .block-name { font-size: 5.8pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; color: #444; margin-top: 2px; line-height: 1.3; }
+  .block-time { font-size: 7pt; font-weight: 700; color: #888; margin-top: 3px; }
 
-  .band-label .section-time {
-    font-size: 7pt;
-    font-weight: 700;
-    color: #888;
-    margin-top: 3px;
-  }
-
-  /* MAIN CONTENT */
-  .band-content {
-    padding: 5px 8px 5px 7px;
+  .block-content {
+    padding: 6px 8px 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2px;
   }
 
   .focus-line {
     font-size: 7.5pt;
     font-weight: 700;
     color: #1a1a2e;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
-
-  .focus-line .focus-label {
-    font-weight: 500;
-    color: #777;
-    font-size: 6.5pt;
+  .focus-label {
+    font-size: 6pt;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.4px;
+    color: #999;
     margin-right: 4px;
   }
 
-  .bullets {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5px;
+  .sub-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5px 10px;
+    flex: 1;
   }
-
-  .bullets li {
-    font-size: 6.8pt;
+  .si {
+    font-size: 6.5pt;
     color: #333;
     padding-left: 9px;
     position: relative;
     line-height: 1.35;
   }
+  .si::before { content: '—'; position: absolute; left: 0; color: #ccc; font-size: 6pt; }
+  .si strong { font-weight: 700; }
 
-  .bullets li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: #bbb;
-    font-size: 6.5pt;
+  /* SYNTHESIZER ENDCAP (within B2/B3) */
+  .synth-row {
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    margin-top: 4px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #bbf7d0;
+    background: #f0fdf4;
   }
-
-  .rule-note {
-    font-size: 6.5pt;
-    color: #555;
-    font-style: italic;
-    margin-top: 2px;
-    padding-left: 9px;
-    border-left: 2px solid #e0d0f0;
-  }
-
-  /* REFS COLUMN */
-  .band-refs {
-    padding: 5px 5px 5px 4px;
-    border-left: 1px solid #ebebeb;
+  .synth-accent { background: #16a34a; }
+  .synth-body {
+    padding: 3px 7px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3px;
+    align-items: center;
+    gap: 0;
   }
+  .synth-label { font-size: 6.5pt; font-weight: 800; color: #166534; margin-right: 6px; white-space: nowrap; }
+  .synth-desc { font-size: 6pt; color: #4b7a5a; line-height: 1.4; }
+  .synth-time { margin-left: auto; font-size: 6pt; font-weight: 700; color: #166534; white-space: nowrap; padding-left: 6px; }
 
-  .refs-label {
-    font-size: 5.5pt;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #aaa;
-    font-weight: 600;
-    margin-bottom: 1px;
-  }
-
-  .ref-tag {
-    display: inline-block;
-    font-size: 6pt;
-    font-weight: 700;
-    padding: 1.5px 5px;
-    border-radius: 2px;
-    color: white;
-    margin-bottom: 2px;
-    width: fit-content;
-  }
-
-  /* PROGRESS COLUMN */
-  .band-progress {
+  /* PROGRESS column */
+  .block-progress {
     padding: 5px 6px;
-    border-left: 1px solid #ebebeb;
+    border-left: 1px solid #eee;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3px;
+    gap: 2.5px;
   }
+  .progress-label { font-size: 5.5pt; text-transform: uppercase; letter-spacing: 0.5px; color: #aaa; font-weight: 600; margin-bottom: 1px; }
+  .pw { display: flex; align-items: flex-start; gap: 3px; }
+  .pw-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 2px; border: 1px solid #ccc; background: white; }
+  .pw-dot.on { border-color: transparent; }
+  .pw-text { font-size: 5.8pt; color: #444; line-height: 1.3; }
+  .pw-text strong { font-weight: 700; font-size: 5.5pt; }
 
-  .progress-label {
-    font-size: 5.5pt;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #aaa;
-    font-weight: 600;
-    margin-bottom: 2px;
-  }
+  /* ── COLORS ──────────────────────────────────────────────────── */
+  /* B1 Combined — violet */
+  .b1 .block-accent { background: #7C3AED; }
+  .b1 .block-num    { color: #7C3AED; }
+  .b1 .pw-dot.on    { background: #7C3AED; }
+  .b1               { background: #fdf9ff; }
 
-  .progress-week {
-    display: flex;
-    align-items: flex-start;
-    gap: 3px;
-    font-size: 6pt;
-    color: #444;
-    line-height: 1.3;
-  }
+  /* B2 Guitar — amber */
+  .b2 .block-accent { background: #EA580C; }
+  .b2 .block-num    { color: #EA580C; }
+  .b2 .pw-dot.on    { background: #EA580C; }
+  .b2               { background: #fffcf8; }
 
-  .week-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin-top: 2px;
-    border: 1px solid #ccc;
-    background: white;
-  }
+  /* B3 Piano — blue */
+  .b3 .block-accent { background: #2563EB; }
+  .b3 .block-num    { color: #2563EB; }
+  .b3 .pw-dot.on    { background: #2563EB; }
+  .b3               { background: #f9fbff; }
 
-  .week-dot.filled {
-    border-color: transparent;
-  }
-
-  .week-text {
-    font-size: 6pt;
-    line-height: 1.3;
-  }
-
-  .week-text strong {
-    font-weight: 700;
-    font-size: 5.8pt;
-  }
-
-  /* S4 has no progress — use a rule note instead */
-  .rule-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 4px 0;
-  }
-
-  .rule-block .rule-text {
-    font-size: 6pt;
-    font-style: italic;
-    color: #444;
-    line-height: 1.5;
-    border-left: 2px solid #27AE60;
-    padding-left: 5px;
-  }
-
-  /* COLORS per section */
-  .s1 .band-accent { background: #5B2C6F; }
-  .s1 .section-id { color: #5B2C6F; }
-  .s1 .ref-tag { background: #5B2C6F; }
-  .s1 .week-dot.filled { background: #5B2C6F; }
-
-  .s2 .band-accent { background: #2980B9; }
-  .s2 .section-id { color: #2980B9; }
-  .s2 .ref-tag { background: #2980B9; }
-  .s2 .week-dot.filled { background: #2980B9; }
-
-  .s3 .band-accent { background: #E67E22; }
-  .s3 .section-id { color: #E67E22; }
-  .s3 .ref-tag { background: #E67E22; }
-  .s3 .week-dot.filled { background: #E67E22; }
-
-  .s4 .band-accent { background: #27AE60; }
-  .s4 .section-id { color: #27AE60; }
-  .s4 .ref-tag { background: #27AE60; }
-
-  .s5 .band-accent { background: #8E44AD; }
-  .s5 .section-id { color: #8E44AD; }
-  .s5 .ref-tag { background: #8E44AD; }
-  .s5 .week-dot.filled { background: #8E44AD; }
-
-  /* FOOTER */
+  /* ── FOOTER ──────────────────────────────────────────────────── */
   .footer {
     margin-top: 5px;
     padding-top: 4px;
     border-top: 1px solid #ddd;
-    font-size: 6.2pt;
+    font-size: 6pt;
     color: #999;
     text-align: center;
     font-style: italic;
@@ -331,228 +200,124 @@
   <div class="header">
     <div class="header-left">
       <h1>Sprint 1 — Daily Practice Session</h1>
-      <div class="subtitle">~60 minutes total &nbsp;·&nbsp; Keep this visible while you practice</div>
+      <div class="subtitle">2.5 hrs total &nbsp;·&nbsp; 3 blocks &nbsp;·&nbsp; Combined block always first</div>
     </div>
-    <div class="header-right">
-      O4 &nbsp;·&nbsp; Session Map
+    <div class="header-right">O4 &nbsp;·&nbsp; Session Map</div>
+  </div>
+
+  <!-- FLOW BAR -->
+  <div class="flow-bar">
+    <div class="flow-step" style="background:#f0e8ff; color:#6b21a8;">① Combined Learning</div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step" style="background:#fff0e8; color:#9a3412;">② Guitar Application</div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step" style="background:#eff4ff; color:#1e40af;">③ Piano Application</div>
+    <span class="flow-note">blocks ②/③ in any order</span>
+  </div>
+
+  <!-- ── BLOCK 1: COMBINED LEARNING ──────────────────────────── -->
+  <div class="block b1">
+    <div class="block-accent"></div>
+    <div class="block-label">
+      <span class="block-num">1</span>
+      <span class="block-name">Combined<br>Learning</span>
+      <span class="block-time">30 min</span>
+    </div>
+    <div class="block-content" style="padding-top: 8px; padding-bottom: 8px;">
+      <div class="focus-line">
+        <span class="focus-label">Focus</span>Concepts + ear work — piano is the vehicle
+      </div>
+      <div class="sub-items">
+        <div class="si"><strong>Ear training</strong> (10 min) — Hear → Sing → Name for [3] and [4]; both directions</div>
+        <div class="si"><strong>Keyboard viz</strong> (10 min) — find [3] and [4] from 3 different starting notes on piano</div>
+        <div class="si"><strong>Rhythm</strong> (5 min) — 8-position grid; tap positions 1 and 5 on any surface</div>
+        <div class="si"><strong>Listen</strong> (5 min) — one pass of Ain't No Sunshine; name what you hear</div>
+      </div>
+    </div>
+    <div class="block-progress">
+      <div class="progress-label">Progress</div>
+      <div class="pw"><div class="pw-dot on"></div><span class="pw-text"><strong>Wk 1</strong> First contact</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 2</strong> Ear log starts</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 3</strong> 18+/20 correct</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 4</strong> Real music test</span></div>
     </div>
   </div>
 
-  <!-- SECTIONS -->
-  <div class="sections">
-
-    <!-- S1 -->
-    <div class="band s1">
-      <div class="band-accent"></div>
-      <div class="band-label">
-        <span class="section-id">S1</span>
-        <span class="section-name">Plogger<br>Foundation</span>
-        <span class="section-time">10 min</span>
+  <!-- ── BLOCK 2: GUITAR APPLICATION ─────────────────────────── -->
+  <div class="block b2">
+    <div class="block-accent"></div>
+    <div class="block-label">
+      <span class="block-num">2</span>
+      <span class="block-name">Guitar<br>Application</span>
+      <span class="block-time">60 min</span>
+    </div>
+    <div class="block-content">
+      <div class="focus-line">
+        <span class="focus-label">Focus</span>Zone 1 · chords · Ain't No Sunshine · free play → Synthesizer
       </div>
-      <div class="band-content">
-        <div class="focus-line">
-          <span class="focus-label">Focus</span>[3] and [4] ear training — the gate skill
-        </div>
-        <ul class="bullets">
-          <li>Run the <strong>Hear → Sing → Name</strong> cycle for [3] and [4]</li>
-          <li>Work both directions: ascending and descending</li>
-          <li>Use the Focus Card (R1) as your interval reference</li>
-        </ul>
+      <div class="sub-items">
+        <div class="si"><strong>Zone 1</strong> (10 min) — A, C, E on the fretboard using E1 map</div>
+        <div class="si"><strong>Chords</strong> (12 min) — Am, G, Em, Dm open shapes + clean transitions</div>
+        <div class="si"><strong>Anchor song</strong> (20 min) — chord progression, groove, sing the roots</div>
+        <div class="si"><strong>Free play</strong> (10 min) — Zone 1 improv over Am–G–Em; no stopping</div>
       </div>
-      <div class="band-refs">
-        <div class="refs-label">Reference</div>
-        <span class="ref-tag">R1 Focus Card</span>
-      </div>
-      <div class="band-progress">
-        <div class="progress-label">Progress</div>
-        <div class="progress-week">
-          <div class="week-dot filled"></div>
-          <span class="week-text"><strong>Wk 1</strong> Getting acquainted</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 2</strong> 15+/20 correct</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 3</strong> 18+/20 correct</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 4</strong> 20/20 both ways</span>
+      <div class="synth-row">
+        <div class="synth-accent"></div>
+        <div class="synth-body">
+          <span class="synth-label">The Synthesizer</span>
+          <span class="synth-desc">All four chambers simultaneously on guitar — melody + harmony + voicings + rhythm. Performance mode: play it like someone is listening.</span>
+          <span class="synth-time">8 min</span>
         </div>
       </div>
     </div>
+    <div class="block-progress">
+      <div class="progress-label">Progress</div>
+      <div class="pw"><div class="pw-dot on"></div><span class="pw-text"><strong>Wk 1</strong> Chords only</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 2</strong> Groove added</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 3</strong> Full song</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 4</strong> New key</span></div>
+    </div>
+  </div>
 
-    <!-- S2 -->
-    <div class="band s2">
-      <div class="band-accent"></div>
-      <div class="band-label">
-        <span class="section-id">S2</span>
-        <span class="section-name">Integrated<br>Work</span>
-        <span class="section-time">18 min</span>
+  <!-- ── BLOCK 3: PIANO APPLICATION ──────────────────────────── -->
+  <div class="block b3">
+    <div class="block-accent"></div>
+    <div class="block-label">
+      <span class="block-num">3</span>
+      <span class="block-name">Piano<br>Application</span>
+      <span class="block-time">60 min</span>
+    </div>
+    <div class="block-content">
+      <div class="focus-line">
+        <span class="focus-label">Focus</span>Zone 1 · triads · Ain't No Sunshine · free play → Synthesizer
       </div>
-      <div class="band-content">
-        <div class="focus-line">
-          <span class="focus-label">Focus</span>Zone 1 on both instruments + rhythm grid
-        </div>
-        <ul class="bullets">
-          <li><strong>Ex 1</strong> — Find Zone 1 notes (A, C, E) on guitar and piano using E1 and E2 maps</li>
-          <li><strong>Ex 2</strong> — Play the 8-position grid patterns for Ain't No Sunshine (O2 card)</li>
-          <li>Connect fretboard positions to keyboard positions before moving on</li>
-        </ul>
+      <div class="sub-items">
+        <div class="si"><strong>Zone 1</strong> (10 min) — A, C, E on the keyboard using E2 map</div>
+        <div class="si"><strong>Chords</strong> (12 min) — Am, G, Em root position triads + transitions</div>
+        <div class="si"><strong>Anchor song</strong> (20 min) — LH block chords, RH melody; name each change</div>
+        <div class="si"><strong>Free play</strong> (10 min) — Zone 1 improv on piano over Am–G–Em; no stopping</div>
       </div>
-      <div class="band-refs">
-        <div class="refs-label">Reference</div>
-        <span class="ref-tag">E1 Guitar Map</span>
-        <span class="ref-tag">E2 Piano Map</span>
-        <span class="ref-tag">O2 Rhythm Grid</span>
-      </div>
-      <div class="band-progress">
-        <div class="progress-label">Progress</div>
-        <div class="progress-week">
-          <div class="week-dot filled"></div>
-          <span class="week-text"><strong>Wk 1</strong> Locate notes</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 2</strong> Grid patterns</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 3</strong> Cross-instrument</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 4</strong> Fluent + named</span>
+      <div class="synth-row">
+        <div class="synth-accent"></div>
+        <div class="synth-body">
+          <span class="synth-label">The Synthesizer</span>
+          <span class="synth-desc">All four chambers simultaneously on piano — melody + harmony + voicings + rhythm. Performance mode: play it like someone is listening.</span>
+          <span class="synth-time">8 min</span>
         </div>
       </div>
     </div>
-
-    <!-- S3 -->
-    <div class="band s3">
-      <div class="band-accent"></div>
-      <div class="band-label">
-        <span class="section-id">S3</span>
-        <span class="section-name">Song<br>Work</span>
-        <span class="section-time">14 min</span>
-      </div>
-      <div class="band-content">
-        <div class="focus-line">
-          <span class="focus-label">Focus</span>Ain't No Sunshine — know it deeply
-        </div>
-        <ul class="bullets">
-          <li>Guitar + piano, simplified forms — no excess technique</li>
-          <li>Find every chord change; <strong>sing the root</strong> on each change</li>
-          <li>Name the movements: say the chord name aloud as you play it</li>
-        </ul>
-      </div>
-      <div class="band-refs">
-        <div class="refs-label">Reference</div>
-        <span class="ref-tag">O1 Analysis</span>
-      </div>
-      <div class="band-progress">
-        <div class="progress-label">Progress</div>
-        <div class="progress-week">
-          <div class="week-dot filled"></div>
-          <span class="week-text"><strong>Wk 1</strong> Chords only</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 2</strong> Rhythm added</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 3</strong> Both instruments</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 4</strong> Performance level</span>
-        </div>
-      </div>
+    <div class="block-progress">
+      <div class="progress-label">Progress</div>
+      <div class="pw"><div class="pw-dot on"></div><span class="pw-text"><strong>Wk 1</strong> LH chords</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 2</strong> Melody added</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 3</strong> Both hands</span></div>
+      <div class="pw"><div class="pw-dot"></div><span class="pw-text"><strong>Wk 4</strong> New key</span></div>
     </div>
-
-    <!-- S4 -->
-    <div class="band s4">
-      <div class="band-accent"></div>
-      <div class="band-label">
-        <span class="section-id">S4</span>
-        <span class="section-name">Free<br>Play</span>
-        <span class="section-time">10 min</span>
-      </div>
-      <div class="band-content">
-        <div class="focus-line">
-          <span class="focus-label">Focus</span>Improvise using only owned material
-        </div>
-        <ul class="bullets">
-          <li>Zone 1 melody (A, C, E) over Am — that's your entire vocabulary</li>
-          <li>No new material. No stopping at mistakes. Keep moving.</li>
-          <li>Anything you've drilled this week is fair game</li>
-        </ul>
-      </div>
-      <div class="band-refs">
-        <div class="refs-label">Rule</div>
-        <div class="rule-block">
-          <div class="rule-text">"If you own it, play it.<br>If you don't own it,<br>don't force it."</div>
-        </div>
-      </div>
-      <div class="band-progress">
-        <div class="progress-label">No tracking</div>
-        <div class="progress-week" style="flex-direction:column; gap:2px;">
-          <span class="week-text" style="color:#888; font-style:italic; font-size:6pt; line-height:1.4;">Free Play has no weekly targets. The only measure is: did you play without stopping?</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- S5 -->
-    <div class="band s5">
-      <div class="band-accent"></div>
-      <div class="band-label">
-        <span class="section-id">S5</span>
-        <span class="section-name">The<br>Synthesizer</span>
-        <span class="section-time">8 min</span>
-      </div>
-      <div class="band-content">
-        <div class="focus-line">
-          <span class="focus-label">Focus</span>All four chambers simultaneously
-        </div>
-        <ul class="bullets">
-          <li>Ain't No Sunshine — melody + chords + naming + rhythm, all at once</li>
-          <li>This is a <strong>performance section</strong>, not a practice section</li>
-          <li>Play it like someone is listening. Full attention, full commitment.</li>
-        </ul>
-      </div>
-      <div class="band-refs">
-        <div class="refs-label">Reference</div>
-        <span class="ref-tag">O1 Analysis</span>
-        <span class="ref-tag">O2 Rhythm Grid</span>
-      </div>
-      <div class="band-progress">
-        <div class="progress-label">Progress</div>
-        <div class="progress-week">
-          <div class="week-dot filled"></div>
-          <span class="week-text"><strong>Wk 1</strong> Attempt it</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 2</strong> Hold rhythm</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 3</strong> Name + play</span>
-        </div>
-        <div class="progress-week">
-          <div class="week-dot"></div>
-          <span class="week-text"><strong>Wk 4</strong> Full synthesis</span>
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <!-- FOOTER -->
   <div class="footer">
-    The session structure never changes. The content inside each section deepens every week.
+    Combined block is always first — it sets up both instrument sessions. Synthesizer is the final 8 minutes of each instrument block.
   </div>
 
 </div>

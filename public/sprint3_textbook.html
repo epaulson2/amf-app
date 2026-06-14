@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMF Sprint 3 — The Girl from Ipanema</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Georgia','Times New Roman',serif;background:#f0ede8;color:#1e293b;font-size:12px;line-height:1.35;}
+.page{width:794px;min-height:1123px;margin:24px auto;background:#fff;padding:32px 44px;box-shadow:0 4px 24px rgba(0,0,0,0.10);page-break-after:always;position:relative;}
+h1{font-size:30px;font-weight:900;line-height:1.2;letter-spacing:-0.02em;}
+h2{font-size:16px;font-weight:800;line-height:1.25;margin-bottom:4px;margin-top:8px;}
+h3{font-size:13px;font-weight:700;margin-bottom:3px;margin-top:7px;}
+h4{font-size:11px;font-weight:700;margin-bottom:3px;margin-top:8px;text-transform:uppercase;letter-spacing:0.05em;}
+p{margin-bottom:4px;}
+ul,ol{margin:0 0 6px 16px;}
+li{margin-bottom:2px;}
+strong{font-weight:700;}
+em{font-style:italic;}
+.os-header{background:#004d40;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;}
+.os-tag{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.75;}
+.os-title{font-size:13px;font-weight:800;}
+.os-bg{background:#e0f2f1;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.os-rule{height:3px;background:#00796b;border-radius:2px;margin:7px 0;}
+.os-text{color:#004d40;}
+.os-box{border-left:4px solid #00796b;padding:8px 12px;background:#f0faf9;border-radius:0 8px 8px 0;margin:8px 0;}
+.mel-header{background:#1e3a8a;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.mel-bg{background:#dbeafe;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.mel-rule{height:3px;background:#3b82f6;border-radius:2px;margin:10px 0;}
+.mel-text{color:#1e3a8a;}
+.mel-box{border-left:4px solid #3b82f6;padding:8px 12px;background:#eff6ff;border-radius:0 8px 8px 0;margin:8px 0;}
+.har-header{background:#78350f;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.har-bg{background:#fef3c7;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.har-rule{height:3px;background:#d97706;border-radius:2px;margin:10px 0;}
+.har-text{color:#78350f;}
+.har-box{border-left:4px solid #d97706;padding:8px 12px;background:#fffbeb;border-radius:0 8px 8px 0;margin:8px 0;}
+.rhy-header{background:#9a3412;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.rhy-bg{background:#fde8d8;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.rhy-text{color:#9a3412;}
+.rhy-box{border-left:4px solid #ea580c;padding:8px 12px;background:#fff8f5;border-radius:0 8px 8px 0;margin:8px 0;}
+.voi-header{background:#166534;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.voi-bg{background:#dcfce7;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.voi-text{color:#166534;}
+.voi-box{border-left:4px solid #16a34a;padding:8px 12px;background:#f0fdf4;border-radius:0 8px 8px 0;margin:8px 0;}
+.syn-header{background:#4b2d8c;color:#fff;padding:6px 14px;border-radius:6px;display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
+.syn-bg{background:#f0e6ff;border-radius:10px;padding:9px 13px;margin:8px 0;}
+.syn-text{color:#4b2d8c;}
+.syn-box{border-left:4px solid #8b5cf6;padding:8px 12px;background:#f5f0ff;border-radius:0 8px 8px 0;margin:8px 0;}
+.stage{border-radius:8px;padding:8px 12px;margin:7px 0;border-left:5px solid;}
+.stage-1{background:#fff8e1;border-color:#f59e0b;}.stage-1 .stage-label{color:#b45309;}
+.stage-2{background:#fff0f0;border-color:#ef4444;}.stage-2 .stage-label{color:#b91c1c;}
+.stage-3{background:#f0fdf4;border-color:#22c55e;}.stage-3 .stage-label{color:#15803d;}
+.stage-label{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
+.non-dia{background:#fdf4ff;border:2px solid #c084fc;border-radius:10px;padding:10px 14px;margin:10px 0;}
+.non-dia-title{font-size:10px;font-weight:800;letter-spacing:.1em;color:#7e22ce;text-transform:uppercase;margin-bottom:4px;}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12px;}
+th{padding:5px 8px;text-align:left;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;border-bottom:2px solid #e2e8f0;}
+td{padding:5px 8px;border-bottom:1px solid #f1f5f9;vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#fafafa;}
+.rainbow{height:4px;background:linear-gradient(90deg,#00796b 0%,#3b82f6 22%,#d97706 50%,#8b5cf6 78%,#ea580c 100%);border-radius:2px;margin:10px 0;}
+.cover-swatch{display:flex;gap:6px;margin:24px 0;}
+.swatch{height:8px;flex:1;border-radius:2px;}
+.cover-meta{font-size:11px;color:#64748b;letter-spacing:.08em;text-transform:uppercase;}
+.cover-subtitle{font-size:17px;color:#475569;margin:10px 0 24px;}
+.toc-group{margin-bottom:18px;}
+.toc-group-title{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;padding-bottom:4px;border-bottom:2px solid;}
+.toc-item{display:flex;justify-content:space-between;padding:5px 0;font-size:13px;border-bottom:1px dotted #e2e8f0;}
+.toc-item span:first-child{max-width:80%;}
+.toc-pg{color:#94a3b8;font-size:12px;}
+.chord-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0;}
+.chord-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 12px;min-width:90px;text-align:center;}
+.chord-name{font-size:17px;font-weight:900;margin-bottom:3px;}
+.chord-detail{font-size:11px;color:#64748b;}
+.page-footer{position:absolute;bottom:22px;left:44px;right:44px;display:flex;justify-content:space-between;font-size:10px;color:#94a3b8;letter-spacing:.05em;}
+.lyric-line{font-style:italic;font-size:13px;color:#475569;margin-left:16px;}
+.chord-above{font-size:11px;font-weight:700;color:#78350f;letter-spacing:.05em;}
+@media print{body{background:white;}.page{box-shadow:none;margin:0;page-break-after:always;}}
+
+/* Additional layout helpers */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0;}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:8px 0;}
+.badge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:100px;margin-right:6px;}
+.badge-teal{background:#004d40;color:#fff;}
+.badge-blue{background:#1e3a8a;color:#fff;}
+.badge-amber{background:#78350f;color:#fff;}
+.badge-rust{background:#9a3412;color:#fff;}
+.badge-green{background:#166534;color:#fff;}
+.badge-purple{background:#4b2d8c;color:#fff;}
+.badge-yellow{background:#f59e0b;color:#fff;}
+.grid-line{display:flex;gap:0;margin:10px 0;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;}
+.grid-cell{flex:1;padding:7px 6px;text-align:center;font-size:12px;border-right:1px solid #e2e8f0;background:#fafafa;}
+.grid-cell:last-child{border-right:none;}
+.grid-cell.active{background:#1e3a8a;color:#fff;font-weight:700;}
+.grid-cell.beat{background:#eff6ff;font-weight:700;color:#1e3a8a;}
+.grid-cell.rest{background:#f8fafc;color:#94a3b8;}
+.grid-cell.clave{background:#9a3412;color:#fff;font-weight:700;}
+.clave-label{font-size:10px;text-align:center;color:#64748b;margin-bottom:4px;letter-spacing:.05em;text-transform:uppercase;}
+.zone-pill{display:inline-block;padding:3px 12px;border-radius:100px;font-size:12px;font-weight:700;margin:2px;}
+.z1{background:#dbeafe;color:#1e3a8a;}
+.z2{background:#fef9c3;color:#92400e;}
+.z3{background:#fee2e2;color:#991b1b;}
+.z4{background:#f3e8ff;color:#6b21a8;}
+.hept-box{display:flex;gap:0;margin:14px 0;border:2px solid #004d40;border-radius:10px;overflow:hidden;}
+.hept-cell{flex:1;padding:10px 6px;text-align:center;font-size:14px;font-weight:800;background:#e0f2f1;color:#004d40;border-right:1px solid #b2dfdb;}
+.hept-cell:last-child{border-right:none;}
+.hept-cell.hi{background:#004d40;color:#fff;}
+.milestone-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;}
+.milestone-item{background:#f8fafc;border-radius:8px;padding:8px 10px;border-top:3px solid #e2e8f0;}
+.milestone-item.done{border-top-color:#22c55e;}
+.arc-row{display:flex;gap:8px;align-items:center;margin:12px 0;}
+.arc-cell{border-radius:8px;padding:12px 16px;text-align:center;font-weight:800;font-size:15px;flex:1;}
+.arc-arrow{font-size:18px;color:#94a3b8;}
+.qr-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0;}
+.qr-card{border-radius:8px;padding:9px 10px;background:#f8fafc;border:1px solid #e2e8f0;}
+.qr-card-title{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px;}
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- PAGE 1: COVER -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="cover-meta" style="margin-bottom:16px;">AMF · The Artistic Music Framework · Sprint 3 of 12</div>
+
+  <div class="rainbow"></div>
+
+  <div style="margin:32px 0 10px;">
+    <div class="cover-meta" style="margin-bottom:10px;">Anchor Song</div>
+    <h1 style="font-size:36px;color:#004d40;">The Girl from Ipanema</h1>
+    <div class="cover-subtitle">Antonio Carlos Jobim · Bossa Nova · ~130 BPM</div>
+  </div>
+
+  <div class="cover-swatch">
+    <div class="swatch" style="background:#004d40;" title="Musical OS"></div>
+    <div class="swatch" style="background:#1e3a8a;" title="Melody"></div>
+    <div class="swatch" style="background:#78350f;" title="Harmony"></div>
+    <div class="swatch" style="background:#9a3412;" title="Rhythm"></div>
+    <div class="swatch" style="background:#166534;" title="Voicings"></div>
+    <div class="swatch" style="background:#4b2d8c;" title="Synthesizer"></div>
+  </div>
+
+  <div class="two-col" style="margin-top:28px;">
+    <div>
+      <div class="os-bg">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <span class="badge badge-teal">Musical OS</span>
+          <span style="font-size:11px;color:#004d40;font-weight:700;">Plogger Ch. 5–6</span>
+        </div>
+        <ul style="font-size:13px;color:#004d40;margin-left:14px;">
+          <li><strong>Ch.5 Lap Map</strong> — physical keyboard on your hands, four tetrachord feels</li>
+          <li><strong>Ch.6 Pythagorean Ordering</strong> — F–C–G–D–A–E–B and why adjacent keys share 6 of 7 notes</li>
+          <li>Heptachord Shift as the bridge to Gb major</li>
+        </ul>
+      </div>
+
+      <div class="mel-bg" style="margin-top:14px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <span class="badge badge-blue">Melody</span>
+          <span style="font-size:11px;color:#1e3a8a;font-weight:700;">Primary Focus</span>
+        </div>
+        <ul style="font-size:13px;color:#1e3a8a;margin-left:14px;">
+          <li><strong>5 Key Notes Framework</strong> — First, Last, Highest, Longest, Beat-1</li>
+          <li><strong>Tiny Tension Arc</strong> — Z1–Z1–Z2–Z1 as the minimum hook engine</li>
+          <li><strong>Duration Amplifies Zone</strong> — long notes make tension stronger</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <div class="har-bg">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <span class="badge badge-amber">Harmony</span>
+          <span style="font-size:11px;color:#78350f;font-weight:700;">Progression #3</span>
+        </div>
+        <ul style="font-size:13px;color:#78350f;margin-left:14px;">
+          <li>12-Bar Blues introduced as contrast exercise</li>
+          <li>Ipanema harmony: Fmaj7 → G7 → Gm7–C7</li>
+          <li>Bridge: Gb major Heptachord Shift</li>
+          <li>Deepening inversions through Fmaj7 changes</li>
+        </ul>
+      </div>
+
+      <div class="rhy-bg" style="margin-top:14px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <span class="badge badge-rust">Rhythm</span>
+          <span style="font-size:11px;color:#9a3412;font-weight:700;">Secondary Focus</span>
+        </div>
+        <ul style="font-size:13px;color:#9a3412;margin-left:14px;">
+          <li><strong>Son Clave 3-2</strong> — first introduction</li>
+          <li><strong>Bossa nova feel</strong> — anticipations on "and" positions</li>
+          <li>Rhythm Code positions 2,4,6,8 as lift and forward motion</li>
+          <li>Guitar: p-i-m-a fingerpicking + CAGED first look</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:28px;padding:16px 20px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+    <div class="cover-meta" style="margin-bottom:8px;">Sprint 3 in three sentences</div>
+    <p style="font-size:13px;margin:0;">You will learn to hear <strong>why Ipanema sounds magical</strong> — the tonic that floats, the borrowed G7 that creates unease, and the breathtaking Gb major bridge that steps an entire half-step outside before drifting home. You will develop your <strong>5 Key Notes</strong> ear to understand how Jobim shapes melody, and your <strong>Rhythm Code</strong> fluency to feel the bossa nova groove at a physical level. By sprint's end you will play the full verse on your instrument at 100 BPM with authentic feel.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>F Major / Gb Major · Bossa Nova · 130 BPM</span>
+    <span>Page 1</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 2: TABLE OF CONTENTS -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="cover-meta" style="margin-bottom:8px;">AMF Sprint 3</div>
+  <h1 style="margin-bottom:6px;">Table of Contents</h1>
+  <div class="rainbow"></div>
+
+  <div class="two-col" style="margin-top:24px;align-items:start;">
+    <div>
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#004d40;border-color:#004d40;">Musical OS — Plogger</div>
+        <div class="toc-item">
+          <span>Ch.5 · The Lap Map — Your Hands as Keyboard</span>
+          <span class="toc-pg">3</span>
+        </div>
+        <div class="toc-item">
+          <span>The Four Tetrachord Feels</span>
+          <span class="toc-pg">3</span>
+        </div>
+        <div class="toc-item">
+          <span>Ch.6 · Pythagorean Ordering of Fifths</span>
+          <span class="toc-pg">4</span>
+        </div>
+        <div class="toc-item">
+          <span>F–C–G–D–A–E–B and Adjacent Keys</span>
+          <span class="toc-pg">4</span>
+        </div>
+        <div class="toc-item">
+          <span>The Heptachord Shift Explained</span>
+          <span class="toc-pg">4</span>
+        </div>
+      </div>
+
+      <div class="toc-group" style="margin-top:14px;">
+        <div class="toc-group-title" style="color:#1e3a8a;border-color:#1e3a8a;">Melody Chamber</div>
+        <div class="toc-item">
+          <span>The 5 Key Notes Framework</span>
+          <span class="toc-pg">5</span>
+        </div>
+        <div class="toc-item">
+          <span>First · Last · Highest · Longest · Beat-1</span>
+          <span class="toc-pg">5</span>
+        </div>
+        <div class="toc-item">
+          <span>Tiny Tension Arc — Z1–Z1–Z2–Z1</span>
+          <span class="toc-pg">5</span>
+        </div>
+        <div class="toc-item">
+          <span>Duration Amplifies Zone</span>
+          <span class="toc-pg">5</span>
+        </div>
+        <div class="toc-item">
+          <span>Exercises: Building Tension Arcs in F Major</span>
+          <span class="toc-pg">5</span>
+        </div>
+      </div>
+
+      <div class="toc-group" style="margin-top:14px;">
+        <div class="toc-group-title" style="color:#78350f;border-color:#78350f;">Harmony Chamber</div>
+        <div class="toc-item">
+          <span>Progression #3 · 12-Bar Blues Introduced</span>
+          <span class="toc-pg">6</span>
+        </div>
+        <div class="toc-item">
+          <span>Ipanema Harmony — Verse Analysis</span>
+          <span class="toc-pg">6</span>
+        </div>
+        <div class="toc-item">
+          <span>The Bridge · Gb Major Heptachord Shift</span>
+          <span class="toc-pg">6</span>
+        </div>
+        <div class="toc-item">
+          <span>Voice Economy Through Fmaj7 Changes</span>
+          <span class="toc-pg">6</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="toc-group">
+        <div class="toc-group-title" style="color:#78350f;border-color:#d97706;">Song Deep Dive</div>
+        <div class="toc-item">
+          <span>Girl from Ipanema — Complete Chord Map</span>
+          <span class="toc-pg">7</span>
+        </div>
+        <div class="toc-item">
+          <span>Melody Zone Analysis — Verse</span>
+          <span class="toc-pg">7</span>
+        </div>
+        <div class="toc-item">
+          <span>What to Listen For — 6 Moments</span>
+          <span class="toc-pg">7</span>
+        </div>
+        <div class="toc-item">
+          <span>Instrument-Specific Notes</span>
+          <span class="toc-pg">7</span>
+        </div>
+      </div>
+
+      <div class="toc-group" style="margin-top:14px;">
+        <div class="toc-group-title" style="color:#9a3412;border-color:#9a3412;">Rhythm Chamber</div>
+        <div class="toc-item">
+          <span>Son Clave 3-2 — First Introduction</span>
+          <span class="toc-pg">8</span>
+        </div>
+        <div class="toc-item">
+          <span>Bossa Nova Feel — Anticipations on "And"</span>
+          <span class="toc-pg">8</span>
+        </div>
+        <div class="toc-item">
+          <span>Rhythm Code Positions 2,4,6,8 — Lift</span>
+          <span class="toc-pg">8</span>
+        </div>
+        <div class="toc-item">
+          <span>Guitar: Bossa Fingerpicking + CAGED Intro</span>
+          <span class="toc-pg">8</span>
+        </div>
+        <div class="toc-item">
+          <span>Piano: Alberti Bass + LH Pattern</span>
+          <span class="toc-pg">8–9</span>
+        </div>
+      </div>
+
+      <div class="toc-group" style="margin-top:14px;">
+        <div class="toc-group-title" style="color:#166534;border-color:#166534;">Voicings Chamber</div>
+        <div class="toc-item">
+          <span>Deepening Inversions — Fmaj7 Voice Economy</span>
+          <span class="toc-pg">9</span>
+        </div>
+        <div class="toc-item">
+          <span>Four Voicings of Fmaj7 Side by Side</span>
+          <span class="toc-pg">9</span>
+        </div>
+      </div>
+
+      <div class="toc-group" style="margin-top:14px;">
+        <div class="toc-group-title" style="color:#4b2d8c;border-color:#4b2d8c;">Quick Reference Card</div>
+        <div class="toc-item">
+          <span>All Sprint 3 Concepts · Compact Grid</span>
+          <span class="toc-pg">10</span>
+        </div>
+        <div class="toc-item">
+          <span>Sprint 3 Exit Milestones</span>
+          <span class="toc-pg">10</span>
+        </div>
+        <div class="toc-item">
+          <span>North Star · Next Sprint Preview</span>
+          <span class="toc-pg">10</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="os-box" style="margin-top:24px;">
+    <strong class="os-text">How to use this textbook:</strong> Each page is one A4 sheet. Read the Musical OS section first — it gives you the language. Then Melody and Harmony give you the analytical tools. The Song Deep Dive puts it all together. The Rhythm section gives you the physical feel. Play every exercise before moving on. Come back to the Quick Reference Card daily.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Table of Contents</span>
+    <span>Page 2</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 3: MUSICAL OS — PLOGGER CH.5 LAP MAP -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="os-header">
+    <span class="os-tag">Musical OS</span>
+    <span class="os-title">Plogger · Chapter 5 — The Lap Map</span>
+  </div>
+
+  <h2 class="os-text" style="margin-top:0;">Your Hands Are a Keyboard</h2>
+
+  <p>The Lap Map is the single most powerful silent-practice tool in Plogger. Place your hands <strong>palm-down on your lap</strong>. Your ten fingertips are the white keys. The spaces between fingers are the black keys. This is a fully functional keyboard you carry everywhere.</p>
+
+  <div class="os-bg">
+    <h4 class="os-text" style="margin-top:0;">Lap Map Finger Layout</h4>
+    <table style="font-size:13px;">
+      <thead>
+        <tr>
+          <th style="color:#004d40;">Finger (L→R)</th>
+          <th style="color:#004d40;">Left Pinky</th>
+          <th style="color:#004d40;">Left Ring</th>
+          <th style="color:#004d40;">Left Middle</th>
+          <th style="color:#004d40;">Left Index</th>
+          <th style="color:#004d40;">Both Thumbs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>White Key</strong></td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G / A</td>
+        </tr>
+        <tr>
+          <td><strong>Space = Black</strong></td>
+          <td>C#/Db</td>
+          <td>D#/Eb</td>
+          <td>—</td>
+          <td>F#/Gb</td>
+          <td>G#/Ab</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px;color:#004d40;margin:6px 0 0;"><em>Note: the gap between E and F (no black key) is felt as fingertips touching. The gap between B and C is felt the same way on the right hand.</em></p>
+  </div>
+
+  <h3 class="os-text">The Four Tetrachord Feels</h3>
+  <p>A <strong>tetrachord</strong> is a group of four notes spanning a perfect fourth. Each type has a distinct fingertip-spacing pattern — a physical "feel" you can memorize without an instrument.</p>
+
+  <div class="two-col">
+    <div class="os-box">
+      <h4 class="os-text" style="margin-top:0;">Major Tetrachord</h4>
+      <p style="font-size:13px;margin-bottom:8px;">W–W–H (whole, whole, half). Example: C–D–E–F. <br>Feel: two wide gaps, then a close squeeze.</p>
+      <div class="stage stage-1">
+        <div class="stage-label">S1 · Discovering — Hear Before You Play</div>
+        Hum C–D–E–F on the piano (or any melody source) until you feel the brightness. Then map it on your lap. Eyes closed — three fingers wide apart, last finger tucked close.
+      </div>
+    </div>
+    <div class="os-box">
+      <h4 class="os-text" style="margin-top:0;">Minor Tetrachord</h4>
+      <p style="font-size:13px;margin-bottom:8px;">W–H–W (whole, half, whole). Example: A–B–C–D. <br>Feel: wide gap, close squeeze, then wide again.</p>
+      <div class="stage stage-1">
+        <div class="stage-label">S1 · Discovering — Hear Before You Play</div>
+        Hum A–B–C–D on the piano. Notice the darkness compared to major. Find the "close squeeze" in the middle on your lap fingers.
+      </div>
+    </div>
+    <div class="os-box">
+      <h4 class="os-text" style="margin-top:0;">Phrygian Tetrachord</h4>
+      <p style="font-size:13px;margin-bottom:8px;">H–W–W (half, whole, whole). Example: E–F–G–A. <br>Feel: immediate tight squeeze at the start, then two wide steps.</p>
+      <div class="stage stage-2">
+        <div class="stage-label">S2 · Perfecting — Hear Before You Play</div>
+        Hum E–F–G–A. The half-step opening gives it a Spanish/flamenco flavor. Map it: first two fingers close, then two wide steps outward.
+      </div>
+    </div>
+    <div class="os-box">
+      <h4 class="os-text" style="margin-top:0;">Lydian Tetrachord</h4>
+      <p style="font-size:13px;margin-bottom:8px;">W–W–W (all whole steps). Example: C–D–E–F#. <br>Feel: three consistently wide gaps — even spacing throughout.</p>
+      <div class="stage stage-2">
+        <div class="stage-label">S2 · Perfecting — Hear Before You Play</div>
+        Hum C–D–E–F#. The augmented fourth (tritone) at the top gives this its dreamy, floating quality. Three equal gaps on your lap.
+      </div>
+    </div>
+  </div>
+
+  <div class="os-rule"></div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 · Fluent — Sprint 3 Lap Map Target</div>
+    <strong>Exit Criterion:</strong> From any starting note named by a partner, you can form a major or minor tetrachord on your lap within 3 seconds, eyes away from your hands. Practice this on the bus, at a table, anywhere. The instrument is optional — the Lap Map is always with you.
+  </div>
+
+  <div class="os-box" style="margin-top:16px;">
+    <strong class="os-text">Why tetrachords matter for Ipanema:</strong> The F major scale is built from two major tetrachords stacked: F–G–A–Bb (lower) + C–D–E–F (upper). When Jobim shifts to Gb major in the bridge, he's stacking two Gb major tetrachords: Gb–Ab–Bb–Cb + Db–Eb–F–Gb. Feeling each tetrachord on your lap before the shift helps you hear the key change before the chord sounds.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Musical OS · Plogger Ch.5 Lap Map</span>
+    <span>Page 3</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 4: MUSICAL OS — PLOGGER CH.6 PYTHAGOREAN ORDERING -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="os-header">
+    <span class="os-tag">Musical OS</span>
+    <span class="os-title">Plogger · Chapter 6 — Pythagorean Ordering of Fifths</span>
+  </div>
+
+  <h2 class="os-text" style="margin-top:0;">The Spine of All Keys: F–C–G–D–A–E–B</h2>
+
+  <p>Seven letters. One sequence. This is the order in which notes were discovered by tuning in perfect fifths — each note a fifth above the previous. Memorize it left-to-right.</p>
+
+  <div class="hept-box">
+    <div class="hept-cell hi">F</div>
+    <div class="hept-cell">C</div>
+    <div class="hept-cell">G</div>
+    <div class="hept-cell">D</div>
+    <div class="hept-cell">A</div>
+    <div class="hept-cell">E</div>
+    <div class="hept-cell hi">B</div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:#004d40;margin-top:4px;">
+    <span>← MORE FLAT</span>
+    <span>MORE SHARP →</span>
+  </div>
+
+  <div class="os-bg" style="margin-top:16px;">
+    <h4 class="os-text" style="margin-top:0;">The Fundamental Rule: Adjacent Notes Share 6 of 7</h4>
+    <p style="font-size:13px;margin:0 0 10px;">Move one step right on the spine (e.g., F major → C major): you add one sharp, remove one flat, and keep the other six notes identical. Move one step left: add one flat, remove one sharp, keep six.</p>
+    <table style="font-size:12px;">
+      <thead>
+        <tr>
+          <th style="color:#004d40;">Key</th>
+          <th style="color:#004d40;">Notes</th>
+          <th style="color:#004d40;">Differs from Neighbor by</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Bb major</strong></td>
+          <td>Bb C D Eb F G A</td>
+          <td>Bb → B (one note changes)</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#004d40;">F major ←</strong></td>
+          <td>F G A Bb C D E</td>
+          <td>Our home key for the verse</td>
+        </tr>
+        <tr>
+          <td><strong>C major</strong></td>
+          <td>C D E F G A B</td>
+          <td>E → Eb (one note changes)</td>
+        </tr>
+        <tr>
+          <td><strong>G major</strong></td>
+          <td>G A B C D E F#</td>
+          <td>F → F# (one note changes)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="os-text">The Heptachord Shift — Why the Bridge Feels So Far Away</h3>
+
+  <p>The bridge of Ipanema begins on <strong>Gb major</strong>. F major and Gb major are <em>not</em> adjacent on the Pythagorean spine — they are on <em>opposite ends</em>, separated by the entire chromatic space. This means they share <strong>only one note</strong> (approximately). That is why the bridge sounds like you've been teleported.</p>
+
+  <div class="non-dia">
+    <div class="non-dia-title">Heptachord Shift — The Bridge in Plain Language</div>
+    <div class="two-col" style="margin-top:10px;">
+      <div>
+        <strong style="color:#004d40;">F major (verse)</strong>
+        <div style="background:#e0f2f1;border-radius:6px;padding:8px 12px;margin-top:6px;font-size:13px;">
+          F · G · A · Bb · C · D · <strong>E</strong>
+        </div>
+        <p style="font-size:12px;color:#475569;margin-top:6px;">The E natural (scale degree 7) is your anchor — you feel completely at home.</p>
+      </div>
+      <div>
+        <strong style="color:#6b21a8;">Gb major (bridge)</strong>
+        <div style="background:#fdf4ff;border-radius:6px;border:1px solid #c084fc;padding:8px 12px;margin-top:6px;font-size:13px;">
+          Gb · Ab · Bb · Cb · Db · Eb · <strong>F</strong>
+        </div>
+        <p style="font-size:12px;color:#6b21a8;margin-top:6px;">Almost every note has changed. Only the Bb and F survive. Everything else floats free.</p>
+      </div>
+    </div>
+    <p style="font-size:13px;margin:12px 0 0;"><strong>The Magic:</strong> Jobim lands on Gbmaj7 — one half-step above F — and holds it for <em>four full bars</em>. Your ear loses its footing completely. When Gm7–C7 arrives again, the return to F feels like waking from a dream. This is the Heptachord Shift: a move so far out that only the full return can resolve it.</p>
+  </div>
+
+  <div class="os-rule"></div>
+
+  <h3 class="os-text">Mode Brightness Along the Spine</h3>
+  <p style="font-size:13px;">Moving right on the Pythagorean spine = brighter modes. Moving left = darker modes.</p>
+
+  <div class="hept-box" style="border-color:#1e3a8a;">
+    <div class="hept-cell" style="background:#e8f5e9;color:#166534;font-size:11px;">Lydian<br><span style="font-size:9px;">brightest</span></div>
+    <div class="hept-cell" style="background:#e0f2f1;color:#004d40;font-size:11px;">Ionian<br><span style="font-size:9px;">major</span></div>
+    <div class="hept-cell" style="background:#fff8e1;color:#78350f;font-size:11px;">Mixolydian<br><span style="font-size:9px;">dom7</span></div>
+    <div class="hept-cell" style="background:#dbeafe;color:#1e3a8a;font-size:11px;">Dorian<br><span style="font-size:9px;">jazzy min</span></div>
+    <div class="hept-cell" style="background:#fde8d8;color:#9a3412;font-size:11px;">Aeolian<br><span style="font-size:9px;">nat minor</span></div>
+    <div class="hept-cell" style="background:#f3e8ff;color:#6b21a8;font-size:11px;">Phrygian<br><span style="font-size:9px;">flamenco</span></div>
+    <div class="hept-cell" style="background:#fee2e2;color:#991b1b;font-size:11px;">Locrian<br><span style="font-size:9px;">darkest</span></div>
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 · Fluent — Sprint 3 Pythagorean Target</div>
+    <strong>Exit Criterion 1:</strong> Recite F–C–G–D–A–E–B from memory in under 3 seconds, both forward and backward. <br>
+    <strong>Exit Criterion 2:</strong> When asked "what key shares 6 of 7 notes with F major?", immediately answer "C major (up one fifth) or Bb major (down one fifth)." <br>
+    <strong>Exit Criterion 3:</strong> Explain in one sentence why the Ipanema bridge feels so dramatic, using the word "Heptachord Shift."
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Musical OS · Plogger Ch.6 Pythagorean Ordering</span>
+    <span>Page 4</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 5: MELODY CHAMBER -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="mel-header">
+    <span class="os-tag">Melody Chamber</span>
+    <span class="mel-title" style="font-size:14px;font-weight:800;">5 Key Notes · Tiny Tension Arc · Duration Amplifies Zone</span>
+  </div>
+
+  <h2 class="mel-text" style="margin-top:0;">The 5 Key Notes Framework</h2>
+
+  <p>Every melody can be understood through five structural notes. These notes reveal the intent of the phrase before you analyze a single scale degree.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="color:#1e3a8a;">Key Note</th>
+        <th style="color:#1e3a8a;">What It Tells You</th>
+        <th style="color:#1e3a8a;">In Ipanema (Verse Opening)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. First Note</strong></td>
+        <td>Establishes the zone (Z1–Z4). Opens a question or a statement.</td>
+        <td>A (scale degree 3 of F) → Zone 1 Sweet. Opens from home.</td>
+      </tr>
+      <tr>
+        <td><strong>2. Last Note</strong></td>
+        <td>Resolved = closed phrase. Open (tension) = phrase continues.</td>
+        <td>Verse phrases often end on F (1) or C (5) — closed resolution.</td>
+      </tr>
+      <tr>
+        <td><strong>3. Highest Note</strong></td>
+        <td>Melodic peak = emotional peak. Where is it relative to chord?</td>
+        <td>F (scale degree 1 on Fmaj7) — peak feels like arriving, not straining.</td>
+      </tr>
+      <tr>
+        <td><strong>4. Longest Note</strong></td>
+        <td>Duration amplifies the tension of the zone. Long Z3 = big tension. Long Z1 = deep rest.</td>
+        <td>The "tall and tan" phrase holds its note — duration = settling weight.</td>
+      </tr>
+      <tr>
+        <td><strong>5. Beat-1 Note</strong></td>
+        <td>Strongest rhythmic position. Z1 on Beat 1 = grounded. Z3 on Beat 1 = urgent.</td>
+        <td>Ipanema verse lands on Beat 1 with chord tones — rhythmic security.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="mel-rule"></div>
+
+  <h3 class="mel-text">Tiny Tension Arc — The Minimum Hook</h3>
+
+  <p>The Tiny Tension Arc is the smallest complete melodic unit that creates tension and resolves it. Four notes or gestures, in this pattern:</p>
+
+  <div class="arc-row">
+    <div class="arc-cell" style="background:#dbeafe;color:#1e3a8a;">Z1<br><span style="font-size:11px;font-weight:400;">Sweet / home</span></div>
+    <div class="arc-arrow">→</div>
+    <div class="arc-cell" style="background:#dbeafe;color:#1e3a8a;">Z1<br><span style="font-size:11px;font-weight:400;">Confirm home</span></div>
+    <div class="arc-arrow">→</div>
+    <div class="arc-cell" style="background:#fef9c3;color:#92400e;">Z2<br><span style="font-size:11px;font-weight:400;">Mild tension</span></div>
+    <div class="arc-arrow">→</div>
+    <div class="arc-cell" style="background:#dbeafe;color:#1e3a8a;">Z1<br><span style="font-size:11px;font-weight:400;">Return home</span></div>
+  </div>
+
+  <div class="mel-box">
+    <strong class="mel-text">Example in F major:</strong> Play A (3) → C (5) → D (6) → C (5). <br>
+    A and C are Zone 1 (chord tones). D is Zone 4 (the "LA note" — 6th degree, context-dependent but mildly dreamy over Fmaj7). C resolves. <br>
+    <em>This is almost exactly how Jobim opens the Ipanema verse.</em>
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 · Discovering — Hear Before You Play</div>
+    <strong>Exercise 1:</strong> On your instrument, find A–C–D–C in F major. Play it slowly. <em>Hear the arrival at A (home), the confirmation at C, the slight float at D, and the comfortable return to C.</em> That float on D is all the tension this melody needs to feel alive.
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 · Perfecting — Hear Before You Play</div>
+    <strong>Exercise 2:</strong> Compose your own Z1–Z1–Z2–Z1 arc in G major (G, B, D are Z1; A, E are Z2). Play it over a Gmaj7 chord. Then move it to Dm7 and notice how the same arc changes emotional color — same pattern, different chord = different feeling.
+  </div>
+
+  <div class="mel-rule"></div>
+
+  <h3 class="mel-text">Duration Amplifies Zone</h3>
+
+  <p>The longer a note lasts, the more its zone quality is amplified. A quick Z3 note creates a passing sting. A held Z3 note creates anguish. A sustained Z1 note creates deep peace.</p>
+
+  <div class="three-col">
+    <div style="background:#f0fdf4;border-radius:8px;padding:12px;text-align:center;border-top:3px solid #22c55e;">
+      <div style="font-size:13px;font-weight:700;color:#166534;">Long Z1</div>
+      <div style="font-size:11px;color:#166534;margin-top:4px;">Deep, settled<br>resolution. Feels<br>like breathing out.</div>
+    </div>
+    <div style="background:#fff8e1;border-radius:8px;padding:12px;text-align:center;border-top:3px solid #f59e0b;">
+      <div style="font-size:13px;font-weight:700;color:#92400e;">Long Z2</div>
+      <div style="font-size:11px;color:#92400e;margin-top:4px;">Sustained<br>expectation. The<br>held question.</div>
+    </div>
+    <div style="background:#fee2e2;border-radius:8px;padding:12px;text-align:center;border-top:3px solid #ef4444;">
+      <div style="font-size:13px;font-weight:700;color:#991b1b;">Long Z3</div>
+      <div style="font-size:11px;color:#991b1b;margin-top:4px;">Real tension,<br>demanding<br>resolution now.</div>
+    </div>
+  </div>
+
+  <div class="stage stage-3">
+    <div class="stage-label">S3 · Fluent — Sprint 3 Melody Exit Target</div>
+    Given any 8-bar melody, identify all five Key Notes (First, Last, Highest, Longest, Beat-1). Label the zone of each. Spot the Tiny Tension Arc within the phrase. Do this for the first 8 bars of Ipanema from memory.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Melody Chamber · 5 Key Notes · Tiny Tension Arc</span>
+    <span>Page 5</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 6: HARMONY CHAMBER -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="har-header">
+    <span class="os-tag">Harmony Chamber</span>
+    <span class="har-title" style="font-size:14px;font-weight:800;">Progressions · Ipanema Analysis · Voice Economy</span>
+  </div>
+
+  <h2 class="har-text" style="margin-top:0;">Progression #3 — The 12-Bar Blues</h2>
+
+  <p>The 12-Bar Blues is introduced this sprint as a <strong>contrast exercise</strong> only — to show how predictable harmonic movement differs from Jobim's sophisticated approach. It is one of 14 AMF progressions. Do not conflate it with jazz harmony.</p>
+
+  <div class="har-bg">
+    <h4 class="har-text" style="margin-top:0;">12-Bar Blues Pattern (in C for clarity)</h4>
+    <div class="grid-line">
+      <div class="grid-cell beat" style="background:#fef3c7;color:#78350f;font-size:12px;">I<br><span style="font-size:10px;">C7</span></div>
+      <div class="grid-cell" style="font-size:12px;">I<br><span style="font-size:10px;">C7</span></div>
+      <div class="grid-cell" style="font-size:12px;">I<br><span style="font-size:10px;">C7</span></div>
+      <div class="grid-cell" style="font-size:12px;">I<br><span style="font-size:10px;">C7</span></div>
+      <div class="grid-cell beat" style="background:#fef3c7;color:#78350f;font-size:12px;">IV<br><span style="font-size:10px;">F7</span></div>
+      <div class="grid-cell" style="font-size:12px;">IV<br><span style="font-size:10px;">F7</span></div>
+      <div class="grid-cell" style="font-size:12px;">I<br><span style="font-size:10px;">C7</span></div>
+      <div class="grid-cell" style="font-size:12px;">I<br><span style="font-size:10px;">C7</span></div>
+      <div class="grid-cell beat" style="background:#fef3c7;color:#78350f;font-size:12px;">V<br><span style="font-size:10px;">G7</span></div>
+      <div class="grid-cell" style="font-size:12px;">IV<br><span style="font-size:10px;">F7</span></div>
+      <div class="grid-cell" style="font-size:12px;">I<br><span style="font-size:10px;">C7</span></div>
+      <div class="grid-cell" style="font-size:12px;">V<br><span style="font-size:10px;">G7</span></div>
+    </div>
+    <p style="font-size:12px;color:#78350f;margin:8px 0 0;"><strong>Pattern:</strong> I–I–I–I / IV–IV–I–I / V–IV–I–V. Every chord is a dominant 7th (adds bluesy b7). This is the <em>most predictable</em> 12-bar pattern in music — knowing it lets you instantly hear how Jobim departs from convention.</p>
+  </div>
+
+  <div class="har-rule"></div>
+
+  <h2 class="har-text">Ipanema Harmony — Verse Analysis</h2>
+
+  <p>The verse lives in <strong>F major</strong>. But it doesn't use a textbook I–IV–V progression. Jobim creates an 8-bar world with only three distinct harmonic areas.</p>
+
+  <div class="chord-row">
+    <div class="chord-card">
+      <div class="chord-name" style="color:#004d40;">Fmaj7</div>
+      <div class="chord-detail">F · A · C · E</div>
+      <div class="chord-detail" style="color:#004d40;font-weight:700;">Bars 1–4 (I)</div>
+      <div class="chord-detail">Pure tonic. 4 full bars of home.</div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name" style="color:#78350f;">G7</div>
+      <div class="chord-detail">G · B · D · F</div>
+      <div class="chord-detail" style="color:#78350f;font-weight:700;">Bars 5–6 (borrowed)</div>
+      <div class="chord-detail">V7 of IV — slightly outside. Creates unease.</div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name" style="color:#1e3a8a;">Gm7</div>
+      <div class="chord-detail">G · Bb · D · F</div>
+      <div class="chord-detail" style="color:#1e3a8a;font-weight:700;">Bar 7 (ii)</div>
+      <div class="chord-detail">Minor ii chord — soft approach.</div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name" style="color:#9a3412;">C7</div>
+      <div class="chord-detail">C · E · G · Bb</div>
+      <div class="chord-detail" style="color:#9a3412;font-weight:700;">Bar 8 (V7)</div>
+      <div class="chord-detail">Dominant pull back to F.</div>
+    </div>
+  </div>
+
+  <div class="har-box">
+    <h4 class="har-text" style="margin-top:0;">What the G7 Actually Does</h4>
+    <p style="font-size:13px;margin:0;">G7 is not the V7 of F (that would be C7). It is the <strong>V7 of IV</strong> — a secondary dominant that briefly points toward Bb major (IV of F), then Jobim redirects with Gm7–C7 back home. This creates a subtle sense of harmonic wandering: you leave home, look toward a neighboring key, and return. Four bars of Fmaj7 make this departure feel dramatic despite lasting only two bars.</p>
+  </div>
+
+  <div class="har-rule"></div>
+
+  <h3 class="har-text">Voice Economy Through Fmaj7 Changes</h3>
+
+  <p>With four bars on Fmaj7, you have time to explore <strong>inversions</strong> rather than re-striking the same voicing. Voice economy means: when changing chord, move the minimum number of voices the minimum distance.</p>
+
+  <div class="har-bg">
+    <h4 class="har-text" style="margin-top:0;">Fmaj7 → Gm7: Minimal Voice Movement</h4>
+    <table style="font-size:13px;">
+      <thead>
+        <tr>
+          <th style="color:#78350f;">Voice</th>
+          <th style="color:#78350f;">Fmaj7 (bar 7 prep)</th>
+          <th style="color:#78350f;">Gm7 (bar 7)</th>
+          <th style="color:#78350f;">Movement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Soprano</td><td>E (maj7)</td><td>F (b7 of Gm7)</td><td>+1 half step</td></tr>
+        <tr><td>Alto</td><td>C (5)</td><td>D (5 of Gm7)</td><td>+1 whole step</td></tr>
+        <tr><td>Tenor</td><td>A (3)</td><td>Bb (b3 of Gm7)</td><td>+1 half step</td></tr>
+        <tr><td>Bass</td><td>F (root)</td><td>G (root)</td><td>+1 whole step</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px;color:#78350f;margin:6px 0 0;"><em>Every voice moves by a step or half-step. No leaps. This is voice economy in action.</em></p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Harmony Chamber · Progressions · Ipanema Analysis</span>
+    <span>Page 6</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 7: SONG DEEP DIVE — THE GIRL FROM IPANEMA -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="har-header">
+    <span class="os-tag">Song Deep Dive</span>
+    <span class="har-title" style="font-size:14px;font-weight:800;">The Girl from Ipanema · Jobim · Complete Analysis</span>
+  </div>
+
+  <h2 class="har-text" style="margin-top:0;">Full Chord Map</h2>
+
+  <div class="har-bg">
+    <h4 class="har-text" style="margin-top:0;">VERSE — F Major (8 bars, repeated)</h4>
+    <table style="font-size:12px;">
+      <thead>
+        <tr>
+          <th style="color:#78350f;">Bars</th>
+          <th style="color:#78350f;">Chord</th>
+          <th style="color:#78350f;">Function</th>
+          <th style="color:#78350f;">Key Lyric Syllable</th>
+          <th style="color:#78350f;">Melody Zone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1–4</td>
+          <td><strong>Fmaj7</strong></td>
+          <td>I (tonic)</td>
+          <td>"Tall and tan and young and lovely…"</td>
+          <td><span class="zone-pill z1">Z1 Sweet</span></td>
+        </tr>
+        <tr>
+          <td>5–6</td>
+          <td><strong>G7</strong></td>
+          <td>V7/IV (borrowed)</td>
+          <td>"…goes walking"</td>
+          <td><span class="zone-pill z2">Z2 Bitter</span></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><strong>Gm7</strong></td>
+          <td>ii (minor)</td>
+          <td>"…and when she passes"</td>
+          <td><span class="zone-pill z2">Z2 Bitter</span></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><strong>C7</strong></td>
+          <td>V7 (dominant)</td>
+          <td>"…each one she passes goes — ahh"</td>
+          <td><span class="zone-pill z3">Z3 Tense</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="non-dia" style="margin-top:16px;">
+    <div class="non-dia-title">Bridge — Gb Major (8 bars, the Heptachord Shift)</div>
+    <table style="font-size:12px;">
+      <thead>
+        <tr>
+          <th style="color:#7e22ce;">Bars</th>
+          <th style="color:#7e22ce;">Chord</th>
+          <th style="color:#7e22ce;">Function in Gb</th>
+          <th style="color:#7e22ce;">Feel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>B1–B4</td>
+          <td><strong>Gbmaj7</strong></td>
+          <td>I (new tonic, a half-step above F)</td>
+          <td>Disorienting. Beautiful. Drifting.</td>
+        </tr>
+        <tr>
+          <td>B5–B6</td>
+          <td><strong>B7</strong></td>
+          <td>V7/V — building tension</td>
+          <td>Push forward. B7 = tritone substitute of F7.</td>
+        </tr>
+        <tr>
+          <td>B7</td>
+          <td><strong>F#m7</strong></td>
+          <td>ii of B (or vi of A) — suspended</td>
+          <td>Neither here nor there. Maximum drift.</td>
+        </tr>
+        <tr>
+          <td>B7 beat 3</td>
+          <td><strong>D7</strong></td>
+          <td>V7/vi in original F context</td>
+          <td>Bridge back starting. You feel the pull home.</td>
+        </tr>
+        <tr>
+          <td>B8</td>
+          <td><strong>Gm7–C7</strong></td>
+          <td>ii–V7 in F major — home cadence</td>
+          <td>The wake-up moment. F major returns.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mel-rule"></div>
+
+  <h3 class="mel-text">6 Moments to Listen For</h3>
+
+  <div class="two-col">
+    <div>
+      <div class="mel-box">
+        <h4 class="mel-text" style="margin-top:0;">1. The 4-Bar Fmaj7 Float</h4>
+        <p style="font-size:13px;margin:0;">Four bars of pure tonic — almost nowhere else in the standard repertoire stays home this long. Jobim uses it to let the melody breathe without harmonic movement underneath. Notice how the melody still creates tension through <strong>Duration and Zone</strong> alone.</p>
+      </div>
+      <div class="mel-box" style="margin-top:10px;">
+        <h4 class="mel-text" style="margin-top:0;">2. The G7 Surprise</h4>
+        <p style="font-size:13px;margin:0;">After four bars of pure F, the G7 sounds slightly "wrong" — brighter than expected, a bit outside. This is intentional. Jobim borrowed V7/IV to create the harmonic equivalent of a cloud crossing the sun. It lasts two bars, just long enough to unsettle you.</p>
+      </div>
+      <div class="mel-box" style="margin-top:10px;">
+        <h4 class="mel-text" style="margin-top:0;">3. The "Ahh" on C7</h4>
+        <p style="font-size:13px;margin:0;">The phrase "each one she passes goes — ahh" lands on a Z3 (4th scale degree) over C7. Duration amplifies this tension. The held "ahh" is the most tense moment in the verse. Listen for it to feel like it needs to fall somewhere.</p>
+      </div>
+    </div>
+    <div>
+      <div class="non-dia">
+        <div class="non-dia-title">4. The Bridge Landing</div>
+        <p style="font-size:13px;margin:0 0 6px;">When Gbmaj7 arrives, your ear has no anchor. Every chord tone you expect has shifted a half-step. <em>Listen for the moment you stop feeling "home."</em> This is the Heptachord Shift landing.</p>
+      </div>
+      <div style="background:#fde8d8;border-radius:8px;padding:12px;margin-top:10px;border-left:4px solid #ea580c;">
+        <h4 class="rhy-text" style="margin-top:0;">5. The Bossa Nova "Lift"</h4>
+        <p style="font-size:13px;margin:0;color:#9a3412;">In the bridge, notice the rhythm <em>pushes forward</em> — chords anticipate the beat by an eighth note. This is the "and" before beat 1 landing early. That slight rhythmic lean is what makes bossa nova feel like walking in slow forward lean rather than marching.</p>
+      </div>
+      <div class="har-box" style="margin-top:10px;">
+        <h4 class="har-text" style="margin-top:0;">6. The Return to Gm7–C7</h4>
+        <p style="font-size:13px;margin:0;">After B7 and F#m7 and D7 — three chords that sound increasingly "lost" — the Gm7–C7 arrives like firm ground under your feet. <em>This is why Jobim spends so long in Gb.</em> The longer you drift, the sweeter the return.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Song Deep Dive · The Girl from Ipanema</span>
+    <span>Page 7</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 8: RHYTHM CHAMBER -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="rhy-header">
+    <span class="os-tag">Rhythm Chamber</span>
+    <span style="font-size:14px;font-weight:800;color:#fff;">Son Clave · Bossa Nova Feel · Rhythm Code Lift</span>
+  </div>
+
+  <h2 class="rhy-text" style="margin-top:0;">Son Clave 3-2 — First Introduction</h2>
+
+  <p>The <strong>Son Clave</strong> is a 5-note, 2-measure rhythmic pattern that underlies much of Afro-Caribbean music and, through bossa nova, all of Jobim's work. This sprint introduces the <strong>3-2 orientation</strong>: the "3 side" comes first.</p>
+
+  <div class="rhy-bg">
+    <h4 class="rhy-text" style="margin-top:0;">3-2 Clave — 8-Position Grid (two bars)</h4>
+    <div class="clave-label">Bar 1 — "3 side" (3 notes)</div>
+    <div class="grid-line" style="margin-bottom:8px;">
+      <div class="grid-cell clave">1<br><span style="font-size:9px;">hit</span></div>
+      <div class="grid-cell rest">2<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell rest">3<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell clave">4<br><span style="font-size:9px;">hit</span></div>
+      <div class="grid-cell rest">5<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell clave">6<br><span style="font-size:9px;">hit</span></div>
+      <div class="grid-cell rest">7<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell rest">8<br><span style="font-size:9px;">—</span></div>
+    </div>
+    <div class="clave-label">Bar 2 — "2 side" (2 notes)</div>
+    <div class="grid-line">
+      <div class="grid-cell rest">1<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell rest">2<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell clave">3<br><span style="font-size:9px;">hit</span></div>
+      <div class="grid-cell rest">4<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell rest">5<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell rest">6<br><span style="font-size:9px;">—</span></div>
+      <div class="grid-cell clave">7<br><span style="font-size:9px;">hit</span></div>
+      <div class="grid-cell rest">8<br><span style="font-size:9px;">—</span></div>
+    </div>
+    <p style="font-size:12px;color:#9a3412;margin:10px 0 0;"><strong>Positions 1, 4, 6 in bar 1 (the "3") + positions 3, 7 in bar 2 (the "2").</strong> Clap this pattern before playing anything. It is the skeleton upon which bossa nova rhythms hang.</p>
+  </div>
+
+  <div class="stage stage-1">
+    <div class="stage-label">S1 · Discovering — Hear Before You Play</div>
+    <strong>Clave Exercise:</strong> Play a recording of Ipanema. Clap on positions 1, 4, 6 of bar 1 and positions 3, 7 of bar 2. You will feel the clave either lining up or creating cross-rhythm against the music. The clave is not always stated explicitly — sometimes it is implied by the groove.
+  </div>
+
+  <div class="rhy-box" style="margin-top:12px;">
+    <h4 class="rhy-text" style="margin-top:0;">Rhythm Code Positions 2, 4, 6, 8 — The Lift</h4>
+    <p style="font-size:13px;margin:0 0 8px;">In the 8-position grid, odd positions (1,3,5,7) are the <strong>beats</strong>. Even positions (2,4,6,8) are the <strong>"ands"</strong> — the off-beats. In bossa nova and all syncopated music, <em>notes on even positions push the rhythm forward</em>. They create the feeling of leaning into the next beat.</p>
+    <div class="grid-line" style="margin-top:8px;">
+      <div class="grid-cell beat">1<br><span style="font-size:9px;">BEAT</span></div>
+      <div class="grid-cell active">2<br><span style="font-size:9px;">"and"↑</span></div>
+      <div class="grid-cell beat">3<br><span style="font-size:9px;">BEAT</span></div>
+      <div class="grid-cell active">4<br><span style="font-size:9px;">"and"↑</span></div>
+      <div class="grid-cell beat">5<br><span style="font-size:9px;">BEAT</span></div>
+      <div class="grid-cell active">6<br><span style="font-size:9px;">"and"↑</span></div>
+      <div class="grid-cell beat">7<br><span style="font-size:9px;">BEAT</span></div>
+      <div class="grid-cell active">8<br><span style="font-size:9px;">"and"↑</span></div>
+    </div>
+    <p style="font-size:12px;color:#9a3412;margin:8px 0 0;"><em>In bossa nova, the bass guitar or piano LH often anticipates beat 1 by playing on position 8 of the previous bar. This "pre-beat" note is what gives bossa nova its forward lean — the feeling of perpetual, gentle motion.</em></p>
+  </div>
+
+  <h3 class="rhy-text" style="margin-top:18px;">The Bossa Nova Feel — "Anticipations on And"</h3>
+
+  <div class="two-col">
+    <div>
+      <h4 class="rhy-text">Boring (straight time):</h4>
+      <div class="grid-line">
+        <div class="grid-cell beat" style="background:#fde8d8;color:#9a3412;">1 ♪</div>
+        <div class="grid-cell rest">2</div>
+        <div class="grid-cell beat" style="background:#fde8d8;color:#9a3412;">3 ♪</div>
+        <div class="grid-cell rest">4</div>
+        <div class="grid-cell beat" style="background:#fde8d8;color:#9a3412;">5 ♪</div>
+        <div class="grid-cell rest">6</div>
+        <div class="grid-cell beat" style="background:#fde8d8;color:#9a3412;">7 ♪</div>
+        <div class="grid-cell rest">8</div>
+      </div>
+      <p style="font-size:12px;color:#64748b;margin-top:6px;">All notes on downbeats. No forward motion. Sounds like a metronome.</p>
+    </div>
+    <div>
+      <h4 class="rhy-text">Bossa Nova (anticipations):</h4>
+      <div class="grid-line">
+        <div class="grid-cell beat" style="background:#fde8d8;color:#9a3412;">1 ♪</div>
+        <div class="grid-cell rest">2</div>
+        <div class="grid-cell rest">3</div>
+        <div class="grid-cell active">4 ♪</div>
+        <div class="grid-cell rest">5</div>
+        <div class="grid-cell active">6 ♪</div>
+        <div class="grid-cell rest">7</div>
+        <div class="grid-cell active">8 ♪</div>
+      </div>
+      <p style="font-size:12px;color:#9a3412;margin-top:6px;">Notes on positions 4, 6, 8 anticipate the next beat. The music leans forward constantly.</p>
+    </div>
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 · Perfecting — Hear Before You Play</div>
+    <strong>Bossa Pattern Exercise:</strong> On piano, play Fmaj7 in RH as whole note. In LH, play F on beat 1, then E (b7 idea) on position 6, then C on position 8 (anticipating the next bar). <em>Hear the "lean" created by the anticipation.</em> This is the basic bossa LH motion. Then add the RH melody on top.
+  </div>
+
+  <div class="stage stage-1" style="margin-top:10px;">
+    <div class="stage-label">S1 · Discovering — Guitar Fingerpicking Pattern: Hear Before You Play</div>
+    <strong>Guitar (p-i-m-a pattern):</strong> p = thumb (bass string), i = index, m = middle, a = ring finger. On Fmaj7 barre chord: <em>p on beat 1 (bass F), then i-m-a arpeggiate strings 4-3-2 on the "and" positions.</em> Hear this pattern on a bossa nova recording before attempting it — the right hand must feel <em>loose and circular</em>, never tense.
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Rhythm Chamber · Son Clave · Bossa Nova Feel</span>
+    <span>Page 8</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 9: VOICINGS CHAMBER + INSTRUMENT DETAIL -->
+<!-- ============================================================ -->
+<div class="page">
+  <div class="voi-header">
+    <span class="os-tag">Voicings Chamber</span>
+    <span style="font-size:14px;font-weight:800;color:#fff;">Deepening Inversions · Fmaj7 Voice Economy</span>
+  </div>
+
+  <h2 class="voi-text" style="margin-top:0;">No New Voicings This Sprint — Going Deeper</h2>
+
+  <p>Sprint 3 introduces no new voicing types. Instead, you will <strong>deepen inversions</strong> using the Fmaj7 changes as material. The principle: when you already know the notes of a chord, true mastery means moving through all four inversions fluidly, choosing the one that best connects to the next chord by voice economy.</p>
+
+  <div class="voi-bg">
+    <h4 class="voi-text" style="margin-top:0;">Four Inversions of Fmaj7 — Side by Side</h4>
+    <table>
+      <thead>
+        <tr>
+          <th style="color:#166534;">Inversion</th>
+          <th style="color:#166534;">Bass Note</th>
+          <th style="color:#166534;">Notes (low → high)</th>
+          <th style="color:#166534;">Use When</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Root Position</strong></td>
+          <td>F</td>
+          <td>F · A · C · E</td>
+          <td>Opening statement. Establishing the tonic firmly.</td>
+        </tr>
+        <tr>
+          <td><strong>1st Inversion</strong></td>
+          <td>A</td>
+          <td>A · C · E · F</td>
+          <td>Floating, less settled. Good for inner bars where motion is implied.</td>
+        </tr>
+        <tr>
+          <td><strong>2nd Inversion</strong></td>
+          <td>C</td>
+          <td>C · E · F · A</td>
+          <td>Slightly ambiguous, dreamy. Connects smoothly to Gm7 (C is common tone).</td>
+        </tr>
+        <tr>
+          <td><strong>3rd Inversion</strong></td>
+          <td>E</td>
+          <td>E · F · A · C</td>
+          <td>Very unstable in bass. Creates forward motion — E wants to move up to F or down to D.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="stage stage-2">
+    <div class="stage-label">S2 · Perfecting — Hear Before You Play</div>
+    <strong>Inversion Exercise:</strong> Play Fmaj7 in root position. <em>Hear it settle.</em> Then play 1st inversion — notice it feels less anchored. 2nd inversion — dreamy. 3rd inversion — feels unstable, like it needs to go somewhere. Now play: Root → 3rd inversion → Gm7 root position. <em>The 3rd inversion creates a natural "lean" into the Gm7.</em> This is voice economy in practice.
+  </div>
+
+  <div class="voi-box" style="margin-top:6px;">
+    <strong class="voi-text">Voice Economy Rule:</strong> Choose the inversion that minimizes total voice travel. Fmaj7 2nd inv (C–E–F–A) → Gm7 root (G–Bb–D–F): each voice moves ≤2 half-steps — average 1.5. That is efficient voice leading.
+  </div>
+
+  <div class="voi-rule" style="height:3px;background:#16a34a;border-radius:2px;margin:7px 0;"></div>
+
+  <h2 class="rhy-text">Guitar: CAGED System — First Exposure</h2>
+
+  <p>CAGED names the five barre chord shapes (C, A, G, E, D). This sprint you only need to know Fmaj7's two primary positions:</p>
+
+  <div class="rhy-bg">
+    <div class="two-col">
+      <div>
+        <h4 class="rhy-text">Fmaj7 — "E-shape" barre (1st fret)</h4>
+        <p style="font-size:12px;color:#9a3412;">Index barre across fret 1. Middle finger fret 2, string 3. Ring finger fret 3, string 5. Pinky fret 3, string 4. <em>The "E shape" moved up one fret.</em> This is the primary bossa nova Fmaj7 voicing.</p>
+        <div class="stage stage-1" style="margin-top:8px;">
+          <div class="stage-label">S1 · Discovering — Hear Before You Play</div>
+          Before fingering the chord, hum F–A–C–E on piano. Then form the shape with your fretting hand. <em>Play each string separately</em> to check clarity before strumming.
+        </div>
+      </div>
+      <div>
+        <h4 class="rhy-text">Fmaj7 — "A-shape" barre (8th fret)</h4>
+        <p style="font-size:12px;color:#9a3412;">Barre fret 8. Ring finger barre fret 10 (strings 2–4). Leave string 1 open (E = maj7 of F). <em>Higher register, brighter sound.</em> This is CAGED's A-shape for F.</p>
+        <div class="stage stage-2" style="margin-top:8px;">
+          <div class="stage-label">S2 · Perfecting — Hear Before You Play</div>
+          Play the E-shape version, then the A-shape version. <em>Hear how the same chord voicing sounds darker lower, brighter higher.</em> This is what CAGED gives you: the same chord family across the entire fretboard.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="mel-text" style="margin-top:10px;">Piano: Alberti Bass Introduction</h2>
+
+  <div class="mel-bg">
+    <p style="margin:0 0 6px;color:#1e3a8a;">The <strong>Alberti bass</strong> breaks a chord into low–high–mid–high (root–5th–3rd–5th). For Fmaj7: F–C–A–C. It creates implied motion even staying on one chord for four bars — exactly what you need for the Ipanema verse.</p>
+    <div class="grid-line">
+      <div class="grid-cell" style="background:#dbeafe;color:#1e3a8a;font-size:12px;">Beat 1<br><strong>F</strong><br><span style="font-size:10px;">(root)</span></div>
+      <div class="grid-cell" style="background:#eff6ff;color:#1e3a8a;font-size:12px;">Beat 2<br><strong>C</strong><br><span style="font-size:10px;">(5th)</span></div>
+      <div class="grid-cell" style="background:#eff6ff;color:#1e3a8a;font-size:12px;">Beat 3<br><strong>A</strong><br><span style="font-size:10px;">(3rd)</span></div>
+      <div class="grid-cell" style="background:#eff6ff;color:#1e3a8a;font-size:12px;">Beat 4<br><strong>C</strong><br><span style="font-size:10px;">(5th)</span></div>
+    </div>
+    <div class="stage stage-1" style="margin-top:6px;">
+      <div class="stage-label">S1 · Discovering — Hear Before You Play</div>
+      Hum F–C–A–C as a descending-then-rising pattern before playing. Then place LH fingers on these notes and play slowly. <em>Notice how the pattern implies the chord without any RH help.</em> Add the Ipanema melody in RH over the top.
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Voicings Chamber · Guitar CAGED · Piano Alberti Bass</span>
+    <span>Page 9</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 10: QUICK REFERENCE CARD -->
+<!-- ============================================================ -->
+<div class="page">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+    <div class="syn-header" style="margin-bottom:0;">
+      <span class="os-tag">Synthesizer</span>
+      <span style="font-size:14px;font-weight:800;color:#fff;">Sprint 3 Quick Reference Card</span>
+    </div>
+    <div class="cover-meta">The Girl from Ipanema · F Major / Gb Major</div>
+  </div>
+
+  <div class="rainbow"></div>
+
+  <div class="qr-grid" style="margin-top:8px;">
+    <div class="qr-card" style="border-top:3px solid #004d40;">
+      <div class="qr-card-title" style="color:#004d40;">Musical OS — Plogger</div>
+      <ul style="font-size:12px;margin-left:14px;color:#004d40;">
+        <li><strong>Lap Map:</strong> Fingers = white keys, spaces = black keys. Palm-down on lap.</li>
+        <li><strong>4 Tetrachords:</strong> Major (W-W-H), Minor (W-H-W), Phrygian (H-W-W), Lydian (W-W-W)</li>
+        <li><strong>Pythagorean Spine:</strong> F–C–G–D–A–E–B</li>
+        <li>Adjacent keys share 6 of 7 notes (one note changes)</li>
+        <li><strong>Heptachord Shift:</strong> F→Gb = maximum harmonic distance. Almost all notes change.</li>
+      </ul>
+    </div>
+
+    <div class="qr-card" style="border-top:3px solid #1e3a8a;">
+      <div class="qr-card-title" style="color:#1e3a8a;">Melody Chamber</div>
+      <ul style="font-size:12px;margin-left:14px;color:#1e3a8a;">
+        <li><strong>5 Key Notes:</strong> First · Last · Highest · Longest · Beat-1</li>
+        <li><strong>Zone 1 (Sweet):</strong> 1, 3, 5 — chord tones</li>
+        <li><strong>Zone 2 (Bitter):</strong> 7, 2 — mild tension</li>
+        <li><strong>Zone 3 (Tense):</strong> 4 — strong pull</li>
+        <li><strong>Zone 4 (Wildcard):</strong> 6 — context-dependent</li>
+        <li><strong>Tiny Tension Arc:</strong> Z1–Z1–Z2–Z1</li>
+        <li><strong>Duration Amplifies:</strong> Long Z3 = anguish. Long Z1 = deep rest.</li>
+      </ul>
+    </div>
+
+    <div class="qr-card" style="border-top:3px solid #d97706;">
+      <div class="qr-card-title" style="color:#78350f;">Harmony Chamber</div>
+      <ul style="font-size:12px;margin-left:14px;color:#78350f;">
+        <li><strong>Prog #3 (12-Bar Blues):</strong> I–I–I–I / IV–IV–I–I / V–IV–I–V</li>
+        <li><strong>Ipanema Verse:</strong> Fmaj7 (4) → G7 (2) → Gm7–C7 (2)</li>
+        <li>G7 = V7/IV (borrowed secondary dominant)</li>
+        <li><strong>Bridge:</strong> Gbmaj7 (4) → B7 (2) → F#m7–D7 (2) → Gm7–C7 (2)</li>
+        <li>Voice economy = move all voices minimum distance</li>
+        <li>ii-V-I = drill vehicle only, not harmonic spine</li>
+      </ul>
+    </div>
+
+    <div class="qr-card" style="border-top:3px solid #ea580c;">
+      <div class="qr-card-title" style="color:#9a3412;">Rhythm Chamber</div>
+      <ul style="font-size:12px;margin-left:14px;color:#9a3412;">
+        <li><strong>8-Position Grid:</strong> 1,3,5,7 = beats; 2,4,6,8 = "ands"</li>
+        <li><strong>Son Clave 3-2:</strong> Bar 1: hit pos 1,4,6. Bar 2: hit pos 3,7.</li>
+        <li><strong>Bossa nova "lean":</strong> Notes on pos 8 anticipate next beat 1</li>
+        <li>Positions 2,4,6,8 = lift and forward motion</li>
+        <li><strong>Guitar:</strong> p-i-m-a fingerpicking. Thumb = bass, fingers = arpeggio.</li>
+        <li><strong>Piano:</strong> Alberti bass LH: root–5th–3rd–5th pattern</li>
+        <li><strong>Anticipation:</strong> chord hits "and-4" (pos 8) before the bar it belongs to</li>
+      </ul>
+    </div>
+
+    <div class="qr-card" style="border-top:3px solid #16a34a;">
+      <div class="qr-card-title" style="color:#166534;">Voicings Chamber</div>
+      <ul style="font-size:12px;margin-left:14px;color:#166534;">
+        <li><strong>Fmaj7 Root:</strong> F–A–C–E</li>
+        <li><strong>1st Inversion:</strong> A–C–E–F (floating)</li>
+        <li><strong>2nd Inversion:</strong> C–E–F–A (dreamy, connects to Gm7)</li>
+        <li><strong>3rd Inversion:</strong> E–F–A–C (unstable, needs motion)</li>
+        <li>CAGED: E-shape @ fret 1, A-shape @ fret 8 for Fmaj7</li>
+        <li>No new voicing types — deepen what you know</li>
+      </ul>
+    </div>
+
+    <div class="qr-card" style="border-top:3px solid #8b5cf6;">
+      <div class="qr-card-title" style="color:#4b2d8c;">Next Sprint Preview — Sprint 4</div>
+      <div style="font-size:12px;color:#4b2d8c;">
+        <p style="margin-bottom:6px;"><strong>Anchor Song:</strong> Superstition (Stevie Wonder)</p>
+        <p style="margin-bottom:6px;"><strong>Key/Mode:</strong> Eb Dorian — minor with raised 6 (C natural)</p>
+        <p style="margin-bottom:6px;"><strong>Plogger:</strong> Ch.7–8 Interval Spelling + all 8 clefs</p>
+        <p style="margin-bottom:6px;"><strong>Harmony:</strong> Ch.9 Di-Chord Numbers intro. Progressions 1–4 consolidated.</p>
+        <p style="margin-bottom:0;"><strong>New:</strong> Duration Amplifies Zone deepened. Eb7 dominant tonic = blues-funk feel. Dorian raised 6 as the "jazzy minor" fingerprint.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="os-rule" style="margin:8px 0 6px;"></div>
+
+  <h3 style="margin-bottom:8px;color:#1e293b;">Sprint 3 Exit Milestones</h3>
+  <div class="milestone-grid">
+    <div class="milestone-item">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#004d40;margin-bottom:6px;">Lap Map</div>
+      <p style="font-size:12px;margin:0;">Form any major or minor tetrachord from any starting note by finger feel, eyes away, within 3 seconds.</p>
+    </div>
+    <div class="milestone-item">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#004d40;margin-bottom:6px;">Pythagorean Ordering</div>
+      <p style="font-size:12px;margin:0;">Recite F–C–G–D–A–E–B instantly. State that adjacent keys share 6 of 7 notes. Explain the Gb bridge as a Heptachord Shift.</p>
+    </div>
+    <div class="milestone-item">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1e3a8a;margin-bottom:6px;">5 Key Notes</div>
+      <p style="font-size:12px;margin:0;">Analyze any 8-bar melody for First / Last / Highest / Longest / Beat-1 notes and label each note's zone.</p>
+    </div>
+    <div class="milestone-item">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1e3a8a;margin-bottom:6px;">Tiny Tension Arc</div>
+      <p style="font-size:12px;margin:0;">Compose and play Z1–Z1–Z2–Z1 motifs in both F major and G major. Understand why the arc resolves.</p>
+    </div>
+    <div class="milestone-item">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#78350f;margin-bottom:6px;">Girl from Ipanema</div>
+      <p style="font-size:12px;margin:0;">Play the full verse on your instrument with bossa feel at 100 BPM. Recognize the Gb bridge by ear as a key shift.</p>
+    </div>
+    <div class="milestone-item">
+      <div style="font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#9a3412;margin-bottom:6px;">Son Clave</div>
+      <p style="font-size:12px;margin:0;">Clap the 3-2 Son Clave pattern over a recording without losing the pattern for 8 bars straight.</p>
+    </div>
+  </div>
+
+  <div class="syn-box" style="margin-top:6px;padding:8px 12px;">
+    <strong class="syn-text">Sprint 3 North Star:</strong>
+    <p style="font-size:12px;font-style:italic;margin:4px 0 0;color:#4b2d8c;">"Jobim didn't go to Gb major because it was theoretically interesting. He went because it was the farthest place he could travel and still make it home in time for the melody to arrive. That is the job of harmony: to make the return feel inevitable."</p>
+  </div>
+
+  <div class="page-footer">
+    <span>AMF SPRINT 3</span>
+    <span>Quick Reference Card · Sprint 3 of 12</span>
+    <span>Page 10</span>
+  </div>
+</div>
+
+</body>
+</html>

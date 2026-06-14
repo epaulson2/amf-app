@@ -5,14 +5,9 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/systems', label: 'Systems' },
-  { href: '/genre-labs', label: 'Genre Labs' },
-  { href: '/curriculum', label: 'Curriculum' },
-  { href: '/materials', label: 'Materials' },
-  { href: '/practice', label: 'Practice Plan' },
-  { href: '/pedagogy', label: 'Pedagogy' },
-  { href: '/technology', label: 'Technology' },
+  { href: '/', label: 'Sprints' },
+  { href: '/audio', label: 'Audio Lab' },
+  { href: '/archive', label: 'Archive' },
 ]
 
 export default function Nav() {
@@ -20,7 +15,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   function isActive(href: string) {
-    if (href === '/') return pathname === '/'
+    if (href === '/') return pathname === '/' || pathname.startsWith('/sprints')
     return pathname.startsWith(href)
   }
 
@@ -41,7 +36,7 @@ export default function Nav() {
             <span
               className="text-slate-400 text-xs font-normal tracking-wide hidden sm:block"
             >
-              Adaptive Musician&apos;s Framework
+              Adaptable Musician&apos;s Framework
             </span>
           </Link>
 
