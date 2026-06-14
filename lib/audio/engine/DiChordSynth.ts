@@ -1,18 +1,20 @@
 import type { SoundFactorMix, FODirection, InstrumentPreset } from '../data/dichords'
-import { INSTRUMENT_PRESETS } from '../data/dichords'
+import { INSTRUMENT_PRESETS, getDiChord } from '../data/dichords'
 
 // Signal chain:
-//   mainSynth → chebyshev → mainGain → reverb → Destination
+//   mainSynth → tremolo → chebyshev → mainGain → reverb → Destination
 //   shadowSynth → shadowGain → reverb
 //
-// Instrument preset → oscillator type + ADSR (base timbre, not touched by harmonicity)
+// Instrument preset → oscillator type + ADSR (base timbre)
+// Pulsation dimmer → tremolo depth (0=off, 10=deep at di-chord's pulsationHz)
+//                  + reverb wet (0.5→0.03) to mask or expose the beating
 // Harmonicity dimmer → Chebyshev order (1=clean … 5=harmonically rich)
-// Pulsation dimmer → reverb wet + release time (scaled from preset base)
 // F/O Factor dimmer → shadowGain (completely separate signal path)
 
 export class DiChordSynth {
   private mainSynth:   import('tone').PolySynth | null = null
   private shadowSynth: import('tone').PolySynth | null = null
+  private tremolo:     import('tone').Tremolo   | null = null
   private chebyshev:   import('tone').Chebyshev | null = null
   private reverb:      import('tone').Reverb    | null = null
   private mainGain:    import('tone').Gain      | null = null
@@ -34,11 +36,15 @@ export class DiChordSynth {
     this.mainGain   = new Tone.Gain(0.8).connect(this.reverb)
     this.shadowGain = new Tone.Gain(0.0).connect(this.reverb)
     this.chebyshev  = new Tone.Chebyshev(1).connect(this.mainGain)
+    // Tremolo: frequency is overridden per-note, depth starts at 0 (off)
+    this.tremolo    = new Tone.Tremolo({ frequency: 4, depth: 0, spread: 0 })
+      .start()
+      .connect(this.chebyshev)
 
     this.mainSynth = new Tone.PolySynth(Tone.Synth, {
       oscillator: { type: preset.oscillatorType },
       envelope: { ...preset.envelope },
-    }).connect(this.chebyshev)
+    }).connect(this.tremolo)
 
     this.shadowSynth = new Tone.PolySynth(Tone.Synth, {
       oscillator: { type: preset.oscillatorType },
@@ -60,6 +66,12 @@ export class DiChordSynth {
     this.lastRootMidi = rootMidi
     this.lastFODir    = foDirection
     this.currentMix   = mix
+
+    // Set tremolo to di-chord's pulsation family rate before applying mix
+    const dc = getDiChord(bracket)
+    if (this.tremolo) {
+      this.tremolo.frequency.value = dc.pulsationHz
+    }
 
     this.applyMix(mix)
 
@@ -116,14 +128,17 @@ export class DiChordSynth {
   }
 
   private applyMix(mix: SoundFactorMix) {
-    if (!this.mainSynth || !this.reverb || !this.shadowGain || !this.chebyshev) return
+    if (!this.mainSynth || !this.reverb || !this.shadowGain || !this.chebyshev || !this.tremolo) return
     const preset = this.currentPreset
 
     // — Pulsation (0=masked, 10=exposed) —
-    // Reverb wet: 0.55 → 0.03 (beats wash in reverb vs stay dry)
-    // Release: scales from preset base × 0.25 to × 3.0
+    // Tremolo depth: 0 → 0.55 at the di-chord's pulsationHz
+    //   This makes [3] and [4] both beat at exactly 4 Hz, [5][7] at 2 Hz, dissonants at 8 Hz
+    // Reverb wet: 0.5 → 0.03 (beats wash out vs stay dry and audible)
+    // Release: scales from preset base so notes sustain long enough to hear the beat
     const p = mix.pulsation / 10
-    this.reverb.set({ wet: 0.55 - p * 0.52 })
+    this.tremolo.depth.value = p * 0.55
+    this.reverb.set({ wet: 0.5 - p * 0.47 })
     const release = preset.envelope.release * (0.25 + p * 2.75)
     this.mainSynth.set({ envelope: { release } })
     this.shadowSynth?.set({ envelope: { release: release * 1.3 } })
@@ -155,12 +170,14 @@ export class DiChordSynth {
     this.stop()
     this.mainSynth?.dispose()
     this.shadowSynth?.dispose()
+    this.tremolo?.dispose()
     this.chebyshev?.dispose()
     this.reverb?.dispose()
     this.mainGain?.dispose()
     this.shadowGain?.dispose()
     this.mainSynth   = null
     this.shadowSynth = null
+    this.tremolo     = null
     this.chebyshev   = null
     this.reverb      = null
     this.mainGain    = null
