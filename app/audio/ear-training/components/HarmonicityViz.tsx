@@ -50,8 +50,8 @@ export default function HarmonicityViz({ dichord, mixLevel }: HarmonicityVizProp
           boxShadow: '0 0 6px rgba(241,245,249,0.5)',
         }} />
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
-          <span style={{ fontSize: '0.65rem', color: '#475569' }}>Closed / Dark</span>
-          <span style={{ fontSize: '0.65rem', color: '#475569' }}>Open / Light</span>
+          <span style={{ fontSize: '0.65rem', color: '#475569' }}>Non-harmonic</span>
+          <span style={{ fontSize: '0.65rem', color: '#475569' }}>Harmonic</span>
         </div>
       </div>
 
