@@ -25,11 +25,16 @@ export default function EarTrainingPage() {
   const { isReady, start, synth } = useAudioEngine()
   const dichord = getDiChord(selectedBracket)
 
-  const handleSelect = useCallback((bracket: number) => {
+  const handleSelect = useCallback(async (bracket: number) => {
     setSelectedBracket(bracket)
-    setIsPlaying(false)
-    synth?.stop()
-  }, [synth])
+    if (isPlaying && synth) {
+      // Seamlessly switch to the new di-chord without stopping playback
+      await synth.play(bracket, rootMidi, getDiChord(bracket).foDirection, mix)
+    } else {
+      synth?.stop()
+      setIsPlaying(false)
+    }
+  }, [synth, isPlaying, rootMidi, mix])
 
   const handlePlay = useCallback(async () => {
     if (!isReady) await start()
