@@ -2,23 +2,24 @@
 
 import { useState, useCallback } from 'react'
 import dynamic from 'next/dynamic'
-import { DICHORDS, getDiChord, useAudioEngine, type Timbre } from '@/lib/audio'
-import PlayButton from '@/components/audio/PlayButton'
+import { DICHORDS, getDiChord, useAudioEngine, DEFAULT_MIX, type Timbre, type SoundFactorMix } from '@/lib/audio'
 import FactorPanels from './components/FactorPanels'
 
-const DiChordGrid = dynamic(() => import('./components/DiChordGrid'), { ssr: false })
-const DrillMode   = dynamic(() => import('./components/DrillMode'),   { ssr: false })
+const DiChordGrid        = dynamic(() => import('./components/DiChordGrid'),        { ssr: false })
+const DrillMode          = dynamic(() => import('./components/DrillMode'),          { ssr: false })
+const FactorMixControls  = dynamic(() => import('./components/FactorMixControls'),  { ssr: false })
 
 type Tab = 'explorer' | 'drill'
 
 export default function EarTrainingPage() {
-  const [tab, setTab] = useState<Tab>('explorer')
+  const [tab, setTab]                     = useState<Tab>('explorer')
   const [selectedBracket, setSelectedBracket] = useState(3)
-  const [timbre, setTimbre] = useState<Timbre>('sine')
-  const [rootMidi] = useState(57)  // A3
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [timbre, setTimbre]               = useState<Timbre>('sine')
+  const [rootMidi]                        = useState(57)   // A3
+  const [isPlaying, setIsPlaying]         = useState(false)
+  const [mix, setMix]                     = useState<SoundFactorMix>(DEFAULT_MIX)
 
-  const { synth } = useAudioEngine()
+  const { isReady, start, synth } = useAudioEngine()
   const dichord = getDiChord(selectedBracket)
 
   const handleSelect = useCallback((bracket: number) => {
@@ -28,9 +29,10 @@ export default function EarTrainingPage() {
   }, [synth])
 
   const handlePlay = useCallback(async () => {
-    await synth?.play(selectedBracket, rootMidi, timbre)
+    if (!isReady) await start()
+    await synth?.play(selectedBracket, rootMidi, getDiChord(selectedBracket).foDirection, mix)
     setIsPlaying(true)
-  }, [synth, selectedBracket, rootMidi, timbre])
+  }, [isReady, start, synth, selectedBracket, rootMidi, mix])
 
   const handleStop = useCallback(() => {
     synth?.stop()
@@ -39,7 +41,22 @@ export default function EarTrainingPage() {
 
   const handleTimbreChange = useCallback((t: Timbre) => {
     setTimbre(t)
-    synth?.setTimbre(t)
+    // Harmonicity slider maps to timbre roughly — keep in sync
+    const harmMap: Record<Timbre, number> = { sine: 0, triangle: 3, sawtooth: 8, complex: 6 }
+    const newMix = { ...mix, harmonicity: harmMap[t] }
+    setMix(newMix)
+    synth?.setMix(newMix)
+  }, [synth, mix])
+
+  const handleMixChange = useCallback((newMix: SoundFactorMix) => {
+    setMix(newMix)
+    // Sync timbre display to harmonicity level
+    const t: Timbre = newMix.harmonicity < 2.5 ? 'sine'
+      : newMix.harmonicity < 5 ? 'triangle'
+      : newMix.harmonicity < 7.5 ? 'sawtooth'
+      : 'complex'
+    setTimbre(t)
+    synth?.setMix(newMix)
   }, [synth])
 
   return (
@@ -57,7 +74,7 @@ export default function EarTrainingPage() {
                 Di-Chord Explorer
               </h1>
               <p className="mt-1" style={{ color: '#64748b', fontSize: '0.9rem' }}>
-                Hear each di-chord through all three Plogger sound factors simultaneously
+                Hear each di-chord through all three Plogger sound factors — mix and isolate each one
               </p>
             </div>
             <div className="flex gap-1 rounded-lg p-1" style={{ background: '#1e293b' }}>
@@ -80,10 +97,10 @@ export default function EarTrainingPage() {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 py-8 space-y-8">
+      <div className="max-w-5xl mx-auto px-6 py-8 space-y-6">
         {tab === 'explorer' ? (
           <>
-            {/* Di-chord selector + play */}
+            {/* Di-chord selector */}
             <div className="rounded-xl p-6" style={{ background: '#1e293b', border: '1px solid rgba(255,255,255,0.06)' }}>
               <div className="flex items-start justify-between flex-wrap gap-4 mb-5">
                 <div>
@@ -91,22 +108,35 @@ export default function EarTrainingPage() {
                   <p className="font-bold" style={{ color: '#f1f5f9', fontSize: '1.3rem' }}>
                     [{selectedBracket}] {dichord.name}
                   </p>
+                  <p className="text-xs mt-0.5" style={{ color: '#475569' }}>{dichord.feel}</p>
                 </div>
-                <PlayButton
-                  bracket={selectedBracket}
-                  isPlaying={isPlaying}
-                  onPlay={handlePlay}
-                  onStop={handleStop}
-                  size="md"
-                />
+                {/* Play / Stop button */}
+                <button
+                  onClick={isPlaying ? handleStop : handlePlay}
+                  className="rounded-lg font-semibold transition-all"
+                  style={{
+                    padding: '10px 22px',
+                    background: isPlaying ? 'rgba(220,38,38,0.15)' : 'rgba(124,58,237,0.15)',
+                    color: isPlaying ? '#f87171' : '#a78bfa',
+                    border: `1px solid ${isPlaying ? 'rgba(220,38,38,0.3)' : 'rgba(124,58,237,0.3)'}`,
+                    cursor: 'pointer',
+                    fontSize: '0.9rem',
+                  }}
+                >
+                  {!isReady ? 'Tap to enable audio' : isPlaying ? '■ Stop' : `▶ Play [${selectedBracket}]`}
+                </button>
               </div>
               <DiChordGrid selected={selectedBracket} onSelect={handleSelect} />
             </div>
 
-            {/* Three factor panels */}
+            {/* Sound Factor Mix — dimmers */}
+            <FactorMixControls mix={mix} onChange={handleMixChange} />
+
+            {/* Three factor visualizations (reflect current mix) */}
             <FactorPanels
               dichord={dichord}
               timbre={timbre}
+              mix={mix}
               onTimbreChange={handleTimbreChange}
             />
 

@@ -1,3 +1,11 @@
+export interface SoundFactorMix {
+  pulsation: number    // 0–10: 0=masked (short+wet), 10=exposed (long+dry sine)
+  harmonicity: number  // 0–10: 0=sine (smooth/fused), 10=sawtooth (rough/gritty)
+  foFactor: number     // 0–10: 0=balanced (no doubling), 10=shadow note prominent
+}
+
+export const DEFAULT_MIX: SoundFactorMix = { pulsation: 5, harmonicity: 3, foFactor: 3 }
+
 export type PulsationFamily = 'dissonant' | 'modal' | 'perfect'
 export type FODirection = 'down' | 'both' | 'up'
 export type HarmonicityLevel = 'very-low' | 'low' | 'med-low' | 'medium' | 'med-high' | 'high'

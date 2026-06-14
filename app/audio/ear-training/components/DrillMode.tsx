@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useCallback, useRef } from 'react'
-import { getDiChord, getSprintConfig, useAudioEngine, type Timbre } from '@/lib/audio'
+import { useState, useCallback } from 'react'
+import { getDiChord, getSprintConfig, useAudioEngine, type Timbre, DEFAULT_MIX } from '@/lib/audio'
 import DrillFeedback, { emptyStats, persistStats, type DrillStats } from './DrillFeedback'
 import DiChordGrid from './DiChordGrid'
 
@@ -25,7 +25,6 @@ export default function DrillMode({ sprint = 1 }: DrillModeProps) {
   const [currentBracket, setCurrentBracket] = useState<number | null>(null)
   const [lastBracket, setLastBracket] = useState<number | null>(null)
   const [stats, setStats] = useState<DrillStats>(emptyStats())
-  const [timbre] = useState<Timbre>('sine')
   const [rootMidi] = useState(57)  // A3
   const [isSlow, setIsSlow] = useState(false)
   const [lastResult, setLastResult] = useState<{ correct: boolean; hint: string; correctBracket: number } | null>(null)
@@ -35,8 +34,11 @@ export default function DrillMode({ sprint = 1 }: DrillModeProps) {
 
   const playDiChord = useCallback(async (bracket: number, slow: boolean) => {
     if (!isReady) await start()
-    await synth?.play(bracket, slow ? rootMidi - 12 : rootMidi, timbre)
-  }, [isReady, start, synth, rootMidi, timbre])
+    const dc = getDiChord(bracket)
+    // Drill uses pulsation-focused mix by default — pure sine, dry, long sustain
+    const drillMix = { pulsation: 8, harmonicity: 0, foFactor: 0 }
+    await synth?.play(bracket, slow ? rootMidi - 12 : rootMidi, dc.foDirection, drillMix)
+  }, [isReady, start, synth, rootMidi])
 
   const handleStart = async () => {
     const next = pickNext(sprintConfig.focusBrackets, null)
