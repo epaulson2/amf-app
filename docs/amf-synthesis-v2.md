@@ -25,6 +25,7 @@ ingredients: Musical Universe, Harmonic Processions (McKay), Species Counterpoin
 7. [The Counterpoint Integration Map](#7-the-counterpoint-integration-map)
 8. [The Four Chambers × Counterpoint Matrix](#8-the-four-chambers--counterpoint-matrix)
 9. [DADGAD as the Primary Counterpoint Instrument](#9-dadgad-as-the-primary-counterpoint-instrument)
+   - [9.1 The DADGAD Pair System — Scale Navigation Framework](#91-the-dadgad-pair-system--scale-navigation-framework)
 10. [HP Integration Timeline](#10-hp-integration-timeline)
 11. [The Practice Protocol](#11-the-practice-protocol)
 12. [Fluency Redefined](#12-fluency-redefined)
@@ -253,6 +254,43 @@ DADGAD's open string tuning (D2-A2-D3-G3-A3-D4) is not incidentally compatible w
 **Implication for curriculum design:** DADGAD should not be introduced as "the Celtic guitar" or "the alternative tuning." It should be introduced as the counterpoint instrument — the guitar in which the cantus firmus is built into the open strings. Standard tuning is the harmonic navigation instrument — the guitar in which the full Constellation vocabulary is most accessible. Both are needed from Phase 0. DADGAD makes counterpoint natural; Standard makes harmony systematic. The two co-primary tracks exist because they are exercising complementary aspects of the same musical intelligence.
 
 **Structural divergence and reconvergence:** DADGAD and Standard diverge most sharply at Phases 4-8 (where the specific physical realization of counterpoint exercises differs substantially) and reconverge at Phase 11 (where HP vocabulary applies to both equally) and Phase 12 (where the distinction becomes a matter of tonal color choice rather than structural limitation).
+
+### 9.1 The DADGAD Pair System — Scale Navigation Framework
+
+The three-notes-per-string (3-NPS) system that works elegantly in Standard tuning does not translate to DADGAD. The problem is structural, not cosmetic: Standard's string intervals are P4-P4-P4-M3-P4 (5-5-5-4-5 semitones), nearly uniform. DADGAD's string intervals are P5-P4-P4-M2-P4 (7-5-5-2-5 semitones). Two outliers break the 3-NPS logic in opposite directions: the P5 bass gap (strings 6-5, D→A, 7 semitones) requires more notes per string to fill, and the M2 treble step (strings 3-2, G→A, only 2 semitones) offers almost no room.
+
+**The structural insight:** DADGAD has a hidden symmetry that 3-NPS obscures. Three of the six strings are D (strings 6, 4, 1) and two are A (strings 5, 2). String 3 (G) is the lone outlier. This means DADGAD naturally groups into **three string pairs** with consistent internal intervals:
+
+| Pair | Strings | Interval | Character |
+|---|---|---|---|
+| Bass pair | 6–5 (D→A) | P5 — 7 semitones | Unique; needs its own pattern |
+| Core pair | 4–3 (D→G) | P4 — 5 semitones | Standard; 3-NPS works normally |
+| Treble pair | 2–1 (A→D) | P4 — 5 semitones | Standard; 3-NPS works normally |
+
+The Core and Treble pairs behave identically to P4 string pairs in Standard tuning — the same positional logic applies with no modification. Only the Bass pair and the G→A crossing between Core and Treble require new thinking.
+
+**The G→A step (strings 3→2):** Because G and A are only 2 semitones apart, crossing from string 3 to string 2 is not a position shift — it is a step. The hand barely moves. The practical approach: play 1-2 notes on string 3 (G), then step across to string 2 (A) without changing hand position. In D Dorian, this is often G open on string 3 → A open on string 2: zero hand movement, two different notes. This crossing should be internalized as a minimal step, not a string-crossing leap.
+
+**The Bass pair (strings 6-5, P5):** The 7-semitone gap is too large for standard 3-NPS fingering. The natural solution is **4 notes on string 6, 3 on string 5**. In D Dorian ascending from open D: D-E-F-G (frets 0-2-3-5) on string 6, then A-B-C (frets 0-2-3) on string 5. The alternative treatment is to use string 6 as a sustained drone and treat string 5 as the first melody string — which aligns naturally with the cantus firmus function described in Section 9.
+
+**D-family and A-family patterns:** Because strings 6, 4, and 1 are all D, they share the same scale pattern at the same fret positions. Because strings 5 and 2 are both A, they also share a pattern. A student who learns the D-string shape and the A-string shape knows the scale on four of the six strings automatically. String 3 (G) is the lone singleton, and its crossing to string 2 uses the minimal M2 step.
+
+**D Dorian ascending — full pattern:**
+
+```
+String 6 (D): D–E–F–G    frets 0–2–3–5    (4 notes; D-family)
+String 5 (A): A–B–C      frets 0–2–3      (3 notes; A-family)
+String 4 (D): D–E–F–G    frets 0–2–3–5    (4 notes; D-family — identical to string 6)
+String 3 (G): G           fret 0           (1 note; G-singleton — step across →)
+String 2 (A): A–B–C      frets 0–2–3      (3 notes; A-family — identical to string 5)
+String 1 (D): D           fret 0           (arrival)
+```
+
+Pattern summary: **4-3-4-1-3-1**. The two D-family strings produce the same shape; the two A-family strings produce the same shape. The G-singleton is a single note (or at most two) before the minimal step across.
+
+**Application to Segment vocabulary:** DADGAD Segments are defined within pairs, not across all six strings. A Segment lives in the Core pair (strings 4-3), the Treble pair (strings 2-1), or the Bass pair (strings 6-5) — each pair having its own ergonomic geometry. Crossing between pairs uses the designated crossing points: Bass→Core is a standard P4 string crossing; Core→Treble is the M2 step. This is the physical grammar of DADGAD Galaxy movement.
+
+**AMF curriculum note:** This framework is not an alternative to 3-NPS — it is the DADGAD-specific realization of the same underlying principle: find the repeating unit. In Standard, the repeating unit is the 3-note-per-P4-string group. In DADGAD, the repeating unit is the string-family pattern (D-family shape, A-family shape) with a pair-based crossing logic. Phase 1-3 Segment work in DADGAD should teach these pair-based patterns, not attempted 3-NPS transfers from Standard.
 
 ---
 
