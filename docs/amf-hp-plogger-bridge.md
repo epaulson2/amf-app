@@ -581,13 +581,15 @@ The missing intervals' Span positions suggest exactly where they should be intro
 
 Despite the extensive convergence documented above, the two systems are not duplicates. Their differences are real and important — and understanding them explains why both are necessary.
 
-**Scale: Dyadic vs. Set-Theoretic**
+**Analytical Grain: Profile vs. Single Descriptor**
 
-Plogger operates at the level of two-note relationships. It analyzes di-chords — single intervals — in isolation. It cannot directly characterize a chord of five notes; it can only analyze the 10 interval relationships contained within it. This is appropriate for its purpose (ear training at the foundational perceptual level) but insufficient for compositional analysis.
+Plogger does analyze multi-note chords — but it does so by systematically describing all the di-chord relationships within them. A five-note chord contains 10 interval pairs; Plogger gives each one a full three-axis profile (pulsation, F/O, harmonicity). The result is a rich, multi-dimensional characterization of the chord's internal acoustic texture. This is not a limitation — it is the methodology, and it is directly useful for voice-leading decisions, where specific interval pairs within a chord matter enormously.
 
-HP operates at the level of pitch sets of any size. A five-note chord is a single object with a single Span, a single projection direction, a single Mirror Set partner. HP reduces multi-note complexity to a single geometric description. This is appropriate for compositional analysis but can abstract away from perceptual details that Plogger preserves.
+HP approaches the same chord differently: it collapses the entire set to a single Span value and a single projection direction. This is a far more abstract descriptor — simpler, easier to compare across chords, better suited for navigating harmonic space at a compositional level.
 
-They are complementary scales of analysis: Plogger is the microscope (examining individual acoustic relationships), HP is the map (showing the landscape those relationships inhabit).
+The distinction is grain, not completeness. Plogger gives a chord a *profile* — the full map of its internal acoustic relationships. HP gives a chord a *coordinate* — its position and orientation in harmonic space. A profile is richer in perceptual detail; a coordinate is more useful for comparison and navigation. Neither is more complete; they answer different questions.
+
+For voice leading: Plogger's profile approach wins — you need to know which specific intervals are moving and what each one is doing acoustically. For harmonic architecture: HP's coordinate approach wins — you need to know where you are in harmonic space and which direction you're pointing. Both are necessary for a complete compositional intelligence.
 
 **Epistemology: Perceptual vs. Structural**
 
