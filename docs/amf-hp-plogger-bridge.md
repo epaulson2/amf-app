@@ -2,16 +2,18 @@
 title: Harmonic Processions & Plogger — Acoustic Architecture of Harmonic Space
 date: 2026-07-20
 status: living document
-note: HP sections based on partial preview of McKay's book. Full integration deferred to Phase 11 once complete text is available.
+version: 2.0
+note: HP sections based on partial preview of McKay's book. Full integration deferred to Phase 11 once complete text is available. Plogger content is stable.
 ---
 
 # Harmonic Processions & Plogger — Acoustic Architecture of Harmonic Space
 
-**Document Status:** Reference / Bridge Document  
+**Document Status:** Reference / Bridge Document — Living Architecture  
 **Audience:** AMF curriculum designers and advanced learners  
-**Date:** 2026-07-20
+**Date:** 2026-07-20  
+**Version:** 2.0
 
-> **Honest caveat:** The HP sections of this document are based on a preview of Dosia McKay's *Harmonic Processions* — not the complete text. Core concepts (Span, Quintal Prime Form, Mirror Sets, procession types) are described accurately from available material. Details about specific tables, advanced applications, and McKay's full recommended pedagogy should be verified against the complete book when available.
+> **Honest caveat on HP content:** The Harmonic Processions sections of this document are based on a preview of Dosia McKay's *Harmonic Processions* — not the complete text. Core concepts (Span, Quintal Prime Form, Mirror Sets, procession types) are described accurately from available material. Details about specific tables, advanced applications, and McKay's full recommended pedagogy should be verified against the complete book when available. This document will be expanded significantly once the full text is in hand.
 
 ---
 
@@ -19,38 +21,51 @@ note: HP sections based on partial preview of McKay's book. Full integration def
 
 1. [Executive Summary](#1-executive-summary)
 2. [Harmonic Processions — On Its Own Terms](#2-harmonic-processions--on-its-own-terms)
-   - 2.1 [The Core Premise](#21-the-core-premise)
-   - 2.2 [The Circle of Fifths as Primary Topology](#22-the-circle-of-fifths-as-primary-topology)
-   - 2.3 [Span — The Central Measurement](#23-span--the-central-measurement)
-   - 2.4 [Quintal Prime Form](#24-quintal-prime-form)
-   - 2.5 [Sharp and Flat Projection](#25-sharp-and-flat-projection)
-   - 2.6 [Mirror Sets](#26-mirror-sets)
-   - 2.7 [The Three Procession Types](#27-the-three-procession-types)
-   - 2.8 [The 350 Pitch Sets and 48 Reference Tables](#28-the-350-pitch-sets-and-48-reference-tables)
-   - 2.9 [HP's Recommended Learning Progression](#29-hps-recommended-learning-progression)
-   - 2.10 [What HP Promises the Learner](#210-what-hp-promises-the-learner)
-3. [Plogger — Brief Recap for Comparison](#3-plogger--brief-recap-for-comparison)
-4. [The Pythagorean Bridge — How They Converge](#4-the-pythagorean-bridge--how-they-converge)
-   - 4.1 [The Shared Root: Why Both Start With the P5](#41-the-shared-root-why-both-start-with-the-p5)
-   - 4.2 [The Pythagorean Fifth Specifically](#42-the-pythagorean-fifth-specifically)
-   - 4.3 [Span = Harmonicity: The Critical Equivalence](#43-span--harmonicity-the-critical-equivalence)
-   - 4.4 [F/O Factor and Sharp/Flat Projection: The Same Directional Phenomenon](#44-fo-factor-and-sharpflat-projection-the-same-directional-phenomenon)
-   - 4.5 [Mirror Sets and Pulsation Equivalence](#45-mirror-sets-and-pulsation-equivalence)
-   - 4.6 [Where They Differ](#46-where-they-differ)
+   - [2.1 The Core Premise](#21-the-core-premise)
+   - [2.2 The Circle of Fifths as Primary Topology](#22-the-circle-of-fifths-as-primary-topology)
+   - [2.3 Span — The Central Measurement](#23-span--the-central-measurement)
+   - [2.4 The Complete Interval Span Table](#24-the-complete-interval-span-table)
+   - [2.5 Quintal Prime Form](#25-quintal-prime-form)
+   - [2.6 Sharp and Flat Projection](#26-sharp-and-flat-projection)
+   - [2.7 Mirror Sets](#27-mirror-sets)
+   - [2.8 The Three Procession Types](#28-the-three-procession-types)
+   - [2.9 The 350 Pitch Sets and 48 Reference Tables](#29-the-350-pitch-sets-and-48-reference-tables)
+   - [2.10 HP's Recommended Learning Progression](#210-hps-recommended-learning-progression)
+   - [2.11 What HP Promises the Learner](#211-what-hp-promises-the-learner)
+3. [Plogger — In Full](#3-plogger--in-full)
+   - [3.1 The Di-Chord as the Primary Unit](#31-the-di-chord-as-the-primary-unit)
+   - [3.2 The Three Axes](#32-the-three-axes)
+   - [3.3 The Perfect Fifth's Acoustic Privilege](#33-the-perfect-fifths-acoustic-privilege)
+   - [3.4 The Perfect Fourth — A Special Case](#34-the-perfect-fourth--a-special-case)
+   - [3.5 Plogger's Interval Hierarchy](#35-ploggers-interval-hierarchy)
+4. [The Pythagorean Bridge — Deep Convergence](#4-the-pythagorean-bridge--deep-convergence)
+   - [4.1 The Shared Root: The P5 Is Not Just Valued by Both — It IS the Unit in Both](#41-the-shared-root-the-p5-is-not-just-valued-by-both--it-is-the-unit-in-both)
+   - [4.2 The Pythagorean Generation of Western Pitch Space](#42-the-pythagorean-generation-of-western-pitch-space)
+   - [4.3 The Pythagorean Comma: The Bridge Between Two Worlds](#43-the-pythagorean-comma-the-bridge-between-two-worlds)
+   - [4.4 Span = Harmonicity: The Critical Equivalence](#44-span--harmonicity-the-critical-equivalence)
+   - [4.5 F/O Factor and Sharp/Flat Projection: The Same Directional Phenomenon at Different Scales](#45-fo-factor-and-sharpflat-projection-the-same-directional-phenomenon-at-different-scales)
+   - [4.6 The Perfect Fourth's F/O Anomaly — Explained by HP](#46-the-perfect-fourths-fo-anomaly--explained-by-hp)
+   - [4.7 Mirror Sets and Pulsation Equivalence](#47-mirror-sets-and-pulsation-equivalence)
+   - [4.8 The AMF Sprint Sequence IS the HP Span Sequence](#48-the-amf-sprint-sequence-is-the-hp-span-sequence)
+   - [4.9 Where They Differ](#49-where-they-differ)
 5. [Why Having Both Matters — What Neither Gives Alone](#5-why-having-both-matters--what-neither-gives-alone)
-6. [Practical Consequences for AMF Learners](#6-practical-consequences-for-amf-learners)
+6. [The Integrated Picture — One Theory, Two Languages](#6-the-integrated-picture--one-theory-two-languages)
+7. [Practical Consequences for AMF Learners](#7-practical-consequences-for-amf-learners)
+8. [Open Questions Awaiting the Full HP Text](#8-open-questions-awaiting-the-full-hp-text)
 
 ---
 
 ## 1. Executive Summary
 
-Two independent theoretical systems — Dosia McKay's *Harmonic Processions* (HP) and the Plogger acoustic ear-training method — both place the Perfect Fifth at the absolute center of their explanatory architecture. This document explains each system on its own terms, then maps the connections between them.
+Two independent theoretical systems — Dosia McKay's *Harmonic Processions* (HP) and the Plogger acoustic ear-training method — both place the Perfect Fifth at the absolute center of their explanatory architecture. This is not a coincidence. It is evidence that both systems are, from different directions, describing the same underlying acoustic reality. This document explains each system on its own terms, then maps the connections between them with full rigor.
 
-**HP** is a structural theory of harmonic space. It asks: *given that pitch relationships can be mapped onto the Circle of Fifths, what is the topology of that space, and what rules govern movement through it?* Its key insight is that the Circle of Fifths is not a mnemonic — it is the actual spatial layout of Western pitch relationships, and the distance between any two harmonic areas (their **Span**) can be precisely measured in perfect fifth steps. HP catalogs 350 pitch sets organized by this topology and describes three types of harmonic movement (processions) through it.
+**HP** is a structural theory of harmonic space. It asks: *given that all 12 pitches of Western music are generated by stacking perfect fifths, what is the topology of the resulting pitch space, and what rules govern movement through it?* Its key insight is that the Circle of Fifths is not a mnemonic device for key signatures — it is the actual spatial topology of Western harmonic space. The distance between any two harmonic areas (their **Span**, measured in perfect fifth steps) can be precisely calculated, and harmonic movement is described as three types of **processions** through that space.
 
-**Plogger** is a perceptual theory of interval experience. It asks: *what is actually happening acoustically when a human ear hears two pitches simultaneously, and how can that acoustic reality be used to train interval recognition?* Its key insight is that intervals are perceived along three physical axes — pulsation (beating), Fundamental/Octave factor (directional pull), and harmonicity (spectral fusion) — and the Perfect Fifth occupies a privileged position on all three.
+**Plogger** is a perceptual theory of interval experience. It asks: *what is actually happening acoustically when the human ear perceives two simultaneous pitches, and how can those acoustic facts be used to systematically train interval recognition?* Its key insight is that intervals produce three distinct physical phenomena — pulsation (beating), Fundamental/Octave factor (directional pull), and harmonicity (spectral fusion) — and the Perfect Fifth occupies a uniquely privileged position on all three simultaneously.
 
-**The connection:** Plogger establishes *why* the P5 is the acoustic foundation of tonal music. HP shows *what follows structurally* when you take that foundation seriously across multiple pitches simultaneously. Plogger's harmonicity axis and HP's Span measure the same phenomenon — acoustic stability — from different angles: perceptual and structural. Together they form a complete account of harmonic space: its felt texture (Plogger) and its geometric structure (HP).
+**The deepest connection:** The P5 is not merely *valued* by both systems. It is the **unit of measurement** in both systems — at different scales. Plogger calibrates the ear to the P5 as its primary acoustic reference; HP uses the P5 as the unit in which all harmonic distances are counted. A student who has internalized the P5 through Plogger training has calibrated their internal ear to the exact unit that HP uses to map all of harmonic space. When they later encounter "Span 4," they can feel it as four of those things — not as an abstraction.
+
+**The structural proof:** The AMF's sprint learning sequence (P4/P5 → M2 → m3/M6 → M3 → Tritone) is identical to the HP Span hierarchy (Span 1 → 2 → 3 → 4 → 6). Two independent systems — one perceptual, one structural — arrived at the same ordering of intervals through completely different reasoning. This convergence is strong evidence that both are describing the same underlying acoustic reality: the organization of Western pitch space by the Perfect Fifth.
 
 ---
 
@@ -58,280 +73,633 @@ Two independent theoretical systems — Dosia McKay's *Harmonic Processions* (HP
 
 ### 2.1 The Core Premise
 
-*Harmonic Processions* begins from a claim that sounds simple but has far-reaching implications: **the Circle of Fifths is not a teaching aid — it is the correct topological description of Western harmonic space.**
+*Harmonic Processions* by Dosia McKay begins from a claim that sounds almost too simple but has far-reaching implications: **the Circle of Fifths is not a teaching aid — it is the correct topological description of Western harmonic space.**
 
-Most musicians encounter the Circle of Fifths as a diagram for remembering key signatures. HP treats it as something more fundamental: it is the actual spatial map of pitch relationships, derived directly from the acoustic physics of the Perfect Fifth. When McKay says that two chords are "harmonically distant," she does not mean this metaphorically. She means that when their constituent pitches are placed on the Circle of Fifths, they are many fifth-steps apart — and that this distance is measurable, comparable, and compositionally meaningful.
+Most musicians encounter the Circle of Fifths as a diagram for memorizing key signatures, or as a tool for remembering which chords "go together" in a key. HP treats it as something categorically more fundamental. The Circle of Fifths, in HP's account, is the spatial map of pitch relationships that emerges directly and necessarily from the acoustic physics of the Perfect Fifth. It is not a human invention designed for pedagogical convenience. It is what you discover when you ask: "if I generate all 12 pitches of Western music by stacking perfect fifths, and I arrange those pitches in a map where distance between points corresponds to how many fifth-steps separate them — what does that map look like?" The answer is: the Circle of Fifths.
 
-This reframing changes everything that follows. Analysis is no longer primarily about semitone intervals or chord function labels. It is about *position in fifth-space* and *direction of movement through fifth-space.*
+This reframing changes everything that follows. Harmonic analysis in HP is not primarily about semitone intervals, functional labels (tonic/subdominant/dominant), or chord quality descriptors (major/minor/diminished). It is about *position in fifth-space* — where a pitch set sits on the circle — and *direction of movement through fifth-space* — how processions travel across that circle.
+
+The practical consequence: every concept in conventional harmony theory that HP touches — consonance and dissonance, modulation, voice leading, key relationships, modal behavior — receives a new explanation that is simpler and more unified than the collection of separate rules conventional theory requires. HP does not add complexity to harmony; it reduces it by revealing the single underlying geometry from which all the conventional rules derive.
 
 ### 2.2 The Circle of Fifths as Primary Topology
 
-The Circle of Fifths HP uses is the standard 12-note chromatic circle, but the key is how it is read:
+The Circle of Fifths HP employs is the standard 12-note chromatic circle arranged by fifth relationships:
 
 ```
-        C
-    F       G
-  Bb          D
- Eb             A
-  Ab           E
-    Db       B
-        F#/Gb
+             C
+         F       G
+      Bb             D
+    Eb                 A
+      Ab             E
+         Db       B
+             F#/Gb
 ```
 
-Every step clockwise is a Perfect Fifth sharper (C→G→D→A→E→B→F#→C#→Ab→Eb→Bb→F→C). Every step counterclockwise is a Perfect Fifth flatter.
+Every clockwise step is one Perfect Fifth sharper: C→G→D→A→E→B→F#→C#→Ab→Eb→Bb→F→(C). Every counterclockwise step is one Perfect Fifth flatter.
 
-This circle is not a circular version of the chromatic scale. It is the circle that results from the acoustic generation of all twelve pitches through stacked P5s. The "distance" between any two pitches on this circle is measured in fifth-steps, not semitones. C and G are 1 fifth apart. C and D are 2 fifths apart. C and B are 5 fifths apart (C→G→D→A→E→B). C and F# are 6 fifths apart — maximally distant, the tritone.
+The critical point is what this arrangement reveals. This is **not** a circular version of the chromatic scale. The chromatic scale arranges pitches by semitone distance: C-C#-D-D#-E-F-F#-G-G#-A-A#-B. The Circle of Fifths arranges them by acoustic generation: each pitch was "born" from the previous one by the operation of stacking a perfect fifth. C gave birth to G (a fifth above). G gave birth to D. D gave birth to A. And so on, until 12 applications return you nearly (but not exactly) to C.
 
-This fifth-distance corresponds directly to acoustic complexity: C and G share many harmonic overtones (their spectra overlap substantially). C and F# share almost none (they are acoustically "strangers").
+The "distance" between any two pitches on this circle is measured in fifth-steps, not semitones. C and G are 1 fifth apart. C and D are 2 fifths apart (C→G→D). C and B are 5 fifths apart (C→G→D→A→E→B). C and F# are 6 fifths apart — the tritone, the pitch maximally distant from C in both directions around the circle.
+
+This fifth-distance is not arbitrary. It corresponds directly to acoustic intimacy: pitches close together on the circle share many harmonic overtones and produce little beating. Pitches far apart share few overtones and produce complex interference patterns. The map is acoustically honest.
 
 ### 2.3 Span — The Central Measurement
 
-**Span** is HP's primary measurement. It is defined as: the distance in perfect fifths between the outermost notes of a pitch set when all its notes are arranged on the Circle of Fifths.
+**Span** is HP's primary measurement tool. It is defined as: the distance in perfect fifths between the outermost notes of a pitch set, when all notes of the set are arranged on the Circle of Fifths.
 
-To calculate Span for any set:
-1. Place all notes of the set on the Circle of Fifths
-2. Find the contiguous arc (the smallest arc that contains all the notes)
-3. Count the number of fifth-steps in that arc
-4. That count is the Span
+**To calculate Span for any set:**
+1. Write out all notes of the set
+2. Place each note on the Circle of Fifths at its fifth-position (C=0, G=+1, D=+2, A=+3, E=+4, B=+5, F#=+6, F=−1, Bb=−2, Eb=−3, Ab=−4, Db=−5)
+3. Find the contiguous arc on the circle that contains all the notes with the smallest total length
+4. Count the fifth-steps in that arc
+5. That count is the Span
 
-**Examples:**
+**Worked examples:**
 
-*Perfect Fifth {C, G}:* On the circle, C and G are adjacent. Arc length = 1. **Span 1.**
+*Perfect Fifth {C, G}:*  C=0, G=+1. Arc from 0 to +1 = 1 step. **Span 1.**
 
-*Major Triad {C, E, G}:* Arranged on the circle: ...C—G...E... (C is at position 0, G at +1, E at +4). The smallest arc containing all three is from C to E = 4 fifth-steps. **Span 4.**
+*Major Triad {C, E, G}:*  C=0, G=+1, E=+4. Notes span from position 0 to position +4. Arc length = 4. **Span 4.**
 
-*Dominant Seventh {C, E, G, Bb}:* C=0, G=+1, E=+4, Bb=−2. The arc from Bb to E = 6 fifth-steps. **Span 6.**
+*Minor Triad {C, Eb, G}:*  C=0, G=+1, Eb=−3. Notes span from position −3 to position +1. Arc length = 4. **Span 4.**
 
-*Diminished Seventh {C, Eb, Gb, A}:* These four notes are evenly distributed around the full circle, 3 steps apart each. The arc spans the entire circle. **Maximum Span.**
+Note: major and minor triads have the same Span. HP predicts — correctly — that they have similar acoustic complexity (similar perceptual density), differing only in the direction of their Sharp/Flat projection.
 
-The pattern is clear: **Span increases with perceived dissonance.** The most consonant intervals have the lowest Span. The most dissonant have the highest. This is not a convention — it is a structural reflection of acoustic reality, because notes close together on the Circle of Fifths share more overtones and produce less beating.
+*Dominant Seventh {C, E, G, Bb}:*  C=0, G=+1, E=+4, Bb=−2. Notes span from −2 to +4 = 6 steps. **Span 6.**
 
-### 2.4 Quintal Prime Form
+*Pentatonic Scale {C, D, E, G, A}:*  C=0, G=+1, D=+2, A=+3, E=+4. Arc from 0 to +4 = 4 steps. **Span 4.** (Same as a triad — a pentatonic scale is acoustically as "dense" as a triad, just filled in with two passing tones.)
 
-Traditional pitch-set theory (Forte's system) represents sets in "prime form" by arranging their semitone intervals in their most compact semitone order. HP takes a different approach: **Quintal Prime Form** arranges a set's notes in their most compact fifth-order — the arrangement that produces the smallest Span.
+*Diatonic Major Scale {C, D, E, F, G, A, B}:*  F=−1, C=0, G=+1, D=+2, A=+3, E=+4, B=+5. Arc from −1 to +5 = 6 steps. **Span 6.**
 
-This matters because semitone-based prime forms obscure fifth-based relationships. Two sets that look different in semitone prime form may have identical Span, identical fifth-structure, and identical acoustic character. Quintal Prime Form reveals that kinship. It also makes the calculation of Sharp/Flat projection and Mirror relationships straightforward, because both are defined in terms of the fifth-arrangement.
+*Diminished Seventh {C, Eb, Gb, A}:*  These four notes are spaced evenly around the circle, 3 steps apart each (C=0, A=+3, F#/Gb=+6, Eb=−3). The arc spans the full 12-step circle. **Maximum Span.**
 
-The practical consequence: when analyzing or composing with HP, you always think of chords and scales as clusters on the Circle of Fifths, not as stacks of semitones. A major scale is a 7-note cluster spanning 6 fifth-steps (F–C–G–D–A–E–B). A pentatonic scale is a 5-note cluster spanning 4 fifth-steps (F–C–G–D–A or C–G–D–A–E). Their Quintal Prime Forms are compact clusters; their semitone arrangements look like irregular intervals.
+The pattern is unmistakable: **Span increases with perceived dissonance and harmonic tension.** The simplest, most consonant sounds have the smallest Span. The most dissonant, most complex sounds have the largest Span. This is not a convention or a rule — it is a structural reflection of acoustic reality, because notes close together on the Circle of Fifths share more overtones, produce less beating, and fuse more completely.
 
-### 2.5 Sharp and Flat Projection
+### 2.4 The Complete Interval Span Table
 
-Every pitch set has a "leading edge" on both the sharp and flat sides of its Circle of Fifths cluster. **Sharp Projection** means adding one or more notes from the sharp side of the set's arc — extending the cluster in the sharp direction. **Flat Projection** means the same in the flat direction.
+Every diatonic interval has a defined Span. This table is fundamental for understanding how the two systems connect:
 
-When a harmonic area "projects sharp," it means its next logical move is to add pitch content from the sharp direction — which creates the sensation of moving forward, brightening, adding tension. When it "projects flat," it moves toward the flat direction — softening, relaxing, arriving.
+| Interval | Example | Fifth-distance calculation | Span | Plogger character |
+|---|---|---|---|---|
+| Perfect Unison | C–C | 0 steps | 0 | Pure fusion |
+| Perfect Fifth | C–G | C(0) to G(+1) = 1 step | 1 | Maximum stability, clearest root |
+| Perfect Fourth | C–F | C(0) to F(−1) = 1 step | 1 | Stable but F/O-inverted (see §3.4) |
+| Major Second | C–D | C(0) to D(+2) = 2 steps | 2 | Moderate consonance, mild tension |
+| Minor Seventh | C–Bb | C(0) to Bb(−2) = 2 steps | 2 | Moderate, soft dissonance |
+| Minor Third | C–Eb | C(0) to Eb(−3) = 3 steps | 3 | Rich, warm, slightly complex |
+| Major Sixth | C–A | C(0) to A(+3) = 3 steps | 3 | Rich, open, bright |
+| Major Third | C–E | C(0) to E(+4) = 4 steps | 4 | Sweet, moderately complex |
+| Minor Sixth | C–Ab | C(0) to Ab(−4) = 4 steps | 4 | Dark, moderately complex |
+| Major Seventh | C–B | C(0) to B(+5) = 5 steps | 5 | Tense, dissonant, leading |
+| Minor Second | C–Db | C(0) to Db(−5) = 5 steps | 5 | Maximum tension, half-step crunch |
+| Tritone | C–F# | C(0) to F#(+6/−6) = 6 steps | 6 | Maximum Span, maximum instability |
 
-In traditional terms: the dominant chord projects sharp (toward the tonic), the subdominant projects flat (back toward the tonic from the flat side). But HP generalizes this beyond triadic function to any pitch set: any cluster has a natural sharp edge and a natural flat edge, and the direction of movement is read from which edge is active.
+Observations from this table:
 
-This concept explains why voice leading in certain directions feels "natural" even when there are no traditional dominant-tonic relationships involved. The cluster is pointing. Following its direction feels grammatical; contradicting it feels like a deliberate rhetorical move.
+**Inversional pairs have the same Span.** The Perfect Fifth (Span 1) and Perfect Fourth (Span 1) are inversions of each other — same fifth-distance, just measured in opposite directions. Same for Major Third/Minor Sixth (both Span 4), Major Second/Minor Seventh (both Span 2), Minor Third/Major Sixth (both Span 3), Major Seventh/Minor Second (both Span 5). This is why inversions of intervals sound acoustically similar in density — they share the same Span.
 
-### 2.6 Mirror Sets
+**The tritone is uniquely symmetric.** It sits exactly halfway around the circle (6 steps in either direction). This is why it has no "projection direction" — it simultaneously points both ways, which is what creates its characteristic instability and ambiguity.
 
-**Mirror Sets** are pairs of pitch sets that are reflections of each other across the Circle of Fifths. If one set occupies positions {−2, −1, 0, +1, +2} on the circle (centered at C), its mirror occupies the same relative positions centered on the opposite side — the same Span, the same internal structure, but the sharp and flat projections are swapped.
+### 2.5 Quintal Prime Form
 
-**Why they matter for composition:**
+Traditional pitch-set theory (Forte's system, widely used in academic music analysis) represents sets in "prime form" by arranging their semitone intervals in the most compact semitone order. HP takes a categorically different approach: **Quintal Prime Form** arranges a set's notes in their most compact fifth-order — the arrangement that produces the smallest Span.
 
-Mirror sets have identical Span — which means they have identical acoustic complexity, identical harmonicity profile, identical perceptual "density." The ear cannot distinguish them by dissonance level alone.
+This distinction is not merely organizational. Semitone-based prime forms obscure fifth-based relationships that are acoustically fundamental. Two sets that look unrelated in semitone prime form may have identical Span, identical fifth-structure, and identical acoustic character — but Forte's system would not reveal this. Quintal Prime Form reveals acoustic kinship that semitone analysis conceals.
 
-But their projection directions are reversed. A set centered on the sharp side of a key points flat (toward the tonic); its mirror, centered on the flat side, points sharp (away from the tonic). A modulation that moves from a set to its mirror therefore achieves the following: **the perceptual complexity stays constant (same Span), but the harmonic direction reverses.** The ear accepts the change because the density feels equivalent; but it registers a reorientation — what was arriving is now departing, or vice versa.
+**Example of the difference:**
 
-This makes mirror modulations unusually smooth. In a conventional modulation, the ear has to adjust both to new pitch content and to a different dissonance level. In a mirror modulation, only the direction changes; the density stays constant. McKay identifies this as one of the most structurally elegant compositional moves available within the HP framework.
+A C major triad (C-E-G) in Forte prime form is [0,4,7] — a minor third and a major third, stacked. A C minor triad (C-Eb-G) in Forte prime form is [0,3,7] — a major third and a minor third, stacked. These look structurally different in Forte's system.
 
-### 2.7 The Three Procession Types
+In Quintal Prime Form: the C major triad spans from F to E on the circle (4 steps, Span 4). The C minor triad spans from Eb to G on the circle (4 steps, Span 4). Both have identical Span. HP predicts what Plogger confirms: major and minor triads are acoustically equivalent in density and complexity — they differ in projection direction (major points slightly sharp, minor points slightly flat), not in harmonic complexity. Forte's system treats them as different structures; HP reveals them as mirror-related structures of identical acoustic weight.
 
-HP organizes harmonic movement into three fundamental types:
+**The practical consequence:** When using HP to compose or analyze, you always think of pitch sets as clusters on the Circle of Fifths, not as stacks of semitones. A major scale is a 7-note cluster spanning 6 consecutive fifth-positions (F-C-G-D-A-E-B). A pentatonic scale is a 5-note cluster spanning 4 consecutive fifth-positions (F-C-G-D-A, or any rotation). The Quintal Prime Form expresses the set as its most compact arc on the circle; everything else derives from that.
 
-**Natural Harmonic Procession:** Movement through sets by extending or contracting the cluster one fifth at a time along the sharp or flat axis. This corresponds to the feeling of "inevitable" harmonic movement in tonal music — the sense that the music is following a natural path. The Circle of Fifths progression in traditional harmony (moving through dominant relationships) is a Natural Procession. It feels natural because it is: you are adding one acoustic neighbor at a time in a single direction.
+### 2.6 Sharp and Flat Projection
 
-**Modal Processions:** Movement patterns that stay within a specific fifth-zone of the circle without following the strict sharp/flat alternation of Natural Procession. Modal music characteristically avoids dominant function — and this is precisely because dominant function is a Natural Procession marker. Modal processions move laterally within their cluster zone, not along a directed sharp-or-flat path. This produces the characteristic quality of modal music: harmonic motion without the feeling of inevitable resolution.
+Every pitch set on the Circle of Fifths occupies an arc — a contiguous region of the circle. The arc has two edges: a sharp edge (the note furthest clockwise) and a flat edge (the note furthest counterclockwise). The **Sharp Projection** of a set is the note or notes available from the sharp side of its arc — extending the cluster one more step in the sharp direction. The **Flat Projection** is the same in the flat direction.
 
-**Dissonance Gradient Processions:** Movement that systematically changes Span across successive sets — getting progressively larger (darker, more tense) or smaller (clearer, more resolved). This is the harmonic equivalent of a dynamic crescendo or decrescendo. A dissonance gradient procession does not have to move in the sharp or flat direction — it moves in the *complexity* direction, increasing or decreasing the acoustic distance between the set's constituent notes. Impressionist music makes heavy use of this technique: chords move not toward a functional goal but through a color gradient.
+When a set "projects sharp," it is harmonically leaning toward pitch content from the sharp direction. This creates a sensation of brightening, adding tension, moving forward — pointing away from the tonic. When it "projects flat," it leans toward simpler, flatter content — softening, relaxing, pointing toward arrival and rest.
 
-**Practical note:** Most real music uses all three procession types in combination. The analytical and compositional power of HP comes from being able to identify which procession type is operating at any moment, and to deliberately choose or switch between them.
+In traditional harmonic language: dominant function is sharp projection (the dominant chord points toward its sharp edge to create the leading tone, then resolves flat back to the tonic). Subdominant function is flat projection (the subdominant chord points toward its flat edge, providing gravitational pull back toward the tonic from the other side).
 
-### 2.8 The 350 Pitch Sets and 48 Reference Tables
+But HP's power is that this concept generalizes completely beyond triadic, functional harmony. *Any* pitch set, of any size, has a sharp leading edge and a flat leading edge. The direction of harmonic movement at any moment can be read from which edge is "active." A composer using HP doesn't need to know whether a progression is "functional" or not — they only need to know which direction the cluster's edge is pointing.
 
-HP catalogs **350 pitch sets** — the complete inventory of distinct pitch collections in 12-tone equal temperament that are musically useful across the Western tradition, from dyads through 11-note sets. Each set is described by its Quintal Prime Form, its Span, its Sharp and Flat Projection targets, and its Mirror Set partner (where one exists).
+This explains why certain harmonic movements feel natural even when there are no traditional tonic/dominant relationships involved. Modal music, Impressionist music, jazz harmony, folk music, all have passages where something feels like forward motion even without a dominant chord. In HP terms: the cluster is projecting in a consistent direction. Following that projection feels grammatical; contradicting it feels like a deliberate rhetorical interruption.
 
-The **48 reference tables** organize these sets for compositional use:
-- Tables that group sets by Span (all Span-4 sets, all Span-6 sets, etc.)
-- Tables that list Mirror Set pairs
-- Tables that show Natural Procession paths through sets
-- Tables that show common-tone relationships between sets (shared notes across a harmonic move)
-- Tables that organize Modal Procession patterns by modal type
+### 2.7 Mirror Sets
 
-For a composer, these tables function as a navigational atlas: given the set you are currently in, they show you where you can go, how far each destination is, and what kind of move each transition represents.
+**Mirror Sets** are pairs of pitch sets that are reflections of each other across the Circle of Fifths. If one set occupies positions {−2, −1, 0, +1, +2} on the circle, its mirror occupies positions rotated to the opposite side of the circle — same Span, same internal fifth-structure, but the Sharp and Flat projection directions are swapped.
 
-### 2.9 HP's Recommended Learning Progression
+**The critical property:** Mirror sets have identical Span. By the Span = Harmonicity equivalence (see Section 4.4), this means they have identical acoustic complexity, identical perceptual density, identical average pulsation level. The human ear cannot distinguish them by consonance/dissonance alone — they feel equally "dense."
 
-Based on the available material, McKay's implied learning sequence is:
+**Why this makes mirror modulations smooth:**
 
-1. **Internalize the Circle of Fifths as topology** — not as key signatures, but as the actual map of pitch space. This means being able to instantly locate any pitch and calculate its fifth-distance from any other pitch.
+In a conventional modulation, the ear must simultaneously adjust to (a) new pitch content and (b) a different dissonance level — the new key's characteristic harmonics feel different in complexity from the departure key's. This double adjustment is what makes modulations perceptually "wrenching" when they move between areas of very different Span.
 
-2. **Learn to arrange any set in Quintal Prime Form** — place its notes on the circle, find the minimal arc, read the Span. This skill replaces semitone interval counting as the primary analytical tool.
+In a mirror modulation, the ear only has to adjust to (a) new pitch content — the dissonance level (Span) stays constant. The acoustic density of the new harmonic area is identical to the old one. The ear accepts the change because the perceptual complexity is equivalent. But it registers a change in *direction*: what was pointing sharp is now pointing flat, or vice versa. The harmonic compass has reversed, but the harmonic weight has not changed.
 
-3. **Calculate and compare Spans** — practice with sets of increasing Span. Hear how Span correlates with harmonic color. This should be ear training, not just calculation: play a Span-2 set, play a Span-6 set, notice what changes.
+McKay identifies mirror modulations as one of the most structurally elegant compositional tools in the HP framework precisely because they achieve reorientation without disruption. The musical analogy: rotating 180 degrees in place. You're now facing the opposite direction, but you haven't moved.
 
-4. **Understand Sharp/Flat Projection** — take a set and identify its sharp leading edge and flat leading edge. Practice hearing which direction a set "wants to move."
+**AMF application:** When a student experiences a smooth modulation that feels like "same distance, different color," they are experiencing a mirror relationship — without knowing the vocabulary. Plogger training prepares them for this (they feel the pulsation-equivalence); HP vocabulary names it (Phase 11).
 
-5. **Identify Mirror Set pairs** — work through the tables to find mirror relationships for familiar sets (major triads, dominant sevenths, etc.). Practice moving between mirror sets and hearing how the density stays constant while the direction reverses.
+### 2.8 The Three Procession Types
 
-6. **Master the three procession types** — compose short harmonic sequences that are deliberately Natural, deliberately Modal, or deliberately following a dissonance gradient. Analyze existing music to identify which procession type is operating in a given passage.
+HP identifies three fundamental patterns of harmonic movement. Most real music combines all three; the power of HP is in being able to identify which type is dominant at any moment and choose deliberately among them.
 
-7. **Use the 48 tables for composition and analysis** — at this stage, the tables become compositional resources rather than study material. You look up procession paths, find modulation pivots, plan gradient moves.
+**Natural Harmonic Procession**
 
-8. **Apply to real musical contexts** — bring HP vocabulary to analysis of existing repertoire and to original composition. The goal is that HP decisions become intuitive — that you feel the Span increasing or decreasing, that you feel the sharp projection pulling, without having to calculate.
+Movement through sets by extending or contracting the cluster one fifth at a time in a consistent direction — always adding one more sharp, or always adding one more flat. This is the most structurally "natural" kind of harmonic movement in Western music. The feeling of inevitability in tonal progressions — the sense that the music is going somewhere and will arrive where it intended — is characteristic of Natural Procession.
 
-### 2.10 What HP Promises the Learner
+The dominant-to-tonic progression (G major → C major) is a Natural Procession: you drop the leading tone B (the sharp edge of G major's cluster) and pick up F (the flat edge of C major's cluster), rotating the cluster one step in the flat direction. The music "fell" one fifth in the flat direction. The ear experiences this as resolution.
 
-HP promises a single unified explanation for phenomena that traditional harmony theory treats as separate mysteries:
+Circle-of-fifths progressions (the "I-IV-I-V-I" loop, or the "Rhythm Changes" jazz progression, or the descending fifths sequence in Baroque music) are extended Natural Processions. They feel "inevitable" because they are: they are following the natural gravitational direction of the Circle of Fifths, one fifth at a time.
 
-- *Why do dominant-tonic progressions feel inevitable?* They are Natural Processions following the sharp-to-flat axis toward the tonic cluster.
-- *Why does modal music sound "floating" or unresolved?* Modal Processions move within a cluster zone without directional projection.
-- *Why do certain modulations feel smooth while others feel wrenching?* Smooth modulations maintain Span while changing direction (mirror moves); wrenching ones change both Span and direction simultaneously.
-- *Why does Impressionist harmony feel like color rather than direction?* Dissonance gradient processions change complexity without directional projection.
-- *Why do extended chords in jazz feel "farther from the tonic" than simple triads?* They have higher Span — they are acoustically farther from the tonic cluster.
+**Modal Processions**
 
-In short: HP transforms harmonic analysis from a collection of separate rules (dominant function, voice-leading conventions, modal behavior, modulation theory) into a single geometric description of one topological space.
+Movement patterns that stay within a specific fifth-zone of the circle — a region — without following the strict directional flow of Natural Procession. Modal music characteristically avoids strong directional pull because it avoids the sharp-edge → flat-edge motion that creates dominant function.
+
+In HP terms: Dorian mode keeps its cluster in the region around D (the center of D Dorian = F-C-G-D-A-E-B). Harmonic movement within D Dorian stays within this cluster zone, shuffling notes without extending beyond it in either direction. The result is motion without destination — which is exactly what modal music feels like. There is no "home base" in the tonal sense because there is no consistent projection pulling toward one edge.
+
+This explains the oft-observed difference between a "modal" and "tonal" harmonic language without resorting to descriptions like "avoids dominant function" (which is circular). HP's explanation: modal harmonic motion is laterally within a cluster zone; tonal harmonic motion is directed along the sharp-or-flat axis.
+
+**Dissonance Gradient Processions**
+
+Movement that systematically changes Span across successive sets — either increasing Span (getting darker, more tense, more dissonant) or decreasing Span (getting clearer, more resolved, lighter). This type of procession does not require movement in the sharp or flat direction — it moves in the *complexity* dimension: the Span dimension.
+
+Dissonance gradient processions are the harmonic equivalent of a dynamic crescendo or decrescendo. Just as a volume crescendo increases intensity without necessarily changing melody or harmony, a dissonance gradient increases harmonic complexity without necessarily pointing toward a functional goal.
+
+Impressionist music (Debussy, Ravel) makes extensive use of dissonance gradient processions. Chords move not toward a cadential goal but through a series of harmonic colors of increasing or decreasing complexity. The ear experiences this as a texture change, a color change — not as purposeful motion toward resolution. HP explains this not as "rule-breaking" but as a coherent third type of procession, different from Natural and Modal.
+
+Contemporary film scoring frequently uses all three types simultaneously: Natural Procession for "plot-driven" emotional moments (things happening, building toward resolution), Modal Procession for atmospheric or suspended moments (the landscape, the waiting), and Dissonance Gradient for emotional intensity changes (getting scarier or more hopeful without a specific harmonic goal).
+
+### 2.9 The 350 Pitch Sets and 48 Reference Tables
+
+HP catalogs **350 pitch sets** — the complete inventory of distinct pitch collections that appear with meaningful regularity across the Western musical tradition, from dyads through 11-note sets. Each set is characterized by:
+- Its Quintal Prime Form (arrangement on the Circle of Fifths)
+- Its Span
+- Its Sharp Projection target (the next set if you extend one fifth sharp)
+- Its Flat Projection target (the next set if you extend one fifth flat)
+- Its Mirror Set partner (where one exists)
+- Its position in the Natural Procession chain
+
+The **48 reference tables** organize these 350 sets for compositional and analytical use. Based on available material, the tables include:
+- Sets grouped by Span (all Span-1 through Span-12 sets)
+- Mirror Set pairs
+- Natural Procession paths — given a set, what comes before and after in the natural chain
+- Common-tone relationships — which notes are shared between sets in a given procession
+- Modal Procession patterns organized by modal type
+- Dissonance gradient sequences organized by Span change pattern
+
+For a composer, these tables function as a navigational atlas of harmonic space. Given the pitch set currently active in a composition, the tables show: where can I go, how far is each destination, what kind of move does each transition represent, and what common tones will carry over to smooth the transition?
+
+### 2.10 HP's Recommended Learning Progression
+
+Based on available material, McKay's implied learning sequence builds systematically from the most fundamental concept outward:
+
+**Stage 1 — Relearn the Circle of Fifths.** Not as key signatures, but as the actual topology of pitch space. The learner must be able to instantly locate any pitch on the circle, calculate the fifth-distance between any two pitches, and read the circle's spatial relationships as musically meaningful (adjacency = acoustic kinship; distance = acoustic foreignness).
+
+**Stage 2 — Master Quintal Prime Form.** Given any pitch set, arrange its notes on the circle, find the minimal arc, read the Span. Practice until this is automatic. This skill replaces semitone interval-counting as the primary analytical reflex.
+
+**Stage 3 — Develop Span perception.** Play sets of increasing Span and learn to hear the difference. A Span-2 set sounds different from a Span-6 set in a specific, nameable way — not better or worse, but denser or more open, more fused or more complex. This stage should be ear training, not just calculation. The goal is to feel Span, not just compute it.
+
+**Stage 4 — Understand Sharp/Flat Projection.** For any set, identify its sharp leading edge and flat leading edge. Practice composing short progressions that follow a consistent projection direction (Natural Procession). Then practice progressions that switch projection direction deliberately. Learn to hear the difference between projected motion and lateral motion.
+
+**Stage 5 — Identify Mirror Set pairs.** Work through the tables to find mirror relationships for familiar sets. Practice moving between mirror sets and hearing how the perceptual density stays constant while the harmonic direction reverses. Develop the ability to use mirror sets as modulation pivots.
+
+**Stage 6 — Master the three procession types.** Compose short harmonic sequences that are deliberately Natural, deliberately Modal, or deliberately following a dissonance gradient. Analyze existing music to identify which procession type is operating in any given passage. Develop the ability to switch between procession types consciously within a single composition.
+
+**Stage 7 — Use the 48 tables as compositional resources.** At this stage, the tables are no longer study material — they are compositional tools. Look up procession paths, find modulation pivots, plan gradient moves, identify common-tone chains for smooth voice leading.
+
+**Stage 8 — Apply to real musical contexts.** Bring HP vocabulary to analysis of existing repertoire across styles and periods. Apply it to original composition. The goal — the same as Plogger's goal — is that HP decisions become intuitive, not calculated. The student should eventually feel the Span changing, feel the projection direction, feel the mirror relationship — without stopping to compute.
+
+### 2.11 What HP Promises the Learner
+
+HP offers a single unified explanation for phenomena that conventional harmony theory treats as separate mysteries requiring separate rules:
+
+- *Why do dominant-tonic progressions feel inevitable?* They are Natural Processions following the sharp-to-flat axis toward the tonic cluster. The "pull" is the Circle of Fifths' directional gravity.
+- *Why does modal music feel unresolved or floating?* Modal Processions stay within a cluster zone without directed projection. There is no sharp-or-flat gravitational pull.
+- *Why do certain modulations feel smooth while others feel wrenching?* Smooth modulations maintain Span while changing direction (mirror moves or common-cluster moves). Wrenching modulations change both Span and direction simultaneously.
+- *Why does Impressionist harmony feel like color rather than direction?* Dissonance gradient processions change Span without consistent directional projection.
+- *Why do extended chords in jazz feel "farther from the tonic"?* They have higher Span — their pitch content is acoustically further from the tonic cluster.
+- *Why do inversions of the same chord feel similar but not identical?* Same Span, but the projections are oriented differently (the sharp and flat edges switch roles between root position and inversion).
+- *Why do major and minor keys feel "equally stable" but "differently colored"?* Mirror relationship: same Span, opposite projection. Equivalent density, opposite direction.
+
+HP transforms harmony from a collection of separate rules into one geometric description of a single topological space. Every rule becomes a special case of the geometry.
 
 ---
 
-## 3. Plogger — Brief Recap for Comparison
+## 3. Plogger — In Full
 
-Plogger is an acoustic ear-training system built around the **di-chord** — the two-pitch relationship perceived simultaneously. It trains interval recognition by teaching students to perceive each interval's physical signature along three axes:
+### 3.1 The Di-Chord as the Primary Unit
 
-**Pulsation (Beating/Interference):** When two pitches are played simultaneously, their frequencies interact to produce amplitude modulation — periodic beating. The rate of this beating is determined by how far the two frequencies are from a simple whole-number ratio. Simple ratios (2:1 octave, 3:2 perfect fifth, 4:3 perfect fourth) produce very slow or no beating; complex ratios (45:32 tritone, 16:15 half step) produce fast, rough beating.
+Plogger is built around the **di-chord** — the two-pitch relationship perceived as a single simultaneous acoustic event. Plogger's fundamental methodological claim is that the di-chord is the irreducible unit of harmonic experience. A chord of four notes contains six di-chords; a chord of three notes contains three. The ear processes the di-chord before it processes the chord. Plogger trains the ear at this foundational level, on the assumption that interval perception, once automated, enables harmonic perception to develop naturally.
 
-**Fundamental/Octave Factor (F/O):** Every interval implies a missing fundamental — a note whose overtone series the two pitches both belong to. The F/O factor describes which of the two audible notes in the interval asserts itself as the implied root. In a perfect fifth (C-G), C strongly asserts as root — C's overtone series contains G. In a perfect fourth (C-F), F weakly implies a root that is neither C nor F but a note below both (a low C, a fourth below C). The F/O factor determines the interval's directional pull: toward the fundamental (arrival, root-confirmation) or toward the overtone (departure, floating, tension).
+This is a deliberate starting point, not a limitation. Plogger does not intend to remain at the di-chord level forever — it is building the perceptual foundation on which HP's set-theoretic analysis will eventually make sense.
 
-**Harmonicity (Spectral Fusion):** How completely the two tones fuse into a single perceived sound. High harmonicity = the two tones feel like a single richer sound (octave, fifth). Low harmonicity = the two tones remain distinct, even conflicting (major seventh, tritone). Harmonicity is primarily determined by how many overtones the two pitches share — which is, again, a function of how simple or complex their frequency ratio is.
+### 3.2 The Three Axes
 
-The Perfect Fifth (P5, ratio 3:2) is Plogger's canonical example of acoustic privilege because it scores high on all three axes simultaneously: minimal pulsation (barely beats at all), strong F/O factor toward the lower note, and high harmonicity (third harmonic of the lower note is the first harmonic of the upper note, so they share rich spectral content). No other interval except the octave achieves all three simultaneously.
+Every di-chord (interval) has a characteristic signature along three independent physical axes:
+
+**Pulsation (Beating / Interference Rate)**
+
+When two pitches are sounded simultaneously, their pressure waves interact to produce amplitude modulation — a periodic fluctuation in the combined volume. The rate of this fluctuation is equal to the absolute difference in frequency between the two pitches' corresponding harmonics.
+
+When two pitches have a simple frequency ratio (2:1, 3:2, 4:3), their harmonics align frequently and the resulting beating is very slow — so slow that the ear does not perceive it as roughness but as richness or warmth. When two pitches have a complex frequency ratio (45:32 for the tritone, 16:15 for the minor second), their harmonics align rarely and the beating is fast — heard as roughness, tension, dissonance.
+
+Pulsation rate ranges from near-zero (perfect consonances) through perceptible-but-slow (sixths, thirds) to fast and rough (seconds, tritone). The pulsation signature is specific enough to an interval that a trained ear can identify it. The goal is not to count beats per second consciously, but to develop a felt recognition of the "texture" of each interval's pulsation — the way a wine taster recognizes a flavor without calculating its chemistry.
+
+**Fundamental/Octave Factor (F/O)**
+
+Every interval implies a harmonic context — a "missing fundamental" whose overtone series the two pitches belong to. The F/O factor describes which of the two audible notes in the interval asserts itself as the implied root, and with what strength.
+
+In a Perfect Fifth (C-G): C's harmonic series contains G as its third harmonic. G is "above" C in the harmonic series. The ear clearly hears C as root — the interval feels grounded, root-directed, confirmatory. F/O strongly toward the Fundamental (lower note = C).
+
+In an octave (C-C'): the upper C is the second harmonic of the lower C. The lower C is absolutely the root. Maximum F/O toward the Fundamental.
+
+In a major third (C-E): E is the fifth harmonic of C, relatively high in the series. C still asserts as root, but more weakly than in the fifth. The third feels "sweet" and "open" rather than "grounded." Moderate F/O toward the Fundamental.
+
+In a minor seventh (C-Bb): Bb is somewhat outside C's clear harmonic series. The interval points toward a root below both notes — it "floats." F/O is ambiguous or toward the Octave (away from simple root confirmation).
+
+The F/O factor determines an interval's directional quality in musical context: does it confirm where you are (Fundamental-directed), or does it create a sense of departure or suspension (Octave-directed)?
+
+**Harmonicity (Spectral Fusion)**
+
+Harmonicity measures how completely two simultaneous tones fuse into a single perceived sound. At maximum harmonicity (the octave), two pitches are acoustically so similar that most listeners hear them as a single enriched tone. At minimum harmonicity (the minor second, the tritone), two pitches remain stubbornly distinct, even conflicting — the ear cannot merge them into a single acoustic experience.
+
+Harmonicity is determined by how many harmonic overtones the two pitches share. C and G share many overtones: G is C's third harmonic, so every multiple of G's frequency is also a multiple of C's frequency (in the 3:2 ratio approximation). C and F# share very few — their harmonic series cross only at high, acoustically weak partials, so the ear receives them as two separate, barely-related sounds.
+
+Harmonicity is the axis most directly related to what most musicians call "consonance" and "dissonance" in the traditional sense. But it is worth noting that high harmonicity is not the same as "good" or "preferred" — a sustained cluster of perfectly fusing tones (all fifths) can feel static and empty. Low harmonicity is not "bad" — it creates the forward motion, the drama, the tension that makes harmonic resolution meaningful. Plogger teaches the harmonicity axis as a descriptive measurement, not an evaluative one.
+
+### 3.3 The Perfect Fifth's Acoustic Privilege
+
+The P5 (frequency ratio 3:2) holds a unique position in Plogger because it achieves maximum performance on all three axes simultaneously:
+
+**Pulsation:** A pure perfect fifth produces almost no beating (the harmonics align at the third partial of the lower note, creating a very slow modulation). In equal temperament, the fifth is narrowed 2 cents from pure, producing approximately 1-2 Hz of beating for a low guitar fifth — so slow it reads as warmth rather than instability.
+
+**F/O factor:** The third harmonic of the lower note is the fundamental of the upper note. The directional pull is clear, strong, and unambiguous: the lower note is the root, the upper note belongs to the lower note's harmonic series. This is the strongest root-assertion of any interval except the octave.
+
+**Harmonicity:** The two tones share the third partial as a strong common harmonic. The upper note's fundamental IS the lower note's third partial. They fuse without effort. The combined sound has a richer, "rounder" quality than either tone alone.
+
+No other interval except the octave achieves all three simultaneously and at this level. The major third (5:4 ratio) is highly harmonious and has reasonable F/O, but its pulsation is slightly more complex. The perfect fourth (4:3) achieves nearly identical consonance to the fifth, but its F/O factor is inverted in a distinctive way (see §3.4).
+
+This is why Plogger treats the P5 as the primary interval — the interval the learner must internalize most deeply, because it is the acoustic "gold standard" against which all others are implicitly measured.
+
+### 3.4 The Perfect Fourth — A Special Case
+
+The Perfect Fourth (4:3 ratio) deserves special treatment because it is the most acoustically paradoxical of the common intervals — and the one that most clearly demonstrates the depth of both Plogger's and HP's analysis.
+
+The P4 achieves nearly identical pulsation and harmonicity to the P5. By those two axes, it should sound just as stable and "rooted" as the fifth. But it doesn't — and Plogger's F/O axis explains why.
+
+In a Perfect Fourth (C-F): the fourth partial of C is C', the fifth partial of C is E, the sixth partial of C is G. F is not a prominent harmonic of C. F's harmonic series, however, contains C as its fourth partial (F-C is a perfect fifth). So the "implied root" of a C-F fourth is not C (despite C being the lower note) — it is the F, or more precisely, a low C that is a fourth below C (i.e., a G below the lowest note in the interval). The interval floats above an implied root that isn't present.
+
+This is why the Perfect Fourth has always been treated differently from the Perfect Fifth in Western music theory. In counterpoint, the P4 above the bass requires resolution; the P5 does not. In functional harmony, the fourth functions as a suspension creating tension; the fifth functions as a stable consonance. This isn't a cultural convention — it is a physical consequence of the F/O factor.
+
+In HP terms: the P4 and P5 have the same Span (both Span 1 — they are the same fifth-relationship in opposite directions on the circle). This is why they feel equally "dense" acoustically (same harmonicity, same pulsation rate). But the P4's F/O factor is inverted relative to the P5's — pointing toward a root below both notes rather than at the lower note. This inverted F/O is exactly what HP's Sharp/Flat Projection describes: the P4 (C to F) is pointing in the flat direction (F is one step flat of C on the circle). The "gravity" of the P4 pulls toward the flat side — toward a lower root, a simpler origin.
+
+**This is the first and most direct point of convergence between the two systems:** the reason the P4 and P5 feel different despite having the same Span is the F/O factor — and the F/O factor IS the Sharp/Flat Projection operating at the dyad level.
+
+### 3.5 Plogger's Interval Hierarchy
+
+From most to least acoustically privileged (combining all three axes):
+
+| Rank | Interval | Pulsation | F/O clarity | Harmonicity | Character |
+|---|---|---|---|---|---|
+| 1 | Perfect Octave | None | Maximum | Maximum | Perfect fusion, tonic confirmation |
+| 2 | Perfect Fifth | Near-zero | Strong → lower | Very high | Stable, grounded, resonant |
+| 3 | Perfect Fourth | Near-zero | Inverted (see §3.4) | Very high | Stable but floating, directionally complex |
+| 4 | Major Sixth | Slow | Moderate → lower | High | Open, bright, warm |
+| 5 | Minor Third | Slow | Moderate | High | Rich, warm, slightly complex |
+| 6 | Major Third | Slow-moderate | Moderate → lower | Moderate-high | Sweet, bright, clear |
+| 7 | Minor Sixth | Slow-moderate | Moderate | Moderate-high | Dark, introspective |
+| 8 | Minor Seventh | Moderate | Low / ambiguous | Moderate | Soft dissonance, floating |
+| 9 | Major Second | Moderate | Low | Moderate | Mild tension, forward motion |
+| 10 | Major Seventh | Fast | Toward Octave | Low | Tense, leading, dissonant |
+| 11 | Minor Second | Very fast | Toward Octave | Very low | Maximum crunch, half-step tension |
+| 12 | Tritone | Fast, complex | None / ambiguous | Very low | Maximum instability, ambiguous direction |
 
 ---
 
-## 4. The Pythagorean Bridge — How They Converge
+## 4. The Pythagorean Bridge — Deep Convergence
 
-### 4.1 The Shared Root: Why Both Start With the P5
+### 4.1 The Shared Root: The P5 Is Not Just Valued by Both — It IS the Unit in Both
 
-The deepest insight in both systems is the same, stated from different starting points:
+The previous version of this document described the connection between Plogger and HP as "both systems value the P5." This understates the relationship significantly.
 
-**Plogger says:** "Go to any string on a guitar and tune a second string to a perfect fifth above it. Now play them together. Listen. That remarkable fusion — the stable, full, root-directed quality of what you hear — is not cultural conditioning. It is the acoustic consequence of a 3:2 frequency ratio. The lower string's third harmonic is the same frequency as the upper string's first harmonic. They share a child frequency, which means their vibrations reinforce each other in a way no other ratio achieves (except the octave). This is the physical foundation of Western tonal music: the ear trusts the P5 because the P5 earns that trust acoustically."
+The correct statement is: **the Perfect Fifth is the unit of measurement in both systems simultaneously — at different scales.**
 
-**HP says:** "Take any pitch. Apply the operation 'raise by a perfect fifth' twelve times. The result is the complete 12-tone chromatic scale, returned almost exactly to the original pitch (off by a Pythagorean comma of 23 cents). This is not coincidence. The reason Pythagorean tuning generates all 12 pitches through stacked fifths is that the P5 is acoustically irreducible — it cannot be derived from simpler ratios without leaving the domain of integer relationships. The Circle of Fifths is the diagram that results when you take this acoustic fact seriously as an organizing principle: it is the map of how all 12 pitches relate to each other through the acoustic primacy of the P5."
+**In Plogger:** The P5 is the primary perceptual calibration target. Plogger's training sequence begins with the P5 because it is the interval the ear must learn most precisely, as the acoustic reference against which all other intervals are implicitly measured. A student who has deeply internalized the P5 through Plogger practice has established an internal acoustic standard.
 
-**The connection, stated precisely:** Plogger establishes *why* the P5 is the acoustic foundation of tonal music. HP shows *what follows structurally* when you apply that acoustic primacy across multiple pitches simultaneously.
+**In HP:** The P5 is the unit in which all harmonic distances are counted. Span is measured in perfect fifths. Every metric in HP — Span, Sharp/Flat Projection, Mirror Set distance, Procession step size — is expressed as a number of perfect fifths.
 
-Plogger gives you the experience: play a fifth and feel its stability.  
-HP gives you the map: here is the geometry of pitch space that that stability generates.
+**The synthesis:** Plogger calibrates the ear *to* the P5. HP measures everything *in* the P5. These are the same unit. A student who has internalized the P5 acoustically through Plogger has calibrated their internal ear to the exact unit HP uses to map all of harmonic space.
 
-### 4.2 The Pythagorean Fifth Specifically
+This means: when an HP-trained student reads "Span 4," they do not encounter an abstraction. They have a felt, embodied, acoustic reference for "one perfect fifth" — and they have been practicing hearing collections of intervals built from those fifth-relationships since Sprint 2. "Span 4" is four of the thing they know most deeply. The HP vocabulary lands on a prepared perceptual substrate, not on empty theoretical ground.
 
-The **Pythagorean fifth** (702.0 cents) is microscopically wider than the equal-tempered fifth (700.0 cents). This 2-cent difference per fifth accumulates over 12 stacked fifths to the Pythagorean comma (23.46 cents) — the reason a circle of pure Pythagorean fifths does not quite close. Equal temperament resolves this by narrowing each fifth by 1/12 of the comma (≈ 2 cents), making the circle close exactly.
+This is the deepest synergy between the two systems, and it was not accidental. Both Plogger and HP arrived at the P5 as their primary unit through independent reasoning from acoustic physics — one from the perceptual direction, one from the structural direction. Their agreement is evidence that they are both describing the same underlying reality.
 
-Both HP and Plogger are operating in the equal-tempered world, but both acknowledge the Pythagorean foundation:
+### 4.2 The Pythagorean Generation of Western Pitch Space
 
-**In Plogger:** The slight narrowing of equal-tempered fifths means they beat very slowly — approximately 1-2 Hz for a low fifth. This is slow enough that it reads to the ear as "richness" rather than "instability." The Plogger pulsation axis is most sensitive precisely here: the equal-tempered fifth occupies the threshold zone between "no beating" and "barely perceptible beating." This borderline quality is part of why the fifth is perceived as stable-but-alive rather than static.
+To fully appreciate the shared foundation, it helps to understand what "Pythagorean" actually means in both systems' context.
 
-**In HP:** The Circle of Fifths HP uses is the equal-tempered 12-note circle (which closes perfectly). McKay's Span calculations are about this equal-tempered topology — each step on the circle is exactly 700 cents. But the Pythagorean *generation* is preserved as the structural logic: each step on the circle corresponds to one Pythagorean fifth relationship, which is one acoustic neighbor relationship.
+**The Pythagorean discovery** (attributed to Pythagoras but likely older) is that musical intervals correspond to simple integer ratios of frequencies:
+- Octave = 2:1
+- Perfect Fifth = 3:2
+- Perfect Fourth = 4:3
+- Major Third = 5:4 (in just intonation; Pythagorean major third is 81:64)
 
-**The synthesis:** Equal temperament is a practical approximation of Pythagorean space. Both systems are aware of this. Plogger is most honest about it (it acknowledges that equal-tempered intervals produce slight beating); HP works within the approximation (the comma is absorbed into the closed circle). For AMF purposes, the equal-tempered guitar is the instrument of practice, but both systems remind the learner that equal temperament is a compromise — and that the acoustic facts underlying both systems are the Pythagorean pure ratios, not their approximations.
+The **Pythagorean tuning system** extends this: take any starting pitch, apply the operation "multiply frequency by 3/2" (raise by a perfect fifth), and repeat. After 12 applications, you have generated all 12 notes of the Western chromatic scale — and you have nearly returned to the starting pitch (within a Pythagorean comma of 23.46 cents).
 
-### 4.3 Span = Harmonicity: The Critical Equivalence
+**This means:** All 12 notes of Western music are, at their acoustic origin, just the same note heard through 0-11 applications of the P5. C, G, D, A, E, B, F#, C#, Ab, Eb, Bb, F are not 12 unrelated pitches — they are 12 positions along a single chain of perfect fifth relationships, bent into a (nearly closed) circle.
 
-This is the central bridge between the two systems.
+The Circle of Fifths is not a diagram. It is a map of the Pythagorean generation process — a spatial representation of the fact that all Western pitch is generated by a single acoustic operation applied repeatedly.
 
-**HP's Span** measures how many fifth-steps separate a set's outermost notes on the Circle of Fifths. A Span-1 dyad (P5) is acoustically intimate — those two notes share the most overtones of any non-octave interval. A Span-6 set (tritone relationship at the extremes) is acoustically remote — the notes' frequency relationships are complex, their spectra barely overlap.
+**Plogger's relationship to this:** Plogger teaches the P5 as the primary interval because it is the generator. Every other interval in Western music is, acoustically, a relationship between two points on the Pythagorean fifth-chain. A major third (C-E) is the sound of points 0 and +4 on the chain. A tritone (C-F#) is the sound of points 0 and +6. The entire Western harmonic vocabulary is the sound of fifths-chain relationships at varying distances.
 
-**Plogger's harmonicity** measures how completely two tones fuse into a single perceived sound. High harmonicity = shared overtones, simple ratio. Low harmonicity = few shared overtones, complex ratio.
+**HP's relationship to this:** HP organizes all pitch sets by their position on the fifths-chain (the Circle of Fifths) and measures all harmonic distances in fifth-steps (Span). HP is, in its deepest structure, applied Pythagorean mathematics: a systematic account of what musical relationships emerge when you take the Pythagorean generation process seriously as the primary organizing principle of pitch space.
 
-These are measuring the same thing:
+**Both systems are working with Pythagorean physics.** Plogger at the level of individual interval acoustics (what does it sound like when two P5-chain positions interact?); HP at the level of pitch-set structure (how are multiple P5-chain positions organized into coherent harmonic entities?).
 
-| Span | Example Set | Harmonicity of components |
+### 4.3 The Pythagorean Comma: The Bridge Between Two Worlds
+
+The **Pythagorean comma** is the small gap — 23.46 cents, approximately 1/4 of a semitone — that results from the fact that 12 perfect fifths (each 3:2) don't quite equal 7 octaves (each 2:1):
+
+```
+12 perfect fifths: (3/2)^12 = 129.75 ≈ 128 = 2^7 × 1.0136
+Discrepancy: 23.46 cents (the Pythagorean comma)
+```
+
+In pure Pythagorean tuning, this comma prevents the fifth-chain from closing into a circle. Instead of a circle, you get a spiral — 12 applications of the P5 land you 23 cents sharp of your starting pitch, so a 13th application gives you a note 23 cents sharp of the note you got by taking 1 application, and the spiral continues forever outward.
+
+**Equal temperament** resolves this by distributing the comma equally across all 12 fifths: each fifth is narrowed by 1/12 of the comma (approximately 2 cents), from 702.0 cents to 700.0 cents. This makes 12 fifths equal exactly 7 octaves, which closes the spiral into a perfect circle.
+
+**Why this matters for both systems:**
+
+*For Plogger:* The 2-cent narrowing of equal-tempered fifths means they beat very slightly. A pure 3:2 fifth produces zero beating (the harmonics align perfectly). An equal-tempered fifth produces approximately 1-2 Hz of beating for a guitar's low register — so slow the ear reads it as richness rather than instability. A student trained with Plogger is developing sensitivity to this borderline: the equal-tempered fifth lives right at the threshold between "no beating" and "barely perceptible beating." This is part of why the fifth has its characteristic quality of being stable-but-alive rather than static or sterile.
+
+*For HP:* The closure of the circle by equal temperament is what makes HP's topological system possible. In Pythagorean tuning, the circle is really a spiral — Span would be infinite (you could always add more fifths and never return). Equal temperament closes the circle into exactly 12 positions, making Span a finite, bounded measurement. Span can only go from 0 to 6 (the tritone, equidistant in both directions). Mirror Sets can exist (because the circle closes symmetrically). The 48 reference tables are possible. The entire HP organizational system requires the closed circle that only equal temperament provides.
+
+**The comma is the bridge:** Plogger works with the acoustic pre-comma reality (the pure 3:2 fifth, the Pythagorean fifth that doesn't quite close the circle). HP works with the structural post-comma reality (the equal-tempered closed circle that makes Span finite and Mirror Sets possible). They are the same pitch space, before and after the comma has been resolved.
+
+A student fully integrated between the two systems understands both: they feel the slight impurity of equal-tempered fifths (Plogger's pulsation axis registers this as a very slow beat, a warmth), and they understand why closing the comma was structurally necessary to create the finite, navigable harmonic space that HP describes. The comma sacrifice is what makes the map possible. A student who knows both systems understands this in their ears and in their mind simultaneously.
+
+**Practical implication for guitar:** Guitar is tuned in equal temperament, so every fifth on guitar has this slight impurity. Every time a guitarist plays an open-string fifth (like the D-A open strings in DADGAD, or the A-E strings in standard), they are hearing a slightly compromised version of the Pythagorean ideal — but the compromise is what makes the entire harmonic map navigable.
+
+### 4.4 Span = Harmonicity: The Critical Equivalence
+
+This is the central mathematical bridge between the two systems, and it deserves the most rigorous statement:
+
+**HP's Span** is a structural measurement: how many fifth-steps separate the outermost notes of a pitch set on the Circle of Fifths.
+
+**Plogger's Harmonicity** is a perceptual measurement: how completely two simultaneous tones fuse into a single acoustic experience.
+
+**These measure the same underlying reality from opposite directions.**
+
+The connection runs through the physics of harmonic series overlap. Two pitches share overtones in proportion to how simple their frequency ratio is. Simple ratios (2:1, 3:2, 4:3) produce dense overtone overlap — many shared harmonics, maximum fusion. Complex ratios (45:32, 243:128) produce sparse overlap — few shared harmonics, minimal fusion.
+
+The frequency ratio between two pitches is determined by their position on the Pythagorean fifth-chain (the Circle of Fifths). Pitches close together on the circle (small Span) have simple frequency relationships (the 3:2 ratio of the fifth, the 4:3 ratio of the fourth). Pitches far apart on the circle (large Span) have complex frequency relationships (the ratios require high integer numerators and denominators to express).
+
+Therefore: small Span = simple ratio = high harmonicity. Large Span = complex ratio = low harmonicity. Span and harmonicity are not merely correlated — they are alternate expressions of the same acoustic fact.
+
+**The full equivalence table:**
+
+| HP Span | Dyad Examples | Frequency ratio (approx) | Harmonicity | Pulsation rate |
+|---|---|---|---|---|
+| 0 | Unison | 1:1 | Maximum | Zero |
+| 1 | P5, P4 | 3:2, 4:3 | Very high | Near-zero |
+| 2 | M2, m7 | 9:8, 16:9 | High | Slow |
+| 3 | m3, M6 | 6:5, 5:3 | High-moderate | Slow |
+| 4 | M3, m6 | 5:4, 8:5 | Moderate | Slow-moderate |
+| 5 | M7, m2 | 15:8, 16:15 | Low | Fast |
+| 6 | Tritone | 45:32 | Very low | Complex/fast |
+
+The AMF implication: **a student who has trained Plogger through all its di-chord exercises has been training HP Span perception from the beginning.** Every Plogger di-chord exercise is a Span exercise in disguise. P5 exercises are Span-1 training. Major third exercises are Span-4 training. Tritone exercises are Span-6 training. The vocabulary is different; the acoustic phenomenon being trained is the same.
+
+### 4.5 F/O Factor and Sharp/Flat Projection: The Same Directional Phenomenon at Different Scales
+
+The structural equivalence between Plogger and HP runs deeper than Span = Harmonicity. The directional qualities of intervals — what Plogger calls the F/O Factor — are the same phenomenon that HP describes as Sharp/Flat Projection, operating at different scales.
+
+**At the dyad level (Plogger's F/O Factor):**
+
+An interval's F/O factor describes whether the ear is pulled toward the Fundamental (lower harmonics, simpler ratios, implied root below) or toward the Octave (higher harmonics, more complex relationships, implied note above). Fundamental-directed intervals feel like arrival; Octave-directed intervals feel like departure or suspension.
+
+**At the set level (HP's Sharp/Flat Projection):**
+
+A pitch set's projection describes whether its harmonic "gravity" points toward the flat side of the circle (simpler ratios, tonic cluster, arrival) or the sharp side (more complex ratios, leading tone function, departure and tension).
+
+**These are the same phenomenon:**
+
+Going flat on the Circle of Fifths = moving toward simpler frequency ratios = stronger Fundamental orientation = harmonic arrival.
+
+Going sharp on the Circle of Fifths = moving toward more complex frequency ratios = stronger Octave orientation = harmonic tension and forward motion.
+
+The Plogger F/O axis operates at the two-note level: does THIS interval pull toward root (flat/fundamental) or away from root (sharp/octave)? The HP Sharp/Flat Projection operates at the multi-note set level: does THIS harmonic area as a whole pull toward the tonic cluster (flat projection) or away from it (sharp projection)? But the underlying acoustic phenomenon — the directional quality of fifth-chain position — is identical.
+
+**The mapping:**
+
+| Plogger | HP | Acoustic reality |
 |---|---|---|
-| 1 | Perfect Fifth | Very high — 3:2, maximum overtone sharing |
-| 2 | Perfect Fourth | High — 4:3, but F/O factor is inverted |
-| 4 | Major Triad | Moderate — mixture of simple and moderate ratios |
-| 6 | Dominant Seventh | Lower — includes 7:4 relationship, complex F/O |
-| 8+ | Extended / Dissonant sets | Low — ratios become complex, overtone sharing minimal |
+| F/O → Fundamental | Flat Projection | Moving toward simpler ratios, tonic cluster, lower harmonics |
+| F/O → Octave | Sharp Projection | Moving toward complex ratios, away from tonic, higher harmonics |
+| Ambiguous F/O | Symmetric or no projection | At the tritone or other symmetric position on the circle |
 
-The implication for AMF: **a student who has trained their harmonicity perception through Plogger will feel HP Span differences before they calculate them.** A low-Span set will feel fused, stable, harmonically "near." A high-Span set will feel open, complex, harmonically "far." The Plogger ear is already HP-literate without knowing the vocabulary.
+**What this means for AMF curriculum:** Plogger trains the F/O sensitivity at the di-chord level in Phases 0-10. When HP vocabulary arrives at Phase 11 with Sharp/Flat Projection, it is naming something the student's ear has been tracking for years at the interval level. The transition from di-chord F/O to set-level Projection is a scale change, not a concept change.
 
-### 4.4 F/O Factor and Sharp/Flat Projection: The Same Directional Phenomenon
+### 4.6 The Perfect Fourth's F/O Anomaly — Explained by HP
 
-Plogger's F/O (Fundamental/Octave) factor describes directional pull at the interval level. A high F/O factor toward the Fundamental means the interval points toward root-confirmation — arrival, grounding, completion. A high F/O factor toward the Octave means the interval points upward, away from the root — tension, departure, suspension.
+The Perfect Fourth presents a famous puzzle in music theory: it achieves nearly the same pulsation rate and harmonicity as the Perfect Fifth (both are Span 1 on the Circle of Fifths), yet it behaves very differently in musical practice. In counterpoint, the P4 above the bass requires resolution; the P5 does not. In functional harmony, the P4 creates suspension; the P5 creates stability. Why?
 
-HP's Sharp/Flat Projection describes directional pull at the set level. A Sharp projection means the set's cluster is leaning toward the sharp side of the circle — adding higher harmonics, creating more complexity, pointing away from the tonic cluster. A Flat projection means the set is pointing toward the flat side — toward simpler ratios, toward the tonic cluster, toward arrival.
+Plogger identifies the answer through the F/O axis: the Perfect Fourth has an inverted F/O factor. The lower note in a P4 (say, C) does NOT assert itself as the acoustic root. Instead, the interval implies a root below both notes — specifically, the note a fifth below the lower note of the fourth (G below C-F). The P4 floats above an implied bass that isn't present.
 
-**These are the same phenomenon at different scales.**
+HP explains the structural reason for this. The P4 (C to F) and the P5 (C to G) are at the same Span distance (1 step) on the Circle of Fifths, but in opposite directions. C to G is one step clockwise (sharp). C to F is one step counterclockwise (flat). They are the same fifth-relationship, traversed in opposite directions.
 
-At the dyad level: a Perfect Fifth (C–G) has a strong F/O factor toward C as fundamental. C is on the flat side of G in the Circle of Fifths; the F/O factor is *pointing flat*, toward the lower, simpler harmonic.
+Going sharp (C to G): you are moving away from F, toward D. G is "downstream" of C in the Pythagorean chain. C is the acoustic parent of G — C's third harmonic IS G's fundamental. C asserts as root over G. Sharp direction = Fundamental orientation of the lower note.
 
-At the set level: any set with active Sharp Projection is pointing toward higher harmonics, away from the tonic — which is what a high F/O factor toward the Octave pole looks like when you expand from a dyad to a set.
+Going flat (C to F): you are moving toward F, which is "upstream" of C in the Pythagorean chain. F is C's acoustic parent — F's third harmonic is C's fundamental. C is acoustically "derived from" F, not the other way. The root belongs to F (or to the G below C, since G is a fifth below C). Flat direction = inverted F/O, root below.
 
-The vocabulary is different but the phenomenon is the same:
+**The HP explanation of the P4's behavior:** The Perfect Fourth is not a "weaker fifth." It is a fifth traversed in the opposite direction — which, because the Circle of Fifths has directional properties (Sharp/Flat projection), means its directional quality is reversed. The P4 points flat; the P5 points sharp. The P4's F/O inversion is the perceptual manifestation of its flat projection.
 
-| Plogger | HP | Meaning |
+This is the kind of unified explanation HP provides: a phenomenon that required a separate rule in conventional harmony (P4 needs resolution; P5 doesn't) becomes a special case of the general principle (flat-projecting intervals behave differently from sharp-projecting intervals of the same Span).
+
+### 4.7 Mirror Sets and Pulsation Equivalence
+
+HP's Mirror Sets have an exact Plogger interpretation that explains their perceptual smoothness with precision.
+
+Two mirror sets have identical Span. By the Span = Harmonicity equivalence (§4.4), they have the same average acoustic complexity — the same distribution of interval types within the set, the same average pulsation rate, the same average harmonicity. From a Plogger perspective, two mirror sets would produce identical training responses on the harmonicity axis: they feel equally dense, equally fused or unfused, equally "far" from consonance.
+
+What differs between mirror sets is their projection direction — one projects sharp, the other projects flat. In Plogger terms, the F/O directionality of the set's component intervals is reversed. One set's intervals collectively lean toward the Fundamental (arrival); the other's lean toward the Octave (departure).
+
+**The perceptual result of a mirror modulation:**
+
+The listener hears a change of harmonic area. Their harmonicity perception (Plogger axis 3) registers: same density as before. Their pulsation perception (Plogger axis 1) registers: same texture as before. These two axes signal no significant change. But their F/O directional sensitivity (Plogger axis 2) registers: the pull has reversed direction. What was arrival-oriented is now departure-oriented, or vice versa.
+
+The ear experiences a reorientation without a change in tension. The harmonic compass has turned 180 degrees, but the harmonic weight — the sense of how complex, how dense, how "far from consonance" — is identical. This is why mirror modulations feel smooth: two of Plogger's three axes say "nothing changed" while the third says "direction reversed." The overall impression is of a smooth color shift, not a harmonic disruption.
+
+This is a complete Plogger-in-HP-terms account of why the most structurally elegant modulation technique in McKay's system works the way it does perceptually.
+
+### 4.8 The AMF Sprint Sequence IS the HP Span Sequence
+
+This is perhaps the most striking convergence between the two systems, and the most direct evidence that they are describing the same underlying acoustic reality.
+
+The AMF's sprint sequence introduces intervals in a specific order: P4/P5, then M2, then m3/M6, then M3, then Tritone. This ordering was derived through Plogger logic: start with the most acoustically stable and perceptually accessible intervals (the perfect consonances), progress through intermediate consonances (sixths and thirds), and arrive last at the most unstable and perceptually complex interval (the tritone).
+
+HP predicts an interval ordering based on Span: start with Span-1 intervals (acoustically nearest), progress through intermediate Spans, and arrive last at Span-6 (acoustically furthest — the tritone).
+
+**The two orderings are identical:**
+
+| AMF Sprint | Interval(s) | Plogger rationale | HP Span | HP rationale |
+|---|---|---|---|---|
+| Sprint 2 | Perfect 4th | Most accessible consonance after P5 | 1 | F(−1) to C(0): 1 fifth step |
+| Sprint 3 | Perfect 5th | Primary acoustic reference interval | 1 | C(0) to G(+1): 1 fifth step |
+| Sprint 4 | Major 2nd | First "gentle" dissonance, M2 pull | 2 | C(0) to D(+2): 2 fifth steps |
+| Sprint 5 | Minor 3rd | Rich, warm; more complex than P intervals | 3 | C(0) to Eb(−3): 3 fifth steps |
+| Sprint 6 | Major 6th | Bright, open; same complexity as m3 | 3 | C(0) to A(+3): 3 fifth steps |
+| Sprint 7 | Major 3rd | Sweet, clear; more complex than 3rds/6ths | 4 | C(0) to E(+4): 4 fifth steps |
+| Sprint 8 | Tritone | Maximum instability, hardest to hear | 6 | C(0) to F#(+6): 6 fifth steps |
+
+Sprint sequence Span profile: **1 → 1 → 2 → 3 → 3 → 4 → 6.**
+
+This is the HP Span ordering applied to Plogger sprint design. The two systems, reasoning from completely different premises — one from perceptual psychology (how does the ear learn?), the other from acoustic mathematics (how is pitch space organized?) — produced the exact same sequence.
+
+**Why this matters:**
+
+This is not a coincidence. It is structural evidence of a shared acoustic foundation. Both Plogger and HP are grounded in the same physics — the Pythagorean generation of pitch space by perfect fifths — and when you design a learning sequence from either direction, the Pythagorean structure forces the same ordering. Easy intervals are easy because they are close on the Circle of Fifths (low Span = simple ratio = low pulsation = high harmonicity). Hard intervals are hard because they are far on the Circle of Fifths (high Span = complex ratio = high pulsation = low harmonicity). There is only one "order of difficulty," and it is the order of Span.
+
+**AMF curriculum implication:** The sprint sequence does not merely teach Plogger concepts in a convenient pedagogical order. It simultaneously builds the Span sensitivity that HP will later name. By Sprint 8, a student has trained perceptual access to every Span level from 1 to 6. When HP vocabulary arrives at Phase 11, all the perceptual data is already present — only the labels are new.
+
+**The missing intervals:** The AMF sprint sequence includes 7 of the 12 chromatic intervals. The remaining 5 (m7, m6, M7, m2, and their inversional completions) fall naturally into the Span hierarchy as well:
+
+| Missing interval | Span | Position in hierarchy |
 |---|---|---|
-| F/O → Fundamental | Flat Projection | Pointing toward root, completion, lower harmonics |
-| F/O → Octave | Sharp Projection | Pointing away from root, tension, higher harmonics |
+| Minor Seventh (C–Bb) | 2 | Same Span as Major 2nd — after Sprint 4 |
+| Minor Sixth (C–Ab) | 4 | Same Span as Major 3rd — after Sprint 7 |
+| Major Seventh (C–B) | 5 | Between M3 (Span 4) and Tritone (Span 6) |
+| Minor Second (C–Db) | 5 | Same Span as Major 7th |
 
-For AMF: Plogger trains the ear to feel this pull at the interval level. HP gives the learner the vocabulary to describe it at the set level. Phase 4-10 Plogger practice is building the perceptual foundation for understanding Sharp/Flat Projection when HP vocabulary arrives at Phase 11.
+The missing intervals' Span positions suggest exactly where they should be introduced when the sprint sequence is extended: m7 alongside or immediately after M2 (both Span 2), m6 alongside or after M3 (both Span 4), and M7/m2 as a dedicated sprint between Sprint 7 and Sprint 8 (Span 5 before Span 6).
 
-### 4.5 Mirror Sets and Pulsation Equivalence
+### 4.9 Where They Differ
 
-HP's Mirror Sets have an elegant Plogger interpretation.
+Despite the extensive convergence documented above, the two systems are not duplicates. Their differences are real and important — and understanding them explains why both are necessary.
 
-Two mirror sets have identical Span — which, by the Span = Harmonicity equivalence, means their component intervals have the same *average* pulsation level. The ear judges them as equivalent in acoustic complexity. One might expect the listener to feel a change in dissonance level when moving between mirrors — but they don't, because the Span (and therefore average harmonicity) is preserved.
+**Scale: Dyadic vs. Set-Theoretic**
 
-What changes across a mirror modulation is the F/O directionality — the Sharp/Flat projection reverses. The perceptual result: the listener senses a *reorientation* rather than a *change in tension*. The acoustic texture stays the same (same pulsation density), but the harmonic compass reverses.
+Plogger operates at the level of two-note relationships. It analyzes di-chords — single intervals — in isolation. It cannot directly characterize a chord of five notes; it can only analyze the 10 interval relationships contained within it. This is appropriate for its purpose (ear training at the foundational perceptual level) but insufficient for compositional analysis.
 
-This explains why mirror modulations are uniquely smooth: Plogger would predict them to feel like a change of color (direction) without a change of intensity (harmonicity/dissonance). The ear accepts the new harmonic area because nothing about its perceptual complexity changed — only its direction.
+HP operates at the level of pitch sets of any size. A five-note chord is a single object with a single Span, a single projection direction, a single Mirror Set partner. HP reduces multi-note complexity to a single geometric description. This is appropriate for compositional analysis but can abstract away from perceptual details that Plogger preserves.
 
-### 4.6 Where They Differ
+They are complementary scales of analysis: Plogger is the microscope (examining individual acoustic relationships), HP is the map (showing the landscape those relationships inhabit).
 
-Despite these deep connections, the two systems are not duplicates. They operate at different scales and answer different questions.
+**Epistemology: Perceptual vs. Structural**
 
-**Plogger is dyadic; HP is set-theoretic.**  
-Plogger analyzes two-note relationships in isolation. It cannot, by itself, say anything about a chord containing five notes — it can only analyze the intervals within it. HP analyzes collections of any size as a single object with a single Span. They are a microscope and a map: both valid, both necessary, neither sufficient alone.
+Plogger's claims are verifiable by ear. You can hear the beating. You can feel the F/O pull. You can judge harmonicity directly. No theoretical knowledge is required — only trained listening. Plogger's truth is acoustic.
 
-**Plogger is perceptual; HP is structural.**  
-Plogger describes what a human ear experiences when two frequencies interact. Its claims are verifiable without any theory — you hear the beating or you don't. HP describes the geometric structure of pitch relationships. Its claims are verifiable through logical analysis of the fifth-relationships, not through immediate perceptual experience. A student can understand HP completely without being able to hear a Span-6 set "feel farther away" than a Span-4 set — though ideally, combined training should make that hearing possible.
+HP's claims are verifiable through logical analysis. You can compute Span, locate Mirror Sets, trace procession paths. These are mathematical operations; they don't require any particular acoustic experience. A deaf person could, in principle, learn HP. HP's truth is structural.
 
-**Plogger is timeless; HP is directional.**  
-Plogger's axes (pulsation, F/O, harmonicity) describe a di-chord at a single moment in time — a frozen acoustic snapshot. HP's procession types describe movement through harmonic space over time. HP is inherently about sequences of harmonic events; Plogger is about the quality of each individual event.
+This epistemological difference is not a flaw in either system — it is what makes them complementary. Plogger provides the perceptual grounding that prevents HP from becoming purely abstract. HP provides the structural explanation that prevents Plogger from remaining purely experiential.
+
+**Temporality: Snapshot vs. Sequence**
+
+Plogger characterizes a di-chord at a moment in time — a frozen acoustic snapshot. It describes what an interval IS, not how it moves. Plogger has no inherent concept of harmonic sequence or progression.
+
+HP is inherently about sequences. The three procession types are descriptions of how harmonic areas move through time. HP's most powerful concepts — Natural Procession, Dissonance Gradient, Mirror modulation — only exist in temporal context. HP describes what harmonic motion IS.
+
+Together, they cover both temporal dimensions: Plogger handles the perceptual quality of each harmonic moment; HP handles the structural logic of movement between moments.
 
 ---
 
 ## 5. Why Having Both Matters — What Neither Gives Alone
 
-**Without Plogger, HP is structure without experience.** A student who learns HP only through its tables and concepts will be able to identify Span, calculate Quintal Prime Forms, and locate Mirror Sets — but may not have any felt sense of what those relationships mean acoustically. They will be able to describe why a dominant seventh chord has Span 6, but they may not have an embodied understanding of *what Span 6 feels like* — what the acoustic texture of that harmonic distance is. HP without Plogger is architecture without sensation.
+**HP without Plogger: Structure without sensation.** A student who learns HP theory without Plogger ear training can identify Span, compute Quintal Prime Forms, and locate Mirror Sets in a score. They can describe why a dominant seventh chord has Span 6. They can trace a Natural Procession through a Bach chorale. But they may not have any felt sense of what Span 6 sounds like — what the acoustic texture of harmonic distance feels like in the ear. They are reading a map without being able to see the landscape. HP without Plogger is architecture without sensation.
 
-**Without HP, Plogger is sensation without map.** A student who trains with Plogger and develops excellent interval discrimination will be able to hear harmonicity differences, feel directional pull, and distinguish pulsation levels — but they will lack the structural vocabulary to describe *why* these differences exist across multiple-note harmonic contexts. They will feel the difference between a major and minor tonality's atmosphere, but lack the framework to explain it as a difference in fifth-cluster position. Plogger without HP is sensation without architecture.
+**Plogger without HP: Sensation without map.** A student who trains Plogger and develops excellent di-chord perception can hear harmonicity differences, feel directional pull, and distinguish pulsation levels with precision. They have a deeply trained ear. But they lack the structural vocabulary to understand *why* these differences exist, how they organize into larger harmonic structures, or how to predict them compositionally. They feel the difference between D Dorian and D major atmospherically but lack the framework to describe it as a difference in cluster position on the Circle of Fifths. Plogger without HP is sensation without architecture.
 
-**Together:** Plogger trains the ear to perceive the acoustic quality of harmonic space. HP provides the geometric description of what the ear is perceiving. A student who has internalized both has a complete instrument: the ability to hear harmonic differences and the conceptual framework to understand, predict, and compose them.
+**Together: The complete instrument.** Plogger trains the ear to perceive the acoustic quality of harmonic space. HP provides the geometric description of what the ear is perceiving. A student with both has:
+- The ability to hear Span (Plogger harmonicity training) and name it (HP Span vocabulary)
+- The ability to feel projection direction (Plogger F/O training) and analyze it (HP Sharp/Flat Projection)
+- The ability to recognize mirror equivalence acoustically (same pulsation density) and understand it structurally (same Span, opposite projection)
+- The ability to hear procession types (Natural vs. Modal vs. Gradient) as perceptual qualities before understanding them as structural categories
 
-This is exactly the AMF Phase structure: Plogger runs from Phase 0-11 as the perceptual training. HP is withheld (as vocabulary) until Phase 11 — by which time the learner's Plogger-trained ear is already processing harmonic space in ways that HP describes. When HP vocabulary arrives, it should feel like *finally having words for something already known*, not like learning a new concept.
-
----
-
-## 6. Practical Consequences for AMF Learners
-
-**Phase 0-3:** Students practice di-chord recognition with Plogger. Unknowingly, they are learning to perceive Span at the dyad level. The P5 exercises are HP Span-1 training. The major third exercises are one component of HP Span-4 training. The tritone exercises are maximum-Span training.
-
-**Phase 4-7:** Voice leading and harmonic motion exercises begin. Students are moving through harmonic space. The "smoothness" of voice-leading moves they practice corresponds to HP's Natural Procession logic — they are following the lowest-Span-change path through harmonic space without knowing the vocabulary.
-
-**Phase 8-10:** Open Constellations and advanced voicings introduce sets with higher Span. The practice of moving between closed and open/spread voicings is, in HP terms, navigating between lower-Span and higher-Span realizations of the same harmonic identity. Students begin to feel the "distance" between harmonic areas more explicitly.
-
-**Phase 11:** HP vocabulary is introduced. At this point:
-- "Span" names what they have been hearing as "harmonic complexity" or "harmonic distance"
-- "Sharp/Flat projection" names what they have been hearing as "this chord wants to go somewhere"
-- "Mirror sets" names the smooth modulations they have been experiencing as "color changes without dissonance changes"
-- "Natural procession" names the "inevitable" quality of certain harmonic sequences
-
-The vocabulary arrives as recognition, not as new learning.
-
-**Phase 12:** HP disappears into perception, just as Plogger does. The graduate does not think "that set has Span 6 with Sharp Projection toward the leading tone." They feel that the harmonic area is pointing forward, is a specific distance from home, is ready to move in a specific direction. The framework has dissolved into reflex.
+This is the complete musician: acoustic intelligence and structural intelligence, working together, each validating and deepening the other.
 
 ---
 
-*Document version 1.0 — to be expanded when complete HP book is available. Plogger content is stable; HP content flagged for verification against full McKay text.*
+## 6. The Integrated Picture — One Theory, Two Languages
+
+The deepest claim of this document is that Plogger and HP are not two separate theories that happen to agree. They are one theory described in two languages — perceptual and structural — both derived from the same underlying physics: the organization of Western pitch space by the Perfect Fifth.
+
+**The single theory, stated as concisely as possible:**
+
+*All Western pitch is generated by stacking perfect fifths. The acoustic properties of the perfect fifth (3:2 ratio, minimal pulsation, strong root implication, high harmonicity) determine the acoustic properties of every interval and pitch set — because every interval and pitch set is a relationship between points on the fifth-chain. Points close together on the chain (low Span) share more overtones, produce less beating, fuse more completely, and have clearer directional pull. Points far apart on the chain (high Span) share fewer overtones, produce more beating, fuse less, and have more ambiguous or complex directionality. The Circle of Fifths is the spatial map of this chain (bent into a circle by equal temperament). Harmonic movement is movement through this map — natural (directional, one fifth at a time), modal (lateral within a zone), or gradient (complexity-changing). The human ear perceives all of this directly and pre-theoretically, through the pulsation, directional pull, and fusion it hears in each interval and chord.*
+
+Plogger is the language for the italicized last sentence — the perceptual facts. HP is the language for everything before it — the structural facts. They describe the same system.
+
+**Why two languages are necessary:**
+
+A theory is complete only when it connects the structural level (how things are organized) with the perceptual level (how things are experienced). A purely structural theory (HP alone) is testable only mathematically. A purely perceptual theory (Plogger alone) is testable only aurally. Together, they provide mutual verification: Plogger predicts that high-Span sets will be heard as complex; HP explains why structurally. HP predicts that mirror sets will be heard as acoustically equivalent but directionally opposite; Plogger confirms this through the pulsation-equivalence and F/O reversal.
+
+When the two theories make the same prediction — and they always do, because they are the same underlying theory — the prediction is far more reliable than either would make alone.
+
+---
+
+## 7. Practical Consequences for AMF Learners
+
+**Sprint 1 — Orientation:**
+Before any interval training, students orient to the AMF framework. In HP terms, they are being placed at the origin of the Circle of Fifths — understanding that they are about to navigate a map, not memorize unrelated facts.
+
+**Sprints 2-3 — Perfect 4th and 5th (Span 1):**
+The two Span-1 intervals are the most acoustically intimate — one step in either direction from the origin. P5 training is the primary calibration event: the student is learning the unit of the HP system. By the end of Sprint 3, the student's ear has a precise internal reference for one perfect fifth — which is the unit in which all subsequent HP Span measurements will be expressed. They don't know this yet; they will understand it at Phase 11.
+
+The P4/P5 distinction (same Span, opposite projection) is the student's first encounter with the Sharp/Flat Projection phenomenon — felt as the different "character" of two intervals with identical consonance but different directional quality.
+
+**Sprint 4 — Major 2nd (Span 2):**
+First experience of Span 2 — two fifth-steps. The student encounters their first interval that feels like "mild tension without roughness." In HP terms, they are learning what it feels like to be two fifth-steps away from the acoustic origin. This perceptual experience will be named "Span 2" at Phase 11.
+
+**Sprints 5-6 — Minor 3rd and Major 6th (both Span 3):**
+Two intervals with identical Span but contrasting character — minor 3rd is warm and inward, major 6th is bright and open. In HP terms, these are mirror-related dyads (same Span, opposite projection). The student is experiencing their first mirror relationship without knowing the vocabulary. The minor 3rd points flat (warm, settling); the major 6th points sharp (bright, opening). This felt difference will be named "Sharp/Flat Projection" at Phase 11.
+
+**Sprint 7 — Major 3rd (Span 4):**
+Span 4 — four fifth-steps from the origin. The major triad is built on this foundation. The student is learning the acoustic character of the most fundamental harmonic unit in Western music. At Phase 11, they will understand that the entire major chord quality they have been hearing is a consequence of its specific Span-4 cluster position on the Circle of Fifths.
+
+**Sprint 8 — Tritone (Span 6):**
+Maximum Span — six fifth-steps in either direction, acoustically as far from the origin as it's possible to get. The student has now experienced the full range of the Span spectrum, from 1 to 6. By the end of Sprint 8, they have perceptual access to every Span level in the HP system. They have, unknowingly, calibrated their ear to the full range of the HP map.
+
+**Phases 4-10 — Voice Leading, Harmony, Counterpoint:**
+Students move between harmonic areas, choosing paths through the Constellation vocabulary. Without knowing it, they are making HP-governed decisions at every step: choosing between Natural and Modal procession paths, experiencing Dissonance Gradient as they move from closed to open Constellations, making mirror-adjacent moves when they find smooth modulations. All of this is perceptual at this stage — felt, not conceptualized in HP terms.
+
+**Phase 11 — HP Vocabulary Arrives:**
+For a properly prepared AMF student, the HP vocabulary should arrive as revelation, not as new learning:
+- "Span" names what they have felt as "harmonic distance" or "how complex this chord sounds"
+- "Sharp/Flat Projection" names the directional pull they have been feeling in every interval and chord since Sprint 2
+- "Mirror Sets" names the smooth "same density, different direction" modulations they have been experiencing
+- "Natural Procession" names the "inevitable" quality of certain harmonic sequences
+- "Dissonance Gradient" names the feeling of harmonic texture darkening or lightening without directional resolution
+
+The student recognizes all of these phenomena. They have been hearing them for ten phases. HP gives them names — which transforms perceptual sensitivity into conceptual fluency.
+
+**Phase 12 — Framework Disappears:**
+As with Plogger, HP ultimately disappears. The graduate does not calculate Span before choosing a chord. They feel the harmonic distance. They do not consciously identify Sharp or Flat Projection. They feel the pull direction. The structure has dissolved into perception, which has dissolved into reflex, which has dissolved into music.
+
+---
+
+## 8. Open Questions Awaiting the Full HP Text
+
+The following questions arise from what is known of HP's framework but cannot be fully answered from the available material. They should be addressed when the complete book is available:
+
+1. **Span calculation for large sets.** The examples above are for dyads through 7-note sets. How does McKay handle the 8-11 note sets in her catalog of 350? Does Span still behave predictably at those extremes?
+
+2. **Common-tone calculation.** HP's tables reportedly include common-tone relationships between sets in a procession. What is the relationship between common-tone count and Span-change? Is there a predictable formula?
+
+3. **Specific procession path examples.** The three procession types are described in general terms. What are McKay's specific worked examples of each, and how are they presented for compositional use?
+
+4. **Modal Procession organization.** Which specific modal scales correspond to which Circle-of-Fifths cluster zones? How does McKay organize the 48 tables' modal content?
+
+5. **Mirror Set completeness.** Not all sets have mirror partners (sets with symmetric internal structure are their own mirrors). How does McKay handle asymmetric sets, and what percentage of the 350 sets have distinct mirror partners?
+
+6. **Intersection with traditional voice-leading rules.** HP predicts that Natural Procession paths will correspond to traditional good voice leading. Does McKay explicitly map HP's procession paths to counterpoint rules?
+
+7. **HP and non-Western music.** HP's organization assumes equal temperament and the 12-tone Western system. Does McKay address systems with different tuning or more/fewer than 12 pitches?
+
+8. **Pedagogical sequence.** This document infers McKay's learning progression from structural logic. What does McKay explicitly recommend as a sequence, and how long does she estimate each stage requires?
+
+---
+
+*Document version 2.0 — HP sections flagged for expansion when complete McKay text is available. Plogger content is stable. The convergence analysis in Section 4 represents the authors' synthesis and should be treated as AMF-framework interpretation rather than claims attributed directly to McKay.*
