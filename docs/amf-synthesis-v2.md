@@ -18,17 +18,18 @@ ingredients: Musical Universe, Harmonic Processions (McKay), Species Counterpoin
 
 1. [Executive Vision](#1-executive-vision)
 2. [The Three Foundations and How They Relate](#2-the-three-foundations-and-how-they-relate)
-3. [The Complete Layer Architecture](#3-the-complete-layer-architecture)
-4. [The Six-Layer Convergence Model](#4-the-six-layer-convergence-model)
-5. [Revised 12-Phase Roadmap](#5-revised-12-phase-roadmap)
-6. [The Counterpoint Integration Map](#6-the-counterpoint-integration-map)
-7. [The Four Chambers × Counterpoint Matrix](#7-the-four-chambers--counterpoint-matrix)
-8. [DADGAD as the Primary Counterpoint Instrument](#8-dadgad-as-the-primary-counterpoint-instrument)
-9. [HP Integration Timeline](#9-hp-integration-timeline)
-10. [The Practice Protocol](#10-the-practice-protocol)
-11. [Fluency Redefined](#11-fluency-redefined)
-12. [Non-Negotiable Design Principles (Revised)](#12-non-negotiable-design-principles-revised)
-13. [Open Questions and Future Directions](#13-open-questions-and-future-directions)
+3. [Musical Universe Vocabulary](#3-musical-universe-vocabulary)
+4. [The Complete Layer Architecture](#4-the-complete-layer-architecture)
+5. [The Six-Layer Convergence Model](#5-the-six-layer-convergence-model)
+6. [Revised 12-Phase Roadmap](#6-revised-12-phase-roadmap)
+7. [The Counterpoint Integration Map](#7-the-counterpoint-integration-map)
+8. [The Four Chambers × Counterpoint Matrix](#8-the-four-chambers--counterpoint-matrix)
+9. [DADGAD as the Primary Counterpoint Instrument](#9-dadgad-as-the-primary-counterpoint-instrument)
+10. [HP Integration Timeline](#10-hp-integration-timeline)
+11. [The Practice Protocol](#11-the-practice-protocol)
+12. [Fluency Redefined](#12-fluency-redefined)
+13. [Non-Negotiable Design Principles (Revised)](#13-non-negotiable-design-principles-revised)
+14. [Open Questions and Future Directions](#14-open-questions-and-future-directions)
 
 ---
 
@@ -56,7 +57,51 @@ The structural relationship: Plogger provides the perceptual grammar. HP provide
 
 ---
 
-## 3. The Complete Layer Architecture
+## 3. Musical Universe Vocabulary
+
+The Musical Universe is built from a precise set of spatial and relational primitives. Every term below refers to a distinct, real thing — not a metaphor layered on top of conventional theory. This is the coordinate system the rest of the document assumes. Read these once; they will appear without re-introduction throughout.
+
+**Universe** — The totality of all musical possibility. Every pitch, interval, rhythm, texture, and expressive relationship that has ever existed or could exist is within the Universe. The Universe is constant and complete; the musician explores a small region of it at any given time. The term exists to set the correct sense of scale: not "all Western music" but genuinely all of music. The system acknowledges it is operating in one corner of something vast.
+
+**Galaxy** — The instrument- and tuning-specific physical world in which the Universe is accessed. Standard tuning (E-A-D-G-B-E) is one Galaxy; DADGAD (D-A-D-G-A-D) is another. The same abstract musical relationship — the same Constellation identity, the same Path recipe, the same Orbit — inhabits each Galaxy differently: different fingerings, different string positions, different open-string affordances, different physical resonances. Two Galaxies are co-primary in AMF from Phase 0: Standard and DADGAD. Neither is the original; neither is the transfer.
+
+**Solar System** — The tonal and modal environment currently active within a Galaxy. In the Standard tuning Galaxy, D Dorian is a Solar System; G major is another. The Solar System determines which notes feel like home (tonic), which feel like passing colors, and which feel like tension or departure. A Solar System is entered by establishing a tonic center; it can shift (full modulation) or be temporarily extended (via Bridge). The Solar System is local orientation — where you are right now within the Galaxy.
+
+**Map** — A selective perceptual overlay that makes one dimension of the Solar System visible at a time. Maps do not add musical content — they reveal different aspects of the same landscape. Switching Maps is like switching between satellite, terrain, and transit views of the same geography: the territory doesn't change, only what is highlighted. Seven Maps are currently defined:
+
+| Map | What it highlights | Primary use |
+|---|---|---|
+| **Scale Map** | All available notes in the current Solar System | Knowing what exists |
+| **Pentatonic Map** | Five-note high-consonance subset; minimum wrong-note risk | Melodic fluency and safe exploration |
+| **Harmony Map** | Available Constellation options from the current position | Chord choice and harmonic navigation |
+| **Voice-Leading Map** | Smooth, minimal-motion connections between Constellations | Efficient harmonic movement |
+| **Bridge Map** | Temporary harmonic waypoints outside the current Solar System | Color and tension without full modulation |
+| **Emotional Map** | Expressive consequence of choices already present in other Maps | Evaluates; does not generate options |
+| **Rhythm Map** | Pulse, subdivision, groove, phrase-landing points, rhythmic shape | Timing and expressive placement |
+
+Note: the Emotional Map is not at the same level as the others. It evaluates choices made within the other Maps — it does not propose new musical options. This distinction is load-bearing for the data model.
+
+**Segment** — The smallest reusable movement primitive. A Segment is a short melodic gesture: a handful of notes with a characteristic shape, direction, and feel. Segments are the syllables of melodic speech — small enough to be memorized as units, flexible enough to be combined into infinite phrases. Three types: **Leading** (directed toward a specific target note), **Moving** (traversing a harmonic area in a characteristic way), **Passing** (filling intervallic space between structural notes). The same Segment has different fingering realizations in Standard and DADGAD but the same melodic identity in both.
+
+**Path** — A planned route from the current position to a Destination, composed of Segments in sequence. A Path has directionality and expressive shape; it is how musical sentences are structured. The crucial discipline: choose the Destination before choosing the Path, and choose the Path before choosing the Segment. This decision hierarchy — coarse to fine, intention before vocabulary — is the core navigation habit the system builds.
+
+**Destination** — The intended arrival point: the specific note or harmonic position the musician is moving toward. Naming the Destination before moving is the most foundational habit in the system. It reverses the default beginner pattern ("play notes and see where I land") in favor of "know where I'm going, then decide how to get there." Destinations are not always resolutions; a Destination can be a tension point chosen on purpose.
+
+**Waypoint** — A perceptually significant intermediate point along a Path that is not the final Destination. Waypoints give a Path its shape and harmonic interest — they are the internal events that make the journey feel purposeful rather than arbitrary. A Bridge note encountered along a Path is always a Waypoint.
+
+**Orbit** — The harmonic role a note plays within a given Constellation. Every Constellation has three Orbits: **Root** (Orbit 1), **Third** (Orbit 3), and **Fifth** (Orbit 5). The same pitch can be Root of one Constellation, Third of another, and Fifth of a third — the Orbit is always relative to the Constellation in play, not absolute. Orbit recognition means immediately knowing which harmonic role any given note is currently playing, and therefore which Constellations are reachable from that note without a large physical move. This is the prerequisite for all advanced harmonic navigation.
+
+**Constellation** — The playable, physical realization of a harmonic identity in a specific Galaxy. A Constellation is not "G major" in the abstract — it is this G major voicing, on these strings, in Standard tuning (or DADGAD). The same harmonic identity has multiple Constellation realizations per Galaxy, varying by voicing type (closed/open/spread), register, and string set. The Constellation database is the application's core data structure. Critical design requirement: HP metadata (Span, family, mirror relationships) must be stored in the Constellation database from Phase 0, even though learners don't encounter HP vocabulary until Phase 11.
+
+**Anchor** — A note that is deliberately preserved and emphasized across a harmonic change. The Anchor is the note that doesn't move — or moves last — as the harmony shifts beneath it. Anchors create melodic continuity; they are the threads that stitch successive Constellations into a phrase rather than a sequence of disconnected harmonic events. Three anchor behaviors: **shared** (the anchor note is present in both Constellations), **resolving** (the anchor moves by step at the change, connecting the two), **color** (the anchor remains as an added tension against the new Constellation, creating a temporary dissonance that flavors the arrival).
+
+**Bridge** — A temporary harmonic waypoint that provides access to a harmonic color not natively available in the current Solar System without committing to a full modulation. The Solar System is not left — it is stretched. A Bridge note is a dissonance entered by step, sustained briefly as a color or tension, and left by step. Structurally, this is identical to a species counterpoint suspension. Bridges are how the system handles modal color, borrowed chords, and passing harmonic references — the moment of "elsewhere" that resolves back to "here." In HP terms, Bridge candidates are filtered by family adjacency: the most natural Bridges are one Span step away from the current Solar System's home set.
+
+**Emotional Coordinate** — The expressive state produced by the combination of tonal identity × Constellation support × rhythmic placement × register × context. Emotional Coordinates are not fixed to specific intervals or chords; they are perceptual tendencies under specific conditions. Four arrival behaviors define the space: **Confirm** (the arrival feels stable and expected — the listener's prediction was correct), **Float** (the arrival is suspended — neither resolved nor tense, hovering), **Resolve** (the arrival releases accumulated tension — the listener exhales), **Depart** (the arrival introduces new directional pull — unsettles the established expectation). The Emotional Map evaluates which coordinate applies given current conditions; it does not assign coordinates to chords in isolation.
+
+---
+
+## 4. The Complete Layer Architecture
 
 ### Layer 1 — Plogger (Perceptual Operating System)
 
@@ -101,7 +146,7 @@ The structural relationship: Plogger provides the perceptual grammar. HP provide
 
 ---
 
-## 4. The Six-Layer Convergence Model
+## 5. The Six-Layer Convergence Model
 
 The six layers do not stack linearly; they converge. The correct mental model is a funnel with a twist:
 
@@ -125,7 +170,7 @@ A crucial design implication: **The application should track which layer is the 
 
 ---
 
-## 5. Revised 12-Phase Roadmap
+## 6. Revised 12-Phase Roadmap
 
 Phases are not time-boxes. They are fluency states. A learner enters a phase when prerequisites are demonstrated; they exit when fluency gates are met.
 
@@ -147,7 +192,7 @@ Phases are not time-boxes. They are fluency states. A learner enters a phase whe
 
 ---
 
-## 6. The Counterpoint Integration Map
+## 7. The Counterpoint Integration Map
 
 | Species | AMF Phase | Standard Guitar Exercise | DADGAD Exercise | Plogger Connection |
 |---|---|---|---|---|
@@ -160,7 +205,7 @@ Phases are not time-boxes. They are fluency states. A learner enters a phase whe
 
 ---
 
-## 7. The Four Chambers × Counterpoint Matrix
+## 8. The Four Chambers × Counterpoint Matrix
 
 | Counterpoint Species | Melody Chamber | Harmony Chamber | Voicings Chamber | Rhythm Chamber |
 |---|---|---|---|---|
@@ -174,7 +219,7 @@ Reading the matrix: 1st species is concentrated in Melody and Harmony. 4th speci
 
 ---
 
-## 8. DADGAD as the Primary Counterpoint Instrument
+## 9. DADGAD as the Primary Counterpoint Instrument
 
 DADGAD's open string tuning (D2-A2-D3-G3-A3-D4) is not incidentally compatible with species counterpoint — it is structurally ideal for it, for three independent reasons.
 
@@ -190,7 +235,7 @@ DADGAD's open string tuning (D2-A2-D3-G3-A3-D4) is not incidentally compatible w
 
 ---
 
-## 9. HP Integration Timeline
+## 10. HP Integration Timeline
 
 **Phase 0-3 (HP Hidden):** HP physics is active in the system — it determines why Plogger's di-chord categories have the boundaries they do (the P5's 3:2 ratio explains its harmonicity category; the Tritone's 45:32 ratio explains its pulsation behavior). The learner experiences these as perceptual facts, not acoustic theory. The application should use HP metadata to compute Constellation stability scores, Bridge candidate filtering, and Voice-Leading graph edge weights — all invisibly. No HP vocabulary enters the UI.
 
@@ -208,7 +253,7 @@ Third, global harmonic orientation. The ability to say not just "I am in D major
 
 ---
 
-## 10. The Practice Protocol
+## 11. The Practice Protocol
 
 A Phase-adjusted 30-minute daily session. The structure is invariant; the content rotates by phase.
 
@@ -232,7 +277,7 @@ Take a short musical phrase (2-4 bars) and apply it to both Standard and DADGAD.
 
 ---
 
-## 11. Fluency Redefined
+## 12. Fluency Redefined
 
 The existing fluency gate template (nine criteria) is structurally sound. It is incomplete in two dimensions: it does not account for relational fluency (knowing an object in its network of relationships, not just in isolation) and it does not account for expressive fluency (deploying the object with intentional emotional consequence, not just correct technical execution).
 
@@ -252,7 +297,7 @@ A revised four-dimensional fluency model:
 
 ---
 
-## 12. Non-Negotiable Design Principles (Revised)
+## 13. Non-Negotiable Design Principles (Revised)
 
 The original ten principles are retained and sharpened here. Three additional principles are added. Each is stated as a testable constraint.
 
@@ -284,7 +329,7 @@ The original ten principles are retained and sharpened here. Three additional pr
 
 ---
 
-## 13. Open Questions and Future Directions
+## 14. Open Questions and Future Directions
 
 **What the system still needs:**
 
