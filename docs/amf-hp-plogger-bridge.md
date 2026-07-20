@@ -11,7 +11,8 @@ note: HP sections based on partial preview of McKay's book. Full integration def
 **Document Status:** Reference / Bridge Document — Living Architecture  
 **Audience:** AMF curriculum designers and advanced learners  
 **Date:** 2026-07-20  
-**Version:** 2.0
+**Version:** 2.0  
+**Parent document:** [`docs/amf-synthesis-v2.md`](./amf-synthesis-v2.md) — full AMF architecture; HP appears in Sections 2, 10, and the 12-Phase Roadmap
 
 > **Honest caveat on HP content:** The Harmonic Processions sections of this document are based on a preview of Dosia McKay's *Harmonic Processions* — not the complete text. Core concepts (Span, Quintal Prime Form, Mirror Sets, procession types) are described accurately from available material. Details about specific tables, advanced applications, and McKay's full recommended pedagogy should be verified against the complete book when available. This document will be expanded significantly once the full text is in hand.
 

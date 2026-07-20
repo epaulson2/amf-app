@@ -54,7 +54,7 @@ The system rests on three independent theoretical traditions that the AMF synthe
 
 **Counterpoint (Practice Protocol, not a fourth layer)** is the temporal practice vehicle that simultaneously activates all three foundations. In its first species form, it is Plogger applied in compositional time — holding two pitches and classifying their relationship. In its later species, it becomes active navigation through the Musical Universe against a fixed harmonic ground. In its florid form, it is the Synthesizer's antechamber. Counterpoint does not add to the system; it provides the laboratory conditions in which the system's components are exercised together under disciplined constraints. It enters unnamed (as Plogger exercises) and exits unnamed (as improvisation).
 
-The structural relationship: Plogger provides the perceptual grammar. HP provides the physics that explains why that grammar has the shape it does. The Musical Universe provides the navigational vocabulary for moving through the space that grammar opens. Counterpoint is the practice in which the grammar is exercised, the physics is felt, and the navigation is performed under conditions that isolate and train each variable systematically.
+The structural relationship: Plogger provides the perceptual grammar. HP provides the physics that explains why that grammar has the shape it does. See [`docs/amf-hp-plogger-bridge.md`](./amf-hp-plogger-bridge.md) for a full treatment of how the two systems converge. The Musical Universe provides the navigational vocabulary for moving through the space that grammar opens. Counterpoint is the practice in which the grammar is exercised, the physics is felt, and the navigation is performed under conditions that isolate and train each variable systematically.
 
 ---
 
@@ -295,6 +295,8 @@ Pattern summary: **4-3-4-1-3-1**. The two D-family strings produce the same shap
 ---
 
 ## 10. HP Integration Timeline
+
+> **Deep dive:** For a full standalone explanation of HP and its convergence with Plogger — including the Pythagorean comma, the Span = Harmonicity equivalence, Mirror Set acoustics, and the proof that the AMF sprint sequence is the HP Span sequence — see [`docs/amf-hp-plogger-bridge.md`](./amf-hp-plogger-bridge.md).
 
 **Phase 0-3 (HP Hidden):** HP physics is active in the system — it determines why Plogger's di-chord categories have the boundaries they do (the P5's 3:2 ratio explains its harmonicity category; the Tritone's 45:32 ratio explains its pulsation behavior). The learner experiences these as perceptual facts, not acoustic theory. The application should use HP metadata to compute Constellation stability scores, Bridge candidate filtering, and Voice-Leading graph edge weights — all invisibly. No HP vocabulary enters the UI.
 
