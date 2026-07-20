@@ -12,6 +12,8 @@ ingredients: Musical Universe, Harmonic Processions (McKay), Species Counterpoin
 **Date:** 2026-07-09  
 **Version:** 2.0 (supersedes Musical Universe Analysis v1.0)
 
+**Related:** [HP & Plogger — Acoustic Architecture of Harmonic Space](./amf-hp-plogger-bridge.md) — deep dive on how Harmonic Processions and Plogger converge around the Pythagorean fifth
+
 ---
 
 ## Table of Contents
