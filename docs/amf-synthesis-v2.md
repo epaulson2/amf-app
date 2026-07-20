@@ -217,6 +217,17 @@ Phases are not time-boxes. They are fluency states. A learner enters a phase whe
 
 ## 8. The Four Chambers × Counterpoint Matrix
 
+The Four Chambers are the four simultaneous dimensions of musical activity that all run in parallel from Phase 1 onward. No chamber is a prerequisite for another; all four are always active at some level of complexity.
+
+| Chamber | What it governs | Core vocabulary | Develops toward |
+|---|---|---|---|
+| **Melody** | The horizontal line — what notes you choose and how they move | 4 melodic zones (below/root/middle/above), tension arc, chord-change behaviors (approach, escape, pass-through, land) | Expressive phrase shaping; melodic independence over complex harmony |
+| **Harmony** | The vertical sound — what chords are implied and how they progress | 14 root movements, 12+2 progressions, Orbit recognition, Constellation selection | Fluid harmonic navigation; hearing movement before playing it |
+| **Voicings** | The physical realization of harmony — which specific shape, register, and string set | Closed triads → open/spread triads → Drop 2 → shell voicings → quartal → rootless; CAGED framework in Standard | Instant access to any voicing type; translating the same harmony into different textural environments |
+| **Rhythm** | Placement, pulse, and timing — where in time notes land and how long they sustain | 8-position rhythmic grid, son clave, Longy rhythms, phrase landing points, subdivision, anticipation and delay | Rhythmic intention as an expressive variable equal to pitch choice |
+
+All four chambers run in parallel from Sprint 1. The Four Chambers framework is not a sequence — it is the recognition that music is always doing all four things simultaneously, and practice that isolates only one produces a musician who can only execute that one thing under isolated conditions.
+
 | Counterpoint Species | Melody Chamber | Harmony Chamber | Voicings Chamber | Rhythm Chamber |
 |---|---|---|---|---|
 | Pre-species / 1st species | ●●●● Melodic interval quality; stepwise preference; leap recovery | ●●● Consonance/dissonance classification; Constellation stability | ●● Static shapes; sustain discipline | ● Steady pulse; no rhythm complexity |
