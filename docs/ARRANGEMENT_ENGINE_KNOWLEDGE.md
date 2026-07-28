@@ -18,6 +18,12 @@
 10. [The AI Collaborator Vocabulary](#10-the-ai-collaborator-vocabulary)
 11. [Decision Trees](#11-decision-trees)
 12. [Prominent Players as Style Templates](#12-prominent-players-as-style-templates)
+13. [Phrase Structure and Musical Form](#13-phrase-structure-and-musical-form)
+14. [Cadence Taxonomy](#14-cadence-taxonomy)
+15. [Motivic Development Techniques](#15-motivic-development-techniques)
+16. [Harmonic Rhythm](#16-harmonic-rhythm)
+17. [Texture Types](#17-texture-types)
+18. [The AI Collaborator — Form and Structure Instructions](#18-the-ai-collaborator--form-and-structure-instructions)
 
 ---
 
