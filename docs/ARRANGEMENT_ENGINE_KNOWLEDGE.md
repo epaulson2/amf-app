@@ -685,6 +685,357 @@ These style profiles translate real artistic approaches into engine parameters. 
 
 ---
 
-*Document version: 1.0 — July 2026*  
-*To be updated as the arrangement engine expands through counterpoint modes.*  
+---
+
+## 13. Phrase Structure and Musical Form
+
+### 13.1 Why Form Matters for the Arrangement Engine
+
+Form analysis answers the question the counterpoint rules cannot: *where* in the phrase should tension build, *where* should it release, and *where* should the texture change? A suspension belongs before a cadence, not in the middle of an antecedent. A denser inner voice belongs in the continuation phrase, not the presentation. Without form awareness, the engine places techniques correctly by interval rules but incorrectly by phrase logic.
+
+The AI collaborator should be able to detect (or infer) the form of a melody, name it, and use it to constrain where each species/technique is applied.
+
+### 13.2 Phrase-Level Forms
+
+#### Period
+
+Two phrases of roughly equal length in a **question-answer** relationship.
+
+```
+Antecedent phrase → ends on HC (half cadence = open question)
+Consequent phrase → ends on PAC (perfect authentic cadence = full answer)
+```
+
+- Most folk songs, hymns, and simple tunes are periods
+- The antecedent sets up tension; the consequent resolves it
+- **Arrangement implication:** The antecedent should use lighter texture (1st or 2nd species, imperfect consonances); the consequent can build toward the PAC with a suspension or richer inner voice
+
+**Contrasting period:** The consequent uses different melodic material — the question is answered by something new.  
+**Parallel period:** The consequent begins the same as the antecedent but diverges to reach the PAC. Most common type.
+
+#### Sentence
+
+An 8-bar structure (or proportionally similar) in three parts:
+
+```
+Presentation (4 bars):
+  Basic Idea (BI) — 2 bars
+  BI repeated or slightly varied — 2 bars
+
+Continuation (4 bars):
+  Fragmentation — BI broken into smaller pieces, repeated at faster rate
+  Drive to cadence — harmonic acceleration, PAC or HC at the end
+```
+
+- The fragmentation phase creates urgency by reducing the idea's length repeatedly
+- **Arrangement implication:** Presentation = stable texture (1st or 2nd species); Continuation = progressively busier (move toward 3rd species ornaments in inner voice as fragmentation intensifies); Cadence arrival = suspension or strong PAC
+
+#### Hybrid Forms
+
+Real music frequently blends period and sentence structures. Common hybrids:
+
+- **Hybrid 1:** Antecedent (from period) + Continuation (from sentence). The question is asked as usual, but answered with a fragmenting, driving continuation rather than a balanced consequent.
+- **Hybrid 2:** Presentation (from sentence) + Consequent (from period). The BI is stated and repeated, then answered by a clean, balanced phrase ending in a PAC.
+
+The engine should detect these by analyzing cadence placement and phrase lengths rather than forcing a binary classification.
+
+#### Phrase Detection Algorithm (for the engine)
+
+```
+1. Identify cadence points in the melody (by detecting PAC/HC/IAC patterns — see §14)
+2. Measure the distance between cadences → phrase lengths
+3. If two equal phrases, second ends stronger than first → Period candidate
+4. If first phrase has a BI repeated, then continuation with acceleration → Sentence candidate
+5. If neither pattern matches → Through-composed (each phrase unique)
+```
+
+### 13.3 Large-Scale Forms
+
+These apply when the melody has multiple sections (a verse + chorus, an A part and B part, etc.).
+
+#### Binary (AB)
+
+```
+||: A :||: B :||
+```
+
+- Section A: begins in the tonic key, often ends on the dominant (HC or modulation to V)
+- Section B: begins away from tonic, works its way back, ends with PAC in tonic
+- Most Celtic reels, jigs, and baroque dances are binary
+- **Arrangement implication:** A section can establish the core texture; B section can introduce a contrasting texture (e.g., switch from chord-first to 1st-species counterpoint) before returning home
+
+#### Rounded Binary (AB A')
+
+```
+||: A :||: B A' :||
+```
+
+- Like binary, but the B section ends with a return of the A material (abbreviated)
+- The A' return is the emotional payoff — the melody is familiar, so the listener's attention shifts to the added voices
+- **Arrangement implication:** A' is the ideal place for the richest counterpoint — richer inner voices, suspensions, because the melody is now background knowledge for the listener
+
+#### Ternary (ABA')
+
+```
+A — B (contrasting) — A'
+```
+
+- The B section provides clear contrast (different key, different texture, different mood)
+- A' returns, often with enrichment
+- **Arrangement implication:** B section = different arrangement mode (e.g., if A uses harmonic mode, B uses first-species to clear space and create contrast); A' = richest version of the A texture
+
+#### Through-Composed
+
+No repeating sections; every phrase is new. Common in ballads and narrative songs.
+
+- **Arrangement implication:** Cannot reuse the same texture block; each phrase needs individual treatment; the AI collaborator should warn that rules derived from form (e.g., "richer texture on repeat") don't apply here
+
+#### Strophic
+
+The same musical structure repeats for each verse. The music doesn't change; the words do.
+
+- **Arrangement implication:** The arrangement itself doesn't need to vary structurally, but the AI collaborator could suggest increasing texture on later verses (verse 1 = simple; verse 3 = full counterpoint) as a performance choice
+
+---
+
+## 14. Cadence Taxonomy
+
+Cadences are the punctuation marks of music. They determine the emotional weight of phrase endings and directly control which arrival behavior (Confirm / Float / Resolve / Depart) applies. Every structural arrangement decision near a phrase ending depends on knowing which cadence is coming.
+
+### 14.1 The Four Primary Cadences
+
+| Cadence | Abbreviation | Harmonic motion | Melody note | Emotional quality | AMF arrival behavior |
+|---------|-------------|----------------|-------------|-------------------|----------------------|
+| **Perfect Authentic** | PAC | V → I (both root position) | Scale degree 1̂ | Complete closure, full stop | Confirm |
+| **Imperfect Authentic** | IAC | V → I (any inversion, or melody on 3̂/5̂) | 3̂ or 5̂ | Closure, but lighter — a comma not a period | Confirm (weak) |
+| **Half Cadence** | HC | Any chord → V | Any | Open, questioning, suspended | Float |
+| **Deceptive Cadence** | DC | V → vi (or other unexpected chord) | Any | Surprise, avoidance of closure | Depart |
+
+**Plagal cadence** (IV → I): The "Amen" cadence. Rarely a primary structural cadence; most common as a tag appended after a PAC. Adds spiritual or folk weight. → "Confirm" behavior with a more final, restful quality than a PAC.
+
+### 14.2 Cadence → Arrangement Rule Mapping
+
+| Cadence | Species rule | Bass voice behavior | Inner voice behavior |
+|---------|-------------|---------------------|----------------------|
+| **PAC** | Perfect consonance (P1, P5, P8) required on final note | Bass must land on tonic root | Suspension (4-3 or 7-6) on penultimate beat if possible; resolve on final beat |
+| **IAC** | Imperfect consonance acceptable on final note | Bass may be on 3rd or 5th of tonic | No suspension required; smooth stepwise arrival |
+| **HC** | Imperfect consonance (3rd or 6th) preferred on final note | Bass lands on dominant root or 3rd | No suspension; leave texture open (no full resolution) |
+| **DC** | Imperfect consonance | Bass moves to vi instead of I | Keep inner voice moving — this is a "Depart," so immediately set up next phrase |
+| **Plagal** | Perfect consonance on final note | Bass moves IV → I stepwise or by 5th | Quiet, held inner voice; slow harmonic rhythm |
+
+### 14.3 The Cadential 6/4
+
+A special pre-cadential formula that appears before most PACs in classical style: I 6/4 → V → I.
+
+- The I 6/4 chord has the 5th of the tonic in the bass, the root and 3rd above — it sounds unstable (like a double suspension over the dominant bass)
+- It creates extra tension before the PAC resolution
+- **Guitar realization:** In DADGAD, the open A string (string 5) can serve as the dominant bass for the I 6/4, with D and G above it (G3 open, D4 open) — all available without fretting
+- **Arrangement implication:** When the engine detects a PAC coming, check whether a cadential 6/4 is available in the preceding beat; if so, offer it as an intensification option
+
+---
+
+## 15. Motivic Development Techniques
+
+A motif is a short melodic or rhythmic cell (2–6 notes) that recurs and transforms throughout a piece. Identifying the motif in the melody lets the arrangement engine apply the same transformations to counter-voices, creating a unified compositional logic rather than disconnected voice-leading decisions.
+
+### 15.1 The Basic Idea (BI)
+
+The first 1–2 bars of a melody typically establish the Basic Idea — the core cell that defines the piece's character. The engine should detect the BI by:
+
+1. Identifying the first 2-bar unit before the first cadence
+2. Extracting its pitch contour (rising/falling), interval content, and rhythmic shape
+3. Storing this as the reference for all development techniques below
+
+### 15.2 Development Techniques
+
+#### Sequence
+
+The BI (or a portion of it) is **repeated at a different pitch level**, typically moving stepwise up or down through the scale.
+
+```
+Example: BI = E4–D4–C4 (falling 3rd)
+Sequence: D4–C4–Bb3 → C4–Bb3–A3 → (each unit moves down by a step)
+```
+
+**Arrangement implication:** When the melody sequences, the bass counterpoint should sequence in contrary motion — the bass rises while the melody falls, or vice versa. This creates automatic contrary motion and avoids the parallel motion trap that sequences otherwise invite.
+
+**Detection:** Look for repeated pitch contour patterns at different transposition levels in the NoteEvent[] data.
+
+#### Fragmentation
+
+The BI is **progressively shortened** — first to half its length, then to a single beat — creating rhythmic acceleration toward a cadence.
+
+```
+BI = 2 bars → fragment = 1 bar → fragment = 2 beats → cadence
+```
+
+**Arrangement implication:** As fragmentation accelerates, the inner voice should become busier (increasing species level) to match the energy increase. The bass may move faster too — from 1st species to 2nd species as fragmentation begins.
+
+#### Inversion (Melodic)
+
+The **interval direction is reversed** — a rising major 3rd becomes a falling major 3rd.
+
+```
+Original: C4–E4–G4 (rising)
+Inversion: C4–A3–F3 (falling)
+```
+
+**Arrangement implication:** The bass counterpoint can use the inverted form of the melody motif — if the melody rises, the bass version falls. This is built-in contrary motion and creates a musically satisfying "mirror" effect between voices.
+
+#### Augmentation
+
+The **rhythmic values are doubled** — quarter notes become half notes; the motif takes twice as long.
+
+```
+Original: ♩♩♩♩ (4 quarter notes)
+Augmented: 𝅗𝅥𝅗𝅥𝅗𝅥𝅗𝅥 (4 half notes)
+```
+
+**Arrangement implication:** An augmented version of the melody motif in the bass creates a slow-moving pedal-like foundation while the original melody continues at normal speed above it. Very effective in codas and recapitulations.
+
+#### Diminution
+
+The **rhythmic values are halved** — half notes become quarter notes.
+
+**Arrangement implication:** Inner voice can use diminuted versions of the BI as ornamental material — it's motivically connected but moves at twice the speed, creating a 3rd-species texture that's compositionally unified rather than arbitrary.
+
+#### Imitation
+
+One voice plays the BI; another voice **plays the same melody starting a few beats later** (like a round).
+
+```
+Melody:     C4–D4–E4–F4 (beats 1-4)
+Inner voice:            C4–D4–E4–F4 (beats 3-6, 2 beats behind)
+```
+
+- Strict imitation at the same pitch = canon
+- Imitation at a different pitch (e.g., a 5th lower) = tonal imitation (most common in tonal music)
+- **Guitar realization:** The inner voice (string 3, middle register) can imitate the melody on string 1-2 with a 2–4 beat delay. This is fully achievable in the fretboard solver and creates the most musically dramatic counterpoint effect available on the instrument.
+- **Arrangement implication:** Imitation should be flagged as a premium technique — it requires that the BI be short enough to overlap with itself without creating forbidden parallels. The engine should check: does the imitation voice create parallel 5ths or 8ths at any overlap point?
+
+### 15.3 Motivic Unity Principle
+
+> The most satisfying arrangements use the same motivic material across all voices. The bass doesn't just provide chord tones — it develops the same motif the melody introduced. The inner voice doesn't just fill in harmony — it imitates or inverts the melody's shape.
+
+When the AI collaborator makes changes, it should prefer modifications that preserve motivic unity: "I added a fragment of the opening motif in the inner voice here — it creates motivic continuity across the two voices."
+
+---
+
+## 16. Harmonic Rhythm
+
+Harmonic rhythm is the rate at which chords change. It is an independent compositional parameter — separate from melodic rhythm and from the species of counterpoint in use.
+
+### 16.1 Harmonic Rhythm and Phrase Shape
+
+| Harmonic rhythm | Effect | Typical placement |
+|-----------------|--------|------------------|
+| **Very slow** (1 chord per 4+ beats) | Spacious, meditative, drone-like | Opening phrases; sustained texture; A sections in Celtic/folk |
+| **Slow** (1 chord per 2 beats) | Stable, walking pace | Mid-phrase; 2nd species bass pairs naturally |
+| **Medium** (1 chord per beat) | Active, purposeful | Development sections; sentence continuation phase |
+| **Fast** (2+ chords per beat) | Urgent, driving | Pre-cadential acceleration; fragmentation phase |
+| **Accelerating** (slows → fast) | Classic phrase shape — builds tension toward cadence | Most satisfying phrase pacing arc |
+
+### 16.2 Harmonic Rhythm and Counterpoint Species
+
+The chosen counterpoint species should match the harmonic rhythm:
+
+| Harmonic rhythm | Natural counterpoint species |
+|-----------------|------------------------------|
+| 1 chord per 4 beats | 1st species + pedal point; drone texture |
+| 1 chord per 2 beats | 2nd species (2 notes per chord duration) |
+| 1 chord per beat | 3rd species or free counterpoint |
+| Fast / pre-cadential | 4th species suspension + resolution compressed into 1 beat |
+
+**Arrangement implication:** When the engine detects fast harmonic rhythm (chord changes on every beat), it should not try to generate elaborate inner-voice ornamentation — there isn't time. It should use 1st-species consonances and let the harmonic changes do the work. Elaborate passing tones belong where chords are held for 2+ beats.
+
+### 16.3 Harmonic Rhythm as an AI Collaborator Parameter
+
+The AI collaborator should be able to adjust harmonic rhythm independently of the arrangement texture:
+
+| Instruction | Harmonic rhythm change |
+|-------------|----------------------|
+| "Slow it down / give it more space" | Merge chords — extend chord durations; hold V for longer before resolving |
+| "More drive / urgency" | Add chord subdivisions — insert passing chords (V/V, ii) to increase change rate |
+| "More ambiguous / floating" | Reduce harmonic rhythm to drone level; hold one chord while melody implies others above it |
+| "Classic phrase arc" | Slow harmonic rhythm in antecedent; accelerate through continuation; land hard on PAC |
+
+---
+
+## 17. Texture Types
+
+Texture describes *how* the voices relate to each other — not which notes they play, but whether they are independent, supportive, or identical. The arrangement engine uses these as the highest-level organizational category above the species level.
+
+### 17.1 The Four Primary Textures
+
+| Texture | Definition | Fingerstyle realization | AMF vocabulary |
+|---------|-----------|------------------------|----------------|
+| **Monophony** | Single unaccompanied melodic line | Melody only; no bass or inner voice | One Path, no Constellations |
+| **Homophony** | All voices move in the same rhythm together | Block chord strumming or plucking; melody in top voice | Constellation without independent Paths |
+| **Melody + accompaniment** | Melody is independent; other voices support harmonically in a regular pattern | Travis picking, arpeggio patterns; bass and inner voices are not melodically independent | One active Path (melody) + Constellation support |
+| **Polyphony** | Multiple genuinely independent melodic lines | Species counterpoint; imitation; canon; all voices have their own melodic shape | Multiple active Paths simultaneously |
+
+All of our counterpoint modes are polyphonic. The chord-first mode sits between "melody + accompaniment" and "polyphony" depending on how voice-led the inner voices are.
+
+### 17.2 Heterophony
+
+A fifth texture type especially relevant to Celtic and folk fingerstyle:
+
+**Heterophony**: Multiple voices playing **slight variations of the same melody simultaneously**, rather than truly independent lines.
+
+```
+Melody (string 1):   D4–E4–F#4–G4–A4
+Inner voice (str 3): D4–E4–F#4–G4–[rest]–A4  (same melody, slightly delayed/ornamented)
+```
+
+- The inner voice shadows the melody a beat or two behind, but with slight rhythmic or ornamental differences
+- Creates a rich, layered unison effect rather than true counterpoint independence
+- Very idiomatic to DADGAD — the melody on string 1 and a delayed version on string 2 (A3) or string 3 (G3) create a natural heterophonic texture because of the tuning's open-string character
+- **Arrangement mode**: "Heterophonic shadow" — inner voice delays the melody by 1–2 beats and may add a neighbor tone or passing tone decoration, but fundamentally follows the melody's contour
+
+### 17.3 Choosing Texture
+
+```
+Texture decision tree:
+
+Is the musical goal harmonic richness?
+├── YES, rhythm-driven → Homophony (block chords, strummed)
+├── YES, pattern-driven → Melody + accompaniment (Travis, arpeggio)
+└── NO → Is the goal melodic independence?
+    ├── YES, two voices → Polyphony, 1st or 2nd species
+    ├── YES, three voices → Polyphony, 3rd species or free counterpoint
+    ├── YES, full texture → Polyphony, 5th species or voice-led
+    └── PARTIAL — voices related but not identical → Heterophony (shadow texture)
+```
+
+### 17.4 Texture Contrast as Form Marker
+
+Changes in texture are one of the most powerful tools for marking form boundaries:
+
+| Form moment | Texture change |
+|-------------|---------------|
+| A → B section | Polyphony → Melody + accompaniment (B section clears space) |
+| B → A' return | Melody + accompaniment → richer polyphony (return is now enhanced) |
+| Antecedent → Consequent | Same texture, but inner voice adds suspension at consequent cadence |
+| Development / continuation | Texture thickens as fragmentation accelerates |
+| Coda / tag | Texture thins to 1st species or monophony (ending ritardando effect) |
+
+---
+
+## 18. The AI Collaborator — Form and Structure Instructions
+
+Extending §10.1 to include form-aware instructions:
+
+| User Says | Form/Structure Reading | What Changes | Explanation Template |
+|-----------|----------------------|-------------|---------------------|
+| "This sounds like it ends too soon" | Consequent cadence is IAC where a PAC was expected | Strengthen the cadence: move bass to root position, melody to 1̂, add suspension | "The phrase is ending on an imperfect cadence — the melody is on the 3rd rather than the root. I've moved the final bass note to the tonic root and added a 4-3 suspension so the landing feels complete." |
+| "The second half feels like the first — no contrast" | Both phrases end with PAC; no antecedent/consequent distinction | Weaken the first phrase ending to a half cadence | "Making the first phrase end on a half cadence instead — it becomes a question that the second phrase answers. Classic period form." |
+| "Make it build more" | Continuation/fragmentation phase too static | Increase species level progressively through the phrase; accelerate inner voice | "Adding progressive rhythmic activity in the inner voice through the second half — starting with one note per beat and moving to two, matching the fragmentation of the melody as it drives toward the cadence." |
+| "It sounds like it's going in circles" | Through-composed melody treated with repetitive texture | Assign different texture to each phrase | "Each phrase now has its own texture — first phrase uses 1st species, second adds passing tones, third introduces a suspension. Through-composed melodies need through-composed arrangements." |
+| "Add an echo / answer feeling" | No imitation currently present | Add imitation at 2-beat delay in inner voice | "Adding an imitative voice — the inner voice picks up the melody's opening motif 2 beats later. Creates a call-and-response effect between the two voices." |
+| "Sounds too busy at the beginning" | Too-rich texture in the antecedent / presentation | Reduce to 1st species in opening phrase; build from there | "Clearing the texture at the opening — starting with just melody and bass (1st species) so the counterpoint has somewhere to grow toward the cadence." |
+
+---
+
+*Document version: 1.1 — July 2026*  
+*Added: §13 Phrase Structure and Form, §14 Cadence Taxonomy, §15 Motivic Development, §16 Harmonic Rhythm, §17 Texture Types, §18 Extended AI Vocabulary*  
 *Related files: `lib/arranger/`, `docs/GUITAR_FRETBOARD_DIAGRAM_SYSTEM.md`, `docs/MUSICAL_UNIVERSE_ANALYSIS.md`*
