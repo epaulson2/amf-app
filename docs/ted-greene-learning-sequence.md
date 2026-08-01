@@ -22,12 +22,12 @@
    - [Stage 5 — V-System: V-1 and V-2](#stage-5--v-system-v-1-and-v-2)
    - [Stage 6 — Harmony Foundations](#stage-6--harmony-foundations)
    - [Stage 7 — V-System: V-3 through V-6](#stage-7--v-system-v-3-through-v-6)
-   - [Stage 8 — Baroque Entry: Vocabulary & Grammar](#stage-8--baroque-entry-vocabulary--grammar)
+   - [Stage 8 — Classical Entry: Vocabulary & Grammar](#stage-8--classical-entry-vocabulary--grammar)
    - [Stage 9 — Counterpoint Basics](#stage-9--counterpoint-basics)
    - [Stage 10 — V-System: V-7 through V-14](#stage-10--v-system-v-7-through-v-14)
-   - [Stage 11 — Baroque Intermediate: Voice Leading & Modulation](#stage-11--baroque-intermediate-voice-leading--modulation)
+   - [Stage 11 — Classical Intermediate: Voice Leading & Modulation](#stage-11--classical-intermediate-voice-leading--modulation)
    - [Stage 12 — Comping Integration](#stage-12--comping-integration)
-   - [Stage 13 — Baroque Advanced: Improvisation Application](#stage-13--baroque-advanced-improvisation-application)
+   - [Stage 13 — Classical Advanced: Improvisation Application](#stage-13--classical-advanced-improvisation-application)
    - [Stage 14 — Harmony Advanced: Modal & Extended Systems](#stage-14--harmony-advanced-modal--extended-systems)
 5. [Key Insights from the From Students Section](#key-insights-from-the-from-students-section)
 6. [Research Notes & Source Inventory](#research-notes--source-inventory)
@@ -385,9 +385,11 @@ These three transcripts are essential. They show how Greene *introduced* V-Syste
 
 ---
 
-### Stage 8 — Baroque Entry: Vocabulary & Grammar
+### Stage 8 — Classical Entry: Vocabulary & Grammar
 
-**Goal**: Build the harmonic vocabulary of the baroque period as Greene applied it to guitar. Know the characteristic chord types, their inversions, and the most common progression patterns. This is *not* counterpoint yet — it's learning the harmonic language before learning to speak it in two voices simultaneously.
+**Goal**: Build the harmonic vocabulary of the classical tradition as Greene applied it to guitar — beginning with baroque, but the same structural work applies to classical-period and 20th-century styles. Know the characteristic chord types, their inversions, and the most common progression patterns. This is *not* counterpoint yet — it's learning the harmonic language before learning to speak it in two voices simultaneously.
+
+**Note on scope**: "Classical" here means the full tradition from baroque through 20th-century modern. Baroque is the entry point because its harmonic grammar is the most explicit and rule-governed — it builds the foundation for later classical and modern counterpoint work. The 20th-century material (triads & bass in contrary motion, modern counterpoint) is at the same level of importance as baroque — it is a parallel branch, not an extension.
 
 **Key documents (Baroque section)**:
 - *Musical Goals* context: *Baroque Major Key Vocabulary* (1974)
@@ -474,7 +476,7 @@ These three transcripts are essential. They show how Greene *introduced* V-Syste
 
 ---
 
-### Stage 11 — Baroque Intermediate: Voice Leading & Modulation
+### Stage 11 — Classical Intermediate: Voice Leading & Modulation
 
 **Goal**: Expand from 2-voice counterpoint to 3-part harmony. Learn the mechanics of modulation (moving between keys) and the full range of bass harmonization options. This is where the harmonic language starts to feel infinite.
 
@@ -545,9 +547,9 @@ Each of these is a different voicing/register approach to the same song. This is
 
 ---
 
-### Stage 13 — Baroque Advanced: Improvisation Application
+### Stage 13 — Classical Advanced: Improvisation Application
 
-**Goal**: Use baroque harmonic grammar and counterpoint not to reproduce compositions but to improvise. This is Greene's central teaching goal for baroque — the equivalent of jazz head + improvisation, but with baroque vocabulary.
+**Goal**: Use classical harmonic grammar and counterpoint not to reproduce compositions but to improvise. This is Greene's central teaching goal for the classical tradition — the equivalent of jazz head + improvisation, but with baroque and classical vocabulary. The baroque idiom is the primary vehicle; 20th-century modern techniques (see Stage 14) are a parallel destination at the same level of fluency.
 
 **The key documents that make improvisation the explicit target**:
 - *Typical Key Schemes and General Plans for Baroque Improvisation* (1975) — the single most important doc for this stage
