@@ -1,7 +1,7 @@
 # Ted Greene — Learning System & Curriculum Sequence
 
-*Research synthesis: 2026-08-01*  
-*Sources: tedgreene.com (all teaching sections + From Students)*  
+*Research synthesis: 2026-08-01. Updated 2026-08-01 after reading Greene's own documents.*  
+*Sources: tedgreene.com (all teaching sections + From Students + Musical Priorities PDF + Musical Goals PDF)*  
 *Scope: Standard tuning. Entry level = late beginner / intermediate (knows chords, triads, modes by name, understands diatonic.)*
 
 ---
@@ -9,9 +9,12 @@
 ## Table of Contents
 
 1. [How to Read This Document](#how-to-read-this-document)
-2. [The Architecture of the System](#the-architecture-of-the-system)
-3. [What Comping and Harmony Are In This System](#what-comping-and-harmony-are-in-this-system)
-4. [Stage-by-Stage Curriculum](#stage-by-stage-curriculum)
+2. [Greene's Philosophy: Musical Priorities (1976)](#greenes-philosophy-musical-priorities-1976)
+3. [What Musical Goals Actually Is](#what-musical-goals-actually-is)
+4. [The Architecture of the System](#the-architecture-of-the-system)
+5. [Cross-Cutting Threads](#cross-cutting-threads)
+6. [What Comping and Harmony Are In This System](#what-comping-and-harmony-are-in-this-system)
+7. [Stage-by-Stage Curriculum](#stage-by-stage-curriculum)
    - [Stage 1 — Fingerboard Orientation](#stage-1--fingerboard-orientation)
    - [Stage 2 — Chord Construction & Foundation Vocabulary](#stage-2--chord-construction--foundation-vocabulary)
    - [Stage 3 — String Transference & Voicing Movement](#stage-3--string-transference--voicing-movement)
@@ -33,16 +36,73 @@
 
 ## How to Read This Document
 
-This is a sequencing framework built by synthesizing the complete tedgreene.com archive — all teaching sections, student lesson notes, and contributor documents. Ted Greene never wrote down a curriculum sequence; he delivered it in person. This document reconstructs that sequence from:
+This is a sequencing framework built by synthesizing the complete tedgreene.com archive — all teaching sections, student lesson notes, contributor documents, and two of Greene's own primary documents read directly (*Musical Priorities* and *Musical Goals and Necessary Areas of Study*, both 1976). Ted Greene never wrote down a curriculum sequence; he delivered it in person. This document reconstructs that sequence from:
 
+- Greene's own 1976 documents (now read and analyzed — see sections below)
 - The implied dependencies between sections (comping docs explicitly list V-System groups as prerequisites)
 - Student lesson notes (Mark Levy, Paul Vachon, Tomás Campbell) that show what Greene assigned and when
-- The internal structure of the Fundamentals section (which includes "Musical Goals and Necessary Areas of Study" and "Musical Priorities" — two of Greene's own curriculum maps)
 - The logical prerequisite chain: to comp "Autumn Leaves" in V-1 chords, you must first know what V-1 means
 
 **Entry assumption**: The student can play barre chords, knows major/minor/diminished triads, understands what "diatonic" means, knows the modes by name (Dorian, Phrygian, etc.), and has some exposure to chord symbols (maj7, m7, dom7). They do NOT need to read music fluently, though basic notation literacy is helpful.
 
 **Stage numbers are not weeks or months.** Some stages take weeks, some take months or years depending on depth of study. Each stage has a natural "floor" (minimum to move forward) and a very deep ceiling (Greene spent decades on all of this).
+
+---
+
+## Greene's Philosophy: Musical Priorities (1976)
+
+*Musical Priorities* was a handout Greene gave new students at the start of lessons. It is not a curriculum sequence — it is a philosophical orientation. Reading it reveals the frame behind everything else.
+
+**His four opening questions for every student:**
+1. What do you want to do with music? (Play in a group? Solo? Accompany singers? Self-contained?)
+2. What should you study? ("Leave it up to me.")
+3. Do you want to specialize in any style?
+4. Which areas interest you: Improvising? Composing? Arranging? Performing? Interpretation?
+
+**His explicit hierarchy:** Greene states directly: *"The most involved, demanding, and (to my way of thinking) important, is harmony."* He divided music into three domains — **Harmony, Melody, Rhythm** — and placed harmony unambiguously first.
+
+**Why study harmony — his nine benefits:**
+1. Knowledge of available sounds you might not have known existed
+2. The ability to expand almost any idea (variations on any progression, song, or riff)
+3. True understanding of what makes music tick, which speeds up learning enormously
+4. The ability to quickly figure out what other musicians are doing
+5. The ability to improve musical ideas through:
+   - **Chord enrichment** (adding 9ths, 11ths, etc.)
+   - **Chord addition** (back-cycling, embellishing chords)
+   - **Chord substitution and reharmonization**
+   - **The addition of moving voices** ← this is counterpoint, listed as a harmony tool
+   - **Melodic embellishment, decoration and variation** (melody is part of harmony)
+   - **Interesting modulations**
+   - **The application of different tonalities and idioms**
+   - **Being able to express many different moods, feelings, colors**
+   - **The use of different textures**
+
+**The key insight from this document**: Counterpoint ("the addition of moving voices") is not a separate discipline in Greene's system — it is one of harmony's tools. The baroque work is where that tool is developed most systematically, but it is always in service of the larger harmonic project. This reframes the whole sequence: you are not "learning baroque counterpoint," you are learning to add moving voices as one of nine harmony skills.
+
+---
+
+## What Musical Goals Actually Is
+
+*Musical Goals and Necessary Areas of Study* (1976) is a 3-page matrix — a student intake assessment tool, not a linear curriculum. Greene would fill it in per student based on their stated goals.
+
+**The columns** are musical contexts: Jazz guitar in a group, Jazz trio, Solo jazz guitar, Solo symphonic guitar, Jazz guitar accompanying voice, Symphonic guitar accompanying voice, Songwriting/composition, Duos, Big Band, Studio playing.
+
+**The rows** are areas of study, organized into tonality systems and technique categories.
+
+**The critical finding for this sequence**: Baroque tonality is checked only for **Solo Symphonic Guitar**, **Symphonic Guitar Accompaniment**, and **Duos** — not for jazz guitar in a group, jazz trio, or studio playing. The sequence in this document is correctly scoped: it is the **Solo Symphonic Guitar** path, which is where baroque gets its checkmarks.
+
+**Other findings from the grid:**
+
+- **"Basic concepts of tonality"** — checked for ALL musical goals without exception. Confirms Stage 4 is non-optional.
+- **"Systematic Inversions"** — checked for ALL musical goals. This is Greene's 1976 name for what became the V-System. He had not yet numbered the voicing groups V-1 through V-14, but the concept was already universal in his teaching.
+- **"Ear training studies"** — checked for ALL goals. This thread is entirely absent from the original sequence and has been added as a Cross-Cutting Thread below.
+- **"Mental practice"** — checked for ALL goals. Also absent from the original sequence; added below.
+- **"Rhythmic transitions"** — checked for ALL goals. Added below.
+- **"Triads & bass in contrary motion"** — this appears in the **20th Century Modern** section of the grid, not the Baroque section. Greene classified contrapuntal techniques as part of modern vocabulary. The implication: baroque counterpoint is the historical foundation and study system, but "triads & bass in contrary motion" as an applied modern technique is distinct — it extends beyond period-accurate baroque into Greene's own synthesis.
+- **"Tonality transitions"** — moving between different tonal systems (baroque → jazz → modal → impressionist, etc.). Listed for most goals; added to Stage 14.
+- **"Stretching exercises"** — physical warm-up/technique. Listed for all goals. Not a musical topic but worth noting as part of daily practice.
+
+**The blank template in the document** is the version Greene handed students to fill out together. It is not a pre-filled curriculum — it is a diagnostic. For AMF purposes, this suggests the system should eventually include a goal-assessment intake that maps to the right learning path, much as Greene did in person.
 
 ---
 
@@ -68,6 +128,46 @@ The three pillars develop in parallel but have prerequisite dependencies. Broadl
 **Comping** is not a "level" of the curriculum — it is the *application layer* that runs through the whole system from Stage 5 onward. The comping docs on the site are organized by standard (song title) and explicitly labeled with the voicing group used (V-1, V-2, etc.) and the string set (top 4, middle 4, bottom 4). This means: as you learn each V-System group, you immediately apply it to songs via comping. The comping section is the practice gym, not the workout plan.
 
 **Harmony & Theory** is threaded through multiple stages. Some of it is foundational (diatonic progressions, II-V-I) and belongs early. Some of it (modal harmony, impressionism, extended tonality) belongs late. The Harmony section on the site is not a linear course — it's a reference library organized alphabetically. Its material has been distributed across stages in this document by prerequisite logic.
+
+---
+
+## Cross-Cutting Threads
+
+These three areas appear in Greene's *Musical Goals* matrix checked for **ALL** musical goals — every column without exception. They are not stages; they run alongside every stage from the beginning.
+
+### Ear Training
+
+Greene checked "Ear Training studies" for every musical goal he listed. This is not a special module — it is a parallel practice that never stops. For the V-System path, ear training means:
+
+- **Interval recognition**: hearing the qualities of 2nds, 3rds, 4ths, tritones, 7ths — not just their names
+- **Chord quality recognition**: hearing whether something is maj7, dom7, m7, m7b5, or dim7 without looking
+- **Voice movement recognition**: hearing which voice in a chord is moving and in which direction
+- **Harmonic function recognition**: hearing tonic/dominant/subdominant function in progressions you haven't seen before
+
+**Practice method**: Greene frequently assigned students to record rhythm tracks and comp over them ("for taping"). This serves ear training directly — you hear yourself, hear what works, hear where your voicings clash with the bass line. The "for taping" instruction appears throughout the Fundamentals docs and should be treated as a standing instruction at every stage.
+
+**Why it matters at the advanced level**: At Stage 13 (baroque improvisation), the entire skill is real-time ear → choice → execution. Every hour of ear training at Stage 3 shortens the path to fluent baroque improv.
+
+### Mental Practice
+
+Greene checked "Mental practice" for every musical goal. In his teaching, this meant:
+
+- **Silent fingerboard visualization**: picturing chord shapes, arpeggios, and voice movements without a guitar in hand
+- **Audiation of progressions**: hearing how a harmonic sequence sounds *before* playing it
+- **Slow-motion internal replay**: after playing a passage, replaying it in the mind to reinforce the mapping between sound and physical movement
+
+This is not a vague inspirational add-on — it is the difference between students who plateau at chord-memorization and students who achieve the fluency Greene's advanced work requires. The V-System has 14 groups × 4 inversions × 3 string sets — that's 168+ configurations. Mental practice is how this becomes intuitive rather than looked-up.
+
+### Rhythmic Development
+
+Greene checked "Rhythmic transitions" for every musical goal — meaning the ability to move between rhythmic feels without losing the harmonic thread. For the comping path specifically:
+
+- **Sustained note comping** (holding chords, minimal movement) vs. **rhythmically active comping** (shorter notes, more movement)
+- **Rubato vs. in-tempo** playing in arrangements
+- **Metric displacement**: playing the harmonic rhythm against a different metric feel
+- **Rhythmic variation within a chord**: same voicing, different attack patterns
+
+At Stage 12 (Comping Integration), this becomes explicit. But Greene's students were working on rhythmic feel from the beginning, via the "for taping" practice method — recording a bass/drum track (or using a metronome) and comping over it develops rhythmic sense as a byproduct.
 
 ---
 
@@ -111,9 +211,9 @@ The three pillars develop in parallel but have prerequisite dependencies. Broadl
 - *Essential Chords — Standard Inversions* (1973)
 - *Harmonized Close Triads in 5 Tonalities* (1983)
 
-**Also from Fundamentals — the two most important study-plan docs**:
-- *Musical Goals and Necessary Areas of Study* (1976) — Greene's own articulation of what needs to be studied and why
-- *Musical Priorities* (1976) — his philosophy of practice sequencing; read this before anything else
+**Also from Fundamentals — the two foundational documents (both now read and analyzed above)**:
+- *Musical Goals and Necessary Areas of Study* (1976) — Greene's per-student intake matrix. Not a universal curriculum — a diagnostic tool with rows (areas of study) and columns (musical goals/contexts). Baroque is only checked for the Solo Symphonic Guitar column. Systematic Inversions (V-System) and Ear Training are checked for ALL goals. Read the full analysis in the "What Musical Goals Actually Is" section above.
+- *Musical Priorities* (1976) — Greene's philosophical handout for new students. HARMONY > MELODY > RHYTHM. Counterpoint is listed as one of harmony's tools. Read this before anything else — and read the full analysis in the "Greene's Philosophy" section above.
 
 **The key idea at this stage**: Greene built chord vocabulary cumulatively. The "Cumulative Chords" series is the clearest expression of this — each sheet adds one voicing type at a time, building toward fluency through repetition and variation rather than memorizing chord books wholesale.
 
@@ -501,9 +601,14 @@ Each of these is a different voicing/register approach to the same song. This is
 
 ---
 
-### Stage 14 — Harmony Advanced: Modal & Extended Systems
+### Stage 14 — Harmony Advanced: Modal, Extended Systems & Tonality Transitions
 
-**Goal**: Extend the harmonic grammar from diatonic/baroque into modal, impressionist, and whole-tone territory. This is where Greene's influence from Ravel and Debussy becomes apparent alongside Bach.
+**Goal**: Extend the harmonic grammar from diatonic/baroque into modal, impressionist, and whole-tone territory. This is where Greene's influence from Ravel and Debussy becomes apparent alongside Bach. Also at this stage: *Tonality Transitions* — the ability to move fluidly between different tonal systems within a single piece or improvisation.
+
+**Tonality Transitions** (from the *Musical Goals* grid — listed for most musical goals):  
+This is one of the most advanced concepts in Greene's system: moving from baroque tonality to jazz tonality to modal to impressionist within a single performance — not by modulting within one system, but by shifting *between* systems. The Harmony & Theory section's "Tonality" material addresses this. At an advanced level, a Greene student would be able to move from a Bach-style cycle-of-4ths section into a Debussy-style parallel voicing section into a Dorian modal vamp without the seam feeling jarring. This is the full integration of all previous stages.
+
+**Triads & bass in contrary motion** (note on placement): This technique appears in Greene's *Musical Goals* matrix under the **20th Century Modern** section — not the Baroque section. By Stage 14, the student has encountered contrary motion bass lines in baroque contexts (Stage 11); here it is extended into the modern tonality application, where the technique belongs to a different harmonic logic. See *20th Century Diatonic Contrary Patterns* (1979) and *Modern Counterpoint Studies* (1978).
 
 **Key documents (Fundamentals section — modal)**:
 - *Dorian Tonality* (1986) / *Dorian Progressions for Taping* (1990)
@@ -579,8 +684,8 @@ The following Baroque Ideas are marked with a video icon on the site (matching Y
 - Baroque Practice Patterns in Minor Bass Harmonization
 
 ### High-priority documents for PDF download (Phase 2)
-1. *Musical Goals and Necessary Areas of Study* (1976) — Greene's curriculum map
-2. *Musical Priorities* (1976) — practice philosophy
+1. ~~*Musical Goals and Necessary Areas of Study* (1976)~~ — **READ 2026-08-01. Analysis in "What Musical Goals Actually Is" section above.**
+2. ~~*Musical Priorities* (1976)~~ — **READ 2026-08-01. Analysis in "Greene's Philosophy" section above.**
 3. *Baroque Practice Program* (1975) — sequencing guide for baroque study
 4. *Typical Key Schemes and General Plans for Baroque Improvisation* (1975)
 5. *Ted's Plans for Teaching the V-System* (Hober explication)
