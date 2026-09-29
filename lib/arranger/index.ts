@@ -3,6 +3,9 @@ export { DADGAD, STANDARD, TUNING_PRESETS, parseTuning } from './tunings'
 export { makeChordEvent } from './theory'
 export { SAMPLE_MELODIES } from './sample-melodies'
 export { toAlphaTex } from './alphatex'
+export { computeAnnotations } from './annotations'
+export { toAnnotatedAlphaTex } from './annotated-alphatex'
+export type { OverlayType, BeatAnnotation, AnnotationSet } from './annotations'
 export type {
   MidiPitch, NoteEvent, ChordEvent, Tuning, FretPosition, GuitarNote,
   ArrangementMode, ArrangementRequest, ArrangementResponse, Arrangement, Measure,

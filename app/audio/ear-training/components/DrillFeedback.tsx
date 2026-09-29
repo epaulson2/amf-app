@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { getDiChord } from '@/lib/audio'
+import PictographGlyph from './PictographGlyph'
 
 export interface DrillStats {
   total: number
@@ -71,22 +72,30 @@ export default function DrillFeedback({ stats, lastResult }: DrillFeedbackProps)
       </div>
 
       {/* Last result feedback */}
-      {lastResult && (
-        <div
-          className="rounded-lg px-4 py-3"
-          style={{
-            background: lastResult.correct ? 'rgba(22,163,74,0.1)' : 'rgba(220,38,38,0.1)',
-            border: `1px solid ${lastResult.correct ? 'rgba(22,163,74,0.3)' : 'rgba(220,38,38,0.3)'}`,
-          }}
-        >
-          <p className="font-bold text-sm mb-1" style={{ color: lastResult.correct ? '#4ade80' : '#f87171' }}>
-            {lastResult.correct ? `✓ Correct — [{lastResult.correctBracket}]` : `✗ That was [${lastResult.correctBracket}]`}
-          </p>
-          <p className="text-sm" style={{ color: '#94a3b8', lineHeight: 1.5 }}>
-            {lastResult.hint}
-          </p>
-        </div>
-      )}
+      {lastResult && (() => {
+        const dc = getDiChord(lastResult.correctBracket)
+        return (
+          <div
+            className="rounded-lg px-4 py-3 flex items-center gap-4"
+            style={{
+              background: lastResult.correct ? 'rgba(22,163,74,0.1)' : 'rgba(220,38,38,0.1)',
+              border: `1px solid ${lastResult.correct ? 'rgba(22,163,74,0.3)' : 'rgba(220,38,38,0.3)'}`,
+            }}
+          >
+            <div style={{ flexShrink: 0 }}>
+              <PictographGlyph dc={dc} size={64} />
+            </div>
+            <div>
+              <p className="font-bold text-sm mb-1" style={{ color: lastResult.correct ? '#4ade80' : '#f87171' }}>
+                {lastResult.correct ? `✓ Correct — ${dc.name}` : `✗ That was ${dc.name}`}
+              </p>
+              <p className="text-sm" style={{ color: '#94a3b8', lineHeight: 1.5 }}>
+                {lastResult.hint}
+              </p>
+            </div>
+          </div>
+        )
+      })()}
     </div>
   )
 }

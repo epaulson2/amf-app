@@ -1,31 +1,27 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { callClaude } from '@/lib/claude-cli'
 import type { Arrangement, NoteEvent, ChordEvent, Tuning } from '@/lib/arranger'
 
-const SYSTEM_PROMPT = `You are an expert fingerstyle guitar arranger and music theory teacher working inside the AMF (All Music Framework) system.
+export const runtime = 'nodejs'
+export const maxDuration = 120
 
-When given a guitar arrangement and a natural language instruction, analyze what the user wants and explain the musical technique you would apply.
+const SYSTEM_PROMPT = `You are an expert fingerstyle guitar arranger inside the AMF (All Music Framework) system.
 
-AMF vocabulary — always use in explanations:
-- Pillar Notes = structural notes on downbeats or phrase peaks
+AMF vocabulary — use in explanations:
+- Pillar Notes = structural notes on downbeats/phrase peaks
 - Waypoints = chord change points, phrase boundaries
-- Anchor = common tone held between chords (Resolving Anchor, Floating Anchor)
-- Orbit = which chord tone a note is (Root, Third, Fifth)
-- Di-chord = interval between two voices (numbered 1–12)
+- Anchor = common tone held between chords (Resolving/Floating)
+- Orbit = chord tone role (Root, Third, Fifth)
+- Di-chord = interval between two voices (1–12)
 - Pulsation = rhythmic energy (Grounded/Flowing/Floating/Suspended/Resolving)
 
-Classical vocabulary to use alongside AMF:
-- Species counterpoint: 1st (1:1 note-against-note), 2nd (2:1 passing tones), 4th (suspensions), 5th (free)
-- Cadences: PAC (perfect authentic), IAC (imperfect), HC (half cadence), DC (deceptive)
-- NCT = non-chord tone (passing tone, neighbor tone, suspension, appoggiatura)
+Classical counterpoint vocabulary:
+- Species: 1st (1:1 note-against-note), 2nd (2:1 passing tones), 4th (suspensions)
+- Cadences: PAC, IAC, HC, DC
+- NCT = non-chord tone (passing tone, neighbor, suspension, appoggiatura)
 
-Respond ONLY with valid JSON:
-{
-  "techniqueName": "e.g. '4-3 Suspension'",
-  "amfVocabulary": "e.g. 'Resolving Anchor'",
-  "explanation": "2-4 sentences describing what you would change and why it works musically",
-  "listenFor": "specific thing to listen for after the change",
-  "editSummary": "one-line technical summary"
-}`
+Respond ONLY with valid JSON (no markdown, no code fences):
+{"techniqueName":"string","amfVocabulary":"string","explanation":"2-4 sentences","listenFor":"specific thing to listen for","editSummary":"one-line technical summary"}`
 
 interface AiEditRequest {
   instruction: string
@@ -33,7 +29,6 @@ interface AiEditRequest {
   melody: NoteEvent[]
   chords: ChordEvent[]
   tuning: Tuning
-  selectedVoices?: string[]
 }
 
 export async function POST(req: NextRequest) {
@@ -49,12 +44,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'instruction and arrangement are required' }, { status: 400 })
   }
 
-  const apiKey = process.env.DEEPSEEK_API_KEY
-  if (!apiKey) {
-    return NextResponse.json({ error: 'AI service not configured (DEEPSEEK_API_KEY missing)' }, { status: 503 })
-  }
-
-  const arrangementSummary = {
+  const summary = {
     mode: arrangement.mode,
     tuning: tuning.name,
     measures: arrangement.measures.length,
@@ -66,32 +56,13 @@ export async function POST(req: NextRequest) {
     chordProgression: chords.map(c => c.symbol).join(' – '),
   }
 
-  const userMessage = `Current arrangement:\n${JSON.stringify(arrangementSummary, null, 2)}\n\nUser instruction: ${instruction}\n\nExplain what technique you would apply and return the JSON response.`
+  const userMessage = `Current arrangement:\n${JSON.stringify(summary, null, 2)}\n\nUser instruction: ${instruction}\n\nRespond with JSON only.`
 
   try {
-    const llmRes = await fetch('https://api.deepseek.com/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: 'deepseek-chat',
-        messages: [
-          { role: 'system', content: SYSTEM_PROMPT },
-          { role: 'user', content: userMessage },
-        ],
-        temperature: 0.7,
-        max_tokens: 1024,
-      }),
-    })
+    const stdout = await callClaude(userMessage, SYSTEM_PROMPT, 90000)
 
-    if (!llmRes.ok) throw new Error(`LLM API error: ${llmRes.status}`)
-
-    const llmData = await llmRes.json()
-    const content: string = llmData.choices?.[0]?.message?.content ?? ''
-    const jsonMatch = content.match(/\{[\s\S]*\}/)
-    if (!jsonMatch) throw new Error('LLM did not return valid JSON')
+    const jsonMatch = stdout.match(/\{[\s\S]*\}/)
+    if (!jsonMatch) throw new Error('No JSON in response')
     const parsed = JSON.parse(jsonMatch[0])
 
     return NextResponse.json({

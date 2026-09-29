@@ -91,3 +91,14 @@ body {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
+
+/* Print / PDF export */
+@media print {
+  body { background: #fff !important; color: #000 !important; }
+  .no-print { display: none !important; }
+  .print-arrangement { page-break-inside: avoid; }
+  .print-title {
+    font-size: 18px; font-weight: 700; margin-bottom: 8px;
+    color: #000; font-family: Georgia, serif;
+  }
+}

@@ -5,6 +5,16 @@ export const metadata: Metadata = { title: 'Ted Greene System — AMF' }
 
 const TOOLS = [
   {
+    href: '/ted-greene/stage/1',
+    label: 'Stage 1: Fingerboard Orientation',
+    subtitle: 'The 5 Areas · 7 Positions · 3 Diagonals',
+    description:
+      "Every Greene student started here. Learn the five areas of the fingerboard, seven positions, and three triad diagonals — with interactive diagrams, note maps, and exercises drawn from his original handouts.",
+    badge: 'Live',
+    badgeColor: '#16a34a',
+    accent: '#d97706',
+  },
+  {
     href: '/ted-greene/assessment',
     label: 'Student Assessment',
     subtitle: 'Musical Goals Wizard',
@@ -57,7 +67,7 @@ export default function TedGreenePage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {TOOLS.map((tool) => {
             const isExternal = 'external' in tool && tool.external
             const Tag = isExternal ? 'a' : Link

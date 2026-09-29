@@ -1,10 +1,13 @@
 'use client'
 
-import DiChordPictograph from '@/app/DiChordPictograph'
+import DiChordPictograph, { DiChordBadge } from '@/app/DiChordPictograph'
 
-const BC = ({ children }: { children: React.ReactNode }) => (
-  <code className="font-mono text-sm px-1.5 py-0.5 rounded bg-slate-100 text-slate-800">{children}</code>
-)
+const BC = ({ children }: { children: React.ReactNode }) => {
+  const text = String(children)
+  const match = text.match(/^\[(\d+)\]$/)
+  if (match) return <DiChordBadge n={parseInt(match[1], 10)} />
+  return <code className="font-mono text-sm px-1.5 py-0.5 rounded bg-slate-100 text-slate-800">{children}</code>
+}
 
 function Asset({ file, title, height = 480 }: { file: string; title: string; height?: number }) {
   return (
@@ -78,7 +81,7 @@ export default function Sprint1CheatsheetsPage() {
               <tbody>
                 {DICHORD_DATA.map(d => (
                   <tr key={d.bracket} className={`border-b border-slate-100 ${d.sprint1 ? 'bg-amber-50 font-medium' : ''}`}>
-                    <td className="py-1.5 px-2 font-mono font-bold" style={{ color: d.color }}>{d.bracket}</td>
+                    <td className="py-1.5 px-2"><DiChordBadge n={d.semi} /></td>
                     <td className="py-1.5 px-2">{d.name}</td>
                     <td className="py-1.5 px-2 text-center text-slate-500">{d.semi}</td>
                     <td className="py-1.5 px-2 text-center" style={{ color: d.color }}>{d.pulsation}</td>

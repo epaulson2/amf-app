@@ -2,11 +2,14 @@
 
 import { useState } from 'react'
 import { TextbookContent, TOC as TEXTBOOK_TOC } from '../textbook/page'
-import DiChordPictograph from '@/app/DiChordPictograph'
+import DiChordPictograph, { DiChordBadge } from '@/app/DiChordPictograph'
 
-const BC = ({ children }: { children: React.ReactNode }) => (
-  <code className="font-mono text-sm px-1.5 py-0.5 rounded bg-slate-100 text-slate-800">{children}</code>
-)
+const BC = ({ children }: { children: React.ReactNode }) => {
+  const text = String(children)
+  const match = text.match(/^\[(\d+)\]$/)
+  if (match) return <DiChordBadge n={parseInt(match[1], 10)} />
+  return <code className="font-mono text-sm px-1.5 py-0.5 rounded bg-slate-100 text-slate-800">{children}</code>
+}
 
 const H2 = ({ id, children }: { id: string; children: React.ReactNode }) => (
   <h2 id={id} className="text-2xl font-bold text-slate-800 mb-3 mt-12 border-b border-slate-200 pb-2 scroll-mt-24">{children}</h2>

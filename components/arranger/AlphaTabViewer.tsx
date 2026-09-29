@@ -54,6 +54,7 @@ export default function AlphaTabViewer({ alphaTex, title, height = 420, enablePl
         settings.core.engine = 'svg'
         settings.core.logLevel = at.LogLevel.None
         settings.core.fontDirectory = `${window.location.origin}/font/`
+        settings.core.scriptFile = `${window.location.origin}/alphaTab.min.js`
         settings.display.layoutMode = at.LayoutMode.Page
         settings.display.staveProfile = at.StaveProfile.ScoreTab
         settings.player.enablePlayer = enablePlayer

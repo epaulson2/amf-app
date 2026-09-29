@@ -7,6 +7,7 @@ import {
   type SoundFactorMix, type InstrumentId,
 } from '@/lib/audio'
 import FactorPanels from './components/FactorPanels'
+import PictographGlyph from './components/PictographGlyph'
 
 const DiChordGrid       = dynamic(() => import('./components/DiChordGrid'),       { ssr: false })
 const DrillMode         = dynamic(() => import('./components/DrillMode'),         { ssr: false })
@@ -101,12 +102,15 @@ export default function EarTrainingPage() {
             {/* Di-chord selector */}
             <div className="rounded-xl p-6" style={{ background: '#1e293b', border: '1px solid rgba(255,255,255,0.06)' }}>
               <div className="flex items-start justify-between flex-wrap gap-4 mb-5">
-                <div>
-                  <p className="text-xs font-bold tracking-widest uppercase mb-1" style={{ color: '#64748b' }}>Selected</p>
-                  <p className="font-bold" style={{ color: '#f1f5f9', fontSize: '1.3rem' }}>
-                    [{selectedBracket}] {dichord.name}
-                  </p>
-                  <p className="text-xs mt-0.5" style={{ color: '#475569' }}>{dichord.feel}</p>
+                <div className="flex items-center gap-4">
+                  <PictographGlyph dc={dichord} size={90} />
+                  <div>
+                    <p className="text-xs font-bold tracking-widest uppercase mb-1" style={{ color: '#64748b' }}>Selected</p>
+                    <p className="font-bold" style={{ color: '#f1f5f9', fontSize: '1.3rem' }}>
+                      {dichord.name}
+                    </p>
+                    <p className="text-xs mt-0.5" style={{ color: '#475569' }}>{dichord.feel}</p>
+                  </div>
                 </div>
                 <button
                   onClick={isPlaying ? handleStop : handlePlay}
@@ -139,10 +143,12 @@ export default function EarTrainingPage() {
 
             {/* Reference row */}
             <div className="rounded-xl p-4" style={{ background: '#1e293b', border: '1px solid rgba(255,255,255,0.06)' }}>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-center">
+                <div className="flex justify-center">
+                  <PictographGlyph dc={dichord} size={72} />
+                </div>
                 {[
-                  { label: 'Bracket',    value: `[${selectedBracket}]` },
-                  { label: 'Semitones',  value: dichord.semitones },
+                  { label: 'Semitones',  value: `${dichord.semitones} st` },
                   { label: 'Pulsation',  value: `${dichord.pulsationHz} Hz` },
                   { label: 'F/O Shadow', value: dichord.foDirection === 'down' ? '↓ Down' : dichord.foDirection === 'up' ? '↑ Up' : '↕ Both' },
                 ].map(item => (

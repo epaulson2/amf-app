@@ -133,9 +133,9 @@ export default function ChatWidget() {
 
   const SUGGESTED = [
     'What is PDC?',
-    'How do I practice call-and-response?',
-    'Why does the blues scale sound "blue"?',
     'What TPS color fits a IV chord?',
+    'What are Pillar Notes?',
+    'How do Longy Rhythms work?',
   ]
 
   return (

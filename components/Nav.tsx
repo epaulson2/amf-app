@@ -9,14 +9,16 @@ type NavLink = { href: string; label: string; match?: (p: string) => boolean }
 const PRIMARY: NavLink[] = [
   { href: '/musical-universe', label: 'Musical Universe' },
   { href: '/',                 label: 'Sprints', match: p => p === '/' || p.startsWith('/sprints') },
-  { href: '/plogger',          label: 'Plogger' },
   { href: '/audio',            label: 'Audio Lab' },
   { href: '/arranger',         label: 'Arranger' },
   { href: '/curriculum',       label: 'Curriculum' },
+  { href: '/ted-greene',       label: 'Ted Greene' },
+  { href: '/tools',            label: 'Tools' },
 ]
 
 const MORE: NavLink[] = [
-  { href: '/ted-greene',  label: 'Ted Greene' },
+  { href: '/connections', label: 'Artist Map' },
+  { href: '/plogger',     label: 'Plogger' },
   { href: '/genre-labs',  label: 'Genre Labs' },
   { href: '/systems',     label: 'Systems' },
   { href: '/materials',   label: 'Materials' },
