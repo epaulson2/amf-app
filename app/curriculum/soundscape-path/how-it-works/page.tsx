@@ -19,14 +19,14 @@ export default function HowItWorks() {
       <header className="sp-hero py-10 px-4 sm:px-6" style={{ backgroundColor: '#0f172a' }}>
         <div className="max-w-4xl mx-auto">
           <p className="sp-eyebrow m-0 mb-2">The approach</p>
-          <h1 className="text-white text-3xl sm:text-4xl font-bold m-0">How we&apos;ll learn music together</h1>
+          <h1 className="sp-editorial-title text-white text-3xl sm:text-4xl m-0">How we&apos;ll learn music together</h1>
           <p className="text-slate-300 mt-3 max-w-2xl mb-0">By hearing, discovering, naming and creating—until the theory becomes part of the music you imagine.</p>
         </div>
       </header>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
         {SECTIONS.map(s => (
           <section key={s.h} className="mb-10">
-            <h2 className="text-2xl font-semibold text-slate-900">{s.h}</h2>
+            <h2 className="sp-editorial-heading text-2xl text-slate-900">{s.h}</h2>
             <div className="sp-prose mt-3">{s.p.map(t => <p key={t}>{t}</p>)}</div>
             {s.extra && <p className="sp-callout max-w-2xl">{s.extra}</p>}
           </section>

@@ -20,11 +20,12 @@ const clips = [
 export default function SoundscapeLanding() {
   return (
     <div>
-      <section className="sp-hero py-12 px-4 sm:px-6" style={{ backgroundColor: '#0f172a' }}>
-        <div className="max-w-4xl mx-auto">
+      <section className="sp-hero sp-hero--artful py-12 px-4 sm:px-6" style={{ backgroundColor: '#0f172a' }}>
+        <span className="sp-hero-line" aria-hidden="true" />
+        <div className="max-w-4xl mx-auto relative">
           <p className="sp-eyebrow m-0 mb-3">An AMF learning track · Music, imagination &amp; discovery</p>
-          <h1 className="text-white text-4xl sm:text-5xl font-bold m-0">Ajourné into Music</h1>
-          <p className="text-2xl mt-2 mb-6" style={{ color: '#d97706' }}>Make the music you imagine.</p>
+          <h1 className="sp-wordmark"><span className="sp-wordmark-script">Ajourné</span> <span className="sp-wordmark-rest">into Music</span></h1>
+          <p className="sp-tagline mt-3 mb-6">Make the music you imagine.</p>
           <div className="text-slate-200 max-w-2xl space-y-4">
             <p>You already know what it feels like to be moved by a sound. What if you could understand what gives it that feeling—and find more ways to create it on purpose?</p>
             <p>Ajourné into Music is a creative journey into the language of music. We&apos;ll listen closely, explore notes and the spaces between them, learn the theory that explains their relationships, and use those discoveries to make original music.</p>
@@ -42,7 +43,7 @@ export default function SoundscapeLanding() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-16">
         <section aria-labelledby="one-note">
-          <h2 id="one-note" className="text-2xl font-semibold text-slate-900">Start with one note</h2>
+          <h2 id="one-note" className="sp-editorial-heading text-2xl text-slate-900">Start with one note</h2>
           <div className="sp-prose mt-3">
             <p>Imagine a soft note held in the background—a quiet place to stand. Now let a second note enter. The first sound hasn&apos;t moved, but the atmosphere around it may feel different.</p>
             <p>You don&apos;t need to know the names of the notes yet. Just listen for what changes.</p>
@@ -55,7 +56,7 @@ export default function SoundscapeLanding() {
         </section>
 
         <section aria-labelledby="why">
-          <h2 id="why" className="text-2xl font-semibold text-slate-900">Music is more than the notes you play</h2>
+          <h2 id="why" className="sp-editorial-heading text-2xl text-slate-900">Music is more than the notes you play</h2>
           <div className="sp-prose mt-3">
             <p>A melody can sound like a question. A single held note can make a musical place feel stable, mysterious or unfinished. Moving just one note can change an entire harmony. Silence can be as expressive as sound.</p>
             <p>These aren&apos;t mysteries you need to leave unexplored. They&apos;re musical relationships you can learn to hear, understand and use.</p>
@@ -71,14 +72,14 @@ export default function SoundscapeLanding() {
         </section>
 
         <section aria-labelledby="doors">
-          <h2 id="doors" className="text-2xl font-semibold text-slate-900">Follow your curiosity</h2>
+          <h2 id="doors" className="sp-editorial-heading text-2xl text-slate-900">Follow your curiosity</h2>
           <p className="sp-prose mt-3">Some musical questions deserve another doorway. Every lesson includes little places to explore when you&apos;re curious—but you can always come back to making music.</p>
           <DiscoveryDoors content={{ 'paint-what-you-hear': <p className="m-0">What would our home note look like if it were a place on your canvas? You might paint a quiet wash for the held note, then add one gesture when another note enters. There is no required color or image—what you paint belongs to your own experience. Use your own paint, sketchbook or digital art tools. You never need to upload your artwork.</p> }} />
           <p className="sp-muted mt-4">These are invitations, not extra homework. Open one, open them all, or save them for another day.</p>
         </section>
 
         <section aria-labelledby="shape">
-          <h2 id="shape" className="text-2xl font-semibold text-slate-900">Eight weeks. Two creative movements.</h2>
+          <h2 id="shape" className="sp-editorial-heading text-2xl text-slate-900">Eight weeks. Two creative movements.</h2>
           <p className="sp-prose mt-3">You&apos;ll begin with one note and gradually build toward an original musical journey of your own.</p>
           <ol className="grid gap-3 sm:grid-cols-2 list-none p-0 mt-4">
             {WEEKS.map(w => (

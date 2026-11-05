@@ -15,7 +15,7 @@ export default function Journey() {
       <header className="sp-hero py-10 px-4 sm:px-6" style={{ backgroundColor: '#0f172a' }}>
         <div className="max-w-4xl mx-auto">
           <p className="sp-eyebrow m-0 mb-2">The first two months</p>
-          <h1 className="text-white text-3xl sm:text-4xl font-bold m-0">From one note to your own musical world</h1>
+          <h1 className="sp-editorial-title text-white text-3xl sm:text-4xl m-0">From one note to your own musical world</h1>
           <p className="text-slate-300 mt-3 max-w-2xl">Eight weeks of listening, learning and creating. Each discovery becomes something you can hear—and something you can use.</p>
           <p className="text-slate-300 max-w-2xl mb-0">The two-month path has two movements. First we discover musical relationships. Then we learn to shape them into a larger journey.</p>
         </div>
@@ -30,7 +30,7 @@ export default function Journey() {
               {m.weeks.map(w => (
                 <li key={w.n} className="sp-card p-5">
                   <div className="flex items-baseline justify-between gap-3 flex-wrap">
-                    <h2 className="text-xl font-semibold text-slate-900 m-0"><span className="sp-muted text-base font-medium mr-2">Week {w.n}</span>{w.title}</h2>
+                    <h2 className="sp-editorial-heading text-xl text-slate-900 m-0"><span className="sp-muted text-base font-medium mr-2">Week {w.n}</span>{w.title}</h2>
                     <span className="sp-status">Lesson pages in preparation</span>
                   </div>
                   <p className="text-base mt-2 mb-1">{w.learning}</p>
@@ -42,7 +42,7 @@ export default function Journey() {
           </section>
         ))}
         <section>
-          <h2 className="text-2xl font-semibold text-slate-900">A path, not a finish line</h2>
+          <h2 className="sp-editorial-heading text-2xl text-slate-900">A path, not a finish line</h2>
           <p className="sp-prose mt-2">You can revisit a week, pause to make more music, or explore a deeper question when curiosity takes you there. Each step is meant to become part of your musical practice long after the lesson ends.</p>
           <p><Link href={`${BASE}/how-it-works`} className="sp-btn sp-btn--ghost">See how we learn</Link></p>
         </section>

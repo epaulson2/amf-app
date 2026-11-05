@@ -68,3 +68,29 @@
   .sp-door:not([open]) > .sp-door-body { display: block; }
   a[href^='http']::after { content: ' (' attr(href) ')'; font-size: 9pt; word-break: break-all; }
 }
+
+/* ---- Light editorial polish (course only): a little handwriting, quiet rules, more breathing room ---- */
+.sp-root { --sp-script: var(--font-ajourne-script), 'Apple Chancery', 'URW Chancery L', Georgia, serif; --sp-serif: Georgia, 'Times New Roman', serif; --sp-mineral: #9aaeb1; }
+
+.sp-hero--artful { position: relative; overflow: hidden; padding-top: 3.5rem; padding-bottom: 3.5rem; }
+/* one faint halo and one fine curve: decorative, low opacity, no pointer events */
+.sp-hero--artful::before { content: ''; position: absolute; top: -9rem; right: -6rem; width: 26rem; height: 26rem; border-radius: 50%; background: radial-gradient(circle, rgb(154 174 177 / .16), transparent 68%); pointer-events: none; }
+.sp-hero-line { position: absolute; left: -10%; right: -10%; bottom: -3.2rem; height: 6rem; border-top: 1px solid rgb(154 174 177 / .35); border-radius: 50% 50% 0 0 / 100% 100% 0 0; pointer-events: none; }
+
+.sp-wordmark { margin: 0; font-weight: 400; line-height: 1; }
+.sp-wordmark-script { display: block; font-family: var(--sp-script); font-weight: 500; font-size: clamp(3.6rem, 15vw, 6rem); line-height: 1.05; letter-spacing: .01em; color: #fff; padding-bottom: .1em; }
+.sp-wordmark-rest { display: block; margin-top: .4rem; margin-left: .25rem; font-size: .9rem; font-weight: 500; letter-spacing: .32em; text-transform: uppercase; color: #cbd5e1; }
+.sp-tagline { font-family: var(--sp-serif); font-style: italic; font-size: 1.5rem; line-height: 1.4; color: var(--color-amber); }
+
+.sp-editorial-title { font-family: var(--sp-serif); font-weight: 500; letter-spacing: .005em; }
+.sp-editorial-heading { font-family: var(--sp-serif); font-weight: 500; letter-spacing: .003em; }
+.sp-editorial-heading::before { content: ''; display: block; width: 2.5rem; height: 1px; background: var(--sp-mineral); margin-bottom: .7rem; }
+.sp-door > summary .sp-editorial-heading::before, .sp-card .sp-editorial-heading::before { display: none; }
+
+.sp-card, .sp-door { border-radius: .75rem; }
+.sp-card { box-shadow: 0 1px 1px rgb(15 23 42 / .04); }
+.sp-door { transition: border-color .2s ease; }
+.sp-door:hover { border-color: var(--sp-mineral); }
+.sp-prose { line-height: 1.8; }
+
+@media print { .sp-hero-line, .sp-hero--artful::before { display: none; } .sp-wordmark-script, .sp-wordmark-rest, .sp-tagline { color: #000 !important; } }
