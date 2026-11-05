@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import type { Arrangement, NoteEvent, ChordEvent, Tuning } from '@/lib/arranger'
+import { aiDisabledResponse, aiFeaturesEnabled } from '@/lib/ai-gate'
 
 const SYSTEM_PROMPT = `You are an expert fingerstyle guitar arranger and music theory teacher working inside the AMF (All Music Framework) system.
 
@@ -37,6 +38,8 @@ interface AiEditRequest {
 }
 
 export async function POST(req: NextRequest) {
+  if (!aiFeaturesEnabled()) return aiDisabledResponse()
+
   let body: AiEditRequest
   try {
     body = await req.json()

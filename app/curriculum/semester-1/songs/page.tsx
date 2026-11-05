@@ -1,4 +1,3 @@
-import { LeadSheetCollection } from '@/components/LeadSheetCollection'
 import { leadSheets } from '@/lib/lead-sheets'
 
 export const metadata = {
@@ -48,7 +47,9 @@ export default function AnchorSongsPage() {
           Select a song below to view its full lead sheet with melody, chord symbols, and form
           markings. Lead sheets are rendered from ABC notation via abcjs.
         </p>
-        <LeadSheetCollection />
+        <p className="rounded-xl border border-zinc-200 bg-zinc-50 p-5 text-sm text-zinc-600">
+          Interactive lead sheets are not published on this site.
+        </p>
       </section>
     </main>
   )

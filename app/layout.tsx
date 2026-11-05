@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Nav from '@/components/Nav'
 import ChatWidget from '@/components/ChatWidget'
+import { aiFeaturesEnabled } from '@/lib/ai-gate'
 
 export const metadata: Metadata = {
   title: 'AMF — Adaptive Musician\'s Framework',
@@ -21,7 +22,7 @@ export default function RootLayout({
         <main className="flex-1">
           {children}
         </main>
-        <ChatWidget />
+        {aiFeaturesEnabled() && <ChatWidget />}
         <footer
           className="border-t border-slate-200 py-8 mt-16"
           style={{ backgroundColor: '#0f172a' }}

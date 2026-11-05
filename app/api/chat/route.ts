@@ -1,6 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk'
-
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+import { aiDisabledResponse, aiFeaturesEnabled } from '@/lib/ai-gate'
 
 const AMF_SYSTEM_PROMPT = `You are an AMF tutor — an expert guide for the Adaptive Musician's Framework (AMF), a personal music learning system built around the 12-bar blues.
 
@@ -40,6 +39,8 @@ AMF teaches musical intelligence through an "Internal Band" metaphor — seven c
 Be warm, direct, and treat the learner as an intelligent adult who wants to understand the WHY behind the technique.`
 
 export async function POST(req: Request) {
+  if (!aiFeaturesEnabled()) return aiDisabledResponse()
+
   if (!process.env.ANTHROPIC_API_KEY) {
     return Response.json({ error: 'ANTHROPIC_API_KEY not configured' }, { status: 500 })
   }
@@ -50,6 +51,7 @@ export async function POST(req: Request) {
     ? `${AMF_SYSTEM_PROMPT}\n\n## Current page context\nThe learner is currently on: ${pageContext}`
     : AMF_SYSTEM_PROMPT
 
+  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
   const stream = await client.messages.stream({
     model: 'claude-sonnet-4-6',
     max_tokens: 1024,

@@ -1,0 +1,35 @@
+[Unit]
+Description=AMF website (amf.queencityredline.com)
+After=network.target
+
+[Service]
+User=amf-site
+Group=amf-site
+WorkingDirectory=/srv/amf-site/current
+Environment=NODE_ENV=production
+Environment=HOSTNAME=127.0.0.1
+Environment=PORT=3210
+Environment=NEXT_TELEMETRY_DISABLED=1
+ExecStart=/srv/amf-site/runtime/node server.js
+Restart=on-failure
+RestartSec=5
+MemoryHigh=768M
+MemoryMax=1G
+CPUQuota=100%
+TasksMax=128
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_UNIX
+ReadWritePaths=/srv/amf-site/cache
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=amf-site
+
+[Install]
+WantedBy=multi-user.target

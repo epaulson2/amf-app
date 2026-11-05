@@ -2,13 +2,24 @@ import fs from 'fs/promises'
 import path from 'path'
 import matter from 'gray-matter'
 
-const CONTENT_DIR = path.join(process.cwd(), 'content')
+const CONTENT_DIR = process.env.AMF_CONTENT_ROOT ?? path.join(/*turbopackIgnore: true*/ process.cwd(), 'content')
+
+const UNAVAILABLE_NOTICE =
+  '> **This section is not available on this site yet.** Its source material is not published here.'
 
 export async function getMarkdownContent(
   filePath: string
 ): Promise<{ content: string; data: Record<string, unknown> }> {
-  const fullPath = path.join(CONTENT_DIR, filePath)
-  const raw = await fs.readFile(fullPath, 'utf8')
+  const fullPath = path.join(/*turbopackIgnore: true*/ CONTENT_DIR, filePath)
+  let raw: string
+  try {
+    raw = await fs.readFile(fullPath, 'utf8')
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+      return { content: UNAVAILABLE_NOTICE, data: {} }
+    }
+    throw error
+  }
   const { content, data } = matter(raw)
   return { content, data }
 }
@@ -144,6 +155,7 @@ export async function getMarkdownSection(
   stopTexts: string[] = []
 ): Promise<string> {
   const { content } = await getMarkdownContent(filePath)
+  if (content === UNAVAILABLE_NOTICE) return content
   const lines = content.split('\n')
   let capturing = fromText === null
   const result: string[] = []
@@ -168,5 +180,5 @@ export async function getMarkdownSections(
   const sections = await Promise.all(
     parts.map(p => getMarkdownSection(filePath, p.from, p.stop))
   )
-  return sections.filter(Boolean).join('\n\n---\n\n')
+  return [...new Set(sections.filter(Boolean))].join('\n\n---\n\n')
 }
