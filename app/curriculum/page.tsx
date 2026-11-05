@@ -48,6 +48,23 @@ function Semester1Hero() {
   )
 }
 
+function AjourneTile() {
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 mb-12 shadow-sm">
+      <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#b45309' }}>New track · Preview</p>
+      <h2 className="text-2xl font-bold mb-2" style={{ color: '#0f172a' }}>Ajourné into Music</h2>
+      <p className="text-slate-600 text-sm mb-5">A creative journey into the language of music: listen closely, explore notes and the spaces between them, and use what you learn to make original music. Lesson pages are still being built.</p>
+      <Link
+        href="/curriculum/soundscape-path"
+        className="inline-flex items-center gap-2 px-5 py-3 rounded-lg font-semibold text-sm transition-all hover:opacity-90"
+        style={{ backgroundColor: '#0f172a', color: '#fff' }}
+      >
+        Meet the course →
+      </Link>
+    </div>
+  )
+}
+
 const semester1Docs = [
   {
     slug: 'core-curriculum',
@@ -87,6 +104,7 @@ export default async function CurriculumPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
         {/* Semester 1 hero — prominent entry point */}
         <Semester1Hero />
+        <AjourneTile />
 
         <div className="max-w-3xl">
           <MarkdownContent source={content} />

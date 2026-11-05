@@ -1,0 +1,130 @@
+{
+ "curriculum@320": {
+  "scrollWidth": 320,
+  "overflow": false
+ },
+ "landing@320": {
+  "scrollWidth": 320,
+  "overflow": false
+ },
+ "journey@320": {
+  "scrollWidth": 320,
+  "overflow": false
+ },
+ "preview@320": {
+  "scrollWidth": 320,
+  "overflow": false
+ },
+ "howit@320": {
+  "scrollWidth": 320,
+  "overflow": false
+ },
+ "curriculum@768": {
+  "scrollWidth": 909,
+  "overflow": true
+ },
+ "landing@768": {
+  "scrollWidth": 909,
+  "overflow": true
+ },
+ "journey@768": {
+  "scrollWidth": 909,
+  "overflow": true
+ },
+ "preview@768": {
+  "scrollWidth": 909,
+  "overflow": true
+ },
+ "howit@768": {
+  "scrollWidth": 909,
+  "overflow": true
+ },
+ "curriculum@1280": {
+  "scrollWidth": 1280,
+  "overflow": false
+ },
+ "landing@1280": {
+  "scrollWidth": 1280,
+  "overflow": false
+ },
+ "journey@1280": {
+  "scrollWidth": 1280,
+  "overflow": false
+ },
+ "preview@1280": {
+  "scrollWidth": 1280,
+  "overflow": false
+ },
+ "howit@1280": {
+  "scrollWidth": 1280,
+  "overflow": false
+ },
+ "tokens": {
+  "existing": {
+   "navBg": "rgb(15, 23, 42)",
+   "footerBg": "rgb(15, 23, 42)",
+   "bodyBg": "rgb(248, 247, 244)",
+   "bodyColor": "rgb(30, 41, 59)",
+   "bodyFont": "system-ui, -apple-system, Blin",
+   "bodySize": "18px",
+   "heroBg": "rgb(15, 23, 42)",
+   "navLinks": "AMFAdaptable Musician's Framework|Musical Universe|Sprints|Plogger|Audio Lab|Arranger|Curriculum"
+  },
+  "new": {
+   "navBg": "rgb(15, 23, 42)",
+   "footerBg": "rgb(15, 23, 42)",
+   "bodyBg": "rgb(248, 247, 244)",
+   "bodyColor": "rgb(30, 41, 59)",
+   "bodyFont": "system-ui, -apple-system, Blin",
+   "bodySize": "18px",
+   "heroBg": "rgba(0, 0, 0, 0)",
+   "navLinks": "AMFAdaptable Musician's Framework|Musical Universe|Sprints|Plogger|Audio Lab|Arranger|Curriculum"
+  }
+ },
+ "audio_before_click_contexts": 0,
+ "after_play_A": {
+  "ctx": 1,
+  "osc": 9
+ },
+ "status_after_play": "Playing: Hear A",
+ "pressed": "true",
+ "after_stop": {
+  "closed": 1,
+  "stopped": 18
+ },
+ "stop_disabled_after": true,
+ "after_switch": {
+  "ctx": 3,
+  "closed": 2
+ },
+ "after_navigate": {
+  "ctx": 3,
+  "closed": 3
+ },
+ "page_errors": [],
+ "answer_hidden_initially": true,
+ "answer_after_reveal": true,
+ "blank_lines_visible": true,
+ "answer_hidden_in_blank": true,
+ "doors": 6,
+ "doors_open_independent": [
+  true,
+  false,
+  false,
+  true,
+  false,
+  false
+ ],
+ "landing_doors": 6,
+ "landing_links_to_unbuilt": [],
+ "journey_links_to_unbuilt": [],
+ "nav": [
+  "/",
+  "/musical-universe",
+  "/",
+  "/plogger",
+  "/audio",
+  "/arranger",
+  "/curriculum"
+ ]
+}

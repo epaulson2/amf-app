@@ -1,0 +1,70 @@
+/* Ajourné into Music: course components.
+   Uses AMF's own tokens (--color-navy, --color-warm-white, --color-amber from app/globals.css).
+   Only semantic aliases and print rules are added here; no second palette, no page theme. */
+.sp-root {
+  --sp-navy: var(--color-navy);
+  --sp-paper: var(--color-warm-white);
+  --sp-amber: var(--color-amber);
+  --sp-amber-hover: #b45309;
+  --sp-ink: #1e293b;
+  --sp-muted: #475569;       /* slate-600 on warm-white: 7.2:1 */
+  --sp-border: #cbd5e1;
+  --sp-border-soft: #e2e8f0;
+  --sp-card: #ffffff;
+  --sp-callout: #fffbeb;
+  /* AMF part colours: used only for labelled musical parts, never alone */
+  --sp-melody: #1a5a8a;
+  --sp-harmony: #922b21;
+  --sp-voicing: #1e8449;
+  --sp-rhythm: #5b2c6f;
+}
+
+/* Actions: navy text on amber passes AA (white on #d97706 does not). */
+.sp-btn {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; padding: .55rem 1.1rem;
+  border-radius: .5rem; font-weight: 600; font-size: .95rem; line-height: 1.2; cursor: pointer;
+  border: 2px solid var(--sp-amber); background: var(--sp-amber); color: var(--sp-navy);
+}
+.sp-btn:hover { background: var(--sp-amber-hover); border-color: var(--sp-amber-hover); color: #fff; }
+.sp-btn--ghost { background: transparent; color: var(--sp-navy); border-color: var(--sp-navy); }
+.sp-btn--ghost:hover { background: var(--sp-navy); border-color: var(--sp-navy); color: #fff; }
+.sp-btn[disabled], .sp-btn[aria-disabled='true'] { opacity: .5; cursor: not-allowed; }
+.sp-root :is(a, button, summary, input, select):focus-visible { outline: 3px solid var(--sp-navy); outline-offset: 2px; box-shadow: 0 0 0 5px #fff; }
+.sp-hero :is(a, button):focus-visible { outline-color: #fff; box-shadow: 0 0 0 5px var(--sp-navy); }
+
+.sp-card { background: var(--sp-card); border: 1px solid var(--sp-border-soft); border-radius: .5rem; box-shadow: 0 1px 2px rgb(15 23 42 / .06); }
+.sp-callout { background: var(--sp-callout); border-left: 4px solid var(--sp-amber); border-radius: 0 .375rem .375rem 0; padding: .75rem 1.25rem; }
+.sp-prose { max-width: 42rem; font-size: 18px; line-height: 1.7; }
+.sp-prose p { margin: 0 0 1rem; }
+.sp-muted { color: var(--sp-muted); }
+.sp-eyebrow { font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--sp-amber); }
+.sp-status { display: inline-block; font-size: .75rem; font-weight: 600; padding: .15rem .6rem; border-radius: 999px; background: #f1f5f9; color: var(--sp-muted); border: 1px solid var(--sp-border); }
+
+/* Discovery doors: semantic <details>; each opens independently */
+.sp-door { border: 1px solid var(--sp-border-soft); border-radius: .5rem; background: var(--sp-card); }
+.sp-door > summary { list-style: none; cursor: pointer; padding: .9rem 1rem; display: flex; gap: .75rem; align-items: flex-start; min-height: 44px; }
+.sp-door > summary::-webkit-details-marker { display: none; }
+.sp-door > summary::after { content: '+'; margin-left: auto; font-weight: 700; color: var(--sp-amber-hover); font-size: 1.25rem; line-height: 1; }
+.sp-door[open] > summary::after { content: '–'; }
+.sp-door[open] { border-color: var(--sp-amber); }
+.sp-door-body { padding: 0 1rem 1rem; border-top: 1px solid var(--sp-border-soft); }
+
+/* Keyboard + path diagrams */
+.sp-diagram { width: 100%; height: auto; display: block; }
+.sp-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* View modes: learner (default), reveal, blank (printable) */
+.sp-lesson[data-view='blank'] .sp-answer, .sp-lesson:not([data-view='blank']) .sp-blank { display: none; }
+.sp-blank-line { display: block; border-bottom: 1.5px solid #0f172a; height: 2.2rem; margin: .25rem 0; }
+
+@media (prefers-reduced-motion: reduce) { .sp-root * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+@media print {
+  body { background: #fff !important; color: #000 !important; font-size: 12pt; }
+  nav, footer, .sp-noprint { display: none !important; }
+  .sp-hero { background: #fff !important; color: #000 !important; border-bottom: 2px solid #000; }
+  .sp-hero * { color: #000 !important; }
+  .sp-card, .sp-door { box-shadow: none; border-color: #000; break-inside: avoid; }
+  .sp-door:not([open]) > .sp-door-body { display: block; }
+  a[href^='http']::after { content: ' (' attr(href) ')'; font-size: 9pt; word-break: break-all; }
+}

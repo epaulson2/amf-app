@@ -1,0 +1,434 @@
+{
+ "version": "w78-data-v1.0",
+ "convention": "C4 = MIDI 60",
+ "drone": {
+  "midi": 48,
+  "start": 0.0,
+  "dur": 16.0,
+  "name": "C3"
+ },
+ "melody": {
+  "A": [
+   {
+    "midi": 60,
+    "name": "C4",
+    "start": 0,
+    "dur": 1.5
+   },
+   {
+    "midi": 62,
+    "name": "D4",
+    "start": 1.5,
+    "dur": 1.5
+   },
+   {
+    "midi": 64,
+    "name": "E4",
+    "start": 3,
+    "dur": 1.5
+   },
+   {
+    "midi": 65,
+    "name": "F4",
+    "start": 4.5,
+    "dur": 2.5
+   },
+   {
+    "midi": 67,
+    "name": "G4",
+    "start": 7,
+    "dur": 1.5
+   },
+   {
+    "midi": 65,
+    "name": "F4",
+    "start": 8.5,
+    "dur": 2.5
+   },
+   {
+    "midi": 64,
+    "name": "E4",
+    "start": 11,
+    "dur": 1.5
+   },
+   {
+    "midi": 60,
+    "name": "C4",
+    "start": 12.5,
+    "dur": 3.5
+   }
+  ],
+  "B": [
+   {
+    "midi": 60,
+    "name": "C4",
+    "start": 0,
+    "dur": 1.5
+   },
+   {
+    "midi": 62,
+    "name": "D4",
+    "start": 1.5,
+    "dur": 1.5
+   },
+   {
+    "midi": 64,
+    "name": "E4",
+    "start": 3,
+    "dur": 1.5
+   },
+   {
+    "midi": 66,
+    "name": "F♯4",
+    "start": 4.5,
+    "dur": 2.5
+   },
+   {
+    "midi": 67,
+    "name": "G4",
+    "start": 7,
+    "dur": 1.5
+   },
+   {
+    "midi": 66,
+    "name": "F♯4",
+    "start": 8.5,
+    "dur": 2.5
+   },
+   {
+    "midi": 64,
+    "name": "E4",
+    "start": 11,
+    "dur": 1.5
+   },
+   {
+    "midi": 60,
+    "name": "C4",
+    "start": 12.5,
+    "dur": 3.5
+   }
+  ]
+ },
+ "collections": {
+  "major": [
+   60,
+   62,
+   64,
+   65,
+   67,
+   69,
+   71
+  ],
+  "lydian": [
+   60,
+   62,
+   64,
+   66,
+   67,
+   69,
+   71
+  ]
+ },
+ "changed_pitch": {
+  "from": 65,
+  "to": 66
+ },
+ "facts": {
+  "C4_to_F4": 5,
+  "C4_to_F#4": 6,
+  "F4_to_F#4": 1,
+  "shared_pitch_classes": [
+   0,
+   2,
+   4,
+   7,
+   9,
+   11
+  ]
+ },
+ "melody_pitch_classes": {
+  "A": [
+   0,
+   2,
+   4,
+   5,
+   7
+  ],
+  "B": [
+   0,
+   2,
+   4,
+   6,
+   7
+  ],
+  "shared": [
+   0,
+   2,
+   4,
+   7
+  ]
+ },
+ "harmony_optional": {
+  "id": "7B-06-harmony",
+  "duration_s": 8,
+  "held": {
+   "midi": 72,
+   "name": "C5",
+   "start": 0,
+   "end": 8,
+   "patch": "plain"
+  },
+  "support": [
+   {
+    "chord": "C major",
+    "midis": [
+     48,
+     52,
+     55
+    ],
+    "names": [
+     "C3",
+     "E3",
+     "G3"
+    ],
+    "start": 0,
+    "end": 4,
+    "melody_role": "root"
+   },
+   {
+    "chord": "D minor",
+    "midis": [
+     50,
+     53,
+     57
+    ],
+    "names": [
+     "D3",
+     "F3",
+     "A3"
+    ],
+    "start": 4,
+    "end": 8,
+    "melody_role": "added seventh (not a member of the D minor triad)"
+   }
+  ],
+  "changed": "support chord only"
+ },
+ "patches": {
+  "plain": {
+   "label": "plain patch",
+   "description": "single sine at the MIDI fundamental",
+   "harmonics": [
+    1.0
+   ],
+   "lowpass_hz": null,
+   "detune_cents": 0,
+   "attack_s": 0.03,
+   "release_s": 0.12
+  },
+  "rich": {
+   "label": "rich patch",
+   "description": "integer harmonics 1-6 of the same MIDI fundamental, low-pass 2.5 kHz; no detune, no chorus",
+   "harmonics": [
+    1.0,
+    0.5,
+    0.33,
+    0.25,
+    0.2,
+    0.17
+   ],
+   "lowpass_hz": 2500,
+   "detune_cents": 0,
+   "attack_s": 0.25,
+   "release_s": 0.6,
+   "note": "timbre only: the fundamental equals the MIDI pitch exactly, so this is not a change to the MIDI note"
+  }
+ },
+ "grid_2x2": [
+  {
+   "id": "plain-F",
+   "pitch": "F",
+   "patch": "plain",
+   "melody": "A",
+   "midi_changed": false
+  },
+  {
+   "id": "plain-F#",
+   "pitch": "F#",
+   "patch": "plain",
+   "melody": "B",
+   "midi_changed": true
+  },
+  {
+   "id": "rich-F",
+   "pitch": "F",
+   "patch": "rich",
+   "melody": "A",
+   "midi_changed": false
+  },
+  {
+   "id": "rich-F#",
+   "pitch": "F#",
+   "patch": "rich",
+   "melody": "B",
+   "midi_changed": true
+  }
+ ],
+ "register_control": {
+  "shift": 12,
+  "melody": [
+   {
+    "midi": 72,
+    "name": "C5",
+    "start": 0,
+    "dur": 1.5
+   },
+   {
+    "midi": 74,
+    "name": "D5",
+    "start": 1.5,
+    "dur": 1.5
+   },
+   {
+    "midi": 76,
+    "name": "E5",
+    "start": 3,
+    "dur": 1.5
+   },
+   {
+    "midi": 77,
+    "name": "F5",
+    "start": 4.5,
+    "dur": 2.5
+   },
+   {
+    "midi": 79,
+    "name": "G5",
+    "start": 7,
+    "dur": 1.5
+   },
+   {
+    "midi": 77,
+    "name": "F5",
+    "start": 8.5,
+    "dur": 2.5
+   },
+   {
+    "midi": 76,
+    "name": "E5",
+    "start": 11,
+    "dur": 1.5
+   },
+   {
+    "midi": 72,
+    "name": "C5",
+    "start": 12.5,
+    "dur": 3.5
+   }
+  ],
+  "drone": {
+   "midi": 48,
+   "start": 0.0,
+   "dur": 16.0,
+   "name": "C3"
+  },
+  "note": "upper melody +12 MIDI; same pitch classes and contour; scale collection unchanged"
+ },
+ "w8": {
+  "demo_is_optional": true,
+  "seed": [
+   {
+    "midi": 60,
+    "name": "C4",
+    "start": 0,
+    "dur": 2
+   },
+   {
+    "midi": 64,
+    "name": "E4",
+    "start": 2,
+    "dur": 2
+   },
+   {
+    "midi": 67,
+    "name": "G4",
+    "start": 4,
+    "dur": 2
+   },
+   {
+    "midi": 64,
+    "name": "E4",
+    "start": 6,
+    "dur": 4
+   }
+  ],
+  "sections": [
+   {
+    "name": "arrival",
+    "start": 0,
+    "end": 30
+   },
+   {
+    "name": "drift",
+    "start": 30,
+    "end": 100
+   },
+   {
+    "name": "return",
+    "start": 100,
+    "end": 150
+   },
+   {
+    "name": "open ending",
+    "start": 150,
+    "end": 170,
+    "open": true
+   }
+  ],
+  "lanes": {
+   "bass": [
+    [
+     0,
+     100
+    ]
+   ],
+   "melody": [
+    [
+     20,
+     60
+    ],
+    [
+     75,
+     130
+    ]
+   ],
+   "texture": [
+    [
+     40,
+     120
+    ]
+   ]
+  },
+  "total_s": 170,
+  "rule": "learner compositions are private and self-determined; no fixed notes are assigned"
+ },
+ "scene_states": {
+  "7A": [
+   "hidden",
+   "A played",
+   "learner predicts",
+   "B played",
+   "compare",
+   "optional label reveal"
+  ],
+  "7B": [
+   "audition 2x2 without labels",
+   "reveal factor labels"
+  ],
+  "8": [
+   "learner-authored maps only"
+  ]
+ },
+ "status": "STATIC_SOURCE; no web component or audio engine built",
+ "data_sha256": "c154be714472b623c968419d4b080b03bfba50b6e4ab304d5bd38e35f90c8d8a"
+}
