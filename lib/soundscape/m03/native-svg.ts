@@ -95,7 +95,7 @@ export function lanes(c: Ctx, ls: Lane[], total: number, o: { w?: number; tick?:
   let g = ''
   ls.forEach((l, i) => {
     const y = y0 + i * (laneH + gap)
-    g += `<rect x="${x0}" y="${y}" width="${pw}" height="${laneH}" rx="8" fill="${c.print ? '#fff' : '#fffaf3'}" stroke="#e5d6dc" stroke-width="1"/>` + txt((o.x0 ?? 0) + 6, y + laneH / 2 + 5, l.name, { size: 13.5, weight: 600, fill: l.tone === 'lower' ? '#7a4a12' : '#1f5c56', sans: true })
+    g += `<rect x="${x0}" y="${y}" width="${pw}" height="${laneH}" rx="8" fill="${c.print ? '#fff' : '#fffaf3'}" stroke="#e5d6dc" stroke-width="1"/>` + txt((o.x0 ?? 0) + 6, y + laneH / 2 + 5, l.name, { size: 13.5, weight: 600, fill: l.tone === 'lower' ? '#7a4a12' : '#1f5c56', sans: true, halo: true })
     for (const e of l.events) {
       const a = X(e.start), b = X(e.start + e.dur)
       g += `<rect x="${a}" y="${y + 6}" width="${b - a}" height="${laneH - 12}" rx="7" fill="${c.print ? (l.tone === 'lower' ? '#f1dfc0' : '#d5ece9') : (l.tone === 'lower' ? '#f3b25a' : '#8fcdc6')}" stroke="${l.tone === 'lower' ? AMBER : TEAL}" stroke-width="1.6"/>`
@@ -110,8 +110,8 @@ export function lanes(c: Ctx, ls: Lane[], total: number, o: { w?: number; tick?:
   })
   const ay = y0 + ls.length * (laneH + gap) + 4
   g += `<path d="M${x0} ${ay} h${pw}" stroke="#a3778f" stroke-width="1.4"/>`
-  for (let t = 0; t <= total + 1e-9; t += tk) g += `<path d="M${X(t)} ${ay} v6" stroke="#a3778f"/>` + txt(X(t), ay + 22, `${+t.toFixed(1)}`, { size: 12, anchor: 'middle', fill: MUTED, sans: true })
-  g += txt(x0 + pw, ay + 40, 'seconds', { size: 12, anchor: 'end', fill: MUTED, sans: true, italic: true })
+  for (let t = 0; t <= total + 1e-9; t += tk) g += `<path d="M${X(t)} ${ay} v6" stroke="#a3778f"/>` + txt(X(t), ay + 22, `${+t.toFixed(1)}`, { size: 12, anchor: 'middle', fill: MUTED, sans: true, halo: true })
+  g += txt(x0 + pw, ay + 40, 'seconds', { size: 12, anchor: 'end', fill: MUTED, sans: true, italic: true, halo: true })
   return { w, h: ay + 48 - (o.y0 ?? 0), body: g }
 }
 
