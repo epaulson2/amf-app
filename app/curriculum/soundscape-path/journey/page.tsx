@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { BASE, WEEKS } from '@/lib/soundscape/course'
+import { Scene, Wrap, Lead, Figure } from '@/components/soundscape/m04/kit'
 
 export const metadata: Metadata = { title: 'Your Eight-Week Journey — Ajourné into Music' }
 
@@ -11,43 +12,40 @@ const MONTHS = [
 
 export default function Journey() {
   return (
-    <div>
-      <header className="sp-hero py-10 px-4 sm:px-6" style={{ backgroundColor: '#0f172a' }}>
-        <div className="max-w-4xl mx-auto">
-          <p className="sp-eyebrow m-0 mb-2">The first two months</p>
-          <h1 className="sp-editorial-title text-white text-3xl sm:text-4xl m-0">From one note to your own musical world</h1>
-          <p className="text-slate-300 mt-3 max-w-2xl">Eight weeks of listening, learning and creating. Each discovery becomes something you can hear—and something you can use.</p>
-          <p className="text-slate-300 max-w-2xl mb-0">The two-month path has two movements. First we discover musical relationships. Then we learn to shape them into a larger journey.</p>
-        </div>
-      </header>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-12">
-        <p className="sp-callout max-w-2xl m-0"><span className="sp-status mr-2">Preview</span>Weeks 1 and 2 are open. Each later week will link to its own page as its lessons are completed and checked.</p>
+    <Scene>
+      <Wrap>
+        <header className="m4-hero">
+          <p className="m4-eyebrow">The first two months</p>
+          <h1>From one note to <em>your own musical world</em></h1>
+          <Lead>Eight weeks of listening, learning and creating, all on your own keyboard. Each discovery becomes something you can hear and something you can use.</Lead>
+          <p style={{ maxWidth: '40rem' }}>The path has two movements. First we discover musical relationships. Then we learn to shape them into a larger journey.</p>
+          <p className="m4-caveat" style={{ maxWidth: '40rem' }}><strong>Weeks 1 and 2 are open.</strong> Weeks 3 to 8 are still being built; each will link to its own page when its lessons are ready.</p>
+        </header>
         {MONTHS.map(m => (
-          <section key={m.eyebrow} aria-label={m.eyebrow}>
-            <p className="sp-eyebrow m-0">{m.eyebrow}</p>
-            <p className="sp-prose mt-2">{m.intro}</p>
-            <ol className="list-none p-0 space-y-4">
+          <section key={m.eyebrow} className="m4-section" aria-label={m.eyebrow}>
+            <p className="m4-eyebrow">{m.eyebrow}</p>
+            <p className="m4-lead" style={{ maxWidth: '40rem' }}>{m.intro}</p>
+            <ol className="m4-weeks" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(min(100%,420px),1fr))' }}>
               {m.weeks.map(w => (
-                <li key={w.n} className="sp-card p-5">
-                  <div className="flex items-baseline justify-between gap-3 flex-wrap">
-                    <h2 className="sp-editorial-heading text-xl text-slate-900 m-0"><span className="sp-muted text-base font-medium mr-2">Week {w.n}</span>{w.title}</h2>
-                    {w.n <= 2 ? <Link href={`${BASE}/week-${w.n}`} className="sp-btn">Open Week {w.n}</Link> : <span className="sp-status">Lesson pages in preparation</span>}
-                  </div>
-                  <p className="text-base mt-2 mb-1">{w.learning}</p>
-                  <p className="text-base sp-muted m-0"><strong className="text-slate-800">Create:</strong> {w.creation}</p>
+                <li key={w.n} className={w.n <= 2 ? 'on' : undefined}>
+                  <p className="m4-eyebrow">Week {w.n}</p>
+                  <h2 style={{ fontSize: 28, margin: '6px 0 8px' }}>{w.title}</h2>
+                  <p>{w.learning}</p>
+                  <p style={{ color: '#6f5f6c' }}><strong>Create:</strong> {w.creation}</p>
+                  <p className="m4-soon">{w.n <= 2 ? <Link className="m4-btn" href={`${BASE}/week-${w.n}`}>Open Week {w.n}</Link> : 'Lesson pages in preparation'}</p>
                 </li>
               ))}
             </ol>
-            <p className="sp-prose sp-muted">{m.close}</p>
+            <p style={{ maxWidth: '40rem', color: '#6f5f6c' }}>{m.close}</p>
           </section>
         ))}
-        <section>
-          <h2 className="sp-editorial-heading text-2xl text-slate-900">A path, not a finish line</h2>
-          <p className="sp-prose mt-2">You can revisit a week, pause to make more music, or explore a deeper question when curiosity takes you there. Each step is meant to become part of your musical practice long after the lesson ends.</p>
-          <p><Link href={`${BASE}/how-it-works`} className="sp-btn sp-btn--ghost">See how we learn</Link></p>
+        <section className="m4-section" aria-labelledby="path-h">
+          <h2 id="path-h">A path, not a finish line</h2>
+          <p style={{ maxWidth: '40rem' }}>You can revisit a week, pause to make more music, or explore a deeper question when curiosity takes you there. Each step is meant to become part of your musical imagination.</p>
+          <ul className="m4-cta"><li><Link className="m4-btn" href={`${BASE}/week-1/lesson-1a`}>Start Lesson 1A</Link></li><li><Link className="m4-btn m4-btn--ghost" href={`${BASE}/how-it-works`}>See how we learn</Link></li></ul>
         </section>
-        <p className="text-sm sp-muted border-t border-slate-200 pt-6">Ajourné into Music · An AMF introductory creative-music track</p>
-      </div>
-    </div>
+        <p className="m4-foot">Ajourné into Music · An AMF introductory creative-music track</p>
+      </Wrap>
+    </Scene>
   )
 }

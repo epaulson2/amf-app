@@ -1,0 +1,394 @@
+{
+ "S06-native": {
+  "title": "Week 1 roadmap: Find C, Travel, Add a voice",
+  "desc": "Three steps in order: 1 Find C, 2 Travel, 3 Add a voice. Below, a keyboard drawing with brackets over the groups of two, three and two black keys; both Cs are highlighted, each the white key just left of a group of two black keys."
+ },
+ "A01-native": {
+  "title": "One note on a keyboard",
+  "desc": "A short run of six white keys with one key highlighted and no letters. One sound only: not a chord, not a scale."
+ },
+ "A02-native": {
+  "title": "Pitch versus loudness",
+  "desc": "Top: seven white keys; a key and the key to its right are highlighted, with lower to the left and higher to the right. Bottom: the same key played softer and louder, shown as small and large ripples. Higher or lower depends on which key; louder or softer depends on how hard you press."
+ },
+ "A03-native": {
+  "title": "Finding C from the black keys",
+  "desc": "Ten white keys. Black keys sit in a group of two, then three, then two, marked 2, 3, 2. The white key just left of each group of two is C; both Cs are highlighted."
+ },
+ "A03-narrow": {
+  "title": "Finding C (narrow layout)",
+  "desc": "Eight white keys with groups of two and three black keys marked; the first and last white keys are C, highlighted."
+ },
+ "A05-native": {
+  "title": "Seven names, then C again",
+  "desc": "Eight white keys numbered 1 to 8 with the letters C D E F G A B C. The first and last are both C. There is no black key between E and F or between B and C."
+ },
+ "A05-narrow": {
+  "title": "Seven names, then C again (narrow layout)",
+  "desc": "Eight numbered white keys lettered C D E F G A B C."
+ },
+ "A07-native": {
+  "title": "Up and back down from C to C",
+  "desc": "Two copies of the same eight white keys. First numbered 1 to 8 from the left C to the right C, going up. Second numbered 1 to 8 from the right C back to the left C, going down."
+ },
+ "A06-native": {
+  "title": "Two Cs, one octave apart",
+  "desc": "Eight white keys. The left-most and right-most are both C and highlighted, joined by an arc labelled one octave up. The right one is higher."
+ },
+ "A08-native": {
+  "title": "Two endings: away from C and home to C",
+  "desc": "Two keyboards. Version 1 plays the white keys C D E F G in order and stops on G. Version 2 plays C D E D C and stops on C, the home note. Practice example only."
+ },
+ "A09-native": {
+  "title": "A note that stays while others visit",
+  "desc": "Three timelines of six seconds. In each, C sounds the whole time on the lower line, while one visiting note (E, then G, then D in the three examples) sounds from about 1 to 4.5 seconds on the upper line."
+ },
+ "A10-native": {
+  "title": "A tiny melody with a pause (example)",
+  "desc": "An example idea in four boxes and a dashed pause: C, D, E, pause, C. A keyboard shows the first three keys. This is an example; learners choose their own notes."
+ },
+ "A11-native": {
+  "title": "Your own sound-to-colour map",
+  "desc": "Three empty dashed circles labelled sound 1, sound 2 and sound 3, each with two blank writing lines. Your own sound-to-colour interpretation: there is no fixed colour for any note."
+ },
+ "A12-native": {
+  "title": "Lesson 1A recap",
+  "desc": "Four small panels. 1: the two-then-three black-key pattern with both Cs highlighted. 2: the white keys C to the next C, one octave. 3: C at the centre with D E F G A B around it, chosen as home in this exercise. 4: a twelve-second timeline where the lower C is held while the upper voice visits E, G and D."
+ },
+ "B01-early": {
+  "title": "Seven rising notes, unfinished",
+  "desc": "Seven white keys numbered 1 to 7 with the letters C D E F G A B, played one at a time. The path stops on the seventh note."
+ },
+ "B01-pair": {
+  "title": "Same beginning, different last note",
+  "desc": "Two keyboards. Ending 1 plays C D E F G A B and stops on B. Ending 2 plays the same seven notes and then adds the higher C, highlighted as home. Only the second adds the higher C."
+ },
+ "B02-native": {
+  "title": "Where the half steps really are",
+  "desc": "Three keyboard pieces, each one semitone: E to F (two white keys with no black key between them), B to C (also no black key between), and C to C sharp (a white key and the black key right next to it)."
+ },
+ "B03-native": {
+  "title": "A whole step is two semitones",
+  "desc": "Left: C to D passes through the black key C sharp, two one-semitone hops, a whole step. Right: E to F sharp passes through F, also two semitones."
+ },
+ "B04-native": {
+  "title": "One white-key move, two real distances",
+  "desc": "Left: C to D crosses one black key, so it is 2 semitones. Right: E to F has no black key between them, so it is 1 semitone. Each move is one white key, but the distances differ."
+ },
+ "B05-native": {
+  "title": "C major: whole, whole, half, whole, whole, whole, half",
+  "desc": "Eight white keys C to C. Arcs between neighbouring scale notes are labelled W for a whole step of 2 semitones or H for a half step of 1: W W H W W W H. The half steps are E to F and B to C."
+ },
+ "B06-native": {
+  "title": "Seven names and the next C",
+  "desc": "Eight white keys numbered 1 to 8 lettered C D E F G A B C; the first and last are both C."
+ },
+ "B09-native": {
+  "title": "Closeness versus measured distance",
+  "desc": "Left: C to C sharp is 1 semitone, the very next key. Right: C to D is 2 semitones. The painted arcs are only decoration; the numbered hops on the real keys are the measurement."
+ },
+ "B10-native": {
+  "title": "Make an open ending and an arrival",
+  "desc": "Two keyboards sharing the opening C D E: one ends on G, the other ends on C. Authored practice patterns, not a lesson recording."
+ },
+ "B11-native": {
+  "title": "The same pattern from G (optional)",
+  "desc": "Eight white keys starting on G. The same whole-whole-half-whole-whole-whole-half arcs, with the seventh note the black key F sharp. Optional enrichment."
+ },
+ "C01-native": {
+  "title": "A held lower C with three visiting notes",
+  "desc": "Twelve-second timeline. Lower voice: C for the whole 12 seconds. Upper voice: E from 2 to 4 seconds, G from 5 to 7, D from 9 to 11."
+ },
+ "C02-native": {
+  "title": "Two distinct voices",
+  "desc": "A timeline of the lower voice holding C while the upper voice plays E, G, D, and below it a keyboard showing the lower C and the upper notes D, E and G further to the right."
+ },
+ "C03-native": {
+  "title": "Lower and higher voice positions",
+  "desc": "Fourteen white keys. The lower voice is the highlighted C on the left. The upper voice is the highlighted D, E and G further right."
+ },
+ "C04-native": {
+  "title": "Early versus late entrance",
+  "desc": "Two twelve-second timelines with the lower C held throughout. In the first, the upper E plays from 2 to 6 seconds. In the second, the same E plays from 7 to 11 seconds. Only the entrance time differs."
+ },
+ "C05-native": {
+  "title": "Time as a musical relationship",
+  "desc": "Twelve-second timeline with one-second ticks. Lower C 0 to 12. Upper E 2 to 4, G 5 to 7, D 9 to 11."
+ },
+ "C06-native": {
+  "title": "One voice alone, then both together",
+  "desc": "Three twelve-second timelines using the same events: the lower C alone, the upper notes E, G and D alone, and both together."
+ },
+ "C07-native": {
+  "title": "The same 36 seconds, two endings",
+  "desc": "Two 36-second timelines with the same held lower C and the same upper notes E, G, D, B. The second adds one extra upper note, a higher C from 33 to 35.8 seconds."
+ },
+ "C08-native": {
+  "title": "Silence as space",
+  "desc": "The twelve-second example with the upper voice resting between its notes: 0 to 2, 4 to 5, 7 to 9 and 11 to 12 seconds, shown as dashed boxes labelled rest, while the lower C keeps sounding."
+ },
+ "C09-native": {
+  "title": "Compose a two-voice story: worksheet",
+  "desc": "Five numbered boxes with writing lines: 1 Set a scene, 2 Imagine a visitor, 3 Leave some room, 4 Change something, 5 Choose an ending. Below, eight white keys lettered C to C for reference."
+ },
+ "C10-native": {
+  "title": "Week 1 soundscape map",
+  "desc": "The twelve-second example: lower C held, upper E, G, D visiting. Caption: the lower line stayed, the upper line changed; Week 2 moves the lower line as well."
+ },
+ "S07-native": {
+  "title": "Two Voices: Week 2 roadmap",
+  "desc": "Heading Two Voices, then a four-step roadmap: a pair, the interval, movement, changed support."
+ },
+ "D01-native": {
+  "title": "C and E together: a dyad",
+  "desc": "Five white keys B C D E F. C is highlighted as the lower voice and E as the upper voice."
+ },
+ "D02-native": {
+  "title": "The two keys: C and E",
+  "desc": "Three white keys C D E with C and E highlighted and D between them."
+ },
+ "D03-native": {
+  "title": "C to E is four semitones",
+  "desc": "Three white keys with the two black keys between them. Four numbered hops carry C to E through C sharp, D and D sharp. Four semitones, a major third."
+ },
+ "D04-native": {
+  "title": "C to E compared with C to F",
+  "desc": "Left: C to E counts four semitones, a major third. Right: C to F counts five semitones, a perfect fourth."
+ },
+ "D05-native": {
+  "title": "Hold C, move E up to F",
+  "desc": "Two keyboards: C and E, then C and F. The lower C stays; the upper voice rises one semitone from E to F."
+ },
+ "D06-native": {
+  "title": "Hold E, move the lower C",
+  "desc": "Two examples. First C and E become B and E: the lower voice falls one semitone. Second C and E become D and E: the lower voice rises two semitones. The upper E stays."
+ },
+ "D07-native": {
+  "title": "Two voices across five seconds",
+  "desc": "Lower voice: C for the whole five seconds. Upper voice: E from 0 to 2.5 seconds, then F from 2.5 to 5."
+ },
+ "D09-native": {
+  "title": "Try three dyads",
+  "desc": "Three practice pairs, each starting from C and E: upper E to F, lower C to B, lower C to D."
+ },
+ "D10-native": {
+  "title": "Lesson 2A recap",
+  "desc": "An interval is counted in semitones: C to E is four, C to F is five. Then one voice moves while the other stays: C and E become C and F."
+ },
+ "E01-native": {
+  "title": "One beginning, five changes",
+  "desc": "Five endings that all start from C and E: C and F, B and E, D and E, B and F, D and F. They show three kinds of motion: oblique, contrary and similar."
+ },
+ "E02-native": {
+  "title": "Oblique motion: one voice holds",
+  "desc": "Three examples where one voice stays and the other moves: upper E up to F; lower C down to B; lower C up to D."
+ },
+ "E03-native": {
+  "title": "Contrary motion: moving apart",
+  "desc": "C and E become B and F: the lower voice falls and the upper voice rises. B to F is six semitones, a diminished fifth (tritone)."
+ },
+ "E04-native": {
+  "title": "Similar motion: rising together",
+  "desc": "C and E become D and F: the lower voice rises two semitones and the upper voice rises one. D to F is three semitones, a minor third."
+ },
+ "E07-native": {
+  "title": "All five examples, three kinds of motion",
+  "desc": "Five rows, each from C and E: B1 upper rises (oblique), B2 lower falls (oblique), B3 lower rises (oblique), B4 both move apart (contrary), B5 both rise (similar)."
+ },
+ "E08-native": {
+  "title": "B to F: the tritone lens",
+  "desc": "Five white keys B C D E F. B and F are highlighted; six numbered hops cross the black keys between them. Five letter names, six semitones: a diminished fifth, also called a tritone."
+ },
+ "E09-native": {
+  "title": "A conversation in four stages",
+  "desc": "Four keyboards in order: C and E, C and F, B and F, then back to C and E. Each stage lasts two and a half seconds."
+ },
+ "E10-native": {
+  "title": "Four moments on a timeline",
+  "desc": "Ten-second timeline. Lower voice: C 0 to 5, B 5 to 7.5, C 7.5 to 10. Upper voice: E 0 to 2.5, F 2.5 to 7.5, E 7.5 to 10."
+ },
+ "E11-native": {
+  "title": "Compose a two-voice conversation",
+  "desc": "An example of four stages (C and E, C and F, B and F, C and E), then two blank dashed lanes for your own lower and upper voices to sketch."
+ },
+ "F01-native": {
+  "title": "Same upper melody, two foundations",
+  "desc": "Two 36-second timelines with the identical upper line E (4 to 10), F (14 to 20), E (26 to 32). In situation 1 the lower voice holds C throughout. In situation 2 it plays C for 0 to 12, B for 12 to 24 and C for 24 to 36."
+ },
+ "F04-native": {
+  "title": "Shared and only-here notes at the F moment",
+  "desc": "Labels over the two overlapping fields. Left: C, only in situation 1. Centre overlap: F, shared by both. Right: B, only in situation 2."
+ },
+ "F05-native": {
+  "title": "Objective change versus personal response",
+  "desc": "Two columns. Left, what changes: the upper melody is identical, only the lower voice differs. Right, an open question: how did that feel to you? No right answer."
+ },
+ "F06-native": {
+  "title": "Two versions aligned in time",
+  "desc": "Two registered 36-second timelines with the same upper line and a shaded band over 14 to 20 seconds, the F moment. Empty upper-voice parts are marked as rests while the lower voice may still sound."
+ },
+ "F07-native": {
+  "title": "C to F versus B to F",
+  "desc": "Left: C to F is five semitones, a perfect fourth. Right: B to F is six semitones, a diminished fifth or tritone. The melody note F is the same in both."
+ },
+ "F08-native": {
+  "title": "A two-voice dialogue (optional practice path)",
+  "desc": "Four keyboards in order: C and E, C and F, B and F, C and E, two seconds each. An optional path to play and then change."
+ },
+ "F09-native": {
+  "title": "One melody in two contexts",
+  "desc": "Three moments of the melody, E then F then E, in each situation. Upper notes are identical. Lower voice: situation 1 is C, C, C; situation 2 is C, B, C."
+ },
+ "F10-native": {
+  "title": "Week 2 recap: three anchors",
+  "desc": "Three small panels: C to E is four semitones; a four-stage motion C+E, C+F, B+F, C+E; and two situations sharing only the note F."
+ },
+ "T07-IP-00": {
+  "title": "Perfect unison: 0 semitones",
+  "desc": "Perfect unison (P1), C and C, 0 semitones apart, 1 letter names."
+ },
+ "T08-IP-00": {
+  "title": "Atlas chapter IP-00: Perfect unison",
+  "desc": "Chapter opening for Perfect unison: 0 semitones, C to C."
+ },
+ "T07-IP-01": {
+  "title": "Minor second: 1 semitones",
+  "desc": "Minor second (m2), C and D♭, 1 semitones apart, 2 letter names."
+ },
+ "T08-IP-01": {
+  "title": "Atlas chapter IP-01: Minor second",
+  "desc": "Chapter opening for Minor second: 1 semitones, C to D♭."
+ },
+ "T07-IP-02": {
+  "title": "Major second: 2 semitones",
+  "desc": "Major second (M2), C and D, 2 semitones apart, 2 letter names."
+ },
+ "T08-IP-02": {
+  "title": "Atlas chapter IP-02: Major second",
+  "desc": "Chapter opening for Major second: 2 semitones, C to D."
+ },
+ "T07-IP-03": {
+  "title": "Minor third: 3 semitones",
+  "desc": "Minor third (m3), C and E♭, 3 semitones apart, 3 letter names."
+ },
+ "T08-IP-03": {
+  "title": "Atlas chapter IP-03: Minor third",
+  "desc": "Chapter opening for Minor third: 3 semitones, C to E♭."
+ },
+ "T07-IP-04": {
+  "title": "Major third: 4 semitones",
+  "desc": "Major third (M3), C and E, 4 semitones apart, 3 letter names."
+ },
+ "T08-IP-04": {
+  "title": "Atlas chapter IP-04: Major third",
+  "desc": "Chapter opening for Major third: 4 semitones, C to E."
+ },
+ "T07-IP-05": {
+  "title": "Perfect fourth: 5 semitones",
+  "desc": "Perfect fourth (P4), C and F, 5 semitones apart, 4 letter names."
+ },
+ "T08-IP-05": {
+  "title": "Atlas chapter IP-05: Perfect fourth",
+  "desc": "Chapter opening for Perfect fourth: 5 semitones, C to F."
+ },
+ "T07-IP-06": {
+  "title": "Tritone: 6 semitones",
+  "desc": "Tritone (A4/d5), C and F♯, 6 semitones apart, 4 letter names."
+ },
+ "T08-IP-06": {
+  "title": "Atlas chapter IP-06: Tritone",
+  "desc": "Chapter opening for Tritone: 6 semitones, C to F♯."
+ },
+ "T07-IP-07": {
+  "title": "Perfect fifth: 7 semitones",
+  "desc": "Perfect fifth (P5), C and G, 7 semitones apart, 5 letter names."
+ },
+ "T08-IP-07": {
+  "title": "Atlas chapter IP-07: Perfect fifth",
+  "desc": "Chapter opening for Perfect fifth: 7 semitones, C to G."
+ },
+ "T07-IP-08": {
+  "title": "Minor sixth: 8 semitones",
+  "desc": "Minor sixth (m6), C and A♭, 8 semitones apart, 6 letter names."
+ },
+ "T08-IP-08": {
+  "title": "Atlas chapter IP-08: Minor sixth",
+  "desc": "Chapter opening for Minor sixth: 8 semitones, C to A♭."
+ },
+ "T07-IP-09": {
+  "title": "Major sixth: 9 semitones",
+  "desc": "Major sixth (M6), C and A, 9 semitones apart, 6 letter names."
+ },
+ "T08-IP-09": {
+  "title": "Atlas chapter IP-09: Major sixth",
+  "desc": "Chapter opening for Major sixth: 9 semitones, C to A."
+ },
+ "T07-IP-10": {
+  "title": "Minor seventh: 10 semitones",
+  "desc": "Minor seventh (m7), C and B♭, 10 semitones apart, 7 letter names."
+ },
+ "T08-IP-10": {
+  "title": "Atlas chapter IP-10: Minor seventh",
+  "desc": "Chapter opening for Minor seventh: 10 semitones, C to B♭."
+ },
+ "T07-IP-11": {
+  "title": "Major seventh: 11 semitones",
+  "desc": "Major seventh (M7), C and B, 11 semitones apart, 7 letter names."
+ },
+ "T08-IP-11": {
+  "title": "Atlas chapter IP-11: Major seventh",
+  "desc": "Chapter opening for Major seventh: 11 semitones, C to B."
+ },
+ "T07-IP-12": {
+  "title": "Perfect octave: 12 semitones",
+  "desc": "Perfect octave (P8), C and C, 12 semitones apart, 8 letter names."
+ },
+ "T08-IP-12": {
+  "title": "Atlas chapter IP-12: Perfect octave",
+  "desc": "Chapter opening for Perfect octave: 12 semitones, C to C."
+ },
+ "T01-native": {
+  "title": "How to read an interval card",
+  "desc": "Example card: Major third, C and E, 4 semitones. Numbered notes: 1 the name, 2 the two notes, 3 the keyboard with hops, 4 the semitone count."
+ },
+ "D08-native": {
+  "title": "A first Interval Palette card",
+  "desc": "Major third: C and E, 4 semitones. The palette holds 13 cards and 13 chapters."
+ },
+ "T04-native": {
+  "title": "Letters versus semitone hops",
+  "desc": "C to E uses three letter names (C D E) but spans four semitones. B to F uses five letter names (B C D E F) but spans six semitones."
+ },
+ "T05-native": {
+  "title": "The tritone lens",
+  "desc": "Left: B to F from the Week 2 lesson, six semitones. Right: the Atlas card Tritone, C and F♯, six semitones. They are separate examples."
+ },
+ "T09-ruler": {
+  "title": "Semitone ruler: C to C",
+  "desc": "Eight white keys C to the next C with twelve numbered semitone hops across the black and white keys: one octave."
+ },
+ "S12-native": {
+  "title": "How to read our pictures",
+  "desc": "Five symbols: a glow marks the chosen home note; a ribbon is a voice; overlap is what is shared; solid is sounding and dotted is rest or optional; numbers on keys and timelines are the measurement. The size and colour of painted shapes are decoration only."
+ },
+ "S05-native": {
+  "title": "Set up your own keyboard",
+  "desc": "A drawing of a keyboard with black keys in groups of two, then three, then two; left is lower and right is higher. A generic volume knob and three steps: choose a gentle sound, set a comfortable volume, notice the black-key groups."
+ },
+ "X07-native": {
+  "title": "Six enrichment categories",
+  "desc": "The six categories in every lesson: History Postcard, Behind the Sound, Ambient Composer's Notebook, Hear It in Real Music, Musical Worlds, Paint What You Hear. Each has a simple icon and its name written in text."
+ },
+ "A04-native": {
+  "title": "C as home, with the white-key journey",
+  "desc": "C glows at the centre as the chosen home note in this exercise. Around it, in order: D, E, F, G, A and B. A dotted path goes out from C through each note and back home. Distance from the centre is decoration, not a measurement."
+ },
+ "F02-native": {
+  "title": "Held C beneath the same melody",
+  "desc": "A 36-second timeline: the lower voice holds C throughout; the upper voice plays E from 4 to 10, F from 14 to 20, E from 26 to 32, with rests between."
+ },
+ "F03-native": {
+  "title": "The supporting landscape begins to move",
+  "desc": "A 36-second timeline: the lower voice plays C from 0 to 12, B from 12 to 24, C from 24 to 36, under the same upper E, F, E."
+ }
+}
