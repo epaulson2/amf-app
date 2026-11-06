@@ -1,0 +1,58 @@
+[
+ {
+  "src": "G01-B-v2.png",
+  "png": "art/G01-B-concentric-home.png",
+  "webp": "art/G01-B-concentric-home.webp",
+  "size": [
+   1024,
+   1024
+  ],
+  "png_bytes": 1304397,
+  "webp_bytes": 493046,
+  "alpha_border_max": 0,
+  "alpha_mean": 42.6,
+  "png_sha256": "3022dd8f6c151c6f68c1b5c98f0a0639d67e2ddb9dfbc57e81db8d29cd66b753"
+ },
+ {
+  "src": "G03-B-v1.png",
+  "png": "art/G03-B-shared-worlds.png",
+  "webp": "art/G03-B-shared-worlds.webp",
+  "size": [
+   1376,
+   768
+  ],
+  "png_bytes": 1403777,
+  "webp_bytes": 502374,
+  "alpha_border_max": 0,
+  "alpha_mean": 58.8,
+  "png_sha256": "7ae9c19a0aeef22e89954d84e5ed608bc403724dbc85465777d810a25bca4599"
+ },
+ {
+  "src": "G02-ACCENT-v1.png",
+  "png": "art/G02-ACCENT-keyboard-light.png",
+  "webp": "art/G02-ACCENT-keyboard-light.webp",
+  "size": [
+   1584,
+   672
+  ],
+  "png_bytes": 875894,
+  "webp_bytes": 340942,
+  "alpha_border_max": 0,
+  "alpha_mean": 20.4,
+  "png_sha256": "26560ae9b5aa3661b091f70e9eda266544a54d35c3785c47f07afc2571b7e6b4"
+ },
+ {
+  "src": "A-CORNER-v1.png",
+  "png": "art/A-corner-atmosphere.png",
+  "webp": "art/A-corner-atmosphere.webp",
+  "size": [
+   1376,
+   768
+  ],
+  "png_bytes": 994275,
+  "webp_bytes": 373028,
+  "alpha_border_max": 136,
+  "alpha_mean": 29.2,
+  "png_sha256": "117a5127d4a0ca1ee24cc93119a16d1f934458927e48fb1d7d291360c6380d1f"
+ }
+]

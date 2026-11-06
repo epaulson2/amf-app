@@ -1,0 +1,10 @@
+{
+ "ledger_total_usd": 0.228792,
+ "calls": 6,
+ "provider_delta_usd": 0.2288,
+ "cap_usd": 3.0,
+ "remaining_before": 28.9786,
+ "remaining_after": 28.7498,
+ "note": "Account-level delta may include other QCR usage on the shared key during the pilot window; ledger figures are per-call usage.cost from the provider response.",
+ "disclosure": "G01-B-v1 was generated twice (a script re-import re-ran it): the second call overwrote the first output file; both calls are in ledger.json. Wasted: ~$0.038."
+}

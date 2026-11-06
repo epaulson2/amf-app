@@ -1,0 +1,16 @@
+{
+  "stage": "M02", "date": "2026-11-06", "branch": "feat/ajourne-m02-first-three-graphics-20261106", "base": "b4d485dbacb216c8bdc7f44135d2d68b98adbce6",
+  "reference": {"path": "/home/elderle/amf-art-reference/APPROVED_ART_DIRECTION_REFERENCE.png", "sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab", "use": "art direction only, sent as a style image to the generator; never shipped"},
+  "provider": {"via": "OpenRouter", "model": "google/gemini-nano-banana-2.1", "price": "image output $0.00003/token; prompt $1.5/M; completion $7.5/M (queried live 2026-11-06)", "transparency": "none native: generated on pure white, converted with colour-to-alpha + edge feather (docs/m02/alpha_conversion.json)"},
+  "assets": [
+    {"id": "A-CORNER", "layer": "A", "state": "GENERATED + PREVIEW READY", "files": ["public/soundscape/m02/art/A-corner-atmosphere.png", ".webp"], "raw": "public/soundscape/m02/raw/A-CORNER-v1.png", "proof": "alpha border-max 136 only on the two intentional bleed edges (left/top); rendered in screenshots as page atmosphere used twice"},
+    {"id": "G01-B", "layer": "B", "state": "GENERATED + PREVIEW READY", "files": ["public/soundscape/m02/art/G01-B-concentric-home.png", ".webp"], "raw": "public/soundscape/m02/raw/G01-B-v2.png", "alternate_unused": "raw/G01-B-v1.png", "proof": "alpha border 0; no text/orbs in art"},
+    {"id": "G01-C", "layer": "C", "state": "NATIVE READY", "files": ["components/soundscape/m02/HomeField.tsx"], "proof": "seven distinct letters; both Cs left of a two-black-key group (tests/m02.test.mts)"},
+    {"id": "G02-B", "layer": "B", "state": "GENERATED + PREVIEW READY", "files": ["public/soundscape/m02/art/G02-ACCENT-keyboard-light.png", ".webp"], "raw": "public/soundscape/m02/raw/G02-ACCENT-v1.png", "proof": "alpha border 0; sits behind keys only"},
+    {"id": "G02-C", "layer": "C", "state": "NATIVE READY", "files": ["lib/soundscape/m02/keyboard-geometry.ts", "components/soundscape/m02/Keyboard.tsx", "components/soundscape/m02/FindC.tsx"], "proof": "8/8 targeted tests: 2-3-2 groups, no black after E/B, every C immediately left of a 2-group, black keys on boundaries"},
+    {"id": "G03-B", "layer": "B", "state": "GENERATED + PREVIEW READY", "files": ["public/soundscape/m02/art/G03-B-shared-worlds.png", ".webp"], "raw": "public/soundscape/m02/raw/G03-B-v1.png", "proof": "alpha border 0; two fields + distinct overlap lens; no text"},
+    {"id": "G03-C", "layer": "C", "state": "NATIVE READY", "files": ["lib/soundscape/m02/shared-worlds.ts", "components/soundscape/m02/SharedWorlds.tsx"], "proof": "sets computed from lib/soundscape/week2/fixtures.ts: shared {F}, only-held {C}, only-moving {B} at 14-20 s; identical {C,E} at the E moments (tests)"},
+    {"id": "PREVIEW", "layer": "A+B+C+D", "state": "PREVIEW READY", "files": ["app/curriculum/soundscape-path/m02-preview/page.tsx", "m02.css"], "proof": "real Next 16 route in isolated worktree; screenshots in docs/m02/screenshots/ at 1280 and 390 (default + revealed) and 320 (revealed)"}
+  ],
+  "not_done": ["1440px capture", "automated click-through of the toggles (state captured via ?state=shown, same component code)", "screen-reader, print and reduced-motion runs (implemented in code/CSS, not exercised)", "founder visual acceptance (required before M03)", "full repo test/regression (excluded by instruction)"]
+}
