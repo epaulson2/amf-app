@@ -4,6 +4,7 @@ import { BASE, WEEKS } from '@/lib/soundscape/course'
 import { T } from '@/lib/soundscape/week1/teaching'
 import { Paras } from '@/components/soundscape/week1/Teach'
 import Md from '@/components/soundscape/Md'
+import { RoadmapW1 } from '@/components/soundscape/visual/Roadmaps'
 
 export const metadata: Metadata = { title: 'Week 1: Finding Home — Ajourné into Music' }
 
@@ -24,6 +25,8 @@ export default function Week1() {
           <h2 id="w1-intro" className="sp-editorial-heading text-2xl text-slate-900">Finding Home: How Notes Become Music</h2>
           <Paras paras={T.hub.paras} />
         </section>
+
+        <RoadmapW1 />
 
         <section aria-labelledby="w1-journey" className="mt-12">
           <h2 id="w1-journey" className="sp-editorial-heading text-2xl text-slate-900">A guided three-part journey</h2>

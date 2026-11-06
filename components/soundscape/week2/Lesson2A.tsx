@@ -6,6 +6,7 @@ import Md from '../Md'
 import { BlankLines } from '../ViewMode'
 import { Aside, Checks, Paras, Recap, Steps } from '../week1/Teach'
 import Fig from '../week1/Fig'
+import { M2AV1, M2AV2, M2AV3, M2AV4 } from '../visual/Week2Moments'
 import { CompactPalette } from '../resources/Palette'
 import { doorsFrom } from '../week1/Doors'
 import { ClipButton, NowPlaying, PairKeys, StopButton, TraceHops, Choice } from './Parts'
@@ -20,6 +21,7 @@ function HearTeaching() {
   return (
     <div>
       <Paras paras={W2.a_hear.paras} />
+      <M2AV1 />
       <Aside label="Guided demonstration">{W2.a_hear.guided}</Aside>
       <Checks items={W2.a_hear.checks} />
     </div>
@@ -70,6 +72,7 @@ function Distance() {
       <Paras paras={t.paras.slice(4)} />
       <h3 className="text-lg font-semibold text-slate-900 mt-4">Step by step</h3>
       <Steps items={t.steps} />
+      <M2AV2 />
       <Checks items={t.checks} />
 
       <h3 className="sp-editorial-title text-xl font-medium text-slate-900 mt-8">{c('B', 'Step 1 heading', 0)}</h3>
@@ -98,6 +101,7 @@ function PaletteTeaching() {
     <div>
       <Paras paras={W2.a_palette.paras} />
       <Aside label="Worked listening cue">{W2.a_palette.cue}</Aside>
+      <M2AV4 />
     </div>
   )
 }
@@ -241,7 +245,7 @@ export default function Lesson2A() {
         { id: 'upper', heading: c('C', 'H2'), body: <Upper /> },
         { id: 'oblique', heading: W2.a_oblique.h2, body: <div><Paras paras={W2.a_oblique.paras} /><Checks items={W2.a_oblique.checks} /></div> },
         { id: 'lower', heading: c('D', 'H2'), body: <Lower /> },
-        { id: 'bass', heading: W2.a_bass.h2, body: <div><Paras paras={W2.a_bass.paras} /><Aside label="Worked three-way comparison">{W2.a_bass.worked}</Aside><Checks items={W2.a_bass.checks} /></div> },
+        { id: 'bass', heading: W2.a_bass.h2, body: <div><Paras paras={W2.a_bass.paras} /><M2AV3 /><Aside label="Worked three-way comparison">{W2.a_bass.worked}</Aside><Checks items={W2.a_bass.checks} /></div> },
         { id: 'keyboard', heading: c('E', 'H2'), body: <KeyboardLanguage /> },
         { id: 'choice', heading: W2.a_choice.h2, body: <Choice2 /> },
         { id: 'studio', heading: c('F', 'H2'), body: <Studio /> },

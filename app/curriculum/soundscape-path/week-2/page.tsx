@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { BASE } from '@/lib/soundscape/course'
 import { W2 } from '@/lib/soundscape/week2/content'
 import Md from '@/components/soundscape/Md'
+import { RoadmapW2 } from '@/components/soundscape/visual/Roadmaps'
 
 export const metadata: Metadata = { title: 'Week 2: Two Notes Become Two Voices — Ajourné into Music' }
 
@@ -22,6 +23,8 @@ export default function Week2() {
           <h2 id="w2-welcome" className="sp-editorial-heading text-2xl text-slate-900">Welcome to Week 2</h2>
           <div className="sp-prose">{h.welcome.map(p => <p key={p.slice(0, 40)}><Md>{p}</Md></p>)}</div>
         </section>
+        <RoadmapW2 />
+
         <section aria-labelledby="w2-map" className="mt-12">
           <h2 id="w2-map" className="sp-editorial-heading text-2xl text-slate-900">A map of this week&apos;s musical language</h2>
           <p className="sp-prose"><Md>{h.map}</Md></p>

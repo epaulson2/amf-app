@@ -4,6 +4,7 @@ import { useId, useState } from 'react'
 import Md from '../Md'
 import { AudioProvider, NowPlaying, StopButton, useAudio } from '../AudioProvider'
 import Keys from '../week1/Keys'
+import { MAtlas } from '../visual/Week2Moments'
 import { ATLAS, INTERVALS, QUICK_INTRO, noteRecipe, type IntervalRecord } from '@/lib/soundscape/resources/palette'
 import { compareEvents, pairEvents } from '@/lib/soundscape/week2/fixtures'
 import { PATCHES } from '@/lib/soundscape/fixtures'
@@ -211,6 +212,7 @@ export default function FullPalette() {
   const [colors, setColors] = useState<Record<string, string>>({})
   return (
     <AudioProvider>
+      <MAtlas />
       <Lab sel={sel} setSel={setSel} shift={shift} setShift={setShift} patch={patch} setPatch={setPatch} />
       <section aria-labelledby="ip-ruler" className="mt-10">
         <h2 id="ip-ruler" className="sp-editorial-heading text-2xl text-slate-900">Thirteen landmarks in one octave</h2>

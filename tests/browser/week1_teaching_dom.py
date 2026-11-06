@@ -14,6 +14,12 @@ def has(page, label, *needles, absent=False):
         results.append((label, ("ABSENT: " if absent else "") + n[:70], ok))
         if not ok: failed.append((label, n))
 
+def reveal_all(pg):
+    for _ in range(80):
+        if pg.get_by_role('button', name='Show the explanation').count() == 0: break
+        pg.get_by_role('button', name='Show the explanation').first.click()
+
+
 with sync_playwright() as p:
     b = p.chromium.launch()
     for w in (1280, 320):
@@ -33,7 +39,7 @@ with sync_playwright() as p:
         has(pg, f"1A check wrong@{w}", "Try listening again: one note stays under every example.")
         pg.get_by_role("button", name="C", exact=True).first.click()
         has(pg, f"1A check right@{w}", "C is the chosen reference. The upper notes can change while it stays.")
-        for _ in range(3): pg.get_by_role("button", name="Show the explanation").first.click()
+        reveal_all(pg)
         has(pg, f"1A map checks@{w}", "an octave", "No; they are two pitches sounding together, not a three-note C-major triad.")
         # ---- 1B before reveal
         pg.goto(BASE + "/lesson-1b", wait_until="networkidle")
@@ -45,7 +51,7 @@ with sync_playwright() as p:
             "C → C-sharp → D", "E and F have no black key between them", "What is a scale, and how is C major made?", "whole, whole, half, whole, whole, whole, half",
             "You have built C–D–E–F–G–A–B–C", "E → F", "B → C", "Why does an ending feel like an arrival?", "leading tone", "B doesn't always have to resolve to C",
             "An interval is a distance between notes")
-        for _ in range(2): pg.get_by_role("button", name="Show the explanation").first.click()
+        reveal_all(pg)
         has(pg, f"1B checks@{w}", "Because it spans two adjacent-key moves")
         # ---- 1C
         pg.goto(BASE + "/lesson-1c", wait_until="networkidle")

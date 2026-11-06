@@ -8,6 +8,7 @@ import { copy, field, all } from '@/lib/soundscape/week1/content'
 import { B01, B02, B03, B04, B04_HOPS, B05, B06 } from '@/lib/soundscape/week1/fixtures'
 import { midiToName } from '@/lib/soundscape/midi'
 import Fig from './Fig'
+import { M1BV1, M1BV2, M1BV3 } from '../visual/Week1Moments'
 import { Checks, Paras, Recap } from './Teach'
 import { T } from '@/lib/soundscape/week1/teaching'
 import Keys, { type Mark } from './Keys'
@@ -91,6 +92,11 @@ function Unfinished() {
 }
 
 // Teaching that names the melody's ending opens once the learner asks for it (a plain button, no sound needed).
+function NeutralPath() {
+  const { rev } = useContext(Revealed)
+  return <M1BV3 revealed={rev} />
+}
+
 function Gate({ children }: { children: ReactNode }) {
   const { rev, setRev } = useContext(Revealed)
   if (rev) return <>{children}</>
@@ -110,6 +116,7 @@ function SemitoneTeaching() {
   return (
     <div>
       <Paras paras={s.paras} />
+      <M1BV1 />
       <h3 className="text-lg font-semibold text-slate-900 mt-4">Guided examples</h3>
       <ol className="list-none p-0 space-y-3 max-w-2xl">
         {s.examples.map(([k, t], i) => (
@@ -138,6 +145,7 @@ function ScaleTeaching() {
   return (
     <div>
       <Paras paras={T.b_scale.paras} />
+      <M1BV2 />
       <table className="w-full max-w-xl text-left border-collapse my-4">
         <caption className="text-left font-semibold mb-2">C major, step by step</caption>
         <thead><tr className="border-b border-slate-300"><th className="py-1 pr-3">Step</th><th className="py-1 pr-3">Size</th><th className="py-1 pr-3">Semitones</th><th className="py-1"><span className="sp-sr-only">Hear it</span></th></tr></thead>
@@ -328,7 +336,7 @@ export default function Lesson1B() {
       }
       heroCtas={<a href="#unfinished" className="sp-btn">Hear the unfinished melody</a>}
       blocks={[
-        { id: 'journey', heading: T.b_intro.h2, body: <Paras paras={T.b_intro.paras} /> },
+        { id: 'journey', heading: T.b_intro.h2, body: <div><Paras paras={T.b_intro.paras} /><NeutralPath /></div> },
         { id: 'unfinished', heading: c('1', 'H2'), body: <Unfinished /> },
         { id: 'semitones', heading: T.b_semi.h2, body: <Gate><SemitoneTeaching /></Gate> },
         { id: 'distances', heading: c('2', 'H2'), body: <Gate><Distances /></Gate> },

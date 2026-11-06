@@ -8,6 +8,9 @@ import { BlankLines } from '../ViewMode'
 import { copy, field, all, stepsOf } from '@/lib/soundscape/week1/content'
 import { C01, C02, C03, C04, C05, solo, text } from '@/lib/soundscape/week1/fixtures'
 import Fig from './Fig'
+import { M1CV1, M1CV2, M1CV3, M1CV4 } from '../visual/Week1Moments'
+import EventTimeline from '../visual/EventTimeline'
+import { tracksOf } from '../visual/shared'
 import { Checks, Paras, Recap, Steps } from './Teach'
 import { T } from '@/lib/soundscape/week1/teaching'
 import Keys from './Keys'
@@ -55,6 +58,7 @@ function Voices() {
         <thead><tr className="border-b border-slate-300"><th className="py-1 pr-3">Term</th><th className="py-1">What it means, with an example</th></tr></thead>
         <tbody>{T.c_nvhc.table.map(([k, v]) => <tr key={k} className="border-b border-slate-200 align-top"><th scope="row" className="py-2 pr-3">{k}</th><td className="py-2">{v}</td></tr>)}</tbody>
       </table>
+      <M1CV1 />
       <Checks items={T.c_nvhc.checks} />
       <div className="sp-card p-4 max-w-2xl">
         <p className="font-semibold m-0">Which voice stayed?</p>
@@ -81,6 +85,7 @@ function Time() {
       {cmp === 3 && <p className="sp-callout max-w-2xl">{c('2', 'After compare')}</p>}
       <h3 className="sp-editorial-title text-xl font-medium text-slate-900 mt-8">{T.c_time.h2}</h3>
       <Paras paras={T.c_time.paras} />
+      <M1CV2 />
       <Checks items={T.c_time.checks} />
       <dl className="grid gap-2 sm:grid-cols-2 mt-4 max-w-3xl">
         {terms.map(t => <div key={t[1]} className="sp-card p-3"><dt className="font-semibold">{t[1]}</dt><dd className="m-0 text-base">{t[2]}</dd></div>)}
@@ -103,6 +108,7 @@ function Example() {
         <StopButton />
       </div>
       <NowPlaying />
+      <M1CV3 />
       {plays.a && plays.b && (
         <>
           <p className="sp-callout max-w-2xl">{c('3', 'After compare')}</p>
@@ -164,7 +170,7 @@ function Map() {
   return (
     <div>
       <p className="sp-prose">{c('5', 'Body')}</p>
-      <Fig file="W1-04_personal-tonal-atlas-worksheet_learner.svg" caption="Your atlas is yours to fill in." />
+      <M1CV4 />
       <p className="sp-prose">{c('5', 'Keyboard bridge')}</p>
       <div className="sp-card p-4 max-w-2xl">
         <p className="font-semibold m-0">What changed?</p>
@@ -206,7 +212,7 @@ export default function Lesson1C() {
       }
       heroCtas={<a href="#intro" className="sp-btn">{c('0', 'CTA')}</a>}
       blocks={[
-        { id: 'intro', heading: T.c_intro.h2, body: <Paras paras={T.c_intro.paras} /> },
+        { id: 'intro', heading: T.c_intro.h2, body: <div><Paras paras={T.c_intro.paras} /><EventTimeline title="A preview: a held C3 with an upper line moving above it" total={12} tracks={tracksOf(C01, { lower: 'Foundation', upper: 'Upper voice' })} /></div> },
         { id: 'voices', heading: c('1', 'H2'), body: <Voices /> },
         { id: 'time', heading: c('2', 'H2'), body: <Time /> },
         { id: 'example', heading: c('3', 'H2'), body: <Example /> },

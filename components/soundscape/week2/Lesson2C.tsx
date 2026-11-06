@@ -6,6 +6,9 @@ import Md from '../Md'
 import { BlankLines } from '../ViewMode'
 import { Checks, ChoiceCheck, Paras, Recap, Steps } from '../week1/Teach'
 import Fig from '../week1/Fig'
+import { M2CV1, M2CV2, M2CV3 } from '../visual/Week2Moments'
+import EventTimeline from '../visual/EventTimeline'
+import { tracksOf } from '../visual/shared'
 import { doorsFrom } from '../week1/Doors'
 import { ClipButton, NowPlaying, PairKeys, StopButton } from './Parts'
 import { W2, copy, field, ticks, quoted, drawers } from '@/lib/soundscape/week2/content'
@@ -193,16 +196,16 @@ export default function Lesson2C() {
       }
       heroCtas={<a href="#learn" className="sp-btn">Hear a two-voice miniature</a>}
       blocks={[
-        { id: 'learn', heading: W2.c_learn.h2, body: <Paras paras={W2.c_learn.paras} /> },
+        { id: 'learn', heading: W2.c_learn.h2, body: <div><Paras paras={W2.c_learn.paras} /><EventTimeline title="A preview: a held C4 under an upper melody" total={36} tracks={tracksOf(C.held, { lower: 'Lower voice', upper: 'Upper voice' })} /></div> },
         { id: 'lines', heading: c('A', 'H2'), body: <HearLines /> },
-        { id: 'interval', heading: W2.c_line.h2, body: <div><Paras paras={W2.c_line.paras} /><Checks items={W2.c_line.checks} /></div> },
+        { id: 'interval', heading: W2.c_line.h2, body: <div><Paras paras={W2.c_line.paras} /><M2CV1 /><Checks items={W2.c_line.checks} /></div> },
         { id: 'quiet', heading: c('B', 'H2'), body: <Quiet /> },
-        { id: 'support', heading: W2.c_support.h2, body: <div><Paras paras={W2.c_support.paras} /><p className="sp-callout max-w-2xl"><Md>{W2.c_support.worked}</Md></p><Checks items={W2.c_support.checks} /></div> },
+        { id: 'support', heading: W2.c_support.h2, body: <div><Paras paras={W2.c_support.paras} /><M2CV2 /><p className="sp-callout max-w-2xl"><Md>{W2.c_support.worked}</Md></p><Checks items={W2.c_support.checks} /></div> },
         { id: 'moving', heading: c('C', 'H2'), body: <Moving /> },
         { id: 'describe', heading: c('D', 'H2'), body: <Describe /> },
         { id: 'words', heading: W2.c_describe.h2, body: <div><Paras paras={W2.c_describe.paras} /><Checks items={W2.c_describe.checks} /><p className="sp-callout max-w-2xl"><Md>{c('ref', 'Learner-facing copy')}</Md></p><Link className="sp-btn" href={`${BASE}/resources/interval-palette`}>Explore the Interval Atlas</Link></div> },
         { id: 'imagine', heading: c('E', 'H2'), body: <Imagine /> },
-        { id: 'miniature', heading: W2.c_miniature.h2, body: <div><Paras paras={W2.c_miniature.paras} /><h3 className="text-lg font-semibold text-slate-900 mt-4">Your composer plan</h3><Steps items={W2.c_miniature.steps} /></div> },
+        { id: 'miniature', heading: W2.c_miniature.h2, body: <div><Paras paras={W2.c_miniature.paras} /><h3 className="text-lg font-semibold text-slate-900 mt-4">Your composer plan</h3><Steps items={W2.c_miniature.steps} /><M2CV3 /></div> },
         { id: 'studio', heading: c('F', 'H2'), body: <Studio /> },
         { id: 'recap', heading: 'Recap and Week 3 bridge', body: <Recap title="What you learned today">{W2.c_miniature.recap}</Recap> },
         { id: 'week3', heading: c('G', 'H2'), body: <Week3 /> },

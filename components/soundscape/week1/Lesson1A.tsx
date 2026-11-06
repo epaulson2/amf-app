@@ -9,6 +9,7 @@ import { copy, field, stepsOf, all } from '@/lib/soundscape/week1/content'
 import { A01, A02, A03_NOTES, A05_LISTEN, visitor } from '@/lib/soundscape/week1/fixtures'
 import { midiToName } from '@/lib/soundscape/midi'
 import Fig from './Fig'
+import { M1AV1, M1AV2, M1AV3, M1AV4 } from '../visual/Week1Moments'
 import { Aside, ChoiceCheck, Paras, Recap, Steps, ThinkThenCheck } from './Teach'
 import { T } from '@/lib/soundscape/week1/teaching'
 import Keys from './Keys'
@@ -23,6 +24,7 @@ function Pre() {
     <div>
       <Paras paras={T.a_pre.paras} />
       <Aside label="Mini-example">{T.a_pre.mini}</Aside>
+      <M1AV1 />
     </div>
   )
 }
@@ -49,6 +51,7 @@ function MapTeaching() {
   return (
     <div>
       <Paras paras={m.paras} />
+      <M1AV3 />
       <h3 className="text-lg font-semibold text-slate-900 mt-4">Keyboard walkthrough</h3>
       <Steps items={m.walk} />
       <h3 className="text-lg font-semibold text-slate-900 mt-4">Check your understanding</h3>
@@ -79,7 +82,6 @@ function Listen() {
       {played && (
         <>
           <p className="sp-callout max-w-2xl">{c('1', 'Audio caption (shown after playback begins or completes)')}</p>
-          <Fig file="W1-01_home-note_learner.svg" />
         </>
       )}
       <p className="sp-prose mt-4"><strong>{c('1', 'Reflection prompt')}</strong></p>
@@ -126,6 +128,7 @@ function Visitors() {
           ))}
         </div>
       )}
+      <M1AV2 />
     </div>
   )
 }
@@ -214,6 +217,7 @@ function HearImagine() {
       <NowPlaying />
       {done && <p className="sp-callout max-w-2xl">{c('5', 'Reveal')}</p>}
       <p className="sp-prose sp-muted">{c('5', 'Fallback')}</p>
+      <M1AV4 />
       <Fig file="W1-05_hear-imagine-sing-find-card_learner.svg" />
     </div>
   )

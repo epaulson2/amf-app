@@ -1,0 +1,295 @@
+{
+ "W1HUB": {
+  "title": "3. Week 1 illustrated journey / main hub — literal new copy",
+  "heading": "This week, our pictures become musical maps",
+  "paras": [
+   "Every picture in this course has something to teach us. A dot can stand for a note; a horizontal line can mean a sound held through time; a path can show pitches going higher or lower; and two tracks can show two musical voices happening at once. We'll learn to read those shapes alongside the sounds, so you can use them later without guessing.",
+   "Follow the three small maps from left to right. First notice the single note we'll treat as home. Next imagine a journey leaving that note and perhaps coming back. Finally watch another line move above a held note. Those are the same three ideas you'll hear in Lessons 1A, 1B and 1C. The illustrations are guides to the musical choices—not rules about what a note is supposed to make you feel."
+  ],
+  "guide": "“Try pointing to the sound that stays in each picture. Which part of the picture changes from one lesson to the next? After each lesson, return and see whether you can tell its story using just the notes and lines.”"
+ },
+ "1A-V1": {
+  "title": "1A-V1: The Home Note — Style B composition plus **accurate C3 event graphic**",
+  "heading": "Read the sound: one note becomes our reference",
+  "paras": [
+   "Look at the central note and the long line extending through the picture. The dot marks the note we chose; the line shows that it lasts instead of jumping between pitches. On today's instrument that note is **C3**, a low C. When we start the original audio example, it holds for fifteen seconds. The artwork suggests a landscape, but the factual musical information is simple: **one pitch remains present**.",
+   "The original home-note artwork was drafted around **C4**, which is a higher C than the C3 you hear in this example. The two Cs share a note letter but occupy different registers. Rather than pretend the picture and audio are identical, our active lesson map now marks the actual **C3** event, and the original art can serve as an atmospheric companion after its note labels are checked.",
+   "The long note by itself is not the C-major chord and does not prove we're in C major. We're **choosing** it as a reference for comparison. Once you can see that held line, you'll recognize the stable foundation beneath the changing sounds in the next picture."
+  ],
+  "steps": "(1) Locate the dot labeled C3; (2) trace the held line left-to-right for 15 seconds; (3) press Play, then Stop, and see how the sound corresponds to the held segment; (4) compare C3 with the interactive keyboard's higher C4 to understand register, not a different note-letter family.",
+  "check": "“Which pitch is held in the active example?” — C3; “Does this picture show a full C-major triad?” — No, only one pitch. Feedback explains the difference.",
+  "studio": "“Hold a low note on your own pad. Draw one long line to represent its duration before you add anything else.”",
+  "placement": "first visible, substantive graphic immediately after the \"What is a musical note?\" preface; maintain silence on load and don't spoil interactive listening. Existing source art `W1-01` plus Style B original PNG (only after factual text check); new event-derived C3 timeline replaces any false assertion that the original C4/8-beat art is exact for A01 C3/15s."
+ },
+ "1A-V2": {
+  "title": "1A-V2: The visitor changes a held landscape — source W1-02 with a data-driven two-voice map",
+  "heading": "Two lines, one fixed reference",
+  "paras": [
+   "In this picture the lower line stays where it is, while a second note appears above it. Read the first line as our **held C3** and the upper mark as a visitor. When E4 joins the C3, two pitches sound together. When E4 leaves and G4 enters in the next example, C3 has still not moved. The atmosphere can change even while one part stays exactly the same.",
+   "Follow each line independently rather than treating the whole image as a new three-note chord. The lower path is a long sustained note; the upper path shows when the visitor enters, holds briefly and disappears. This is your first visual example of **two musical voices**. The vertical distance between their note names is factual on our keyboard, while the surrounding circular 'home and visitor' artwork is an imaginative metaphor, not a scale of measurable intervals.",
+   "Listen to E, G and D over C. After each sound, point first to the unchanged lower line, then to the different upper position. That's the musical decision you can reproduce: keep the foundation and move the visitor."
+  ],
+  "steps": "(1) Choose E above C3; (2) reveal the upper name after hearing; (3) select G above the same C3; (4) compare positions using exact MIDI and a proper chromatic keyboard, not radial-circle radius; (5) identify unchanged voice.",
+  "check": "“What changed from C3+E4 to C3+G4?” — upper note only. “What stayed?” — C3 foundation.",
+  "studio": "“Duplicate a clip, retain the lower note and replace only the upper note; draw the two versions.”",
+  "placement": "directly alongside the C3+E4/G4/D4 listening comparison, learner-neutral preview before Play; reveal upper note names only after the authorized listening step."
+ },
+ "1A-V3": {
+  "title": "1A-V3: Read the black-key landmarks — W1-06 / generated C3–C5 keyboard tour",
+  "heading": "A keyboard is a repeating map, not a row of random keys",
+  "paras": [
+   "Start with the black keys. They form a repeating pattern: a group of **two**, then a group of **three**. That pattern is the landmark you can use to find the note letters even before you memorize all of them. The white key just to the left of each two-black-key group is **C**. The next matching group has another C higher up.",
+   "Find C3 and trace toward C4 on the diagram. The letter names repeat—C, D, E, F, G, A, B, C—while the sound rises. The distance from one C to the next C is an **octave**. On today's diagram, C3, C4 and C5 are distinct pitches, but they're all called C because they belong to this repeating note-name pattern.",
+   "Now notice the black keys between some neighboring white letters. From C to D we pass a black key, C-sharp. But E and F have no black key between them. This is why our later whole-step/half-step measurements need a real keyboard diagram rather than an evenly spaced row of letters."
+  ],
+  "steps": "(1) circle two-black-key pair; (2) highlight C3; (3) jump to next two-black-key pair and mark C4; (4) trace all 12 chromatic steps for a full octave; (5) toggle names and find C5 again.",
+  "check": "“How do you locate C?” — left of two-black-key group. “What makes C3–C4 an octave?” — same note letter, twelve chromatic semitones apart.",
+  "studio": "“Find C in your piano roll, then another C above; map the pattern without looking at the label.”",
+  "placement": "directly alongside previously approved “Reading the keyboard as a map” instruction. Primary fit-first labelled/unlabelled **interactive keyboard** and optional full first-party W1-06 page."
+ },
+ "1A-V4": {
+  "title": "1A-V4: Hear→Imagine→Hum/Trace→Find — W1-05/W1-08 and SYS-07",
+  "heading": "Use the picture as a rehearsal for your ears",
+  "paras": [
+   "The five stages show a simple practice cycle rather than a test. First **hear** one note or a tiny two-note idea. Next try to **imagine** its movement: does it stay, rise or fall? You can hum the idea if that helps, or trace the path with your hand or eyes if singing isn't comfortable. Then **find** the pitch on your instrument and compare what you expected with what you heard.",
+   "The picture moves from listening to choosing. The arrows represent a practice sequence, not notes jumping up on a musical scale. You can loop through the stages as many times as you like. If you don't form a strong internal sound or picture, use the visible keyboard; listening and checking still builds skill."
+  ],
+  "check": "“When you reveal the keyboard after imagining a note, what are you checking?” — Whether the actual key matches your mental or traced expectation.",
+  "studio": "“Play, stop, predict the next note, then find and compare it.”",
+  "guide": "Highlight one stage at a time; relate the real W1-05 card and W1-08 look/draw/hide path to the action the learner is taking. Provide text alternative and return to the keyboard.",
+  "placement": "alongside the existing audiation practice; show small visible “what the icons mean” step strip rather than throwing in a full 960px sheet without an explanation."
+ },
+ "1B-V1": {
+  "title": "1B-V1: Half steps and whole steps — learner/instructor W1-07 + interactive chromatic path",
+  "heading": "Read the spaces, not just the white keys",
+  "paras": [
+   "Each neighboring key on this diagram is one **semitone** from the next, whether either key is white or black. Watch the path from C4 to C-sharp4: that's one move. Continue to D4: that's a second move. So C4–D4 spans **two semitones**, one whole step, even when the example audio plays only C and D.",
+   "Now look at E4–F4. They are white keys sitting next to one another with no black key between them. That is just **one semitone**, a half step. The same is true from B4 to C5. The drawing makes an important idea visible: the distance is measured by neighboring chromatic keys, not by counting only the white letters."
+  ],
+  "steps": "highlight C4→C♯4 = hop 1; C♯4→D4 = hop 2; E4→F4 hop 1; B4→C5 hop 1. Audio for C4/D4 should remain original two-note B04 except when learner explicitly selects the step-by-step three-note B04_HOPS.",
+  "check": "“Why isn't E–F a whole step?” — neighboring keys only one semitone. “What has to happen before C reaches D?” — pass the C-sharp position; audio need not play it.",
+  "placement": "alongside semitone/whole-step definition, before C-major build; a visible neutral chromatic keyboard comes first."
+ },
+ "1B-V2": {
+  "title": "1B-V2: Visualize the C-major step formula — W1-07 plus generated scale route",
+  "heading": "Build the shape of C major, one measured movement at a time",
+  "paras": [
+   "The colored steps on this path don't mean that each note has a fixed emotional color. They mark **how far the next move travels** on the keyboard. A **W** spans two neighboring keys. An **H** spans one. Start on C and read the pattern from left to right: **W–W–H–W–W–W–H**.",
+   "Trace each jump: C to D takes two semitones; D to E takes two; E to F takes one. Then F to G, G to A and A to B each take two, while B to the next C takes one. Those exact distances produce the C-major scale. The seven letter names are arranged as a pattern of different-sized steps, not just a generic staircase of equal blocks.",
+   "Try covering the W and H labels and using the pictured black keys to recover them. Then reveal the pattern and compare what you found. You can use the same counting idea to learn other scale patterns later."
+  ],
+  "check": "Each of seven edges has keyboard highlight, explicit note labels and W/H + 1/2 semitones; reveal timing does not leak first audio prediction; question “why E–F?” answered from adjacent keys.",
+  "studio": "“Enter C major one note at a time in your piano roll, then make a one-line melody from a few of its notes.”",
+  "placement": "after the first surprise-ending reveal or at a point guaranteed not to spoil its hidden last pitch. Provide visible diagram + complete worked table."
+ },
+ "1B-V3": {
+  "title": "1B-V3: Open path vs arrival — W1-03 + exact B01/B02 event timeline",
+  "heading": "The same journey, two possible shapes",
+  "paras": [
+   "Both drawings begin with the same seven-step melodic journey over a low held reference. Read **time from left to right**. A dot marks when a melody note sounds. The long lower line marks the low C that stays underneath. At the end of our first journey, the melody stops and leaves listening space. The second journey follows the same beginning but chooses an additional destination.",
+   "Before you reveal the ending, notice only what the visible path and the silence tell you. You don't have to name the hidden note or agree that the melody 'should' continue. After you choose the reveal, trace the new final C5 above B4. The small B4→C5 step can create a sense of arrival **in this established C-major example**. It is an available musical choice, not an obligation.",
+   "Compare which things stay the same: the earlier note order, their starting times and the low reference are held constant. The final event changes. This makes the visual an honest comparison of one musical decision rather than two unrelated pieces."
+  ],
+  "check": "“Which part of the drawing differed after reveal?” — final added event; “Is the open ending wrong?” — No.",
+  "studio": "“Copy one simple melody; let one version fade on B and add a final C in the other.”",
+  "guide": "first display answer-neutral learner path; reveal C5, label B4/C5 half-step and exact fixture timing after user action; show note list read-without-audio. Do not falsely synchronize a schematic beat-scale SVG with actual seconds unless the live companion is generated from B01/B02 event data.",
+  "placement": "initial visual before first listen shows shared notes as neutral footsteps and **concealed final destination**; after explicit reveal show B4→C5 result. The C3 drone is a separate held lower track, not a scale note."
+ },
+ "1C-V1": {
+  "title": "1C-V1: Understand voice vs harmony — SYS-04 source + synchronized 12-second pair",
+  "heading": "Read one voice horizontally, harmony vertically",
+  "paras": [
+   "Imagine the diagram as two musical lines across time. **Left to right** means time passing. **Higher and lower** show the pitch area. The lower line holds C3. The upper line enters with E4, later G4 and later D4. Those positions do not move the lower C3; they show independent sounds joining it.",
+   "Trace the upper part from one note to the next and you are reading a **musical voice** through time. Now stop at one point and look from the lower line to the upper note happening at that moment: that vertical pairing is a moment of **harmony**. A single dot is not a voice's entire story, and our lower C plus one upper note is not automatically a full three-note C-major chord.",
+   "Play the foundation alone, then the moving upper line, then both. See which notes each sound corresponds to and notice how vertical relationships change when the upper note changes."
+  ],
+  "check": "“Which line stays and which travels?” “At t=5, what two notes overlap?” (check precise event gate; avoid arbitrary timing labels beyond fixture).",
+  "studio": "“Draw two tracks in your DAW and give each its own visual role.”",
+  "placement": "alongside the note/voice/harmony/chord distinction table, after the first short listen; visible neutral 2-line preview before Play."
+ },
+ "1C-V2": {
+  "title": "1C-V2: When a note enters is part of music — C02 vs C03 timing graphic",
+  "heading": "One pitch change? No—the timing changed",
+  "paras": [
+   "Look at the lower and upper timelines. Both examples use the same held C3 and the same upper E4. The upper note even lasts the same amount of time. What changes is **where its bar begins** along the time axis. In one version E4 enters at two seconds; in the other, it waits until seven seconds.",
+   "Two dots in different horizontal positions can indicate the same pitch sounding at different moments. This is how the graphic separates **pitch** from **timing**. A later entrance may leave more space for the held foundation to be heard on its own, even without a new interval name or an extra instrument."
+  ],
+  "check": "“What changed?” — E4's onset, not the note, timbre, loudness or base C3.",
+  "studio": "“Move one note horizontally in the piano roll without changing its height.”",
+  "guide": "underline t2 vs t7 on synchronized 12-second axis, same MIDI64 and 4s upper duration; exact lower C3 held t0–12. Give readable note/time lists.",
+  "placement": "beside early/delayed entrance controlled comparison."
+ },
+ "1C-V3": {
+  "title": "1C-V3: Two 36-second outcomes, one common path — C04 vs C05",
+  "heading": "Follow the same path, then read the one different ending",
+  "paras": [
+   "These two illustrations are two versions of the same small musical story. A low C3 foundation remains present, and the upper part follows a recognizable set of notes. **From the beginning through the first thirty-three seconds**, the event timelines of the two versions match. The picture marks that shared section as one common path so you don't have to compare every note separately.",
+   "Near the end, the first version adds an upper C5 event, while the second leaves the ending open. Read the dot for C5 only after choosing the reveal. The long shared stretch is what makes this a meaningful comparison. You can point to a small musical decision and hear what it changes."
+  ],
+  "check": "“What remains identical?” — first 33 seconds; “What differs?” — added final upper C5.",
+  "studio": "“Duplicate a piece, preserve 90% of the note events and change the final event only.”",
+  "guide": "build both from exact `C04` and `C05` fixture arrays, with C3 held 0–36, upper E4/G4/D4/B4 shared event times and optional C5 start t33. Synchronize to actual audio onset/duration; don't depict unrelated arbitrary curves as if sampled from sound.",
+  "placement": "directly beside the landing/open A/B audio player; default neutral preview with final label revealed only after a listening choice if the original lesson requires it."
+ },
+ "1C-V4": {
+  "title": "1C-V4: Your personal atlas — W1-04 worksheet with actual demonstration",
+  "heading": "Draw your music without telling it what to feel",
+  "paras": [
+   "The blank chart is a place to notice your own musical choices. The note positions provide a factual reference. The empty surrounding boxes are **yours**: you can draw how a note or combination feels to you, note where a musical line entered, or mark the moment you chose to leave space.",
+   "Begin by identifying the foundation and moving line in your composition. Trace a simple path for each. Add one mark for the moment when the upper voice changed. You can use color, shape or short written words, but no color is a universal meaning of C, E or any interval. The purpose of the atlas is to **help you remember what you chose**."
+  ],
+  "check": "“What parts of this page are facts?” — note positions and named timing; “What parts are personal?” — associations and drawings.",
+  "studio": "“Print the blank, or sketch it yourself; no upload required.”",
+  "guide": "show original learner W1-04 blank plus an original *demonstration layer* for held C3 and upper E4/G4 based on source data, then easy reset to blank. Never write fabricated learner feelings in the example.",
+  "placement": "alongside main composition exercise and optional printable handout. Do not let a blank PDF be the only graphic learner sees."
+ },
+ "W2HUB": {
+  "title": "7. Week 2 illustrated journey / hub",
+  "heading": "See the relationships before naming them",
+  "paras": [
+   "A note has a place on a keyboard, but music also lives in the distance *between* notes and the movements *between* moments. On this first visual map, C4 and E4 sound together. Next we count their distance in two ways: three letter positions, but four small keyboard steps. Finally we follow two independent lines as each chooses where to go.",
+   "The pictures use a consistent language. A circle marks our lower voice, a square marks the upper; horizontal space on a timeline means time; the white/black keys show the actual semitone geometry. The ink and colors help you explore, but they don't change the note names or prescribe a feeling."
+  ],
+  "guide": "Point to C4 then E4, find their four semitone hops; point to the voice that holds in one example and the two moving voices in another.",
+  "bridge": "“Lesson 2A names the distance. Lesson 2B names the movement. Lesson 2C uses both ideas to compose.”"
+ },
+ "2A-V1": {
+  "title": "2A-V1: Two voices in one dyad — original W2-01 + Style B",
+  "heading": "Hear two notes, see two independent parts",
+  "paras": [
+   "Look for two marks in the picture: **C4 below** and **E4 above**. The marks are separate because each pitch can have its own timing, even when the sounds overlap. When you play C4 alone and E4 alone, you learn their identities. When you play them together, you hear a combined sound called a **dyad**.",
+   "Trace the lower C line while E enters above it. In this first moment, the two notes are **four semitones apart**, a major third. The artistic wash around the notes is a picture of atmosphere, not a scientific diagram of sound waves. The exact pitch labels and keyboard geometry are what tell us which notes are present.",
+   "Try soloing each voice and then both. If you use two tracks in a DAW, you can recreate this picture by holding C4 on one and E4 on the other."
+  ],
+  "check": "“Which voice is lower?” — C4; “What makes this a dyad?” — two distinct notes at the same time.",
+  "guide": "inspect the original `W2-01_starting-dyad_learner_styleB.png` for note-label accuracy, then display; show on-page exact C4/E4 companion generated from known source even if art can't be used unchanged.",
+  "placement": "immediately under the 2A first visible teaching preface / intro; show neutral source illustration before user presses Play."
+ },
+ "2A-V2": {
+  "title": "2A-V2: Letter count versus chromatic hops — source SYS-06 / exact interactive keyboard",
+  "heading": "Two rulers answer two different questions",
+  "paras": [
+   "The top ruler counts **note letters**. Start at C, then D, then E. Including both ends, that is three letter positions: a **third**. The bottom ruler counts **neighboring keyboard moves**, including every black key. Start C4 at zero, then move C♯4, D4, D♯4, E4: **four semitone steps**.",
+   "These measurements aren't competing answers. They describe different parts of the same interval name. The letter span gives us the interval **number**; the chromatic distance helps establish its **quality**. C–E is a major third because it spans three letters and four semitones. E–G also spans three letters, but only three semitones, so it's a **minor third**.",
+   "Find both pairs on the pictured keyboard and use the step buttons. Watch the counter start at zero on the lower key—count **moves**, not the number of visible keys. When the interval is sounded simultaneously or one note after another, the distance is still measured the same way."
+  ],
+  "check": "“Why are C–E and E–G both thirds but have different qualities?” — same three-letter count, different semitone size.",
+  "studio": "“Pick one pair in your piano roll, describe the letter count and the chromatic hops separately.”",
+  "guide": "accurate C4–E4 trace 0–4 hops and E4–G4 0–3, plus C4–F4/P4 five and D4–E4/M2 two, using the existing `TraceHops` method; click to change highlighted pair, no extra unintended sound.",
+  "placement": "inside main interval teaching block, BEFORE offering all 13 Palette cards."
+ },
+ "2A-V3": {
+  "title": "2A-V3: One held voice, three different relationships — original W2-02 + exact highlight",
+  "heading": "See the fixed part before you watch the other move",
+  "paras": [
+   "Every panel starts with the **same C4+E4 dyad**. That common beginning matters: it lets you compare the effect of one change. In the first panel, the lower C4 stays while E4 rises to F4. The pair widens from a four-semitone major third to a five-semitone perfect fourth.",
+   "In the second panel, E4 stays while lower C4 falls to B3. The new B3+E4 is also five semitones wide, but the *lower voice* caused the change. In the third panel E4 stays while C4 rises to D4; that creates a two-semitone major second. Notice the difference between the **motion** of the line and the **interval** formed afterward.",
+   "Three different routes can begin at the same place. Point first to the **held line**, then to the line with an arrow, then to the new vertical distance. That's how to read the picture without reducing two melodic voices to unrelated chord stamps."
+  ],
+  "check": "“Which one kept E4?” — two lower-voice alternatives; “Which one narrows interval to two semitones?” — C→D.",
+  "studio": "“Duplicate the C+E pair three times, changing one voice in each, then sketch the arrows.”",
+  "guide": "original W2-02 five-case sheet can be a companion, but each of the three interactive panels must draw exact case-specific source data and **reset** before each comparison. Include B3 in visible keyboard; do not use C4–C5-only W2-06 to represent B3.",
+  "placement": "beside C+E→C+F, B+E and D+E demos. Use a 3-column desktop / 1-column mobile visual, each with two meaningful motion arrows and exact note/interval before/after."
+ },
+ "2A-V4": {
+  "title": "2A-V4: Read the Interval Palette as a musical graphic",
+  "heading": "A color is a suggestion; a semitone number is a measurement",
+  "paras": [
+   "The Interval Palette is a collection of thirteen distance landmarks within one octave, from zero up to twelve semitones. Each card gives you an **interval name**, a **number**, a **concrete pair of pitches**, and a little colored band. Start with the major-third card: C4+E4, **four semitones**. Find those notes on the adjacent keyboard and count the steps to confirm.",
+   "The color strip and descriptive words are creative invitations. They don't tell you how every musician must feel about a major third or a perfect fourth. In our lesson, the real facts are the notes, the spelling and the counted size. The sound tells you what those notes do on this patch, in this register and musical context.",
+   "Select C–E, then C–F; hear each **together** and **as a melody**. Notice how the pair can be two lines moving through time or a moment of simultaneous harmony. The full Atlas has deeper explanations and all thirteen intervals for when you're curious. You can use it without memorizing the entire chart today."
+  ],
+  "check": "“Which card part is measurable?” — spelled note pair + 4 semitones; “Does amber universally mean happiness?” — No.",
+  "studio": "“Choose one unfamiliar interval, hear it, then try placing it in your piece.”",
+  "guide": "one selected 13-step strip, explicit focus, exact semitone ruler and keyboard; do not scatter four cards with no explanation of what card fields mean.",
+  "placement": "directly above existing embedded quick palette, with focus on four original required cards; standalone Atlas still available."
+ },
+ "2B-V1": {
+  "title": "2B-V1: The motion family gallery — W2-03 + original fourth parallel diagram",
+  "heading": "Read the arrows: who stays, who rises, and who falls?",
+  "paras": [
+   "These four small drawings show what happens **between two musical moments**. The lower line is a circle; the upper is a square. An arrow points from a pitch's first position to its next. A flat line or anchored mark means that voice keeps the same pitch.",
+   "In **oblique motion**, one line stays still while the other moves. In **contrary motion**, the arrows point in opposite directions. In **similar motion**, the two arrows point the same way. **Parallel motion** is a particular kind of similar movement where the two parts keep the same interval apart as they travel.",
+   "Compare C4+E4→D4+F4 with C4+E4→D4+F♯4. Both lines rise in both examples. But D4+F4 is a **three-semitone minor third** instead of the original four-semitone major third, so the first is only similar. D4+F♯4 keeps the major third, so the second is parallel. The original five comparison clips remain unchanged; this extra parallel example is a **teaching illustration**, not a stealth change to their data."
+  ],
+  "check": "“Both move upward but by different amounts: similar or parallel?” — similar.",
+  "studio": "“Try moving both parts up while keeping their distance, then by unequal distances.”",
+  "guide": "original W2-03 three types plus new verified fourth parallel card. Use accurate chromatic lengths +2/+1 vs +2/+2, no generic equal-sized arrows when moves unequal.",
+  "placement": "next to the 2B “Four ways of describing” passage; first preview visually neutral, then reveal correct labels/notes after learner comparison where needed."
+ },
+ "2B-V2": {
+  "title": "2B-V2: Five transformations from one common pair — W2-02",
+  "heading": "A small musical choice creates a new vertical picture",
+  "paras": [
+   "Every picture starts with the same lower C4 and upper E4. That is our four-semitone major third. The arrows show the **horizontal movement** of each part through time. The connector at the destination measures the **vertical interval** between the two new notes.",
+   "Read each panel in that order: starting pair, lower voice's movement, upper voice's movement, ending pair, interval name. A held C with E rising to F makes C+F, a perfect fourth. A lower C falling to B while E holds makes B+E, another perfect fourth. A lower C rising to D while E holds makes D+E, a major second. When lower C falls to B **and** upper E rises to F, we reach B+F, a six-semitone tritone. When both rise C→D and E→F, we reach D+F, a minor third.",
+   "Notice that the **same destination size** can arise by changing different parts, and motion in the same direction does not guarantee the same vertical interval. The five pictures are not five independent chords to memorize: they're five ways of **changing a beginning you already understand**."
+  ],
+  "check": "“Which cases are oblique?” — first three. “Which is contrary?” — C→B and E→F. “Which is similar?” — C→D and E→F.",
+  "studio": "“Pick a pathway and redraw two independent lines in your piano roll.”",
+  "guide": "five separate responsive panels, exact fixture-based labels and buttons; all initial clips start C4+E4 instead of chaining previous outcome; source W2-02 instructor version revealed contextually.",
+  "placement": "directly with five playback controls, not only after they are all completed."
+ },
+ "2B-V3": {
+  "title": "2B-V3: The tritone spelling lens — chromatic interval ruler + letter-count diagrams",
+  "heading": "The same six-semitone size can have two written names",
+  "paras": [
+   "The upper diagram shows **B3–F4**. Count its letter names: B, C, D, E, F. That's five positions, so the interval is a kind of fifth. Its chromatic distance is six semitones rather than the seven of a perfect fifth, so B–F is a **diminished fifth**.",
+   "The lower diagram uses **C4–F♯4**. Count C, D, E, F: that's four letter positions, a kind of fourth. It measures six semitones instead of the perfect fourth's five, making it an **augmented fourth**. A piano in standard tuning gives both pairs six semitones, but written intervals are not named by semitones alone. Their **spelling** matters.",
+   "Trace the letter names on one ruler and the actual neighboring keyboard steps on the other. The different names are not mistakes. They tell us about how musicians have written and understood the interval in its musical context."
+  ],
+  "check": "two clearly labeled diagrams with actual note letters and semitone spans; select “show letter count” / “show chromatic size”; interactive sound alone is not substitute for visible rationale. B3 below C4 must be included by range.",
+  "studio": "“Write both pairs, check six semitones on the keyboard, then explain why the written names differ.”",
+  "placement": "immediately after the source original tritone reveal, **not before** answer gate."
+ },
+ "2C-V1": {
+  "title": "2C-V1: Horizontal two-voice paths versus vertical interval",
+  "heading": "One picture can tell two musical stories",
+  "paras": [
+   "Read the timeline from left to right to follow **each musical voice**. A line of E4, F4 and E4 again forms the upper melody. The lower note C4 stays in place beneath it. Those are the two **horizontal stories**, the notes moving or holding as time passes.",
+   "Now choose a moment when both lines sound and look **vertically** from the lower note to the upper note. With C under E the interval is a major third, four semitones. With C under F it's a perfect fourth, five semitones. That vertical slice is a **simultaneous harmonic relationship**, not the same thing as the upper line's melody.",
+   "On the blank two-voice sheet, you will draw the paths yourself. We are showing the solved example first so you know what the grid means: height corresponds to named pitch, time moves across, and a held note extends horizontally."
+  ],
+  "check": "“What do we read across the page?” — two lines through time. “What do we read between two notes at one instant?” — interval/harmony.",
+  "studio": "“Trace your own synth parts on paper, then identify two overlapping notes.”",
+  "guide": "rendered exact source example, legend and blank learner W2-04; listen to lower/upper/both and highlight corresponding line.",
+  "placement": "alongside the existing counterpoint theory passage; use W2-04 learner blank only **after** a solved small path is visible."
+ },
+ "2C-V2": {
+  "title": "2C-V2: Two versions of a 36-second miniature — shared upper E–F–E, moving bass",
+  "heading": "Keep the melody; change the support underneath",
+  "paras": [
+   "Look at the top paths of the two versions. The upper melody plays **E4–F4–E4** with the **same note events and timing** in each. This is the musical idea we're holding constant. A first glance at the two diagrams should let you recognize the identical upper shape without counting anything.",
+   "Now look at the lower paths. Version one holds **C4** beneath the melody. Version two changes the lower part from **C4 to B3 and back to C4**. That one difference changes which pitches meet vertically while the upper melody continues. When F4 sounds above B3, the distance is six semitones: a diminished fifth. Under held C4, F4 makes a perfect fourth instead.",
+   "Because the melody's upper pitches and event times remain the same, this is an honest demonstration of how moving **one supporting voice** can change the harmony. Hear each version, then solo the lower lines. The figure should make it easy to say which line you changed, which line you preserved and what harmonic result you heard."
+  ],
+  "check": "“Which part is identical?” — upper E4–F4–E4. “What caused the B3–F4 relationship?” — lower note change. “Is a third voice needed?” — No.",
+  "studio": "“Duplicate your own melody and change only the bass in the second version.”",
+  "guide": "source canonical 2C event fixtures must drive both images and audio; byte-identical upper arrays across A/B. Highlight lower C4→B3 at correct event time only; use note/time table fallback and accessible labels.",
+  "placement": "immediately before/alongside 2C original A/B audio comparison. Primary graphic is two aligned synchronized fixture-driven timelines with **same upper event blocks**. No unrelated waveform depiction."
+ },
+ "2C-V3": {
+  "title": "2C-V3: A visual planning canvas for your own two-voice composition",
+  "heading": "Draw the music you're about to make",
+  "paras": [
+   "Your canvas has two lines. The upper row is for the melody you want a listener to recognize; the lower row is for the supporting voice. Start by drawing two or three upper note events in order. You don't need staff notation: label the note letters or trace the pitch positions on the keyboard map. Give held notes a longer horizontal mark.",
+   "Next create your first version by drawing one long supporting note beneath the melody. In a second copy, let the lower line move at least once while the upper line remains recognizable. Mark the place where the vertical interval changed. This is the same idea you heard in our two 36-second demonstrations, now turned into your own piece.",
+   "Use the drawing to prepare your DAW. Then listen back and change the drawing if you change the music. The diagram isn't a final score you must obey. It's a practical way to hear, imagine, make and remember intentional musical decisions."
+  ],
+  "check": "“How do you show a note held through several beats?” — long horizontal bar. “How do you show a different supporting pitch?” — lower line moves to another labeled pitch row.",
+  "studio": "“Create the two 30–45s sketches, compare the paths, and write 'I kept ___, moved ___, heard ___'.”",
+  "guide": "W2-04 blank path and a tiny solved demonstration, print/blank and labeled axes; let learner sketch offline or inspect within browser, not upload/record art.",
+  "placement": "beside the assignment and print CTA, after the solved example."
+ },
+ "ATLAS": {
+  "title": "11. Interval Palette + Atlas — teach through its actual geometry",
+  "heading": "How to read an interval card",
+  "paras": [
+   "Each card has four kinds of information. The **note names** tell you which pitches we're pairing. The **semitone number** tells you their measured distance on a standard keyboard. The **interval name** combines a note-letter span with a quality. The **color** is only an artistic prompt, never a universal instruction for how it must feel.",
+   "Take C4–E4. The card says **major third, four semitones**. Find C4 and E4 in the keyboard picture, then count four adjacent steps. Listen to both notes together, then one after another. The keyboard measurement hasn't changed; what changed is how you heard the relationship in time.",
+   "Now choose the tritone card. The selected picture can show C4–F♯4 as an **augmented fourth**, six semitones, and additionally explain that B3–F4 is a different spelling of a six-semitone diminished fifth. To understand why the names differ, read the letter count and the chromatic hops separately."
+  ],
+  "check": "“What is the measurable part?” — notes + interval distance; “What changes when played melodically?” — order of events, not distance; “Do colors encode universal feelings?” — no.",
+  "demo": "clickable selected card, actual root/upper exact MIDI (plus correct spelled enharmonics), synchronized keyboard/chromatic ruler, simultaneous vs sequential audio, note-event/listening explanation, visible extended reference to deep chapter, print/download. Mark colors as personal. Use existing `INTERVAL_DATA_V1.json` instead of hardcoded semitone guesses."
+ }
+}

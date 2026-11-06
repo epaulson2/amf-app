@@ -6,6 +6,9 @@ import Md from '../Md'
 import { BlankLines } from '../ViewMode'
 import { Aside, Checks, Paras, Recap } from '../week1/Teach'
 import Fig from '../week1/Fig'
+import { M2BV1, M2BV2, M2BV3 } from '../visual/Week2Moments'
+import EventTimeline from '../visual/EventTimeline'
+import { tracksOf } from '../visual/shared'
 import { doorsFrom } from '../week1/Doors'
 import { ClipButton, NowPlaying, PairKeys, StopButton, Choice } from './Parts'
 import { W2, copy, field, ticks, quoted, drawers } from '@/lib/soundscape/week2/content'
@@ -60,6 +63,7 @@ function FourWays() {
         <tbody>{t.table.map(r => <tr key={r} className="border-b border-slate-200"><td className="py-2"><Md>{r}</Md></td></tr>)}</tbody>
       </table>
       <p className="sp-prose sp-muted"><Md>{t.note}</Md></p>
+      <M2BV1 />
       <Aside label="Understand it">{t.understand}</Aside>
       <h3 className="text-lg font-semibold text-slate-900 mt-4">Check your understanding</h3>
       <Checks items={t.checks} />
@@ -150,6 +154,7 @@ function FiveWays() {
   return (
     <div>
       <p className="sp-prose">{c('E', 'Body')}</p>
+      <M2BV2 />
       <div className="flex flex-wrap gap-3 mb-2">
         {FIVE.map(f => <ClipButton key={f.id} id={f.id} label={f.label} events={f.events as never} status={`Now playing: ${f.label}, starting from C4 and E4`} onPlayed={() => setShown(s => ({ ...s, [f.id]: true }))} />)}
         <StopButton />
@@ -225,12 +230,12 @@ export default function Lesson2B() {
       }
       heroCtas={<a href="#what" className="sp-btn">Listen to two paths</a>}
       blocks={[
-        { id: 'what', heading: W2.b_what.h2, body: <Paras paras={W2.b_what.paras} /> },
+        { id: 'what', heading: W2.b_what.h2, body: <div><Paras paras={W2.b_what.paras} /><EventTimeline title="A preview: two voices travelling through four moments" total={10} tracks={tracksOf(B.path, { lower: 'Lower voice', upper: 'Upper voice' })} /></div> },
         { id: 'watch', heading: c('A', 'H2'), body: <FirstListen /> },
         { id: 'four', heading: W2.b_four.h2, body: <FourWays /> },
         { id: 'families', heading: c('B', 'H2'), body: <Families /> },
         { id: 'contrary', heading: c('C', 'H2'), body: <Contrary /> },
-        { id: 'tritone', heading: W2.b_tritone.h2, body: <div><Paras paras={W2.b_tritone.paras} /><Checks items={W2.b_tritone.checks} /><p className="sp-callout max-w-2xl"><Md>{c('ref', 'Learner-facing copy')}</Md></p><Link className="sp-btn" href={`${BASE}/resources/interval-palette#ip-06`}>Open the tritone in the Interval Atlas</Link></div> },
+        { id: 'tritone', heading: W2.b_tritone.h2, body: <div><Paras paras={W2.b_tritone.paras} /><M2BV3 /><Checks items={W2.b_tritone.checks} /><p className="sp-callout max-w-2xl"><Md>{c('ref', 'Learner-facing copy')}</Md></p><Link className="sp-btn" href={`${BASE}/resources/interval-palette#ip-06`}>Open the tritone in the Interval Atlas</Link></div> },
         { id: 'similar', heading: c('D', 'H2'), body: <Similar /> },
         { id: 'which', heading: W2.b_which.h2, body: <div><Paras paras={W2.b_which.paras} /><Checks items={W2.b_which.checks} /></div> },
         { id: 'five', heading: c('E', 'H2'), body: <FiveWays /> },
