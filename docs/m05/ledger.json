@@ -1,0 +1,50 @@
+{
+ "model": "google/gemini-nano-banana-2.1",
+ "cap_usd": 3.0,
+ "calls": [
+  {
+   "asset": "IPV-01",
+   "time": "2026-11-06T12:49:56",
+   "aspect": "16:9",
+   "cost_usd": 0.038682,
+   "prompt_tokens": 1473,
+   "completion_tokens": 1503,
+   "seconds": 12.1,
+   "generation_id": "gen-1793987385-uqffxliyk7Nij7HVxBN6",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-04",
+   "time": "2026-11-06T12:50:18",
+   "aspect": "3:2",
+   "cost_usd": 0.038835,
+   "prompt_tokens": 1470,
+   "completion_tokens": 1524,
+   "seconds": 13.2,
+   "generation_id": "gen-1793987405-vLFK0W7uc6cS5oVq6pLt",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-05",
+   "time": "2026-11-06T12:50:36",
+   "aspect": "16:9",
+   "cost_usd": 0.0389145,
+   "prompt_tokens": 1498,
+   "completion_tokens": 1529,
+   "seconds": 11.4,
+   "generation_id": "gen-1793987425-f1mchhmeaXsU2yjc6FWF",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-08",
+   "time": "2026-11-06T12:50:54",
+   "aspect": "3:2",
+   "cost_usd": 0.0393855,
+   "prompt_tokens": 1457,
+   "completion_tokens": 1600,
+   "seconds": 12.0,
+   "generation_id": "gen-1793987442-BhK547pLI7WoNeh6XPxi",
+   "got_image": true
+  }
+ ]
+}
