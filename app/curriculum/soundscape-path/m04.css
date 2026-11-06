@@ -105,9 +105,37 @@
 .m4-jump summary::-webkit-details-marker { display: none; } .m4-jump[open] summary { background: var(--wine); color: #fffaf3; }
 .m4-jump .m4-toc { margin-top: 12px; }
 .m4-toc a[aria-current='step'] { border-color: #d9a86a; background: rgba(255,240,214,.95); }
-.m4-stepwrap { outline: none; scroll-margin-top: 76px; } .m4-stepwrap:focus-visible { outline: 3px solid #e5a764; outline-offset: 6px; border-radius: 10px; }
+.m4-stepwrap { outline: none; scroll-margin-top: 118px; } .m4-stepwrap:focus-visible { outline: 3px solid #e5a764; outline-offset: 6px; border-radius: 10px; }
 .m4-step:first-child { border-top: 0; padding-top: clamp(20px,3vw,36px); }
 .m4-printlink { margin: 26px 0 0; font: 14px/1.4 ui-sans-serif,system-ui,sans-serif; }
 .m4-stepdoors { margin-top: clamp(22px,3vw,40px); max-width: 44rem; } .m4-stepdoors > p { font: 15px/1.5 ui-sans-serif,system-ui,sans-serif; color: var(--muted); margin: 0 0 8px; }
 .m4-stepdoors .sp-door { background: rgba(255,252,246,.85); }
 @media print { .m4-stepnav, .m4-printlink { display: none; } .m4-stepdoors details { display: block; } }
+
+/* course breadcrumbs + return navigation */
+.m4-crumbs { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:6px 16px; padding:14px 0 0; font:600 13px/1.4 ui-sans-serif,system-ui,sans-serif; }
+.m4-crumbs ol { display:flex; flex-wrap:wrap; align-items:center; gap:4px 0; list-style:none; margin:0; padding:0; }
+.m4-crumbs li { display:inline-flex; align-items:center; color:#6f5f6c; }
+.m4-crumbs li + li::before { content:'/'; margin:0 9px; color:#c9a9bd; font-weight:400; }
+.m4-crumbs a { color:var(--wine); text-decoration:none; padding:6px 2px; min-height:32px; display:inline-flex; align-items:center; border-bottom:1px solid rgba(109,50,110,.28); }
+.m4-crumbs a:hover { border-bottom-color:var(--wine); }
+.m4-crumbs li[aria-current='page'] span { color:#4c2346; }
+.m4-crumbs__back { display:inline-flex !important; align-items:center; min-height:40px; padding:7px 16px !important; border:1px solid rgba(127,60,117,.28) !important; border-radius:99px; background:rgba(255,252,246,.85); }
+.m4-return { display:flex; flex-wrap:wrap; gap:10px 12px; margin:30px 0 0; padding-top:18px; border-top:1px solid rgba(102,49,104,.12); }
+.m4-return a { text-decoration:none; padding:10px 20px; min-height:44px; display:inline-flex; align-items:center; border-radius:99px; border:1px solid #e0c6d1; background:#fffbf7; color:#653862; font:650 14px/1.2 ui-sans-serif,system-ui,sans-serif; }
+.m4-return a:first-child { border-color:#d9a86a; background:rgba(255,246,228,.9); }
+.m4-need { max-width:36rem; margin:1.4em 0 0; padding:14px 18px; border:1px solid rgba(102,49,104,.14); border-radius:14px; background:rgba(255,252,246,.8); font:15px/1.55 ui-sans-serif,system-ui,sans-serif; color:var(--reader); }
+.m4-need b { display:block; font:700 11px/1.3 ui-sans-serif,system-ui,sans-serif; letter-spacing:.18em; text-transform:uppercase; color:#a67664; margin-bottom:4px; }
+@media (max-width:640px){ .m4-crumbs { font-size:12.5px; } .m4-crumbs__aside { width:100%; } }
+@media print { .m4-crumbs, .m4-return { display:none; } }
+
+.m4-crumbs__links { display:inline-flex; flex-wrap:wrap; gap:4px 16px; } .m4-crumbs__links a { color:var(--wine); text-decoration:none; padding:6px 2px; min-height:32px; display:inline-flex; align-items:center; border-bottom:1px solid rgba(109,50,110,.28); }
+
+/* lesson steps keep the way home in view just under AMF's own bar */
+.m4-crumbs--sticky { position: sticky; top: 56px; z-index: 40; padding: 7px 0; background: rgba(249,245,237,.95); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(102,49,104,.10); }
+.m4-crumbs--sticky .m4-crumbs__back { min-height: 34px; padding: 4px 14px !important; }
+@media (max-width: 640px) { .m4-crumbs--sticky { gap: 2px 10px; padding: 5px 0; } .m4-crumbs--sticky .m4-crumbs__aside { display: none; } .m4-crumbs--sticky a { min-height: 30px; } }
+@media print { .m4-crumbs--sticky { position: static; } }
+
+.m4-quick { display:flex; flex-wrap:wrap; gap:8px 10px; margin:0 0 10px; } .m4-quick a { text-decoration:none; padding:8px 16px; min-height:40px; display:inline-flex; align-items:center; border-radius:99px; border:1px solid #e0c6d1; background:#fffbf7; color:#653862; font:650 13.5px/1.2 ui-sans-serif,system-ui,sans-serif; }
+@media print { .m4-quick { display:none; } }

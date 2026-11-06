@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { BASE, WEEKS } from '@/lib/soundscape/course'
-import { Scene, Wrap, Row, Figure, Lead, Reading, Caveat } from '@/components/soundscape/m04/kit'
+import { Scene, Wrap, Row, Figure, Lead, Reading, Caveat, Crumbs, CourseReturn } from '@/components/soundscape/m04/kit'
 import { LessonCards } from '@/components/soundscape/m04/Cards'
 
 export const metadata: Metadata = {
@@ -13,6 +13,7 @@ export default function SoundscapeLanding() {
   return (
     <Scene>
       <Wrap>
+        <Crumbs trail={[{ label: 'Ajourné Home' }]} aside={<span className="m4-crumbs__links"><Link href={`${BASE}/how-it-works`}>How we learn</Link><Link href={`${BASE}/journey`}>The journey</Link><Link href={`${BASE}/week-1`}>Week 1</Link></span>} />
         <header className="m4-hero">
           <Row figure={<Figure id="A04-native" art="M02:G01-B-concentric-home" mode="overlay" sq caption="One note chosen as home, with the others arranged around it." />}>
             <p className="m4-eyebrow">An AMF learning track · Music, imagination &amp; discovery</p>
@@ -62,9 +63,9 @@ export default function SoundscapeLanding() {
         <section className="m4-section" aria-labelledby="setup-h">
           <p className="m4-eyebrow">Your instrument</p>
           <h2 id="setup-h">The keyboard in front of you is the classroom</h2>
-          <Row figure={<Figure id="S05-native" art="M02:G02-ACCENT-keyboard-light" caption="A drawing of a keyboard, not a keyboard: it makes no sound." />}>
+          <Row figure={<Figure id="S05-native" art="M02:G02-ACCENT-keyboard-light" caption="A drawing of a keyboard. Play the real one." />}>
             <p>You will need a keyboard, a synthesizer, a digital piano or a small MIDI keyboard connected to any sound source. It can be a modest 25-key instrument. Choose a gentle sustained sound, such as a piano, a soft electric piano or a warm pad, and keep the volume comfortable.</p>
-            <p>This website does not play music and does not include a virtual keyboard. That is on purpose. Everything you hear is something you made, and everything you learn stays in your hands. The pictures explain what to look for; your instrument is where you try it.</p>
+            <p>Everything you hear is something you made, and everything you learn stays in your hands. The pictures explain what to look for; your instrument is where you try it.</p>
             <Reading label="Your first landmark"><p>Look at the black keys: they come in groups of two, then three. The white key just left of any group of two is C. That single landmark is where Lesson 1A begins.</p></Reading>
           </Row>
         </section>
@@ -112,6 +113,7 @@ export default function SoundscapeLanding() {
           <h2 id="res-h">The Interval Palette</h2>
           <p style={{ maxWidth: '40rem' }}>When you are ready for it, the Interval Palette is a reference with thirteen interval cards and thirteen deeper chapters. It is never required reading: it is there when you want to look something up. <Link href={`${BASE}/resources/interval-palette`}>Open the Interval Palette →</Link></p>
         </section>
+        <CourseReturn items={[{ href: `${BASE}/how-it-works`, label: 'How we learn' }, { href: `${BASE}/journey`, label: 'The journey' }, { href: `${BASE}/week-1`, label: 'Week 1' }]} />
         <p className="m4-foot">Ajourné into Music · Part of the Adaptable Musician&apos;s Framework</p>
       </Wrap>
     </Scene>

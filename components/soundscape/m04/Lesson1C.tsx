@@ -169,7 +169,7 @@ const steps: StepSpec[] = [
           </ol>
         </Try>
         <p>Aim for a miniature of about thirty to forty-five seconds. If a shorter piece feels complete, keep it. What matters is that you can hear a beginning, some intentional development, and an ending, or a deliberately open one. You may change the sound, filters or reverb after listening to the basic pitches: the texture is part of your voice as a composer.</p>
-        <Caveat>Everything here stays on your own instrument and device. This website does not record, upload or save anything. Print <a href={`${W1}pdf/W1-04_personal-tonal-atlas-worksheet_blank.pdf`}>the personal tonal atlas worksheet (PDF)</a> if you would like a page to work on.</Caveat>
+        <Caveat>Your sketch stays on your own instrument and device; nothing here asks you to upload anything. Print <a href={`${W1}pdf/W1-04_personal-tonal-atlas-worksheet_blank.pdf`}>the personal tonal atlas worksheet (PDF)</a> if you would like a page to work on.</Caveat>
       </Row>
     </>
   ) },
@@ -221,7 +221,7 @@ export default function Lesson1C({ step }: { step: number | 'all' }) {
       meta={<p className="m4-sub" style={{ marginTop: 14 }}>About 30–40 minutes at your own pace · You have found a home note and an open ending; now you will use them · Nine short steps</p>}
       steps={steps}
       current={step}
-      prevLesson={{ href: `${BASE}/week-1/lesson-1b`, label: 'Lesson 1B' }}
+      prevLesson={{ href: `${BASE}/week-1`, label: 'Week 1' }}
       nextLesson={{ href: `${BASE}/week-1`, label: 'Finish Week 1' }}
     />
   )

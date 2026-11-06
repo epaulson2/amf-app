@@ -35,8 +35,8 @@ function DoorMap() {
 const steps: StepSpec[] = [
     { short: STEPS[0], sub: 'Before the first note', body: (
       <>
-        <Row figure={<Figure id="S05-native" art="M02:G02-ACCENT-keyboard-light" caption="A drawing of a keyboard, not a keyboard: it makes no sound." />}>
-          <Lead>Everything you hear in this lesson will come from your own instrument. This website explains, shows and guides. It never plays a sound, so you stay in charge of what you hear.</Lead>
+        <Row figure={<Figure id="S05-native" art="M02:G02-ACCENT-keyboard-light" caption="A drawing of a keyboard. Play the real one." />}>
+          <Lead>Everything you hear in this lesson comes from your own instrument, so you stay in charge of what you hear. These pages explain, show and guide; your keyboard is where it happens.</Lead>
           <p>Sit at your keyboard or synthesizer. Choose a simple, gentle sound: a piano, a soft electric piano or a warm pad, if you have one. Start with a comfortable volume, quiet enough that you can hear small differences. If your keyboard has a way to hold a note (a sustain pedal, a latch button or a pad sound that keeps going), find it now, because we will use it later in the lesson.</p>
           <Reading label="How to read this picture">
             <p>The drawing shows the keys of a keyboard from the top. Left is lower and right is higher; we will come back to that in a moment. Notice the black keys: they sit in groups of two, then three, then two. Brackets above the picture count each group. A small round knob stands for your volume control; yours will look different, and that is fine.</p>
@@ -284,7 +284,7 @@ const steps: StepSpec[] = [
             </ol>
           </Try>
           <p>Notice how much the musical story changes even when the notes stay the same. One voice stayed. Another moved. You gave two sounds a relationship, and gave yourself a new way to tell a story.</p>
-          <Caveat>Everything here stays on your own instrument and your own device. This website does not record, upload or save anything.</Caveat>
+          <Caveat>Your sketch stays on your own instrument and device; nothing here asks you to upload anything.</Caveat>
         </Row>
       </>
     ) },

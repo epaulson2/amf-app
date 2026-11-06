@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { BASE, WEEKS } from '@/lib/soundscape/course'
 import { T } from '@/lib/soundscape/week1/teaching'
 import Md from '@/components/soundscape/Md'
-import { Scene, Wrap, Row, Figure, Lead, Reading, Caveat } from '@/components/soundscape/m04/kit'
+import { Scene, Wrap, Row, Figure, Lead, Reading, Caveat, Crumbs, HOME_CRUMB, CourseReturn } from '@/components/soundscape/m04/kit'
 import { LessonCards } from '@/components/soundscape/m04/Cards'
 
 export const metadata: Metadata = { title: 'Week 1: Finding Home — Ajourné into Music' }
@@ -13,6 +13,7 @@ export default function Week1() {
   return (
     <Scene>
       <Wrap>
+        <Crumbs trail={[HOME_CRUMB, { label: 'Week 1' }]} aside={<Link href={BASE} className="m4-crumbs__back">← Ajourné Home</Link>} />
         <header className="m4-hero">
           <Row figure={<Figure id="S06-native" art="S06" caption="Find C, travel, add a voice." />}>
             <p className="m4-eyebrow">Week {w.n}</p>
@@ -48,12 +49,12 @@ export default function Week1() {
           <p className="m4-eyebrow">Your keyboard is the classroom</p>
           <h2 id="w1-how">How to learn here</h2>
           <div className="m4-text" style={{ maxWidth: '40rem' }}>
-            <p>Read the idea, study the picture, follow one real example key by key, then try it yourself on your own keyboard. Return to the explanation whenever you want to make sense of what you heard. The website never plays sound; every note you hear is one you played.</p>
+            <p>Read the idea, study the picture, follow one real example key by key, then try it yourself on your own keyboard. Return to the explanation whenever you want to make sense of what you heard. Everything you hear comes from your own instrument, so you stay in charge of the sound.</p>
             <p>The six side doors at the end of each lesson are optional. Your music and your reflections stay yours.</p>
           </div>
           <Caveat>You will need a keyboard or synthesizer, a gentle sound and a comfortable volume. A small 25-key controller is plenty.</Caveat>
         </section>
-        <p style={{ marginTop: 10 }}><Link href={`${BASE}/journey`} style={{ fontWeight: 600 }}>← The eight-week journey</Link></p>
+        <CourseReturn items={[{ href: BASE, label: 'Ajourné Home' }, { href: `${BASE}/journey`, label: 'The eight-week journey' }, { href: `${BASE}/how-it-works`, label: 'How we learn' }]} />
         <p className="m4-foot">Ajourné into Music · Part of the Adaptable Musician&apos;s Framework</p>
       </Wrap>
     </Scene>

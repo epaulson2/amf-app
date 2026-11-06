@@ -204,7 +204,7 @@ const steps: StepSpec[] = [
           </ol>
         </Try>
         <p>Today you learned that notes have measurable distances, scales have recognisable patterns, and musical endings are choices. Tomorrow’s piece does not have to resolve just because theory tells you where resolution is possible.</p>
-        <Caveat>Everything stays on your own instrument and device. This website does not record, upload or analyse your sound.</Caveat>
+        <Caveat>Your sketches stay on your own instrument and device; nothing here asks you to upload anything.</Caveat>
       </Row>
       {door(['ambient-composers-notebook', 'paint-what-you-hear'])}
     </>
@@ -241,7 +241,7 @@ export default function Lesson1B({ step }: { step: number | 'all' }) {
       meta={<p className="m4-sub" style={{ marginTop: 14 }}>About 30–40 minutes at your own pace · Last time you made one note into a home; now a melody travels away from it · Nine short steps</p>}
       steps={steps}
       current={step}
-      prevLesson={{ href: `${BASE}/week-1/lesson-1a`, label: 'Lesson 1A' }}
+      prevLesson={{ href: `${BASE}/week-1`, label: 'Week 1' }}
       nextLesson={{ href: `${BASE}/week-1/lesson-1c`, label: 'Lesson 1C' }}
     />
   )

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 import figures from '@/lib/soundscape/m04/figures.json'
+import { BASE } from '@/lib/soundscape/course'
 
 // Static illustrated-lesson kit. Server components only: no state, no audio, no scripts, no toggles. Navigation is ordinary links and anchors.
 const FIG = figures as Record<string, { title: string; desc: string }>
@@ -107,6 +108,8 @@ export function Stepper({ basePath, eyebrow, title, deck, meta, steps, current, 
   prevLesson: { href: string; label: string }; nextLesson: { href: string; label: string }; lessonCode: string
 }) {
   const total = steps.length
+  const weekNo = lessonCode.slice(0, 1)
+  const weekHref = `${BASE}/week-${weekNo}`
   const href = (n: number) => `${basePath}?step=${n}#lesson-step`
   const all = current === 'all'
   const cur = all ? 1 : current
@@ -120,6 +123,11 @@ export function Stepper({ basePath, eyebrow, title, deck, meta, steps, current, 
   return (
     <Scene>
       <Wrap>
+        <Crumbs
+          sticky
+          trail={[HOME_CRUMB, { label: `Week ${weekNo}`, href: weekHref }, { label: `Lesson ${lessonCode}`, href: all ? undefined : `${basePath}?step=1` }, { label: all ? 'Whole lesson' : `Step ${cur} of ${total}` }]}
+          aside={<Link href={weekHref} className="m4-crumbs__back">← Back to Week {weekNo}</Link>}
+        />
         <header className="m4-hero m4-hero--lesson">
           <p className="m4-eyebrow">{eyebrow}</p>
           <h1>{title}</h1>
@@ -129,6 +137,7 @@ export function Stepper({ basePath, eyebrow, title, deck, meta, steps, current, 
             <nav aria-label="Steps in this lesson" className="m4-stepnav">
               <p className="m4-progress" aria-live="polite"><strong>Step {cur} of {total}</strong> · {steps[cur - 1].short}</p>
               <ol className="m4-dots" aria-hidden="true">{steps.map((_, i) => <li key={i} className={i + 1 === cur ? 'on' : i + 1 < cur ? 'done' : undefined} />)}</ol>
+              <p className="m4-quick"><Link href={weekHref}>← Back to Week {weekNo}</Link><Link href={BASE}>Ajourné Home</Link></p>
               <details className="m4-jump" key={`jump-${cur}`}>
                 <summary>Jump to a step</summary>
                 <ol className="m4-toc">{steps.map((s, i) => <li key={i}><Link href={href(i + 1)} aria-current={i + 1 === cur ? 'step' : undefined}>{s.short}</Link></li>)}</ol>
@@ -141,9 +150,37 @@ export function Stepper({ basePath, eyebrow, title, deck, meta, steps, current, 
         <div id="lesson-step" tabIndex={-1} className="m4-stepwrap">
           {all ? steps.map((_, i) => render(i)) : render(cur - 1)}
         </div>
+        <CourseReturn items={[{ href: BASE, label: 'Ajourné Home' }, { href: weekHref, label: `Back to Week ${weekNo}` }, { href: `${BASE}/how-it-works`, label: 'How we learn' }]} />
         <p className="m4-printlink">{all ? <Link href={`${basePath}?step=1`}>← Back to the step-by-step lesson</Link> : <Link href={`${basePath}?step=all`}>Print or read the whole lesson on one page</Link>}</p>
         <p className="m4-foot">Ajourné into Music · Part of the Adaptable Musician&apos;s Framework</p>
       </Wrap>
     </Scene>
+  )
+}
+
+export type Crumb = { label: string; href?: string }
+/** Compact course breadcrumb: "Ajourné Home / Week 1 / Lesson 1A / Step 2 of 12". The last crumb is the current page. Ordinary links only. */
+export function Crumbs({ trail, aside, sticky }: { trail: Crumb[]; aside?: ReactNode; sticky?: boolean }) {
+  return (
+    <nav aria-label="Course navigation" className={`m4-crumbs${sticky ? ' m4-crumbs--sticky' : ''}`}>
+      <ol>
+        {trail.map((c, i) => (
+          <li key={i} {...(i === trail.length - 1 ? { 'aria-current': 'page' as const } : {})}>
+            {c.href && i < trail.length - 1 ? <Link href={c.href}>{c.label}</Link> : <span>{c.label}</span>}
+          </li>
+        ))}
+      </ol>
+      {aside && <div className="m4-crumbs__aside">{aside}</div>}
+    </nav>
+  )
+}
+export const HOME_CRUMB: Crumb = { label: 'Ajourné Home', href: BASE }
+
+/** Bottom-of-page way out: always a real link home and back to the week, never browser Back or a long scroll. */
+export function CourseReturn({ items }: { items: { href: string; label: string }[] }) {
+  return (
+    <nav aria-label="Return to the course" className="m4-return">
+      {items.map(i => <Link key={i.href + i.label} href={i.href}>{i.label}</Link>)}
+    </nav>
   )
 }

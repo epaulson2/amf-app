@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { BASE, WEEKS } from '@/lib/soundscape/course'
-import { Scene, Wrap, Lead, Figure } from '@/components/soundscape/m04/kit'
+import { Scene, Wrap, Lead, Crumbs, HOME_CRUMB, CourseReturn } from '@/components/soundscape/m04/kit'
 
 export const metadata: Metadata = { title: 'Your Eight-Week Journey — Ajourné into Music' }
 
@@ -14,6 +14,7 @@ export default function Journey() {
   return (
     <Scene>
       <Wrap>
+        <Crumbs trail={[HOME_CRUMB, { label: 'The Journey' }]} aside={<Link href={BASE} className="m4-crumbs__back">← Ajourné Home</Link>} />
         <header className="m4-hero">
           <p className="m4-eyebrow">The first two months</p>
           <h1>From one note to <em>your own musical world</em></h1>
@@ -44,6 +45,7 @@ export default function Journey() {
           <p style={{ maxWidth: '40rem' }}>You can revisit a week, pause to make more music, or explore a deeper question when curiosity takes you there. Each step is meant to become part of your musical imagination.</p>
           <ul className="m4-cta"><li><Link className="m4-btn" href={`${BASE}/week-1/lesson-1a`}>Start Lesson 1A</Link></li><li><Link className="m4-btn m4-btn--ghost" href={`${BASE}/how-it-works`}>See how we learn</Link></li></ul>
         </section>
+        <CourseReturn items={[{ href: BASE, label: 'Ajourné Home' }, { href: `${BASE}/how-it-works`, label: 'How we learn' }, { href: `${BASE}/week-1`, label: 'Week 1' }]} />
         <p className="m4-foot">Ajourné into Music · An AMF introductory creative-music track</p>
       </Wrap>
     </Scene>
