@@ -4,6 +4,7 @@
 import data from './interval-data.json'
 import quick from './quick.json'
 import atlas from './atlas.json'
+import { INTERVAL_IDENTITY_COLORS_V1 } from './interval-identity'
 
 export type IntervalRecord = {
   id: string; anchor: string; semitones: number; name: string; abbr: string
@@ -25,7 +26,8 @@ export const INTERVALS: IntervalRecord[] = data.cards.map(c => {
     id: c.id, anchor: `ip-${String(c.semitones).padStart(2, '0')}`, semitones: c.semitones, name: c.intervalName, abbr: c.abbreviation,
     lowerName: c.sourceRoot.name, upperName: c.sourceUpper.name, lowerMidi: c.sourceRoot.midi, upperMidi: c.sourceUpper.midi,
     altSpelling: c.alternateEnharmonicSpelling ? { name: c.alternateEnharmonicSpelling.intervalName, lower: c.alternateEnharmonicSpelling.lower, upper: c.alternateEnharmonicSpelling.upper, midi: c.alternateEnharmonicSpelling.midi } : null,
-    color: { name: c.color.name, hex: c.color.hex },
+    // Single authority: INTERVAL_IDENTITY_COLORS_V1. The earlier candidate colour in interval-data.json is legacy provenance only.
+    color: { name: INTERVAL_IDENTITY_COLORS_V1[c.id].accent, hex: INTERVAL_IDENTITY_COLORS_V1[c.id].hex },
     words: row.words, role: row.role, example: row.example,
     quick: { colorCue: ex['Color cue'], impression: ex['Sound impression to consider'], canDo: ex['What it can do'], tryThis: ex['Try this'], remember: ex['Remember'] },
     deep: { colorCue: ch.colorCue, example: ch.example, words: ch.words, sections: SECTION_ORDER.map(k => [k, ch[k]] as [string, string]), actions: ch.actions },

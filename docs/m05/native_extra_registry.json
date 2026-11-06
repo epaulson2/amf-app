@@ -1,0 +1,16 @@
+{
+ "IPV-34-native": {
+  "desc": "Two keyboards with the same two keys highlighted, C4 and the black key above D. First it is spelled E-flat: letters C, D, E make a third, so it is a minor third. Second it is spelled D-sharp: letters C, D make a second, so it is an augmented second. Both are 3 semitones.",
+  "size": [
+   565,
+   328
+  ]
+ },
+ "IPV-35-native": {
+  "desc": "Three keyboards from C4. First C and E alone, a major third of 4 semitones. Second C, E and G together, a C-major triad. Third C, E-flat and G, a C-minor triad, where moving one key down changes the quality.",
+  "size": [
+   386,
+   744
+  ]
+ }
+}

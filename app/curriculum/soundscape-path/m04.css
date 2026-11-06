@@ -181,3 +181,24 @@
   .m4-tree__title { display:block; margin:0 12px 8px; font:700 12px system-ui,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#855086; }
 }
 @media print { .m4-shell__side { display:none; } .m4-shell { display:block; } }
+
+/* ---- Interval Palette resource (M06). Static: no scripts, audio or toggles beyond navigation and <details>. ---- */
+.ip6-jump { display:flex; flex-wrap:wrap; gap:8px 10px; margin:18px 0 6px; padding:0; }
+.ip6-jump a { font:600 14px/1.2 ui-sans-serif,system-ui,sans-serif; padding:9px 14px; border-radius:99px; border:1px solid #d9c3cd; background:rgba(255,250,243,.8); text-decoration:none; min-height:40px; display:inline-flex; align-items:center; }
+.ip6-fig { margin:18px 0; max-width:780px; } .ip6-fig img { display:block; width:100%; height:auto; } .ip6-fig figcaption { font:13.5px/1.5 ui-sans-serif,system-ui,sans-serif; color:#6f5f6c; margin-top:6px; }
+.ip6-cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr)); gap:22px; margin-top:18px; }
+.ip6-card { background:rgba(255,250,243,.78); border:1px solid #eadfcf; border-radius:16px; padding:12px 14px 6px; min-width:0; }
+.ip6-card .ip6-fig { margin:0 0 8px; }
+.ip6-small { font:15.5px/1.6 ui-sans-serif,system-ui,sans-serif; color:#4a3a4a; max-width:44rem; }
+.ip6-chapter, .ip6-cmp, .ip6-layer { margin:46px 0 0; padding-top:26px; border-top:1px solid rgba(102,49,104,.12); }
+.ip6-chapter h3, .ip6-cmp h3, .ip6-layer h3 { font-size:clamp(24px,3vw,32px); font-weight:400; margin:0 0 8px; } .ip6-chapter h3 span { font:600 15px ui-sans-serif,system-ui,sans-serif; color:#8f5f7f; }
+.ip6-chapter details { margin-top:12px; border:1px solid #eadfcf; border-radius:12px; background:rgba(255,250,243,.7); padding:6px 16px 12px; max-width:46rem; }
+.ip6-chapter summary { cursor:pointer; font:650 16px/1.4 ui-sans-serif,system-ui,sans-serif; color:#6d326e; padding:10px 0; min-height:44px; }
+.ip6-chapter details h4 { font:700 11.5px ui-sans-serif,system-ui,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#a3778f; margin:18px 0 2px; }
+.ip6-chapter details p { max-width:40rem; font-size:17px; }
+.ip6-table { border-collapse:collapse; font:14.5px/1.45 ui-sans-serif,system-ui,sans-serif; margin:14px 0; display:block; overflow-x:auto; max-width:100%; } .ip6-table caption { text-align:left; font-weight:700; color:#6f5f6c; padding-bottom:6px; }
+.ip6-table th, .ip6-table td { border-bottom:1px solid #e6dccb; padding:6px 12px 6px 0; text-align:left; vertical-align:top; }
+.ip6-sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.m4 code { font-size:.9em; }
+@media print { .ip6-noprint, .ip6-jump, .m4-crumbs { display:none !important; } .ip6-chapter details { border:0; } .ip6-chapter, .ip6-cmp { break-inside:auto; } .ip6-fig { break-inside:avoid; } .m4-atmos { display:none; } }
+.ip6-muted { color:#6f5f6c; } .ip6-rule { border-top:1px solid #e6dccb; padding-top:14px; }
