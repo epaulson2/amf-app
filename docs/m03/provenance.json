@@ -2402,6 +2402,18 @@
    "source": "native_registry.json",
    "group": "SUP",
    "status": "NATIVE READY"
+  },
+  "X10-provenance": {
+   "type": "NATIVE-METADATA",
+   "title": "Asset provenance, rights and alt text",
+   "desc": "docs/m03/PROVENANCE.md and provenance.json",
+   "files": [
+    "docs/m03/PROVENANCE.md",
+    "docs/m03/provenance.json"
+   ],
+   "source": "ledger + registries",
+   "group": "SUP",
+   "status": "NATIVE READY"
   }
  }
 }

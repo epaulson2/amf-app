@@ -1,0 +1,13 @@
+{
+ "ledger_total_usd": 1.715501,
+ "calls": 44,
+ "account_delta_usd": 2.038,
+ "unattributed_usd": 0.3225,
+ "remaining_before": 28.4038,
+ "remaining_after": 26.3658,
+ "cap_usd": 4.0,
+ "explanation": "The OpenRouter key is shared with QCR work. The account total also rose between the M02 close and the M03 preflight with no AMF calls, so some concurrent QCR usage is expected inside this window. Each M03 call's generation_id is in ledger.json for dashboard verification.",
+ "disclosures": [
+  "B01 was generated twice: the first output reproduced the reference screen layout (text, keys, UI) and was discarded; both calls are in the ledger (~$0.039 each)."
+ ]
+}

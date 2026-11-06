@@ -22,7 +22,7 @@ export default async function M03Group({ params }: { params: Promise<{ group: st
         <header className="m3-hero">
           <p className="m3-eyebrow">Ajourné into Music · M03 assets</p>
           <h1>{g.title}</h1>
-          <p className="m3-lead">{g.blurb} {shown.length} figures with artwork or native diagrams, {items.length - shown.length} further catalogue entries are recorded in the crosswalk.</p>
+          <p className="m3-lead">{g.blurb} {shown.length} {shown.length === 1 ? 'figure' : 'figures'} with artwork or native diagrams; {items.length - shown.length} further catalogue {items.length - shown.length === 1 ? 'entry is' : 'entries are'} recorded in the crosswalk.</p>
         </header>
         <section className="m3-sheet" aria-labelledby="sheet-h">
           <h2 id="sheet-h">Contact sheet</h2>
@@ -42,8 +42,8 @@ export default async function M03Group({ params }: { params: Promise<{ group: st
                 <p className="m3-eyebrow">{i.id} · {i.placement ?? g.title}</p>
                 <h2 id={`h-${i.id}`}>{i.title}</h2>
                 {i.objective && <p className="m3-lead">{i.objective}</p>}
-                {i.how_to_read && <p className="m3-how"><strong>How to read it.</strong> {i.how_to_read}</p>}
-                {i.keyboard_action && <div className="m3-try"><b>Try it on your own keyboard</b><p>{i.keyboard_action}</p></div>}
+                {i.how_to_read && <p className="m3-how"><strong>Teaching note, how to read it:</strong> {i.how_to_read}</p>}
+                {i.keyboard_action && <div className="m3-try"><b>Teaching note: on the learner's own keyboard</b><p>{i.keyboard_action}</p></div>}
                 {i.guard && <p className="m3-guard">{i.guard}</p>}
               </div>
               <div>{i.render.map((r, k) => <Fig key={k} r={r} alt={i.title} />)}</div>

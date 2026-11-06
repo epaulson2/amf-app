@@ -14,7 +14,7 @@ export default async function Contact({ params }: { params: Promise<{ group: str
     <div className="m3">
       <img className="m3-atmos m3-atmos--tl" src="/soundscape/m02/art/A-corner-atmosphere.webp" alt="" aria-hidden="true" />
       <div className="m3-wrap">
-        <header className="m3-hero"><p className="m3-eyebrow">M03 contact sheet</p><h1>{g.title}</h1><p className="m3-lead">{shown.length} figures. Each tile is the art with its native diagram over it, labelled with its catalogue ID. Static: nothing here plays sound or reveals anything.</p></header>
+        <header className="m3-hero"><p className="m3-eyebrow">M03 contact sheet</p><h1>{g.title}</h1><p className="m3-lead">{shown.length} {shown.length === 1 ? 'figure' : 'figures'}. Each tile is the art with its native diagram over it, labelled with its catalogue ID. Static: nothing here plays sound or reveals anything.</p></header>
         <ul className="m3-grid m3-grid--big">
           {shown.map(i => (
             <li key={i.id}><div className="m3-card"><Fig r={i.render[0]} thumb alt={i.title} /><p className="m3-id">{i.id}</p><p className="m3-ttl">{i.title}</p><span className="m3-cls">{i.status}</span></div></li>

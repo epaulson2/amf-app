@@ -54,7 +54,7 @@ All art is an original model output generated for AMF with no third-party source
 | F02 | crop | $0.0000 | 743x768 | `1215db2e98eab195…` | `6328e7c0dcf61088…` |
 | F03 | crop | $0.0000 | 744x768 | `fab700d54d02a30a…` | `cd56aa630dab97c0…` |
 
-## Native figures (113)
+## Native figures (114)
 
 Each native SVG has a `<title>`, a full `<desc>` text equivalent and an ink-light `.print.svg`. See `X09-accessible-print.html` for the text of every figure.
 

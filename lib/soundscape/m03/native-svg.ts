@@ -12,9 +12,9 @@ export const INK = '#3e2241', WINE = '#6d326e', MUTED = '#786a75', AMBER = '#c88
 export const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 export const nm = (midi: number) => nameOf(midi) as string
 
-export function txt(x: number, y: number, s: string, o: { size?: number; weight?: number | string; anchor?: 'start' | 'middle' | 'end'; fill?: string; italic?: boolean; sans?: boolean; ls?: number } = {}) {
+export function txt(x: number, y: number, s: string, o: { size?: number; weight?: number | string; anchor?: 'start' | 'middle' | 'end'; fill?: string; italic?: boolean; sans?: boolean; ls?: number; halo?: boolean } = {}) {
   const f = o.sans ? "ui-sans-serif, system-ui, 'Segoe UI', sans-serif" : "Georgia, 'Times New Roman', serif"
-  return `<text x="${x}" y="${y}" font-family="${f}" font-size="${o.size ?? 16}" font-weight="${o.weight ?? 400}" text-anchor="${o.anchor ?? 'start'}" fill="${o.fill ?? INK}"${o.italic ? ' font-style="italic"' : ''}${o.ls ? ` letter-spacing="${o.ls}"` : ''}>${esc(s)}</text>`
+  return `<text x="${x}" y="${y}" font-family="${f}" font-size="${o.size ?? 16}" font-weight="${o.weight ?? 400}" text-anchor="${o.anchor ?? 'start'}" fill="${o.fill ?? INK}"${o.italic ? ' font-style="italic"' : ''}${o.ls ? ` letter-spacing="${o.ls}"` : ''}${o.halo ? ' stroke="#f9f5ed" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke fill"' : ''}>${esc(s)}</text>`
 }
 /** Greedy word-wrap into <text> lines (monospace-free estimate: 0.5em average glyph). */
 export function para(x: number, y: number, s: string, maxW: number, o: Parameters<typeof txt>[3] & { lh?: number } = {}) {
@@ -22,7 +22,7 @@ export function para(x: number, y: number, s: string, maxW: number, o: Parameter
   let cur = ''
   for (const w of words) { if ((cur + ' ' + w).trim().length > per) { lines.push(cur); cur = w } else cur = (cur + ' ' + w).trim() }
   if (cur) lines.push(cur)
-  return { svg: lines.map((l, i) => txt(x, y + i * (o.lh ?? size * 1.45), l, o)).join(''), h: lines.length * (o.lh ?? size * 1.45) }
+  return { svg: lines.map((l, i) => txt(x, y + i * (o.lh ?? size * 1.45), l, { halo: true, ...o })).join(''), h: lines.length * (o.lh ?? size * 1.45) }
 }
 
 export function defs(c: Ctx) {
@@ -121,4 +121,4 @@ export function wrap(id: string, title: string, desc: string, w: number, h: numb
     `<title id="${id}-t">${esc(title)}</title><desc id="${id}-d">${esc(desc)}</desc>${defs(c)}${c.print ? '<rect width="100%" height="100%" fill="#fff"/>' : ''}${body}</svg>\n`
 }
 export const stack = (parts: { body: string; h: number }[], gap = 18) => { let y = 0, body = ''; for (const p of parts) { body += `<g transform="translate(0 ${y})">${p.body}</g>`; y += p.h + gap } return { body, h: y - gap } }
-export const heading = (x: number, y: number, s: string, maxW = 1e9) => txt(x, y, s, { size: Math.min(13, Math.max(8, maxW / (s.length * 0.82))), weight: 700, fill: '#a67664', sans: true, ls: 1.2 })
+export const heading = (x: number, y: number, s: string, maxW = 1e9) => txt(x, y, s, { size: Math.min(13, Math.max(8, maxW / (s.length * 0.82))), weight: 700, fill: '#a67664', sans: true, ls: 1.2, halo: true })

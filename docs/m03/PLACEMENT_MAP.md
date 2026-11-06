@@ -99,4 +99,4 @@ Catalogue ID → where it goes, its status and its files. NOT SHIPPED: nothing i
 | X07 | Six enrichment category identities | NATIVE | NATIVE READY | VARIANT / NATIVE | 2 files |
 | X08 | Optional research navigation | NATIVE | NATIVE READY | NATIVE | 1 files |
 | X09 | Accessible/print variants | NATIVE | NATIVE READY | NATIVE | 1 files |
-| X10 | Asset provenance, rights and alt text | NATIVE | NATIVE READY | NATIVE metadata | 0 files |
+| X10 | Asset provenance, rights and alt text | NATIVE | NATIVE READY | NATIVE metadata | 2 files |
