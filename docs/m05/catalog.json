@@ -1,0 +1,107 @@
+{
+ "IPV-01": {
+  "title": "Palette landing hero",
+  "aspect": "16:9",
+  "prompt": "A luminous painted invitation: one warm amber central glow with delicate arcs and petals radiating outward and gradually opening wider and wider into larger fields of pale teal, lavender and blush rose, like thirteen landmarks gently unfolding from a single starting point. The rings and petals are organic and irregular, not a calibrated diagram. Keep the composition wide and airy with quiet space at left for a headline."
+ },
+ "IPV-04": {
+  "title": "What is an interval?",
+  "aspect": "3:2",
+  "prompt": "Two separate soft translucent presences of light, one warm amber and one pale teal, held apart by a visible gentle passage of luminous pigment that flows between them. The path is a quiet painterly stream, not a ruler: no tick marks, no measure. Large calm white space around. The idea is simply: two sounds, and the distance between them."
+ },
+ "IPV-05": {
+  "title": "Melodic versus harmonic",
+  "aspect": "16:9",
+  "prompt": "Two matching painted scenes side by side, separated by a wide white gap. LEFT scene: two luminous presences, amber then teal, set one after the other along a gentle left-to-right flowing ribbon of pigment, like events in time. RIGHT scene: the same amber and teal presences placed on top of one another as two overlapping translucent fields sharing a glowing overlap, together at once. Same colours and same forms in both scenes so they read as the same two notes heard two ways."
+ },
+ "IPV-08": {
+  "title": "Shared-note relationship web",
+  "aspect": "3:2",
+  "prompt": "Several small translucent fields that all share one luminous amber anchor at their common centre, while differently coloured upper presences (teal, lavender, rose) branch away in different directions like a gentle network of related worlds. The shared amber anchor stays the same in every field; only the other presence changes."
+ },
+ "IPV-10": {
+  "title": "Perfect unison",
+  "aspect": "1:1",
+  "prompt": "Two translucent pigment layers with slightly different textures, one amber and one pale pearl-teal, laid exactly over one another around a single shared luminous point, so they read as one place held by two voices. No path or gap between them. Soft, centred, still."
+ },
+ "IPV-11": {
+  "title": "Minor second",
+  "aspect": "1:1",
+  "prompt": "Two very near luminous presences, amber and a warm blush coral, whose soft neighbouring edges almost touch and interplay with delicate pigment crowding between them. Close, intimate, delicate; not aggressive or fearful. Small bridge of space."
+ },
+ "IPV-12": {
+  "title": "Major second",
+  "aspect": "1:1",
+  "prompt": "Two warm translucent presences, amber and pale gold-peach, joined by one gentle airy stride; a little more room between them than a minor second, an open step forward. Calm, balanced, light."
+ },
+ "IPV-13": {
+  "title": "Minor third",
+  "aspect": "1:1",
+  "prompt": "A compact rounded lavender-orchid arch connecting a lower amber presence to an upper presence, with delicate inward layered ripples inside the arch. A noticeable skip over an unseen middle position. Expressive and tender, not sad."
+ },
+ "IPV-14": {
+  "title": "Major third",
+  "aspect": "1:1",
+  "prompt": "An elegant open golden-amber bloom unfolding from a lower centre to an upper airy presence, the arch a little wider and brighter than a minor third, petals fanning outward. Warm and spacious without being a happy-face cliche."
+ },
+ "IPV-15": {
+  "title": "Perfect fourth",
+  "aspect": "1:1",
+  "prompt": "A graceful supported reaching arc: a steady sage-teal presence below and a poised upper presence landing lightly above, held by a soft rising ribbon. Open sage and teal light, balanced and calm, no sense of obligation to resolve."
+ },
+ "IPV-16": {
+  "title": "Tritone",
+  "aspect": "1:1",
+  "prompt": "Two luminous regions balanced around a near-symmetry, with two crossing arcs that gently suggest the octave being split exactly in half, a quiet teal and blue intrigue with amber at the centre. Mysterious and curious, never dark, threatening or evil."
+ },
+ "IPV-17": {
+  "title": "Perfect fifth",
+  "aspect": "1:1",
+  "prompt": "An expansive anchored arch of two strong luminous pillars of amber and teal in a delicate open field, strands of blue-teal and amber connecting them with calm clarity. Open, stable-looking, generous."
+ },
+ "IPV-18": {
+  "title": "Minor sixth",
+  "aspect": "1:1",
+  "prompt": "A long graceful reach between two separated presences, a rose-orchid curvature with trailing translucent layers behind it, expressive and wide but not sorrowful."
+ },
+ "IPV-19": {
+  "title": "Major sixth",
+  "aspect": "1:1",
+  "prompt": "A long unfolding gesture between two separated presences in a warmer peach and gold field, slightly wider and more open than a minor sixth, turning gently; visibly of the same family as the minor sixth."
+ },
+ "IPV-20": {
+  "title": "Minor seventh",
+  "aspect": "1:1",
+  "prompt": "A broad teal atmosphere with two clearly distant luminous presences and a faint continuing path that drifts on beyond the upper one, open-ended and spacious, not demanding any ending."
+ },
+ "IPV-21": {
+  "title": "Major seventh",
+  "aspect": "1:1",
+  "prompt": "Two luminous presences nearly spanning the full height of the canvas with fine lilac shimmer near the upper one, and a faint second focal glow just beyond it that echoes the lower presence, like a near arrival that stays a little away."
+ },
+ "IPV-22": {
+  "title": "Perfect octave",
+  "aspect": "1:1",
+  "prompt": "A rising spiral ribbon connecting two related amber-and-pearl presences at different heights, the upper one an echo of the lower in a new register, pearl-gold light, a return to the same name at a higher level."
+ },
+ "IPV-25": {
+  "title": "Fourth, tritone and fifth",
+  "aspect": "16:9",
+  "prompt": "Three related open arches in a row, all rising from one shared amber anchor on the left of each, with the upper end of each arch landing progressively a little further along: first arch sage-teal, middle arch a blue-violet, third arch a deeper teal-gold. Each arch only slightly different from its neighbour. Not ranked; a family of three."
+ },
+ "IPV-28": {
+  "title": "Context changes what we hear",
+  "aspect": "16:9",
+  "prompt": "A row of three small micro-landscapes of sound texture, each a different painted atmosphere: one soft and dense like felt, one bright and glassy, one low and warm. In each landscape the same two luminous presences appear, but their overlap looks different. Not sorted by any scale; different contexts, equal standing."
+ },
+ "IPV-29": {
+  "title": "Interval inversion",
+  "aspect": "3:2",
+  "prompt": "A graceful luminous pathway that turns over a central point: a lower amber presence and an upper teal presence, with a gentle curved path carrying the lower one up and over so that the two swap roles, preserving the same two presences. Two related arches, one tall and one short, nested so that together they complete one whole circle. Not a mirror image."
+ },
+ "IPV-30": {
+  "title": "Thirteen-landmark landscape",
+  "aspect": "16:9",
+  "prompt": "One coherent painted musical landscape made of thirteen distinct luminous destinations in a gentle left-to-right journey, beginning with a single glowing point at the far left and ending with a rising pearl-gold bloom at the far right, the thirteen places differing gradually in size, colour and openness, connected by a soft continuous river of pigment. Leave low, quiet space under the landscape for a separate ruler."
+ }
+}
