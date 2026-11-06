@@ -22,7 +22,7 @@ def chk(c,msg):
 STATE="""(()=>{const t=document.querySelector('nav[aria-label="Ajourné course contents"]');const cur=[...t.querySelectorAll('[aria-current=page]')].map(a=>a.textContent.trim());
 const hdr=[...document.querySelectorAll('nav')].find(n=>n!==t);const aj=[...hdr.querySelectorAll('a')].filter(a=>a.textContent.trim()==='Ajourné'&&a.offsetParent);const cu=[...hdr.querySelectorAll('a')].filter(a=>a.textContent.trim()==='Curriculum'&&a.offsetParent);
 const r=aj[0]&&aj[0].getBoundingClientRect();const tr=t.getBoundingClientRect();const pan=t.querySelector('.m4-tree__panel');
-return {url:location.pathname+location.search,cur,ow:document.documentElement.scrollWidth-innerWidth,hdrOW:hdr.scrollWidth-hdr.clientWidth,ajVis:!!aj.length&&r.left>=0&&r.right<=innerWidth,ajCol:aj[0]&&getComputedStyle(aj[0]).color,cuCol:cu[0]&&getComputedStyle(cu[0]).color,
+return {url:location.pathname+location.search,cur,ow:document.documentElement.scrollWidth-innerWidth,hdrOW:hdr.scrollWidth-hdr.clientWidth,ajVis:!!aj.length&&r.left>=0&&r.right<=innerWidth,ajCol:aj[0]&&aj[0].getAttribute('aria-current'),cuCol:cu[0]&&cu[0].getAttribute('aria-current'),
 side:[Math.round(tr.left),Math.round(tr.top),Math.round(tr.width)],panelShown:getComputedStyle(pan).display!=='none',toggle:getComputedStyle(t.querySelector('.m4-tree__toggle')).display!=='none',links:t.querySelectorAll('a').length,steps:t.querySelectorAll('ol a').length,
 main:Math.round(document.querySelector('.m4-shell__main').getBoundingClientRect().width),h1:(document.querySelector('h1')||{}).textContent}})()"""
 try:
@@ -33,7 +33,7 @@ try:
         chk(s['ow']<=0,f'{w} no page overflow ({s["ow"]})'); chk(s['hdrOW']<=0,f'{w} header no overflow ({s["hdrOW"]})')
         chk(s['ajVis'],f'{w} Ajourné link visible in header'); chk(len(s['cur'])==1 and s['cur'][0].startswith('4') and 'Two semitones' in s['cur'][0],f'{w} exactly one aria-current = step 4: {s["cur"]}')
         chk(s['steps']==30,f'{w} 30 step links ({s["steps"]})')
-        chk(s['ajCol']=='rgb(217, 119, 6)' and (s.get('cuCol') in (None,) or s['cuCol']!='rgb(217, 119, 6)'),f'{w} Ajourné active, Curriculum not ({s["ajCol"]} / {s.get("cuCol")})')
+        chk(bool(s['ajCol']) and not s.get('cuCol'),f'{w} Ajourné active, Curriculum not ({s["ajCol"]} / {s.get("cuCol")})')
         if w>=1100: chk(s['panelShown'] and not s['toggle'] and s['side'][2]>=260,f'{w} desktop tree visible, main {s["main"]}px')
         else:
             chk(s['toggle'] and not s['panelShown'],f'{w} panel collapsed with Course contents toggle')
