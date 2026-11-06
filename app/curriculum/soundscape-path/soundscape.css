@@ -94,3 +94,9 @@
 .sp-prose { line-height: 1.8; }
 
 @media print { .sp-hero-line, .sp-hero--artful::before { display: none; } .sp-wordmark-script, .sp-wordmark-rest, .sp-tagline { color: #000 !important; } }
+
+/* Lesson figures: imported 960px sheets scroll sideways on narrow screens instead of shrinking below legibility */
+.sp-fig-scroll { overflow-x: auto; }
+@media (max-width: 639px) { .sp-fig-scroll img { min-width: 600px; } }
+.sp-field { width: 100%; max-width: 42rem; border: 1px solid var(--sp-border); border-radius: .5rem; padding: .6rem .8rem; background: #fff; color: var(--sp-ink); font: inherit; font-size: 1rem; min-height: 5rem; }
+.sp-choice[aria-pressed='true'] { background: var(--sp-navy); color: #fff; border-color: var(--sp-navy); }

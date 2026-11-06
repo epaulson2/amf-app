@@ -1,0 +1,384 @@
+{
+ "sections": {
+  "0": [
+   [
+    "Eyebrow",
+    "`WEEK 1 · LESSON 1 OF 3`"
+   ],
+   [
+    "H1",
+    "`A Note Becomes a Landscape`"
+   ],
+   [
+    "Deck",
+    "\"A single note can make a place. A second note can change everything about that place.\""
+   ],
+   [
+    "Estimated time",
+    "`About 20–25 minutes`"
+   ],
+   [
+    "What You'll Learn",
+    "\"How to find notes on a keyboard, what an octave is, how one pitch becomes a musical reference, and how a moving musical voice changes the sound around it.\""
+   ],
+   [
+    "Artistic intention",
+    "\"By the end, you'll create your own tiny two-voice soundscape.\""
+   ],
+   [
+    "Primary CTA",
+    "`Begin with Sound` (scroll/focus section 1). Secondary `Explore the Keyboard` (scroll/focus section 3); don't autoplay."
+   ]
+  ],
+  "1": [
+   [
+    "H2",
+    "`One sound. One place.`"
+   ],
+   [
+    "Body",
+    "\"Imagine stepping into a quiet space. There is only one sound in it. Listen for a moment without trying to decide what it means. Notice its color, texture and the way it fills—or doesn't fill—the space.\""
+   ],
+   [
+    "Audio control label",
+    "`Play the home note`"
+   ],
+   [
+    "Audio caption (shown after playback begins or completes)",
+    "\"This is C, our home sound for today. C isn't automatically home in all music; we're choosing it as our reference.\""
+   ],
+   [
+    "Reflection prompt",
+    "\"If this sound were a place, what kind of place would it be?\""
+   ],
+   [
+    "Reflection text box placeholder",
+    "`A few words or a tiny sketch idea…`"
+   ],
+   [
+    "Instruction below reflection",
+    "\"There's no correct emotional description. Your ears and imagination get to decide.\""
+   ],
+   [
+    "Interaction",
+    "one user-triggered C3 (MIDI 48) soft drone with pause/stop; 15 seconds initial, optional replay. Show W1-01 learner art, but only after play begins. Nothing in initial visual implies a chord or seven-note scale."
+   ]
+  ],
+  "2": [
+   [
+    "H2",
+    "`Let a visitor enter`"
+   ],
+   [
+    "Body",
+    "\"Keep C sounding underneath. Now listen as a higher note enters, stays for a moment, and leaves. Our foundation hasn't moved, but the whole space may seem different.\""
+   ],
+   [
+    "Buttons in this order",
+    "`Hear E`, `Hear G`, `Hear D`. Each sounds the same C3 drone plus a single independently gated upper tone; show exactly one upper note at a time, and release it while C3 continues briefly."
+   ],
+   [
+    "After first visitor",
+    "\"That was two simultaneous notes: a held foundation and a moving upper voice. You're already hearing a simple harmonic relationship.\""
+   ],
+   [
+    "Comparison prompt",
+    "\"Which visitor changes the atmosphere most for you? Which one would you like to hear again?\""
+   ],
+   [
+    "Button",
+    "`Try another note` exposes a selectable C4, D4, E4, F4, G4, A4, B4 row, without stacking them. Label all note names only **after** at least one listen. W1-02 visitor mode, one visible visitor node per example; arrows/positions semitone-accurate."
+   ],
+   [
+    "Accessible alternative",
+    "separate labeled controls and an aria-live status saying `Now playing C with E`, etc. Never make a changing color the only signal."
+   ]
+  ],
+  "3": [
+   [
+    "H2",
+    "`The keyboard is a map of pitch`"
+   ],
+   [
+    "Body",
+    "\"Move right on a keyboard and pitches rise. Move left and they fall. The white keys use seven letter names—A, B, C, D, E, F and G—and those names repeat. The black keys form groups of two and three, so you can find your way even when you're new to the instrument.\""
+   ],
+   [
+    "Subheading",
+    "`Find C`"
+   ],
+   [
+    "Body",
+    "\"Find a group of two black keys. The white key immediately to its left is C. Find the next group of two black keys and you've found a higher C.\""
+   ],
+   [
+    "Control",
+    "`Show C landmarks` reveals two correctly placed Cs within W1-06 learner keyboard (C3–C5), with sound on click if audio enabled. `Hide note names` toggles labels; labeled fallback always available."
+   ],
+   [
+    "Subheading",
+    "`The octave`"
+   ],
+   [
+    "Body",
+    "\"Two Cs can be higher and lower but still belong to the same repeating family of notes. The distance from one C to the next higher C is an octave. On this keyboard, an octave spans twelve semitones.\""
+   ],
+   [
+    "Try-it",
+    "\"Play—or click—one C and the next C. Do they feel related even though their registers are different?\""
+   ],
+   [
+    "Visible check",
+    "`Find two Cs`; after selection, answer \"Yes—both notes are C, one octave apart.\" Show the note name plus position when revealing. Wrong-answer help: \"Look just to the left of each group of two black keys.\""
+   ],
+   [
+    "Teacher fact",
+    "C4=60, C5=72; some DAWs use different octave-number conventions, so use MIDI pitch values for any generated sound."
+   ]
+  ],
+  "4": [
+   [
+    "H2",
+    "`Carry the map with you`"
+   ],
+   [
+    "Body",
+    "\"A keyboard is more than a set of buttons. As its pattern becomes familiar, you can start to imagine where a note lives—even when the keys aren't in front of you. Like knowing your way around a familiar neighborhood, this picture helps musical ideas find a place.\""
+   ],
+   [
+    "5-step component W1-08 (exact visible stage text)",
+    "1. `Look` — \"Notice the two black keys and find C.\"\n2. `Draw` — \"Sketch one octave, or trace its shape with your finger.\"\n3. `Hide` — \"Hide the labels. Can you still find the same landmarks?\"\n4. `Imagine` — \"Picture, gesture or say where E is. It's fine to keep the keyboard visible if you prefer.\"\n5. `Reveal · Hear · Verify` — \"Find E on the real keyboard, hear it, and compare it with what you imagined.\""
+   ],
+   [
+    "CTA",
+    "`Reveal the map`; no scoring, speed limit or penalty. This is an original Ploger-informed pedagogy adaptation: refer to the source book in teacher metadata, not as a full interactive replica."
+   ]
+  ],
+  "5": [
+   [
+    "H2",
+    "`Hear a note before you play it`"
+   ],
+   [
+    "Body",
+    "\"Listen to E above the home sound. Now stop the upper note, but keep C underneath. Can you still hear E in your imagination? You can hum it, whistle it, trace its height with your hand, or simply think about it.\""
+   ],
+   [
+    "Step controls",
+    "`Listen` → `Imagine` (manual advance, 3-second quiet period if desired) → `Hum or gesture` (no microphone capture) → `Find it` → `Compare`."
+   ],
+   [
+    "Reveal",
+    "\"The instrument is here to help you check what you imagined—not to grade you. Hearing, humming and finding are skills that strengthen with practice.\""
+   ],
+   [
+    "Fallback",
+    "\"If the note is hard to hum, just decide whether it sits higher or lower than the one you heard before, and check by listening.\""
+   ],
+   [
+    "Visual",
+    "W1-05 learner and SYS-07 process icons. Do not suggest she must hum two pitches simultaneously."
+   ]
+  ],
+  "6": [
+   [
+    "H2",
+    "`Make a tiny world`"
+   ],
+   [
+    "Body",
+    "\"Open your favorite synthesizer or DAW. Start with a soft, sustained C. Choose just two or three upper notes you found interesting. Let them enter in whatever order you wish. One might arrive immediately; another might wait. Keep some space in the music.\""
+   ],
+   [
+    "Instructions",
+    "\"Create a sketch of roughly 15–25 seconds. Before you add at least one note, try to imagine it. Record your sketch and listen back without watching the piano roll.\""
+   ],
+   [
+    "Composer hint",
+    "\"Try two versions: one where the second voice enters right away, and one where it waits. Notice how much the musical story changes even when the notes stay the same.\""
+   ],
+   [
+    "Primary CTA",
+    "`I've made my sketch` updates only local UI progress (no backend save or upload)."
+   ],
+   [
+    "Optional field",
+    "`What changed the feeling most?` freeform, local-only, no transmission; if no note persistence requested, resets on refresh."
+   ],
+   [
+    "End copy",
+    "\"One voice stayed. Another moved. You gave two sounds a relationship—and gave yourself a new way to tell a story.\""
+   ],
+   [
+    "CTA",
+    "`Continue to Lesson 1B` (route in index); `Review the keyboard` (returns to section 3). *Do not fabricate integration with, or recording from, her DAW.*"
+   ]
+  ]
+ },
+ "drawers": [
+  {
+   "id": "1A-HIST",
+   "head": "1A-HIST — History Postcard",
+   "fields": [
+    [
+     "Title",
+     "`Before the keyboard: finding ways to remember music`"
+    ],
+    [
+     "Copy",
+     "\"About a thousand years ago, Guido of Arezzo helped singers learn and remember melodies using an organized approach to musical pitches and syllables. Later medieval traditions used the hand as a guide to singing. The tools have changed, but the question is familiar: how do you turn a sound you hear into something you can remember and share? Our keyboard map is one way to connect musical imagination with a common language.\""
+    ],
+    [
+     "Try",
+     "\"Trace an upward musical path with your finger before playing it.\""
+    ],
+    [
+     "Further reading",
+     "https://www.metmuseum.org/pt/perspectives/musical-bodies-guidonian-hand"
+    ],
+    [
+     "Accuracy",
+     "Don't claim Guido invented all music notation or the modern keyboard."
+    ]
+   ]
+  },
+  {
+   "id": "1A-SCI",
+   "head": "1A-SCI — Behind the Sound",
+   "fields": [
+    [
+     "Title",
+     "`Why is a higher C still a C?`"
+    ],
+    [
+     "Copy",
+     "\"Most pitched sounds have a main repeating vibration called a fundamental frequency. Double that frequency and you've moved up one octave. Many instruments also produce higher components called overtones, which help give a sound its character. A flute-like pure tone and a shimmering synth pad can play the same C yet sound very different. Pitch and sound color are connected, but they're not the same thing.\""
+    ],
+    [
+     "Try",
+     "\"Play one C in two octaves. Then play the same C with two different patches.\""
+    ],
+    [
+     "Further reading",
+     "https://openstax.org/books/physics/pages/14-4-sound-interference-and-resonance"
+    ],
+    [
+     "Accuracy",
+     "Synth sounds may use inharmonic partials; don't state that all overtone patterns are integer multiples."
+    ]
+   ]
+  },
+  {
+   "id": "1A-AMBIENT",
+   "head": "1A-AMBIENT — Ambient Composer's Notebook",
+   "fields": [
+    [
+     "Title",
+     "`A foundation can become a landscape`"
+    ],
+    [
+     "Copy",
+     "\"In an ambient piece, a quiet sustained note can create the sense of a place. When a higher note enters, it can feel like a visitor stepping into that world. The atmosphere itself hasn't stopped; something has begun to happen inside it. You don't need a busy chord progression to tell a little story. Sometimes two carefully timed voices communicate more than a dozen simultaneous sounds.\""
+    ],
+    [
+     "Try",
+     "\"Delay the upper note by five seconds and compare the two sketches.\""
+    ]
+   ]
+  },
+  {
+   "id": "1A-REAL",
+   "head": "1A-REAL — Hear It in Real Music",
+   "fields": [
+    [
+     "Title",
+     "`Two ways to hear a steady musical place`"
+    ],
+    [
+     "Intro",
+     "\"You don't need to name notes in these recordings. Just listen for what stays familiar and what changes.\""
+    ],
+    [
+     "Recording 1",
+     "`Pandit Venkatesh Kumar — Raag Multani (Darbar Festival)` · primary artist/program link https://player.darbar.org/videos/pandit-venkatesh-kumar-raag-multani-music-of-india ; YouTube https://www.youtube.com/watch?v=WU2_-9P3jY0 **(YouTube watch status not independently confirmed; the Darbar performer/program page is verified and may require a subscription)**."
+    ],
+    [
+     "Listen for",
+     "\"The continuing tanpura reference beneath a changing sung melody. This Hindustani performance has its own musical grammar; it isn't an example of our C-major scale.\""
+    ],
+    [
+     "Recording 2",
+     "`Arvo Pärt — Spiegel im Spiegel (performance)` · YouTube https://www.youtube.com/watch?v=TJ6Mzvh3XCc (YouTube title verified; channel isn't identified as an official artist source). Composition background https://www.arvopart.ee/en/arvo-part/work/544/."
+    ],
+    [
+     "Listen for",
+     "\"The piano's repeating tones beside a patient solo line. How little can change while the atmosphere remains recognizable?\""
+    ],
+    [
+     "Transfer",
+     "\"In your synth, hold one note and change only when a second line enters.\""
+    ],
+    [
+     "Rights",
+     "Link to recordings externally, no downloads, thumbnails, autoplay or copied audio."
+    ]
+   ]
+  },
+  {
+   "id": "1A-WORLD",
+   "head": "1A-WORLD — Musical Worlds",
+   "fields": [
+    [
+     "Title",
+     "`South India: a raga is more than a row of notes`"
+    ],
+    [
+     "Copy",
+     "\"In South Indian Carnatic music, a raga's identity grows from characteristic ways of moving through notes, ornaments and the knowledge of its performers—not simply from an ascending scale. Flutist Jayanth Ambedkar explores Raga Kapi above a tanpura's sustained reference in a recording made near the Tiger Caves in Tamil Nadu. Listen for a steady musical ground and a melodic line that can take many expressive paths without switching Western block chords.\""
+    ],
+    [
+     "Listen",
+     "https://player.darbar.org/on-location/videos/jayanth-ambedkar-raga-kapi"
+    ],
+    [
+     "YouTube alternative",
+     "https://www.youtube.com/watch?v=XI_5A37n4to (unconfirmed watch-page availability; prioritize verified Darbar source)."
+    ],
+    [
+     "Transfer",
+     "\"Try three little melodic routes over the same synth drone. This is inspiration from a general musical relationship, not a claim to perform Raga Kapi authentically.\""
+    ],
+    [
+     "Attribution/accuracy",
+     "Darbar lists the artist as **Jayanth Ambedkar** and describes a Carnatic raga on bansuri; do not label it Hindustani khayal or claim its tuning equals the white keys."
+    ]
+   ]
+  },
+  {
+   "id": "1A-PAINT",
+   "head": "1A-PAINT · Paint What You Hear",
+   "fields": [
+    [
+     "Title",
+     "`A place called home`"
+    ],
+    [
+     "Learner-facing copy",
+     "\"Listen to the held home note again. If that sound were a place on your canvas, what would it look like? You might choose a wash of color, a shape, a texture or empty space. Now let one higher note enter, and add just one visual gesture to show what changed. The painting belongs to your experience; there is no correct color for C.\""
+    ],
+    [
+     "Try",
+     "\"Make a tiny before-and-after diptych: the home note alone, then the same home note with a visitor.\""
+    ],
+    [
+     "Creative connection",
+     "\"Look at the two versions, then listen again. Did your drawing help you notice a musical relationship you hadn't heard before?\""
+    ],
+    [
+     "Materials/rights",
+     "\"Use paper, paint, a sketchbook, collage or your own digital art tools. You never need to upload your artwork.\" Reuse blank W1-04 as optional downloadable sheet; no new browser canvas or third-party image assets. This is optional visual expression, **not** the Ploger keyboard-geometry drawing/recall exercise."
+    ]
+   ]
+  }
+ ]
+}

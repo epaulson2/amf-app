@@ -1,0 +1,372 @@
+{
+ "sections": {
+  "0": [
+   [
+    "Eyebrow",
+    "`WEEK 1 · LESSON 3 OF 3`"
+   ],
+   [
+    "H1",
+    "`My First Intentional Soundscape`"
+   ],
+   [
+    "Deck",
+    "\"A place. A visitor. A moment of change. You already have enough to begin telling a musical story.\""
+   ],
+   [
+    "What You'll Learn",
+    "\"How a held musical voice and a moving voice create harmony, why timing and silence matter, and how to turn a small improvisation into an intentional composition.\""
+   ],
+   [
+    "Time",
+    "`About 20–25 minutes`"
+   ],
+   [
+    "CTA",
+    "`Start creating`"
+   ],
+   [
+    "Previously",
+    "\"You've heard how a single C can become a reference and how a melody can leave an expectation open. Now you'll use those discoveries to make something that is unmistakably yours.\""
+   ]
+  ],
+  "1": [
+   [
+    "H2",
+    "`Two voices can become one world`"
+   ],
+   [
+    "Body",
+    "\"A **voice** in music is a line with a role as time moves forward. It doesn't have to be sung. A synthesizer pad can be a voice; so can a melody played by a flute, piano or electronic instrument.\""
+   ],
+   [
+    "Body",
+    "\"One voice can hold our C. Another can enter with E, move to G, rest, or return. When these voices sound at the same time, we hear **harmony**—even before we learn to build three-note chords.\""
+   ],
+   [
+    "Audio CTA",
+    "`Hear the two voices` plays the short seed demo (spec below). `Hear only the foundation` / `Hear only the upper voice` solo the respective lines."
+   ],
+   [
+    "After playback",
+    "\"Which part stayed? Which part traveled? When the moving note changed, did the combination change with it?\""
+   ],
+   [
+    "Visual",
+    "reuse W1-01/W1-02 or SYS-04 as a two-track relationship, with distinct shape/label for each line and a clock progression; avoid suggesting that a C drone is a C-major triad."
+   ],
+   [
+    "Theory note",
+    "\"A note is one pitch at a moment. A musical line or voice is a series of events through time. Harmony is the relationship among simultaneously sounding pitches. A chord is one kind of harmonic structure; harmony can exist with only two pitches.\""
+   ],
+   [
+    "Learning check",
+    "`Which voice stayed?` choices `Foundation` / `Upper melody` / `They both stayed`; answer `The foundation C stayed while the upper line moved.` Can try again but never blocks section."
+   ]
+  ],
+  "2": [
+   [
+    "H2",
+    "`Silence changes the story`"
+   ],
+   [
+    "Body",
+    "\"Music is not only **which** notes you choose. It's also **when** they appear, how long they stay and the spaces you leave between them. A note that enters immediately can feel different from the same note entering after a long wait.\""
+   ],
+   [
+    "Body",
+    "\"A repeated idea can make music recognizable. A changed note, a new entrance or a silence can turn repetition into **variation**. Even a short soundscape can have a beginning, a meaningful change and an intentional ending.\""
+   ],
+   [
+    "Buttons",
+    "`Hear an early entrance` / `Hear a delayed entrance`; use identical C3/upper E4 pitches but introduce E4 at t=2s versus t=7s within 12-second examples. Do not change timbre/volume between these two comparisons."
+   ],
+   [
+    "After compare",
+    "\"The notes didn't need to change to give the moment a different shape.\""
+   ],
+   [
+    "Key terms inline",
+    "`Duration`: \"How long a sound continues.\" · `Rest or silence`: \"A moment when a voice makes no new sound—or becomes silent.\" · `Repetition`: \"An idea returning recognizably.\" · `Variation`: \"An idea returning with a purposeful change.\" · `Form`: \"The larger organization of musical events over time.\""
+   ],
+   [
+    "Do not mislead",
+    "a reverb tail can continue when the MIDI voice has stopped; sound design and musical rest are related but not identical. Avoid claiming music must have three formal sections or a dramatic plot."
+   ]
+  ],
+  "3": [
+   [
+    "H2",
+    "`Hear the same atmosphere become two stories`"
+   ],
+   [
+    "Body",
+    "\"Listen to one simple sketch. The lower voice stays almost still while a few upper notes enter and depart. Near the end, the music can choose a landing—or leave its last thought open.\""
+   ],
+   [
+    "Buttons",
+    "`Hear the landing version` and `Hear the open version` (two 36-second original synthesized examples as specified below)."
+   ],
+   [
+    "After compare",
+    "\"Neither version is the correct ending. Which one feels more like the music you want to create today?\""
+   ],
+   [
+    "Three selectable non-scored responses",
+    "`I like the arrival`, `I like the openness`, `I want to try my own ending`."
+   ],
+   [
+    "Optional note reveal",
+    "`Show the voices on the keyboard` reveals C3 as foundation and the upper pitches E4 G4 D4 B4 then optional C5; hide until the listener requests the visual. Use clear pitch/voice names and a simple timeline."
+   ]
+  ],
+  "4": [
+   [
+    "H2",
+    "`Make a place, let something happen`"
+   ],
+   [
+    "Body",
+    "\"Open your favorite synthesizer or DAW. Choose a soft sustained note—start with C if you like, because you already know that sound. Add an upper line using two or three notes that interest you.\""
+   ],
+   [
+    "Five on-page creative steps with verbatim labels and text",
+    "1. `Set the scene` — \"Let your foundation note establish a musical place.\"\n2. `Imagine a visitor` — \"Before pressing a key, imagine, hum or gesture toward your next note. Then find it on the instrument.\"\n3. `Leave room` — \"Allow at least one moment where the upper voice rests or waits. Don't fill every second.\"\n4. `Make one change` — \"Try repeating a note, changing its length or moving it to another pitch. Listen for what that does to the story.\"\n5. `Choose the ending` — \"Let the piece arrive, fade or remain open. Make the choice for your music, not because a rule says you should.\""
+   ],
+   [
+    "Studio prompt",
+    "\"Aim for a 30–45-second miniature. If a shorter piece feels complete, keep it. What matters is that you can hear a beginning, some intentional development and an ending—or a deliberately open one.\""
+   ],
+   [
+    "On-page controls",
+    "`Download my tonal atlas (PDF)` for W1-04 printable; `I have a sketch` local checkbox/state only. `How did the music change?` optional local text field; do not require upload or store personal audio."
+   ],
+   [
+    "Creative freedom reminder",
+    "\"You may change the synth patch, filters or reverb after listening to the basic pitches. The texture is part of your voice as a composer.\""
+   ],
+   [
+    "Scope",
+    "If she creates a complex piece, celebrate it and focus reflection on one **concrete** note/entry/duration change rather than asking her to simplify or delete her art."
+   ]
+  ],
+  "5": [
+   [
+    "H2",
+    "`Give your musical idea a map`"
+   ],
+   [
+    "Body",
+    "\"Draw a tiny picture of your soundscape. Mark your foundation, two notes that mattered, and the place where the music changed—or went quiet. Add your own words or colors if they help you remember how the music felt to you.\""
+   ],
+   [
+    "Asset",
+    "W1-04 Personal Tonal Atlas learner and blank PDF; no precolored universal “emotion map.”"
+   ],
+   [
+    "Keyboard bridge",
+    "\"Where were those notes on the keyboard? Try seeing their places in your mind before looking at the piano roll. Check the real keys. Then listen again without watching the screen.\""
+   ],
+   [
+    "Teacher mini-check",
+    "let learner choose one note and name it, identify lower/moving voice, and point to a change in duration/entry/ending. Ask `What changed?` with non-graded options `Pitch`, `Timing`, `Silence`, `Sound color`, `Something else`."
+   ],
+   [
+    "Optional journal input",
+    "`I imagined ___, I changed ___, and the result ___`"
+   ],
+   [
+    "Reflection",
+    "\"Which note or silence shaped your piece most? Can you recreate that choice tomorrow?\""
+   ],
+   [
+    "CTA",
+    "`Finish Week 1` marks only local completion; don't fake server saves, badges, sound uploads or certification."
+   ]
+  ],
+  "6": [
+   [
+    "H2",
+    "`What if both voices could move?`"
+   ],
+   [
+    "Closing copy",
+    "\"This week, one voice mostly stayed while the other explored. Next, we'll give both lines a path of their own. Two notes can approach, separate, travel together or move in opposite directions. Their changing distance becomes a new musical language.\""
+   ],
+   [
+    "CTA",
+    "`Preview Week 2` may point to the future Week 2 overview only **when implemented**. Until then, `Return to Soundscape Path` navigates the Week 1 overview; no dead link."
+   ],
+   [
+    "Celebratory line",
+    "\"You've listened, imagined, measured and made music. That's a foundation worth returning to.\""
+   ]
+  ]
+ },
+ "drawers": [
+  {
+   "id": "1C-HIST",
+   "head": "1C-HIST · History Postcard",
+   "fields": [
+    [
+     "Title",
+     "`Voices moving together, centuries apart`"
+    ],
+    [
+     "Copy",
+     "\"Around the turn of the thirteenth century, musicians at Notre-Dame in Paris developed richly layered polyphony: a very slow underlying chant could support other, more active sung lines. Much later, Brian Eno's *Music for Airports* (1978) used repeated, overlapping sounds to create an entirely different kind of environment. These traditions aren't the same, and one isn't the origin of the other. Both show how a simple foundation can give several independently moving parts room to create something larger.\""
+    ],
+    [
+     "Try",
+     "\"Hold one synth pitch still and let just one upper phrase unfold at its own pace.\""
+    ],
+    [
+     "Historic context",
+     "https://ocw.mit.edu/courses/21m-011-introduction-to-western-music-fall-2024/pages/week-2-recitation-2a-listening-reading-goetjen/"
+    ]
+   ]
+  },
+  {
+   "id": "1C-SCI",
+   "head": "1C-SCI · Behind the Sound",
+   "fields": [
+    [
+     "Title",
+     "`Why the same notes feel different on another synth`"
+    ],
+    [
+     "Copy",
+     "\"The pitches may stay exactly the same while a synthesizer changes the mixture of overtones, the speed of each note's attack and release, and its brightness or density. When two sounds overlap, those choices influence how much the notes blend, separate or become rough. Reverb may let one sound linger into another. You haven't changed the interval, but you've changed the *sound around it*. That's a powerful part of composing an atmosphere.\""
+    ],
+    [
+     "Try",
+     "\"Play the same two notes on a simple sine-like patch and a fuller pad. Compare only the timbre.\""
+    ],
+    [
+     "Reference",
+     "https://openstax.org/books/physics/pages/14-4-sound-interference-and-resonance"
+    ],
+    [
+     "Science guard",
+     "Don't claim an interval has a universal fixed 2/4/8 Hz beat rate or an inevitable emotion."
+    ]
+   ]
+  },
+  {
+   "id": "1C-AMBIENT",
+   "head": "1C-AMBIENT · Ambient Composer's Notebook",
+   "fields": [
+    [
+     "Title",
+     "`Your atmosphere can have a plot`"
+    ],
+    [
+     "Copy",
+     "\"Think of a miniature soundscape as a story told quietly. The foundation can be the place you're in. The upper voice may be something arriving, traveling or remembering. A pause or changed note can become the turn in the story. You don't need a big climax—or even a traditional chord progression. Sometimes one note arriving late, or one remaining after everything else fades, is enough.\""
+    ],
+    [
+     "Try",
+     "\"Imagine three loose moments: establish a place, let something change, decide what remains.\""
+    ]
+   ]
+  },
+  {
+   "id": "1C-REAL",
+   "head": "1C-REAL · Hear It in Real Music",
+   "fields": [
+    [
+     "Title",
+     "`Independent voices, radically different musical worlds`"
+    ],
+    [
+     "Intro",
+     "\"Two very different examples show how a few repeating or sustained elements can become a much richer experience.\""
+    ],
+    [
+     "Recording 1",
+     "`Pérotin (attributed) — Viderunt omnes, Early Music Consort of London / David Munrow` · https://www.youtube.com/watch?v=KA6oq_UYbyA · supporting MIT OpenCourseWare listening analysis https://ocw.mit.edu/courses/21m-011-introduction-to-western-music-fall-2024/pages/week-2-recitation-2a-listening-reading-goetjen/"
+    ],
+    [
+     "Listen for",
+     "\"During roughly the opening 0:00–3:27, hear the extremely slow chant underneath more active, independent upper voices. There are several voices—this is not a simple two-note duet.\""
+    ],
+    [
+     "Recording 2",
+     "`Brian Eno — 2/1 (Remastered 2004), Music for Airports` · https://www.youtube.com/watch?v=pgnZ4wylW8k (verified official artist channel)"
+    ],
+    [
+     "Listen for",
+     "\"Repeated vocal sounds enter and overlap at different moments. Does the result suggest movement, atmosphere, or both?\""
+    ],
+    [
+     "Transfer",
+     "\"Use one held note and two slow loops of different lengths, each an original melodic fragment. Listen for the harmony that emerges when they overlap.\""
+    ],
+    [
+     "Copyright",
+     "Videos are external, not embed-only or rehosted. If a YouTube item is removed, show the MIT page or official artist/label page rather than a dead button."
+    ]
+   ]
+  },
+  {
+   "id": "1C-WORLD",
+   "head": "1C-WORLD · Musical Worlds",
+   "fields": [
+    [
+     "Title",
+     "`Indonesia: a musical world can move in cycles`"
+    ],
+    [
+     "Copy",
+     "\"Indonesian gamelan includes ensembles in which instruments play interlocking lines across recurring cycles. In Central Javanese practice, deep gongs can mark important moments in a cycle while other instruments elaborate the musical journey between them. Listen for faster and slower layers coexisting—not a sequence of Western chord blocks. Indonesia has many distinctive gamelan traditions; this is one doorway into a living, varied musical world.\""
+    ],
+    [
+     "Video",
+     "https://ich.unesco.org/en/video/59232 (official UNESCO intangible-heritage Gamelan video); direct YouTube option https://www.youtube.com/watch?v=xVHhCIQO57w (officially titled \"Gamelan\"; do not assume all montage scenes are specifically Central Javanese)."
+    ],
+    [
+     "Additional listening/context",
+     "https://asia-archive.si.edu/podcast/javanese-gamelan-music/ (Smithsonian)."
+    ],
+    [
+     "Listen for",
+     "\"Small repeated figures, resonant gongs and how several layers shape your sense of time.\""
+    ],
+    [
+     "Transfer",
+     "\"Create an original synth loop with a slow note, a repeating short pattern and a quiet sound that marks the end of each long cycle. This borrows a *general organizational question*, not a gamelan melody, sacred performance or tuning.\""
+    ],
+    [
+     "Accuracy",
+     "No claim that all Indonesian traditions share the same instrumentation or harmonic framework."
+    ]
+   ]
+  },
+  {
+   "id": "1C-PAINT",
+   "head": "1C-PAINT · Paint What You Hear",
+   "fields": [
+    [
+     "Title",
+     "`The painting of your piece`"
+    ],
+    [
+     "Learner-facing copy",
+     "\"Give your little soundscape a visual companion. Let one color, shape or layer represent the foundation that stays. Make another mark for the moving melodic line. Leave room for its pauses, and show the moment where your music changes, settles or remains open. You don't have to illustrate every note. Think about what your music is trying to say.\""
+    ],
+    [
+     "Try",
+     "\"Listen while looking at the painting. If you change the musical ending, which single visual detail would you change too?\""
+    ],
+    [
+     "Creative connection",
+     "\"Keep the painting next to your recording if you like. Later, you'll be able to look back at both and notice how your ideas have grown.\""
+    ],
+    [
+     "Materials/privacy",
+     "\"Paint, draw, collage or use a digital canvas you already enjoy. You don't need to upload it to the course.\" Provide existing W1-04 blank printable but no automatic canvas, artwork ingestion or aesthetic grading. This is optional and separate from the core musical completion."
+    ]
+   ]
+  }
+ ]
+}

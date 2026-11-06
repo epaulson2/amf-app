@@ -64,6 +64,6 @@ test('routing: 8 weeks, 24 lessons, Weeks 5-6 described, no invented links', () 
   assert.equal(WEEKS[5].title, 'The Art of Arrangement')
   for (const f of ['journey', 'how-it-works', 'resources'].map(p => `../app/curriculum/soundscape-path/${p}/page.tsx`)) {
     const t = readFileSync(new URL(f, import.meta.url), 'utf8')
-    assert.ok(!/href=\{?[`'"][^`'"]*(week-\d|lesson-\d)/.test(t), `${f} must not link to unbuilt lessons`)
+    assert.ok(!/href=\{?[`'"][^`'"]*(week-[2-8]|lesson-[2-8])/.test(t), `${f} must not link to unbuilt weeks or lessons`)
   }
 })

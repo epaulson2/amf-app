@@ -11,7 +11,7 @@ export const DOOR_KINDS = [
 export type DoorKind = (typeof DOOR_KINDS)[number]['id']
 
 /** One optional drawer. Native <details>: keyboard and screen-reader operable, independent of its siblings. */
-export function DiscoveryDoor({ kind, children, defaultOpen = false }: { kind: DoorKind; children?: ReactNode; defaultOpen?: boolean }) {
+export function DiscoveryDoor({ kind, children, defaultOpen = false, title }: { kind: DoorKind; children?: ReactNode; defaultOpen?: boolean; title?: ReactNode }) {
   const k = DOOR_KINDS.find(d => d.id === kind)!
   return (
     <details className="sp-door" data-door={kind} open={defaultOpen || undefined}>
@@ -19,7 +19,7 @@ export function DiscoveryDoor({ kind, children, defaultOpen = false }: { kind: D
         <span aria-hidden="true" className="inline-flex items-center justify-center w-8 h-8 rounded border border-slate-300 text-sm font-bold text-slate-700 bg-slate-50 shrink-0">{k.mark}</span>
         <span>
           <span className="block font-semibold text-slate-900">{k.title}</span>
-          <span className="block text-sm sp-muted leading-snug pr-6">{k.blurb}</span>
+          <span className="block text-sm sp-muted leading-snug pr-6">{title ?? k.blurb}</span>
         </span>
       </summary>
       <div className="sp-door-body pt-3 text-base">{children ?? <p className="sp-muted m-0">The full card for this lesson arrives with the lesson page.</p>}</div>
@@ -28,10 +28,10 @@ export function DiscoveryDoor({ kind, children, defaultOpen = false }: { kind: D
 }
 
 /** The six doors, each with its own content slot. Invitations, never required to proceed. */
-export function DiscoveryDoors({ content = {} }: { content?: Partial<Record<DoorKind, ReactNode>> }) {
+export function DiscoveryDoors({ content = {}, titles = {}, titleNodes = {} }: { content?: Partial<Record<DoorKind, ReactNode>>; titles?: Partial<Record<DoorKind, string | undefined>>; titleNodes?: Partial<Record<DoorKind, ReactNode>> }) {
   return (
     <div className="grid gap-3 md:grid-cols-2 items-start">
-      {DOOR_KINDS.map(d => <DiscoveryDoor key={d.id} kind={d.id}>{content[d.id]}</DiscoveryDoor>)}
+      {DOOR_KINDS.map(d => <DiscoveryDoor key={d.id} kind={d.id} title={titleNodes[d.id] ?? titles[d.id]}>{content[d.id]}</DiscoveryDoor>)}
     </div>
   )
 }

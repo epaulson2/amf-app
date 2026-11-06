@@ -1,0 +1,398 @@
+{
+ "sections": {
+  "0": [
+   [
+    "Eyebrow",
+    "`WEEK 1 · LESSON 2 OF 3`"
+   ],
+   [
+    "H1",
+    "`Stop Before the Ending`"
+   ],
+   [
+    "Deck",
+    "\"Music can make you expect a note that hasn't been played. What happens if the composer chooses not to give it to you?\""
+   ],
+   [
+    "What You'll Learn",
+    "\"How to count semitones and whole steps, build the C-major scale on a keyboard, and recognize the difference between a phrase that arrives and one that stays open.\""
+   ],
+   [
+    "CTA",
+    "`Hear the unfinished melody`. Estimated time `About 20–25 minutes`."
+   ],
+   [
+    "Previously",
+    "\"Last time, you made one note into a musical home. Let's see what happens when a melody travels away from it.\""
+   ]
+  ],
+  "1": [
+   [
+    "H2",
+    "`A musical journey that stops`"
+   ],
+   [
+    "Body",
+    "\"Listen to seven notes rising, one at a time. You don't need to name them yet. When the melody stops, notice whether your imagination wants another sound.\""
+   ],
+   [
+    "Button",
+    "`Play the unfinished melody`"
+   ],
+   [
+    "After playback prompt",
+    "\"Does this feel finished to you? If your ears imagine another note, try to hear it silently before touching the keyboard.\""
+   ],
+   [
+    "Options",
+    "`I imagine another note`, `I like the open ending`, `I'm not sure` — all are legitimate selections with **no correct/incorrect judgment**."
+   ],
+   [
+    "Next",
+    "\"Let's find out what one possible arrival sounds like.\""
+   ],
+   [
+    "Button",
+    "`Reveal a possible ending`; only now display/sound C5 at the end and reveal note names as appropriate."
+   ],
+   [
+    "After reveal copy",
+    "\"We traveled C, D, E, F, G, A, B—and then reached the next C. In a clearly established C-major setting, that final B often makes C feel close. But you can also leave B hanging on purpose.\""
+   ],
+   [
+    "Behavior",
+    "play C3 drone with C4 D4 E4 F4 G4 A4 B4 slowly, then **STOP** with 2.5 seconds of listener space; do not auto-resolve to C5, pre-label the button with \"C,\" or include C5 in initial accessible descriptions/alt text. The specific target note and scale labels appear only after reveal. W1-03 learner visual initially shows an unfinished path."
+   ]
+  ],
+  "2": [
+   [
+    "H2",
+    "`Not all steps are the same size`"
+   ],
+   [
+    "Body",
+    "\"The keyboard gives us a simple way to measure distance between pitches. **A semitone**, also called a **half step**, is one move to the next neighboring key—even if that key is black. A **whole step** is two semitones.\""
+   ],
+   [
+    "Subhead",
+    "`One semitone`"
+   ],
+   [
+    "Visible example",
+    "`C → C♯`"
+   ],
+   [
+    "Copy",
+    "\"Move one neighboring key to the right of C. That's C-sharp: one semitone higher.\""
+   ],
+   [
+    "Control",
+    "`Hear one semitone`: play C4 then C♯4. Highlight both exact keys, not an evenly spaced row of white keys."
+   ],
+   [
+    "Subhead",
+    "`Two semitones make a whole step`"
+   ],
+   [
+    "Visible example",
+    "`C → C♯ → D`"
+   ],
+   [
+    "Copy",
+    "\"To get from C to D, pass the black key between them. You moved two neighboring keys: one whole step.\""
+   ],
+   [
+    "Control",
+    "`Hear one whole step`: play C4 then D4; show C♯4 as traversed but **do not sound it** in the direct C→D example unless learner presses `Count the two hops` (then optionally play C4-C♯4-D4 slowly). Differentiate *how many pitches moved* from what the melody actually plays."
+   ],
+   [
+    "Subhead",
+    "`Two surprising neighboring white keys`"
+   ],
+   [
+    "Copy",
+    "\"Look at E and F. They have no black key between them. Neither do B and the next C. That means E to F and B to C are each **one semitone**, even though the keys are both white.\""
+   ],
+   [
+    "Controls",
+    "`Compare E–F`, `Compare C–D`, `Compare B–C`. Each plays exactly the two named notes and a highlighted path."
+   ],
+   [
+    "Check (not a gate)",
+    "`C to D: half or whole?` choices `Half step` / `Whole step`; correct help: \"Whole step: C→C♯→D contains two neighboring moves.\" `E to F: half or whole?` correct help: \"Half step: they're already neighboring keys.\" Always permit retry/continue without penalty."
+   ],
+   [
+    "Definition strip",
+    "`1 semitone = 1 neighboring key · 1 whole step = 2 semitones · 12 semitones = 1 octave`"
+   ],
+   [
+    "Scientific scope",
+    "On the standard 12-tone equal-tempered keyboard used here; non-Western and microtonal systems are explored elsewhere without flattening them into white-key labels. Don't confuse a **half step** of pitch with a **half note** (duration)."
+   ]
+  ],
+  "3": [
+   [
+    "H2",
+    "`The secret pattern of the major scale`"
+   ],
+   [
+    "Body",
+    "\"A scale is a musical collection with an ordered pattern of distances. C major begins on C and follows the white keys to the next C—but the important thing isn't the color of the keys. It's the pattern of whole and half steps.\""
+   ],
+   [
+    "One-row notation",
+    "`C → D → E → F → G → A → B → C`"
+   ],
+   [
+    "Second row (after clicking `Reveal the distances`)",
+    "`W · W · H · W · W · W · H`"
+   ],
+   [
+    "Copy after reveal",
+    "\"Whole, whole, half, whole, whole, whole, half. That's the major-scale pattern in our twelve-semitone keyboard system. It works from other starting notes, too—even when black keys are needed.\""
+   ],
+   [
+    "Interaction",
+    "clickable accurate W1-07 keyboard with C4..C5 in scale order; every selected step highlights source/target key and reveals `whole step` or `half step` after learner attempt. Keep W1-07 **instructor** pattern hidden until explicit reveal. Never imply all white keys are an equal semitone apart."
+   ],
+   [
+    "Optional tiny builder",
+    "`Try placing the next note` with seven guided step locations; keyboard correct keys calculated from current MIDI position and W/H; wrong selection says \"That pitch is ___ semitones away. Try ___ instead.\" No forced 7/7 quiz to advance."
+   ],
+   [
+    "Close",
+    "\"You now have a way to *measure* a sound and a way to *recognize* a scale. Next, we use that knowledge to make a compositional choice.\""
+   ]
+  ],
+  "4": [
+   [
+    "H2",
+    "`Two endings. Two different stories.`"
+   ],
+   [
+    "Body",
+    "\"These phrases begin with the very same notes. The difference is what happens at the end. Listen once to each version, and notice what they invite you to feel or imagine.\""
+   ],
+   [
+    "Two button labels",
+    "`Listen: Arrive` and `Listen: Hover`"
+   ],
+   [
+    "Comparative phrases",
+    "both play the exact common upper C4,D4,E4,F4,G4,A4,B4 event schedule over C3; `Arrive` adds C5 after B4; `Hover` does not play C5 and ends in space/fade. W1-03 instructor/reveal visual after both have been played."
+   ],
+   [
+    "Copy after first pair",
+    "\"One ending reaches a note that can feel like home. The other leaves room for a thought that hasn't finished. You don't need to prefer the arrival.\""
+   ],
+   [
+    "Prompt",
+    "\"Which version fits a meditative or angelic atmosphere you might want to create? Why?\""
+   ],
+   [
+    "Interaction",
+    "`I prefer the arrival`, `I prefer the open ending`, `I want both`; none scored. `Replay without labels` allows blind A/B if user wishes."
+   ],
+   [
+    "Micro theory after ear comparison",
+    "\"In the C-major scale, B is a half step below the next C. That makes it a **leading tone** in this context: it often points toward C. **Resolution** is an arrival that follows an expectation; **suspension or openness** keeps the expectation available. You can choose either one.\""
+   ],
+   [
+    "Guard",
+    "Avoid treating *acoustic beating from simultaneous notes* and *psychological expectation from sequential B→C* as identical mechanisms."
+   ]
+  ],
+  "5": [
+   [
+    "H2",
+    "`Compose with an unfinished thought`"
+   ],
+   [
+    "Body",
+    "\"In your synth or DAW, make two short versions of the same melodic idea. Keep the beginning identical. In one, let your final note feel like an arrival. In the other, stop, sustain or fade before that arrival.\""
+   ],
+   [
+    "Instructions",
+    "\"Listen without watching the piano roll. Which ending says more about the atmosphere or story you want? Try lengthening the final B or adding a moment of silence before C.\""
+   ],
+   [
+    "Optional creativity hint",
+    "\"You don't have to use all eight notes. Even a three-note phrase can contain a meaningful expectation.\""
+   ],
+   [
+    "Button",
+    "`I've compared two endings` marks in-page local progress. **No browser audio upload, DAW auto-connect or claimed sound analysis.**"
+   ],
+   [
+    "Closing copy",
+    "\"Today you learned that notes have measurable distances, scales have recognizable patterns, and musical endings are choices. Tomorrow's piece doesn't have to resolve just because theory tells you where resolution is possible.\""
+   ],
+   [
+    "CTA",
+    "`Continue to Lesson 1C` (index route) and `Replay my comparisons` (scroll to section 4)."
+   ]
+  ]
+ },
+ "drawers": [
+  {
+   "id": "1B-HIST",
+   "head": "1B-HIST · History Postcard",
+   "fields": [
+    [
+     "Title",
+     "`Numbers hiding in musical sound`"
+    ],
+    [
+     "Copy",
+     "\"Ancient Greek writers associated with the Pythagorean tradition studied musical relationships using string lengths and simple ratios. An octave corresponds to a frequency relationship of 2:1; a pure perfect fifth is 3:2. These are useful clues about the physical relationships between pitches. But they don't settle the artistic question of whether a melody should finish. The sounds we expect also depend on the music we've heard and the musical setting we're in.\""
+    ],
+    [
+     "Try",
+     "\"Compare C with G, then compare a phrase that ends on B with one that returns to C.\""
+    ],
+    [
+     "Source",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC4568680/"
+    ],
+    [
+     "Guard",
+     "Don't present a blacksmith-forge origin legend as documented history; our equal-tempered fifth is close to, but not exactly, 3:2."
+    ]
+   ]
+  },
+  {
+   "id": "1B-SCI",
+   "head": "1B-SCI · Behind the Sound",
+   "fields": [
+    [
+     "Title",
+     "`Why suspense isn't the same as a clash`"
+    ],
+    [
+     "Copy",
+     "\"Two notes sounding **together** can create acoustic roughness when nearby sound components interfere. But the feeling that a melody might go somewhere is different. When a C-centered melody stops on B, you may imagine C next because of musical patterns and context. That expectation can happen with a single melodic note—no simultaneous 'clashing' pair required. Physics, memory and musical experience all contribute, but none forces your composition to resolve.\""
+    ],
+    [
+     "Try",
+     "\"Hear B followed by C, then B followed by silence. Ask what changed: the simultaneous sound, or the story you expected?\""
+    ],
+    [
+     "Research",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC7032667/"
+    ]
+   ]
+  },
+  {
+   "id": "1B-AMBIENT",
+   "head": "1B-AMBIENT · Ambient Composer's Notebook",
+   "fields": [
+    [
+     "Title",
+     "`A quiet story can end with an open door`"
+    ],
+    [
+     "Copy",
+     "\"Some music reaches an unmistakable resting point. Other music allows a moment to linger. In an ambient soundscape, a pause after a nearly-resolved phrase can feel like a question, a breath or an open horizon. The effect isn't built into B itself; it grows from the musical setting you create. Practice hearing where a listener *might* expect you to go—then decide whether that destination serves your story.\""
+    ],
+    [
+     "Try",
+     "\"Keep the beginning exactly the same; alter only the final pitch, its length or the amount of silence.\""
+    ]
+   ]
+  },
+  {
+   "id": "1B-REAL",
+   "head": "1B-REAL · Hear It in Real Music",
+   "fields": [
+    [
+     "Title",
+     "`A flowing pattern and a spacious open world`"
+    ],
+    [
+     "Intro",
+     "\"These are not recordings of our exact seven-note exercise. Listen for musical continuity, expectation and the freedom to leave space.\""
+    ],
+    [
+     "Recording 1",
+     "`Bach — Prelude in C Major, BWV 846, performed/explained by Lang Lang` · https://www.youtube.com/watch?v=z9Zi4Tu6dO4 (Deutsche Grammophon verified channel, titled *Track by Track*; includes performance context/artist explanation). Alternate label/artist video https://www.deutschegrammophon.com/en/artists/langlang/videos/bach-prelude-in-c-dur-482631"
+    ],
+    [
+     "Listen for",
+     "\"A recognizable repeated figure and a changing harmonic backdrop. Try to hear movement and arrival without learning chord names yet.\""
+    ],
+    [
+     "Recording 2",
+     "`Brian Eno — 1/1, Ambient 1: Music for Airports` · https://www.youtube.com/watch?v=OlIQ5KF_ocw (Brian Eno official artist audio, label-supplied)."
+    ],
+    [
+     "Listen for",
+     "\"Spacious piano gestures and a setting that doesn't rush toward a conventional climax.\""
+    ],
+    [
+     "Transfer",
+     "\"In your synth, make a continuous texture. Try one version with a clear arrival and another that fades or holds its last question.\""
+    ],
+    [
+     "Copyright",
+     "Only external links; no YouTube iframe/player required and no rehosted copyrighted media."
+    ]
+   ]
+  },
+  {
+   "id": "1B-WORLD",
+   "head": "1B-WORLD · Musical Worlds",
+   "fields": [
+    [
+     "Title",
+     "`Türkiye: a melody has a route, not just a scale`"
+    ],
+    [
+     "Copy",
+     "\"In Turkish makam traditions, a melody isn't defined only by which pitches it can use. The term **seyir** describes characteristic ways a melody travels, pauses and approaches resting places. A final resting point is often called **karar**. In a **taksim**, an instrumentalist can explore a makam through a free melodic improvisation. That's another way to think about our question: what makes an ending feel earned? Its tuning and melodic grammar are not identical to our twelve-key C-major exercise.\""
+    ],
+    [
+     "Listen",
+     "`Kudsi Erguner — Makam Usshak: Taksim`, Smithsonian Folkways artist recording https://folkways.si.edu/kudsi-erguner/makam-usshak-taksim/music/track/smithsonian (institutional entry verified; playback/streaming may depend on the provider)."
+    ],
+    [
+     "Transfer",
+     "\"Imagine a melody that begins near home, visits a different resting place, and returns when you decide it has traveled enough. Compose an original route; don't claim to be performing makam.\""
+    ],
+    [
+     "Context",
+     "https://folkways.si.edu/turkey-the-turkish-ney/world/music/album/smithsonian"
+    ],
+    [
+     "Guard",
+     "No assumption of identical Western scale-tone function or obligatory emotional associations."
+    ]
+   ]
+  },
+  {
+   "id": "1B-PAINT",
+   "head": "1B-PAINT · Paint What You Hear",
+   "fields": [
+    [
+     "Title",
+     "`An open door or a landing`"
+    ],
+    [
+     "Learner-facing copy",
+     "\"Listen to the musical phrase that stops before its possible ending. Paint or draw its final moment as you hear it. Now play the version that reaches the next C, and make a second image alongside the first. Does one feel like an arrival while the other continues beyond the edge of the page? Or do you hear something different? Your own interpretation is the point.\""
+    ],
+    [
+     "Try",
+     "\"Use the same colors or shapes in both studies and change only one thing—perhaps the edge, distance or amount of empty space.\""
+    ],
+    [
+     "Creative connection",
+     "\"Listen to the two endings once more. Could a tiny change in a painting help you decide which ending belongs in your own soundscape?\""
+    ],
+    [
+     "Materials/privacy",
+     "\"Any paint, pencil, collage or digital tool works. Nothing needs to be uploaded or graded.\" The B4/C5 labels are objective musical facts; artwork feelings are personal. Show this card **after** the first ear-first C5 reveal so its title/alternative text cannot spoil the activity. Optional W1-04 blank printable; no required new art rendering."
+    ]
+   ]
+  }
+ ]
+}

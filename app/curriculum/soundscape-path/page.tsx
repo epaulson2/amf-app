@@ -33,11 +33,12 @@ export default function SoundscapeLanding() {
           </div>
           <p className="text-slate-300 mt-6 mb-5 font-medium">Hear it · See it · Understand it · Make it yours</p>
           <div className="flex flex-wrap gap-3">
-            <Link href={`${BASE}/journey`} className="sp-btn">See the eight-week journey</Link>
-            <Link href={`${BASE}/how-it-works`} className="sp-btn sp-btn--ghost" style={{ color: '#fff', borderColor: '#fff' }}>How we&apos;ll learn</Link>
+            <Link href={`${BASE}/week-1`} className="sp-btn">Start with Week 1</Link>
+            <Link href={`${BASE}/journey`} className="sp-btn sp-btn--ghost" style={{ color: '#fff', borderColor: '#fff' }}>See the eight-week journey</Link>
+            
           </div>
           <p className="text-slate-300 text-sm mt-5 mb-0">Eight-week introductory path · Three short guided lessons a week · Room to move at your own pace</p>
-          <p className="text-slate-300 text-sm mt-2 mb-0"><span className="sp-status">Preview</span> The lesson pages are still being built, so there is no Week 1 link yet.</p>
+          <p className="text-slate-300 text-sm mt-2 mb-0"><Link href={`${BASE}/how-it-works`} className="underline">How we&apos;ll learn</Link> · Week 1 is open; Weeks 2–8 are still being built.</p>
         </div>
       </section>
 
