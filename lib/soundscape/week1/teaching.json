@@ -1,0 +1,263 @@
+{
+ "hub": {
+  "paras": [
+   "Welcome to your first musical landscape. This week is about discovering what a note *does* when you place it in a musical setting—not just which key you press. We'll begin with one sound, learn how to find it on a keyboard, and notice how another sound can change its meaning. Then we'll use a few notes to make a musical journey that either arrives somewhere or deliberately stays open. Finally, you'll build a short soundscape of your own.",
+   "Along the way you'll meet a few essential words: **pitch**, **note**, **tonal center**, **octave**, **semitone**, **whole step**, **scale**, **melodic voice** and **harmony**. Those words aren't a vocabulary exam. They're names for musical decisions you'll hear and make. By the end of the week, the keyboard should feel less like a row of anonymous keys and more like a map you can explore.",
+   "Your own creative instincts remain important. Two listeners can imagine very different things when they hear the same note. But the relationships between notes are real and learnable. We'll distinguish what we can measure—such as which notes sound, which is higher, or how many semitones separate them—from what you personally feel."
+  ],
+  "journey": [
+   {
+    "id": "1A",
+    "title": "A Note Becomes a Landscape",
+    "text": "Learn what pitch and a note are, what musicians mean by a tonal center, how to find C and the other letter names, what makes an octave, and how a second note changes a held musical reference. Try it on a real or on-screen keyboard."
+   },
+   {
+    "id": "1B",
+    "title": "Stop Before the Ending",
+    "text": "Learn to measure the smallest steps on the keyboard, follow the whole- and half-step pattern of C major, and hear how a melody can build an expectation. Try two versions of one journey: a possible arrival and an intentionally open ending."
+   },
+   {
+    "id": "1C",
+    "title": "My First Intentional Soundscape",
+    "text": "Learn how one musical voice can stay while another moves, how two simultaneous pitches create harmony, and how timing, silence, repetition and variation make a short piece take shape. Make and revise an original 30–45-second miniature."
+   }
+  ],
+  "can": "After Week 1, you'll be able to find C on a keyboard, find another C one octave away, locate a few notes by letter, identify a chosen tonal reference, distinguish a half step from a whole step, build the C-major scale, describe an open versus arrived ending, and create a brief two-voice piece with at least one purposeful musical change. You don't need perfect pitch, notation-reading experience, a particular emotional response, or a new piece of equipment.",
+  "how": "Read the idea, hear an example, try it yourself, and return to the explanation to make sense of what you heard. Replay freely; you can also use the note descriptions when audio isn't available. The exploration drawers are optional. Your music and reflections stay yours."
+ },
+ "a_pre": {
+  "h2": "Before we listen — what is a musical note?",
+  "paras": [
+   "Music begins with sound. **Pitch** is how high or low we hear a sound. A low note and a high note can come from the same instrument, and the same pitch can be played by instruments with very different sounds. The quality that makes a piano, a flute and a synthesizer sound different is often called **timbre**, or tone color. Pitch and timbre are related parts of a sound, but they aren't the same thing.",
+   "A **note** gives a musical pitch a usable identity. On a keyboard, each key produces a particular pitch. We can name it, play it again, and connect it with other notes. We're going to use C as our first named reference. You don't need to memorize its position before hearing it.",
+   "**Listen for:** Is the sound high or low? Does it stay at one pitch or move? Don't try to guess an emotion or a chord. First notice the sound itself."
+  ],
+  "mini": "Imagine one low C played as a soft pad and then the same C played on a piano. Their tone colors differ, but the named pitch C remains the reference.\" Use a visible key-label/short controlled sound comparison only if existing accurate synthesis supports it; no invented arbitrary pitch changing when comparing timbre."
+ },
+ "a_tonal": {
+  "h2": "What is a tonal center?",
+  "paras": [
+   "Music often gives us a feeling of a place to return to. Musicians call that sense of a central or resting pitch a **tonal center**. You may also hear the word **tonic** when a particular scale or key is clearly established. The important idea is relationship: another note can seem to move away from a center, approach it, or return to it. The same note can play a different role when the surrounding music changes.",
+   "For this first exercise, we're choosing C as our *home reference*. The low C you just heard will stay underneath while we try other notes. That lets you hear every visitor against the same starting point. **One held C is not automatically a C-major chord, and it doesn't by itself prove the music is in the key of C major.** A stronger sense of tonal center emerges from context—melodic patterns, harmony, repeated arrivals and the way a piece treats its notes.",
+   "**Why this matters:** When you compose, you can create a sense of home, move away from it, or avoid a clear home on purpose. A tonal center is a powerful tool, not a requirement for every kind of music."
+  ],
+  "compare": "Keep low C sounding. First hear E over C. Then hear G over C. Which pitch stayed unchanged? C. Which one changed? The upper note. Because we held the reference still, we can notice what the new relationship does. We are not declaring one combination universally happy, sad or correct.",
+  "check": {
+   "q": "What are we calling our home reference in this exercise?",
+   "choices": [
+    "C",
+    "E",
+    "every key"
+   ],
+   "correct": "C is the chosen reference. The upper notes can change while it stays.",
+   "incorrect": "Try listening again: one note stays under every example."
+  }
+ },
+ "a_map": {
+  "h2": "Reading the keyboard as a map",
+  "paras": [
+   "A keyboard runs from lower pitches on the left to higher pitches on the right. White keys follow the repeating letter names **A, B, C, D, E, F, G**. After G comes A again. The black keys fit between certain white keys; they're not separate from the musical alphabet.",
+   "The black keys alternate in groups of **two** and **three**. That repeating pattern gives you a reliable landmark. To find **C**, look for a group of two black keys. The white key directly to their left is C. Then move to the next group of two black keys: the white key to its left is another C, higher than the first.",
+   "Those two Cs are an **octave** apart when they are the next C in the repeating pattern. The higher one has a pitch twice the frequency of the lower one in standard tuning, but our ears and note-naming system recognize them as closely related. The note names repeat in different **registers**, or high and low areas of the keyboard. That's why we distinguish C3, C4 and C5: they're Cs in different octaves, not three unrelated letters.",
+   "**Notice:** C to E moves through letter names C–D–E, but the keyboard also contains black keys between some white keys. In the next lesson we'll learn to measure those smaller steps precisely. Right now, learn to find the notes and hear where they sit."
+  ],
+  "walk": [
+   "Find the first pair of black keys.",
+   "Press the white key just left of them: C.",
+   "Find the next pair of black keys.",
+   "Press its C. Listen to which is higher.",
+   "Play each C again without looking if you feel comfortable."
+  ],
+  "checks": [
+   {
+    "q": "The white key immediately left of a two-black-key group is…",
+    "answer": "C"
+   },
+   {
+    "q": "Moving one C higher to the next C is called…",
+    "answer": "an octave"
+   },
+   {
+    "q": "Does a low C plus one E automatically make a complete C-major chord?",
+    "answer": "No; they are two pitches sounding together, not a three-note C-major triad."
+   }
+  ]
+ },
+ "a_rel": {
+  "h2": "A note becomes a musical relationship",
+  "paras": [
+   "When one note sounds by itself, you can describe its pitch, register and timbre. When another note enters, you can also describe the *relationship* between them. If the low C holds and an upper E arrives, the two pitches coexist for a moment. If E leaves and G arrives, you've created a different two-note combination while keeping the foundation fixed.",
+   "This is the beginning of **harmony**: how simultaneously sounding pitches relate. We will study intervals and chords in more detail later. For today, you only need to keep track of two things: **which pitch stays** and **which pitch changes**. That simple awareness will help you deliberately shape an atmosphere in your own music."
+  ],
+  "bridge": "In your DAW, make one soft note last 10–15 seconds. Choose a second, higher note that starts a few seconds later. Listen once with it, then replace it with a different higher note. Keep the first note and the sound settings unchanged. Describe what you altered in musical terms: 'I kept the foundation but changed the upper pitch.'",
+  "recap": "Pitch tells us high and low; timbre is sound color. Notes are named pitches. A tonal center is a sense of musical home created by context; here C is our chosen reference. Note letters repeat across octaves. Two simultaneous notes already create a musical relationship. You've begun turning listening into a choice you can repeat."
+ },
+ "b_intro": {
+  "h2": "From a home note to a musical journey",
+  "paras": [
+   "Last lesson we chose C as a reference. This time a melody will travel through different notes. A **melody** is a line of pitches heard in sequence. When one pitch follows another, your ear may begin to notice a path: climbing, falling, repeating, hesitating or returning.",
+   "We can describe that path in two useful ways. We can use our ears to hear whether it seems to move toward a point of arrival. And we can use the keyboard to identify the notes and measure the spaces between them. Neither approach replaces the other.",
+   "First, hear the unfinished phrase *without seeing its answer*. Your only job is to notice where it stops and whether you imagine a continuation. There is no required feeling. After that experience we'll examine what the keyboard can explain."
+  ]
+ },
+ "b_semi": {
+  "h2": "What is a semitone? What is a whole step?",
+  "paras": [
+   "Two pitches can be close together or far apart. The musical distance between pitches is called an **interval**. One common way to measure that distance on a standard piano keyboard is to count **semitones**, also called **half steps**.",
+   "A semitone is the distance from one piano key to its nearest neighboring key, whether the neighboring key is white or black. From C up to the black key immediately to its right, C-sharp, is one semitone. A **whole step** is two semitones. From C to D, the path passes C-sharp: C → C-sharp → D. That is two half steps, or one whole step.",
+   "Be careful: moving from one white key to the next white key is **not always** a whole step. E and F have no black key between them, so E to F is one semitone. B and the next C work the same way. This is why the keyboard's black-key pattern matters. We need to measure actual neighboring keys, not just count white-key letters.",
+   "In music you'll meet more detailed interval names, such as major third and perfect fifth. For today we're learning the counting unit that makes those later names possible."
+  ],
+  "examples": [
+   [
+    "A",
+    "Play C4, then C-sharp4. Count one neighboring move: half step."
+   ],
+   [
+    "B",
+    "Play C4, then D4. Count C to C-sharp to D—two moves—even though your two-note melody plays only C and D."
+   ],
+   [
+    "C",
+    "Play E4 then F4; the white keys touch, so one half step."
+   ],
+   [
+    "D",
+    "Try B4 then C5: another half step."
+   ]
+  ],
+  "checks": [
+   {
+    "q": "Why is C to D a whole step?",
+    "correct": "Because it spans two adjacent-key moves, C→C-sharp and C-sharp→D."
+   },
+   {
+    "q": "Why is E to F a half step even though they're both white?",
+    "correct": "They are neighbors with no black key between them."
+   }
+  ]
+ },
+ "b_scale": {
+  "h2": "What is a scale, and how is C major made?",
+  "paras": [
+   "A **scale** is an organized collection of pitches. Musicians often play scales in order to learn their pattern, but a musical piece doesn't have to move straight up and down a scale. A scale is more like a set of available pathways than a compulsory melody.",
+   "One familiar scale is the **major scale**. In standard Western tuning, its rising pattern is **whole, whole, half, whole, whole, whole, half**—often written W–W–H–W–W–W–H. The pattern tells us how far to move between consecutive scale notes.",
+   "Start on C. Move a whole step to D, another whole step to E, then a half step to F. Continue a whole step to G, a whole step to A, a whole step to B, and finally a half step to the next C. You have built **C–D–E–F–G–A–B–C**.",
+   "Every note in that sequence is a white key, but that is a *result* of starting the major-scale step pattern on C—not a rule that major scales use only white keys. We will use the same measuring skills to understand other starting notes and patterns later."
+  ],
+  "table": [
+   "C→D whole (2 semitones)",
+   "D→E whole (2)",
+   "E→F half (1)",
+   "F→G whole (2)",
+   "G→A whole (2)",
+   "A→B whole (2)",
+   "B→C half (1)"
+  ],
+  "checks": [
+   {
+    "q": "If you're on E in C major, do you take a whole step or a half step to reach the next scale note?",
+    "correct": "Half step to F."
+   },
+   {
+    "q": "After B?",
+    "correct": "Half step to C."
+   }
+  ]
+ },
+ "b_end": {
+  "h2": "Why does an ending feel like an arrival?",
+  "paras": [
+   "When a melody has made C feel like home, moving from B to the higher C can sound like arriving. In that **C-major context**, B is a half step below C. Musicians call that B the **leading tone** because it often points toward the tonic C in this system. Reaching C can create a sense of **resolution**: an expectation seems satisfied.",
+   "But musical expectation depends on the setting. A melody can stop on B and deliberately leave us anticipating something. It can also end somewhere else or make a different pitch feel central. **B doesn't always have to resolve to C**, and a listener isn't wrong for enjoying an open ending. What matters is that you can now identify one reason a particular ending *might* feel expected, then make your own choice.",
+   "**Compare the examples carefully:** The first seven notes are the same. In one version the phrase stops; in the other we hear a final higher C. Because the shared part is unchanged, you can notice how the last event alters the musical journey."
+  ],
+  "recap": "An interval is a distance between notes. A half step is one neighboring-key move; a whole step is two. The C-major scale follows W–W–H–W–W–W–H. Melodic expectation can make an arrival feel satisfying, but composers may choose open endings intentionally."
+ },
+ "c_intro": {
+  "h2": "From finding notes to shaping a piece",
+  "paras": [
+   "Week 1 began with one note we chose as a reference. Then we discovered how other notes relate to it and how a melody can suggest an arrival or an open question. Today we're going to connect those ideas across time.",
+   "A musical composition doesn't need hundreds of notes to have structure. One line can remain steady while another enters, moves and leaves. A few deliberate pauses or repeated gestures can give the listener something to recognize. Your goal is not to make a complicated piece; it is to understand what you're doing well enough to choose what happens next.",
+   "We'll distinguish **notes**, **voices**, **harmony** and **musical time**, then use them to build a short original soundscape."
+  ]
+ },
+ "c_nvhc": {
+  "h2": "Notes, voices, harmony and chords — four different ideas",
+  "paras": [
+   "A **note** is an individual named pitch, such as C4 or E4, sounding at a particular time. A **musical voice** is a musical line followed through time. A voice might hold one long pitch; it might also move through several notes. It doesn't have to be a human singer—a piano melody or synth pad can be a voice.",
+   "When two voices sound together, we can hear the relationship between their simultaneous pitches. That relationship is part of **harmony**. For example, a held low C under a changing upper E and then G creates two different harmonic moments. **Harmony is not restricted to three-note chords.** A **chord** is a named grouping of pitches sounding together; later we'll learn how to construct and recognize common three-note chords. A single held C by itself is not a C-major chord.",
+   "Try listening to only the foundation, then only the upper voice, then both. One line gives you a stable reference; the other gives the sound movement. Together they form a musical relationship that neither line creates in exactly the same way alone."
+  ],
+  "table": [
+   [
+    "Note",
+    "One pitch event: E4 sounds."
+   ],
+   [
+    "Voice",
+    "A musical line through time: E4 moves to G4, then rests."
+   ],
+   [
+    "Harmony",
+    "How simultaneous pitches relate: a lower C3 sounds with E4."
+   ],
+   [
+    "Chord",
+    "A particular grouping of simultaneous pitches, such as the three-note C-major triad C–E–G, which we'll construct later."
+   ]
+  ],
+  "checks": [
+   {
+    "q": "If C stays under E, and then E moves to G, which part is the moving voice?",
+    "correct": "The upper line."
+   },
+   {
+    "q": "Does one long C by itself mean we played a full C-major chord?",
+    "correct": "No; it's one pitch held as a reference."
+   }
+  ]
+ },
+ "c_time": {
+  "h2": "Time is a musical material",
+  "paras": [
+   "Music unfolds through time, so a note's **duration**—how long it lasts—is part of its identity in a piece. The space between sounds matters too. A **rest** is a notated or planned pause in a musical part; in a real synthesizer performance, a long reverb tail might still be audible after the note has stopped. That's worth listening to rather than assuming silence always means a perfectly silent recording.",
+   "**Repetition** makes an idea recognizable when it comes back. **Variation** makes a purposeful change to that familiar idea: perhaps the same note arrives later, lasts longer, or is replaced by a different pitch. **Form** is the way these musical events fit together across the whole piece. Even a 30-second miniature can begin with one texture, introduce a change, and choose how to finish.",
+   "In our two timing examples, the actual pitches and sound settings stay the same. Only the upper voice's entrance changes. That demonstrates a crucial composing idea: **timing alone can change a phrase's shape**. You don't need new chords or a more elaborate sound to make a meaningful variation."
+  ],
+  "checks": [
+   {
+    "q": "We replay the same notes but delay the upper entrance by five seconds. What changed?",
+    "correct": "Timing, not the pitch collection."
+   },
+   {
+    "q": "We replay the same phrase but replace the last note. What changed?",
+    "correct": "The ending pitch and the musical path."
+   }
+  ]
+ },
+ "c_compose": {
+  "h2": "Compose it with an intention",
+  "paras": [
+   "Use your own synth or DAW. Begin by choosing one low note you can sustain comfortably. It doesn't have to be C if another note suits your idea. Let that be a reference you can hear clearly.",
+   "Now add a second voice above it. It may use only two or three notes. Give yourself time to hear each new note against the foundation rather than filling every space. Try one version with an early entrance, and another with a later entrance. Keep as much else identical as you can. That helps you recognize which choice changed the music.",
+   "Finally, choose an ending. You might return to the original pitch, let the moving voice fade first, or leave the phrase feeling unfinished. There is no mandated emotional result. You're composing deliberately when you can name what you chose and describe the audible difference.",
+   "A note is one named pitch; a voice is a line through time. Harmony describes simultaneous pitch relationships; a chord is a particular grouping of pitches, not the only kind of harmony. Duration, rests, repetition, variation and form help music become a deliberate journey. You now have a first soundscape and a way to explain some of your musical choices.",
+   "Next we'll study the distances between notes more closely. Those distances are called **intervals**. They will help you understand why different upper notes reshape the sound of a held foundation."
+  ],
+  "steps": [
+   "Choose a steady foundation pitch; say or write its note name if known.",
+   "Record or hold the foundation in your own instrument.",
+   "Add a moving voice that plays a small recognizable figure.",
+   "Leave at least one meaningful space or pause.",
+   "Make a second version with **one** deliberate change (pitch, entrance time, duration or ending).",
+   "Listen back and complete: \"I kept ___ the same, changed ___, and noticed ___.\""
+  ]
+ },
+ "c_recap": {
+  "paras": [
+   "A note is one named pitch; a voice is a line through time. Harmony describes simultaneous pitch relationships; a chord is a particular grouping of pitches, not the only kind of harmony. Duration, rests, repetition, variation and form help music become a deliberate journey. You now have a first soundscape and a way to explain some of your musical choices.",
+   "Next we'll study the distances between notes more closely. Those distances are called **intervals**. They will help you understand why different upper notes reshape the sound of a held foundation."
+  ]
+ }
+}

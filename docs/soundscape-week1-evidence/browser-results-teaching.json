@@ -1,0 +1,159 @@
+{
+ "hub@320": {
+  "sw": 320,
+  "overflow": false,
+  "errs": []
+ },
+ "hub@768": {
+  "sw": 909,
+  "overflow": true,
+  "errs": []
+ },
+ "hub@1280": {
+  "sw": 1280,
+  "overflow": false,
+  "errs": []
+ },
+ "1a@320": {
+  "sw": 320,
+  "overflow": false,
+  "errs": []
+ },
+ "1a@768": {
+  "sw": 909,
+  "overflow": true,
+  "errs": []
+ },
+ "1a@1280": {
+  "sw": 1280,
+  "overflow": false,
+  "errs": []
+ },
+ "1b@320": {
+  "sw": 320,
+  "overflow": false,
+  "errs": []
+ },
+ "1b@768": {
+  "sw": 909,
+  "overflow": true,
+  "errs": []
+ },
+ "1b@1280": {
+  "sw": 1280,
+  "overflow": false,
+  "errs": []
+ },
+ "1c@320": {
+  "sw": 320,
+  "overflow": false,
+  "errs": []
+ },
+ "1c@768": {
+  "sw": 909,
+  "overflow": true,
+  "errs": []
+ },
+ "1c@1280": {
+  "sw": 1280,
+  "overflow": false,
+  "errs": []
+ },
+ "landing@320": {
+  "sw": 320,
+  "overflow": false,
+  "errs": []
+ },
+ "landing@768": {
+  "sw": 909,
+  "overflow": true,
+  "errs": []
+ },
+ "landing@1280": {
+  "sw": 1280,
+  "overflow": false,
+  "errs": []
+ },
+ "tokens_1a": {
+  "nav": "rgb(15, 23, 42)",
+  "footer": "rgb(15, 23, 42)",
+  "body": "rgb(248, 247, 244)",
+  "ink": "rgb(30, 41, 59)",
+  "hero": "rgb(15, 23, 42)",
+  "h1font": "Georgia, \"Times New ",
+  "btn": "rgb(217, 119, 6)",
+  "doors": 6,
+  "h1count": 1
+ },
+ "1a_silent_on_load": true,
+ "1a_art_hidden_before_play": true,
+ "1a_play": [
+  1,
+  "Now playing C, the home note",
+  1
+ ],
+ "1a_stop": {
+  "ctx": 1,
+  "closed": 1
+ },
+ "1a_hearE_status": "Now playing C with E",
+ "1a_after_two": {
+  "ctx": 3,
+  "closed": 2
+ },
+ "1a_row_labels": [
+  "C4",
+  "D4",
+  "E4",
+  "F4",
+  "G4",
+  "A4",
+  "B4"
+ ],
+ "1a_C_marked": true,
+ "1a_check": "Yes—both notes are C, one octave apart. You chose C4 and C5.",
+ "1a_kbd_focus_midi": "61",
+ "1a_reveal_after_steps": true,
+ "1a_end_copy": true,
+ "1a_local_only_no_post": true,
+ "1a_doors": [
+  true,
+  false,
+  false,
+  true,
+  false,
+  false
+ ],
+ "1a_links": [
+  [
+   "_blank",
+   "noopener noreferrer"
+  ],
+  [
+   "_blank",
+   "noopener noreferrer"
+  ],
+  [
+   "_blank",
+   "noopener noreferrer"
+  ]
+ ],
+ "1a_errs": [],
+ "1b_initial_C5_in_section1": false,
+ "1b_paint_gated": "P\nPaint What You Hear\nOpens after the possible ending is revealed",
+ "1b_play_status": "Now playing seven rising notes over the low C. The melody will stop without an ending.",
+ "1b_after_reveal_paint": "P\nPaint What You Hear\nAn open door or a landing",
+ "1b_note_list_after_reveal": true,
+ "1b_wwh": true,
+ "1b_check": true,
+ "1b_check2": true,
+ "1b_after_pair": true,
+ "1c_after_play": true,
+ "1c_check": true,
+ "1c_compare": true,
+ "1c_voices_text": true,
+ "1c_audio": {
+  "ctx": 5,
+  "closed": 5
+ }
+}

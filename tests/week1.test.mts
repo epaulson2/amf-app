@@ -2,6 +2,8 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
+import { execFileSync } from 'node:child_process'
+import teaching from '../lib/soundscape/week1/teaching.json'
 import { homedir } from 'node:os'
 import { drawers, copyOf } from '../lib/soundscape/week1/content'
 import * as F from '../lib/soundscape/week1/fixtures'
@@ -101,4 +103,18 @@ test('every extracted learner string is verbatim in the source documents', { ski
     for (const d of drawers(l)) for (const [, v] of d.fields) { const s = copyOf(v); if (s) { assert.ok(doc.includes(s), `${l} ${d.id}: ${s.slice(0, 60)}`); n++ } }
     assert.ok(n > 20)
   }
+})
+
+test('teaching copy is verbatim from the remediation document and covers every named concept', () => {
+  let doc = ''
+  try {
+    doc = execFileSync('git', ['-C', `${homedir()}/amf-work/amf-w78-docs`, 'show', 'origin/docs/ajourne-site-implementation-20261105:04-curriculum/tracks/soundscape-path/implementation/week-01/WEEK_01_TEACHING_DEPTH_REMEDIATION_V1.md'], { encoding: 'utf8' })
+  } catch { return }
+  const strings: string[] = []
+  const walk = (v: unknown) => { if (typeof v === 'string') strings.push(v); else if (Array.isArray(v)) v.forEach(walk); else if (v && typeof v === 'object') Object.values(v).forEach(walk) }
+  walk(teaching)
+  const missing = strings.filter(t => t.length > 12 && !doc.includes(t))
+  assert.deepEqual(missing, [])
+  const all = strings.join(' ').toLowerCase()
+  for (const term of ['pitch', 'timbre', 'tonal center', 'tonic', 'octave', 'register', 'semitone', 'whole step', 'interval', 'scale', 'leading tone', 'resolution', 'melody', 'voice', 'harmony', 'chord', 'duration', 'rest', 'repetition', 'variation', 'form']) assert.ok(all.includes(term), term)
 })

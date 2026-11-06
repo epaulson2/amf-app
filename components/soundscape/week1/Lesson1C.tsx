@@ -8,6 +8,8 @@ import { BlankLines } from '../ViewMode'
 import { copy, field, all, stepsOf } from '@/lib/soundscape/week1/content'
 import { C01, C02, C03, C04, C05, solo, text } from '@/lib/soundscape/week1/fixtures'
 import Fig from './Fig'
+import { Checks, Paras, Recap, Steps } from './Teach'
+import { T } from '@/lib/soundscape/week1/teaching'
 import Keys from './Keys'
 import { lessonDoors } from './Doors'
 
@@ -46,6 +48,14 @@ function Voices() {
       {heard && <p className="sp-prose"><strong>{c('1', 'After playback')}</strong></p>}
       <Fig file="SYS-04_voice-path-chart_learner.svg" caption="Two named voices over time: one held, one moving." />
       <p className="sp-callout max-w-2xl"><Md>{c('1', 'Theory note')}</Md></p>
+      <h3 className="sp-editorial-title text-xl font-medium text-slate-900 mt-8">{T.c_nvhc.h2}</h3>
+      <Paras paras={T.c_nvhc.paras} />
+      <table className="w-full max-w-2xl text-left border-collapse my-4">
+        <caption className="text-left font-semibold mb-2">Four different ideas</caption>
+        <thead><tr className="border-b border-slate-300"><th className="py-1 pr-3">Term</th><th className="py-1">What it means, with an example</th></tr></thead>
+        <tbody>{T.c_nvhc.table.map(([k, v]) => <tr key={k} className="border-b border-slate-200 align-top"><th scope="row" className="py-2 pr-3">{k}</th><td className="py-2">{v}</td></tr>)}</tbody>
+      </table>
+      <Checks items={T.c_nvhc.checks} />
       <div className="sp-card p-4 max-w-2xl">
         <p className="font-semibold m-0">Which voice stayed?</p>
         <Choices label="Which voice stayed?" options={opts} feedback={{ [opts[0]]: answer, [opts[1]]: `Try again: ${answer}`, [opts[2]]: `Try again: ${answer}` }} />
@@ -69,6 +79,9 @@ function Time() {
       </div>
       <NowPlaying />
       {cmp === 3 && <p className="sp-callout max-w-2xl">{c('2', 'After compare')}</p>}
+      <h3 className="sp-editorial-title text-xl font-medium text-slate-900 mt-8">{T.c_time.h2}</h3>
+      <Paras paras={T.c_time.paras} />
+      <Checks items={T.c_time.checks} />
       <dl className="grid gap-2 sm:grid-cols-2 mt-4 max-w-3xl">
         {terms.map(t => <div key={t[1]} className="sp-card p-3"><dt className="font-semibold">{t[1]}</dt><dd className="m-0 text-base">{t[2]}</dd></div>)}
       </dl>
@@ -109,6 +122,16 @@ function Example() {
         </div>
       )}
       {!heard && <p className="text-sm sp-muted mt-3">If you cannot play sound, open “Show the voices on the keyboard” to read the notes.</p>}
+    </div>
+  )
+}
+
+function ComposeTeaching() {
+  return (
+    <div>
+      <Paras paras={T.c_compose.paras} />
+      <h3 className="text-lg font-semibold text-slate-900 mt-4">Your studio sequence</h3>
+      <Steps items={T.c_compose.steps} />
     </div>
   )
 }
@@ -181,13 +204,16 @@ export default function Lesson1C() {
           <p className="m-0 italic">{c('0', 'Previously')}</p>
         </div>
       }
-      heroCtas={<a href="#voices" className="sp-btn">{c('0', 'CTA')}</a>}
+      heroCtas={<a href="#intro" className="sp-btn">{c('0', 'CTA')}</a>}
       blocks={[
+        { id: 'intro', heading: T.c_intro.h2, body: <Paras paras={T.c_intro.paras} /> },
         { id: 'voices', heading: c('1', 'H2'), body: <Voices /> },
         { id: 'time', heading: c('2', 'H2'), body: <Time /> },
         { id: 'example', heading: c('3', 'H2'), body: <Example /> },
+        { id: 'intention', heading: T.c_compose.h2, body: <ComposeTeaching /> },
         { id: 'compose', heading: c('4', 'H2'), body: <Compose /> },
         { id: 'map', heading: c('5', 'H2'), body: <Map /> },
+        { id: 'recap', heading: 'Recap and next steps', body: <Recap title="What you learned today">{T.c_recap.paras}</Recap> },
         { id: 'bridge', heading: c('6', 'H2'), body: <Bridge /> },
       ]}
       doorsHeading="Explore a little deeper"

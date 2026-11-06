@@ -9,12 +9,62 @@ import { copy, field, stepsOf, all } from '@/lib/soundscape/week1/content'
 import { A01, A02, A03_NOTES, A05_LISTEN, visitor } from '@/lib/soundscape/week1/fixtures'
 import { midiToName } from '@/lib/soundscape/midi'
 import Fig from './Fig'
+import { Aside, ChoiceCheck, Paras, Recap, Steps, ThinkThenCheck } from './Teach'
+import { T } from '@/lib/soundscape/week1/teaching'
 import Keys from './Keys'
 import { lessonDoors } from './Doors'
 
 const L = '1A' as const
 const c = (s: string, l: string, n = 0) => copy(L, s, l, n)
 const letter = (m: number) => midiToName(m).replace(/\d/, '')
+
+function Pre() {
+  return (
+    <div>
+      <Paras paras={T.a_pre.paras} />
+      <Aside label="Mini-example">{T.a_pre.mini}</Aside>
+    </div>
+  )
+}
+
+function Tonal() {
+  const t = T.a_tonal
+  return (
+    <div>
+      <Paras paras={t.paras} />
+      <Aside label="Hear the comparison">{t.compare}</Aside>
+      <div className="flex flex-wrap gap-3 mb-2">
+        <ClipButton id="tE" label="Hear E over C" events={A02.E} status="Now playing C with E" />
+        <ClipButton id="tG" label="Hear G over C" events={A02.G} status="Now playing C with G" />
+        <StopButton />
+      </div>
+      <NowPlaying />
+      <ChoiceCheck q={t.check.q} choices={t.check.choices} correct="C" correctText={t.check.correct} incorrectText={t.check.incorrect} />
+    </div>
+  )
+}
+
+function MapTeaching() {
+  const m = T.a_map
+  return (
+    <div>
+      <Paras paras={m.paras} />
+      <h3 className="text-lg font-semibold text-slate-900 mt-4">Keyboard walkthrough</h3>
+      <Steps items={m.walk} />
+      <h3 className="text-lg font-semibold text-slate-900 mt-4">Check your understanding</h3>
+      {m.checks.map(k => <ThinkThenCheck key={k.q} q={k.q} a={k.answer} />)}
+    </div>
+  )
+}
+
+function Relationship() {
+  return (
+    <div>
+      <Paras paras={T.a_rel.paras} />
+      <Aside label="Try it in your own studio">{T.a_rel.bridge}</Aside>
+    </div>
+  )
+}
 
 function Listen() {
   const [played, setPlayed] = useState(false)
@@ -207,14 +257,19 @@ export default function Lesson1A() {
           <p className="m-0">{c('0', 'Artistic intention')}</p>
         </div>
       }
-      heroCtas={<><a href="#listen" className="sp-btn">Begin with Sound</a><a href="#keyboard" className="sp-btn sp-btn--ghost" style={{ color: '#fff', borderColor: '#fff' }}>Explore the Keyboard</a></>}
+      heroCtas={<><a href="#before" className="sp-btn">Begin with Sound</a><a href="#keyboard" className="sp-btn sp-btn--ghost" style={{ color: '#fff', borderColor: '#fff' }}>Explore the Keyboard</a></>}
       blocks={[
+        { id: 'before', heading: T.a_pre.h2, body: <Pre /> },
         { id: 'listen', heading: c('1', 'H2'), body: <Listen /> },
+        { id: 'tonal', heading: T.a_tonal.h2, body: <Tonal /> },
         { id: 'visitor', heading: c('2', 'H2'), body: <Visitors /> },
         { id: 'keyboard', heading: c('3', 'H2'), body: <Keyboard /> },
+        { id: 'map', heading: T.a_map.h2, body: <MapTeaching /> },
         { id: 'carry', heading: c('4', 'H2'), body: <Carry /> },
         { id: 'hear', heading: c('5', 'H2'), body: <HearImagine /> },
+        { id: 'relationship', heading: T.a_rel.h2, body: <Relationship /> },
         { id: 'make', heading: c('6', 'H2'), body: <Make /> },
+        { id: 'recap', heading: 'Recap', body: <Recap title="What you learned today">{T.a_rel.recap}</Recap> },
       ]}
       doorsHeading="Explore a little deeper"
       doorsIntro={null}

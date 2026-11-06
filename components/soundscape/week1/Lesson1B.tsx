@@ -8,6 +8,8 @@ import { copy, field, all } from '@/lib/soundscape/week1/content'
 import { B01, B02, B03, B04, B04_HOPS, B05, B06 } from '@/lib/soundscape/week1/fixtures'
 import { midiToName } from '@/lib/soundscape/midi'
 import Fig from './Fig'
+import { Checks, Paras, Recap } from './Teach'
+import { T } from '@/lib/soundscape/week1/teaching'
 import Keys, { type Mark } from './Keys'
 import { lessonDoors } from './Doors'
 import { BlankLines } from '../ViewMode'
@@ -69,10 +71,10 @@ function Unfinished() {
           <p className="sp-prose"><strong>{c('1', 'After playback prompt')}</strong></p>
           <Choices label="How does it feel?" options={ticks(field(L, '1', 'Options'))} />
           <Fig file="W1-03_two-endings_learner.svg" caption="The same rising path twice; the last two beats are left open." />
-          <p className="sp-prose">{c('1', 'Next')}</p>
-          <button type="button" className="sp-btn" aria-expanded={rev} onClick={() => setRev(true)}>{ticks(field(L, '1', 'Button', 1))[0] ?? 'Reveal a possible ending'}</button>
         </>
       )}
+      <p className="sp-prose">{c('1', 'Next')}</p>
+      <button type="button" className="sp-btn" aria-expanded={rev} onClick={() => setRev(true)}>{ticks(field(L, '1', 'Button', 1))[0] ?? 'Reveal a possible ending'}</button>
       {rev && (
         <div className="mt-3">
           <p className="sp-callout max-w-2xl">{c('1', 'After reveal copy')}</p>
@@ -84,6 +86,84 @@ function Unfinished() {
           </details>
         </div>
       )}
+    </div>
+  )
+}
+
+// Teaching that names the melody's ending opens once the learner asks for it (a plain button, no sound needed).
+function Gate({ children }: { children: ReactNode }) {
+  const { rev, setRev } = useContext(Revealed)
+  if (rev) return <>{children}</>
+  return (
+    <div className="sp-callout max-w-2xl">
+      <p className="m-0">This part uses the ending of the melody you are about to hear, so it opens when you ask to reveal a possible ending. You can do that right now, with sound on or off.</p>
+      <button type="button" className="sp-btn mt-3" onClick={() => setRev(true)}>Reveal a possible ending</button>
+    </div>
+  )
+}
+
+const SCALE_MIDI = [60, 62, 64, 65, 67, 69, 71, 72]
+
+function SemitoneTeaching() {
+  const s = T.b_semi
+  const clips = [B03, B04, B05, B06]
+  return (
+    <div>
+      <Paras paras={s.paras} />
+      <h3 className="text-lg font-semibold text-slate-900 mt-4">Guided examples</h3>
+      <ol className="list-none p-0 space-y-3 max-w-2xl">
+        {s.examples.map(([k, t], i) => (
+          <li key={k} className="sp-card p-3">
+            <p className="m-0"><strong>{k}.</strong> {t}</p>
+            <div className="mt-2"><ClipButton id={`ex${k}`} label={`Hear example ${k}`} events={clips[i]} status={`Now playing example ${k}`} ghost /></div>
+          </li>
+        ))}
+      </ol>
+      <NowPlaying />
+      <h3 className="text-lg font-semibold text-slate-900 mt-4">Check your understanding</h3>
+      <Checks items={s.checks} />
+    </div>
+  )
+}
+
+function ScaleTeaching() {
+  const a = useAudio()
+  const [row, setRow] = useState<number | null>(null)
+  const rows = T.b_scale.table.map((t, i) => {
+    const m = t.match(/^(\w)→(\w) (whole|half) \((\d+)/)!
+    return { i, from: m[1], to: m[2], kind: m[3], semis: m[4] }
+  })
+  const marks: Record<number, Mark> = row === null ? {} : { [SCALE_MIDI[row]]: 'on', [SCALE_MIDI[row + 1]]: 'on' }
+  const labels = row === null ? {} : { [SCALE_MIDI[row]]: midiToName(SCALE_MIDI[row]), [SCALE_MIDI[row + 1]]: midiToName(SCALE_MIDI[row + 1]) }
+  return (
+    <div>
+      <Paras paras={T.b_scale.paras} />
+      <table className="w-full max-w-xl text-left border-collapse my-4">
+        <caption className="text-left font-semibold mb-2">C major, step by step</caption>
+        <thead><tr className="border-b border-slate-300"><th className="py-1 pr-3">Step</th><th className="py-1 pr-3">Size</th><th className="py-1 pr-3">Semitones</th><th className="py-1"><span className="sp-sr-only">Hear it</span></th></tr></thead>
+        <tbody>
+          {rows.map(r => (
+            <tr key={r.i} className="border-b border-slate-200">
+              <td className="py-1 pr-3">{r.from} → {r.to}</td>
+              <td className="py-1 pr-3">{r.kind}</td>
+              <td className="py-1 pr-3">{r.semis}</td>
+              <td className="py-1"><button type="button" className="sp-btn sp-btn--ghost" aria-pressed={row === r.i} onClick={() => { setRow(r.i); a.play(`row${r.i}`, [{ midi: SCALE_MIDI[r.i], start: 0, dur: 0.6, role: 'melody' }, { midi: SCALE_MIDI[r.i + 1], start: 0.75, dur: 0.6, role: 'melody' }], `Now playing ${r.from} then ${r.to}: ${r.kind} step`) }}>Hear and show {r.from}→{r.to}</button></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <Keys lo={60} hi={72} title="Keyboard from C4 to C5. The two keys of the chosen step are outlined." showNames labels={labels} marks={marks} />
+      <NowPlaying />
+      <h3 className="text-lg font-semibold text-slate-900 mt-4">Build and explain</h3>
+      <Checks items={T.b_scale.checks} />
+    </div>
+  )
+}
+
+function EndingTeaching() {
+  return (
+    <div>
+      <Paras paras={T.b_end.paras} />
     </div>
   )
 }
@@ -248,11 +328,16 @@ export default function Lesson1B() {
       }
       heroCtas={<a href="#unfinished" className="sp-btn">Hear the unfinished melody</a>}
       blocks={[
+        { id: 'journey', heading: T.b_intro.h2, body: <Paras paras={T.b_intro.paras} /> },
         { id: 'unfinished', heading: c('1', 'H2'), body: <Unfinished /> },
-        { id: 'distances', heading: c('2', 'H2'), body: <Distances /> },
-        { id: 'scale', heading: c('3', 'H2'), body: <Scale /> },
-        { id: 'endings', heading: c('4', 'H2'), body: <Endings /> },
+        { id: 'semitones', heading: T.b_semi.h2, body: <Gate><SemitoneTeaching /></Gate> },
+        { id: 'distances', heading: c('2', 'H2'), body: <Gate><Distances /></Gate> },
+        { id: 'scaleteach', heading: T.b_scale.h2, body: <Gate><ScaleTeaching /></Gate> },
+        { id: 'scale', heading: c('3', 'H2'), body: <Gate><Scale /></Gate> },
+        { id: 'endings', heading: c('4', 'H2'), body: <Gate><Endings /></Gate> },
+        { id: 'arrival', heading: T.b_end.h2, body: <Gate><EndingTeaching /></Gate> },
         { id: 'studio', heading: c('5', 'H2'), body: <Studio /> },
+        { id: 'recap', heading: 'Recap', body: <Recap title="What you learned today">{T.b_end.recap}</Recap> },
       ]}
       doorsHeading="Explore a little deeper"
       doorsIntro={null}
