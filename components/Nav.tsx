@@ -4,6 +4,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
+// Warm paper header, matching the Ajourné course tokens (paper / ink / wine / amber).
+const ON_STYLE = { color: '#6d326e', background: 'rgba(242,173,69,0.26)', boxShadow: 'inset 0 0 0 1px rgba(242,173,69,0.6)' } as const
+const OFF_CLS = 'text-[#4a2f4d] hover:text-[#6d326e] hover:bg-[#6d326e]/[0.07]'
+const FOCUS = 'focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-[#e5a764]'
 const AJOURNE = '/curriculum/soundscape-path'
 type NavLink = { href: string; label: string; match?: (p: string) => boolean }
 
@@ -40,14 +44,17 @@ export default function Nav() {
   const isMoreActive = MORE.some(l => pathname.startsWith(l.href))
 
   return (
-    <nav style={{ backgroundColor: '#0f172a' }} className="sticky top-0 z-50 shadow-md">
+    <nav
+      style={{ background: 'linear-gradient(#fffaf3, #f9f5ed)', boxShadow: '0 1px 0 #e6dccb, 0 2px 14px rgba(109,50,110,0.08)' }}
+      className="sticky top-0 z-50"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14">
 
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-tight group shrink-0 mr-4">
-            <span className="text-white font-bold text-lg tracking-wide group-hover:opacity-90 transition-opacity">AMF</span>
-            <span className="text-slate-500 text-xs tracking-wide hidden xl:block">Adaptable Musician&apos;s Framework</span>
+          <Link href="/" className={`flex flex-col leading-tight group shrink-0 mr-4 rounded ${FOCUS}`}>
+            <span className="font-bold text-lg tracking-wide group-hover:opacity-80 transition-opacity" style={{ color: '#6d326e' }}>AMF</span>
+            <span className="text-xs tracking-wide hidden xl:block" style={{ color: '#7a6579' }}>Adaptable Musician&apos;s Framework</span>
           </Link>
 
           {/* Desktop links */}
@@ -56,12 +63,11 @@ export default function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-2.5 xl:px-3 py-1.5 rounded text-sm font-medium transition-colors whitespace-nowrap ${
-                  isActive(link)
-                    ? 'bg-white/5'
-                    : 'text-slate-300 hover:text-white hover:bg-white/5'
+                className={`px-2.5 xl:px-3 py-1.5 rounded text-sm font-medium transition-colors whitespace-nowrap ${FOCUS} ${
+                  isActive(link) ? '' : OFF_CLS
                 }`}
-                style={isActive(link) ? { color: '#d97706' } : undefined}
+                style={isActive(link) ? ON_STYLE : undefined}
+                aria-current={isActive(link) ? 'page' : undefined}
               >
                 {link.label}
               </Link>
@@ -71,12 +77,11 @@ export default function Nav() {
             <div className="relative ml-0.5">
               <button
                 onClick={() => setMoreOpen(o => !o)}
-                className={`px-2.5 xl:px-3 py-1.5 rounded text-sm font-medium transition-colors flex items-center gap-1 ${
-                  isMoreActive || moreOpen
-                    ? 'bg-white/5'
-                    : 'text-slate-300 hover:text-white hover:bg-white/5'
+                className={`px-2.5 xl:px-3 py-1.5 rounded text-sm font-medium transition-colors flex items-center gap-1 ${FOCUS} ${
+                  isMoreActive || moreOpen ? '' : OFF_CLS
                 }`}
-                style={isMoreActive || moreOpen ? { color: '#d97706' } : undefined}
+                style={isMoreActive || moreOpen ? ON_STYLE : undefined}
+                aria-expanded={moreOpen}
               >
                 More
                 <svg
@@ -91,20 +96,19 @@ export default function Nav() {
                 <>
                   <div className="fixed inset-0 z-10" onClick={() => setMoreOpen(false)} />
                   <div
-                    className="absolute right-0 top-full mt-1 w-44 rounded-xl border border-slate-700 shadow-xl z-20 overflow-hidden py-1"
-                    style={{ background: '#1e293b' }}
+                    className="absolute right-0 top-full mt-1 w-44 rounded-xl border shadow-xl z-20 overflow-hidden py-1"
+                    style={{ background: '#fffaf3', borderColor: '#e6dccb', boxShadow: '0 10px 28px rgba(62,34,65,0.16)' }}
                   >
                     {MORE.map(link => (
                       <Link
                         key={link.href}
                         href={link.href}
                         onClick={() => setMoreOpen(false)}
-                        className={`block px-4 py-2.5 text-sm transition-colors ${
-                          pathname.startsWith(link.href)
-                            ? 'bg-white/5'
-                            : 'text-slate-300 hover:text-white hover:bg-white/5'
+                        className={`block px-4 py-2.5 text-sm transition-colors ${FOCUS} ${
+                          pathname.startsWith(link.href) ? '' : OFF_CLS
                         }`}
-                        style={pathname.startsWith(link.href) ? { color: '#d97706' } : undefined}
+                        style={pathname.startsWith(link.href) ? ON_STYLE : undefined}
+                        aria-current={pathname.startsWith(link.href) ? 'page' : undefined}
                       >
                         {link.label}
                       </Link>
@@ -119,14 +123,14 @@ export default function Nav() {
           <div className="lg:hidden flex items-center gap-1 ml-auto">
             <Link
               href="/curriculum/soundscape-path"
-              className="px-3 py-2 rounded text-sm font-semibold whitespace-nowrap bg-white/5"
-              style={{ color: pathname.startsWith(AJOURNE) ? '#d97706' : '#e2e8f0' }}
+              className={`px-3 py-2 rounded text-sm font-semibold whitespace-nowrap ${FOCUS} ${pathname.startsWith(AJOURNE) ? '' : OFF_CLS}`}
+              style={pathname.startsWith(AJOURNE) ? ON_STYLE : { background: 'rgba(242,173,69,0.14)' }}
               aria-current={pathname.startsWith(AJOURNE) ? 'true' : undefined}
             >
               Ajourné
             </Link>
           <button
-            className="text-slate-300 hover:text-white p-2 rounded text-slate-300 hover:text-white p-2 rounded"
+            className={`p-2 rounded ${OFF_CLS} ${FOCUS}`}
             onClick={() => setMenuOpen(o => !o)}
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
@@ -146,29 +150,33 @@ export default function Nav() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="lg:hidden border-t border-slate-700 py-2 pb-3">
-            <p className="px-4 pt-1 pb-2 text-xs font-bold uppercase tracking-widest text-slate-500">Main</p>
+          <div className="lg:hidden border-t py-2 pb-3" style={{ borderColor: '#e6dccb' }}>
+            <p className="px-4 pt-1 pb-2 text-xs font-bold uppercase tracking-widest" style={{ color: '#855086' }}>Main</p>
             {PRIMARY.map(link => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`block px-4 py-2 text-sm font-medium transition-colors ${
-                  isActive(link) ? 'text-amber-400' : 'text-slate-300 hover:text-white'
+                className={`block mx-2 px-3 py-2.5 rounded text-sm font-medium transition-colors ${FOCUS} ${
+                  isActive(link) ? '' : OFF_CLS
                 }`}
+                style={isActive(link) ? ON_STYLE : undefined}
+                aria-current={isActive(link) ? 'page' : undefined}
               >
                 {link.label}
               </Link>
             ))}
-            <p className="px-4 pt-3 pb-2 text-xs font-bold uppercase tracking-widest text-slate-500">More</p>
+            <p className="px-4 pt-3 pb-2 text-xs font-bold uppercase tracking-widest" style={{ color: '#855086' }}>More</p>
             {MORE.map(link => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`block px-4 py-2 text-sm font-medium transition-colors ${
-                  pathname.startsWith(link.href) ? 'text-amber-400' : 'text-slate-300 hover:text-white'
+                className={`block mx-2 px-3 py-2.5 rounded text-sm font-medium transition-colors ${FOCUS} ${
+                  pathname.startsWith(link.href) ? '' : OFF_CLS
                 }`}
+                style={pathname.startsWith(link.href) ? ON_STYLE : undefined}
+                aria-current={pathname.startsWith(link.href) ? 'page' : undefined}
               >
                 {link.label}
               </Link>
