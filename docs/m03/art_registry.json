@@ -897,5 +897,36 @@
   "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
   "alt": "",
   "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "S07": {
+  "id": "S07",
+  "title": "Week 2 Two Voices opening",
+  "aspect": "16:9",
+  "scene_prompt": "Two independent airy golden and lavender watercolor ribbons enter a shared luminous space, touch in delicate petal-shaped overlap and diverge into new soft paths, painterly and rich but clearly individually traceable; no notes or labels.",
+  "full_prompt": "Two independent airy golden and lavender watercolor ribbons enter a shared luminous space, touch in delicate petal-shaped overlap and diverge into new soft paths, painterly and rich but clearly individually traceable; no notes or labels.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:26:54",
+  "cost_usd": 0.0387975,
+  "generation_id": "gen-1793978803-LMPUZfafVDgQG7LlWzNg",
+  "raw": "public/soundscape/m03/raw/S07.png",
+  "raw_sha256": "c60dacbcf4c40b98ad27d45311825876d879d088928f66bc77d81bd3d864725b",
+  "raw_bytes": 344094,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 14.1,
+   "png_sha256": "f21d23c4ebcd052c40cffbea7eb696068e2ba4eb70ce77570837b30f034d4dde",
+   "png_bytes": 710107,
+   "webp_bytes": 327822
+  },
+  "webp": "public/soundscape/m03/art/S07.webp",
+  "png": "public/soundscape/m03/art/S07.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
  }
 }
