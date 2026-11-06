@@ -49,8 +49,31 @@ export default function DashboardPage() {
             >
               Open Sprint 1 →
             </Link>
-            <span className="text-slate-400 text-sm italic">&ldquo;The framework disappears.&rdquo;</span>
+            <Link
+              href="/curriculum/soundscape-path"
+              className="px-6 py-3 rounded-xl font-bold text-sm transition-opacity hover:opacity-90"
+              style={{ background: '#d97706', color: '#0f172a' }}
+            >
+              Explore Ajourné into Music →
+            </Link>
           </div>
+          <p className="text-slate-400 text-sm italic mt-4 mb-0">&ldquo;The framework disappears.&rdquo;</p>
+
+          {/* Ajourné into Music: course entry point */}
+          <Link
+            href="/curriculum/soundscape-path"
+            aria-label="Explore Ajourné into Music: an 8-week creative music learning journey, Weeks 1 and 2 available"
+            className="group block max-w-xl mx-auto mt-10 rounded-2xl border px-6 py-5 text-left transition-colors hover:bg-white/5"
+            style={{ borderColor: 'rgba(154,174,177,0.55)', background: 'rgba(255,255,255,0.03)' }}
+            data-home-ajourne
+          >
+            <span className="block text-xs font-bold tracking-widest uppercase mb-1" style={{ color: '#d97706' }}>New course</span>
+            <span className="block text-white text-2xl mb-1" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>Ajourné into Music</span>
+            <span className="block text-slate-300 text-base leading-snug">
+              An 8-week creative music learning journey. Weeks 1–2 available.
+            </span>
+            <span className="block mt-3 text-sm font-semibold" style={{ color: '#fbbf24' }}>Explore Ajourné into Music <span aria-hidden="true">→</span></span>
+          </Link>
         </div>
       </div>
 
