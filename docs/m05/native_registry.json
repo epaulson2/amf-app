@@ -1,0 +1,654 @@
+{
+ "IPV-10-native": {
+  "id": "IPV-10-native",
+  "type": "NATIVE-SVG",
+  "title": "Perfect unison (P1) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 highlighted (both notes are the same key). Perfect unison, P1: 0 semitones, counted as 0 one-key hops.",
+  "size": [
+   428,
+   326
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-10-native.svg",
+   "public/soundscape/m05/native/IPV-10-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-10",
+   "IP-00"
+  ],
+  "art": "IPV-10",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Perfect unison: C4–C4, 0 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-11-native": {
+  "id": "IPV-11-native",
+  "type": "NATIVE-SVG",
+  "title": "Minor second (m2) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and D♭4 highlighted. Minor second, m2: 1 semitones, counted as 1 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-11-native.svg",
+   "public/soundscape/m05/native/IPV-11-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-11",
+   "IP-01"
+  ],
+  "art": "IPV-11",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Minor second: C4–D♭4, 1 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-12-native": {
+  "id": "IPV-12-native",
+  "type": "NATIVE-SVG",
+  "title": "Major second (M2) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and D4 highlighted. Major second, M2: 2 semitones, counted as 2 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-12-native.svg",
+   "public/soundscape/m05/native/IPV-12-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-12",
+   "IP-02"
+  ],
+  "art": "IPV-12",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Major second: C4–D4, 2 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-13-native": {
+  "id": "IPV-13-native",
+  "type": "NATIVE-SVG",
+  "title": "Minor third (m3) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and E♭4 highlighted. Minor third, m3: 3 semitones, counted as 3 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-13-native.svg",
+   "public/soundscape/m05/native/IPV-13-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-13",
+   "IP-03"
+  ],
+  "art": "IPV-13",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Minor third: C4–E♭4, 3 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-14-native": {
+  "id": "IPV-14-native",
+  "type": "NATIVE-SVG",
+  "title": "Major third (M3) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and E4 highlighted. Major third, M3: 4 semitones, counted as 4 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-14-native.svg",
+   "public/soundscape/m05/native/IPV-14-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-14",
+   "IP-04"
+  ],
+  "art": "IPV-14",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Major third: C4–E4, 4 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-15-native": {
+  "id": "IPV-15-native",
+  "type": "NATIVE-SVG",
+  "title": "Perfect fourth (P4) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and F4 highlighted. Perfect fourth, P4: 5 semitones, counted as 5 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-15-native.svg",
+   "public/soundscape/m05/native/IPV-15-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-15",
+   "IP-05"
+  ],
+  "art": "IPV-15",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Perfect fourth: C4–F4, 5 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-16-native": {
+  "id": "IPV-16-native",
+  "type": "NATIVE-SVG",
+  "title": "Tritone (A4/d5) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and F♯4 highlighted. Tritone, A4/d5: 6 semitones, counted as 6 one-key hops; the same key can also be written G♭4 as a diminished fifth.",
+  "size": [
+   428,
+   396
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-16-native.svg",
+   "public/soundscape/m05/native/IPV-16-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-16",
+   "IP-06"
+  ],
+  "art": "IPV-16",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Tritone: C4–F♯4, 6 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-17-native": {
+  "id": "IPV-17-native",
+  "type": "NATIVE-SVG",
+  "title": "Perfect fifth (P5) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and G4 highlighted. Perfect fifth, P5: 7 semitones, counted as 7 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-17-native.svg",
+   "public/soundscape/m05/native/IPV-17-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-17",
+   "IP-07"
+  ],
+  "art": "IPV-17",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Perfect fifth: C4–G4, 7 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-18-native": {
+  "id": "IPV-18-native",
+  "type": "NATIVE-SVG",
+  "title": "Minor sixth (m6) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and A♭4 highlighted. Minor sixth, m6: 8 semitones, counted as 8 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-18-native.svg",
+   "public/soundscape/m05/native/IPV-18-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-18",
+   "IP-08"
+  ],
+  "art": "IPV-18",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Minor sixth: C4–A♭4, 8 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-19-native": {
+  "id": "IPV-19-native",
+  "type": "NATIVE-SVG",
+  "title": "Major sixth (M6) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and A4 highlighted. Major sixth, M6: 9 semitones, counted as 9 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-19-native.svg",
+   "public/soundscape/m05/native/IPV-19-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-19",
+   "IP-09"
+  ],
+  "art": "IPV-19",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Major sixth: C4–A4, 9 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-20-native": {
+  "id": "IPV-20-native",
+  "type": "NATIVE-SVG",
+  "title": "Minor seventh (m7) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and B♭4 highlighted. Minor seventh, m7: 10 semitones, counted as 10 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-20-native.svg",
+   "public/soundscape/m05/native/IPV-20-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-20",
+   "IP-10"
+  ],
+  "art": "IPV-20",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Minor seventh: C4–B♭4, 10 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-21-native": {
+  "id": "IPV-21-native",
+  "type": "NATIVE-SVG",
+  "title": "Major seventh (M7) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and B4 highlighted. Major seventh, M7: 11 semitones, counted as 11 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-21-native.svg",
+   "public/soundscape/m05/native/IPV-21-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-21",
+   "IP-11"
+  ],
+  "art": "IPV-21",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Major seventh: C4–B4, 11 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-22-native": {
+  "id": "IPV-22-native",
+  "type": "NATIVE-SVG",
+  "title": "Perfect octave (P8) on the keyboard",
+  "desc": "A piano keyboard from C4 to C5 with C4 and C5 highlighted. Perfect octave, P8: 12 semitones, counted as 12 one-key hops.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-22-native.svg",
+   "public/soundscape/m05/native/IPV-22-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-22",
+   "IP-12"
+  ],
+  "art": "IPV-22",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Perfect octave: C4–C5, 12 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-04-native": {
+  "id": "IPV-04-native",
+  "type": "NATIVE-SVG",
+  "title": "Interval example: C4 to E4",
+  "desc": "A keyboard from C4 to C5 with C4 and E4 highlighted and four numbered semitone hops between them: C to C-sharp, to D, to D-sharp, to E. The distance, four semitones, is the interval.",
+  "size": [
+   428,
+   388
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-04-native.svg",
+   "public/soundscape/m05/native/IPV-04-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-04"
+  ],
+  "art": "IPV-04",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Interval = distance between two pitches; worked example C4→E4 = 4 semitones.",
+  "status": "NATIVE READY"
+ },
+ "IPV-05-native": {
+  "id": "IPV-05-native",
+  "type": "NATIVE-SVG",
+  "title": "The same two notes, melodic and harmonic",
+  "desc": "Two time strips for the same notes, C4 and E4. In the first strip C4 sounds during seconds 0 to 2 and then E4 during seconds 2 to 4, one after another. In the second both notes last the whole 4 seconds, together. The distance is four semitones in both.",
+  "size": [
+   640,
+   426
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-05-native.svg",
+   "public/soundscape/m05/native/IPV-05-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-05"
+  ],
+  "art": "IPV-05",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Same two notes, played one after another (melodic) or together (harmonic).",
+  "status": "NATIVE READY"
+ },
+ "IPV-06-native": {
+  "id": "IPV-06-native",
+  "type": "NATIVE-SVG",
+  "title": "Reading the keyboard: white-key neighbours are not always one semitone",
+  "desc": "A keyboard from C4 to C5 showing black keys in groups of two then three. C to D spans two semitones because C-sharp sits between them. E to F spans only one semitone because there is no black key between E and F.",
+  "size": [
+   428,
+   618
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-06-native.svg",
+   "public/soundscape/m05/native/IPV-06-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-06"
+  ],
+  "art": "IPV-06",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Letter names vs semitones; two-then-three black keys; C→D = 2 semitones, E→F = 1.",
+  "status": "NATIVE READY"
+ },
+ "IPV-07-native": {
+  "id": "IPV-07-native",
+  "type": "NATIVE-SVG",
+  "title": "Thirteen intervals on a 0 to 12 semitone ruler",
+  "desc": "A ruler from 0 to 12 semitones above C4 with thirteen marked landmarks in order: P1, m2, M2, m3, M3, P4, A4 or d5, P5, m6, M6, m7, M7, P8. The ruler shows measured distance only.",
+  "size": [
+   920,
+   150
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-07-native.svg",
+   "public/soundscape/m05/native/IPV-07-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-07"
+  ],
+  "art": "IPV-07",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Increasing measured distance, 0–12 semitones; not an order of tension.",
+  "status": "NATIVE READY"
+ },
+ "IPV-30-native": {
+  "id": "IPV-30-native",
+  "type": "NATIVE-SVG",
+  "title": "The thirteen interval landmarks with note pairs",
+  "desc": "A 0 to 12 semitone ruler with each landmark named and paired with its notes above C4, from the perfect unison C to C through the tritone C to F-sharp or G-flat up to the perfect octave C to C. Positions are exact semitone counts.",
+  "size": [
+   1040,
+   250
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-30-native.svg",
+   "public/soundscape/m05/native/IPV-30-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-30"
+  ],
+  "art": "IPV-30",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "The thirteen landmarks with names and note pairs, exact positions.",
+  "status": "NATIVE READY"
+ },
+ "IPV-30-narrow": {
+  "id": "IPV-30-narrow",
+  "type": "NATIVE-SVG",
+  "title": "Thirteen interval landmarks (list)",
+  "desc": "The thirteen intervals from 0 to 12 semitones above C4, listed with abbreviation, name and note pair.",
+  "size": [
+   346,
+   488
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-30-narrow.svg",
+   "public/soundscape/m05/native/IPV-30-narrow.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-30"
+  ],
+  "art": "IPV-30",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Narrow vertical list of the thirteen landmarks for phones.",
+  "kind": "responsive variant",
+  "status": "NATIVE READY"
+ },
+ "IPV-23-native": {
+  "id": "IPV-23-native",
+  "type": "NATIVE-SVG",
+  "title": "Minor second compared with Major second",
+  "desc": "Two keyboards, each from C4 to C5. The first highlights C4 and D♭4, 1 semitone. The second highlights C4 and D4, 2 semitones. The lower note C4 stays; the upper note moves one key.",
+  "size": [
+   653,
+   326
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-23-native.svg",
+   "public/soundscape/m05/native/IPV-23-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-23"
+  ],
+  "art": "IPV-23",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Minor second (1) versus Major second (2).",
+  "status": "NATIVE READY"
+ },
+ "IPV-24-native": {
+  "id": "IPV-24-native",
+  "type": "NATIVE-SVG",
+  "title": "Minor third compared with Major third",
+  "desc": "Two keyboards, each from C4 to C5. The first highlights C4 and E♭4, 3 semitones. The second highlights C4 and E4, 4 semitones. The lower note C4 stays; the upper note moves one key.",
+  "size": [
+   653,
+   348
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-24-native.svg",
+   "public/soundscape/m05/native/IPV-24-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-24"
+  ],
+  "art": "IPV-24",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Minor third (3) versus Major third (4).",
+  "status": "NATIVE READY"
+ },
+ "IPV-26-native": {
+  "id": "IPV-26-native",
+  "type": "NATIVE-SVG",
+  "title": "Minor sixth compared with Major sixth",
+  "desc": "Two keyboards, each from C4 to C5. The first highlights C4 and A♭4, 8 semitones. The second highlights C4 and A4, 9 semitones. The lower note C4 stays; the upper note moves one key.",
+  "size": [
+   653,
+   326
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-26-native.svg",
+   "public/soundscape/m05/native/IPV-26-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-26"
+  ],
+  "art": "IPV-26",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Minor sixth (8) versus Major sixth (9).",
+  "status": "NATIVE READY"
+ },
+ "IPV-27-native": {
+  "id": "IPV-27-native",
+  "type": "NATIVE-SVG",
+  "title": "Minor seventh compared with Major seventh",
+  "desc": "Two keyboards, each from C4 to C5. The first highlights C4 and B♭4, 10 semitones. The second highlights C4 and B4, 11 semitones. The lower note C4 stays; the upper note moves one key.",
+  "size": [
+   653,
+   348
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-27-native.svg",
+   "public/soundscape/m05/native/IPV-27-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-27"
+  ],
+  "art": "IPV-27",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Minor seventh (10) versus Major seventh (11).",
+  "status": "NATIVE READY"
+ },
+ "IPV-09-native": {
+  "id": "IPV-09-native",
+  "type": "NATIVE-SVG",
+  "title": "Perfect fourth compared with Perfect fifth",
+  "desc": "Two keyboards, each from C4 to C5. The first highlights C4 and F4, 5 semitones. The second highlights C4 and G4, 7 semitones. The lower note C4 stays; the upper note moves one key.",
+  "size": [
+   653,
+   326
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-09-native.svg",
+   "public/soundscape/m05/native/IPV-09-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-09"
+  ],
+  "art": "IPV-09",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Perfect fourth (5) versus Perfect fifth (7).",
+  "status": "NATIVE READY"
+ },
+ "IPV-25-native": {
+  "id": "IPV-25-native",
+  "type": "NATIVE-SVG",
+  "title": "Perfect fourth, tritone and perfect fifth",
+  "desc": "Three keyboards from C4 to C5 with C4 as the shared lower note and the upper note at F4 (5 semitones, perfect fourth), F-sharp4 (6 semitones, tritone, also written G-flat4) and G4 (7 semitones, perfect fifth).",
+  "size": [
+   823,
+   302
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-25-native.svg",
+   "public/soundscape/m05/native/IPV-25-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-25"
+  ],
+  "art": "IPV-25",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Five, six, seven semitones; tritone spelling.",
+  "status": "NATIVE READY"
+ },
+ "IPV-28-native": {
+  "id": "IPV-28-native",
+  "type": "NATIVE-SVG",
+  "title": "The same interval in three registers",
+  "desc": "Three keyboards showing the same perfect fifth, 7 semitones, built from C in a low, a middle and a high register. The distance is identical; the sound you get depends on register and instrument.",
+  "size": [
+   823,
+   324
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-28-native.svg",
+   "public/soundscape/m05/native/IPV-28-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-28"
+  ],
+  "art": "IPV-28",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "One interval, three registers; no universal consonance scale.",
+  "status": "NATIVE READY"
+ },
+ "IPV-29-native": {
+  "id": "IPV-29-native",
+  "type": "NATIVE-SVG",
+  "title": "Inversion: moving the lower note up an octave",
+  "desc": "Three pairs. Take the lower note and move it up an octave. A minor third of 3 semitones (C to E-flat) becomes a major sixth of 9 (E-flat to C). A major third of 4 becomes a minor sixth of 8. A perfect fourth of 5 becomes a perfect fifth of 7. Each pair adds to 12 semitones; the interval numbers add to 9.",
+  "size": [
+   498,
+   756
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-29-native.svg",
+   "public/soundscape/m05/native/IPV-29-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-29"
+  ],
+  "art": "IPV-29",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET)",
+  "teach": "Inversion pairs m3↔M6, M3↔m6, P4↔P5: semitones add to 12.",
+  "status": "NATIVE READY"
+ },
+ "IPV-34-native": {
+  "id": "IPV-34-native",
+  "type": "NATIVE-SVG",
+  "title": "Same key, two interval names",
+  "desc": "Two keyboards with the same two keys highlighted, C4 and the black key above D. First it is spelled E-flat: letters C, D, E make a third, so it is a minor third. Second it is spelled D-sharp: letters C, D make a second, so it is an augmented second. Both are 3 semitones.",
+  "size": [
+   565,
+   328
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-34-native.svg",
+   "public/soundscape/m05/native/IPV-34-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-34"
+  ],
+  "art": "IPV-08",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET); atlas layer B",
+  "teach": "An interval name comes from letter distance as well as semitones: same key, two spellings.",
+  "status": "NATIVE READY"
+ },
+ "IPV-35-native": {
+  "id": "IPV-35-native",
+  "type": "NATIVE-SVG",
+  "title": "Adding a third note changes the whole sound-world",
+  "desc": "Three keyboards from C4. First C and E alone, a major third of 4 semitones. Second C, E and G together, a C-major triad. Third C, E-flat and G, a C-minor triad, where moving one key down changes the quality.",
+  "size": [
+   386,
+   744
+  ],
+  "files": [
+   "public/soundscape/m05/native/IPV-35-native.svg",
+   "public/soundscape/m05/native/IPV-35-native.print.svg"
+  ],
+  "group": "IPALETTE",
+  "ids": [
+   "IPV-35"
+  ],
+  "art": "IPV-08",
+  "source": "lib/soundscape/resources/interval-data.json (IP-00…IP-12, C4 = MIDI 60, 12-TET); atlas layer D",
+  "teach": "Adding a third note changes the world: dyad C–E versus C–E–G versus C–E♭–G.",
+  "status": "NATIVE READY"
+ }
+}

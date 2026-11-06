@@ -18,7 +18,7 @@ export function txt(x: number, y: number, s: string, o: { size?: number; weight?
 }
 /** Greedy word-wrap into <text> lines (monospace-free estimate: 0.5em average glyph). */
 export function para(x: number, y: number, s: string, maxW: number, o: Parameters<typeof txt>[3] & { lh?: number } = {}) {
-  const size = o.size ?? 15, per = Math.max(8, Math.floor(maxW / (size * 0.5))), words = s.split(/\s+/), lines: string[] = []
+  const size = o.size ?? 15, per = Math.max(8, Math.floor(maxW / (size * 0.58))), words = s.split(/\s+/), lines: string[] = []
   let cur = ''
   for (const w of words) { if ((cur + ' ' + w).trim().length > per) { lines.push(cur); cur = w } else cur = (cur + ' ' + w).trim() }
   if (cur) lines.push(cur)
@@ -57,7 +57,12 @@ export function keyboard(c: Ctx, o: KbOpts, x0 = 0, y0 = 0): Part & { kb: Keyboa
     if (m && !c.print) g += `<rect x="${xw(k.x) + 2 * s}" y="${top + (KH - 70) * s}" width="${(KW - 4) * s}" height="${86 * s}" rx="${22 * s}" fill="${t === 'upper' ? '#8fcdc6' : t === 'shared' ? '#c9a6d8' : '#f6b94f'}" opacity=".5" filter="url(#${c.uid}-glow)"/>`
     g += `<rect x="${xw(k.x) + s}" y="${top}" width="${(KW - 2) * s}" height="${KH * s}" rx="${7 * s}" fill="${m ? toneFill(c, t) : (c.print ? '#fff' : `url(#${c.uid}-w)`)}" stroke="${m ? toneStroke(t) : '#bfa8b3'}" stroke-width="${(m ? 2.6 : 1.4) * s}"/>`
   }
-  for (const b of kb.blacks) g += `<rect x="${xw(b.x)}" y="${top - s}" width="${b.w * KW * s}" height="${BH * s}" rx="${5 * s}" fill="${c.print ? '#4a2a4d' : `url(#${c.uid}-b)`}"/>`
+  for (const b of kb.blacks) {
+    const m = marks[b.midi], t: Tone | null = m ? m.tone : null
+    const fill = m ? (c.print ? '#e8e0ea' : `url(#${c.uid}-${t})`) : (c.print ? '#4a2a4d' : `url(#${c.uid}-b)`)
+    g += `<rect x="${xw(b.x)}" y="${top - s}" width="${b.w * KW * s}" height="${BH * s}" rx="${5 * s}" fill="${fill}"${m ? ` stroke="${toneStroke(t!)}" stroke-width="${3 * s}"` : ''}/>`
+    if (m?.label) g += txt(xw(b.x + b.w / 2), top + (BH - 12) * s, m.label, { size: 15 * s, weight: 700, anchor: 'middle', fill: '#3e2241' })
+  }
   for (const k of kb.whites) {
     const m = marks[k.midi], lab = m?.label ?? (o.letters === 'all' ? k.letter : (o.letters === 'c' && k.letter === 'C' ? 'C' : ''))
     if (!lab) continue
@@ -82,7 +87,7 @@ export function hops(c: Ctx, kb: Part & { kb: Keyboard }, from: number, to: numb
     g += txt(mid, y + r * 1.7 * 0.5 + 22, String(m - lo + 1), { size: o.size ?? 15, weight: 700, anchor: 'middle', fill: col, sans: true })
   }
   const a = kb.xc!(lo), b = kb.xc!(hi), tot = hi - lo
-  g += `<path d="M${a} ${y + 54} h${b - a}" stroke="${col}" stroke-width="1.4" stroke-dasharray="4 4"/>` + txt((a + b) / 2, y + 76, o.total ?? `${tot} semitone${tot === 1 ? '' : 's'}`, { size: 17, weight: 700, anchor: 'middle', fill: col })
+  g += `<path d="M${a} ${y + 54} h${b - a}" stroke="${col}" stroke-width="1.4" stroke-dasharray="4 4"/>` + txt(Math.min(Math.max((a + b) / 2, 6 + (o.total ?? 'xxxxxxxxxxxx').length * 4.7), kb.w - 6 - (o.total ?? 'xxxxxxxxxxxx').length * 4.7), y + 76, o.total ?? `${tot} semitone${tot === 1 ? '' : 's'}`, { size: 17, weight: 700, anchor: 'middle', fill: col })
   return { svg: g, h: 84 }
 }
 

@@ -1,0 +1,399 @@
+{
+ "IPV-01": {
+  "id": "IPV-01",
+  "classification": "ART",
+  "category": "system",
+  "art": "IPV-01",
+  "native": "IPV-07-native",
+  "derived": null,
+  "review_sheet": "systems.html",
+  "note": ""
+ },
+ "IPV-04": {
+  "id": "IPV-04",
+  "classification": "ART",
+  "category": "system",
+  "art": "IPV-04",
+  "native": "IPV-04-native",
+  "derived": null,
+  "review_sheet": "systems.html",
+  "note": ""
+ },
+ "IPV-05": {
+  "id": "IPV-05",
+  "classification": "ART",
+  "category": "system",
+  "art": "IPV-05",
+  "native": "IPV-05-native",
+  "derived": null,
+  "review_sheet": "systems.html",
+  "note": ""
+ },
+ "IPV-08": {
+  "id": "IPV-08",
+  "classification": "ART",
+  "category": "system",
+  "art": "IPV-08",
+  "native": "IPV-34-native",
+  "derived": null,
+  "review_sheet": "systems.html",
+  "note": ""
+ },
+ "IPV-02": {
+  "id": "IPV-02",
+  "classification": "VARIANT",
+  "category": "system",
+  "art": null,
+  "native": null,
+  "derived": [
+   "IPV-02-card-10",
+   "IPV-02-card-11",
+   "IPV-02-card-12",
+   "IPV-02-card-13",
+   "IPV-02-card-14",
+   "IPV-02-card-15",
+   "IPV-02-card-16",
+   "IPV-02-card-17",
+   "IPV-02-card-18",
+   "IPV-02-card-19",
+   "IPV-02-card-20",
+   "IPV-02-card-21",
+   "IPV-02-card-22"
+  ],
+  "review_sheet": "support.html",
+  "note": "4:5 card crops of the 13 interval arts; no model call"
+ },
+ "IPV-03": {
+  "id": "IPV-03",
+  "classification": "VARIANT",
+  "category": "system",
+  "art": null,
+  "native": null,
+  "derived": [
+   "IPV-03-chapter-10",
+   "IPV-03-chapter-11",
+   "IPV-03-chapter-12",
+   "IPV-03-chapter-13",
+   "IPV-03-chapter-14",
+   "IPV-03-chapter-15",
+   "IPV-03-chapter-16",
+   "IPV-03-chapter-17",
+   "IPV-03-chapter-18",
+   "IPV-03-chapter-19",
+   "IPV-03-chapter-20",
+   "IPV-03-chapter-21",
+   "IPV-03-chapter-22"
+  ],
+  "review_sheet": "support.html",
+  "note": "3:2 chapter openers from the 13 interval arts; no model call"
+ },
+ "IPV-06": {
+  "id": "IPV-06",
+  "classification": "NATIVE",
+  "category": "system",
+  "art": "IPV-04",
+  "native": "IPV-06-native",
+  "derived": null,
+  "review_sheet": "systems.html",
+  "note": "exact key geometry; art reused from IPV-04"
+ },
+ "IPV-07": {
+  "id": "IPV-07",
+  "classification": "NATIVE+REUSE",
+  "category": "system",
+  "art": "IPV-01",
+  "native": "IPV-07-native",
+  "derived": null,
+  "review_sheet": "systems.html",
+  "note": "exact 0–12 ruler; art reused from IPV-01"
+ },
+ "IPV-09": {
+  "id": "IPV-09",
+  "classification": "VARIANT",
+  "category": "system",
+  "art": null,
+  "native": "IPV-09-native",
+  "derived": null,
+  "review_sheet": "systems.html",
+  "note": "layout pattern, exemplified by P4 vs P5; art IPV-25"
+ },
+ "IPV-10": {
+  "id": "IPV-10",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-10",
+  "native": "IPV-10-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-00 · Perfect unison · 0 semitones"
+ },
+ "IPV-11": {
+  "id": "IPV-11",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-11",
+  "native": "IPV-11-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-01 · Minor second · 1 semitones"
+ },
+ "IPV-12": {
+  "id": "IPV-12",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-12",
+  "native": "IPV-12-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-02 · Major second · 2 semitones"
+ },
+ "IPV-13": {
+  "id": "IPV-13",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-13",
+  "native": "IPV-13-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-03 · Minor third · 3 semitones"
+ },
+ "IPV-14": {
+  "id": "IPV-14",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-14",
+  "native": "IPV-14-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-04 · Major third · 4 semitones"
+ },
+ "IPV-15": {
+  "id": "IPV-15",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-15",
+  "native": "IPV-15-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-05 · Perfect fourth · 5 semitones"
+ },
+ "IPV-16": {
+  "id": "IPV-16",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-16",
+  "native": "IPV-16-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-06 · Tritone · 6 semitones"
+ },
+ "IPV-17": {
+  "id": "IPV-17",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-17",
+  "native": "IPV-17-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-07 · Perfect fifth · 7 semitones"
+ },
+ "IPV-18": {
+  "id": "IPV-18",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-18",
+  "native": "IPV-18-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-08 · Minor sixth · 8 semitones"
+ },
+ "IPV-19": {
+  "id": "IPV-19",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-19",
+  "native": "IPV-19-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-09 · Major sixth · 9 semitones"
+ },
+ "IPV-20": {
+  "id": "IPV-20",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-20",
+  "native": "IPV-20-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-10 · Minor seventh · 10 semitones"
+ },
+ "IPV-21": {
+  "id": "IPV-21",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-21",
+  "native": "IPV-21-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-11 · Major seventh · 11 semitones"
+ },
+ "IPV-22": {
+  "id": "IPV-22",
+  "classification": "ART",
+  "category": "interval",
+  "art": "IPV-22",
+  "native": "IPV-22-native",
+  "derived": null,
+  "review_sheet": "intervals.html",
+  "note": "source card IP-12 · Perfect octave · 12 semitones"
+ },
+ "IPV-23": {
+  "id": "IPV-23",
+  "classification": "VARIANT",
+  "category": "compare",
+  "art": "IPV-11+IPV-12",
+  "native": "IPV-23-native",
+  "derived": null,
+  "review_sheet": "comparisons.html",
+  "note": "recomposed from interval art; no model call"
+ },
+ "IPV-24": {
+  "id": "IPV-24",
+  "classification": "VARIANT",
+  "category": "compare",
+  "art": "IPV-13+IPV-14",
+  "native": "IPV-24-native",
+  "derived": null,
+  "review_sheet": "comparisons.html",
+  "note": "recomposed from interval art; no model call"
+ },
+ "IPV-26": {
+  "id": "IPV-26",
+  "classification": "VARIANT",
+  "category": "compare",
+  "art": "IPV-18+IPV-19",
+  "native": "IPV-26-native",
+  "derived": null,
+  "review_sheet": "comparisons.html",
+  "note": "recomposed from interval art; no model call"
+ },
+ "IPV-27": {
+  "id": "IPV-27",
+  "classification": "VARIANT",
+  "category": "compare",
+  "art": "IPV-20+IPV-21",
+  "native": "IPV-27-native",
+  "derived": null,
+  "review_sheet": "comparisons.html",
+  "note": "recomposed from interval art; no model call"
+ },
+ "IPV-25": {
+  "id": "IPV-25",
+  "classification": "ART",
+  "category": "compare",
+  "art": "IPV-25",
+  "native": "IPV-25-native",
+  "derived": null,
+  "review_sheet": "comparisons.html",
+  "note": ""
+ },
+ "IPV-28": {
+  "id": "IPV-28",
+  "classification": "ART",
+  "category": "compare",
+  "art": "IPV-28",
+  "native": "IPV-28-native",
+  "derived": null,
+  "review_sheet": "comparisons.html",
+  "note": ""
+ },
+ "IPV-29": {
+  "id": "IPV-29",
+  "classification": "ART",
+  "category": "compare",
+  "art": "IPV-29",
+  "native": "IPV-29-native",
+  "derived": null,
+  "review_sheet": "comparisons.html",
+  "note": ""
+ },
+ "IPV-30": {
+  "id": "IPV-30",
+  "classification": "ART",
+  "category": "compare",
+  "art": "IPV-30",
+  "native": "IPV-30-native",
+  "derived": null,
+  "review_sheet": "comparisons.html",
+  "note": "narrow variant IPV-30-narrow"
+ },
+ "IPV-31": {
+  "id": "IPV-31",
+  "classification": "VARIANT",
+  "category": "support",
+  "art": null,
+  "native": null,
+  "derived": [
+   "IPV-31-icon-10",
+   "IPV-31-icon-11",
+   "IPV-31-icon-12",
+   "IPV-31-icon-13",
+   "IPV-31-icon-14",
+   "IPV-31-icon-15",
+   "IPV-31-icon-16",
+   "IPV-31-icon-17",
+   "IPV-31-icon-18",
+   "IPV-31-icon-19",
+   "IPV-31-icon-20",
+   "IPV-31-icon-21",
+   "IPV-31-icon-22"
+  ],
+  "review_sheet": "support.html",
+  "note": "96px crops; native name always accompanies"
+ },
+ "IPV-32": {
+  "id": "IPV-32",
+  "classification": "VARIANT",
+  "category": "support",
+  "art": null,
+  "native": null,
+  "derived": [
+   "IPV-32-banner-01",
+   "IPV-32-banner-04",
+   "IPV-32-banner-05",
+   "IPV-32-banner-08"
+  ],
+  "review_sheet": "support.html",
+  "note": "crops of IPV-01/04/05/08"
+ },
+ "IPV-33": {
+  "id": "IPV-33",
+  "classification": "DEFER",
+  "category": "support",
+  "art": null,
+  "native": null,
+  "derived": null,
+  "review_sheet": "",
+  "note": "Six enrichment-door motifs: optional until a content audit confirms doors belong in the Palette."
+ },
+ "IPV-34": {
+  "id": "IPV-34",
+  "classification": "NATIVE",
+  "category": "added",
+  "art": "IPV-08",
+  "native": "IPV-34-native",
+  "derived": null,
+  "review_sheet": "support.html",
+  "note": "ADDED: Atlas layer B (naming by letters); no listed visual covered it"
+ },
+ "IPV-35": {
+  "id": "IPV-35",
+  "classification": "NATIVE",
+  "category": "added",
+  "art": "IPV-08",
+  "native": "IPV-35-native",
+  "derived": null,
+  "review_sheet": "support.html",
+  "note": "ADDED: Atlas layer D (third note changes the world)"
+ }
+}

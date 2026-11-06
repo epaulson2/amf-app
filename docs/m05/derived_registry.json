@@ -1,0 +1,690 @@
+{
+ "IPV-02-card-10": {
+  "id": "IPV-02-card-10",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-10",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-10.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-10.webp",
+  "png_sha256": "054609b912f65328c797685193cf1d54cc03bd43cdc940daf941567d801c97a5",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-10": {
+  "id": "IPV-03-chapter-10",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-10",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-10.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-10.webp",
+  "png_sha256": "c083c2a197027ea314365de3a655cba1ae59c6752fda540ef9bc0b56b17b7b30",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-10": {
+  "id": "IPV-31-icon-10",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-10",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-10.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-10.webp",
+  "png_sha256": "185ac3d5b065da177da5c88ca1106b98f82618dbbcab7ef24a4b8464cd480085",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-11": {
+  "id": "IPV-02-card-11",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-11",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-11.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-11.webp",
+  "png_sha256": "be6d88f85c4b120a3b3a25776a047371ade40df7d0479160d0d49c39fab02482",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-11": {
+  "id": "IPV-03-chapter-11",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-11",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-11.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-11.webp",
+  "png_sha256": "c820d2317f07a7e5e0b3a41f79e65409679f74e2f14fbac752880e53457c3b79",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-11": {
+  "id": "IPV-31-icon-11",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-11",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-11.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-11.webp",
+  "png_sha256": "3fb16b1fbf822529301ca901012dc4addfae9d6d44f4943163cb271f9656d472",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-12": {
+  "id": "IPV-02-card-12",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-12",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-12.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-12.webp",
+  "png_sha256": "f3f93956254b8aa1648c06f6233dbcee7afc3c848aa41617a5b44680b81f639c",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-12": {
+  "id": "IPV-03-chapter-12",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-12",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-12.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-12.webp",
+  "png_sha256": "42681f22104b2b107e8dc55189ed39039de51ace43a4ac1c28d41c970ed257e6",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-12": {
+  "id": "IPV-31-icon-12",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-12",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-12.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-12.webp",
+  "png_sha256": "2c1b7891bf533fcc903fe0dbffd06550aa71443a09bc01d0394661503bd69ab7",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-13": {
+  "id": "IPV-02-card-13",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-13",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-13.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-13.webp",
+  "png_sha256": "b6b8a2c0120a30b7692182b904c74a9b5f918fd18a605393a7557f11f151f8fe",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-13": {
+  "id": "IPV-03-chapter-13",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-13",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-13.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-13.webp",
+  "png_sha256": "4cc566ae89ddb8d50e795628c81d67b4dcdf59c27bd82fc26c75ae9ef52a9451",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-13": {
+  "id": "IPV-31-icon-13",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-13",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-13.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-13.webp",
+  "png_sha256": "3ee192d7cd8ef820f27c2f45a14ae8085649633289ac0594205f2d63fdd7f399",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-14": {
+  "id": "IPV-02-card-14",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-14",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-14.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-14.webp",
+  "png_sha256": "6c1ffd1497e12e32b2557328cce976552204f337d5cc2de7257329038646e591",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-14": {
+  "id": "IPV-03-chapter-14",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-14",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-14.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-14.webp",
+  "png_sha256": "b94c7cb0d17503d973fc311b75bd3c10b78f6d1beea8f36486d33cf0a41ca9ce",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-14": {
+  "id": "IPV-31-icon-14",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-14",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-14.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-14.webp",
+  "png_sha256": "a54d48f3c0f9c7948011b107f6c04574382ae5b59d503f9c39f3623a353be4f7",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-15": {
+  "id": "IPV-02-card-15",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-15",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-15.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-15.webp",
+  "png_sha256": "e8cf5bd025f6deb5d5a2434a50d3b8928ade1fb9650af897ddcfd60b650398a8",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-15": {
+  "id": "IPV-03-chapter-15",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-15",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-15.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-15.webp",
+  "png_sha256": "2277859455181322905c5a4e1d48a3e875789cd851995c6b943056dee9b71ec7",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-15": {
+  "id": "IPV-31-icon-15",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-15",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-15.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-15.webp",
+  "png_sha256": "a33cf623e1a12b46067097a3eed492d6194830dead72b574722c291b688c058d",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-16": {
+  "id": "IPV-02-card-16",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-16",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-16.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-16.webp",
+  "png_sha256": "0bf89857e41b6c8ec0e555a604a6eb55c1c1e51eeb28f0e88dcf61634ac26aec",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-16": {
+  "id": "IPV-03-chapter-16",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-16",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-16.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-16.webp",
+  "png_sha256": "f687fdb4ff32358246f9484c5c585cecc61f65355cc850a2adac001efb0cc074",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-16": {
+  "id": "IPV-31-icon-16",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-16",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-16.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-16.webp",
+  "png_sha256": "fd8bd031b5e41a70463cb9d5c6fcbfb1ec1c8e5b6b2f4fbe2d9f4ae92bdfe939",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-17": {
+  "id": "IPV-02-card-17",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-17",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-17.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-17.webp",
+  "png_sha256": "2a2240948176c0ede238853f28fd6c7f3957b93abdbc45f3962a35f10fa2f9fe",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-17": {
+  "id": "IPV-03-chapter-17",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-17",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-17.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-17.webp",
+  "png_sha256": "2e4a892c79f4856f979baad86b415b178d30911d2329b5fcf1358799a604cbfb",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-17": {
+  "id": "IPV-31-icon-17",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-17",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-17.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-17.webp",
+  "png_sha256": "9ef9257b8096aa21186b50b12e3de7f085222d15df441921a0f0278802eb2ec4",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-18": {
+  "id": "IPV-02-card-18",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-18",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-18.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-18.webp",
+  "png_sha256": "be475707b2619a39f5af4b844d382fbecb9d149a35254b1b7720205203cfddcc",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-18": {
+  "id": "IPV-03-chapter-18",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-18",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-18.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-18.webp",
+  "png_sha256": "920fbfaa04317688fa27032bbbcf76360d6d841199b5769b879a2a39f9d5b14b",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-18": {
+  "id": "IPV-31-icon-18",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-18",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-18.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-18.webp",
+  "png_sha256": "3402527200052103d8db393aa9e7a40b3e18eabd637dd794929275ed629fd7a8",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-19": {
+  "id": "IPV-02-card-19",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-19",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-19.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-19.webp",
+  "png_sha256": "60167417329ba85914ba18a17c3ca5877ad09e9d3e56ec2585e43327792e9f14",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-19": {
+  "id": "IPV-03-chapter-19",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-19",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-19.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-19.webp",
+  "png_sha256": "67397c338ed1cb8cb5b2e11fd5d4662aef8b654fcc5eea7985d9818045dff1cb",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-19": {
+  "id": "IPV-31-icon-19",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-19",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-19.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-19.webp",
+  "png_sha256": "af1cd6d2ec9053f37171580c7bade651d6d6fb2ea200a673b38d75b480cc6551",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-20": {
+  "id": "IPV-02-card-20",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-20",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-20.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-20.webp",
+  "png_sha256": "29378cc24aeb10bb1afaca2f11d92627bb0310cb3fcd49032e63af07fecdfd7e",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-20": {
+  "id": "IPV-03-chapter-20",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-20",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-20.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-20.webp",
+  "png_sha256": "96ea16772849c6b41213cfea8246c18f088c9155b3a1bdd973d65075c40143c9",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-20": {
+  "id": "IPV-31-icon-20",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-20",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-20.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-20.webp",
+  "png_sha256": "ddc4430cdcbd828936d69cf725d7003b85393ed1ef36d7ac13730ff10817f24d",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-21": {
+  "id": "IPV-02-card-21",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-21",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-21.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-21.webp",
+  "png_sha256": "7cc1be5ad78f6f0ed76089c37312114367e5e2e24780a10021191e1a91fa048a",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-21": {
+  "id": "IPV-03-chapter-21",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-21",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-21.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-21.webp",
+  "png_sha256": "2b05129831cf0dd3d2e460ddc19931323a7578f97529b89c31ce4df60ce8afba",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-21": {
+  "id": "IPV-31-icon-21",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-21",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-21.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-21.webp",
+  "png_sha256": "bbd413ece76c786369e834b3d2b1d645722669c9df53ce5d5f879b5ea5bbd706",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-02-card-22": {
+  "id": "IPV-02-card-22",
+  "kind": "IPV-02 card art 4:5",
+  "derived_from": "IPV-22",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   800,
+   1000
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-02-card-22.png",
+  "webp": "public/soundscape/m05/derived/IPV-02-card-22.webp",
+  "png_sha256": "18c1385916295526ed0586a8e4de37c0ab26737d360ad4b991012d059713f032",
+  "note": "Reusable card crop for the quick card."
+ },
+ "IPV-03-chapter-22": {
+  "id": "IPV-03-chapter-22",
+  "kind": "IPV-03 chapter opener 3:2",
+  "derived_from": "IPV-22",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1200,
+   800
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-03-chapter-22.png",
+  "webp": "public/soundscape/m05/derived/IPV-03-chapter-22.webp",
+  "png_sha256": "394c559066ad7020004ce1869ac3541ae3f83bc73d947d20ce57b07e322b5ebd",
+  "note": "Roomier chapter opener recomposition; same art, new canvas."
+ },
+ "IPV-31-icon-22": {
+  "id": "IPV-31-icon-22",
+  "kind": "IPV-31 micro icon",
+  "derived_from": "IPV-22",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   96,
+   96
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-31-icon-22.png",
+  "webp": "public/soundscape/m05/derived/IPV-31-icon-22.webp",
+  "png_sha256": "0570e72741e5a77c1483f968f6c0a4e6fa7d426d5dfdb021b0a40d950ad0b28f",
+  "note": "96px recognisable crop; native name always accompanies it."
+ },
+ "IPV-32-banner-01": {
+  "id": "IPV-32-banner-01",
+  "kind": "IPV-32 mini banner 3:1",
+  "derived_from": "IPV-01",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1500,
+   500
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-32-banner-01.png",
+  "webp": "public/soundscape/m05/derived/IPV-32-banner-01.webp",
+  "png_sha256": "fd533d55a626611adeb4f817942bdb8f739669df2720ced580b0d628daa78e0d",
+  "note": "Section mini-banner; real HTML heading sits beside it."
+ },
+ "IPV-32-banner-04": {
+  "id": "IPV-32-banner-04",
+  "kind": "IPV-32 mini banner 3:1",
+  "derived_from": "IPV-04",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1500,
+   500
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-32-banner-04.png",
+  "webp": "public/soundscape/m05/derived/IPV-32-banner-04.webp",
+  "png_sha256": "2ba8ee82bdea584016032b2a7239b9f0c15ec4f76007b1b5ba6f81dbd93e1c59",
+  "note": "Section mini-banner; real HTML heading sits beside it."
+ },
+ "IPV-32-banner-05": {
+  "id": "IPV-32-banner-05",
+  "kind": "IPV-32 mini banner 3:1",
+  "derived_from": "IPV-05",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1500,
+   500
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-32-banner-05.png",
+  "webp": "public/soundscape/m05/derived/IPV-32-banner-05.webp",
+  "png_sha256": "f36ed5f7aff1bdc36fb2941f8b75dd83c5dc9232c427908d9b5fd637cf79f4b8",
+  "note": "Section mini-banner; real HTML heading sits beside it."
+ },
+ "IPV-32-banner-08": {
+  "id": "IPV-32-banner-08",
+  "kind": "IPV-32 mini banner 3:1",
+  "derived_from": "IPV-08",
+  "cost_usd": 0,
+  "model": "none (derived)",
+  "size": [
+   1500,
+   500
+  ],
+  "alpha_border_max": 0,
+  "png": "public/soundscape/m05/derived/IPV-32-banner-08.png",
+  "webp": "public/soundscape/m05/derived/IPV-32-banner-08.webp",
+  "png_sha256": "73065440869d668cd075b6cb35c8c398e8b144bb0b739705d89736dfb111e800",
+  "note": "Section mini-banner; real HTML heading sits beside it."
+ }
+}

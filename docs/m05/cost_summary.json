@@ -1,0 +1,8 @@
+{
+ "model": "google/gemini-nano-banana-2.1",
+ "calls": 21,
+ "images": 21,
+ "total_usd": 0.8192,
+ "cap_usd": 3.0,
+ "avg_usd": 0.039
+}
