@@ -1,0 +1,2905 @@
+{
+ "generated": "2026-11-06",
+ "note": "NOT SHIPPED: nothing here is deployed or merged. 96 unique candidate IDs; no cap, not 96 model calls.",
+ "groups": {
+  "1A": {
+   "title": "Lesson 1A",
+   "blurb": "Finding C, the white-key journey, and C as chosen home.",
+   "ids": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "A12"
+   ]
+  },
+  "1B": {
+   "title": "Lesson 1B",
+   "blurb": "Half and whole steps, the major-scale pattern, open endings and arrivals.",
+   "ids": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11"
+   ]
+  },
+  "1C": {
+   "title": "Lesson 1C",
+   "blurb": "Two voices: a held foundation, timing and silence.",
+   "ids": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10"
+   ]
+  },
+  "W1HUB": {
+   "title": "Week 1 hub",
+   "blurb": "The Week 1 opening.",
+   "ids": [
+    "S06"
+   ]
+  },
+  "2A": {
+   "title": "Lesson 2A",
+   "blurb": "Pairs of notes and the intervals between them.",
+   "ids": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10"
+   ]
+  },
+  "2B": {
+   "title": "Lesson 2B",
+   "blurb": "How two voices move: oblique, contrary, similar.",
+   "ids": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11"
+   ]
+  },
+  "2C": {
+   "title": "Lesson 2C",
+   "blurb": "The same melody over a changed foundation.",
+   "ids": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10"
+   ]
+  },
+  "W2HUB": {
+   "title": "Week 2 hub",
+   "blurb": "The Week 2 opening.",
+   "ids": [
+    "S07"
+   ]
+  },
+  "SUP": {
+   "title": "Supporting assets",
+   "blurb": "Setup, legends, thumbnails, the Atlas and enrichment art.",
+   "ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "X05",
+    "X06",
+    "X07",
+    "X08",
+    "X09",
+    "X10"
+   ]
+  }
+ },
+ "ids": {
+  "S06": {
+   "id": "S06",
+   "title": "Week 1 Finding Home opening",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART / hub",
+   "pack": "W1",
+   "art": [
+    "S06"
+   ],
+   "native": [
+    "S06-native"
+   ],
+   "render": [
+    {
+     "native": "S06-native",
+     "art": "S06"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "Week 1 introduction; first lesson-entry viewport",
+   "objective": "Recognize that this week's arc is finding a note, following a journey, then placing a moving note over a reference.",
+   "how_to_read": "Native static sequence labels 'Find C → Travel → Add a voice', plus accurate small C-key landmark below; avoid claiming three-chord theory.",
+   "keyboard_action": "Explain each stage and point ahead to Lessons 1A/1B/1C; at instrument find one C, play two nearby notes, then briefly sustain C while another note enters if their synth permits.",
+   "guard": "Build from approved site atmosphere A without poster plate; no site playback or clickable notes.",
+   "shipped": false
+  },
+  "A01": {
+   "id": "A01",
+   "title": "One Note Becomes a Place",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "A01"
+   ],
+   "native": [
+    "A01-native"
+   ],
+   "render": [
+    {
+     "native": "A01-native",
+     "art": "A01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1A after opening real-keyboard setup, before note names",
+   "objective": "Understand that a played note can be a single stable musical event and that a picture can treat it as a reference.",
+   "how_to_read": "Native key illustration may show one unlabelled white key being pressed here; simple static annotation: one sound remains, not a chord or an entire scale.",
+   "keyboard_action": "Teach note as musical sound, listen to one note physically; ask what about it persists when held and how the sound's color might vary with the synth tone.",
+   "guard": "No pitch-letter prerequisite; metaphor does not scientifically illustrate amplitude or frequency.",
+   "shipped": false
+  },
+  "A02": {
+   "id": "A02",
+   "title": "Pitch versus Loudness",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE + reused ART accent",
+   "pack": "W1",
+   "art": [
+    "A01"
+   ],
+   "native": [
+    "A02-native"
+   ],
+   "render": [
+    {
+     "native": "A02-native",
+     "art": "A01"
+    }
+   ],
+   "note": "reuses A01 art",
+   "reason": "",
+   "placement": "1A definition of pitch before locating C",
+   "objective": "Tell apart high/low pitch from loud/soft volume.",
+   "how_to_read": "Accurate actual neighboring-key example; rightward keyboard position conventionally higher, leftward lower. Labels 'higher/lower' and 'louder/softer' in different native visual axes.",
+   "keyboard_action": "Describe which action changes pitch (play a more rightward key) and which changes volume (play softer/louder or change volume control); learner tries both on own synth.",
+   "guard": "Do not ask the model to draw an oscilloscope or incorrect wave amplitude chart; keyboard's grouping deterministic.",
+   "shipped": false
+  },
+  "A03": {
+   "id": "A03",
+   "title": "Find C by Two Black Keys",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE + M02 accent",
+   "pack": "W1",
+   "art": [
+    "M02:G02-ACCENT-keyboard-light"
+   ],
+   "native": [
+    "A03-native",
+    "A03-narrow"
+   ],
+   "render": [
+    {
+     "native": "A03-native",
+     "art": "M02:G02-ACCENT-keyboard-light"
+    }
+   ],
+   "note": "M02 G02 accent reused; narrow layout A03-narrow",
+   "reason": "",
+   "placement": "1A first named pitch and keyboard geography",
+   "objective": "Identify any C as the white key immediately left of each two-black-key group.",
+   "how_to_read": "Draw full repeating two/three-black-key groups from keyboard geometry, two C highlights, small locator guides, native C labels; no hidden labels, no buttons, accurate E–F and B–C.",
+   "keyboard_action": "Teach the two-black-key landmark and trace the left-adjacent white key; learner finds and plays multiple Cs on their own instrument.",
+   "guard": "Keyboard remains a factual static illustration; a 'reveal the Cs' control from M02 pilot must not ship.",
+   "shipped": false
+  },
+  "A04": {
+   "id": "A04",
+   "title": "C as Chosen Home / Concentric Tonal Center",
+   "class": "REUSE",
+   "status": "REUSED ART + NATIVE READY",
+   "catalog_mode": "ART reuse",
+   "pack": "W1",
+   "art": [
+    "M02:G01-B-concentric-home"
+   ],
+   "native": [
+    "A04-native"
+   ],
+   "render": [
+    {
+     "native": "A04-native",
+     "art": "M02:G01-B-concentric-home",
+     "mode": "overlay",
+     "sq": true
+    }
+   ],
+   "note": "approved M02 G01 art reused; new static native labels",
+   "reason": "",
+   "placement": "1A after finding C and learning contextual musical reference",
+   "objective": "See one chosen reference C and the surrounding visiting notes; understand that 'home' depends on music context.",
+   "how_to_read": "Native C center and named D E F G A B visitor labels and a static correctly positioned return path, plus real C highlight beneath; legible explanation 'relationship map, not to scale'.",
+   "keyboard_action": "Walk C→D→E then back to C with fingertips on synth; compare a phrase ending at G with one ending at C. Say the white keys alone do NOT prove C is home.",
+   "guard": "Do not bake letters in model art, claim C drone proves C-major key, infer tone colors objectively.",
+   "shipped": false
+  },
+  "A05": {
+   "id": "A05",
+   "title": "Seven Names, Ordered White-Key Journey",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE + light ART variant",
+   "pack": "W1",
+   "art": [],
+   "native": [
+    "A05-native",
+    "A05-narrow"
+   ],
+   "render": [
+    {
+     "native": "A05-native",
+     "art": null
+    }
+   ],
+   "note": "wide and narrow layouts",
+   "reason": "",
+   "placement": "1A immediately after A03 and before octave",
+   "objective": "Follow C D E F G A B C in correct order and distinguish white-key order from semitone size.",
+   "how_to_read": "Exact eight white key positions, repeated higher C, visible E–F/B–C boundaries and no equal-chromatic-semitone implication. Two static layouts for narrow/wide screens.",
+   "keyboard_action": "Read the letters in sequence while playing consecutive white keys from C to next C, then back. Notice where the black keys do and don't interrupt.",
+   "guard": "Do not model-render any key or label; the route is visually ordered, not a measured radial spacing.",
+   "shipped": false
+  },
+  "A06": {
+   "id": "A06",
+   "title": "Octave Return Spiral",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "A06"
+   ],
+   "native": [
+    "A06-native"
+   ],
+   "render": [
+    {
+     "native": "A06-native",
+     "art": "A06"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1A after the eight-note white-key path",
+   "objective": "See that a higher C has the same note name but a genuinely higher pitch.",
+   "how_to_read": "Two deterministic C keyboard positions separated by one octave; two independent static C labels and an upward pitch-arrow/spiral path registered to art.",
+   "keyboard_action": "Describe same named family at a new height; learner plays lower then higher C and back, without learner-facing C3/C4/C5 numbering.",
+   "guard": "Spiral is poetic recurrence, not a calibrated hertz graph; optional 2:1 frequency science belongs in documented enrichment.",
+   "shipped": false
+  },
+  "A07": {
+   "id": "A07",
+   "title": "Ascending and Descending C-to-C",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT of A05/A06",
+   "pack": "W1",
+   "art": [
+    "A06"
+   ],
+   "native": [
+    "A07-native"
+   ],
+   "render": [
+    {
+     "native": "A07-native",
+     "art": "A06"
+    }
+   ],
+   "note": "variant of A05/A06",
+   "reason": "",
+   "placement": "1A practice continuation of octave lesson",
+   "objective": "Distinguish going up an octave from returning down using the same note set.",
+   "how_to_read": "Label direction up/right vs down/left with genuine ordered keys; two static views, not clickable trace.",
+   "keyboard_action": "Learner plays C to next higher C, then steps back; encourage noticing how the sense of height changes.",
+   "guard": "Avoid random pitch jumps masquerading as sequential white-key steps.",
+   "shipped": false
+  },
+  "A08": {
+   "id": "A08",
+   "title": "Two Endings: Away and Home",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "A08"
+   ],
+   "native": [
+    "A08-native"
+   ],
+   "render": [
+    {
+     "native": "A08-native",
+     "art": "A08"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1A tonal-center comparison after A04",
+   "objective": "See a path that departs from chosen home and understand the effect of different endpoints.",
+   "how_to_read": "Exact native educational example(s) shown as clearly authored practice rather than fabricated historical fixture. E.g. same first notes C–D–E, compare ending on G versus C, drawn as two static pathways with labels only after lesson explains comparison.",
+   "keyboard_action": "Explain that context makes C a reference, but the listener can experience ending points differently; learner plays identical opening twice, finishing once on G and once on C, describes own response.",
+   "guard": "Early version before any answer-prediction must be neutral; do not universally assign emotions to destinations.",
+   "shipped": false
+  },
+  "A09": {
+   "id": "A09",
+   "title": "Drone: A Note That Stays While Others Visit",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "A09"
+   ],
+   "native": [
+    "A09-native"
+   ],
+   "render": [
+    {
+     "native": "A09-native",
+     "art": "A09"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1A introducing sustained reference and visiting note",
+   "objective": "Understand 'drone' as one continuing held note under changing notes.",
+   "how_to_read": "Native continuous C foundation label, separate E/G/D educational visitor labels if introduced; if showing actual historical A02 event, verify exact starting and duration from week1 fixtures first. No web-sound control.",
+   "keyboard_action": "Explain which strand stays and which comes and goes, then sustain C with one hand or sustain pedal while playing one other note; if impossible physically, alternate playing notes and imagining C or use explicitly optional external reference.",
+   "guard": "One C held is not by itself a full chord or proof of tonic; shapes not sound-wave measurements.",
+   "shipped": false
+  },
+  "A10": {
+   "id": "A10",
+   "title": "Tiny Personal Melody and Pauses",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "A10"
+   ],
+   "native": [
+    "A10-native"
+   ],
+   "render": [
+    {
+     "native": "A10-native",
+     "art": "A10"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1A first open-ended creation exercise",
+   "objective": "Use a handful of known notes to create a deliberate phrase with a resting point or change.",
+   "how_to_read": "Native illustrative EXAMPLE melody e.g. C–D–E–C, explicitly marked as example rather than authoritative event fixture, with static keyboard callout and a gap marker; learner may use their own notes.",
+   "keyboard_action": "Invite learner to make a three/four-note idea, repeat it with a pause or different final note and listen to what changed.",
+   "guard": "Do not force recording/DAW account or an invented official source recording.",
+   "shipped": false
+  },
+  "A11": {
+   "id": "A11",
+   "title": "Paint What You Hear — Personal Color Map",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART / enrichment",
+   "pack": "W1",
+   "art": [
+    "A11"
+   ],
+   "native": [
+    "A11-native"
+   ],
+   "render": [
+    {
+     "native": "A11-native",
+     "art": "A11"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1A optional creative door after hands-on melody",
+   "objective": "Connect own imaginative response to music without treating colors as universal pitch facts.",
+   "how_to_read": "Native caption 'Your own sound-to-color interpretation' and source-preserved enrichment text; no fixed pitch=color legend.",
+   "keyboard_action": "Ask learner to play a note on real keyboard and sketch or imagine what the sound resembles, then play another and compare.",
+   "guard": "Color choices are artistic, not scientific synesthesia.",
+   "shipped": false
+  },
+  "A12": {
+   "id": "A12",
+   "title": "Lesson 1A Recap / Printed Reference",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE + VARIANT",
+   "pack": "W1",
+   "art": [
+    "M02:G01-B-concentric-home"
+   ],
+   "native": [
+    "A12-native"
+   ],
+   "render": [
+    {
+     "native": "A12-native",
+     "art": "M02:G01-B-concentric-home"
+    }
+   ],
+   "note": "recap sheet with ink-light print variant",
+   "reason": "",
+   "placement": "1A close, week hub thumbnail and printable",
+   "objective": "Recall C landmark, white-key path, octave, contextual home and a visiting note.",
+   "how_to_read": "Panels: 2-black-key C locator, C–C octave path, C-as-chosen-center diagram, held-vs-moving small example; real source labels; no stateful controls.",
+   "keyboard_action": "Explain one key idea per mini panel. Learner plays a home note and one short journey, then describes the sense of return.",
+   "guard": "Preserve researched 1A content including tonic/timbre nuance and original optional learning doors in later content integration. ## Lesson 1B",
+   "shipped": false
+  },
+  "B01": {
+   "id": "B01",
+   "title": "Open Ending versus Arrival",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "B01"
+   ],
+   "native": [
+    "B01-early",
+    "B01-pair"
+   ],
+   "render": [
+    {
+     "native": "B01-early",
+     "art": "B01"
+    },
+    {
+     "native": "B01-pair",
+     "art": "B01"
+    }
+   ],
+   "note": "early answer-neutral page and later pair",
+   "reason": "",
+   "placement": "1B after prediction question is complete",
+   "objective": "See two related endings with shared beginning but different final destination.",
+   "how_to_read": "Native accurate W1 fixture pair: B01 seven rising upper notes C D E F G A B; B02 adds higher C only. Render early page B01 path alone; later static B01/B02 side-by-side with C final labeled.",
+   "keyboard_action": "First learner plays C through B and notices open stopping point without seeing the arrival answer; after reading next static page plays higher C afterward and compares.",
+   "guard": "No interactive reveal or pre-exposure of higher C in first question. Subjective completeness varies.",
+   "shipped": false
+  },
+  "B02": {
+   "id": "B02",
+   "title": "Where Half Steps Really Are",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W1",
+   "art": [],
+   "native": [
+    "B02-native"
+   ],
+   "render": [
+    {
+     "native": "B02-native",
+     "art": null
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1B half-step introduction",
+   "objective": "Find a semitone as the immediate neighboring physical key, including white-white E–F and B–C.",
+   "how_to_read": "Static precise E–F and B–C adjacency, C–C♯ as chromatic neighboring keys, and note group geometry. Label 1 semitone in each case.",
+   "keyboard_action": "Explain that adjacent keys are always one semitone even if both are white; learner plays C then black key, E then F and B then C.",
+   "guard": "Do not render black key between E–F or B–C. Do not substitute equal white-key spacing for interval measurement.",
+   "shipped": false
+  },
+  "B03": {
+   "id": "B03",
+   "title": "Whole Step = Two Semitones",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W1",
+   "art": [],
+   "native": [
+    "B03-native"
+   ],
+   "render": [
+    {
+     "native": "B03-native",
+     "art": null
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1B after B02",
+   "objective": "Trace two neighboring chromatic key moves to travel a whole step.",
+   "how_to_read": "Static C→C♯→D (two semitone hops), C→D total 2, also optional E→F♯ and truthful black key. Native endpoint and intermediate key labels.",
+   "keyboard_action": "Guide the learner to play C, the immediately neighboring black key, then D, and contrast with C straight to D.",
+   "guard": "Never imply skipping one white key universally equals whole step.",
+   "shipped": false
+  },
+  "B04": {
+   "id": "B04",
+   "title": "One White-Key Move, Two Actual Distances",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W1",
+   "art": [],
+   "native": [
+    "B04-native"
+   ],
+   "render": [
+    {
+     "native": "B04-native",
+     "art": null
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1B after whole/half concepts",
+   "objective": "Compare C→D (2 semitones) with E→F (1) despite both appearing as adjacent white keys.",
+   "how_to_read": "Native semitone count labels C–D 2, E–F 1; first path crosses C♯, second no black key.",
+   "keyboard_action": "Teach why the keyboard's repeating black groups matter; learner plays and counts both journeys.",
+   "guard": "Correct counterexample B–C=1 may be added as side key strip.",
+   "shipped": false
+  },
+  "B05": {
+   "id": "B05",
+   "title": "Major Scale: Unequal Step Garland",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "B05"
+   ],
+   "native": [
+    "B05-native"
+   ],
+   "render": [
+    {
+     "native": "B05-native",
+     "art": "B05"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1B after C-major formula introduction",
+   "objective": "See one coherent scale with intentional unequal step sizes, not arbitrary seven equal segments.",
+   "how_to_read": "Draw accurate static C D E F G A B C with measured semitone hop pattern W W H W W W H (2,2,1,2,2,2,1); native keyboard and classifying labels. Generated petal distances artistic only; a separate native ruler proves the count.",
+   "keyboard_action": "Walk the major scale with keyboard, noticing E–F and B–C half steps; try from a different pitch only as optional curiosity with physical guidance.",
+   "guard": "Do not assign petal width quantitative meaning unless native measured overlay specifically enforces it.",
+   "shipped": false
+  },
+  "B06": {
+   "id": "B06",
+   "title": "Seven Names and Next C",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT of A05/A06/B05",
+   "pack": "W1",
+   "art": [
+    "B05"
+   ],
+   "native": [
+    "B06-native"
+   ],
+   "render": [
+    {
+     "native": "B06-native",
+     "art": "B05"
+    }
+   ],
+   "note": "variant of A05/A06/B05",
+   "reason": "",
+   "placement": "1B scale recap after formula",
+   "objective": "Connect seven named notes and the repeating upper C to the scale.",
+   "how_to_read": "Native sequence C D E F G A B C and two distinct C key positions; optional W/W/H ruler in later-step version.",
+   "keyboard_action": "Learner plays up and down, locating the return C by two-black-key landmark.",
+   "guard": "Do not commission new center mandala when A05/A06/B05 suffice.",
+   "shipped": false
+  },
+  "B07": {
+   "id": "B07",
+   "title": "Answer-Neutral Unfinished Path",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT of B01",
+   "pack": "W1",
+   "art": [
+    "B01"
+   ],
+   "native": [
+    "B01-early"
+   ],
+   "render": [
+    {
+     "native": "B01-early",
+     "art": "B01"
+    }
+   ],
+   "note": "= B01-early; answer-neutral, no higher C anywhere",
+   "reason": "",
+   "placement": "1B FIRST prediction page before showing ending",
+   "objective": "Invite learner to imagine a possible ending without exposing the source's higher-C resolution.",
+   "how_to_read": "Native seven notes C D E F G A B only. Do NOT show the source B02 C5 in early legend/alt text or the earlier step.",
+   "keyboard_action": "Learner plays the seven notes, pauses and imagines a next note; turn page to see an example choice and compare.",
+   "guard": "Protect existing expectation/reveal-before-answer sequence without a button or quiz.",
+   "shipped": false
+  },
+  "B08": {
+   "id": "B08",
+   "title": "Same Beginning / Different Last Note",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT of B01",
+   "pack": "W1",
+   "art": [
+    "B01"
+   ],
+   "native": [
+    "B01-pair"
+   ],
+   "render": [
+    {
+     "native": "B01-pair",
+     "art": "B01"
+    }
+   ],
+   "note": "= B01-pair",
+   "reason": "",
+   "placement": "1B after both source endings introduced",
+   "objective": "Make the difference in last note explicit while holding the beginning constant.",
+   "how_to_read": "Native shared C D E F G A B, only arrival includes higher C; optional learner-created alternative last note labelled as independent exercise.",
+   "keyboard_action": "Learner plays two endings and describes their own auditory response; encourage making a third distinct ending.",
+   "guard": "Do not assert universal closure/unfinished emotion from any interval.",
+   "shipped": false
+  },
+  "B09": {
+   "id": "B09",
+   "title": "Closeness versus Measured Distance",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "B09"
+   ],
+   "native": [
+    "B09-native"
+   ],
+   "render": [
+    {
+     "native": "B09-native",
+     "art": "B09"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1B semitone/whole-step visual bridge",
+   "objective": "Understand that physical keyboard spacing/semitone count and conceptual feeling of closeness are different kinds of information.",
+   "how_to_read": "Native exact side-by-side C–C♯ 1 semitone and C–D 2 semitones ruler on real keyboard; explain art arcs are conceptual.",
+   "keyboard_action": "Ask learner to play neighboring keys then a whole step, listening for how the relationship changes.",
+   "guard": "Do not use circle radius as a quantitative semitone rule.",
+   "shipped": false
+  },
+  "B10": {
+   "id": "B10",
+   "title": "Make Your Own Arrival and Open Ending",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "B10"
+   ],
+   "native": [
+    "B10-native"
+   ],
+   "render": [
+    {
+     "native": "B10-native",
+     "art": "B10"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1B final composition exercise",
+   "objective": "Design two short musical choices from one shared beginning.",
+   "how_to_read": "Native example stem C D E if needed with separate static endpoint examples; explain these are authored practice patterns, not lesson source fixture unless matched.",
+   "keyboard_action": "Create two mini melodies on keyboard with same first notes and different end; notice which better serves learner's own idea.",
+   "guard": "Do not introduce DAW, a virtual keyboard, answer-checking or sound buttons.",
+   "shipped": false
+  },
+  "B11": {
+   "id": "B11",
+   "title": "Why the Major-Scale Pattern Travels",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT / native optional",
+   "pack": "W1",
+   "art": [
+    "B05"
+   ],
+   "native": [
+    "B11-native"
+   ],
+   "render": [
+    {
+     "native": "B11-native",
+     "art": "B05"
+    }
+   ],
+   "note": "optional enrichment; G-major pattern asserted in code",
+   "reason": "",
+   "placement": "1B optional enrichment after scale learning",
+   "objective": "Grasp that a step pattern, not key color, defines the major scale, and different starting notes can need black keys.",
+   "how_to_read": "Native C-major WWHWWWH. An alternate key example must be calculated/verified and explicitly introduced as enrichment, not an unverified screenshot.",
+   "keyboard_action": "Try beginning on another familiar key and noting when black keys appear; optional exploration without requiring full theory.",
+   "guard": "Don't force more advanced key signatures into beginner lesson. ## Lesson 1C",
+   "shipped": false
+  },
+  "C01": {
+   "id": "C01",
+   "title": "The Held Foundation with Visiting Upper Notes",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "C01"
+   ],
+   "native": [
+    "C01-native"
+   ],
+   "render": [
+    {
+     "native": "C01-native",
+     "art": "C01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C first two-voice introduction",
+   "objective": "See harmony as two independent voices, one continuous and one visiting.",
+   "how_to_read": "Native static source 1C C01 lower C held 0–12s; upper E 2–4s, G 5–7s, D 9–11s; if native time ruler shown, exact event lengths above; no model timing labels.",
+   "keyboard_action": "Explain voice as independent musical line and simultaneous notes as harmony; learner sustains C and alternates E G D if physically feasible.",
+   "guard": "Do not insist C+E is a triad; no audio playback.",
+   "shipped": false
+  },
+  "C02": {
+   "id": "C02",
+   "title": "Two Distinct Voices — One Scene",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "C02"
+   ],
+   "native": [
+    "C02-native"
+   ],
+   "render": [
+    {
+     "native": "C02-native",
+     "art": "C02"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C clarify role and polyphonic layering",
+   "objective": "Distinguish a stable foundation from independent upper melody even when both sound together.",
+   "how_to_read": "Native lower/upper voice labels anchored at appropriate points with accurate source example C01 and separate faint keyboard positions.",
+   "keyboard_action": "Point out that each color/strand represents a voice and there can be overlapping pitches; learner tries each line separately on own instrument then combines if able.",
+   "guard": "Do not encode extra fictitious notes or let color alone carry voice identities.",
+   "shipped": false
+  },
+  "C03": {
+   "id": "C03",
+   "title": "Lower and Higher Voice Positions",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W1",
+   "art": [
+    "C02"
+   ],
+   "native": [
+    "C03-native"
+   ],
+   "render": [
+    {
+     "native": "C03-native",
+     "art": "C02"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C first keyboard bridge for voices",
+   "objective": "Locate lower C and higher E/G/D correctly on the real keyboard.",
+   "how_to_read": "Native key positions C lower, E/G/D upper for C01 fixture; label as 'lower voice' and 'upper voice' with distinct line/shape conventions.",
+   "keyboard_action": "Read the map, play the lower key then upper and notice pitch height independent of hand position.",
+   "guard": "Do not draw keys via image model; learner-facing numerical octave labels unnecessary.",
+   "shipped": false
+  },
+  "C04": {
+   "id": "C04",
+   "title": "Early versus Late Entrance",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "C04"
+   ],
+   "native": [
+    "C04-native"
+   ],
+   "render": [
+    {
+     "native": "C04-native",
+     "art": "C04"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C timing and silence explanation",
+   "objective": "See that the same note entering at a different time changes a phrase's shape even when pitch remains.",
+   "how_to_read": "Native timing labels from C02: E 2–6s over C 0–12; C03: E 7–11s over C 0–12. Both upper notes E at same pitch, only onset differs.",
+   "keyboard_action": "Explain entrance, duration and silence; learner sustains C then plays E early and late in separate versions, noticing the change.",
+   "guard": "Do not use animation or click-to-compare; both examples static on one lesson page.",
+   "shipped": false
+  },
+  "C05": {
+   "id": "C05",
+   "title": "Time as a Musical Relationship",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE + C04 art",
+   "pack": "W1",
+   "art": [
+    "C04"
+   ],
+   "native": [
+    "C05-native"
+   ],
+   "render": [
+    {
+     "native": "C05-native",
+     "art": "C04"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C how-to-read event strip",
+   "objective": "Read horizontal time and distinguish held note, entrance, rest and change.",
+   "how_to_read": "Exact start/end times for chosen 1C source fixture; draw no time marks in the model output.",
+   "keyboard_action": "Lead reader from the lower continuous bar to timed upper marks; learner recreates the sequence slowly on keyboard or taps a steady pulse before playing.",
+   "guard": "Timeline is measured; decorative colored swirls never substitute for accurate timed positions.",
+   "shipped": false
+  },
+  "C06": {
+   "id": "C06",
+   "title": "One Voice Alone, Then Both Together",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT of C02/C03",
+   "pack": "W1",
+   "art": [
+    "C02"
+   ],
+   "native": [
+    "C06-native"
+   ],
+   "render": [
+    {
+     "native": "C06-native",
+     "art": "C02"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C compare isolated roles conceptually without playback",
+   "objective": "Understand that two voices can be heard separately and together while keeping their roles.",
+   "how_to_read": "Same source C01 event paths in all three panels, hiding none behind controls. Exact note-event membership maintained.",
+   "keyboard_action": "Play C alone, melodic E/G/D separately, then try both on own instrument; notice how the total sound changes.",
+   "guard": "Do not create 'solo' UI/audio engine.",
+   "shipped": false
+  },
+  "C07": {
+   "id": "C07",
+   "title": "The Same 36 Seconds, Two Endings",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "C07"
+   ],
+   "native": [
+    "C07-native"
+   ],
+   "render": [
+    {
+     "native": "C07-native",
+     "art": "C07"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C late lesson comparison after starting material learned",
+   "objective": "Recognize a shared musical journey but two distinct final possibilities.",
+   "how_to_read": "Native 1C C04/C05 shared C 0–36s and upper E (8–12), G (15–19), D (23–27), B (29–32); only C04 adds upper C 33–35.8s. If there is an expectation prompt, compare only on later static step.",
+   "keyboard_action": "Walk the shared four notes and final difference, then play two final options on real keyboard; listener decides how each works.",
+   "guard": "Do not show final C on an earlier prediction page; source timings verified.",
+   "shipped": false
+  },
+  "C08": {
+   "id": "C08",
+   "title": "Silence as Compositional Space",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "C08"
+   ],
+   "native": [
+    "C08-native"
+   ],
+   "render": [
+    {
+     "native": "C08-native",
+     "art": "C08"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C creative lesson before composition",
+   "objective": "Perceive gaps and waiting as purposeful elements of a two-voice idea.",
+   "how_to_read": "Native annotation 'upper voice rests' at source C01 gaps, exact timing only if charted separately; no fake waveform.",
+   "keyboard_action": "Learner plays a short idea with one pause; repeats without pause and notices different pacing.",
+   "guard": "Silence in upper line is not total silence if lower foundation continues.",
+   "shipped": false
+  },
+  "C09": {
+   "id": "C09",
+   "title": "Compose a Two-Voice Story",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE + VARIANT",
+   "pack": "W1",
+   "art": [
+    "C08"
+   ],
+   "native": [
+    "C09-native"
+   ],
+   "render": [
+    {
+     "native": "C09-native",
+     "art": "C08"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C practice / five-step scaffold",
+   "objective": "Plan a stable base, a short melody, a meaningful pause, a change and an ending.",
+   "how_to_read": "Native headings set a scene → imagine visitor → leave room → change something → choose ending; sample keyboard labels drawn from already taught notes.",
+   "keyboard_action": "Learner performs each stage on real instrument, optionally writes own path on paper; do not require DAW, user account, or site input.",
+   "guard": "These are guide stages, not a graded sequence or an interactive canvas.",
+   "shipped": false
+  },
+  "C10": {
+   "id": "C10",
+   "title": "Week 1 Final Soundscape Map",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART",
+   "pack": "W1",
+   "art": [
+    "C10"
+   ],
+   "native": [
+    "C10-native"
+   ],
+   "render": [
+    {
+     "native": "C10-native",
+     "art": "C10"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "1C recap and Week 2 bridge",
+   "objective": "See one complete mini composition with an independent supporting voice and upper path, hinting at future movement of both.",
+   "how_to_read": "Native factual source event sequence C01 for recap or C04/C05 appropriately, with clear distinction between exact played pattern and atmospheric metaphor.",
+   "keyboard_action": "Learner makes and listens to a tiny self-chosen two-voice piece on real synth; ask which line stayed and which changed, then note Week 2 will move the lower line too.",
+   "guard": "Do not fake completed student work or prescribe an emotional response.",
+   "shipped": false
+  },
+  "S07": {
+   "id": "S07",
+   "title": "Week 2 Two Voices opening",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "S07"
+   ],
+   "native": [
+    "S07-native"
+   ],
+   "render": [
+    {
+     "native": "S07-native",
+     "art": "S07"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Recognize two separate melodic voices that can meet and change relationship.",
+   "how_to_read": "Native course heading 'Two Voices', short static roadmap note pair → interval → movement → changed support; no false chord notation.",
+   "keyboard_action": "Read the two strands as separate voices; play C and E independently, then together, on own keyboard.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D01": {
+   "id": "D01",
+   "title": "One pitch meets another",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "D01"
+   ],
+   "native": [
+    "D01-native"
+   ],
+   "render": [
+    {
+     "native": "D01-native",
+     "art": "D01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "See two notes retain individuality while producing a combined musical relationship.",
+   "how_to_read": "Source C+E dyad, native exact keyboard C/E labels, two separate voice roles.",
+   "keyboard_action": "Introduce a dyad as two notes at once; play C alone, E alone, then C+E.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D02": {
+   "id": "D02",
+   "title": "C and E: two-note pair",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W2",
+   "art": [
+    "D01"
+   ],
+   "native": [
+    "D02-native"
+   ],
+   "render": [
+    {
+     "native": "D02-native",
+     "art": "D01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Locate C/E and identify lower/upper without needing notation.",
+   "how_to_read": "Native actual C/E key positions and label C–E; four semitones when introduced in the next step.",
+   "keyboard_action": "Point from lower C to upper E, then play them together.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D03": {
+   "id": "D03",
+   "title": "Interval Bloom",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "D03"
+   ],
+   "native": [
+    "D03-native"
+   ],
+   "render": [
+    {
+     "native": "D03-native",
+     "art": "D03"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Understand interval as the measurable pitch distance between two notes.",
+   "how_to_read": "Draw exact native chromatic keyboard C→E four semitones (third); source A.together; no artistic petal distance claimed as numeric.",
+   "keyboard_action": "Count the four neighboring-key moves from C to E on real keyboard, then play them.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D04": {
+   "id": "D04",
+   "title": "C–E compared with C–F",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W2",
+   "art": [
+    "D03"
+   ],
+   "native": [
+    "D04-native"
+   ],
+   "render": [
+    {
+     "native": "D04-native",
+     "art": "D03"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Compare real third and fourth distances.",
+   "how_to_read": "Native C→E four semitones, C→F five semitones; correctly labeled third and fourth.",
+   "keyboard_action": "Read two accurate keyboard rulers and play C+E followed by C+F.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D05": {
+   "id": "D05",
+   "title": "Hold lower C, upper E moves to F",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "D05"
+   ],
+   "native": [
+    "D05-native"
+   ],
+   "render": [
+    {
+     "native": "D05-native",
+     "art": "D05"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "See one fixed voice while a higher note shifts.",
+   "how_to_read": "Source A.upperEF C+E then C+F; native labels and exact keys; lower C remains continuous.",
+   "keyboard_action": "Hold C and shift E to F on instrument, hear which role changed.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D06": {
+   "id": "D06",
+   "title": "Hold upper E, move lower C",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT",
+   "pack": "W2",
+   "art": [
+    "D05"
+   ],
+   "native": [
+    "D06-native"
+   ],
+   "render": [
+    {
+     "native": "D06-native",
+     "art": "D05"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "VARIANT",
+   "objective": "Recognize lower-line motion while the upper stays fixed.",
+   "how_to_read": "Source A.lowerCB C+E→B+E and A.lowerCD C+E→D+E as two separate static panels; actual keyboard geometry.",
+   "keyboard_action": "Keep E, play different lower B/C/D choices on physical keyboard.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D07": {
+   "id": "D07",
+   "title": "Two voices across time",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "D07"
+   ],
+   "native": [
+    "D07-native"
+   ],
+   "render": [
+    {
+     "native": "D07-native",
+     "art": "D07"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Follow independent voices over a sequence, not a fixed chord.",
+   "how_to_read": "Native two-lane timing strip derived from a selected existing A fixture; exact notes/timings sourced, not AI art.",
+   "keyboard_action": "Read left-to-right timeline and physically play first pair, then change one key.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D08": {
+   "id": "D08",
+   "title": "Interval Palette first-use guide",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE / VARIANT",
+   "pack": "W2",
+   "art": [
+    "D03"
+   ],
+   "native": [
+    "D08-native"
+   ],
+   "render": [
+    {
+     "native": "D08-native",
+     "art": "D03"
+    }
+   ],
+   "note": "one example card; all 13 cards/13 chapters preserved",
+   "reason": "",
+   "placement": "NATIVE / VARIANT",
+   "objective": "Learn to read an actual Atlas interval card.",
+   "how_to_read": "Preserve 13 cards and 13 chapters; actual lower note, upper note, semitone count from canonical Atlas data.",
+   "keyboard_action": "Read one card; find and play its two keys; no embedded card playback.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D09": {
+   "id": "D09",
+   "title": "Try three dyads",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W2",
+   "art": [
+    "D05"
+   ],
+   "native": [
+    "D09-native"
+   ],
+   "render": [
+    {
+     "native": "D09-native",
+     "art": "D05"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Practice changing one of two notes and naming which changed.",
+   "how_to_read": "C+E→C+F, C+E→B+E, C+E→D+E from A fixtures.",
+   "keyboard_action": "Play the three alternatives on own synth, compare unchanged voice.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.",
+   "shipped": false
+  },
+  "D10": {
+   "id": "D10",
+   "title": "2A recap: from interval to motion",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT",
+   "pack": "W2",
+   "art": [
+    "D07"
+   ],
+   "native": [
+    "D10-native"
+   ],
+   "render": [
+    {
+     "native": "D10-native",
+     "art": "D07"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "VARIANT",
+   "objective": "Connect two notes, distance, and voice movement.",
+   "how_to_read": "C+E versus C+F etc with source-accurate positions and directional arrow.",
+   "keyboard_action": "Learner plays one pair and moves one note, anticipating next lesson.",
+   "guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose. ## Lesson 2B — What Happens When Both Voices Move?",
+   "shipped": false
+  },
+  "E01": {
+   "id": "E01",
+   "title": "One beginning, five changes",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "E01"
+   ],
+   "native": [
+    "E01-native"
+   ],
+   "render": [
+    {
+     "native": "E01-native",
+     "art": "E01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "See five different outcomes share exactly the same C+E beginning.",
+   "how_to_read": "Source FIVE B1-B5 all begin C+E and lead respectively C+F, B+E, D+E, B+F, D+F; they illustrate THREE named categories oblique, contrary, similar, not five distinct motion families.",
+   "keyboard_action": "Learner plays C+E, tries one different ending, and compares what moved.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E02": {
+   "id": "E02",
+   "title": "Oblique: one voice holds",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "E02"
+   ],
+   "native": [
+    "E02-native"
+   ],
+   "render": [
+    {
+     "native": "E02-native",
+     "art": "E02"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "See a held pitch versus another traveling pitch.",
+   "how_to_read": "Native static source B1 C+E→C+F, B2 C+E→B+E, B3 C+E→D+E as THREE distinct examples. At least two variants showing upper-held versus lower-held where pedagogically useful.",
+   "keyboard_action": "Explain 'oblique motion': one pitch stays while other moves; on keyboard hold C and move E→F, then hold E and move C→B.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E03": {
+   "id": "E03",
+   "title": "Contrary: move apart",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "E03"
+   ],
+   "native": [
+    "E03-native"
+   ],
+   "render": [
+    {
+     "native": "E03-native",
+     "art": "E03"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Identify opposite-direction movement in two voices.",
+   "how_to_read": "Source B4 C+E→B+F; B–F end = 6 semitones, diminished fifth/tritone. Exact native keyboard and directional arrows.",
+   "keyboard_action": "Play C+E then B+F, notice both hands/pitches move in opposite directions.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E04": {
+   "id": "E04",
+   "title": "Similar: rise together",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "E04"
+   ],
+   "native": [
+    "E04-native"
+   ],
+   "render": [
+    {
+     "native": "E04-native",
+     "art": "E04"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Identify both voices moving the same way but by different measured amounts.",
+   "how_to_read": "Source B5 C+E→D+F: lower +2 semitones, upper +1, ending D–F 3 semitones / minor third. Native exact labels.",
+   "keyboard_action": "Move C→D and E→F on physical keyboard; compare with contrary case.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E05": {
+   "id": "E05",
+   "title": "Parallel motion: not in current source family",
+   "class": "DEFER",
+   "status": "DEFERRED (NOT PRODUCED)",
+   "catalog_mode": "DEFER / NATIVE only if later authored",
+   "pack": "W2",
+   "art": [],
+   "native": [],
+   "render": [],
+   "note": "Source FIVE has oblique B1-B3, contrary B4, similar B5 and NO parallel example; not commissioned absent source.",
+   "reason": "Source FIVE has oblique B1-B3, contrary B4, similar B5 and NO parallel example; not commissioned absent source.",
+   "placement": "DEFER / NATIVE only if later authored",
+   "objective": "Avoid implying the five current cases include a supported parallel-motion example.",
+   "how_to_read": "Source FIVE has oblique cases B1–B3, contrary B4, similar B5; it does NOT provide a parallel example. No invented sixth case.",
+   "keyboard_action": "No practice requirement in existing Week 2B.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E06": {
+   "id": "E06",
+   "title": "Fifth canonical transformation: coverage",
+   "class": "CONSOLIDATED",
+   "status": "CONSOLIDATED",
+   "catalog_mode": "CONSOLIDATE INTO E07",
+   "pack": "W2",
+   "art": [],
+   "native": [
+    "E07-native"
+   ],
+   "render": [],
+   "note": "Fifth example (B5) is a row of the E07 full gallery; no extra art.",
+   "reason": "Fifth example (B5) is a row of the E07 full gallery; no extra art.",
+   "placement": "CONSOLIDATE INTO E07",
+   "objective": "Make sure all five canonical source outcomes are represented.",
+   "how_to_read": "Source exactly B1 C+F, B2 B+E, B3 D+E, B4 B+F, B5 D+F, all starting C+E. This is a fifth EXAMPLE not fifth FAMILY.",
+   "keyboard_action": "Reader chooses a source row and plays start and end on own instrument.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E07": {
+   "id": "E07",
+   "title": "Five transformations reference gallery",
+   "class": "REUSE",
+   "status": "REUSED ART + NATIVE READY",
+   "catalog_mode": "ART reuse E01 + NATIVE",
+   "pack": "W2",
+   "art": [
+    "E01"
+   ],
+   "native": [
+    "E07-native"
+   ],
+   "render": [
+    {
+     "native": "E07-native",
+     "art": "E01"
+    }
+   ],
+   "note": "reuses E01 art; contains all five examples incl. E06",
+   "reason": "",
+   "placement": "ART reuse E01 + NATIVE",
+   "objective": "Compare all five verified changes and distinguish which pitch moves.",
+   "how_to_read": "Five native rows with B1–B5 exact note pairs and category names. Destination intervals 5,5,2,6,3 semitones respectively. Same lesson order as the real source fixture.",
+   "keyboard_action": "Trace each row starting with C+E, which line changes, where it ends; learner plays one example for each motion family.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E08": {
+   "id": "E08",
+   "title": "B–F tritone spelling lens",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W2",
+   "art": [
+    "E03"
+   ],
+   "native": [
+    "E08-native"
+   ],
+   "render": [
+    {
+     "native": "E08-native",
+     "art": "E03"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Count the source's actual six-semitone B→F relationship and its letter-name interval.",
+   "how_to_read": "Source B3→F4 = diminished fifth, six semitones; inclusive letter names B C D E F. C→F♯ is NOT one of B4's source events; may appear only as a separately labelled optional explanatory example if introduced and verified.",
+   "keyboard_action": "Play B and F, count neighboring keys; explain chromatic semitone counting differs from letter-name counting.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E09": {
+   "id": "E09",
+   "title": "Voice conversation as traveling streams",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "E09"
+   ],
+   "native": [
+    "E09-native"
+   ],
+   "render": [
+    {
+     "native": "E09-native",
+     "art": "E09"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Follow a coherent four-moment musical path through held and changed voices.",
+   "how_to_read": "Actual source B.path C+E → C+F → B+F → C+E, four equal 2.5-second stages; native accurate note names, arrows and optional timeline under painterly art.",
+   "keyboard_action": "Trace four stages on paper and play slowly on physical keyboard, stopping at each to hear relationship.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E10": {
+   "id": "E10",
+   "title": "Four moments measured timeline",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE / E09 reuse",
+   "pack": "W2",
+   "art": [
+    "E09"
+   ],
+   "native": [
+    "E10-native"
+   ],
+   "render": [
+    {
+     "native": "E10-native",
+     "art": "E09"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE / E09 reuse",
+   "objective": "Read and count the exact pitch events in time rather than trusting an ornamental path.",
+   "how_to_read": "Source B.path moments at 0, 2.5, 5, 7.5 seconds and end at 10 seconds; note-event continuity verified from fixtures. Distinct lower and upper lanes with native labels.",
+   "keyboard_action": "Explain left-to-right time, when upper changes versus lower, then physically play source sequence.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.",
+   "shipped": false
+  },
+  "E11": {
+   "id": "E11",
+   "title": "Compose a two-voice conversation",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE / ART variant",
+   "pack": "W2",
+   "art": [
+    "E09"
+   ],
+   "native": [
+    "E11-native"
+   ],
+   "render": [
+    {
+     "native": "E11-native",
+     "art": "E09"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE / ART variant",
+   "objective": "Turn learned motion families into a miniature of the learner's own.",
+   "how_to_read": "Native C+E → C+F → B+F → C+E source example, accurate keyboard mini strip; no model labels.",
+   "keyboard_action": "Start from C/E, move one voice, let other respond, make intentional return; do it on real keyboard and optionally sketch on paper.",
+   "guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs. ## Lesson 2C — Compose with Only Two Voices",
+   "shipped": false
+  },
+  "F01": {
+   "id": "F01",
+   "title": "Same upper melody, two foundations",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "F01"
+   ],
+   "native": [
+    "F01-native"
+   ],
+   "render": [
+    {
+     "native": "F01-native",
+     "art": "F01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "See identical E–F–E melodic notes above two different lower-voice arrangements.",
+   "how_to_read": "Source C.held versus C.moving: upper E4 4–10s, F4 14–20s, E4 26–32s identical; bass C4 held for 36s versus C4 0–12, B3 12–24, C4 24–36. Exact native two-row representation.",
+   "keyboard_action": "Explain how to follow identical upper ribbon and compare lower changes; learner plays E–F–E twice with different lower support on own keyboard.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F02": {
+   "id": "F02",
+   "title": "Held C beneath the same melody",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "ART variant of F01",
+   "pack": "W2",
+   "art": [
+    "F02"
+   ],
+   "native": [
+    "F02-native"
+   ],
+   "render": [
+    {
+     "native": "F02-native",
+     "art": "F02"
+    }
+   ],
+   "note": "crop of F01 left half (no new model call)",
+   "reason": "",
+   "placement": "ART variant of F01",
+   "objective": "Show C remains present while E, F, E visit and leave.",
+   "how_to_read": "Source held C 0–36s, upper E 4–10, F 14–20, E 26–32; C–E 4 semitones, C–F 5. Accurate native static event strip and keyboard.",
+   "keyboard_action": "Teach what remains and what changes in each pairing; learner holds C where possible and moves upper E→F→E.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F03": {
+   "id": "F03",
+   "title": "The supporting landscape begins to move",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "ART variant of F01",
+   "pack": "W2",
+   "art": [
+    "F03"
+   ],
+   "native": [
+    "F03-native"
+   ],
+   "render": [
+    {
+     "native": "F03-native",
+     "art": "F03"
+    }
+   ],
+   "note": "crop of F01 right half (no new model call)",
+   "reason": "",
+   "placement": "ART variant of F01",
+   "objective": "Show lower voice C→B→C under the SAME upper melody.",
+   "how_to_read": "Source C.moving lower C4 0–12s, B3 12–24, C4 24–36, while upper E/F/E windows remain as F01. Exact native pitches/lanes.",
+   "keyboard_action": "Guide eyes to the changed lower path, keep upper notes the same; learner plays original upper idea, then tries lower C→B→C.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F04": {
+   "id": "F04",
+   "title": "Shared Musical Worlds — same note, new support",
+   "class": "REUSE",
+   "status": "REUSED ART + NATIVE READY",
+   "catalog_mode": "ART REUSE approved M02 G03",
+   "pack": "W2",
+   "art": [
+    "M02:G03-B-shared-worlds"
+   ],
+   "native": [
+    "F04-native"
+   ],
+   "render": [
+    {
+     "native": "F04-native",
+     "art": "M02:G03-B-shared-worlds",
+     "mode": "overlay"
+    }
+   ],
+   "note": "approved M02 G03 art reused; new static native labels computed from fixtures",
+   "reason": "",
+   "placement": "ART REUSE approved M02 G03",
+   "objective": "Show actual shared note in intersection and changing note in exclusive regions.",
+   "how_to_read": "At the F moment (14–20s) source situations {C,F} and {B,F}; intersection EXACTLY {F}, only held={C}, only moving={B}. Native exact Venn labels and keyboard C/B/F; C–F 5, B–F 6 semitones.",
+   "keyboard_action": "Teach note-set membership by tracing F in common region and C/B in their own regions; learner plays C+F then B+F, keeping F unchanged.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F05": {
+   "id": "F05",
+   "title": "Objective change versus personal response",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT / NATIVE",
+   "pack": "W2",
+   "art": [
+    "F01"
+   ],
+   "native": [
+    "F05-native"
+   ],
+   "render": [
+    {
+     "native": "F05-native",
+     "art": "F01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "VARIANT / NATIVE",
+   "objective": "Distinguish what can be proved about notes from the listener's own impression.",
+   "how_to_read": "Facts F unchanged, bass C versus B. Separate native caption 'What changes?' from open prompt 'How did that feel to you?'.",
+   "keyboard_action": "Play both combinations and describe whether either feels more stable or unsettled TO YOU, without a forced correct emotion.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F06": {
+   "id": "F06",
+   "title": "Two versions aligned in time",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W2",
+   "art": [
+    "F01"
+   ],
+   "native": [
+    "F06-native"
+   ],
+   "render": [
+    {
+     "native": "F06-native",
+     "art": "F01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Read exactly when both upper and lower voices play across the two 36-second source studies.",
+   "how_to_read": "Upper E 4–10s / F 14–20 / E 26–32 identical; lower held C 0–36 versus moving C 0–12, B 12–24, C 24–36. Blank upper regions mean upper rests while lower may still sound.",
+   "keyboard_action": "Explain how to compare the same moment across both versions; learner plays their defining three pairings on own keyboard.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F07": {
+   "id": "F07",
+   "title": "C–F versus B–F semitone distance",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "W2",
+   "art": [
+    "M02:G03-B-shared-worlds"
+   ],
+   "native": [
+    "F07-native"
+   ],
+   "render": [
+    {
+     "native": "F07-native",
+     "art": "M02:G03-B-shared-worlds"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "See that changing only the bass changes actual pitch interval size and spelling.",
+   "how_to_read": "C4–F4 = 5 semitones / perfect fourth; B3–F4 = 6 semitones / diminished fifth (tritone). True geometrical chromatic key positions, exact labels and semitone hops.",
+   "keyboard_action": "Teach where the extra semitone comes from by counting on physical keyboard; play each pair.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F08": {
+   "id": "F08",
+   "title": "Two-voice musical dialogue",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "F08"
+   ],
+   "native": [
+    "F08-native"
+   ],
+   "render": [
+    {
+     "native": "F08-native",
+     "art": "F08"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Make two separate lines behave like a question and answer while retaining notes and pauses.",
+   "how_to_read": "Native labelled OPTIONAL practice path from source C.dialogue C+E → C+F → B+F → C+E, as a static worked example. Do not claim the invented visual shape itself encodes precise pitch/time.",
+   "keyboard_action": "Learner plays the four states on physical instrument, alters one note or pause to write an original response.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F09": {
+   "id": "F09",
+   "title": "One melody in two contexts — compare",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT / F01 reuse",
+   "pack": "W2",
+   "art": [
+    "F01"
+   ],
+   "native": [
+    "F09-native"
+   ],
+   "render": [
+    {
+     "native": "F09-native",
+     "art": "F01"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "VARIANT / F01 reuse",
+   "objective": "Recognize that changing the support can change the musical experience without changing the melody.",
+   "how_to_read": "Native source upper E/F/E identical, base held C versus C/B/C, exact four voice roles and positions.",
+   "keyboard_action": "Explain and play each context, ask learner to describe personal difference without universal mood scoring.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "F10": {
+   "id": "F10",
+   "title": "Week 2 recap: a two-voice soundscape",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART 16:9",
+   "pack": "W2",
+   "art": [
+    "F10"
+   ],
+   "native": [
+    "F10-native"
+   ],
+   "render": [
+    {
+     "native": "F10-native",
+     "art": "F10"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Synthesize dyad/interval, movement and changed support into one meaningful two-voice composition.",
+   "how_to_read": "Native three mini recap anchors: C/E distance, B.path motion, C.held versus C.moving shared-F comparison. Ensure distinct actual source facts; no false whole-class chord chart.",
+   "keyboard_action": "Learner performs a short two-voice idea using one held note, one changed note and a meaningful pause on real synth, then describes the choice.",
+   "guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise.",
+   "shipped": false
+  },
+  "S01": {
+   "id": "S01",
+   "title": "Main AMF homepage Ajourné entry",
+   "class": "DEFER",
+   "status": "DEFERRED (NOT PRODUCED)",
+   "catalog_mode": "DEFER — wider site retrofit",
+   "pack": "SUP",
+   "art": [],
+   "native": [],
+   "render": [],
+   "note": "Wider site retrofit (M05), outside the six-lesson run.",
+   "reason": "Wider site retrofit (M05), outside the six-lesson run.",
+   "placement": "DEFER — wider site retrofit",
+   "objective": "No source claim; no Week 1–2 budget allocation.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S02": {
+   "id": "S02",
+   "title": "Ajourné course landing hero",
+   "class": "DEFER",
+   "status": "DEFERRED (NOT PRODUCED)",
+   "catalog_mode": "DEFER — wider site retrofit",
+   "pack": "SUP",
+   "art": [],
+   "native": [],
+   "render": [],
+   "note": "Course landing hero: site retrofit M05.",
+   "reason": "Course landing hero: site retrofit M05.",
+   "placement": "DEFER — wider site retrofit",
+   "objective": "Source M05 course entry, not current week graphic pack.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S03": {
+   "id": "S03",
+   "title": "How learning works",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE + ART optional",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "S03-native"
+   ],
+   "render": [
+    {
+     "native": "S03-native",
+     "html": true
+    }
+   ],
+   "note": "no new art needed",
+   "reason": "",
+   "placement": "NATIVE + ART optional",
+   "objective": "Do not generate a screenshot of an interactive teaching UI.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S04": {
+   "id": "S04",
+   "title": "Eight-week course journey",
+   "class": "DEFER",
+   "status": "DEFERRED (NOT PRODUCED)",
+   "catalog_mode": "DEFER until site M05",
+   "pack": "SUP",
+   "art": [],
+   "native": [],
+   "render": [],
+   "note": "Eight-week journey: deferred until site M05.",
+   "reason": "Eight-week journey: deferred until site M05.",
+   "placement": "DEFER until site M05",
+   "objective": "Weeks 1–2 assets only.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S05": {
+   "id": "S05",
+   "title": "Physical synth setup / choose a sound",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "SUP",
+   "art": [
+    "M02:G02-ACCENT-keyboard-light"
+   ],
+   "native": [
+    "S05-native"
+   ],
+   "render": [
+    {
+     "native": "S05-native",
+     "art": "M02:G02-ACCENT-keyboard-light"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Learner chooses a gentle sound and comfortable volume on own physical keyboard. No virtual piano.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S08": {
+   "id": "S08",
+   "title": "Guided lesson progress and illustrations legend",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "S08-native"
+   ],
+   "render": [
+    {
+     "native": "S08-native",
+     "html": true
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Navigation is okay; interactive note playing/reveal is not.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S09": {
+   "id": "S09",
+   "title": "Lesson thumbnail family",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "S09-thumbnails"
+   ],
+   "render": [
+    {
+     "native": "S09-thumbnails",
+     "html": true
+    }
+   ],
+   "note": "crops of approved art, no model call",
+   "reason": "",
+   "placement": "VARIANT",
+   "objective": "Thumbnails are introductions, not full instructional replacements.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S10": {
+   "id": "S10",
+   "title": "Recap triptych family",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT / NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "S10-triptych-1A",
+    "S10-triptych-1B",
+    "S10-triptych-1C",
+    "S10-triptych-2A",
+    "S10-triptych-2B",
+    "S10-triptych-2C"
+   ],
+   "render": [
+    {
+     "native": "S10-triptych-1A",
+     "html": true
+    },
+    {
+     "native": "S10-triptych-1B",
+     "html": true
+    },
+    {
+     "native": "S10-triptych-1C",
+     "html": true
+    },
+    {
+     "native": "S10-triptych-2A",
+     "html": true
+    },
+    {
+     "native": "S10-triptych-2B",
+     "html": true
+    },
+    {
+     "native": "S10-triptych-2C",
+     "html": true
+    }
+   ],
+   "note": "six triptychs",
+   "reason": "",
+   "placement": "VARIANT / NATIVE",
+   "objective": "No loss of multi-paragraph explanations in actual lessons.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S11": {
+   "id": "S11",
+   "title": "Lesson-to-lesson bridge",
+   "class": "VARIANT",
+   "status": "VARIANT READY",
+   "catalog_mode": "VARIANT",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "S11-bridges"
+   ],
+   "render": [
+    {
+     "native": "S11-bridges",
+     "html": true
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "VARIANT",
+   "objective": "Do not imply an unbuilt lesson is published.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "S12": {
+   "id": "S12",
+   "title": "Illustration and source-reading legend",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "S12-native"
+   ],
+   "render": [
+    {
+     "native": "S12-native",
+     "art": null
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Never imply painterly ring radius/color measures pitch or emotional value. ## T01–T10: Week 2 Interval Palette / Atlas",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T01": {
+   "id": "T01",
+   "title": "How to read one interval card",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE / variant",
+   "pack": "SUP",
+   "art": [
+    "D03"
+   ],
+   "native": [
+    "T01-native"
+   ],
+   "render": [
+    {
+     "native": "T01-native",
+     "art": "D03"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE / variant",
+   "objective": "Anchor existing card record, not fabricated data. Explain how to read; learner plays actual pair.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T02": {
+   "id": "T02",
+   "title": "Interval quality distinctions",
+   "class": "SOURCE-GATED",
+   "status": "SOURCE-GATED (NOT PRODUCED)",
+   "catalog_mode": "SOURCE-GATED NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [],
+   "render": [],
+   "note": "No reviewed canonical source for interval-quality distinctions; not produced, per brief.",
+   "reason": "No reviewed canonical source for interval-quality distinctions; not produced, per brief.",
+   "placement": "SOURCE-GATED NATIVE",
+   "objective": "No prompt without reviewed canonical source.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T03": {
+   "id": "T03",
+   "title": "Interval families as related fields",
+   "class": "ART",
+   "status": "ART GENERATED",
+   "catalog_mode": "ART 16:9",
+   "pack": "SUP",
+   "art": [
+    "T03"
+   ],
+   "native": [],
+   "render": [
+    {
+     "native": null,
+     "art": "T03"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "ART 16:9",
+   "objective": "Art is explicitly metaphorical and no semitone counts embedded; link to true table separately.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T04": {
+   "id": "T04",
+   "title": "Letters versus chromatic hops",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "SUP",
+   "art": [
+    "D03"
+   ],
+   "native": [
+    "T04-native"
+   ],
+   "render": [
+    {
+     "native": "T04-native",
+     "art": "D03"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Native spellings and semitone counts only.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T05": {
+   "id": "T05",
+   "title": "Tritone source lens",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE / ART accent",
+   "pack": "SUP",
+   "art": [
+    "E03"
+   ],
+   "native": [
+    "T05-native"
+   ],
+   "render": [
+    {
+     "native": "T05-native",
+     "art": "E03"
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE / ART accent",
+   "objective": "Avoid unverified C→F♯ source events or false spelling.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T06": {
+   "id": "T06",
+   "title": "Atlas reading key",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "T06-atlas-key"
+   ],
+   "render": [
+    {
+     "native": "T06-atlas-key",
+     "html": true
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Ordinary links to all 13 deep chapters remain accessible.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T07": {
+   "id": "T07",
+   "title": "13-card individual art family",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART TEMPLATE, source-gated",
+   "pack": "SUP",
+   "art": [
+    "T07a",
+    "T07b",
+    "T07c"
+   ],
+   "native": [
+    "T07-IP-00",
+    "T07-IP-01",
+    "T07-IP-02",
+    "T07-IP-03",
+    "T07-IP-04",
+    "T07-IP-05",
+    "T07-IP-06",
+    "T07-IP-07",
+    "T07-IP-08",
+    "T07-IP-09",
+    "T07-IP-10",
+    "T07-IP-11",
+    "T07-IP-12"
+   ],
+   "render": [
+    {
+     "native": "T07-IP-00",
+     "art": "T07a"
+    },
+    {
+     "native": "T07-IP-01",
+     "art": "T07a"
+    },
+    {
+     "native": "T07-IP-02",
+     "art": "T07a"
+    },
+    {
+     "native": "T07-IP-03",
+     "art": "T07a"
+    },
+    {
+     "native": "T07-IP-04",
+     "art": "T07b"
+    },
+    {
+     "native": "T07-IP-05",
+     "art": "T07b"
+    },
+    {
+     "native": "T07-IP-06",
+     "art": "T07b"
+    },
+    {
+     "native": "T07-IP-07",
+     "art": "T07b"
+    },
+    {
+     "native": "T07-IP-08",
+     "art": "T07c"
+    },
+    {
+     "native": "T07-IP-09",
+     "art": "T07c"
+    },
+    {
+     "native": "T07-IP-10",
+     "art": "T07c"
+    },
+    {
+     "native": "T07-IP-11",
+     "art": "T07c"
+    },
+    {
+     "native": "T07-IP-12",
+     "art": "T07c"
+    }
+   ],
+   "note": "3 art families x 13 native card plates",
+   "reason": "",
+   "placement": "ART TEMPLATE, source-gated",
+   "objective": "Expand for all 13 actual Atlas card data, validate each. Do not infer exactly thirteen image calls or label invented notes; reuse template and vary only where educationally useful.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T08": {
+   "id": "T08",
+   "title": "13 Atlas deep-chapter openings",
+   "class": "ART",
+   "status": "ART GENERATED + NATIVE READY",
+   "catalog_mode": "ART TEMPLATE / source-gated",
+   "pack": "SUP",
+   "art": [
+    "T08a",
+    "T08b",
+    "T08c"
+   ],
+   "native": [
+    "T08-IP-00",
+    "T08-IP-01",
+    "T08-IP-02",
+    "T08-IP-03",
+    "T08-IP-04",
+    "T08-IP-05",
+    "T08-IP-06",
+    "T08-IP-07",
+    "T08-IP-08",
+    "T08-IP-09",
+    "T08-IP-10",
+    "T08-IP-11",
+    "T08-IP-12"
+   ],
+   "render": [
+    {
+     "native": "T08-IP-00",
+     "art": "T08a"
+    },
+    {
+     "native": "T08-IP-01",
+     "art": "T08a"
+    },
+    {
+     "native": "T08-IP-02",
+     "art": "T08a"
+    },
+    {
+     "native": "T08-IP-03",
+     "art": "T08a"
+    },
+    {
+     "native": "T08-IP-04",
+     "art": "T08b"
+    },
+    {
+     "native": "T08-IP-05",
+     "art": "T08b"
+    },
+    {
+     "native": "T08-IP-06",
+     "art": "T08b"
+    },
+    {
+     "native": "T08-IP-07",
+     "art": "T08b"
+    },
+    {
+     "native": "T08-IP-08",
+     "art": "T08c"
+    },
+    {
+     "native": "T08-IP-09",
+     "art": "T08c"
+    },
+    {
+     "native": "T08-IP-10",
+     "art": "T08c"
+    },
+    {
+     "native": "T08-IP-11",
+     "art": "T08c"
+    },
+    {
+     "native": "T08-IP-12",
+     "art": "T08c"
+    }
+   ],
+   "note": "3 art families x 13 native chapter openers",
+   "reason": "",
+   "placement": "ART TEMPLATE / source-gated",
+   "objective": "No claim about a chapter's science, history or associated emotion unless in existing source. Preserve full 13 chapter bodies and links.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T09": {
+   "id": "T09",
+   "title": "Printable interval reference",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "T09-printable",
+    "T09-ruler"
+   ],
+   "render": [
+    {
+     "native": "T09-printable",
+     "html": true
+    },
+    {
+     "native": "T09-ruler",
+     "art": null
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Accurate at letter and semitone level; no audio controls or clickable answers.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "T10": {
+   "id": "T10",
+   "title": "Practice: one interval, physical keys",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE / variant",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "T10-practice"
+   ],
+   "render": [
+    {
+     "native": "T10-practice",
+     "html": true
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE / variant",
+   "objective": "Learner identifies and plays the notes on own instrument, then compares another sourced interval. ## X01–X10: Enrichment and supporting illustrations",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X01": {
+   "id": "X01",
+   "title": "History Postcard",
+   "class": "ART",
+   "status": "ART GENERATED",
+   "catalog_mode": "OPTIONAL ART 16:9",
+   "pack": "SUP",
+   "art": [
+    "X01"
+   ],
+   "native": [],
+   "render": [
+    {
+     "native": null,
+     "art": "X01"
+    }
+   ],
+   "note": "optional enrichment art",
+   "reason": "",
+   "placement": "OPTIONAL ART 16:9",
+   "objective": "Illustration supports existing researched History Postcard copy/links; do not fabricate historical event or portrait.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X02": {
+   "id": "X02",
+   "title": "Behind the Sound / science",
+   "class": "ART",
+   "status": "ART GENERATED",
+   "catalog_mode": "OPTIONAL ART 16:9 + native diagrams",
+   "pack": "SUP",
+   "art": [
+    "X02"
+   ],
+   "native": [],
+   "render": [
+    {
+     "native": null,
+     "art": "X02"
+    }
+   ],
+   "note": "optional enrichment art; native science diagrams NOT produced (source-gated)",
+   "reason": "",
+   "placement": "OPTIONAL ART 16:9 + native diagrams",
+   "objective": "Where real pitch/frequency/partials are taught, draw accurate separate native scientific waveforms/figures with units and sources; model art cannot impersonate measured data.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X03": {
+   "id": "X03",
+   "title": "Musical Worlds / culture",
+   "class": "ART",
+   "status": "ART GENERATED",
+   "catalog_mode": "OPTIONAL ART 16:9",
+   "pack": "SUP",
+   "art": [
+    "X03"
+   ],
+   "native": [],
+   "render": [
+    {
+     "native": null,
+     "art": "X03"
+    }
+   ],
+   "note": "optional enrichment art",
+   "reason": "",
+   "placement": "OPTIONAL ART 16:9",
+   "objective": "Only context/source named in preserved research may authorize specific instrument/place motifs. Avoid universalization or exoticizing.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X04": {
+   "id": "X04",
+   "title": "Ambient Composer's Notebook",
+   "class": "ART",
+   "status": "ART GENERATED",
+   "catalog_mode": "OPTIONAL ART 16:9",
+   "pack": "SUP",
+   "art": [
+    "X04"
+   ],
+   "native": [],
+   "render": [
+    {
+     "native": null,
+     "art": "X04"
+    }
+   ],
+   "note": "optional enrichment art",
+   "reason": "",
+   "placement": "OPTIONAL ART 16:9",
+   "objective": "Support actual practice description; no drawn nonexistent composer quote/source.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X05": {
+   "id": "X05",
+   "title": "Hear It in Real Music",
+   "class": "ART",
+   "status": "ART GENERATED",
+   "catalog_mode": "OPTIONAL ART 16:9",
+   "pack": "SUP",
+   "art": [
+    "X05"
+   ],
+   "native": [],
+   "render": [
+    {
+     "native": null,
+     "art": "X05"
+    }
+   ],
+   "note": "optional enrichment art",
+   "reason": "",
+   "placement": "OPTIONAL ART 16:9",
+   "objective": "Keep authentic outbound links to source-confirmed music; no rights violations or embedded audio requirement.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X06": {
+   "id": "X06",
+   "title": "Paint What You Hear",
+   "class": "ART",
+   "status": "ART GENERATED",
+   "catalog_mode": "OPTIONAL ART 16:9",
+   "pack": "SUP",
+   "art": [
+    "X06"
+   ],
+   "native": [],
+   "render": [
+    {
+     "native": null,
+     "art": "X06"
+    }
+   ],
+   "note": "optional enrichment art",
+   "reason": "",
+   "placement": "OPTIONAL ART 16:9",
+   "objective": "Learner makes subjective sound-to-color art after own keyboard playing; no objective color/pitch associations.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X07": {
+   "id": "X07",
+   "title": "Six enrichment category identities",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "VARIANT / NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "X07-native"
+   ],
+   "render": [
+    {
+     "native": "X07-native",
+     "art": null
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "VARIANT / NATIVE",
+   "objective": "Preserve exactly six categories per lesson (36 across W1–W2), full bodies and source links.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X08": {
+   "id": "X08",
+   "title": "Optional research navigation",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "X08-native"
+   ],
+   "render": [
+    {
+     "native": "X08-native",
+     "html": true
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "Does not make research mandatory or delete substantive writing.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X09": {
+   "id": "X09",
+   "title": "Accessible/print variants",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "X09-accessible-print"
+   ],
+   "render": [
+    {
+     "native": "X09-accessible-print",
+     "html": true
+    }
+   ],
+   "note": "",
+   "reason": "",
+   "placement": "NATIVE",
+   "objective": "No information conveyed solely by a pastel glow.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  },
+  "X10": {
+   "id": "X10",
+   "title": "Asset provenance, rights and alt text",
+   "class": "NATIVE",
+   "status": "NATIVE READY",
+   "catalog_mode": "NATIVE metadata",
+   "pack": "SUP",
+   "art": [],
+   "native": [
+    "X10-provenance"
+   ],
+   "render": [],
+   "note": "metadata: docs/m03/PROVENANCE.md + provenance.json",
+   "reason": "",
+   "placement": "NATIVE metadata",
+   "objective": "Research screenshots are aesthetic reference only, not image assets to reuse. ## Inclusion in production Prioritize S05–S12 as relevant to the six lessons, T01/T04/T05/T06/T09 as actual Week 2 instructional references, and X01–X06 only where genuinely useful supporting existing researched text. T07–T08 represent the full existing 13-card/13-chapter resource and may be treated as a later dedicated resource batch; no arbitrary generator-call count. S01–S04 belong to the broader site M05 stage and are not silently added to W1–W2 production budget. Supplement or consolidate art if real instruction demands it, without a cap. No model-generated real note names, key placements, timeline figures or unsupported research claims.",
+   "how_to_read": "",
+   "keyboard_action": "",
+   "guard": "",
+   "shipped": false
+  }
+ }
+}

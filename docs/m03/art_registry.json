@@ -19,10 +19,16 @@
     1024
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 23.4,
-   "png_sha256": "a7dd680081536bd17e55ca711e0099b88d003215e66c6b7a703da07f3f96af80",
-   "png_bytes": 1313904,
-   "webp_bytes": 516536
+   "alpha_mean": 20.9,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "82cedf62652390f029e3c707a864b725ffcfc7985e349dec3baaf6d927a91f43",
+   "png_bytes": 1250086,
+   "webp_bytes": 394912
   },
   "webp": "public/soundscape/m03/art/A01.webp",
   "png": "public/soundscape/m03/art/A01.png",
@@ -50,10 +56,16 @@
     1152
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 17.1,
-   "png_sha256": "8ffb40b1a266b67db718bd37f8f35e42f4caabaca7fd6be4e7fdbb0bd4f388f9",
-   "png_bytes": 885760,
-   "webp_bytes": 376134
+   "alpha_mean": 15.9,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "be68fb6e09b27df99ff381c8f578a4a394e847bfac623eb74c4964a6bd7622d2",
+   "png_bytes": 844412,
+   "webp_bytes": 270756
   },
   "webp": "public/soundscape/m03/art/A06.webp",
   "png": "public/soundscape/m03/art/A06.png",
@@ -81,10 +93,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 36.4,
-   "png_sha256": "a16e9e16e8507bb41a9f781f73c3fa57e6becf25e8103927d88eb9562a8ed36b",
-   "png_bytes": 1225914,
-   "webp_bytes": 490326
+   "alpha_mean": 35.4,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "6717b00172a7284b2259c797bcc7ec59f38e0f8926901389ff62ca2cc2e94fba",
+   "png_bytes": 1206529,
+   "webp_bytes": 431782
   },
   "webp": "public/soundscape/m03/art/A08.webp",
   "png": "public/soundscape/m03/art/A08.png",
@@ -112,10 +130,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 31.8,
-   "png_sha256": "ca97bbc799a6be5eb2f017c15e7a3fa2612a39119028e1b41ed111f04f92be9a",
-   "png_bytes": 1089260,
-   "webp_bytes": 479426
+   "alpha_mean": 29.3,
+   "feather_lrtb": [
+    0.05,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "7f3f214b3cbaa53814525b87316625791018211a4322948020f97eef651cf631",
+   "png_bytes": 1048627,
+   "webp_bytes": 329956
   },
   "webp": "public/soundscape/m03/art/A09.webp",
   "png": "public/soundscape/m03/art/A09.png",
@@ -143,10 +167,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 25.0,
-   "png_sha256": "49c4f773efd57ea9c7cc26473f59d5fb3ca6781207726a7e22a932fa948b7ac3",
-   "png_bytes": 1229674,
-   "webp_bytes": 522640
+   "alpha_mean": 22.9,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "9f802d1fe98bb7217a47cebcc73d485fb74590d3fd2cf91f3bdff69e42af062d",
+   "png_bytes": 1161138,
+   "webp_bytes": 361582
   },
   "webp": "public/soundscape/m03/art/A10.webp",
   "png": "public/soundscape/m03/art/A10.png",
@@ -174,44 +204,19 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 23.1,
-   "png_sha256": "0be2206261259950a028c1ae45f3f6e6c283e750c2ca188a566ee32ad4df624a",
-   "png_bytes": 1073145,
-   "webp_bytes": 484398
+   "alpha_mean": 21.3,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.14,
+    0.05
+   ],
+   "png_sha256": "b89a25598cdc0853a53f12d34a668027d87f0438b7ddd6ac606b175ccd9efee8",
+   "png_bytes": 1027468,
+   "webp_bytes": 357724
   },
   "webp": "public/soundscape/m03/art/A11.webp",
   "png": "public/soundscape/m03/art/A11.png",
-  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
-  "alt": "",
-  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
- },
- "B01": {
-  "id": "B01",
-  "title": "Open Ending versus Arrival",
-  "aspect": "16:9",
-  "scene_prompt": "Two nearly identical hand-painted translucent upward journeys emerge from one shared warm root; one fades into an open, airy lavender edge and the other curls back to a concentrated warm landing, intentionally nonjudgmental and non-metric, no note letters.",
-  "full_prompt": "Two nearly identical hand-painted translucent upward journeys emerge from one shared warm root; one fades into an open, airy lavender edge and the other curls back to a concentrated warm landing, intentionally nonjudgmental and non-metric, no note letters.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
-  "model": "google/gemini-nano-banana-2.1",
-  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
-  "generated": "2026-11-06T10:17:43",
-  "cost_usd": 0.038883,
-  "generation_id": "gen-1793978251-hIVmP0ztlRbp7CNJgDQZ",
-  "raw": "public/soundscape/m03/raw/B01.png",
-  "raw_sha256": "17924b313cf24e38e16c14af7282c14a1848dd0d81d8892ef89c9d11b804f66e",
-  "raw_bytes": 770183,
-  "alpha": {
-   "size": [
-    1376,
-    768
-   ],
-   "alpha_border_max": 0,
-   "alpha_mean": 65.7,
-   "png_sha256": "92dc037ad9da1e3e384be00c26767bce292e335948f6b5e2e13303edfd5a2107",
-   "png_bytes": 2047737,
-   "webp_bytes": 802010
-  },
-  "webp": "public/soundscape/m03/art/B01.webp",
-  "png": "public/soundscape/m03/art/B01.png",
   "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
   "alt": "",
   "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
@@ -236,10 +241,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 11.7,
-   "png_sha256": "7886173decca7883e7a76f059ce63323213e349a2d84d5794a732e1cb7d87d34",
-   "png_bytes": 540904,
-   "webp_bytes": 227424
+   "alpha_mean": 10.2,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.14,
+    0.14
+   ],
+   "png_sha256": "0d35c722735172c42dd688e2090647aab58968651cc9911186754d84830e8190",
+   "png_bytes": 525164,
+   "webp_bytes": 194478
   },
   "webp": "public/soundscape/m03/art/B05.webp",
   "png": "public/soundscape/m03/art/B05.png",
@@ -267,10 +278,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 11.1,
-   "png_sha256": "4855c5b93a50fbcf46761e363f0ee9a595211718ad6d3661781b62546116e373",
-   "png_bytes": 698189,
-   "webp_bytes": 301402
+   "alpha_mean": 10.1,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "f0968a36b4610fa0b950e45a3c125b803487e97f49e51fa5faca8d6ebac4def6",
+   "png_bytes": 659432,
+   "webp_bytes": 213802
   },
   "webp": "public/soundscape/m03/art/B09.webp",
   "png": "public/soundscape/m03/art/B09.png",
@@ -298,10 +315,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 11.6,
-   "png_sha256": "16a08943a68708a3d6f5d4bbcbf44270cddbdde8e64f6d28822ae1132e1d1140",
-   "png_bytes": 614318,
-   "webp_bytes": 286236
+   "alpha_mean": 10.8,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "c27fadd352ef2707b71a0a7c30bd5fa0f2a931fc9e2e8b00f04408911418637d",
+   "png_bytes": 590463,
+   "webp_bytes": 215388
   },
   "webp": "public/soundscape/m03/art/B10.webp",
   "png": "public/soundscape/m03/art/B10.png",
@@ -329,10 +352,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 20.9,
-   "png_sha256": "1653647ab4e651f89ef867a7a2c2a36ffe50980a70c358e885f499d11964b22e",
-   "png_bytes": 1061013,
-   "webp_bytes": 461046
+   "alpha_mean": 19.3,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "0860933b7830de8b46a3222fe3b025d926279df6ea4a04c79b8740c8642c5126",
+   "png_bytes": 999700,
+   "webp_bytes": 306962
   },
   "webp": "public/soundscape/m03/art/C01.webp",
   "png": "public/soundscape/m03/art/C01.png",
@@ -360,10 +389,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 18.0,
-   "png_sha256": "8dc07be218de49020bb276627be1dcebcf8d759729c3cf4745cab9595dfd31ba",
-   "png_bytes": 879220,
-   "webp_bytes": 367356
+   "alpha_mean": 15.9,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "051a1f825187303616580edc87b10150b087a1cf11a30714e03fec27e5ddab23",
+   "png_bytes": 816460,
+   "webp_bytes": 240192
   },
   "webp": "public/soundscape/m03/art/C02.webp",
   "png": "public/soundscape/m03/art/C02.png",
@@ -391,10 +426,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 28.6,
-   "png_sha256": "bf136186d6da6afa89a2715047d3119aa0f665aed162b88b213f0a399472378d",
-   "png_bytes": 992806,
-   "webp_bytes": 420188
+   "alpha_mean": 27.2,
+   "feather_lrtb": [
+    0.05,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "1e9cd7f65c2afe0051483f39e8f09f2b888f1b2b1cc4e83dcf0dc268c5df064c",
+   "png_bytes": 966626,
+   "webp_bytes": 342092
   },
   "webp": "public/soundscape/m03/art/C04.webp",
   "png": "public/soundscape/m03/art/C04.png",
@@ -422,10 +463,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 15.1,
-   "png_sha256": "0a7ca2adde12d59a99ca090658d2504d010d7c4e3a021c1b8c367751f6c2e0d1",
-   "png_bytes": 616611,
-   "webp_bytes": 266442
+   "alpha_mean": 13.8,
+   "feather_lrtb": [
+    0.14,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "faa36722aedccb37f27cedb8aec8bbb1efd08a15c6788c44f530bbe44ee7d7c5",
+   "png_bytes": 594619,
+   "webp_bytes": 215180
   },
   "webp": "public/soundscape/m03/art/C07.webp",
   "png": "public/soundscape/m03/art/C07.png",
@@ -453,10 +500,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 22.3,
-   "png_sha256": "5a8d0aeabaa3c7e895b92661a8ef7d009baae3aee24fdeacac9b3e8c67929497",
-   "png_bytes": 850659,
-   "webp_bytes": 344460
+   "alpha_mean": 21.8,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "c2dbdbfc51c04ac10d8ff6944a636d440a00b538b72058eb462a86c19181e9cb",
+   "png_bytes": 839817,
+   "webp_bytes": 303498
   },
   "webp": "public/soundscape/m03/art/C08.webp",
   "png": "public/soundscape/m03/art/C08.png",
@@ -484,10 +537,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 22.7,
-   "png_sha256": "83d1008eda86cbba5ae4036bee9dc39f79859b3a2f627d2098a47bc696c33162",
-   "png_bytes": 1232030,
-   "webp_bytes": 490686
+   "alpha_mean": 20.1,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "db2c2aef57fabab8b3007a8809d751b4ae82b754343105e9a7ca6b7f1c8ebd4e",
+   "png_bytes": 1177592,
+   "webp_bytes": 343296
   },
   "webp": "public/soundscape/m03/art/C10.webp",
   "png": "public/soundscape/m03/art/C10.png",
@@ -515,10 +574,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 18.2,
-   "png_sha256": "86279b9c3b6b2f3bd22c1d73b9c8a550633dbcaeeb402b26dfb89ef979b90612",
-   "png_bytes": 806989,
-   "webp_bytes": 351678
+   "alpha_mean": 17.4,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "d8a708ac32a29cba187bc50e3c0a845159d533a356c229f5f9d3ebbd146f0144",
+   "png_bytes": 779232,
+   "webp_bytes": 284584
   },
   "webp": "public/soundscape/m03/art/S06.webp",
   "png": "public/soundscape/m03/art/S06.png",
@@ -546,10 +611,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 38.8,
-   "png_sha256": "5e1cfb0852d5644fce081b658b4a97ee53894641ed088d7ad4aaaefe2c4c9605",
-   "png_bytes": 1538750,
-   "webp_bytes": 589848
+   "alpha_mean": 37.3,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "3eed188bc2745bd101f97efe39a390ab819b870b9e5c4d2a2d5bfa8f17b3e158",
+   "png_bytes": 1521174,
+   "webp_bytes": 522898
   },
   "webp": "public/soundscape/m03/art/D01.webp",
   "png": "public/soundscape/m03/art/D01.png",
@@ -577,10 +648,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 38.1,
-   "png_sha256": "0b8ec99634658554431ffaa8a6a1f9b7eabf2c5b994c16ce4af8677c5688a72e",
-   "png_bytes": 1387006,
-   "webp_bytes": 570186
+   "alpha_mean": 36.3,
+   "feather_lrtb": [
+    0.05,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "b9f3240121fb3f66b612b8bf7d643b950b30bfcc3d937d26f6bfd60a6c96e959",
+   "png_bytes": 1359676,
+   "webp_bytes": 496132
   },
   "webp": "public/soundscape/m03/art/D03.webp",
   "png": "public/soundscape/m03/art/D03.png",
@@ -608,10 +685,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 27.8,
-   "png_sha256": "2d673b7b6cf9c3f0acfc4b0392576959004c65bcc21d3b98d325e7e66cc1f8ec",
-   "png_bytes": 1616661,
-   "webp_bytes": 678504
+   "alpha_mean": 23.3,
+   "feather_lrtb": [
+    0.05,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "9de950637bb50d2e9c7639aa18deaa54d8e442b75f14c0a5727fb2134b633247",
+   "png_bytes": 1540367,
+   "webp_bytes": 437188
   },
   "webp": "public/soundscape/m03/art/D05.webp",
   "png": "public/soundscape/m03/art/D05.png",
@@ -639,10 +722,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 20.1,
-   "png_sha256": "04bb36da21d9f6fd3886be6488b3864ddf503f096bca406c81626f487bdf40ab",
-   "png_bytes": 1160384,
-   "webp_bytes": 525040
+   "alpha_mean": 17.8,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "ddc6e29e3fa3c08a485f59543004ff279b680c732acce265623a0df373dda4a4",
+   "png_bytes": 1090177,
+   "webp_bytes": 389750
   },
   "webp": "public/soundscape/m03/art/D07.webp",
   "png": "public/soundscape/m03/art/D07.png",
@@ -670,10 +759,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 18.6,
-   "png_sha256": "27118c887747397e3fffa46d46087f40518103973e304228cfc4b0e6a7af2ce4",
-   "png_bytes": 843447,
-   "webp_bytes": 388926
+   "alpha_mean": 17.6,
+   "feather_lrtb": [
+    0.14,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "91d3f1cc6c5d421945a2c955a7fb74cd58fe68d1e2a87f29c5011fc640430ecf",
+   "png_bytes": 811786,
+   "webp_bytes": 304480
   },
   "webp": "public/soundscape/m03/art/E01.webp",
   "png": "public/soundscape/m03/art/E01.png",
@@ -701,10 +796,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 33.4,
-   "png_sha256": "504c172032292d518c61bda591ef742c632420660b205c8ebcb9de1098bc5afd",
-   "png_bytes": 1260548,
-   "webp_bytes": 525166
+   "alpha_mean": 29.8,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "72ca19b49fa3dfa2be5e28e35631527de36085c3430810754ae6f79c44991cd0",
+   "png_bytes": 1204314,
+   "webp_bytes": 406862
   },
   "webp": "public/soundscape/m03/art/E02.webp",
   "png": "public/soundscape/m03/art/E02.png",
@@ -732,10 +833,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 19.1,
-   "png_sha256": "0a54c7c84dd15c608f2f70b4b281a4e8a1f65b504e4c1677db234181fe68b377",
-   "png_bytes": 1082718,
-   "webp_bytes": 452676
+   "alpha_mean": 17.5,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "26096be91febe9b1180a5767de946c33b504713434ae610a6c63fa990081251d",
+   "png_bytes": 1045239,
+   "webp_bytes": 358454
   },
   "webp": "public/soundscape/m03/art/E03.webp",
   "png": "public/soundscape/m03/art/E03.png",
@@ -763,10 +870,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 22.7,
-   "png_sha256": "e473d7496978cf01a326332bc544c79dc34430678b1af0a23c24e347f0061f31",
-   "png_bytes": 1137224,
-   "webp_bytes": 472454
+   "alpha_mean": 20.8,
+   "feather_lrtb": [
+    0.05,
+    0.14,
+    0.14,
+    0.05
+   ],
+   "png_sha256": "5cd0f98d3f7fbe05a40f7f49364c3f72ba29d599cfdb101c8e77fd27eefe05de",
+   "png_bytes": 1098912,
+   "webp_bytes": 384170
   },
   "webp": "public/soundscape/m03/art/E04.webp",
   "png": "public/soundscape/m03/art/E04.png",
@@ -794,10 +907,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 10.4,
-   "png_sha256": "20c84f83a5e830798680cecab1eca8927877b4c299763a20d149de8a2b05911a",
-   "png_bytes": 464292,
-   "webp_bytes": 212940
+   "alpha_mean": 9.5,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "8880f56c42b1980060819a79971738db7591f5edff970d6f12fb2a267f859617",
+   "png_bytes": 446564,
+   "webp_bytes": 149944
   },
   "webp": "public/soundscape/m03/art/E09.webp",
   "png": "public/soundscape/m03/art/E09.png",
@@ -825,10 +944,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 40.1,
-   "png_sha256": "56ad9a9aba9e8945b82e2d975bf5074dd6ee21a0c9f6d4e4d6fc3d3131916ac0",
-   "png_bytes": 1366915,
-   "webp_bytes": 556778
+   "alpha_mean": 36.0,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "2af22f7cb9368f67592b0e90ed99b9ed71933c9f12d452f0630a3bb8c3af1190",
+   "png_bytes": 1329538,
+   "webp_bytes": 462292
   },
   "webp": "public/soundscape/m03/art/F01.webp",
   "png": "public/soundscape/m03/art/F01.png",
@@ -856,10 +981,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 12.5,
-   "png_sha256": "b0e04cb936459e0a3d0bd30e051d810303e5fda445a43434157ddb04ea7e6ee7",
-   "png_bytes": 787503,
-   "webp_bytes": 366188
+   "alpha_mean": 11.5,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "de447f14b66030a0aad45b31f872dea5b73399407ff95a8827a948317f509621",
+   "png_bytes": 727075,
+   "webp_bytes": 248788
   },
   "webp": "public/soundscape/m03/art/F08.webp",
   "png": "public/soundscape/m03/art/F08.png",
@@ -887,10 +1018,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 21.5,
-   "png_sha256": "20b17f9d2a175224a35c1e390b8aed782a13427eec441fda739fa3d1e7a292be",
-   "png_bytes": 1003663,
-   "webp_bytes": 405400
+   "alpha_mean": 20.3,
+   "feather_lrtb": [
+    0.05,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "77c845f64769862b896fe9d786f36315f9831b0001d6c7152bc7e989bae1d9af",
+   "png_bytes": 965866,
+   "webp_bytes": 327606
   },
   "webp": "public/soundscape/m03/art/F10.webp",
   "png": "public/soundscape/m03/art/F10.png",
@@ -918,10 +1055,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 14.1,
-   "png_sha256": "f21d23c4ebcd052c40cffbea7eb696068e2ba4eb70ce77570837b30f034d4dde",
-   "png_bytes": 710107,
-   "webp_bytes": 327822
+   "alpha_mean": 13.2,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "5ce9ec8efa0961a719caf7ec1b6d692501df71a7c1b0166de75ced3bfa4ef7e7",
+   "png_bytes": 662876,
+   "webp_bytes": 214400
   },
   "webp": "public/soundscape/m03/art/S07.webp",
   "png": "public/soundscape/m03/art/S07.png",
@@ -949,10 +1092,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 19.0,
-   "png_sha256": "5b805c46921f1aedd7f4242c90f93ec37d2af9624d0cd544e6103580c338d47d",
-   "png_bytes": 989495,
-   "webp_bytes": 443410
+   "alpha_mean": 17.9,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "f32644aa39a202a24bb17fdb1fd0c0a42fdc717885be57356617614dd155d1a8",
+   "png_bytes": 952537,
+   "webp_bytes": 354394
   },
   "webp": "public/soundscape/m03/art/T03.webp",
   "png": "public/soundscape/m03/art/T03.png",
@@ -980,10 +1129,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 26.8,
-   "png_sha256": "03bb2a11e4716e3dcde3a3415a8a9ed2486b7cef7ea90599296c25284082dcde",
-   "png_bytes": 993743,
-   "webp_bytes": 408274
+   "alpha_mean": 25.9,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "94c079e7e8bee94fd0521c36cd2aa40194f04a0dc332bd2c291e71e945d56894",
+   "png_bytes": 976952,
+   "webp_bytes": 359982
   },
   "webp": "public/soundscape/m03/art/T07a.webp",
   "png": "public/soundscape/m03/art/T07a.png",
@@ -1011,10 +1166,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 18.5,
-   "png_sha256": "4035d2648e6fc7a8041a53f4d93d167853515102a8e0569d45068cdd07d5d4ee",
-   "png_bytes": 577570,
-   "webp_bytes": 234908
+   "alpha_mean": 18.1,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "88a79ea0f7e2d65b3c558b29edfc76d7d0b9fa9a45a702d2b01349e4f3aaf7d4",
+   "png_bytes": 568111,
+   "webp_bytes": 208444
   },
   "webp": "public/soundscape/m03/art/T07b.webp",
   "png": "public/soundscape/m03/art/T07b.png",
@@ -1042,10 +1203,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 22.2,
-   "png_sha256": "0c64107325c7dfa7352599926345dd78895dc8b7850255383a37fc634523aeb2",
-   "png_bytes": 977959,
-   "webp_bytes": 399174
+   "alpha_mean": 19.1,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "08ded6b1dee5dc824d7ceb3fb8f9d31f9b4dbf21c1441e7e71a45a38db5e5cc3",
+   "png_bytes": 963221,
+   "webp_bytes": 355106
   },
   "webp": "public/soundscape/m03/art/T07c.webp",
   "png": "public/soundscape/m03/art/T07c.png",
@@ -1073,10 +1240,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 32.4,
-   "png_sha256": "e0fe34dfdc9ac9939adfdc9be8c96e536b25eedb03f6112f560511ba339b5a2d",
-   "png_bytes": 1581652,
-   "webp_bytes": 675982
+   "alpha_mean": 30.1,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.14
+   ],
+   "png_sha256": "2aabce03eb9eb063c97c18d7b760fcb686cbcdfe33f8b504e3eb98c8d8dacf0a",
+   "png_bytes": 1539155,
+   "webp_bytes": 564154
   },
   "webp": "public/soundscape/m03/art/T08a.webp",
   "png": "public/soundscape/m03/art/T08a.png",
@@ -1104,10 +1277,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 27.8,
-   "png_sha256": "6421625eea21d375bd79e78517815553570d85d38067932637e142ea713ee17e",
-   "png_bytes": 1239324,
-   "webp_bytes": 503316
+   "alpha_mean": 26.4,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "1060c918ab68c6f83331057cd2b9b876c016b5f17c66a890c50dfb8582dbc0b6",
+   "png_bytes": 1183969,
+   "webp_bytes": 401918
   },
   "webp": "public/soundscape/m03/art/T08b.webp",
   "png": "public/soundscape/m03/art/T08b.png",
@@ -1135,10 +1314,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 27.6,
-   "png_sha256": "7b3c2a3e810c5697c4db26362575b5036d6aa69ce7aef4799c6dae13d8ae9586",
-   "png_bytes": 1592407,
-   "webp_bytes": 687644
+   "alpha_mean": 23.9,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.14,
+    0.14
+   ],
+   "png_sha256": "89767651fc07aeb45dabbe0e86af79c19a1f76e99a057948d0352c2f4cb2a68e",
+   "png_bytes": 1493002,
+   "webp_bytes": 450170
   },
   "webp": "public/soundscape/m03/art/T08c.webp",
   "png": "public/soundscape/m03/art/T08c.png",
@@ -1166,10 +1351,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 27.2,
-   "png_sha256": "239d652fdee4651fda84e7fd23c87eb727102f85ffa693ef5a77ee8b0afa45d1",
-   "png_bytes": 1686172,
-   "webp_bytes": 717568
+   "alpha_mean": 24.4,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "07a2652daaceed5e35d73316e35a438e300718f3a50fcb48beb574b5a63552f8",
+   "png_bytes": 1591312,
+   "webp_bytes": 492938
   },
   "webp": "public/soundscape/m03/art/X01.webp",
   "png": "public/soundscape/m03/art/X01.png",
@@ -1197,10 +1388,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 42.7,
-   "png_sha256": "7db9d877260fc6954eb7d782546b2defd9c548b79d08ec9b03c37bc7e8711115",
-   "png_bytes": 1494570,
-   "webp_bytes": 572898
+   "alpha_mean": 40.9,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "a7857f81c646521a924ab14f76b743d3fb1907a64177c38a20f545aa707b6e74",
+   "png_bytes": 1450392,
+   "webp_bytes": 466534
   },
   "webp": "public/soundscape/m03/art/X02.webp",
   "png": "public/soundscape/m03/art/X02.png",
@@ -1228,10 +1425,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 35.5,
-   "png_sha256": "43f4997d753adbc429256c5c468e3eddc39524c44a00bb05c1d2c7aa7011148b",
-   "png_bytes": 1696695,
-   "webp_bytes": 695102
+   "alpha_mean": 33.2,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "4bfb0ca2cd632f7b03b9db4b18379d624423867ffe039530fa49827b6577da94",
+   "png_bytes": 1638436,
+   "webp_bytes": 522796
   },
   "webp": "public/soundscape/m03/art/X03.webp",
   "png": "public/soundscape/m03/art/X03.png",
@@ -1259,10 +1462,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 23.6,
-   "png_sha256": "b49bfae0f97382c2fcac3a67fc94c2f7153928720377901e1bd4426aea759d54",
-   "png_bytes": 1255152,
-   "webp_bytes": 518648
+   "alpha_mean": 21.8,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "b26ec94b230e4ddb45ea31bebd3314b1049c2c9c28df964f60727fead1445851",
+   "png_bytes": 1201965,
+   "webp_bytes": 387506
   },
   "webp": "public/soundscape/m03/art/X04.webp",
   "png": "public/soundscape/m03/art/X04.png",
@@ -1290,10 +1499,16 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 33.4,
-   "png_sha256": "5fb8fdfccdd6e22b245aeaeceafa29962c4759f6b48e045b1c324eaf508f6ddb",
-   "png_bytes": 1555859,
-   "webp_bytes": 636148
+   "alpha_mean": 31.3,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "77ae382dc95b56077688b75af4fcdbfe120d664c5d36f7fe342719e6cf038b70",
+   "png_bytes": 1505065,
+   "webp_bytes": 484614
   },
   "webp": "public/soundscape/m03/art/X05.webp",
   "png": "public/soundscape/m03/art/X05.png",
@@ -1321,15 +1536,139 @@
     768
    ],
    "alpha_border_max": 0,
-   "alpha_mean": 33.3,
-   "png_sha256": "a840bb2ee4f1091eabc615e9e2a87c3c4b49ca0065a339c5d40e5b9d1760c32e",
-   "png_bytes": 1224663,
-   "webp_bytes": 579986
+   "alpha_mean": 32.3,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "126bd3f06b978dcad80875c7390283f2ec75b07368c56494423069bd9144bd1a",
+   "png_bytes": 1189032,
+   "webp_bytes": 479766
   },
   "webp": "public/soundscape/m03/art/X06.webp",
   "png": "public/soundscape/m03/art/X06.png",
   "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
   "alt": "",
   "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "B01": {
+  "id": "B01",
+  "title": "Open Ending versus Arrival",
+  "aspect": "16:9",
+  "scene_prompt": "Two nearly identical hand-painted translucent upward journeys emerge from one shared warm root; one fades into an open, airy lavender edge and the other curls back to a concentrated warm landing, intentionally nonjudgmental and non-metric, no note letters. IMPORTANT: this is a purely abstract watercolor painting. There is NO user interface, NO screen, NO website, NO page layout, NO typography, NO piano, NO diagram and NO heading anywhere in the picture, and it must not resemble the layout of the attached reference: take only its brushwork, palette and luminous quality. Just two flowing painted journeys on white.",
+  "full_prompt": "Two nearly identical hand-painted translucent upward journeys emerge from one shared warm root; one fades into an open, airy lavender edge and the other curls back to a concentrated warm landing, intentionally nonjudgmental and non-metric, no note letters. IMPORTANT: this is a purely abstract watercolor painting. There is NO user interface, NO screen, NO website, NO page layout, NO typography, NO piano, NO diagram and NO heading anywhere in the picture, and it must not resemble the layout of the attached reference: take only its brushwork, palette and luminous quality. Just two flowing painted journeys on white.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:39:30",
+  "cost_usd": 0.0392475,
+  "generation_id": "gen-1793979558-rMZyIxmsKTU5h2pHTQzA",
+  "raw": "public/soundscape/m03/raw/B01.png",
+  "raw_sha256": "a2a7df6606c0db7050e3e718ec68bc0e758012696f79b2e34266153e0dda9a50",
+  "raw_bytes": 427283,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 21.0,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.14
+   ],
+   "png_sha256": "c37d2f58302c0a67986567ff208fcac52e270db67f58df10b8e99c736b3f73f2",
+   "png_bytes": 1015705,
+   "webp_bytes": 326820
+  },
+  "webp": "public/soundscape/m03/art/B01.webp",
+  "png": "public/soundscape/m03/art/B01.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG.",
+  "regenerated": "replaced a first output that reproduced the reference screen layout (text, keys, UI); original call stays in ledger.json"
+ },
+ "F02": {
+  "id": "F02",
+  "title": "Held C beneath the same melody",
+  "derived_from": "F01",
+  "crop_box": [
+   0,
+   0,
+   743,
+   768
+  ],
+  "cost_usd": 0,
+  "model": "none (crop of F01)",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "raw": "public/soundscape/m03/raw/F02.png",
+  "raw_sha256": "1215db2e98eab195dff0dce7a8b5dc66b8a0a2f191d4e409691aec55b8870bb1",
+  "alpha": {
+   "size": [
+    743,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 37.9,
+   "feather_lrtb": [
+    0.05,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "6328e7c0dcf61088453af100b9b9dae279753c6a2844556a569afbbfcaf047e7",
+   "png_bytes": 659962,
+   "webp_bytes": 219922
+  },
+  "webp": "public/soundscape/m03/art/F02.webp",
+  "png": "public/soundscape/m03/art/F02.png",
+  "license": "Derived crop of F01 (original model output generated for AMF).",
+  "alt": "",
+  "alt_note": "Decorative art-only layer.",
+  "scene_prompt": "crop of F01",
+  "full_prompt": "crop of F01"
+ },
+ "F03": {
+  "id": "F03",
+  "title": "The supporting landscape begins to move",
+  "derived_from": "F01",
+  "crop_box": [
+   632,
+   0,
+   1376,
+   768
+  ],
+  "cost_usd": 0,
+  "model": "none (crop of F01)",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "raw": "public/soundscape/m03/raw/F03.png",
+  "raw_sha256": "fab700d54d02a30a7068d39dfd9f999aa342cd6ed9fd32dccfc08a448cff7e06",
+  "alpha": {
+   "size": [
+    744,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 34.1,
+   "feather_lrtb": [
+    0.14,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "cd56aa630dab97c03da86e33e397ef6605056abf29684b75590c590077a315c3",
+   "png_bytes": 711487,
+   "webp_bytes": 244090
+  },
+  "webp": "public/soundscape/m03/art/F03.webp",
+  "png": "public/soundscape/m03/art/F03.png",
+  "license": "Derived crop of F01 (original model output generated for AMF).",
+  "alt": "",
+  "alt_note": "Decorative art-only layer.",
+  "scene_prompt": "crop of F01",
+  "full_prompt": "crop of F01"
  }
 }

@@ -474,6 +474,17 @@
    "seconds": 14.1,
    "generation_id": "gen-1793979121-2DJSRbtw9pUnk1WOZ0Uz",
    "got_image": true
+  },
+  {
+   "asset": "B01",
+   "time": "2026-11-06T10:39:30",
+   "aspect": "16:9",
+   "cost_usd": 0.0392475,
+   "prompt_tokens": 1520,
+   "completion_tokens": 1569,
+   "seconds": 12.8,
+   "generation_id": "gen-1793979558-rMZyIxmsKTU5h2pHTQzA",
+   "got_image": true
   }
  ]
 }

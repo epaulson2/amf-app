@@ -1,0 +1,1578 @@
+{
+ "S06": {
+  "id": "S06",
+  "pack": "W1",
+  "title": "Week 1 Finding Home opening",
+  "mode": "ART / hub",
+  "fields": {
+   "Mode": "ART / hub",
+   "Placement": "Week 1 introduction; first lesson-entry viewport",
+   "Learner objective": "Recognize that this week's arc is finding a note, following a journey, then placing a moving note over a reference.",
+   "Nano Banana SCENE PROMPT (16:9)": "Three related, distinctly readable organic fields form a gentle left-to-right story: a single luminous warm reference, an elegant trail outward with a distinct returning curve, and a stable center accompanied by a separate visiting strand. Painted translucent watercolor light, no typography and no piano keys. Three motifs share the same visual grammar but leave clean spaces for independently added step titles; asymmetrical panoramic scene.",
+   "Static factual/native layer": "Native static sequence labels 'Find C → Travel → Add a voice', plus accurate small C-key landmark below; avoid claiming three-chord theory.",
+   "How to teach + own-keyboard action": "Explain each stage and point ahead to Lessons 1A/1B/1C; at instrument find one C, play two nearby notes, then briefly sustain C while another note enters if their synth permits.",
+   "Guard/acceptance": "Build from approved site atmosphere A without poster plate; no site playback or clickable notes."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "Three related, distinctly readable organic fields form a gentle left-to-right story: a single luminous warm reference, an elegant trail outward with a distinct returning curve, and a stable center accompanied by a separate visiting strand. Painted translucent watercolor light, no typography and no piano keys. Three motifs share the same visual grammar but leave clean spaces for independently added step titles; asymmetrical panoramic scene."
+ },
+ "A01": {
+  "id": "A01",
+  "pack": "W1",
+  "title": "One Note Becomes a Place",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1A after opening real-keyboard setup, before note names",
+   "Learner objective": "Understand that a played note can be a single stable musical event and that a picture can treat it as a reference.",
+   "Nano Banana SCENE PROMPT (1:1)": "One beautifully weighted warm glowing point rooted inside an airy organic translucent field, with an uninterrupted delicate horizontal veil implying sustained presence; a spacious calm around it, small long-range ripples but no implied waveform scale. Asymmetric watercolor pigment and dappled light, no second note.",
+   "Static factual/native layer": "Native key illustration may show one *unlabelled* white key being pressed here; simple static annotation: one sound remains, not a chord or an entire scale.",
+   "How to teach + own-keyboard action": "Teach note as musical sound, listen to one note physically; ask what about it persists when held and how the sound's color might vary with the synth tone.",
+   "Guard/acceptance": "No pitch-letter prerequisite; metaphor does not scientifically illustrate amplitude or frequency."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (1:1)",
+  "aspect": "1:1",
+  "prompt": "One beautifully weighted warm glowing point rooted inside an airy organic translucent field, with an uninterrupted delicate horizontal veil implying sustained presence; a spacious calm around it, small long-range ripples but no implied waveform scale. Asymmetric watercolor pigment and dappled light, no second note."
+ },
+ "A02": {
+  "id": "A02",
+  "pack": "W1",
+  "title": "Pitch versus Loudness",
+  "mode": "NATIVE + reused ART accent",
+  "fields": {
+   "Mode": "NATIVE + reused ART accent",
+   "Placement": "1A definition of pitch before locating C",
+   "Learner objective": "Tell apart high/low pitch from loud/soft volume.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — build two visually parallel static comparison diagrams against re-used A01 field accents. One horizontal keyboard direction arrow low-to-high; a separate soft/loud playing-force depiction with no claim that pitch changes with force.",
+   "Static factual/native layer": "Accurate actual neighboring-key example; rightward keyboard position conventionally higher, leftward lower. Labels 'higher/lower' and 'louder/softer' in different native visual axes.",
+   "How to teach + own-keyboard action": "Describe which action changes pitch (play a more rightward key) and which changes volume (play softer/louder or change volume control); learner tries both on own synth.",
+   "Guard/acceptance": "Do not ask the model to draw an oscilloscope or incorrect wave amplitude chart; keyboard's grouping deterministic."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — build two visually parallel static comparison diagrams against re-used A01 field accents. One horizontal keyboard direction arrow low-to-high; a separate soft/loud playing-force depiction with no claim that pitch changes with force."
+ },
+ "A03": {
+  "id": "A03",
+  "pack": "W1",
+  "title": "Find C by Two Black Keys",
+  "mode": "NATIVE + M02 accent",
+  "fields": {
+   "Mode": "NATIVE + M02 accent",
+   "Placement": "1A first named pitch and keyboard geography",
+   "Learner objective": "Identify any C as the white key immediately left of each two-black-key group.",
+   "Nano Banana SCENE PROMPT (—)": "NONE for precise piano; re-use M02 G02 keyboard-light ART accent behind a new static native top-view keyboard in approved style. Existing M02 trial keyboard graphics are optional reference, not mandatory.",
+   "Static factual/native layer": "Draw full repeating two/three-black-key groups from keyboard geometry, two C highlights, small locator guides, native C labels; no hidden labels, no buttons, accurate E–F and B–C.",
+   "How to teach + own-keyboard action": "Teach the two-black-key landmark and trace the left-adjacent white key; learner finds and plays multiple Cs on their own instrument.",
+   "Guard/acceptance": "Keyboard remains a factual static illustration; a 'reveal the Cs' control from M02 pilot must not ship."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE for precise piano; re-use M02 G02 keyboard-light ART accent behind a new static native top-view keyboard in approved style. Existing M02 trial keyboard graphics are optional reference, not mandatory."
+ },
+ "A04": {
+  "id": "A04",
+  "pack": "W1",
+  "title": "C as Chosen Home / Concentric Tonal Center",
+  "mode": "ART reuse",
+  "fields": {
+   "Mode": "ART reuse",
+   "Placement": "1A after finding C and learning contextual musical reference",
+   "Learner objective": "See one chosen reference C and the surrounding visiting notes; understand that 'home' depends on music context.",
+   "Nano Banana SCENE PROMPT (1:1)": "Reuse APPROVED M02 G01-B-concentric-home transparent watercolor source, or commission a visibly distinct refinement only if actual lesson integration requires it. If regenerated: a radiant amber central home field, organic translucent teal and lavender rings, lightly asymmetric watercolor petals with soft empty positions for later note labels; not a precise interval ruler.",
+   "Static factual/native layer": "Native C center and named D E F G A B visitor labels and a static correctly positioned return path, plus real C highlight beneath; legible explanation 'relationship map, not to scale'.",
+   "How to teach + own-keyboard action": "Walk C→D→E then back to C with fingertips on synth; compare a phrase ending at G with one ending at C. Say the white keys alone do NOT prove C is home.",
+   "Guard/acceptance": "Do not bake letters in model art, claim C drone proves C-major key, infer tone colors objectively."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (1:1)",
+  "aspect": "1:1",
+  "prompt": "Reuse APPROVED M02 G01-B-concentric-home transparent watercolor source, or commission a visibly distinct refinement only if actual lesson integration requires it. If regenerated: a radiant amber central home field, organic translucent teal and lavender rings, lightly asymmetric watercolor petals with soft empty positions for later note labels; not a precise interval ruler."
+ },
+ "A05": {
+  "id": "A05",
+  "pack": "W1",
+  "title": "Seven Names, Ordered White-Key Journey",
+  "mode": "NATIVE + light ART variant",
+  "fields": {
+   "Mode": "NATIVE + light ART variant",
+   "Placement": "1A immediately after A03 and before octave",
+   "Learner objective": "Follow C D E F G A B C in correct order and distinguish white-key order from semitone size.",
+   "Nano Banana SCENE PROMPT (—)": "NONE needed by default — reuse a cropped luminous path motif from A04, but draw the complete eight-stop route deterministically, with a real keyboard underneath.",
+   "Static factual/native layer": "Exact eight white key positions, repeated higher C, visible E–F/B–C boundaries and no equal-chromatic-semitone implication. Two static layouts for narrow/wide screens.",
+   "How to teach + own-keyboard action": "Read the letters in sequence while playing consecutive white keys from C to next C, then back. Notice where the black keys do and don't interrupt.",
+   "Guard/acceptance": "Do not model-render any key or label; the route is visually ordered, not a measured radial spacing."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE needed by default — reuse a cropped luminous path motif from A04, but draw the complete eight-stop route deterministically, with a real keyboard underneath."
+ },
+ "A06": {
+  "id": "A06",
+  "pack": "W1",
+  "title": "Octave Return Spiral",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1A after the eight-note white-key path",
+   "Learner objective": "See that a higher C has the same note name but a genuinely higher pitch.",
+   "Nano Banana SCENE PROMPT (4:5)": "A graceful upward-turning spiral of luminous translucent watercolor ribbon with two clearly related amber focal halos separated vertically, like the same motif resurfacing one turn higher; light lavender echo strands, clean spaces for native C labels, soft alpha edges.",
+   "Static factual/native layer": "Two deterministic C keyboard positions separated by one octave; two independent static C labels and an upward pitch-arrow/spiral path registered to art.",
+   "How to teach + own-keyboard action": "Describe same named family at a new height; learner plays lower then higher C and back, without learner-facing C3/C4/C5 numbering.",
+   "Guard/acceptance": "Spiral is poetic recurrence, not a calibrated hertz graph; optional 2:1 frequency science belongs in documented enrichment."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (4:5)",
+  "aspect": "4:5",
+  "prompt": "A graceful upward-turning spiral of luminous translucent watercolor ribbon with two clearly related amber focal halos separated vertically, like the same motif resurfacing one turn higher; light lavender echo strands, clean spaces for native C labels, soft alpha edges."
+ },
+ "A07": {
+  "id": "A07",
+  "pack": "W1",
+  "title": "Ascending and Descending C-to-C",
+  "mode": "VARIANT of A05/A06",
+  "fields": {
+   "Mode": "VARIANT of A05/A06",
+   "Placement": "1A practice continuation of octave lesson",
+   "Learner objective": "Distinguish going up an octave from returning down using the same note set.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — reuse the A05 ordered static path and A06 motif; draw two distinct static adjacent paths in native ink: ascending line and returning line, sharing exact keyboard positions.",
+   "Static factual/native layer": "Label direction up/right vs down/left with genuine ordered keys; two static views, not clickable trace.",
+   "How to teach + own-keyboard action": "Learner plays C to next higher C, then steps back; encourage noticing how the sense of height changes.",
+   "Guard/acceptance": "Avoid random pitch jumps masquerading as sequential white-key steps."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — reuse the A05 ordered static path and A06 motif; draw two distinct static adjacent paths in native ink: ascending line and returning line, sharing exact keyboard positions."
+ },
+ "A08": {
+  "id": "A08",
+  "pack": "W1",
+  "title": "Two Endings: Away and Home",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1A tonal-center comparison after A04",
+   "Learner objective": "See a path that departs from chosen home and understand the effect of different endpoints.",
+   "Nano Banana SCENE PROMPT (16:9)": "A single lush C-centered watercolor landscape forks near the edge into two delicate organic endings; one path sweeps back into luminous amber core and the other remains in a separate airy cooler area, visual emphasis on the fork while not assigning mood or 'correct' end.",
+   "Static factual/native layer": "Exact native educational example(s) shown as clearly authored practice rather than fabricated historical fixture. E.g. same first notes C–D–E, compare ending on G versus C, drawn as two static pathways with labels only after lesson explains comparison.",
+   "How to teach + own-keyboard action": "Explain that context makes C a reference, but the listener can experience ending points differently; learner plays identical opening twice, finishing once on G and once on C, describes own response.",
+   "Guard/acceptance": "Early version before any answer-prediction must be neutral; do not universally assign emotions to destinations."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "A single lush C-centered watercolor landscape forks near the edge into two delicate organic endings; one path sweeps back into luminous amber core and the other remains in a separate airy cooler area, visual emphasis on the fork while not assigning mood or 'correct' end."
+ },
+ "A09": {
+  "id": "A09",
+  "pack": "W1",
+  "title": "Drone: A Note That Stays While Others Visit",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1A introducing sustained reference and visiting note",
+   "Learner objective": "Understand 'drone' as one continuing held note under changing notes.",
+   "Nano Banana SCENE PROMPT (16:9)": "A long continuous golden watercolor band/halo anchored at left-to-right center, with three separate airy translucent teal/lavender note-presence ribbons touching then lifting away from it at different places; clarity of uninterrupted versus temporary is more important than concentric decoration.",
+   "Static factual/native layer": "Native continuous C foundation label, separate E/G/D educational visitor labels if introduced; if showing actual historical A02 event, verify exact starting and duration from week1 fixtures first. No web-sound control.",
+   "How to teach + own-keyboard action": "Explain which strand stays and which comes and goes, then sustain C with one hand or sustain pedal while playing one other note; if impossible physically, alternate playing notes and imagining C or use explicitly optional external reference.",
+   "Guard/acceptance": "One C held is not by itself a full chord or proof of tonic; shapes not sound-wave measurements."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "A long continuous golden watercolor band/halo anchored at left-to-right center, with three separate airy translucent teal/lavender note-presence ribbons touching then lifting away from it at different places; clarity of uninterrupted versus temporary is more important than concentric decoration."
+ },
+ "A10": {
+  "id": "A10",
+  "pack": "W1",
+  "title": "Tiny Personal Melody and Pauses",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1A first open-ended creation exercise",
+   "Learner objective": "Use a handful of known notes to create a deliberate phrase with a resting point or change.",
+   "Nano Banana SCENE PROMPT (16:9)": "A small winding trail of three or four distinct hand-painted luminous stops and one clearly open quiet interval, ending in a soft amber curl; organic breathing room, visibly finite and approachable; no exact written notes.",
+   "Static factual/native layer": "Native illustrative EXAMPLE melody e.g. C–D–E–C, explicitly marked as example rather than authoritative event fixture, with static keyboard callout and a gap marker; learner may use their own notes.",
+   "How to teach + own-keyboard action": "Invite learner to make a three/four-note idea, repeat it with a pause or different final note and listen to what changed.",
+   "Guard/acceptance": "Do not force recording/DAW account or an invented official source recording."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "A small winding trail of three or four distinct hand-painted luminous stops and one clearly open quiet interval, ending in a soft amber curl; organic breathing room, visibly finite and approachable; no exact written notes."
+ },
+ "A11": {
+  "id": "A11",
+  "pack": "W1",
+  "title": "Paint What You Hear — Personal Color Map",
+  "mode": "ART / enrichment",
+  "fields": {
+   "Mode": "ART / enrichment",
+   "Placement": "1A optional creative door after hands-on melody",
+   "Learner objective": "Connect own imaginative response to music without treating colors as universal pitch facts.",
+   "Nano Banana SCENE PROMPT (16:9)": "One slender watercolor trail branching into three contrasting abstract organic color-and-texture gestures, open white space and visible brush-grain; subjective hand-painted energy, nonliteral and non-notated.",
+   "Static factual/native layer": "Native caption 'Your own sound-to-color interpretation' and source-preserved enrichment text; no fixed pitch=color legend.",
+   "How to teach + own-keyboard action": "Ask learner to play a note on real keyboard and sketch or imagine what the sound resembles, then play another and compare.",
+   "Guard/acceptance": "Color choices are artistic, not scientific synesthesia."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "One slender watercolor trail branching into three contrasting abstract organic color-and-texture gestures, open white space and visible brush-grain; subjective hand-painted energy, nonliteral and non-notated."
+ },
+ "A12": {
+  "id": "A12",
+  "pack": "W1",
+  "title": "Lesson 1A Recap / Printed Reference",
+  "mode": "NATIVE + VARIANT",
+  "fields": {
+   "Mode": "NATIVE + VARIANT",
+   "Placement": "1A close, week hub thumbnail and printable",
+   "Learner objective": "Recall C landmark, white-key path, octave, contextual home and a visiting note.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — use small approved A04/A06 cropped art ornaments, then assemble a static readable graphic sheet in HTML/SVG with distinct factual mini panels and an ink-light print version.",
+   "Static factual/native layer": "Panels: 2-black-key C locator, C–C octave path, C-as-chosen-center diagram, held-vs-moving small example; real source labels; no stateful controls.",
+   "How to teach + own-keyboard action": "Explain one key idea per mini panel. Learner plays a home note and one short journey, then describes the sense of return.",
+   "Guard/acceptance": "Preserve researched 1A content including tonic/timbre nuance and original optional learning doors in later content integration.\n\n## Lesson 1B"
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — use small approved A04/A06 cropped art ornaments, then assemble a static readable graphic sheet in HTML/SVG with distinct factual mini panels and an ink-light print version."
+ },
+ "B01": {
+  "id": "B01",
+  "pack": "W1",
+  "title": "Open Ending versus Arrival",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1B after prediction question is complete",
+   "Learner objective": "See two related endings with shared beginning but different final destination.",
+   "Nano Banana SCENE PROMPT (16:9)": "Two nearly identical hand-painted translucent upward journeys emerge from one shared warm root; one fades into an open, airy lavender edge and the other curls back to a concentrated warm landing, intentionally nonjudgmental and non-metric, no note letters.",
+   "Static factual/native layer": "Native accurate W1 fixture pair: B01 seven rising upper notes C D E F G A B; B02 adds higher C only. Render early page B01 path alone; later static B01/B02 side-by-side with C final labeled.",
+   "How to teach + own-keyboard action": "First learner plays C through B and notices open stopping point without seeing the arrival answer; after reading next static page plays higher C afterward and compares.",
+   "Guard/acceptance": "No interactive reveal or pre-exposure of higher C in first question. Subjective completeness varies."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "Two nearly identical hand-painted translucent upward journeys emerge from one shared warm root; one fades into an open, airy lavender edge and the other curls back to a concentrated warm landing, intentionally nonjudgmental and non-metric, no note letters."
+ },
+ "B02": {
+  "id": "B02",
+  "pack": "W1",
+  "title": "Where Half Steps Really Are",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Placement": "1B half-step introduction",
+   "Learner objective": "Find a semitone as the immediate neighboring physical key, including white-white E–F and B–C.",
+   "Nano Banana SCENE PROMPT (—)": "NONE; exact physical keyboard map is the infographic. Add existing approved watercolor atmosphere as independent decorative accent.",
+   "Static factual/native layer": "Static precise E–F and B–C adjacency, C–C♯ as chromatic neighboring keys, and note group geometry. Label 1 semitone in each case.",
+   "How to teach + own-keyboard action": "Explain that adjacent keys are always one semitone even if both are white; learner plays C then black key, E then F and B then C.",
+   "Guard/acceptance": "Do not render black key between E–F or B–C. Do not substitute equal white-key spacing for interval measurement."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE; exact physical keyboard map is the infographic. Add existing approved watercolor atmosphere as independent decorative accent."
+ },
+ "B03": {
+  "id": "B03",
+  "pack": "W1",
+  "title": "Whole Step = Two Semitones",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Placement": "1B after B02",
+   "Learner objective": "Trace two neighboring chromatic key moves to travel a whole step.",
+   "Nano Banana SCENE PROMPT (—)": "NONE; style the native distance ruler with fine colored watercolor arcs from shared motif, but exact keys and spacing are native.",
+   "Static factual/native layer": "Static C→C♯→D (two semitone hops), C→D total 2, also optional E→F♯ and truthful black key. Native endpoint and intermediate key labels.",
+   "How to teach + own-keyboard action": "Guide the learner to play C, the immediately neighboring black key, then D, and contrast with C straight to D.",
+   "Guard/acceptance": "Never imply skipping one white key universally equals whole step."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE; style the native distance ruler with fine colored watercolor arcs from shared motif, but exact keys and spacing are native."
+ },
+ "B04": {
+  "id": "B04",
+  "pack": "W1",
+  "title": "One White-Key Move, Two Actual Distances",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Placement": "1B after whole/half concepts",
+   "Learner objective": "Compare C→D (2 semitones) with E→F (1) despite both appearing as adjacent white keys.",
+   "Nano Banana SCENE PROMPT (—)": "NONE; use two static geometrically exact keyboard excerpts on a single elegant shared page surface, with native distance ruler.",
+   "Static factual/native layer": "Native semitone count labels C–D 2, E–F 1; first path crosses C♯, second no black key.",
+   "How to teach + own-keyboard action": "Teach why the keyboard's repeating black groups matter; learner plays and counts both journeys.",
+   "Guard/acceptance": "Correct counterexample B–C=1 may be added as side key strip."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE; use two static geometrically exact keyboard excerpts on a single elegant shared page surface, with native distance ruler."
+ },
+ "B05": {
+  "id": "B05",
+  "pack": "W1",
+  "title": "Major Scale: Unequal Step Garland",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1B after C-major formula introduction",
+   "Learner objective": "See one coherent scale with intentional unequal step sizes, not arbitrary seven equal segments.",
+   "Nano Banana SCENE PROMPT (16:9)": "An original flowing vertical-garland of eight subtly different translucent petals linked by a winding golden thread, with some narrow connecting spaces and others wider; delicate lavender teal and amber pigment, breathing room for later deterministic ordered note and step labels. Romantic yet legible without flat infographic aesthetics.",
+   "Static factual/native layer": "Draw accurate static C D E F G A B C with measured semitone hop pattern W W H W W W H (2,2,1,2,2,2,1); native keyboard and classifying labels. Generated petal distances artistic only; a separate native ruler proves the count.",
+   "How to teach + own-keyboard action": "Walk the major scale with keyboard, noticing E–F and B–C half steps; try from a different pitch only as optional curiosity with physical guidance.",
+   "Guard/acceptance": "Do not assign petal width quantitative meaning unless native measured overlay specifically enforces it."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "An original flowing vertical-garland of eight subtly different translucent petals linked by a winding golden thread, with some narrow connecting spaces and others wider; delicate lavender teal and amber pigment, breathing room for later deterministic ordered note and step labels. Romantic yet legible without flat infographic aesthetics."
+ },
+ "B06": {
+  "id": "B06",
+  "pack": "W1",
+  "title": "Seven Names and Next C",
+  "mode": "VARIANT of A05/A06/B05",
+  "fields": {
+   "Mode": "VARIANT of A05/A06/B05",
+   "Placement": "1B scale recap after formula",
+   "Learner objective": "Connect seven named notes and the repeating upper C to the scale.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — crop/retune approved octave ribbon and B05 garland while retaining accurate native eight-stop letter sequence, printed static.",
+   "Static factual/native layer": "Native sequence C D E F G A B C and two distinct C key positions; optional W/W/H ruler in later-step version.",
+   "How to teach + own-keyboard action": "Learner plays up and down, locating the return C by two-black-key landmark.",
+   "Guard/acceptance": "Do not commission new center mandala when A05/A06/B05 suffice."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — crop/retune approved octave ribbon and B05 garland while retaining accurate native eight-stop letter sequence, printed static."
+ },
+ "B07": {
+  "id": "B07",
+  "pack": "W1",
+  "title": "Answer-Neutral Unfinished Path",
+  "mode": "VARIANT of B01",
+  "fields": {
+   "Mode": "VARIANT of B01",
+   "Placement": "1B FIRST prediction page before showing ending",
+   "Learner objective": "Invite learner to imagine a possible ending without exposing the source's higher-C resolution.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — use left/open B01 artwork only; no arrival curl in this initial view; another static page uses both outcomes.",
+   "Static factual/native layer": "Native seven notes C D E F G A B only. Do NOT show the source B02 C5 in early legend/alt text or the earlier step.",
+   "How to teach + own-keyboard action": "Learner plays the seven notes, pauses and imagines a next note; turn page to see an example choice and compare.",
+   "Guard/acceptance": "Protect existing expectation/reveal-before-answer sequence without a button or quiz."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — use left/open B01 artwork only; no arrival curl in this initial view; another static page uses both outcomes."
+ },
+ "B08": {
+  "id": "B08",
+  "pack": "W1",
+  "title": "Same Beginning / Different Last Note",
+  "mode": "VARIANT of B01",
+  "fields": {
+   "Mode": "VARIANT of B01",
+   "Placement": "1B after both source endings introduced",
+   "Learner objective": "Make the difference in last note explicit while holding the beginning constant.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — reuse two art trajectories; add concise native split comparison and accurate note labels.",
+   "Static factual/native layer": "Native shared C D E F G A B, only arrival includes higher C; optional learner-created alternative last note labelled as independent exercise.",
+   "How to teach + own-keyboard action": "Learner plays two endings and describes their own auditory response; encourage making a third distinct ending.",
+   "Guard/acceptance": "Do not assert universal closure/unfinished emotion from any interval."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — reuse two art trajectories; add concise native split comparison and accurate note labels."
+ },
+ "B09": {
+  "id": "B09",
+  "pack": "W1",
+  "title": "Closeness versus Measured Distance",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1B semitone/whole-step visual bridge",
+   "Learner objective": "Understand that physical keyboard spacing/semitone count and conceptual feeling of closeness are different kinds of information.",
+   "Nano Banana SCENE PROMPT (16:9)": "Two delicate luminous note-presence halos connected by one soft short watercolor arc and a distinct longer two-curved-hop trail below, both airy and gently textured; clearly separate visual poetic proximity from actual numerical ruler that will be added independently.",
+   "Static factual/native layer": "Native exact side-by-side C–C♯ 1 semitone and C–D 2 semitones ruler on real keyboard; explain art arcs are conceptual.",
+   "How to teach + own-keyboard action": "Ask learner to play neighboring keys then a whole step, listening for how the relationship changes.",
+   "Guard/acceptance": "Do not use circle radius as a quantitative semitone rule."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "Two delicate luminous note-presence halos connected by one soft short watercolor arc and a distinct longer two-curved-hop trail below, both airy and gently textured; clearly separate visual poetic proximity from actual numerical ruler that will be added independently."
+ },
+ "B10": {
+  "id": "B10",
+  "pack": "W1",
+  "title": "Make Your Own Arrival and Open Ending",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1B final composition exercise",
+   "Learner objective": "Design two short musical choices from one shared beginning.",
+   "Nano Banana SCENE PROMPT (16:9)": "One graceful luminous watercolor path starts as a single warm thread, branches near its end into two organically different glows—an open wandering fade and a warmer return—without labeling one 'correct' or giving an emotional verdict.",
+   "Static factual/native layer": "Native example stem C D E if needed with separate static endpoint examples; explain these are authored practice patterns, not lesson source fixture unless matched.",
+   "How to teach + own-keyboard action": "Create two mini melodies on keyboard with same first notes and different end; notice which better serves learner's own idea.",
+   "Guard/acceptance": "Do not introduce DAW, a virtual keyboard, answer-checking or sound buttons."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "One graceful luminous watercolor path starts as a single warm thread, branches near its end into two organically different glows—an open wandering fade and a warmer return—without labeling one 'correct' or giving an emotional verdict."
+ },
+ "B11": {
+  "id": "B11",
+  "pack": "W1",
+  "title": "Why the Major-Scale Pattern Travels",
+  "mode": "VARIANT / native optional",
+  "fields": {
+   "Mode": "VARIANT / native optional",
+   "Placement": "1B optional enrichment after scale learning",
+   "Learner objective": "Grasp that a step pattern, not key color, defines the major scale, and different starting notes can need black keys.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — reuse B05's garland as a subdued ornament; add native short exact contrast only once lesson text warrants teaching it.",
+   "Static factual/native layer": "Native C-major WWHWWWH. An alternate key example must be calculated/verified and explicitly introduced as enrichment, not an unverified screenshot.",
+   "How to teach + own-keyboard action": "Try beginning on another familiar key and noting when black keys appear; optional exploration without requiring full theory.",
+   "Guard/acceptance": "Don't force more advanced key signatures into beginner lesson.\n\n## Lesson 1C"
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — reuse B05's garland as a subdued ornament; add native short exact contrast only once lesson text warrants teaching it."
+ },
+ "C01": {
+  "id": "C01",
+  "pack": "W1",
+  "title": "The Held Foundation with Visiting Upper Notes",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1C first two-voice introduction",
+   "Learner objective": "See harmony as two independent voices, one continuous and one visiting.",
+   "Nano Banana SCENE PROMPT (16:9)": "A continuous warm gold ribbon anchors the whole wide composition while three separate luminous teal/lavender brushstrokes arrive above, hover briefly and disappear; evident empty gaps between visits, gorgeous translucent texture, no mechanical piano-roll imagery.",
+   "Static factual/native layer": "Native static source 1C C01 lower C held 0–12s; upper E 2–4s, G 5–7s, D 9–11s; if native time ruler shown, exact event lengths above; no model timing labels.",
+   "How to teach + own-keyboard action": "Explain voice as independent musical line and simultaneous notes as harmony; learner sustains C and alternates E G D if physically feasible.",
+   "Guard/acceptance": "Do not insist C+E is a triad; no audio playback."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "A continuous warm gold ribbon anchors the whole wide composition while three separate luminous teal/lavender brushstrokes arrive above, hover briefly and disappear; evident empty gaps between visits, gorgeous translucent texture, no mechanical piano-roll imagery."
+ },
+ "C02": {
+  "id": "C02",
+  "pack": "W1",
+  "title": "Two Distinct Voices — One Scene",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1C clarify role and polyphonic layering",
+   "Learner objective": "Distinguish a stable foundation from independent upper melody even when both sound together.",
+   "Nano Banana SCENE PROMPT (16:9)": "Two complementary translucent strands with different rhythms—one long continuous amber horizon, one lilac and teal meandering overhead—partly crossing yet remaining visually traceable end to end, organic shallow depth, gentle ink-like edge highlights.",
+   "Static factual/native layer": "Native lower/upper voice labels anchored at appropriate points with accurate source example C01 and separate faint keyboard positions.",
+   "How to teach + own-keyboard action": "Point out that each color/strand represents a voice and there can be overlapping pitches; learner tries each line separately on own instrument then combines if able.",
+   "Guard/acceptance": "Do not encode extra fictitious notes or let color alone carry voice identities."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "Two complementary translucent strands with different rhythms—one long continuous amber horizon, one lilac and teal meandering overhead—partly crossing yet remaining visually traceable end to end, organic shallow depth, gentle ink-like edge highlights."
+ },
+ "C03": {
+  "id": "C03",
+  "pack": "W1",
+  "title": "Lower and Higher Voice Positions",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Placement": "1C first keyboard bridge for voices",
+   "Learner objective": "Locate lower C and higher E/G/D correctly on the real keyboard.",
+   "Nano Banana SCENE PROMPT (—)": "NONE; physically exact native keyboard figure, using already-generated C02 art glow behind it.",
+   "Static factual/native layer": "Native key positions C lower, E/G/D upper for C01 fixture; label as 'lower voice' and 'upper voice' with distinct line/shape conventions.",
+   "How to teach + own-keyboard action": "Read the map, play the lower key then upper and notice pitch height independent of hand position.",
+   "Guard/acceptance": "Do not draw keys via image model; learner-facing numerical octave labels unnecessary."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE; physically exact native keyboard figure, using already-generated C02 art glow behind it."
+ },
+ "C04": {
+  "id": "C04",
+  "pack": "W1",
+  "title": "Early versus Late Entrance",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1C timing and silence explanation",
+   "Learner objective": "See that the same note entering at a different time changes a phrase's shape even when pitch remains.",
+   "Nano Banana SCENE PROMPT (16:9)": "Two matching airy translucent time landscapes stacked in close alignment, each with one continuous golden basal wash; a violet petal-like upper presence appears early in the first and after a long generous airy pause in the second, comparable scale with quiet negative space.",
+   "Static factual/native layer": "Native timing labels from C02: E 2–6s over C 0–12; C03: E 7–11s over C 0–12. Both upper notes E at same pitch, only onset differs.",
+   "How to teach + own-keyboard action": "Explain entrance, duration and silence; learner sustains C then plays E early and late in separate versions, noticing the change.",
+   "Guard/acceptance": "Do not use animation or click-to-compare; both examples static on one lesson page."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "Two matching airy translucent time landscapes stacked in close alignment, each with one continuous golden basal wash; a violet petal-like upper presence appears early in the first and after a long generous airy pause in the second, comparable scale with quiet negative space."
+ },
+ "C05": {
+  "id": "C05",
+  "pack": "W1",
+  "title": "Time as a Musical Relationship",
+  "mode": "NATIVE + C04 art",
+  "fields": {
+   "Mode": "NATIVE + C04 art",
+   "Placement": "1C how-to-read event strip",
+   "Learner objective": "Read horizontal time and distinguish held note, entrance, rest and change.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — native static event strip/timeline is essential. Use already generated C04 soft field as a decorative edge behind labels.",
+   "Static factual/native layer": "Exact start/end times for chosen 1C source fixture; draw no time marks in the model output.",
+   "How to teach + own-keyboard action": "Lead reader from the lower continuous bar to timed upper marks; learner recreates the sequence slowly on keyboard or taps a steady pulse before playing.",
+   "Guard/acceptance": "Timeline is measured; decorative colored swirls never substitute for accurate timed positions."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — native static event strip/timeline is essential. Use already generated C04 soft field as a decorative edge behind labels."
+ },
+ "C06": {
+  "id": "C06",
+  "pack": "W1",
+  "title": "One Voice Alone, Then Both Together",
+  "mode": "VARIANT of C02/C03",
+  "fields": {
+   "Mode": "VARIANT of C02/C03",
+   "Placement": "1C compare isolated roles conceptually without playback",
+   "Learner objective": "Understand that two voices can be heard separately and together while keeping their roles.",
+   "Nano Banana SCENE PROMPT (—)": "NONE — construct three static native panels: foundation only, upper notes only, both together, all reusing C02 art strands with consistent color.",
+   "Static factual/native layer": "Same source C01 event paths in all three panels, hiding none behind controls. Exact note-event membership maintained.",
+   "How to teach + own-keyboard action": "Play C alone, melodic E/G/D separately, then try both on own instrument; notice how the total sound changes.",
+   "Guard/acceptance": "Do not create 'solo' UI/audio engine."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE — construct three static native panels: foundation only, upper notes only, both together, all reusing C02 art strands with consistent color."
+ },
+ "C07": {
+  "id": "C07",
+  "pack": "W1",
+  "title": "The Same 36 Seconds, Two Endings",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1C late lesson comparison after starting material learned",
+   "Learner objective": "Recognize a shared musical journey but two distinct final possibilities.",
+   "Nano Banana SCENE PROMPT (16:9)": "Two panoramic watercolor landscapes with matching golden foundations and the same four violet/teal visiting curls, diverging only at the very end where one adds a small luminous upward return and the other retains open spacious air; quiet elegant composition.",
+   "Static factual/native layer": "Native 1C C04/C05 shared C 0–36s and upper E (8–12), G (15–19), D (23–27), B (29–32); only C04 adds upper C 33–35.8s. If there is an expectation prompt, compare only on later static step.",
+   "How to teach + own-keyboard action": "Walk the shared four notes and final difference, then play two final options on real keyboard; listener decides how each works.",
+   "Guard/acceptance": "Do not show final C on an earlier prediction page; source timings verified."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "Two panoramic watercolor landscapes with matching golden foundations and the same four violet/teal visiting curls, diverging only at the very end where one adds a small luminous upward return and the other retains open spacious air; quiet elegant composition."
+ },
+ "C08": {
+  "id": "C08",
+  "pack": "W1",
+  "title": "Silence as Compositional Space",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1C creative lesson before composition",
+   "Learner objective": "Perceive gaps and waiting as purposeful elements of a two-voice idea.",
+   "Nano Banana SCENE PROMPT (16:9)": "Three soft colored brushstroke note-presences separated by visually deliberate untouched white intervals above an unbroken quiet golden lower wash, the blank spaces as spacious as the marks; painterly warmth, not an empty spreadsheet.",
+   "Static factual/native layer": "Native annotation 'upper voice rests' at source C01 gaps, exact timing only if charted separately; no fake waveform.",
+   "How to teach + own-keyboard action": "Learner plays a short idea with one pause; repeats without pause and notices different pacing.",
+   "Guard/acceptance": "Silence in upper line is not total silence if lower foundation continues."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "Three soft colored brushstroke note-presences separated by visually deliberate untouched white intervals above an unbroken quiet golden lower wash, the blank spaces as spacious as the marks; painterly warmth, not an empty spreadsheet."
+ },
+ "C09": {
+  "id": "C09",
+  "pack": "W1",
+  "title": "Compose a Two-Voice Story",
+  "mode": "NATIVE + VARIANT",
+  "fields": {
+   "Mode": "NATIVE + VARIANT",
+   "Placement": "1C practice / five-step scaffold",
+   "Learner objective": "Plan a stable base, a short melody, a meaningful pause, a change and an ending.",
+   "Nano Banana SCENE PROMPT (—)": "NONE; use approved C01/C08 art fragments around a native static five-stage illustrated worksheet without clickable steps.",
+   "Static factual/native layer": "Native headings set a scene → imagine visitor → leave room → change something → choose ending; sample keyboard labels drawn from already taught notes.",
+   "How to teach + own-keyboard action": "Learner performs each stage on real instrument, optionally writes own path on paper; do not require DAW, user account, or site input.",
+   "Guard/acceptance": "These are guide stages, not a graded sequence or an interactive canvas."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (—)",
+  "aspect": "—",
+  "prompt": "NONE; use approved C01/C08 art fragments around a native static five-stage illustrated worksheet without clickable steps."
+ },
+ "C10": {
+  "id": "C10",
+  "pack": "W1",
+  "title": "Week 1 Final Soundscape Map",
+  "mode": "ART",
+  "fields": {
+   "Mode": "ART",
+   "Placement": "1C recap and Week 2 bridge",
+   "Learner objective": "See one complete mini composition with an independent supporting voice and upper path, hinting at future movement of both.",
+   "Nano Banana SCENE PROMPT (16:9)": "A poetic wide translucent musical landscape merging a long gentle amber reference, three independent lilac/teal visitor arcs and a final soft off-center opening into a second gently moving path, rich textural depth yet traceable roles and breathing room.",
+   "Static factual/native layer": "Native factual source event sequence C01 for recap or C04/C05 appropriately, with clear distinction between exact played pattern and atmospheric metaphor.",
+   "How to teach + own-keyboard action": "Learner makes and listens to a tiny self-chosen two-voice piece on real synth; ask which line stayed and which changed, then note Week 2 will move the lower line too.",
+   "Guard/acceptance": "Do not fake completed student work or prescribe an emotional response."
+  },
+  "prompt_key": "Nano Banana SCENE PROMPT (16:9)",
+  "aspect": "16:9",
+  "prompt": "A poetic wide translucent musical landscape merging a long gentle amber reference, three independent lilac/teal visitor arcs and a final soft off-center opening into a second gently moving path, rich textural depth yet traceable roles and breathing room."
+ },
+ "S07": {
+  "id": "S07",
+  "pack": "W2",
+  "title": "Week 2 Two Voices opening",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "Recognize two separate melodic voices that can meet and change relationship.",
+   "Nano Banana art-only SCENE PROMPT": "Two independent airy golden and lavender watercolor ribbons enter a shared luminous space, touch in delicate petal-shaped overlap and diverge into new soft paths, painterly and rich but clearly individually traceable; no notes or labels.",
+   "Static accuracy / factual overlay": "Native course heading 'Two Voices', short static roadmap note pair → interval → movement → changed support; no false chord notation.",
+   "Illustration reading / own-keyboard instruction": "Read the two strands as separate voices; play C and E independently, then together, on own keyboard.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "Two independent airy golden and lavender watercolor ribbons enter a shared luminous space, touch in delicate petal-shaped overlap and diverge into new soft paths, painterly and rich but clearly individually traceable; no notes or labels."
+ },
+ "D01": {
+  "id": "D01",
+  "pack": "W2",
+  "title": "One pitch meets another",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "See two notes retain individuality while producing a combined musical relationship.",
+   "Nano Banana art-only SCENE PROMPT": "One glowing golden single-note presence joined by separate teal-violet luminous watercolor note field; two distinct translucent circular centers meet in a gentle overlapping lens, organic pigment and soft edges.",
+   "Static accuracy / factual overlay": "Source C+E dyad, native exact keyboard C/E labels, two separate voice roles.",
+   "Illustration reading / own-keyboard instruction": "Introduce a dyad as two notes at once; play C alone, E alone, then C+E.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "One glowing golden single-note presence joined by separate teal-violet luminous watercolor note field; two distinct translucent circular centers meet in a gentle overlapping lens, organic pigment and soft edges."
+ },
+ "D02": {
+  "id": "D02",
+  "pack": "W2",
+  "title": "C and E: two-note pair",
+  "mode": "NATIVE",
+  "fields": {
+   "Production": "NATIVE",
+   "Learn": "Locate C/E and identify lower/upper without needing notation.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Reuse a small D01 field fragment behind a native exact top-view keyboard.",
+   "Static accuracy / factual overlay": "Native actual C/E key positions and label C–E; four semitones when introduced in the next step.",
+   "Illustration reading / own-keyboard instruction": "Point from lower C to upper E, then play them together.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Reuse a small D01 field fragment behind a native exact top-view keyboard."
+ },
+ "D03": {
+  "id": "D03",
+  "pack": "W2",
+  "title": "Interval Bloom",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "Understand interval as the measurable pitch distance between two notes.",
+   "Nano Banana art-only SCENE PROMPT": "Two distinct rich luminous watercolor note fields linked by an organic arcing petal bridge, warm amber to pale teal and lavender, watercolor grain and clear negative space for later native numeric ruler.",
+   "Static accuracy / factual overlay": "Draw exact native chromatic keyboard C→E four semitones (third); source A.together; no artistic petal distance claimed as numeric.",
+   "Illustration reading / own-keyboard instruction": "Count the four neighboring-key moves from C to E on real keyboard, then play them.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "Two distinct rich luminous watercolor note fields linked by an organic arcing petal bridge, warm amber to pale teal and lavender, watercolor grain and clear negative space for later native numeric ruler."
+ },
+ "D04": {
+  "id": "D04",
+  "pack": "W2",
+  "title": "C–E compared with C–F",
+  "mode": "NATIVE",
+  "fields": {
+   "Production": "NATIVE",
+   "Learn": "Compare real third and fourth distances.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Reuse the interval bloom's visual atmosphere as a tiny accent, but draw quantitative comparison precisely.",
+   "Static accuracy / factual overlay": "Native C→E four semitones, C→F five semitones; correctly labeled third and fourth.",
+   "Illustration reading / own-keyboard instruction": "Read two accurate keyboard rulers and play C+E followed by C+F.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Reuse the interval bloom's visual atmosphere as a tiny accent, but draw quantitative comparison precisely."
+ },
+ "D05": {
+  "id": "D05",
+  "pack": "W2",
+  "title": "Hold lower C, upper E moves to F",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "See one fixed voice while a higher note shifts.",
+   "Nano Banana art-only SCENE PROMPT": "A continuing level golden luminous band across a soft field, with a distinct lavender/teal visitor arc beginning at one petal and moving gently higher to another; unmistakable static anchor versus change.",
+   "Static accuracy / factual overlay": "Source A.upperEF C+E then C+F; native labels and exact keys; lower C remains continuous.",
+   "Illustration reading / own-keyboard instruction": "Hold C and shift E to F on instrument, hear which role changed.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "A continuing level golden luminous band across a soft field, with a distinct lavender/teal visitor arc beginning at one petal and moving gently higher to another; unmistakable static anchor versus change."
+ },
+ "D06": {
+  "id": "D06",
+  "pack": "W2",
+  "title": "Hold upper E, move lower C",
+  "mode": "VARIANT",
+  "fields": {
+   "Production": "VARIANT",
+   "Learn": "Recognize lower-line motion while the upper stays fixed.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Recompose D05 painterly strands with stationary upper light and changing lower line.",
+   "Static accuracy / factual overlay": "Source A.lowerCB C+E→B+E and A.lowerCD C+E→D+E as two separate static panels; actual keyboard geometry.",
+   "Illustration reading / own-keyboard instruction": "Keep E, play different lower B/C/D choices on physical keyboard.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Recompose D05 painterly strands with stationary upper light and changing lower line."
+ },
+ "D07": {
+  "id": "D07",
+  "pack": "W2",
+  "title": "Two voices across time",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "Follow independent voices over a sequence, not a fixed chord.",
+   "Nano Banana art-only SCENE PROMPT": "Two readable loosely intertwined golden and teal/lavender watercolor ribbons sharing some moments but changing independently at others, airy space between events, fine pigment depth; not a piano-roll screenshot.",
+   "Static accuracy / factual overlay": "Native two-lane timing strip derived from a selected existing A fixture; exact notes/timings sourced, not AI art.",
+   "Illustration reading / own-keyboard instruction": "Read left-to-right timeline and physically play first pair, then change one key.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "Two readable loosely intertwined golden and teal/lavender watercolor ribbons sharing some moments but changing independently at others, airy space between events, fine pigment depth; not a piano-roll screenshot."
+ },
+ "D08": {
+  "id": "D08",
+  "pack": "W2",
+  "title": "Interval Palette first-use guide",
+  "mode": "NATIVE / VARIANT",
+  "fields": {
+   "Production": "NATIVE / VARIANT",
+   "Learn": "Learn to read an actual Atlas interval card.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Reuse D03 petal/glow accent and create source-derived static example card.",
+   "Static accuracy / factual overlay": "Preserve 13 cards and 13 chapters; actual lower note, upper note, semitone count from canonical Atlas data.",
+   "Illustration reading / own-keyboard instruction": "Read one card; find and play its two keys; no embedded card playback.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Reuse D03 petal/glow accent and create source-derived static example card."
+ },
+ "D09": {
+  "id": "D09",
+  "pack": "W2",
+  "title": "Try three dyads",
+  "mode": "NATIVE",
+  "fields": {
+   "Production": "NATIVE",
+   "Learn": "Practice changing one of two notes and naming which changed.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Use three small exact native keyboard mini-panels styled with D05 art accent.",
+   "Static accuracy / factual overlay": "C+E→C+F, C+E→B+E, C+E→D+E from A fixtures.",
+   "Illustration reading / own-keyboard instruction": "Play the three alternatives on own synth, compare unchanged voice.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Use three small exact native keyboard mini-panels styled with D05 art accent."
+ },
+ "D10": {
+  "id": "D10",
+  "pack": "W2",
+  "title": "2A recap: from interval to motion",
+  "mode": "VARIANT",
+  "fields": {
+   "Production": "VARIANT",
+   "Learn": "Connect two notes, distance, and voice movement.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Recompose D01, D03 and D05 as three static small readable panels.",
+   "Static accuracy / factual overlay": "C+E versus C+F etc with source-accurate positions and directional arrow.",
+   "Illustration reading / own-keyboard instruction": "Learner plays one pair and moves one note, anticipating next lesson.",
+   "Guard": "Show no on-page musical interactivity, generated lettering or fake keyboard; keep a rich organic illustration composited with continuous native background and substantial teacherly explanatory prose.\n\n## Lesson 2B — What Happens When Both Voices Move?"
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Recompose D01, D03 and D05 as three static small readable panels."
+ },
+ "E01": {
+  "id": "E01",
+  "pack": "W2",
+  "title": "One beginning, five changes",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "See five different outcomes share exactly the same C+E beginning.",
+   "Nano Banana art-only SCENE PROMPT": "One pair of beautiful warm-gold/cool-teal watercolor ribbon origins branching into FIVE distinct delicate short translucent paired paths across an airy panoramic canvas, rich organic edges, five readable trajectories with blank space for later labels.",
+   "Static accuracy / factual overlay": "Source FIVE B1-B5 all begin C+E and lead respectively C+F, B+E, D+E, B+F, D+F; they illustrate THREE named categories oblique, contrary, similar, not five distinct motion families.",
+   "Illustration reading / own-keyboard instruction": "Learner plays C+E, tries one different ending, and compares what moved.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "One pair of beautiful warm-gold/cool-teal watercolor ribbon origins branching into FIVE distinct delicate short translucent paired paths across an airy panoramic canvas, rich organic edges, five readable trajectories with blank space for later labels."
+ },
+ "E02": {
+  "id": "E02",
+  "pack": "W2",
+  "title": "Oblique: one voice holds",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "See a held pitch versus another traveling pitch.",
+   "Nano Banana art-only SCENE PROMPT": "A strong unbroken golden horizontal watercolor light band paired with one distinct pale lavender traveling strand arching smoothly from a starting region to an end region, clear independent roles and generous negative space.",
+   "Static accuracy / factual overlay": "Native static source B1 C+E→C+F, B2 C+E→B+E, B3 C+E→D+E as THREE distinct examples. At least two variants showing upper-held versus lower-held where pedagogically useful.",
+   "Illustration reading / own-keyboard instruction": "Explain 'oblique motion': one pitch stays while other moves; on keyboard hold C and move E→F, then hold E and move C→B.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "A strong unbroken golden horizontal watercolor light band paired with one distinct pale lavender traveling strand arching smoothly from a starting region to an end region, clear independent roles and generous negative space."
+ },
+ "E03": {
+  "id": "E03",
+  "pack": "W2",
+  "title": "Contrary: move apart",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "Identify opposite-direction movement in two voices.",
+   "Nano Banana art-only SCENE PROMPT": "Two translucent watercolor strands begin fairly close; the gold line curves downward while the lavender upper line rises, leaving more clear light space between them. Delicate pigment grain, refined luminous depth, no factual axes or notation.",
+   "Static accuracy / factual overlay": "Source B4 C+E→B+F; B–F end = 6 semitones, diminished fifth/tritone. Exact native keyboard and directional arrows.",
+   "Illustration reading / own-keyboard instruction": "Play C+E then B+F, notice both hands/pitches move in opposite directions.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "Two translucent watercolor strands begin fairly close; the gold line curves downward while the lavender upper line rises, leaving more clear light space between them. Delicate pigment grain, refined luminous depth, no factual axes or notation."
+ },
+ "E04": {
+  "id": "E04",
+  "pack": "W2",
+  "title": "Similar: rise together",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "Identify both voices moving the same way but by different measured amounts.",
+   "Nano Banana art-only SCENE PROMPT": "Two independent luminous golden and teal watercolor ribbons both rise across a shared airy page, differently curved and differently displaced, gentle petal translucency and painterly motion.",
+   "Static accuracy / factual overlay": "Source B5 C+E→D+F: lower +2 semitones, upper +1, ending D–F 3 semitones / minor third. Native exact labels.",
+   "Illustration reading / own-keyboard instruction": "Move C→D and E→F on physical keyboard; compare with contrary case.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "Two independent luminous golden and teal watercolor ribbons both rise across a shared airy page, differently curved and differently displaced, gentle petal translucency and painterly motion."
+ },
+ "E05": {
+  "id": "E05",
+  "pack": "W2",
+  "title": "Parallel motion: not in current source family",
+  "mode": "DEFER / NATIVE only if later authored",
+  "fields": {
+   "Production": "DEFER / NATIVE only if later authored",
+   "Learn": "Avoid implying the five current cases include a supported parallel-motion example.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Do not commission separate artwork or introduce a fourth category into present three-family lesson. If later explicitly authored, draw deterministic static voice paths from newly verified fixture before considering optional ART reuse.",
+   "Static accuracy / factual overlay": "Source FIVE has oblique cases B1–B3, contrary B4, similar B5; it does NOT provide a parallel example. No invented sixth case.",
+   "Illustration reading / own-keyboard instruction": "No practice requirement in existing Week 2B.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Do not commission separate artwork or introduce a fourth category into present three-family lesson. If later explicitly authored, draw deterministic static voice paths from newly verified fixture before considering optional ART reuse."
+ },
+ "E06": {
+  "id": "E06",
+  "pack": "W2",
+  "title": "Fifth canonical transformation: coverage",
+  "mode": "CONSOLIDATE INTO E07",
+  "fields": {
+   "Production": "CONSOLIDATE INTO E07",
+   "Learn": "Make sure all five canonical source outcomes are represented.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. No additional model call: include B5 as fifth row of E07 full gallery and use the same E01 original artwork.",
+   "Static accuracy / factual overlay": "Source exactly B1 C+F, B2 B+E, B3 D+E, B4 B+F, B5 D+F, all starting C+E. This is a fifth EXAMPLE not fifth FAMILY.",
+   "Illustration reading / own-keyboard instruction": "Reader chooses a source row and plays start and end on own instrument.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. No additional model call: include B5 as fifth row of E07 full gallery and use the same E01 original artwork."
+ },
+ "E07": {
+  "id": "E07",
+  "pack": "W2",
+  "title": "Five transformations reference gallery",
+  "mode": "ART reuse E01 + NATIVE",
+  "fields": {
+   "Production": "ART reuse E01 + NATIVE",
+   "Learn": "Compare all five verified changes and distinguish which pitch moves.",
+   "Nano Banana art-only SCENE PROMPT": "If E01's five branch motifs are visually too cramped, commission a row of five small coordinated rich translucent gold/lavender dual-ribbon vignettes, one common starting pose and five varied final shapes, text-free on pure white with soft margins. Otherwise REUSE E01 directly; no compulsory extra generation.",
+   "Static accuracy / factual overlay": "Five native rows with B1–B5 exact note pairs and category names. Destination intervals 5,5,2,6,3 semitones respectively. Same lesson order as the real source fixture.",
+   "Illustration reading / own-keyboard instruction": "Trace each row starting with C+E, which line changes, where it ends; learner plays one example for each motion family.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "If E01's five branch motifs are visually too cramped, commission a row of five small coordinated rich translucent gold/lavender dual-ribbon vignettes, one common starting pose and five varied final shapes, text-free on pure white with soft margins. Otherwise REUSE E01 directly; no compulsory extra generation."
+ },
+ "E08": {
+  "id": "E08",
+  "pack": "W2",
+  "title": "B–F tritone spelling lens",
+  "mode": "NATIVE",
+  "fields": {
+   "Production": "NATIVE",
+   "Learn": "Count the source's actual six-semitone B→F relationship and its letter-name interval.",
+   "Nano Banana art-only SCENE PROMPT": "NONE; elegant accurate native black/white key excerpt and adjacent-key semitone ruler with faint E03 art accent only.",
+   "Static accuracy / factual overlay": "Source B3→F4 = diminished fifth, six semitones; inclusive letter names B C D E F. C→F♯ is NOT one of B4's source events; may appear only as a separately labelled optional explanatory example if introduced and verified.",
+   "Illustration reading / own-keyboard instruction": "Play B and F, count neighboring keys; explain chromatic semitone counting differs from letter-name counting.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE; elegant accurate native black/white key excerpt and adjacent-key semitone ruler with faint E03 art accent only."
+ },
+ "E09": {
+  "id": "E09",
+  "pack": "W2",
+  "title": "Voice conversation as traveling streams",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "Follow a coherent four-moment musical path through held and changed voices.",
+   "Nano Banana art-only SCENE PROMPT": "Two distinguished luminous watercolor ribbons trace four connected stages across a wide canvas: paired start, upper strand lifts, lower strand drops, both softly return toward opening relationship. Soft amber, teal, rose and lavender pigments; readable stages, no baked axis.",
+   "Static accuracy / factual overlay": "Actual source B.path C+E → C+F → B+F → C+E, four equal 2.5-second stages; native accurate note names, arrows and optional timeline under painterly art.",
+   "Illustration reading / own-keyboard instruction": "Trace four stages on paper and play slowly on physical keyboard, stopping at each to hear relationship.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "Two distinguished luminous watercolor ribbons trace four connected stages across a wide canvas: paired start, upper strand lifts, lower strand drops, both softly return toward opening relationship. Soft amber, teal, rose and lavender pigments; readable stages, no baked axis."
+ },
+ "E10": {
+  "id": "E10",
+  "pack": "W2",
+  "title": "Four moments measured timeline",
+  "mode": "NATIVE / E09 reuse",
+  "fields": {
+   "Production": "NATIVE / E09 reuse",
+   "Learn": "Read and count the exact pitch events in time rather than trusting an ornamental path.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Create precise native two-lane horizontal timeline, reusing E09 art at margins only.",
+   "Static accuracy / factual overlay": "Source B.path moments at 0, 2.5, 5, 7.5 seconds and end at 10 seconds; note-event continuity verified from fixtures. Distinct lower and upper lanes with native labels.",
+   "Illustration reading / own-keyboard instruction": "Explain left-to-right time, when upper changes versus lower, then physically play source sequence.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Create precise native two-lane horizontal timeline, reusing E09 art at margins only."
+ },
+ "E11": {
+  "id": "E11",
+  "pack": "W2",
+  "title": "Compose a two-voice conversation",
+  "mode": "NATIVE / ART variant",
+  "fields": {
+   "Production": "NATIVE / ART variant",
+   "Learn": "Turn learned motion families into a miniature of the learner's own.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Reuse a small section of E09 painterly ribbon and create a static source example plus blank printable two-lane sketch lines.",
+   "Static accuracy / factual overlay": "Native C+E → C+F → B+F → C+E source example, accurate keyboard mini strip; no model labels.",
+   "Illustration reading / own-keyboard instruction": "Start from C/E, move one voice, let other respond, make intentional return; do it on real keyboard and optionally sketch on paper.",
+   "Guard": "No model-generated letters/piano keys, no on-page music interactivity or copied card backgrounds. Precise source labels separate from composable painterly art; prose must teach the graphic in full paragraphs.\n\n## Lesson 2C — Compose with Only Two Voices"
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Reuse a small section of E09 painterly ribbon and create a static source example plus blank printable two-lane sketch lines."
+ },
+ "F01": {
+  "id": "F01",
+  "pack": "W2",
+  "title": "Same upper melody, two foundations",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "See identical E–F–E melodic notes above two different lower-voice arrangements.",
+   "Nano Banana art-only SCENE PROMPT": "Two elegant side-by-side panoramic watercolor soundscapes share the SAME perfectly recognizable upper violet/teal three-part bloom, while one has a continuous luminous warm amber foundation and the other an amber foundation that gently lowers into a cooler middle region before returning. Hand-painted light, independent transparent fading edges, no page frame.",
+   "Static accuracy / factual overlay": "Source C.held versus C.moving: upper E4 4–10s, F4 14–20s, E4 26–32s identical; bass C4 held for 36s versus C4 0–12, B3 12–24, C4 24–36. Exact native two-row representation.",
+   "Illustration reading / own-keyboard instruction": "Explain how to follow identical upper ribbon and compare lower changes; learner plays E–F–E twice with different lower support on own keyboard.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "Two elegant side-by-side panoramic watercolor soundscapes share the SAME perfectly recognizable upper violet/teal three-part bloom, while one has a continuous luminous warm amber foundation and the other an amber foundation that gently lowers into a cooler middle region before returning. Hand-painted light, independent transparent fading edges, no page frame."
+ },
+ "F02": {
+  "id": "F02",
+  "pack": "W2",
+  "title": "Held C beneath the same melody",
+  "mode": "ART variant of F01",
+  "fields": {
+   "Production": "ART variant of F01",
+   "Learn": "Show C remains present while E, F, E visit and leave.",
+   "Nano Banana art-only SCENE PROMPT": "REUSE/crop F01's LEFT watercolor soundscape as its own wide art-only piece: the lower golden wash stays luminous and continuous, upper light rises and returns in separated small blooms. If crop is artistically broken, generate a compatible independent painterly scene with exactly these compositional roles.",
+   "Static accuracy / factual overlay": "Source held C 0–36s, upper E 4–10, F 14–20, E 26–32; C–E 4 semitones, C–F 5. Accurate native static event strip and keyboard.",
+   "Illustration reading / own-keyboard instruction": "Teach what remains and what changes in each pairing; learner holds C where possible and moves upper E→F→E.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "REUSE/crop F01's LEFT watercolor soundscape as its own wide art-only piece: the lower golden wash stays luminous and continuous, upper light rises and returns in separated small blooms. If crop is artistically broken, generate a compatible independent painterly scene with exactly these compositional roles."
+ },
+ "F03": {
+  "id": "F03",
+  "pack": "W2",
+  "title": "The supporting landscape begins to move",
+  "mode": "ART variant of F01",
+  "fields": {
+   "Production": "ART variant of F01",
+   "Learn": "Show lower voice C→B→C under the SAME upper melody.",
+   "Nano Banana art-only SCENE PROMPT": "REUSE/crop F01's RIGHT watercolor soundscape with a visually consistent upper three-bloom motif, but lower golden field gliding into a softer cooler B-region in the middle and returning to the warm starting level, clear changing context.",
+   "Static accuracy / factual overlay": "Source C.moving lower C4 0–12s, B3 12–24, C4 24–36, while upper E/F/E windows remain as F01. Exact native pitches/lanes.",
+   "Illustration reading / own-keyboard instruction": "Guide eyes to the changed lower path, keep upper notes the same; learner plays original upper idea, then tries lower C→B→C.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "REUSE/crop F01's RIGHT watercolor soundscape with a visually consistent upper three-bloom motif, but lower golden field gliding into a softer cooler B-region in the middle and returning to the warm starting level, clear changing context."
+ },
+ "F04": {
+  "id": "F04",
+  "pack": "W2",
+  "title": "Shared Musical Worlds — same note, new support",
+  "mode": "ART REUSE approved M02 G03",
+  "fields": {
+   "Production": "ART REUSE approved M02 G03",
+   "Learn": "Show actual shared note in intersection and changing note in exclusive regions.",
+   "Nano Banana art-only SCENE PROMPT": "REUSE M02 G03-B-shared-worlds art-only source; two richly illustrated overlapping translucent fields with calm bright central lens, clearly separate amber exclusive region and teal/lavender exclusive region. If refreshing, keep watercolor depth, empty spots for later deterministic labels and no embedded text.",
+   "Static accuracy / factual overlay": "At the F moment (14–20s) source situations {C,F} and {B,F}; intersection EXACTLY {F}, only held={C}, only moving={B}. Native exact Venn labels and keyboard C/B/F; C–F 5, B–F 6 semitones.",
+   "Illustration reading / own-keyboard instruction": "Teach note-set membership by tracing F in common region and C/B in their own regions; learner plays C+F then B+F, keeping F unchanged.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "REUSE M02 G03-B-shared-worlds art-only source; two richly illustrated overlapping translucent fields with calm bright central lens, clearly separate amber exclusive region and teal/lavender exclusive region. If refreshing, keep watercolor depth, empty spots for later deterministic labels and no embedded text."
+ },
+ "F05": {
+  "id": "F05",
+  "pack": "W2",
+  "title": "Objective change versus personal response",
+  "mode": "VARIANT / NATIVE",
+  "fields": {
+   "Production": "VARIANT / NATIVE",
+   "Learn": "Distinguish what can be proved about notes from the listener's own impression.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Use native paired factual / reflective prose alongside a small crop of F01 or F04 art, no new independent image generation.",
+   "Static accuracy / factual overlay": "Facts F unchanged, bass C versus B. Separate native caption 'What changes?' from open prompt 'How did that feel to you?'.",
+   "Illustration reading / own-keyboard instruction": "Play both combinations and describe whether either feels more stable or unsettled TO YOU, without a forced correct emotion.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Use native paired factual / reflective prose alongside a small crop of F01 or F04 art, no new independent image generation."
+ },
+ "F06": {
+  "id": "F06",
+  "pack": "W2",
+  "title": "Two versions aligned in time",
+  "mode": "NATIVE",
+  "fields": {
+   "Production": "NATIVE",
+   "Learn": "Read exactly when both upper and lower voices play across the two 36-second source studies.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Build two precisely registered two-lane static native timelines with clean C/E/F/B labels and tasteful F01 art at their margins.",
+   "Static accuracy / factual overlay": "Upper E 4–10s / F 14–20 / E 26–32 identical; lower held C 0–36 versus moving C 0–12, B 12–24, C 24–36. Blank upper regions mean upper rests while lower may still sound.",
+   "Illustration reading / own-keyboard instruction": "Explain how to compare the same moment across both versions; learner plays their defining three pairings on own keyboard.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Build two precisely registered two-lane static native timelines with clean C/E/F/B labels and tasteful F01 art at their margins."
+ },
+ "F07": {
+  "id": "F07",
+  "pack": "W2",
+  "title": "C–F versus B–F semitone distance",
+  "mode": "NATIVE",
+  "fields": {
+   "Production": "NATIVE",
+   "Learn": "See that changing only the bass changes actual pitch interval size and spelling.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Precisely rendered side-by-side native keyboard/ruler examples with a small atmospheric F04 lens motif behind the comparison.",
+   "Static accuracy / factual overlay": "C4–F4 = 5 semitones / perfect fourth; B3–F4 = 6 semitones / diminished fifth (tritone). True geometrical chromatic key positions, exact labels and semitone hops.",
+   "Illustration reading / own-keyboard instruction": "Teach where the extra semitone comes from by counting on physical keyboard; play each pair.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Precisely rendered side-by-side native keyboard/ruler examples with a small atmospheric F04 lens motif behind the comparison."
+ },
+ "F08": {
+  "id": "F08",
+  "pack": "W2",
+  "title": "Two-voice musical dialogue",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "Make two separate lines behave like a question and answer while retaining notes and pauses.",
+   "Nano Banana art-only SCENE PROMPT": "Two individually traceable translucent watercolor ribbons interact in a gentle conversational shape—one softly arching gesture seems to invite, another lifts in response then settles with airy pause; fine light-petal overlaps, restrained warm amber and lavender, no characters or speech bubbles.",
+   "Static accuracy / factual overlay": "Native labelled OPTIONAL practice path from source C.dialogue C+E → C+F → B+F → C+E, as a static worked example. Do not claim the invented visual shape itself encodes precise pitch/time.",
+   "Illustration reading / own-keyboard instruction": "Learner plays the four states on physical instrument, alters one note or pause to write an original response.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "Two individually traceable translucent watercolor ribbons interact in a gentle conversational shape—one softly arching gesture seems to invite, another lifts in response then settles with airy pause; fine light-petal overlaps, restrained warm amber and lavender, no characters or speech bubbles."
+ },
+ "F09": {
+  "id": "F09",
+  "pack": "W2",
+  "title": "One melody in two contexts — compare",
+  "mode": "VARIANT / F01 reuse",
+  "fields": {
+   "Production": "VARIANT / F01 reuse",
+   "Learn": "Recognize that changing the support can change the musical experience without changing the melody.",
+   "Nano Banana art-only SCENE PROMPT": "NONE. Reuse F01 paired original art with identical upper motif visually emphasized and separate native prose/callouts; no new model scene needed.",
+   "Static accuracy / factual overlay": "Native source upper E/F/E identical, base held C versus C/B/C, exact four voice roles and positions.",
+   "Illustration reading / own-keyboard instruction": "Explain and play each context, ask learner to describe personal difference without universal mood scoring.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "NONE. Reuse F01 paired original art with identical upper motif visually emphasized and separate native prose/callouts; no new model scene needed."
+ },
+ "F10": {
+  "id": "F10",
+  "pack": "W2",
+  "title": "Week 2 recap: a two-voice soundscape",
+  "mode": "ART 16:9",
+  "fields": {
+   "Production": "ART 16:9",
+   "Learn": "Synthesize dyad/interval, movement and changed support into one meaningful two-voice composition.",
+   "Nano Banana art-only SCENE PROMPT": "One poetic panoramic watercolor landscape of TWO independently traceable gold and teal/lavender light strands: begin as distinct paired notes, travel and alter their relation through overlapping petal regions, arrive at an intentional shared luminous lens and open toward a soft horizon; opulent yet calm, no new fictitious keyboard notes.",
+   "Static accuracy / factual overlay": "Native three mini recap anchors: C/E distance, B.path motion, C.held versus C.moving shared-F comparison. Ensure distinct actual source facts; no false whole-class chord chart.",
+   "Illustration reading / own-keyboard instruction": "Learner performs a short two-voice idea using one held note, one changed note and a meaningful pause on real synth, then describes the choice.",
+   "Guard": "No model-generated notes/keys, no changing the source's identical E–F–E melody, no on-page audio or musical interactions. Keep A atmosphere separate from B richly painted art and C exact SVG/HTML, with full teaching explanation and learner exercise."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT",
+  "aspect": null,
+  "prompt": "One poetic panoramic watercolor landscape of TWO independently traceable gold and teal/lavender light strands: begin as distinct paired notes, travel and alter their relation through overlapping petal regions, arrive at an intentional shared luminous lens and open toward a soft horizon; opulent yet calm, no new fictitious keyboard notes."
+ },
+ "S01": {
+  "id": "S01",
+  "pack": "SUP",
+  "title": "Main AMF homepage Ajourné entry",
+  "mode": "DEFER — wider site retrofit",
+  "fields": {
+   "Mode": "DEFER — wider site retrofit",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Not a Week 1–2 lesson infographic; use the approved shared atmosphere only when M05 updates AMF homepage. NO standalone model call now.",
+   "Teaching/source/acceptance rule": "No source claim; no Week 1–2 budget allocation."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Not a Week 1–2 lesson infographic; use the approved shared atmosphere only when M05 updates AMF homepage. NO standalone model call now."
+ },
+ "S02": {
+  "id": "S02",
+  "pack": "SUP",
+  "title": "Ajourné course landing hero",
+  "mode": "DEFER — wider site retrofit",
+  "fields": {
+   "Mode": "DEFER — wider site retrofit",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Separate full course landing artwork from six lesson pilots. Do not repurpose an infographics' rectangular screenshot.",
+   "Teaching/source/acceptance rule": "Source M05 course entry, not current week graphic pack."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Separate full course landing artwork from six lesson pilots. Do not repurpose an infographics' rectangular screenshot."
+ },
+ "S03": {
+  "id": "S03",
+  "pack": "SUP",
+  "title": "How learning works",
+  "mode": "NATIVE + ART optional",
+  "fields": {
+   "Mode": "NATIVE + ART optional",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Native static explain→see→play-on-own-keyboard→notice→create pathway with re-used organic accent from Week 1 art; no virtual sound playback icon. If genuinely new ART necessary: a delicate handwritten-feeling watercolor loop of five subtly different petals arranged as an inviting path, light and open, text-free.",
+   "Teaching/source/acceptance rule": "Do not generate a screenshot of an interactive teaching UI."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Native static explain→see→play-on-own-keyboard→notice→create pathway with re-used organic accent from Week 1 art; no virtual sound playback icon. If genuinely new ART necessary: a delicate handwritten-feeling watercolor loop of five subtly different petals arranged as an inviting path, light and open, text-free."
+ },
+ "S04": {
+  "id": "S04",
+  "pack": "SUP",
+  "title": "Eight-week course journey",
+  "mode": "DEFER until site M05",
+  "fields": {
+   "Mode": "DEFER until site M05",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Separate course-wide inventory; native available/not-yet-published labels, illustrative relationship motif, no fake Week 3–8 pages.",
+   "Teaching/source/acceptance rule": "Weeks 1–2 assets only."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Separate course-wide inventory; native available/not-yet-published labels, illustrative relationship motif, no fake Week 3–8 pages."
+ },
+ "S05": {
+  "id": "S05",
+  "pack": "SUP",
+  "title": "Physical synth setup / choose a sound",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Accurate static two/three black-key grouping, general keyboard orientation and optionally schematic volume selector with no specific unsupported manufacturer/interface. A warm reused watercolor halo may frame keyboard. Nano Banana scene prompt: NONE.",
+   "Teaching/source/acceptance rule": "Learner chooses a gentle sound and comfortable volume on own physical keyboard. No virtual piano."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Accurate static two/three black-key grouping, general keyboard orientation and optionally schematic volume selector with no specific unsupported manufacturer/interface. A warm reused watercolor halo may frame keyboard. Nano Banana scene prompt: NONE."
+ },
+ "S08": {
+  "id": "S08",
+  "pack": "SUP",
+  "title": "Guided lesson progress and illustrations legend",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Ordinary static page count/Next/Previous and 'how to read our pictures' legend, styled with light watercolor accent, no animated progress badges. Nano Banana scene prompt: NONE.",
+   "Teaching/source/acceptance rule": "Navigation is okay; interactive note playing/reveal is not."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Ordinary static page count/Next/Previous and 'how to read our pictures' legend, styled with light watercolor accent, no animated progress badges. Nano Banana scene prompt: NONE."
+ },
+ "S09": {
+  "id": "S09",
+  "pack": "SUP",
+  "title": "Lesson thumbnail family",
+  "mode": "VARIANT",
+  "fields": {
+   "Mode": "VARIANT",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Crop approved A04, B01, C01, D03, E03, F01 art into six clear lesson previews; retain consistent aspect and transparent organic edge. No new model calls by default.",
+   "Teaching/source/acceptance rule": "Thumbnails are introductions, not full instructional replacements."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Crop approved A04, B01, C01, D03, E03, F01 art into six clear lesson previews; retain consistent aspect and transparent organic edge. No new model calls by default."
+ },
+ "S10": {
+  "id": "S10",
+  "pack": "SUP",
+  "title": "Recap triptych family",
+  "mode": "VARIANT / NATIVE",
+  "fields": {
+   "Mode": "VARIANT / NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Build native end-of-lesson triptych from lesson's existing primary figures, one caption each pointing to fuller teaching already provided; art backgrounds reused.",
+   "Teaching/source/acceptance rule": "No loss of multi-paragraph explanations in actual lessons."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Build native end-of-lesson triptych from lesson's existing primary figures, one caption each pointing to fuller teaching already provided; art backgrounds reused."
+ },
+ "S11": {
+  "id": "S11",
+  "pack": "SUP",
+  "title": "Lesson-to-lesson bridge",
+  "mode": "VARIANT",
+  "fields": {
+   "Mode": "VARIANT",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Gentle painterly fragment from one lesson's closing figure moving toward the next lesson's opening motif. No extra generator unless actual brand composition fails.",
+   "Teaching/source/acceptance rule": "Do not imply an unbuilt lesson is published."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Gentle painterly fragment from one lesson's closing figure moving toward the next lesson's opening motif. No extra generator unless actual brand composition fails."
+ },
+ "S12": {
+  "id": "S12",
+  "pack": "SUP",
+  "title": "Illustration and source-reading legend",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "A static mini legend for glow=center, separate ribbon=distinct voice, overlap=shared membership, solid vs dotted path, numeric ruler=measurement; exact semantics only where those mappings actually used. Nano Banana scene prompt: NONE.",
+   "Teaching/source/acceptance rule": "Never imply painterly ring radius/color measures pitch or emotional value.\n## T01–T10: Week 2 Interval Palette / Atlas"
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "A static mini legend for glow=center, separate ribbon=distinct voice, overlap=shared membership, solid vs dotted path, numeric ruler=measurement; exact semantics only where those mappings actually used. Nano Banana scene prompt: NONE."
+ },
+ "T01": {
+  "id": "T01",
+  "pack": "SUP",
+  "title": "How to read one interval card",
+  "mode": "NATIVE / variant",
+  "fields": {
+   "Mode": "NATIVE / variant",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — source-authored first-use card with precise low/high note, keyboard, semitone count and terminology; D08 flower accent only.",
+   "Teaching/source/acceptance rule": "Anchor existing card record, not fabricated data. Explain how to read; learner plays actual pair."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — source-authored first-use card with precise low/high note, keyboard, semitone count and terminology; D08 flower accent only."
+ },
+ "T02": {
+  "id": "T02",
+  "pack": "SUP",
+  "title": "Interval quality distinctions",
+  "mode": "SOURCE-GATED NATIVE",
+  "fields": {
+   "Mode": "SOURCE-GATED NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — use sourced glossary only to the extent the 13 Atlas cards actually teach quality distinctions. No generalized incorrect hierarchy.",
+   "Teaching/source/acceptance rule": "No prompt without reviewed canonical source."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — use sourced glossary only to the extent the 13 Atlas cards actually teach quality distinctions. No generalized incorrect hierarchy."
+ },
+ "T03": {
+  "id": "T03",
+  "pack": "SUP",
+  "title": "Interval families as related fields",
+  "mode": "ART 16:9",
+  "fields": {
+   "Mode": "ART 16:9",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Original airy cluster of several differently sized luminous watercolor petals and overlapping halos suggesting a *family of relationships*, with gentle amber/teal/lavender transparency and distinct clear spaces for later native labels, no implicit exact interval measure.",
+   "Teaching/source/acceptance rule": "Art is explicitly metaphorical and no semitone counts embedded; link to true table separately."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Original airy cluster of several differently sized luminous watercolor petals and overlapping halos suggesting a *family of relationships*, with gentle amber/teal/lavender transparency and distinct clear spaces for later native labels, no implicit exact interval measure."
+ },
+ "T04": {
+  "id": "T04",
+  "pack": "SUP",
+  "title": "Letters versus chromatic hops",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — accurate keyboard dual count e.g. C→E three letter positions, four semitones; B→F five letter positions, six semitones. Use native typesetting, optional reused D03/E08 glow.",
+   "Teaching/source/acceptance rule": "Native spellings and semitone counts only."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — accurate keyboard dual count e.g. C→E three letter positions, four semitones; B→F five letter positions, six semitones. Use native typesetting, optional reused D03/E08 glow."
+ },
+ "T05": {
+  "id": "T05",
+  "pack": "SUP",
+  "title": "Tritone source lens",
+  "mode": "NATIVE / ART accent",
+  "fields": {
+   "Mode": "NATIVE / ART accent",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — source 2B B→F diminished fifth six semitones measured on true keyboard; reuse E03 petal accent behind it. If deeper Atlas tritone examples present, use verified records separately.",
+   "Teaching/source/acceptance rule": "Avoid unverified C→F♯ source events or false spelling."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — source 2B B→F diminished fifth six semitones measured on true keyboard; reuse E03 petal accent behind it. If deeper Atlas tritone examples present, use verified records separately."
+ },
+ "T06": {
+  "id": "T06",
+  "pack": "SUP",
+  "title": "Atlas reading key",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — static labels, semantic color/shape legend, note range and 13-card list. The previous audio, playback-mode buttons or comparison toggles are not part of the current static course.",
+   "Teaching/source/acceptance rule": "Ordinary links to all 13 deep chapters remain accessible."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — static labels, semantic color/shape legend, note range and 13-card list. The previous audio, playback-mode buttons or comparison toggles are not part of the current static course."
+ },
+ "T07": {
+  "id": "T07",
+  "pack": "SUP",
+  "title": "13-card individual art family",
+  "mode": "ART TEMPLATE, source-gated",
+  "fields": {
+   "Mode": "ART TEMPLATE, source-gated",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "A small original organic translucent watercolor bridge/petal pair with clear negative space for accurate native interval title, note positions and semitone ruler; create a coordinated *family* of distinct relationship variations rather than thirteen arbitrary unrelated paintings.",
+   "Teaching/source/acceptance rule": "Expand for all 13 actual Atlas card data, validate each. Do not infer exactly thirteen image calls or label invented notes; reuse template and vary only where educationally useful."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "A small original organic translucent watercolor bridge/petal pair with clear negative space for accurate native interval title, note positions and semitone ruler; create a coordinated *family* of distinct relationship variations rather than thirteen arbitrary unrelated paintings."
+ },
+ "T08": {
+  "id": "T08",
+  "pack": "SUP",
+  "title": "13 Atlas deep-chapter openings",
+  "mode": "ART TEMPLATE / source-gated",
+  "fields": {
+   "Mode": "ART TEMPLATE / source-gated",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "An editorial miniature of delicate translucent light strands and nested botanical rings designed to support a long-form researched music explainer, with an unobstructed large prose area and subtle organic edge fading.",
+   "Teaching/source/acceptance rule": "No claim about a chapter's science, history or associated emotion unless in existing source. Preserve full 13 chapter bodies and links."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "An editorial miniature of delicate translucent light strands and nested botanical rings designed to support a long-form researched music explainer, with an unobstructed large prose area and subtle organic edge fading."
+ },
+ "T09": {
+  "id": "T09",
+  "pack": "SUP",
+  "title": "Printable interval reference",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — static print-friendly grayscale/high-contrast keyboard ruler, source names, note-letter distance, chromatic count and how-to-read key. Art can be omitted in ink-saving print.",
+   "Teaching/source/acceptance rule": "Accurate at letter and semitone level; no audio controls or clickable answers."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — static print-friendly grayscale/high-contrast keyboard ruler, source names, note-letter distance, chromatic count and how-to-read key. Art can be omitted in ink-saving print."
+ },
+ "T10": {
+  "id": "T10",
+  "pack": "SUP",
+  "title": "Practice: one interval, physical keys",
+  "mode": "NATIVE / variant",
+  "fields": {
+   "Mode": "NATIVE / variant",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — one source-verified interval example and blank physical-keyboard practice prompt; no virtual quiz. Reuse T01 art accent.",
+   "Teaching/source/acceptance rule": "Learner identifies and plays the notes on own instrument, then compares another sourced interval.\n## X01–X10: Enrichment and supporting illustrations"
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — one source-verified interval example and blank physical-keyboard practice prompt; no virtual quiz. Reuse T01 art accent."
+ },
+ "X01": {
+  "id": "X01",
+  "pack": "SUP",
+  "title": "History Postcard",
+  "mode": "OPTIONAL ART 16:9",
+  "fields": {
+   "Mode": "OPTIONAL ART 16:9",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "An original small archival-feeling watercolor and fine-ink vignette: a warm parchment-tone but transparent-edged suggestion of historic keyboard-craft tools, elegant feathered washes and lavender/amber ink markings; no fake text, named historical person, exact instrument or claims.",
+   "Teaching/source/acceptance rule": "Illustration supports existing researched History Postcard copy/links; do not fabricate historical event or portrait."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "An original small archival-feeling watercolor and fine-ink vignette: a warm parchment-tone but transparent-edged suggestion of historic keyboard-craft tools, elegant feathered washes and lavender/amber ink markings; no fake text, named historical person, exact instrument or claims."
+ },
+ "X02": {
+  "id": "X02",
+  "pack": "SUP",
+  "title": "Behind the Sound / science",
+  "mode": "OPTIONAL ART 16:9 + native diagrams",
+  "fields": {
+   "Mode": "OPTIONAL ART 16:9 + native diagrams",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "Delicate translucent ripple and resonant light-fields visually communicating an analogy of vibration, atmospheric teal and amber watercolor, clearly poetic, fading organically with generous white space.",
+   "Teaching/source/acceptance rule": "Where real pitch/frequency/partials are taught, draw accurate separate native scientific waveforms/figures with units and sources; model art cannot impersonate measured data."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "Delicate translucent ripple and resonant light-fields visually communicating an analogy of vibration, atmospheric teal and amber watercolor, clearly poetic, fading organically with generous white space."
+ },
+ "X03": {
+  "id": "X03",
+  "pack": "SUP",
+  "title": "Musical Worlds / culture",
+  "mode": "OPTIONAL ART 16:9",
+  "fields": {
+   "Mode": "OPTIONAL ART 16:9",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "An original warmly layered abstract meeting of different nonrepresentational musical textures and flowing color traditions, overlapping watercolor pigment fields, no costumes, geographical icons, flags, famous culturally specific instrument depictions or invented cultural symbols.",
+   "Teaching/source/acceptance rule": "Only context/source named in preserved research may authorize specific instrument/place motifs. Avoid universalization or exoticizing."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "An original warmly layered abstract meeting of different nonrepresentational musical textures and flowing color traditions, overlapping watercolor pigment fields, no costumes, geographical icons, flags, famous culturally specific instrument depictions or invented cultural symbols."
+ },
+ "X04": {
+  "id": "X04",
+  "pack": "SUP",
+  "title": "Ambient Composer's Notebook",
+  "mode": "OPTIONAL ART 16:9",
+  "fields": {
+   "Mode": "OPTIONAL ART 16:9",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "A tiny atmospheric studio-like study of overlapping handwritten-feeling watercolor paths and organic melodic seed marks on mostly white air, original delicately layered amber/lavender/teal ink, no readable fake musical notation or brand instrument.",
+   "Teaching/source/acceptance rule": "Support actual practice description; no drawn nonexistent composer quote/source."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "A tiny atmospheric studio-like study of overlapping handwritten-feeling watercolor paths and organic melodic seed marks on mostly white air, original delicately layered amber/lavender/teal ink, no readable fake musical notation or brand instrument."
+ },
+ "X05": {
+  "id": "X05",
+  "pack": "SUP",
+  "title": "Hear It in Real Music",
+  "mode": "OPTIONAL ART 16:9",
+  "fields": {
+   "Mode": "OPTIONAL ART 16:9",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "An intimate painterly still-life of soft rippling colored light around a modest abstract listening space, gentle organic soundscape waves and elegant paperlike negative space; no people, album covers, artist names or embedded fake record-player buttons.",
+   "Teaching/source/acceptance rule": "Keep authentic outbound links to source-confirmed music; no rights violations or embedded audio requirement."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "An intimate painterly still-life of soft rippling colored light around a modest abstract listening space, gentle organic soundscape waves and elegant paperlike negative space; no people, album covers, artist names or embedded fake record-player buttons."
+ },
+ "X06": {
+  "id": "X06",
+  "pack": "SUP",
+  "title": "Paint What You Hear",
+  "mode": "OPTIONAL ART 16:9",
+  "fields": {
+   "Mode": "OPTIONAL ART 16:9",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "A handful of lush handmade-looking watercolor gestures in amber, violet and teal, each a different expressive mark (spiral, sweep, dotted bloom), connected loosely by fine organic strokes, porous pigment texture, luminous transparency, no pitch letters.",
+   "Teaching/source/acceptance rule": "Learner makes subjective sound-to-color art after own keyboard playing; no objective color/pitch associations."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "A handful of lush handmade-looking watercolor gestures in amber, violet and teal, each a different expressive mark (spiral, sweep, dotted bloom), connected loosely by fine organic strokes, porous pigment texture, luminous transparency, no pitch letters."
+ },
+ "X07": {
+  "id": "X07",
+  "pack": "SUP",
+  "title": "Six enrichment category identities",
+  "mode": "VARIANT / NATIVE",
+  "fields": {
+   "Mode": "VARIANT / NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE by default — six refined native icons/shapes using restrained shared painterly motifs, category labels always visible as text.",
+   "Teaching/source/acceptance rule": "Preserve exactly six categories per lesson (36 across W1–W2), full bodies and source links."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE by default — six refined native icons/shapes using restrained shared painterly motifs, category labels always visible as text."
+ },
+ "X08": {
+  "id": "X08",
+  "pack": "SUP",
+  "title": "Optional research navigation",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — ordinary in-page links/details for longer history/science/worlds/listening/composing/painting reading; no interactive music controls.",
+   "Teaching/source/acceptance rule": "Does not make research mandatory or delete substantive writing."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — ordinary in-page links/details for longer history/science/worlds/listening/composing/painting reading; no interactive music controls."
+ },
+ "X09": {
+  "id": "X09",
+  "pack": "SUP",
+  "title": "Accessible/print variants",
+  "mode": "NATIVE",
+  "fields": {
+   "Mode": "NATIVE",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — text equivalents and ink-friendly deterministic overlays; derive high contrast compositions from existing graphics.",
+   "Teaching/source/acceptance rule": "No information conveyed solely by a pastel glow."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — text equivalents and ink-friendly deterministic overlays; derive high contrast compositions from existing graphics."
+ },
+ "X10": {
+  "id": "X10",
+  "pack": "SUP",
+  "title": "Asset provenance, rights and alt text",
+  "mode": "NATIVE metadata",
+  "fields": {
+   "Mode": "NATIVE metadata",
+   "Nano Banana art-only SCENE PROMPT / production instruction": "NONE — record generation model, exact art prompt, reference hash, source/notes, alt text, copyright/licensing checks, dimensions/sha, responsive/print variant and place in lesson.",
+   "Teaching/source/acceptance rule": "Research screenshots are aesthetic reference only, not image assets to reuse.\n\n## Inclusion in production\nPrioritize S05–S12 as relevant to the six lessons, T01/T04/T05/T06/T09 as actual Week 2 instructional references, and X01–X06 only where genuinely useful supporting existing researched text. T07–T08 represent the full existing 13-card/13-chapter resource and may be treated as a later dedicated resource batch; no arbitrary generator-call count. S01–S04 belong to the broader site M05 stage and are not silently added to W1–W2 production budget. Supplement or consolidate art if real instruction demands it, without a cap. No model-generated real note names, key placements, timeline figures or unsupported research claims."
+  },
+  "prompt_key": "Nano Banana art-only SCENE PROMPT / production instruction",
+  "aspect": null,
+  "prompt": "NONE — record generation model, exact art prompt, reference hash, source/notes, alt text, copyright/licensing checks, dimensions/sha, responsive/print variant and place in lesson."
+ }
+}

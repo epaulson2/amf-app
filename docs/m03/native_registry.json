@@ -1,0 +1,2111 @@
+{
+ "S06-native": {
+  "id": "S06-native",
+  "type": "NATIVE-SVG",
+  "title": "Week 1 roadmap: Find C, Travel, Add a voice",
+  "desc": "Three steps in order: 1 Find C, 2 Travel, 3 Add a voice. Below, a keyboard drawing with brackets over the groups of two, three and two black keys; both Cs are highlighted, each the white key just left of a group of two black keys.",
+  "size": [
+   670,
+   221
+  ],
+  "files": [
+   "public/soundscape/m03/native/S06-native.svg",
+   "public/soundscape/m03/native/S06-native.print.svg"
+  ],
+  "group": "W1HUB",
+  "art": "S06",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "Week 1 roadmap: find C, travel, add a voice",
+  "status": "NATIVE READY"
+ },
+ "A01-native": {
+  "id": "A01-native",
+  "type": "NATIVE-SVG",
+  "title": "One note on a keyboard",
+  "desc": "A short run of six white keys with one key highlighted and no letters. One sound only: not a chord, not a scale.",
+  "size": [
+   324,
+   290
+  ],
+  "files": [
+   "public/soundscape/m03/native/A01-native.svg",
+   "public/soundscape/m03/native/A01-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A01",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "one sound; not a chord, not a scale",
+  "status": "NATIVE READY"
+ },
+ "A02-native": {
+  "id": "A02-native",
+  "type": "NATIVE-SVG",
+  "title": "Pitch versus loudness",
+  "desc": "Top: seven white keys; a key and the key to its right are highlighted, with lower to the left and higher to the right. Bottom: the same key played softer and louder, shown as small and large ripples. Higher or lower depends on which key; louder or softer depends on how hard you press.",
+  "size": [
+   320,
+   486
+  ],
+  "files": [
+   "public/soundscape/m03/native/A02-native.svg",
+   "public/soundscape/m03/native/A02-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A01",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "pitch (which key) versus loudness (how hard)",
+  "status": "NATIVE READY"
+ },
+ "A03-native": {
+  "id": "A03-native",
+  "type": "NATIVE-SVG",
+  "title": "Finding C from the black keys",
+  "desc": "Ten white keys. Black keys sit in a group of two, then three, then two, marked 2, 3, 2. The white key just left of each group of two is C; both Cs are highlighted.",
+  "size": [
+   532,
+   298
+  ],
+  "files": [
+   "public/soundscape/m03/native/A03-native.svg",
+   "public/soundscape/m03/native/A03-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A03",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "C is the white key just left of a group of two black keys",
+  "status": "NATIVE READY"
+ },
+ "A03-narrow": {
+  "id": "A03-narrow",
+  "type": "NATIVE-SVG",
+  "title": "Finding C (narrow layout)",
+  "desc": "Eight white keys with groups of two and three black keys marked; the first and last white keys are C, highlighted.",
+  "size": [
+   493,
+   310
+  ],
+  "files": [
+   "public/soundscape/m03/native/A03-narrow.svg",
+   "public/soundscape/m03/native/A03-narrow.print.svg"
+  ],
+  "group": "1A",
+  "art": "A03",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "variantOf": "A03-native",
+  "teach": "narrow-screen layout of A03",
+  "status": "NATIVE READY"
+ },
+ "A05-native": {
+  "id": "A05-native",
+  "type": "NATIVE-SVG",
+  "title": "Seven names, then C again",
+  "desc": "Eight white keys numbered 1 to 8 with the letters C D E F G A B C. The first and last are both C. There is no black key between E and F or between B and C.",
+  "size": [
+   428,
+   316
+  ],
+  "files": [
+   "public/soundscape/m03/native/A05-native.svg",
+   "public/soundscape/m03/native/A05-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A04",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "seven letter names, then C again, one white key at a time",
+  "status": "NATIVE READY"
+ },
+ "A05-narrow": {
+  "id": "A05-narrow",
+  "type": "NATIVE-SVG",
+  "title": "Seven names, then C again (narrow layout)",
+  "desc": "Eight numbered white keys lettered C D E F G A B C.",
+  "size": [
+   493,
+   305
+  ],
+  "files": [
+   "public/soundscape/m03/native/A05-narrow.svg",
+   "public/soundscape/m03/native/A05-narrow.print.svg"
+  ],
+  "group": "1A",
+  "art": "A04",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "variantOf": "A05-native",
+  "teach": "narrow layout of A05",
+  "status": "NATIVE READY"
+ },
+ "A07-native": {
+  "id": "A07-native",
+  "type": "NATIVE-SVG",
+  "title": "Up and back down from C to C",
+  "desc": "Two copies of the same eight white keys. First numbered 1 to 8 from the left C to the right C, going up. Second numbered 1 to 8 from the right C back to the left C, going down.",
+  "size": [
+   386,
+   470
+  ],
+  "files": [
+   "public/soundscape/m03/native/A07-native.svg",
+   "public/soundscape/m03/native/A07-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A06",
+  "variantOf": "A05",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "up C to C, then back down",
+  "status": "NATIVE READY"
+ },
+ "A06-native": {
+  "id": "A06-native",
+  "type": "NATIVE-SVG",
+  "title": "Two Cs, one octave apart",
+  "desc": "Eight white keys. The left-most and right-most are both C and highlighted, joined by an arc labelled one octave up. The right one is higher.",
+  "size": [
+   407,
+   378
+  ],
+  "files": [
+   "public/soundscape/m03/native/A06-native.svg",
+   "public/soundscape/m03/native/A06-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A06",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "same name, higher: one octave up",
+  "status": "NATIVE READY"
+ },
+ "A08-native": {
+  "id": "A08-native",
+  "type": "NATIVE-SVG",
+  "title": "Two endings: away from C and home to C",
+  "desc": "Two keyboards. Version 1 plays the white keys C D E F G in order and stops on G. Version 2 plays C D E D C and stops on C, the home note. Practice example only.",
+  "size": [
+   364,
+   530
+  ],
+  "files": [
+   "public/soundscape/m03/native/A08-native.svg",
+   "public/soundscape/m03/native/A08-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A08",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts (authored practice example, not a lesson recording)",
+  "teach": "same start, two different stopping places",
+  "status": "NATIVE READY"
+ },
+ "A09-native": {
+  "id": "A09-native",
+  "type": "NATIVE-SVG",
+  "title": "A note that stays while others visit",
+  "desc": "Three timelines of six seconds. In each, C sounds the whole time on the lower line, while one visiting note (E, then G, then D in the three examples) sounds from about 1 to 4.5 seconds on the upper line.",
+  "size": [
+   660,
+   610
+  ],
+  "files": [
+   "public/soundscape/m03/native/A09-native.svg",
+   "public/soundscape/m03/native/A09-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A09",
+  "source": "lib/soundscape/week1/fixtures.ts (A02: C held 6 s; visitor E, G or D from 1 s to 4.5 s)",
+  "teach": "one strand stays (C), another visits",
+  "status": "NATIVE READY"
+ },
+ "A10-native": {
+  "id": "A10-native",
+  "type": "NATIVE-SVG",
+  "title": "A tiny melody with a pause (example)",
+  "desc": "An example idea in four boxes and a dashed pause: C, D, E, pause, C. A keyboard shows the first three keys. This is an example; learners choose their own notes.",
+  "size": [
+   520,
+   343
+  ],
+  "files": [
+   "public/soundscape/m03/native/A10-native.svg",
+   "public/soundscape/m03/native/A10-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A10",
+  "source": "authored example (C D E, pause, C); not a source fixture",
+  "teach": "your own three or four notes, with a pause",
+  "status": "NATIVE READY"
+ },
+ "A11-native": {
+  "id": "A11-native",
+  "type": "NATIVE-SVG",
+  "title": "Your own sound-to-colour map",
+  "desc": "Three empty dashed circles labelled sound 1, sound 2 and sound 3, each with two blank writing lines. Your own sound-to-colour interpretation: there is no fixed colour for any note.",
+  "size": [
+   660,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/A11-native.svg",
+   "public/soundscape/m03/native/A11-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A11",
+  "source": "caption only; no fixed pitch=colour legend",
+  "teach": "your own sound-to-colour interpretation",
+  "status": "NATIVE READY"
+ },
+ "A12-native": {
+  "id": "A12-native",
+  "type": "NATIVE-SVG",
+  "title": "Lesson 1A recap",
+  "desc": "Four small panels. 1: the two-then-three black-key pattern with both Cs highlighted. 2: the white keys C to the next C, one octave. 3: C at the centre with D E F G A B around it, chosen as home in this exercise. 4: a twelve-second timeline where the lower C is held while the upper voice visits E, G and D.",
+  "size": [
+   700,
+   389
+  ],
+  "files": [
+   "public/soundscape/m03/native/A12-native.svg",
+   "public/soundscape/m03/native/A12-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "A04",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "Lesson 1A recap sheet",
+  "status": "NATIVE READY"
+ },
+ "B01-early": {
+  "id": "B01-early",
+  "type": "NATIVE-SVG",
+  "title": "Seven rising notes, unfinished",
+  "desc": "Seven white keys numbered 1 to 7 with the letters C D E F G A B, played one at a time. The path stops on the seventh note.",
+  "size": [
+   376,
+   316
+  ],
+  "files": [
+   "public/soundscape/m03/native/B01-early.svg",
+   "public/soundscape/m03/native/B01-early.print.svg"
+  ],
+  "group": "1B",
+  "art": "B01",
+  "source": "lib/soundscape/week1/fixtures.ts (B01: seven rising notes C D E F G A B)",
+  "teach": "prediction page: answer-neutral",
+  "ids": [
+   "B07"
+  ],
+  "status": "NATIVE READY"
+ },
+ "B01-pair": {
+  "id": "B01-pair",
+  "type": "NATIVE-SVG",
+  "title": "Same beginning, different last note",
+  "desc": "Two keyboards. Ending 1 plays C D E F G A B and stops on B. Ending 2 plays the same seven notes and then adds the higher C, highlighted as home. Only the second adds the higher C.",
+  "size": [
+   428,
+   576
+  ],
+  "files": [
+   "public/soundscape/m03/native/B01-pair.svg",
+   "public/soundscape/m03/native/B01-pair.print.svg"
+  ],
+  "group": "1B",
+  "art": "B01",
+  "source": "lib/soundscape/week1/fixtures.ts (B01 vs B02: B02 adds only the higher C)",
+  "teach": "after the prediction: both endings side by side",
+  "ids": [
+   "B08"
+  ],
+  "status": "NATIVE READY"
+ },
+ "B02-native": {
+  "id": "B02-native",
+  "type": "NATIVE-SVG",
+  "title": "Where the half steps really are",
+  "desc": "Three keyboard pieces, each one semitone: E to F (two white keys with no black key between them), B to C (also no black key between), and C to C sharp (a white key and the black key right next to it).",
+  "size": [
+   780,
+   339
+  ],
+  "files": [
+   "public/soundscape/m03/native/B02-native.svg",
+   "public/soundscape/m03/native/B02-native.print.svg"
+  ],
+  "group": "1B",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "a semitone is the very next key, white or black",
+  "status": "NATIVE READY"
+ },
+ "B03-native": {
+  "id": "B03-native",
+  "type": "NATIVE-SVG",
+  "title": "A whole step is two semitones",
+  "desc": "Left: C to D passes through the black key C sharp, two one-semitone hops, a whole step. Right: E to F sharp passes through F, also two semitones.",
+  "size": [
+   400,
+   335
+  ],
+  "files": [
+   "public/soundscape/m03/native/B03-native.svg",
+   "public/soundscape/m03/native/B03-native.print.svg"
+  ],
+  "group": "1B",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "a whole step is two semitones",
+  "status": "NATIVE READY"
+ },
+ "B04-native": {
+  "id": "B04-native",
+  "type": "NATIVE-SVG",
+  "title": "One white-key move, two real distances",
+  "desc": "Left: C to D crosses one black key, so it is 2 semitones. Right: E to F has no black key between them, so it is 1 semitone. Each move is one white key, but the distances differ.",
+  "size": [
+   457,
+   335
+  ],
+  "files": [
+   "public/soundscape/m03/native/B04-native.svg",
+   "public/soundscape/m03/native/B04-native.print.svg"
+  ],
+  "group": "1B",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "two white-key moves, two different real distances",
+  "status": "NATIVE READY"
+ },
+ "B05-native": {
+  "id": "B05-native",
+  "type": "NATIVE-SVG",
+  "title": "C major: whole, whole, half, whole, whole, whole, half",
+  "desc": "Eight white keys C to C. Arcs between neighbouring scale notes are labelled W for a whole step of 2 semitones or H for a half step of 1: W W H W W W H. The half steps are E to F and B to C.",
+  "size": [
+   428,
+   398
+  ],
+  "files": [
+   "public/soundscape/m03/native/B05-native.svg",
+   "public/soundscape/m03/native/B05-native.print.svg"
+  ],
+  "group": "1B",
+  "art": "B05",
+  "source": "whole-whole-half-whole-whole-whole-half = 2,2,1,2,2,2,1 (lesson 1B formula); keyboard geometry",
+  "teach": "the major scale is a pattern of unequal steps",
+  "status": "NATIVE READY"
+ },
+ "B06-native": {
+  "id": "B06-native",
+  "type": "NATIVE-SVG",
+  "title": "Seven names and the next C",
+  "desc": "Eight white keys numbered 1 to 8 lettered C D E F G A B C; the first and last are both C.",
+  "size": [
+   428,
+   294
+  ],
+  "files": [
+   "public/soundscape/m03/native/B06-native.svg",
+   "public/soundscape/m03/native/B06-native.print.svg"
+  ],
+  "group": "1B",
+  "art": "B05",
+  "variantOf": "A05",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "seven names and the next C",
+  "status": "NATIVE READY"
+ },
+ "B09-native": {
+  "id": "B09-native",
+  "type": "NATIVE-SVG",
+  "title": "Closeness versus measured distance",
+  "desc": "Left: C to C sharp is 1 semitone, the very next key. Right: C to D is 2 semitones. The painted arcs are only decoration; the numbered hops on the real keys are the measurement.",
+  "size": [
+   400,
+   335
+  ],
+  "files": [
+   "public/soundscape/m03/native/B09-native.svg",
+   "public/soundscape/m03/native/B09-native.print.svg"
+  ],
+  "group": "1B",
+  "art": "B09",
+  "source": "lib/soundscape/week1/fixtures.ts + lib/soundscape/m02/keyboard-geometry.ts",
+  "teach": "closeness on the page is not measured distance",
+  "status": "NATIVE READY"
+ },
+ "B10-native": {
+  "id": "B10-native",
+  "type": "NATIVE-SVG",
+  "title": "Make an open ending and an arrival",
+  "desc": "Two keyboards sharing the opening C D E: one ends on G, the other ends on C. Authored practice patterns, not a lesson recording.",
+  "size": [
+   343,
+   508
+  ],
+  "files": [
+   "public/soundscape/m03/native/B10-native.svg",
+   "public/soundscape/m03/native/B10-native.print.svg"
+  ],
+  "group": "1B",
+  "art": "B10",
+  "source": "authored practice example (stem C D E); not a source fixture",
+  "teach": "same beginning, two endings: yours to compare",
+  "status": "NATIVE READY"
+ },
+ "B11-native": {
+  "id": "B11-native",
+  "type": "NATIVE-SVG",
+  "title": "The same pattern from G (optional)",
+  "desc": "Eight white keys starting on G. The same whole-whole-half-whole-whole-whole-half arcs, with the seventh note the black key F sharp. Optional enrichment.",
+  "size": [
+   428,
+   374
+  ],
+  "files": [
+   "public/soundscape/m03/native/B11-native.svg",
+   "public/soundscape/m03/native/B11-native.print.svg"
+  ],
+  "group": "1B",
+  "art": "B05",
+  "variantOf": "B05",
+  "source": "computed and asserted: G A B C D E F\u266f G = 2,2,1,2,2,2,1",
+  "teach": "optional: the same pattern starts anywhere",
+  "status": "NATIVE READY"
+ },
+ "C01-native": {
+  "id": "C01-native",
+  "type": "NATIVE-SVG",
+  "title": "A held lower C with three visiting notes",
+  "desc": "Twelve-second timeline. Lower voice: C for the whole 12 seconds. Upper voice: E from 2 to 4 seconds, G from 5 to 7, D from 9 to 11.",
+  "size": [
+   660,
+   176
+  ],
+  "files": [
+   "public/soundscape/m03/native/C01-native.svg",
+   "public/soundscape/m03/native/C01-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C01",
+  "source": "lib/soundscape/week1/fixtures.ts C01: lower C 0-12 s; upper E 2-4, G 5-7, D 9-11",
+  "teach": "a held foundation with visiting upper notes",
+  "status": "NATIVE READY"
+ },
+ "C02-native": {
+  "id": "C02-native",
+  "type": "NATIVE-SVG",
+  "title": "Two distinct voices",
+  "desc": "A timeline of the lower voice holding C while the upper voice plays E, G, D, and below it a keyboard showing the lower C and the upper notes D, E and G further to the right.",
+  "size": [
+   660,
+   335
+  ],
+  "files": [
+   "public/soundscape/m03/native/C02-native.svg",
+   "public/soundscape/m03/native/C02-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C02",
+  "source": "week1 fixtures C01 + keyboard geometry",
+  "teach": "two voices, two lines of notes",
+  "status": "NATIVE READY"
+ },
+ "C03-native": {
+  "id": "C03-native",
+  "type": "NATIVE-SVG",
+  "title": "Lower and higher voice positions",
+  "desc": "Fourteen white keys. The lower voice is the highlighted C on the left. The upper voice is the highlighted D, E and G further right.",
+  "size": [
+   459,
+   194
+  ],
+  "files": [
+   "public/soundscape/m03/native/C03-native.svg",
+   "public/soundscape/m03/native/C03-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C02",
+  "source": "week1 fixtures C01 pitches (C lower; E, G, D upper) + keyboard geometry",
+  "teach": "lower voice left, upper voice right",
+  "status": "NATIVE READY"
+ },
+ "C04-native": {
+  "id": "C04-native",
+  "type": "NATIVE-SVG",
+  "title": "Early versus late entrance",
+  "desc": "Two twelve-second timelines with the lower C held throughout. In the first, the upper E plays from 2 to 6 seconds. In the second, the same E plays from 7 to 11 seconds. Only the entrance time differs.",
+  "size": [
+   660,
+   394
+  ],
+  "files": [
+   "public/soundscape/m03/native/C04-native.svg",
+   "public/soundscape/m03/native/C04-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C04",
+  "source": "week1 fixtures C02 (E 2-6 s) and C03 (E 7-11 s) over C 0-12 s",
+  "teach": "same note, different entrance",
+  "status": "NATIVE READY"
+ },
+ "C05-native": {
+  "id": "C05-native",
+  "type": "NATIVE-SVG",
+  "title": "Time as a musical relationship",
+  "desc": "Twelve-second timeline with one-second ticks. Lower C 0 to 12. Upper E 2 to 4, G 5 to 7, D 9 to 11.",
+  "size": [
+   660,
+   227
+  ],
+  "files": [
+   "public/soundscape/m03/native/C05-native.svg",
+   "public/soundscape/m03/native/C05-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C04",
+  "source": "week1 fixtures C01 start/end times",
+  "teach": "time as a relationship: when notes start and stop",
+  "status": "NATIVE READY"
+ },
+ "C06-native": {
+  "id": "C06-native",
+  "type": "NATIVE-SVG",
+  "title": "One voice alone, then both together",
+  "desc": "Three twelve-second timelines using the same events: the lower C alone, the upper notes E, G and D alone, and both together.",
+  "size": [
+   660,
+   476
+  ],
+  "files": [
+   "public/soundscape/m03/native/C06-native.svg",
+   "public/soundscape/m03/native/C06-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C02",
+  "variantOf": "C02",
+  "source": "week1 fixtures C01 (solo helper split)",
+  "teach": "foundation alone, upper notes alone, both together",
+  "status": "NATIVE READY"
+ },
+ "C07-native": {
+  "id": "C07-native",
+  "type": "NATIVE-SVG",
+  "title": "The same 36 seconds, two endings",
+  "desc": "Two 36-second timelines with the same held lower C and the same upper notes E, G, D, B. The second adds one extra upper note, a higher C from 33 to 35.8 seconds.",
+  "size": [
+   660,
+   455
+  ],
+  "files": [
+   "public/soundscape/m03/native/C07-native.svg",
+   "public/soundscape/m03/native/C07-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C07",
+  "source": "week1 fixtures C04 and C05 (36 s; C04 adds upper C 33-35.8 s)",
+  "teach": "same 36 seconds, two endings",
+  "status": "NATIVE READY"
+ },
+ "C08-native": {
+  "id": "C08-native",
+  "type": "NATIVE-SVG",
+  "title": "Silence as space",
+  "desc": "The twelve-second example with the upper voice resting between its notes: 0 to 2, 4 to 5, 7 to 9 and 11 to 12 seconds, shown as dashed boxes labelled rest, while the lower C keeps sounding.",
+  "size": [
+   660,
+   176
+  ],
+  "files": [
+   "public/soundscape/m03/native/C08-native.svg",
+   "public/soundscape/m03/native/C08-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C08",
+  "source": "week1 fixtures C01 (gaps computed from the events)",
+  "teach": "silence is part of the music",
+  "status": "NATIVE READY"
+ },
+ "C09-native": {
+  "id": "C09-native",
+  "type": "NATIVE-SVG",
+  "title": "Compose a two-voice story: worksheet",
+  "desc": "Five numbered boxes with writing lines: 1 Set a scene, 2 Imagine a visitor, 3 Leave some room, 4 Change something, 5 Choose an ending. Below, eight white keys lettered C to C for reference.",
+  "size": [
+   650,
+   451
+  ],
+  "files": [
+   "public/soundscape/m03/native/C09-native.svg",
+   "public/soundscape/m03/native/C09-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C08",
+  "source": "worksheet; notes C D E G from the lessons",
+  "teach": "five-stage worksheet for a two-voice story",
+  "status": "NATIVE READY"
+ },
+ "C10-native": {
+  "id": "C10-native",
+  "type": "NATIVE-SVG",
+  "title": "Week 1 soundscape map",
+  "desc": "The twelve-second example: lower C held, upper E, G, D visiting. Caption: the lower line stayed, the upper line changed; Week 2 moves the lower line as well.",
+  "size": [
+   660,
+   228
+  ],
+  "files": [
+   "public/soundscape/m03/native/C10-native.svg",
+   "public/soundscape/m03/native/C10-native.print.svg"
+  ],
+  "group": "1C",
+  "art": "C10",
+  "source": "week1 fixtures C01",
+  "teach": "Week 1 recap: which line stayed, which changed",
+  "status": "NATIVE READY"
+ },
+ "S07-native": {
+  "id": "S07-native",
+  "type": "NATIVE-SVG",
+  "title": "Two Voices: Week 2 roadmap",
+  "desc": "Heading Two Voices, then a four-step roadmap: a pair, the interval, movement, changed support.",
+  "size": [
+   654,
+   100
+  ],
+  "files": [
+   "public/soundscape/m03/native/S07-native.svg",
+   "public/soundscape/m03/native/S07-native.print.svg"
+  ],
+  "group": "W2HUB",
+  "art": "S07",
+  "source": "lib/soundscape/week2/fixtures.ts",
+  "teach": "Week 2 roadmap: pair, interval, movement, changed support",
+  "status": "NATIVE READY"
+ },
+ "D01-native": {
+  "id": "D01-native",
+  "type": "NATIVE-SVG",
+  "title": "C and E together: a dyad",
+  "desc": "Five white keys B C D E F. C is highlighted as the lower voice and E as the upper voice.",
+  "size": [
+   300,
+   333
+  ],
+  "files": [
+   "public/soundscape/m03/native/D01-native.svg",
+   "public/soundscape/m03/native/D01-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D01",
+  "source": "lib/soundscape/week2/fixtures.ts (A.together)",
+  "teach": "a dyad: two notes at once, lower voice and upper voice",
+  "status": "NATIVE READY"
+ },
+ "D02-native": {
+  "id": "D02-native",
+  "type": "NATIVE-SVG",
+  "title": "The two keys: C and E",
+  "desc": "Three white keys C D E with C and E highlighted and D between them.",
+  "size": [
+   219,
+   326
+  ],
+  "files": [
+   "public/soundscape/m03/native/D02-native.svg",
+   "public/soundscape/m03/native/D02-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D01",
+  "source": "lib/soundscape/week2/fixtures.ts",
+  "teach": "find the two keys, C and E",
+  "status": "NATIVE READY"
+ },
+ "D03-native": {
+  "id": "D03-native",
+  "type": "NATIVE-SVG",
+  "title": "C to E is four semitones",
+  "desc": "Three white keys with the two black keys between them. Four numbered hops carry C to E through C sharp, D and D sharp. Four semitones, a major third.",
+  "size": [
+   210,
+   445
+  ],
+  "files": [
+   "public/soundscape/m03/native/D03-native.svg",
+   "public/soundscape/m03/native/D03-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D03",
+  "source": "lib/soundscape/week2/fixtures.ts (A.together); names from lib/soundscape/resources/interval-data.json",
+  "teach": "count four neighbouring-key hops from C to E",
+  "status": "NATIVE READY"
+ },
+ "D04-native": {
+  "id": "D04-native",
+  "type": "NATIVE-SVG",
+  "title": "C to E compared with C to F",
+  "desc": "Left: C to E counts four semitones, a major third. Right: C to F counts five semitones, a perfect fourth.",
+  "size": [
+   457,
+   335
+  ],
+  "files": [
+   "public/soundscape/m03/native/D04-native.svg",
+   "public/soundscape/m03/native/D04-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D03",
+  "source": "lib/soundscape/week2/fixtures.ts (A.together, A.upperEF)",
+  "teach": "C\u2013E (4) compared with C\u2013F (5)",
+  "status": "NATIVE READY"
+ },
+ "D05-native": {
+  "id": "D05-native",
+  "type": "NATIVE-SVG",
+  "title": "Hold C, move E up to F",
+  "desc": "Two keyboards: C and E, then C and F. The lower C stays; the upper voice rises one semitone from E to F.",
+  "size": [
+   316,
+   204
+  ],
+  "files": [
+   "public/soundscape/m03/native/D05-native.svg",
+   "public/soundscape/m03/native/D05-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D05",
+  "source": "lib/soundscape/week2/fixtures.ts (A.upperEF)",
+  "teach": "hold the lower C, move the upper E to F",
+  "status": "NATIVE READY"
+ },
+ "D06-native": {
+  "id": "D06-native",
+  "type": "NATIVE-SVG",
+  "title": "Hold E, move the lower C",
+  "desc": "Two examples. First C and E become B and E: the lower voice falls one semitone. Second C and E become D and E: the lower voice rises two semitones. The upper E stays.",
+  "size": [
+   316,
+   429
+  ],
+  "files": [
+   "public/soundscape/m03/native/D06-native.svg",
+   "public/soundscape/m03/native/D06-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D05",
+  "variantOf": "D05",
+  "source": "lib/soundscape/week2/fixtures.ts (A.lowerCB, A.lowerCD)",
+  "teach": "hold the upper E, move the lower C",
+  "status": "NATIVE READY"
+ },
+ "D07-native": {
+  "id": "D07-native",
+  "type": "NATIVE-SVG",
+  "title": "Two voices across five seconds",
+  "desc": "Lower voice: C for the whole five seconds. Upper voice: E from 0 to 2.5 seconds, then F from 2.5 to 5.",
+  "size": [
+   660,
+   176
+  ],
+  "files": [
+   "public/soundscape/m03/native/D07-native.svg",
+   "public/soundscape/m03/native/D07-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D07",
+  "source": "lib/soundscape/week2/fixtures.ts (A.upperEF: lower C 0-5 s; upper E 0-2.5, F 2.5-5)",
+  "teach": "two voices across time",
+  "status": "NATIVE READY"
+ },
+ "D09-native": {
+  "id": "D09-native",
+  "type": "NATIVE-SVG",
+  "title": "Try three dyads",
+  "desc": "Three practice pairs, each starting from C and E: upper E to F, lower C to B, lower C to D.",
+  "size": [
+   316,
+   654
+  ],
+  "files": [
+   "public/soundscape/m03/native/D09-native.svg",
+   "public/soundscape/m03/native/D09-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D05",
+  "source": "lib/soundscape/week2/fixtures.ts (A.upperEF, A.lowerCB, A.lowerCD)",
+  "teach": "try three dyads",
+  "status": "NATIVE READY"
+ },
+ "D10-native": {
+  "id": "D10-native",
+  "type": "NATIVE-SVG",
+  "title": "Lesson 2A recap",
+  "desc": "An interval is counted in semitones: C to E is four, C to F is five. Then one voice moves while the other stays: C and E become C and F.",
+  "size": [
+   316,
+   411
+  ],
+  "files": [
+   "public/soundscape/m03/native/D10-native.svg",
+   "public/soundscape/m03/native/D10-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D07",
+  "source": "lib/soundscape/week2/fixtures.ts",
+  "teach": "2A recap: from interval to motion",
+  "status": "NATIVE READY"
+ },
+ "E01-native": {
+  "id": "E01-native",
+  "type": "NATIVE-SVG",
+  "title": "One beginning, five changes",
+  "desc": "Five endings that all start from C and E: C and F, B and E, D and E, B and F, D and F. They show three kinds of motion: oblique, contrary and similar.",
+  "size": [
+   628,
+   212
+  ],
+  "files": [
+   "public/soundscape/m03/native/E01-native.svg",
+   "public/soundscape/m03/native/E01-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E01",
+  "source": "lib/soundscape/week2/fixtures.ts (FIVE)",
+  "teach": "one beginning, five endings, three kinds of motion",
+  "status": "NATIVE READY"
+ },
+ "E02-native": {
+  "id": "E02-native",
+  "type": "NATIVE-SVG",
+  "title": "Oblique motion: one voice holds",
+  "desc": "Three examples where one voice stays and the other moves: upper E up to F; lower C down to B; lower C up to D.",
+  "size": [
+   316,
+   654
+  ],
+  "files": [
+   "public/soundscape/m03/native/E02-native.svg",
+   "public/soundscape/m03/native/E02-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E02",
+  "source": "lib/soundscape/week2/fixtures.ts (FIVE B1, B2, B3)",
+  "teach": "oblique motion: one voice holds, the other moves",
+  "status": "NATIVE READY"
+ },
+ "E03-native": {
+  "id": "E03-native",
+  "type": "NATIVE-SVG",
+  "title": "Contrary motion: moving apart",
+  "desc": "C and E become B and F: the lower voice falls and the upper voice rises. B to F is six semitones, a diminished fifth (tritone).",
+  "size": [
+   316,
+   559
+  ],
+  "files": [
+   "public/soundscape/m03/native/E03-native.svg",
+   "public/soundscape/m03/native/E03-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E03",
+  "source": "lib/soundscape/week2/fixtures.ts (FIVE B4: C+E to B+F, B-F = 6 semitones)",
+  "teach": "contrary motion: the voices move apart",
+  "status": "NATIVE READY"
+ },
+ "E04-native": {
+  "id": "E04-native",
+  "type": "NATIVE-SVG",
+  "title": "Similar motion: rising together",
+  "desc": "C and E become D and F: the lower voice rises two semitones and the upper voice rises one. D to F is three semitones, a minor third.",
+  "size": [
+   316,
+   581
+  ],
+  "files": [
+   "public/soundscape/m03/native/E04-native.svg",
+   "public/soundscape/m03/native/E04-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E04",
+  "source": "lib/soundscape/week2/fixtures.ts (FIVE B5: C+E to D+F; D-F = 3 semitones)",
+  "teach": "similar motion: both voices rise",
+  "status": "NATIVE READY"
+ },
+ "E07-native": {
+  "id": "E07-native",
+  "type": "NATIVE-SVG",
+  "title": "All five examples, three kinds of motion",
+  "desc": "Five rows, each from C and E: B1 upper rises (oblique), B2 lower falls (oblique), B3 lower rises (oblique), B4 both move apart (contrary), B5 both rise (similar).",
+  "size": [
+   316,
+   1182
+  ],
+  "files": [
+   "public/soundscape/m03/native/E07-native.svg",
+   "public/soundscape/m03/native/E07-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E01",
+  "source": "lib/soundscape/week2/fixtures.ts (FIVE: all five examples; E06 consolidated here)",
+  "teach": "full gallery of the five source examples",
+  "ids": [
+   "E06"
+  ],
+  "status": "NATIVE READY"
+ },
+ "E08-native": {
+  "id": "E08-native",
+  "type": "NATIVE-SVG",
+  "title": "B to F: the tritone lens",
+  "desc": "Five white keys B C D E F. B and F are highlighted; six numbered hops cross the black keys between them. Five letter names, six semitones: a diminished fifth, also called a tritone.",
+  "size": [
+   300,
+   440
+  ],
+  "files": [
+   "public/soundscape/m03/native/E08-native.svg",
+   "public/soundscape/m03/native/E08-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E03",
+  "source": "lib/soundscape/week2/fixtures.ts (FIVE B4, B3-to-F4 = 6)",
+  "teach": "B to F: five letter names, six semitones",
+  "status": "NATIVE READY"
+ },
+ "E09-native": {
+  "id": "E09-native",
+  "type": "NATIVE-SVG",
+  "title": "A conversation in four stages",
+  "desc": "Four keyboards in order: C and E, C and F, B and F, then back to C and E. Each stage lasts two and a half seconds.",
+  "size": [
+   676,
+   203
+  ],
+  "files": [
+   "public/soundscape/m03/native/E09-native.svg",
+   "public/soundscape/m03/native/E09-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E09",
+  "source": "lib/soundscape/week2/fixtures.ts (B.path: four 2.5 s stages)",
+  "teach": "C+E, C+F, B+F, C+E",
+  "status": "NATIVE READY"
+ },
+ "E10-native": {
+  "id": "E10-native",
+  "type": "NATIVE-SVG",
+  "title": "Four moments on a timeline",
+  "desc": "Ten-second timeline. Lower voice: C 0 to 5, B 5 to 7.5, C 7.5 to 10. Upper voice: E 0 to 2.5, F 2.5 to 7.5, E 7.5 to 10.",
+  "size": [
+   660,
+   176
+  ],
+  "files": [
+   "public/soundscape/m03/native/E10-native.svg",
+   "public/soundscape/m03/native/E10-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E09",
+  "source": "lib/soundscape/week2/fixtures.ts (B.path: moments at 0, 2.5, 5, 7.5 s; ends 10 s)",
+  "teach": "four moments on a measured timeline",
+  "status": "NATIVE READY"
+ },
+ "E11-native": {
+  "id": "E11-native",
+  "type": "NATIVE-SVG",
+  "title": "Compose a two-voice conversation",
+  "desc": "An example of four stages (C and E, C and F, B and F, C and E), then two blank dashed lanes for your own lower and upper voices to sketch.",
+  "size": [
+   660,
+   312
+  ],
+  "files": [
+   "public/soundscape/m03/native/E11-native.svg",
+   "public/soundscape/m03/native/E11-native.print.svg"
+  ],
+  "group": "2B",
+  "art": "E09",
+  "source": "lib/soundscape/week2/fixtures.ts (B.path) + blank sketch lines",
+  "teach": "compose a two-voice conversation",
+  "status": "NATIVE READY"
+ },
+ "F01-native": {
+  "id": "F01-native",
+  "type": "NATIVE-SVG",
+  "title": "Same upper melody, two foundations",
+  "desc": "Two 36-second timelines with the identical upper line E (4 to 10), F (14 to 20), E (26 to 32). In situation 1 the lower voice holds C throughout. In situation 2 it plays C for 0 to 12, B for 12 to 24 and C for 24 to 36.",
+  "size": [
+   660,
+   400
+  ],
+  "files": [
+   "public/soundscape/m03/native/F01-native.svg",
+   "public/soundscape/m03/native/F01-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "F01",
+  "source": "lib/soundscape/week2/fixtures.ts (C.held / C.moving: upper E 4-10, F 14-20, E 26-32; lower C 0-36 vs C 0-12, B 12-24, C 24-36)",
+  "teach": "the same upper melody over two different lower voices",
+  "status": "NATIVE READY"
+ },
+ "F04-native": {
+  "id": "F04-native",
+  "type": "NATIVE-SVG",
+  "title": "Shared and only-here notes at the F moment",
+  "desc": "Labels over the two overlapping fields. Left: C, only in situation 1. Centre overlap: F, shared by both. Right: B, only in situation 2.",
+  "size": [
+   1376,
+   768
+  ],
+  "files": [
+   "public/soundscape/m03/native/F04-native.svg",
+   "public/soundscape/m03/native/F04-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "G03",
+  "source": "lib/soundscape/m02/shared-worlds.ts computed from lib/soundscape/week2/fixtures.ts (at 14-20 s)",
+  "teach": "shared note F; only-here notes C and B",
+  "kind": "overlay-on-M02-art",
+  "status": "NATIVE READY"
+ },
+ "F05-native": {
+  "id": "F05-native",
+  "type": "NATIVE-SVG",
+  "title": "Objective change versus personal response",
+  "desc": "Two columns. Left, what changes: the upper melody is identical, only the lower voice differs. Right, an open question: how did that feel to you? No right answer.",
+  "size": [
+   640,
+   161
+  ],
+  "files": [
+   "public/soundscape/m03/native/F05-native.svg",
+   "public/soundscape/m03/native/F05-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "F01",
+  "source": "lib/soundscape/week2/fixtures.ts",
+  "teach": "what objectively changes versus how it felt to you",
+  "status": "NATIVE READY"
+ },
+ "F06-native": {
+  "id": "F06-native",
+  "type": "NATIVE-SVG",
+  "title": "Two versions aligned in time",
+  "desc": "Two registered 36-second timelines with the same upper line and a shaded band over 14 to 20 seconds, the F moment. Empty upper-voice parts are marked as rests while the lower voice may still sound.",
+  "size": [
+   660,
+   430
+  ],
+  "files": [
+   "public/soundscape/m03/native/F06-native.svg",
+   "public/soundscape/m03/native/F06-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "F01",
+  "variantOf": "F01",
+  "source": "lib/soundscape/week2/fixtures.ts",
+  "teach": "the two versions aligned in time, with the F moment marked",
+  "status": "NATIVE READY"
+ },
+ "F07-native": {
+  "id": "F07-native",
+  "type": "NATIVE-SVG",
+  "title": "C to F versus B to F",
+  "desc": "Left: C to F is five semitones, a perfect fourth. Right: B to F is six semitones, a diminished fifth or tritone. The melody note F is the same in both.",
+  "size": [
+   493,
+   354
+  ],
+  "files": [
+   "public/soundscape/m03/native/F07-native.svg",
+   "public/soundscape/m03/native/F07-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "G03",
+  "source": "lib/soundscape/week2/fixtures.ts (C4-F4 = 5, B3-F4 = 6)",
+  "teach": "C\u2013F is 5 semitones, B\u2013F is 6",
+  "status": "NATIVE READY"
+ },
+ "F08-native": {
+  "id": "F08-native",
+  "type": "NATIVE-SVG",
+  "title": "A two-voice dialogue (optional practice path)",
+  "desc": "Four keyboards in order: C and E, C and F, B and F, C and E, two seconds each. An optional path to play and then change.",
+  "size": [
+   676,
+   205
+  ],
+  "files": [
+   "public/soundscape/m03/native/F08-native.svg",
+   "public/soundscape/m03/native/F08-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "F08",
+  "source": "lib/soundscape/week2/fixtures.ts (C.dialogue: four 2 s stages)",
+  "teach": "optional practice path: a two-voice dialogue",
+  "status": "NATIVE READY"
+ },
+ "F09-native": {
+  "id": "F09-native",
+  "type": "NATIVE-SVG",
+  "title": "One melody in two contexts",
+  "desc": "Three moments of the melody, E then F then E, in each situation. Upper notes are identical. Lower voice: situation 1 is C, C, C; situation 2 is C, B, C.",
+  "size": [
+   395,
+   317
+  ],
+  "files": [
+   "public/soundscape/m03/native/F09-native.svg",
+   "public/soundscape/m03/native/F09-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "F01",
+  "variantOf": "F01",
+  "source": "lib/soundscape/week2/fixtures.ts (C.held, C.moving at 7, 17, 29 s)",
+  "teach": "one melody in two contexts",
+  "status": "NATIVE READY"
+ },
+ "F10-native": {
+  "id": "F10-native",
+  "type": "NATIVE-SVG",
+  "title": "Week 2 recap: three anchors",
+  "desc": "Three small panels: C to E is four semitones; a four-stage motion C+E, C+F, B+F, C+E; and two situations sharing only the note F.",
+  "size": [
+   676,
+   758
+  ],
+  "files": [
+   "public/soundscape/m03/native/F10-native.svg",
+   "public/soundscape/m03/native/F10-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "F10",
+  "source": "lib/soundscape/week2/fixtures.ts",
+  "teach": "Week 2 recap: three anchors",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-00": {
+  "id": "T07-IP-00",
+  "type": "NATIVE-SVG",
+  "title": "Perfect unison: 0 semitones",
+  "desc": "Perfect unison (P1), C and C, 0 semitones apart, 1 letter names.",
+  "size": [
+   428,
+   310
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-00.svg",
+   "public/soundscape/m03/native/T07-IP-00.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07a",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-00: Perfect unison",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-00": {
+  "id": "T08-IP-00",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-00: Perfect unison",
+  "desc": "Chapter opening for Perfect unison: 0 semitones, C to C.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-00.svg",
+   "public/soundscape/m03/native/T08-IP-00.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08a",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-00",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-01": {
+  "id": "T07-IP-01",
+  "type": "NATIVE-SVG",
+  "title": "Minor second: 1 semitones",
+  "desc": "Minor second (m2), C and D\u266d, 1 semitones apart, 2 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-01.svg",
+   "public/soundscape/m03/native/T07-IP-01.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07a",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-01: Minor second",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-01": {
+  "id": "T08-IP-01",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-01: Minor second",
+  "desc": "Chapter opening for Minor second: 1 semitones, C to D\u266d.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-01.svg",
+   "public/soundscape/m03/native/T08-IP-01.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08a",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-01",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-02": {
+  "id": "T07-IP-02",
+  "type": "NATIVE-SVG",
+  "title": "Major second: 2 semitones",
+  "desc": "Major second (M2), C and D, 2 semitones apart, 2 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-02.svg",
+   "public/soundscape/m03/native/T07-IP-02.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07a",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-02: Major second",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-02": {
+  "id": "T08-IP-02",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-02: Major second",
+  "desc": "Chapter opening for Major second: 2 semitones, C to D.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-02.svg",
+   "public/soundscape/m03/native/T08-IP-02.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08a",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-02",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-03": {
+  "id": "T07-IP-03",
+  "type": "NATIVE-SVG",
+  "title": "Minor third: 3 semitones",
+  "desc": "Minor third (m3), C and E\u266d, 3 semitones apart, 3 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-03.svg",
+   "public/soundscape/m03/native/T07-IP-03.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07a",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-03: Minor third",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-03": {
+  "id": "T08-IP-03",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-03: Minor third",
+  "desc": "Chapter opening for Minor third: 3 semitones, C to E\u266d.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-03.svg",
+   "public/soundscape/m03/native/T08-IP-03.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08a",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-03",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-04": {
+  "id": "T07-IP-04",
+  "type": "NATIVE-SVG",
+  "title": "Major third: 4 semitones",
+  "desc": "Major third (M3), C and E, 4 semitones apart, 3 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-04.svg",
+   "public/soundscape/m03/native/T07-IP-04.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07b",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-04: Major third",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-04": {
+  "id": "T08-IP-04",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-04: Major third",
+  "desc": "Chapter opening for Major third: 4 semitones, C to E.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-04.svg",
+   "public/soundscape/m03/native/T08-IP-04.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08b",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-04",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-05": {
+  "id": "T07-IP-05",
+  "type": "NATIVE-SVG",
+  "title": "Perfect fourth: 5 semitones",
+  "desc": "Perfect fourth (P4), C and F, 5 semitones apart, 4 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-05.svg",
+   "public/soundscape/m03/native/T07-IP-05.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07b",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-05: Perfect fourth",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-05": {
+  "id": "T08-IP-05",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-05: Perfect fourth",
+  "desc": "Chapter opening for Perfect fourth: 5 semitones, C to F.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-05.svg",
+   "public/soundscape/m03/native/T08-IP-05.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08b",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-05",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-06": {
+  "id": "T07-IP-06",
+  "type": "NATIVE-SVG",
+  "title": "Tritone: 6 semitones",
+  "desc": "Tritone (A4/d5), C and F\u266f, 6 semitones apart, 4 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-06.svg",
+   "public/soundscape/m03/native/T07-IP-06.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07b",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-06: Tritone",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-06": {
+  "id": "T08-IP-06",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-06: Tritone",
+  "desc": "Chapter opening for Tritone: 6 semitones, C to F\u266f.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-06.svg",
+   "public/soundscape/m03/native/T08-IP-06.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08b",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-06",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-07": {
+  "id": "T07-IP-07",
+  "type": "NATIVE-SVG",
+  "title": "Perfect fifth: 7 semitones",
+  "desc": "Perfect fifth (P5), C and G, 7 semitones apart, 5 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-07.svg",
+   "public/soundscape/m03/native/T07-IP-07.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07b",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-07: Perfect fifth",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-07": {
+  "id": "T08-IP-07",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-07: Perfect fifth",
+  "desc": "Chapter opening for Perfect fifth: 7 semitones, C to G.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-07.svg",
+   "public/soundscape/m03/native/T08-IP-07.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08b",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-07",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-08": {
+  "id": "T07-IP-08",
+  "type": "NATIVE-SVG",
+  "title": "Minor sixth: 8 semitones",
+  "desc": "Minor sixth (m6), C and A\u266d, 8 semitones apart, 6 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-08.svg",
+   "public/soundscape/m03/native/T07-IP-08.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-08: Minor sixth",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-08": {
+  "id": "T08-IP-08",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-08: Minor sixth",
+  "desc": "Chapter opening for Minor sixth: 8 semitones, C to A\u266d.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-08.svg",
+   "public/soundscape/m03/native/T08-IP-08.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-08",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-09": {
+  "id": "T07-IP-09",
+  "type": "NATIVE-SVG",
+  "title": "Major sixth: 9 semitones",
+  "desc": "Major sixth (M6), C and A, 9 semitones apart, 6 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-09.svg",
+   "public/soundscape/m03/native/T07-IP-09.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-09: Major sixth",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-09": {
+  "id": "T08-IP-09",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-09: Major sixth",
+  "desc": "Chapter opening for Major sixth: 9 semitones, C to A.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-09.svg",
+   "public/soundscape/m03/native/T08-IP-09.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-09",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-10": {
+  "id": "T07-IP-10",
+  "type": "NATIVE-SVG",
+  "title": "Minor seventh: 10 semitones",
+  "desc": "Minor seventh (m7), C and B\u266d, 10 semitones apart, 7 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-10.svg",
+   "public/soundscape/m03/native/T07-IP-10.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-10: Minor seventh",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-10": {
+  "id": "T08-IP-10",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-10: Minor seventh",
+  "desc": "Chapter opening for Minor seventh: 10 semitones, C to B\u266d.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-10.svg",
+   "public/soundscape/m03/native/T08-IP-10.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-10",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-11": {
+  "id": "T07-IP-11",
+  "type": "NATIVE-SVG",
+  "title": "Major seventh: 11 semitones",
+  "desc": "Major seventh (M7), C and B, 11 semitones apart, 7 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-11.svg",
+   "public/soundscape/m03/native/T07-IP-11.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-11: Major seventh",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-11": {
+  "id": "T08-IP-11",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-11: Major seventh",
+  "desc": "Chapter opening for Major seventh: 11 semitones, C to B.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-11.svg",
+   "public/soundscape/m03/native/T08-IP-11.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-11",
+  "status": "NATIVE READY"
+ },
+ "T07-IP-12": {
+  "id": "T07-IP-12",
+  "type": "NATIVE-SVG",
+  "title": "Perfect octave: 12 semitones",
+  "desc": "Perfect octave (P8), C and C, 12 semitones apart, 8 letter names.",
+  "size": [
+   428,
+   368
+  ],
+  "files": [
+   "public/soundscape/m03/native/T07-IP-12.svg",
+   "public/soundscape/m03/native/T07-IP-12.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T07c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas card IP-12: Perfect octave",
+  "status": "NATIVE READY"
+ },
+ "T08-IP-12": {
+  "id": "T08-IP-12",
+  "type": "NATIVE-SVG",
+  "title": "Atlas chapter IP-12: Perfect octave",
+  "desc": "Chapter opening for Perfect octave: 12 semitones, C to C.",
+  "size": [
+   960,
+   220
+  ],
+  "files": [
+   "public/soundscape/m03/native/T08-IP-12.svg",
+   "public/soundscape/m03/native/T08-IP-12.print.svg"
+  ],
+  "group": "SUP",
+  "art": "T08c",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas chapter opening IP-12",
+  "status": "NATIVE READY"
+ },
+ "T01-native": {
+  "id": "T01-native",
+  "type": "NATIVE-SVG",
+  "title": "How to read an interval card",
+  "desc": "Example card: Major third, C and E, 4 semitones. Numbered notes: 1 the name, 2 the two notes, 3 the keyboard with hops, 4 the semitone count.",
+  "size": [
+   450,
+   538
+  ],
+  "files": [
+   "public/soundscape/m03/native/T01-native.svg",
+   "public/soundscape/m03/native/T01-native.print.svg"
+  ],
+  "group": "SUP",
+  "art": "D03",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters) (card IP-04)",
+  "teach": "how to read one interval card",
+  "status": "NATIVE READY"
+ },
+ "D08-native": {
+  "id": "D08-native",
+  "type": "NATIVE-SVG",
+  "title": "A first Interval Palette card",
+  "desc": "Major third: C and E, 4 semitones. The palette holds 13 cards and 13 chapters.",
+  "size": [
+   560,
+   412
+  ],
+  "files": [
+   "public/soundscape/m03/native/D08-native.svg",
+   "public/soundscape/m03/native/D08-native.print.svg"
+  ],
+  "group": "2A",
+  "art": "D03",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "first use of the Interval Palette: one example card; all 13 cards and 13 chapters remain",
+  "status": "NATIVE READY"
+ },
+ "T04-native": {
+  "id": "T04-native",
+  "type": "NATIVE-SVG",
+  "title": "Letters versus semitone hops",
+  "desc": "C to E uses three letter names (C D E) but spans four semitones. B to F uses five letter names (B C D E F) but spans six semitones.",
+  "size": [
+   460,
+   422
+  ],
+  "files": [
+   "public/soundscape/m03/native/T04-native.svg",
+   "public/soundscape/m03/native/T04-native.print.svg"
+  ],
+  "group": "SUP",
+  "art": "D03",
+  "source": "lib/soundscape/week2/fixtures.ts + keyboard geometry",
+  "teach": "letter names versus semitone hops",
+  "status": "NATIVE READY"
+ },
+ "T05-native": {
+  "id": "T05-native",
+  "type": "NATIVE-SVG",
+  "title": "The tritone lens",
+  "desc": "Left: B to F from the Week 2 lesson, six semitones. Right: the Atlas card Tritone, C and F\u266f, six semitones. They are separate examples.",
+  "size": [
+   619,
+   346
+  ],
+  "files": [
+   "public/soundscape/m03/native/T05-native.svg",
+   "public/soundscape/m03/native/T05-native.print.svg"
+  ],
+  "group": "SUP",
+  "art": "E03",
+  "source": "lesson: lib/soundscape/week2/fixtures.ts (B3-F4 = 6); Atlas: IP-06",
+  "teach": "tritone lens: the lesson example and the Atlas card, kept separate",
+  "status": "NATIVE READY"
+ },
+ "T09-ruler": {
+  "id": "T09-ruler",
+  "type": "NATIVE-SVG",
+  "title": "Semitone ruler: C to C",
+  "desc": "Eight white keys C to the next C with twelve numbered semitone hops across the black and white keys: one octave.",
+  "size": [
+   407,
+   285
+  ],
+  "files": [
+   "public/soundscape/m03/native/T09-ruler.svg",
+   "public/soundscape/m03/native/T09-ruler.print.svg"
+  ],
+  "group": "SUP",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "print-friendly semitone ruler C to C",
+  "status": "NATIVE READY"
+ },
+ "T09-printable": {
+  "id": "T09-printable",
+  "type": "NATIVE-HTML",
+  "title": "Interval reference (printable)",
+  "desc": "Table of all thirteen intervals with notes, semitone counts and letter-name counts, plus a C-to-C semitone ruler.",
+  "files": [
+   "public/soundscape/m03/native/T09-printable.html"
+  ],
+  "group": "SUP",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "printable interval reference, all 13 cards",
+  "status": "NATIVE READY",
+  "sha256": "dac18db4220b13ed321f3538e91d791296fda558e6d79006ac6aa1867c0cebbd"
+ },
+ "T10-practice": {
+  "id": "T10-practice",
+  "type": "NATIVE-HTML",
+  "title": "Practice: one interval, physical keys",
+  "desc": "A practice sheet for one interval and one comparison, using the learner\u2019s own keyboard.",
+  "files": [
+   "public/soundscape/m03/native/T10-practice.html"
+  ],
+  "group": "SUP",
+  "art": "D03",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters) (IP-04, IP-05)",
+  "teach": "practice one interval on your own keys, then compare another",
+  "status": "NATIVE READY",
+  "sha256": "ffb8dd42f2c44236fe0e6c4e697368f8ed24979f9b09c1cd41a9ff14424da1b5"
+ },
+ "T06-atlas-key": {
+  "id": "T06-atlas-key",
+  "type": "NATIVE-HTML",
+  "title": "How to read the Interval Atlas",
+  "desc": "Reading key and ordinary links to all thirteen interval cards and chapters.",
+  "files": [
+   "public/soundscape/m03/native/T06-atlas-key.html"
+  ],
+  "group": "SUP",
+  "source": "lib/soundscape/resources/interval-data.json + atlas.json (13 cards / 13 chapters)",
+  "teach": "Atlas reading key with ordinary links to all 13 chapters",
+  "status": "NATIVE READY",
+  "sha256": "5ef241f85742ebb56dacc0c393234ae6c72fb2750c901ed22e673b13d544eae2"
+ },
+ "S12-native": {
+  "id": "S12-native",
+  "type": "NATIVE-SVG",
+  "title": "How to read our pictures",
+  "desc": "Five symbols: a glow marks the chosen home note; a ribbon is a voice; overlap is what is shared; solid is sounding and dotted is rest or optional; numbers on keys and timelines are the measurement. The size and colour of painted shapes are decoration only.",
+  "size": [
+   560,
+   434
+  ],
+  "files": [
+   "public/soundscape/m03/native/S12-native.svg",
+   "public/soundscape/m03/native/S12-native.print.svg"
+  ],
+  "group": "SUP",
+  "source": "semantics used in the Week 1-2 figures",
+  "teach": "how to read our pictures",
+  "status": "NATIVE READY"
+ },
+ "S05-native": {
+  "id": "S05-native",
+  "type": "NATIVE-SVG",
+  "title": "Set up your own keyboard",
+  "desc": "A drawing of a keyboard with black keys in groups of two, then three, then two; left is lower and right is higher. A generic volume knob and three steps: choose a gentle sound, set a comfortable volume, notice the black-key groups.",
+  "size": [
+   640,
+   362
+  ],
+  "files": [
+   "public/soundscape/m03/native/S05-native.svg",
+   "public/soundscape/m03/native/S05-native.print.svg"
+  ],
+  "group": "SUP",
+  "source": "keyboard geometry",
+  "teach": "set up your own keyboard: gentle sound, comfortable volume",
+  "status": "NATIVE READY"
+ },
+ "S03-native": {
+  "id": "S03-native",
+  "type": "NATIVE-HTML",
+  "title": "How learning works here",
+  "desc": "Five static steps: read, see, play on your own keyboard, notice, create.",
+  "files": [
+   "public/soundscape/m03/native/S03-native.html"
+  ],
+  "group": "SUP",
+  "source": "static pathway (no interactive UI)",
+  "teach": "how learning works: explain, see, play, notice, create",
+  "status": "NATIVE READY",
+  "sha256": "258f55abac9197da3ff8547dff65a3ee29888bbd5e5265cfe8717abc6ca6d55e"
+ },
+ "S08-native": {
+  "id": "S08-native",
+  "type": "NATIVE-HTML",
+  "title": "Lesson progress and picture legend",
+  "desc": "Static page-count and Next/Previous pattern with the picture legend.",
+  "files": [
+   "public/soundscape/m03/native/S08-native.html"
+  ],
+  "group": "SUP",
+  "source": "static navigation + legend",
+  "teach": "lesson progress and picture legend",
+  "status": "NATIVE READY",
+  "sha256": "e893d6889d942856db3c65991111bcfebc6d66022b47ed28be511e2b99bbae77"
+ },
+ "X07-native": {
+  "id": "X07-native",
+  "type": "NATIVE-SVG",
+  "title": "Six enrichment categories",
+  "desc": "The six categories in every lesson: History Postcard, Behind the Sound, Ambient Composer's Notebook, Hear It in Real Music, Musical Worlds, Paint What You Hear. Each has a simple icon and its name written in text.",
+  "size": [
+   640,
+   254
+  ],
+  "files": [
+   "public/soundscape/m03/native/X07-native.svg",
+   "public/soundscape/m03/native/X07-native.print.svg"
+  ],
+  "group": "SUP",
+  "source": "drawer names in lib/soundscape/week1/lesson-1a.json (identical across all six lessons)",
+  "teach": "the six enrichment categories",
+  "status": "NATIVE READY"
+ },
+ "X08-native": {
+  "id": "X08-native",
+  "type": "NATIVE-HTML",
+  "title": "Optional reading: all 36 topics",
+  "desc": "All thirty-six optional topics (six per lesson) with ordinary links to their lessons.",
+  "files": [
+   "public/soundscape/m03/native/X08-native.html"
+  ],
+  "group": "SUP",
+  "source": "drawer titles in the six lesson JSON files (36 total)",
+  "teach": "optional research navigation: 6 categories x 6 lessons",
+  "status": "NATIVE READY",
+  "sha256": "b8746aae82d47a1fa0f8f290f714a595c83fb5ad60a49b1988e0f79b3a65df44"
+ },
+ "A04-native": {
+  "id": "A04-native",
+  "type": "NATIVE-SVG",
+  "title": "C as home, with the white-key journey",
+  "desc": "C glows at the centre as the chosen home note in this exercise. Around it, in order: D, E, F, G, A and B. A dotted path goes out from C through each note and back home. Distance from the centre is decoration, not a measurement.",
+  "size": [
+   1000,
+   1000
+  ],
+  "files": [
+   "public/soundscape/m03/native/A04-native.svg",
+   "public/soundscape/m03/native/A04-native.print.svg"
+  ],
+  "group": "1A",
+  "art": "G01 (M02 approved art, reused)",
+  "source": "lib/soundscape/week1/lesson1a-copy.ts white-key path C D E F G A B; geometry as M02 HomeField (static)",
+  "teach": "C chosen as home in this exercise; static journey path",
+  "kind": "overlay-on-M02-art",
+  "status": "NATIVE READY"
+ },
+ "F02-native": {
+  "id": "F02-native",
+  "type": "NATIVE-SVG",
+  "title": "Held C beneath the same melody",
+  "desc": "A 36-second timeline: the lower voice holds C throughout; the upper voice plays E from 4 to 10, F from 14 to 20, E from 26 to 32, with rests between.",
+  "size": [
+   660,
+   235
+  ],
+  "files": [
+   "public/soundscape/m03/native/F02-native.svg",
+   "public/soundscape/m03/native/F02-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "F02",
+  "variantOf": "F01",
+  "source": "lib/soundscape/week2/fixtures.ts (C.held)",
+  "teach": "C stays present while E, F, E visit and leave",
+  "status": "NATIVE READY"
+ },
+ "F03-native": {
+  "id": "F03-native",
+  "type": "NATIVE-SVG",
+  "title": "The supporting landscape begins to move",
+  "desc": "A 36-second timeline: the lower voice plays C from 0 to 12, B from 12 to 24, C from 24 to 36, under the same upper E, F, E.",
+  "size": [
+   660,
+   235
+  ],
+  "files": [
+   "public/soundscape/m03/native/F03-native.svg",
+   "public/soundscape/m03/native/F03-native.print.svg"
+  ],
+  "group": "2C",
+  "art": "F03",
+  "variantOf": "F01",
+  "source": "lib/soundscape/week2/fixtures.ts (C.moving)",
+  "teach": "the supporting line moves under the same melody",
+  "status": "NATIVE READY"
+ },
+ "S09-thumbnails": {
+  "id": "S09-thumbnails",
+  "type": "NATIVE-HTML",
+  "title": "Lesson thumbnails",
+  "desc": "Six lesson thumbnails made from the approved art for lessons 1A to 2C.",
+  "files": [
+   "public/soundscape/m03/native/S09-thumbnails.html"
+  ],
+  "group": "SUP",
+  "source": "reused approved art (M02 G01; M03 B01, C01, D03, E03, F01)",
+  "teach": "lesson previews",
+  "variantOf": "art crops",
+  "status": "NATIVE READY",
+  "sha256": "370151a35db8a037958b84c99ede8625a16671cb234b8e70d40a4046f0c86d5d"
+ },
+ "S10-triptych-1A": {
+  "id": "S10-triptych-1A",
+  "type": "NATIVE-HTML",
+  "title": "Lesson 1A recap",
+  "desc": "Three figures that recap Lesson 1A: Finding C from the black keys; Two Cs, one octave apart; Two endings: away from C and home to C.",
+  "files": [
+   "public/soundscape/m03/native/S10-triptych-1A.html"
+  ],
+  "group": "1A",
+  "source": "the lesson figures listed",
+  "teach": "end-of-lesson recap",
+  "variantOf": "A03-native, A06-native, A08-native",
+  "status": "NATIVE READY",
+  "sha256": "c8f43837d463bf6c770877dc10e8ba1d213ff4454c52efaadc07b19be6c8f6c0"
+ },
+ "S10-triptych-1B": {
+  "id": "S10-triptych-1B",
+  "type": "NATIVE-HTML",
+  "title": "Lesson 1B recap",
+  "desc": "Three figures that recap Lesson 1B: Where the half steps really are; C major: whole, whole, half, whole, whole, whole, half; Same beginning, different last note.",
+  "files": [
+   "public/soundscape/m03/native/S10-triptych-1B.html"
+  ],
+  "group": "1B",
+  "source": "the lesson figures listed",
+  "teach": "end-of-lesson recap",
+  "variantOf": "B02-native, B05-native, B01-pair",
+  "status": "NATIVE READY",
+  "sha256": "4da5baf0ae738990e347989d3f39744a56a9039dbc00ca92c9c242a006c11aa5"
+ },
+ "S10-triptych-1C": {
+  "id": "S10-triptych-1C",
+  "type": "NATIVE-HTML",
+  "title": "Lesson 1C recap",
+  "desc": "Three figures that recap Lesson 1C: A held lower C with three visiting notes; Early versus late entrance; The same 36 seconds, two endings.",
+  "files": [
+   "public/soundscape/m03/native/S10-triptych-1C.html"
+  ],
+  "group": "1C",
+  "source": "the lesson figures listed",
+  "teach": "end-of-lesson recap",
+  "variantOf": "C01-native, C04-native, C07-native",
+  "status": "NATIVE READY",
+  "sha256": "da83d4ec59e4a3c032178328707c56042aa5ba43418cdfe4d1c70a1d7f29828d"
+ },
+ "S10-triptych-2A": {
+  "id": "S10-triptych-2A",
+  "type": "NATIVE-HTML",
+  "title": "Lesson 2A recap",
+  "desc": "Three figures that recap Lesson 2A: C to E is four semitones; Hold C, move E up to F; C to E compared with C to F.",
+  "files": [
+   "public/soundscape/m03/native/S10-triptych-2A.html"
+  ],
+  "group": "2A",
+  "source": "the lesson figures listed",
+  "teach": "end-of-lesson recap",
+  "variantOf": "D03-native, D05-native, D04-native",
+  "status": "NATIVE READY",
+  "sha256": "c8e5a7697d3a5e7b09f4d3cc49690b7d3f208b57f8f9d8db110e447ab507d7e2"
+ },
+ "S10-triptych-2B": {
+  "id": "S10-triptych-2B",
+  "type": "NATIVE-HTML",
+  "title": "Lesson 2B recap",
+  "desc": "Three figures that recap Lesson 2B: Oblique motion: one voice holds; Contrary motion: moving apart; Similar motion: rising together.",
+  "files": [
+   "public/soundscape/m03/native/S10-triptych-2B.html"
+  ],
+  "group": "2B",
+  "source": "the lesson figures listed",
+  "teach": "end-of-lesson recap",
+  "variantOf": "E02-native, E03-native, E04-native",
+  "status": "NATIVE READY",
+  "sha256": "e7ed80b45d3248f309c0d47b19d118750e05bdad4d10538c4be00950c1d5e2cd"
+ },
+ "S10-triptych-2C": {
+  "id": "S10-triptych-2C",
+  "type": "NATIVE-HTML",
+  "title": "Lesson 2C recap",
+  "desc": "Three figures that recap Lesson 2C: Same upper melody, two foundations; Shared and only-here notes at the F moment; C to F versus B to F.",
+  "files": [
+   "public/soundscape/m03/native/S10-triptych-2C.html"
+  ],
+  "group": "2C",
+  "source": "the lesson figures listed",
+  "teach": "end-of-lesson recap",
+  "variantOf": "F01-native, F04-native, F07-native",
+  "status": "NATIVE READY",
+  "sha256": "e5f86b0d7c252174f28c365723d3c012452bf370192a4eb7a5abb407bb0d37fa"
+ },
+ "S11-bridges": {
+  "id": "S11-bridges",
+  "type": "NATIVE-HTML",
+  "title": "Lesson-to-lesson bridges",
+  "desc": "Five bridges, each pairing the closing picture of one lesson with the opening picture of the next.",
+  "files": [
+   "public/soundscape/m03/native/S11-bridges.html"
+  ],
+  "group": "SUP",
+  "source": "reused M03 art",
+  "teach": "lesson-to-lesson continuity",
+  "variantOf": "art crops",
+  "status": "NATIVE READY",
+  "sha256": "4025a5e6a61a2ce4474e67f1c595bd8fec9597defefb5ca393d2e3c52f2e460c"
+ },
+ "X09-accessible-print": {
+  "id": "X09-accessible-print",
+  "type": "NATIVE-HTML",
+  "title": "Accessible and print variants",
+  "desc": "Table of all 98 native figures with their text equivalents and screen and print files.",
+  "files": [
+   "public/soundscape/m03/native/X09-accessible-print.html"
+  ],
+  "group": "SUP",
+  "source": "native_registry.json",
+  "teach": "accessible and print variants",
+  "status": "NATIVE READY",
+  "sha256": "f5455520fb3165053642ae2c576c0d770a4d52e3da24021e0bed1780ae6a6490"
+ },
+ "X10-provenance": {
+  "id": "X10-provenance",
+  "type": "NATIVE-METADATA",
+  "title": "Asset provenance, rights and alt text",
+  "desc": "docs/m03/PROVENANCE.md and provenance.json",
+  "files": [
+   "docs/m03/PROVENANCE.md",
+   "docs/m03/provenance.json"
+  ],
+  "group": "SUP",
+  "source": "ledger + registries",
+  "status": "NATIVE READY"
+ }
+}
