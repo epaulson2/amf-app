@@ -405,5 +405,227 @@
   "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
   "alt": "",
   "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "IPV-17": {
+  "id": "IPV-17",
+  "title": "Perfect fifth",
+  "aspect": "1:1",
+  "scene_prompt": "An expansive anchored arch of two strong luminous pillars of amber and teal in a delicate open field, strands of blue-teal and amber connecting them with calm clarity. Open, stable-looking, generous.",
+  "full_prompt": "An expansive anchored arch of two strong luminous pillars of amber and teal in a delicate open field, strands of blue-teal and amber connecting them with calm clarity. Open, stable-looking, generous.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T12:54:17",
+  "cost_usd": 0.0382995,
+  "generation_id": "gen-1793987645-HYruJEhENjLzT8aHHUZT",
+  "raw": "public/soundscape/m05/raw/IPV-17.png",
+  "raw_sha256": "90fcd8464facc988a6f988de2919829893ea731cd84f5760977a980f3791517c",
+  "raw_bytes": 530426,
+  "alpha": {
+   "size": [
+    1024,
+    1024
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 31.2,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "bfc8e60e4865a422716bfbcd925812f510045fdbd7ea258ca589ac55d5b1a9e8",
+   "png_bytes": 1312259,
+   "webp_bytes": 403840
+  },
+  "webp": "public/soundscape/m05/art/IPV-17.webp",
+  "png": "public/soundscape/m05/art/IPV-17.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "IPV-18": {
+  "id": "IPV-18",
+  "title": "Minor sixth",
+  "aspect": "1:1",
+  "scene_prompt": "A long graceful reach between two separated presences, a rose-orchid curvature with trailing translucent layers behind it, expressive and wide but not sorrowful.",
+  "full_prompt": "A long graceful reach between two separated presences, a rose-orchid curvature with trailing translucent layers behind it, expressive and wide but not sorrowful.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T12:54:42",
+  "cost_usd": 0.038997,
+  "generation_id": "gen-1793987670-QHuckv9Kg64aJg4PMTaQ",
+  "raw": "public/soundscape/m05/raw/IPV-18.png",
+  "raw_sha256": "1920217b33df43b431ea530918cc0a27fd345d3f288a98631253232f81a1e56c",
+  "raw_bytes": 388624,
+  "alpha": {
+   "size": [
+    1024,
+    1024
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 14.2,
+   "feather_lrtb": [
+    0.14,
+    0.14,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "a64c2dc6bc1ffea9faab8eafe110883601b559839d9ab9b1b28fe15a707e3d5d",
+   "png_bytes": 816625,
+   "webp_bytes": 269644
+  },
+  "webp": "public/soundscape/m05/art/IPV-18.webp",
+  "png": "public/soundscape/m05/art/IPV-18.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "IPV-19": {
+  "id": "IPV-19",
+  "title": "Major sixth",
+  "aspect": "1:1",
+  "scene_prompt": "A long unfolding gesture between two separated presences in a warmer peach and gold field, slightly wider and more open than a minor sixth, turning gently; visibly of the same family as the minor sixth.",
+  "full_prompt": "A long unfolding gesture between two separated presences in a warmer peach and gold field, slightly wider and more open than a minor sixth, turning gently; visibly of the same family as the minor sixth.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T12:55:02",
+  "cost_usd": 0.0393345,
+  "generation_id": "gen-1793987690-I6oNnEcZ3Hy6RQfECRCE",
+  "raw": "public/soundscape/m05/raw/IPV-19.png",
+  "raw_sha256": "6b69a03b2a7c3176e8e2a3720e366e04238288b94ce8307a18210f6dd3db9354",
+  "raw_bytes": 576837,
+  "alpha": {
+   "size": [
+    1024,
+    1024
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 46.0,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "e2b25eee30bfbe20265943c6f94a32b3a40d11b26d131602e417e2e92383761e",
+   "png_bytes": 1606150,
+   "webp_bytes": 528424
+  },
+  "webp": "public/soundscape/m05/art/IPV-19.webp",
+  "png": "public/soundscape/m05/art/IPV-19.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "IPV-20": {
+  "id": "IPV-20",
+  "title": "Minor seventh",
+  "aspect": "1:1",
+  "scene_prompt": "A broad teal atmosphere with two clearly distant luminous presences and a faint continuing path that drifts on beyond the upper one, open-ended and spacious, not demanding any ending.",
+  "full_prompt": "A broad teal atmosphere with two clearly distant luminous presences and a faint continuing path that drifts on beyond the upper one, open-ended and spacious, not demanding any ending.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T12:55:28",
+  "cost_usd": 0.038652,
+  "generation_id": "gen-1793987717-OzeqWfDHxkUA4YZA1l2P",
+  "raw": "public/soundscape/m05/raw/IPV-20.png",
+  "raw_sha256": "95465e07d7ba3e49c65a29930b6b04840b60e749fc9386504613400b2ff7d66c",
+  "raw_bytes": 557928,
+  "alpha": {
+   "size": [
+    1024,
+    1024
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 32.4,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "564c70dd427d246d12a905c7f5c11dade27e9721a672ea79356c9071fe7d73d5",
+   "png_bytes": 1594839,
+   "webp_bytes": 554248
+  },
+  "webp": "public/soundscape/m05/art/IPV-20.webp",
+  "png": "public/soundscape/m05/art/IPV-20.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "IPV-21": {
+  "id": "IPV-21",
+  "title": "Major seventh",
+  "aspect": "1:1",
+  "scene_prompt": "Two luminous presences nearly spanning the full height of the canvas with fine lilac shimmer near the upper one, and a faint second focal glow just beyond it that echoes the lower presence, like a near arrival that stays a little away.",
+  "full_prompt": "Two luminous presences nearly spanning the full height of the canvas with fine lilac shimmer near the upper one, and a faint second focal glow just beyond it that echoes the lower presence, like a near arrival that stays a little away.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T12:55:54",
+  "cost_usd": 0.038181,
+  "generation_id": "gen-1793987743-37LJ7LP5nZ4mkBmEitkQ",
+  "raw": "public/soundscape/m05/raw/IPV-21.png",
+  "raw_sha256": "864870809b0121254457f370a2a991c219ba44c8bf3a9b19d69ec5b888560c14",
+  "raw_bytes": 429025,
+  "alpha": {
+   "size": [
+    1024,
+    1024
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 27.2,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "c08559c0dfec3065bcfb7e14d13ee9cf866020532d4997b4bba99bcc812ce3eb",
+   "png_bytes": 1107428,
+   "webp_bytes": 332804
+  },
+  "webp": "public/soundscape/m05/art/IPV-21.webp",
+  "png": "public/soundscape/m05/art/IPV-21.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "IPV-22": {
+  "id": "IPV-22",
+  "title": "Perfect octave",
+  "aspect": "1:1",
+  "scene_prompt": "A rising spiral ribbon connecting two related amber-and-pearl presences at different heights, the upper one an echo of the lower in a new register, pearl-gold light, a return to the same name at a higher level.",
+  "full_prompt": "A rising spiral ribbon connecting two related amber-and-pearl presences at different heights, the upper one an echo of the lower in a new register, pearl-gold light, a return to the same name at a higher level.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T12:56:16",
+  "cost_usd": 0.039165,
+  "generation_id": "gen-1793987764-LjpwjOdChEjO49okQAte",
+  "raw": "public/soundscape/m05/raw/IPV-22.png",
+  "raw_sha256": "05344157f0c398ff754a0e3adb83a1c03f82487b601d741f1aaa7ce9b8b91e1f",
+  "raw_bytes": 346458,
+  "alpha": {
+   "size": [
+    1024,
+    1024
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 13.3,
+   "feather_lrtb": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+   ],
+   "png_sha256": "0f43028128a9ad05ffdd26db7d711489cf4cfe98f62eb01b0d33fa478435bbf9",
+   "png_bytes": 668407,
+   "webp_bytes": 233158
+  },
+  "webp": "public/soundscape/m05/art/IPV-22.webp",
+  "png": "public/soundscape/m05/art/IPV-22.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
  }
 }

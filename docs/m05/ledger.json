@@ -122,6 +122,72 @@
    "seconds": 12.2,
    "generation_id": "gen-1793987612-0dm1YnYCTdOmLLTDVNBV",
    "got_image": true
+  },
+  {
+   "asset": "IPV-17",
+   "time": "2026-11-06T12:54:17",
+   "aspect": "1:1",
+   "cost_usd": 0.0382995,
+   "prompt_tokens": 1438,
+   "completion_tokens": 1459,
+   "seconds": 11.4,
+   "generation_id": "gen-1793987645-HYruJEhENjLzT8aHHUZT",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-18",
+   "time": "2026-11-06T12:54:42",
+   "aspect": "1:1",
+   "cost_usd": 0.038997,
+   "prompt_tokens": 1428,
+   "completion_tokens": 1554,
+   "seconds": 12.7,
+   "generation_id": "gen-1793987670-QHuckv9Kg64aJg4PMTaQ",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-19",
+   "time": "2026-11-06T12:55:02",
+   "aspect": "1:1",
+   "cost_usd": 0.0393345,
+   "prompt_tokens": 1438,
+   "completion_tokens": 1597,
+   "seconds": 12.2,
+   "generation_id": "gen-1793987690-I6oNnEcZ3Hy6RQfECRCE",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-20",
+   "time": "2026-11-06T12:55:28",
+   "aspect": "1:1",
+   "cost_usd": 0.038652,
+   "prompt_tokens": 1433,
+   "completion_tokens": 1507,
+   "seconds": 11.9,
+   "generation_id": "gen-1793987717-OzeqWfDHxkUA4YZA1l2P",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-21",
+   "time": "2026-11-06T12:55:54",
+   "aspect": "1:1",
+   "cost_usd": 0.038181,
+   "prompt_tokens": 1444,
+   "completion_tokens": 1442,
+   "seconds": 11.0,
+   "generation_id": "gen-1793987743-37LJ7LP5nZ4mkBmEitkQ",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-22",
+   "time": "2026-11-06T12:56:16",
+   "aspect": "1:1",
+   "cost_usd": 0.039165,
+   "prompt_tokens": 1445,
+   "completion_tokens": 1573,
+   "seconds": 11.9,
+   "generation_id": "gen-1793987764-LjpwjOdChEjO49okQAte",
+   "got_image": true
   }
  ]
 }
