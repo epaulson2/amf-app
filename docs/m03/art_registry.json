@@ -494,5 +494,36 @@
   "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
   "alt": "",
   "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "S06": {
+  "id": "S06",
+  "title": "Week 1 Finding Home opening",
+  "aspect": "16:9",
+  "scene_prompt": "Three related, distinctly readable organic fields form a gentle left-to-right story: a single luminous warm reference, an elegant trail outward with a distinct returning curve, and a stable center accompanied by a separate visiting strand. Painted translucent watercolor light, no typography and no piano keys. Three motifs share the same visual grammar but leave clean spaces for independently added step titles; asymmetrical panoramic scene.",
+  "full_prompt": "Three related, distinctly readable organic fields form a gentle left-to-right story: a single luminous warm reference, an elegant trail outward with a distinct returning curve, and a stable center accompanied by a separate visiting strand. Painted translucent watercolor light, no typography and no piano keys. Three motifs share the same visual grammar but leave clean spaces for independently added step titles; asymmetrical panoramic scene.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:21:50",
+  "cost_usd": 0.0484125,
+  "generation_id": "gen-1793978479-dJIzGGFIYK5lGIapnQzD",
+  "raw": "public/soundscape/m03/raw/S06.png",
+  "raw_sha256": "a046ce290c2ca05e39b5135bbebb5b3546b6e9e841dbc725cc7c9e266b3798c3",
+  "raw_bytes": 394823,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 18.2,
+   "png_sha256": "86279b9c3b6b2f3bd22c1d73b9c8a550633dbcaeeb402b26dfb89ef979b90612",
+   "png_bytes": 806989,
+   "webp_bytes": 351678
+  },
+  "webp": "public/soundscape/m03/art/S06.webp",
+  "png": "public/soundscape/m03/art/S06.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
  }
 }
