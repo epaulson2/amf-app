@@ -188,6 +188,50 @@
    "seconds": 11.9,
    "generation_id": "gen-1793987764-LjpwjOdChEjO49okQAte",
    "got_image": true
+  },
+  {
+   "asset": "IPV-25",
+   "time": "2026-11-06T12:56:49",
+   "aspect": "16:9",
+   "cost_usd": 0.0409515,
+   "prompt_tokens": 1471,
+   "completion_tokens": 1806,
+   "seconds": 18.6,
+   "generation_id": "gen-1793987791-DzTRPPi2vHJv6h3MIx9E",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-28",
+   "time": "2026-11-06T12:57:09",
+   "aspect": "16:9",
+   "cost_usd": 0.0399345,
+   "prompt_tokens": 1463,
+   "completion_tokens": 1672,
+   "seconds": 12.7,
+   "generation_id": "gen-1793987817-0iZbMbsL6q1gUORmiPa8",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-29",
+   "time": "2026-11-06T12:57:30",
+   "aspect": "3:2",
+   "cost_usd": 0.0394575,
+   "prompt_tokens": 1470,
+   "completion_tokens": 1607,
+   "seconds": 12.0,
+   "generation_id": "gen-1793987838-ZM0eSoHQvkaSllTqbLpf",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-30",
+   "time": "2026-11-06T12:57:50",
+   "aspect": "16:9",
+   "cost_usd": 0.038673,
+   "prompt_tokens": 1477,
+   "completion_tokens": 1501,
+   "seconds": 12.2,
+   "generation_id": "gen-1793987859-V0JfPDHlMrgpBvYAxWRD",
+   "got_image": true
   }
  ]
 }
