@@ -1,0 +1,128 @@
+{
+ "version": "1.0",
+ "source": "lib/soundscape/resources/interval-identity.ts",
+ "colors": {
+  "IP-00": {
+   "hex": "#76848C",
+   "accent": "Pearl slate",
+   "previousHex": "#8D9BA4"
+  },
+  "IP-01": {
+   "hex": "#C25562",
+   "accent": "Soft coral",
+   "previousHex": "#D96569"
+  },
+  "IP-02": {
+   "hex": "#C17D41",
+   "accent": "Apricot ochre",
+   "previousHex": "#CE8748"
+  },
+  "IP-03": {
+   "hex": "#8964A4",
+   "accent": "Orchid violet",
+   "previousHex": "#926DA7"
+  },
+  "IP-04": {
+   "hex": "#AB812D",
+   "accent": "Antique amber",
+   "previousHex": "#CB9B35"
+  },
+  "IP-05": {
+   "hex": "#4F816B",
+   "accent": "Sage teal",
+   "previousHex": "#5D9075"
+  },
+  "IP-06": {
+   "hex": "#5366A0",
+   "accent": "Deep periwinkle",
+   "previousHex": "#5869A6"
+  },
+  "IP-07": {
+   "hex": "#347B97",
+   "accent": "Lake blue",
+   "previousHex": "#447FA4"
+  },
+  "IP-08": {
+   "hex": "#A95E86",
+   "accent": "Rose orchid",
+   "previousHex": "#B26A91"
+  },
+  "IP-09": {
+   "hex": "#B47752",
+   "accent": "Warm terracotta",
+   "previousHex": "#C98D69"
+  },
+  "IP-10": {
+   "hex": "#367C79",
+   "accent": "Deep sea teal",
+   "previousHex": "#48858A"
+  },
+  "IP-11": {
+   "hex": "#7978B3",
+   "accent": "Dusty lilac",
+   "previousHex": "#8A8FC6"
+  },
+  "IP-12": {
+   "hex": "#89845D",
+   "accent": "Silver olive gold",
+   "previousHex": "#A7A078"
+  }
+ },
+ "ploggerLens": {
+  "1": {
+   "shape": "jagged",
+   "dir": "F",
+   "fill": "dark"
+  },
+  "2": {
+   "shape": "jagged",
+   "dir": "F",
+   "fill": "light"
+  },
+  "3": {
+   "shape": "rounded",
+   "dir": "F",
+   "fill": "dark"
+  },
+  "4": {
+   "shape": "rounded",
+   "dir": "F",
+   "fill": "light"
+  },
+  "5": {
+   "shape": "straight",
+   "dir": "F",
+   "fill": "dark"
+  },
+  "6": {
+   "shape": "straight",
+   "dir": "both",
+   "fill": "neutral"
+  },
+  "7": {
+   "shape": "straight",
+   "dir": "O",
+   "fill": "light"
+  },
+  "8": {
+   "shape": "rounded",
+   "dir": "O",
+   "fill": "dark"
+  },
+  "9": {
+   "shape": "rounded",
+   "dir": "O",
+   "fill": "half"
+  },
+  "10": {
+   "shape": "jagged",
+   "dir": "O",
+   "fill": "light"
+  },
+  "11": {
+   "shape": "jagged",
+   "dir": "O",
+   "fill": "dark"
+  }
+ }
+}

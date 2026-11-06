@@ -1,0 +1,139 @@
+{
+ "standard": "accent/graphic >= 3:1 on paper; label ink >= 4.5:1 on tints",
+ "paper": "#F9F5ED",
+ "label_ink": "#4C2748",
+ "per_interval": {
+  "IP-00": {
+   "hex": "#76848C",
+   "accent_on_paper": 3.54,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 8.39,
+   "ink_on_pill_tint": 9.72,
+   "marker_on_key_tint": 2.6
+  },
+  "IP-01": {
+   "hex": "#C25562",
+   "accent_on_paper": 4.05,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 7.89,
+   "ink_on_pill_tint": 9.37,
+   "marker_on_key_tint": 2.8
+  },
+  "IP-02": {
+   "hex": "#C17D41",
+   "accent_on_paper": 3.08,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 8.61,
+   "ink_on_pill_tint": 9.8,
+   "marker_on_key_tint": 2.32
+  },
+  "IP-03": {
+   "hex": "#8964A4",
+   "accent_on_paper": 4.37,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 7.93,
+   "ink_on_pill_tint": 9.39,
+   "marker_on_key_tint": 3.03
+  },
+  "IP-04": {
+   "hex": "#AB812D",
+   "accent_on_paper": 3.27,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 8.48,
+   "ink_on_pill_tint": 9.76,
+   "marker_on_key_tint": 2.43
+  },
+  "IP-05": {
+   "hex": "#4F816B",
+   "accent_on_paper": 4.12,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 8.05,
+   "ink_on_pill_tint": 9.44,
+   "marker_on_key_tint": 2.91
+  },
+  "IP-06": {
+   "hex": "#5366A0",
+   "accent_on_paper": 5.11,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 7.68,
+   "ink_on_pill_tint": 9.15,
+   "marker_on_key_tint": 3.44
+  },
+  "IP-07": {
+   "hex": "#347B97",
+   "accent_on_paper": 4.36,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 7.89,
+   "ink_on_pill_tint": 9.33,
+   "marker_on_key_tint": 3.01
+  },
+  "IP-08": {
+   "hex": "#A95E86",
+   "accent_on_paper": 4.17,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 7.96,
+   "ink_on_pill_tint": 9.42,
+   "marker_on_key_tint": 2.91
+  },
+  "IP-09": {
+   "hex": "#B47752",
+   "accent_on_paper": 3.39,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 8.45,
+   "ink_on_pill_tint": 9.72,
+   "marker_on_key_tint": 2.51
+  },
+  "IP-10": {
+   "hex": "#367C79",
+   "accent_on_paper": 4.47,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 7.84,
+   "ink_on_pill_tint": 9.31,
+   "marker_on_key_tint": 3.07
+  },
+  "IP-11": {
+   "hex": "#7978B3",
+   "accent_on_paper": 3.75,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 8.26,
+   "ink_on_pill_tint": 9.6,
+   "marker_on_key_tint": 2.71
+  },
+  "IP-12": {
+   "hex": "#89845D",
+   "accent_on_paper": 3.5,
+   "ink_on_paper": 11.42,
+   "ink_on_key_tint": 8.42,
+   "ink_on_pill_tint": 9.73,
+   "marker_on_key_tint": 2.58
+  }
+ },
+ "failing": [],
+ "colour_vision_simulation": {
+  "none": {
+   "min_pair_deltaE76": 10.34,
+   "min_pair": "IP-06/IP-11",
+   "min_adjacent_deltaE76": 25.77,
+   "min_adjacent": "IP-06/IP-07"
+  },
+  "protan": {
+   "min_pair_deltaE76": 2.06,
+   "min_pair": "IP-03/IP-06",
+   "min_adjacent_deltaE76": 5.47,
+   "min_adjacent": "IP-07/IP-08"
+  },
+  "deutan": {
+   "min_pair_deltaE76": 2.63,
+   "min_pair": "IP-00/IP-08",
+   "min_adjacent_deltaE76": 12.62,
+   "min_adjacent": "IP-06/IP-07"
+  },
+  "tritan": {
+   "min_pair_deltaE76": 1.88,
+   "min_pair": "IP-00/IP-11",
+   "min_adjacent_deltaE76": 5.9,
+   "min_adjacent": "IP-08/IP-09"
+  }
+ },
+ "note": "Colour is never the sole signal: every mark also carries a text label, note name and semitone count. Simulations are approximate (Vienot protan/deutan; crude tritan)."
+}
