@@ -11,8 +11,9 @@ import teaching from '../lib/soundscape/week2/teaching.json'
 import atlas from '../lib/soundscape/resources/atlas.json'
 import { midiToName } from '../lib/soundscape/midi'
 
-const upper = (e: { midi: number; role: string }[]) => e.filter(x => x.role === 'melody')
-const lower = (e: { midi: number; role: string }[]) => e.filter(x => x.role === 'drone')
+type Ev = { midi: number; start: number; dur: number; role: string }
+const upper = (e: Ev[]) => e.filter(x => x.role === 'melody')
+const lower = (e: Ev[]) => e.filter(x => x.role === 'drone')
 const ends = (e: { start: number; dur: number }) => +(e.start + e.dur).toFixed(2)
 
 test('pitches: B3=59, C4=60, D4=62, E4=64, F4=65, G4=67 and names', () => {
