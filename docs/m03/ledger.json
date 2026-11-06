@@ -287,6 +287,39 @@
    "seconds": 12.4,
    "generation_id": "gen-1793978710-JlP5gd4bO2K2LwJtsndY",
    "got_image": true
+  },
+  {
+   "asset": "F01",
+   "time": "2026-11-06T10:25:46",
+   "aspect": "16:9",
+   "cost_usd": 0.037677,
+   "prompt_tokens": 1463,
+   "completion_tokens": 1371,
+   "seconds": 12.7,
+   "generation_id": "gen-1793978733-BMwcbaW87KzwGhakdSuF",
+   "got_image": true
+  },
+  {
+   "asset": "F08",
+   "time": "2026-11-06T10:26:09",
+   "aspect": "16:9",
+   "cost_usd": 0.0380445,
+   "prompt_tokens": 1448,
+   "completion_tokens": 1423,
+   "seconds": 11.3,
+   "generation_id": "gen-1793978758-q9LNnzjGRgJjXhA0NOsk",
+   "got_image": true
+  },
+  {
+   "asset": "F10",
+   "time": "2026-11-06T10:26:28",
+   "aspect": "16:9",
+   "cost_usd": 0.038874,
+   "prompt_tokens": 1456,
+   "completion_tokens": 1532,
+   "seconds": 12.2,
+   "generation_id": "gen-1793978776-y5ngs2HJYLPT7p5l4Vgp",
+   "got_image": true
   }
  ]
 }
