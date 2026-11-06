@@ -3,277 +3,157 @@ import Link from 'next/link'
 import { useState } from 'react'
 import LessonShell from '../LessonShell'
 import Md from '../Md'
-import { ClipButton, NowPlaying, StopButton, useAudio, useNote } from '../AudioProvider'
-import { BlankLines } from '../ViewMode'
-import { copy, field, stepsOf, all } from '@/lib/soundscape/week1/content'
-import { A01, A02, A03_NOTES, A05_LISTEN, visitor } from '@/lib/soundscape/week1/fixtures'
-import { midiToName } from '@/lib/soundscape/midi'
-import Fig from './Fig'
-import { M1AV1, M1AV2, M1AV3, M1AV4 } from '../visual/Week1Moments'
-import { Aside, ChoiceCheck, Paras, Recap, Steps, ThinkThenCheck } from './Teach'
-import { T } from '@/lib/soundscape/week1/teaching'
-import Keys from './Keys'
-import { lessonDoors } from './Doors'
+import { Aside, ChoiceCheck, Recap } from './Teach'
+import { doorsFrom } from './Doors'
+import { drawers } from '@/lib/soundscape/week1/content'
+import { G1, G2, G3, G4, G5, G6, G7, ReflectChoices } from './kb/Graphics'
+import * as T from '@/lib/soundscape/week1/lesson1a-copy'
 
-const L = '1A' as const
-const c = (s: string, l: string, n = 0) => copy(L, s, l, n)
-const letter = (m: number) => midiToName(m).replace(/\d/, '')
+const Paras = ({ p }: { p: string[] }) => <div className="sp-prose">{p.map(x => <p key={x.slice(0, 30)}><Md>{x}</Md></p>)}</div>
+const DRONE_A = 'https://www.youtube.com/watch?v=N5LqCQHQCGc'
+const DRONE_B = 'https://www.youtube.com/watch?v=hhPX4n8rPIU'
 
-function Pre() {
+function Journey() {
+  const steps = [['Find C', 'Use the black keys to find your first named note.'], ['Travel from C to C', 'Learn the white keys and play up and back.'], ['Discover home', 'Stop in different places and notice how it feels.']]
   return (
-    <div>
-      <Paras paras={T.a_pre.paras} />
-      <Aside label="Mini-example">{T.a_pre.mini}</Aside>
-      <M1AV1 />
-    </div>
-  )
-}
-
-function Tonal() {
-  const t = T.a_tonal
-  return (
-    <div>
-      <Paras paras={t.paras} />
-      <Aside label="Hear the comparison">{t.compare}</Aside>
-      <div className="flex flex-wrap gap-3 mb-2">
-        <ClipButton id="tE" label="Hear E over C" events={A02.E} status="Now playing C with E" />
-        <ClipButton id="tG" label="Hear G over C" events={A02.G} status="Now playing C with G" />
-        <StopButton />
-      </div>
-      <NowPlaying />
-      <ChoiceCheck q={t.check.q} choices={t.check.choices} correct="C" correctText={t.check.correct} incorrectText={t.check.incorrect} />
-    </div>
-  )
-}
-
-function MapTeaching() {
-  const m = T.a_map
-  return (
-    <div>
-      <Paras paras={m.paras} />
-      <M1AV3 />
-      <h3 className="text-lg font-semibold text-slate-900 mt-4">Keyboard walkthrough</h3>
-      <Steps items={m.walk} />
-      <h3 className="text-lg font-semibold text-slate-900 mt-4">Check your understanding</h3>
-      {m.checks.map(k => <ThinkThenCheck key={k.q} q={k.q} a={k.answer} />)}
-    </div>
-  )
-}
-
-function Relationship() {
-  return (
-    <div>
-      <Paras paras={T.a_rel.paras} />
-      <Aside label="Try it in your own studio">{T.a_rel.bridge}</Aside>
-    </div>
-  )
-}
-
-function Listen() {
-  const [played, setPlayed] = useState(false)
-  return (
-    <div>
-      <p className="sp-prose"><Md>{c('1', 'Body')}</Md></p>
-      <div className="flex flex-wrap gap-3 mb-2">
-        <ClipButton id="home" label={c('1', 'Audio control label')} events={A01} status="Now playing C, the home note" onPlayed={() => setPlayed(true)} />
-        <StopButton />
-      </div>
-      <NowPlaying />
-      {played && (
-        <>
-          <p className="sp-callout max-w-2xl">{c('1', 'Audio caption (shown after playback begins or completes)')}</p>
-        </>
-      )}
-      <p className="sp-prose mt-4"><strong>{c('1', 'Reflection prompt')}</strong></p>
-      <label className="sp-sr-only" htmlFor="reflect-1">{c('1', 'Reflection prompt')}</label>
-      <textarea id="reflect-1" className="sp-field" placeholder={c('1', 'Reflection text box placeholder')} />
-      <p className="sp-prose sp-muted mt-2">{c('1', 'Instruction below reflection')}</p>
-      <BlankLines n={2} />
-    </div>
-  )
-}
-
-function Visitors() {
-  const a = useAudio()
-  const [heard, setHeard] = useState(0)
-  const [more, setMore] = useState(false)
-  const said = (l: string) => `Now playing C with ${l}`
-  return (
-    <div>
-      <p className="sp-prose">{c('2', 'Body')}</p>
-      <div className="flex flex-wrap gap-3 mb-2">
-        <ClipButton id="vE" label="Hear E" events={A02.E} status={said('E')} onPlayed={() => setHeard(h => h + 1)} />
-        <ClipButton id="vG" label="Hear G" events={A02.G} status={said('G')} onPlayed={() => setHeard(h => h + 1)} />
-        <ClipButton id="vD" label="Hear D" events={A02.D} status={said('D')} onPlayed={() => setHeard(h => h + 1)} />
-        <StopButton />
-      </div>
-      <NowPlaying />
-      {heard > 0 && (
-        <>
-          <p className="sp-callout max-w-2xl">{c('2', 'After first visitor')}</p>
-          <p className="sp-prose"><strong>{c('2', 'Comparison prompt')}</strong></p>
-          <Fig file="W1-02_exploration-map_learner.svg" />
-        </>
-      )}
-      <button type="button" className="sp-btn sp-btn--ghost" aria-expanded={more} onClick={() => setMore(m => !m)}>Try another note</button>
-      {more && (
-        <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="Choose one upper note to hear above the C">
-          {A03_NOTES.map((m, i) => (
-            <button
-              key={m} type="button" className="sp-btn sp-btn--ghost sp-choice" aria-pressed={a.playing === `v${m}`}
-              onClick={() => { a.play(`v${m}`, visitor(m), said(letter(m))); setHeard(h => h + 1) }}
-            >
-              {heard > 0 ? midiToName(m) : `Note ${i + 1}`}
-            </button>
-          ))}
-        </div>
-      )}
-      <M1AV2 />
-    </div>
-  )
-}
-
-function Keyboard() {
-  const play = useNote()
-  const [landmarks, setLandmarks] = useState(false)
-  const [names, setNames] = useState(true)
-  const [pick, setPick] = useState<number[]>([])
-  const [shown, setShown] = useState(false)
-  const cs = [48, 60, 72]
-  const marks = landmarks ? Object.fromEntries(cs.map(m => [m, 'on' as const])) : {}
-  const labels = landmarks ? Object.fromEntries(cs.map(m => [m, midiToName(m)])) : {}
-  const both = pick.length === 2 && pick.every(m => m % 12 === 0)
-  const [yes, help] = [...field(L, '3', 'Visible check').matchAll(/"([^"]+)"/g)].map(m => m[1])
-  const onKey = (m: number) => {
-    play(m, `Now playing ${midiToName(m)}`)
-    setPick(p => (p.includes(m) ? p.filter(x => x !== m) : p.length >= 2 ? [m] : [...p, m]))
-    setShown(false)
-  }
-  return (
-    <div>
-      <p className="sp-prose">{all(L, '3', 'Body')[0]}</p>
-      <h3 className="text-xl font-semibold text-slate-900 mt-6">{c('3', 'Subheading', 0)}</h3>
-      <p className="sp-prose">{all(L, '3', 'Body')[1]}</p>
-      <div className="flex flex-wrap gap-3 my-3">
-        <button type="button" className="sp-btn" aria-pressed={landmarks} onClick={() => setLandmarks(v => !v)}>{landmarks ? 'Hide C landmarks' : 'Show C landmarks'}</button>
-        <button type="button" className="sp-btn sp-btn--ghost" aria-pressed={!names} onClick={() => setNames(v => !v)}>{names ? 'Hide note names' : 'Show note names'}</button>
-        <StopButton />
-      </div>
-      <Keys lo={48} hi={72} title="Keyboard from C3 to C5. Choose keys to hear them." showNames={names} labels={labels} marks={marks} selected={pick} onKey={onKey} />
-      <NowPlaying />
-      <p className="text-sm sp-muted">Black keys come in groups of two and three. Every neighbouring key, black or white, is one semitone.</p>
-      <h3 className="text-xl font-semibold text-slate-900 mt-6">{c('3', 'Subheading', 1)}</h3>
-      <p className="sp-prose">{all(L, '3', 'Body')[2]}</p>
-      <p className="sp-prose"><strong>{c('3', 'Try-it')}</strong></p>
-      <div className="sp-card p-4 max-w-2xl">
-        <p className="font-semibold m-0">Find two Cs</p>
-        <p className="text-sm sp-muted m-0">Choose two keys on the keyboard above.</p>
-        <button type="button" className="sp-btn sp-btn--ghost mt-2" disabled={pick.length !== 2} onClick={() => setShown(true)}>Check my two keys</button>
-        {shown && (
-          <p role="status" className="sp-callout mt-3 mb-0">
-            {both ? `${Math.abs(pick[0] - pick[1]) === 12 ? yes : 'Yes—both notes are C, two octaves apart.'} You chose ${pick.map(midiToName).join(' and ')}.` : help}
-          </p>
-        )}
-      </div>
-    </div>
-  )
-}
-
-function Carry() {
-  const [rev, setRev] = useState(false)
-  const steps = stepsOf(field(L, '4', '5-step component W1-08 (exact visible stage text)'))
-  return (
-    <div>
-      <p className="sp-prose">{c('4', 'Body')}</p>
-      <ol className="sp-prose pl-5 list-decimal">{steps.map(s => <li key={s.title}><strong>{s.title}</strong> — {s.text}</li>)}</ol>
-      <Fig file="W1-08_look-draw-hide-imagine-reveal_learner.svg" />
-      <button type="button" className="sp-btn" aria-expanded={rev} onClick={() => setRev(v => !v)}>{rev ? 'Hide the map' : 'Reveal the map'}</button>
-      {rev && (
-        <div className="mt-3">
-          <Keys lo={60} hi={72} title="Keyboard from C4 to C5 with E4 marked" showNames labels={{ 64: 'E4' }} marks={{ 64: 'on' }} />
-          <p className="text-sm sp-muted">E is the white key two keys to the right of C, with one black key between them.</p>
-        </div>
-      )}
-    </div>
-  )
-}
-
-function HearImagine() {
-  const names = [...field(L, '5', 'Step controls').matchAll(/`([^`]+)`/g)].map(m => m[1])
-  const [i, setI] = useState(0)
-  const done = i >= names.length - 1
-  return (
-    <div>
-      <p className="sp-prose">{c('5', 'Body')}</p>
-      <ol className="flex flex-wrap gap-2 list-none p-0 my-3" aria-label="Steps">
-        {names.map((n, k) => <li key={n} className={`sp-status ${k === i ? 'sp-choice' : ''}`} aria-current={k === i ? 'step' : undefined} style={k === i ? { background: '#0f172a', color: '#fff' } : undefined}>{k + 1}. {n}</li>)}
+    <div id="journey" className="scroll-mt-24 mb-8">
+      <h3 className="sp-editorial-title text-xl font-medium text-slate-900 mt-0">Today&apos;s journey</h3>
+      <ol className="list-none p-0 grid gap-3 sm:grid-cols-3 mt-2" aria-label="Today's journey">
+        {steps.map(([t, d], i) => (
+          <li key={t} className="sp-card p-4"><p className="sp-eyebrow m-0">Step {i + 1}</p><p className="font-semibold text-slate-900 m-0">{t}</p><p className="text-base sp-muted m-0">{d}</p></li>
+        ))}
       </ol>
-      <div className="flex flex-wrap gap-3 mb-2">
-        {i === 0 && <ClipButton id="listenE" label="Play E above the home sound" events={A05_LISTEN} status="Now playing C with E; the E will stop and the C will continue" />}
-        {i === 0 && <StopButton />}
-        {!done && <button type="button" className="sp-btn sp-btn--ghost" onClick={() => setI(i + 1)}>Next step: {names[i + 1]}</button>}
-        {i > 0 && <button type="button" className="sp-btn sp-btn--ghost" onClick={() => setI(i - 1)}>Back</button>}
-      </div>
-      <NowPlaying />
-      {done && <p className="sp-callout max-w-2xl">{c('5', 'Reveal')}</p>}
-      <p className="sp-prose sp-muted">{c('5', 'Fallback')}</p>
-      <M1AV4 />
-      <Fig file="W1-05_hear-imagine-sing-find-card_learner.svg" />
     </div>
   )
 }
 
-function Make() {
-  const [made, setMade] = useState(false)
+function Try({ children }: { children: string }) {
+  return <Aside label="Try it on your keyboard">{children}</Aside>
+}
+
+function Stage1() {
   return (
     <div>
-      <p className="sp-prose">{c('6', 'Body')}</p>
-      <p className="sp-prose">{c('6', 'Instructions')}</p>
-      <p className="sp-callout max-w-2xl">{c('6', 'Composer hint')}</p>
-      <button type="button" className="sp-btn" aria-pressed={made} onClick={() => setMade(true)}>{c('6', 'Primary CTA')}</button>
-      <div className="mt-4">
-        <label htmlFor="changed-1a" className="block font-semibold">What changed the feeling most?</label>
-        <textarea id="changed-1a" className="sp-field mt-1" />
-        <p className="text-sm sp-muted m-0">This stays in your browser and is cleared when you refresh.</p>
+      <Journey />
+      <Paras p={T.S1.p} />
+      <G1 />
+      <Try>Play one white key near the middle of your keyboard. Then play a key to its right, then a key to its left.</Try>
+      <p className="sp-prose"><strong>What changed: how high or low it sounded, or how hard you pressed?</strong></p>
+    </div>
+  )
+}
+function Stage2() {
+  return (
+    <div>
+      <Paras p={T.S2.p} />
+      <G2 />
+      <Try>{"If you can, find three Cs on your real keyboard and play each one. Which is higher, and which is lower? You don't need any numbers."}</Try>
+    </div>
+  )
+}
+function Stage3() {
+  return (
+    <div>
+      <Paras p={T.S3.p} />
+      <G3 />
+      <Try>Travel slowly to the right from C to the next C, saying each name as you play it. Then play back down: C, B, A, G, F, E, D, C. One finger is absolutely fine.</Try>
+      <ChoiceCheck q="How many different letter names did we pass before C repeated?" choices={['5', '6', '7', '8']} correct="7" correctText="Seven: C, D, E, F, G, A, B. Then C came back, a little higher. The second C is not a second kind of note." incorrectText="Count the names again: C, D, E, F, G, A, B. That's seven different letters before C comes round again. The second C is the same note name, higher." />
+    </div>
+  )
+}
+function Stage4() {
+  return (
+    <div>
+      <Paras p={T.S4.p} />
+      <G4 />
+      <Try>Play the lower C, then the higher C, then the lower C again. You can hum or sweep your hand upward as you listen.</Try>
+    </div>
+  )
+}
+function Stage5() {
+  return (
+    <div>
+      <Paras p={T.S5.p} />
+      <G5 />
+      <p className="sp-prose"><strong>{T.S5.q}</strong></p>
+      <ReflectChoices label="Does the final C feel like a return?" options={['It feels like a return', 'It feels different to me', 'Not sure']} />
+    </div>
+  )
+}
+function Stage6() {
+  return (
+    <div>
+      <Paras p={T.S6.p} />
+      <G6 />
+      <Try>Play the same four notes, C D E G, and end once on D and once on C. Then try ending on E, and on B. Notice your reaction each time.</Try>
+    </div>
+  )
+}
+function Stage7() {
+  return (
+    <div>
+      <Paras p={T.S7.p} />
+      <div className="grid gap-4 md:grid-cols-2 my-4">
+        <div className="sp-card p-4">
+          <p className="sp-eyebrow m-0">Option A</p>
+          <p className="font-semibold m-0">Hold C on your own keyboard</p>
+          <p className="m-0">Hold C on your own synth, or use a sustain, latch or pad sound if your instrument has one, and play the other white keys over it. No special feature is needed: a held finger works.</p>
+        </div>
+        <div className="sp-card p-4">
+          <p className="sp-eyebrow m-0">Option B</p>
+          <p className="font-semibold m-0">Open a C drone on YouTube</p>
+          <p className="m-0 text-base">Plays on YouTube, in a new tab. The video listed as “C Drone For Musical Practice &amp; Meditation” by Tunes &amp; Tools - Jon Antonsson. Nothing plays on this page.</p>
+          <p className="mt-2"><a href={DRONE_A} target="_blank" rel="noopener noreferrer" className="sp-btn">Open a C drone on YouTube<span className="sp-sr-only"> (opens in a new tab)</span> ↗</a></p>
+          <p className="m-0 text-sm sp-muted">A softer, more atmospheric option, listed as “C Major Pad” by Vishal Bhojane: <a href={DRONE_B} target="_blank" rel="noopener noreferrer" className="font-medium" style={{ color: '#b45309' }}>open on YouTube<span className="sp-sr-only"> (opens in a new tab)</span> ↗</a>. It is a pad in C major, so it may sound fuller than a single note. Videos can change or disappear; if one does, hold C yourself.</p>
+        </div>
       </div>
-      {made && <p className="sp-prose mt-4" role="status"><em>{c('6', 'End copy')}</em></p>}
+      <Try>Keep C sounding softly. Play D, E, F, G, A and B one at a time, pausing to return to C. Then try a short three-note idea while C sounds. When you play your own C against the drone, it may feel especially settled.</Try>
+      <p className="sp-prose"><strong>Which notes felt like stepping away? Which sounded comfortable with C? Does C feel easier to recognize now?</strong> Whatever you hear is a good answer.</p>
+    </div>
+  )
+}
+function Stage8() {
+  const [note, setNote] = useState('')
+  return (
+    <div>
+      <Paras p={T.S8.p} />
+      <G7 />
+      <ReflectChoices label="Which ending do you prefer today?" options={['Ending on C', 'Finishing somewhere else', 'Both, for different reasons']} />
+      <label htmlFor="story-note" className="block font-semibold mt-4">A few words about your idea (optional)</label>
+      <textarea id="story-note" className="sp-field mt-1" value={note} onChange={e => setNote(e.target.value)} />
+      <p className="text-sm sp-muted m-0">This stays in your browser and is gone when you refresh. Nothing is saved or sent.</p>
       <p className="mt-4 flex flex-wrap gap-4 sp-noprint">
         <Link className="sp-btn" href="/curriculum/soundscape-path/week-1/lesson-1b">Continue to Lesson 1B</Link>
-        <a className="sp-btn sp-btn--ghost" href="#keyboard">Review the keyboard</a>
+        <Link className="sp-btn sp-btn--ghost" href="/curriculum/soundscape-path/week-1">Back to Week 1</Link>
       </p>
-      <p><a href="/soundscape/w1/pdf/W1-06_keyboard-map_blank.pdf" className="font-medium" style={{ color: '#b45309' }}>Download the practice sheet (PDF)</a></p>
     </div>
   )
 }
 
 export default function Lesson1A() {
-  const d = lessonDoors(L)
+  const d = doorsFrom(drawers('1A') as never, '/soundscape/w1/pdf/W1-04_personal-tonal-atlas-worksheet_blank.pdf')
   return (
     <LessonShell
-      audio
-      eyebrow={c('0', 'Eyebrow')}
-      title={c('0', 'H1')}
+      eyebrow="WEEK 1 · LESSON 1 OF 3"
+      title={T.H1}
       intro={
-        <div className="space-y-2">
-          <p className="m-0 text-lg">{c('0', 'Deck')}</p>
-          <p className="m-0 text-sm">{c('0', 'Estimated time')}</p>
-          <p className="m-0"><strong>What you’ll learn.</strong> {c('0', "What You'll Learn")}</p>
-          <p className="m-0">{c('0', 'Artistic intention')}</p>
+        <div className="space-y-3">
+          <p className="m-0 text-lg">{T.DECK}</p>
+          <p className="m-0">{T.SETUP}</p>
+          <p className="m-0 text-sm">About 20–30 minutes, at your own pace. Everything works with this page muted: you make every sound on your own keyboard.</p>
         </div>
       }
-      heroCtas={<><a href="#before" className="sp-btn">Begin with Sound</a><a href="#keyboard" className="sp-btn sp-btn--ghost" style={{ color: '#fff', borderColor: '#fff' }}>Explore the Keyboard</a></>}
+      heroCtas={<><a href="#find-c" className="sp-btn">Find your first C</a><a href="#journey" className="sp-btn sp-btn--ghost" style={{ color: '#fff', borderColor: '#fff' }}>See today’s journey</a></>}
       blocks={[
-        { id: 'before', heading: T.a_pre.h2, body: <Pre /> },
-        { id: 'listen', heading: c('1', 'H2'), body: <Listen /> },
-        { id: 'tonal', heading: T.a_tonal.h2, body: <Tonal /> },
-        { id: 'visitor', heading: c('2', 'H2'), body: <Visitors /> },
-        { id: 'keyboard', heading: c('3', 'H2'), body: <Keyboard /> },
-        { id: 'map', heading: T.a_map.h2, body: <MapTeaching /> },
-        { id: 'carry', heading: c('4', 'H2'), body: <Carry /> },
-        { id: 'hear', heading: c('5', 'H2'), body: <HearImagine /> },
-        { id: 'relationship', heading: T.a_rel.h2, body: <Relationship /> },
-        { id: 'make', heading: c('6', 'H2'), body: <Make /> },
-        { id: 'recap', heading: 'Recap', body: <Recap title="What you learned today">{T.a_rel.recap}</Recap> },
+        { id: 'note', heading: T.S1.h, body: <Stage1 /> },
+        { id: 'find-c', heading: T.S2.h, body: <Stage2 /> },
+        { id: 'names', heading: T.S3.h, body: <Stage3 /> },
+        { id: 'octave', heading: T.S4.h, body: <Stage4 /> },
+        { id: 'journey-up', heading: T.S5.h, body: <Stage5 /> },
+        { id: 'home', heading: T.S6.h, body: <Stage6 /> },
+        { id: 'drone', heading: T.S7.h, body: <Stage7 /> },
+        { id: 'story', heading: T.S8.h, body: <Stage8 /> },
+        { id: 'recap', heading: 'Recap', body: <Recap title="Today's words">{T.RECAP.map(r => r.replace(/^(\w[\w\s]*?) = /, '**$1** = '))}</Recap> },
       ]}
       doorsHeading="Explore a little deeper"
       doorsIntro={null}

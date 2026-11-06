@@ -105,3 +105,7 @@
 .sp-root table { display: block; max-width: 100%; overflow-x: auto; }
 .sp-root select.sp-field { max-width: 100%; }
 .sp-root label.inline-flex { flex-wrap: wrap; max-width: 100%; }
+
+/* Lesson 1A keyboard-first illustrations: warm Quiet Paper wash behind the drawn keyboards (decoration only) */
+.sp-kbframe { background: radial-gradient(circle at 12% 8%, rgb(246 231 207 / .75), transparent 46%), radial-gradient(circle at 92% 96%, rgb(214 226 228 / .7), transparent 42%), #fbf7ee; }
+.sp-kbframe svg { background: transparent; }

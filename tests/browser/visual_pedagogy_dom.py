@@ -11,7 +11,7 @@ def check(label, cond, detail=""):
     if not cond: failed.append((label, detail))
 
 EXPECT = {
-    "/week-1": ["W1HUB"], "/week-1/lesson-1a": ["1A-V1", "1A-V2", "1A-V3", "1A-V4"], "/week-1/lesson-1b": ["1B-V1", "1B-V2", "1B-V3"],
+    "/week-1": ["W1HUB"], "/week-1/lesson-1a": [], "/week-1/lesson-1b": ["1B-V1", "1B-V2", "1B-V3"],
     "/week-1/lesson-1c": ["1C-V1", "1C-V2", "1C-V3", "1C-V4"], "/week-2": ["W2HUB"], "/week-2/lesson-2a": ["2A-V1", "2A-V2", "2A-V3", "2A-V4"],
     "/week-2/lesson-2b": ["2B-V1", "2B-V2", "2B-V3"], "/week-2/lesson-2c": ["2C-V1", "2C-V2", "2C-V3"], "/resources/interval-palette": ["ATLAS"],
 }
@@ -59,15 +59,6 @@ with sync_playwright() as p:
                     check(f"{k} walk-through@{w}", "Walk through it" in t or k in ("ATLAS",) or "Walk" in t)
                     check(f"{k} source labelled@{w}", "epaulson2/AMF" in t or k.startswith("W"))
             # --- specific truths
-            if path.endswith("lesson-1a"):
-                v1 = pg.locator("[data-visual='1A-V1']").evaluate(BLOCK_JS)
-                check(f"1A-V1 says C3, 15 s, and that the art is C4@{w}", all(s in v1["text"] for s in ("C3", "drafted around C4", "15 seconds")))
-                check(f"1A-V1 timeline is C3 only@{w}", any("C3" in x and "15 seconds" in x and "C4" not in x for x in v1["descs"]), json.dumps(v1["descs"]))
-                check(f"1A-V1 Style B art loads@{w}", v1["imgsLoaded"] and v1["media"] >= 2)
-                pg.locator("[data-visual='1A-V1']").get_by_role("button", name="Start the walk").click()
-                check(f"walk status@{w}", pg.locator("[data-visual='1A-V1'] [role=status]").filter(has_text="Step 1 of").count() == 1)
-                v3 = pg.locator("[data-visual='1A-V3']")
-                check(f"1A-V3 keyboard reaches C3..C5@{w}", v3.locator("g[data-midi='48']").count() >= 1 and v3.locator("g[data-midi='72']").count() >= 1)
             if path.endswith("lesson-1b"):
                 v3b = pg.locator("[data-visual='1B-V3']").evaluate(BLOCK_JS)
                 check(f"1B-V3 shows C5 after reveal@{w}", any("C5" in x for x in v3b["descs"]))
@@ -105,13 +96,13 @@ with sync_playwright() as p:
                 check(f"hub map panels (3)@{w}", pg.locator("[data-visual] > ol > li").count() == 3)
                 if path == "/week-2": check(f"W2 hub Style B image loads@{w}", pg.locator("[data-visual='W2HUB'] img").evaluate("i => i.complete && i.naturalWidth > 0"))
             pg.close()
-    # audio + stop through a visual block, no sound on load
+    # audio + stop through a visual block (1C), no sound on load
     pg = b.new_page(viewport={"width": 1280, "height": 900})
     pg.add_init_script("window.__au={ctx:0,closed:0};const AC=window.AudioContext;window.AudioContext=class extends AC{constructor(){super();window.__au.ctx++}close(){window.__au.closed++;return super.close()}};")
-    pg.goto(BASE + "/week-1/lesson-1a", wait_until="networkidle")
+    pg.goto(BASE + "/week-1/lesson-1c", wait_until="networkidle")
     check("silent on load", pg.evaluate("window.__au.ctx") == 0)
-    pg.locator("[data-visual='1A-V1']").get_by_role("button", name="Play the home note (C3)").click(); pg.wait_for_timeout(400)
-    check("block play shows status", pg.locator("[data-visual='1A-V1'] [role=status]").filter(has_text="Now playing C3").count() == 1)
+    pg.locator("[data-visual='1C-V1']").get_by_role("button", name="Hear both voices").click(); pg.wait_for_timeout(400)
+    check("block play shows status", pg.locator("[data-visual='1C-V1'] [role=status]").filter(has_text="Now playing").count() == 1)
     pg.get_by_role("button", name="Stop sound").first.click(); pg.wait_for_timeout(500)
     st = pg.evaluate("({c: window.__au.ctx, d: window.__au.closed})")
     check("stop closes the context", st["c"] == st["d"] == 1, str(st))

@@ -29,18 +29,7 @@ with sync_playwright() as p:
         has(pg, f"hub@{w}", "Welcome to your first musical landscape", "pitch", "tonal center", "octave", "semitone", "whole step", "scale", "melodic voice", "harmony",
             "Those words aren't a vocabulary exam", "Learn what pitch and a note are", "Learn to measure the smallest steps on the keyboard", "Learn how one musical voice can stay while another moves",
             "you'll be able to find C on a keyboard", "build the C-major scale", "Read the idea, hear an example, try it yourself")
-        # ---- 1A
-        pg.goto(BASE + "/lesson-1a", wait_until="networkidle")
-        has(pg, f"1A@{w}", "Before we listen — what is a musical note?", "Pitch is how high or low we hear a sound", "timbre", "What is a tonal center?", "tonic",
-            "One held C is not automatically a C-major chord", "Reading the keyboard as a map", "groups of two and three" if False else "alternate in groups of two and three",
-            "The white key directly to their left is C", "octave", "registers", "A note becomes a musical relationship", "which pitch stays and which pitch changes",
-            "make one soft note last 10–15 seconds", "Pitch tells us high and low; timbre is sound color")
-        pg.get_by_role("button", name="E", exact=True).first.click()
-        has(pg, f"1A check wrong@{w}", "Try listening again: one note stays under every example.")
-        pg.get_by_role("button", name="C", exact=True).first.click()
-        has(pg, f"1A check right@{w}", "C is the chosen reference. The upper notes can change while it stays.")
-        reveal_all(pg)
-        has(pg, f"1A map checks@{w}", "an octave", "No; they are two pitches sounding together, not a three-note C-major triad.")
+        # ---- 1A is covered by tests/browser/lesson1a_keyboard_first.py (keyboard-first redesign)
         # ---- 1B before reveal
         pg.goto(BASE + "/lesson-1b", wait_until="networkidle")
         has(pg, f"1B pre-reveal@{w}", "From a home note to a musical journey", "A melody is a line of pitches heard in sequence", "Reveal a possible ending")

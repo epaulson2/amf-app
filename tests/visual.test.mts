@@ -4,7 +4,7 @@ import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
 import { readFileSync, statSync } from 'node:fs'
 import { homedir } from 'node:os'
-import { A01, B01, B02, C01, C02, C03, C04, C05, A02 } from '../lib/soundscape/week1/fixtures'
+import { B01, B02, C01, C02, C03, C04, C05 } from '../lib/soundscape/week1/fixtures'
 import { A, B, C, FIVE } from '../lib/soundscape/week2/fixtures'
 import { letterRun } from '../lib/soundscape/visual/rulers'
 import { V, stepsOf, checksOf } from '../lib/soundscape/visual/copy'
@@ -14,17 +14,6 @@ type Ev = { midi: number; start: number; dur: number; role: string }
 const up = (e: Ev[]) => e.filter(x => x.role === 'melody')
 const lo = (e: Ev[]) => e.filter(x => x.role === 'drone')
 const key = (e: Ev) => `${e.midi}@${e.start}+${e.dur}`
-
-test('1A-V1: the active home note is C3 (MIDI 48) for 15 s, not the C4 of the source artwork', () => {
-  assert.deepEqual(A01.map(e => [e.midi, e.start, e.dur]), [[48, 0, 15]])
-  assert.notEqual(A01[0].midi, 60)
-  const art = readFileSync(new URL('../public/soundscape/w1/W1-01_home-note_learner.svg', import.meta.url), 'utf8')
-  assert.ok(art.includes('C4 (MIDI 60)'), 'the source art is C4; the page must say so')
-})
-
-test('1A-V2: each visitor is one upper note over the same held C3', () => {
-  for (const [k, m] of [['E', 64], ['G', 67], ['D', 62]] as const) { assert.deepEqual(lo(A02[k]).map(key), ['48@0+6']); assert.deepEqual(up(A02[k]).map(e => e.midi), [m]) }
-})
 
 test('1B-V3: the open and arrival versions share the same seven notes; only the arrival has C5', () => {
   assert.deepEqual(up(B02).slice(0, 7).map(key), up(B01).map(key))
@@ -57,9 +46,9 @@ test('palette data used by the reader: 13 cards, tritone 6 semitones with both s
   assert.equal(INTERVALS.length, 13); assert.equal(INTERVALS[6].upperMidi - INTERVALS[6].lowerMidi, 6)
 })
 
-test('visual copy: every heading and paragraph is verbatim from the zero-decision document; 21 lesson moments + 2 hubs + atlas', () => {
-  assert.equal(Object.keys(V).length, 24)
-  assert.equal(Object.keys(V).filter(k => /^[12][ABC]-V\d$/.test(k)).length, 21)
+test('visual copy: every heading and paragraph is verbatim from the zero-decision document; 17 lesson moments + 2 hubs + atlas', () => {
+  assert.equal(Object.keys(V).length, 20) // 1A's four moments were superseded by the keyboard-first lesson
+  assert.equal(Object.keys(V).filter(k => /^[12][ABC]-V\d$/.test(k)).length, 17)
   let doc = ''
   try { doc = execFileSync('git', ['-C', `${homedir()}/amf-work/amf-w78-docs`, 'show', 'origin/docs/ajourne-site-implementation-20261105:04-curriculum/tracks/soundscape-path/implementation/site-build/W1_W2_VISUAL_TEACHING_ZERO_DECISION_V1.md'], { encoding: 'utf8' }) } catch { return }
   for (const [k, v] of Object.entries(V)) {

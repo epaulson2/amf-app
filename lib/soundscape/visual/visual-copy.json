@@ -8,57 +8,6 @@
   ],
   "guide": "“Try pointing to the sound that stays in each picture. Which part of the picture changes from one lesson to the next? After each lesson, return and see whether you can tell its story using just the notes and lines.”"
  },
- "1A-V1": {
-  "title": "1A-V1: The Home Note — Style B composition plus **accurate C3 event graphic**",
-  "heading": "Read the sound: one note becomes our reference",
-  "paras": [
-   "Look at the central note and the long line extending through the picture. The dot marks the note we chose; the line shows that it lasts instead of jumping between pitches. On today's instrument that note is **C3**, a low C. When we start the original audio example, it holds for fifteen seconds. The artwork suggests a landscape, but the factual musical information is simple: **one pitch remains present**.",
-   "The original home-note artwork was drafted around **C4**, which is a higher C than the C3 you hear in this example. The two Cs share a note letter but occupy different registers. Rather than pretend the picture and audio are identical, our active lesson map now marks the actual **C3** event, and the original art can serve as an atmospheric companion after its note labels are checked.",
-   "The long note by itself is not the C-major chord and does not prove we're in C major. We're **choosing** it as a reference for comparison. Once you can see that held line, you'll recognize the stable foundation beneath the changing sounds in the next picture."
-  ],
-  "steps": "(1) Locate the dot labeled C3; (2) trace the held line left-to-right for 15 seconds; (3) press Play, then Stop, and see how the sound corresponds to the held segment; (4) compare C3 with the interactive keyboard's higher C4 to understand register, not a different note-letter family.",
-  "check": "“Which pitch is held in the active example?” — C3; “Does this picture show a full C-major triad?” — No, only one pitch. Feedback explains the difference.",
-  "studio": "“Hold a low note on your own pad. Draw one long line to represent its duration before you add anything else.”",
-  "placement": "first visible, substantive graphic immediately after the \"What is a musical note?\" preface; maintain silence on load and don't spoil interactive listening. Existing source art `W1-01` plus Style B original PNG (only after factual text check); new event-derived C3 timeline replaces any false assertion that the original C4/8-beat art is exact for A01 C3/15s."
- },
- "1A-V2": {
-  "title": "1A-V2: The visitor changes a held landscape — source W1-02 with a data-driven two-voice map",
-  "heading": "Two lines, one fixed reference",
-  "paras": [
-   "In this picture the lower line stays where it is, while a second note appears above it. Read the first line as our **held C3** and the upper mark as a visitor. When E4 joins the C3, two pitches sound together. When E4 leaves and G4 enters in the next example, C3 has still not moved. The atmosphere can change even while one part stays exactly the same.",
-   "Follow each line independently rather than treating the whole image as a new three-note chord. The lower path is a long sustained note; the upper path shows when the visitor enters, holds briefly and disappears. This is your first visual example of **two musical voices**. The vertical distance between their note names is factual on our keyboard, while the surrounding circular 'home and visitor' artwork is an imaginative metaphor, not a scale of measurable intervals.",
-   "Listen to E, G and D over C. After each sound, point first to the unchanged lower line, then to the different upper position. That's the musical decision you can reproduce: keep the foundation and move the visitor."
-  ],
-  "steps": "(1) Choose E above C3; (2) reveal the upper name after hearing; (3) select G above the same C3; (4) compare positions using exact MIDI and a proper chromatic keyboard, not radial-circle radius; (5) identify unchanged voice.",
-  "check": "“What changed from C3+E4 to C3+G4?” — upper note only. “What stayed?” — C3 foundation.",
-  "studio": "“Duplicate a clip, retain the lower note and replace only the upper note; draw the two versions.”",
-  "placement": "directly alongside the C3+E4/G4/D4 listening comparison, learner-neutral preview before Play; reveal upper note names only after the authorized listening step."
- },
- "1A-V3": {
-  "title": "1A-V3: Read the black-key landmarks — W1-06 / generated C3–C5 keyboard tour",
-  "heading": "A keyboard is a repeating map, not a row of random keys",
-  "paras": [
-   "Start with the black keys. They form a repeating pattern: a group of **two**, then a group of **three**. That pattern is the landmark you can use to find the note letters even before you memorize all of them. The white key just to the left of each two-black-key group is **C**. The next matching group has another C higher up.",
-   "Find C3 and trace toward C4 on the diagram. The letter names repeat—C, D, E, F, G, A, B, C—while the sound rises. The distance from one C to the next C is an **octave**. On today's diagram, C3, C4 and C5 are distinct pitches, but they're all called C because they belong to this repeating note-name pattern.",
-   "Now notice the black keys between some neighboring white letters. From C to D we pass a black key, C-sharp. But E and F have no black key between them. This is why our later whole-step/half-step measurements need a real keyboard diagram rather than an evenly spaced row of letters."
-  ],
-  "steps": "(1) circle two-black-key pair; (2) highlight C3; (3) jump to next two-black-key pair and mark C4; (4) trace all 12 chromatic steps for a full octave; (5) toggle names and find C5 again.",
-  "check": "“How do you locate C?” — left of two-black-key group. “What makes C3–C4 an octave?” — same note letter, twelve chromatic semitones apart.",
-  "studio": "“Find C in your piano roll, then another C above; map the pattern without looking at the label.”",
-  "placement": "directly alongside previously approved “Reading the keyboard as a map” instruction. Primary fit-first labelled/unlabelled **interactive keyboard** and optional full first-party W1-06 page."
- },
- "1A-V4": {
-  "title": "1A-V4: Hear→Imagine→Hum/Trace→Find — W1-05/W1-08 and SYS-07",
-  "heading": "Use the picture as a rehearsal for your ears",
-  "paras": [
-   "The five stages show a simple practice cycle rather than a test. First **hear** one note or a tiny two-note idea. Next try to **imagine** its movement: does it stay, rise or fall? You can hum the idea if that helps, or trace the path with your hand or eyes if singing isn't comfortable. Then **find** the pitch on your instrument and compare what you expected with what you heard.",
-   "The picture moves from listening to choosing. The arrows represent a practice sequence, not notes jumping up on a musical scale. You can loop through the stages as many times as you like. If you don't form a strong internal sound or picture, use the visible keyboard; listening and checking still builds skill."
-  ],
-  "check": "“When you reveal the keyboard after imagining a note, what are you checking?” — Whether the actual key matches your mental or traced expectation.",
-  "studio": "“Play, stop, predict the next note, then find and compare it.”",
-  "guide": "Highlight one stage at a time; relate the real W1-05 card and W1-08 look/draw/hide path to the action the learner is taking. Provide text alternative and return to the keyboard.",
-  "placement": "alongside the existing audiation practice; show small visible “what the icons mean” step strip rather than throwing in a full 960px sheet without an explanation."
- },
  "1B-V1": {
   "title": "1B-V1: Half steps and whole steps — learner/instructor W1-07 + interactive chromatic path",
   "heading": "Read the spaces, not just the white keys",
