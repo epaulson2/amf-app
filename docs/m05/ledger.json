@@ -45,6 +45,83 @@
    "seconds": 12.0,
    "generation_id": "gen-1793987442-BhK547pLI7WoNeh6XPxi",
    "got_image": true
+  },
+  {
+   "asset": "IPV-10",
+   "time": "2026-11-06T12:51:35",
+   "aspect": "1:1",
+   "cost_usd": 0.038913,
+   "prompt_tokens": 1452,
+   "completion_tokens": 1538,
+   "seconds": 12.3,
+   "generation_id": "gen-1793987483-WduDfjs2I6Vxj22jrn7p",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-11",
+   "time": "2026-11-06T12:51:59",
+   "aspect": "1:1",
+   "cost_usd": 0.0387645,
+   "prompt_tokens": 1443,
+   "completion_tokens": 1520,
+   "seconds": 10.8,
+   "generation_id": "gen-1793987509-45PpDu3OwxsowWSTw2ti",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-12",
+   "time": "2026-11-06T12:52:22",
+   "aspect": "1:1",
+   "cost_usd": 0.03918,
+   "prompt_tokens": 1440,
+   "completion_tokens": 1576,
+   "seconds": 11.5,
+   "generation_id": "gen-1793987531-sVrWro5g2F4RWyiYoPTW",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-13",
+   "time": "2026-11-06T12:52:41",
+   "aspect": "1:1",
+   "cost_usd": 0.038964,
+   "prompt_tokens": 1441,
+   "completion_tokens": 1547,
+   "seconds": 10.7,
+   "generation_id": "gen-1793987550-C9BBGReOnsAE6aezGKqX",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-14",
+   "time": "2026-11-06T12:53:00",
+   "aspect": "1:1",
+   "cost_usd": 0.038076,
+   "prompt_tokens": 1444,
+   "completion_tokens": 1428,
+   "seconds": 11.2,
+   "generation_id": "gen-1793987569-mU3zKar64bJy5yEGnssX",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-15",
+   "time": "2026-11-06T12:53:22",
+   "aspect": "1:1",
+   "cost_usd": 0.0389385,
+   "prompt_tokens": 1444,
+   "completion_tokens": 1543,
+   "seconds": 11.8,
+   "generation_id": "gen-1793987591-w15Ec53cHXnnz4KHunAX",
+   "got_image": true
+  },
+  {
+   "asset": "IPV-16",
+   "time": "2026-11-06T12:53:44",
+   "aspect": "1:1",
+   "cost_usd": 0.038949,
+   "prompt_tokens": 1446,
+   "completion_tokens": 1544,
+   "seconds": 12.2,
+   "generation_id": "gen-1793987612-0dm1YnYCTdOmLLTDVNBV",
+   "got_image": true
   }
  ]
 }
