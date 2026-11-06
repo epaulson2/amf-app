@@ -1,0 +1,72 @@
+{
+ "model": "google/gemini-nano-banana-2.1",
+ "cap_usd": 4.0,
+ "calls": [
+  {
+   "asset": "A01",
+   "time": "2026-11-06T10:15:12",
+   "aspect": "1:1",
+   "cost_usd": 0.038688,
+   "prompt_tokens": 1452,
+   "completion_tokens": 1508,
+   "seconds": 13.0,
+   "generation_id": "gen-1793978100-NbZe82bCNVHDKozLdnGD",
+   "got_image": true
+  },
+  {
+   "asset": "A06",
+   "time": "2026-11-06T10:15:38",
+   "aspect": "4:5",
+   "cost_usd": 0.0381375,
+   "prompt_tokens": 1445,
+   "completion_tokens": 1436,
+   "seconds": 11.8,
+   "generation_id": "gen-1793978127-VRcx9hyWvtMx9SfRsujd",
+   "got_image": true
+  },
+  {
+   "asset": "A08",
+   "time": "2026-11-06T10:15:56",
+   "aspect": "16:9",
+   "cost_usd": 0.0389175,
+   "prompt_tokens": 1450,
+   "completion_tokens": 1539,
+   "seconds": 10.7,
+   "generation_id": "gen-1793978145-40TD9GRlABPwzJi0wzpt",
+   "got_image": true
+  },
+  {
+   "asset": "A09",
+   "time": "2026-11-06T10:16:18",
+   "aspect": "16:9",
+   "cost_usd": 0.0383175,
+   "prompt_tokens": 1450,
+   "completion_tokens": 1459,
+   "seconds": 11.8,
+   "generation_id": "gen-1793978167-wCc9VvahVhke6Oun8iWu",
+   "got_image": true
+  },
+  {
+   "asset": "A10",
+   "time": "2026-11-06T10:16:40",
+   "aspect": "16:9",
+   "cost_usd": 0.0380925,
+   "prompt_tokens": 1440,
+   "completion_tokens": 1431,
+   "seconds": 11.6,
+   "generation_id": "gen-1793978188-GgcD84XxlFabamFLxBV6",
+   "got_image": true
+  },
+  {
+   "asset": "A11",
+   "time": "2026-11-06T10:17:01",
+   "aspect": "16:9",
+   "cost_usd": 0.038622,
+   "prompt_tokens": 1438,
+   "completion_tokens": 1502,
+   "seconds": 11.0,
+   "generation_id": "gen-1793978211-GEiru4lu5ktXZmuraQ0T",
+   "got_image": true
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "A01": {
+  "id": "A01",
+  "title": "One Note Becomes a Place",
+  "aspect": "1:1",
+  "scene_prompt": "One beautifully weighted warm glowing point rooted inside an airy organic translucent field, with an uninterrupted delicate horizontal veil implying sustained presence; a spacious calm around it, small long-range ripples but no implied waveform scale. Asymmetric watercolor pigment and dappled light, no second note.",
+  "full_prompt": "One beautifully weighted warm glowing point rooted inside an airy organic translucent field, with an uninterrupted delicate horizontal veil implying sustained presence; a spacious calm around it, small long-range ripples but no implied waveform scale. Asymmetric watercolor pigment and dappled light, no second note.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:15:12",
+  "cost_usd": 0.038688,
+  "generation_id": "gen-1793978100-NbZe82bCNVHDKozLdnGD",
+  "raw": "public/soundscape/m03/raw/A01.png",
+  "raw_sha256": "ed6380559b345bc555e7e7cc2c1ffa1faebf2ed26a267ff8515511ab5ee1db6e",
+  "raw_bytes": 484173,
+  "alpha": {
+   "size": [
+    1024,
+    1024
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 23.4,
+   "png_sha256": "a7dd680081536bd17e55ca711e0099b88d003215e66c6b7a703da07f3f96af80",
+   "png_bytes": 1313904,
+   "webp_bytes": 516536
+  },
+  "webp": "public/soundscape/m03/art/A01.webp",
+  "png": "public/soundscape/m03/art/A01.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "A06": {
+  "id": "A06",
+  "title": "Octave Return Spiral",
+  "aspect": "4:5",
+  "scene_prompt": "A graceful upward-turning spiral of luminous translucent watercolor ribbon with two clearly related amber focal halos separated vertically, like the same motif resurfacing one turn higher; light lavender echo strands, clean spaces for native C labels, soft alpha edges.",
+  "full_prompt": "A graceful upward-turning spiral of luminous translucent watercolor ribbon with two clearly related amber focal halos separated vertically, like the same motif resurfacing one turn higher; light lavender echo strands, clean spaces for native C labels, soft alpha edges.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:15:38",
+  "cost_usd": 0.0381375,
+  "generation_id": "gen-1793978127-VRcx9hyWvtMx9SfRsujd",
+  "raw": "public/soundscape/m03/raw/A06.png",
+  "raw_sha256": "32a696bf626073a5455c2de4bca3196d53e2117ffc15dc8ad7b986f961c88fee",
+  "raw_bytes": 394682,
+  "alpha": {
+   "size": [
+    928,
+    1152
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 17.1,
+   "png_sha256": "8ffb40b1a266b67db718bd37f8f35e42f4caabaca7fd6be4e7fdbb0bd4f388f9",
+   "png_bytes": 885760,
+   "webp_bytes": 376134
+  },
+  "webp": "public/soundscape/m03/art/A06.webp",
+  "png": "public/soundscape/m03/art/A06.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "A08": {
+  "id": "A08",
+  "title": "Two Endings: Away and Home",
+  "aspect": "16:9",
+  "scene_prompt": "A single lush C-centered watercolor landscape forks near the edge into two delicate organic endings; one path sweeps back into luminous amber core and the other remains in a separate airy cooler area, visual emphasis on the fork while not assigning mood or 'correct' end.",
+  "full_prompt": "A single lush C-centered watercolor landscape forks near the edge into two delicate organic endings; one path sweeps back into luminous amber core and the other remains in a separate airy cooler area, visual emphasis on the fork while not assigning mood or 'correct' end.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:15:56",
+  "cost_usd": 0.0389175,
+  "generation_id": "gen-1793978145-40TD9GRlABPwzJi0wzpt",
+  "raw": "public/soundscape/m03/raw/A08.png",
+  "raw_sha256": "9baf55f953aa1fd7faa53d190c852978148ed8a3e9187d8248894c92f30712a6",
+  "raw_bytes": 506211,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 36.4,
+   "png_sha256": "a16e9e16e8507bb41a9f781f73c3fa57e6becf25e8103927d88eb9562a8ed36b",
+   "png_bytes": 1225914,
+   "webp_bytes": 490326
+  },
+  "webp": "public/soundscape/m03/art/A08.webp",
+  "png": "public/soundscape/m03/art/A08.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "A09": {
+  "id": "A09",
+  "title": "Drone: A Note That Stays While Others Visit",
+  "aspect": "16:9",
+  "scene_prompt": "A long continuous golden watercolor band/halo anchored at left-to-right center, with three separate airy translucent teal/lavender note-presence ribbons touching then lifting away from it at different places; clarity of uninterrupted versus temporary is more important than concentric decoration.",
+  "full_prompt": "A long continuous golden watercolor band/halo anchored at left-to-right center, with three separate airy translucent teal/lavender note-presence ribbons touching then lifting away from it at different places; clarity of uninterrupted versus temporary is more important than concentric decoration.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:16:18",
+  "cost_usd": 0.0383175,
+  "generation_id": "gen-1793978167-wCc9VvahVhke6Oun8iWu",
+  "raw": "public/soundscape/m03/raw/A09.png",
+  "raw_sha256": "bf11aca317309876d6c262a6024c3a8875e00be51c30a645af634705dfdeab21",
+  "raw_bytes": 441948,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 31.8,
+   "png_sha256": "ca97bbc799a6be5eb2f017c15e7a3fa2612a39119028e1b41ed111f04f92be9a",
+   "png_bytes": 1089260,
+   "webp_bytes": 479426
+  },
+  "webp": "public/soundscape/m03/art/A09.webp",
+  "png": "public/soundscape/m03/art/A09.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "A10": {
+  "id": "A10",
+  "title": "Tiny Personal Melody and Pauses",
+  "aspect": "16:9",
+  "scene_prompt": "A small winding trail of three or four distinct hand-painted luminous stops and one clearly open quiet interval, ending in a soft amber curl; organic breathing room, visibly finite and approachable; no exact written notes.",
+  "full_prompt": "A small winding trail of three or four distinct hand-painted luminous stops and one clearly open quiet interval, ending in a soft amber curl; organic breathing room, visibly finite and approachable; no exact written notes.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:16:40",
+  "cost_usd": 0.0380925,
+  "generation_id": "gen-1793978188-GgcD84XxlFabamFLxBV6",
+  "raw": "public/soundscape/m03/raw/A10.png",
+  "raw_sha256": "67c1c5132c905a58555a194b164cc1df8fc2a0502ea66ac59835926c624a3dcf",
+  "raw_bytes": 488154,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 25.0,
+   "png_sha256": "49c4f773efd57ea9c7cc26473f59d5fb3ca6781207726a7e22a932fa948b7ac3",
+   "png_bytes": 1229674,
+   "webp_bytes": 522640
+  },
+  "webp": "public/soundscape/m03/art/A10.webp",
+  "png": "public/soundscape/m03/art/A10.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "A11": {
+  "id": "A11",
+  "title": "Paint What You Hear — Personal Color Map",
+  "aspect": "16:9",
+  "scene_prompt": "One slender watercolor trail branching into three contrasting abstract organic color-and-texture gestures, open white space and visible brush-grain; subjective hand-painted energy, nonliteral and non-notated.",
+  "full_prompt": "One slender watercolor trail branching into three contrasting abstract organic color-and-texture gestures, open white space and visible brush-grain; subjective hand-painted energy, nonliteral and non-notated.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:17:01",
+  "cost_usd": 0.038622,
+  "generation_id": "gen-1793978211-GEiru4lu5ktXZmuraQ0T",
+  "raw": "public/soundscape/m03/raw/A11.png",
+  "raw_sha256": "ab97cbbeef029b88dc945743fb635adaf9a28d4f06489880c5c080251e6d50d9",
+  "raw_bytes": 449950,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 23.1,
+   "png_sha256": "0be2206261259950a028c1ae45f3f6e6c283e750c2ca188a566ee32ad4df624a",
+   "png_bytes": 1073145,
+   "webp_bytes": 484398
+  },
+  "webp": "public/soundscape/m03/art/A11.webp",
+  "png": "public/soundscape/m03/art/A11.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ }
+}
