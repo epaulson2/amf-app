@@ -57,8 +57,8 @@ export function Step({ id, n, total, eyebrow, title, sub, prev, next, children }
       {sub && <p className="m4-sub">{sub}</p>}
       {children}
       <nav className="m4-nav" aria-label={`Step ${n} navigation`}>
-        {prev ? <Link href={prev.href}>← {prev.label}</Link> : <span />}
-        {next ? <Link href={next.href} className="is-primary">{next.label} →</Link> : <span />}
+        {prev ? <Link href={prev.href} scroll>← {prev.label}</Link> : <span />}
+        {next ? <Link href={next.href} className="is-primary" scroll>{next.label} →</Link> : <span />}
       </nav>
     </section>
   )
@@ -87,6 +87,61 @@ export function LessonFrame({ eyebrow, title, deck, meta, steps, children, doors
           {prev ? <Link href={prev.href}>← {prev.label}</Link> : <span />}
           {next ? <Link href={next.href} className="is-primary">{next.label} →</Link> : <span />}
         </nav>
+        <p className="m4-foot">Ajourné into Music · Part of the Adaptable Musician&apos;s Framework</p>
+      </Wrap>
+    </Scene>
+  )
+}
+
+export type StepSpec = { short: string; sub?: string; body: ReactNode }
+export const parseStep = (raw: string | string[] | undefined, total: number): number | 'all' => {
+  const v = Array.isArray(raw) ? raw[0] : raw
+  if (v === 'all') return 'all'
+  const n = Number(v)
+  return Number.isInteger(n) && n >= 1 && n <= total ? n : 1
+}
+
+/** A lesson as a click-through course: the server renders ONE step per URL (?step=N). ?step=all renders every step for printing. */
+export function Stepper({ basePath, eyebrow, title, deck, meta, steps, current, prevLesson, nextLesson, lessonCode }: {
+  basePath: string; eyebrow: string; title: ReactNode; deck: ReactNode; meta?: ReactNode; steps: StepSpec[]; current: number | 'all'
+  prevLesson: { href: string; label: string }; nextLesson: { href: string; label: string }; lessonCode: string
+}) {
+  const total = steps.length
+  const href = (n: number) => `${basePath}?step=${n}#lesson-step`
+  const all = current === 'all'
+  const cur = all ? 1 : current
+  const render = (i: number) => (
+    <Step key={i} id={`step-${i + 1}`} n={i + 1} total={total} eyebrow={`Lesson ${lessonCode}`} title={steps[i].short} sub={steps[i].sub}
+      prev={i === 0 ? prevLesson : { href: href(i), label: steps[i - 1].short }}
+      next={i === total - 1 ? nextLesson : { href: href(i + 2), label: steps[i + 1].short }}>
+      {steps[i].body}
+    </Step>
+  )
+  return (
+    <Scene>
+      <Wrap>
+        <header className="m4-hero m4-hero--lesson">
+          <p className="m4-eyebrow">{eyebrow}</p>
+          <h1>{title}</h1>
+          {(cur === 1 || all) && <div className="m4-lead">{deck}</div>}
+          {(cur === 1 || all) && meta}
+          {!all ? (
+            <nav aria-label="Steps in this lesson" className="m4-stepnav">
+              <p className="m4-progress" aria-live="polite"><strong>Step {cur} of {total}</strong> · {steps[cur - 1].short}</p>
+              <ol className="m4-dots" aria-hidden="true">{steps.map((_, i) => <li key={i} className={i + 1 === cur ? 'on' : i + 1 < cur ? 'done' : undefined} />)}</ol>
+              <details className="m4-jump" key={`jump-${cur}`}>
+                <summary>Jump to a step</summary>
+                <ol className="m4-toc">{steps.map((s, i) => <li key={i}><Link href={href(i + 1)} aria-current={i + 1 === cur ? 'step' : undefined}>{s.short}</Link></li>)}</ol>
+              </details>
+            </nav>
+          ) : (
+            <p className="m4-caveat">You are viewing the whole lesson on one page, for printing or reading straight through. <Link href={`${basePath}?step=1`}>Go back to the step-by-step lesson</Link>.</p>
+          )}
+        </header>
+        <div id="lesson-step" tabIndex={-1} className="m4-stepwrap">
+          {all ? steps.map((_, i) => render(i)) : render(cur - 1)}
+        </div>
+        <p className="m4-printlink">{all ? <Link href={`${basePath}?step=1`}>← Back to the step-by-step lesson</Link> : <Link href={`${basePath}?step=all`}>Print or read the whole lesson on one page</Link>}</p>
         <p className="m4-foot">Ajourné into Music · Part of the Adaptable Musician&apos;s Framework</p>
       </Wrap>
     </Scene>

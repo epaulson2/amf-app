@@ -1,42 +1,40 @@
-import { LessonFrame, Step, Row, Figure, Lead, Reading, Worked, Try, Notice, Caveat, Aside } from './kit'
-import { DiscoveryDoors } from '../DiscoveryDoor'
+import { Stepper, Row, Figure, Lead, Reading, Worked, Try, Notice, Caveat, Aside, type StepSpec } from './kit'
+import Link from 'next/link'
+import { DiscoveryDoor, DOOR_KINDS, type DoorKind } from '../DiscoveryDoor'
 import { lessonDoors } from '../week1/Doors'
 import { BASE } from '@/lib/soundscape/course'
 
 const W1 = '/soundscape/w1/'
-const S = (n: number) => `s${n}`
-const STEPS = [
+const PATH = `${BASE}/week-1/lesson-1a`
+export const LESSON_1A_STEPS = [
   'Set up your keyboard', 'A note, and what a sound has', 'Find C', 'Seven names, one path', 'The octave', 'There and back',
   'What makes a note feel like home?', 'A note stays, another visits', 'Hear it, imagine it, find it', 'Make a tiny melody', 'Paint what you hear', 'Recap and print',
 ]
-const TOTAL = STEPS.length
-const nav = (n: number) => ({
-  prev: n === 1 ? { href: `${BASE}/week-1`, label: 'Week 1' } : { href: `#${S(n - 1)}`, label: STEPS[n - 2] },
-  next: n === TOTAL ? { href: '#explore', label: 'Explore a little deeper' } : { href: `#${S(n + 1)}`, label: STEPS[n] },
-})
-const stepProps = (n: number) => ({ id: S(n), n, total: TOTAL, eyebrow: 'Lesson 1A', title: STEPS[n - 1], ...nav(n) })
-
-export default function Lesson1A() {
-  const d = lessonDoors('1A')
+const STEPS = LESSON_1A_STEPS
+// Where each of the six original research doors lives. Every door keeps its full original body and source links.
+const DOOR_STEP: Record<DoorKind, number> = { 'history-postcard': 4, 'behind-the-sound': 5, 'musical-worlds': 7, 'ambient-composers-notebook': 8, 'hear-it-in-real-music': 8, 'paint-what-you-hear': 11 }
+const D = lessonDoors('1A')
+const door = (kinds: DoorKind[]) => (
+  <div className="m4-stepdoors" key={kinds.join()}>
+    <p>Optional side door{kinds.length > 1 ? 's' : ''} for this step. Never required.</p>
+    {kinds.map(k => <div id={`door-${k}`} key={k}><DiscoveryDoor kind={k} title={D.titles[k]}>{D.content[k]}</DiscoveryDoor></div>)}
+  </div>
+)
+function DoorMap() {
   return (
-    <LessonFrame
-      eyebrow="Week 1 · Lesson 1 of 3"
-      title={<>A Note Becomes <em>a Landscape</em></>}
-      deck={<p style={{ margin: 0 }}>A single note can make a place. A second note can change everything about that place. In this lesson you will find your way around a keyboard, learn what a tonal center is, and hear how one steady note changes the notes that visit it.</p>}
-      meta={<p className="m4-sub" style={{ marginTop: 14 }}>About 35–45 minutes at your own pace · All you need is a keyboard, your ears and a little curiosity</p>}
-      steps={STEPS.map((s, i) => ({ id: S(i + 1), short: s }))}
-      doors={
-        <section id="explore" className="m4-doors" aria-labelledby="explore-h">
-          <h2 id="explore-h">Explore a little deeper</h2>
-          <p style={{ maxWidth: '38rem' }}>Six optional side doors belong to this lesson: a bit of history, some science, a composer’s notebook, real music, another musical world and a creative painting prompt. They are invitations, not homework. Open one, open them all, or save them for another day.</p>
-          <DiscoveryDoors content={d.content} titles={d.titles} />
-        </section>
-      }
-      prev={{ href: `${BASE}/week-1`, label: 'Week 1' }}
-      next={{ href: `${BASE}/week-1/lesson-1b`, label: 'Lesson 1B' }}
-    >
-      {/* 1 ------------------------------------------------------------ */}
-      <Step {...stepProps(1)} sub="Before the first note">
+    <div className="m4-stepdoors">
+      <h3>The six optional side doors</h3>
+      <p>Each one opens where it belongs in the lesson. They are invitations, not homework.</p>
+      <ul style={{ paddingLeft: '1.2em', maxWidth: '38rem' }}>
+        {DOOR_KINDS.map(k => <li key={k.id}><Link href={`${PATH}?step=${DOOR_STEP[k.id]}#door-${k.id}`}><strong>{k.title}</strong>: {D.titles[k.id]}</Link> <span style={{ color: '#6f5f6c' }}>(step {DOOR_STEP[k.id]})</span></li>)}
+      </ul>
+    </div>
+  )
+}
+
+const steps: StepSpec[] = [
+    { short: STEPS[0], sub: 'Before the first note', body: (
+      <>
         <Row figure={<Figure id="S05-native" art="M02:G02-ACCENT-keyboard-light" caption="A drawing of a keyboard, not a keyboard: it makes no sound." />}>
           <Lead>Everything you hear in this lesson will come from your own instrument. This website explains, shows and guides. It never plays a sound, so you stay in charge of what you hear.</Lead>
           <p>Sit at your keyboard or synthesizer. Choose a simple, gentle sound: a piano, a soft electric piano or a warm pad, if you have one. Start with a comfortable volume, quiet enough that you can hear small differences. If your keyboard has a way to hold a note (a sustain pedal, a latch button or a pad sound that keeps going), find it now, because we will use it later in the lesson.</p>
@@ -52,10 +50,10 @@ export default function Lesson1A() {
           </Try>
           <Caveat>Not every keyboard has the same number of keys or the same layout of controls. Everything in this lesson works on any keyboard, including a small 25-key controller.</Caveat>
         </Row>
-      </Step>
-
-      {/* 2 ------------------------------------------------------------ */}
-      <Step {...stepProps(2)} sub="One sound, three different things to notice">
+      </>
+    ) },
+    { short: STEPS[1], sub: 'One sound, three different things to notice', body: (
+      <>
         <Row figure={<Figure id="A01-native" art="A01" caption="One held note, painted as a single glow." />}>
           <Lead>Press one white key gently and hold it. You have just made a <strong>note</strong>.</Lead>
           <p>A note is a single musical sound that you can name, find again and use. When you hold a key down, the sound keeps going, and that steady presence is something we will use all lesson long: a sound that stays, and a place that slowly forms around it.</p>
@@ -82,10 +80,10 @@ export default function Lesson1A() {
           </Try>
           <Notice>Which of the three, pitch, loudness or tone colour, changed each time? What would you say this sound looks like, or feels like? Your ears and imagination get to decide.</Notice>
         </Row>
-      </Step>
-
-      {/* 3 ------------------------------------------------------------ */}
-      <Step {...stepProps(3)} sub="The black keys are a map">
+      </>
+    ) },
+    { short: STEPS[2], sub: 'The black keys are a map', body: (
+      <>
         <Row figure={<Figure id="A03-native" art="M02:G02-ACCENT-keyboard-light" caption="Both highlighted keys are C." />}>
           <Lead>A keyboard looks like a long row of similar keys until you notice that the black ones are not spread evenly. They come in small groups, and that pattern is a map you can use anywhere on the keyboard.</Lead>
           <p>Look along your keyboard. The black keys come <strong>two together</strong>, then <strong>three together</strong>, then two again, over and over. Find any group of two black keys. The white key immediately to the <strong>left</strong> of that pair is called <strong>C</strong>. Find the next group of two and the white key to its left is another C, a little higher.</p>
@@ -106,10 +104,10 @@ export default function Lesson1A() {
           <Notice>What did you look at to find C: the black keys or the white keys?</Notice>
           <Caveat>One of the Cs sits near the middle of most keyboards, and people call it <strong>middle C</strong>. It does not have to be in the exact middle of every synthesizer. You do not need to remember any numbers or read music yet. For now, knowing how to find C is enough.</Caveat>
         </Row>
-      </Step>
-
-      {/* 4 ------------------------------------------------------------ */}
-      <Step {...stepProps(4)} sub="Seven names, then C again">
+      </>
+    ) },
+    { short: STEPS[3], sub: 'Seven names, then C again', body: (
+      <>
         <Row figure={<Figure id="A05-native" caption="Eight white keys, seven different names." />}>
           <Lead>Once you can find C, the rest of the white keys fall into place. Only seven letter names are used, and they repeat.</Lead>
           <p>Starting on C, move to the very next white key on the right. It is <strong>D</strong>. Keep moving, one white key at a time: <strong>C – D – E – F – G – A – B</strong>. The next white key is <strong>C again</strong>, a little higher. After B the names begin again, which is why the keyboard needs only seven letters.</p>
@@ -129,10 +127,11 @@ export default function Lesson1A() {
           </Try>
           <p className="m4-notice">Seven: C, D, E, F, G, A, B. Then C came back, a little higher. The second C is not a second kind of note.</p>
         </Row>
-      </Step>
-
-      {/* 5 ------------------------------------------------------------ */}
-      <Step {...stepProps(5)} sub="Why does C show up again?">
+        {door(['history-postcard'])}
+      </>
+    ) },
+    { short: STEPS[4], sub: 'Why does C show up again?', body: (
+      <>
         <Row figure={<Figure id="A06-native" art="A06" caption="The same name, one octave higher." />}>
           <Lead>The two Cs you played share a name but not a height. One is higher. Why do they get the same name?</Lead>
           <p>The distance from one C to the next C is called an <strong>octave</strong>. Notes an octave apart have a strong family resemblance: it can feel like the same character appearing on a higher floor of the same building. That is why the letter names repeat instead of running on to H, I and J.</p>
@@ -154,10 +153,11 @@ export default function Lesson1A() {
             <p>On a keyboard, one octave spans twelve semitones, the smallest steps between neighbouring keys, black and white. We will count them in Lesson 1B.</p>
           </Aside>
         </Row>
-      </Step>
-
-      {/* 6 ------------------------------------------------------------ */}
-      <Step {...stepProps(6)} sub="Practice: up and back">
+        {door(['behind-the-sound'])}
+      </>
+    ) },
+    { short: STEPS[5], sub: 'Practice: up and back', body: (
+      <>
         <Row flip figure={<Figure id="A07-native" art="A06" caption="Going up, then coming back down." />}>
           <Lead>Now travel the whole path once going up and once coming back down. It is practice for your fingers, your ears and your sense of where notes live.</Lead>
           <p>Play C D E F G A B C going up, then turn around and come back: C B A G F E D C. Do not hurry. Imagine each note as a step away from where you began, and the last note as a return. One finger is perfectly fine. Learning your way around matters far more than speed.</p>
@@ -173,10 +173,10 @@ export default function Lesson1A() {
           </Try>
           <Notice>Does the final C feel like a return? Or do you hear it differently today? Either answer is a useful observation.</Notice>
         </Row>
-      </Step>
-
-      {/* 7 ------------------------------------------------------------ */}
-      <Step {...stepProps(7)} sub="Home, departure and return">
+      </>
+    ) },
+    { short: STEPS[6], sub: 'Home, departure and return', body: (
+      <>
         <Row figure={<Figure id="A04-native" art="M02:G01-B-concentric-home" mode="overlay" sq caption="C is home in this exercise because we chose it." />}>
           <Lead>Play the path up to D and stop. Then play it again and stop on C. Most people feel a difference at once: one stopping place feels unfinished, the other feels settled. Musicians have careful names for that feeling.</Lead>
           <p>On this journey we have chosen <strong>C</strong> as our <strong>home note</strong>: the sound we return to. Musicians call that sense of a central, resting pitch a <strong>tonal center</strong>. You may also meet the word <strong>tonic</strong> once a scale or key is clearly established. The important idea is <em>relationship</em>: another note can seem to move away from a centre, approach it or return to it, and the same note can play a different role when the music around it changes.</p>
@@ -200,10 +200,11 @@ export default function Lesson1A() {
           </Try>
           <Notice>Does ending on C feel different from stopping on G? Does it feel the same to you as it might to a friend? Music does not tell everyone to feel the same thing. The point is to notice.</Notice>
         </Row>
-      </Step>
-
-      {/* 8 ------------------------------------------------------------ */}
-      <Step {...stepProps(8)} sub="The first glimpse of two notes in relationship">
+        {door(['musical-worlds'])}
+      </>
+    ) },
+    { short: STEPS[7], sub: 'The first glimpse of two notes in relationship', body: (
+      <>
         <Row figure={<Figure id="A09-native" art="A09" caption="C stays; one visitor comes and goes." />}>
           <Lead>So far we have played one note at a time. Now we keep one note sounding and let other notes visit it.</Lead>
           <p>Imagine C held softly underneath, like a floor. Play E above it, let it sound, then let it go while the C continues. Our foundation has not moved, but the space around it may feel different. Then try G, then D. That was two simultaneous notes: a held foundation and a moving upper voice. Musicians call this a simple <strong>harmonic relationship</strong>. We will study intervals and chords properly in later lessons. For today you only need to track two things: <strong>which note stays</strong> and <strong>which note changes</strong>.</p>
@@ -227,10 +228,11 @@ export default function Lesson1A() {
             <p>In your DAW, make one soft note last 10–15 seconds. Choose a second, higher note that starts a few seconds later. Listen once with it, then replace it with a different higher note, keeping the first note and the sound settings unchanged. Describe what you altered in musical terms: “I kept the foundation but changed the upper pitch.”</p>
           </Aside>
         </Row>
-      </Step>
-
-      {/* 9 ------------------------------------------------------------ */}
-      <Step {...stepProps(9)} sub="Carry the map with you">
+        {door(['ambient-composers-notebook','hear-it-in-real-music'])}
+      </>
+    ) },
+    { short: STEPS[8], sub: 'Carry the map with you', body: (
+      <>
         <Row figure={<figure style={{ margin: 0 }}><div className="m4-fig"><img className="m4-native" src={`${W1}W1-08_look-draw-hide-imagine-reveal_learner.svg`} alt="A five-stage card: Look, Draw, Hide, Imagine, then find it on the real keyboard and check." loading="lazy" /></div><figcaption className="m4-cap"><a href={`${W1}pdf/W1-08_look-draw-hide-imagine-reveal_blank.pdf`}>Printable practice sheet (PDF)</a></figcaption></figure>}>
           <Lead>A keyboard is more than a set of buttons. As its pattern becomes familiar, you can start to imagine where a note lives even when the keys are not in front of you.</Lead>
           <p>Like knowing your way around a familiar neighbourhood, this picture helps musical ideas find a place. Here is a way to practise it, in five small stages, on your own keyboard and on paper.</p>
@@ -262,10 +264,10 @@ export default function Lesson1A() {
           </Try>
           <p>The instrument is here to help you check what you imagined, not to grade you. Hearing, humming and finding are skills that grow stronger with practice. If the note is hard to hum, just decide whether it sits higher or lower than the one you heard before, and check by playing it.</p>
         </Row>
-      </Step>
-
-      {/* 10 ----------------------------------------------------------- */}
-      <Step {...stepProps(10)} sub="Your first tiny musical story">
+      </>
+    ) },
+    { short: STEPS[9], sub: 'Your first tiny musical story', body: (
+      <>
         <Row figure={<Figure id="A10-native" art="A10" caption="An example idea; your notes will differ." />}>
           <Lead>Now use everything: choose notes, leave a pause, keep one sound underneath.</Lead>
           <p>Open your favourite synthesizer or music software. Start with a soft, sustained C. Choose just two or three upper notes you found interesting. Let them enter in whatever order you wish. One might arrive immediately; another might wait. Keep some space in the music.</p>
@@ -284,10 +286,10 @@ export default function Lesson1A() {
           <p>Notice how much the musical story changes even when the notes stay the same. One voice stayed. Another moved. You gave two sounds a relationship, and gave yourself a new way to tell a story.</p>
           <Caveat>Everything here stays on your own instrument and your own device. This website does not record, upload or save anything.</Caveat>
         </Row>
-      </Step>
-
-      {/* 11 ----------------------------------------------------------- */}
-      <Step {...stepProps(11)} sub="Sound and picture are old companions">
+      </>
+    ) },
+    { short: STEPS[10], sub: 'Sound and picture are old companions', body: (
+      <>
         <Row flip figure={<Figure id="A11-native" art="A11" caption="Three empty circles: yours to fill." />}>
           <Lead>After you play a note or a tiny melody, sketch or imagine what the sound resembles.</Lead>
           <p>It might be a colour, a line, a texture or a shape in space. Then play a different note and compare. There is no fixed colour for any note, and no right answer: your own sound-to-colour interpretation is the point. Drawing is another way of listening more closely.</p>
@@ -302,10 +304,11 @@ export default function Lesson1A() {
             <p>Print <a href={`${W1}pdf/W1-04_personal-tonal-atlas-worksheet_blank.pdf`}>the personal tonal atlas worksheet (PDF)</a> if you would like a page to draw on, and look for the “Paint What You Hear” door below.</p>
           </Try>
         </Row>
-      </Step>
-
-      {/* 12 ----------------------------------------------------------- */}
-      <Step {...stepProps(12)} sub="The whole lesson on one page">
+        {door(['paint-what-you-hear'])}
+      </>
+    ) },
+    { short: STEPS[11], sub: 'The whole lesson on one page', body: (
+      <>
         <Row figure={<Figure id="A12-native" art="M02:G01-B-concentric-home" caption="Recap sheet; print it for your music stand." />}>
           <Lead>Here is Lesson 1A on a single page. Come back to it whenever you want to refresh the map.</Lead>
           <Reading label="What the four panels show">
@@ -323,7 +326,24 @@ export default function Lesson1A() {
           <p>Print-ready sheets: <a href={`${W1}pdf/W1-06_keyboard-map_blank.pdf`}>keyboard map (PDF)</a>, <a href={`${W1}pdf/W1-04_personal-tonal-atlas-worksheet_blank.pdf`}>personal tonal atlas worksheet (PDF)</a> and the <a href="/soundscape/m03/native/A12-native.print.svg">ink-light recap sheet</a>.</p>
           <Notice>In the next lesson we measure the smallest steps on the keyboard, follow the whole-step and half-step pattern of C major, and try one journey two ways: an open ending and an arrival.</Notice>
         </Row>
-      </Step>
-    </LessonFrame>
+        <DoorMap />
+      </>
+    ) },
+]
+
+export default function Lesson1A({ step }: { step: number | 'all' }) {
+  return (
+    <Stepper
+      basePath={PATH}
+      lessonCode="1A"
+      eyebrow="Week 1 · Lesson 1 of 3"
+      title={<>A Note Becomes <em>a Landscape</em></>}
+      deck={<p style={{ margin: 0 }}>A single note can make a place. A second note can change everything about that place. In this lesson you will find your way around a keyboard, learn what a tonal center is, and hear how one steady note changes the notes that visit it.</p>}
+      meta={<p className="m4-sub" style={{ marginTop: 14 }}>About 35–45 minutes at your own pace · All you need is a keyboard, your ears and a little curiosity · Twelve short steps</p>}
+      steps={steps}
+      current={step}
+      prevLesson={{ href: `${BASE}/week-1`, label: 'Week 1' }}
+      nextLesson={{ href: `${BASE}/week-1/lesson-1b`, label: 'Lesson 1B' }}
+    />
   )
 }

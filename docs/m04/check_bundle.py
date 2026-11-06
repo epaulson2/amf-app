@@ -31,7 +31,7 @@ for p, name in PAGES.items():
             if not alt or len(alt.group(1)) < 40: fail(f'{name}: figure {u} has no real alt text')
     print(f'ok  {name}: {len(t.split())} words, {len(re.findall("<img", h))} images')
 # ---- lesson 1A depth
-s, h = get(CS + '/week-1/lesson-1a'); t = text(h)
+s, h = get(CS + '/week-1/lesson-1a?step=all'); t = text(h)   # whole lesson (the default URL now shows one step)
 need = ['timbre', 'tonal center', 'tonic', 'does not by itself make a chord', 'which note stays', 'Hold C softly', 'two simultaneous notes', 'Hear a note before you play it', 'Carry the map with you', 'one octave',
         'W1-06_keyboard-map_blank.pdf', 'W1-04_personal-tonal-atlas-worksheet_blank.pdf', 'harmonic relationship', 'Optional science and theory', 'middle C']
 for k in need:

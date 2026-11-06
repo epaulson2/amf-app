@@ -94,3 +94,20 @@
 .m4-fig--overlay.m4-fig--sq .m4-native { position:relative; inset:auto; width:100%; height:auto; display:block; }
 .m4-fig--overlay.m4-fig--sq .m4-art { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:138%; max-width:none; }
 @media (max-width:640px){ .m4-fig--overlay.m4-fig--sq .m4-art { width:112%; } }
+
+/* stepper */
+.m4-hero--lesson { padding-bottom: 6px; }
+.m4-stepnav { margin-top: 18px; }
+.m4-progress { margin: 0 0 8px; font: 15px/1.4 ui-sans-serif,system-ui,sans-serif; color: var(--reader); }
+.m4-dots { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0 0 12px; padding: 0; }
+.m4-dots li { width: 11px; height: 11px; border: 1.5px solid #bd9baf; border-radius: 50%; } .m4-dots li.done { background: #d9b8cf; border-color: #d9b8cf; } .m4-dots li.on { width: 15px; height: 15px; background: #edaf54; border-color: #edaf54; box-shadow: 0 0 0 4px rgba(236,175,87,.16); }
+.m4-jump { max-width: 760px; } .m4-jump summary { cursor: pointer; display: inline-flex; align-items: center; min-height: 44px; padding: 8px 18px; border-radius: 99px; border: 1px solid rgba(127,60,117,.25); background: rgba(255,252,246,.8); font: 600 14px/1.3 ui-sans-serif,system-ui,sans-serif; color: var(--wine); list-style: none; }
+.m4-jump summary::-webkit-details-marker { display: none; } .m4-jump[open] summary { background: var(--wine); color: #fffaf3; }
+.m4-jump .m4-toc { margin-top: 12px; }
+.m4-toc a[aria-current='step'] { border-color: #d9a86a; background: rgba(255,240,214,.95); }
+.m4-stepwrap { outline: none; scroll-margin-top: 76px; } .m4-stepwrap:focus-visible { outline: 3px solid #e5a764; outline-offset: 6px; border-radius: 10px; }
+.m4-step:first-child { border-top: 0; padding-top: clamp(20px,3vw,36px); }
+.m4-printlink { margin: 26px 0 0; font: 14px/1.4 ui-sans-serif,system-ui,sans-serif; }
+.m4-stepdoors { margin-top: clamp(22px,3vw,40px); max-width: 44rem; } .m4-stepdoors > p { font: 15px/1.5 ui-sans-serif,system-ui,sans-serif; color: var(--muted); margin: 0 0 8px; }
+.m4-stepdoors .sp-door { background: rgba(255,252,246,.85); }
+@media print { .m4-stepnav, .m4-printlink { display: none; } .m4-stepdoors details { display: block; } }
