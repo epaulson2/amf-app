@@ -1,13 +1,11 @@
 import { Stepper, Row, Figure, Lead, Reading, Worked, Try, Notice, Caveat, Aside, type StepSpec } from './kit'
 import { buildDoors } from './doors'
 import { BASE } from '@/lib/soundscape/course'
+import { LESSON_1C_STEPS } from '@/lib/soundscape/course-nav'
 
 const W1 = '/soundscape/w1/'
 export const PATH_1C = `${BASE}/week-1/lesson-1c`
-export const LESSON_1C_STEPS = [
-  'Two voices can become one world', 'Where the voices sit on the keyboard', 'One voice alone, then both together', 'When a note enters', 'Silence changes the story',
-  'One atmosphere, two stories', 'Make a place, let something happen', 'Give your musical idea a map', 'Recap, and what comes next',
-]
+export { LESSON_1C_STEPS }
 const S = LESSON_1C_STEPS
 const { door, DoorMap } = buildDoors('1C', PATH_1C, { 'history-postcard': 1, 'behind-the-sound': 2, 'hear-it-in-real-music': 3, 'musical-worlds': 4, 'ambient-composers-notebook': 6, 'paint-what-you-hear': 8 })
 

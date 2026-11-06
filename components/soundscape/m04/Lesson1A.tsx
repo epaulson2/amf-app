@@ -3,13 +3,11 @@ import Link from 'next/link'
 import { DiscoveryDoor, DOOR_KINDS, type DoorKind } from '../DiscoveryDoor'
 import { lessonDoors } from '../week1/Doors'
 import { BASE } from '@/lib/soundscape/course'
+import { LESSON_1A_STEPS } from '@/lib/soundscape/course-nav'
 
 const W1 = '/soundscape/w1/'
 const PATH = `${BASE}/week-1/lesson-1a`
-export const LESSON_1A_STEPS = [
-  'Set up your keyboard', 'A note, and what a sound has', 'Find C', 'Seven names, one path', 'The octave', 'There and back',
-  'What makes a note feel like home?', 'A note stays, another visits', 'Hear it, imagine it, find it', 'Make a tiny melody', 'Paint what you hear', 'Recap and print',
-]
+export { LESSON_1A_STEPS }
 const STEPS = LESSON_1A_STEPS
 // Where each of the six original research doors lives. Every door keeps its full original body and source links.
 const DOOR_STEP: Record<DoorKind, number> = { 'history-postcard': 4, 'behind-the-sound': 5, 'musical-worlds': 7, 'ambient-composers-notebook': 8, 'hear-it-in-real-music': 8, 'paint-what-you-hear': 11 }

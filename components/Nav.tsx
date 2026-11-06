@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
+const AJOURNE = '/curriculum/soundscape-path'
 type NavLink = { href: string; label: string; match?: (p: string) => boolean }
 
 const PRIMARY: NavLink[] = [
@@ -12,7 +13,8 @@ const PRIMARY: NavLink[] = [
   { href: '/plogger',          label: 'Plogger' },
   { href: '/audio',            label: 'Audio Lab' },
   { href: '/arranger',         label: 'Arranger' },
-  { href: '/curriculum',       label: 'Curriculum' },
+  { href: '/curriculum/soundscape-path', label: 'Ajourné', match: p => p.startsWith(AJOURNE) },
+  { href: '/curriculum',       label: 'Curriculum', match: p => p.startsWith('/curriculum') && !p.startsWith(AJOURNE) },
 ]
 
 const MORE: NavLink[] = [
@@ -45,16 +47,16 @@ export default function Nav() {
           {/* Logo */}
           <Link href="/" className="flex flex-col leading-tight group shrink-0 mr-4">
             <span className="text-white font-bold text-lg tracking-wide group-hover:opacity-90 transition-opacity">AMF</span>
-            <span className="text-slate-500 text-xs tracking-wide hidden sm:block">Adaptable Musician&apos;s Framework</span>
+            <span className="text-slate-500 text-xs tracking-wide hidden xl:block">Adaptable Musician&apos;s Framework</span>
           </Link>
 
           {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-0.5 flex-1">
+          <div className="hidden lg:flex items-center gap-0.5 flex-1">
             {PRIMARY.map(link => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-1.5 rounded text-sm font-medium transition-colors whitespace-nowrap ${
+                className={`px-2.5 xl:px-3 py-1.5 rounded text-sm font-medium transition-colors whitespace-nowrap ${
                   isActive(link)
                     ? 'bg-white/5'
                     : 'text-slate-300 hover:text-white hover:bg-white/5'
@@ -69,7 +71,7 @@ export default function Nav() {
             <div className="relative ml-0.5">
               <button
                 onClick={() => setMoreOpen(o => !o)}
-                className={`px-3 py-1.5 rounded text-sm font-medium transition-colors flex items-center gap-1 ${
+                className={`px-2.5 xl:px-3 py-1.5 rounded text-sm font-medium transition-colors flex items-center gap-1 ${
                   isMoreActive || moreOpen
                     ? 'bg-white/5'
                     : 'text-slate-300 hover:text-white hover:bg-white/5'
@@ -113,11 +115,21 @@ export default function Nav() {
             </div>
           </div>
 
-          {/* Mobile hamburger */}
+          {/* Below lg the Ajourné link stays visible beside the menu button */}
+          <div className="lg:hidden flex items-center gap-1 ml-auto">
+            <Link
+              href="/curriculum/soundscape-path"
+              className="px-3 py-2 rounded text-sm font-semibold whitespace-nowrap bg-white/5"
+              style={{ color: pathname.startsWith(AJOURNE) ? '#d97706' : '#e2e8f0' }}
+              aria-current={pathname.startsWith(AJOURNE) ? 'true' : undefined}
+            >
+              Ajourné
+            </Link>
           <button
-            className="md:hidden text-slate-300 hover:text-white p-2 rounded"
+            className="text-slate-300 hover:text-white p-2 rounded text-slate-300 hover:text-white p-2 rounded"
             onClick={() => setMenuOpen(o => !o)}
             aria-label="Toggle menu"
+            aria-expanded={menuOpen}
           >
             {menuOpen ? (
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -129,11 +141,12 @@ export default function Nav() {
               </svg>
             )}
           </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden border-t border-slate-700 py-2 pb-3">
+          <div className="lg:hidden border-t border-slate-700 py-2 pb-3">
             <p className="px-4 pt-1 pb-2 text-xs font-bold uppercase tracking-widest text-slate-500">Main</p>
             {PRIMARY.map(link => (
               <Link

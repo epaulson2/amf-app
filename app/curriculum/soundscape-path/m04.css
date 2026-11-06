@@ -32,7 +32,7 @@
 .m4-step { position:relative; padding:clamp(40px,6vw,84px) 0; border-top:1px solid rgba(102,49,104,.10); scroll-margin-top:12px; }
 .m4-count { font:600 12px/1 ui-sans-serif,system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; color:#9d8292; }
 .m4-row { display:grid; gap:clamp(20px,4vw,52px); grid-template-columns:minmax(0,1fr); align-items:start; margin:clamp(20px,3vw,40px) 0; }
-@media (min-width:980px){ .m4-row { grid-template-columns:minmax(0,5fr) minmax(0,6fr); } .m4-row--flip > .m4-text { order:2; } .m4-row--wide { grid-template-columns:minmax(0,1fr); } }
+@container m4main (min-width:900px){ .m4-row { grid-template-columns:minmax(0,5fr) minmax(0,6fr); } .m4-row--flip > .m4-text { order:2; } .m4-row--wide { grid-template-columns:minmax(0,1fr); } }
 .m4-text { position:relative; z-index:2; min-width:0; }
 .m4-figcol { min-width:0; position:relative; z-index:1; }
 .m4-fig { position:relative; margin:0; display:grid; place-items:center; padding:clamp(20px,4vw,50px) 0; min-width:0; z-index:1; }
@@ -85,7 +85,7 @@
 @media print { .m4-figcol { position:static; } }
 
 /* sticky figure beside long teaching text (must come after the base .m4-figcol rule) */
-@media (min-width:980px){ .m4-row:not(.m4-row--wide) > .m4-figcol { position:sticky; top:84px; } }
+@container m4main (min-width:900px){ .m4-row:not(.m4-row--wide) > .m4-figcol { position:sticky; top:84px; } }
 @media print { .m4-row > .m4-figcol { position:static !important; } }
 /* overlay figures: the stage takes its height from in-flow content so labels register on the art */
 .m4-fig--overlay .m4-stage { position:relative; width:100%; }
@@ -139,3 +139,45 @@
 
 .m4-quick { display:flex; flex-wrap:wrap; gap:8px 10px; margin:0 0 10px; } .m4-quick a { text-decoration:none; padding:8px 16px; min-height:40px; display:inline-flex; align-items:center; border-radius:99px; border:1px solid #e0c6d1; background:#fffbf7; color:#653862; font:650 13.5px/1.2 ui-sans-serif,system-ui,sans-serif; }
 @media print { .m4-quick { display:none; } }
+
+/* ---- Course contents shell (all Ajourné routes) ---- */
+.m4-shell { background:#f9f5ed; }
+.m4-shell__main { container:m4main / inline-size; min-width:0; }
+.m4-shell__side { padding:10px clamp(12px,4vw,24px) 0; background:#f9f5ed; border-bottom:1px solid #e6dccb; }
+.m4-tree { color:#3e2241; font:15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif; max-width:760px; margin:0 auto; padding-bottom:10px; }
+.m4-tree__toggle { display:flex; width:100%; align-items:center; justify-content:space-between; min-height:48px; padding:0 16px; border:2px solid #6d326e; border-radius:12px; background:#fffaf3; color:#3e2241; font:600 16px system-ui,sans-serif; cursor:pointer; }
+.m4-tree__panel { display:none; margin-top:8px; max-height:65vh; overflow:auto; padding:6px 4px 10px; border:1px solid #e6dccb; border-radius:12px; background:#fffaf3; }
+.m4-tree[data-open="true"] .m4-tree__panel { display:block; }
+.m4-tree__title { display:none; }
+.m4-tree__list { list-style:none; margin:0; padding:0; }
+.m4-tree__list--in { padding-left:10px; }
+.m4-tree__week { margin-top:6px; }
+.m4-tree__link { display:block; padding:10px 12px; border-radius:8px; color:#3e2241; text-decoration:none; min-height:44px; box-sizing:border-box; }
+.m4-tree__link:hover { background:#f1e6d3; }
+.m4-tree__link--week { font-weight:700; color:#6d326e; }
+.m4-tree__wk { font-weight:400; font-size:13px; color:#5c465b; margin-left:4px; }
+.m4-tree__link--lesson { flex:1; min-width:0; font-weight:600; }
+.m4-tree__link--lesson b { color:#6d326e; margin-right:2px; }
+.m4-tree__lrow { display:flex; align-items:stretch; gap:2px; }
+.m4-tree__caret { flex:none; width:44px; min-height:44px; border:0; border-radius:8px; background:transparent; color:#6d326e; font-size:18px; cursor:pointer; }
+.m4-tree__caret:hover { background:#f1e6d3; }
+.m4-tree__steps { list-style:none; margin:0 0 4px; padding:0 0 0 14px; border-left:2px solid #e6dccb; margin-left:12px; }
+.m4-tree__steps[hidden] { display:none; }
+.m4-tree__link--step { display:flex; gap:8px; font-size:14px; padding:8px 10px; min-height:40px; }
+.m4-tree__n { flex:none; width:1.6em; color:#855086; font-variant-numeric:tabular-nums; text-align:right; }
+.m4-tree a[aria-current="page"] { background:#6d326e; color:#fff; }
+.m4-tree a[aria-current="page"] .m4-tree__n, .m4-tree a[aria-current="page"] b, .m4-tree a[aria-current="page"] .m4-tree__wk { color:#fff; }
+.m4-tree a:focus-visible, .m4-tree button:focus-visible { outline:3px solid #e5a764; outline-offset:2px; }
+.m4-tree__tag { display:inline-block; margin-left:6px; padding:1px 8px; border-radius:99px; background:#efe3cf; color:#5c465b; font-size:12px; font-weight:500; }
+.m4-tree__future { padding:6px 12px; color:#5c465b; }
+.m4-tree__link--off { padding:4px 0; min-height:0; color:#5c465b; }
+.m4-tree__sub { display:block; font-size:13px; color:#7a6579; }
+@media (min-width:1100px) {
+  .m4-shell { display:grid; grid-template-columns:300px minmax(0,1fr); align-items:start; }
+  .m4-shell__side { position:sticky; top:56px; height:calc(100vh - 56px); overflow:auto; padding:18px 10px 24px 14px; border-bottom:0; border-right:1px solid #e6dccb; }
+  .m4-tree { max-width:none; }
+  .m4-tree__toggle { display:none; }
+  .m4-tree__panel { display:block; max-height:none; overflow:visible; border:0; background:transparent; padding:0; margin:0; }
+  .m4-tree__title { display:block; margin:0 12px 8px; font:700 12px system-ui,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#855086; }
+}
+@media print { .m4-shell__side { display:none; } .m4-shell { display:block; } }
