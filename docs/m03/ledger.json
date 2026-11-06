@@ -331,6 +331,149 @@
    "seconds": 11.8,
    "generation_id": "gen-1793978803-LMPUZfafVDgQG7LlWzNg",
    "got_image": true
+  },
+  {
+   "asset": "T03",
+   "time": "2026-11-06T10:27:18",
+   "aspect": "16:9",
+   "cost_usd": 0.0384105,
+   "prompt_tokens": 1442,
+   "completion_tokens": 1473,
+   "seconds": 12.7,
+   "generation_id": "gen-1793978825-fOhAzQ8eljJA7uZ9Jcj7",
+   "got_image": true
+  },
+  {
+   "asset": "T07a",
+   "time": "2026-11-06T10:27:40",
+   "aspect": "16:9",
+   "cost_usd": 0.038751,
+   "prompt_tokens": 1459,
+   "completion_tokens": 1515,
+   "seconds": 13.7,
+   "generation_id": "gen-1793978847-gIVZA19NA71Epchqolca",
+   "got_image": true
+  },
+  {
+   "asset": "T07b",
+   "time": "2026-11-06T10:28:01",
+   "aspect": "16:9",
+   "cost_usd": 0.0381075,
+   "prompt_tokens": 1460,
+   "completion_tokens": 1429,
+   "seconds": 12.0,
+   "generation_id": "gen-1793978870-Kxl67gr0UeCr741Ikda1",
+   "got_image": true
+  },
+  {
+   "asset": "T07c",
+   "time": "2026-11-06T10:28:19",
+   "aspect": "16:9",
+   "cost_usd": 0.038805,
+   "prompt_tokens": 1460,
+   "completion_tokens": 1522,
+   "seconds": 12.5,
+   "generation_id": "gen-1793978887-uPHuPDScm3Y7kmItGjnJ",
+   "got_image": true
+  },
+  {
+   "asset": "T08a",
+   "time": "2026-11-06T10:28:39",
+   "aspect": "16:9",
+   "cost_usd": 0.0384705,
+   "prompt_tokens": 1452,
+   "completion_tokens": 1479,
+   "seconds": 12.1,
+   "generation_id": "gen-1793978907-4oy3dUfUcXs8z4c4Yjrf",
+   "got_image": true
+  },
+  {
+   "asset": "T08b",
+   "time": "2026-11-06T10:29:06",
+   "aspect": "16:9",
+   "cost_usd": 0.0387945,
+   "prompt_tokens": 1453,
+   "completion_tokens": 1522,
+   "seconds": 13.0,
+   "generation_id": "gen-1793978933-JCd2wAp0SKjmgYnvIiqM",
+   "got_image": true
+  },
+  {
+   "asset": "T08c",
+   "time": "2026-11-06T10:29:27",
+   "aspect": "16:9",
+   "cost_usd": 0.038895,
+   "prompt_tokens": 1455,
+   "completion_tokens": 1535,
+   "seconds": 11.2,
+   "generation_id": "gen-1793978956-JQDJyHmNmuhzX3XSleD1",
+   "got_image": true
+  },
+  {
+   "asset": "X01",
+   "time": "2026-11-06T10:30:07",
+   "aspect": "16:9",
+   "cost_usd": 0.043539,
+   "prompt_tokens": 1451,
+   "completion_tokens": 2155,
+   "seconds": 25.9,
+   "generation_id": "gen-1793978981-MppR7EAmplNgFamG95fs",
+   "got_image": true
+  },
+  {
+   "asset": "X02",
+   "time": "2026-11-06T10:30:35",
+   "aspect": "16:9",
+   "cost_usd": 0.038895,
+   "prompt_tokens": 1430,
+   "completion_tokens": 1540,
+   "seconds": 14.6,
+   "generation_id": "gen-1793979021-WQZtbdBp31nostyVY5Bl",
+   "got_image": true
+  },
+  {
+   "asset": "X03",
+   "time": "2026-11-06T10:31:00",
+   "aspect": "16:9",
+   "cost_usd": 0.0383985,
+   "prompt_tokens": 1439,
+   "completion_tokens": 1472,
+   "seconds": 11.8,
+   "generation_id": "gen-1793979048-nhtaDAr5D2BNStF8gJwU",
+   "got_image": true
+  },
+  {
+   "asset": "X04",
+   "time": "2026-11-06T10:31:26",
+   "aspect": "16:9",
+   "cost_usd": 0.038838,
+   "prompt_tokens": 1442,
+   "completion_tokens": 1530,
+   "seconds": 13.0,
+   "generation_id": "gen-1793979073-zwdkXPOu8DnYQBDdaxdJ",
+   "got_image": true
+  },
+  {
+   "asset": "X05",
+   "time": "2026-11-06T10:31:49",
+   "aspect": "16:9",
+   "cost_usd": 0.0387615,
+   "prompt_tokens": 1446,
+   "completion_tokens": 1519,
+   "seconds": 12.1,
+   "generation_id": "gen-1793979097-BswYlQ2XevVB812MoCgN",
+   "got_image": true
+  },
+  {
+   "asset": "X06",
+   "time": "2026-11-06T10:32:15",
+   "aspect": "16:9",
+   "cost_usd": 0.03843,
+   "prompt_tokens": 1445,
+   "completion_tokens": 1475,
+   "seconds": 14.1,
+   "generation_id": "gen-1793979121-2DJSRbtw9pUnk1WOZ0Uz",
+   "got_image": true
   }
  ]
 }

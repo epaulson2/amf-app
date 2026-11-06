@@ -928,5 +928,408 @@
   "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
   "alt": "",
   "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "T03": {
+  "id": "T03",
+  "title": "Interval families as related fields",
+  "aspect": "16:9",
+  "scene_prompt": "Original airy cluster of several differently sized luminous watercolor petals and overlapping halos suggesting a *family of relationships*, with gentle amber/teal/lavender transparency and distinct clear spaces for later native labels, no implicit exact interval measure.",
+  "full_prompt": "Original airy cluster of several differently sized luminous watercolor petals and overlapping halos suggesting a *family of relationships*, with gentle amber/teal/lavender transparency and distinct clear spaces for later native labels, no implicit exact interval measure.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:27:18",
+  "cost_usd": 0.0384105,
+  "generation_id": "gen-1793978825-fOhAzQ8eljJA7uZ9Jcj7",
+  "raw": "public/soundscape/m03/raw/T03.png",
+  "raw_sha256": "f273c106129048617333c2348f518299c67ae73016aed808e5e75370ea98e8af",
+  "raw_bytes": 448844,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 19.0,
+   "png_sha256": "5b805c46921f1aedd7f4242c90f93ec37d2af9624d0cd544e6103580c338d47d",
+   "png_bytes": 989495,
+   "webp_bytes": 443410
+  },
+  "webp": "public/soundscape/m03/art/T03.webp",
+  "png": "public/soundscape/m03/art/T03.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "T07a": {
+  "id": "T07a",
+  "title": "13-card individual art family [a]",
+  "aspect": "16:9",
+  "scene_prompt": "A small original organic translucent watercolor bridge/petal pair with clear negative space for accurate native interval title, note positions and semitone ruler; create a coordinated *family* of distinct relationship variations rather than thirteen arbitrary unrelated paintings. Variation: the two petals sit close together with a short, tight bridge between them.",
+  "full_prompt": "A small original organic translucent watercolor bridge/petal pair with clear negative space for accurate native interval title, note positions and semitone ruler; create a coordinated *family* of distinct relationship variations rather than thirteen arbitrary unrelated paintings. Variation: the two petals sit close together with a short, tight bridge between them.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:27:40",
+  "cost_usd": 0.038751,
+  "generation_id": "gen-1793978847-gIVZA19NA71Epchqolca",
+  "raw": "public/soundscape/m03/raw/T07a.png",
+  "raw_sha256": "59e92a96ea1d1bfd44937ee0ada53522547a8c95fe54f6bb1ed7f6b96dcb2bf2",
+  "raw_bytes": 441639,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 26.8,
+   "png_sha256": "03bb2a11e4716e3dcde3a3415a8a9ed2486b7cef7ea90599296c25284082dcde",
+   "png_bytes": 993743,
+   "webp_bytes": 408274
+  },
+  "webp": "public/soundscape/m03/art/T07a.webp",
+  "png": "public/soundscape/m03/art/T07a.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "T07b": {
+  "id": "T07b",
+  "title": "13-card individual art family [b]",
+  "aspect": "16:9",
+  "scene_prompt": "A small original organic translucent watercolor bridge/petal pair with clear negative space for accurate native interval title, note positions and semitone ruler; create a coordinated *family* of distinct relationship variations rather than thirteen arbitrary unrelated paintings. Variation: the two petals sit a medium distance apart joined by a gently arching bridge.",
+  "full_prompt": "A small original organic translucent watercolor bridge/petal pair with clear negative space for accurate native interval title, note positions and semitone ruler; create a coordinated *family* of distinct relationship variations rather than thirteen arbitrary unrelated paintings. Variation: the two petals sit a medium distance apart joined by a gently arching bridge.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:28:01",
+  "cost_usd": 0.0381075,
+  "generation_id": "gen-1793978870-Kxl67gr0UeCr741Ikda1",
+  "raw": "public/soundscape/m03/raw/T07b.png",
+  "raw_sha256": "8753dd108cb584722b8ae65233df1700f7f0a37172224288e0e342860e652a38",
+  "raw_bytes": 319064,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 18.5,
+   "png_sha256": "4035d2648e6fc7a8041a53f4d93d167853515102a8e0569d45068cdd07d5d4ee",
+   "png_bytes": 577570,
+   "webp_bytes": 234908
+  },
+  "webp": "public/soundscape/m03/art/T07b.webp",
+  "png": "public/soundscape/m03/art/T07b.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "T07c": {
+  "id": "T07c",
+  "title": "13-card individual art family [c]",
+  "aspect": "16:9",
+  "scene_prompt": "A small original organic translucent watercolor bridge/petal pair with clear negative space for accurate native interval title, note positions and semitone ruler; create a coordinated *family* of distinct relationship variations rather than thirteen arbitrary unrelated paintings. Variation: the two petals sit far apart joined by a long, wide, sweeping bridge.",
+  "full_prompt": "A small original organic translucent watercolor bridge/petal pair with clear negative space for accurate native interval title, note positions and semitone ruler; create a coordinated *family* of distinct relationship variations rather than thirteen arbitrary unrelated paintings. Variation: the two petals sit far apart joined by a long, wide, sweeping bridge.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:28:19",
+  "cost_usd": 0.038805,
+  "generation_id": "gen-1793978887-uPHuPDScm3Y7kmItGjnJ",
+  "raw": "public/soundscape/m03/raw/T07c.png",
+  "raw_sha256": "451fc519cceb1d840d9525f28e0dbe8988dff2dc42431488d8db77d22070e071",
+  "raw_bytes": 424861,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 22.2,
+   "png_sha256": "0c64107325c7dfa7352599926345dd78895dc8b7850255383a37fc634523aeb2",
+   "png_bytes": 977959,
+   "webp_bytes": 399174
+  },
+  "webp": "public/soundscape/m03/art/T07c.webp",
+  "png": "public/soundscape/m03/art/T07c.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "T08a": {
+  "id": "T08a",
+  "title": "13 Atlas deep-chapter openings [a]",
+  "aspect": "16:9",
+  "scene_prompt": "An editorial miniature of delicate translucent light strands and nested botanical rings designed to support a long-form researched music explainer, with an unobstructed large prose area and subtle organic edge fading. Variation: the light strands rise from the lower left and the rings gather toward the right.",
+  "full_prompt": "An editorial miniature of delicate translucent light strands and nested botanical rings designed to support a long-form researched music explainer, with an unobstructed large prose area and subtle organic edge fading. Variation: the light strands rise from the lower left and the rings gather toward the right.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:28:39",
+  "cost_usd": 0.0384705,
+  "generation_id": "gen-1793978907-4oy3dUfUcXs8z4c4Yjrf",
+  "raw": "public/soundscape/m03/raw/T08a.png",
+  "raw_sha256": "d830ac73142b0c8fed14329a1c7c131d6d574f91aec1e64b1cb7f7507f827e8f",
+  "raw_bytes": 628786,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 32.4,
+   "png_sha256": "e0fe34dfdc9ac9939adfdc9be8c96e536b25eedb03f6112f560511ba339b5a2d",
+   "png_bytes": 1581652,
+   "webp_bytes": 675982
+  },
+  "webp": "public/soundscape/m03/art/T08a.webp",
+  "png": "public/soundscape/m03/art/T08a.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "T08b": {
+  "id": "T08b",
+  "title": "13 Atlas deep-chapter openings [b]",
+  "aspect": "16:9",
+  "scene_prompt": "An editorial miniature of delicate translucent light strands and nested botanical rings designed to support a long-form researched music explainer, with an unobstructed large prose area and subtle organic edge fading. Variation: the nested rings are centered on the right and the strands trail off to the left.",
+  "full_prompt": "An editorial miniature of delicate translucent light strands and nested botanical rings designed to support a long-form researched music explainer, with an unobstructed large prose area and subtle organic edge fading. Variation: the nested rings are centered on the right and the strands trail off to the left.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:29:06",
+  "cost_usd": 0.0387945,
+  "generation_id": "gen-1793978933-JCd2wAp0SKjmgYnvIiqM",
+  "raw": "public/soundscape/m03/raw/T08b.png",
+  "raw_sha256": "06c521d26f143d6260c2f7922b094fcb4a15ca161b45d447f85e8279bb703462",
+  "raw_bytes": 501109,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 27.8,
+   "png_sha256": "6421625eea21d375bd79e78517815553570d85d38067932637e142ea713ee17e",
+   "png_bytes": 1239324,
+   "webp_bytes": 503316
+  },
+  "webp": "public/soundscape/m03/art/T08b.webp",
+  "png": "public/soundscape/m03/art/T08b.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "T08c": {
+  "id": "T08c",
+  "title": "13 Atlas deep-chapter openings [c]",
+  "aspect": "16:9",
+  "scene_prompt": "An editorial miniature of delicate translucent light strands and nested botanical rings designed to support a long-form researched music explainer, with an unobstructed large prose area and subtle organic edge fading. Variation: the strands flow left to right across the top while the rings bloom softly at the lower right.",
+  "full_prompt": "An editorial miniature of delicate translucent light strands and nested botanical rings designed to support a long-form researched music explainer, with an unobstructed large prose area and subtle organic edge fading. Variation: the strands flow left to right across the top while the rings bloom softly at the lower right.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:29:27",
+  "cost_usd": 0.038895,
+  "generation_id": "gen-1793978956-JQDJyHmNmuhzX3XSleD1",
+  "raw": "public/soundscape/m03/raw/T08c.png",
+  "raw_sha256": "20a4ee6b00d2594e17c29b57c331d7e50f2cee8949e00bcc81cf547bb70826cd",
+  "raw_bytes": 566328,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 27.6,
+   "png_sha256": "7b3c2a3e810c5697c4db26362575b5036d6aa69ce7aef4799c6dae13d8ae9586",
+   "png_bytes": 1592407,
+   "webp_bytes": 687644
+  },
+  "webp": "public/soundscape/m03/art/T08c.webp",
+  "png": "public/soundscape/m03/art/T08c.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "X01": {
+  "id": "X01",
+  "title": "History Postcard",
+  "aspect": "16:9",
+  "scene_prompt": "An original small archival-feeling watercolor and fine-ink vignette: a warm parchment-tone but transparent-edged suggestion of historic keyboard-craft tools, elegant feathered washes and lavender/amber ink markings; no fake text, named historical person, exact instrument or claims.",
+  "full_prompt": "An original small archival-feeling watercolor and fine-ink vignette: a warm parchment-tone but transparent-edged suggestion of historic keyboard-craft tools, elegant feathered washes and lavender/amber ink markings; no fake text, named historical person, exact instrument or claims.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:30:07",
+  "cost_usd": 0.043539,
+  "generation_id": "gen-1793978981-MppR7EAmplNgFamG95fs",
+  "raw": "public/soundscape/m03/raw/X01.png",
+  "raw_sha256": "a02566acf00c4b88bdbe9662651449fc8af06a2d91714afaf1bdb3d7f9804d05",
+  "raw_bytes": 623023,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 27.2,
+   "png_sha256": "239d652fdee4651fda84e7fd23c87eb727102f85ffa693ef5a77ee8b0afa45d1",
+   "png_bytes": 1686172,
+   "webp_bytes": 717568
+  },
+  "webp": "public/soundscape/m03/art/X01.webp",
+  "png": "public/soundscape/m03/art/X01.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "X02": {
+  "id": "X02",
+  "title": "Behind the Sound / science",
+  "aspect": "16:9",
+  "scene_prompt": "Delicate translucent ripple and resonant light-fields visually communicating an analogy of vibration, atmospheric teal and amber watercolor, clearly poetic, fading organically with generous white space.",
+  "full_prompt": "Delicate translucent ripple and resonant light-fields visually communicating an analogy of vibration, atmospheric teal and amber watercolor, clearly poetic, fading organically with generous white space.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:30:35",
+  "cost_usd": 0.038895,
+  "generation_id": "gen-1793979021-WQZtbdBp31nostyVY5Bl",
+  "raw": "public/soundscape/m03/raw/X02.png",
+  "raw_sha256": "0cd77228c474c2d37bf55fbb9e786f13a774c8573add410c1c9adbf5b437419b",
+  "raw_bytes": 558941,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 42.7,
+   "png_sha256": "7db9d877260fc6954eb7d782546b2defd9c548b79d08ec9b03c37bc7e8711115",
+   "png_bytes": 1494570,
+   "webp_bytes": 572898
+  },
+  "webp": "public/soundscape/m03/art/X02.webp",
+  "png": "public/soundscape/m03/art/X02.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "X03": {
+  "id": "X03",
+  "title": "Musical Worlds / culture",
+  "aspect": "16:9",
+  "scene_prompt": "An original warmly layered abstract meeting of different nonrepresentational musical textures and flowing color traditions, overlapping watercolor pigment fields, no costumes, geographical icons, flags, famous culturally specific instrument depictions or invented cultural symbols.",
+  "full_prompt": "An original warmly layered abstract meeting of different nonrepresentational musical textures and flowing color traditions, overlapping watercolor pigment fields, no costumes, geographical icons, flags, famous culturally specific instrument depictions or invented cultural symbols.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:31:00",
+  "cost_usd": 0.0383985,
+  "generation_id": "gen-1793979048-nhtaDAr5D2BNStF8gJwU",
+  "raw": "public/soundscape/m03/raw/X03.png",
+  "raw_sha256": "c89dd90a16b0f1d9fdd73a7f345ed575393a8c24e15d450e11807493f988b973",
+  "raw_bytes": 610913,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 35.5,
+   "png_sha256": "43f4997d753adbc429256c5c468e3eddc39524c44a00bb05c1d2c7aa7011148b",
+   "png_bytes": 1696695,
+   "webp_bytes": 695102
+  },
+  "webp": "public/soundscape/m03/art/X03.webp",
+  "png": "public/soundscape/m03/art/X03.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "X04": {
+  "id": "X04",
+  "title": "Ambient Composer's Notebook",
+  "aspect": "16:9",
+  "scene_prompt": "A tiny atmospheric studio-like study of overlapping handwritten-feeling watercolor paths and organic melodic seed marks on mostly white air, original delicately layered amber/lavender/teal ink, no readable fake musical notation or brand instrument.",
+  "full_prompt": "A tiny atmospheric studio-like study of overlapping handwritten-feeling watercolor paths and organic melodic seed marks on mostly white air, original delicately layered amber/lavender/teal ink, no readable fake musical notation or brand instrument.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:31:26",
+  "cost_usd": 0.038838,
+  "generation_id": "gen-1793979073-zwdkXPOu8DnYQBDdaxdJ",
+  "raw": "public/soundscape/m03/raw/X04.png",
+  "raw_sha256": "f2b5fdd6aa620f818491dbb2bf430e5c1335c36f513fbe3b7ded40ee464670b0",
+  "raw_bytes": 503149,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 23.6,
+   "png_sha256": "b49bfae0f97382c2fcac3a67fc94c2f7153928720377901e1bd4426aea759d54",
+   "png_bytes": 1255152,
+   "webp_bytes": 518648
+  },
+  "webp": "public/soundscape/m03/art/X04.webp",
+  "png": "public/soundscape/m03/art/X04.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "X05": {
+  "id": "X05",
+  "title": "Hear It in Real Music",
+  "aspect": "16:9",
+  "scene_prompt": "An intimate painterly still-life of soft rippling colored light around a modest abstract listening space, gentle organic soundscape waves and elegant paperlike negative space; no people, album covers, artist names or embedded fake record-player buttons.",
+  "full_prompt": "An intimate painterly still-life of soft rippling colored light around a modest abstract listening space, gentle organic soundscape waves and elegant paperlike negative space; no people, album covers, artist names or embedded fake record-player buttons.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:31:49",
+  "cost_usd": 0.0387615,
+  "generation_id": "gen-1793979097-BswYlQ2XevVB812MoCgN",
+  "raw": "public/soundscape/m03/raw/X05.png",
+  "raw_sha256": "cbc23f3494be085e6dc4c44e0d404489ba175743cac15e22973c19198bc79c49",
+  "raw_bytes": 550149,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 33.4,
+   "png_sha256": "5fb8fdfccdd6e22b245aeaeceafa29962c4759f6b48e045b1c324eaf508f6ddb",
+   "png_bytes": 1555859,
+   "webp_bytes": 636148
+  },
+  "webp": "public/soundscape/m03/art/X05.webp",
+  "png": "public/soundscape/m03/art/X05.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
+ },
+ "X06": {
+  "id": "X06",
+  "title": "Paint What You Hear",
+  "aspect": "16:9",
+  "scene_prompt": "A handful of lush handmade-looking watercolor gestures in amber, violet and teal, each a different expressive mark (spiral, sweep, dotted bloom), connected loosely by fine organic strokes, porous pigment texture, luminous transparency, no pitch letters.",
+  "full_prompt": "A handful of lush handmade-looking watercolor gestures in amber, violet and teal, each a different expressive mark (spiral, sweep, dotted bloom), connected loosely by fine organic strokes, porous pigment texture, luminous transparency, no pitch letters.\n\nUse the attached approved Ajourné reference image ONLY as aesthetic direction, not as a picture to reproduce. An original poetic illustrated music-learning motif in the same level of luminous hand-painted craftsmanship: organic overlapping translucent watercolor and glasslike light, delicate irregular concentric ripples and soft pigment-grain texture, airy negative space, glowing amber/gold, pale teal, lavender, blush rose, restrained peach; gracefully balanced, deeply refined, tactile yet ethereal. The visible forms themselves should communicate the specified musical relationship, not merely decorate a page. Make this an isolated concept-ART element designed to be composited over a separate warm cream native website background. Place it on PURE WHITE (#FFFFFF) with generous white empty margins on every side, and dissolve all edges softly to pure white for accurate transparency extraction. Preserve a quiet, light central or adjoining region for factual SVG labels placed later; do not put labels in the artwork.\nABSOLUTELY NO text, alphabet letters, numbers, music-note symbols, scores, logos, piano keys, black/white key diagrams, chart axes, arrows with numerical meaning, headings, captions, buttons, UI, borders, frames, cards, boxed backgrounds, gradients covering the whole rectangular canvas, cast shadows, posters or web-page screenshots. No hard rectangular edges, fake instrument anatomy, source-like copies or predetermined universal emotion coloring.",
+  "model": "google/gemini-nano-banana-2.1",
+  "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "generated": "2026-11-06T10:32:15",
+  "cost_usd": 0.03843,
+  "generation_id": "gen-1793979121-2DJSRbtw9pUnk1WOZ0Uz",
+  "raw": "public/soundscape/m03/raw/X06.png",
+  "raw_sha256": "fb3344927c7e787d53ded2d8a3796a5886756b291c84a9422ab69ae637be76e1",
+  "raw_bytes": 589817,
+  "alpha": {
+   "size": [
+    1376,
+    768
+   ],
+   "alpha_border_max": 0,
+   "alpha_mean": 33.3,
+   "png_sha256": "a840bb2ee4f1091eabc615e9e2a87c3c4b49ca0065a339c5d40e5b9d1760c32e",
+   "png_bytes": 1224663,
+   "webp_bytes": 579986
+  },
+  "webp": "public/soundscape/m03/art/X06.webp",
+  "png": "public/soundscape/m03/art/X06.png",
+  "license": "Original model output generated for AMF under the provider terms; no third-party source image.",
+  "alt": "",
+  "alt_note": "Decorative art-only layer: empty alt / aria-hidden. All meaning is carried by native text and SVG."
  }
 }
