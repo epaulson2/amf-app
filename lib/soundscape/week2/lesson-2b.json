@@ -1,0 +1,394 @@
+{
+ "sections": {
+  "Hero": [
+   [
+    "Eyebrow",
+    "`WEEK 2 · LESSON 2 OF 3`"
+   ],
+   [
+    "H1",
+    "`What Happens When Both Voices Move?`"
+   ],
+   [
+    "Deck",
+    "\"Two notes can travel together, move apart, or change places in a musical conversation.\""
+   ],
+   [
+    "What You'll Learn",
+    "\"How independent voices make oblique, contrary and similar motion—and how each movement changes the interval you hear.\""
+   ],
+   [
+    "Time",
+    "`About 20–25 minutes`"
+   ],
+   [
+    "CTA",
+    "`Listen to two paths`"
+   ],
+   [
+    "Recap",
+    "\"Last lesson, one voice stayed while the other moved. Now we're going to give both lines freedom—and find the patterns in their journey.\""
+   ]
+  ],
+  "A": [
+   [
+    "H2",
+    "`Watch the music move`"
+   ],
+   [
+    "Body",
+    "\"Start with C and E together. Listen as both voices change. Can you follow the lower note and the upper note separately? One might rise while another falls. Another time, they may both climb.\""
+   ],
+   [
+    "Buttons",
+    "`Hear two voices move apart`, `Hear two voices climb`, `Hear each voice alone`, `Stop sound`."
+   ],
+   [
+    "After listening",
+    "\"You heard two musical lines doing different things. The combined sound changes because the **relationship between the lines** changes.\""
+   ],
+   [
+    "Question",
+    "\"In the first example, did the voices move toward one another or farther apart? What about the second?\""
+   ],
+   [
+    "Choices",
+    "`Farther apart` / `Closer` / `I'm not sure`. All opinions accepted as observation; no penalty. Follow up with labeled geometry after explicit `Reveal the two paths`."
+   ]
+  ],
+  "B": [
+   [
+    "H2",
+    "`The three movement families`"
+   ],
+   [
+    "Body",
+    "\"We describe how voices move *relative to each other*. These names help musicians see a passage, talk about its shape and choose what to do next.\""
+   ],
+   [
+    "Definition 1",
+    "`Oblique motion` — \"One voice holds its pitch while another moves. You tried this when C stayed and E moved up to F.\""
+   ],
+   [
+    "Definition 2",
+    "`Contrary motion` — \"The voices move in **opposite** directions. One rises while the other falls.\""
+   ],
+   [
+    "Definition 3",
+    "`Similar motion` — \"The voices move in the **same** direction. They can travel by different distances.\""
+   ],
+   [
+    "Nuance card",
+    "\"If the two voices move together in the same direction by an identical interval, that is a more specific case called **parallel motion**. Our two rising lines today do not move by the same number of semitones, so we'll call them **similar**, not parallel.\""
+   ],
+   [
+    "Controls",
+    "`Compare oblique` / `Compare contrary` / `Compare similar`; each uses exact W2-03 motion patterns (no incorrect equal arrows)."
+   ],
+   [
+    "Text fallback",
+    "\"Oblique: C holds while E rises to F. Contrary: C falls to B while E rises to F. Similar: C rises to D while E rises to F.\""
+   ],
+   [
+    "Painting/tactile alternate",
+    "Trace lower line with one finger and upper with the other. This is not a test of motor coordination or perfect singing."
+   ]
+  ],
+  "C": [
+   [
+    "H2",
+    "`They travel away from each other`"
+   ],
+   [
+    "Body",
+    "\"Hear C4 and E4 together. Now let the lower C drop to the B just below, while the upper E rises to F. The voices move in opposite directions, opening the space between them.\""
+   ],
+   [
+    "Button",
+    "`Hear contrary motion` (both change at same timestamp after initial 2.5 seconds)."
+   ],
+   [
+    "After listening",
+    "\"The new pair is B3 and F4, separated by **six semitones**. This span is called a **tritone**.\""
+   ],
+   [
+    "Keyboard reveal",
+    "\"Count B, C, D, E, F: that's **five letter names**, so B to F is a kind of fifth. Because it is a semitone smaller than a perfect fifth, it's a **diminished fifth**. Six semitones is the same sounding distance as an augmented fourth, but the written interval name depends on which letters are used.\""
+   ],
+   [
+    "Core summary",
+    "`C4 + E4 (major 3rd, 4) → B3 + F4 (diminished 5th, 6)`"
+   ],
+   [
+    "Reflect",
+    "\"Does that new relationship feel more separated, more unsettled, more interesting or something else on your patch? There is no required emotional label.\""
+   ],
+   [
+    "Visual",
+    "W2-02 contrary panel with lower B3 below C4 (MIDI 59), upper F4 (65); W2-06 shared keyboard traces and labels after the first audio."
+   ]
+  ],
+  "D": [
+   [
+    "H2",
+    "`They travel in the same direction`"
+   ],
+   [
+    "Body",
+    "\"Start again with C4 and E4. This time move the lower voice up to D4 and the upper voice up to F4. They're both traveling higher, but not by the same distance.\""
+   ],
+   [
+    "Button",
+    "`Hear both voices climb`"
+   ],
+   [
+    "After listening",
+    "\"C moves up **two semitones** to D. E moves up **one semitone** to F. The new interval D–F is a **minor third**, only **three semitones** wide.\""
+   ],
+   [
+    "Core summary",
+    "`C4 + E4 (major 3rd, 4) → D4 + F4 (minor 3rd, 3)`"
+   ],
+   [
+    "Theory whisper",
+    "\"Both voices rose: similar motion. They did not move by equal distances, so they didn't keep the same interval apart.\""
+   ],
+   [
+    "Prompt",
+    "\"Before replaying, can you trace one hand rising two neighboring keys while the other rises only one?\""
+   ]
+  ],
+  "ref": [
+   [
+    "Placement",
+    "After contrary-motion tritone has actually been heard/named in Section C, do not reveal its qualities prematurely."
+   ],
+   [
+    "Learner-facing copy",
+    "\"We just heard a six-semitone tritone, written here as **B3–F4: a diminished fifth**. In the Interval Palette, the same six-semitone size also appears as **C4–F♯4: an augmented fourth**. The names tell us how the notes are spelled; the semitone distance tells us how far apart they sound on this keyboard.\""
+   ],
+   [
+    "CTA",
+    "Open the tritone in the Interval Atlas — /curriculum/soundscape-path/resources/interval-palette#ip-06."
+   ],
+   [
+    "Accuracy",
+    "Actual lesson audio/keyboard remains **B3–F4**, never silently substituted by C4–F♯4. This is a linked reusable tool, not another required optional drawer or compulsory lesson."
+   ]
+  ],
+  "E": [
+   [
+    "H2",
+    "`Five ways to change the same beginning`"
+   ],
+   [
+    "Body",
+    "\"Every example starts with exactly the same C–E pair. That's important: when the beginning stays the same, you can hear what each single choice contributes.\""
+   ],
+   [
+    "Five named controls, each with initial audio and optional reveal",
+    "`Only upper rises`; `Only lower falls`; `Only lower rises`; `Both move apart`; `Both rise`."
+   ],
+   [
+    "Prompt",
+    "\"Which example changes the musical landscape most clearly for you? Can you identify which voice made that change?\""
+   ],
+   [
+    "Interactive comparison grid",
+    "one source pair (C4/E4) with five learner event paths revealed one at a time; the first three oblique cases, contrary B3/F4 and similar D4/F4; a single instance of W2-02 instructor explanation after reveal."
+   ],
+   [
+    "Knowledge check (not gating)",
+    "\"What movement has voices going opposite directions?\" `Similar`, `Contrary`, `Oblique`. Correct: \"Contrary motion means one line goes up while the other goes down.\""
+   ],
+   [
+    "Knowledge check",
+    "\"Why isn't C→D and E→F parallel motion?\" `They move different distances`, `They are on different tracks`, `It isn't music`. Correct: \"The lower moved 2 semitones and the upper moved 1. Both rose, but by different amounts.\""
+   ],
+   [
+    "Note spelling alternative",
+    "If a learner only understands semitone counts, show the same intervals on the keyboard, then teach the letter-inclusive name; do not skip the name indefinitely."
+   ]
+  ],
+  "F": [
+   [
+    "H2",
+    "`Draw a conversation between two voices`"
+   ],
+   [
+    "Body",
+    "\"Make a short two-track musical path. Begin with C and E. Move only one voice, then let the other respond. You might try C+E → C+F → B+F → C+E. Give each musical moment room to sound.\""
+   ],
+   [
+    "Instruction",
+    "\"First imagine one movement in your mind. Hum the shape, trace it on an imaginary keyboard or just point higher or lower. Then find the notes and listen to both voices together.\""
+   ],
+   [
+    "Reflect",
+    "\"Which voice created the biggest change? Can you hear each line separately as a melody rather than just one chord block?\""
+   ],
+   [
+    "Assignment",
+    "\"Create a 15–20-second original two-voice improvisation. Draw the two paths on the blank sheet or your own canvas. You can keep the patch simple for the first listen, then add your favorite atmosphere.\""
+   ],
+   [
+    "Save names in her DAW, optional",
+    "`W2B_two-lines`, `W2B_variation`. These are suggestions, not website file uploads."
+   ],
+   [
+    "CTA",
+    "`I've tried my two-voice path` (local state, not graded) · `Continue to Lesson 2C`."
+   ],
+   [
+    "Closing",
+    "\"Two voices can each be a melody. Their changing distance creates harmony while their separate paths create the story.\""
+   ]
+  ]
+ },
+ "drawers": [
+  {
+   "id": "2B-HIST",
+   "head": "2B-HIST — History Postcard",
+   "fields": [
+    [
+     "Title",
+     "`A musical line has a life of its own`"
+    ],
+    [
+     "Copy",
+     "\"Centuries ago, composers working with independent sung lines explored how different voices could rise, fall, pause and meet. In later Western counterpoint study, those relationships were given names such as contrary, similar and oblique motion. These names are useful tools for hearing and describing lines—not evidence that one historical tradition invented polyphony, or that all music must obey the same rules.\""
+    ],
+    [
+     "Try",
+     "\"Draw two lines that begin together and take different routes.\""
+    ],
+    [
+     "Institutional musical context",
+     "https://ocw.mit.edu/courses/21m-011-introduction-to-western-music-fall-2024/pages/week-2-recitation-2a-listening-reading-goetjen/"
+    ]
+   ]
+  },
+  {
+   "id": "2B-SCI",
+   "head": "2B-SCI — Behind the Sound",
+   "fields": [
+    [
+     "Title",
+     "`Where shimmer comes from`"
+    ],
+    [
+     "Copy",
+     "\"When two nearly matching frequencies sound at the same time, they can create audible beating: a gentle fluctuation in loudness. Change how close the frequencies are and the beating can speed up or slow down. With complex synth sounds, many partials interact, so roughness and fusion are more complicated than one simple interval number. **A tritone does not beat at one universal speed.** Try close detuning on a sustained pad, then compare it with moving two notes to a different musical interval.\""
+    ],
+    [
+     "Try",
+     "\"With two sustained simple synth tones, slightly detune one pitch and hear the changing pulse. Then reset the tuning before our exact semitone interval exercise.\""
+    ],
+    [
+     "Reference",
+     "https://openstax.org/books/physics/pages/14-4-sound-interference-and-resonance"
+    ],
+    [
+     "Guard",
+     "Detuned unisons and B3–F4 tritones are separate acoustic demonstrations; never label them identical phenomena."
+    ]
+   ]
+  },
+  {
+   "id": "2B-AMBIENT",
+   "head": "2B-AMBIENT — Ambient Composer's Notebook",
+   "fields": [
+    [
+     "Title",
+     "`Movement can be almost invisible`"
+    ],
+    [
+     "Copy",
+     "\"A lush ambient composition doesn't need every synth layer to change at once. Let one low voice descend as a high voice slowly rises. The texture may seem to open around the listener. In another version, send both voices upward, letting one travel farther. The resulting harmony might feel closer or more blended. The important thing is the choice: when to separate, when to meet, and when to let a voice remain alone.\""
+    ],
+    [
+     "Try",
+     "\"Keep the patch and rhythm steady while changing only the two voice paths.\""
+    ]
+   ]
+  },
+  {
+   "id": "2B-REAL",
+   "head": "2B-REAL — Hear It in Real Music",
+   "fields": [
+    [
+     "Title",
+     "`Changing and constant parts in Arvo Pärt`"
+    ],
+    [
+     "Recording",
+     "`Arvo Pärt — Fratres` · composer-authoritative explanation https://www.arvopart.ee/en/arvo-part/work/391/ ; filmed performance by **12 Ensemble** https://www.the12ensemble.com/video and performance editorial https://www.thestrad.com/video/12-ensemble-performs-arvo-parts-fratres/21751.article ."
+    ],
+    [
+     "Listen for",
+     "\"A recurring musical structure with a low sustained element and several moving lines. Notice how the moving voices transform a familiar background. This is far richer than our two-note exercise and follows Pärt's own compositional system.\""
+    ],
+    [
+     "Transfer",
+     "\"Let a low synth line remain recognizable while two upper voices take different paths. Later you can return to a strict two-voice version.\""
+    ],
+    [
+     "Copyright",
+     "External links only; do not claim the composer literally uses the C→B and E→F transformation from our lesson."
+    ]
+   ]
+  },
+  {
+   "id": "2B-WORLD",
+   "head": "2B-WORLD — Musical Worlds",
+   "fields": [
+    [
+     "Title",
+     "`Bali: when two sounds shimmer on purpose`"
+    ],
+    [
+     "Copy",
+     "\"In some Balinese gamelan ensembles, pairs of tuned bronze-key instruments are deliberately given slightly different pitches. When they sound together, you may hear a shimmering pulse, often called **ombak**, or wave. What might sound 'out of tune' in one context is a desired feature of this musical world. That doesn't mean our Western keyboard's major third or tritone has a fixed emotional character. It reminds us that musical systems make different creative choices about tuning, texture and the meaning of sound.\""
+    ],
+    [
+     "Listen",
+     "`Gamelan Mitra Kusuma — Balinese Music and Dance`, Smithsonian National Museum of Asian Art https://asia.si.edu/balinese-music-and-dance-gamelan-mitra-kusuma/ . Choose the opening **Capung Gantung** passage as an optional short excerpt, not an invented independent YouTube recording."
+    ],
+    [
+     "Context",
+     "The Smithsonian's musicians and liner notes explain the paired slightly differently tuned instruments: https://asia-archive.si.edu/podcast/balinese-music-and-dance-gamelan-mitra-kusuma/"
+    ],
+    [
+     "Try",
+     "\"Create a *new* gentle synth shimmer with two nearly tuned unisons, then contrast it with two different keyboard notes. You are exploring an acoustic question, not imitating a gamelan composition or its tuning system.\""
+    ],
+    [
+     "Respect",
+     "Balinese gamelan is not a generic sample pack, a synonym for Indonesian music generally or simply Western 12-TET with detuning."
+    ]
+   ]
+  },
+  {
+   "id": "2B-PAINT",
+   "head": "2B-PAINT — Paint What You Hear",
+   "fields": [
+    [
+     "Title",
+     "`Two paths, one shared space`"
+    ],
+    [
+     "Copy",
+     "\"Let the lower note become one line and the upper note another. Paint or draw the moment they travel away from each other, then a moment when they move in the same direction. You can use distance, texture, pressure or color to show how you experience the changing space between them. There is no correct picture of a tritone.\""
+    ],
+    [
+     "Try",
+     "\"Give each line one recognizable feature. Change only the direction of its motion in the second sketch.\""
+    ],
+    [
+     "Privacy",
+     "\"Use paint, pencil, collage or your own digital canvas. You don't need to upload it.\""
+    ]
+   ]
+  }
+ ]
+}

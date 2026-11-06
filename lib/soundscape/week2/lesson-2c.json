@@ -1,0 +1,384 @@
+{
+ "sections": {
+  "Hero": [
+   [
+    "Eyebrow",
+    "`WEEK 2 · LESSON 3 OF 3`"
+   ],
+   [
+    "H1",
+    "`Compose with Only Two Voices`"
+   ],
+   [
+    "Deck",
+    "\"Sometimes two carefully chosen musical lines can fill an entire world.\""
+   ],
+   [
+    "What You'll Learn",
+    "\"How to imagine, build and follow two independent voices, and how changing just one line can transform the harmony without adding more notes.\""
+   ],
+   [
+    "Time",
+    "`About 20–25 minutes of guided discovery`"
+   ],
+   [
+    "CTA",
+    "`Hear a two-voice miniature`"
+   ],
+   [
+    "Previously",
+    "\"You've heard a major third become a fourth, a second, a tritone and a minor third. Now you'll use those distances—and the motion that connects them—to make music of your own.\""
+   ]
+  ],
+  "A": [
+   [
+    "H2",
+    "`One sound, two stories`"
+   ],
+   [
+    "Copy",
+    "\"Listen to the lower part by itself. Then hear the upper part alone. Each has a direction, a beginning and places where it waits. Now listen to both together. They form a changing harmony, but neither line stops being a melody.\""
+   ],
+   [
+    "Buttons",
+    "`Hear the lower voice`, `Hear the upper voice`, `Hear both voices`, `Stop sound`."
+   ],
+   [
+    "Reflection",
+    "\"Can you follow which part is moving even when both notes sound together? If not, solo each line and try again.\""
+   ],
+   [
+    "Theory callout",
+    "\"A **musical voice** is an independently meaningful line through time. A **vertical interval** is the distance between two notes that sound together at a particular moment. **Voice leading** is how each part moves from note to note; **counterpoint** considers independent musical lines sounding in relation.\""
+   ],
+   [
+    "Visual",
+    "W2-04 path or SYS-04 time-based two-line traces, with independent circle/square shape keys and no false single-chord picture."
+   ]
+  ],
+  "B": [
+   [
+    "H2",
+    "`Let one voice be the landscape`"
+   ],
+   [
+    "Copy",
+    "\"Begin with a held C4. Allow an upper E4 to appear, then F4, then E4 again. Leave silence between the upper notes. The foundation stays so we can hear each relationship change.\""
+   ],
+   [
+    "Play",
+    "`Hear the quiet version`"
+   ],
+   [
+    "Post-play reveal",
+    "`C4 stays. Upper E4 → F4 → E4.`"
+   ],
+   [
+    "Body",
+    "\"The first C–E pairing is a **major third**, four semitones. When E changes to F, the interval becomes a **perfect fourth**, five semitones. When E returns, the first relationship returns too.\""
+   ],
+   [
+    "Prompt",
+    "\"What changed more: the notes, the timing or the sense of space? Does the quiet foundation make the music feel grounded to you?\""
+   ],
+   [
+    "Creative note",
+    "\"Nothing here needs a three-note chord block. One line stays, another tells a little story.\""
+   ]
+  ],
+  "C": [
+   [
+    "H2",
+    "`Let the landscape begin to travel`"
+   ],
+   [
+    "Copy",
+    "\"Keep the same upper E–F–E idea. This time let the lower C change to B before the F arrives, then return to C for the last E. The upper melody remains familiar, but its musical surroundings shift.\""
+   ],
+   [
+    "Play",
+    "`Hear the moving-foundation version`"
+   ],
+   [
+    "After play",
+    "\"With C beneath E, we hear a major third. With B3 beneath F4, we hear a **diminished fifth—a six-semitone tritone**. When the lower part returns to C beneath E, the earlier major-third relationship comes back.\""
+   ],
+   [
+    "Compare buttons",
+    "`Replay the quiet version`, `Replay the moving version`, `Hear only the changing lower voice`."
+   ],
+   [
+    "Prompt",
+    "\"Which version feels more like an atmosphere? Which has more sense of a journey for you? They can be the same version—or different ones.\""
+   ],
+   [
+    "Accuracy",
+    "Do not call the change to B3 an upper melody change. Also do not claim that the whole 36-second example is a strict counterpoint exercise; it's an original introductory two-voice arrangement."
+   ]
+  ],
+  "D": [
+   [
+    "H2",
+    "`The musical words behind the movement`"
+   ],
+   [
+    "Teaching copy",
+    "\"When one voice holds and the other travels, we call that **oblique motion**. When both move in the same direction, it's **similar motion**. When one rises as the other falls, it's **contrary motion**. You can recognize those movements as two paths, even before you name every interval between them.\""
+   ],
+   [
+    "Body",
+    "\"The words for a vertical interval—major third, perfect fourth, diminished fifth—describe the notes at one moment. The movement words describe how you got there. Both tell us something important about the music.\""
+   ],
+   [
+    "Demonstration controls",
+    "`See the separate paths` / `Show the interval at this moment`; use actual MIDI-defined audio fixture time points, not a decorative static wave that could imply incorrect note timing."
+   ],
+   [
+    "Mini knowledge checks (all optional, non-gated)",
+    "- \"At the start, what interval do C4 and E4 make?\" `Major third · 4 semitones` (correct), `Perfect fourth`, `Minor second`.\n- \"When the lower voice C4 moves to B3 and the upper F4 stays, which line moved?\" `Lower` (correct), `Upper`, `Both`.\n- \"What name describes one voice rising while the other falls?\" `Contrary motion` (correct), `Similar motion`, `Oblique motion`."
+   ],
+   [
+    "Feedback",
+    "\"These are names for things you can already hear. They become useful when you want to create the relationship again.\""
+   ]
+  ],
+  "ref": [
+   [
+    "Learner-facing copy",
+    "\"If you'd like a reminder of how one interval can change the atmosphere between two voices, open the Ajourné Interval Palette. You can hear each pair together or as a melody, read its exact musical name and explore a deeper explanation whenever it helps your piece.\""
+   ],
+   [
+    "CTA",
+    "Explore the Interval Atlas — /curriculum/soundscape-path/resources/interval-palette."
+   ],
+   [
+    "Use",
+    "Optional reference only; it does not replace the personal two-voice composition activity, nor does it make an emotional color mandatory."
+   ]
+  ],
+  "E": [
+   [
+    "H2",
+    "`Carry the keyboard in your imagination`"
+   ],
+   [
+    "Copy",
+    "\"Before entering the next note in your piano roll, see or trace the keyboard for a moment. Try hearing the change first. Maybe you hum the line, maybe you point to the next key, or maybe you imagine the shape of the motion. Then let the synth show you what happened.\""
+   ],
+   [
+    "Practice cue",
+    "\"Keep two separate mental paths: the lower voice and the upper voice. You only need to follow a few notes now. This gets easier as each distance becomes familiar.\""
+   ],
+   [
+    "Visual",
+    "Existing `W2-06` lower-circle/upper-square keyboard and `W2-04` two path blank map; pupil chooses labels off/on."
+   ],
+   [
+    "Accuracy",
+    "Do not demand two pitches sung simultaneously or a vivid mental image."
+   ]
+  ],
+  "F": [
+   [
+    "H2",
+    "`Make your own two-voice miniature`"
+   ],
+   [
+    "Copy",
+    "\"Open your favorite synth or DAW. Create a short upper melody from two or three notes. Imagine or hum its contour before you program at least one note. Then add a lower voice with a slow, clear role.\""
+   ],
+   [
+    "Five instructions (on-screen exact)",
+    "1. `Choose your upper melody` — \"Keep it simple enough that you can remember its movement.\"\n2. `Make version one` — \"Let the lower voice hold one note while the upper voice moves.\"\n3. `Make version two` — \"Keep your upper idea recognizable, but let the lower voice change at least once.\"\n4. `Listen to the parts` — \"Solo each voice, then listen to both. Mark one interval or motion you can name.\"\n5. `Choose by intention` — \"Which version makes the atmosphere or story you want to share?\""
+   ],
+   [
+    "Timing",
+    "\"Aim for two sketches about 30–45 seconds each. A shorter complete piece also counts. No need to add a third voice or a busy chord progression.\""
+   ],
+   [
+    "Print CTA",
+    "`Download the two-voice path sheet (PDF)`."
+   ],
+   [
+    "Local-only optional reflection",
+    "`I kept ___ the same. I moved ___. The result felt ___.`"
+   ],
+   [
+    "Completion CTA",
+    "`I've made two sketches`."
+   ],
+   [
+    "Privacy note",
+    "\"Your music stays in your own studio. This website doesn't record, upload or grade it.\""
+   ],
+   [
+    "Final sentence",
+    "\"You've created harmony by listening to what two independent voices do together.\""
+   ]
+  ],
+  "G": [
+   [
+    "H2",
+    "`Next, let the voices speak in phrases`"
+   ],
+   [
+    "Copy",
+    "\"In Week 3, we'll give these moving voices more recognizable shapes: motifs, questions, answers and pauses. You don't need more notes to make a musical idea clearer. Sometimes you just need to know when it wants to speak.\""
+   ],
+   [
+    "CTA",
+    "`Return to Ajourné into Music` (week-2 hub, or a Week 3 *content* preview only when actually implemented)."
+   ]
+  ]
+ },
+ "drawers": [
+  {
+   "id": "2C-HIST",
+   "head": "2C-HIST — History Postcard",
+   "fields": [
+    [
+     "Title",
+     "`The history of musical conversations`"
+    ],
+    [
+     "Copy",
+     "\"Musicians across many times and cultures have developed ways for multiple melodic lines to sound together. In European polyphony, composers also explored the movement of distinct voices, sometimes giving each part a recognizable identity. Learning the vocabulary of motion helps us describe such music, but the idea of singing many parts together is much broader than any one written tradition.\""
+    ],
+    [
+     "Try",
+     "\"Sing or hum just one line from your own piece, then hear what happens when you add its companion.\""
+    ],
+    [
+     "Source",
+     "https://ocw.mit.edu/courses/21m-011-introduction-to-western-music-fall-2024/pages/week-2-recitation-2a-listening-reading-goetjen/"
+    ],
+    [
+     "Guard",
+     "No claim of the universal origin of polyphony."
+    ]
+   ]
+  },
+  {
+   "id": "2C-SCI",
+   "head": "2C-SCI — Behind the Sound",
+   "fields": [
+    [
+     "Title",
+     "`Why the same melody changes when the bass moves`"
+    ],
+    [
+     "Copy",
+     "\"A single note doesn't carry the full meaning of the harmony beneath it. When you keep E4 the same but change a supporting pitch from C4 to another note, the simultaneous interval changes. That changes which frequencies and overtones coexist. Timbre, register, previous musical events and listening experience also shape the result. You can learn to identify the exact notes and their distances while remaining free to decide how you experience the combined sound.\""
+    ],
+    [
+     "Try",
+     "\"Solo E4. Then pair it with C4 and, separately, with B3. Notice the difference without changing E4.\""
+    ],
+    [
+     "Guard",
+     "A B3/E4 perfect fourth does not imply the same harmony/tonal function in every musical context."
+    ]
+   ]
+  },
+  {
+   "id": "2C-AMBIENT",
+   "head": "2C-AMBIENT — Ambient Composer's Notebook",
+   "fields": [
+    [
+     "Title",
+     "`An atmosphere can move without rushing`"
+    ],
+    [
+     "Copy",
+     "\"Imagine a soft, luminous landscape whose light shifts slowly. The upper line may feel like a familiar character. The lower line can let that character step into a new environment without changing the melody itself. If you use only two distinct synth voices, their entrances, rests and changing register can become expressive events. Choose the amount of movement your piece needs—not the amount you feel obliged to add.\""
+    ],
+    [
+     "Try",
+     "\"Change only the lower note in the middle of your soundscape, leaving the upper melody exactly as it was.\""
+    ]
+   ]
+  },
+  {
+   "id": "2C-REAL",
+   "head": "2C-REAL — Hear It in Real Music",
+   "fields": [
+    [
+     "Title",
+     "`An evolving world made of overlapping lines`"
+    ],
+    [
+     "Recording 1",
+     "`Arvo Pärt — Fratres`; composer commentary https://www.arvopart.ee/en/arvo-part/work/391/ and actual performance by 12 Ensemble https://www.the12ensemble.com/video ."
+    ],
+    [
+     "Listen for",
+     "\"How low continuity and several changing lines give the music a sense of recurring structure. The composer uses three main voices with a drone—not exactly our two-voice task.\""
+    ],
+    [
+     "Recording 2",
+     "`Aka vocal polyphony`; official UNESCO recording https://ich.unesco.org/en/video/41484 and https://www.youtube.com/watch?v=yKLxFmnYO_I (verified UNESCO upload)."
+    ],
+    [
+     "Listen for",
+     "\"Independent sung parts creating an evolving whole. Listen respectfully to music with its own traditions, social roles and improvisational knowledge; do not judge its sound by Western chord rules.\""
+    ],
+    [
+     "Transfer",
+     "\"Make a simple original loop in which two independently timed synth voices meet and separate.\""
+    ],
+    [
+     "Rights",
+     "Source-link only, no sampling/copying the recordings or thumbnails."
+    ]
+   ]
+  },
+  {
+   "id": "2C-WORLD",
+   "head": "2C-WORLD — Musical Worlds",
+   "fields": [
+    [
+     "Title",
+     "`Central African Republic: many voices, one living tradition`"
+    ],
+    [
+     "Copy",
+     "\"The **Aka** communities of the Central African Republic maintain distinctive traditions of vocal polyphony. Singers can take different roles and vary their parts within a larger musical practice, often learned through participation rather than written notation. What you hear is not a two-track Western counterpoint exercise—it's a living music connected to community life. Yet it opens an inspiring question: how can several recognizable musical ideas remain independent while contributing to one shared sound?\""
+    ],
+    [
+     "Hear",
+     "https://ich.unesco.org/en/video/41484 (UNESCO documentary); recording collection with artist/source context https://folkways.si.edu/aka-pygmy-music/world/music/album/smithsonian (Smithsonian Folkways; may require a paid stream)."
+    ],
+    [
+     "Try",
+     "\"Let two original little loops play together. Make one change in each while keeping their separate identities. It's an exploration of interaction, not a recreation of Aka music.\""
+    ],
+    [
+     "Cultural terminology",
+     "UNESCO's historic listing title includes a term that may be dated or unwelcome; the course's descriptive title and prose should say **Aka vocal polyphony** and credit communities respectfully."
+    ]
+   ]
+  },
+  {
+   "id": "2C-PAINT",
+   "head": "2C-PAINT — Paint What You Hear",
+   "fields": [
+    [
+     "Title",
+     "`A small conversation`"
+    ],
+    [
+     "Copy",
+     "\"Listen to your two-voice miniature and paint it as two different lines, forms or textures. Each can have a personality of its own. Show where one holds still, where another moves, and a moment when they meet or drift apart. If you change the lower voice in version two, what part of the painting should change with it?\""
+    ],
+    [
+     "Try",
+     "\"Create two related visual studies. Keep one feature unchanged, just as you kept your upper melody recognizable.\""
+    ],
+    [
+     "Privacy",
+     "\"Your painting belongs to you. No upload or art grading is required.\""
+    ]
+   ]
+  }
+ ]
+}

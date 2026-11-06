@@ -38,7 +38,7 @@ export default function SoundscapeLanding() {
             
           </div>
           <p className="text-slate-300 text-sm mt-5 mb-0">Eight-week introductory path · Three short guided lessons a week · Room to move at your own pace</p>
-          <p className="text-slate-300 text-sm mt-2 mb-0"><Link href={`${BASE}/how-it-works`} className="underline">How we&apos;ll learn</Link> · Week 1 is open; Weeks 2–8 are still being built.</p>
+          <p className="text-slate-300 text-sm mt-2 mb-0"><Link href={`${BASE}/how-it-works`} className="underline">How we&apos;ll learn</Link> · Weeks 1 and 2 are open; Weeks 3–8 are still being built.</p>
         </div>
       </section>
 

@@ -21,7 +21,7 @@ export default function Journey() {
         </div>
       </header>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-12">
-        <p className="sp-callout max-w-2xl m-0"><span className="sp-status mr-2">Preview</span>Week 1 is open. Each later week will link to its own page as its lessons are completed and checked.</p>
+        <p className="sp-callout max-w-2xl m-0"><span className="sp-status mr-2">Preview</span>Weeks 1 and 2 are open. Each later week will link to its own page as its lessons are completed and checked.</p>
         {MONTHS.map(m => (
           <section key={m.eyebrow} aria-label={m.eyebrow}>
             <p className="sp-eyebrow m-0">{m.eyebrow}</p>
@@ -31,7 +31,7 @@ export default function Journey() {
                 <li key={w.n} className="sp-card p-5">
                   <div className="flex items-baseline justify-between gap-3 flex-wrap">
                     <h2 className="sp-editorial-heading text-xl text-slate-900 m-0"><span className="sp-muted text-base font-medium mr-2">Week {w.n}</span>{w.title}</h2>
-                    {w.n === 1 ? <Link href={`${BASE}/week-1`} className="sp-btn">Open Week 1</Link> : <span className="sp-status">Lesson pages in preparation</span>}
+                    {w.n <= 2 ? <Link href={`${BASE}/week-${w.n}`} className="sp-btn">Open Week {w.n}</Link> : <span className="sp-status">Lesson pages in preparation</span>}
                   </div>
                   <p className="text-base mt-2 mb-1">{w.learning}</p>
                   <p className="text-base sp-muted m-0"><strong className="text-slate-800">Create:</strong> {w.creation}</p>

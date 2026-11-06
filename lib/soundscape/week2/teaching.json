@@ -1,0 +1,318 @@
+{
+ "hub": {
+  "title": "Two Notes Become Two Voices",
+  "deck": "Once you can find notes and recognize a home reference, you can begin to hear the distances and relationships that make music move.",
+  "welcome": [
+   "Last week, you chose a low note as a musical reference, learned how the keyboard is organized, and discovered that another pitch can change what you hear above that reference. You measured half and whole steps and built your first major scale. You also heard the difference between a musical idea that arrives and one that deliberately stays open.",
+   "This week we ask a new question: **what happens when two musical voices are free to make their own choices?** Sometimes one holds its pitch while the other moves. Sometimes both rise; sometimes they move in opposite directions. Every new combination has a measurable distance between its notes, and every movement has a recognizable shape.",
+   "We'll learn how musicians name **intervals** and distinguish their letter-name number from their exact size in **semitones**. We'll use those names to compare a major third with a minor third, a perfect fourth and a major second. We'll also explore **oblique**, **contrary**, **similar** and, briefly, **parallel motion**. The musical terms give you precision, but your ears and imagination still decide which possibilities suit your music.",
+   "Finally, you'll make two related pieces using only two independent lines. One will have a mostly held foundation. In the other, that foundation will move while the upper melody stays recognizable. You'll learn that harmony can change even when you don't add more notes or a new chord progression."
+  ],
+  "map": "**Pitch** tells you how high or low a sound is. An **interval** is the distance between two pitches. **Interval number** follows the letter names, counting both ends. **Interval quality** helps name the exact kind of second, third, fourth, fifth or other interval, taking semitone size and note spelling into account. **A musical voice** is a line you can follow through time. **Voice motion** describes which parts rise, fall or hold from one moment to the next. **Harmony** is what you hear when notes coexist.",
+  "mini": "C4 and E4 are two separate pitches. As a pair they form a **major third**: C–D–E counts a third; C→C♯→D→D♯→E travels four semitone steps. If C stays and E changes to F, the upper voice has moved while the lower one stays; the pair is now C–F, a **perfect fourth**, five semitones wide.",
+  "lessons": [
+   {
+    "id": "2A",
+    "title": "Hold One Voice, Let the Other Explore",
+    "text": "Discover how two-note combinations are called dyads; count and name intervals using letter names and semitones; hear how keeping one voice steady while another moves changes the interval. Meet the full Interval Palette and its practical examples."
+   },
+   {
+    "id": "2B",
+    "title": "What Happens When Both Voices Move?",
+    "text": "Learn to distinguish oblique, contrary, similar and parallel motion. Build and hear five exact transformations of the same starting C–E pair. Discover why B–F is a diminished fifth, even though another six-semitone pair may be spelled differently."
+   },
+   {
+    "id": "2C",
+    "title": "Compose with Only Two Voices",
+    "text": "Follow two melodic paths through time; hear how changing just the lower part affects harmony; create two related original soundscapes and explain at least one intentional musical choice."
+   }
+  ],
+  "can": "By the end of Week 2, you'll be able to find and build major and minor thirds on a keyboard; explain why a third by letters can be three or four semitones; play C–E, C–F, D–E and B–F without confusing their spellings; label oblique, contrary and similar motion; tell similar from parallel; and create two short two-voice sketches with an intentional change. You do not need to memorize all thirteen interval landmarks or sing two notes at once.",
+  "how": "Start with the lesson's explanation and hear the exact original notes. Follow them visually on a keyboard or in the note-list alternative. Try one change, then say which line moved and how far. Revisit the definitions when you need them. **The Interval Palette is a reference**, not thirteen new compulsory lessons. The six discovery doors in each lesson are optional explorations of history, sound, creative practice, real performances, musical cultures and visual art."
+ },
+ "a_hear": {
+  "h2": "What does it mean to hear two voices?",
+  "paras": [
+   "Imagine a low note, C, held steadily while a higher note, E, enters above it. You hear a combination, but it is made from two independent events. One part might be a warm, sustained synth pad. The other could be a clear melody tone. When both sound, the result has a harmonic character of its own.",
+   "Two notes sounding together are often called a **dyad**. That is a description of the two-note combination, not automatically a full three-note chord. When we think of those notes as parts with their own timing and direction, we call them **voices**. A voice is a musical line through time, not necessarily someone singing. We can recognize its beginning, duration, pauses and movement.",
+   "Today we'll use two short parts—a lower C4 and an upper E4. First hear each separately, then together. Nothing else needs to sound. The first skill is simple but powerful: listen for the **lower part**, then the **upper part**, then the **relationship between them**."
+  ],
+  "guided": "Play C4 by itself. Identify the lower note. Play E4 by itself. Identify the upper note. Play C4+E4 together. Both pitches are still there, even if your instrument makes them blend. In your own DAW, put them on separate tracks so you can solo each one later.",
+  "checks": [
+   {
+    "q": "What makes this a dyad?",
+    "correct": "Two distinct pitches sounding together."
+   },
+   {
+    "q": "What makes them two voices?",
+    "correct": "We can follow the lower and upper parts separately as time unfolds."
+   }
+  ]
+ },
+ "a_interval": {
+  "h2": "What is an interval, and why does its name have two parts?",
+  "paras": [
+   "An **interval** is the musical distance between two pitches. You can hear an interval when its notes sound one after another, as a small melodic movement. You can also hear it when the notes sound at the same time, as a harmonic combination. Those are two ways to experience a distance—not two different measurements.",
+   "Traditional interval names tell us two things. The **number** comes from the written note-letter span: second, third, fourth and so on. The **quality** distinguishes different sizes that share a number, such as a **major third** and a **minor third**. We measure the exact size using the piano keyboard's neighboring **semitone** steps.",
+   "Keep these two counting methods separate. When you count C, D and E, that's three letter positions including both ends, so C–E is a **third**. But when you move along a chromatic keyboard from C4 to E4, you travel **four semitone steps**: C→C♯→D→D♯→E. We do **not** count the starting C as semitone one; it starts at zero. A third spanning four semitones is a **major third**.",
+   "From E4 to G4 the letters E–F–G still count three positions: it is also a third. But E→F is one semitone, F→F♯ is a second and F♯→G is a third. **Three** semitones makes E–G a **minor third**. So the two pairs share an interval number but have different qualities.",
+   "An interval can be measured even when the two pitches are placed in different octaves. In these examples we name their actual registers, so don't silently move B3 or E4 to another octave. The spelling matters too: two enharmonically equivalent pitches can produce differently named intervals when their letter names are written differently. We'll hear an example of that in Lesson 2B."
+  ],
+  "worked": [
+   "C4→E4: letters C–D–E = **third**, chromatic steps = 4, name **major third**.",
+   "E4→G4: letters E–F–G = **third**, chromatic steps = 3, name **minor third**.",
+   "C4→F4: letters C–D–E–F = **fourth**, chromatic steps = 5, name **perfect fourth**.",
+   "D4→E4: letters D–E = **second**, chromatic steps = 2, name **major second**."
+  ],
+  "steps": [
+   "Find the two notes on the keyboard.",
+   "Count letter names including both endpoints: what's the interval number?",
+   "Count adjacent chromatic *moves*: how many semitones?",
+   "Combine the two facts to identify the interval quality and number.",
+   "Play them together, then sequentially, and notice the difference in the listening experience."
+  ],
+  "checks": [
+   {
+    "q": "Why are C4–E4 and E4–G4 both thirds?",
+    "correct": "Each spans three note-letter positions."
+   },
+   {
+    "q": "Why is one major and the other minor?",
+    "correct": "C4–E4 is four semitones; E4–G4 is three."
+   },
+   {
+    "q": "Why is C4–F4 not a third?",
+    "correct": "C through F spans four letter positions, making it a fourth."
+   }
+  ]
+ },
+ "a_palette": {
+  "h2": "A palette of measurable distances",
+  "paras": [
+   "An octave contains twelve equal-tempered semitone steps, so counting from C4 to C5 gives you thirteen pitch landmarks if you include both ends. Our Interval Palette places those landmarks in a visual map, from a unison at zero to an octave at twelve semitones.",
+   "The card names, note spellings and semitone distances are musical facts for these examples. Its colors and adjectives are **artistic suggestions**, not universal emotional or acoustic laws. You might find the same interval gentle in one register and rough in another, or hear it differently on a different synth patch.",
+   "For today's lesson, focus on **C–E**, **E–G**, **C–F** and **D–E**. The full Atlas is available if you're curious, but you don't need to read thirteen chapters before moving the upper note in our next activity."
+  ],
+  "cue": "Select C4–E4, play the notes together, then sequentially. The semitone count stays four in both cases, but the musical experience may feel different because simultaneous notes interact and successive notes form movement over time."
+ },
+ "a_oblique": {
+  "h2": "One note changes, so the interval changes",
+  "paras": [
+   "We began with lower C4 and upper E4: four semitones, a major third. Now keep C4 and move the upper note E4 up one neighboring key to F4. The **upper voice moved one semitone**; the pair's new distance is **five semitones**, C4–F4, a perfect fourth.",
+   "This is **oblique motion**: one voice stays on the same pitch while the other moves. It's the two-line version of holding the scenery still while the visitor takes one step. The useful fact isn't that every perfect fourth feels a particular way; it's that a deliberate one-note change produced a new interval that you can identify, hear again and use in composition."
+  ],
+  "checks": [
+   {
+    "q": "Which part moved from C+E to C+F?",
+    "correct": "The upper E moved to F, a one-semitone step."
+   },
+   {
+    "q": "What stayed?",
+    "correct": "The lower C remained C."
+   },
+   {
+    "q": "What changed vertically?",
+    "correct": "The dyad widened from a major third (4) to a perfect fourth (5)."
+   }
+  ]
+ },
+ "a_bass": {
+  "h2": "The bass can be the moving voice too",
+  "paras": [
+   "Keeping the upper E4 still, move the lower C4 down one semitone to B3. The new pair B3–E4 is five semitones wide: a perfect fourth. Notice that C4–F4 and B3–E4 have the same **interval quality and size**, but they use different pitches and you arrived at them by changing different voices.",
+   "Now restore C4+E4 and move the lower C4 up to D4 instead. The E4 stays above it, so the new pair D4–E4 is a major second, two semitones wide. **One voice is still holding while the other moves**; it remains oblique motion even though we're changing the lower part instead of the upper."
+  ],
+  "worked": "C+E→C+F: upper rises one semitone; 4→5. C+E→B+E: lower falls one; 4→5. C+E→D+E: lower rises two; 4→2. These are **three distinct choices with one fixed starting pair**. Reset to C+E before each, so you can hear which change caused the difference.",
+  "checks": [
+   {
+    "q": "If E holds but C moves down to B, what stayed?",
+    "correct": "Upper E4."
+   },
+   {
+    "q": "Did the resulting interval become a fifth because B is lower?",
+    "correct": "No. B3–E4 spans four letters and five semitones: a perfect fourth."
+   }
+  ]
+ },
+ "a_choice": {
+  "h2": "Use interval knowledge to make a musical choice",
+  "paras": [
+   "When you choose a note for your composition, you don't have to guess at its effect blindly. You can find the lower pitch, locate a second pitch and measure the distance. Then you can experiment with changing one note while leaving the other untouched. The math helps you **repeat and describe** a sound; listening and artistic taste help you choose whether to keep it.",
+   "In your own synth or piano roll, create a C4–E4 dyad and give its two voices separate tracks. Make three short variations from that identical beginning: E4→F4 while C holds, C4→B3 while E holds, and C4→D4 while E holds. Listen, compare and choose one that fits an atmosphere you imagine. You aren't required to hear a fixed emotion."
+  ],
+  "recap": "A dyad is a two-note combination. A voice is a musical line through time. An interval is the distance between two pitches, whether heard in sequence or together. An interval **number** counts note letters inclusively; its **quality** and size distinguish major from minor and perfect forms. Our C–E major third spans four semitones, E–G minor third spans three, C–F perfect fourth spans five, and D–E major second spans two. With oblique motion, one voice holds while another moves. In 2B, both lines will begin to travel."
+ },
+ "b_what": {
+  "h2": "What can two independent musical lines do?",
+  "paras": [
+   "Two notes can sound as a single combination, but the music doesn't have to treat them like a rigid block. Imagine a lower voice and an upper voice, each with its own timing and pitches. One line might stay still while the other changes. They might move toward or away from one another. Or they might travel in the same direction by different amounts.",
+   "In Lesson 2A we learned to name the **vertical interval** between the two notes at one moment. Today we also watch their **horizontal motion**—what each voice does from one moment to the next. Both views are important, and neither automatically tells us the other.",
+   "Keep the two parts distinct as you listen. You can follow the lower line with a finger and the upper line with another finger, listen to each solo, or trace them on a keyboard. No one needs perfect pitch or to sing both lines at once."
+  ]
+ },
+ "b_four": {
+  "h2": "Four ways of describing how two voices move",
+  "paras": [
+   "**Oblique motion** means one voice remains on the same pitch while the other changes. From C4+E4 to C4+F4, the C stays and E rises one semitone.",
+   "**Contrary motion** means the voices move in **opposite directions**. From C4+E4 to B3+F4, the lower C falls to B and the upper E rises to F. The paths move away from one another.",
+   "**Similar motion** means both voices move in the **same direction**, but they need not move by the same distance. From C4+E4 to D4+F4, both rise: C→D by two semitones and E→F by one.",
+   "**Parallel motion** is a special form of similar motion: both lines move in the same direction while preserving the same **interval** between them, as in C4+E4 to D4+F♯4 (major third to major third). Our D4+F4 example is **not** parallel: the initial major third of four semitones became a minor third of three."
+  ],
+  "table": [
+   "Oblique: **C4+E4 → C4+F4**; C holds, E rises 1; **M3 (4) → P4 (5)**.",
+   "Oblique: **C4+E4 → B3+E4**; E holds, C falls 1; **M3 (4) → P4 (5)**.",
+   "Oblique: **C4+E4 → D4+E4**; E holds, C rises 2; **M3 (4) → M2 (2)**.",
+   "Contrary: **C4+E4 → B3+F4**; lower falls 1, upper rises 1; **M3 (4) → diminished fifth (6)**.",
+   "Similar: **C4+E4 → D4+F4**; lower rises 2, upper rises 1; **M3 (4) → minor third (3)**."
+  ],
+  "note": "These are the original **five** canonical comparisons from the Week 2 source; do not replace their audio fixtures. The parallel example above is **explanatory only**, not an unauthorized sixth canonical clip.",
+  "understand": "Movement labels describe what two voices **do between moments**. Interval labels describe what two notes **are together at a moment**. A melody can move upward while its distance from another voice gets smaller; for example, C+E to D+F both rise, but the interval narrows from four to three semitones.",
+  "checks": [
+   {
+    "q": "What is the movement when one note holds and the other moves?",
+    "correct": "Oblique; the stable note is still part of the comparison."
+   },
+   {
+    "q": "If one note falls while the other rises?",
+    "correct": "Contrary; their directions are opposite."
+   },
+   {
+    "q": "If C rises two semitones and E rises one?",
+    "correct": "Similar, not parallel. Both rise but by different amounts, so the interval shrinks."
+   },
+   {
+    "q": "If C and E both move up by two semitones and preserve a major third?",
+    "correct": "Parallel motion—a special case of similar motion. Use D and F♯ as the new pair for exact pitch identities."
+   }
+  ]
+ },
+ "b_tritone": {
+  "h2": "The tritone — size and spelling are different questions",
+  "paras": [
+   "When C4–E4 changes to B3–F4, the new pair spans **six semitones**. That half-octave distance is commonly called a **tritone**. But if we're giving the pair a traditional written interval name, we must also look at its letter names.",
+   "From **B** to **F**, count B–C–D–E–F: five letter names, so it's a **fifth**. A regular perfect fifth would span seven semitones; B3 to F4 spans only six, which is one smaller. That makes this particular pair a **diminished fifth**.",
+   "Now compare **C4 to F♯4**: C–D–E–F gives four letter positions, so it is a **fourth**. It spans six semitones instead of the usual perfect fourth's five, so this spelling is an **augmented fourth**. On an equally tuned piano, both spellings produce six semitones, but the letters tell a different musical story. This is why learning interval number and quality as well as semitone size matters.",
+   "An interval's name and size **do not dictate a universal emotion**. The tritone can behave differently depending on what comes before and after it, its register, its timbre, its tuning and the surrounding harmony. Our job now is to recognize it and notice what we might do with it."
+  ],
+  "checks": [
+   {
+    "q": "Why is B3–F4 not called an augmented fourth?",
+    "correct": "Because B to F spans five letter names, so it is a fifth—specifically diminished because it's six rather than seven semitones."
+   },
+   {
+    "q": "If C4–F♯4 is also six semitones, why a different name?",
+    "correct": "It spans four letter names: an augmented fourth."
+   }
+  ]
+ },
+ "b_which": {
+  "h2": "Which voice changed the interval?",
+  "paras": [
+   "Compare C4+E4 to D4+F4. You may hear both lines rising, but they travel at different rates: C rises two semitones and E rises one. The interval becomes narrower—from a major third to a minor third. **Moving both voices upward does not guarantee the harmony gets wider or higher in the same way.**",
+   "When you make music, you can use this deliberately. Moving both lines by the same interval preserves their spacing; moving them by different distances changes their spacing. Neither choice is automatically better. If a phrase should feel like a recognizable shape moving to another register, you might consider a parallel movement; if you want the internal relationship to change, try unequal movements."
+  ],
+  "checks": [
+   {
+    "q": "Which line traveled farther in C+E→D+F?",
+    "correct": "The lower C→D traveled two semitones; the upper E→F traveled one."
+   },
+   {
+    "q": "Did the pair remain a major third?",
+    "correct": "No. D–F is three semitones, a minor third."
+   }
+  ]
+ },
+ "b_compose": {
+  "h2": "Compose a conversation, not just a stack of notes",
+  "paras": [
+   "Begin with the same two pitches so you can hear cause and effect. Let one voice make a small change. Then let the other voice respond. Because you can describe each change as rising, falling or holding, the idea becomes something you can remember and shape.",
+   "Try this precise path: **C4+E4 → C4+F4 → B3+F4 → C4+E4**. First the upper line rises while the lower holds. Then the lower falls while the upper holds. Finally both lines return toward their starting positions. Follow **each voice through time**: don't redraw the whole thing as a succession of unrelated chord blocks.",
+   "Make a 15–20-second version in your own instrument. Leave room to hear each interval before moving again. Then change just one transition and listen to whether the musical line tells a different story."
+  ],
+  "recap": "Oblique means one holds; contrary means opposite directions; similar means the same direction with possibly different distances; parallel preserves the interval while moving in the same direction. A horizontal **voice path** differs from a vertical **interval** between sounding notes. B3–F4 is a six-semitone diminished fifth; C4–F♯4 is a six-semitone augmented fourth. In Lesson 2C, we'll use these relationships to create an intentional two-voice miniature."
+ },
+ "c_learn": {
+  "h2": "What have we learned about listening to two lines?",
+  "paras": [
+   "Over the first two lessons of this week, we learned that the same two notes can be heard as a combination and as distinct musical voices. We named distances using both letters and semitones, then listened to the shapes made when each line moves through time.",
+   "Today's aim is to **compose with that understanding**. We'll use two voices rather than a busy chord progression, so every change can be heard clearly. One voice may hold long notes, forming a reference. The other may bring movement. Then we'll reverse that choice and let the lower part move too.",
+   "An **independent voice** doesn't mean the part exists alone. It means you can follow a coherent line even while the other part sounds. A good first test is to solo one line, understand what it's doing, then bring the other back."
+  ]
+ },
+ "c_line": {
+  "h2": "A moving line and a simultaneous interval are not the same thing",
+  "paras": [
+   "Picture two simple musical timelines. Across time, the upper melody might play E4, F4 and E4 again. At each moment, we can also look vertically at what lower pitch supports it. If C4 stays beneath that melody, the pair moves from **C–E (major third, four semitones)** to **C–F (perfect fourth, five)** and back.",
+   "This teaches two ideas at once: the upper melodic **voice leading** E→F→E, and the changing **harmonic intervals** against the fixed C. The musical lines describe a horizontal journey; the vertical distance tells us what relationship they make when they meet.",
+   "**Counterpoint** is a broader approach to combining independent musical lines so each retains a recognizable identity while sounding with others. Our short two-voice exercise is a simple introduction, not a course in strict classical counterpoint rules. We need to hear the individuality of each line before analyzing complex harmonies."
+  ],
+  "checks": [
+   {
+    "q": "If the upper E→F changes while C holds, what describes the direction?",
+    "correct": "Oblique motion—one line stays, the other changes."
+   },
+   {
+    "q": "What describes the current simultaneous pair C4+F4?",
+    "correct": "A perfect fourth, five semitones."
+   }
+  ]
+ },
+ "c_support": {
+  "h2": "Change the supporting note, hear the same melody differently",
+  "paras": [
+   "Keep the upper melody exactly **E4–F4–E4** in both versions. In version one, the lower C4 holds throughout. In version two, the lower line follows **C4–B3–C4**, changing around the same upper events. The melody remains familiar, but the intervals beneath it change.",
+   "At one point you'll hear **B3 under F4**. The pair is six semitones: B–F is a diminished fifth. A different supporting note can change the harmony of a melody **without altering the melody's own notes**. This is a central composing tool. You can change the atmosphere around something recognizable by moving a supporting line.",
+   "Because our comparison keeps the same upper notes, timing and sound settings, we can focus on the variable we changed: the lower voice. If you changed the patch, the upper melody and the timing at once, it would be harder to tell which choice caused the new result."
+  ],
+  "worked": "First solo the upper voice—notice E–F–E. Hear the first complete version over held C. Then hear the same upper melody over C–B–C. Solo the lower voice in each version to confirm the source of change. You can also read the exact note list if you cannot listen.",
+  "checks": [
+   {
+    "q": "Which line was identical between both versions?",
+    "correct": "The upper E–F–E melody."
+   },
+   {
+    "q": "Which line created the different vertical interval in version two?",
+    "correct": "The supporting lower line."
+   },
+   {
+    "q": "Do you need to add a third voice to hear new harmony?",
+    "correct": "No. Two simultaneous lines can form changing relationships."
+   }
+  ]
+ },
+ "c_describe": {
+  "h2": "How to describe what you hear",
+  "paras": [
+   "You can give any moment two different descriptions: a note-pair name and a motion name. For example, **C4+E4** is a major third; if upper E moves to F while C holds, **C4+F4** is a perfect fourth reached by **oblique motion**. If C then falls to B while F holds, the pair **B3+F4** is a diminished fifth, also reached by oblique motion. If C falls and E rises together, that's contrary motion.",
+   "These terms are practical, not ceremonial. You can now tell another musician which note to hold, which note to move, how far to move it and what interval results. You can also apply that knowledge when you can't explain the feeling of the passage in words."
+  ],
+  "checks": [
+   {
+    "q": "How do you preserve the upper melody but change its harmony?",
+    "correct": "Leave the upper line's note events unchanged and vary only the lower supporting notes."
+   },
+   {
+    "q": "What's the difference between an interval name and a motion name?",
+    "correct": "The interval names a distance between sounding pitches; motion names how the lines changed from one moment to the next."
+   }
+  ]
+ },
+ "c_miniature": {
+  "h2": "Turn an example into your own miniature",
+  "paras": [
+   "Start with two tracks in your DAW or two instrument parts. Choose a short, memorable **upper melody of two or three notes**. Play it back until you can recognize its shape. If you prefer, hum or trace it before entering one of the notes. You do not need perfect pitch or a special instrument.",
+   "For **version one**, choose a lower note that sustains gently beneath your upper melody. Notice when the two pitches overlap. Try describing at least one pair by note name and semitone distance, even if you need to use the keyboard to count.",
+   "For **version two**, **keep the upper melody recognizable** and change the lower supporting part at least once. The two pieces should be related enough that you can hear the effect of the change. You might let the bass rise, fall or rest. Listen to each voice solo and then both together.",
+   "At the end, choose which version supports your artistic intention. You might prefer the still foundation, or the traveling one. There's no correct emotional answer. What matters is that you can describe one intentional change and hear the difference it made."
+  ],
+  "steps": [
+   "Create a simple upper melody of two or three named notes.",
+   "Place it on its own track and listen to it alone.",
+   "Add a held lower note for version one; let the lines overlap at least once.",
+   "Copy the upper melody unchanged and create a moving lower part for version two.",
+   "Solo both lower parts, compare the complete versions and name one changed interval or motion.",
+   "Complete: I kept ___ the same, moved ___, and noticed ___. Choose which version fits your idea."
+  ],
+  "recap": "You can now name a few intervals and identify their exact semitone sizes, distinguish the movements of two separate voices, and use those facts to shape changing harmony. You made music with two lines instead of needing more layers. In Week 3, we'll focus on **phrases**, **motifs**, musical questions, meaningful silence and how a recognizable idea develops over time."
+ }
+}

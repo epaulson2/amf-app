@@ -1,0 +1,40 @@
+{
+ "eyebrow": "YOUR AJOURNÉ LIBRARY",
+ "h1": "Tools for listening, imagining and making music",
+ "deck": "Some musical ideas are worth keeping close. Come back to these maps, sounds and creative tools whenever a lesson—or your own music—gives you a question.",
+ "intro": "The resources in this library are here to be explored, not memorized all at once. Each one connects real musical knowledge with something you can hear, see and use. Open a quick reference, dive deeper when you're curious, or bring an idea into your next soundscape.",
+ "controls": "Explore Resources · Back to My Journey · Jump to the Interval Palette.",
+ "tile": {
+  "Category": "PITCH & HEARING",
+  "Title": "The Ajourné Interval Palette",
+  "Blurb": "Hear and compare every interval within an octave. Find its conventional name and semitone distance, explore possible sound qualities, and imagine what it could add to your music.",
+  "Subline": "13 landmarks · quick colorful chart · full expandable atlas · original listen/compare exercises",
+  "CTA": "Open Interval Palette"
+ },
+ "categories": [
+  [
+   "Pitch & Keyboard",
+   "the chromatic keyboard, note names, semitones, whole steps, octaves and sharps/flats. Existing W1-06/07/08 assets can become a later Keyboard Map reference."
+  ],
+  [
+   "Melody & Voice Leading",
+   "melodic gestures, intervals as sequential movement, contour, oblique/contrary/similar motion, and internal-keyboard tracking. Existing W2 and W3 source visuals support later resources."
+  ],
+  [
+   "Harmony & Color",
+   "triads, chord quality, chord roles, changing support, and shared tones, retaining the clear difference between scale function and chord membership."
+  ],
+  [
+   "Rhythm, Time & Silence",
+   "rhythmic values, pulse/subdivision, entrances, silence, repetitions and form, linked later to actual original audio demos."
+  ],
+  [
+   "Composer's Studio",
+   "short original creative prompts, printable pitch/voice maps, tonal atlas sheets and optional painting."
+  ],
+  [
+   "Listening & Musical Worlds",
+   "credited performances, culturally grounded exploration, listening cues and source caveats, curated by lesson rather than a generic international clip gallery."
+  ]
+ ]
+}

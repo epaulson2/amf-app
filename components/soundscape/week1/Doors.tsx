@@ -9,15 +9,17 @@ const KIND_BY_SUFFIX: Record<string, DoorKind> = {
 }
 const PROSE = new Set(['Copy', 'Learner-facing copy', 'Intro', 'Creative connection'])
 const LABELLED = new Set(['Try', 'Transfer', 'Listen for'])
-const MATERIALS = new Set(['Materials/rights', 'Materials/privacy'])
-const LINK_FIELDS = /^(Further reading|Source|Research|Historic context|Reference|Context|Additional listening\/context|Listen|Video|YouTube alternative|Recording \d)$/
+const MATERIALS = new Set(['Materials/rights', 'Materials/privacy', 'Privacy'])
+const LINK_FIELDS = /^(Further reading|Source|Research|Historic context|Reference|Context|Additional listening\/context|Listen|Hear|Video|YouTube alternative|Recording( \d)?|Read\/listen context|Institutional musical context)$/
 // Editorial notes for the implementer, never learner copy.
-const SKIP = new Set(['Accuracy', 'Guard', 'Rights', 'Copyright', 'Science guard', 'Attribution/accuracy', 'Title'])
+const SKIP = new Set(['Accuracy', 'Guard', 'Rights', 'Copyright', 'Science guard', 'Attribution/accuracy', 'Title', 'Editorial guard', 'Cultural terminology'])
 
 const host = (u: string) => new URL(u).hostname.replace(/^www\./, '')
 
 /** Outbound link(s) with the register's own access qualifications; never hosted, embedded or autoplayed. */
 function LinkBlock({ label, value }: { label: string; value: string }) {
+  const listenFor = value.match(/\*\*Listen for:\*\*\s*"([^"]+)"/)?.[1]
+  value = value.replace(/\*\*Listen for:\*\*\s*"[^"]+"/, '')
   const urls = [...value.matchAll(/https?:\/\/[^\s)`;·,]+/g)].map(m => m[0].replace(/[.]+$/, ''))
   const title = value.match(/^`([^`]+)`/)?.[1]
   const notes = [...value.matchAll(/\(([^)]*)\)/g)].map(m => m[1]).filter(t => !/^https?:/.test(t))
@@ -32,11 +34,12 @@ function LinkBlock({ label, value }: { label: string; value: string }) {
         ))}
       </ul>
       {notes.length > 0 && <p className="text-sm sp-muted m-0 mt-2">Note: {notes.join('; ')}.</p>}
+      {listenFor && <p className="m-0 mt-2"><strong>Listen for:</strong> <Md>{listenFor}</Md></p>}
     </div>
   )
 }
 
-function DrawerBody({ fields, kind }: { fields: [string, string][]; kind: DoorKind }) {
+function DrawerBody({ fields, kind, paintPdf }: { fields: [string, string][]; kind: DoorKind; paintPdf: string }) {
   return (
     <div className="space-y-2">
       {fields.map(([k, v], i) => {
@@ -45,24 +48,31 @@ function DrawerBody({ fields, kind }: { fields: [string, string][]; kind: DoorKi
         if (LABELLED.has(k)) return <p key={i} className="m-0"><strong>{k}:</strong> <Md>{copyOf(v)}</Md></p>
         if (MATERIALS.has(k)) return <p key={i} className="m-0 text-sm sp-muted">{copyOf(v)}</p>
         if (LINK_FIELDS.test(k)) return <LinkBlock key={i} label={k} value={v} />
+        if (k === 'Respect') return <p key={i} className="m-0 text-sm sp-muted">{v}</p>
         return null
       })}
       {kind === 'paint-what-you-hear' && (
-        <p className="m-0"><a href="/soundscape/w1/pdf/W1-04_personal-tonal-atlas-worksheet_blank.pdf" className="font-medium" style={{ color: '#b45309' }}>Optional: download the blank atlas sheet (PDF)</a></p>
+        <p className="m-0"><a href={paintPdf} className="font-medium" style={{ color: '#b45309' }}>Optional: download a blank sheet (PDF)</a></p>
       )}
     </div>
   )
 }
 
+type Drawer = { id: string; head: string; fields: [string, string][] }
+
 /** The six exact-copy drawers of one lesson, keyed for LessonShell. */
-export function lessonDoors(lesson: '1A' | '1B' | '1C'): { content: Partial<Record<DoorKind, ReactNode>>; titles: Partial<Record<DoorKind, string>> } {
+export function doorsFrom(list: Drawer[], paintPdf: string): { content: Partial<Record<DoorKind, ReactNode>>; titles: Partial<Record<DoorKind, string>> } {
   const content: Partial<Record<DoorKind, ReactNode>> = {}
   const titles: Partial<Record<DoorKind, string>> = {}
-  for (const d of drawers(lesson)) {
+  for (const d of list) {
     const kind = KIND_BY_SUFFIX[d.id.split('-')[1]]
     if (!kind || !DOOR_KINDS.some(k => k.id === kind)) throw new Error(`unknown drawer ${d.id}`)
     titles[kind] = copyOf(d.fields.find(([k]) => k === 'Title')![1])
-    content[kind] = <DrawerBody fields={d.fields} kind={kind} />
+    content[kind] = <DrawerBody fields={d.fields} kind={kind} paintPdf={paintPdf} />
   }
   return { content, titles }
+}
+
+export function lessonDoors(lesson: '1A' | '1B' | '1C') {
+  return doorsFrom(drawers(lesson), '/soundscape/w1/pdf/W1-04_personal-tonal-atlas-worksheet_blank.pdf')
 }

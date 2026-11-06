@@ -1,0 +1,258 @@
+{
+ "intro": {
+  "eyebrow": "YOUR MUSICAL COLOR LIBRARY",
+  "h1": "The Ajourné Interval Palette",
+  "sub": "Twelve steps, thirteen landmarks, countless musical possibilities.",
+  "paras": [
+   "An interval tells you how far apart two notes are. Hear one as a melody, play both notes together, or move one voice while another stays. The distance has a musical name—but what it feels like depends on the sounds, the moment and the listener.",
+   "These colors are **suggestions for remembering and painting**, not rules about what music must feel like. Pick the colors that fit your experience."
+  ]
+ },
+ "rows": [
+  {
+   "id": "IP-00",
+   "name": "Perfect unison",
+   "abbr": "P1",
+   "semitones": 0,
+   "example": "C4–C4",
+   "color": "Pearl gray `#8D9BA4`",
+   "words": "one point · focused · merged",
+   "role": "Exact same pitch can reinforce a line, double a voice or create a single center. Two instruments on one note may still have contrasting timbres."
+  },
+  {
+   "id": "IP-01",
+   "name": "Minor second",
+   "abbr": "m2",
+   "semitones": 1,
+   "example": "C4–D♭4",
+   "color": "Coral red `#D96569`",
+   "words": "close · rubbing · delicate pressure",
+   "role": "Neighboring pitches can create close color or audible roughness depending on spectrum, register and dynamics. A melodic half-step can feel like a tiny lean."
+  },
+  {
+   "id": "IP-02",
+   "name": "Major second",
+   "abbr": "M2",
+   "semitones": 2,
+   "example": "C4–D4",
+   "color": "Apricot `#CE8748`",
+   "words": "step · airy · unsettled or gentle",
+   "role": "An ordinary whole-step melody motion; together, the notes can form a spacious cluster or a suspended/accompaniment color."
+  },
+  {
+   "id": "IP-03",
+   "name": "Minor third",
+   "abbr": "m3",
+   "semitones": 3,
+   "example": "C4–E♭4",
+   "color": "Orchid violet `#926DA7`",
+   "words": "inward · tender · playful or wistful",
+   "role": "Important minor-triad building block, but also a characteristic melodic leap with many different expressive uses."
+  },
+  {
+   "id": "IP-04",
+   "name": "Major third",
+   "abbr": "M3",
+   "semitones": 4,
+   "example": "C4–E4",
+   "color": "Amber gold `#CB9B35`",
+   "words": "clear · bright · glowing",
+   "role": "Part of major-triad identity and a widely recognizable dyad in Western tonal settings; changing its upper note transforms the shared sonority."
+  },
+  {
+   "id": "IP-05",
+   "name": "Perfect fourth",
+   "abbr": "P4",
+   "semitones": 5,
+   "example": "C4–F4",
+   "color": "Sage green `#5D9075`",
+   "words": "open · poised · suspended",
+   "role": "Useful for held drones, open voicings, melodic leaps and suspended combinations; its tonal stability depends on the bass and musical context."
+  },
+  {
+   "id": "IP-06",
+   "name": "Tritone",
+   "abbr": "A4/d5",
+   "semitones": 6,
+   "example": "C4–F♯4 / C4–G♭4",
+   "color": "Midnight blue `#5869A6`",
+   "words": "split · unfamiliar · searching",
+   "role": "Exactly half an equal-tempered octave; often a striking contrasting color in tonal contexts, yet can feel intriguing or still in other textures."
+  },
+  {
+   "id": "IP-07",
+   "name": "Perfect fifth",
+   "abbr": "P5",
+   "semitones": 7,
+   "example": "C4–G4",
+   "color": "Deep blue `#447FA4`",
+   "words": "wide · resonant · grounded",
+   "role": "An open structural frame in drones, open fifths, and melodic calls; simple ratios in just tuning often encourage strong fusion."
+  },
+  {
+   "id": "IP-08",
+   "name": "Minor sixth",
+   "abbr": "m6",
+   "semitones": 8,
+   "example": "C4–A♭4",
+   "color": "Rose orchid `#B26A91`",
+   "words": "wide · expressive · reaching",
+   "role": "A wide melodic gesture that can feel lyrical or dramatic; inversion of a major third, and a useful tension/color above sustained tones."
+  },
+  {
+   "id": "IP-09",
+   "name": "Major sixth",
+   "abbr": "M6",
+   "semitones": 9,
+   "example": "C4–A4",
+   "color": "Peach gold `#C98D69`",
+   "words": "expansive · warm · soaring",
+   "role": "A singing melodic leap and soft extended-harmony color; inversion of a minor third."
+  },
+  {
+   "id": "IP-10",
+   "name": "Minor seventh",
+   "abbr": "m7",
+   "semitones": 10,
+   "example": "C4–B♭4",
+   "color": "Smoky teal `#48858A`",
+   "words": "spacious · unfinished · soulful",
+   "role": "Appears in dominant/minor-seventh chords, melodic leaps, and modal/drone combinations that can hold an open edge."
+  },
+  {
+   "id": "IP-11",
+   "name": "Major seventh",
+   "abbr": "M7",
+   "semitones": 11,
+   "example": "C4–B4",
+   "color": "Icy lilac `#8A8FC6`",
+   "words": "near-octave · luminous friction",
+   "role": "Can feel delicate or restless when simultaneous; melodically an expressive near-octave leap. The B immediately below C5 often points upward in C-major context."
+  },
+  {
+   "id": "IP-12",
+   "name": "Perfect octave",
+   "abbr": "P8",
+   "semitones": 12,
+   "example": "C4–C5",
+   "color": "Silver gold `#A7A078`",
+   "words": "return · enlargement · recognition",
+   "role": "Same letter/pitch class across a doubled-frequency relationship, often used to double a line or open up the register."
+  }
+ ],
+ "expansions": {
+  "IP-00": {
+   "Color cue": "Pearl gray (`#8D9BA4`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"one point · focused · merged.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Exact same pitch can reinforce a line, double a voice or create a single center. Two instruments on one note may still have contrasting timbres.",
+   "Try this": "Hear two voices on C, then let one change patch while pitch stays C.",
+   "Remember": "Same pitch, same register; octave is different.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-01": {
+   "Color cue": "Coral red (`#D96569`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"close · rubbing · delicate pressure.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Neighboring pitches can create close color or audible roughness depending on spectrum, register and dynamics. A melodic half-step can feel like a tiny lean.",
+   "Try this": "Play these together, then one after another; try both quietly with soft and bright patches.",
+   "Remember": "Close isn't always unpleasant; don't assign fear.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-02": {
+   "Color cue": "Apricot (`#CE8748`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"step · airy · unsettled or gentle.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "An ordinary whole-step melody motion; together, the notes can form a spacious cluster or a suspended/accompaniment color.",
+   "Try this": "Try a slowly alternating C–D melody and then a simultaneous pad with both tones.",
+   "Remember": "Common in melodies but not obliged to resolve.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-03": {
+   "Color cue": "Orchid violet (`#926DA7`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"inward · tender · playful or wistful.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Important minor-triad building block, but also a characteristic melodic leap with many different expressive uses.",
+   "Try this": "Compare C–E♭ melodically and as a simultaneous dyad; move it into a higher register.",
+   "Remember": "Minor doesn't automatically mean sad.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-04": {
+   "Color cue": "Amber gold (`#CB9B35`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"clear · bright · glowing.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Part of major-triad identity and a widely recognizable dyad in Western tonal settings; changing its upper note transforms the shared sonority.",
+   "Try this": "Hold C4 and move E4→F4 in the Week 2A exercise.",
+   "Remember": "Major doesn't automatically mean happy.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-05": {
+   "Color cue": "Sage green (`#5D9075`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"open · poised · suspended.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Useful for held drones, open voicings, melodic leaps and suspended combinations; its tonal stability depends on the bass and musical context.",
+   "Try this": "Compare C–F with B–E: both are perfect fourths, five semitones.",
+   "Remember": "The name perfect is a classification, not an emotional verdict.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-06": {
+   "Color cue": "Midnight blue (`#5869A6`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"split · unfamiliar · searching.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Exactly half an equal-tempered octave; often a striking contrasting color in tonal contexts, yet can feel intriguing or still in other textures.",
+   "Try this": "Hear C–F♯; then hear B3–F4 as a diminished fifth, the Week 2B transformation.",
+   "Remember": "Same semitone span, different spellings; 'evil' is a stereotype.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-07": {
+   "Color cue": "Deep blue (`#447FA4`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"wide · resonant · grounded.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "An open structural frame in drones, open fifths, and melodic calls; simple ratios in just tuning often encourage strong fusion.",
+   "Try this": "Play C–G with different patches; compare with a fourth and an octave.",
+   "Remember": "Doesn't guarantee stability or finality in every piece.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-08": {
+   "Color cue": "Rose orchid (`#B26A91`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"wide · expressive · reaching.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "A wide melodic gesture that can feel lyrical or dramatic; inversion of a major third, and a useful tension/color above sustained tones.",
+   "Try this": "Compare C–A♭ to A♭–C in another octave, or use C held as a drone.",
+   "Remember": "Character depends strongly on direction and harmony.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-09": {
+   "Color cue": "Peach gold (`#C98D69`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"expansive · warm · soaring.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "A singing melodic leap and soft extended-harmony color; inversion of a minor third.",
+   "Try this": "Play it slowly, then invert the pitch classes to A–C in the next octave.",
+   "Remember": "Don't make it a guaranteed 'angelic' interval.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-10": {
+   "Color cue": "Smoky teal (`#48858A`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"spacious · unfinished · soulful.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Appears in dominant/minor-seventh chords, melodic leaps, and modal/drone combinations that can hold an open edge.",
+   "Try this": "Sound C–B♭ then C–B; notice how moving one semitone changes the shared distance.",
+   "Remember": "A seventh above a tonic may feel different over another bass.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-11": {
+   "Color cue": "Icy lilac (`#8A8FC6`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"near-octave · luminous friction.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Can feel delicate or restless when simultaneous; melodically an expressive near-octave leap. The B immediately below C5 often points upward in C-major context.",
+   "Try this": "Compare simultaneous C4+B4 with the sequential B4→C5 arrival heard in Week 1.",
+   "Remember": "Sequential leading-tone expectation is not simultaneous roughness.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  },
+  "IP-12": {
+   "Color cue": "Silver gold (`#A7A078`), paired with the interval name, semitone number and a distinctive numbered node, never used as the sole label.",
+   "Sound impression to consider": "\"return · enlargement · recognition.\" These are **possible descriptions** of some performances, not universal claims.",
+   "What it can do": "Same letter/pitch class across a doubled-frequency relationship, often used to double a line or open up the register.",
+   "Try this": "Hear C4 alone then C5, then both together; compare same pitch-class versus same exact pitch.",
+   "Remember": "Octaves differ in register and tone color; not a new scale degree.",
+   "Action labels": "`Hear together` · `Hear as a melody` · `Open the deeper story`."
+  }
+ },
+ "lesson2a": {
+  "Learner heading": "`Meet the intervals: a palette of musical distances`",
+  "Opening": "Our first dyad is C and E. The interval between them is a **major third—four semitones**. When the top note moves to F, the same lower C now forms a **perfect fourth—five semitones**. Every interval has a name and a distance you can learn to recognize. Let's explore a small palette, then come back to the exact notes we're using today.",
+  "Default emphasis": "IP-04 major third (starting pair), IP-05 perfect fourth (C+F), IP-02 major second (D+E as a non-C-root pair—**do not misleadingly imply all five example pairs begin on C**), IP-03 minor third (E+G and/or D+F). Preview IP-06 tritone as `Coming in Lesson 2B` without implying it is a required Lesson 2A interval. Keep the full 0–12 octave strip visible for browsing, but *open only these four focused cards by default*.",
+  "Critical distinction": "The quick one-octave reference **anchors C4 for orientation**, but actual lesson dyads can begin on B3, D4, E4 etc. The interval's semitone distance does not change when both pitches are transposed by equal amounts. A minor third can be E4–G4 or D4–F4. The resource overlay must be able to calculate exact pitch pair and label that pair, rather than relabeling every example as `C–E♭`.",
+  "Context sentence": "The same two pitches can sound very different when they're played one after another, held together, moved to another register, or placed above a different bass. An interval is a tool, not a fixed emotional instruction.",
+  "Shared tool controls": "`Hear together`, `Hear one after another`, `Try a new register`, `Compare`, `Read more`, `Choose my own colors` (optional in-page mapping; do not imply persistence).",
+  "Artwork": "existing Style B Quiet Paper grammar; preserve clean factual keyboard and note names; user may paint her own associations via the [Paint What You Hear](../../PAINT_WHAT_YOU_HEAR_STUDIO_V1.md) module. All emotional words are invitations. **Read every interval's deep chapter** in [DEEP_ATLAS_CONTENT_V1.md](DEEP_ATLAS_CONTENT_V1.md) for accurate musical context, melodic vs simultaneous difference and practical use."
+ }
+}

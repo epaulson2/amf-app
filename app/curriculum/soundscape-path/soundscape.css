@@ -100,3 +100,8 @@
 @media (max-width: 639px) { .sp-fig-scroll img { min-width: 600px; } }
 .sp-field { width: 100%; max-width: 42rem; border: 1px solid var(--sp-border); border-radius: .5rem; padding: .6rem .8rem; background: #fff; color: var(--sp-ink); font: inherit; font-size: 1rem; min-height: 5rem; }
 .sp-choice[aria-pressed='true'] { background: var(--sp-navy); color: #fff; border-color: var(--sp-navy); }
+
+/* Wide tables scroll inside themselves on narrow screens instead of widening the page */
+.sp-root table { display: block; max-width: 100%; overflow-x: auto; }
+.sp-root select.sp-field { max-width: 100%; }
+.sp-root label.inline-flex { flex-wrap: wrap; max-width: 100%; }

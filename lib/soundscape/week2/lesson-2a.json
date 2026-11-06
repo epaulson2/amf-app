@@ -1,0 +1,414 @@
+{
+ "sections": {
+  "Hero": [
+   [
+    "Eyebrow",
+    "`WEEK 2 · LESSON 1 OF 3`"
+   ],
+   [
+    "H1",
+    "`Hold One Voice, Let the Other Explore`"
+   ],
+   [
+    "Deck",
+    "\"Two notes can make one beautiful sound. But each note can also have a life of its own.\""
+   ],
+   [
+    "What You'll Learn",
+    "\"What a musical interval is, how to count and name one on the keyboard, and what happens when one voice holds while the other moves.\""
+   ],
+   [
+    "Estimated time",
+    "`About 20–25 minutes`"
+   ],
+   [
+    "CTA",
+    "`Hear two voices`"
+   ],
+   [
+    "Recap line",
+    "\"Last week we chose a note to be home. Now we'll let another note meet it—and begin listening to both as separate musical lines.\""
+   ]
+  ],
+  "A": [
+   [
+    "H2",
+    "`First, meet the two voices`"
+   ],
+   [
+    "Copy",
+    "\"Listen to a low C. Then listen to a higher E. They are two distinct sounds. Now hear them together. Can you still notice the lower voice and the upper voice, even when the sounds blend?\""
+   ],
+   [
+    "Buttons",
+    "`Hear C alone`, `Hear E alone`, `Hear C and E together`, `Stop sound`."
+   ],
+   [
+    "After paired playback",
+    "\"The two notes together make a **dyad**: a two-note combination. That combination has a sound of its own. But we can also hear C and E as two independent voices—one lower, one higher.\""
+   ],
+   [
+    "Reflection",
+    "\"Do the notes feel like one blended sound, two separate sounds, or a little of both? Your answer may change with the instrument.\""
+   ],
+   [
+    "Visible pedagogical note",
+    "\"In a piano roll, one voice can have its own track and timing. The notes don't have to move as a single block.\""
+   ],
+   [
+    "Reveal",
+    "W2-01 learner initial then labeled instructor/reveal only after playing or clicking `Show the notes`."
+   ]
+  ],
+  "B": [
+   [
+    "H2",
+    "`How far apart are they?`"
+   ],
+   [
+    "Copy",
+    "\"An **interval** is the distance between two pitches. We give intervals names so we can recognize, build and talk about them—not only memorize which keys to press.\""
+   ],
+   [
+    "Step 1 heading",
+    "`The interval number`"
+   ],
+   [
+    "Copy",
+    "\"Count the note letters from C to E, including both ends: C, D, E. That's three letter positions, so the interval is a **third**.\""
+   ],
+   [
+    "Step 2 heading",
+    "`The semitone size`"
+   ],
+   [
+    "Copy",
+    "\"Now count the neighboring keyboard steps, including the black keys: C → C♯ → D → D♯ → E. That's **four semitones**. A third of four semitones is called a **major third**.\""
+   ],
+   [
+    "Interactive demo",
+    "`Trace C to E` highlights five key names but **four adjacent movements**, with counter starting at **zero on C**; no extra sound occurs unless `Hear the interval` pressed. Avoid counting C as semitone one."
+   ],
+   [
+    "Compare",
+    "\"E to G is still a third by letter names: E, F, G. But it is only **three semitones**. That's a **minor third**. The note-letter number and the measured semitone size answer different questions.\""
+   ],
+   [
+    "Buttons",
+    "`Build C–E`, `Build E–G`, `Hear the difference`."
+   ],
+   [
+    "Inline summary",
+    "`C–E: major third · 4 semitones`; `E–G: minor third · 3 semitones`."
+   ],
+   [
+    "Accessible definition",
+    "\"Traditional interval names combine a number and a quality. We'll learn a few now and discover more as the two voices move.\""
+   ],
+   [
+    "Non-graded question",
+    "\"How many semitones are in C to E?\" `3`, `4`, `5`. Correct: \"Four. Count the spaces you move, not the keys you touch.\""
+   ]
+  ],
+  "palette": [
+   [
+    "Placement",
+    "Directly after Section B's explanation of naming/size, **before Section C moves the upper voice**. This is a **main-lesson compact resource**, not an extra graded exercise or seventh discovery drawer. The learner must see the larger octave picture at least briefly; no requirement to study all thirteen intervals today."
+   ],
+   [
+    "H2 — exact learner copy",
+    "Meet the intervals: a palette of musical distances"
+   ],
+   [
+    "Intro (exact)",
+    "\"We've met a major third: four semitones from C to E. But every interval has a name and a size. Think of them as a palette of musical possibilities. The distance is something we can measure. What it feels like is something we discover by listening.\""
+   ],
+   [
+    "Display",
+    "A **full chromatic 0–12 semitone strip** plus the four first featured interval cards:\n- **Major third — 4 semitones — C4+E4 — amber gold:** first dyad. Listen together and sequentially.\n- **Perfect fourth — 5 semitones — C4+F4 — sage green:** upcoming upper E→F step.\n- **Major second — 2 semitones — D4+E4 — apricot:** later lower C→D example; do **not** mislabel D/E as C/D during lesson audio.\n- **Minor third — 3 semitones — E4+G4 — orchid violet:** quality comparison.\n- **Preview only:** Tritone — six semitones, a special interval we'll explore in Lesson 2B. Do not falsely imply the current C4+E4 example already contains it."
+   ],
+   [
+    "Small context note (exact)",
+    "\"The colors are creative invitations, not rules. An interval's notes and semitone distance are facts. Its effect depends on what else is sounding, the instrument and the way you hear it.\""
+   ],
+   [
+    "Interaction labels",
+    "Hear together · Hear as a melody · Show keyboard · Open all thirteen · Explore the full Interval Atlas · Print the palette."
+   ],
+   [
+    "After trying one (exact)",
+    "\"Choose one pair and listen to it two ways: one note after another, then both together. Is it the same kind of musical experience? You're allowed to hear something completely different from our color words.\""
+   ],
+   [
+    "Deep-link destination",
+    "/curriculum/soundscape-path/resources/interval-palette#ip-04 ; the route contains **the full thirteen expanded entries from day one**, not placeholder explanations. Exact content: [Quick Palette](../resources/interval-palette/QUICK_PALETTE_CONTENT_V1.md); [Full Atlas](../resources/interval-palette/DEEP_ATLAS_CONTENT_V1.md); [Visual & Interaction Contract](../resources/interval-palette/INTERVAL_PALETTE_IMPLEMENTATION_SPEC_V1.md); [original colorful SVG](../resources/interval-palette/INTERVAL_PALETTE_QUICK_PRINT_V1.svg). Resource app shell shared with other lessons; public title remains Ajourné into Music."
+   ],
+   [
+    "Concept pacing",
+    "After the full overview, collapse back to the starting C–E pair, then continue directly to Section C. Learner can open the deep atlas later, even without going through Lesson 2A. No forced full-reference reading, quiz, audio playback or color mapping."
+   ]
+  ],
+  "C": [
+   [
+    "H2",
+    "`One stays. One moves.`"
+   ],
+   [
+    "Copy",
+    "\"Start again with C and E sounding together. Keep the lower C held, then move just the upper E to F. Listen as the two-note world changes.\""
+   ],
+   [
+    "Button",
+    "`Hear upper E move to F`; explicit replay `Replay C–E` / `Hear C–F`."
+   ],
+   [
+    "After listening",
+    "\"C to F is a **perfect fourth**: four note-letter positions—C, D, E, F—and **five semitones**. The lower voice didn't move. The upper voice moved up one semitone. The name for this kind of two-voice movement is **oblique motion**.\""
+   ],
+   [
+    "Notation",
+    "`C4 + E4 → C4 + F4`; `major third (4) → perfect fourth (5)`."
+   ],
+   [
+    "Visual",
+    "W2-01 and W2-02 initial/reveal, one held horizontal lower line and one upward upper line; show the factual 4→5 semitone connector only after listening. Use distinct circle/square line markers."
+   ],
+   [
+    "Prompt",
+    "\"Can you imagine the little E-to-F rise before you hear it again? Hum, gesture or visualize the movement, then check it.\""
+   ]
+  ],
+  "D": [
+   [
+    "H2",
+    "`Let the foundation travel`"
+   ],
+   [
+    "Copy",
+    "\"This time the upper E stays. Let the lower C move down to the B just below it. Listen to how the pair changes when the *lower* voice moves.\""
+   ],
+   [
+    "Buttons",
+    "`Hear lower C move to B`, `Hear lower C move up to D`."
+   ],
+   [
+    "Comparison 1 reveal",
+    "`C4 + E4 → B3 + E4` — \"The lower line moved down one semitone. B to E is another **perfect fourth**, five semitones wide. It's the *same interval size* as C to F, but a different pair of notes and a different musical journey.\""
+   ],
+   [
+    "Comparison 2 reveal",
+    "`C4 + E4 → D4 + E4` — \"The lower line moved up a whole step while E stayed. D to E is a **major second**, two semitones apart. The voices are closer together.\""
+   ],
+   [
+    "Summary",
+    "\"All three changes are examples of **oblique motion**: one voice holds its pitch while the other moves.\""
+   ],
+   [
+    "Non-graded check",
+    "\"Which voice moved in the B–E example?\" `Lower`, `Upper`, `Both`. Correct: \"The lower voice moved from C4 to B3. The upper E4 remained.\""
+   ]
+  ],
+  "E": [
+   [
+    "H2",
+    "`Follow the movement on your inner keyboard`"
+   ],
+   [
+    "Copy",
+    "\"Look at the two notes on the keyboard. Now hide the labels for a moment. Try imagining where C and E sit, then where E moves when it becomes F. You can picture the keyboard, trace it on the keys, or say the note names out loud. Choose whichever helps you hear the relationship.\""
+   ],
+   [
+    "CTA",
+    "`Show the keyboard` / `Hide labels` / `Reveal the distance`."
+   ],
+   [
+    "Small Ploger-informed cue",
+    "\"The keyboard can be a ruler for musical distance—even when you're only imagining the next note.\""
+   ],
+   [
+    "Accessibility",
+    "physical tracing/visible labels accepted; no vivid-mental-imagery/absolute-pitch requirement. W2-06 is reusable shared keyboard with lower circle, upper square and no initial answer leakage."
+   ]
+  ],
+  "F": [
+   [
+    "H2",
+    "`Make three little changes`"
+   ],
+   [
+    "Copy",
+    "\"Open your own synthesizer or piano roll. Give the lower and upper notes separate tracks if you can. Record a brief version of C with E. Then make three tiny alternatives: move only the upper note, move only the lower note down, and move only the lower note up.\""
+   ],
+   [
+    "Steps",
+    "`Hold C4. Change E4 to F4.` · `Hold E4. Change C4 to B3.` · `Hold E4. Change C4 to D4.`"
+   ],
+   [
+    "Assignment",
+    "\"Each comparison can be only five to ten seconds. Before making one change, try hearing the new note internally. Listen back, and choose which motion you'd use in an ambient soundscape.\""
+   ],
+   [
+    "What to keep",
+    "\"Three short sketches and a little two-line drawing, if you'd like. The lesson doesn't record or grade your music.\""
+   ],
+   [
+    "Completion CTA",
+    "`I've explored the three changes` (transient local tick) · `Continue to Lesson 2B`."
+   ],
+   [
+    "Closing",
+    "\"An interval has a name and a measurable distance. But the way you move into it becomes part of the story.\""
+   ]
+  ]
+ },
+ "drawers": [
+  {
+   "id": "2A-HIST",
+   "head": "2A-HIST — History Postcard",
+   "fields": [
+    [
+     "Title",
+     "`Two voices were never just one idea`"
+    ],
+    [
+     "Copy",
+     "\"In medieval European polyphony, one singer could sustain a long musical tone while another line moved around it. Musicians gradually developed different ways to organize those lines, but singing together has never belonged to just one place or century. The interesting idea for us is that two voices can form a changing harmony without becoming one fixed block of notes.\""
+    ],
+    [
+     "Try",
+     "\"Hold one note while the other slowly travels away.\""
+    ],
+    [
+     "Read/listen context",
+     "https://ocw.mit.edu/courses/21m-011-introduction-to-western-music-fall-2024/pages/week-2-recitation-2a-listening-reading-goetjen/"
+    ],
+    [
+     "Editorial guard",
+     "This is a specific European example, not the invention of all polyphony."
+    ]
+   ]
+  },
+  {
+   "id": "2A-SCI",
+   "head": "2A-SCI — Behind the Sound",
+   "fields": [
+    [
+     "Title",
+     "`Why can two pitches seem to blend?`"
+    ],
+    [
+     "Copy",
+     "\"Many pitched sounds contain a fundamental and higher partials called overtones. When two sounds overlap, their partial patterns can sometimes reinforce one another or create a sense of fusion. Other combinations may feel more separate or rough, especially with richer timbres. The same notes can behave differently on different synth patches. Their interval remains a major third or fourth even when the texture changes.\""
+    ],
+    [
+     "Try",
+     "\"Play C and E on a plain sine-like patch, then a bright pad. Notice what changes in blend.\""
+    ],
+    [
+     "Further reading",
+     "https://openstax.org/books/physics/pages/14-4-sound-interference-and-resonance"
+    ],
+    [
+     "Guard",
+     "No claim that a major third always creates a fixed beating rate or specific emotion."
+    ]
+   ]
+  },
+  {
+   "id": "2A-AMBIENT",
+   "head": "2A-AMBIENT — Ambient Composer's Notebook",
+   "fields": [
+    [
+     "Title",
+     "`One steady light, one moving light`"
+    ],
+    [
+     "Copy",
+     "\"You don't always need a chord progression to transform an ambient world. Let a soft lower C stay where it is and slowly move an upper voice from E to F. The foundation keeps a sense of place while the upper line changes the view. Try the opposite: hold a floating upper sound and let the bass shift by one step. Notice how much narrative a single movement can carry.\""
+    ],
+    [
+     "Try",
+     "\"Keep the rhythm and sound patch identical. Change one pitch only.\""
+    ]
+   ]
+  },
+  {
+   "id": "2A-REAL",
+   "head": "2A-REAL — Hear It in Real Music",
+   "fields": [
+    [
+     "Title",
+     "`Two independent lines make an atmosphere`"
+    ],
+    [
+     "Intro",
+     "\"These performances are more intricate than our two-note exercise. Listen for a continuing support and another voice or line moving against it.\""
+    ],
+    [
+     "Recording 1",
+     "`Arvo Pärt — Spiegel im Spiegel, Duo Gazzana` · official label performance/video announcement https://ecmrecords.com/duo-gazzana-new-official-video/ . **Listen for:** \"An intentionally spare solo melody beside a repeated piano accompaniment. The music isn't a held C and E, but it's a beautiful study in patience and distinct musical roles.\""
+    ],
+    [
+     "Recording 2",
+     "`Georgian Polyphonic Singing` · official UNESCO video https://www.youtube.com/watch?v=rg8xrdbnH8E . **Listen for:** \"How a lower supporting part can coexist with independently changing upper voices. The music is part of a particular Georgian singing tradition, not an interval drill.\""
+    ],
+    [
+     "Transfer",
+     "\"Create one lower part that remains recognizable while an upper part moves.\""
+    ],
+    [
+     "Rights",
+     "Links only; no stored audio, screenshots or recordings."
+    ]
+   ]
+  },
+  {
+   "id": "2A-WORLD",
+   "head": "2A-WORLD — Musical Worlds",
+   "fields": [
+    [
+     "Title",
+     "`Georgia: a musical conversation above the bass`"
+    ],
+    [
+     "Copy",
+     "\"In Georgian polyphonic singing, several traditions bring distinct vocal parts together. In eastern Georgia's Kakheti region, one important approach features **polyphonic dialogue over a bass background**. The voices don't simply move as a set of identical chord blocks; separate lines interact. Listen for the sustained or recurring lower part as others make their own turns. This is living music with social and historical meaning—not a Western counterpoint worksheet.\""
+    ],
+    [
+     "Listen",
+     "https://ich.unesco.org/en/video/41554 · YouTube https://www.youtube.com/watch?v=rg8xrdbnH8E (UNESCO verified uploader)."
+    ],
+    [
+     "Try",
+     "\"Record a lower note that stays, then improvise a different upper path against it. It's an original exercise inspired by the broad idea, not a Georgian vocal imitation.\""
+    ],
+    [
+     "Context",
+     "https://ich.unesco.org/en/lists?RL=00008"
+    ]
+   ]
+  },
+  {
+   "id": "2A-PAINT",
+   "head": "2A-PAINT — Paint What You Hear",
+   "fields": [
+    [
+     "Title",
+     "`Stillness and movement`"
+    ],
+    [
+     "Copy",
+     "\"Give the lower note a shape or color that can stay. Now draw or paint the upper note as a moving line. Try three versions: one where the upper voice rises, one where the lower voice descends, and one where they draw closer together. Does the image help you notice which voice caused the change?\""
+    ],
+    [
+     "Try",
+     "\"Make a tiny before-and-after picture using any paint, pencil, collage or digital art tool. There is no correct color for a perfect fourth.\""
+    ],
+    [
+     "Privacy",
+     "\"Keep your painting in your own studio. You don't need to upload it.\""
+    ]
+   ]
+  }
+ ]
+}

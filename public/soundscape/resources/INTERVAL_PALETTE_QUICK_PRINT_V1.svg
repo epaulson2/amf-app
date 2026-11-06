@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1410" height="1820" viewBox="0 0 1410 1820" role="img" aria-labelledby="title desc">
+<title id="title">Ajourné Interval Palette: original complete color-coded quick chart, unison through octave</title>
+<desc id="desc">Thirteen labeled interval cards with their names, musical spellings, exact semitone numbers zero to twelve, illustrative color swatches, listening descriptors and uses. All example pairs begin on C4. Colors are personal artistic suggestions, not intrinsic acoustic facts.</desc>
+<rect width="1410" height="1820" fill="#F5F0E7"/>
+<rect x="0" y="0" width="1410" height="12" fill="#E0BA78"/>
+<text x="64" y="69" fill="#6B635A" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="3">AJOURNÉ INTO MUSIC  /  AN ORIGINAL REFERENCE</text>
+<text x="64" y="125" fill="#222C38" font-family="Arial, Helvetica, sans-serif" font-size="51" font-weight="700">The Interval Palette</text>
+<text x="65" y="166" fill="#5A5C5F" font-family="Arial, Helvetica, sans-serif" font-size="22">Twelve semitone steps. Thirteen landmarks. A world of musical choices.</text>
+<text x="65" y="206" fill="#6B635A" font-family="Arial, Helvetica, sans-serif" font-size="18">One-octave chart: every example holds C4 as its starting note. Read the pitch facts, then choose your own colors.</text>
+<path d="M65 244 H1345" stroke="#CEC4B7" stroke-width="2"/>
+<g id="ip-00">
+<rect x="65" y="268" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="65" y="268" width="12" height="167" rx="6" fill="#8D9BA4"/>
+<circle cx="108" cy="303" r="18" fill="#8D9BA4"/>
+<text x="108" y="310" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">0</text>
+<text x="136" y="311" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Perfect unison</text>
+<text x="659" y="309" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">P1</text>
+<text x="92" y="350" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → C4</text>
+<text x="92" y="379" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">focused · unified · still</text>
+<text x="92" y="410" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">doubling · one-pitch texture</text>
+<line x1="413" y1="406" x2="620" y2="406" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="415" y1="406" x2="415" y2="406" stroke="#8D9BA4" stroke-width="6" stroke-linecap="round"/>
+<circle cx="415" cy="406" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+
+</g>
+<g id="ip-01">
+<rect x="725" y="268" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="725" y="268" width="12" height="167" rx="6" fill="#D96569"/>
+<circle cx="768" cy="303" r="18" fill="#D96569"/>
+<text x="768" y="310" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">1</text>
+<text x="796" y="311" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Minor second</text>
+<text x="1319" y="309" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">m2</text>
+<text x="752" y="350" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → D♭4</text>
+<text x="752" y="379" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">close · rubbing · delicate</text>
+<text x="752" y="410" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">neighbor motion · chromatic color</text>
+<line x1="1073" y1="406" x2="1280" y2="406" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="1075" y1="406" x2="1091" y2="406" stroke="#D96569" stroke-width="6" stroke-linecap="round"/>
+<circle cx="1075" cy="406" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="1091" cy="406" r="8" fill="#D96569" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-02">
+<rect x="65" y="462" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="65" y="462" width="12" height="167" rx="6" fill="#CE8748"/>
+<circle cx="108" cy="497" r="18" fill="#CE8748"/>
+<text x="108" y="504" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">2</text>
+<text x="136" y="505" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Major second</text>
+<text x="659" y="503" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">M2</text>
+<text x="92" y="544" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → D4</text>
+<text x="92" y="573" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">stepping · airy · hovering</text>
+<text x="92" y="604" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">melodic steps · suspended textures</text>
+<line x1="413" y1="600" x2="620" y2="600" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="415" y1="600" x2="447" y2="600" stroke="#CE8748" stroke-width="6" stroke-linecap="round"/>
+<circle cx="415" cy="600" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="447" cy="600" r="8" fill="#CE8748" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-03">
+<rect x="725" y="462" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="725" y="462" width="12" height="167" rx="6" fill="#926DA7"/>
+<circle cx="768" cy="497" r="18" fill="#926DA7"/>
+<text x="768" y="504" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">3</text>
+<text x="796" y="505" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Minor third</text>
+<text x="1319" y="503" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">m3</text>
+<text x="752" y="544" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → E♭4</text>
+<text x="752" y="573" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">intimate · shaded · lyrical</text>
+<text x="752" y="604" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">melodic skips · minor harmony</text>
+<line x1="1073" y1="600" x2="1280" y2="600" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="1075" y1="600" x2="1123" y2="600" stroke="#926DA7" stroke-width="6" stroke-linecap="round"/>
+<circle cx="1075" cy="600" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="1123" cy="600" r="8" fill="#926DA7" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-04">
+<rect x="65" y="656" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="65" y="656" width="12" height="167" rx="6" fill="#CB9B35"/>
+<circle cx="108" cy="691" r="18" fill="#CB9B35"/>
+<text x="108" y="698" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">4</text>
+<text x="136" y="699" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Major third</text>
+<text x="659" y="697" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">M3</text>
+<text x="92" y="738" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → E4</text>
+<text x="92" y="767" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">clear · warm · glowing</text>
+<text x="92" y="798" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">major harmony · familiar dyad</text>
+<line x1="413" y1="794" x2="620" y2="794" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="415" y1="794" x2="479" y2="794" stroke="#CB9B35" stroke-width="6" stroke-linecap="round"/>
+<circle cx="415" cy="794" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="479" cy="794" r="8" fill="#CB9B35" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-05">
+<rect x="725" y="656" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="725" y="656" width="12" height="167" rx="6" fill="#5D9075"/>
+<circle cx="768" cy="691" r="18" fill="#5D9075"/>
+<text x="768" y="698" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">5</text>
+<text x="796" y="699" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Perfect fourth</text>
+<text x="1319" y="697" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">P4</text>
+<text x="752" y="738" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → F4</text>
+<text x="752" y="767" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">open · poised · suspended</text>
+<text x="752" y="798" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">drones · held/upper voice motion</text>
+<line x1="1073" y1="794" x2="1280" y2="794" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="1075" y1="794" x2="1155" y2="794" stroke="#5D9075" stroke-width="6" stroke-linecap="round"/>
+<circle cx="1075" cy="794" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="1155" cy="794" r="8" fill="#5D9075" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-06">
+<rect x="65" y="850" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="65" y="850" width="12" height="167" rx="6" fill="#5869A6"/>
+<circle cx="108" cy="885" r="18" fill="#5869A6"/>
+<text x="108" y="892" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">6</text>
+<text x="136" y="893" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Tritone</text>
+<text x="659" y="891" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">A4/d5</text>
+<text x="92" y="932" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → F♯4 / G♭4</text>
+<text x="92" y="961" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">searching · split · intriguing</text>
+<text x="92" y="992" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">contrast · chromatic voice leading</text>
+<line x1="413" y1="988" x2="620" y2="988" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="415" y1="988" x2="511" y2="988" stroke="#5869A6" stroke-width="6" stroke-linecap="round"/>
+<circle cx="415" cy="988" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="511" cy="988" r="8" fill="#5869A6" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-07">
+<rect x="725" y="850" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="725" y="850" width="12" height="167" rx="6" fill="#447FA4"/>
+<circle cx="768" cy="885" r="18" fill="#447FA4"/>
+<text x="768" y="892" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">7</text>
+<text x="796" y="893" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Perfect fifth</text>
+<text x="1319" y="891" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">P5</text>
+<text x="752" y="932" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → G4</text>
+<text x="752" y="961" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">resonant · broad · open</text>
+<text x="752" y="992" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">open fifths · bass framework</text>
+<line x1="1073" y1="988" x2="1280" y2="988" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="1075" y1="988" x2="1187" y2="988" stroke="#447FA4" stroke-width="6" stroke-linecap="round"/>
+<circle cx="1075" cy="988" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="1187" cy="988" r="8" fill="#447FA4" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-08">
+<rect x="65" y="1044" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="65" y="1044" width="12" height="167" rx="6" fill="#B26A91"/>
+<circle cx="108" cy="1079" r="18" fill="#B26A91"/>
+<text x="108" y="1086" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">8</text>
+<text x="136" y="1087" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Minor sixth</text>
+<text x="659" y="1085" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">m6</text>
+<text x="92" y="1126" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → A♭4</text>
+<text x="92" y="1155" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">expressive · wide · intimate</text>
+<text x="92" y="1186" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">melodic reach · inverted M3</text>
+<line x1="413" y1="1182" x2="620" y2="1182" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="415" y1="1182" x2="543" y2="1182" stroke="#B26A91" stroke-width="6" stroke-linecap="round"/>
+<circle cx="415" cy="1182" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="543" cy="1182" r="8" fill="#B26A91" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-09">
+<rect x="725" y="1044" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="725" y="1044" width="12" height="167" rx="6" fill="#C98D69"/>
+<circle cx="768" cy="1079" r="18" fill="#C98D69"/>
+<text x="768" y="1086" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">9</text>
+<text x="796" y="1087" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Major sixth</text>
+<text x="1319" y="1085" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">M6</text>
+<text x="752" y="1126" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → A4</text>
+<text x="752" y="1155" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">singing · gentle · expansive</text>
+<text x="752" y="1186" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">lyrical leaps · inverted m3</text>
+<line x1="1073" y1="1182" x2="1280" y2="1182" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="1075" y1="1182" x2="1219" y2="1182" stroke="#C98D69" stroke-width="6" stroke-linecap="round"/>
+<circle cx="1075" cy="1182" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="1219" cy="1182" r="8" fill="#C98D69" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-10">
+<rect x="65" y="1238" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="65" y="1238" width="12" height="167" rx="6" fill="#48858A"/>
+<circle cx="108" cy="1273" r="18" fill="#48858A"/>
+<text x="108" y="1280" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">10</text>
+<text x="136" y="1281" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Minor seventh</text>
+<text x="659" y="1279" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">m7</text>
+<text x="92" y="1320" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → B♭4</text>
+<text x="92" y="1349" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">spacious · soulful · unfinished</text>
+<text x="92" y="1380" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">seventh-chord color · wide leap</text>
+<line x1="413" y1="1376" x2="620" y2="1376" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="415" y1="1376" x2="575" y2="1376" stroke="#48858A" stroke-width="6" stroke-linecap="round"/>
+<circle cx="415" cy="1376" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="575" cy="1376" r="8" fill="#48858A" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-11">
+<rect x="725" y="1238" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="725" y="1238" width="12" height="167" rx="6" fill="#8A8FC6"/>
+<circle cx="768" cy="1273" r="18" fill="#8A8FC6"/>
+<text x="768" y="1280" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">11</text>
+<text x="796" y="1281" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Major seventh</text>
+<text x="1319" y="1279" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">M7</text>
+<text x="752" y="1320" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → B4</text>
+<text x="752" y="1349" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">delicate · near-octave · edge</text>
+<text x="752" y="1380" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">maj7 pads · long melodic reach</text>
+<line x1="1073" y1="1376" x2="1280" y2="1376" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="1075" y1="1376" x2="1251" y2="1376" stroke="#8A8FC6" stroke-width="6" stroke-linecap="round"/>
+<circle cx="1075" cy="1376" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="1251" cy="1376" r="8" fill="#8A8FC6" stroke="#4C5157" stroke-width="1"/>
+</g>
+<g id="ip-12">
+<rect x="65" y="1432" width="625" height="167" rx="17" fill="#FFFFFF" stroke="#D8D2C6" stroke-width="1.4"/>
+<rect x="65" y="1432" width="12" height="167" rx="6" fill="#A7A078"/>
+<circle cx="108" cy="1467" r="18" fill="#A7A078"/>
+<text x="108" y="1474" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">12</text>
+<text x="136" y="1475" fill="#29323C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Perfect octave</text>
+<text x="659" y="1473" fill="#4C5257" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">P8</text>
+<text x="92" y="1514" fill="#49535E" font-family="Arial, Helvetica, sans-serif" font-size="18">Example: C4 → C5</text>
+<text x="92" y="1543" fill="#6A5A51" font-family="Arial, Helvetica, sans-serif" font-size="17">return · expansion · identity</text>
+<text x="92" y="1574" fill="#555A62" font-family="Arial, Helvetica, sans-serif" font-size="16">octave doubling · register shifts</text>
+<line x1="413" y1="1570" x2="620" y2="1570" stroke="#DDD6CC" stroke-width="2"/>
+<line x1="415" y1="1570" x2="607" y2="1570" stroke="#A7A078" stroke-width="6" stroke-linecap="round"/>
+<circle cx="415" cy="1570" r="8" fill="#F9F6F0" stroke="#4C5157" stroke-width="3"/>
+<circle cx="607" cy="1570" r="8" fill="#A7A078" stroke="#4C5157" stroke-width="1"/>
+</g>
+<rect x="725" y="1432" width="625" height="167" rx="17" fill="#F0E8DD" stroke="#CEC4B5"/>
+<text x="749" y="1474" fill="#39454F" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Make the palette your own</text>
+<text x="749" y="1510" fill="#5F6369" font-family="Arial, Helvetica, sans-serif" font-size="18">Your colors: __________________________</text>
+<text x="749" y="1545" fill="#5F6369" font-family="Arial, Helvetica, sans-serif" font-size="18">Your words: __________________________</text>
+<path d="M65 1663 H1345" stroke="#CEC4B7" stroke-width="2"/>
+<text x="65" y="1710" fill="#39454F" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">The sounds have precise distances. The colors are invitations.</text>
+<text x="65" y="1747" fill="#5F6369" font-family="Arial, Helvetica, sans-serif" font-size="18">Together and sequentially can sound different. Register, timbre, harmony and culture matter.</text>
+<text x="65" y="1783" fill="#6B635A" font-family="Arial, Helvetica, sans-serif" font-size="17">Ajourné into Music  •  Print or paint this chart  •  The full Interval Atlas explores each sound in depth.</text>
+</svg>

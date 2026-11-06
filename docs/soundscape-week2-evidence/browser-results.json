@@ -1,0 +1,170 @@
+{
+ "hub@320": {
+  "sw": 320,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "hub@768": {
+  "sw": 909,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "hub@1280": {
+  "sw": 1280,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "2a@320": {
+  "sw": 320,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "2a@768": {
+  "sw": 909,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "2a@1280": {
+  "sw": 1280,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "2b@320": {
+  "sw": 320,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "2b@768": {
+  "sw": 909,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "2b@1280": {
+  "sw": 1280,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "2c@320": {
+  "sw": 320,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "2c@768": {
+  "sw": 909,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "2c@1280": {
+  "sw": 1280,
+  "errs": [],
+  "doors": 6,
+  "h1": 1
+ },
+ "resources@320": {
+  "sw": 320,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "resources@768": {
+  "sw": 909,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "resources@1280": {
+  "sw": 1280,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "palette@320": {
+  "sw": 320,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "palette@768": {
+  "sw": 909,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "palette@1280": {
+  "sw": 1280,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "w1hub@320": {
+  "sw": 320,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "w1hub@768": {
+  "sw": 909,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "w1hub@1280": {
+  "sw": 1280,
+  "errs": [],
+  "doors": 0,
+  "h1": 1
+ },
+ "silent": true,
+ "2a_status": "Now playing C4 alone: the lower voice",
+ "2a_after_together": true,
+ "2a_trace": true,
+ "2a_build": true,
+ "2a_q": true,
+ "2a_upper_status": "Now playing C4 held while the upper voice moves from E4 to F4",
+ "2a_stop": {
+  "ctx": 3,
+  "closed": 3
+ },
+ "2a_doors": [
+  true,
+  false,
+  false,
+  true,
+  false,
+  false
+ ],
+ "2a_doors_n": 6,
+ "pal_status": "Now playing C4 and E4 together: Major third, 4 semitones",
+ "2b_status": "Now playing: Only lower rises, starting from C4 and E4",
+ "2b_tritone_reveal": true,
+ "2b_stop": {
+  "ctx": 3,
+  "closed": 3
+ },
+ "2b_doors_n": 6,
+ "2c_status": "Now playing the moving-foundation version: the lower line goes C4, B3, C4 under the same upper melody",
+ "2c_stop": {
+  "ctx": 2,
+  "closed": 2
+ },
+ "pal6_status": "Now playing C4 and F♯4 together: Tritone, 6 semitones",
+ "pal_cmp": "Now playing Tritone, a pause, then Perfect fifth",
+ "pal_stop": {
+  "ctx": 2,
+  "closed": 2
+ },
+ "pal6_kbd": true,
+ "pal6_alt": true,
+ "pal_color_inputs": 13
+}

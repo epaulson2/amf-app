@@ -1,0 +1,400 @@
+{
+ "intro": {
+  "eyebrow": "YOUR MUSICAL COLOR LIBRARY",
+  "h1": "The Interval Atlas",
+  "deck": "Thirteen landmarks between one C and the next. Each distance has a name; each can become a different musical choice.",
+  "para": [
+   "An interval tells you how far apart two pitches are. Hear it as a melodic movement, play it with both notes together, or move one voice while another stays. You can learn the note names and semitone distance—and discover how a sound changes with register, instrument, harmony, rhythm and what came before."
+  ],
+  "readme": "The colors and feeling-words are creative invitations, not scientific properties. An interval's distance is measurable. Its expressive character depends on the musical setting, the listener and your own artistic intention. You're welcome to paint or describe it completely differently.",
+  "definitions": "A **melodic interval** uses notes in sequence. A **harmonic (simultaneous) interval** uses pitches sounding together. Conventional interval naming combines a letter-distance number and a quality. The first selected key is MIDI 60/C4, the other key is the chosen number of semitones above it in standard twelve-tone equal temperament. No listener has to learn all thirteen entries before using the resource."
+ },
+ "chapters": [
+  {
+   "id": "IP-00",
+   "name": "Perfect unison",
+   "semitones": 0,
+   "colorCue": "Pearl gray #8D9BA4",
+   "example": "C4–C4",
+   "words": "one place, focused, merged",
+   "Meet the interval": "A unison puts two pitches on exactly the same keyboard position and in the same register. It can be played by one instrument twice or by two voices together.",
+   "As a moving melody": "Repeat C4 twice: there is no pitch movement, yet timing, length and articulation can make repetition meaningful. Silence between two C notes can be the whole phrase.",
+   "Two notes together": "Two simultaneous Cs can reinforce each other. If their patches differ, you might hear multiple layers; if one is slightly detuned, you may hear beats, but the nominal written pitch is still C.",
+   "In actual music": "Use for doubling a line, reinforcing an arrival, focusing an entrance, building a wide-sounding timbral stack from a single pitch, or returning to a clear starting point.",
+   "Listen and create": "Compare one C4, two identical C4 oscillators, then C4 in two different patches. Identify which differences are from pitch and which from timbre.",
+   "Paint What You Hear": "Put one mark on a sheet, then overlay a second mark in a different texture. How does one place become richer?",
+   "Keep in mind": "C4 with C5 is an octave, not unison; a fixed-pitch label does not imply the two sound sources have identical timbre.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-01",
+   "name": "Minor second",
+   "semitones": 1,
+   "colorCue": "Coral red #D96569",
+   "example": "C4–D♭4",
+   "words": "close, rubbing, delicate pressure",
+   "Meet the interval": "One semitone is the smallest neighboring pitch step on our standard keyboard. C4 and D-flat4 are one key apart; their conventional interval name is minor second.",
+   "As a moving melody": "Play C then D-flat slowly. A little step can be heard as a lean, a sigh, a passing color, an interruption, or simply the next part of a phrase.",
+   "Two notes together": "Play both together. With rich spectra, their nearby partials may make a rough or beating texture; with soft, simple patches and careful register, the result may feel delicate rather than harsh.",
+   "In actual music": "Try chromatic neighbor figures, close clusters, gentle instability, a soft passing motion, or a small pitch change that transforms a larger pad.",
+   "Listen and create": "Compare C4/D-flat4 together and in sequence. Repeat with the same pair higher up, then with a different synth patch.",
+   "Paint What You Hear": "Place two colored lines almost touching; let the edges be blurry or sharp according to what you hear.",
+   "Keep in mind": "A minor second is not an obligatory fear cue; perceived roughness depends on the actual sound and listening context.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-02",
+   "name": "Major second",
+   "semitones": 2,
+   "colorCue": "Apricot #CE8748",
+   "example": "C4–D4",
+   "words": "stepping, airy, open-ended",
+   "Meet the interval": "A major second is a whole step. From C to D you cross two neighboring-key movements, including the black-key position C-sharp in between.",
+   "As a moving melody": "C to D is a common move in melodies. It can move a phrase forward, answer a question or hover without demanding that another note follow.",
+   "Two notes together": "Sustain C and D together. The combination can be heard as a close dyad, a suspended chord color or a gentle cluster depending on its register, envelope and supporting bass.",
+   "In actual music": "Use in walking contours, neighboring-note motifs, slow evolving pads and gentle phrases that change one small step at a time.",
+   "Listen and create": "Play C→D as a melody, then C+D together. Compare D→E, another major second, using exactly the same patch and timing.",
+   "Paint What You Hear": "Draw a second mark a little farther away than for a semitone and leave the space between them visible.",
+   "Keep in mind": "Not every neighboring pair of white keys is a major second: E–F and B–C are a semitone apart.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-03",
+   "name": "Minor third",
+   "semitones": 3,
+   "colorCue": "Orchid violet #926DA7",
+   "example": "C4–E♭4",
+   "words": "intimate, shaded, graceful",
+   "Meet the interval": "C to E-flat counts as a third by letters C–D–E, and measures three semitones. This is a minor third, different from the four-semitone major third.",
+   "As a moving melody": "The minor-third skip can sound lyrical, playful, reflective or dramatic depending on its rhythm and what follows. The listener hears a jump over the adjacent letter position.",
+   "Two notes together": "The pair is a common component of minor-triad harmony when a fifth is added. As an isolated two-note sound, it does not by itself determine the key or the emotional narrative.",
+   "In actual music": "Use in motif shapes, small singing leaps, warm pad dyads and minor-triad construction later in the course.",
+   "Listen and create": "Keep C fixed and compare upper E-flat to E-natural. Then compare E4–G4, another minor third starting elsewhere.",
+   "Paint What You Hear": "Draw one low point with two alternative upper points spaced three and four semitones away on a stylized keyboard.",
+   "Keep in mind": "Minor is a precise name of quality and size; it is not a rule that the music must sound sad.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-04",
+   "name": "Major third",
+   "semitones": 4,
+   "colorCue": "Amber gold #CB9B35",
+   "example": "C4–E4",
+   "words": "clear, warm, luminous",
+   "Meet the interval": "Count C–D–E inclusively to find a third. Count chromatic movements from C to E to find four semitones. Together those facts name a major third.",
+   "As a moving melody": "From C to E is a small leap that can be a call, a beginning gesture or a high point; singing and tracing it can make its size familiar.",
+   "Two notes together": "Together the notes form a clear two-note sonority in many familiar tonal settings. If G is added, C–E–G forms a C-major triad; without G, call it a dyad.",
+   "In actual music": "Use to begin major-chord thinking, write memorable motifs, design glowing pad colors and compare two independent voice positions.",
+   "Listen and create": "In Lesson 2A hold C4 and shift E4 up to F4. The measured interval changes from four to five semitones.",
+   "Paint What You Hear": "Hold a lower shape in place and move just one upper mark; notice if your visual impression changes.",
+   "Keep in mind": "A four-semitone major third is not scientifically guaranteed to sound happy, radiant or emotionally stable.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-05",
+   "name": "Perfect fourth",
+   "semitones": 5,
+   "colorCue": "Sage green #5D9075",
+   "example": "C4–F4",
+   "words": "open, poised, suspended",
+   "Meet the interval": "A perfect fourth spans four letter positions from C through F and five semitones. The word perfect names an interval-quality family, not how good the sound is.",
+   "As a moving melody": "C to F can be a recognizable reach or response. You can sing or trace it gently, sharply or in an entirely different phrase character.",
+   "Two notes together": "C and F together can form a spacious sonority. A fourth above a bass may act like a suspension in common-practice tonal music but can remain a desired stable color in other musical contexts.",
+   "In actual music": "Use in open drones, suspended textures, melodic calls and the Week 2A transformation from C–E to C–F.",
+   "Listen and create": "Hear C4–F4 and B3–E4: both are five-semitone perfect fourths. Keep the same timbre and listen for contextual differences.",
+   "Paint What You Hear": "Draw a broad open space between two marks, then bring them closer. Does your painting follow your hearing?",
+   "Keep in mind": "The same perfect fourth need not feel equally stable or tense over every bass note.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-06",
+   "name": "Tritone",
+   "semitones": 6,
+   "colorCue": "Midnight blue #5869A6",
+   "example": "C4–F♯4 (A4) / C4–G♭4 (d5)",
+   "words": "split, searching, unusual",
+   "Meet the interval": "A tritone covers six semitones, half the twelve-step equal-tempered octave. C to F-sharp is an augmented fourth by letters, while C to G-flat is a diminished fifth; in equal temperament they can sound identical.",
+   "As a moving melody": "A tritone leap can stand out as an unexpected movement or become a familiar feature of an original melodic vocabulary.",
+   "Two notes together": "The pair often has a distinct, restless presence in Western tonal contexts and appears among important voices of dominant-seventh chords. In ambient writing you may let it hover or fade without resolving.",
+   "In actual music": "Try contrast, suspended atmosphere, chromatic color, altered harmony or deliberate voice-leading paths. Week 2B uses B3–F4, spelled a diminished fifth.",
+   "Listen and create": "Compare C4–F-sharp4 with B3–F4. Both are six semitones, but the conventional spelled intervals are augmented fourth and diminished fifth.",
+   "Paint What You Hear": "Mark a midpoint of an octave and draw two contrasting shapes on either side, without assigning the interval an automatic sinister story.",
+   "Keep in mind": "No universal tritone emotion or fixed interference-beat rate exists. The historical devil-interval cliché is not our learning rule.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-07",
+   "name": "Perfect fifth",
+   "semitones": 7,
+   "colorCue": "Deep blue #447FA4",
+   "example": "C4–G4",
+   "words": "broad, resonant, architectural",
+   "Meet the interval": "A perfect fifth spans five letter positions C through G and seven semitones. It is a recognizable structural distance in many Western tonal settings.",
+   "As a moving melody": "A fifth can be a bold call, a spacious leap or a familiar outline in a tune; volume and rhythm change its character.",
+   "Two notes together": "Simultaneous C and G can blend comparatively well with many harmonically related instrument tones. A pure fifth is a 3:2 frequency ratio, but an equal-tempered fifth is only approximately that ratio.",
+   "In actual music": "Use in drones, open fifths, bass/upper framing, melodic calls and wide synth voicings before adding thirds.",
+   "Listen and create": "Hold C and compare upper F, G and C5. Hear perfect fourth, perfect fifth and octave while keeping the patch constant.",
+   "Paint What You Hear": "Place two marks to frame a large area. Does the space suggest a horizon, doorway or something else?",
+   "Keep in mind": "Perfect fifth does not imply a universal fixed emotional value or a complete major chord.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-08",
+   "name": "Minor sixth",
+   "semitones": 8,
+   "colorCue": "Rose orchid #B26A91",
+   "example": "C4–A♭4",
+   "words": "wide, expressive, reaching",
+   "Meet the interval": "From C to A-flat is six letter positions and eight semitones: a minor sixth. It spans more register than either kind of third.",
+   "As a moving melody": "An ascending minor sixth can sound expressive, dramatic or gentle, depending on rhythm, phrase shape and which note came before it.",
+   "Two notes together": "C and A-flat are a broad dyad whose chord role changes with the bass or added notes. The same pitch classes can be revoiced as a different interval.",
+   "In actual music": "Try reflective leaps, wide pads, two-voice arrangements, register contrasts and inversions of a major third.",
+   "Listen and create": "Play C4–A-flat4. Move the lower C up to C5 while leaving A-flat4 fixed: A-flat4–C5 is a major third, the inversion of a minor sixth.",
+   "Paint What You Hear": "Draw the original wide span, then a smaller inverted space, using related colors to show common pitch classes.",
+   "Keep in mind": "Minor sixth need not mean longing; wider does not automatically equal greater tension.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-09",
+   "name": "Major sixth",
+   "semitones": 9,
+   "colorCue": "Peach gold #C98D69",
+   "example": "C4–A4",
+   "words": "singing, expansive, gentle warmth",
+   "Meet the interval": "A major sixth spans six letter positions and nine semitones. It is a wide but recognizable melodic distance.",
+   "As a moving melody": "From C up to A can feel soaring or simply like a spacious change of position; a very quiet synth may make it intimate rather than dramatic.",
+   "Two notes together": "Two notes a major sixth apart can add broad color. A changing bass or a third voice can give the pair a different harmonic role.",
+   "In actual music": "Use for lyrical leaps, gentle upper voices, open pads, different registers and connections to minor-third material.",
+   "Listen and create": "Compare C4–A4 (nine semitones) with A4–C5 (three semitones). Hear how inverting a major sixth creates a minor third.",
+   "Paint What You Hear": "Make a wide visual journey and then a short return, using the same colors or different ones if that suits your experience.",
+   "Keep in mind": "The interval does not carry a guaranteed uplifting or angelic quality independently of the music.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-10",
+   "name": "Minor seventh",
+   "semitones": 10,
+   "colorCue": "Smoky teal #48858A",
+   "example": "C4–B♭4",
+   "words": "spacious, unfinished, earthy",
+   "Meet the interval": "C to B-flat is a seventh by note letters and ten semitones in pitch distance, one whole step below the next octave C.",
+   "As a moving melody": "The leap can make a dramatic opening or a gentle high plateau; it depends on what happens before and after.",
+   "Two notes together": "The minor seventh is present in many dominant- and minor-seventh chord structures, but a lone C–B-flat pair doesn't tell you which chord, key or function is active.",
+   "In actual music": "Try modal atmosphere, a suspended upper note, layered seventh-chord color or wide melodic motion.",
+   "Listen and create": "Hold C4 and compare B-flat4 with B4. The upper pitch moves a semitone, changing minor seventh to major seventh.",
+   "Paint What You Hear": "Let two marks stretch nearly across an octave. Paint a small remaining gap to the next C, if you hear it as a destination.",
+   "Keep in mind": "A minor seventh above C is not a universal request for resolution; another bass changes its role.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-11",
+   "name": "Major seventh",
+   "semitones": 11,
+   "colorCue": "Icy lilac #8A8FC6",
+   "example": "C4–B4",
+   "words": "shimmering edge, near-octave, delicate friction",
+   "Meet the interval": "A major seventh spans seven letter positions and eleven semitones. The upper B4 sits one neighboring key below C5.",
+   "As a moving melody": "C4→B4 is a wide melodic leap. B4→C5 is a different, one-semitone melodic movement that often sounds like a leading-tone arrival in an established C-major context.",
+   "Two notes together": "C4 and B4 held together can be an atmospheric interval; add E and G for a C-major-seventh chord. Its sonic roughness depends on actual timbres, voicing and dynamics.",
+   "In actual music": "Use in extended pads, suspended upper-voice gestures, near-octave leaps and major-seventh chord colors.",
+   "Listen and create": "Hear simultaneous C4+B4, then sequential B4→C5, then sequential C4→B4. Explain why those are distinct listening questions.",
+   "Paint What You Hear": "Paint one point nearly reaching an upper destination, then paint what happens when the small final movement occurs.",
+   "Keep in mind": "Do not conflate simultaneous major-seventh beating with psychological expectation of a sequential B→C resolution.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  },
+  {
+   "id": "IP-12",
+   "name": "Perfect octave",
+   "semitones": 12,
+   "colorCue": "Silver gold #A7A078",
+   "example": "C4–C5",
+   "words": "return, recognition, expansion",
+   "Meet the interval": "From C4 to C5 is twelve semitones and eight letter positions counted inclusively. Both pitches have the letter name C but occupy different registers.",
+   "As a moving melody": "The octave leap can feel like enlarging a familiar musical idea, a return at another height or a new section of a phrase.",
+   "Two notes together": "Simultaneous octave Cs often share a recognizable pitch identity. For pure tones, the higher frequency is double the lower, although the timbre and register still differ.",
+   "In actual music": "Use for melody doubling across registers, wide pads, bass/high framing and clear changes of musical space.",
+   "Listen and create": "Compare C4+C4 unison with C4+C5 octave, as melodic and simultaneous sounds. Which pair keeps both notes in the same register?",
+   "Paint What You Hear": "Repeat a recognizable shape in a different area or size, allowing it to feel related but changed.",
+   "Keep in mind": "Equal-tempered semitones are our starting map; not every musical tradition uses the same subdivisions.",
+   "actions": "Hear together · Hear as a melody · Change register · Compare · Add to my soundscape (means copy note recipe, not send a DAW command)."
+  }
+ ],
+ "layers": [
+  {
+   "title": "Deeper layer A — Why intervals can sound smooth, rough or fused",
+   "paras": [
+    "Sometimes two simultaneous notes blend into a more unified sound. At other times their frequency components create roughness or beating. A sound's fundamental and higher partials, the register, tuning and timbre all help shape that experience.",
+    "Two nearby pure tones can produce beats related to their frequency difference. With real synth patches there are many partials, so you cannot assign a universal fixed beating rate to an interval such as a minor third or tritone. The sound can change even when the written interval stays the same.",
+    "Melodic expectation is also a different question. A listener may expect a B to continue to C because C is established as a tonal center. That expectation does not require a B and C to be sounding simultaneously."
+   ],
+   "fields": [
+    [
+     "Try",
+     "Hear a minor second, a perfect fifth and a major seventh twice: first as simple original two-note sine-like sounds, then on a brighter pad; next hear each interval as two consecutive notes. Compare without trying to rank good/bad."
+    ],
+    [
+     "Further reading",
+     "https://openstax.org/books/physics/pages/14-4-sound-interference-and-resonance ; https://static.uni-graz.at/fileadmin/_Persoenliche_Webseite/parncutt_richard/Pdfs/Pa12_psychoacoustics.pdf"
+    ]
+   ],
+   "table": [],
+   "bullets": [],
+   "h2": "Why the same interval changes with the instrument"
+  },
+  {
+   "title": "Deeper layer B — How the interval gets its real name",
+   "paras": [
+    "Count letter names inclusively to name an interval number. C–D–E spans three positions, so C to E is some kind of third. To discover the quality, count every actual neighboring keyboard move, including black keys. C4 to E4 is four semitones: a major third. E4 to G4 is also a third by letter count, but three semitones: a minor third.",
+    "The six-semitone tritone can be spelled C–F-sharp (augmented fourth) or C–G-flat (diminished fifth). Both may sound alike on a twelve-tone keyboard, but the note letters show different relationships. The name is more informative than the number alone."
+   ],
+   "fields": [
+    [
+     "Try",
+     "Build C4–E4 and E4–G4, say the letter count, say the semitone count, then hear the difference. Do not treat semitone count as a replacement for correct written spelling."
+    ],
+    [
+     "Source",
+     "https://open-musictheory.github.io/docs/fundamentals/intervals/"
+    ]
+   ],
+   "table": [],
+   "bullets": [],
+   "h2": "A third is not always the same size"
+  },
+  {
+   "title": "Deeper layer C — Inversion, the octave's hidden symmetry",
+   "paras": [
+    "If you move the lower note one octave higher, you reverse which pitch class sits on top. A major third C–E becomes a minor sixth E–C. Together their distances fill an octave: four plus eight semitones. In traditional interval names, third plus sixth adds to nine."
+   ],
+   "fields": [
+    [
+     "Try",
+     "Play C4+E4, then E4+C5. Compare major third with minor sixth, on the same patch. You are changing which note is beneath the other."
+    ],
+    [
+     "Note",
+     "The interval spelling still matters. This chart is the standard inversion relationship of these particular spelled interval types, not a blanket rule that every pitch-class comparison must have one unique written name."
+    ]
+   ],
+   "table": [
+    [
+     "Original",
+     "Inversion",
+     "Semitones"
+    ],
+    [
+     "Perfect unison",
+     "Perfect octave",
+     "0 + 12"
+    ],
+    [
+     "Minor second",
+     "Major seventh",
+     "1 + 11"
+    ],
+    [
+     "Major second",
+     "Minor seventh",
+     "2 + 10"
+    ],
+    [
+     "Minor third",
+     "Major sixth",
+     "3 + 9"
+    ],
+    [
+     "Major third",
+     "Minor sixth",
+     "4 + 8"
+    ],
+    [
+     "Perfect fourth",
+     "Perfect fifth",
+     "5 + 7"
+    ],
+    [
+     "Augmented fourth",
+     "Diminished fifth",
+     "6 + 6"
+    ]
+   ],
+   "bullets": [],
+   "h2": "Turn an interval around"
+  },
+  {
+   "title": "Deeper layer D — The third note changes a world",
+   "paras": [
+    "Two pitches together form a dyad. Add another note and you may create a fuller chord, depending on which note enters. Hear C4+E4, then add G4: you can now hear C major. Keep C and G but lower E to E-flat: you have changed the chord to C minor."
+   ],
+   "fields": [
+    [
+     "Try",
+     "Build C–E; add G; change E→E-flat; return E. Name the exact pitches before assigning any emotional descriptions. You can also leave C–E alone as a beautiful two-note sound."
+    ],
+    [
+     "Cross-link",
+     "Week 4 Harmony Emerges from Voices (content route only once implemented)."
+    ]
+   ],
+   "table": [],
+   "bullets": [],
+   "h2": "A dyad can grow into harmony"
+  },
+  {
+   "title": "Deeper layer E — Paint your own palette",
+   "paras": [
+    "If the perfect fifth is violet to you rather than blue, use violet. If your minor second looks like soft rain rather than red friction, paint the rain. A visual response is not a theory quiz or a test of how your brain works."
+   ],
+   "fields": [
+    [
+     "Try",
+     "Choose three intervals. Paint or sketch three panels, keeping the same lower note as a recurring element. Now play the three pairs again and change one painting if you notice something new."
+    ],
+    [
+     "Privacy",
+     "Your artwork stays yours. No upload, grading or automated emotional analysis."
+    ]
+   ],
+   "table": [],
+   "bullets": [],
+   "h2": "Your colors are welcome to disagree"
+  },
+  {
+   "title": "Deeper layer F — Hear them in the wider musical world",
+   "paras": [
+    "Intervals take on musical meaning inside performances, not in isolation. Listen for lines that hold and move, voices that travel independently, and textures that change even when only one pitch does."
+   ],
+   "fields": [
+    [
+     "Curated examples (actual source recordings, NOT claimed to contain the atlas's exact C-based exercises)",
+     ""
+    ],
+    [
+     "Teacher note",
+     "These links are contextual, not verified interval-by-interval transcriptions. Playback access may vary; the original course-generated two-note examples remain sufficient."
+    ]
+   ],
+   "table": [],
+   "bullets": [
+    "Arvo Pärt, Spiegel im Spiegel, Duo Gazzana official video announcement: https://ecmrecords.com/duo-gazzana-new-official-video/ ; listen for continuing accompaniment beneath a changing line.",
+    "Georgian polyphonic singing, UNESCO: https://ich.unesco.org/en/video/41554 ; listen for interaction among separate voices.",
+    "Gamelan Mitra Kusuma, Balinese music and dance, Smithsonian: https://asia.si.edu/balinese-music-and-dance-gamelan-mitra-kusuma/ ; listen for rich texture and interlocking parts. Paired detuning/ombak is not equivalent to a specific Western interval's beat rate.",
+    "Aka vocal polyphony, UNESCO: https://ich.unesco.org/en/video/41484 ; listen for independent parts in a living community tradition."
+   ],
+   "h2": "Musical relationships are part of living music"
+  }
+ ],
+ "studio": [
+  "Choose any interval in this atlas. Hear it as a melody, then as two simultaneous notes. Give it its correct name and semitone number. Next, change one thing—register, timing, patch or supporting bass—and listen again. What stayed the same? What became different?",
+  "Create a 15-second original two-note soundscape. If you wish, paint the difference between two versions."
+ ],
+ "footer": "Ajourné into Music · A living resource for hearing, theory, painting and composing.",
+ "editorial": [
+  "Factual interval definitions, chromatic versus letter naming and inversions: https://open-musictheory.github.io/docs/fundamentals/intervals/ ; https://pressbooks.nebraska.edu/openmusictheory/chapter/intervals/",
+  "Psychoacoustic caution: https://openstax.org/books/physics/pages/14-4-sound-interference-and-resonance ; https://static.uni-graz.at/fileadmin/_Persoenliche_Webseite/parncutt_richard/Pdfs/Pa12_psychoacoustics.pdf",
+  "AMF Tier 2 inventory HO-01/14/15 and Emotional Map EM-01/06 is design reference, **not licensed copy source**: https://github.com/epaulson2/amf-app/blob/main/docs/TIER2_ASSET_MANIFEST.md",
+  "Founder-uploaded AMF-produced The Plogger Method.pdf Ch.3, 7, 9, 15, 16 informs keyboard pitch-space pedagogy; its authorization as an edition of Marianne Ploger's original book was not independently verified.",
+  "**Feel-words and colors are independent original Ajourné creative suggestions.** They are not physiological findings, universally true emotions or dictated prescriptions.",
+  "These 13 entries use **standard Western 12-tone equal temperament** to make keyboard sizes and examples consistent; other music traditions have their own pitch and tuning practices."
+ ]
+}

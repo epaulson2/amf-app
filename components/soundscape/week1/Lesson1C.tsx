@@ -184,7 +184,7 @@ function Bridge() {
   return (
     <div>
       <p className="sp-prose">{c('6', 'Closing copy')}</p>
-      <p className="mt-4 sp-noprint"><Link className="sp-btn" href="/curriculum/soundscape-path/week-1">Return to Week 1</Link></p>
+      <p className="mt-4 sp-noprint"><Link className="sp-btn" href="/curriculum/soundscape-path/week-2">Preview Week 2</Link> <Link className="sp-btn sp-btn--ghost" href="/curriculum/soundscape-path/week-1">Return to Week 1</Link></p>
     </div>
   )
 }
@@ -221,7 +221,7 @@ export default function Lesson1C() {
       doors={d.content}
       doorTitles={d.titles}
       prev={{ href: '/curriculum/soundscape-path/week-1/lesson-1b', label: 'Lesson 1B' }}
-      next={{ href: '/curriculum/soundscape-path/week-1', label: 'Week 1 overview' }}
+      next={{ href: '/curriculum/soundscape-path/week-2', label: 'Week 2' }}
     />
   )
 }

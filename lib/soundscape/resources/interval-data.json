@@ -1,0 +1,401 @@
+{
+  "schemaVersion": "1.0",
+  "publicTitle": "The Ajourné Interval Palette",
+  "courseName": "Ajourné into Music",
+  "internalRoute": "/curriculum/soundscape-path/resources/interval-palette",
+  "tuning": {
+    "system": "12-TET",
+    "referenceMidi": 69,
+    "referenceHz": 440,
+    "rootMidi": 60,
+    "chromaticOctaveSemitones": 12
+  },
+  "contentStatus": "SPEC_READY, not built",
+  "colorsStatus": "original optional artistic metaphors, never universally required",
+  "cards": [
+    {
+      "id": "IP-00",
+      "semitones": 0,
+      "intervalName": "Perfect unison",
+      "abbreviation": "P1",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "C4",
+        "midi": 60
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Pearl gray",
+        "hex": "#8D9BA4",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "focused",
+        "unified",
+        "still"
+      ],
+      "typicalUse": "doubling / one-pitch texture",
+      "resourceAnchor": "#ip-00",
+      "inversionId": "IP-12",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-01",
+      "semitones": 1,
+      "intervalName": "Minor second",
+      "abbreviation": "m2",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "D♭4",
+        "midi": 61
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Coral red",
+        "hex": "#D96569",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "close",
+        "rubbing",
+        "delicate"
+      ],
+      "typicalUse": "chromatic neighbor motion / clusters",
+      "resourceAnchor": "#ip-01",
+      "inversionId": "IP-11",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-02",
+      "semitones": 2,
+      "intervalName": "Major second",
+      "abbreviation": "M2",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "D4",
+        "midi": 62
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Apricot",
+        "hex": "#CE8748",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "stepping",
+        "airy",
+        "hovering"
+      ],
+      "typicalUse": "melodic steps / suspended textures",
+      "resourceAnchor": "#ip-02",
+      "inversionId": "IP-10",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-03",
+      "semitones": 3,
+      "intervalName": "Minor third",
+      "abbreviation": "m3",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "E♭4",
+        "midi": 63
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Orchid violet",
+        "hex": "#926DA7",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "intimate",
+        "shaded",
+        "lyrical"
+      ],
+      "typicalUse": "melodic leaps / minor harmony",
+      "resourceAnchor": "#ip-03",
+      "inversionId": "IP-09",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-04",
+      "semitones": 4,
+      "intervalName": "Major third",
+      "abbreviation": "M3",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "E4",
+        "midi": 64
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Amber gold",
+        "hex": "#CB9B35",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "clear",
+        "warm",
+        "glowing"
+      ],
+      "typicalUse": "major harmony / starting dyad",
+      "resourceAnchor": "#ip-04",
+      "inversionId": "IP-08",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-05",
+      "semitones": 5,
+      "intervalName": "Perfect fourth",
+      "abbreviation": "P4",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "F4",
+        "midi": 65
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Sage green",
+        "hex": "#5D9075",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "open",
+        "poised",
+        "suspended"
+      ],
+      "typicalUse": "drones / upper voice motion",
+      "resourceAnchor": "#ip-05",
+      "inversionId": "IP-07",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-06",
+      "semitones": 6,
+      "intervalName": "Tritone",
+      "abbreviation": "A4/d5",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "F♯4",
+        "midi": 66
+      },
+      "alternateEnharmonicSpelling": {
+        "intervalName": "Diminished fifth",
+        "lower": "C4",
+        "upper": "G♭4",
+        "midi": 66
+      },
+      "color": {
+        "name": "Midnight blue",
+        "hex": "#5869A6",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "searching",
+        "split",
+        "intriguing"
+      ],
+      "typicalUse": "chromatic color / voice leading",
+      "resourceAnchor": "#ip-06",
+      "inversionId": "IP-06",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-07",
+      "semitones": 7,
+      "intervalName": "Perfect fifth",
+      "abbreviation": "P5",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "G4",
+        "midi": 67
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Deep blue",
+        "hex": "#447FA4",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "resonant",
+        "broad",
+        "open"
+      ],
+      "typicalUse": "drones / open fifths",
+      "resourceAnchor": "#ip-07",
+      "inversionId": "IP-05",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-08",
+      "semitones": 8,
+      "intervalName": "Minor sixth",
+      "abbreviation": "m6",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "A♭4",
+        "midi": 68
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Rose orchid",
+        "hex": "#B26A91",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "expressive",
+        "wide",
+        "intimate"
+      ],
+      "typicalUse": "melodic reach / inverted M3",
+      "resourceAnchor": "#ip-08",
+      "inversionId": "IP-04",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-09",
+      "semitones": 9,
+      "intervalName": "Major sixth",
+      "abbreviation": "M6",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "A4",
+        "midi": 69
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Peach gold",
+        "hex": "#C98D69",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "singing",
+        "gentle",
+        "expansive"
+      ],
+      "typicalUse": "melodic reach / inverted m3",
+      "resourceAnchor": "#ip-09",
+      "inversionId": "IP-03",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-10",
+      "semitones": 10,
+      "intervalName": "Minor seventh",
+      "abbreviation": "m7",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "B♭4",
+        "midi": 70
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Smoky teal",
+        "hex": "#48858A",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "spacious",
+        "soulful",
+        "unfinished"
+      ],
+      "typicalUse": "seventh color / wide leap",
+      "resourceAnchor": "#ip-10",
+      "inversionId": "IP-02",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-11",
+      "semitones": 11,
+      "intervalName": "Major seventh",
+      "abbreviation": "M7",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "B4",
+        "midi": 71
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Icy lilac",
+        "hex": "#8A8FC6",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "near-octave",
+        "delicate",
+        "edge"
+      ],
+      "typicalUse": "maj7 color / wide reach",
+      "resourceAnchor": "#ip-11",
+      "inversionId": "IP-01",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    },
+    {
+      "id": "IP-12",
+      "semitones": 12,
+      "intervalName": "Perfect octave",
+      "abbreviation": "P8",
+      "sourceRoot": {
+        "name": "C4",
+        "midi": 60
+      },
+      "sourceUpper": {
+        "name": "C5",
+        "midi": 72
+      },
+      "alternateEnharmonicSpelling": null,
+      "color": {
+        "name": "Silver gold",
+        "hex": "#A7A078",
+        "meaning": "artist-suggested subjective mnemonic, not acoustic truth"
+      },
+      "descriptors": [
+        "return",
+        "expansion",
+        "identity"
+      ],
+      "typicalUse": "octave doubling / register",
+      "resourceAnchor": "#ip-12",
+      "inversionId": "IP-00",
+      "layer": "card + full expanded detail in DEEP_ATLAS_CONTENT_V1.md"
+    }
+  ],
+  "source": "QUICK_PALETTE_CONTENT_V1.md",
+  "expandedSource": "DEEP_ATLAS_CONTENT_V1.md"
+}
