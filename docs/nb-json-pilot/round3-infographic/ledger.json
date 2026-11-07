@@ -1,0 +1,49 @@
+{
+ "model": "google/gemini-3-pro-image",
+ "cap_usd": 0.5,
+ "max_calls": 1,
+ "calls": [
+  {
+   "endpoint": "images",
+   "time": "2026-11-07T17:49:44",
+   "model": "google/gemini-3-pro-image",
+   "prompt_sha256": "2a92cb5e1e83a0b05f3b9e35a162c818fb2371944f1a739032c66c6c07b86652",
+   "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+   "reference_bytes_sent": 2686367,
+   "request_params": {
+    "model": "google/gemini-3-pro-image",
+    "aspect_ratio": "4:3",
+    "image_size": "2K",
+    "n": 1
+   },
+   "charged": true,
+   "seconds": 29.3,
+   "usage": {
+    "prompt_tokens": 1815,
+    "completion_tokens": 1120,
+    "total_tokens": 2935,
+    "cost": 0.13803,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.13803,
+     "upstream_inference_prompt_cost": 0.00363,
+     "upstream_inference_completions_cost": 0.1344
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 1120
+    }
+   },
+   "cost_usd": 0.13803,
+   "out": "docs/nb-json-pilot/round3-infographic/raw/B3.png",
+   "sha256": "d6ee4dbfdfccfa47204e7eb95303903920d689fd99367cfc2bc4cbdaf3b66d99",
+   "bytes": 1590308
+  }
+ ]
+}
