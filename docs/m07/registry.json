@@ -1,0 +1,3886 @@
+{
+ "schema": "m07-week2-registry/1",
+ "branch": "feat/ajourne-m07-week2-graphics-20261107",
+ "baseLive": "5bc10a139479900a9ffec5bc2be63496ac2336d8",
+ "tokenSource": "lib/soundscape/resources/interval-identity.ts",
+ "identityVersion": "1.0",
+ "identityHexes": {
+  "IP-00": "#76848C",
+  "IP-01": "#C25562",
+  "IP-02": "#C17D41",
+  "IP-03": "#8964A4",
+  "IP-04": "#AB812D",
+  "IP-05": "#4F816B",
+  "IP-06": "#5366A0",
+  "IP-07": "#347B97",
+  "IP-08": "#A95E86",
+  "IP-09": "#B47752",
+  "IP-10": "#367C79",
+  "IP-11": "#7978B3",
+  "IP-12": "#89845D"
+ },
+ "variants": {
+  "screen": "width 760",
+  "narrow": "width 360 (phones from 320 up)",
+  "print": "width 760, white page, grayscale-safe"
+ },
+ "counts": {
+  "nativeMasters": 50,
+  "svgFiles": 154,
+  "art": 4,
+  "reusedInPlace": 5
+ },
+ "assets": [
+  {
+   "id": "A-02",
+   "auditRow": "A-02",
+   "family": "shared",
+   "kind": "reference",
+   "disposition": "DERIVE",
+   "title": "The thirteen interval identity colours",
+   "svgTitle": "The thirteen interval identity colours, Palette version 1.0",
+   "state": "I",
+   "steps": [
+    "H"
+   ],
+   "teaches": "The thirteen identity colours of the Interval Palette, each next to the name and semitone count it belongs to. The colour is an agreed artistic label for a pair of notes, never a property of sound.",
+   "howToRead": "This is the key to every colour in Week 2. Read across a row: colour, number of semitones, then the interval name. A colour is always printed beside its name, so it never has to be guessed, and it is attached to the pair of notes, not to a voice. Compare with the live Palette page; the values are imported from the same file.",
+   "alt": "Thirteen colour swatches, one for each interval from unison (0 semitones) to octave (12), each with its name and number.",
+   "svgDesc": "Thirteen swatches in order from 0 to 12 semitones. 0: Perfect unison, #76848C; 1: Minor second, #C25562; 2: Major second, #C17D41; 3: Minor third, #8964A4; 4: Major third, #AB812D; 5: Perfect fourth, #4F816B; 6: Tritone, #5366A0; 7: Perfect fifth, #347B97; 8: Minor sixth, #A95E86; 9: Major sixth, #B47752; 10: Minor seventh, #367C79; 11: Major seventh, #7978B3; 12: Perfect octave, #89845D. The colours are an agreed artistic label for a pair of notes, not a property of sound.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "hex": [
+     {
+      "semitones": 0,
+      "hex": "#76848C",
+      "id": "IP-00"
+     },
+     {
+      "semitones": 1,
+      "hex": "#C25562",
+      "id": "IP-01"
+     },
+     {
+      "semitones": 2,
+      "hex": "#C17D41",
+      "id": "IP-02"
+     },
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     },
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     },
+     {
+      "semitones": 7,
+      "hex": "#347B97",
+      "id": "IP-07"
+     },
+     {
+      "semitones": 8,
+      "hex": "#A95E86",
+      "id": "IP-08"
+     },
+     {
+      "semitones": 9,
+      "hex": "#B47752",
+      "id": "IP-09"
+     },
+     {
+      "semitones": 10,
+      "hex": "#367C79",
+      "id": "IP-10"
+     },
+     {
+      "semitones": 11,
+      "hex": "#7978B3",
+      "id": "IP-11"
+     },
+     {
+      "semitones": 12,
+      "hex": "#89845D",
+      "id": "IP-12"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "lib/soundscape/resources/interval-identity.ts (INTERVAL_IDENTITY_COLORS_V1, identityHex)",
+    "lib/soundscape/resources/palette.ts (INTERVALS names)"
+   ],
+   "limits": "Reference sheet. Do not place before the learner has met the named intervals.",
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-02.svg",
+     "w": 760,
+     "h": 483,
+     "sha256_16": "24638b9e3548678f"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-02.svg",
+     "w": 360,
+     "h": 829,
+     "sha256_16": "4acf8a9167de8991"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-02.svg",
+     "w": 760,
+     "h": 483,
+     "sha256_16": "61bc68c71dec4ecf"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-03",
+   "auditRow": "A-03",
+   "family": "shared",
+   "kind": "reference",
+   "disposition": "DERIVE",
+   "title": "The Week 2 keyboard window, B3 to C5",
+   "svgTitle": "The Week 2 keyboard window, B3 to C5",
+   "state": "N",
+   "steps": [
+    "2A:1",
+    "2A:7",
+    "2A:9",
+    "2B:3",
+    "2C:7"
+   ],
+   "teaches": "The keyboard window Week 2 uses. It starts on B3, so the note just below C4 is on the picture, and every key is named with its octave number.",
+   "howToRead": "Find C4, the white key just left of the group of two black keys in the middle of this window. B3 is the white key immediately to its left. The small numbers above the black keys count each group (two, then three). Every white key carries its octave number, so C4 and C5 are different keys.",
+   "alt": "A keyboard drawn from B3 to C5 with nine white keys and five black keys, every white key labelled with its letter and octave number.",
+   "svgDesc": "A piano keyboard from B3 to C5: 9 white keys (B3, C4, D4, E4, F4, G4, A4, B4, C5) and 5 black keys in a group of two and a group of three. No notes are marked.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone"
+   ],
+   "sources": [
+    "lib/soundscape/m02/keyboard-geometry.ts buildKeyboard(start B, cMidi 48)",
+    "replaces public/soundscape/w2/W2-06_two-lines-on-one-keyboard_*.svg (no B3)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-03.svg",
+     "w": 760,
+     "h": 323,
+     "sha256_16": "97f53df658051b4b"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-03.svg",
+     "w": 360,
+     "h": 325,
+     "sha256_16": "eeccb71b7425ba48"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-03.svg",
+     "w": 760,
+     "h": 323,
+     "sha256_16": "26781edc7e5e65a9"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-04",
+   "auditRow": "A-04",
+   "family": "shared",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "Reading a two-lane timeline",
+   "svgTitle": "Reading a two-lane timeline",
+   "state": "N",
+   "steps": [
+    "2A:2",
+    "2B:2",
+    "2C:1",
+    "2C:7"
+   ],
+   "teaches": "How a lane works: each voice has its own row, bars are notes, dashed boxes are rests, and one vertical slice is a single moment of two notes together.",
+   "howToRead": "The top lane is the upper voice and the bottom lane is the lower voice. A solid bar is a note sounding for as long as the bar is wide; a dashed box is a rest. The dashed vertical line cuts through both lanes at one moment, and the two notes it crosses are the pair sounding together. This pattern is made up to show how to read a lane; it is not a Week 2 exercise.",
+   "alt": "A made-up two-lane timeline over four stages: the lower lane holds C4, the upper lane plays E4, rests, then F4. A dashed line marks one moment.",
+   "svgDesc": "A made-up reading example over four stages. Upper lane: E4 from 0 to 1, a rest from 1 to 2, F4 from 2 to 4. Lower lane: C4 from 0 to 4. A dashed vertical line at stage 3 crosses F4 above C4.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone"
+   ],
+   "sources": [
+    "lib/soundscape/m03/native-svg.ts lanes() idea, rebuilt in m07/kit.ts lanes()",
+    "old W2/SYS-04, SYS-09 (reveal and seconds removed)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-04.svg",
+     "w": 760,
+     "h": 368,
+     "sha256_16": "b05761505584f17d"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-04.svg",
+     "w": 360,
+     "h": 417,
+     "sha256_16": "df77e1f14d0a619a"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-04.svg",
+     "w": 760,
+     "h": 368,
+     "sha256_16": "0c74bd56beafaa3c"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-05",
+   "auditRow": "A-05",
+   "family": "shared",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "Counting letters is not counting semitones",
+   "svgTitle": "Counting letters is not counting semitones",
+   "state": "N",
+   "steps": [
+    "2A:3",
+    "2A:4"
+   ],
+   "teaches": "Two different counts for the same two notes: three letters (C, D, E) and four semitone hops from C4 to E4. The black keys count as hops but not as letters.",
+   "howToRead": "In the first keyboard the numbers sit only on lettered white keys, C then D then E. In the second keyboard each arc is one hop to the very next key, black or white, from C4 up to E4. Same two notes, two separate rulers, two different numbers.",
+   "alt": "The keyboard from C4 to G4 twice. Above, the keys C, D and E are numbered 1, 2, 3. Below, four numbered hops run from C4 to E4 across the black keys.",
+   "svgDesc": "Two copies of the keyboard from C4 to G4. First copy: C4 (lower voice) and E4 (upper voice) are marked; the keys C, D and E carry the numbers 1, 2 and 3. Second copy: four numbered hops, C4 to C♯4 to D4 to D♯4 to E4, include the two black keys. Three letters, four semitones.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel"
+   ],
+   "sources": [
+    "M03N/T04-native.svg left half (the B to F half belongs to 2B)",
+    "lib/soundscape/m03/native-svg.ts hops() idea, rebuilt as kit hopRow()"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-05.svg",
+     "w": 760,
+     "h": 623,
+     "sha256_16": "d5816a8ddc1c198e"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-05.svg",
+     "w": 360,
+     "h": 643,
+     "sha256_16": "b3834d586f08442e"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-05.svg",
+     "w": 760,
+     "h": 623,
+     "sha256_16": "523be27624e7548e"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-06",
+   "auditRow": "A-06",
+   "family": "shared",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "Four motion glyphs",
+   "svgTitle": "Four motion glyphs",
+   "state": "N",
+   "steps": [
+    "2B:7",
+    "2B:11"
+   ],
+   "teaches": "The four movement words as pure arrows, with no pitch names: one voice holds, voices go opposite ways, voices go the same way by different amounts, and the strict parallel case of equal amounts.",
+   "howToRead": "In each sketch the filled circle is the lower voice and the square is the upper voice, moving left to right. Watch the arrows: level or rising, opposite directions, same direction. The last sketch has two equal brackets to show that the distance travelled is the same.",
+   "alt": "Four small two-line sketches: one line rises while the other stays level; the lines move away from or toward each other; both rise by different amounts; both rise by the same amount.",
+   "svgDesc": "Four tiles. Oblique: the lower circle stays level while the upper square rises. Contrary: the lower circle falls while the upper square rises. Similar: both rise, the lower by more than the upper. Strict parallel: both rise by the same amount, shown with two equal dotted brackets. No pitch names are shown.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "m3",
+    "P4",
+    "M2",
+    "d5"
+   ],
+   "sources": [
+    "public/soundscape/w2/SYS-05_motion-glyph-library_source.svg (concept)",
+    "M03N/E02, E03, E04"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-06.svg",
+     "w": 760,
+     "h": 605,
+     "sha256_16": "4bd746b8190f8ad6"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-06.svg",
+     "w": 360,
+     "h": 1074,
+     "sha256_16": "65e905f9f1107885"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-06.svg",
+     "w": 760,
+     "h": 605,
+     "sha256_16": "3911ae1c7fb8cf0a"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-07",
+   "auditRow": "A-07",
+   "family": "shared",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "What stayed, what changed",
+   "svgTitle": "What stayed, what changed",
+   "state": "I",
+   "steps": [
+    "2B:10",
+    "2B:11",
+    "2C:5"
+   ],
+   "teaches": "A change in a pair can be described by saying which voice stayed and which moved. The interval changes only because one voice did.",
+   "howToRead": "Each row has three parts: the start pair, what stayed and what changed, and the end pair. The colour bar on each pair names that pair, not either voice. Read left to right, then check that the voice that stayed has the same note on both sides.",
+   "alt": "Two rows. Upper voice changes from E4 to F4 while the lower C4 stays: a major third becomes a perfect fourth. Lower voice changes from C4 to B3 while the upper F4 stays: a perfect fourth becomes a diminished fifth.",
+   "svgDesc": "Row one: C4 + E4, a major third of 4 semitones, becomes C4 + F4, a perfect fourth of 5 semitones. The lower voice C4 stayed; the upper voice moved from E4 to F4. Row two: C4 + F4 becomes B3 + F4, a diminished fifth of 6 semitones. The upper voice F4 stayed; the lower voice moved from C4 to B3.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/D10, F07 (concept)",
+    "week2/fixtures.ts B.path"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-07.svg",
+     "w": 760,
+     "h": 347,
+     "sha256_16": "086d39ee5be1fc17"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-07.svg",
+     "w": 360,
+     "h": 504,
+     "sha256_16": "4cfb0e6e63afd3bc"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-07.svg",
+     "w": 760,
+     "h": 347,
+     "sha256_16": "8f6b49b2bee17ddd"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-09",
+   "auditRow": "A-09",
+   "family": "shared",
+   "kind": "reference",
+   "disposition": "REUSE",
+   "title": "Plogger lens for the four named pairs",
+   "svgTitle": "Plogger lens for the four named pairs",
+   "state": "I",
+   "steps": [
+    "2B:5",
+    "2B:6",
+    "2C:5"
+   ],
+   "teaches": "The historic Plogger lens for minor third [3], major third [4], perfect fourth [5], tritone [6]: contour is the family, shadow direction is fundamental or octave, fill is harmonicity. It is a separate label from the identity colour.",
+   "howToRead": "Each chip has three separate marks: the outline shape, a shadow to the left, right or both sides, and the fill. The coloured bar beside it is the interval identity colour, which is a different label. The legend underneath states every mark in words and names the printed source this lens comes from.",
+   "alt": "Plogger chips for brackets 3, 4, 5, 6, each beside its identity colour, with the three-factor legend below.",
+   "svgDesc": "Plogger chips for [3] minor third, [4] major third, [5] perfect fourth, [6] tritone, each beside the pair's identity colour bar, followed by the three-factor legend: shape is the family, shadow is fundamental or octave, fill is harmonicity.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     3,
+     4,
+     5,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     },
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [
+    {
+     "bracket": 3,
+     "shape": "rounded",
+     "dir": "F",
+     "fill": "dark"
+    },
+    {
+     "bracket": 4,
+     "shape": "rounded",
+     "dir": "F",
+     "fill": "light"
+    },
+    {
+     "bracket": 5,
+     "shape": "straight",
+     "dir": "F",
+     "fill": "dark"
+    },
+    {
+     "bracket": 6,
+     "shape": "straight",
+     "dir": "both",
+     "fill": "neutral"
+    }
+   ],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "lib/soundscape/resources/interval-identity.ts PLOGGER_LENS_V1",
+    "lib/soundscape/m05/info-svg.ts chip(), panel(), legend() (reused unchanged)",
+    "public/soundscape/m05/info/IPF-plogger-chart.svg (full chart, linked)"
+   ],
+   "limits": "A historic teaching lens, not acoustic law. [6] follows the printed original; older code disputes its shape family. Never use on motion figures.",
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-09.svg",
+     "w": 760,
+     "h": 595,
+     "sha256_16": "6c6e52debe571975"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-09.svg",
+     "w": 360,
+     "h": 1079,
+     "sha256_16": "9392b3db13f49197"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-09.svg",
+     "w": 760,
+     "h": 595,
+     "sha256_16": "22c39f95bd26751c"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-09a",
+   "auditRow": "A-09",
+   "family": "shared",
+   "kind": "reference",
+   "disposition": "REUSE",
+   "title": "Plogger lens for the 2A pairs",
+   "svgTitle": "Plogger lens for the 2A pairs",
+   "state": "I",
+   "steps": [
+    "2A:5",
+    "2A:6"
+   ],
+   "teaches": "The historic Plogger lens for minor third [3], major third [4], perfect fourth [5]: contour is the family, shadow direction is fundamental or octave, fill is harmonicity. It is a separate label from the identity colour.",
+   "howToRead": "Each chip has three separate marks: the outline shape, a shadow to the left, right or both sides, and the fill. The coloured bar beside it is the interval identity colour, which is a different label. The legend underneath states every mark in words and names the printed source this lens comes from.",
+   "alt": "Plogger chips for brackets 3, 4, 5, each beside its identity colour, with the three-factor legend below.",
+   "svgDesc": "Plogger chips for [3] minor third, [4] major third, [5] perfect fourth, each beside the pair's identity colour bar, followed by the three-factor legend: shape is the family, shadow is fundamental or octave, fill is harmonicity.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     3,
+     4,
+     5
+    ],
+    "hex": [
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     },
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     }
+    ]
+   },
+   "plogger": [
+    {
+     "bracket": 3,
+     "shape": "rounded",
+     "dir": "F",
+     "fill": "dark"
+    },
+    {
+     "bracket": 4,
+     "shape": "rounded",
+     "dir": "F",
+     "fill": "light"
+    },
+    {
+     "bracket": 5,
+     "shape": "straight",
+     "dir": "F",
+     "fill": "dark"
+    }
+   ],
+   "forbiddenInNeutralState": [
+    "diminished",
+    "tritone"
+   ],
+   "sources": [
+    "lib/soundscape/resources/interval-identity.ts PLOGGER_LENS_V1",
+    "lib/soundscape/m05/info-svg.ts chip(), panel(), legend() (reused unchanged)",
+    "public/soundscape/m05/info/IPF-plogger-chart.svg (full chart, linked)"
+   ],
+   "limits": "A historic teaching lens, not acoustic law. [6] follows the printed original; older code disputes its shape family. Never use on motion figures.",
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-09a.svg",
+     "w": 760,
+     "h": 595,
+     "sha256_16": "2779a281a4fd624d"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-09a.svg",
+     "w": 360,
+     "h": 913,
+     "sha256_16": "e791ee9f659720e7"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-09a.svg",
+     "w": 760,
+     "h": 595,
+     "sha256_16": "7139352120e83b1b"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-11",
+   "auditRow": "A-11 (added)",
+   "family": "shared",
+   "kind": "reference",
+   "disposition": "DERIVE",
+   "title": "Pair badges used in Week 2",
+   "svgTitle": "Pair badges used in Week 2",
+   "state": "I",
+   "steps": [
+    "2B:5",
+    "2B:6"
+   ],
+   "teaches": "The one badge every named pair in Week 2 uses: colour bar, interval name, the two actual notes, semitones and letters. The same badge appears in every lesson.",
+   "howToRead": "Read each badge from the top: interval name and short symbol, then the two notes with their octave numbers, then the two counts. The colour bar belongs to the whole pair. Two badges can share a colour (C4 + F4 and B3 + E4 are both perfect fourths), because colour follows the interval, not the notes.",
+   "alt": "Seven pair badges, each a colour bar with the interval name, the two notes with octave numbers, the semitone count and the letter count.",
+   "svgDesc": "Badges: C4 + E4, major third, 4 semitones, 3 letters; E4 + G4, minor third, 3 semitones, 3 letters; C4 + F4, perfect fourth, 5 semitones, 4 letters; B3 + E4, perfect fourth, 5 semitones, 4 letters; D4 + E4, major second, 2 semitones, 2 letters; B3 + F4, diminished fifth, 6 semitones, 5 letters; D4 + F4, minor third, 3 semitones, 3 letters.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 2,
+      "hex": "#C17D41",
+      "id": "IP-02"
+     },
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     },
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "lib/soundscape/m05/info-svg.ts header() idea",
+    "week2/fixtures.ts pairs"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-11.svg",
+     "w": 760,
+     "h": 357,
+     "sha256_16": "204c0553012b5658"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-11.svg",
+     "w": 360,
+     "h": 560,
+     "sha256_16": "d8bfe8cc2b47cb21"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-11.svg",
+     "w": 760,
+     "h": 357,
+     "sha256_16": "230ea04743bc89a0"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "A-12",
+   "auditRow": "A-12 (added)",
+   "family": "shared",
+   "kind": "reference",
+   "disposition": "REVISE",
+   "title": "How to read our pictures",
+   "svgTitle": "How to read our pictures",
+   "state": "N+I",
+   "steps": [
+    "H",
+    "2A:5"
+   ],
+   "teaches": "The marks every Week 2 picture uses, including the rule that colour belongs to a pair of notes, not to a voice, and that shape tells the voices apart.",
+   "howToRead": "Read this once before the lessons. The two voices are told apart by shape (circle and square), so the picture still works in black and white. Colour appears only after a pair has been named, as a bar that belongs to the two notes together.",
+   "alt": "A legend of the marks used in Week 2 pictures: lower voice circle, upper voice square, dashed start shape, solid note bar, dashed rest, colour bar, hop numbers, Plogger chip, and note names with octave numbers.",
+   "svgDesc": "A legend. Filled circle: the lower voice. Light square with a dark outline: the upper voice. Dashed shape: where a voice started before it moved. Solid bar: a note sounding, as wide as it lasts. Dashed box: a rest, which is silence in that voice. Colour bar: names one pair of notes. Colour belongs to the pair, never to a voice. Numbers on arcs: semitone hops, counting every key, black ones too. Plogger chip: a separate historic lens (outline, shadow, fill). It is not the colour. Note names keep their octave number: B3 and B4 are different keys.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     3,
+     4
+    ],
+    "hex": [
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     },
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel"
+   ],
+   "sources": [
+    "M03N/S12-native.svg (revised: two lines added, colour rule)",
+    "lib/soundscape/m05/info-svg.ts legend() wording"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/A-12.svg",
+     "w": 760,
+     "h": 429,
+     "sha256_16": "9c9b0252e8c6450a"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/A-12.svg",
+     "w": 360,
+     "h": 567,
+     "sha256_16": "197d45e33b9c0028"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/A-12.svg",
+     "w": 760,
+     "h": 429,
+     "sha256_16": "ae56621bf247fae8"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "H-01",
+   "auditRow": "H-01",
+   "family": "hub",
+   "kind": "figure",
+   "disposition": "CREATE",
+   "title": "The Week 2 path: three lessons",
+   "svgTitle": "The Week 2 path: three lessons",
+   "state": "N",
+   "steps": [
+    "H"
+   ],
+   "teaches": "The order of the week: first one voice moves, then both voices move, then two short sketches put the ideas to work.",
+   "howToRead": "Follow the arrows from left to right (top to bottom on a phone). Each box names the lesson and what you do in it. The boxes do not give away the vocabulary; it is introduced in the lessons themselves.",
+   "alt": "Three connected steps: 2A one voice moves, 2B both voices move, 2C two short compositions.",
+   "svgDesc": "Three boxes joined by arrows: Lesson 2A, one voice moves; Lesson 2B, both voices move; Lesson 2C, two short sketches.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone"
+   ],
+   "sources": [
+    "W2_FINAL_CONTENT_HUB_MANUSCRIPT_V2 (map of the week)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/H-01.svg",
+     "w": 760,
+     "h": 198,
+     "sha256_16": "c3a2acafc99531b4"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/H-01.svg",
+     "w": 360,
+     "h": 440,
+     "sha256_16": "8bdb86d97d1e73bf"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/H-01.svg",
+     "w": 760,
+     "h": 198,
+     "sha256_16": "b36aa2a5eefa2b98"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "H-02",
+   "auditRow": "H-02",
+   "family": "hub",
+   "kind": "figure",
+   "disposition": "CREATE",
+   "title": "Week 1 used C3; Week 2 starts at C4",
+   "svgTitle": "Week 1 used C3; Week 2 starts at C4",
+   "state": "N",
+   "steps": [
+    "H",
+    "2A:1"
+   ],
+   "teaches": "Week 1 started on C3 and Week 2 starts on C4. They are different keys, one octave apart, and not the same pitch.",
+   "howToRead": "Find the two marked C keys: C3 on the left, C4 in the middle. Each C is the white key just left of a group of two black keys. The bracket joins them; it is a comparison between two registers, not an interval you will study this week.",
+   "alt": "A keyboard from C3 to C5 with C3 and C4 marked, one octave apart, and a label saying these are two different keys.",
+   "svgDesc": "A keyboard from C3 to C5. C3 and C4 are each marked with a filled circle. A neutral bracket joins them: two different keys one octave apart. Not a Week 2 interval.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel"
+   ],
+   "sources": [
+    "lib/soundscape/m02/keyboard-geometry.ts buildKeyboard(C, 15, 48)",
+    "Week 1 W1-06 (style only)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/H-02.svg",
+     "w": 760,
+     "h": 372,
+     "sha256_16": "bfb07c9a85c3f0f5"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/H-02.svg",
+     "w": 360,
+     "h": 352,
+     "sha256_16": "ee7436557992405b"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/H-02.svg",
+     "w": 760,
+     "h": 372,
+     "sha256_16": "8c25d38dcef71704"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "H-03",
+   "auditRow": "H-03",
+   "family": "hub",
+   "kind": "figure",
+   "disposition": "CREATE",
+   "title": "From a note to harmony",
+   "svgTitle": "From a note to harmony",
+   "state": "N+I",
+   "steps": [
+    "H"
+   ],
+   "teaches": "How the week's ideas build on each other: a note, two notes (an interval), a line of notes (a voice), a change between pairs (motion), and what the pairs make together (harmony).",
+   "howToRead": "Read down the chain. Each box adds one idea to the one above it. The worked example beside \"interval\" uses C4 and E4 and carries the only colour on the page, because it is the only pair that is named here.",
+   "alt": "A chain of five ideas: pitch, interval, voice, motion, harmony, with one worked example: C4 and E4 form a major third.",
+   "svgDesc": "Five boxes in a chain: 1 Pitch, 2 Interval (worked example: C4 + E4, a major third, 4 semitones, 3 letters), 3 Voice, 4 Motion, 5 Harmony.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "W2_FINAL_CONTENT_HUB_MANUSCRIPT_V2",
+    "lib/soundscape/resources/interval-identity.ts (M3 hue via kit badge)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/H-03.svg",
+     "w": 760,
+     "h": 612,
+     "sha256_16": "b436104d5335343f"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/H-03.svg",
+     "w": 360,
+     "h": 662,
+     "sha256_16": "4c492652970d9c2e"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/H-03.svg",
+     "w": 760,
+     "h": 612,
+     "sha256_16": "4367c8c4a979fd88"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "H-04",
+   "auditRow": "H-04",
+   "family": "hub",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "Three lessons in miniature",
+   "svgTitle": "Three lessons in miniature",
+   "state": "N",
+   "steps": [
+    "H"
+   ],
+   "teaches": "A glimpse of what each lesson looks like on the page: one moving voice, two moving voices, and a timeline with rests.",
+   "howToRead": "Each tile is a tiny version of a picture you will meet in that lesson. Only the shapes matter here: circles and squares are the lower and upper voice, dashed shapes show where a voice started, and the dashed boxes in the third tile are rests.",
+   "alt": "Three small tiles: a keyboard with one voice moving (2A), a keyboard with both voices moving (2B), and a two-lane timeline with a resting upper voice (2C).",
+   "svgDesc": "Tile 2A: a keyboard, lower C4 held and upper E4 moving to F4. Tile 2B: a keyboard, lower C4 moving to D4 and upper E4 moving to F4. Tile 2C: a 36-second two-lane timeline with the upper voice resting between three short notes. No interval names are given.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel"
+   ],
+   "sources": [
+    "miniatures of 2A-05, 2B-07 and 2C-01 built from the same kit functions",
+    "week2/fixtures.ts"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/H-04.svg",
+     "w": 760,
+     "h": 395,
+     "sha256_16": "952d4fe6500f5be7"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/H-04.svg",
+     "w": 360,
+     "h": 997,
+     "sha256_16": "fb1119d66e72ecf4"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/H-04.svg",
+     "w": 760,
+     "h": 395,
+     "sha256_16": "4aa273edc04d881d"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-01",
+   "auditRow": "2A-01",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Two notes, two voices: C4 and E4",
+   "svgTitle": "Two notes, two voices: C4 and E4",
+   "state": "N",
+   "steps": [
+    "2A:2"
+   ],
+   "teaches": "Two notes can be two voices: a lower one and an upper one. You play C4, then E4, then both together, on your own keyboard.",
+   "howToRead": "Find C4 (the circle) and E4 (the square) on the keyboard. The three prompts underneath are things to do on your own keyboard: play the lower note, play the upper note, then play both. The picture does not name the pair yet; that comes later in the lesson.",
+   "alt": "A keyboard from C4 to C5. C4 is marked with a filled circle as the lower voice and E4 with a square as the upper voice. Three prompts say to play C4 alone, E4 alone, then both.",
+   "svgDesc": "A keyboard from C4 to C5. C4 is marked with a filled circle (lower voice) and E4 with a light square (upper voice). Three prompts: play C4 alone, play E4 alone, play both together. No interval name is given.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone",
+    "hop",
+    "third"
+   ],
+   "sources": [
+    "M03N/D01-native.svg, D02-native.svg (geometry)",
+    "week2/fixtures.ts A.together (C4 = 60, E4 = 64)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-01.svg",
+     "w": 760,
+     "h": 402,
+     "sha256_16": "f6c1a4d9542106de"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-01.svg",
+     "w": 360,
+     "h": 455,
+     "sha256_16": "2376a7e8665c19a4"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-01.svg",
+     "w": 760,
+     "h": 402,
+     "sha256_16": "a766437566240f48"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-02",
+   "auditRow": "2A-02",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "CREATE",
+   "title": "Count the letters: C D E and E F G",
+   "svgTitle": "Count the letters: C D E and E F G",
+   "state": "N",
+   "steps": [
+    "2A:3"
+   ],
+   "teaches": "Counting letters, first and last included: C to E is three letters, and E to G is also three letters. At this point no semitones are counted.",
+   "howToRead": "The numbers sit on lettered keys only. Start at the lower note and count 1 on it, then each lettered key up to the upper note. Both pairs end on 3 even though the notes are different; the next step counts something else.",
+   "alt": "Two keyboards from C4 to G4. On the first, keys C, D, E carry the numbers 1, 2, 3 with C4 and E4 marked. On the second, keys E, F, G carry 1, 2, 3 with E4 and G4 marked.",
+   "svgDesc": "Two keyboards from C4 to G4. First: C4 lower voice and E4 upper voice, with the letters C, D, E numbered 1, 2, 3. Second: E4 lower voice and G4 upper voice, with E, F, G numbered 1, 2, 3. Letters only.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone",
+    "hop"
+   ],
+   "sources": [
+    "M03N/D02-native.svg (geometry)",
+    "week2/fixtures.ts A.together, A.EG"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-02.svg",
+     "w": 760,
+     "h": 605,
+     "sha256_16": "570290aa8247a677"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-02.svg",
+     "w": 360,
+     "h": 625,
+     "sha256_16": "fd54fb5d6881ced0"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-02.svg",
+     "w": 760,
+     "h": 605,
+     "sha256_16": "b011c08e9e320b42"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-03",
+   "auditRow": "2A-03",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "Count the semitones: every key counts",
+   "svgTitle": "Count the semitones: every key counts",
+   "state": "N",
+   "steps": [
+    "2A:4"
+   ],
+   "teaches": "Semitones count every key, black or white. C4 to E4 is four hops and E4 to G4 is three hops, although both span three letters.",
+   "howToRead": "Each arc is one hop to the very next key, whatever its colour. Count the arcs from the lower note to the upper note; the last number is the total. The two totals differ (4 and 3) even though both pairs span the letters C D E and E F G.",
+   "alt": "Two keyboards from C4 to G4. Four numbered hops lead from C4 to E4 across C-sharp and D-sharp. Three numbered hops lead from E4 to G4 across F and F-sharp.",
+   "svgDesc": "Two keyboards from C4 to G4. C4 + E4: 4 semitones, numbered hops 1 to 4 across the black keys. E4 + G4: 3 semitones, numbered hops 1 to 3. Quality words are not used yet.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel"
+   ],
+   "sources": [
+    "M03N/D03-native.svg (first half only)",
+    "week2/fixtures.ts A.together, A.EG",
+    "lib/soundscape/m05/info-svg.ts hopRow() idea"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-03.svg",
+     "w": 760,
+     "h": 703,
+     "sha256_16": "1ba0c03476ea9915"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-03.svg",
+     "w": 360,
+     "h": 723,
+     "sha256_16": "800c2da45cf46ea3"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-03.svg",
+     "w": 760,
+     "h": 703,
+     "sha256_16": "a3e436f23abf6674"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-04",
+   "auditRow": "2A-04",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "CREATE",
+   "title": "Same letters, different size: major and minor third",
+   "svgTitle": "Same letters, different size: major and minor third",
+   "state": "I",
+   "steps": [
+    "2A:5"
+   ],
+   "teaches": "Two thirds, three letters each, but four semitones (major third) against three (minor third). E4 and G4 are an actual minor third with its own colour, not the Palette's C4 and E♭4.",
+   "howToRead": "The coloured bracket under each keyboard names the pair. The bar on the badge uses the same colour as the keys, because the colour belongs to the pair of notes. The two colours differ because the semitone counts differ, even though both pairs span three letters.",
+   "alt": "Two keyboards from C4 to G4. C4 and E4 are highlighted in the major third colour with four semitones. E4 and G4 are highlighted in the minor third colour with three semitones.",
+   "svgDesc": "Keyboard one: C4 + E4, a major third, 4 semitones, three letters, in the major third colour #AB812D. Keyboard two: E4 + G4, a minor third, 3 semitones, three letters, in the minor third colour #8964A4.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     3
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M05 IPF-intro-04 (style)",
+    "lib/soundscape/m05/info-svg.ts BY(3), BY(4) names",
+    "week2/fixtures.ts A.together, A.EG",
+    "does not reuse the Palette C4 + E♭4 note spelling"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-04.svg",
+     "w": 760,
+     "h": 731,
+     "sha256_16": "23c0ad0e11acb6cf"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-04.svg",
+     "w": 360,
+     "h": 727,
+     "sha256_16": "fd3bea31d83b4ca8"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-04.svg",
+     "w": 760,
+     "h": 731,
+     "sha256_16": "b4140028476ccdc9"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-05",
+   "auditRow": "2A-05",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "One voice moves: a major third becomes a perfect fourth",
+   "svgTitle": "One voice moves: a major third becomes a perfect fourth",
+   "state": "I",
+   "steps": [
+    "2A:6"
+   ],
+   "teaches": "When only the upper voice moves up by one semitone, the interval grows from a major third (4 semitones) to a perfect fourth (5). The lower voice stays on C4.",
+   "howToRead": "The dashed square is where the upper voice started (E4) and the arrow shows its single step to F4. The lower voice, the circle on C4, does not move. The keys are coloured for the pair where you finish, and the two badges name the start and the end.",
+   "alt": "A keyboard from B3 to G4. The lower voice holds C4. The upper voice moves up from E4 to F4 and the pair changes from a major third of 4 semitones to a perfect fourth of 5.",
+   "svgDesc": "Start C4 + E4, end C4 + F4. The lower voice holds C4. The upper voice moves from E4 to F4, up 1 semitone. The pair changes from a major third (4 semitones) to a perfect fourth (5 semitones).",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "contrary",
+    "similar",
+    "parallel",
+    "diminished",
+    "tritone"
+   ],
+   "sources": [
+    "M03N/D05-native.svg (facts, octaves added)",
+    "week2/fixtures.ts A.upperEF",
+    "replaces W2-02_dyad-transformations case 1"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-05.svg",
+     "w": 760,
+     "h": 442,
+     "sha256_16": "59e0975ab4955ec5"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-05.svg",
+     "w": 360,
+     "h": 554,
+     "sha256_16": "d502d60a55638d2c"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-05.svg",
+     "w": 760,
+     "h": 442,
+     "sha256_16": "e2ef1ca7f62cb16e"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-06",
+   "auditRow": "2A-06",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "The foundation can travel",
+   "svgTitle": "The foundation can travel",
+   "state": "I",
+   "steps": [
+    "2A:7"
+   ],
+   "teaches": "The lower voice can move too. C4 down to B3 under E4 makes a perfect fourth (5 semitones); C4 up to D4 makes a major second (2 semitones).",
+   "howToRead": "Each keyboard starts from the same pair, C4 and E4, shown by dashed marks. Read the arrow above the keys to see which way the lower voice went and by how much, then read the badges for the new pair. The keyboard starts at B3, so the key just below C4 is on the picture.",
+   "alt": "Two keyboards from B3 to G4. First, the lower voice falls from C4 to B3 while the upper E4 holds: a major third becomes a perfect fourth. Second, the lower voice rises from C4 to D4 while E4 holds: a major third becomes a major second.",
+   "svgDesc": "Start C4 + E4, end B3 + E4. The lower voice moves from C4 to B3, down 1 semitone. The upper voice holds E4. Result: a perfect fourth, 5 semitones. Second panel: Start C4 + E4, end D4 + E4. The lower voice moves from C4 to D4, up 2 semitones. The upper voice holds E4. Result: a major second, 2 semitones.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5,
+     2
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 2,
+      "hex": "#C17D41",
+      "id": "IP-02"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "contrary",
+    "similar",
+    "parallel",
+    "diminished",
+    "tritone"
+   ],
+   "sources": [
+    "M03N/D06-native.svg (octaves, B3 window, hue)",
+    "week2/fixtures.ts A.lowerCB, A.lowerCD",
+    "replaces W2-06_two-lines-on-one-keyboard (no B3)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-06.svg",
+     "w": 760,
+     "h": 843,
+     "sha256_16": "0173cca6b4602699"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-06.svg",
+     "w": 360,
+     "h": 1071,
+     "sha256_16": "5b5ebbb5c38e2edd"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-06.svg",
+     "w": 760,
+     "h": 843,
+     "sha256_16": "f73622ad0b69195c"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-07",
+   "auditRow": "2A-07",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "Three changes from one beginning",
+   "svgTitle": "Three changes from one beginning",
+   "state": "I",
+   "steps": [
+    "2A:8",
+    "2A:10"
+   ],
+   "teaches": "One beginning, three small changes, three different results: perfect fourth, perfect fourth, major second. The summary the lesson ends on.",
+   "howToRead": "Each card names the change in words, then lists the start pair and the end pair with their colour bars. Compare the end swatches: the first two changes land on the same colour, because both give 5 semitones, even though different notes moved.",
+   "alt": "A table of three changes that all start from C4 + E4, a major third: upper voice up one gives C4 + F4; lower voice down one gives B3 + E4; lower voice up two gives D4 + E4.",
+   "svgDesc": "All three start from C4 + E4, a major third of 4 semitones. Change 1, upper voice up one semitone: C4 + F4, a perfect fourth of 5 semitones. Change 2, lower voice down one semitone: B3 + E4, a perfect fourth of 5 semitones. Change 3, lower voice up two semitones: D4 + E4, a major second of 2 semitones.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5,
+     2
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 2,
+      "hex": "#C17D41",
+      "id": "IP-02"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "contrary",
+    "similar",
+    "parallel",
+    "diminished",
+    "tritone"
+   ],
+   "sources": [
+    "M03N/D09-native.svg, D10-native.svg (recap form)",
+    "week2/fixtures.ts A.upperEF, A.lowerCB, A.lowerCD"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-07.svg",
+     "w": 760,
+     "h": 377,
+     "sha256_16": "b78eaf6bd5a9f310"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-07.svg",
+     "w": 360,
+     "h": 475,
+     "sha256_16": "caf728462da3fbd2"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-07.svg",
+     "w": 760,
+     "h": 377,
+     "sha256_16": "6bba59cbafcc0db1"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-08",
+   "auditRow": "2A-08",
+   "family": "2A",
+   "kind": "worksheet",
+   "disposition": "REVISE",
+   "title": "Your keyboard sheet: build, then change",
+   "svgTitle": "Your keyboard sheet: build, then change",
+   "state": "I",
+   "steps": [
+    "2A:9"
+   ],
+   "teaches": "A paper companion for working at your own keyboard: write down the notes and counts for a major third, a minor third and three changes. Nothing is scored.",
+   "howToRead": "Work on your own keyboard and write what you find on the lines. The first change row is already filled in as an example with its colour bar. The printed version carries the same words and lines in black and white; there is no check button and no score.",
+   "alt": "A printable worksheet: blanks to build a major third and a minor third on your keyboard, and a table of three changes from C4 + E4 with one worked row.",
+   "svgDesc": "A worksheet with blank lines. Build a major third: lower note, upper note, letters, semitones. Build a minor third: the same four blanks. Three changes from C4 + E4: upper voice up 1 (worked example: C4 + F4, perfect fourth, 4 letters, 5 semitones), lower voice down 1 (blank), lower voice up 2 (blank).",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     5
+    ],
+    "hex": [
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/D09-native.svg",
+    "public/soundscape/w2/W2-04_blank-two-voice-path_blank.svg (blank-line form)",
+    "week2/fixtures.ts A.upperEF"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-08.svg",
+     "w": 760,
+     "h": 538,
+     "sha256_16": "dd8b0f801b7f88c1"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-08.svg",
+     "w": 360,
+     "h": 905,
+     "sha256_16": "78d37cad0e3f48f5"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-08.svg",
+     "w": 760,
+     "h": 538,
+     "sha256_16": "8b1ec41f6bad6bb3"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-09",
+   "auditRow": "2A-09 (N derivative of IPF-intro-05)",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "One after another, and together",
+   "svgTitle": "One after another, and together",
+   "state": "N",
+   "steps": [
+    "2A:2"
+   ],
+   "teaches": "Two notes can be played one after another or at the same time. Together, the lower note sits under the upper note.",
+   "howToRead": "In the first row, read left to right: the lower note first, then the upper note. In the second row the two notes share one slot: the square (upper) sits above the circle (lower) because they sound at the same moment. Try both on your own keyboard.",
+   "alt": "Two rows. In the first, C4 then E4 are played one after the other. In the second, C4 and E4 are played together, E4 above C4.",
+   "svgDesc": "Row one: C4 (lower voice, circle) then E4 (upper voice, square), one after the other. Row two: E4 above C4 in one slot, played together. No interval name is shown.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone",
+    "third"
+   ],
+   "sources": [
+    "public/soundscape/m05/info/IPF-intro-05.svg (reused later, at step 5, for the named version)",
+    "lib/soundscape/m05/info-svg.ts strip2() idea (neutral derivative: no hue, no name)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-09.svg",
+     "w": 760,
+     "h": 343,
+     "sha256_16": "6d13e2fcef816313"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-09.svg",
+     "w": 360,
+     "h": 363,
+     "sha256_16": "28067f512102216d"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-09.svg",
+     "w": 760,
+     "h": 343,
+     "sha256_16": "45a72708d5053a40"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2A-10",
+   "auditRow": "2A-10",
+   "family": "2A",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "The foundation moves: E4 and G4, a minor third",
+   "svgTitle": "The foundation moves: E4 and G4, a minor third",
+   "state": "I",
+   "steps": [
+    "2A:5"
+   ],
+   "teaches": "A third does not have to start on C. E4 to G4 spans three letters and three semitones: a minor third, in the minor third colour.",
+   "howToRead": "Count the three arcs from E4 up to G4 (E to F, F to F♯, F♯ to G). The keys and the bracket share the minor third colour because that colour belongs to the pair, wherever it sits on the keyboard. The pair is E4 and G4, not C4 and E♭4.",
+   "alt": "A keyboard from C4 to G4. E4 is the lower voice and G4 the upper voice, both highlighted in the minor third colour, with three numbered hops from E4 to G4.",
+   "svgDesc": "Keyboard C4 to G4. E4 lower voice and G4 upper voice in the minor third colour #8964A4. Three numbered hops: E4 to F4, F4 to F♯4, F♯4 to G4. 3 letters, 3 semitones: a minor third.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     3
+    ],
+    "hex": [
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "E♭",
+    "Eb",
+    "contrary",
+    "similar",
+    "parallel"
+   ],
+   "sources": [
+    "M03N/D03-native.svg (second half)",
+    "week2/fixtures.ts A.EG (E4 = 64, G4 = 67)",
+    "lib/soundscape/m05/info-svg.ts hopRow() idea",
+    "does not copy the Palette C4 + E♭4 spelling"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2A-10.svg",
+     "w": 760,
+     "h": 442,
+     "sha256_16": "4d7dfad1e37bfffb"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2A-10.svg",
+     "w": 360,
+     "h": 438,
+     "sha256_16": "e61d96b302e270fb"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2A-10.svg",
+     "w": 760,
+     "h": 442,
+     "sha256_16": "60bb8d227fc2c950"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-01a",
+   "auditRow": "2B-01 (step 2 master)",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REPLACE",
+   "title": "Two paths through time",
+   "svgTitle": "Two paths through time",
+   "state": "N",
+   "steps": [
+    "2B:1",
+    "2B:2"
+   ],
+   "teaches": "Each voice has its own path across time (horizontal), and at any one stage the two notes make a gap (vertical). Two directions to look in: along a path, and between the voices.",
+   "howToRead": "Read each line from left to right: that is a voice's path. Then look straight up at one stage: the vertical gap there is the two notes at that moment. The picture gives only note names and stages. It does not name the pair or the movement; the lesson does that next.",
+   "alt": "Two lines drawn across two stages. The lower line stays on C4. The upper line goes from E4 at stage 1 to F4 at stage 2. A vertical gap at each stage joins the two notes.",
+   "svgDesc": "Two stages. Stage 1: C4 + E4. Stage 2: C4 + F4. The lower voice holds C4. The upper voice goes from E4 to F4. No interval or movement names are given.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "semitone",
+    "six",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel"
+   ],
+   "sources": [
+    "public/soundscape/w2/SYS-04_voice-path-chart_learner.svg (grammar only; its learner version hid beat 2)",
+    "week2/fixtures.ts B.upperRises",
+    "replaces SYS-04"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-01a.svg",
+     "w": 760,
+     "h": 343,
+     "sha256_16": "6d12a5fe1d484e82"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-01a.svg",
+     "w": 360,
+     "h": 359,
+     "sha256_16": "55094bd4d6d8bf4e"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-01a.svg",
+     "w": 760,
+     "h": 343,
+     "sha256_16": "e49fe53856736ef5"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-01b",
+   "auditRow": "2B-01 (step 3 master)",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REPLACE",
+   "title": "Before we name it: two journeys",
+   "svgTitle": "Before we name it: two journeys",
+   "state": "N",
+   "steps": [
+    "2B:3"
+   ],
+   "teaches": "Two journeys from the same two notes. Compare them: in each, one voice does something different. The picture shows only the notes and the arrows, so you can decide what you notice before it is named.",
+   "howToRead": "Each keyboard starts from the dashed shapes on C4 and E4 and ends on the solid shapes. Follow the arrows and compare the two journeys with your eyes and, if you like, with your own keyboard. There are no labels on the endings: that is deliberate, and the next step supplies the names.",
+   "alt": "Two keyboards from B3 to G4, each starting from C4 and E4. Journey 1: the lower voice moves from C4 to B3 and the upper from E4 to F4. Journey 2: the lower moves from C4 to D4 and the upper from E4 to F4.",
+   "svgDesc": "Journey 1: C4 + E4 to B3 + F4. Journey 2: C4 + E4 to D4 + F4. Arrows show which way each voice goes. Nothing is named or counted.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "semitone",
+    "six",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel",
+    "up 1",
+    "down 1",
+    "up 2"
+   ],
+   "sources": [
+    "M03N/E01 idea (art E01 dropped: wrong ribbon count)",
+    "week2/fixtures.ts B.lowerFalls... see FIVE B2/B4, B3/B5 endings",
+    "replaces SYS-04 learner"
+   ],
+   "limits": "Inquiry figure: must not carry result labels, sizes, hue or movement words in the picture, title, description or alt.",
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-01b.svg",
+     "w": 760,
+     "h": 653,
+     "sha256_16": "be01c432cea6398b"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-01b.svg",
+     "w": 360,
+     "h": 649,
+     "sha256_16": "3ca41ca7fcbe863d"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-01b.svg",
+     "w": 760,
+     "h": 653,
+     "sha256_16": "f174982c8ce4fbf7"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-02",
+   "auditRow": "2B-02",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "Three families of motion, with exact examples",
+   "svgTitle": "Kinds of motion, with exact examples",
+   "state": "N",
+   "steps": [
+    "2B:4"
+   ],
+   "teaches": "The three families of motion as exact keyboard examples: oblique, contrary (both apart and together) and similar. The narrower word \"parallel\" comes later, in step 6.",
+   "howToRead": "Each tile is one example with its definition above it. The dashed shapes are where each voice started and the arrows show where it goes. Contrary covers two examples, moving apart and moving together. Match what the arrows do to the words, not the other way round.",
+   "alt": "Four small keyboards: oblique (only the upper voice moves), contrary apart, contrary together, and similar. Each starts from two notes and shows an arrow for every voice that moves.",
+   "svgDesc": "Four keyboards from B3 to G4. Oblique: C4 + E4 to C4 + F4. Contrary, apart: C4 + E4 to B3 + F4. Contrary, together: B3 + F4 to C4 + E4. Similar: C4 + E4 to D4 + F4. Notes and arrows only; no interval names.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "diminished",
+    "tritone",
+    "parallel"
+   ],
+   "sources": [
+    "M03N/E02, E03, E04",
+    "public/soundscape/w2/SYS-05_motion-glyph-library_source.svg (the strict parallel glyph moves to A-06 and 2B-09)",
+    "week2/fixtures.ts B.upperRises, B.apart, B.path stage 3→4, B.climb"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-02.svg",
+     "w": 760,
+     "h": 772,
+     "sha256_16": "d923244f26e72506"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-02.svg",
+     "w": 360,
+     "h": 1442,
+     "sha256_16": "c28148751b4d6c3d"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-02.svg",
+     "w": 760,
+     "h": 772,
+     "sha256_16": "d98952d4c96eaae8"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-03",
+   "auditRow": "2B-03",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Change 1: only the upper voice rises",
+   "svgTitle": "Change 1: only the upper voice rises",
+   "state": "N",
+   "steps": [
+    "2B:4",
+    "2B:8"
+   ],
+   "teaches": "The first of the five changes: C4 holds while E4 rises to F4. One voice holds and one moves, which is oblique motion.",
+   "howToRead": "The dashed square is where the upper voice began, on E4, and the arrow takes it to F4. The circle on C4 does not move. The page does not yet say what pair this makes; you will name it later, from the same picture.",
+   "alt": "A keyboard from B3 to G4. The lower voice holds C4; the upper voice moves from E4 up to F4.",
+   "svgDesc": "Start C4 + E4, end C4 + F4. The lower voice holds C4. The upper voice moves from E4 to F4. Oblique motion: one voice holds while the other moves.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone"
+   ],
+   "sources": [
+    "M03N/E02-native.svg panel B1",
+    "week2/fixtures.ts FIVE[0] (B1)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-03.svg",
+     "w": 760,
+     "h": 369,
+     "sha256_16": "73d8e9c988fa3d75"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-03.svg",
+     "w": 360,
+     "h": 365,
+     "sha256_16": "a3e6ef6056a9a56a"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-03.svg",
+     "w": 760,
+     "h": 369,
+     "sha256_16": "0a1b5751373227bf"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-04",
+   "auditRow": "2B-04",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Change 2: only the lower voice falls",
+   "svgTitle": "Change 2: only the lower voice falls",
+   "state": "N",
+   "steps": [
+    "2B:4",
+    "2B:8"
+   ],
+   "teaches": "The second of the five changes: E4 holds while C4 falls to B3. One voice holds, one moves, so this is also oblique.",
+   "howToRead": "The dashed circle on C4 is where the lower voice began; the arrow takes it left to B3. The square on E4 stays. The keyboard starts at B3, so the new low note is on the picture.",
+   "alt": "A keyboard from B3 to G4. The upper voice holds E4; the lower voice moves from C4 down to B3.",
+   "svgDesc": "Start C4 + E4, end B3 + E4. The lower voice moves from C4 to B3. The upper voice holds E4. Oblique motion: one voice holds while the other moves.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone"
+   ],
+   "sources": [
+    "M03N/E02-native.svg panel B2",
+    "week2/fixtures.ts FIVE[1] (B2)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-04.svg",
+     "w": 760,
+     "h": 369,
+     "sha256_16": "001a8f1db5b51ffd"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-04.svg",
+     "w": 360,
+     "h": 365,
+     "sha256_16": "168f371be8e69c4a"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-04.svg",
+     "w": 760,
+     "h": 369,
+     "sha256_16": "cc49399f2d378029"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-05",
+   "auditRow": "2B-05",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Change 3: only the lower voice rises",
+   "svgTitle": "Change 3: only the lower voice rises",
+   "state": "N",
+   "steps": [
+    "2B:4",
+    "2B:8"
+   ],
+   "teaches": "The third of the five changes: E4 holds while C4 rises to D4. Again one voice holds and one moves, oblique motion, but the lower voice now moves up.",
+   "howToRead": "The dashed circle on C4 is the start; the arrow takes the lower voice right to D4, one key below the held E4. Compare with change 2: same voice moving, the other direction.",
+   "alt": "A keyboard from B3 to G4. The upper voice holds E4; the lower voice moves from C4 up to D4.",
+   "svgDesc": "Start C4 + E4, end D4 + E4. The lower voice moves from C4 to D4. The upper voice holds E4. Oblique motion: one voice holds while the other moves.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone"
+   ],
+   "sources": [
+    "M03N/E02-native.svg panel B3",
+    "week2/fixtures.ts FIVE[2] (B3)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-05.svg",
+     "w": 760,
+     "h": 369,
+     "sha256_16": "4d4460834d74cedc"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-05.svg",
+     "w": 360,
+     "h": 365,
+     "sha256_16": "fec7eb90e2e3e332"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-05.svg",
+     "w": 760,
+     "h": 369,
+     "sha256_16": "c70a48f034c3c55a"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-06",
+   "auditRow": "2B-06",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Change 4: moving apart, B3 and F4, a diminished fifth",
+   "svgTitle": "Change 4: moving apart, B3 and F4, a diminished fifth",
+   "state": "I",
+   "steps": [
+    "2B:5",
+    "2B:8"
+   ],
+   "teaches": "Moving apart: both voices go in opposite directions, C4 down to B3 and E4 up to F4. The new pair B3 + F4 spans five letters and six semitones: a diminished fifth, shown in the tritone colour with its Plogger chip.",
+   "howToRead": "The arrows above the keys show the two voices leaving C4 and E4 in opposite directions. The keys B3 and F4 are tinted with the tritone colour, and the six numbered arcs count every key from B3 to F4. The chip is a separate historic lens, not the colour. These are B3 and F4, not the C4 and F♯4 on the Palette card.",
+   "alt": "A keyboard from B3 to G4. The lower voice falls from C4 to B3 and the upper rises from E4 to F4. The new pair, B3 and F4, is a diminished fifth: five letters, six semitones, in the tritone colour with Plogger bracket 6.",
+   "svgDesc": "Start C4 + E4, end B3 + F4. The lower voice moves from C4 to B3, down 1 semitone. The upper voice moves from E4 to F4, up 1 semitone. The new pair B3 + F4 spans 5 letters and 6 semitones: a diminished fifth, in the tritone colour #5366A0, Plogger bracket [6] (straight contour, shadow on both sides, midtone dotted fill).",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [
+    {
+     "bracket": 6,
+     "shape": "straight",
+     "dir": "both",
+     "fill": "neutral"
+    }
+   ],
+   "forbiddenInNeutralState": [
+    "C4 + F♯4",
+    "C4–F♯4"
+   ],
+   "sources": [
+    "M03N/E03-native.svg, E08-native.svg (facts)",
+    "week2/fixtures.ts B.apart (B3 = 59, F4 = 65)",
+    "lib/soundscape/m05/info-svg.ts panel()/chip() for [6]",
+    "link: live Palette #ip-06"
+   ],
+   "limits": "Plogger [6] follows the printed original; shape family is disputed in older code. See A-09 legend.",
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-06.svg",
+     "w": 760,
+     "h": 839,
+     "sha256_16": "2739bf0014dbe48b"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-06.svg",
+     "w": 360,
+     "h": 835,
+     "sha256_16": "bdbfb042854cfbbe"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-06.svg",
+     "w": 760,
+     "h": 839,
+     "sha256_16": "82cc70e80c252232"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-07",
+   "auditRow": "2B-07",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Change 5: both rise, a major third becomes a minor third",
+   "svgTitle": "Change 5: both rise, a major third becomes a minor third",
+   "state": "I",
+   "steps": [
+    "2B:6",
+    "2B:8"
+   ],
+   "teaches": "Similar motion: both voices rise, the lower by 2 semitones and the upper by 1. Because the distances differ, the interval shrinks from a major third to a minor third, so this is similar and not strict parallel in this course.",
+   "howToRead": "Two arrows go the same way but are not the same size: the lower voice steps over a black key (up 2) and the upper takes one step (up 1). That difference is why the pair changes size. The end keys carry the minor third colour.",
+   "alt": "A keyboard from B3 to G4. The lower voice rises from C4 to D4 and the upper from E4 to F4. The pair changes from a major third of 4 semitones to a minor third of 3. This is similar motion, not strict parallel.",
+   "svgDesc": "Start C4 + E4, end D4 + F4. The lower voice moves from C4 to D4, up 2 semitones. The upper voice moves from E4 to F4, up 1 semitone. Similar motion, not strict parallel in this course. The pair changes from a major third (4 semitones) to a minor third (3 semitones).",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     3
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/E04-native.svg",
+    "week2/fixtures.ts B.climb"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-07.svg",
+     "w": 760,
+     "h": 414,
+     "sha256_16": "5c99f849a66c1fc5"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-07.svg",
+     "w": 360,
+     "h": 526,
+     "sha256_16": "da4201699a45356e"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-07.svg",
+     "w": 760,
+     "h": 414,
+     "sha256_16": "5cfbb15ae6bf5eb6"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-08",
+   "auditRow": "2B-08",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "The five changes, all from C4 + E4",
+   "svgTitle": "The five changes, all from C4 + E4",
+   "state": "I",
+   "steps": [
+    "2B:8",
+    "2B:9",
+    "2B:11"
+   ],
+   "teaches": "All five changes side by side, each restarting from the same C4 + E4: which voice moves, the new pair, its interval and its semitone count.",
+   "howToRead": "Every row begins from C4 and E4 again; the changes do not chain. Read across: the change in words, the motion word, the end pair, then the interval with its colour. Rows 1 and 2 share a colour because they give the same interval size.",
+   "alt": "A table of five changes, each starting from C4 + E4: only the upper rises gives a perfect fourth; only the lower falls gives a perfect fourth; only the lower rises gives a major second; moving apart gives a diminished fifth; both rising gives a minor third.",
+   "svgDesc": "Five rows, each starting from C4 + E4. 1, Only upper rises, Oblique motion: C4 + F4, perfect fourth, 5 semitones. 2, Only lower falls, Oblique motion: B3 + E4, perfect fourth, 5 semitones. 3, Only lower rises, Oblique motion: D4 + E4, major second, 2 semitones. 4, Both move apart, Contrary motion: B3 + F4, diminished fifth, 6 semitones. 5, Both rise, Similar motion: D4 + F4, minor third, 3 semitones.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     5,
+     2,
+     6,
+     3
+    ],
+    "hex": [
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 2,
+      "hex": "#C17D41",
+      "id": "IP-02"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     },
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/E07-native.svg (single 316 × 1182 column; replaced by this landscape table, stacked narrow variant and print table)",
+    "week2/fixtures.ts FIVE"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-08.svg",
+     "w": 760,
+     "h": 407,
+     "sha256_16": "23eebf1c5d4bcd58"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-08.svg",
+     "w": 360,
+     "h": 633,
+     "sha256_16": "bec4547aa4acf688"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-08.svg",
+     "w": 760,
+     "h": 407,
+     "sha256_16": "4ff364f4528d08fb"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-09",
+   "auditRow": "2B-09",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "CREATE",
+   "title": "Similar, and strict parallel",
+   "svgTitle": "Similar, and strict parallel",
+   "state": "I",
+   "steps": [
+    "2B:6"
+   ],
+   "teaches": "Same direction is not always strict parallel. In the course vocabulary strict parallel needs equal distances and an unchanged interval size. Some books use the word \"parallel\" more widely; both uses are respectable.",
+   "howToRead": "The top keyboard is change 5 of the lesson: the two arrows are different sizes and the interval shrinks. The lower keyboard is the strict case, outside the five changes: both arrows are the same size and the end pair is a major third again. Compare the two arrow pairs and the two end colours.",
+   "alt": "Two keyboards from B3 to G4. On the left, C4 + E4 to D4 + F4, similar motion, a major third becoming a minor third. On the right, C4 + E4 to D4 + F♯4, both voices up two semitones and the major third kept: strict parallel, outside the five main changes.",
+   "svgDesc": "Panel one, similar motion: Start C4 + E4, end D4 + F4. The lower voice moves from C4 to D4, up 2 semitones. The upper voice moves from E4 to F4, up 1 semitone. Major third to minor third. Panel two, strict parallel, outside the five main changes: Start C4 + E4, end D4 + F♯4. The lower voice moves from C4 to D4, up 2 semitones. The upper voice moves from E4 to F♯4, up 2 semitones. Major third to major third.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     3
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 3,
+      "hex": "#8964A4",
+      "id": "IP-03"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/E04-native.svg, E10-native.svg (idea)",
+    "week2/fixtures.ts B.climb, M.Fs4"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-09.svg",
+     "w": 760,
+     "h": 821,
+     "sha256_16": "380c5fbf4c7855d3"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-09.svg",
+     "w": 360,
+     "h": 1136,
+     "sha256_16": "3f5e09f57b7c8dcd"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-09.svg",
+     "w": 760,
+     "h": 821,
+     "sha256_16": "d5fb0cb634e6a988"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-10",
+   "auditRow": "2B-10",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "A two-voice path in four stages",
+   "svgTitle": "A two-voice path in four stages",
+   "state": "I",
+   "steps": [
+    "2B:10"
+   ],
+   "teaches": "A short path through four stages that uses the lesson's changes in a row. Each stage has its own pair and colour, and the path ends where it began.",
+   "howToRead": "Read left to right, stage by stage. Each vertical coloured bar joins the two notes of that stage and names its interval underneath; the lines show how each voice travels between stages. Stages are steps in order, with no clock, so take as long as you like at each.",
+   "alt": "A path over four stages. Stage 1: C4 + E4, major third. Stage 2: C4 + F4, perfect fourth. Stage 3: B3 + F4, diminished fifth. Stage 4: C4 + E4, major third. The lower voice holds, falls, then rises; the upper voice rises, holds, then falls.",
+   "svgDesc": "Four stages. Stage 1: C4 + E4, major third, 4 semitones. Stage 2: C4 + F4, perfect fourth, 5 semitones. Stage 3: B3 + F4, diminished fifth, 6 semitones. Stage 4: C4 + E4, major third, 4 semitones. Stages are steps in order, with no clock.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "seconds",
+    " sec"
+   ],
+   "sources": [
+    "M03N/E11-native.svg (re-timed to stages)",
+    "week2/fixtures.ts B.path",
+    "old W2-04, SYS-09 (blank form is 2B-10b)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-10.svg",
+     "w": 760,
+     "h": 382,
+     "sha256_16": "35d9588ef4f36780"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-10.svg",
+     "w": 360,
+     "h": 397,
+     "sha256_16": "7b4de63c7f3bbe78"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-10.svg",
+     "w": 760,
+     "h": 382,
+     "sha256_16": "ff6c471779567957"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-10b",
+   "auditRow": "2B-10 (blank sheet)",
+   "family": "2B",
+   "kind": "worksheet",
+   "disposition": "REVISE",
+   "title": "Your two-voice path sheet",
+   "svgTitle": "Your two-voice path sheet",
+   "state": "N",
+   "steps": [
+    "2B:10"
+   ],
+   "teaches": "A paper sheet for drawing your own four-stage path: write the upper and lower note at each stage, then the interval you find.",
+   "howToRead": "Each column is one stage. Write the upper note in the top box and the lower note in the lower box, then work out the letters and semitones in the bottom box using your own keyboard. Join the boxes with lines to draw each voice's path. Nothing is scored.",
+   "alt": "A blank worksheet with four stage columns and two rows for the upper and lower voice, plus a row for the interval at each stage.",
+   "svgDesc": "A blank sheet with four stage columns and three rows: upper voice, lower voice, interval. Boxes are empty for the learner to fill in.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5"
+   ],
+   "sources": [
+    "public/soundscape/w2/W2-04_blank-two-voice-path_blank.svg",
+    "public/soundscape/w2/SYS-09_two-voice-timeline_blank.svg",
+    "concept only; rebuilt with stages and the lane grammar"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-10b.svg",
+     "w": 760,
+     "h": 332,
+     "sha256_16": "2feeff53e61fd833"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-10b.svg",
+     "w": 360,
+     "h": 366,
+     "sha256_16": "3bc24364a4952c55"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-10b.svg",
+     "w": 760,
+     "h": 332,
+     "sha256_16": "c4ff26c5945ae5bb"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-11n",
+   "auditRow": "2B-11",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Contrary motion, together: the voices move toward each other",
+   "svgTitle": "Contrary motion, together: the voices move toward each other",
+   "state": "N",
+   "steps": [
+    "2B:4"
+   ],
+   "teaches": "Contrary motion also covers voices that move toward each other: the lower voice rises and the upper voice falls, and the gap between them closes.",
+   "howToRead": "The dashed shapes are where the voices started, on B3 and F4. The arrows go toward each other and end on C4 and E4. The picture shows the movement only; nothing is named or counted, and no colour is used.",
+   "alt": "A keyboard from B3 to G4. The lower voice rises from B3 to C4 and the upper voice falls from F4 to E4: the two voices move toward each other.",
+   "svgDesc": "Start B3 + F4, end C4 + E4. The lower voice moves from B3 to C4, up 1 semitone. The upper voice moves from F4 to E4, down 1 semitone. The voices move toward each other.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "semitone",
+    "six",
+    "similar",
+    "parallel"
+   ],
+   "sources": [
+    "M03N/E09-native.svg (the \"2.5 seconds\" label removed)",
+    "week2/fixtures.ts B.path stage 3 to 4"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-11n.svg",
+     "w": 760,
+     "h": 347,
+     "sha256_16": "0f9770bc857f35e6"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-11n.svg",
+     "w": 360,
+     "h": 367,
+     "sha256_16": "43e0040ba6880ce8"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-11n.svg",
+     "w": 760,
+     "h": 347,
+     "sha256_16": "b34787628166c345"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-11",
+   "auditRow": "2B-11",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Contrary motion, together: B3 + F4 to C4 + E4",
+   "svgTitle": "Contrary motion, together: B3 + F4 to C4 + E4",
+   "state": "I",
+   "steps": [
+    "2B:10"
+   ],
+   "teaches": "Contrary motion can also go together: the lower voice rises one semitone and the upper falls one, closing the gap from a diminished fifth to a major third.",
+   "howToRead": "This is the closing move of the four-stage path, drawn on the keyboard. The dashed shapes are B3 and F4; the arrows go toward each other and meet around C4 and E4, where the major third colour appears on the keys.",
+   "alt": "A keyboard from B3 to G4. The lower voice rises from B3 to C4 and the upper falls from F4 to E4, moving toward each other. The pair changes from a diminished fifth of 6 semitones to a major third of 4.",
+   "svgDesc": "Start B3 + F4, end C4 + E4. The lower voice moves from B3 to C4, up 1 semitone. The upper voice moves from F4 to E4, down 1 semitone. The voices move toward each other: contrary motion, together. Diminished fifth (6 semitones) to major third (4 semitones).",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     6,
+     4
+    ],
+    "hex": [
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     },
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/E09-native.svg (the \"2.5 seconds\" label removed)",
+    "week2/fixtures.ts B.path stage 3 to 4"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-11.svg",
+     "w": 760,
+     "h": 414,
+     "sha256_16": "79117cefbf4640c5"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-11.svg",
+     "w": 360,
+     "h": 550,
+     "sha256_16": "3e99fc6bf57ae688"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-11.svg",
+     "w": 760,
+     "h": 414,
+     "sha256_16": "4fe13ee1f3ef0590"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-12",
+   "auditRow": "2B-12",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "CREATE",
+   "title": "Two kinds of words: along a path, up a stage",
+   "svgTitle": "Two kinds of words: along a path, up a stage",
+   "state": "N+I",
+   "steps": [
+    "2B:7",
+    "2B:9"
+   ],
+   "teaches": "Movement words (oblique, contrary, similar, parallel) describe what voices do between stages, along the path. Interval words (the names of intervals) describe a pair of notes at a single stage, up the page.",
+   "howToRead": "Follow the upper line left to right: that horizontal direction is movement. Then look straight up the page at stage 2: that vertical gap, the only coloured part, is the interval. One kind of word is about travelling, the other about distance at one moment.",
+   "alt": "A two-stage path: the lower voice holds C4, the upper rises from E4 to F4. A horizontal arrow marks the upper path across time. A vertical bracket at stage 2 marks the interval, a perfect fourth, at that one moment.",
+   "svgDesc": "Two stages. Lower voice holds C4; upper voice goes from E4 to F4. Along the path: movement words. At stage 2, C4 + F4: a perfect fourth, 5 semitones, in the perfect fourth colour. Interval words describe the pair at a single stage.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     5
+    ],
+    "hex": [
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "concept new; kit stagePath()",
+    "week2/fixtures.ts B.upperRises"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-12.svg",
+     "w": 760,
+     "h": 363,
+     "sha256_16": "7c799eb5f94a816c"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-12.svg",
+     "w": 360,
+     "h": 395,
+     "sha256_16": "ee97f7dbb3204f0c"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-12.svg",
+     "w": 760,
+     "h": 363,
+     "sha256_16": "f632287b0824a842"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2B-13",
+   "auditRow": "2B-13 (added)",
+   "family": "2B",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "The tritone family: B3–F4 beside the Palette card C4–F♯4",
+   "svgTitle": "The tritone family: B3–F4 beside the Palette card C4–F♯4",
+   "state": "I",
+   "steps": [
+    "2B:5"
+   ],
+   "teaches": "Two different pairs, one tritone colour and one chip. B3–F4 (five letters) and C4–F♯4 (four letters) are both six semitones. The lesson uses B3–F4; the Palette card draws C4–F♯4. They are separate examples of the same family.",
+   "howToRead": "Compare the two keyboards. The key colour and the chip are identical because both pairs are six semitones. The note names differ because the pairs sit in different places and are spelled with different letters. The Palette page (card 6) shows the second; this lesson works with the first.",
+   "alt": "Two keyboards, both in the tritone colour with Plogger bracket 6. First, B3 and F4 from the lesson: five letters, six semitones, a diminished fifth. Second, C4 and F♯4 from the Palette card: four letters, six semitones, written as an augmented fourth.",
+   "svgDesc": "Keyboard one, from the lesson: B3 and F4, five letters, six semitones, a diminished fifth, tritone colour #5366A0. Keyboard two, from the Palette card: C4 and F♯4, four letters, six semitones, written as an augmented fourth, the same tritone colour. Same colour and same Plogger bracket [6].",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [
+    {
+     "bracket": 6,
+     "shape": "straight",
+     "dir": "both",
+     "fill": "neutral"
+    }
+   ],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/T05-native.svg (octaves, hue and chip added)",
+    "lib/soundscape/resources/interval-data.json IP-06 (C4 + F♯4; alternate spelling C4 + G♭4)",
+    "lib/soundscape/m05/info-svg.ts chip()/panel()",
+    "link: live Palette #ip-06"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2B-13.svg",
+     "w": 760,
+     "h": 900,
+     "sha256_16": "77ae7608c574c4f2"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2B-13.svg",
+     "w": 360,
+     "h": 914,
+     "sha256_16": "3ab1c6941104ca40"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2B-13.svg",
+     "w": 760,
+     "h": 900,
+     "sha256_16": "62d5c57d4c4c9064"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-01",
+   "auditRow": "2C-01",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Two 36-second sketches: same upper line, different lower line",
+   "svgTitle": "Two 36-second sketches: same upper line, different lower line",
+   "state": "N",
+   "steps": [
+    "2C:1",
+    "2C:3"
+   ],
+   "teaches": "Two sketches of the same melody over different lower lines. The upper line is identical in both; only the lower voice differs.",
+   "howToRead": "Each timeline is 36 seconds wide. Upper lane first, lower lane below. Solid bars are notes, dashed boxes are rests. Compare the two upper lanes: they match exactly. Then compare the two lower lanes: Version A holds one note, Version B changes it twice.",
+   "alt": "Two 36-second timelines. In both, the upper voice plays E4 from 4 to 10 seconds, F4 from 14 to 20 and E4 from 26 to 32, resting in between. In Version A the lower voice holds C4 throughout. In Version B the lower voice plays C4 to 12 seconds, B3 from 12 to 24, then C4 again.",
+   "svgDesc": "Version A. Upper voice: E4 4 to 10 s, F4 14 to 20 s, E4 26 to 32 s (rests in between). Lower voice: C4 0 to 36 s. Version B. Upper voice: E4 4 to 10 s, F4 14 to 20 s, E4 26 to 32 s (rests in between). Lower voice: C4 0 to 12 s, B3 12 to 24 s, C4 24 to 36 s. The upper voice is identical in both versions.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5",
+    "oblique",
+    "contrary",
+    "similar",
+    "parallel",
+    "semitone"
+   ],
+   "sources": [
+    "M03N/F01-native.svg",
+    "week2/fixtures.ts C.held, C.moving (upper at 4–10, 14–20, 26–32)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-01.svg",
+     "w": 760,
+     "h": 545,
+     "sha256_16": "a8801ac4f5dddaa4"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-01.svg",
+     "w": 360,
+     "h": 633,
+     "sha256_16": "00db4bd03cc22554"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-01.svg",
+     "w": 760,
+     "h": 545,
+     "sha256_16": "42e5ebea719f36b7"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-02",
+   "auditRow": "2C-02",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Version A: one voice holds the landscape",
+   "svgTitle": "Version A: one voice holds the landscape",
+   "state": "I",
+   "steps": [
+    "2C:3"
+   ],
+   "teaches": "With a held lower note, the pair changes only when the upper voice moves: C4 + E4 (major third), C4 + F4 (perfect fourth), then C4 + E4 again.",
+   "howToRead": "Colour bands appear only while both voices sound; where the upper voice rests there is no pair, so there is no colour. Read the band labels left to right: M3 for 4 semitones, P4 for 5, M3 again. The lower voice is the same note under all three.",
+   "alt": "A 36-second timeline. The lower voice holds C4 the whole time. The upper voice plays E4 from 4 to 10 seconds, F4 from 14 to 20, E4 from 26 to 32, resting in between. The pairs sounding are a major third, a perfect fourth, then a major third.",
+   "svgDesc": "Upper voice: E4 4 to 10 s, F4 14 to 20 s, E4 26 to 32 s (rests in between). Lower voice: C4 0 to 36 s. Sounding pairs: 4 to 10 s: C4 + E4, major third; 14 to 20 s: C4 + F4, perfect fourth; 26 to 32 s: C4 + E4, major third. Colour bands mark only the times when both voices sound.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "diminished",
+    "tritone"
+   ],
+   "sources": [
+    "M03N/F02-native.svg (bar positions verified exact)",
+    "week2/fixtures.ts C.held"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-02.svg",
+     "w": 760,
+     "h": 350,
+     "sha256_16": "b405303afe968ff9"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-02.svg",
+     "w": 360,
+     "h": 399,
+     "sha256_16": "50e518ee61e5a772"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-02.svg",
+     "w": 760,
+     "h": 350,
+     "sha256_16": "270264fd18e9e831"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-03",
+   "auditRow": "2C-03",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Version B: the landscape begins to travel",
+   "svgTitle": "Version B: the landscape begins to travel",
+   "state": "I",
+   "steps": [
+    "2C:4"
+   ],
+   "teaches": "When the lower voice moves under the same melody, one moment changes: from 14 to 20 seconds the pair is B3 + F4, a diminished fifth, instead of C4 + F4.",
+   "howToRead": "The dashed lines at 12 and 24 seconds mark where the lower voice changes. At both moments the upper lane is a dashed rest, so no pair changes at that instant. The F4 only sounds from 14 to 20 seconds, over B3, and that band carries the tritone colour.",
+   "alt": "A 36-second timeline. The lower voice plays C4 to 12 seconds, B3 from 12 to 24, then C4. The upper voice plays E4 from 4 to 10, F4 from 14 to 20, E4 from 26 to 32. The lower changes at 12 and 24 seconds happen while the upper voice rests. The pairs sounding are a major third, B3 + F4 a diminished fifth, then a major third.",
+   "svgDesc": "Upper voice: E4 4 to 10 s, F4 14 to 20 s, E4 26 to 32 s (rests in between). Lower voice: C4 0 to 12 s, B3 12 to 24 s, C4 24 to 36 s. The lower voice changes at 12 and 24 seconds while the upper voice rests. From 14 to 20 seconds the sounding pair is B3 + F4, a diminished fifth of 6 semitones, in the tritone colour.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/F03-native.svg (positions verified exact)",
+    "week2/fixtures.ts C.moving (B3 = 59)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-03.svg",
+     "w": 760,
+     "h": 350,
+     "sha256_16": "ea83df411dd73f12"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-03.svg",
+     "w": 360,
+     "h": 423,
+     "sha256_16": "42e2c10787221265"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-03.svg",
+     "w": 760,
+     "h": 350,
+     "sha256_16": "9b1a94d71ac8f492"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-04",
+   "auditRow": "2C-04",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Same melody, one moment different: A above B",
+   "svgTitle": "Same melody, one moment different: A above B",
+   "state": "I",
+   "steps": [
+    "2C:5"
+   ],
+   "teaches": "Stack the two versions and look: the upper line and the first and last pairs are identical. Only from 14 to 20 seconds does the lower voice change what the pair is.",
+   "howToRead": "Both timelines share one time scale so a vertical line crosses both at the same moment. The dashed outline covers 14 to 20 seconds. Inside it the two bands have different colours; outside it they match.",
+   "alt": "Versions A and B on one shared 36-second time scale. The upper voices are identical. A dashed outline marks 14 to 20 seconds, the only time the pair differs: C4 + F4 in A, B3 + F4 in B.",
+   "svgDesc": "Versions A and B on a shared 36-second scale. Upper voices are identical. A dashed outline marks 14 to 20 seconds. In A the pair is C4 + F4, a perfect fourth of 5 semitones; in B it is B3 + F4, a diminished fifth of 6. The first and last pairs, C4 + E4, are identical.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/F06-native.svg",
+    "week2/fixtures.ts C.held, C.moving"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-04.svg",
+     "w": 760,
+     "h": 575,
+     "sha256_16": "dbbf9829c2ccee4a"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-04.svg",
+     "w": 360,
+     "h": 639,
+     "sha256_16": "9b46781e9d0e2d4b"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-04.svg",
+     "w": 760,
+     "h": 575,
+     "sha256_16": "b20d473fc866b62d"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-05",
+   "auditRow": "2C-05",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "Three snapshots: what stayed, what changed",
+   "svgTitle": "Three snapshots: what stayed, what changed",
+   "state": "I",
+   "steps": [
+    "2C:5",
+    "2C:6"
+   ],
+   "teaches": "Three moments side by side. In two of them the two versions have the same pair; in exactly one, the middle, they differ.",
+   "howToRead": "Read each column as one moment. The two badges in a column are the pair in Version A and the pair in Version B at that moment. Compare across the row: same, different, same. The middle column also gives the semitone count: 5 against 6.",
+   "alt": "Three snapshots, each with Version A above Version B. At 4 to 10 seconds both are C4 + E4, a major third. At 14 to 20 seconds A is C4 + F4, a perfect fourth, and B is B3 + F4, a diminished fifth. At 26 to 32 seconds both are C4 + E4 again.",
+   "svgDesc": "Snapshot 4 to 10 s: A and B both C4 + E4, major third, 4 semitones. Snapshot 14 to 20 s: A C4 + F4, perfect fourth, 5 semitones; B B3 + F4, diminished fifth, 6 semitones. Snapshot 26 to 32 s: both C4 + E4 again.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/F07-native.svg (extended with the two major third snapshots)",
+    "week2/fixtures.ts C.held, C.moving"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-05.svg",
+     "w": 760,
+     "h": 363,
+     "sha256_16": "a6743c3b1f5f1beb"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-05.svg",
+     "w": 360,
+     "h": 817,
+     "sha256_16": "455d507f5e2f0129"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-05.svg",
+     "w": 760,
+     "h": 363,
+     "sha256_16": "90a0ccb5568fc429"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-06",
+   "auditRow": "2C-06",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "CREATE",
+   "title": "Four words: voice, vertical interval, voice leading, counterpoint",
+   "svgTitle": "Four words: voice, vertical interval, voice leading, counterpoint",
+   "state": "N+I",
+   "steps": [
+    "2C:2",
+    "2C:6"
+   ],
+   "teaches": "Four words for the week's ideas, each with a small picture: one line, the gap between two notes at one moment, how lines travel between moments, and independent lines together.",
+   "howToRead": "Each card gives the word, its meaning in one sentence, and a tiny picture built from the same marks as the rest of Week 2. The vertical interval card carries the only colour: C4 + E4, the major third from lesson 2A.",
+   "alt": "Four cards with small diagrams: a voice is one line of notes over time; a vertical interval is the distance between two notes sounding together; voice leading is how each voice moves from one pair to the next; counterpoint is two or more independent lines sounding together.",
+   "svgDesc": "Four cards. Voice: one line of notes over time. Vertical interval: the distance between two notes sounding together; example C4 + E4, a major third of 4 semitones. Voice leading: how each voice moves from one pair to the next. Counterpoint: two or more independent lines sounding together.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "concept new",
+    "kit glyph(), badge()"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-06.svg",
+     "w": 760,
+     "h": 410,
+     "sha256_16": "9b9ad1b65da68f8e"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-06.svg",
+     "w": 360,
+     "h": 697,
+     "sha256_16": "5ea655911c356a79"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-06.svg",
+     "w": 760,
+     "h": 410,
+     "sha256_16": "052b5c451d055439"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-07",
+   "auditRow": "2C-07",
+   "family": "2C",
+   "kind": "worksheet",
+   "disposition": "REVISE",
+   "title": "Plan your miniature: two blank timelines",
+   "svgTitle": "Plan your miniature: two blank timelines",
+   "state": "N",
+   "steps": [
+    "2C:8",
+    "2C:9"
+   ],
+   "teaches": "A paper planning sheet for your own two sketches: draw where each voice sounds and rests, write note names, and finish three plan sentences.",
+   "howToRead": "Each blank timeline runs from 0 to 45 seconds with a tick every 5. The upper lane is for your melody and the lower lane is for the line beneath. Draw bars for notes and leave gaps for rests, writing note names inside. Then complete the three sentences at the bottom. Nothing is scored or sent anywhere.",
+   "alt": "A worksheet with two blank timelines from 0 to 45 seconds, each with an upper and a lower lane, and three lines to complete the sentence plan.",
+   "svgDesc": "A worksheet. Two blank timelines from 0 to 45 seconds with an upper lane and a lower lane, and three plan sentences with blank lines: my upper melody is, in version one the lower voice, in version two the lower voice.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [],
+    "hex": []
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "major third",
+    "minor third",
+    "perfect fourth",
+    "major second",
+    "diminished",
+    "tritone",
+    "M3",
+    "m3",
+    "P4",
+    "M2",
+    "d5"
+   ],
+   "sources": [
+    "public/soundscape/w2/SYS-09_two-voice-timeline_blank.svg",
+    "public/soundscape/w2/W2-04_blank-two-voice-path_blank.svg (concept)",
+    "2C manuscript step 8 production note (0–45 s)"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-07.svg",
+     "w": 760,
+     "h": 626,
+     "sha256_16": "705d269517a32d34"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-07.svg",
+     "w": 360,
+     "h": 725,
+     "sha256_16": "baa7f50c3e355e9e"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-07.svg",
+     "w": 760,
+     "h": 626,
+     "sha256_16": "9792b3997390f4bb"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-08",
+   "auditRow": "2C-08",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "What changes, and your response",
+   "svgTitle": "What changes, and your response",
+   "state": "I",
+   "steps": [
+    "2C:9"
+   ],
+   "teaches": "Separate what the notes did (a fact) from what you make of it (your response). The facts are shown; the response is yours and has no correct answer.",
+   "howToRead": "The left panel states what changed, with the pairs and their colour bars. The right panel is empty on purpose: complete the sentence in your own words. There is no right feeling to write.",
+   "alt": "Two panels. Left: what changes, from 14 to 20 seconds, Version A is C4 + F4, a perfect fourth, and Version B is B3 + F4, a diminished fifth. Right: your response, blank lines to finish the sentence: I kept something the same, I moved something, the result felt something.",
+   "svgDesc": "Left panel, what changes, 14 to 20 seconds: Version A is C4 + F4, a perfect fourth of 5 semitones; Version B is B3 + F4, a diminished fifth of 6 semitones. Right panel, your response: blank lines for I kept, I moved, the result felt.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     5,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/F05-native.svg",
+    "week2/fixtures.ts C.held, C.moving"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-08.svg",
+     "w": 760,
+     "h": 369,
+     "sha256_16": "d1677f969cd84555"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-08.svg",
+     "w": 360,
+     "h": 630,
+     "sha256_16": "b0660d1e83898f2c"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-08.svg",
+     "w": 760,
+     "h": 369,
+     "sha256_16": "cd518712878672ef"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-09",
+   "auditRow": "2C-09",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "REVISE",
+   "title": "Week 2 in three anchors",
+   "svgTitle": "Week 2 in three anchors",
+   "state": "I",
+   "steps": [
+    "2C:10"
+   ],
+   "teaches": "The whole week in three sentences: an interval is a pair counted two ways; motion is what two voices do between pairs; two lines are enough to make changing harmony.",
+   "howToRead": "Each card is one idea with one example from the week. Read them as a chain: first the pair, then the movement between pairs, then how a different lower line changes the harmony under the same melody. The picture ends here; Week 3 is introduced in text only.",
+   "alt": "Three cards: an interval is two notes together, counted in letters and semitones, example C4 + E4; motion is how two voices change, oblique, contrary or similar; two lines can make changing harmony, example C4 + F4 against B3 + F4.",
+   "svgDesc": "Three cards. 1 An interval: two notes together, counted in letters and semitones, example C4 + E4, a major third. 2 Motion: how two voices change between pairs: oblique, contrary, similar. 3 Two lines can make changing harmony: C4 + F4, a perfect fourth, against B3 + F4, a diminished fifth, under the same upper note.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     4,
+     5,
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 4,
+      "hex": "#AB812D",
+      "id": "IP-04"
+     },
+     {
+      "semitones": 5,
+      "hex": "#4F816B",
+      "id": "IP-05"
+     },
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [
+    "week 3",
+    "phrase"
+   ],
+   "sources": [
+    "M03N/F10-native.svg (676 × 758, 8 px text: rebuilt for 12 px minimum)",
+    "week2/fixtures.ts"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-09.svg",
+     "w": 760,
+     "h": 517,
+     "sha256_16": "09ed09b227bbdbd3"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-09.svg",
+     "w": 360,
+     "h": 652,
+     "sha256_16": "f32b31ee5de1cbba"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-09.svg",
+     "w": 760,
+     "h": 517,
+     "sha256_16": "ca8962b9a5f3487c"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  },
+  {
+   "id": "2C-10",
+   "auditRow": "2C-10",
+   "family": "2C",
+   "kind": "figure",
+   "disposition": "DERIVE",
+   "title": "The truth check: the lower voice moves while the upper rests",
+   "svgTitle": "The truth check: the lower voice moves while the upper rests",
+   "state": "I",
+   "steps": [
+    "2C:4",
+    "2C:5",
+    "2C:6"
+   ],
+   "teaches": "A check on the sketch: the lower voice changes at 12 and 24 seconds, but the upper voice is resting then, so F4 is never sounding when the lower note changes. F4 appears only from 14 to 20 seconds, over B3.",
+   "howToRead": "Look at the two dashed markers. At each, the upper lane is a dashed rest box: no upper note is sounding. Then find the one band, 14 to 20 seconds, where F4 sits over B3. Nothing sounds as F4 over C4 in this version.",
+   "alt": "Version B timeline with dashed markers at 12 and 24 seconds, where the lower voice changes. The upper voice is resting at both markers. F4 sounds only from 14 to 20 seconds, over B3, forming a diminished fifth.",
+   "svgDesc": "Upper voice: E4 4 to 10 s, F4 14 to 20 s, E4 26 to 32 s (rests in between). Lower voice: C4 0 to 12 s, B3 12 to 24 s, C4 24 to 36 s. Dashed markers at 12 and 24 seconds: the upper voice is resting at both. F4 sounds only from 14 to 20 seconds, over B3: B3 + F4, a diminished fifth, 6 semitones, in the tritone colour.",
+   "tokens": {
+    "identityVersion": "1.0",
+    "semitones": [
+     6
+    ],
+    "hex": [
+     {
+      "semitones": 6,
+      "hex": "#5366A0",
+      "id": "IP-06"
+     }
+    ]
+   },
+   "plogger": [],
+   "forbiddenInNeutralState": [],
+   "sources": [
+    "M03N/F06-native.svg + overlay",
+    "week2/fixtures.ts C.moving"
+   ],
+   "limits": null,
+   "variants": {
+    "screen": {
+     "file": "public/soundscape/m07/screen/2C-10.svg",
+     "w": 760,
+     "h": 350,
+     "sha256_16": "98143d61dc604589"
+    },
+    "narrow": {
+     "file": "public/soundscape/m07/narrow/2C-10.svg",
+     "w": 360,
+     "h": 423,
+     "sha256_16": "dcab2210283a1956"
+    },
+    "print": {
+     "file": "public/soundscape/m07/print/2C-10.svg",
+     "w": 760,
+     "h": 350,
+     "sha256_16": "2369a2f96df701b1"
+    }
+   },
+   "generation": {
+    "method": "deterministic native SVG (lib/soundscape/m07)",
+    "modelImage": false,
+    "provider": null
+   }
+  }
+ ],
+ "art": [
+  {
+   "id": "wash-hub",
+   "family": "hub",
+   "title": "Hub atmosphere wash",
+   "file": "public/soundscape/m07/art/wash-hub.svg",
+   "w": 1200,
+   "h": 360,
+   "sha256_16": "83c89d1304fb5882",
+   "generation": {
+    "method": "deterministic native SVG painterly wash (lib/soundscape/m07/art.ts)",
+    "modelImage": false,
+    "provider": null
+   },
+   "meaning": "atmosphere only; hues carry no interval meaning"
+  },
+  {
+   "id": "wash-2a",
+   "family": "2A",
+   "title": "Lesson 2A atmosphere wash",
+   "file": "public/soundscape/m07/art/wash-2a.svg",
+   "w": 1200,
+   "h": 360,
+   "sha256_16": "adffbc99a13ea08e",
+   "generation": {
+    "method": "deterministic native SVG painterly wash (lib/soundscape/m07/art.ts)",
+    "modelImage": false,
+    "provider": null
+   },
+   "meaning": "atmosphere only; hues carry no interval meaning"
+  },
+  {
+   "id": "wash-2b",
+   "family": "2B",
+   "title": "Lesson 2B atmosphere wash",
+   "file": "public/soundscape/m07/art/wash-2b.svg",
+   "w": 1200,
+   "h": 360,
+   "sha256_16": "be66c684db6933a1",
+   "generation": {
+    "method": "deterministic native SVG painterly wash (lib/soundscape/m07/art.ts)",
+    "modelImage": false,
+    "provider": null
+   },
+   "meaning": "atmosphere only; hues carry no interval meaning"
+  },
+  {
+   "id": "wash-2c",
+   "family": "2C",
+   "title": "Lesson 2C atmosphere wash",
+   "file": "public/soundscape/m07/art/wash-2c.svg",
+   "w": 1200,
+   "h": 360,
+   "sha256_16": "1dbb3dcbc8cc18a1",
+   "generation": {
+    "method": "deterministic native SVG painterly wash (lib/soundscape/m07/art.ts)",
+    "modelImage": false,
+    "provider": null
+   },
+   "meaning": "atmosphere only; hues carry no interval meaning"
+  }
+ ],
+ "reusedInPlace": [
+  {
+   "id": "A-01",
+   "row": "A-01",
+   "group": "shared",
+   "title": "Two ribbons meeting and parting (art S07)",
+   "steps": [
+    "H"
+   ],
+   "teaches": "Optional atmosphere for the hub: two painted ribbons that meet and part. It carries no note, interval or measurement.",
+   "file": "public/soundscape/m03/art/S07.webp",
+   "preview": "public/soundscape/m03/art/S07.webp",
+   "note": "REUSE as is. Atmosphere only; never captioned as showing a count or a colour meaning."
+  },
+  {
+   "id": "A-08",
+   "row": "A-08",
+   "group": "shared",
+   "title": "Six discovery door names (X07)",
+   "steps": [
+    "H"
+   ],
+   "teaches": "The six door names with icons on the hub. Neutral plum; no interval meaning.",
+   "file": "public/soundscape/m03/native/X07-native.svg",
+   "preview": "public/soundscape/m03/native/X07-native.svg",
+   "note": "REUSE as is."
+  },
+  {
+   "id": "A-10",
+   "row": "A-10 / 2A-09 (named version)",
+   "group": "2A",
+   "title": "C4 then E4, and C4 with E4, major third (IPF-intro-05)",
+   "steps": [
+    "2A:5"
+   ],
+   "teaches": "The named version of \"one after another, and together\": C4 and E4 in the major third colour. Used at step 5, after the pair has been named.",
+   "file": "public/soundscape/m05/info/IPF-intro-05.svg",
+   "preview": "public/soundscape/m05/info/IPF-intro-05.svg",
+   "note": "REUSE as is at step 5. At step 2 use the neutral derivative 2A-09."
+  },
+  {
+   "id": "H-05a",
+   "row": "H-05",
+   "group": "hub",
+   "title": "Palette card 4, major third (IPF-card-04)",
+   "steps": [
+    "H",
+    "2A:5"
+   ],
+   "teaches": "Optional pointer from the hub to the live Palette chapter for the major third (#ip-04).",
+   "file": "public/soundscape/m05/info/IPF-card-04.svg",
+   "preview": "public/soundscape/m05/info/IPF-card-04.svg",
+   "note": "REUSE as is. Link target: Palette #ip-04."
+  },
+  {
+   "id": "H-05b",
+   "row": "H-05",
+   "group": "hub",
+   "title": "Palette card 6, tritone (IPF-card-06)",
+   "steps": [
+    "H",
+    "2B:5"
+   ],
+   "teaches": "Optional pointer from the hub to the live Palette chapter for the tritone (#ip-06). It shows C4 and F♯4; the lesson figure 2B-13 sets B3–F4 beside it.",
+   "file": "public/soundscape/m05/info/IPF-card-06.svg",
+   "preview": "public/soundscape/m05/info/IPF-card-06.svg",
+   "note": "REUSE as is. Link target: Palette #ip-06."
+  }
+ ],
+ "newModelImages": 0
+}
