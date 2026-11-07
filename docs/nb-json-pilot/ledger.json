@@ -1,0 +1,139 @@
+{
+ "model": "google/gemini-3-pro-image",
+ "cap_usd": 2.0,
+ "max_calls": 3,
+ "calls": [
+  {
+   "arm": "A",
+   "endpoint": "images",
+   "time": "2026-11-07T14:58:18",
+   "model": "google/gemini-3-pro-image",
+   "prompt_sha256": "9b354410a9d59e2c293096060bf7b8b1b6211e55ef0b40baee2701d1b48685ee",
+   "reference": "APPROVED_ART_DIRECTION_REFERENCE.png",
+   "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+   "reference_bytes_sent": 2686367,
+   "request_params": {
+    "model": "google/gemini-3-pro-image",
+    "aspect_ratio": "4:3",
+    "image_size": "2K",
+    "n": 1
+   },
+   "charged": true,
+   "seconds": 27.9,
+   "usage": {
+    "prompt_tokens": 949,
+    "completion_tokens": 1120,
+    "total_tokens": 2069,
+    "cost": 0.136298,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.136298,
+     "upstream_inference_prompt_cost": 0.001898,
+     "upstream_inference_completions_cost": 0.1344
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 1120
+    }
+   },
+   "cost_usd": 0.136298,
+   "out": "docs/nb-json-pilot/raw/A.png",
+   "sha256": "afb7e6c72ea757e0c6a6edb2ff0c19da33c11f932446c460cb7533a080c6f98d",
+   "bytes": 1395614
+  },
+  {
+   "arm": "B",
+   "endpoint": "images",
+   "time": "2026-11-07T14:58:52",
+   "model": "google/gemini-3-pro-image",
+   "prompt_sha256": "1eed665d2de484c361ef3e935460cea1c2e2de4ad18d2cb9f6838fd1598164b8",
+   "reference": "APPROVED_ART_DIRECTION_REFERENCE.png",
+   "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+   "reference_bytes_sent": 2686367,
+   "request_params": {
+    "model": "google/gemini-3-pro-image",
+    "aspect_ratio": "4:3",
+    "image_size": "2K",
+    "n": 1
+   },
+   "charged": true,
+   "seconds": 27.9,
+   "usage": {
+    "prompt_tokens": 1476,
+    "completion_tokens": 1120,
+    "total_tokens": 2596,
+    "cost": 0.137352,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.137352,
+     "upstream_inference_prompt_cost": 0.002952,
+     "upstream_inference_completions_cost": 0.1344
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 1120
+    }
+   },
+   "cost_usd": 0.137352,
+   "out": "docs/nb-json-pilot/raw/B.png",
+   "sha256": "8e37d115f4c346d1795824ab57427ec3683c7916aadc8b20975021cd9a336e83",
+   "bytes": 1250319
+  },
+  {
+   "arm": "C",
+   "endpoint": "images",
+   "time": "2026-11-07T14:59:25",
+   "model": "google/gemini-3-pro-image",
+   "prompt_sha256": "fe2c27023a3829a639a690fbd080d40224590400368922e7ea3f3286d707d92f",
+   "reference": "APPROVED_ART_DIRECTION_REFERENCE.png",
+   "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+   "reference_bytes_sent": 2686367,
+   "request_params": {
+    "model": "google/gemini-3-pro-image",
+    "aspect_ratio": "4:3",
+    "image_size": "2K",
+    "n": 1
+   },
+   "charged": true,
+   "seconds": 25.7,
+   "usage": {
+    "prompt_tokens": 1478,
+    "completion_tokens": 1120,
+    "total_tokens": 2598,
+    "cost": 0.137356,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.137356,
+     "upstream_inference_prompt_cost": 0.002956,
+     "upstream_inference_completions_cost": 0.1344
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 1120
+    }
+   },
+   "cost_usd": 0.137356,
+   "out": "docs/nb-json-pilot/raw/C.png",
+   "sha256": "860b747a1f54c87dd76217346f02c2aea245d3f5f9a8b9ee59ac5ad12a9aa4d4",
+   "bytes": 1370560
+  }
+ ]
+}

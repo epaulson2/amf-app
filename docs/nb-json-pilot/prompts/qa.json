@@ -1,0 +1,79 @@
+{
+ "pilot": "nb-json-style-pilot",
+ "model": "google/gemini-3-pro-image (Nano Banana Pro, OpenRouter Images API /api/v1/images)",
+ "settings": {
+  "aspect_ratio": "4:3",
+  "image_size": "2K",
+  "n": 1
+ },
+ "reference": {
+  "role": "style only",
+  "file": "APPROVED_ART_DIRECTION_REFERENCE.png",
+  "sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+  "sent_as": "input_references data URL (real bytes), same for A, B, C",
+  "committed_to_repo": false
+ },
+ "thumbnail": {
+  "status": "THUMBNAIL_TRANSFER_FAILED",
+  "detail": "base64 text is 3514 chars (not a multiple of 4), decodes to partial bytes with sha256 c9001397ba2e94a0e51a74bec8f7be1419d1093a556dd95f1b53fe3a15630639, expected 6069a645...2edd; not used. Canonical reference used for all arms."
+ },
+ "prompt_sha256": {
+  "A": "2a21776022d2c5ee4ca5dc1ec69b53a75850081c39f31320a844590cb92c5114",
+  "B": "f259ecab91a6a11f53fb5dd48b1072f04640505311369e468d48052d4c412eb1",
+  "C": "355138a382354c8af5d44fe2f4828d4071a47d22d87b0996ba6f80e08796e270"
+ },
+ "calls": [
+  {
+   "arm": "A",
+   "endpoint": "images",
+   "cost_usd": 0.136298,
+   "seconds": 27.9,
+   "out": "docs/nb-json-pilot/raw/A.png",
+   "sha256": "afb7e6c72ea757e0c6a6edb2ff0c19da33c11f932446c460cb7533a080c6f98d",
+   "bytes": 1395614
+  },
+  {
+   "arm": "B",
+   "endpoint": "images",
+   "cost_usd": 0.137352,
+   "seconds": 27.9,
+   "out": "docs/nb-json-pilot/raw/B.png",
+   "sha256": "8e37d115f4c346d1795824ab57427ec3683c7916aadc8b20975021cd9a336e83",
+   "bytes": 1250319
+  },
+  {
+   "arm": "C",
+   "endpoint": "images",
+   "cost_usd": 0.137356,
+   "seconds": 25.7,
+   "out": "docs/nb-json-pilot/raw/C.png",
+   "sha256": "860b747a1f54c87dd76217346f02c2aea245d3f5f9a8b9ee59ac5ad12a9aa4d4",
+   "bytes": 1370560
+  }
+ ],
+ "total_cost_usd": 0.411006,
+ "cap_usd": 2.0,
+ "chargeable_calls": 3,
+ "max_calls": 3,
+ "scores_1to5": {
+  "A": {
+   "visual_richness": 4,
+   "semantic_readability": 3,
+   "factual_reliability": 5,
+   "page_integration": 4
+  },
+  "B": {
+   "visual_richness": 5,
+   "semantic_readability": 4,
+   "factual_reliability": 5,
+   "page_integration": 4
+  },
+  "C": {
+   "visual_richness": 4,
+   "semantic_readability": 2,
+   "factual_reliability": 1,
+   "page_integration": 1
+  }
+ },
+ "note": "scores are the engineer's single-reviewer judgement for the founder to override; n=1 per arm, no repeatability claim"
+}

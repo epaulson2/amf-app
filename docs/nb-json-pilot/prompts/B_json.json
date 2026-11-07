@@ -1,0 +1,83 @@
+{
+ "task": "generate_original_teaching_concept_art",
+ "schema": "ajourne_nano_banana_qcr_style_lock/1",
+ "reference_image_policy": {
+  "used": true,
+  "roles": {
+   "ref1": "lock art material, light, transparency, tactile watercolor/glass craft and warm luminous depth"
+  },
+  "instructions": [
+   "If an attribute allows image as source and no text value is provided, copy it from the reference",
+   "Inference or stylistic guessing is forbidden where the image is the source"
+  ],
+  "copy_concept_not_pixels": true,
+  "reference_is_style_only": "notes, key positions, labels and any text in the reference are not facts and must not be reproduced"
+ },
+ "identity_lock": {
+  "artistic_medium": {
+   "source": "image",
+   "locked": true,
+   "meaning": "translucent layered watercolor and glass, painterly grain, intricate spatial depth"
+  },
+  "lighting": {
+   "source": "image",
+   "locked": true,
+   "meaning": "soft internal amber luminance, restrained highlights, tactile shadowing"
+  },
+  "composition_quality": {
+   "source": "image",
+   "locked": true,
+   "meaning": "complex but airy overlapping fields, delicate concentric ripples with a knowledge purpose"
+  },
+  "background_integration": {
+   "source": "image",
+   "locked": true,
+   "meaning": "soft organic edges, no rectangular wallpaper or pasted card"
+  },
+  "craftsmanship_floor": {
+   "source": "image",
+   "locked": true,
+   "meaning": "rich integrated concept-board calibre, not generic simple flat vector"
+  }
+ },
+ "changeable": {
+  "subject": {
+   "source": "text",
+   "value": "Week 2 Lesson 2A major versus minor third relationship: one shared 'third' family with two different measured sizes"
+  },
+  "visual_structure": {
+   "source": "text",
+   "value": "two distinct related luminous fields in a coherent balanced side-by-side rhythm; the left one conceptually a little wider, the right one a little narrower, with shared ornament grammar and a gentle overlap zone between them"
+  },
+  "accent_identity": {
+   "source": "text",
+   "value": "left field antique amber #AB812D, right field orchid violet #8964A4; these identify intervals, never an individual musical voice"
+  },
+  "negative_space": {
+   "source": "text",
+   "value": "keep calm, readable, lighter regions in the lower third for later exact native keyboard diagrams and text overlays"
+  },
+  "background": {
+   "source": "text",
+   "value": "isolated on a pure flat white background (#FFFFFF), organic soft silhouette edges, nothing touching the frame edges"
+  }
+ },
+ "forbidden_changes": [
+  "changing the reference's warm organic art-material treatment to flat schematic vector",
+  "generic decorative swirls without a discernible pair relationship",
+  "sharp rectangular background edges, posters, cards, watermarks, UI controls",
+  "any text, letters, numerals, piano keys, notation, staff lines, time axes or source claims",
+  "treating interval colour as a scientific property of sound"
+ ],
+ "output": {
+  "format": "image",
+  "aspect_ratio": "4:3",
+  "intended_use": "isolated painterly conceptual layer for deterministic native factual overlays"
+ },
+ "quality_checks": {
+  "visual_fidelity": "match richness, layering, warmth and quality of the approved reference",
+  "semantic_clarity": "two interval relationships, not generic abstract decoration",
+  "compositing": "suitable for overlay with exact native text and keyboards",
+  "technical_validity": "no generated note, keyboard or label facts"
+ }
+}
