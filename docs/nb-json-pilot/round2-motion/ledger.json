@@ -1,0 +1,49 @@
+{
+ "model": "google/gemini-3-pro-image",
+ "cap_usd": 0.5,
+ "max_calls": 1,
+ "calls": [
+  {
+   "endpoint": "images",
+   "time": "2026-11-07T16:48:30",
+   "model": "google/gemini-3-pro-image",
+   "prompt_sha256": "6fb977274bc8dc535c7302b62e64f4f456a8c34e04d949be052a85306d408d4a",
+   "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+   "reference_bytes_sent": 2686367,
+   "request_params": {
+    "model": "google/gemini-3-pro-image",
+    "aspect_ratio": "4:3",
+    "image_size": "2K",
+    "n": 1
+   },
+   "charged": true,
+   "seconds": 33.7,
+   "usage": {
+    "prompt_tokens": 1778,
+    "completion_tokens": 1120,
+    "total_tokens": 2898,
+    "cost": 0.137956,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.137956,
+     "upstream_inference_prompt_cost": 0.003556,
+     "upstream_inference_completions_cost": 0.1344
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 1120
+    }
+   },
+   "cost_usd": 0.137956,
+   "out": "docs/nb-json-pilot/round2-motion/raw/B2.png",
+   "sha256": "866b5ffa1cf5b96b10b02f77434e8a8de2358092f5505c18532a76d111d8a74c",
+   "bytes": 1111457
+  }
+ ]
+}
