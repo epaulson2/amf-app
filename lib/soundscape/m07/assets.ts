@@ -41,9 +41,9 @@ const VOICES = 'Filled circle = lower voice; light square = upper voice; dashed 
 export function voiceKey(c: Ctx, W: number, ghost = false): Block {
   const items: [string, string, boolean][] = [['lower', 'lower voice', false], ['upper', 'upper voice', false]]
   if (ghost) { items.push(['lower', 'dashed: where it started', true]) }
-  let x = 6, g = ''
-  items.forEach(([v, label, gh]) => { g += glyph(c, v as 'lower' | 'upper', x + 8, 13, 8, gh) + txt(x + 24, 18, label, { size: 13, fill: '#4a3a4a', sans: true }); x += 24 + label.length * 6.9 + 18 })
-  return { w: W, h: 28, body: g }
+  let x = 6, y = 0, g = ''
+  items.forEach(([v, label, gh]) => { const iw = 24 + label.length * 6.9 + 18; if (x + iw > W && x > 6) { x = 6; y += 26 } g += glyph(c, v as 'lower' | 'upper', x + 8, y + 13, 8, gh) + txt(x + 24, y + 18, label, { size: 13, fill: '#4a3a4a', sans: true }); x += iw })
+  return { w: W, h: 28 + y, body: g }
 }
 const sub = (c: Ctx, s: string, W?: number): Block => note(c, s, { size: 15, weight: 700, fill: INK, w: W })
 const rule = (c: Ctx): Block => ({ w: c.W, h: 2, body: `<path d="M0 1 H${W_IN(c)}" stroke="${SOFT}" stroke-width="1.5"/>` })

@@ -1162,8 +1162,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/H-04.svg",
      "w": 360,
-     "h": 997,
-     "sha256_16": "fb1119d66e72ecf4"
+     "h": 1023,
+     "sha256_16": "2e4b6f4285998b51"
     },
     "print": {
      "file": "public/soundscape/m07/print/H-04.svg",
@@ -1523,8 +1523,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2A-05.svg",
      "w": 360,
-     "h": 554,
-     "sha256_16": "d502d60a55638d2c"
+     "h": 580,
+     "sha256_16": "9fdeaf64909f95ce"
     },
     "print": {
      "file": "public/soundscape/m07/print/2A-05.svg",
@@ -1604,8 +1604,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2A-06.svg",
      "w": 360,
-     "h": 1071,
-     "sha256_16": "5b5ebbb5c38e2edd"
+     "h": 1097,
+     "sha256_16": "1ab4555a4d5c06da"
     },
     "print": {
      "file": "public/soundscape/m07/print/2A-06.svg",
@@ -2040,8 +2040,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-01b.svg",
      "w": 360,
-     "h": 649,
-     "sha256_16": "3ca41ca7fcbe863d"
+     "h": 675,
+     "sha256_16": "25a9f12f8f961632"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-01b.svg",
@@ -2110,8 +2110,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-02.svg",
      "w": 360,
-     "h": 1442,
-     "sha256_16": "c28148751b4d6c3d"
+     "h": 1468,
+     "sha256_16": "d6c4b05351e113a5"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-02.svg",
@@ -2181,8 +2181,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-03.svg",
      "w": 360,
-     "h": 365,
-     "sha256_16": "a3e6ef6056a9a56a"
+     "h": 391,
+     "sha256_16": "a29fe6e2c45f0c8a"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-03.svg",
@@ -2252,8 +2252,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-04.svg",
      "w": 360,
-     "h": 365,
-     "sha256_16": "168f371be8e69c4a"
+     "h": 391,
+     "sha256_16": "b441709d3d029369"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-04.svg",
@@ -2323,8 +2323,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-05.svg",
      "w": 360,
-     "h": 365,
-     "sha256_16": "fec7eb90e2e3e332"
+     "h": 391,
+     "sha256_16": "0342d64e264c7c37"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-05.svg",
@@ -2398,8 +2398,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-06.svg",
      "w": 360,
-     "h": 835,
-     "sha256_16": "bdbfb042854cfbbe"
+     "h": 861,
+     "sha256_16": "d5b8c1b11b1f0577"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-06.svg",
@@ -2467,8 +2467,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-07.svg",
      "w": 360,
-     "h": 526,
-     "sha256_16": "da4201699a45356e"
+     "h": 552,
+     "sha256_16": "2cd75d01e920755a"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-07.svg",
@@ -2617,8 +2617,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-09.svg",
      "w": 360,
-     "h": 1136,
-     "sha256_16": "3f5e09f57b7c8dcd"
+     "h": 1162,
+     "sha256_16": "db171e55a928b6e6"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-09.svg",
@@ -2793,7 +2793,7 @@
    "teaches": "Contrary motion also covers voices that move toward each other: the lower voice rises and the upper voice falls, and the gap between them closes.",
    "howToRead": "The dashed shapes are where the voices started, on B3 and F4. The arrows go toward each other and end on C4 and E4. The picture shows the movement only; nothing is named or counted, and no colour is used.",
    "alt": "A keyboard from B3 to G4. The lower voice rises from B3 to C4 and the upper voice falls from F4 to E4: the two voices move toward each other.",
-   "svgDesc": "Start B3 + F4, end C4 + E4. The lower voice moves from B3 to C4, up 1 semitone. The upper voice moves from F4 to E4, down 1 semitone. The voices move toward each other.",
+   "svgDesc": "Start B3 + F4, end C4 + E4. The lower voice moves from B3 to C4. The upper voice moves from F4 to E4. The voices move toward each other.",
    "tokens": {
     "identityVersion": "1.0",
     "semitones": [],
@@ -2827,19 +2827,19 @@
      "file": "public/soundscape/m07/screen/2B-11n.svg",
      "w": 760,
      "h": 347,
-     "sha256_16": "0f9770bc857f35e6"
+     "sha256_16": "6dabfc146b216b47"
     },
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-11n.svg",
      "w": 360,
-     "h": 367,
-     "sha256_16": "43e0040ba6880ce8"
+     "h": 393,
+     "sha256_16": "e89ae2dade80369b"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-11n.svg",
      "w": 760,
      "h": 347,
-     "sha256_16": "b34787628166c345"
+     "sha256_16": "41a2001d4896df2f"
     }
    },
    "generation": {
@@ -2900,8 +2900,8 @@
     "narrow": {
      "file": "public/soundscape/m07/narrow/2B-11.svg",
      "w": 360,
-     "h": 550,
-     "sha256_16": "3e99fc6bf57ae688"
+     "h": 576,
+     "sha256_16": "92b52781b04403ea"
     },
     "print": {
      "file": "public/soundscape/m07/print/2B-11.svg",

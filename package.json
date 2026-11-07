@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:soundscape": "node --experimental-strip-types --no-warnings --import ./tests/register.mjs --test tests/soundscape.test.mts tests/week1.test.mts tests/week2.test.mts tests/visual.test.mts tests/palette_m06.test.mts"
+    "test:soundscape": "node --experimental-strip-types --no-warnings --import ./tests/register.mjs --test tests/soundscape.test.mts tests/week1.test.mts tests/week2.test.mts tests/visual.test.mts tests/palette_m06.test.mts",
+    "test:m07": "node --experimental-strip-types --no-warnings --import ./tests/register.mjs --test tests/m07.test.mts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.100.0",
