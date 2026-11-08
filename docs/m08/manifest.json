@@ -1,0 +1,2690 @@
+{
+ "model": "google/gemini-3-pro-image",
+ "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+ "total_cost_usd": 8.5612,
+ "figures": [
+  {
+   "id": "A-02",
+   "group": "shared",
+   "title": "The thirteen interval identity colours",
+   "steps": [
+    "H"
+   ],
+   "status": "DERIVE",
+   "teaches": "The thirteen identity colours of the Interval Palette, each next to the name and semitone count it belongs to. The colour is an agreed artistic label for a pair of notes, never a property of sound.",
+   "howToRead": "This is the key to every colour in Week 2. Read across a row: colour, number of semitones, then the interval name. A colour is always printed beside its name, so it never has to be guessed, and it is attached to the pair of notes, not to a voice. Compare with the live Palette page; the values are imported from the same file.",
+   "art": {
+    "sha256": "6580add7279a057abec10bd0329b7375ed731cc9f32e7f5dd05135234bcc3489",
+    "cost_usd": 0.138112,
+    "prompt_sha256": "aefde83f400f079bf3725ef00b53c74bd90e7961398f277570c6fcef31bf7400"
+   },
+   "files": {
+    "desktop_png": "assets/A-02/A-02.desktop.png",
+    "desktop_svg": "assets/A-02/A-02.desktop.svg",
+    "phone_png": "assets/A-02/A-02.phone.png",
+    "phone_svg": "assets/A-02/A-02.phone.svg",
+    "print_png": "assets/A-02/A-02.print.png",
+    "print_svg": "assets/A-02/A-02.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2610x1775",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 67.3,
+     "bytes": 678796,
+     "pass": true
+    },
+    "phone": {
+     "size": "1664x2606",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 72.9,
+     "bytes": 627192,
+     "pass": true
+    },
+    "print": {
+     "size": "2610x1775",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 67.3,
+     "bytes": 671315,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-03",
+   "group": "shared",
+   "title": "The Week 2 keyboard window, B3 to C5",
+   "steps": [
+    "2A:1",
+    "2A:7",
+    "2A:9",
+    "2B:3",
+    "2C:7"
+   ],
+   "status": "DERIVE",
+   "teaches": "The keyboard window Week 2 uses. It starts on B3, so the note just below C4 is on the picture, and every key is named with its octave number.",
+   "howToRead": "Find C4, the white key just left of the group of two black keys in the middle of this window. B3 is the white key immediately to its left. The small numbers above the black keys count each group (two, then three). Every white key carries its octave number, so C4 and C5 are different keys.",
+   "art": {
+    "sha256": "ab2e95625bf926cf81e92aadb129a34543f612f70b031d9d900a65bbe77a85ad",
+    "cost_usd": 0.13812,
+    "prompt_sha256": "2f60c7d1422977b2c7a6b1be0babf72fae048560cddfab765e3e11f99a958f39"
+   },
+   "files": {
+    "desktop_png": "assets/A-03/A-03.desktop.png",
+    "desktop_svg": "assets/A-03/A-03.desktop.svg",
+    "phone_png": "assets/A-03/A-03.phone.png",
+    "phone_svg": "assets/A-03/A-03.phone.svg",
+    "print_png": "assets/A-03/A-03.print.png",
+    "print_svg": "assets/A-03/A-03.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2058x1245",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 68.5,
+     "bytes": 354179,
+     "pass": true
+    },
+    "phone": {
+     "size": "1312x1378",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76,
+     "bytes": 253544,
+     "pass": true
+    },
+    "print": {
+     "size": "2058x1245",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 68.5,
+     "bytes": 349318,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-04",
+   "group": "shared",
+   "title": "Reading a two-lane timeline",
+   "steps": [
+    "2A:2",
+    "2B:2",
+    "2C:1",
+    "2C:7"
+   ],
+   "status": "DERIVE",
+   "teaches": "How a lane works: each voice has its own row, bars are notes, dashed boxes are rests, and one vertical slice is a single moment of two notes together.",
+   "howToRead": "The top lane is the upper voice and the bottom lane is the lower voice. A solid bar is a note sounding for as long as the bar is wide; a dashed box is a rest. The dashed vertical line cuts through both lanes at one moment, and the two notes it crosses are the pair sounding together. This pattern is made up to show how to read a lane; it is not a Week 2 exercise.",
+   "art": {
+    "sha256": "eba9bfcff60cb208bf1690111f14987ebeb26f91cb3575f599673529c6ae7e3a",
+    "cost_usd": 0.138104,
+    "prompt_sha256": "59883bab141d26239e1d6f880c6b25dd6c3b4dcd844866eb80c62515c8f6d483"
+   },
+   "files": {
+    "desktop_png": "assets/A-04/A-04.desktop.png",
+    "desktop_svg": "assets/A-04/A-04.desktop.svg",
+    "phone_png": "assets/A-04/A-04.phone.png",
+    "phone_svg": "assets/A-04/A-04.phone.svg",
+    "print_png": "assets/A-04/A-04.print.png",
+    "print_svg": "assets/A-04/A-04.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2163x1311",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.2,
+     "bytes": 417657,
+     "pass": true
+    },
+    "phone": {
+     "size": "1376x1578",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 85.2,
+     "bytes": 317323,
+     "pass": true
+    },
+    "print": {
+     "size": "2163x1311",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.2,
+     "bytes": 409283,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-05",
+   "group": "shared",
+   "title": "Counting letters is not counting semitones",
+   "steps": [
+    "2A:3",
+    "2A:4"
+   ],
+   "status": "DERIVE",
+   "teaches": "Two different counts for the same two notes: three letters (C, D, E) and four semitone hops from C4 to E4. The black keys count as hops but not as letters.",
+   "howToRead": "In the first keyboard the numbers sit only on lettered white keys, C then D then E. In the second keyboard each arc is one hop to the very next key, black or white, from C4 up to E4. Same two notes, two separate rulers, two different numbers.",
+   "art": {
+    "sha256": "2d550594f76134f7408cd8134256485b5b170d5c6562197d89e901bdebd85e9d",
+    "cost_usd": 0.138102,
+    "prompt_sha256": "640f39304a2f995d71208f2e2cc06a399ba3d6f720ab3239b9e2bd90ca8da1ca"
+   },
+   "files": {
+    "desktop_png": "assets/A-05/A-05.desktop.png",
+    "desktop_svg": "assets/A-05/A-05.desktop.svg",
+    "phone_png": "assets/A-05/A-05.phone.png",
+    "phone_svg": "assets/A-05/A-05.phone.svg",
+    "print_png": "assets/A-05/A-05.print.png",
+    "print_svg": "assets/A-05/A-05.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2058x2004",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 69.7,
+     "bytes": 601069,
+     "pass": true
+    },
+    "phone": {
+     "size": "1310x2168",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76,
+     "bytes": 397687,
+     "pass": true
+    },
+    "print": {
+     "size": "2058x2004",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 69.7,
+     "bytes": 589298,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-06",
+   "group": "shared",
+   "title": "Four motion glyphs",
+   "steps": [
+    "2B:7",
+    "2B:11"
+   ],
+   "status": "DERIVE",
+   "teaches": "The four movement words as pure arrows, with no pitch names: one voice holds, voices go opposite ways, voices go the same way by different amounts, and the strict parallel case of equal amounts.",
+   "howToRead": "In each sketch the filled circle is the lower voice and the square is the upper voice, moving left to right. Watch the arrows: level or rising, opposite directions, same direction. The last sketch has two equal brackets to show that the distance travelled is the same.",
+   "art": {
+    "sha256": "9ae9a7860d6c4120e2ef3a340b822db2a0492edad924388751d37a0a71536e51",
+    "cost_usd": 0.138116,
+    "prompt_sha256": "078758a8fd794bf7ee039eeb42427f6336c065589d45006a160e6b585cff9c57"
+   },
+   "files": {
+    "desktop_png": "assets/A-06/A-06.desktop.png",
+    "desktop_svg": "assets/A-06/A-06.desktop.svg",
+    "phone_png": "assets/A-06/A-06.phone.png",
+    "phone_svg": "assets/A-06/A-06.phone.svg",
+    "print_png": "assets/A-06/A-06.print.png",
+    "print_svg": "assets/A-06/A-06.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2294x1982",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 73.3,
+     "bytes": 716006,
+     "pass": true
+    },
+    "phone": {
+     "size": "1462x3040",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 81.5,
+     "bytes": 687095,
+     "pass": true
+    },
+    "print": {
+     "size": "2294x1982",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 73.3,
+     "bytes": 726589,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-07",
+   "group": "shared",
+   "title": "What stayed, what changed",
+   "steps": [
+    "2B:10",
+    "2B:11",
+    "2C:5"
+   ],
+   "status": "DERIVE",
+   "teaches": "A change in a pair can be described by saying which voice stayed and which moved. The interval changes only because one voice did.",
+   "howToRead": "Each row has three parts: the start pair, what stayed and what changed, and the end pair. The colour bar on each pair names that pair, not either voice. Read left to right, then check that the voice that stayed has the same note on both sides.",
+   "art": {
+    "sha256": "a757b50b1054b5764aa9d6257f1701615ea3ca135e88a86e7239c37c7b5faa6e",
+    "cost_usd": 0.138128,
+    "prompt_sha256": "ce45a8af9779609474d6000ca7d2b4747537d3863b89173d1e448d20ff93f527"
+   },
+   "files": {
+    "desktop_png": "assets/A-07/A-07.desktop.png",
+    "desktop_svg": "assets/A-07/A-07.desktop.svg",
+    "phone_png": "assets/A-07/A-07.phone.png",
+    "phone_svg": "assets/A-07/A-07.phone.svg",
+    "print_png": "assets/A-07/A-07.print.png",
+    "print_svg": "assets/A-07/A-07.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2393x1364",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.7,
+     "bytes": 535086,
+     "pass": true
+    },
+    "phone": {
+     "size": "1524x1712",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 84,
+     "bytes": 444199,
+     "pass": true
+    },
+    "print": {
+     "size": "2393x1364",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.7,
+     "bytes": 535631,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-09",
+   "group": "shared",
+   "title": "Plogger lens for the four named pairs",
+   "steps": [
+    "2B:5",
+    "2B:6",
+    "2C:5"
+   ],
+   "status": "REUSE",
+   "teaches": "The historic Plogger lens for minor third [3], major third [4], perfect fourth [5], tritone [6]: contour is the family, shadow direction is fundamental or octave, fill is harmonicity. It is a separate label from the identity colour.",
+   "howToRead": "Each chip has three separate marks: the outline shape, a shadow to the left, right or both sides, and the fill. The coloured bar beside it is the interval identity colour, which is a different label. The legend underneath states every mark in words and names the printed source this lens comes from.",
+   "art": {
+    "sha256": "5f612ccabd96728eb130bc3b5feeb97cefb97ab7a02a810dd91343eac8b46f01",
+    "cost_usd": 0.138116,
+    "prompt_sha256": "dbba5192c2c7819726f796ae1a0cbd0ced623f2d915bb3be6bc85c9102e403c3"
+   },
+   "files": {
+    "desktop_png": "assets/A-09/A-09.desktop.png",
+    "desktop_svg": "assets/A-09/A-09.desktop.svg",
+    "phone_png": "assets/A-09/A-09.phone.png",
+    "phone_svg": "assets/A-09/A-09.phone.svg",
+    "print_png": "assets/A-09/A-09.print.png",
+    "print_svg": "assets/A-09/A-09.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2388x2195",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 52.1,
+     "bytes": 666400,
+     "pass": true
+    },
+    "phone": {
+     "size": "1522x3234",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 59.5,
+     "bytes": 583043,
+     "pass": true
+    },
+    "print": {
+     "size": "2388x2195",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 52,
+     "bytes": 663959,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-09a",
+   "group": "shared",
+   "title": "Plogger lens for the 2A pairs",
+   "steps": [
+    "2A:5",
+    "2A:6"
+   ],
+   "status": "REUSE",
+   "teaches": "The historic Plogger lens for minor third [3], major third [4], perfect fourth [5]: contour is the family, shadow direction is fundamental or octave, fill is harmonicity. It is a separate label from the identity colour.",
+   "howToRead": "Each chip has three separate marks: the outline shape, a shadow to the left, right or both sides, and the fill. The coloured bar beside it is the interval identity colour, which is a different label. The legend underneath states every mark in words and names the printed source this lens comes from.",
+   "art": {
+    "sha256": "1bcdbd99d2a1ec695becb71847924e7711d51e27c4f33e7b71f04cde5bd62cbc",
+    "cost_usd": 0.138136,
+    "prompt_sha256": "f849b5f3042bcdc032c0ff1743387d4f6a53be942197731ed271cddc2ead30d3"
+   },
+   "files": {
+    "desktop_png": "assets/A-09a/A-09a.desktop.png",
+    "desktop_svg": "assets/A-09a/A-09a.desktop.svg",
+    "phone_png": "assets/A-09a/A-09a.phone.png",
+    "phone_svg": "assets/A-09a/A-09a.phone.svg",
+    "print_png": "assets/A-09a/A-09a.print.png",
+    "print_svg": "assets/A-09a/A-09a.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2069x1674",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.3,
+     "bytes": 486629,
+     "pass": true
+    },
+    "phone": {
+     "size": "1318x2570",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83.4,
+     "bytes": 536921,
+     "pass": true
+    },
+    "print": {
+     "size": "2069x1674",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.3,
+     "bytes": 485821,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-11",
+   "group": "shared",
+   "title": "Pair badges used in Week 2",
+   "steps": [
+    "2B:5",
+    "2B:6"
+   ],
+   "status": "DERIVE",
+   "teaches": "The one badge every named pair in Week 2 uses: colour bar, interval name, the two actual notes, semitones and letters. The same badge appears in every lesson.",
+   "howToRead": "Read each badge from the top: interval name and short symbol, then the two notes with their octave numbers, then the two counts. The colour bar belongs to the whole pair. Two badges can share a colour (C4 + F4 and B3 + E4 are both perfect fourths), because colour follows the interval, not the notes.",
+   "art": {
+    "sha256": "70ced4d9c955c4d23dda29596758a106bcacb09a83d52225faa8d93f581fc02d",
+    "cost_usd": 0.138108,
+    "prompt_sha256": "ba85d37c8ce20c3c1a864cf396d9eda64e40141d6e0a78cc72f5ddefdad19056"
+   },
+   "files": {
+    "desktop_png": "assets/A-11/A-11.desktop.png",
+    "desktop_svg": "assets/A-11/A-11.desktop.svg",
+    "phone_png": "assets/A-11/A-11.phone.png",
+    "phone_svg": "assets/A-11/A-11.phone.svg",
+    "print_png": "assets/A-11/A-11.print.png",
+    "print_svg": "assets/A-11/A-11.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1656x1148",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.8,
+     "bytes": 286036,
+     "pass": true
+    },
+    "phone": {
+     "size": "1056x1752",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 85.9,
+     "bytes": 269369,
+     "pass": true
+    },
+    "print": {
+     "size": "1656x1148",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.8,
+     "bytes": 279748,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "A-12",
+   "group": "shared",
+   "title": "How to read our pictures",
+   "steps": [
+    "H",
+    "2A:5"
+   ],
+   "status": "REVISE",
+   "teaches": "The marks every Week 2 picture uses, including the rule that colour belongs to a pair of notes, not to a voice, and that shape tells the voices apart.",
+   "howToRead": "Read this once before the lessons. The two voices are told apart by shape (circle and square), so the picture still works in black and white. Colour appears only after a pair has been named, as a bar that belongs to the two notes together.",
+   "art": {
+    "sha256": "9899d44c8e290d89fc8a43c291cb6b6873a4533d4261143acde9cd20816f675a",
+    "cost_usd": 0.138104,
+    "prompt_sha256": "a1898bf939ee11045056b1b7d7d34172a768c50f77cd8eff049255acd3714791"
+   },
+   "files": {
+    "desktop_png": "assets/A-12/A-12.desktop.png",
+    "desktop_svg": "assets/A-12/A-12.desktop.svg",
+    "phone_png": "assets/A-12/A-12.phone.png",
+    "phone_svg": "assets/A-12/A-12.phone.svg",
+    "print_png": "assets/A-12/A-12.print.png",
+    "print_svg": "assets/A-12/A-12.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1611x1224",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 71.6,
+     "bytes": 202610,
+     "pass": true
+    },
+    "phone": {
+     "size": "1026x1698",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 80.5,
+     "bytes": 205016,
+     "pass": true
+    },
+    "print": {
+     "size": "1611x1224",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 71.6,
+     "bytes": 200411,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "H-01",
+   "group": "hub",
+   "title": "The Week 2 path: three lessons",
+   "steps": [
+    "H"
+   ],
+   "status": "CREATE",
+   "teaches": "The order of the week: first one voice moves, then both voices move, then two short sketches put the ideas to work.",
+   "howToRead": "Follow the arrows from left to right (top to bottom on a phone). Each box names the lesson and what you do in it. The boxes do not give away the vocabulary; it is introduced in the lessons themselves.",
+   "art": {
+    "sha256": "630b19ad4b1b281e8e7aaadfecd364e829e70f4e79396fee57b156fad4486713",
+    "cost_usd": 0.138156,
+    "prompt_sha256": "709fbd9f553628ebaa96fbe306e1dd08b84ee667cbccbadd8844ecf510dd08d4"
+   },
+   "files": {
+    "desktop_png": "assets/H-01/H-01.desktop.png",
+    "desktop_svg": "assets/H-01/H-01.desktop.svg",
+    "phone_png": "assets/H-01/H-01.phone.png",
+    "phone_svg": "assets/H-01/H-01.phone.svg",
+    "print_png": "assets/H-01/H-01.print.png",
+    "print_svg": "assets/H-01/H-01.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1709x908",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 71.3,
+     "bytes": 202548,
+     "pass": true
+    },
+    "phone": {
+     "size": "1088x1458",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82.4,
+     "bytes": 175150,
+     "pass": true
+    },
+    "print": {
+     "size": "1709x908",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 71.4,
+     "bytes": 209357,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "H-02",
+   "group": "hub",
+   "title": "Week 1 used C3; Week 2 starts at C4",
+   "steps": [
+    "H",
+    "2A:1"
+   ],
+   "status": "CREATE",
+   "teaches": "Week 1 started on C3 and Week 2 starts on C4. They are different keys, one octave apart, and not the same pitch.",
+   "howToRead": "Find the two marked C keys: C3 on the left, C4 in the middle. Each C is the white key just left of a group of two black keys. The bracket joins them; it is a comparison between two registers, not an interval you will study this week.",
+   "art": {
+    "sha256": "f46a0fc81ca0d764755b04b56ed10f3a82c25331f8abb1f969c44e732edb8afb",
+    "cost_usd": 0.138116,
+    "prompt_sha256": "8260d96aa113f7a8c2bd9d53a5ff50a4517a0abef6a971a2aedb614120d56126"
+   },
+   "files": {
+    "desktop_png": "assets/H-02/H-02.desktop.png",
+    "desktop_svg": "assets/H-02/H-02.desktop.svg",
+    "phone_png": "assets/H-02/H-02.phone.png",
+    "phone_svg": "assets/H-02/H-02.phone.svg",
+    "print_png": "assets/H-02/H-02.print.png",
+    "print_svg": "assets/H-02/H-02.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1860x1296",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.1,
+     "bytes": 415285,
+     "pass": true
+    },
+    "phone": {
+     "size": "1184x1362",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83,
+     "bytes": 296134,
+     "pass": true
+    },
+    "print": {
+     "size": "1860x1296",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.1,
+     "bytes": 413890,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "H-03",
+   "group": "hub",
+   "title": "From a note to harmony",
+   "steps": [
+    "H"
+   ],
+   "status": "CREATE",
+   "teaches": "How the week's ideas build on each other: a note, two notes (an interval), a line of notes (a voice), a change between pairs (motion), and what the pairs make together (harmony).",
+   "howToRead": "Read down the chain. Each box adds one idea to the one above it. The worked example beside \"interval\" uses C4 and E4 and carries the only colour on the page, because it is the only pair that is named here.",
+   "art": {
+    "sha256": "cac4273100d83f1d81fd28b898636d4301ac173b7236ee169f67cbfccd4a7bbf",
+    "cost_usd": 0.13814,
+    "prompt_sha256": "50fd40f80ae2a9015852c5b25d1bda39968197c4daecf04391c80efb19ce7441"
+   },
+   "files": {
+    "desktop_png": "assets/H-03/H-03.desktop.png",
+    "desktop_svg": "assets/H-03/H-03.desktop.svg",
+    "phone_png": "assets/H-03/H-03.phone.png",
+    "phone_svg": "assets/H-03/H-03.phone.svg",
+    "print_png": "assets/H-03/H-03.print.png",
+    "print_svg": "assets/H-03/H-03.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2753x2126",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 62.8,
+     "bytes": 846036,
+     "pass": true
+    },
+    "phone": {
+     "size": "1754x2284",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 70.6,
+     "bytes": 652066,
+     "pass": true
+    },
+    "print": {
+     "size": "2753x2126",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 62.8,
+     "bytes": 837867,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "H-04",
+   "group": "hub",
+   "title": "Three lessons in miniature",
+   "steps": [
+    "H"
+   ],
+   "status": "DERIVE",
+   "teaches": "A glimpse of what each lesson looks like on the page: one moving voice, two moving voices, and a timeline with rests.",
+   "howToRead": "Each tile is a tiny version of a picture you will meet in that lesson. Only the shapes matter here: circles and squares are the lower and upper voice, dashed shapes show where a voice started, and the dashed boxes in the third tile are rests.",
+   "art": {
+    "sha256": "d74e6d46823abab99f1cbe86384f6ace36519cef978260d281c0373b8b722f12",
+    "cost_usd": 0.138102,
+    "prompt_sha256": "ae8498926f1814513d41e8ed9063d5f770e4107e427f710808e3429d2b551709"
+   },
+   "files": {
+    "desktop_png": "assets/H-04/H-04.desktop.png",
+    "desktop_svg": "assets/H-04/H-04.desktop.svg",
+    "phone_png": "assets/H-04/H-04.phone.png",
+    "phone_svg": "assets/H-04/H-04.phone.svg",
+    "print_png": "assets/H-04/H-04.print.png",
+    "print_svg": "assets/H-04/H-04.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1827x1442",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.7,
+     "bytes": 448792,
+     "pass": true
+    },
+    "phone": {
+     "size": "1164x2758",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 85.6,
+     "bytes": 413709,
+     "pass": true
+    },
+    "print": {
+     "size": "1827x1442",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.7,
+     "bytes": 453908,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-01",
+   "group": "2A",
+   "title": "Two notes, two voices: C4 and E4",
+   "steps": [
+    "2A:2"
+   ],
+   "status": "REVISE",
+   "teaches": "Two notes can be two voices: a lower one and an upper one. You play C4, then E4, then both together, on your own keyboard.",
+   "howToRead": "Find C4 (the circle) and E4 (the square) on the keyboard. The three prompts underneath are things to do on your own keyboard: play the lower note, play the upper note, then play both. The picture does not name the pair yet; that comes later in the lesson.",
+   "art": {
+    "sha256": "238b168c948540b23a808a35ccfa14d98ded1a3b7f6ffa2efa181336c215df5d",
+    "cost_usd": 0.138106,
+    "prompt_sha256": "3a97f0520752de8cbca53b10dede6b3425db21b52026c26811d3eadfe76a07b7"
+   },
+   "files": {
+    "desktop_png": "assets/2A-01/2A-01.desktop.png",
+    "desktop_svg": "assets/2A-01/2A-01.desktop.svg",
+    "phone_png": "assets/2A-01/2A-01.phone.png",
+    "phone_svg": "assets/2A-01/2A-01.phone.svg",
+    "print_png": "assets/2A-01/2A-01.print.png",
+    "print_svg": "assets/2A-01/2A-01.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1791x1386",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74,
+     "bytes": 340250,
+     "pass": true
+    },
+    "phone": {
+     "size": "1140x1614",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 80.5,
+     "bytes": 244488,
+     "pass": true
+    },
+    "print": {
+     "size": "1791x1386",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74,
+     "bytes": 343516,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-02",
+   "group": "2A",
+   "title": "Count the letters: C D E and E F G",
+   "steps": [
+    "2A:3"
+   ],
+   "status": "CREATE",
+   "teaches": "Counting letters, first and last included: C to E is three letters, and E to G is also three letters. At this point no semitones are counted.",
+   "howToRead": "The numbers sit on lettered keys only. Start at the lower note and count 1 on it, then each lettered key up to the upper note. Both pairs end on 3 even though the notes are different; the next step counts something else.",
+   "art": {
+    "sha256": "5f61310f3182ffafdd371fc3583e199419f23ca9a7c4dbb4000148478df77f40",
+    "cost_usd": 0.138116,
+    "prompt_sha256": "6d2086eb17b85146a97c9c42bd97b6db98017d0173c389e6117d0248e3771560"
+   },
+   "files": {
+    "desktop_png": "assets/2A-02/2A-02.desktop.png",
+    "desktop_svg": "assets/2A-02/2A-02.desktop.svg",
+    "phone_png": "assets/2A-02/2A-02.phone.png",
+    "phone_svg": "assets/2A-02/2A-02.phone.svg",
+    "print_png": "assets/2A-02/2A-02.print.png",
+    "print_svg": "assets/2A-02/2A-02.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1899x1764",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77,
+     "bytes": 518093,
+     "pass": true
+    },
+    "phone": {
+     "size": "1208x1980",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83.1,
+     "bytes": 386923,
+     "pass": true
+    },
+    "print": {
+     "size": "1899x1764",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.3,
+     "bytes": 525094,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-03",
+   "group": "2A",
+   "title": "Count the semitones: every key counts",
+   "steps": [
+    "2A:4"
+   ],
+   "status": "DERIVE",
+   "teaches": "Semitones count every key, black or white. C4 to E4 is four hops and E4 to G4 is three hops, although both span three letters.",
+   "howToRead": "Each arc is one hop to the very next key, whatever its colour. Count the arcs from the lower note to the upper note; the last number is the total. The two totals differ (4 and 3) even though both pairs span the letters C D E and E F G.",
+   "art": {
+    "sha256": "3cc3475bdb16578cf62198292941d644ba950d83b942fb45d769583baa2f265b",
+    "cost_usd": 0.138102,
+    "prompt_sha256": "c798b66fae65b437b8446857362e004353e1758986c424851cbabb0e0f59ea20"
+   },
+   "files": {
+    "desktop_png": "assets/2A-03/2A-03.desktop.png",
+    "desktop_svg": "assets/2A-03/2A-03.desktop.svg",
+    "phone_png": "assets/2A-03/2A-03.phone.png",
+    "phone_svg": "assets/2A-03/2A-03.phone.svg",
+    "print_png": "assets/2A-03/2A-03.print.png",
+    "print_svg": "assets/2A-03/2A-03.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1776x1799",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 84.1,
+     "bytes": 503499,
+     "pass": true
+    },
+    "phone": {
+     "size": "1132x2102",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 88.2,
+     "bytes": 379382,
+     "pass": true
+    },
+    "print": {
+     "size": "1776x1799",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 84.1,
+     "bytes": 504034,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-04",
+   "group": "2A",
+   "title": "Same letters, different size: major and minor third",
+   "steps": [
+    "2A:5"
+   ],
+   "status": "CREATE",
+   "teaches": "Two thirds, three letters each, but four semitones (major third) against three (minor third). E4 and G4 are an actual minor third with its own colour, not the Palette's C4 and E♭4.",
+   "howToRead": "The coloured bracket under each keyboard names the pair. The bar on the badge uses the same colour as the keys, because the colour belongs to the pair of notes. The two colours differ because the semitone counts differ, even though both pairs span three letters.",
+   "art": {
+    "sha256": "570080dfd78e17e969398bca61554f3db7798977b7df9d4890ead3ba2135550e",
+    "cost_usd": 0.13812,
+    "prompt_sha256": "8ff0a9c1d733b3c02153e9bb5778dab404c2519b827c01bffecbd288a3983dfd"
+   },
+   "files": {
+    "desktop_png": "assets/2A-04/2A-04.desktop.png",
+    "desktop_svg": "assets/2A-04/2A-04.desktop.svg",
+    "phone_png": "assets/2A-04/2A-04.phone.png",
+    "phone_svg": "assets/2A-04/2A-04.phone.svg",
+    "print_png": "assets/2A-04/2A-04.print.png",
+    "print_svg": "assets/2A-04/2A-04.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1800x2064",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.3,
+     "bytes": 445834,
+     "pass": true
+    },
+    "phone": {
+     "size": "1146x2274",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 84.2,
+     "bytes": 310193,
+     "pass": true
+    },
+    "print": {
+     "size": "1800x2064",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.1,
+     "bytes": 442245,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-05",
+   "group": "2A",
+   "title": "One voice moves: a major third becomes a perfect fourth",
+   "steps": [
+    "2A:6"
+   ],
+   "status": "REVISE",
+   "teaches": "When only the upper voice moves up by one semitone, the interval grows from a major third (4 semitones) to a perfect fourth (5). The lower voice stays on C4.",
+   "howToRead": "The dashed square is where the upper voice started (E4) and the arrow shows its single step to F4. The lower voice, the circle on C4, does not move. The keys are coloured for the pair where you finish, and the two badges name the start and the end.",
+   "art": {
+    "sha256": "434b175d723a78ac10746e7f148edf1e1f9e0fa368c0fe1f6e361558baf94d50",
+    "cost_usd": 0.13812,
+    "prompt_sha256": "94112961600d51610e8132c9e7a9cb20234fcbcdbf13578725adb954ce1c46eb"
+   },
+   "files": {
+    "desktop_png": "assets/2A-05/2A-05.desktop.png",
+    "desktop_svg": "assets/2A-05/2A-05.desktop.svg",
+    "phone_png": "assets/2A-05/2A-05.phone.png",
+    "phone_svg": "assets/2A-05/2A-05.phone.svg",
+    "print_png": "assets/2A-05/2A-05.print.png",
+    "print_svg": "assets/2A-05/2A-05.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1944x1389",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 71.7,
+     "bytes": 342866,
+     "pass": true
+    },
+    "phone": {
+     "size": "1240x1826",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 80.1,
+     "bytes": 291083,
+     "pass": true
+    },
+    "print": {
+     "size": "1944x1389",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 72.2,
+     "bytes": 342173,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-06",
+   "group": "2A",
+   "title": "The foundation can travel",
+   "steps": [
+    "2A:7"
+   ],
+   "status": "REVISE",
+   "teaches": "The lower voice can move too. C4 down to B3 under E4 makes a perfect fourth (5 semitones); C4 up to D4 makes a major second (2 semitones).",
+   "howToRead": "Each keyboard starts from the same pair, C4 and E4, shown by dashed marks. Read the arrow above the keys to see which way the lower voice went and by how much, then read the badges for the new pair. The keyboard starts at B3, so the key just below C4 is on the picture.",
+   "art": {
+    "sha256": "9517f1e690397cc7869cec906727a957ed7fea579df072732d7732eaaa4db314",
+    "cost_usd": 0.138128,
+    "prompt_sha256": "1c0237baf82ab506808b2e0e3faf4f7068babe5e42839ad921fefe60e2dc89b4"
+   },
+   "files": {
+    "desktop_png": "assets/2A-06/2A-06.desktop.png",
+    "desktop_svg": "assets/2A-06/2A-06.desktop.svg",
+    "phone_png": "assets/2A-06/2A-06.phone.png",
+    "phone_svg": "assets/2A-06/2A-06.phone.svg",
+    "print_png": "assets/2A-06/2A-06.print.png",
+    "print_svg": "assets/2A-06/2A-06.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1895x2258",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.9,
+     "bytes": 508955,
+     "pass": true
+    },
+    "phone": {
+     "size": "1208x3026",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82,
+     "bytes": 441880,
+     "pass": true
+    },
+    "print": {
+     "size": "1895x2258",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.9,
+     "bytes": 504181,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-07",
+   "group": "2A",
+   "title": "Three changes from one beginning",
+   "steps": [
+    "2A:8",
+    "2A:10"
+   ],
+   "status": "DERIVE",
+   "teaches": "One beginning, three small changes, three different results: perfect fourth, perfect fourth, major second. The summary the lesson ends on.",
+   "howToRead": "Each card names the change in words, then lists the start pair and the end pair with their colour bars. Compare the end swatches: the first two changes land on the same colour, because both give 5 semitones, even though different notes moved.",
+   "art": {
+    "sha256": "983ca18100334696554f42ea43930abc0b727713d6b024f9630fe104d2b33b1f",
+    "cost_usd": 0.138176,
+    "prompt_sha256": "e593127db6818a4c0633c7df134e8b58bacad1a481f4ecab47f258e98f7c6865"
+   },
+   "files": {
+    "desktop_png": "assets/2A-07/2A-07.desktop.png",
+    "desktop_svg": "assets/2A-07/2A-07.desktop.svg",
+    "phone_png": "assets/2A-07/2A-07.phone.png",
+    "phone_svg": "assets/2A-07/2A-07.phone.svg",
+    "print_png": "assets/2A-07/2A-07.print.png",
+    "print_svg": "assets/2A-07/2A-07.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1566x1310",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82,
+     "bytes": 280857,
+     "pass": true
+    },
+    "phone": {
+     "size": "996x1624",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 88.3,
+     "bytes": 199691,
+     "pass": true
+    },
+    "print": {
+     "size": "1566x1310",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82,
+     "bytes": 285191,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-08",
+   "group": "2A",
+   "title": "Your keyboard sheet: build, then change",
+   "steps": [
+    "2A:9"
+   ],
+   "status": "REVISE",
+   "teaches": "A paper companion for working at your own keyboard: write down the notes and counts for a major third, a minor third and three changes. Nothing is scored.",
+   "howToRead": "Work on your own keyboard and write what you find on the lines. The first change row is already filled in as an example with its colour bar. The printed version carries the same words and lines in black and white; there is no check button and no score.",
+   "art": {
+    "sha256": "7c3571c200bf6c33215cfd9ff44d767a7446cc7366c988d85d7b51f495e474a3",
+    "cost_usd": 0.1381,
+    "prompt_sha256": "0dfb3ce9c3af21c23c3a52b88d66299d77ff15285cc5adeba900ad537a4ce7f6"
+   },
+   "files": {
+    "desktop_png": "assets/2A-08/2A-08.desktop.png",
+    "desktop_svg": "assets/2A-08/2A-08.desktop.svg",
+    "phone_png": "assets/2A-08/2A-08.phone.png",
+    "phone_svg": "assets/2A-08/2A-08.phone.svg",
+    "print_png": "assets/2A-08/2A-08.print.png",
+    "print_svg": "assets/2A-08/2A-08.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1980x1820",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 71,
+     "bytes": 481923,
+     "pass": true
+    },
+    "phone": {
+     "size": "1262x2654",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 79.5,
+     "bytes": 422988,
+     "pass": true
+    },
+    "print": {
+     "size": "1980x1820",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 70.9,
+     "bytes": 479814,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-09",
+   "group": "2A",
+   "title": "One after another, and together",
+   "steps": [
+    "2A:2"
+   ],
+   "status": "DERIVE",
+   "teaches": "Two notes can be played one after another or at the same time. Together, the lower note sits under the upper note.",
+   "howToRead": "In the first row, read left to right: the lower note first, then the upper note. In the second row the two notes share one slot: the square (upper) sits above the circle (lower) because they sound at the same moment. Try both on your own keyboard.",
+   "art": {
+    "sha256": "6d2b99a9bb7871af603062159f7229101d007c67e9bf2e721373bd7a2e5e9308",
+    "cost_usd": 0.138092,
+    "prompt_sha256": "2edf4e484e767b1e80d7a988cfb98601132d096cfd5005fd2c9797c97c282135"
+   },
+   "files": {
+    "desktop_png": "assets/2A-09/2A-09.desktop.png",
+    "desktop_svg": "assets/2A-09/2A-09.desktop.svg",
+    "phone_png": "assets/2A-09/2A-09.phone.png",
+    "phone_svg": "assets/2A-09/2A-09.phone.svg",
+    "print_png": "assets/2A-09/2A-09.print.png",
+    "print_svg": "assets/2A-09/2A-09.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2499x1406",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74,
+     "bytes": 633936,
+     "pass": true
+    },
+    "phone": {
+     "size": "1592x1490",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.1,
+     "bytes": 417645,
+     "pass": true
+    },
+    "print": {
+     "size": "2499x1406",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74,
+     "bytes": 647250,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2A-10",
+   "group": "2A",
+   "title": "The foundation moves: E4 and G4, a minor third",
+   "steps": [
+    "2A:5"
+   ],
+   "status": "DERIVE",
+   "teaches": "A third does not have to start on C. E4 to G4 spans three letters and three semitones: a minor third, in the minor third colour.",
+   "howToRead": "Count the three arcs from E4 up to G4 (E to F, F to F♯, F♯ to G). The keys and the bracket share the minor third colour because that colour belongs to the pair, wherever it sits on the keyboard. The pair is E4 and G4, not C4 and E♭4.",
+   "art": {
+    "sha256": "b49e4e759d1055f878c74a4ef15e803e61af97df7733e5c478d96b782be7fe80",
+    "cost_usd": 0.138106,
+    "prompt_sha256": "4970cb4751752f00fede5e34f7189077ca7fc677af67f2e081dfa3b8a2ea05c8"
+   },
+   "files": {
+    "desktop_png": "assets/2A-10/2A-10.desktop.png",
+    "desktop_svg": "assets/2A-10/2A-10.desktop.svg",
+    "phone_png": "assets/2A-10/2A-10.phone.png",
+    "phone_svg": "assets/2A-10/2A-10.phone.svg",
+    "print_png": "assets/2A-10/2A-10.print.png",
+    "print_svg": "assets/2A-10/2A-10.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1757x1337",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 75.1,
+     "bytes": 293000,
+     "pass": true
+    },
+    "phone": {
+     "size": "1120x1488",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 81.3,
+     "bytes": 202313,
+     "pass": true
+    },
+    "print": {
+     "size": "1757x1337",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.9,
+     "bytes": 287525,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-01a",
+   "group": "2B",
+   "title": "Two paths through time",
+   "steps": [
+    "2B:1",
+    "2B:2"
+   ],
+   "status": "REPLACE",
+   "teaches": "Each voice has its own path across time (horizontal), and at any one stage the two notes make a gap (vertical). Two directions to look in: along a path, and between the voices.",
+   "howToRead": "Read each line from left to right: that is a voice's path. Then look straight up at one stage: the vertical gap there is the two notes at that moment. The picture gives only note names and stages. It does not name the pair or the movement; the lesson does that next.",
+   "art": {
+    "sha256": "6799487def93641b884c107d756d689e07edad0e3654dbda57ddc0307f7c9c00",
+    "cost_usd": 0.138088,
+    "prompt_sha256": "46569c470ebdf4c4d82fe9453d36baf44a687dd82fb298705b8286d841f4eb3a"
+   },
+   "files": {
+    "desktop_png": "assets/2B-01a/2B-01a.desktop.png",
+    "desktop_svg": "assets/2B-01a/2B-01a.desktop.svg",
+    "phone_png": "assets/2B-01a/2B-01a.phone.png",
+    "phone_svg": "assets/2B-01a/2B-01a.phone.svg",
+    "print_png": "assets/2B-01a/2B-01a.print.png",
+    "print_svg": "assets/2B-01a/2B-01a.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1944x1317",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76.6,
+     "bytes": 448566,
+     "pass": true
+    },
+    "phone": {
+     "size": "1238x1428",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82.9,
+     "bytes": 326228,
+     "pass": true
+    },
+    "print": {
+     "size": "1944x1317",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76.6,
+     "bytes": 448548,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-01b",
+   "group": "2B",
+   "title": "Before we name it: two journeys",
+   "steps": [
+    "2B:3"
+   ],
+   "status": "REPLACE",
+   "teaches": "Two journeys from the same two notes. Compare them: in each, one voice does something different. The picture shows only the notes and the arrows, so you can decide what you notice before it is named.",
+   "howToRead": "Each keyboard starts from the dashed shapes on C4 and E4 and ends on the solid shapes. Follow the arrows and compare the two journeys with your eyes and, if you like, with your own keyboard. There are no labels on the endings: that is deliberate, and the next step supplies the names.",
+   "art": {
+    "sha256": "a30d5bf5dffed76e62c0901a853f00a4f059708860a127958d14d736b7ab8275",
+    "cost_usd": 0.1381,
+    "prompt_sha256": "af9b96a171bf1bea39e8db3ebddf9cf86cadaa2037cf9ec5e553f86a6c9051a4"
+   },
+   "files": {
+    "desktop_png": "assets/2B-01b/2B-01b.desktop.png",
+    "desktop_svg": "assets/2B-01b/2B-01b.desktop.svg",
+    "phone_png": "assets/2B-01b/2B-01b.phone.png",
+    "phone_svg": "assets/2B-01b/2B-01b.phone.svg",
+    "print_png": "assets/2B-01b/2B-01b.print.png",
+    "print_svg": "assets/2B-01b/2B-01b.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1980x2117",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76.1,
+     "bytes": 741470,
+     "pass": true
+    },
+    "phone": {
+     "size": "1262x2312",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82.1,
+     "bytes": 543002,
+     "pass": true
+    },
+    "print": {
+     "size": "1980x2117",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76,
+     "bytes": 740960,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-02",
+   "group": "2B",
+   "title": "Three families of motion, with exact examples",
+   "steps": [
+    "2B:4"
+   ],
+   "status": "DERIVE",
+   "teaches": "The three families of motion as exact keyboard examples: oblique, contrary (both apart and together) and similar. The narrower word \"parallel\" comes later, in step 6.",
+   "howToRead": "Each tile is one example with its definition above it. The dashed shapes are where each voice started and the arrows show where it goes. Contrary covers two examples, moving apart and moving together. Match what the arrows do to the words, not the other way round.",
+   "art": {
+    "sha256": "19cd7d6d8b5dd5d812efac3fbfe487f34e5f966eae731908bfb2a50ece60ea8d",
+    "cost_usd": 0.13813,
+    "prompt_sha256": "4d992a067296598a038f21bee15cd31dcca015d2d0ef8309ca3412192a3251aa"
+   },
+   "files": {
+    "desktop_png": "assets/2B-02/2B-02.desktop.png",
+    "desktop_svg": "assets/2B-02/2B-02.desktop.svg",
+    "phone_png": "assets/2B-02/2B-02.phone.png",
+    "phone_svg": "assets/2B-02/2B-02.phone.svg",
+    "print_png": "assets/2B-02/2B-02.print.png",
+    "print_svg": "assets/2B-02/2B-02.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1857x2796",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 73.7,
+     "bytes": 849813,
+     "pass": true
+    },
+    "phone": {
+     "size": "1184x4182",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 81.3,
+     "bytes": 657707,
+     "pass": true
+    },
+    "print": {
+     "size": "1857x2796",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 73.7,
+     "bytes": 842222,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-03",
+   "group": "2B",
+   "title": "Change 1: only the upper voice rises",
+   "steps": [
+    "2B:4",
+    "2B:8"
+   ],
+   "status": "REVISE",
+   "teaches": "The first of the five changes: C4 holds while E4 rises to F4. One voice holds and one moves, which is oblique motion.",
+   "howToRead": "The dashed square is where the upper voice began, on E4, and the arrow takes it to F4. The circle on C4 does not move. The page does not yet say what pair this makes; you will name it later, from the same picture.",
+   "art": {
+    "sha256": "dbea5c9c85a16f7174ce6eccc1d99fd54c98963913831da4dfe80057acde6e5b",
+    "cost_usd": 0.1381,
+    "prompt_sha256": "c5d2e859c29ba24783feccbd0dabfdf19a404c8e2dc2fde9be18c1568a66da39"
+   },
+   "files": {
+    "desktop_png": "assets/2B-03/2B-03.desktop.png",
+    "desktop_svg": "assets/2B-03/2B-03.desktop.svg",
+    "phone_png": "assets/2B-03/2B-03.phone.png",
+    "phone_svg": "assets/2B-03/2B-03.phone.svg",
+    "print_png": "assets/2B-03/2B-03.print.png",
+    "print_svg": "assets/2B-03/2B-03.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1808x1233",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.6,
+     "bytes": 316261,
+     "pass": true
+    },
+    "phone": {
+     "size": "1150x1398",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 81.5,
+     "bytes": 241431,
+     "pass": true
+    },
+    "print": {
+     "size": "1808x1233",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.6,
+     "bytes": 315728,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-04",
+   "group": "2B",
+   "title": "Change 2: only the lower voice falls",
+   "steps": [
+    "2B:4",
+    "2B:8"
+   ],
+   "status": "REVISE",
+   "teaches": "The second of the five changes: E4 holds while C4 falls to B3. One voice holds, one moves, so this is also oblique.",
+   "howToRead": "The dashed circle on C4 is where the lower voice began; the arrow takes it left to B3. The square on E4 stays. The keyboard starts at B3, so the new low note is on the picture.",
+   "art": {
+    "sha256": "ff6171c4bfcc61f64ac55fb04fd43ac4d5453937248fac348c6904effe705c89",
+    "cost_usd": 0.138098,
+    "prompt_sha256": "57209d38105e0457771fbf23773bd61eed9922b01f4884b090749aa608ec51a0"
+   },
+   "files": {
+    "desktop_png": "assets/2B-04/2B-04.desktop.png",
+    "desktop_svg": "assets/2B-04/2B-04.desktop.svg",
+    "phone_png": "assets/2B-04/2B-04.phone.png",
+    "phone_svg": "assets/2B-04/2B-04.phone.svg",
+    "print_png": "assets/2B-04/2B-04.print.png",
+    "print_svg": "assets/2B-04/2B-04.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2058x1208",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.7,
+     "bytes": 393401,
+     "pass": true
+    },
+    "phone": {
+     "size": "1312x1346",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 84.6,
+     "bytes": 291715,
+     "pass": true
+    },
+    "print": {
+     "size": "2058x1208",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.7,
+     "bytes": 395634,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-05",
+   "group": "2B",
+   "title": "Change 3: only the lower voice rises",
+   "steps": [
+    "2B:4",
+    "2B:8"
+   ],
+   "status": "REVISE",
+   "teaches": "The third of the five changes: E4 holds while C4 rises to D4. Again one voice holds and one moves, oblique motion, but the lower voice now moves up.",
+   "howToRead": "The dashed circle on C4 is the start; the arrow takes the lower voice right to D4, one key below the held E4. Compare with change 2: same voice moving, the other direction.",
+   "art": {
+    "sha256": "b338d6e3e51fe269ab533cbd15e97528663441cb3f03aed2849d8dd239b88cba",
+    "cost_usd": 0.1381,
+    "prompt_sha256": "7bcf29ea8949adc80720d724384a4de5b4b4d2b82259a4a49b3cb4ffdab24052"
+   },
+   "files": {
+    "desktop_png": "assets/2B-05/2B-05.desktop.png",
+    "desktop_svg": "assets/2B-05/2B-05.desktop.svg",
+    "phone_png": "assets/2B-05/2B-05.phone.png",
+    "phone_svg": "assets/2B-05/2B-05.phone.svg",
+    "print_png": "assets/2B-05/2B-05.print.png",
+    "print_svg": "assets/2B-05/2B-05.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2436x1287",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 68.3,
+     "bytes": 442247,
+     "pass": true
+    },
+    "phone": {
+     "size": "1552x1396",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 72.2,
+     "bytes": 290673,
+     "pass": true
+    },
+    "print": {
+     "size": "2436x1287",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 68,
+     "bytes": 433295,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-06",
+   "group": "2B",
+   "title": "Change 4: moving apart, B3 and F4, a diminished fifth",
+   "steps": [
+    "2B:5",
+    "2B:8"
+   ],
+   "status": "REVISE",
+   "teaches": "Moving apart: both voices go in opposite directions, C4 down to B3 and E4 up to F4. The new pair B3 + F4 spans five letters and six semitones: a diminished fifth, shown in the tritone colour with its Plogger chip.",
+   "howToRead": "The arrows above the keys show the two voices leaving C4 and E4 in opposite directions. The keys B3 and F4 are tinted with the tritone colour, and the six numbered arcs count every key from B3 to F4. The chip is a separate historic lens, not the colour. These are B3 and F4, not the C4 and F♯4 on the Palette card.",
+   "art": {
+    "sha256": "dc261f2cd5e782284886f71487c646397179a11a8318b302c400f60e89926469",
+    "cost_usd": 0.138104,
+    "prompt_sha256": "f767c89a71a80e269ac98f25a08f68ead152965b2a7ca6a82d5c3b0f02c68964"
+   },
+   "files": {
+    "desktop_png": "assets/2B-06/2B-06.desktop.png",
+    "desktop_svg": "assets/2B-06/2B-06.desktop.svg",
+    "phone_png": "assets/2B-06/2B-06.phone.png",
+    "phone_svg": "assets/2B-06/2B-06.phone.svg",
+    "print_png": "assets/2B-06/2B-06.print.png",
+    "print_svg": "assets/2B-06/2B-06.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1907x2670",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83.3,
+     "bytes": 985983,
+     "pass": true
+    },
+    "phone": {
+     "size": "1214x2858",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 86.6,
+     "bytes": 626659,
+     "pass": true
+    },
+    "print": {
+     "size": "1907x2670",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83.3,
+     "bytes": 984460,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-07",
+   "group": "2B",
+   "title": "Change 5: both rise, a major third becomes a minor third",
+   "steps": [
+    "2B:6",
+    "2B:8"
+   ],
+   "status": "REVISE",
+   "teaches": "Similar motion: both voices rise, the lower by 2 semitones and the upper by 1. Because the distances differ, the interval shrinks from a major third to a minor third, so this is similar and not strict parallel in this course.",
+   "howToRead": "Two arrows go the same way but are not the same size: the lower voice steps over a black key (up 2) and the upper takes one step (up 1). That difference is why the pair changes size. The end keys carry the minor third colour.",
+   "art": {
+    "sha256": "d577fd95991c760a02a29bf3a1d2f5da211f7d4ec854282c56d41c6e34420f8b",
+    "cost_usd": 0.138158,
+    "prompt_sha256": "40bdce6fc6cab06e8da1cad15e3b2cebbee07fc43a97a7e4ed90e4b8f6ee6745"
+   },
+   "files": {
+    "desktop_png": "assets/2B-07/2B-07.desktop.png",
+    "desktop_svg": "assets/2B-07/2B-07.desktop.svg",
+    "phone_png": "assets/2B-07/2B-07.phone.png",
+    "phone_svg": "assets/2B-07/2B-07.phone.svg",
+    "print_png": "assets/2B-07/2B-07.print.png",
+    "print_svg": "assets/2B-07/2B-07.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1782x1355",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 75.2,
+     "bytes": 358394,
+     "pass": true
+    },
+    "phone": {
+     "size": "1136x1756",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82.8,
+     "bytes": 286298,
+     "pass": true
+    },
+    "print": {
+     "size": "1782x1355",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 75.2,
+     "bytes": 358965,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-08",
+   "group": "2B",
+   "title": "The five changes, all from C4 + E4",
+   "steps": [
+    "2B:8",
+    "2B:9",
+    "2B:11"
+   ],
+   "status": "REVISE",
+   "teaches": "All five changes side by side, each restarting from the same C4 + E4: which voice moves, the new pair, its interval and its semitone count.",
+   "howToRead": "Every row begins from C4 and E4 again; the changes do not chain. Read across: the change in words, the motion word, the end pair, then the interval with its colour. Rows 1 and 2 share a colour because they give the same interval size.",
+   "art": {
+    "sha256": "91612ab8c99c977c686a2348626f4286dec228ad4a133b69f9c477e6aa2d22cc",
+    "cost_usd": 0.138108,
+    "prompt_sha256": "e3b6c18b44feb64e5e52c21f2b65159fc3f4f06690dd6c73f1ca5968a43cbbeb"
+   },
+   "files": {
+    "desktop_png": "assets/2B-08/2B-08.desktop.png",
+    "desktop_svg": "assets/2B-08/2B-08.desktop.svg",
+    "phone_png": "assets/2B-08/2B-08.phone.png",
+    "phone_svg": "assets/2B-08/2B-08.phone.svg",
+    "print_png": "assets/2B-08/2B-08.print.png",
+    "print_svg": "assets/2B-08/2B-08.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1683x1326",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 80.3,
+     "bytes": 321664,
+     "pass": true
+    },
+    "phone": {
+     "size": "1072x1884",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 87.8,
+     "bytes": 283687,
+     "pass": true
+    },
+    "print": {
+     "size": "1683x1326",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 80.3,
+     "bytes": 326936,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-09",
+   "group": "2B",
+   "title": "Similar, and strict parallel",
+   "steps": [
+    "2B:6"
+   ],
+   "status": "CREATE",
+   "teaches": "Same direction is not always strict parallel. In the course vocabulary strict parallel needs equal distances and an unchanged interval size. Some books use the word \"parallel\" more widely; both uses are respectable.",
+   "howToRead": "The top keyboard is change 5 of the lesson: the two arrows are different sizes and the interval shrinks. The lower keyboard is the strict case, outside the five changes: both arrows are the same size and the end pair is a major third again. Compare the two arrow pairs and the two end colours.",
+   "art": {
+    "sha256": "bc27cbf3aed194b51588fd308f3d05b39d87a408236acc582f749c4b80ebdc8b",
+    "cost_usd": 0.13813,
+    "prompt_sha256": "ef574f13b5e57b78ee591d7408bf6a539d759fb1819648a38295a93a3713e83b"
+   },
+   "files": {
+    "desktop_png": "assets/2B-09/2B-09.desktop.png",
+    "desktop_svg": "assets/2B-09/2B-09.desktop.svg",
+    "phone_png": "assets/2B-09/2B-09.phone.png",
+    "phone_svg": "assets/2B-09/2B-09.phone.svg",
+    "print_png": "assets/2B-09/2B-09.print.png",
+    "print_svg": "assets/2B-09/2B-09.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2732x2672",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 55.9,
+     "bytes": 755141,
+     "pass": true
+    },
+    "phone": {
+     "size": "1742x3478",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 65.4,
+     "bytes": 723643,
+     "pass": true
+    },
+    "print": {
+     "size": "2732x2672",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 55.9,
+     "bytes": 751012,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-10",
+   "group": "2B",
+   "title": "A two-voice path in four stages",
+   "steps": [
+    "2B:10"
+   ],
+   "status": "REVISE",
+   "teaches": "A short path through four stages that uses the lesson's changes in a row. Each stage has its own pair and colour, and the path ends where it began.",
+   "howToRead": "Read left to right, stage by stage. Each vertical coloured bar joins the two notes of that stage and names its interval underneath; the lines show how each voice travels between stages. Stages are steps in order, with no clock, so take as long as you like at each.",
+   "art": {
+    "sha256": "b01c6890b9f00d429a7308dcaa3167c436d3561a1401b5efc04e1b63cf32bb85",
+    "cost_usd": 0.138126,
+    "prompt_sha256": "e0bf89043cd193eecaa385e21482a88831b3020279a48d96e9becc25a25f5170"
+   },
+   "files": {
+    "desktop_png": "assets/2B-10/2B-10.desktop.png",
+    "desktop_svg": "assets/2B-10/2B-10.desktop.svg",
+    "phone_png": "assets/2B-10/2B-10.phone.png",
+    "phone_svg": "assets/2B-10/2B-10.phone.svg",
+    "print_png": "assets/2B-10/2B-10.print.png",
+    "print_svg": "assets/2B-10/2B-10.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2502x1632",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 68.2,
+     "bytes": 563941,
+     "pass": true
+    },
+    "phone": {
+     "size": "1596x1670",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 75.4,
+     "bytes": 402680,
+     "pass": true
+    },
+    "print": {
+     "size": "2502x1632",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 68.2,
+     "bytes": 561045,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-10b",
+   "group": "2B",
+   "title": "Your two-voice path sheet",
+   "steps": [
+    "2B:10"
+   ],
+   "status": "REVISE",
+   "teaches": "A paper sheet for drawing your own four-stage path: write the upper and lower note at each stage, then the interval you find.",
+   "howToRead": "Each column is one stage. Write the upper note in the top box and the lower note in the lower box, then work out the letters and semitones in the bottom box using your own keyboard. Join the boxes with lines to draw each voice's path. Nothing is scored.",
+   "art": {
+    "sha256": "6f297bd8bd6f8515b1ef221a5d7714675f759359b61bd9ffcaf18208605530ae",
+    "cost_usd": 0.138092,
+    "prompt_sha256": "2522d2584b8a24fa8c8c65f6bc9f9695c46b61767ab3975d902ccbd2cd881a63"
+   },
+   "files": {
+    "desktop_png": "assets/2B-10b/2B-10b.desktop.png",
+    "desktop_svg": "assets/2B-10b/2B-10b.desktop.svg",
+    "phone_png": "assets/2B-10b/2B-10b.phone.png",
+    "phone_svg": "assets/2B-10b/2B-10b.phone.svg",
+    "print_png": "assets/2B-10b/2B-10b.print.png",
+    "print_svg": "assets/2B-10b/2B-10b.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1902x1176",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76.3,
+     "bytes": 359382,
+     "pass": true
+    },
+    "phone": {
+     "size": "1212x1364",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83.4,
+     "bytes": 270944,
+     "pass": true
+    },
+    "print": {
+     "size": "1902x1176",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76.3,
+     "bytes": 355342,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-11n",
+   "group": "2B",
+   "title": "Contrary motion, together: the voices move toward each other",
+   "steps": [
+    "2B:4"
+   ],
+   "status": "REVISE",
+   "teaches": "Contrary motion also covers voices that move toward each other: the lower voice rises and the upper voice falls, and the gap between them closes.",
+   "howToRead": "The dashed shapes are where the voices started, on B3 and F4. The arrows go toward each other and end on C4 and E4. The picture shows the movement only; nothing is named or counted, and no colour is used.",
+   "art": {
+    "sha256": "c8bc4d904f7a8efd507d347e58350515955d446bc71d7e8deb104e13a595d3fc",
+    "cost_usd": 0.138104,
+    "prompt_sha256": "62f08497da35bcf73d9c8ca06e588d97f28985fa52fb4775531aa145b91c4d91"
+   },
+   "files": {
+    "desktop_png": "assets/2B-11n/2B-11n.desktop.png",
+    "desktop_svg": "assets/2B-11n/2B-11n.desktop.svg",
+    "phone_png": "assets/2B-11n/2B-11n.phone.png",
+    "phone_svg": "assets/2B-11n/2B-11n.phone.svg",
+    "print_png": "assets/2B-11n/2B-11n.print.png",
+    "print_svg": "assets/2B-11n/2B-11n.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2235x1223",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 71.5,
+     "bytes": 460592,
+     "pass": true
+    },
+    "phone": {
+     "size": "1424x1418",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.5,
+     "bytes": 342192,
+     "pass": true
+    },
+    "print": {
+     "size": "2235x1223",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 71.6,
+     "bytes": 464599,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-11",
+   "group": "2B",
+   "title": "Contrary motion, together: B3 + F4 to C4 + E4",
+   "steps": [
+    "2B:10"
+   ],
+   "status": "REVISE",
+   "teaches": "Contrary motion can also go together: the lower voice rises one semitone and the upper falls one, closing the gap from a diminished fifth to a major third.",
+   "howToRead": "This is the closing move of the four-stage path, drawn on the keyboard. The dashed shapes are B3 and F4; the arrows go toward each other and meet around C4 and E4, where the major third colour appears on the keys.",
+   "art": {
+    "sha256": "695e3085ebb8701a4bb283eba1396bb9b80af47692d32f5fbf111cef75a39e96",
+    "cost_usd": 0.138122,
+    "prompt_sha256": "a78e2e61fddc918d58cbf4b444de537942e42d8ab8b4a09db58e4832dd9ac139"
+   },
+   "files": {
+    "desktop_png": "assets/2B-11/2B-11.desktop.png",
+    "desktop_svg": "assets/2B-11/2B-11.desktop.svg",
+    "phone_png": "assets/2B-11/2B-11.phone.png",
+    "phone_svg": "assets/2B-11/2B-11.phone.svg",
+    "print_png": "assets/2B-11/2B-11.print.png",
+    "print_svg": "assets/2B-11/2B-11.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1854x1322",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.2,
+     "bytes": 376926,
+     "pass": true
+    },
+    "phone": {
+     "size": "1180x1784",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 85.6,
+     "bytes": 321808,
+     "pass": true
+    },
+    "print": {
+     "size": "1854x1322",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 78.7,
+     "bytes": 377415,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-12",
+   "group": "2B",
+   "title": "Two kinds of words: along a path, up a stage",
+   "steps": [
+    "2B:7",
+    "2B:9"
+   ],
+   "status": "CREATE",
+   "teaches": "Movement words (oblique, contrary, similar, parallel) describe what voices do between stages, along the path. Interval words (the names of intervals) describe a pair of notes at a single stage, up the page.",
+   "howToRead": "Follow the upper line left to right: that horizontal direction is movement. Then look straight up the page at stage 2: that vertical gap, the only coloured part, is the interval. One kind of word is about travelling, the other about distance at one moment.",
+   "art": {
+    "sha256": "83a13091a11b785ba53735437a80966c3f054460d8b998ac2b73119c3c3c25d3",
+    "cost_usd": 0.138114,
+    "prompt_sha256": "e914897d56b2bae4f6378f4ffc11d0ec1d8471722cbed874db267ce942a59788"
+   },
+   "files": {
+    "desktop_png": "assets/2B-12/2B-12.desktop.png",
+    "desktop_svg": "assets/2B-12/2B-12.desktop.svg",
+    "phone_png": "assets/2B-12/2B-12.phone.png",
+    "phone_svg": "assets/2B-12/2B-12.phone.svg",
+    "print_png": "assets/2B-12/2B-12.print.png",
+    "print_svg": "assets/2B-12/2B-12.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2570x1482",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 64.6,
+     "bytes": 498100,
+     "pass": true
+    },
+    "phone": {
+     "size": "1636x1586",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 73,
+     "bytes": 360191,
+     "pass": true
+    },
+    "print": {
+     "size": "2570x1482",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 64.1,
+     "bytes": 486713,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2B-13",
+   "group": "2B",
+   "title": "The tritone family: B3–F4 beside the Palette card C4–F♯4",
+   "steps": [
+    "2B:5"
+   ],
+   "status": "REVISE",
+   "teaches": "Two different pairs, one tritone colour and one chip. B3–F4 (five letters) and C4–F♯4 (four letters) are both six semitones. The lesson uses B3–F4; the Palette card draws C4–F♯4. They are separate examples of the same family.",
+   "howToRead": "Compare the two keyboards. The key colour and the chip are identical because both pairs are six semitones. The note names differ because the pairs sit in different places and are spelled with different letters. The Palette page (card 6) shows the second; this lesson works with the first.",
+   "art": {
+    "sha256": "de0874daec71b64daa23bb38cb280fd0ab628161e3ed23477530fa0eeae7f49d",
+    "cost_usd": 0.13816,
+    "prompt_sha256": "bed2564dac1ca19f20b4bcf70d3e01a440a444f61206475cdfc35d78a3945644"
+   },
+   "files": {
+    "desktop_png": "assets/2B-13/2B-13.desktop.png",
+    "desktop_svg": "assets/2B-13/2B-13.desktop.svg",
+    "phone_png": "assets/2B-13/2B-13.phone.png",
+    "phone_svg": "assets/2B-13/2B-13.phone.svg",
+    "print_png": "assets/2B-13/2B-13.print.png",
+    "print_svg": "assets/2B-13/2B-13.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2717x2720",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 66.1,
+     "bytes": 1183053,
+     "pass": true
+    },
+    "phone": {
+     "size": "1732x2934",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.4,
+     "bytes": 947489,
+     "pass": true
+    },
+    "print": {
+     "size": "2717x2720",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 65.9,
+     "bytes": 1170029,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-01",
+   "group": "2C",
+   "title": "Two 36-second sketches: same upper line, different lower line",
+   "steps": [
+    "2C:1",
+    "2C:3"
+   ],
+   "status": "REVISE",
+   "teaches": "Two sketches of the same melody over different lower lines. The upper line is identical in both; only the lower voice differs.",
+   "howToRead": "Each timeline is 36 seconds wide. Upper lane first, lower lane below. Solid bars are notes, dashed boxes are rests. Compare the two upper lanes: they match exactly. Then compare the two lower lanes: Version A holds one note, Version B changes it twice.",
+   "art": {
+    "sha256": "a0a1a8a236404fb9a6a439d90a014c35e98263510adad5c57605b0344746516f",
+    "cost_usd": 0.138118,
+    "prompt_sha256": "3b64e65a1e4640c3c5b24aa0f266af3b9dac6d0aa9e688b4b1d03c133a63e0c9"
+   },
+   "files": {
+    "desktop_png": "assets/2C-01/2C-01.desktop.png",
+    "desktop_svg": "assets/2C-01/2C-01.desktop.svg",
+    "phone_png": "assets/2C-01/2C-01.phone.png",
+    "phone_svg": "assets/2C-01/2C-01.phone.svg",
+    "print_png": "assets/2C-01/2C-01.print.png",
+    "print_svg": "assets/2C-01/2C-01.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1943x1824",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 66.7,
+     "bytes": 403805,
+     "pass": true
+    },
+    "phone": {
+     "size": "1238x2108",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 74.3,
+     "bytes": 310498,
+     "pass": true
+    },
+    "print": {
+     "size": "1943x1824",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 66.7,
+     "bytes": 403890,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-02",
+   "group": "2C",
+   "title": "Version A: one voice holds the landscape",
+   "steps": [
+    "2C:3"
+   ],
+   "status": "REVISE",
+   "teaches": "With a held lower note, the pair changes only when the upper voice moves: C4 + E4 (major third), C4 + F4 (perfect fourth), then C4 + E4 again.",
+   "howToRead": "Colour bands appear only while both voices sound; where the upper voice rests there is no pair, so there is no colour. Read the band labels left to right: M3 for 4 semitones, P4 for 5, M3 again. The lower voice is the same note under all three.",
+   "art": {
+    "sha256": "eadc891a552b4f61c450ba5c30a063c4eef9df3df0dbdfd53e3d380a3ccb4b86",
+    "cost_usd": 0.138112,
+    "prompt_sha256": "aff17101c0aa0a82681c5989684b053a2896f1172814411404e5a71c9573d6ad"
+   },
+   "files": {
+    "desktop_png": "assets/2C-02/2C-02.desktop.png",
+    "desktop_svg": "assets/2C-02/2C-02.desktop.svg",
+    "phone_png": "assets/2C-02/2C-02.phone.png",
+    "phone_svg": "assets/2C-02/2C-02.phone.svg",
+    "print_png": "assets/2C-02/2C-02.print.png",
+    "print_svg": "assets/2C-02/2C-02.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2094x1260",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 72.1,
+     "bytes": 389255,
+     "pass": true
+    },
+    "phone": {
+     "size": "1334x1430",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 79.9,
+     "bytes": 304517,
+     "pass": true
+    },
+    "print": {
+     "size": "2094x1260",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 72.1,
+     "bytes": 390733,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-03",
+   "group": "2C",
+   "title": "Version B: the landscape begins to travel",
+   "steps": [
+    "2C:4"
+   ],
+   "status": "REVISE",
+   "teaches": "When the lower voice moves under the same melody, one moment changes: from 14 to 20 seconds the pair is B3 + F4, a diminished fifth, instead of C4 + F4.",
+   "howToRead": "The dashed lines at 12 and 24 seconds mark where the lower voice changes. At both moments the upper lane is a dashed rest, so no pair changes at that instant. The F4 only sounds from 14 to 20 seconds, over B3, and that band carries the tritone colour.",
+   "art": {
+    "sha256": "619a067d05ee3539b462d78d282c4950e131c8145c5f4e113006781102d0d89c",
+    "cost_usd": 0.138112,
+    "prompt_sha256": "96f902ce1975ee76eb666ee8cbb4a660fec6ce272d0e632d7344f5038613a317"
+   },
+   "files": {
+    "desktop_png": "assets/2C-03/2C-03.desktop.png",
+    "desktop_svg": "assets/2C-03/2C-03.desktop.svg",
+    "phone_png": "assets/2C-03/2C-03.phone.png",
+    "phone_svg": "assets/2C-03/2C-03.phone.svg",
+    "print_png": "assets/2C-03/2C-03.print.png",
+    "print_svg": "assets/2C-03/2C-03.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2706x1368",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83.4,
+     "bytes": 720933,
+     "pass": true
+    },
+    "phone": {
+     "size": "1724x1584",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 88.3,
+     "bytes": 541523,
+     "pass": true
+    },
+    "print": {
+     "size": "2706x1368",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83.4,
+     "bytes": 699408,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-04",
+   "group": "2C",
+   "title": "Same melody, one moment different: A above B",
+   "steps": [
+    "2C:5"
+   ],
+   "status": "REVISE",
+   "teaches": "Stack the two versions and look: the upper line and the first and last pairs are identical. Only from 14 to 20 seconds does the lower voice change what the pair is.",
+   "howToRead": "Both timelines share one time scale so a vertical line crosses both at the same moment. The dashed outline covers 14 to 20 seconds. Inside it the two bands have different colours; outside it they match.",
+   "art": {
+    "sha256": "8d6c15143c4b062eaa8418cc872ab920782bf6e2c27123fdcbf4e2158a3c26a3",
+    "cost_usd": 0.138136,
+    "prompt_sha256": "b87b7c535664df6ff4854c93e6653e68ad48a01f97ce25e175e3459be926b34c"
+   },
+   "files": {
+    "desktop_png": "assets/2C-04/2C-04.desktop.png",
+    "desktop_svg": "assets/2C-04/2C-04.desktop.svg",
+    "phone_png": "assets/2C-04/2C-04.phone.png",
+    "phone_svg": "assets/2C-04/2C-04.phone.svg",
+    "print_png": "assets/2C-04/2C-04.print.png",
+    "print_svg": "assets/2C-04/2C-04.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2388x2234",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 68,
+     "bytes": 757848,
+     "pass": true
+    },
+    "phone": {
+     "size": "1522x2336",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 76,
+     "bytes": 528660,
+     "pass": true
+    },
+    "print": {
+     "size": "2388x2234",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 68,
+     "bytes": 758021,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-05",
+   "group": "2C",
+   "title": "Three snapshots: what stayed, what changed",
+   "steps": [
+    "2C:5",
+    "2C:6"
+   ],
+   "status": "DERIVE",
+   "teaches": "Three moments side by side. In two of them the two versions have the same pair; in exactly one, the middle, they differ.",
+   "howToRead": "Read each column as one moment. The two badges in a column are the pair in Version A and the pair in Version B at that moment. Compare across the row: same, different, same. The middle column also gives the semitone count: 5 against 6.",
+   "art": {
+    "sha256": "d6f0349e2645b783cc2bd0ddc2848178319405d9932a6b26be185b46c1df1de6",
+    "cost_usd": 0.138124,
+    "prompt_sha256": "8ba9cd582a6f357aaa0cdbf5f981a462b88d18dd744f9188ea40c54e58e980f6"
+   },
+   "files": {
+    "desktop_png": "assets/2C-05/2C-05.desktop.png",
+    "desktop_svg": "assets/2C-05/2C-05.desktop.svg",
+    "phone_png": "assets/2C-05/2C-05.phone.png",
+    "phone_svg": "assets/2C-05/2C-05.phone.svg",
+    "print_png": "assets/2C-05/2C-05.print.png",
+    "print_svg": "assets/2C-05/2C-05.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1559x1191",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 73.6,
+     "bytes": 207960,
+     "pass": true
+    },
+    "phone": {
+     "size": "992x2236",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 84.7,
+     "bytes": 215352,
+     "pass": true
+    },
+    "print": {
+     "size": "1559x1191",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 73.6,
+     "bytes": 205673,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-06",
+   "group": "2C",
+   "title": "Four words: voice, vertical interval, voice leading, counterpoint",
+   "steps": [
+    "2C:2",
+    "2C:6"
+   ],
+   "status": "CREATE",
+   "teaches": "Four words for the week's ideas, each with a small picture: one line, the gap between two notes at one moment, how lines travel between moments, and independent lines together.",
+   "howToRead": "Each card gives the word, its meaning in one sentence, and a tiny picture built from the same marks as the rest of Week 2. The vertical interval card carries the only colour: C4 + E4, the major third from lesson 2A.",
+   "art": {
+    "sha256": "fd946b5a788c29258e5656cf208d8250a2faca1708d6a2b1990b5efe5151b399",
+    "cost_usd": 0.138102,
+    "prompt_sha256": "c21e28dd93b3747984339bd74c528f870e5866bf0e3c48fa9e2c307dfd82e769"
+   },
+   "files": {
+    "desktop_png": "assets/2C-06/2C-06.desktop.png",
+    "desktop_svg": "assets/2C-06/2C-06.desktop.svg",
+    "phone_png": "assets/2C-06/2C-06.phone.png",
+    "phone_svg": "assets/2C-06/2C-06.phone.svg",
+    "print_png": "assets/2C-06/2C-06.print.png",
+    "print_svg": "assets/2C-06/2C-06.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "2019x1343",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 72.2,
+     "bytes": 405109,
+     "pass": true
+    },
+    "phone": {
+     "size": "1286x2046",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 81.7,
+     "bytes": 371311,
+     "pass": true
+    },
+    "print": {
+     "size": "2019x1343",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 72.2,
+     "bytes": 401337,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-07",
+   "group": "2C",
+   "title": "Plan your miniature: two blank timelines",
+   "steps": [
+    "2C:8",
+    "2C:9"
+   ],
+   "status": "REVISE",
+   "teaches": "A paper planning sheet for your own two sketches: draw where each voice sounds and rests, write note names, and finish three plan sentences.",
+   "howToRead": "Each blank timeline runs from 0 to 45 seconds with a tick every 5. The upper lane is for your melody and the lower lane is for the line beneath. Draw bars for notes and leave gaps for rests, writing note names inside. Then complete the three sentences at the bottom. Nothing is scored or sent anywhere.",
+   "art": {
+    "sha256": "c892b9a69dbfd9cd5cb178e53db3964b289e04a1af6f13aa0e8eef8ea3f87297",
+    "cost_usd": 0.138102,
+    "prompt_sha256": "0964dc67dc9763f25aa60185b8e2ae25bd1d61614710278649ede7518c4349d5"
+   },
+   "files": {
+    "desktop_png": "assets/2C-07/2C-07.desktop.png",
+    "desktop_svg": "assets/2C-07/2C-07.desktop.svg",
+    "phone_png": "assets/2C-07/2C-07.phone.png",
+    "phone_svg": "assets/2C-07/2C-07.phone.svg",
+    "print_png": "assets/2C-07/2C-07.print.png",
+    "print_svg": "assets/2C-07/2C-07.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1697x1862",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82.9,
+     "bytes": 514507,
+     "pass": true
+    },
+    "phone": {
+     "size": "1082x2274",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 87.6,
+     "bytes": 370369,
+     "pass": true
+    },
+    "print": {
+     "size": "1697x1862",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 82.7,
+     "bytes": 511401,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-08",
+   "group": "2C",
+   "title": "What changes, and your response",
+   "steps": [
+    "2C:9"
+   ],
+   "status": "REVISE",
+   "teaches": "Separate what the notes did (a fact) from what you make of it (your response). The facts are shown; the response is yours and has no correct answer.",
+   "howToRead": "The left panel states what changed, with the pairs and their colour bars. The right panel is empty on purpose: complete the sentence in your own words. There is no right feeling to write.",
+   "art": {
+    "sha256": "8b2094d6c42bab361f17961e1dde40229fdfe32d19af8bcc4152a7ca6bf6527c",
+    "cost_usd": 0.138114,
+    "prompt_sha256": "c430b7ee02293eb86ce8a4d3d7c29d0f56d3d271cc51c9f4206f295632e1801c"
+   },
+   "files": {
+    "desktop_png": "assets/2C-08/2C-08.desktop.png",
+    "desktop_svg": "assets/2C-08/2C-08.desktop.svg",
+    "phone_png": "assets/2C-08/2C-08.phone.png",
+    "phone_svg": "assets/2C-08/2C-08.phone.svg",
+    "print_png": "assets/2C-08/2C-08.print.png",
+    "print_svg": "assets/2C-08/2C-08.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1704x1176",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77,
+     "bytes": 282209,
+     "pass": true
+    },
+    "phone": {
+     "size": "1084x1806",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 85.4,
+     "bytes": 270757,
+     "pass": true
+    },
+    "print": {
+     "size": "1704x1176",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77,
+     "bytes": 284800,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-09",
+   "group": "2C",
+   "title": "Week 2 in three anchors",
+   "steps": [
+    "2C:10"
+   ],
+   "status": "REVISE",
+   "teaches": "The whole week in three sentences: an interval is a pair counted two ways; motion is what two voices do between pairs; two lines are enough to make changing harmony.",
+   "howToRead": "Each card is one idea with one example from the week. Read them as a chain: first the pair, then the movement between pairs, then how a different lower line changes the harmony under the same melody. The picture ends here; Week 3 is introduced in text only.",
+   "art": {
+    "sha256": "764c92bb6d2e8e4970e34dfdb06add6a9b23cbd69208cc60140c90d8ff9a002b",
+    "cost_usd": 0.13813,
+    "prompt_sha256": "fbb54ec4258dd6f73de35bab0b1ed17971ee0627af792facdec17e5d1e6d33d8"
+   },
+   "files": {
+    "desktop_png": "assets/2C-09/2C-09.desktop.png",
+    "desktop_svg": "assets/2C-09/2C-09.desktop.svg",
+    "phone_png": "assets/2C-09/2C-09.phone.png",
+    "phone_svg": "assets/2C-09/2C-09.phone.svg",
+    "print_png": "assets/2C-09/2C-09.print.png",
+    "print_svg": "assets/2C-09/2C-09.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1986x1820",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 67.2,
+     "bytes": 523555,
+     "pass": true
+    },
+    "phone": {
+     "size": "1264x2170",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 75,
+     "bytes": 411426,
+     "pass": true
+    },
+    "print": {
+     "size": "1986x1820",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 67.2,
+     "bytes": 521873,
+     "pass": true
+    }
+   }
+  },
+  {
+   "id": "2C-10",
+   "group": "2C",
+   "title": "The truth check: the lower voice moves while the upper rests",
+   "steps": [
+    "2C:4",
+    "2C:5",
+    "2C:6"
+   ],
+   "status": "DERIVE",
+   "teaches": "A check on the sketch: the lower voice changes at 12 and 24 seconds, but the upper voice is resting then, so F4 is never sounding when the lower note changes. F4 appears only from 14 to 20 seconds, over B3.",
+   "howToRead": "Look at the two dashed markers. At each, the upper lane is a dashed rest box: no upper note is sounding. Then find the one band, 14 to 20 seconds, where F4 sits over B3. Nothing sounds as F4 over C4 in this version.",
+   "art": {
+    "sha256": "f998a59fa3f11b688eef51af843730bbed08c8a16aabdb57a04a52d7944afe98",
+    "cost_usd": 0.138102,
+    "prompt_sha256": "c226de20b6a573dd335a8b86ca69fa8eba861ae77a36708fe51db133a9c83e52"
+   },
+   "files": {
+    "desktop_png": "assets/2C-10/2C-10.desktop.png",
+    "desktop_svg": "assets/2C-10/2C-10.desktop.svg",
+    "phone_png": "assets/2C-10/2C-10.phone.png",
+    "phone_svg": "assets/2C-10/2C-10.phone.svg",
+    "print_png": "assets/2C-10/2C-10.print.png",
+    "print_svg": "assets/2C-10/2C-10.print.svg"
+   },
+   "qa": {
+    "desktop": {
+     "size": "1790x1160",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.1,
+     "bytes": 257764,
+     "pass": true
+    },
+    "phone": {
+     "size": "1140x1432",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 83.4,
+     "bytes": 209229,
+     "pass": true
+    },
+    "print": {
+     "size": "1790x1160",
+     "alphaMin": 0,
+     "alphaMax": 255,
+     "perimeterMaxAlpha": 0,
+     "nonzeroPct": 77.1,
+     "bytes": 258666,
+     "pass": true
+    }
+   }
+  }
+ ]
+}

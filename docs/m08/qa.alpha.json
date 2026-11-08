@@ -1,0 +1,1452 @@
+{
+ "2A-01": {
+  "desktop": {
+   "size": "1791x1386",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74,
+   "bytes": 340250,
+   "pass": true
+  },
+  "phone": {
+   "size": "1140x1614",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 80.5,
+   "bytes": 244488,
+   "pass": true
+  },
+  "print": {
+   "size": "1791x1386",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74,
+   "bytes": 343516,
+   "pass": true
+  }
+ },
+ "2A-02": {
+  "desktop": {
+   "size": "1899x1764",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77,
+   "bytes": 518093,
+   "pass": true
+  },
+  "phone": {
+   "size": "1208x1980",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83.1,
+   "bytes": 386923,
+   "pass": true
+  },
+  "print": {
+   "size": "1899x1764",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.3,
+   "bytes": 525094,
+   "pass": true
+  }
+ },
+ "2A-03": {
+  "desktop": {
+   "size": "1776x1799",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 84.1,
+   "bytes": 503499,
+   "pass": true
+  },
+  "phone": {
+   "size": "1132x2102",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 88.2,
+   "bytes": 379382,
+   "pass": true
+  },
+  "print": {
+   "size": "1776x1799",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 84.1,
+   "bytes": 504034,
+   "pass": true
+  }
+ },
+ "2A-04": {
+  "desktop": {
+   "size": "1800x2064",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.3,
+   "bytes": 445834,
+   "pass": true
+  },
+  "phone": {
+   "size": "1146x2274",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 84.2,
+   "bytes": 310193,
+   "pass": true
+  },
+  "print": {
+   "size": "1800x2064",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.1,
+   "bytes": 442245,
+   "pass": true
+  }
+ },
+ "2A-05": {
+  "desktop": {
+   "size": "1944x1389",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 71.7,
+   "bytes": 342866,
+   "pass": true
+  },
+  "phone": {
+   "size": "1240x1826",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 80.1,
+   "bytes": 291083,
+   "pass": true
+  },
+  "print": {
+   "size": "1944x1389",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 72.2,
+   "bytes": 342173,
+   "pass": true
+  }
+ },
+ "2A-06": {
+  "desktop": {
+   "size": "1895x2258",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.9,
+   "bytes": 508955,
+   "pass": true
+  },
+  "phone": {
+   "size": "1208x3026",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82,
+   "bytes": 441880,
+   "pass": true
+  },
+  "print": {
+   "size": "1895x2258",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.9,
+   "bytes": 504181,
+   "pass": true
+  }
+ },
+ "2A-07": {
+  "desktop": {
+   "size": "1566x1310",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82,
+   "bytes": 280857,
+   "pass": true
+  },
+  "phone": {
+   "size": "996x1624",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 88.3,
+   "bytes": 199691,
+   "pass": true
+  },
+  "print": {
+   "size": "1566x1310",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82,
+   "bytes": 285191,
+   "pass": true
+  }
+ },
+ "2A-08": {
+  "desktop": {
+   "size": "1980x1820",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 71,
+   "bytes": 481923,
+   "pass": true
+  },
+  "phone": {
+   "size": "1262x2654",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 79.5,
+   "bytes": 422988,
+   "pass": true
+  },
+  "print": {
+   "size": "1980x1820",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 70.9,
+   "bytes": 479814,
+   "pass": true
+  }
+ },
+ "2A-09": {
+  "desktop": {
+   "size": "2499x1406",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74,
+   "bytes": 633936,
+   "pass": true
+  },
+  "phone": {
+   "size": "1592x1490",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.1,
+   "bytes": 417645,
+   "pass": true
+  },
+  "print": {
+   "size": "2499x1406",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74,
+   "bytes": 647250,
+   "pass": true
+  }
+ },
+ "2A-10": {
+  "desktop": {
+   "size": "1757x1337",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 75.1,
+   "bytes": 293000,
+   "pass": true
+  },
+  "phone": {
+   "size": "1120x1488",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 81.3,
+   "bytes": 202313,
+   "pass": true
+  },
+  "print": {
+   "size": "1757x1337",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.9,
+   "bytes": 287525,
+   "pass": true
+  }
+ },
+ "2B-01a": {
+  "desktop": {
+   "size": "1944x1317",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76.6,
+   "bytes": 448566,
+   "pass": true
+  },
+  "phone": {
+   "size": "1238x1428",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82.9,
+   "bytes": 326228,
+   "pass": true
+  },
+  "print": {
+   "size": "1944x1317",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76.6,
+   "bytes": 448548,
+   "pass": true
+  }
+ },
+ "2B-01b": {
+  "desktop": {
+   "size": "1980x2117",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76.1,
+   "bytes": 741470,
+   "pass": true
+  },
+  "phone": {
+   "size": "1262x2312",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82.1,
+   "bytes": 543002,
+   "pass": true
+  },
+  "print": {
+   "size": "1980x2117",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76,
+   "bytes": 740960,
+   "pass": true
+  }
+ },
+ "2B-02": {
+  "desktop": {
+   "size": "1857x2796",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 73.7,
+   "bytes": 849813,
+   "pass": true
+  },
+  "phone": {
+   "size": "1184x4182",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 81.3,
+   "bytes": 657707,
+   "pass": true
+  },
+  "print": {
+   "size": "1857x2796",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 73.7,
+   "bytes": 842222,
+   "pass": true
+  }
+ },
+ "2B-03": {
+  "desktop": {
+   "size": "1808x1233",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.6,
+   "bytes": 316261,
+   "pass": true
+  },
+  "phone": {
+   "size": "1150x1398",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 81.5,
+   "bytes": 241431,
+   "pass": true
+  },
+  "print": {
+   "size": "1808x1233",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.6,
+   "bytes": 315728,
+   "pass": true
+  }
+ },
+ "2B-04": {
+  "desktop": {
+   "size": "2058x1208",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.7,
+   "bytes": 393401,
+   "pass": true
+  },
+  "phone": {
+   "size": "1312x1346",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 84.6,
+   "bytes": 291715,
+   "pass": true
+  },
+  "print": {
+   "size": "2058x1208",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.7,
+   "bytes": 395634,
+   "pass": true
+  }
+ },
+ "2B-05": {
+  "desktop": {
+   "size": "2436x1287",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 68.3,
+   "bytes": 442247,
+   "pass": true
+  },
+  "phone": {
+   "size": "1552x1396",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 72.2,
+   "bytes": 290673,
+   "pass": true
+  },
+  "print": {
+   "size": "2436x1287",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 68,
+   "bytes": 433295,
+   "pass": true
+  }
+ },
+ "2B-06": {
+  "desktop": {
+   "size": "1907x2670",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83.3,
+   "bytes": 985983,
+   "pass": true
+  },
+  "phone": {
+   "size": "1214x2858",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 86.6,
+   "bytes": 626659,
+   "pass": true
+  },
+  "print": {
+   "size": "1907x2670",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83.3,
+   "bytes": 984460,
+   "pass": true
+  }
+ },
+ "2B-07": {
+  "desktop": {
+   "size": "1782x1355",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 75.2,
+   "bytes": 358394,
+   "pass": true
+  },
+  "phone": {
+   "size": "1136x1756",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82.8,
+   "bytes": 286298,
+   "pass": true
+  },
+  "print": {
+   "size": "1782x1355",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 75.2,
+   "bytes": 358965,
+   "pass": true
+  }
+ },
+ "2B-08": {
+  "desktop": {
+   "size": "1683x1326",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 80.3,
+   "bytes": 321664,
+   "pass": true
+  },
+  "phone": {
+   "size": "1072x1884",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 87.8,
+   "bytes": 283687,
+   "pass": true
+  },
+  "print": {
+   "size": "1683x1326",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 80.3,
+   "bytes": 326936,
+   "pass": true
+  }
+ },
+ "2B-09": {
+  "desktop": {
+   "size": "2732x2672",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 55.9,
+   "bytes": 755141,
+   "pass": true
+  },
+  "phone": {
+   "size": "1742x3478",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 65.4,
+   "bytes": 723643,
+   "pass": true
+  },
+  "print": {
+   "size": "2732x2672",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 55.9,
+   "bytes": 751012,
+   "pass": true
+  }
+ },
+ "2B-10": {
+  "desktop": {
+   "size": "2502x1632",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 68.2,
+   "bytes": 563941,
+   "pass": true
+  },
+  "phone": {
+   "size": "1596x1670",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 75.4,
+   "bytes": 402680,
+   "pass": true
+  },
+  "print": {
+   "size": "2502x1632",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 68.2,
+   "bytes": 561045,
+   "pass": true
+  }
+ },
+ "2B-10b": {
+  "desktop": {
+   "size": "1902x1176",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76.3,
+   "bytes": 359382,
+   "pass": true
+  },
+  "phone": {
+   "size": "1212x1364",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83.4,
+   "bytes": 270944,
+   "pass": true
+  },
+  "print": {
+   "size": "1902x1176",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76.3,
+   "bytes": 355342,
+   "pass": true
+  }
+ },
+ "2B-11": {
+  "desktop": {
+   "size": "1854x1322",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.2,
+   "bytes": 376926,
+   "pass": true
+  },
+  "phone": {
+   "size": "1180x1784",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 85.6,
+   "bytes": 321808,
+   "pass": true
+  },
+  "print": {
+   "size": "1854x1322",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.7,
+   "bytes": 377415,
+   "pass": true
+  }
+ },
+ "2B-11n": {
+  "desktop": {
+   "size": "2235x1223",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 71.5,
+   "bytes": 460592,
+   "pass": true
+  },
+  "phone": {
+   "size": "1424x1418",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.5,
+   "bytes": 342192,
+   "pass": true
+  },
+  "print": {
+   "size": "2235x1223",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 71.6,
+   "bytes": 464599,
+   "pass": true
+  }
+ },
+ "2B-12": {
+  "desktop": {
+   "size": "2570x1482",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 64.6,
+   "bytes": 498100,
+   "pass": true
+  },
+  "phone": {
+   "size": "1636x1586",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 73,
+   "bytes": 360191,
+   "pass": true
+  },
+  "print": {
+   "size": "2570x1482",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 64.1,
+   "bytes": 486713,
+   "pass": true
+  }
+ },
+ "2B-13": {
+  "desktop": {
+   "size": "2717x2720",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 66.1,
+   "bytes": 1183053,
+   "pass": true
+  },
+  "phone": {
+   "size": "1732x2934",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.4,
+   "bytes": 947489,
+   "pass": true
+  },
+  "print": {
+   "size": "2717x2720",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 65.9,
+   "bytes": 1170029,
+   "pass": true
+  }
+ },
+ "2C-01": {
+  "desktop": {
+   "size": "1943x1824",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 66.7,
+   "bytes": 403805,
+   "pass": true
+  },
+  "phone": {
+   "size": "1238x2108",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.3,
+   "bytes": 310498,
+   "pass": true
+  },
+  "print": {
+   "size": "1943x1824",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 66.7,
+   "bytes": 403890,
+   "pass": true
+  }
+ },
+ "2C-02": {
+  "desktop": {
+   "size": "2094x1260",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 72.1,
+   "bytes": 389255,
+   "pass": true
+  },
+  "phone": {
+   "size": "1334x1430",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 79.9,
+   "bytes": 304517,
+   "pass": true
+  },
+  "print": {
+   "size": "2094x1260",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 72.1,
+   "bytes": 390733,
+   "pass": true
+  }
+ },
+ "2C-03": {
+  "desktop": {
+   "size": "2706x1368",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83.4,
+   "bytes": 720933,
+   "pass": true
+  },
+  "phone": {
+   "size": "1724x1584",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 88.3,
+   "bytes": 541523,
+   "pass": true
+  },
+  "print": {
+   "size": "2706x1368",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83.4,
+   "bytes": 699408,
+   "pass": true
+  }
+ },
+ "2C-04": {
+  "desktop": {
+   "size": "2388x2234",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 68,
+   "bytes": 757848,
+   "pass": true
+  },
+  "phone": {
+   "size": "1522x2336",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76,
+   "bytes": 528660,
+   "pass": true
+  },
+  "print": {
+   "size": "2388x2234",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 68,
+   "bytes": 758021,
+   "pass": true
+  }
+ },
+ "2C-05": {
+  "desktop": {
+   "size": "1559x1191",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 73.6,
+   "bytes": 207960,
+   "pass": true
+  },
+  "phone": {
+   "size": "992x2236",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 84.7,
+   "bytes": 215352,
+   "pass": true
+  },
+  "print": {
+   "size": "1559x1191",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 73.6,
+   "bytes": 205673,
+   "pass": true
+  }
+ },
+ "2C-06": {
+  "desktop": {
+   "size": "2019x1343",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 72.2,
+   "bytes": 405109,
+   "pass": true
+  },
+  "phone": {
+   "size": "1286x2046",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 81.7,
+   "bytes": 371311,
+   "pass": true
+  },
+  "print": {
+   "size": "2019x1343",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 72.2,
+   "bytes": 401337,
+   "pass": true
+  }
+ },
+ "2C-07": {
+  "desktop": {
+   "size": "1697x1862",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82.9,
+   "bytes": 514507,
+   "pass": true
+  },
+  "phone": {
+   "size": "1082x2274",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 87.6,
+   "bytes": 370369,
+   "pass": true
+  },
+  "print": {
+   "size": "1697x1862",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82.7,
+   "bytes": 511401,
+   "pass": true
+  }
+ },
+ "2C-08": {
+  "desktop": {
+   "size": "1704x1176",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77,
+   "bytes": 282209,
+   "pass": true
+  },
+  "phone": {
+   "size": "1084x1806",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 85.4,
+   "bytes": 270757,
+   "pass": true
+  },
+  "print": {
+   "size": "1704x1176",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77,
+   "bytes": 284800,
+   "pass": true
+  }
+ },
+ "2C-09": {
+  "desktop": {
+   "size": "1986x1820",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 67.2,
+   "bytes": 523555,
+   "pass": true
+  },
+  "phone": {
+   "size": "1264x2170",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 75,
+   "bytes": 411426,
+   "pass": true
+  },
+  "print": {
+   "size": "1986x1820",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 67.2,
+   "bytes": 521873,
+   "pass": true
+  }
+ },
+ "2C-10": {
+  "desktop": {
+   "size": "1790x1160",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.1,
+   "bytes": 257764,
+   "pass": true
+  },
+  "phone": {
+   "size": "1140x1432",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83.4,
+   "bytes": 209229,
+   "pass": true
+  },
+  "print": {
+   "size": "1790x1160",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.1,
+   "bytes": 258666,
+   "pass": true
+  }
+ },
+ "A-02": {
+  "desktop": {
+   "size": "2610x1775",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 67.3,
+   "bytes": 678796,
+   "pass": true
+  },
+  "phone": {
+   "size": "1664x2606",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 72.9,
+   "bytes": 627192,
+   "pass": true
+  },
+  "print": {
+   "size": "2610x1775",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 67.3,
+   "bytes": 671315,
+   "pass": true
+  }
+ },
+ "A-03": {
+  "desktop": {
+   "size": "2058x1245",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 68.5,
+   "bytes": 354179,
+   "pass": true
+  },
+  "phone": {
+   "size": "1312x1378",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76,
+   "bytes": 253544,
+   "pass": true
+  },
+  "print": {
+   "size": "2058x1245",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 68.5,
+   "bytes": 349318,
+   "pass": true
+  }
+ },
+ "A-04": {
+  "desktop": {
+   "size": "2163x1311",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.2,
+   "bytes": 417657,
+   "pass": true
+  },
+  "phone": {
+   "size": "1376x1578",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 85.2,
+   "bytes": 317323,
+   "pass": true
+  },
+  "print": {
+   "size": "2163x1311",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 78.2,
+   "bytes": 409283,
+   "pass": true
+  }
+ },
+ "A-05": {
+  "desktop": {
+   "size": "2058x2004",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 69.7,
+   "bytes": 601069,
+   "pass": true
+  },
+  "phone": {
+   "size": "1310x2168",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 76,
+   "bytes": 397687,
+   "pass": true
+  },
+  "print": {
+   "size": "2058x2004",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 69.7,
+   "bytes": 589298,
+   "pass": true
+  }
+ },
+ "A-06": {
+  "desktop": {
+   "size": "2294x1982",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 73.3,
+   "bytes": 716006,
+   "pass": true
+  },
+  "phone": {
+   "size": "1462x3040",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 81.5,
+   "bytes": 687095,
+   "pass": true
+  },
+  "print": {
+   "size": "2294x1982",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 73.3,
+   "bytes": 726589,
+   "pass": true
+  }
+ },
+ "A-07": {
+  "desktop": {
+   "size": "2393x1364",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.7,
+   "bytes": 535086,
+   "pass": true
+  },
+  "phone": {
+   "size": "1524x1712",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 84,
+   "bytes": 444199,
+   "pass": true
+  },
+  "print": {
+   "size": "2393x1364",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.7,
+   "bytes": 535631,
+   "pass": true
+  }
+ },
+ "A-09": {
+  "desktop": {
+   "size": "2388x2195",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 52.1,
+   "bytes": 666400,
+   "pass": true
+  },
+  "phone": {
+   "size": "1522x3234",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 59.5,
+   "bytes": 583043,
+   "pass": true
+  },
+  "print": {
+   "size": "2388x2195",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 52,
+   "bytes": 663959,
+   "pass": true
+  }
+ },
+ "A-09a": {
+  "desktop": {
+   "size": "2069x1674",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.3,
+   "bytes": 486629,
+   "pass": true
+  },
+  "phone": {
+   "size": "1318x2570",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83.4,
+   "bytes": 536921,
+   "pass": true
+  },
+  "print": {
+   "size": "2069x1674",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.3,
+   "bytes": 485821,
+   "pass": true
+  }
+ },
+ "A-11": {
+  "desktop": {
+   "size": "1656x1148",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.8,
+   "bytes": 286036,
+   "pass": true
+  },
+  "phone": {
+   "size": "1056x1752",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 85.9,
+   "bytes": 269369,
+   "pass": true
+  },
+  "print": {
+   "size": "1656x1148",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.8,
+   "bytes": 279748,
+   "pass": true
+  }
+ },
+ "A-12": {
+  "desktop": {
+   "size": "1611x1224",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 71.6,
+   "bytes": 202610,
+   "pass": true
+  },
+  "phone": {
+   "size": "1026x1698",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 80.5,
+   "bytes": 205016,
+   "pass": true
+  },
+  "print": {
+   "size": "1611x1224",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 71.6,
+   "bytes": 200411,
+   "pass": true
+  }
+ },
+ "H-01": {
+  "desktop": {
+   "size": "1709x908",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 71.3,
+   "bytes": 202548,
+   "pass": true
+  },
+  "phone": {
+   "size": "1088x1458",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 82.4,
+   "bytes": 175150,
+   "pass": true
+  },
+  "print": {
+   "size": "1709x908",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 71.4,
+   "bytes": 209357,
+   "pass": true
+  }
+ },
+ "H-02": {
+  "desktop": {
+   "size": "1860x1296",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.1,
+   "bytes": 415285,
+   "pass": true
+  },
+  "phone": {
+   "size": "1184x1362",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 83,
+   "bytes": 296134,
+   "pass": true
+  },
+  "print": {
+   "size": "1860x1296",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 77.1,
+   "bytes": 413890,
+   "pass": true
+  }
+ },
+ "H-03": {
+  "desktop": {
+   "size": "2753x2126",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 62.8,
+   "bytes": 846036,
+   "pass": true
+  },
+  "phone": {
+   "size": "1754x2284",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 70.6,
+   "bytes": 652066,
+   "pass": true
+  },
+  "print": {
+   "size": "2753x2126",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 62.8,
+   "bytes": 837867,
+   "pass": true
+  }
+ },
+ "H-04": {
+  "desktop": {
+   "size": "1827x1442",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.7,
+   "bytes": 448792,
+   "pass": true
+  },
+  "phone": {
+   "size": "1164x2758",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 85.6,
+   "bytes": 413709,
+   "pass": true
+  },
+  "print": {
+   "size": "1827x1442",
+   "alphaMin": 0,
+   "alphaMax": 255,
+   "perimeterMaxAlpha": 0,
+   "nonzeroPct": 74.7,
+   "bytes": 453908,
+   "pass": true
+  }
+ }
+}
