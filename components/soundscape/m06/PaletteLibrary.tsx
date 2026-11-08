@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { ReactNode } from 'react'
 import Md from '../Md'
 import HashOpen from './HashOpen'
+import PaletteIllustratedCard from './PaletteIllustratedCard'
 import { BASE } from '@/lib/soundscape/course'
 import { ATLAS, INTERVALS, QUICK_INTRO, noteRecipe, type IntervalRecord } from '@/lib/soundscape/resources/palette'
 import { PLOGGER_LENS_V1, PLOGGER_LINEAGE, hasPlogger, SHAPE_LABEL, DIR_LABEL, FILL_LABEL } from '@/lib/soundscape/resources/interval-identity'
@@ -108,7 +109,7 @@ export default function PaletteLibrary() {
           {INTERVALS.map(r => (
             <article key={r.id} id={`card-${r.anchor}`} className="ip6-card" aria-labelledby={`c-${r.id}`} data-interval={r.id}>
               <h3 id={`c-${r.id}`} className="ip6-sr">{r.name} ({r.abbr})</h3>
-              <Fig id={`IPF-card-${nn(r)}`} />
+              <PaletteIllustratedCard r={r} variant="card" />
               <p><strong>{r.role.replace(/`/g, '')}</strong></p>
               <p className="ip6-small">Example: {r.example}. Possible listening words: {r.words}. These are invitations, not rules.</p>
               <p className="ip6-small"><strong>Try on your keyboard:</strong> {ownKeyboard(r)}</p>
@@ -127,7 +128,11 @@ export default function PaletteLibrary() {
           return (
             <article key={r.id} id={r.anchor} className="ip6-chapter scroll-mt-24" aria-labelledby={`h-${r.id}`} data-chapter={r.id}>
               <h3 id={`h-${r.id}`}>{r.name} <span>({r.abbr}) · {r.semitones} semitone{r.semitones === 1 ? '' : 's'}</span></h3>
-              <Fig id={`IPF-sheet-${nn(r)}`} />
+              <PaletteIllustratedCard r={r} variant="chapter" />
+              <details className="ip6-tech">
+                <summary>View precise keyboard &amp; Plogger diagram</summary>
+                <Fig id={`IPF-sheet-${nn(r)}`} />
+              </details>
               <p className="ip6-small"><strong>How to read this picture.</strong> {howToRead(r)}</p>
               <p className="ip6-small"><strong>On your own keyboard.</strong> {ownKeyboard(r)}</p>
               {r.altSpelling && <p className="ip6-small"><strong>Two spellings, one key.</strong> {r.lowerName} to {r.upperName} is an {r.name.toLowerCase().includes('tritone') ? 'augmented fourth' : r.name.toLowerCase()}; {r.altSpelling.lower} to {r.altSpelling.upper} is a {r.altSpelling.name.toLowerCase()}. Both are {r.semitones} semitones.</p>}
