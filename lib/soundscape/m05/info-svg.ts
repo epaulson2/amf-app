@@ -3,7 +3,7 @@
 import { buildKeyboard, BLACK_WIDTH } from '../m02/keyboard-geometry'
 import { txt, para, esc, INK, WINE, MUTED, PAD, type Ctx } from '../m03/native-svg'
 import { INTERVALS, type IntervalRecord } from '../resources/palette'
-import { identityHex, tint, hasPlogger, PLOGGER_LENS_V1, PLOGGER_LINEAGE, SHAPE_LABEL, SHAPE_SHORT, DIR_LABEL, DIR_SHORT, FILL_LABEL, FILL_SHORT, ploggerDiff, LABEL_INK, type PloggerEntry } from '../resources/interval-identity'
+import { identityHex, tint, hasPlogger, PLOGGER_LENS_V1, SHAPE_LABEL, SHAPE_SHORT, DIR_LABEL, DIR_SHORT, FILL_LABEL, FILL_SHORT, ploggerDiff, LABEL_INK, type PloggerEntry } from '../resources/interval-identity'
 
 export { INTERVALS, identityHex, PAD, INK, WINE, MUTED, LABEL_INK }
 export type Block = { w: number; h: number; body: string }
@@ -29,9 +29,9 @@ export function kbd(c: Ctx, W: number, marks: KMark[], o: KOpts = {}) {
   const cM = o.cMidi ?? 60, k = buildKeyboard('C', 8, cM), ww = (W - 2 * PAD) / 8, wh = Math.round(Math.min(150, Math.max(84, ww * 1.9))), bh = Math.round(wh * 0.62)
   const X = (u: number) => PAD + u * ww, byMidi = new Map(marks.map(m => [m.midi, m]))
   const cx = (midi: number) => { const w = k.whites.find(q => q.midi === midi); if (w) return X(w.x + .5); const b = k.blacks.find(q => q.midi === midi); if (b) return X(b.x + b.w / 2); throw new Error('midi not on window: ' + midi) }
-  const pwOf = (m: KMark) => Math.max(34, m.label.length * 8.3 + 14), sorted = [...marks].sort((a, b) => cx(a.midi) - cx(b.midi))
+  const pwOf = (m: KMark) => Math.max(36, m.label.length * 8.8 + 20), sorted = [...marks].sort((a, b) => cx(a.midi) - cx(b.midi))
   const lastRight: number[] = [], tierOf = new Map<number, number>()
-  for (const m of sorted) { const left = cx(m.midi) - pwOf(m) / 2; let t = lastRight.findIndex(r => left >= r + 4); if (t < 0) { t = lastRight.length; lastRight.push(0) } lastRight[t] = cx(m.midi) + pwOf(m) / 2; tierOf.set(m.midi, t) }
+  for (const m of sorted) { const pw0 = pwOf(m), left = Math.min(Math.max(cx(m.midi) - pw0 / 2, 1), W - pw0 - 1); let t = lastRight.findIndex(r => left >= r + 8); if (t < 0) { t = lastRight.length; lastRight.push(0) } lastRight[t] = left + pw0; tierOf.set(m.midi, t) }
   const tiers = Math.max(1, lastRight.length), TH = 25, top = 14 + tiers * TH + 6
   let g = ''
   for (const w of k.whites) {
@@ -151,7 +151,7 @@ export function legend(c: Ctx, W: number): Block {
     'A Shape (outline): jagged = dissonant family · rounded = modal family · straight = perfect-group family. A family label, not a measured sound wave.',
     'B Shadow (side): ← Fundamental [1]–[5] · ↔ Both [6] · → Octave [7]–[11]. Always paired with its arrow.',
     'C Fill (inside): dense/dark = non-harmonic · open/light = harmonic · midtone dotted = neutral [6] · hatched = false-harmonic [9].',
-    `A historic teaching lens (${PLOGGER_LINEAGE}), not acoustic law. The identity colour is a separate, artistic label.`,
+    'A historic teaching lens from the archived printed Plogger di-chord pictograph, not acoustic law. The identity colour is a separate, artistic label.',
   ]) { const p = para(0, y, s, W, { size: 12.5, fill: '#4a3a4a', sans: SANS, lh: 16.5 }); g += p.svg; y += p.h + 5 }
   return { w: W, h: y, body: g }
 }
@@ -202,7 +202,7 @@ export function sheet(c: Ctx, r: IntervalRecord, W: number): { w: number; h: num
   const hdr = header(c, W, r, spelled.join(' · ').length < 70 || wide ? spelled.join(' · ') : spelled[0])
   const nb = neighbours(c, iw, r)
   const how = para(0, 14, n === 0 ? 'How to read: one key is highlighted because both notes are the same pitch. Melodic: the same C twice, one after the other. Harmonic: one C, doubled. Distance: zero keys.'
-    : `How to read: find ${r.lowerName} on your keyboard, then count ${n} keys up, white and black, to ${r.upperName}. The numbered arcs are those hops. Top left shows the two notes one after another, top right the same two notes together.`, iw, { size: 13.5, fill: '#4a3a4a', sans: SANS, lh: 18 })
+    : `How to read: find ${r.lowerName} on your keyboard, then count ${n} semitone${n === 1 ? '' : 's'} up (every key, white or black, is one step) to ${r.upperName}. The numbered arcs are those steps. Top left shows the two notes one after another, top right the same two notes together.`, iw, { size: 13.5, fill: '#4a3a4a', sans: SANS, lh: 18 })
   const parts: Block[] = [hdr, kbBlock, hopsB, strips, mid, nb, { w: iw, h: how.h + 8, body: how.svg }]
   const s = colStack(parts, 16)
   const desc = n === 0 ? `Perfect unison, C4 with C4, zero semitones. One key highlighted on a keyboard from C4 to C5. Two time strips show the same note one after another and at once. Plogger is not applicable at the boundary.`
@@ -274,8 +274,8 @@ export function compare(c: Ctx, W: number, rs: IntervalRecord[], head: string, s
   const lg = legend(c, iw)
   const spell = rs.find(r => r.altSpelling)
   const notes = spell ? para(0, 14, `The tritone is ${semis(spell.semitones)}. Written ${spell.upperName.replace(/\d/, '')} above C it is an augmented fourth (A4); written ${spell.altSpelling!.upper.replace(/\d/, '')} it is a diminished fifth (d5). Same key, two correct names.`, iw, { size: 13.5, fill: '#4a3a4a', sans: SANS, lh: 18 }) : null
-  const subP = para(0, 46, sub, iw, { size: 13.5, fill: '#4a3a4a', sans: SANS, lh: 18 })
-  const parts: Block[] = [{ w: W, h: 36 + subP.h, body: txt(0, 24, head, { size: W < 500 ? 21 : 28, fill: PLUM }) + subP.svg.replace(/y="46"/, 'y="46"') }, kbBlock, bar, panelBlock, table]
+  const subP = para(0, 14, sub, iw, { size: 13.5, fill: '#4a3a4a', sans: SANS, lh: 18 })
+  const parts: Block[] = [{ w: W, h: subP.h + 4, body: subP.svg }, kbBlock, bar, panelBlock, table]
   if (notes) parts.push({ w: iw, h: notes.h + 8, body: notes.svg })
   parts.push(lg)
   const s = colStack(parts, 18)
@@ -300,9 +300,9 @@ export function map(c: Ctx, W: number): { w: number; h: number; body: string; de
     }
   })
   const gy = W >= 500 ? 190 : 132
-  const note = para(0, gy, (W < 500 ? 'Plogger marks for each interval are on the one-page table. ' : 'Chips under the ruler are the Plogger [n] marks; 0 and 12 are N/A boundaries. ') + 'C4 to B4 is 11 semitones. B4 to C5 is a different step of 1 semitone. Colours are artistic labels; the numbers and notes are the measure.', iw, { size: 13, fill: '#4a3a4a', sans: SANS, lh: 17 })
+  const note = para(0, gy, (W < 500 ? 'Plogger marks for each interval are on the one-page table. ' : 'Chips under the ruler are the Plogger [n] marks, explained in the Plogger section below; 0 and 12 are N/A boundaries. ') + 'C4 to B4 is 11 semitones. B4 to C5 is a different step of 1 semitone. Colours are artistic labels; the numbers and notes are the measure.', iw, { size: 13, fill: '#4a3a4a', sans: SANS, lh: 17 })
   const ruler: Block = { w: W, h: gy + note.h + 6, body: g + note.svg }
-  const lg = legend(c, iw), s = colStack([{ w: W, h: k.h, body: k.body }, ruler, lg], 16)
+  const s = colStack([{ w: W, h: k.h, body: k.body }, ruler], 16)
   const desc = `A keyboard from C4 to C5 with all thirteen pitches marked, each in its own fixed identity colour, above an exact ruler from 0 to 12 semitones: ${INTERVALS.map(r => `${r.abbr} ${r.semitones}`).join(', ')}. Plogger marks apply to 1 through 11; 0 and 12 are boundaries.`
   return { w: W, h: s.h + 12, body: `<g transform="translate(${PAD} 4)">${s.body}</g>`, desc }
 }
@@ -312,29 +312,29 @@ export function onepage(c: Ctx, W: number): { w: number; h: number; body: string
   const iw = W - 2 * PAD, wide = W >= 600, RH = wide ? 52 : 50
   let g = txt(0, 16, wide ? 'THIRTEEN INTERVALS · C4 TO EACH NOTE' : 'THIRTEEN INTERVALS FROM C4', { size: 11.5, weight: 700, fill: '#8a5a66', sans: SANS, ls: 1.1 })
   const y0 = 30
-  if (wide) g += txt(22, y0 + 14, 'interval', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS }) + txt(250, y0 + 14, 'notes', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS }) + txt(375, y0 + 14, 'semitones', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS }) + txt(465, y0 + 14, 'Plogger A · B · C', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS })
+  if (wide) g += txt(22, y0 + 14, 'interval', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS }) + txt(215, y0 + 14, 'notes', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS }) + txt(325, y0 + 14, 'semitones', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS }) + txt(412, y0 + 14, 'Plogger A · B · C', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS })
   const ys = wide ? y0 + 22 : y0 + 6
   INTERVALS.forEach((r, i) => {
     const y = ys + i * RH, hex = hexOf(r), n = r.semitones, e = hasPlogger(n) ? PLOGGER_LENS_V1[n] : null
     g += `<path d="M0 ${y} H${iw}" stroke="#e6dccb"/><rect x="0" y="${y + 6}" width="9" height="${RH - 12}" rx="4.5" fill="${hex}"/>`
     if (wide) {
       g += txt(22, y + 30, `${r.name}`, { size: 17, fill: PLUM }) + txt(22 + 0, y + 45, `${r.abbr}`, { size: 12, weight: 700, fill: '#8a5a66', sans: SANS })
-      g += txt(250, y + 31, `${r.lowerName} → ${upperLabel(r)}`, { size: 14, fill: '#4a3a4a', sans: SANS }) + txt(375, y + 32, String(n), { size: 20, weight: 700, fill: PLUM, sans: SANS })
-      g += chip(c, 455, y + 2, e ? n : null, .8, 'o') + txt(552, y + 30, e ? `${SHAPE_SHORT[e.shape]} · ${DIR_SHORT[e.dir]} · ${FILL_SHORT[e.fill]}` : 'N/A (boundary)', { size: 12.5, fill: '#4a3a4a', sans: SANS })
+      g += txt(215, y + 31, `${r.lowerName} → ${upperLabel(r)}`, { size: 14, fill: '#4a3a4a', sans: SANS }) + txt(325, y + 32, String(n), { size: 20, weight: 700, fill: PLUM, sans: SANS })
+      g += chip(c, 402, y + 2, e ? n : null, .8, 'o') + txt(498, y + 30, e ? `${SHAPE_SHORT[e.shape]} · ${DIR_SHORT[e.dir]} · ${FILL_SHORT[e.fill]}` : 'N/A (boundary)', { size: 12, fill: '#4a3a4a', sans: SANS })
     } else {
       g += txt(20, y + 22, r.name, { size: 16, fill: PLUM }) + txt(20, y + 40, `${r.abbr} · ${n} · ${r.lowerName} → ${upperLabel(r)}`, { size: 12.5, fill: '#4a3a4a', sans: SANS })
       g += chip(c, iw - 82, y + 3, e ? n : null, .66, 'o')
     }
   })
-  const end = ys + 13 * RH, lg = legend(c, iw)
-  g += `<path d="M0 ${end} H${iw}" stroke="#e6dccb"/><g transform="translate(0 ${end + 14})">${lg.body}</g>`
+  const end = ys + 13 * RH, lg = para(0, 0, 'The three Plogger marks (A shape, B shadow, C fill) are explained once, in the Plogger section below.', iw, { size: 12.5, fill: '#4a3a4a', sans: SANS, lh: 16.5 })
+  g += `<path d="M0 ${end} H${iw}" stroke="#e6dccb"/><g transform="translate(0 ${end + 14})">${lg.svg}</g>`
   return { w: W, h: end + 14 + lg.h + 12, body: `<g transform="translate(${PAD} 4)">${g}</g>`, desc: `A one-page table of the thirteen intervals from C4: each row has its identity colour, name, abbreviation, note pair, semitone count and its three Plogger marks (shape, shadow, fill), with N/A for the unison and the octave.` }
 }
 
 // ---------------------------------------------------------------- Plogger chart (all 11 glyphs + two N/A boundaries)
 export function ploggerChart(c: Ctx, W: number): { w: number; h: number; body: string; desc: string } {
   const iw = W - 2 * PAD, cols = W >= 700 ? 4 : 2, cw = Math.floor(iw / cols), RH = 118
-  let g = txt(0, 14, `PLOGGER LENS · [1]–[11] · ${PLOGGER_LINEAGE.toUpperCase().slice(0, 52)}…`, { size: 11, weight: 700, fill: '#8a5a66', sans: SANS, ls: .8 })
+  let g = txt(0, 14, 'PLOGGER LENS · [1]–[11] · HISTORIC TEACHING LENS', { size: 11, weight: 700, fill: '#8a5a66', sans: SANS, ls: .8 })
   const items = INTERVALS
   items.forEach((r, i) => {
     const col = i % cols, rw = Math.floor(i / cols), x = col * cw, y = 30 + rw * RH, n = r.semitones, e = hasPlogger(n) ? PLOGGER_LENS_V1[n] : null
@@ -351,7 +351,7 @@ export function ploggerChart(c: Ctx, W: number): { w: number; h: number; body: s
 
 // ---------------------------------------------------------------- inversion and register
 export function invert(c: Ctx, W: number): { w: number; h: number; body: string; desc: string } {
-  const iw = W - 2 * PAD, wide = W >= 700, hw = wide ? Math.floor((iw - 40) / 2) : iw
+  const iw = W - 2 * PAD, wide = W >= 700, hw = wide ? Math.floor((iw - 14 - 40) / 2) : iw - 14
   const pairs: [number, number][] = [[3, 9], [4, 8], [5, 7]]
   const blocks: Block[] = pairs.map(([a, b]) => {
     const A = BY(a), B = BY(b)
@@ -361,9 +361,11 @@ export function invert(c: Ctx, W: number): { w: number; h: number; body: string;
     const t2: Block = { w: hw, h: k2.h + 52, body: txt(0, 16, `${B.name} · ${B.abbr} · ${b}`, { size: 15, weight: 700, fill: PLUM, sans: SANS }) + `<g transform="translate(0 22)">${k2.body}</g>` }
     const r1 = wide ? row([t1, t2], 40) : colStack([t1, t2], 10)
     const h = r1.h + 36
-    return { w: iw, h, body: `<rect x="0" y="0" width="7" height="${h - 8}" rx="3.5" fill="${hexOf(A)}"/><g transform="translate(14 0)">${r1.body}</g>` + txt(14, r1.h + 22, `${a} + ${b} = 12 semitones · interval numbers ${A.abbr[1]} + ${B.abbr[1]} = 9 · move the lower note up an octave`, { size: 13.5, weight: 700, fill: WINE, sans: SANS }) }
+    const sum = para(14, r1.h + 22, `${a} + ${b} = 12 semitones · interval numbers ${A.abbr[1]} + ${B.abbr[1]} = 9 · move the lower note up an octave`, iw - 14, { size: 13.5, weight: 700, fill: WINE, sans: SANS, lh: 18 })
+    const hh = r1.h + 22 + sum.h + 4
+    return { w: iw, h: hh, body: `<rect x="0" y="0" width="7" height="${hh - 8}" rx="3.5" fill="${hexOf(A)}"/><g transform="translate(14 0)">${r1.body}</g>` + sum.svg }
   })
-  const head: Block = { w: iw, h: 42, body: txt(0, 24, 'Inversion: the lower note moves up an octave', { size: W < 500 ? 20 : 26, fill: PLUM }) }
+  const hp = para(0, 24, 'Inversion: the lower note moves up an octave', iw, { size: W < 500 ? 20 : 26, fill: PLUM, lh: W < 500 ? 25 : 31 }), head: Block = { w: iw, h: hp.h + 22, body: hp.svg }
   const s = colStack([head, ...blocks], 16)
   return { w: W, h: s.h + 12, body: `<g transform="translate(${PAD} 4)">${s.body}</g>`, desc: 'Three inversion pairs on a keyboard from C4 to C5, each interval in its own identity colour. Minor third (3) becomes major sixth (9); major third (4) becomes minor sixth (8); perfect fourth (5) becomes perfect fifth (7). Each pair adds to 12 semitones and the interval numbers add to 9.' }
 }
@@ -373,7 +375,7 @@ export function register(c: Ctx, W: number): { w: number; h: number; body: strin
   const bl: Block[] = regs.map(rg => { const k = kbd(c, hw, [{ midi: rg.c0, label: midiName(rg.c0), hex }, { midi: rg.c0 + 7, label: midiName(rg.c0 + 7), hex }], { cMidi: rg.c0 }); return { w: hw, h: k.h + 30, body: txt(0, 16, rg.t, { size: 15, weight: 700, fill: PLUM, sans: SANS }) + `<g transform="translate(0 22)">${k.body}</g>` } })
   const r1 = wide ? row(bl, 20) : colStack(bl, 12)
   const p = para(0, 14, 'The same perfect fifth: 7 semitones in every register. How blended or rough it sounds also depends on register, instrument, tuning and context, so the key pattern alone cannot rank intervals.', iw, { size: 14, fill: '#4a3a4a', sans: SANS, lh: 19 })
-  const s = colStack([{ w: iw, h: 40, body: txt(0, 24, 'The same interval in three registers', { size: W < 500 ? 20 : 26, fill: PLUM }) }, { w: iw, h: r1.h, body: r1.body }, { w: iw, h: p.h + 4, body: p.svg }], 16)
+  const s = colStack([{ w: iw, h: r1.h, body: r1.body }, { w: iw, h: p.h + 4, body: p.svg }], 16)
   return { w: W, h: s.h + 12, body: `<g transform="translate(${PAD} 4)">${s.body}</g>`, desc: 'Three keyboards, each showing a perfect fifth of 7 semitones in its identity colour: C2 to G2 (low), C4 to G4 (middle) and C6 to G6 (high). The distance is identical; how it sounds depends on register, instrument and context.' }
 }
 

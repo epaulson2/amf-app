@@ -6,7 +6,7 @@ import { wrap, type Ctx } from '../../../lib/soundscape/m03/native-svg'
 import { INTERVALS, BY, sheet, card, compare, map, onepage, ploggerChart, invert, register, intro04, intro05 } from '../../../lib/soundscape/m05/info-svg'
 import { INTERVAL_IDENTITY_COLORS_V1, PLOGGER_LENS_V1, IDENTITY_VERSION } from '../../../lib/soundscape/resources/interval-identity'
 
-const ROOT = '/home/elderle/amf-work/amf-ajourne-m06/', OUT = ROOT + 'public/soundscape/m05/info/'
+const ROOT = process.cwd() + '/', OUT = ROOT + 'public/soundscape/m05/info/'
 mkdirSync(OUT, { recursive: true })
 type Fig = { w: number; h: number; body: string; desc: string }
 const reg: Record<string, any> = {}

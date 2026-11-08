@@ -6,13 +6,13 @@
   "desc": "Perfect unison, C4 with C4, zero semitones. One key highlighted on a keyboard from C4 to C5. Two time strips show the same note one after another and at once. Plogger is not applicable at the boundary.",
   "size": [
    720,
-   995
+   978
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-00.svg",
    "public/soundscape/m05/info/IPF-sheet-00.print.svg"
   ],
-  "sha256_screen": "a885e16aa98bfb76ada78e3d715fd9ee2dbc8d960b54f1868a0b4af1605902e6",
+  "sha256_screen": "deb1d071137e8f3399d00f63877c74e5a580922c28c8351231e6457f182f4f9d",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -31,13 +31,13 @@
   "desc": "Perfect unison, C4 with C4, zero semitones. One key highlighted on a keyboard from C4 to C5. Two time strips show the same note one after another and at once. Plogger is not applicable at the boundary.",
   "size": [
    360,
-   1296
+   1279
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-00-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-00-narrow.print.svg"
   ],
-  "sha256_screen": "ec4f38ef492c1705d0e858b03bf50382adfea1f292cebe708149cdaf37404e20",
+  "sha256_screen": "ea309b4ae2ae0d0074c4379e9758a26edbf58095497206d347ed6bf3ac3d95b2",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -62,7 +62,7 @@
    "public/soundscape/m05/info/IPF-card-00.svg",
    "public/soundscape/m05/info/IPF-card-00.print.svg"
   ],
-  "sha256_screen": "a0ce22441efb639bdee1d6c31cdbaf5819a3b2cc74ca46329f10b991a3eaacd9",
+  "sha256_screen": "f2f23bd1498c66c7545a45c056735e5579315fb68c3529b86c6f4c85eb8f469b",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -80,13 +80,13 @@
   "desc": "Minor second, m2: C4 to D♭4, 1 semitone. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 1 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [1] lens: Dissonant family (jagged), ← Fundamental, Non-harmonic (Plogger), dense/dark.",
   "size": [
    720,
-   1124
+   1107
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-01.svg",
    "public/soundscape/m05/info/IPF-sheet-01.print.svg"
   ],
-  "sha256_screen": "09e13cbee90b65bc8ee4db2e92fbb434f72c12e9d3bbe00a95b61cd91eab2626",
+  "sha256_screen": "cbf6fdc6fc70ec6646d40d2b9a1241e9787f542cfecc00d1e2a23587d9698eb6",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -105,13 +105,13 @@
   "desc": "Minor second, m2: C4 to D♭4, 1 semitone. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 1 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [1] lens: Dissonant family (jagged), ← Fundamental, Non-harmonic (Plogger), dense/dark.",
   "size": [
    360,
-   1410
+   1411
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-01-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-01-narrow.print.svg"
   ],
-  "sha256_screen": "3254cc5c3b1091efbcf6977ef50defe419940ff3f28086e2a5a5a493d33c6544",
+  "sha256_screen": "a434f208dd8af906c94fd149bda67f8ac2064185cbcba95b16797bd1033febab",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -136,7 +136,7 @@
    "public/soundscape/m05/info/IPF-card-01.svg",
    "public/soundscape/m05/info/IPF-card-01.print.svg"
   ],
-  "sha256_screen": "53f97b9fd0e59688cb424b8067af059531ceeff3aa68e818538458edf870c054",
+  "sha256_screen": "29a4fd600e00ec216174f69a2a7f1082d3e0e3b8ca8bd2fb70bd95c4ae6b4768",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -154,13 +154,13 @@
   "desc": "Major second, M2: C4 to D4, 2 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 2 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [2] lens: Dissonant family (jagged), ← Fundamental, Harmonic (Plogger), open/light.",
   "size": [
    720,
-   1099
+   1107
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-02.svg",
    "public/soundscape/m05/info/IPF-sheet-02.print.svg"
   ],
-  "sha256_screen": "388c4afb380ffb606169e66a1d4e81e0cb51b5c600f99b8e412696573d434c7f",
+  "sha256_screen": "d1c5f4793fd22f078249f2fd2216c84221d272df7c232a8620fee4789d99f2e0",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -179,13 +179,13 @@
   "desc": "Major second, M2: C4 to D4, 2 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 2 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [2] lens: Dissonant family (jagged), ← Fundamental, Harmonic (Plogger), open/light.",
   "size": [
    360,
-   1410
+   1411
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-02-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-02-narrow.print.svg"
   ],
-  "sha256_screen": "6fda05a3e16596827523b393a359141f6d9e9d25767537541815828802efbfea",
+  "sha256_screen": "170ad770cadbe750e7427e2401184af971a93441503d7214fb57a34124523901",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -210,7 +210,7 @@
    "public/soundscape/m05/info/IPF-card-02.svg",
    "public/soundscape/m05/info/IPF-card-02.print.svg"
   ],
-  "sha256_screen": "5e2b093795d5c75f6cadf70c5067d275abe0a00c22c02ef9835c38266b19a9b7",
+  "sha256_screen": "781dcf7e2da3ab16eec75a06ab7b4b7aa6f2c5188234b109a646aa55a0003942",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -228,13 +228,13 @@
   "desc": "Minor third, m3: C4 to E♭4, 3 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 3 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [3] lens: Modal family (rounded), ← Fundamental, Non-harmonic (Plogger), dense/dark.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-03.svg",
    "public/soundscape/m05/info/IPF-sheet-03.print.svg"
   ],
-  "sha256_screen": "f12717111550f6a1c4c8b0182b3ba877946369f5ea6643d021398646376f44c1",
+  "sha256_screen": "a328a4dc4e0eb8a62c3f86e1c79375517813433bed62ba0c76246a41702e6553",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -253,13 +253,13 @@
   "desc": "Minor third, m3: C4 to E♭4, 3 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 3 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [3] lens: Modal family (rounded), ← Fundamental, Non-harmonic (Plogger), dense/dark.",
   "size": [
    360,
-   1410
+   1411
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-03-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-03-narrow.print.svg"
   ],
-  "sha256_screen": "b114d536fe7789acbbc9b3aa3cc8c10dd42a998abd7d3ae53441aff3a236a04b",
+  "sha256_screen": "d72a62b6e023e86b35a0b49054c178852b497d3c9675b7160f86c1d5fa2c9865",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -284,7 +284,7 @@
    "public/soundscape/m05/info/IPF-card-03.svg",
    "public/soundscape/m05/info/IPF-card-03.print.svg"
   ],
-  "sha256_screen": "ed83be7073867796b2ab3d305fb32e7234cd1b2fbb2dd1eb8fdddbea81bc5e41",
+  "sha256_screen": "d7c0344a85496a228d0b2deb5c977cd00549af9bd27c8349d757bdacbf194de2",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -302,13 +302,13 @@
   "desc": "Major third, M3: C4 to E4, 4 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 4 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [4] lens: Modal family (rounded), ← Fundamental, Harmonic (Plogger), open/light.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-04.svg",
    "public/soundscape/m05/info/IPF-sheet-04.print.svg"
   ],
-  "sha256_screen": "0e45edbbf12ea241a784d7c610ba26de917060539bcb8e0056801017bed745a7",
+  "sha256_screen": "625726bcf56813281ea594d22afd176eefa627dc4b329bad367795ad0a539313",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -327,13 +327,13 @@
   "desc": "Major third, M3: C4 to E4, 4 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 4 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [4] lens: Modal family (rounded), ← Fundamental, Harmonic (Plogger), open/light.",
   "size": [
    360,
-   1385
+   1411
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-04-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-04-narrow.print.svg"
   ],
-  "sha256_screen": "51f75df95c98ed7a48b910f7ec8623b64171c14ed7df6a21311ef8852a04a03c",
+  "sha256_screen": "75f8c6c30713fa71a1820a1e879b6240618707508bf8877d386fa08ddf4df98d",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -358,7 +358,7 @@
    "public/soundscape/m05/info/IPF-card-04.svg",
    "public/soundscape/m05/info/IPF-card-04.print.svg"
   ],
-  "sha256_screen": "913820c0813812ee13db11d3c4e9730781fc1db22b79e6b399d18710aad64d2f",
+  "sha256_screen": "8772f94ea392a7d42f8f1f20a6c38499e4f1f1b31fbb48c49ba6f15716e9d0e3",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -376,13 +376,13 @@
   "desc": "Perfect fourth, P4: C4 to F4, 5 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 5 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [5] lens: Perfect-group family (straight), ← Fundamental, Non-harmonic (Plogger), dense/dark.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-05.svg",
    "public/soundscape/m05/info/IPF-sheet-05.print.svg"
   ],
-  "sha256_screen": "d865aa2f27c19548f626428e0da1de81267c2f587f0f2594da625d9fc9f910ae",
+  "sha256_screen": "5f7205582fc92ef72ca3ed50fc58f0af0b72dbd0c74dcbf30d16a12f922d61f2",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -401,13 +401,13 @@
   "desc": "Perfect fourth, P4: C4 to F4, 5 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 5 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [5] lens: Perfect-group family (straight), ← Fundamental, Non-harmonic (Plogger), dense/dark.",
   "size": [
    360,
-   1385
+   1386
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-05-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-05-narrow.print.svg"
   ],
-  "sha256_screen": "33be03eb41510d03a4acfab2acff0c1b1bdd8c71fca84b1ce67364a11d3f3564",
+  "sha256_screen": "bb9f2998171eab9231ed39a7d06c231e158aac716218681be5bdb88acb9b8891",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -432,7 +432,7 @@
    "public/soundscape/m05/info/IPF-card-05.svg",
    "public/soundscape/m05/info/IPF-card-05.print.svg"
   ],
-  "sha256_screen": "cca2c8338a6d3b3dc134a414778eae30342b80b47827a51923b5dad73cefd2e9",
+  "sha256_screen": "7c99f59656e569bcd1ff898c8ce6401b8cdb1f505b46fae8549652b53fdec635",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -450,13 +450,13 @@
   "desc": "Tritone, A4/d5: C4 to F♯4 = G♭4, 6 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 6 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [6] lens: Perfect-group family (straight), ↔ Both (midpoint), Neutral (Plogger), midtone dotted.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-06.svg",
    "public/soundscape/m05/info/IPF-sheet-06.print.svg"
   ],
-  "sha256_screen": "88f9a7689807f78b6180f610ca38f7995c06f1b85ba4c9a5c83f3217b1d314e6",
+  "sha256_screen": "4974630cd09f9dce1a0494edc7f2722cc90c6396140cad9cc462ab4416bb3c48",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -475,13 +475,13 @@
   "desc": "Tritone, A4/d5: C4 to F♯4 = G♭4, 6 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 6 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [6] lens: Perfect-group family (straight), ↔ Both (midpoint), Neutral (Plogger), midtone dotted.",
   "size": [
    360,
-   1385
+   1386
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-06-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-06-narrow.print.svg"
   ],
-  "sha256_screen": "07a7b6bd0e09beacef2b621601187f6d445532a2abce5e74c9195f3a4b45e0d5",
+  "sha256_screen": "0899d08044b3acd84c26786c4212b5f52e89e3a26b4c0b247eb081406aa76ac3",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -506,7 +506,7 @@
    "public/soundscape/m05/info/IPF-card-06.svg",
    "public/soundscape/m05/info/IPF-card-06.print.svg"
   ],
-  "sha256_screen": "aa07c28cff20676c60bdddd382ca53e506cb93e612ee8d1f2033e0c0b8ae8df1",
+  "sha256_screen": "7c100b925d0e33fdf13f686dc2ea4c2aecac38e13cb41038d83629ba0b2dd30c",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -524,13 +524,13 @@
   "desc": "Perfect fifth, P5: C4 to G4, 7 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 7 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [7] lens: Perfect-group family (straight), → Octave, Harmonic (Plogger), open/light.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-07.svg",
    "public/soundscape/m05/info/IPF-sheet-07.print.svg"
   ],
-  "sha256_screen": "1f3e488a8be9f26d9499842571e5da5e4ec87c8be9d8bb187ebfb0b6e1628098",
+  "sha256_screen": "d7ac621cb181757f3b50981e49119d9b56eb5d51f05810e19685641d3a9f0899",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -549,13 +549,13 @@
   "desc": "Perfect fifth, P5: C4 to G4, 7 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 7 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [7] lens: Perfect-group family (straight), → Octave, Harmonic (Plogger), open/light.",
   "size": [
    360,
-   1385
+   1386
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-07-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-07-narrow.print.svg"
   ],
-  "sha256_screen": "79a5d903801a90b229ff41ad42f043a4c6fa4c7350fa0f4b209b39a86e69e1f8",
+  "sha256_screen": "2510b20b73976aa5d35500679d8f6ca66dda2410de5cd6dfc7be9c5e03e2451a",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -580,7 +580,7 @@
    "public/soundscape/m05/info/IPF-card-07.svg",
    "public/soundscape/m05/info/IPF-card-07.print.svg"
   ],
-  "sha256_screen": "93c564fe361d9fb20cc9fe851892b646de4f7b8821352ec09990a6c44d93e18e",
+  "sha256_screen": "eb2d3d16e69e51c6d5c19209f6caf45e4afdc96e1ce4d53d5831a82fe8c4b29d",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -598,13 +598,13 @@
   "desc": "Minor sixth, m6: C4 to A♭4, 8 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 8 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [8] lens: Modal family (rounded), → Octave, Non-harmonic (Plogger), dense/dark.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-08.svg",
    "public/soundscape/m05/info/IPF-sheet-08.print.svg"
   ],
-  "sha256_screen": "f34b99433c850363ce1589bec01fd3ae96351e1e275eb295197b017afe7b0d60",
+  "sha256_screen": "f2850c3810a584ef39d9682c1a76091ee7889ace320da227e8f30c05b59658f2",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -623,13 +623,13 @@
   "desc": "Minor sixth, m6: C4 to A♭4, 8 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 8 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [8] lens: Modal family (rounded), → Octave, Non-harmonic (Plogger), dense/dark.",
   "size": [
    360,
-   1385
+   1386
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-08-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-08-narrow.print.svg"
   ],
-  "sha256_screen": "162a8a3fd84b173bb604c2be6094c60a5bb83243a209149e421ad52f83f13140",
+  "sha256_screen": "2bf969eb4358c2cc92e08668edb99b441fb2a3c74175438b8dddbc78274935e0",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -654,7 +654,7 @@
    "public/soundscape/m05/info/IPF-card-08.svg",
    "public/soundscape/m05/info/IPF-card-08.print.svg"
   ],
-  "sha256_screen": "975a77e11bf500f5f5785f0a2e6b7be8822b2c100cad398fc05a84c5dc563ffb",
+  "sha256_screen": "93fd12ddcd1676adaeacac72c381cf930a0afba2981a70f92b05b1ad138647b4",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -672,13 +672,13 @@
   "desc": "Major sixth, M6: C4 to A4, 9 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 9 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [9] lens: Modal family (rounded), → Octave, False-harmonic (Plogger), half-filled/hatched.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-09.svg",
    "public/soundscape/m05/info/IPF-sheet-09.print.svg"
   ],
-  "sha256_screen": "976d57e33095607320062d270528271ee55a3490c356c1cd147b16ce86b2d35a",
+  "sha256_screen": "21f41040b3372406390773608d7a1f9d25633480b0d89645035fa8479ad835df",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -697,13 +697,13 @@
   "desc": "Major sixth, M6: C4 to A4, 9 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 9 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [9] lens: Modal family (rounded), → Octave, False-harmonic (Plogger), half-filled/hatched.",
   "size": [
    360,
-   1402
+   1403
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-09-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-09-narrow.print.svg"
   ],
-  "sha256_screen": "ee3b137273dbcea51133943b76461bc4fa0927562f19ae00379b264b6a287839",
+  "sha256_screen": "955696e4a85daee1a58c5e226235e0b841bbbde245ad77f493e09ae235e8c224",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -728,7 +728,7 @@
    "public/soundscape/m05/info/IPF-card-09.svg",
    "public/soundscape/m05/info/IPF-card-09.print.svg"
   ],
-  "sha256_screen": "7fcd5363d885f07f0fbcd10e2c8823d60a5980812ebad2fa50cf73c2aee4aeaf",
+  "sha256_screen": "4210dd9b1fe45bb534203b1b5494eef4ca947b3e2721d0a2ed66507093efebca",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -746,13 +746,13 @@
   "desc": "Minor seventh, m7: C4 to B♭4, 10 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 10 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [10] lens: Dissonant family (jagged), → Octave, Harmonic (Plogger), open/light.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-10.svg",
    "public/soundscape/m05/info/IPF-sheet-10.print.svg"
   ],
-  "sha256_screen": "0cbb78d78ef770c1c525b87df437624fcb2389e4c1270a6534065a02e4d4a010",
+  "sha256_screen": "86a90088015a4acb0e5e0e3b3d34ecd9b46222cc3605536e1b3f070d2cf7f0a3",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -771,13 +771,13 @@
   "desc": "Minor seventh, m7: C4 to B♭4, 10 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 10 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [10] lens: Dissonant family (jagged), → Octave, Harmonic (Plogger), open/light.",
   "size": [
    360,
-   1385
+   1386
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-10-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-10-narrow.print.svg"
   ],
-  "sha256_screen": "4626219d673e60632b7b784cd19957e881ebdf003990a9fb45e8be9344338fd8",
+  "sha256_screen": "985e775d64406f40809a271e18033d2706bd8f45a2d93561898adac89aaab192",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -802,7 +802,7 @@
    "public/soundscape/m05/info/IPF-card-10.svg",
    "public/soundscape/m05/info/IPF-card-10.print.svg"
   ],
-  "sha256_screen": "87a366b3d5fca6d51583e6651483df9bb45062667825600ba854a857c3a905b2",
+  "sha256_screen": "d5d2686d0858f42aac0515a70f5e02cfcb9fcbe3ee0853b19e4e423b2c7c498d",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -820,13 +820,13 @@
   "desc": "Major seventh, M7: C4 to B4, 11 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 11 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [11] lens: Dissonant family (jagged), → Octave, Non-harmonic (Plogger), dense/dark.",
   "size": [
    720,
-   1099
+   1082
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-11.svg",
    "public/soundscape/m05/info/IPF-sheet-11.print.svg"
   ],
-  "sha256_screen": "75c7253d56467cca78c63fa2eeb8ac3569872379efc2be5e56a15dded816d693",
+  "sha256_screen": "2ccd4cc1aeb1a12a6e36e93d09115f8944fdc8162fdb52dcf857b34bb8e7d754",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -845,13 +845,13 @@
   "desc": "Major seventh, M7: C4 to B4, 11 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 11 numbered semitone hops. Two time strips show the notes one after another and together. Plogger [11] lens: Dissonant family (jagged), → Octave, Non-harmonic (Plogger), dense/dark.",
   "size": [
    360,
-   1385
+   1386
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-11-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-11-narrow.print.svg"
   ],
-  "sha256_screen": "829139585e1c5efdc138fa4370f07af72e5d90a9f3e39f8da3cbc194760455cf",
+  "sha256_screen": "6c815217aa2cc92aecced46d7f1db6a4a9d2a55d6709c3dec36e10a194bdff41",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -876,7 +876,7 @@
    "public/soundscape/m05/info/IPF-card-11.svg",
    "public/soundscape/m05/info/IPF-card-11.print.svg"
   ],
-  "sha256_screen": "c39156bd2642de1c9610a0346a66c9c5ae1e49293e2d20a91a740b4a4cf24b9d",
+  "sha256_screen": "2875ca6ceee532e8ba4b3eb9ac3a7ffad87e01b5a8a73a547060247beb30f42a",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -894,13 +894,13 @@
   "desc": "Perfect octave, P8: C4 to C5, 12 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 12 numbered semitone hops. Two time strips show the notes one after another and together. Plogger is not applicable at the boundary.",
   "size": [
    720,
-   1059
+   1042
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-12.svg",
    "public/soundscape/m05/info/IPF-sheet-12.print.svg"
   ],
-  "sha256_screen": "e354f45c00a24e9f5a8e9eeb4b66e0283067f21da6a4dfb47496edbfe0475f9c",
+  "sha256_screen": "984c5232eb04c4c77bc9b03bcbd24018277d485dfd6b5def70aa41e7cbb8f1de",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -919,13 +919,13 @@
   "desc": "Perfect octave, P8: C4 to C5, 12 semitones. A keyboard from C4 to C5 with both keys highlighted in this interval's identity colour and 12 numbered semitone hops. Two time strips show the notes one after another and together. Plogger is not applicable at the boundary.",
   "size": [
    360,
-   1360
+   1361
   ],
   "files": [
    "public/soundscape/m05/info/IPF-sheet-12-narrow.svg",
    "public/soundscape/m05/info/IPF-sheet-12-narrow.print.svg"
   ],
-  "sha256_screen": "92de43647e584f5886a7acf5ef2bbd1d837a7cfebf0133beba18382356b8849f",
+  "sha256_screen": "7a0951e17fd63045ac58d5d8a9c12255fafe87b99e48ddab1731e9eeb200a442",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "INTERVAL",
@@ -950,7 +950,7 @@
    "public/soundscape/m05/info/IPF-card-12.svg",
    "public/soundscape/m05/info/IPF-card-12.print.svg"
   ],
-  "sha256_screen": "db14a9a01bcdff0b45f435ce8e1da3cbd4c52337480b5cbcba52d55ad7fa5877",
+  "sha256_screen": "59b04e25a6743069cc76d46bfe2510590dc976283e05c2fa6dee1af124fb33a0",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "CARD",
@@ -968,13 +968,13 @@
   "desc": "Minor third versus major third. A keyboard from C4 to C5 with C4 as the shared root and the upper notes E♭4 (m3, 3 semitones), E4 (M3, 4 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    720,
-   1014
+   982
   ],
   "files": [
    "public/soundscape/m05/info/IPF-proof-A-m3-M3.svg",
    "public/soundscape/m05/info/IPF-proof-A-m3-M3.print.svg"
   ],
-  "sha256_screen": "b84c0f5f92e524ba68a0b5b25efbb5d201b92580f71a111df831eb6f130287d0",
+  "sha256_screen": "4892927f6be552439e3b7fe40931f066fc9304905870fd4467ca3378625fc240",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -994,13 +994,13 @@
   "desc": "Minor third versus major third. A keyboard from C4 to C5 with C4 as the shared root and the upper notes E♭4 (m3, 3 semitones), E4 (M3, 4 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    360,
-   1214
+   1190
   ],
   "files": [
    "public/soundscape/m05/info/IPF-proof-A-m3-M3-narrow.svg",
    "public/soundscape/m05/info/IPF-proof-A-m3-M3-narrow.print.svg"
   ],
-  "sha256_screen": "ffe9d304040f5247c89453ba796338412b1dfd8cadd76177528e443a6015443f",
+  "sha256_screen": "00dbddf6f618341735cf7c3d02e20d759dd95539f85786619dd9fb860a9d7ced",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1020,13 +1020,13 @@
   "desc": "Fourth, tritone, fifth. A keyboard from C4 to C5 with C4 as the shared root and the upper notes F4 (P4, 5 semitones), F♯4 = G♭4 (A4/d5, 6 semitones), G4 (P5, 7 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    720,
-   1194
+   1162
   ],
   "files": [
    "public/soundscape/m05/info/IPF-proof-B-p4-tt-p5.svg",
    "public/soundscape/m05/info/IPF-proof-B-p4-tt-p5.print.svg"
   ],
-  "sha256_screen": "1a53d23fc8c800beeaaea173e096fa6dde6606c03ae033e4ce37a590404fa6fa",
+  "sha256_screen": "77d757b2d9838a92f7b1cf50ad4906fcd66007041b1b464fb24e95839e6db85e",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1047,13 +1047,13 @@
   "desc": "Fourth, tritone, fifth. A keyboard from C4 to C5 with C4 as the shared root and the upper notes F4 (P4, 5 semitones), F♯4 = G♭4 (A4/d5, 6 semitones), G4 (P5, 7 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    360,
-   1525
+   1476
   ],
   "files": [
    "public/soundscape/m05/info/IPF-proof-B-p4-tt-p5-narrow.svg",
    "public/soundscape/m05/info/IPF-proof-B-p4-tt-p5-narrow.print.svg"
   ],
-  "sha256_screen": "88df3c5c299bce44049005c5f2d0cba4f674104d3b8a18c65f9907ee671ab59f",
+  "sha256_screen": "6ce686b15e9b46014a5fe20f2e72bc5562c722472704a0ff743017779645ef42",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1074,13 +1074,13 @@
   "desc": "Minor second versus major second. A keyboard from C4 to C5 with C4 as the shared root and the upper notes D♭4 (m2, 1 semitone), D4 (M2, 2 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    720,
-   1014
+   1007
   ],
   "files": [
    "public/soundscape/m05/info/IPF-compare-m2-M2.svg",
    "public/soundscape/m05/info/IPF-compare-m2-M2.print.svg"
   ],
-  "sha256_screen": "149a9d7cf48c743625eb367a31a06ab69c97a5792f46f6036f01721b75082760",
+  "sha256_screen": "96e078cfa2eb11a85b89c65b25ed36fdbab4e8ae412f4edf0a9cbe64c04b762f",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1100,13 +1100,13 @@
   "desc": "Minor second versus major second. A keyboard from C4 to C5 with C4 as the shared root and the upper notes D♭4 (m2, 1 semitone), D4 (M2, 2 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    360,
-   1221
+   1172
   ],
   "files": [
    "public/soundscape/m05/info/IPF-compare-m2-M2-narrow.svg",
    "public/soundscape/m05/info/IPF-compare-m2-M2-narrow.print.svg"
   ],
-  "sha256_screen": "6e1219aa288665bc57c7a7cc08cd21cef1a43924697247e8350032d822ecbcd1",
+  "sha256_screen": "e2ca445b7aa48e491bc2367d40e26cd01426474ce9b632312026be1fd353c264",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1126,13 +1126,13 @@
   "desc": "Minor sixth versus major sixth. A keyboard from C4 to C5 with C4 as the shared root and the upper notes A♭4 (m6, 8 semitones), A4 (M6, 9 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    720,
-   1031
+   999
   ],
   "files": [
    "public/soundscape/m05/info/IPF-compare-m6-M6.svg",
    "public/soundscape/m05/info/IPF-compare-m6-M6.print.svg"
   ],
-  "sha256_screen": "097844f2e43a6dd2afdf4850e856043b592e73c84bb9347f0ae9b2ee220a7c14",
+  "sha256_screen": "aa3df4c7c8f1382a1122048fae154a59c25d3a71d47fb791de6d48d3b68a7825",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1152,13 +1152,13 @@
   "desc": "Minor sixth versus major sixth. A keyboard from C4 to C5 with C4 as the shared root and the upper notes A♭4 (m6, 8 semitones), A4 (M6, 9 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    360,
-   1213
+   1164
   ],
   "files": [
    "public/soundscape/m05/info/IPF-compare-m6-M6-narrow.svg",
    "public/soundscape/m05/info/IPF-compare-m6-M6-narrow.print.svg"
   ],
-  "sha256_screen": "7238a68c05db9206b5cfcccd4c609f31b67f4d46db1247297fa7e9f92870ec16",
+  "sha256_screen": "9fded9b5bb9715627b56fb99dee2d2c74d7356982dc1acc7f4cc0653953b74ab",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1178,13 +1178,13 @@
   "desc": "Minor seventh versus major seventh. A keyboard from C4 to C5 with C4 as the shared root and the upper notes B♭4 (m7, 10 semitones), B4 (M7, 11 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    720,
-   1014
+   982
   ],
   "files": [
    "public/soundscape/m05/info/IPF-compare-m7-M7.svg",
    "public/soundscape/m05/info/IPF-compare-m7-M7.print.svg"
   ],
-  "sha256_screen": "d8042d65dd430f7bb18745da618feb659173c51ed4b319b893e3cf4c805bd6c9",
+  "sha256_screen": "1cf654e5ba2c8ca1483ef8fff68802cd4c009fd985440580d50cd1b665a529a0",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1204,13 +1204,13 @@
   "desc": "Minor seventh versus major seventh. A keyboard from C4 to C5 with C4 as the shared root and the upper notes B♭4 (m7, 10 semitones), B4 (M7, 11 semitones) each in its own identity colour. A table lists what stayed (root C4) and what changed (upper note, semitone count, and the Plogger shape, shadow and fill where they apply).",
   "size": [
    360,
-   1214
+   1165
   ],
   "files": [
    "public/soundscape/m05/info/IPF-compare-m7-M7-narrow.svg",
    "public/soundscape/m05/info/IPF-compare-m7-M7-narrow.print.svg"
   ],
-  "sha256_screen": "9acc88a3198c1ec9105a90cc662977c2d34c72eb0f4e63a6addf0859072bd373",
+  "sha256_screen": "118217c74a8c17a676e6f298aa06c069d3ab6a53ca718a7a56d8f3667d0f65cb",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1230,13 +1230,13 @@
   "desc": "A keyboard from C4 to C5 with all thirteen pitches marked, each in its own fixed identity colour, above an exact ruler from 0 to 12 semitones: P1 0, m2 1, M2 2, m3 3, M3 4, P4 5, A4/d5 6, P5 7, m6 8, M6 9, m7 10, M7 11, P8 12. Plogger marks apply to 1 through 11; 0 and 12 are boundaries.",
   "size": [
    900,
-   670
+   503
   ],
   "files": [
    "public/soundscape/m05/info/IPF-proof-C-map.svg",
    "public/soundscape/m05/info/IPF-proof-C-map.print.svg"
   ],
-  "sha256_screen": "0a7f97fc6086dba9ef6a115b4bb4f894edee0cc1709227e137cc10f6b0687c2d",
+  "sha256_screen": "4ddfb250ce7a5a772838c8b4306826a78aed7663bf0c5dbf0544db16ecc9e463",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "SYSTEM",
@@ -1256,13 +1256,13 @@
   "desc": "A keyboard from C4 to C5 with all thirteen pitches marked, each in its own fixed identity colour, above an exact ruler from 0 to 12 semitones: P1 0, m2 1, M2 2, m3 3, M3 4, P4 5, A4/d5 6, P5 7, m6 8, M6 9, m7 10, M7 11, P8 12. Plogger marks apply to 1 through 11; 0 and 12 are boundaries.",
   "size": [
    360,
-   729
+   438
   ],
   "files": [
    "public/soundscape/m05/info/IPF-proof-C-map-narrow.svg",
    "public/soundscape/m05/info/IPF-proof-C-map-narrow.print.svg"
   ],
-  "sha256_screen": "8d7c3e0ab9f1796135a3ee4aba3d21852fe3e853440997fd1d66e88c1b796cb0",
+  "sha256_screen": "420f137d535176cc235c643713cdafdd714760a304a9b1e4cfb5b1ac40122865",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "SYSTEM",
@@ -1281,13 +1281,13 @@
   "desc": "A one-page table of the thirteen intervals from C4: each row has its identity colour, name, abbreviation, note pair, semitone count and its three Plogger marks (shape, shadow, fill), with N/A for the unison and the octave.",
   "size": [
    720,
-   938
+   787
   ],
   "files": [
    "public/soundscape/m05/info/IPF-onepage.svg",
    "public/soundscape/m05/info/IPF-onepage.print.svg"
   ],
-  "sha256_screen": "ce2e29b9cebb14357f554cc1c1af06b6086493c80dc4d6a35e4b0e66c05b6f09",
+  "sha256_screen": "ae924c307e700223619c38d97ec1f80fba6b147b4e750c27da2d8b66658d48f5",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "SYSTEM",
@@ -1304,13 +1304,13 @@
   "desc": "A one-page table of the thirteen intervals from C4: each row has its identity colour, name, abbreviation, note pair, semitone count and its three Plogger marks (shape, shadow, fill), with N/A for the unison and the octave.",
   "size": [
    360,
-   1012
+   762
   ],
   "files": [
    "public/soundscape/m05/info/IPF-onepage-narrow.svg",
    "public/soundscape/m05/info/IPF-onepage-narrow.print.svg"
   ],
-  "sha256_screen": "a9c45823cb9a6522f3a8d5d27bb3b2173ac8ee495b17b59ec7d519f3fd586898",
+  "sha256_screen": "7ba4f447f39af218c327cef14b49d5d6e5bed6a5df772b0388df7f0b51d15edd",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "SYSTEM",
@@ -1333,7 +1333,7 @@
    "public/soundscape/m05/info/IPF-plogger-chart.svg",
    "public/soundscape/m05/info/IPF-plogger-chart.print.svg"
   ],
-  "sha256_screen": "4f31620bc6006ea0cdc9004fec9cd7473e5f99a2ba665d50f2897f941a18da89",
+  "sha256_screen": "6bc976acaf45114e373a741681f76ca279a70d43dcafc94d22f163b3258b66d1",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "SYSTEM",
@@ -1348,13 +1348,13 @@
   "desc": "A chart of all thirteen intervals showing the historic Plogger three-factor glyph for [1] to [11] and N/A for the unison and octave, each with its shape, shadow and fill named, and a legend.",
   "size": [
    360,
-   1170
+   1153
   ],
   "files": [
    "public/soundscape/m05/info/IPF-plogger-chart-narrow.svg",
    "public/soundscape/m05/info/IPF-plogger-chart-narrow.print.svg"
   ],
-  "sha256_screen": "3c149db07edfba1b7432e55b41c16a35e7e01aea0f0ee792f0143354187b0006",
+  "sha256_screen": "ec6fda313f16a14eb57e2ee454d563870efcca0ff2e1e1a5c1a5ecffeb926d69",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "SYSTEM",
@@ -1369,13 +1369,13 @@
   "desc": "Three inversion pairs on a keyboard from C4 to C5, each interval in its own identity colour. Minor third (3) becomes major sixth (9); major third (4) becomes minor sixth (8); perfect fourth (5) becomes perfect fifth (7). Each pair adds to 12 semitones and the interval numbers add to 9.",
   "size": [
    720,
-   777
+   812
   ],
   "files": [
    "public/soundscape/m05/info/IPF-invert.svg",
    "public/soundscape/m05/info/IPF-invert.print.svg"
   ],
-  "sha256_screen": "c05d8c29c7ec926843f878f0948afd96f1dfe7ff83792d15e4fa673286dcabfa",
+  "sha256_screen": "c6c201cbb4cf213c85fc1362144b6b3fd3ac6c6fec34c4887ea82342a59544da",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1393,13 +1393,13 @@
   "desc": "Three inversion pairs on a keyboard from C4 to C5, each interval in its own identity colour. Minor third (3) becomes major sixth (9); major third (4) becomes minor sixth (8); perfect fourth (5) becomes perfect fifth (7). Each pair adds to 12 semitones and the interval numbers add to 9.",
   "size": [
    360,
-   1374
+   1482
   ],
   "files": [
    "public/soundscape/m05/info/IPF-invert-narrow.svg",
    "public/soundscape/m05/info/IPF-invert-narrow.print.svg"
   ],
-  "sha256_screen": "ae47d558388edc7ae2dec8ba4180b92ec2bce4f411be5af45158e52de239d700",
+  "sha256_screen": "fff4411a361721a2c3c337d1252428473c79462f3facbbcdd94c513d1c4fa49a",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1417,13 +1417,13 @@
   "desc": "Three keyboards, each showing a perfect fifth of 7 semitones in its identity colour: C2 to G2 (low), C4 to G4 (middle) and C6 to G6 (high). The distance is identical; how it sounds depends on register, instrument and context.",
   "size": [
    720,
-   312
+   256
   ],
   "files": [
    "public/soundscape/m05/info/IPF-register.svg",
    "public/soundscape/m05/info/IPF-register.print.svg"
   ],
-  "sha256_screen": "8761982271f56ebfe96c65073f5b13b36e1ba988b347b182b9b63c8481d6b9b0",
+  "sha256_screen": "eae6663beca5e5bd55ec3150b826638e66379cbf64192c2f6766b9d3139100e9",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1441,13 +1441,13 @@
   "desc": "Three keyboards, each showing a perfect fifth of 7 semitones in its identity colour: C2 to G2 (low), C4 to G4 (middle) and C6 to G6 (high). The distance is identical; how it sounds depends on register, instrument and context.",
   "size": [
    360,
-   708
+   652
   ],
   "files": [
    "public/soundscape/m05/info/IPF-register-narrow.svg",
    "public/soundscape/m05/info/IPF-register-narrow.print.svg"
   ],
-  "sha256_screen": "07d8d891a75143333f6951eeb1be806764910080822977dddcbaea297615e956",
+  "sha256_screen": "94e209232a039c9d3a478182f7d08d3f4fcf970f31bbd4304e72c0ef1248df50",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "COMPARE",
@@ -1471,7 +1471,7 @@
    "public/soundscape/m05/info/IPF-intro-04.svg",
    "public/soundscape/m05/info/IPF-intro-04.print.svg"
   ],
-  "sha256_screen": "326280da15e252f016642dd6616cdeeabf7b5ba6d98dba44fe7e7bc2e92c4b2f",
+  "sha256_screen": "f04e1fd7b860e495485ecf857d177a2c719eb54322448952983c89d8759dfd42",
   "source": "lib/soundscape/resources/interval-data.json + interval-identity.ts (v1.0)",
   "status": "INFO-FIRST READY",
   "group": "SYSTEM",
