@@ -1,0 +1,49 @@
+{
+ "model": "google/gemini-3-pro-image",
+ "cap_usd": 0.5,
+ "max_calls": 1,
+ "calls": [
+  {
+   "endpoint": "images",
+   "time": "2026-11-07T19:57:37",
+   "model": "google/gemini-3-pro-image",
+   "prompt_sha256": "bc237655c92ccd8379b1eaffcee0dc2f561ea3953b76ca775c66f442ecbf0df0",
+   "reference_sha256": "a5346fa879c0480a802fa7a2364ba16b39e7a7a1ccc35f37010cffd4a8e130ab",
+   "reference_bytes_sent": 2686367,
+   "request_params": {
+    "model": "google/gemini-3-pro-image",
+    "aspect_ratio": "4:3",
+    "image_size": "2K",
+    "n": 1
+   },
+   "charged": true,
+   "seconds": 23.3,
+   "usage": {
+    "prompt_tokens": 1811,
+    "completion_tokens": 1120,
+    "total_tokens": 2931,
+    "cost": 0.138022,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.138022,
+     "upstream_inference_prompt_cost": 0.003622,
+     "upstream_inference_completions_cost": 0.1344
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 1120
+    }
+   },
+   "cost_usd": 0.138022,
+   "out": "docs/nb-json-pilot/round4-transparent/raw/B4.png",
+   "sha256": "0c2483b8506c6372c14b06bbf68a97b1c13122ebac266c53234cab745ed8b5ca",
+   "bytes": 1151488
+  }
+ ]
+}

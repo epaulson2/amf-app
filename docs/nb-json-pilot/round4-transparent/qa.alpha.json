@@ -1,0 +1,44 @@
+{
+ "source/art.alpha.png": {
+  "size": "1200x896",
+  "alphaMin": 0,
+  "alphaMax": 255,
+  "corners": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "borderMaxAlpha": 0,
+  "nonzeroPct": 46.7,
+  "channels": 4
+ },
+ "final/infographic.desktop.transparent.png": {
+  "size": "2400x2340",
+  "alphaMin": 0,
+  "alphaMax": 255,
+  "corners": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "borderMaxAlpha": 0,
+  "nonzeroPct": 43.2,
+  "channels": 4
+ },
+ "final/infographic.phone.transparent.png": {
+  "size": "1170x4248",
+  "alphaMin": 0,
+  "alphaMax": 255,
+  "corners": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "borderMaxAlpha": 13,
+  "nonzeroPct": 56.6,
+  "channels": 4
+ }
+}
