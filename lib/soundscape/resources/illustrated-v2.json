@@ -1,0 +1,132 @@
+{
+ "IP-00": {
+  "title": "Perfect Unison",
+  "semitones": 0,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "42bc62064bbfaaaae1be402c83a562a47c898ef6852b58864da9e18d3d654e17",
+  "manifest_sha256": "42bc62064bbfaaaae1be402c83a562a47c898ef6852b58864da9e18d3d654e17",
+  "sha256_served": "47eb1092abd830a32dee30094aa6df228bd2bc79873564f3747c5430bd3109bf"
+ },
+ "IP-01": {
+  "title": "Minor Second",
+  "semitones": 1,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "cd5deb386144831a1f4c42e348b99e70d073fd5bb79fada0b4e5b653771a9ada",
+  "manifest_sha256": "cd5deb386144831a1f4c42e348b99e70d073fd5bb79fada0b4e5b653771a9ada",
+  "sha256_served": "6d05757c63440dc0bae4b146e6f782b211aecd77b19ff816c7074f661405ae11"
+ },
+ "IP-02": {
+  "title": "Major Second",
+  "semitones": 2,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "bfd7975def26b486340018323d02a4ed913e4cfebb79b7524216ef485ca5a635",
+  "manifest_sha256": "bfd7975def26b486340018323d02a4ed913e4cfebb79b7524216ef485ca5a635",
+  "sha256_served": "513fa5e947717b92c97641cf96146395f8e1ff5187758e168818b47b1d0fa129"
+ },
+ "IP-03": {
+  "title": "Minor Third",
+  "semitones": 3,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "d63c2d6cb0bdecda309f93ea3af7fbc6f1a7ec5120663e3c0e0913ecf799247b",
+  "manifest_sha256": "d63c2d6cb0bdecda309f93ea3af7fbc6f1a7ec5120663e3c0e0913ecf799247b",
+  "sha256_served": "0509504df8ea90eb74d0e326745d53e04cd499e4e7aa876b4622811221080952"
+ },
+ "IP-04": {
+  "title": "Major Third",
+  "semitones": 4,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "55e3c7d4c45645b43b38b2cda58875f2970d16124ef7a55fb5b0d2d84aa4df6c",
+  "manifest_sha256": "55e3c7d4c45645b43b38b2cda58875f2970d16124ef7a55fb5b0d2d84aa4df6c",
+  "sha256_served": "fd3d0c289d04812aa191bcd147ce5579cd721202f23d4dbd94720e8aa9dfcf78"
+ },
+ "IP-05": {
+  "title": "Perfect Fourth",
+  "semitones": 5,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "0d79e7b9e18bf6124794b66f5e4f59c6459b9c1d251764ec1c16ffd506301c8f",
+  "manifest_sha256": "0d79e7b9e18bf6124794b66f5e4f59c6459b9c1d251764ec1c16ffd506301c8f",
+  "sha256_served": "2ff6c0201993dc52002c883769681acac82c72655211f30532f0cb15cf4b4275"
+ },
+ "IP-06": {
+  "title": "Tritone",
+  "semitones": 6,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "26a23edd3e421dc30a998c02cb702659ffd445bc87902d4a64ccc82db3c2325a",
+  "manifest_sha256": "26a23edd3e421dc30a998c02cb702659ffd445bc87902d4a64ccc82db3c2325a",
+  "sha256_served": "34cba6d89066593adf44c335179ab418123fab4fccef8d6cb47e4eb133a5f640"
+ },
+ "IP-07": {
+  "title": "Perfect Fifth",
+  "semitones": 7,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "f3157cc6d74475a68ffbe17bd3dafdc02ff4da91eda5665294b647db0487b4e6",
+  "manifest_sha256": "f3157cc6d74475a68ffbe17bd3dafdc02ff4da91eda5665294b647db0487b4e6",
+  "sha256_served": "449476d0172b6a2d32eb7b8242bbf658e85be7518a80725c244b8fcef94e8966"
+ },
+ "IP-08": {
+  "title": "Minor Sixth",
+  "semitones": 8,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "c035e154ade90bea7c5136e710a4f43508878269c1969107509c2cae6996b844",
+  "manifest_sha256": "c035e154ade90bea7c5136e710a4f43508878269c1969107509c2cae6996b844",
+  "sha256_served": "c9429d7e13e7d66bf89737f2d5180125a2e4c1aa53db7f5b54b07bd726acdc76"
+ },
+ "IP-09": {
+  "title": "Major Sixth",
+  "semitones": 9,
+  "w": 1122,
+  "h": 1402,
+  "corrected": true,
+  "sha256_original": "4a8049e476a98daf64ec80b3e92037ed96c17fde160b21bfe40ad28307e66ac8",
+  "manifest_sha256": "4a8049e476a98daf64ec80b3e92037ed96c17fde160b21bfe40ad28307e66ac8",
+  "sha256_served": "34e30af319e6e315cec9e9763dee9b43243535ba6046f25ece059bf599cada09"
+ },
+ "IP-10": {
+  "title": "Minor Seventh",
+  "semitones": 10,
+  "w": 2440,
+  "h": 3060,
+  "corrected": false,
+  "sha256_original": "33a6796dc8be2538539ffa769bdd032cc2bdc207040f02f58b8faf11383116cd",
+  "manifest_sha256": "33a6796dc8be2538539ffa769bdd032cc2bdc207040f02f58b8faf11383116cd",
+  "sha256_served": "33a6796dc8be2538539ffa769bdd032cc2bdc207040f02f58b8faf11383116cd"
+ },
+ "IP-11": {
+  "title": "Major Seventh",
+  "semitones": 11,
+  "w": 2440,
+  "h": 3060,
+  "corrected": false,
+  "sha256_original": "bf30b49c5585ddf9a98fd39308d22aebef98d29ccd863b1cfbb58cbe4e15dd37",
+  "manifest_sha256": "bf30b49c5585ddf9a98fd39308d22aebef98d29ccd863b1cfbb58cbe4e15dd37",
+  "sha256_served": "bf30b49c5585ddf9a98fd39308d22aebef98d29ccd863b1cfbb58cbe4e15dd37"
+ },
+ "IP-12": {
+  "title": "Perfect Octave",
+  "semitones": 12,
+  "w": 2440,
+  "h": 3060,
+  "corrected": false,
+  "sha256_original": "40269829897cb835d7c16c3d237a9e14a6adba5d06bedd0bc58c4f5f417ae240",
+  "manifest_sha256": "40269829897cb835d7c16c3d237a9e14a6adba5d06bedd0bc58c4f5f417ae240",
+  "sha256_served": "40269829897cb835d7c16c3d237a9e14a6adba5d06bedd0bc58c4f5f417ae240"
+ }
+}
