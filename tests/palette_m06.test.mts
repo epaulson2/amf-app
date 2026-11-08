@@ -16,7 +16,7 @@ test('13 canonical colours are the single authority: palette.ts derives from the
 test('13/13 cards, 13/13 chapters with all seven sections, six deeper layers', () => {
   assert.equal(ATLAS.chapters.length, 13); assert.equal(ATLAS.layers.length, 6)
   for (const r of INTERVALS) { assert.equal(r.deep.sections.length, 7); for (const [, v] of r.deep.sections) assert.ok(v.length > 20, r.id); assert.ok(existsSync(R(`public/soundscape/m05/info/IPF-card-${String(r.semitones).padStart(2, '0')}.svg`))); assert.ok(existsSync(R(`public/soundscape/m05/info/IPF-sheet-${String(r.semitones).padStart(2, '0')}.print.svg`))) }
-  for (const k of ['ip6-cards', 'ip6-chapter', 'layer-', 'id="studio"', 'id="sources"', 'id="plogger"', 'id="compare"', 'id="map"']) assert.ok(page.includes(k), k)
+  for (const k of ['ip6-gal', 'ip6-chapter', 'layer-', 'id="studio"', 'id="sources"', 'id="plogger"', 'id="compare"', 'id="map"']) assert.ok(page.includes(k), k)
 })
 test('11/11 Plogger entries and N/A for 0 and 12', () => {
   assert.equal(Object.keys(L).length, 11); assert.ok(!hasPlogger(0) && !hasPlogger(12))
@@ -36,4 +36,11 @@ test('redesigned Palette has no audio engine, no music controls, no client music
 test('Week 2 lesson code and the legacy compact palette are untouched; old route anchors preserved', () => {
   assert.match(src('components/soundscape/week2/Lesson2A.tsx'), /CompactPalette/)
   assert.ok(page.includes('id={r.anchor}'))
+})
+
+test('M10: learner copy has no implementation jargon, and every Plogger/legend string is clean', async () => {
+  const { PLOGGER_LINEAGE } = await import('../lib/soundscape/resources/interval-identity')
+  const fs = await import('node:fs')
+  const learner = [PLOGGER_LINEAGE, fs.readFileSync('lib/soundscape/m05/info-svg.ts', 'utf8').split('export function legend')[1].split('assembly helpers')[0], JSON.stringify(ATLAS.editorial)].join('\n')
+  for (const bad of ['R2_pictograph', 'DiChordPictograph', '.tsx', 'interval-identity.ts', 'Founder-uploaded', 'Older code']) assert.ok(!learner.includes(bad), bad)
 })

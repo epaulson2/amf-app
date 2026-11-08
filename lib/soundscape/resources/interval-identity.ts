@@ -47,7 +47,8 @@ export const PLOGGER_LENS_V1: Record<number, PloggerEntry> = {
   10: { shape: 'jagged', dir: 'O', fill: 'light' },
   11: { shape: 'jagged', dir: 'O', fill: 'dark' },
 }
-export const PLOGGER_LINEAGE = 'Archived printed pictograph (R2_pictograph_reference.html) and app/DiChordPictograph.tsx'
+// Source files (owner note, not learner copy): R2_pictograph_reference.html and app/DiChordPictograph.tsx.
+export const PLOGGER_LINEAGE = 'the archived printed Plogger di-chord pictograph'
 export const hasPlogger = (semitones: number) => semitones >= 1 && semitones <= 11
 export const SHAPE_LABEL: Record<Shape, string> = { jagged: 'Dissonant family (jagged)', rounded: 'Modal family (rounded)', straight: 'Perfect-group family (straight)' }
 export const SHAPE_SHORT: Record<Shape, string> = { jagged: 'jagged', rounded: 'rounded', straight: 'straight' }

@@ -31,25 +31,31 @@ function Fig({ id, cap }: { id: string; cap?: ReactNode }) {
 
 function LinkText({ children }: { children: string }) {
   const parts = children.split(/(https?:\/\/[^\s;,)]+)/g)
-  return <>{parts.map((p, i) => /^https?:/.test(p) ? <a key={i} href={p} target="_blank" rel="noopener noreferrer" style={{ wordBreak: 'break-all' }}>{new URL(p).hostname.replace(/^www\./, '')} ↗</a> : <span key={i}>{p}</span>)}</>
+  return <>{parts.map((p, i) => /^https?:/.test(p) ? <a key={i} href={p} target="_blank" rel="noopener noreferrer" className="ip6-ext">{new URL(p).hostname.replace(/^www\./, '')} ↗</a> : <Md key={i}>{p}</Md>)}</>
 }
 
 const nn = (r: IntervalRecord) => String(r.semitones).padStart(2, '0')
 const SECT = ['Meet the interval', 'As a moving melody', 'Two notes together', 'In actual music', 'Listen and create', 'Paint What You Hear', 'Keep in mind']
 
+/** What the illustrated card actually shows (V08): name, semitones, two highlighted keys, and (cards 00–09) the same two notes on a treble staff. */
+function pictureRead(r: IntervalRecord) {
+  const staff = r.semitones <= 9 ? ' and, below it, the same two notes on a treble staff, joined by a slur' : ''
+  const pair = r.semitones === 0 ? `C4 and C4 (the same key)` : `${r.lowerName} and ${r.upperName}`
+  return `The picture names the interval and its ${r.semitones} semitone${r.semitones === 1 ? '' : 's'}, then shows ${pair} highlighted on a keyboard from C4 to C5${staff}. Its colour is this interval’s identity colour: a label for remembering, never a voice and never a fact about the sound.`
+}
 function howToRead(r: IntervalRecord) {
   if (r.semitones === 0) return 'One key is highlighted because both notes are the same pitch, C4. Melodic: the same note twice in a row. Harmonic: one note doubled. Distance: zero keys. The Plogger marks read N/A here because the original di-chord system has no entry for the unison.'
-  return `Find C4 on your keyboard and count ${r.semitones} keys up, white and black, to ${r.upperName}. The numbered arcs are those hops. The two time strips show the same two notes one after another (melodic, top left) and together (harmonic, top right). The coloured stripe and key outlines are this interval’s identity colour; the three Plogger marks are a separate, historic lens.${r.semitones === 12 ? ' At the octave the Plogger marks read N/A.' : ''}`
+  return `Find C4 on your keyboard and count ${r.semitones} semitone${r.semitones === 1 ? '' : 's'} up (every key, white or black, is one step) to ${r.upperName}. The numbered arcs are those steps. The two time strips show the same two notes one after another (melodic, top left) and together (harmonic, top right). The coloured stripe and key outlines are this interval’s identity colour; the three Plogger marks are a separate, historic lens.${r.semitones === 12 ? ' At the octave the Plogger marks read N/A.' : ''}`
 }
 function ownKeyboard(r: IntervalRecord) {
   if (r.semitones === 0) return 'Play C4, then C4 again, then both hands on two Cs together (any octave). Notice that nothing moved.'
   const u = `${strip(r.upperName)}${r.semitones === 12 ? '5' : '4'}`
-  return `Play C4, then ${u}, one after another; then press both together. Count the keys between them yourself and say the number. Notice what you hear without judging it good or bad. Then move the upper note one key and say what changed.`
+  return `Play C4, then ${u}, one after another; then press both together. Count the semitone steps between them yourself (every key, white or black, is one step) and say the number. Notice what you hear without judging it good or bad. Then move the upper note one key and say what changed.`
 }
 
 const COMPARE: { id: string; h: string; how: string; own: string }[] = [
   { id: 'IPF-proof-A-m3-M3', h: 'Minor third and major third', how: 'C4 is the shared root. The upper note is E♭4 for the minor third and E4 for the major third: one key apart, so 3 semitones become 4. In the table the root, outline shape and shadow stay the same; the upper note, the count and the Plogger fill change. The Plogger marks are a historic lens, not a rule about how either interval must sound.', own: 'Play C then E♭, then C then E, one after another and together. Count the keys to each upper note out loud. Notice that only the top note moved.' },
-  { id: 'IPF-proof-B-p4-tt-p5', h: 'Fourth, tritone and fifth', how: 'Three upper notes sit on three neighbouring keys: F (5), F♯ or G♭ (6) and G (7). The tritone is one key written two ways: F♯ gives an augmented fourth, G♭ a diminished fifth. All three share the printed original’s straight, perfect-group outline; the shadow arrow changes ←, ↔, → and the fill changes dark, midtone, light. Older code disagrees about [6]; this lens follows the printed original and says so.', own: 'Play C with F, with F♯ and with G. Say 5, 6, 7. Then find G♭ and confirm it is the same key as F♯.' },
+  { id: 'IPF-proof-B-p4-tt-p5', h: 'Fourth, tritone and fifth', how: 'Three upper notes sit on three neighbouring keys: F (5), F♯ or G♭ (6) and G (7). The tritone is one key written two ways: F♯ gives an augmented fourth, G♭ a diminished fifth. All three share the printed original’s straight, perfect-group outline; the shadow arrow changes ←, ↔, → and the fill changes dark, midtone, light. Other versions of this chart disagree about [6]; this lens follows the printed original and says so.', own: 'Play C with F, with F♯ and with G. Say 5, 6, 7. Then find G♭ and confirm it is the same key as F♯.' },
   { id: 'IPF-compare-m2-M2', h: 'Minor second and major second', how: 'The root C4 stays. The upper note moves from D♭4 to D4, one more key, so 1 semitone becomes 2.', own: 'Play C with D♭, then C with D. Which note moved, and by how many keys?' },
   { id: 'IPF-compare-m6-M6', h: 'Minor sixth and major sixth', how: 'The root stays; A♭4 becomes A4, one key higher, so 8 semitones become 9.', own: 'Play C with A♭, then C with A, together and one after another.' },
   { id: 'IPF-compare-m7-M7', h: 'Minor seventh and major seventh', how: 'The root stays; B♭4 becomes B4, so 10 becomes 11. C4 to B4 is 11 semitones. The melodic step B4 to C5 is a different, single semitone.', own: 'Play C with B♭, then with B, then with the C above. Count each.' },
@@ -105,18 +111,19 @@ export default function PaletteLibrary() {
       <section id="cards" className="m4-section" aria-labelledby="cards-h">
         <p className="m4-eyebrow">Fast reference</p>
         <h2 id="cards-h">All thirteen intervals</h2>
-        <div className="ip6-cards">
+        <div className="m4-text"><p>Browse all thirteen. Each tile opens its full chapter, where the illustrated card is shown once at reading size.</p></div>
+        <ul className="ip6-gal">
           {INTERVALS.map(r => (
-            <article key={r.id} id={`card-${r.anchor}`} className="ip6-card" aria-labelledby={`c-${r.id}`} data-interval={r.id}>
-              <h3 id={`c-${r.id}`} className="ip6-sr">{r.name} ({r.abbr})</h3>
-              <PaletteIllustratedCard r={r} variant="card" />
-              <p><strong>{r.role.replace(/`/g, '')}</strong></p>
-              <p className="ip6-small">Example: {r.example}. Possible listening words: {r.words}. These are invitations, not rules.</p>
-              <p className="ip6-small"><strong>Try on your keyboard:</strong> {ownKeyboard(r)}</p>
-              <p className="ip6-small ip6-noprint"><a href={`#${r.anchor}`}>Read the full chapter ↓</a></p>
-            </article>
+            <li key={r.id} id={`card-${r.anchor}`} data-interval={r.id}>
+              <a href={`#${r.anchor}`} className="ip6-tile">
+                <PaletteIllustratedCard r={r} variant="thumb" />
+                <span className="ip6-tile-name">{r.name}</span>
+                <span className="ip6-tile-meta">{r.lowerName}–{r.upperName} · {r.semitones} semitone{r.semitones === 1 ? '' : 's'}</span>
+                <span className="ip6-sr"> Go to the {r.name} chapter</span>
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       <section id="chapters" className="m4-section" aria-labelledby="ch-h">
@@ -128,16 +135,21 @@ export default function PaletteLibrary() {
           return (
             <article key={r.id} id={r.anchor} className="ip6-chapter scroll-mt-24" aria-labelledby={`h-${r.id}`} data-chapter={r.id}>
               <h3 id={`h-${r.id}`}>{r.name} <span>({r.abbr}) · {r.semitones} semitone{r.semitones === 1 ? '' : 's'}</span></h3>
-              <PaletteIllustratedCard r={r} variant="chapter" />
+              <div className="ip6-ch-top">
+                <PaletteIllustratedCard r={r} variant="chapter" />
+                <div className="ip6-ch-text">
+                  <p className="ip6-small"><strong>How to read this picture.</strong> {pictureRead(r)}</p>
+                  <p className="ip6-small"><strong>On your own keyboard.</strong> {ownKeyboard(r)}</p>
+                  {r.altSpelling && <p className="ip6-small"><strong>Two spellings, one key.</strong> {r.lowerName} to {r.upperName} is an {r.name.toLowerCase().includes('tritone') ? 'augmented fourth' : r.name.toLowerCase()}; {r.altSpelling.lower} to {r.altSpelling.upper} is a {r.altSpelling.name.toLowerCase()}. Both are {r.semitones} semitones.</p>}
+                </div>
+              </div>
               <details className="ip6-tech">
-                <summary>View precise keyboard &amp; Plogger diagram</summary>
+                <summary>Precise keyboard &amp; Plogger diagram, with how to read it</summary>
                 <Fig id={`IPF-sheet-${nn(r)}`} />
+                <p className="ip6-small"><strong>How to read this diagram.</strong> {howToRead(r)}</p>
               </details>
-              <p className="ip6-small"><strong>How to read this picture.</strong> {howToRead(r)}</p>
-              <p className="ip6-small"><strong>On your own keyboard.</strong> {ownKeyboard(r)}</p>
-              {r.altSpelling && <p className="ip6-small"><strong>Two spellings, one key.</strong> {r.lowerName} to {r.upperName} is an {r.name.toLowerCase().includes('tritone') ? 'augmented fourth' : r.name.toLowerCase()}; {r.altSpelling.lower} to {r.altSpelling.upper} is a {r.altSpelling.name.toLowerCase()}. Both are {r.semitones} semitones.</p>}
               <details>
-                <summary>Read the full chapter</summary>
+                <summary>Expand the full chapter text (seven sections)</summary>
                 <p className="ip6-small">Default keyboard example: {ch.example}. Possible listening words: {ch.words}.</p>
                 {SECT.map(k => <div key={k}><h4>{k}</h4><p><Md>{ch[k]}</Md></p></div>)}
                 <h4>On your own keyboard</h4>
@@ -166,7 +178,7 @@ export default function PaletteLibrary() {
         <h2 id="pl-h">The three Plogger marks</h2>
         <div className="m4-text">
           <p>The original Plogger di-chord pictograph describes the eleven intervals from [1] (minor second) to [11] (major seventh) with three independent signs: <strong>A</strong> the outline (jagged, rounded or straight family), <strong>B</strong> a side shadow with an arrow (← fundamental, ↔ both, → octave) and <strong>C</strong> the fill (dense, open, midtone dotted or hatched).</p>
-          <p>These are shown here as a clearly labelled <em>historic teaching lens</em>, following {PLOGGER_LINEAGE}. They are not physical measurements. The old fixed “8, 4, 2 Hz” family names are not used, because real beating depends on the two frequencies, the register and the instrument. Older code disagrees about [6] (the tritone) and [10] (the minor seventh); this page follows the printed original. The unison and the octave have no entry in the original, so they read N/A.</p>
+          <p>These are shown here as a clearly labelled <em>historic teaching lens</em>, following {PLOGGER_LINEAGE}. They are not physical measurements. The old fixed “8, 4, 2 Hz” family names are not used, because real beating depends on the two frequencies, the register and the instrument. Other versions of this chart disagree about [6] (the tritone) and [10] (the minor seventh); this page follows the printed original. The unison and the octave have no entry in the original, so they read N/A.</p>
         </div>
         <Fig id="IPF-plogger-chart" />
         <table className="ip6-table">
@@ -212,7 +224,7 @@ export default function PaletteLibrary() {
         <p className="m4-eyebrow">Sources and limits</p>
         <h2 id="so-h">Sources and limits</h2>
         <ul className="ip6-small">{ATLAS.editorial.map(e => <li key={e.slice(0, 30)}><LinkText>{e}</LinkText></li>)}</ul>
-        <p className="ip6-small">Pitch names use equal temperament with C4 as MIDI 60. Identity colours are artistic, version 1.0 (one source: <code>interval-identity.ts</code>). The Plogger marks are a historic teaching lens.</p>
+        <p className="ip6-small">Pitch names use equal temperament with C4 as MIDI 60. Identity colours are artistic, version 1.0. The Plogger marks are a historic teaching lens.</p>
         <p className="ip6-small ip6-rule">{ATLAS.footer}</p>
       </section>
     </>

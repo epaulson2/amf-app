@@ -5,9 +5,9 @@ import ChatWidget from '@/components/ChatWidget'
 import { aiFeaturesEnabled } from '@/lib/ai-gate'
 
 export const metadata: Metadata = {
-  title: 'AMF — Adaptive Musician\'s Framework',
+  title: 'AMF — Adaptable Musician\'s Framework',
   description:
-    'The Adaptive Musician\'s Framework: a structured system for developing musical intelligence — ear, harmony, rhythm, and composition — across any genre.',
+    'The Adaptable Musician\'s Framework: a structured system for developing musical intelligence — ear, harmony, rhythm, and composition — across any genre.',
 }
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
         >
           <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-slate-400 text-sm">
-              AMF — Adaptive Musician&apos;s Framework
+              AMF — Adaptable Musician&apos;s Framework
             </p>
             <a
               href="https://github.com/epaulson2/AMF"
