@@ -1,0 +1,87 @@
+{
+ "task": "generate_isolated_foreground_object_for_transparent_infographic",
+ "schema": "ajourne_nano_banana_qcr_style_lock/1",
+ "reference_image_policy": {
+  "used": true,
+  "roles": {
+   "ref1": "lock art material, light, transparency, tactile watercolor/glass craft and warm luminous depth"
+  },
+  "instructions": [
+   "If an attribute allows image as source and no text value is provided, copy it from the reference",
+   "Inference or stylistic guessing is forbidden where the image is the source",
+   "this image defines the material of FOREGROUND objects only; the output is an isolated object on pure white, never a page, wash or backdrop",
+   "exact notation will be overlaid natively inside the objects' clear interiors"
+  ],
+  "copy_concept_not_pixels": true,
+  "reference_is_style_only": "notes, key positions, labels and any text in the reference are not facts and must not be reproduced"
+ },
+ "identity_lock": {
+  "artistic_medium": {
+   "source": "image",
+   "locked": true,
+   "meaning": "translucent layered watercolor and glass, painterly grain, intricate spatial depth"
+  },
+  "lighting": {
+   "source": "image",
+   "locked": true,
+   "meaning": "soft internal amber luminance, restrained highlights, tactile shadowing"
+  },
+  "composition_quality": {
+   "source": "image",
+   "locked": true,
+   "meaning": "complex but airy overlapping fields, delicate concentric ripples with a knowledge purpose"
+  },
+  "background_integration": {
+   "source": "image",
+   "locked": true,
+   "meaning": "soft organic edges, no rectangular wallpaper or pasted card"
+  },
+  "craftsmanship_floor": {
+   "source": "image",
+   "locked": true,
+   "meaning": "rich integrated concept-board calibre, not generic simple flat vector"
+  }
+ },
+ "changeable": {
+  "subject": {
+   "source": "text",
+   "value": "foreground instructional frame for the teaching figure 'Change 2: only the lower voice falls'"
+  },
+  "visual_structure": {
+   "source": "text",
+   "value": "ONE isolated luminous foreground FRAME on pure white: a thin-walled translucent glass-and-watercolor cartouche whose wall is NARROW (under 9% of the canvas width on every side) and fills nearly the whole canvas, surrounding ONE single very large, quiet, near-white milky glass clearing that covers at least 78% of the canvas width and at least 78% of its height, perfectly empty of texture, ornament, objects and dark colour. The clearing is ONE clean rounded-rectangular window, centred, with NO mullions, crossbars, dividers or panes. The frame OUTLINE is ALWAYS a clean rounded rectangle (optionally a softly arched top edge) with straight parallel sides, never an oval, twin lobes, L-shape, staircase or any lobed silhouette. The musical relationship is expressed ONLY through the small ornament motifs that sit ON the narrow glass wall and corners, as follows (take these as rim motifs, never as structure or separate shapes): a wide arch where only the lower left base glows and sinks, the rest still: a lower voice that alone falls. Nothing intrudes into the clearing, nothing forms a second clearing, no separate islands. Rich fine filigree, layered translucent glass, a few thin concentric halo lines and warm inner luminance live only on the wall. At least 4% pure white margin outside the frame on all canvas sides."
+  },
+  "accent_identity": {
+   "source": "text",
+   "value": "neutral warm plum, pearl-ivory and soft gold-white glass only; NO interval hue coding, no rainbow, no amber-versus-violet pairing"
+  },
+  "negative_space": {
+   "source": "text",
+   "value": "everything outside the object is empty pure white (#FFFFFF): no wash, mist, glow field, swirl, texture, paper grain, vignette, ground or shadow"
+  },
+  "background": {
+   "source": "text",
+   "value": "pure flat white (#FFFFFF) isolation for alpha extraction; soft organic translucent edges fading cleanly to white; nothing touches the canvas edge; no rectangle"
+  }
+ },
+ "forbidden_changes": [
+  "any full-canvas wash, backdrop, ivory or cream page, paper texture, atmosphere, gradient field or vignette",
+  "rectangles, cards, panels, borders, frames or poster edges",
+  "floral or ornament decoration unrelated to the two medallions",
+  "any text, letters, numerals, piano keys, notation, arrows or labels",
+  "texture, ornament or dark colour inside the medallion interiors",
+  "treating interval colour as a property of sound or of a voice",
+  "changing the reference's warm translucent glass/watercolor material to flat vector"
+ ],
+ "output": {
+  "format": "image",
+  "aspect_ratio": "3:2",
+  "intended_use": "isolated foreground frame converted to true alpha; exact native text, keys, arcs and timelines overlaid in the clearing"
+ },
+ "quality_checks": {
+  "visual_fidelity": "match richness, translucency and craft of the approved reference in the medallion rings and filigree",
+  "semantic_clarity": "two related halos, left slightly wider, amber vs violet, joined by a bridge",
+  "compositing": "white outside is perfectly clean for alpha extraction; interiors calm",
+  "technical_validity": "no generated note, key, numeral or label facts; no full-canvas content"
+ }
+}
