@@ -1,0 +1,1011 @@
+[
+ {
+  "id": "A-02",
+  "state": "I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 483,
+  "useHue": false,
+  "group": "shared",
+  "title": "The thirteen interval identity colours",
+  "steps": [
+   "H"
+  ],
+  "form": "a wide arched window of layered glass whose upper wall carries a graduated row of thirteen tiny translucent jewel-beads in neutral warm glass, one for each rung of a ladder",
+  "semis": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "hues": []
+ },
+ {
+  "id": "A-03",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 323,
+  "useHue": false,
+  "group": "shared",
+  "title": "The Week 2 keyboard window, B3 to C5",
+  "steps": [
+   "2A:1",
+   "2A:7",
+   "2A:9",
+   "2B:3",
+   "2C:7"
+  ],
+  "form": "a long low keyboard-shaped terrace window: a wide shallow arch with fine vertical glass ribbing along its lower rim like soft piano resonance, no keys drawn",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "A-04",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 368,
+  "useHue": false,
+  "group": "shared",
+  "title": "Reading a two-lane timeline",
+  "steps": [
+   "2A:2",
+   "2B:2",
+   "2C:1",
+   "2C:7"
+  ],
+  "form": "a horizontal river-ribbon frame: two parallel luminous glass currents flowing left to right along the top and bottom walls, converging gently at the ends",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "A-05",
+  "state": "N",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 623,
+  "useHue": false,
+  "group": "shared",
+  "title": "Counting letters is not counting semitones",
+  "steps": [
+   "2A:3",
+   "2A:4"
+  ],
+  "form": "a pair of overlapping glass rings, one counting by smooth even beads and one by fine tick-like facets, sharing a gentle overlap",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "A-06",
+  "state": "N",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 605,
+  "useHue": false,
+  "group": "shared",
+  "title": "Four motion glyphs",
+  "steps": [
+   "2B:7",
+   "2B:11"
+  ],
+  "form": "a lens-shaped (vesica) frame of four small glass petals arranged at the corners, each petal tilting a different direction (up, down, apart, together) as pure shapes",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "A-07",
+  "state": "I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 347,
+  "useHue": true,
+  "group": "shared",
+  "title": "What stayed, what changed",
+  "steps": [
+   "2B:10",
+   "2B:11",
+   "2C:5"
+  ],
+  "form": "a rounded scroll frame with one edge of calm unchanged glass and the opposite edge of shifting layered glass, as a visible contrast of stayed versus changed",
+  "semis": [
+   4,
+   5,
+   6
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B",
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "A-09",
+  "state": "I",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 595,
+  "useHue": false,
+  "group": "shared",
+  "title": "Plogger lens for the four named pairs",
+  "steps": [
+   "2B:5",
+   "2B:6",
+   "2C:5"
+  ],
+  "form": "a wide stained-glass triptych arch with three softly lit panes in a row, each a different luminous texture (outline, shadow, graded fill), no symbols",
+  "semis": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "hues": []
+ },
+ {
+  "id": "A-09a",
+  "state": "I",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 595,
+  "useHue": true,
+  "group": "shared",
+  "title": "Plogger lens for the 2A pairs",
+  "steps": [
+   "2A:5",
+   "2A:6"
+  ],
+  "form": "a wide stained-glass pair of arches, left and right, each with three softly lit panes of different texture, joined by a slim bridge",
+  "semis": [
+   3,
+   4,
+   5
+  ],
+  "hues": [
+   "#8964A4",
+   "#AB812D",
+   "#4F816B"
+  ]
+ },
+ {
+  "id": "A-11",
+  "state": "I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 357,
+  "useHue": false,
+  "group": "shared",
+  "title": "Pair badges used in Week 2",
+  "steps": [
+   "2B:5",
+   "2B:6"
+  ],
+  "form": "a garland frame of small paired glass lozenges along the top and bottom, like a row of two-note pair badges, in neutral warm glass",
+  "semis": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "hues": []
+ },
+ {
+  "id": "A-12",
+  "state": "N+I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 429,
+  "useHue": true,
+  "group": "shared",
+  "title": "How to read our pictures",
+  "steps": [
+   "H",
+   "2A:5"
+  ],
+  "form": "an open-book-shaped glass frame, two pages curving from a central luminous spine, with quiet pages for reading instructions",
+  "semis": [
+   3,
+   4
+  ],
+  "hues": [
+   "#8964A4",
+   "#AB812D"
+  ]
+ },
+ {
+  "id": "H-01",
+  "state": "N",
+  "aspect": "16:9",
+  "w": 760,
+  "h": 198,
+  "useHue": false,
+  "group": "hub",
+  "title": "The Week 2 path: three lessons",
+  "steps": [
+   "H"
+  ],
+  "form": "a long path-like ribbon of three linked glass lanterns in a row connected by a thin glowing stem, the middle lantern slightly larger",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "H-02",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 372,
+  "useHue": false,
+  "group": "hub",
+  "title": "Week 1 used C3; Week 2 starts at C4",
+  "steps": [
+   "H",
+   "2A:1"
+  ],
+  "form": "two stacked glass terraces, a lower one and an upper one, offset by a gentle step, like two octaves of the same landscape",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "H-03",
+  "state": "N+I",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 612,
+  "useHue": true,
+  "group": "hub",
+  "title": "From a note to harmony",
+  "steps": [
+   "H"
+  ],
+  "form": "an ascending glass staircase of three broad luminous steps rising left to right (from one note to two to a whole sound), framing a wide clearing",
+  "semis": [
+   4
+  ],
+  "hues": [
+   "#AB812D"
+  ]
+ },
+ {
+  "id": "H-04",
+  "state": "N",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 395,
+  "useHue": false,
+  "group": "hub",
+  "title": "Three lessons in miniature",
+  "steps": [
+   "H"
+  ],
+  "form": "three small linked glass medallions side by side, each a miniature of a lesson, joined by a flowing garland, with a calm wide clearing in the centre",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2A-01",
+  "state": "N",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 402,
+  "useHue": false,
+  "group": "2A",
+  "title": "Two notes, two voices: C4 and E4",
+  "steps": [
+   "2A:2"
+  ],
+  "form": "two overlapping luminous glass discs, one deeper and one lighter, like two independent voices standing together, joined at a soft shared overlap",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2A-02",
+  "state": "N",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 605,
+  "useHue": false,
+  "group": "2A",
+  "title": "Count the letters: C D E and E F G",
+  "steps": [
+   "2A:3"
+  ],
+  "form": "a trio of three soft glass beads strung on a fine arc above the clearing, counting 1-2-3, framed by a delicate oval halo",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2A-03",
+  "state": "N",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 703,
+  "useHue": false,
+  "group": "2A",
+  "title": "Count the semitones: every key counts",
+  "steps": [
+   "2A:4"
+  ],
+  "form": "a chain of small glass beads of alternating sizes strung around an oval halo, as if counting every key one step at a time",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2A-04",
+  "state": "I",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 731,
+  "useHue": true,
+  "group": "2A",
+  "title": "Same letters, different size: major and minor third",
+  "steps": [
+   "2A:5"
+  ],
+  "form": "two separate wide oval medallions side by side joined by a slim glass bridge; the left a little wider than the right, thin layered halos",
+  "semis": [
+   4,
+   3
+  ],
+  "hues": [
+   "#AB812D",
+   "#8964A4"
+  ]
+ },
+ {
+  "id": "2A-05",
+  "state": "I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 442,
+  "useHue": true,
+  "group": "2A",
+  "title": "One voice moves: a major third becomes a perfect fourth",
+  "steps": [
+   "2A:6"
+  ],
+  "form": "a single oval halo whose right edge grows an arc-shaped glass petal that shifts outward, suggesting one side moving while the other stays",
+  "semis": [
+   4,
+   5
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B"
+  ]
+ },
+ {
+  "id": "2A-06",
+  "state": "I",
+  "aspect": "3:4",
+  "w": 760,
+  "h": 843,
+  "useHue": true,
+  "group": "2A",
+  "title": "The foundation can travel",
+  "steps": [
+   "2A:7"
+  ],
+  "form": "a wide travelling frame: three oval glass halos in a row of decreasing opacity like the same shape carried along to new places, linked by a thread",
+  "semis": [
+   4,
+   5,
+   2
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B",
+   "#C17D41"
+  ]
+ },
+ {
+  "id": "2A-07",
+  "state": "I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 377,
+  "useHue": true,
+  "group": "2A",
+  "title": "Three changes from one beginning",
+  "steps": [
+   "2A:8",
+   "2A:10"
+  ],
+  "form": "three petal-like glass fans radiating from one shared base at the bottom centre, each fan opening a different amount, framing a clearing",
+  "semis": [
+   4,
+   5,
+   2
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B",
+   "#C17D41"
+  ]
+ },
+ {
+  "id": "2A-08",
+  "state": "I",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 538,
+  "useHue": true,
+  "group": "2A",
+  "title": "Your keyboard sheet: build, then change",
+  "steps": [
+   "2A:9"
+  ],
+  "form": "a worksheet-like but soft glass frame: a wide rounded window with quiet bands for your own marks, thin delicate corner filigree, calm and open",
+  "semis": [
+   5
+  ],
+  "hues": [
+   "#4F816B"
+  ]
+ },
+ {
+  "id": "2A-09",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 343,
+  "useHue": false,
+  "group": "2A",
+  "title": "One after another, and together",
+  "steps": [
+   "2A:2"
+  ],
+  "form": "two interlinked glass rings, one set slightly in front of the other, like notes heard one after another and together",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2A-10",
+  "state": "I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 442,
+  "useHue": true,
+  "group": "2A",
+  "title": "The foundation moves: E4 and G4, a minor third",
+  "steps": [
+   "2A:5"
+  ],
+  "form": "a single oval halo with a smaller companion halo beside it, the pair slightly narrower than a major-third pair, joined by a short bridge",
+  "semis": [
+   3
+  ],
+  "hues": [
+   "#8964A4"
+  ]
+ },
+ {
+  "id": "2B-01a",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 343,
+  "useHue": false,
+  "group": "2B",
+  "title": "Two paths through time",
+  "steps": [
+   "2B:1",
+   "2B:2"
+  ],
+  "form": "two parallel flowing glass ribbons running left to right through time, drifting apart and together, framing a wide clearing between them",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2B-01b",
+  "state": "N",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 653,
+  "useHue": false,
+  "group": "2B",
+  "title": "Before we name it: two journeys",
+  "steps": [
+   "2B:3"
+  ],
+  "form": "two curved glass journey paths from the left edge to the right edge, one rising, one falling, crossing nowhere, framing a clearing",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2B-02",
+  "state": "N",
+  "aspect": "3:4",
+  "w": 760,
+  "h": 772,
+  "useHue": false,
+  "group": "2B",
+  "title": "Three families of motion, with exact examples",
+  "steps": [
+   "2B:4"
+  ],
+  "form": "a four-quadrant glass window of four petal-shaped panes in a 2 by 2 arrangement, each petal tilting a different way, with a calm clearing in the centre of each pane region",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2B-03",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 369,
+  "useHue": false,
+  "group": "2B",
+  "title": "Change 1: only the upper voice rises",
+  "steps": [
+   "2B:4",
+   "2B:8"
+  ],
+  "form": "a wide arch where only the upper right keystone glows and lifts, the rest still: an upper voice that alone rises",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2B-04",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 369,
+  "useHue": false,
+  "group": "2B",
+  "title": "Change 2: only the lower voice falls",
+  "steps": [
+   "2B:4",
+   "2B:8"
+  ],
+  "form": "a wide arch where only the lower left base glows and sinks, the rest still: a lower voice that alone falls",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2B-05",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 369,
+  "useHue": false,
+  "group": "2B",
+  "title": "Change 3: only the lower voice rises",
+  "steps": [
+   "2B:4",
+   "2B:8"
+  ],
+  "form": "a wide arch where only the lower left base glows and lifts upward, the rest still: a lower voice that alone rises",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2B-06",
+  "state": "I",
+  "aspect": "3:4",
+  "w": 760,
+  "h": 839,
+  "useHue": true,
+  "group": "2B",
+  "title": "Change 4: moving apart, B3 and F4, a diminished fifth",
+  "steps": [
+   "2B:5",
+   "2B:8"
+  ],
+  "form": "two glass arcs opening outward like a fan from the centre bottom, spreading wide to the left and right: voices moving apart",
+  "semis": [
+   6
+  ],
+  "hues": [
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "2B-07",
+  "state": "I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 414,
+  "useHue": false,
+  "group": "2B",
+  "title": "Change 5: both rise, a major third becomes a minor third",
+  "steps": [
+   "2B:6",
+   "2B:8"
+  ],
+  "form": "two parallel glass ribbons both climbing to the upper right, the upper one climbing by a smaller step: both rise",
+  "semis": [
+   4,
+   3
+  ],
+  "hues": []
+ },
+ {
+  "id": "2B-08",
+  "state": "I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 407,
+  "useHue": false,
+  "group": "2B",
+  "title": "The five changes, all from C4 + E4",
+  "steps": [
+   "2B:8",
+   "2B:9",
+   "2B:11"
+  ],
+  "form": "a wide arched colonnade of five small glass bays side by side, each a slightly different gesture, joined by a thin lintel",
+  "semis": [
+   5,
+   2,
+   6,
+   3
+  ],
+  "hues": []
+ },
+ {
+  "id": "2B-09",
+  "state": "I",
+  "aspect": "3:4",
+  "w": 760,
+  "h": 821,
+  "useHue": true,
+  "group": "2B",
+  "title": "Similar, and strict parallel",
+  "steps": [
+   "2B:6"
+  ],
+  "form": "two separate neighbouring glass frames: the left one a pair of rising ribbons of unequal climb, the right one a pair of strictly equal rails visibly set apart by a wider gap and cooler glass",
+  "semis": [
+   4,
+   3
+  ],
+  "hues": [
+   "#AB812D",
+   "#8964A4"
+  ]
+ },
+ {
+  "id": "2B-10",
+  "state": "I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 382,
+  "useHue": true,
+  "group": "2B",
+  "title": "A two-voice path in four stages",
+  "steps": [
+   "2B:10"
+  ],
+  "form": "a rising set of four glass steps from left to right, stage by stage, each step a lit pane framing the clearing",
+  "semis": [
+   4,
+   5,
+   6
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B",
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "2B-10b",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 332,
+  "useHue": false,
+  "group": "2B",
+  "title": "Your two-voice path sheet",
+  "steps": [
+   "2B:10"
+  ],
+  "form": "a calm four-bay glass frame with empty quiet pane areas for the learner to fill, thin soft filigree edging",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2B-11n",
+  "state": "N",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 347,
+  "useHue": false,
+  "group": "2B",
+  "title": "Contrary motion, together: the voices move toward each other",
+  "steps": [
+   "2B:4"
+  ],
+  "form": "two glass arcs converging toward the centre from left and right like arms drawing together, with a luminous meeting point at the bottom",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2B-11",
+  "state": "I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 414,
+  "useHue": true,
+  "group": "2B",
+  "title": "Contrary motion, together: B3 + F4 to C4 + E4",
+  "steps": [
+   "2B:10"
+  ],
+  "form": "two glass arcs converging toward the centre from both sides, meeting at a soft luminous knot, framing a clearing above",
+  "semis": [
+   6,
+   4
+  ],
+  "hues": [
+   "#5366A0",
+   "#AB812D"
+  ]
+ },
+ {
+  "id": "2B-12",
+  "state": "N+I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 363,
+  "useHue": true,
+  "group": "2B",
+  "title": "Two kinds of words: along a path, up a stage",
+  "steps": [
+   "2B:7",
+   "2B:9"
+  ],
+  "form": "a split frame: the left half a flowing horizontal ribbon (along a path), the right half a stack of small steps (up a stage), joined by a bridge",
+  "semis": [
+   5
+  ],
+  "hues": [
+   "#4F816B"
+  ]
+ },
+ {
+  "id": "2B-13",
+  "state": "I",
+  "aspect": "3:4",
+  "w": 760,
+  "h": 900,
+  "useHue": true,
+  "group": "2B",
+  "title": "The tritone family: B3–F4 beside the Palette card C4–F♯4",
+  "steps": [
+   "2B:5"
+  ],
+  "form": "two tall glass medallions side by side, the left a little ornate and the right a little plainer, connected by a narrow bridge, for two cousins of one family",
+  "semis": [
+   6
+  ],
+  "hues": [
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "2C-01",
+  "state": "N",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 545,
+  "useHue": false,
+  "group": "2C",
+  "title": "Two 36-second sketches: same upper line, different lower line",
+  "steps": [
+   "2C:1",
+   "2C:3"
+  ],
+  "form": "two wide horizontal river bands stacked above each other, the upper band a calm continuous current and the lower a changing current, framing a clearing",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2C-02",
+  "state": "I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 350,
+  "useHue": true,
+  "group": "2C",
+  "title": "Version A: one voice holds the landscape",
+  "steps": [
+   "2C:3"
+  ],
+  "form": "a long horizontal glass band where one calm lower current holds steady like a landscape held still, with fine ripples along the lower rim",
+  "semis": [
+   4,
+   5
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B"
+  ]
+ },
+ {
+  "id": "2C-03",
+  "state": "I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 350,
+  "useHue": true,
+  "group": "2C",
+  "title": "Version B: the landscape begins to travel",
+  "steps": [
+   "2C:4"
+  ],
+  "form": "a long horizontal glass band whose lower current begins to bend and travel, rippling and shifting hue-neutral layers along the rim",
+  "semis": [
+   4,
+   6
+  ],
+  "hues": [
+   "#AB812D",
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "2C-04",
+  "state": "I",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 575,
+  "useHue": true,
+  "group": "2C",
+  "title": "Same melody, one moment different: A above B",
+  "steps": [
+   "2C:5"
+  ],
+  "form": "two stacked long glass bands, an upper and a lower, identical on top and subtly different below, sharing a slim bridge at the right",
+  "semis": [
+   4,
+   5,
+   6
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B",
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "2C-05",
+  "state": "I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 363,
+  "useHue": true,
+  "group": "2C",
+  "title": "Three snapshots: what stayed, what changed",
+  "steps": [
+   "2C:5",
+   "2C:6"
+  ],
+  "form": "a row of three small glass lanterns of equal size on a thin arc, each lit identically on top and differently below",
+  "semis": [
+   4,
+   5,
+   6
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B",
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "2C-06",
+  "state": "N+I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 410,
+  "useHue": true,
+  "group": "2C",
+  "title": "Four words: voice, vertical interval, voice leading, counterpoint",
+  "steps": [
+   "2C:2",
+   "2C:6"
+  ],
+  "form": "four small round glass seals arranged in a gentle arc across the top of the clearing, each a different luminous texture, connected by a thread",
+  "semis": [
+   4
+  ],
+  "hues": [
+   "#AB812D"
+  ]
+ },
+ {
+  "id": "2C-07",
+  "state": "N",
+  "aspect": "1:1",
+  "w": 760,
+  "h": 626,
+  "useHue": false,
+  "group": "2C",
+  "title": "Plan your miniature: two blank timelines",
+  "steps": [
+   "2C:8",
+   "2C:9"
+  ],
+  "form": "two long empty glass bands stacked, calm and open, for the learner to plan on, with delicate filigree only at the far ends",
+  "semis": [],
+  "hues": []
+ },
+ {
+  "id": "2C-08",
+  "state": "I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 369,
+  "useHue": true,
+  "group": "2C",
+  "title": "What changes, and your response",
+  "steps": [
+   "2C:9"
+  ],
+  "form": "a wide two-column glass frame, a left window for what changes and a right window for your response, joined by a small bridge",
+  "semis": [
+   5,
+   6
+  ],
+  "hues": [
+   "#4F816B",
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "2C-09",
+  "state": "I",
+  "aspect": "4:3",
+  "w": 760,
+  "h": 517,
+  "useHue": true,
+  "group": "2C",
+  "title": "Week 2 in three anchors",
+  "steps": [
+   "2C:10"
+  ],
+  "form": "three anchor-like glass keystones in an arch, rising from low to high, framing a wide clearing for the three anchors of the week",
+  "semis": [
+   4,
+   5,
+   6
+  ],
+  "hues": [
+   "#AB812D",
+   "#4F816B",
+   "#5366A0"
+  ]
+ },
+ {
+  "id": "2C-10",
+  "state": "I",
+  "aspect": "3:2",
+  "w": 760,
+  "h": 350,
+  "useHue": true,
+  "group": "2C",
+  "title": "The truth check: the lower voice moves while the upper rests",
+  "steps": [
+   "2C:4",
+   "2C:5",
+   "2C:6"
+  ],
+  "form": "a wide horizontal glass band with a calm resting upper line and a moving lower line, a soft glow marking the rest, framing a clearing",
+  "semis": [
+   6
+  ],
+  "hues": [
+   "#5366A0"
+  ]
+ }
+]
