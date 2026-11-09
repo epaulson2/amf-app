@@ -132,3 +132,10 @@ export function TwoVoices({ title, desc }: { title: string; desc: string }) {
     </svg>
   )
 }
+
+/** Letter count between two notes, counting both ends (C4 to E4 = 3). White keys only. */
+export const letterCount = (a: number, b: number) => {
+  const L = [0, 0, 1, 1, 2, 3, 3, 4, 4, 5, 5, 6]
+  const idx = (m: number) => Math.floor(m / 12) * 7 + L[m % 12]
+  return idx(b) - idx(a) + 1
+}
