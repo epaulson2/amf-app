@@ -231,3 +231,5 @@
 @media print { .ip6-tech2, .ip6-sheet figcaption { display:none !important; } }
 .ip6-support { margin:14px 0 6px; max-width:440px; } .ip6-support img { display:block; width:100%; height:auto; } .ip6-support figcaption { margin-top:6px; } .ip6-support .ip6-zoom { display:inline-block; padding:8px 0; font:13.5px/1.5 ui-sans-serif,system-ui,sans-serif; }
 @media print { .ip6-support img, .ip6-support .ip6-zoom { display:none; } }
+/* M10 G3 */
+.ip6-arts { display:flex; flex-wrap:wrap; gap:14px; } .ip6-arts .ip6-support { flex:1 1 280px; margin:6px 0; }

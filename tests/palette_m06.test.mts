@@ -67,3 +67,14 @@ test('M10 P4: the 13 Batch 2 teaching sheets match canonical data, registry hash
   }
   assert.ok(/C4\s+to\s+D♭4/.test(readFileSync(R('public/soundscape/resources/interval-palette/sheets-v2/svg/IPF-sheet-01.desktop.svg'), 'utf8')), 'IP-01 stays C4 to D♭4')
 })
+
+test('M10 G3: served IP-10 card is the verified G3 file; support art files exist with expected hashes; IP-01 stays corrected', async () => {
+  const { createHash } = await import('node:crypto')
+  const ill = JSON.parse(src('lib/soundscape/resources/illustrated-v2.json'))
+  const hx = (p: string) => createHash('sha256').update(readFileSync(R(p))).digest('hex')
+  assert.equal(hx('public/soundscape/resources/interval-palette/illustrated-v2/g3/IP-10.png'), ill['IP-10'].sha256_served)
+  assert.ok(ill['IP-01'].corrected && !ill['IP-01'].g3, 'IP-01 remains the corrected M09 derivative')
+  const man = JSON.parse(src('docs/m10/zip-receipt/g3.manifest.json')).entries
+  for (const id of ['support_02_interval_palette_overview', 'support_09_plogger_lens_guide', 'support_13_unison_vs_octave', 'support_14_one_distance_two_spellings']) assert.equal(hx(`public/soundscape/resources/interval-palette/support-v1/${id}.png`), man.find((e: any) => e.id === id).png_sha256, id)
+  assert.equal(hx('public/soundscape/resources/interval-palette/illustrated-v2/g3/IP-10.png'), man.find((e: any) => e.id === 'IP-10').png_sha256)
+})

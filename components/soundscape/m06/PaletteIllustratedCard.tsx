@@ -3,11 +3,11 @@ import type { IntervalRecord } from '@/lib/soundscape/resources/palette'
 import reg from '@/lib/soundscape/resources/illustrated-v2.json'
 
 const DIR = '/soundscape/resources/interval-palette/illustrated-v2'
-type Entry = { w: number; h: number; corrected: boolean }
+type Entry = { w: number; h: number; corrected: boolean; g3?: boolean }
 const R = reg as Record<string, Entry>
 
 /** Illustrated card art, mapped by canonical interval record id (never by list offset). Returns the file that is served (musically corrected derivative where one exists). */
-export const illustratedSrc = (r: IntervalRecord) => R[r.id] ? `${DIR}/${R[r.id].corrected ? 'corrected/' : ''}${r.id}.png` : null
+export const illustratedSrc = (r: IntervalRecord) => R[r.id] ? `${DIR}/${R[r.id].g3 ? 'g3/' : R[r.id].corrected ? 'corrected/' : ''}${r.id}.png` : null
 
 export default function PaletteIllustratedCard({ r, variant }: { r: IntervalRecord; variant: 'thumb' | 'chapter' }) {
   const e = R[r.id], src = illustratedSrc(r)

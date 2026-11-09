@@ -1,0 +1,407 @@
+{
+  "version": "v2",
+  "production": "Ajourné Interval Palette detailed remediation",
+  "total_assets": 14,
+  "entries": [
+    {
+      "id": "support_02_interval_palette_overview",
+      "family": "support",
+      "title": "Fourth, Tritone, Fifth",
+      "description": "Three neighboring chromatic distances",
+      "png": "PNG/support/support_02_interval_palette_overview.png",
+      "svg": "SVG/support/support_02_interval_palette_overview.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "b378802a1df06bad5e4ebb6b90249b91dff89ee736f1454ebc5603da334b3805",
+      "svg_sha256": "2f5934acbec6d1310cd28ff6691e30fe716f1a6f63a15f342811970deda1ef6e",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_02_interval_palette_overview.png"
+    },
+    {
+      "id": "support_04_minor_vs_major_second",
+      "family": "support",
+      "title": "Minor vs Major Second",
+      "description": "One semitone changes the quality",
+      "png": "PNG/support/support_04_minor_vs_major_second.png",
+      "svg": "SVG/support/support_04_minor_vs_major_second.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "8d16f7eebf35cf59f77f0773d94a7b5a9add1947472a3f732489612e778c9a9c",
+      "svg_sha256": "ef27188efc37dcb285f07af04ba4befd491179331bd23430b4a467d241e15a4c",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_04_minor_vs_major_second.png"
+    },
+    {
+      "id": "support_05_minor_vs_major_third",
+      "family": "support",
+      "title": "Minor vs Major Third",
+      "description": "Both span three letter names",
+      "png": "PNG/support/support_05_minor_vs_major_third.png",
+      "svg": "SVG/support/support_05_minor_vs_major_third.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "ab29948e4baf46ae2ecdc21d5fdf8c387f2ea6ec6d727de94d7cce7e1385d066",
+      "svg_sha256": "a28fbf5df90f52b0237a2a8231dd71ae040b9eae9d99af79e357b077e17cdc4c",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_05_minor_vs_major_third.png"
+    },
+    {
+      "id": "support_06_minor_vs_major_sixth",
+      "family": "support",
+      "title": "Minor vs Major Sixth",
+      "description": "Two neighboring sixths with a fixed root",
+      "png": "PNG/support/support_06_minor_vs_major_sixth.png",
+      "svg": "SVG/support/support_06_minor_vs_major_sixth.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "b9423813e02b2ec5eb3bb9bc350972d90445218c0b432de79d4b2730417aa448",
+      "svg_sha256": "b89c640d550ee85aadebb28f107acbadadfdec7e41e1fab1a3c696c270485fc9",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_06_minor_vs_major_sixth.png"
+    },
+    {
+      "id": "support_07_seventh_comparison",
+      "family": "support",
+      "title": "Minor vs Major Seventh",
+      "description": "One chromatic step apart",
+      "png": "PNG/support/support_07_seventh_comparison.png",
+      "svg": "SVG/support/support_07_seventh_comparison.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "84901e47942fa98e5b14b7fd2b39becbba17b4628bb5b614873cc27502747ca8",
+      "svg_sha256": "011b6910d834260eb0c8d2449d0107d52d50e067e11afff361955fe2a8659275",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_07_seventh_comparison.png"
+    },
+    {
+      "id": "support_08_inversion_guide",
+      "family": "support",
+      "title": "Interval Inversion",
+      "description": "Correct interval inversion pairs with complementary semitone sums",
+      "png": "PNG/support/support_08_inversion_guide.png",
+      "svg": "SVG/support/support_08_inversion_guide.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "790132c2b12fbc7e82e79cd782191f5a1325d5e5a7313cb74bfba42588f1fbd7",
+      "svg_sha256": "f3b7cf1b16d2a8253cf9ddf4f9ff716d971e0d596683fe6dfe0a7a209c8d22a2",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_08_inversion_guide.png"
+    },
+    {
+      "id": "support_09_plogger_lens_guide",
+      "family": "support",
+      "title": "Plogger historical classification",
+      "description": "Exact Plogger table 1–11, three factors; N/A 0 and 12",
+      "png": "PNG/support/support_09_plogger_lens_guide.png",
+      "svg": "SVG/support/support_09_plogger_lens_guide.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "d2a494f78c009a5ef2002613c4d48a8268d8320aada54ea7133977fdcdcc1bd7",
+      "svg_sha256": "0784325e27dd2ec6a02ec940db97ddf489384eb767c2d0841ccb9be3fe7d704e",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_09_plogger_lens_guide.png"
+    },
+    {
+      "id": "support_10_register_and_range",
+      "family": "support",
+      "title": "Register and Range",
+      "description": "Same perfect fifth in three registers",
+      "png": "PNG/support/support_10_register_and_range.png",
+      "svg": "SVG/support/support_10_register_and_range.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "bf7f8ec58c7f39d206943e177d89c9ba95141c11141ce425954b2ae4b61cf4d7",
+      "svg_sha256": "b83e807a176137fb61c3550be8953afb1ac4415e243ca574cb7c6da4bca5b7b0",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_10_register_and_range.png"
+    },
+    {
+      "id": "support_12_melodic_and_harmonic",
+      "family": "support",
+      "title": "Melodic and Harmonic",
+      "description": "Seven-semitone perfect fifth sequentially or together",
+      "png": "PNG/support/support_12_melodic_and_harmonic.png",
+      "svg": "SVG/support/support_12_melodic_and_harmonic.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "c73aeada1ff90fe4286571eb7dbd210579f73e297141927911676dcc3abab3a8",
+      "svg_sha256": "3b110a03afdc81ca16165e933fbaaa92a46a31a4160079ca3709888de851c48e",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_12_melodic_and_harmonic.png"
+    },
+    {
+      "id": "support_13_unison_vs_octave",
+      "family": "support",
+      "title": "Unison and Octave",
+      "description": "Perfect unison zero; perfect octave twelve semitones",
+      "png": "PNG/support/support_13_unison_vs_octave.png",
+      "svg": "SVG/support/support_13_unison_vs_octave.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "6a9ba0f7f7bf8208291e270a3dcc8fe017ffec6fd5cf5716b38896446c7481c3",
+      "svg_sha256": "5646cba7f9912e80dcbcc1250d946a209edc95151af35652078592f649fa5412",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_13_unison_vs_octave.png"
+    },
+    {
+      "id": "support_14_one_distance_two_spellings",
+      "family": "support",
+      "title": "One Distance Two Spellings",
+      "description": "Enharmonic tritone as augmented fourth and diminished fifth",
+      "png": "PNG/support/support_14_one_distance_two_spellings.png",
+      "svg": "SVG/support/support_14_one_distance_two_spellings.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "83f311d50b477b35d3d5e8f6fbd2a03f3ac46f0c68b8e2e96e293c2d9b98edf0",
+      "svg_sha256": "23d79b56f5d926aa57888c4ab3a250b68c990346f073850674ed4fbb182d19c9",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "support_14_one_distance_two_spellings.png"
+    },
+    {
+      "id": "IP-10",
+      "family": "cards",
+      "title": "Minor Seventh",
+      "description": "C4 to Bb4, 10 semitones; exact position and notation",
+      "png": "PNG/cards/IP-10.png",
+      "svg": "SVG/cards/IP-10.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "c57a49a2f0c9f089d164422fddc4ccf36539f3d36838588ce1c42e779c640c34",
+      "svg_sha256": "0d419e03f9ffd21c07fa1c23a98b0aa86ae49f5cb0bababc8aaae24c0c5ed95f",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "minor_seventh_interval_palette.png"
+    },
+    {
+      "id": "IP-11",
+      "family": "cards",
+      "title": "Major Seventh",
+      "description": "C4 to B4, 11 semitones; exact position and notation",
+      "png": "PNG/cards/IP-11.png",
+      "svg": "SVG/cards/IP-11.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "6b8fb3953aa15256cf093c89d890816d3b95957dde6beda1197ceea9065a47d8",
+      "svg_sha256": "7fbb09fb86892c40d2d769b3d6f76b63265a24d4f674d21b00dbaa2831cd9124",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "major_seventh_interval_palette_card.png"
+    },
+    {
+      "id": "IP-12",
+      "family": "cards",
+      "title": "Perfect Octave",
+      "description": "C4 to C5, 12 semitones; exact position and notation",
+      "png": "PNG/cards/IP-12.png",
+      "svg": "SVG/cards/IP-12.svg",
+      "size": [
+        1122,
+        1402
+      ],
+      "alpha_minmax": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "png_sha256": "ac50a4eda8cff9223b4a4928d693d380685cb25e478f3e428ac91553e9ba1d27",
+      "svg_sha256": "3d7a5525bd40fab6dcc4b27dfd26f0770bab57902f3c1bd8bd6fe41f86ddf699",
+      "source": "native vector correction",
+      "music_qa": "source-generated; rendered QA pending",
+      "visual_composition": "painterly approved-source upper artwork + exact native SVG-generated musical facts below; source SVG is editable exact layer, not a fully vectorized duplicate of painterly PNG",
+      "original_painterly_source": "perfect_octave_interval_palette.png"
+    }
+  ],
+  "policy": {
+    "canonical_palette": "INTERVAL_IDENTITY_COLORS_V1",
+    "canonical_plogger": "PLOGGER_LENS_V1",
+    "source-driven_keyboards": true,
+    "source-driven_note_names": true,
+    "source_driven_inversion_math": true
+  },
+  "release": "review-candidate; musical data validated by source generation, responsive live QA pending"
+}

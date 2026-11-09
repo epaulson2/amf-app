@@ -41,7 +41,7 @@ const SECT = ['Meet the interval', 'As a moving melody', 'Two notes together', '
 
 /** What the illustrated card actually shows (V08): name, semitones, two highlighted keys, and (cards 00–09) the same two notes on a treble staff. */
 function pictureRead(r: IntervalRecord) {
-  const staff = r.semitones <= 9 ? ' and, below it, the same two notes on a treble staff, joined by a slur' : ''
+  const staff = r.semitones <= 10 ? ' and, below it, the same two notes on a treble staff, joined by a slur' : ''
   const pair = r.semitones === 0 ? `C4 and C4 (the same key)` : `${r.lowerName} and ${r.upperName}`
   return `The picture names the interval and its ${r.semitones} semitone${r.semitones === 1 ? '' : 's'}, then shows ${pair} highlighted on a keyboard from C4 to C5${staff}. Its colour is this interval’s identity colour: a label for remembering, never a voice and never a fact about the sound.`
 }
@@ -53,6 +53,22 @@ function ownKeyboard(r: IntervalRecord) {
   if (r.semitones === 0) return 'Play C4, then C4 again, then both hands on two Cs together (any octave). Notice that nothing moved.'
   const u = `${strip(r.upperName)}${r.semitones === 12 ? '5' : '4'}`
   return `Play C4, then ${u}, one after another; then press both together. Count the semitone steps between them yourself (every key, white or black, is one step) and say the number. Notice what you hear without judging it good or bad. Then move the upper note one key and say what changed.`
+}
+
+const SUP = '/soundscape/resources/interval-palette/support-v1'
+function SupportArt({ file, alt }: { file: string; alt: string }) {
+  return (
+    <figure className="ip6-support">
+      <Image src={`${SUP}/${file}`} alt={alt} width={1122} height={1402} quality={90} loading="lazy" sizes="(max-width: 640px) 92vw, 420px" />
+      <figcaption><a className="ip6-zoom" href={`${SUP}/${file}`} target="_blank" rel="noopener noreferrer">View full-size image (1122×1402 PNG, opens one image) ↗</a></figcaption>
+    </figure>
+  )
+}
+const SUPPORT_ART: Record<string, { file: string; alt: string }[]> = {
+  'IPF-proof-B-p4-tt-p5': [
+    { file: 'support_02_interval_palette_overview.png', alt: 'Perfect fourth, tritone and perfect fifth side by side, each from C4: C4 to F4 is 5 semitones, C4 to F♯4 is 6, C4 to G4 is 7. Each has the two keys marked on a keyboard and the notes on a treble staff.' },
+    { file: 'support_14_one_distance_two_spellings.png', alt: 'One distance, two spellings. C4 to F♯4 is an augmented fourth and C4 to G♭4 is a diminished fifth. Both are 6 semitones and use the same key, F♯ or G♭.' },
+  ],
 }
 
 const COMPARE: { id: string; h: string; how: string; own: string }[] = [
@@ -179,11 +195,22 @@ export default function PaletteLibrary() {
         {COMPARE.map(c => (
           <div key={c.id} id={c.id.toLowerCase()} className="ip6-cmp">
             <h3>{c.h}</h3>
-            <Fig id={c.id} />
+            {SUPPORT_ART[c.id] ? (
+              <>
+                <div className="ip6-arts">{SUPPORT_ART[c.id].map(a => <SupportArt key={a.file} {...a} />)}</div>
+                <details className="ip6-tech2"><summary>Inspect the exact notes and counts</summary><Fig id={c.id} /></details>
+              </>
+            ) : <Fig id={c.id} />}
             <p className="ip6-small"><strong>How to read it.</strong> {c.how}</p>
             <p className="ip6-small"><strong>On your own keyboard.</strong> {c.own}</p>
           </div>
         ))}
+        <div id="ipf-unison-octave" className="ip6-cmp">
+          <h3>Unison and octave</h3>
+          <SupportArt file="support_13_unison_vs_octave.png" alt="Perfect unison and perfect octave. The unison is C4 to C4, 0 semitones, the same pitch. The octave is C4 to C5, 12 semitones, the same letter name one register higher." />
+          <p className="ip6-small"><strong>How to read it.</strong> The perfect unison is C4 to C4: zero semitones, one pitch. The perfect octave is C4 to C5: twelve semitones, the same letter name one register higher. Both are boundary cases, so the Plogger marks read N/A for them.</p>
+          <p className="ip6-small"><strong>On your own keyboard.</strong> Play C4 twice, then C4 and the next C above it. Count the keys to the second C out loud: twelve.</p>
+        </div>
       </section>
 
       <section id="plogger" className="m4-section" aria-labelledby="pl-h">
@@ -193,6 +220,7 @@ export default function PaletteLibrary() {
           <p>The original Plogger di-chord pictograph describes the eleven intervals from [1] (minor second) to [11] (major seventh) with three independent signs: <strong>A</strong> the outline (jagged, rounded or straight family), <strong>B</strong> a side shadow with an arrow (← fundamental, ↔ both, → octave) and <strong>C</strong> the fill (dense, open, midtone dotted or hatched).</p>
           <p>These are shown here as a clearly labelled <em>historic teaching lens</em>, following {PLOGGER_LINEAGE}. They are not physical measurements. The old fixed “8, 4, 2 Hz” family names are not used, because real beating depends on the two frequencies, the register and the instrument. Other versions of this chart disagree about [6] (the tritone) and [10] (the minor seventh); this page follows the printed original. The unison and the octave have no entry in the original, so they read N/A.</p>
         </div>
+        <SupportArt file="support_09_plogger_lens_guide.png" alt="Plogger lens guide: three independent factors, shape, shadow direction and fill, with a table of the eleven historic entries from the minor second to the major seventh. The same eleven entries are given as text in the table below." />
         <Fig id="IPF-plogger-chart" />
         <table className="ip6-table">
           <caption>The eleven historic entries as text</caption>

@@ -102,12 +102,14 @@
  "IP-10": {
   "title": "Minor Seventh",
   "semitones": 10,
-  "w": 2440,
-  "h": 3060,
+  "w": 1122,
+  "h": 1402,
   "corrected": false,
   "sha256_original": "33a6796dc8be2538539ffa769bdd032cc2bdc207040f02f58b8faf11383116cd",
   "manifest_sha256": "33a6796dc8be2538539ffa769bdd032cc2bdc207040f02f58b8faf11383116cd",
-  "sha256_served": "33a6796dc8be2538539ffa769bdd032cc2bdc207040f02f58b8faf11383116cd"
+  "sha256_served": "c57a49a2f0c9f089d164422fddc4ccf36539f3d36838588ce1c42e779c640c34",
+  "g3": true,
+  "note": "G3 correction v2 composite (ZIP e9873eea\u2026); original flat card retained as IP-10.png"
  },
  "IP-11": {
   "title": "Major Seventh",

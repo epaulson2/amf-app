@@ -28,3 +28,6 @@ Not verified: real devices/iOS, screen readers, measured contrast, dark mode, 20
 
 ## P4 integration (2026-11-09)
 See `P4-LEDGER.md` for the 40-line ledger. Batch 2: 13/13 REPLACE (verified). Batch 1: 13/13 KEEP_EXISTING (identical to deployed; promised new IP-10–12 absent → G2/V03 still open). Batch 3: 1 SUPPLEMENT, 2 SOURCE_ONLY, 11 HOLD_FOR_ART_CORRECTION (graphics dependency for ChatGPT). Evidence: `docs/m10/after-p4/`, `docs/m10/zip-receipt/`.
+
+## G3 correction delta (2026-11-09)
+See `G3-LEDGER.md`. 5 of 14 published (IP-10, support_02/09/13/14), 9 HOLD with defects listed. V03/G2 remain open for IP-11/12. Evidence `after-g3/`.
