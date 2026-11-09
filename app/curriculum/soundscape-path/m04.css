@@ -233,3 +233,17 @@
 @media print { .ip6-support img, .ip6-support .ip6-zoom { display:none; } }
 /* M10 G3 */
 .ip6-arts { display:flex; flex-wrap:wrap; gap:14px; } .ip6-arts .ip6-support { flex:1 1 280px; margin:6px 0; }
+
+/* Week 2 pilot (isolated preview): exact SVG diagrams, legend, responsive table, banner */
+.w2-banner { margin:0; padding:8px 16px; background:#fff4d6; border-bottom:1px solid #e6c978; font:14px/1.4 ui-sans-serif,system-ui,sans-serif; color:#5a4310; text-align:center; }
+.w2-fig { margin:0 0 14px; } .w2-fig svg { background:transparent; }
+.w2-legend { font:13px/1.4 ui-sans-serif,system-ui,sans-serif; color:#6f5f6c; margin:4px 0 14px; }
+.w2-key { display:inline-block; width:11px; height:11px; vertical-align:-1px; background:#7a4f6d; } .w2-key--lo { border-radius:50%; } .w2-key--up { background:#b25f2d; border-radius:2px; }
+.w2-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin:12px 0; }
+.w2-table { max-width:46rem; margin:16px 0; font:14.5px/1.45 ui-sans-serif,system-ui,sans-serif; }
+.w2-tr { display:grid; grid-template-columns:1.6fr 1.2fr 1fr .6fr .8fr 1.1fr; gap:8px; padding:8px 0; border-bottom:1px solid #e6dccb; } .w2-th { font-weight:700; color:#6f5f6c; }
+@media (max-width:620px) {
+  .w2-tr.w2-th { display:none; }
+  .w2-tr { display:block; padding:10px 12px; margin:0 0 10px; border:1px solid #e6dccb; border-radius:8px; background:#fffdf8; }
+  .w2-tr [role=cell] { display:flex; justify-content:space-between; gap:12px; padding:2px 0; } .w2-tr [role=cell]::before { content:attr(data-h); color:#6f5f6c; font-weight:700; }
+}
