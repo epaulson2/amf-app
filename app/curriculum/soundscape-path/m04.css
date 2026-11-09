@@ -224,3 +224,10 @@
 .ip6-ext { overflow-wrap:anywhere; }
 .ip6-table { display:table; width:100%; max-width:46rem; table-layout:auto; font-size:14px; } .ip6-table th, .ip6-table td { overflow-wrap:anywhere; word-break:normal; padding-right:10px; }
 @media (max-width:520px) { .ip6-table { font-size:13px; } .ip6-table th, .ip6-table td { padding-right:6px; } }
+/* M10 P4: Batch 2 teaching sheets */
+.ip6-sheet { margin:10px 0 6px; max-width:760px; } .ip6-sheet img { display:block; width:100%; height:auto; background:transparent; }
+.ip6-sheet figcaption a { display:inline-block; padding:8px 2px; min-height:24px; }
+.ip6-tech2 { margin-top:8px; border-top:1px dashed #e3d6c4; } .ip6-tech2 > summary { cursor:pointer; font:600 14px/1.4 ui-sans-serif,system-ui,sans-serif; color:#6d326e; padding:10px 0; min-height:44px; }
+@media print { .ip6-tech2, .ip6-sheet figcaption { display:none !important; } }
+.ip6-support { margin:14px 0 6px; max-width:440px; } .ip6-support img { display:block; width:100%; height:auto; } .ip6-support figcaption { margin-top:6px; } .ip6-support .ip6-zoom { display:inline-block; padding:8px 0; font:13.5px/1.5 ui-sans-serif,system-ui,sans-serif; }
+@media print { .ip6-support img, .ip6-support .ip6-zoom { display:none; } }

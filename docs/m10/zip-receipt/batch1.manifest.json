@@ -1,0 +1,188 @@
+{
+  "set": "Ajourn\u00e9 Interval Palette",
+  "count": 13,
+  "cards": [
+    {
+      "id": "IP-00",
+      "title": "Perfect Unison",
+      "semitones": 0,
+      "png": "PNG/IP-00.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "42bc62064bbfaaaae1be402c83a562a47c898ef6852b58864da9e18d3d654e17",
+      "source_filename": "perfect_unison_interval_palette.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-01",
+      "title": "Minor Second",
+      "semitones": 1,
+      "png": "PNG/IP-01.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "cd5deb386144831a1f4c42e348b99e70d073fd5bb79fada0b4e5b653771a9ada",
+      "source_filename": "minor_second_interval_palette.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-02",
+      "title": "Major Second",
+      "semitones": 2,
+      "png": "PNG/IP-02.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "bfd7975def26b486340018323d02a4ed913e4cfebb79b7524216ef485ca5a635",
+      "source_filename": "major_second_interval_palette.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-03",
+      "title": "Minor Third",
+      "semitones": 3,
+      "png": "PNG/IP-03.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "d63c2d6cb0bdecda309f93ea3af7fbc6f1a7ec5120663e3c0e0913ecf799247b",
+      "source_filename": "minor_third_interval_palette_infographic.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-04",
+      "title": "Major Third",
+      "semitones": 4,
+      "png": "PNG/IP-04.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "55e3c7d4c45645b43b38b2cda58875f2970d16124ef7a55fb5b0d2d84aa4df6c",
+      "source_filename": "major_third_interval_palette_ip_04.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-05",
+      "title": "Perfect Fourth",
+      "semitones": 5,
+      "png": "PNG/IP-05.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "0d79e7b9e18bf6124794b66f5e4f59c6459b9c1d251764ec1c16ffd506301c8f",
+      "source_filename": "interval_palette_perfect_fourth.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-06",
+      "title": "Tritone",
+      "semitones": 6,
+      "png": "PNG/IP-06.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "26a23edd3e421dc30a998c02cb702659ffd445bc87902d4a64ccc82db3c2325a",
+      "source_filename": "tritone_interval_palette_infographic.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-07",
+      "title": "Perfect Fifth",
+      "semitones": 7,
+      "png": "PNG/IP-07.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "f3157cc6d74475a68ffbe17bd3dafdc02ff4da91eda5665294b647db0487b4e6",
+      "source_filename": "perfect_fifth_interval_palette.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-08",
+      "title": "Minor Sixth",
+      "semitones": 8,
+      "png": "PNG/IP-08.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "c035e154ade90bea7c5136e710a4f43508878269c1969107509c2cae6996b844",
+      "source_filename": "interval_palette_minor_sixth.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-09",
+      "title": "Major Sixth",
+      "semitones": 9,
+      "png": "PNG/IP-09.png",
+      "pixels": [
+        1122,
+        1402
+      ],
+      "alpha": true,
+      "sha256": "4a8049e476a98daf64ec80b3e92037ed96c17fde160b21bfe40ad28307e66ac8",
+      "source_filename": "major_sixth_interval_palette.png",
+      "source_type": "OpenAI image-generated PNG"
+    },
+    {
+      "id": "IP-10",
+      "title": "Minor Seventh",
+      "semitones": 10,
+      "png": "PNG/IP-10.png",
+      "pixels": [
+        2440,
+        3060
+      ],
+      "alpha": true,
+      "sha256": "33a6796dc8be2538539ffa769bdd032cc2bdc207040f02f58b8faf11383116cd",
+      "source_filename": "IP-10.png",
+      "source_type": "native deterministic SVG/PNG"
+    },
+    {
+      "id": "IP-11",
+      "title": "Major Seventh",
+      "semitones": 11,
+      "png": "PNG/IP-11.png",
+      "pixels": [
+        2440,
+        3060
+      ],
+      "alpha": true,
+      "sha256": "bf30b49c5585ddf9a98fd39308d22aebef98d29ccd863b1cfbb58cbe4e15dd37",
+      "source_filename": "IP-11.png",
+      "source_type": "native deterministic SVG/PNG"
+    },
+    {
+      "id": "IP-12",
+      "title": "Perfect Octave",
+      "semitones": 12,
+      "png": "PNG/IP-12.png",
+      "pixels": [
+        2440,
+        3060
+      ],
+      "alpha": true,
+      "sha256": "40269829897cb835d7c16c3d237a9e14a6adba5d06bedd0bc58c4f5f417ae240",
+      "source_filename": "IP-12.png",
+      "source_type": "native deterministic SVG/PNG"
+    }
+  ]
+}

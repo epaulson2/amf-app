@@ -1,0 +1,262 @@
+{
+ "00": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "e22000675e0ba95d5119d2aa4e4c54a97b7533b6bcf00412fdb6134129f217e9",
+   "svg_sha256": "6737f76533cc74a0c02a2baff7c2e13d1de49175c7e99917d78ca5dfc192dc7c",
+   "root": "C4",
+   "upper": "C4",
+   "semitones": 0
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "a4d8315da9f5ac0479bd173cdd7531ecf81600c7b3efe558b83a1d114e55fadf",
+   "svg_sha256": "7a8b3b829f0818a084b304f5a12da70c44fa7242d4cbb16d07900122e80e178d",
+   "root": "C4",
+   "upper": "C4",
+   "semitones": 0
+  }
+ },
+ "01": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "734c5641c7980ad76fada86a91b28b472fbd58ce222cd9dad1785cac3622f323",
+   "svg_sha256": "fa9608ff1ecb7a29894f16d6fe996e459087cbc96bd4004abcc8416a3960f180",
+   "root": "C4",
+   "upper": "D\u266d4",
+   "semitones": 1
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "5240f20afa71fadc40aba4d13bbdbedc6906d7f9b3fa7d9d829f4f2ad71b6c4c",
+   "svg_sha256": "6800c4cdabed16890222d88a7fb1d4dd6e0e8d665c7a936b9c9b3c7d313cf714",
+   "root": "C4",
+   "upper": "D\u266d4",
+   "semitones": 1
+  }
+ },
+ "02": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "0e96559d969c2c95f40b0568dd8a107a60f22c85c0a5342b8442b4b63f94320b",
+   "svg_sha256": "f12f0392bf6316a8c55d3c0cab331599d1c12a5da128c04e7b773ded0d805651",
+   "root": "C4",
+   "upper": "D4",
+   "semitones": 2
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "9209589be103d02d87e05fed1c68281752de9eae2c58da4dbeae39f1afca0193",
+   "svg_sha256": "18da24bcaf57a6e59610dfd4636d519767a6f05b14f3d7abbe1a7289994b718b",
+   "root": "C4",
+   "upper": "D4",
+   "semitones": 2
+  }
+ },
+ "03": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "ac2986c3c7fc62f8b6d39a063276e9e623f3abed35f14ad937270aac89f5c7bd",
+   "svg_sha256": "41d55661958e0a8c89c485411c8248be3ac72f9da3313dc9a71cffcff8421dcd",
+   "root": "C4",
+   "upper": "E\u266d4",
+   "semitones": 3
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "a7347b2be786f10677cc64b6374db0324d752db9055cc79038306eba90c6e700",
+   "svg_sha256": "354d58f94ff7880d9f5445c2da3a44e6d7c320b960e5a1bea16a485da06c132b",
+   "root": "C4",
+   "upper": "E\u266d4",
+   "semitones": 3
+  }
+ },
+ "04": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "719433b492d114ccf5d76a4b3a8221153d38b46385dae511e83825276ececd53",
+   "svg_sha256": "d14283f08cfb0af9a18bc99d161a8499b33cdac10876f341a220b3dda4e52cf0",
+   "root": "C4",
+   "upper": "E4",
+   "semitones": 4
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "c285a2767aa121b40957db3c7e999d518569a62e0a1b8248e175163174fe33d3",
+   "svg_sha256": "d4feb7afe749ce1f25097f711e19c0c3c968c31c2b03d66022cdb44bd455fb0d",
+   "root": "C4",
+   "upper": "E4",
+   "semitones": 4
+  }
+ },
+ "05": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "1feed1ecbfb3b1128f9c8fff31b88f13476c39dd1d58ea0e1615e43e7a65d873",
+   "svg_sha256": "6277fb0d11970950660bf520906c54865f878cfc6042cbb5f9c757d2e867a28c",
+   "root": "C4",
+   "upper": "F4",
+   "semitones": 5
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "33ce8da99fac71ecabef828013a2531b9f3e052c8f55d6bc96f8ab9ac832d22d",
+   "svg_sha256": "78ce763d3bad048bccb95ed06698d33e5bc45e6afd82f4e4dadeb2debac3a3ef",
+   "root": "C4",
+   "upper": "F4",
+   "semitones": 5
+  }
+ },
+ "06": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "d7d827036361817bce13a4790a777f332d0d3bc1faaff1a2a1d736e0c1eb3bc9",
+   "svg_sha256": "1b039542b04015ed10bcd223bba9da12d9423a451067f9c4f61ec447a9058d59",
+   "root": "C4",
+   "upper": "F\u266f4",
+   "semitones": 6
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "15f1389d93261c658d6121112ca78e3f07c6829d16912bd19b1f96006d46cad5",
+   "svg_sha256": "9a9109002501b09243b9537616519b468e53de38e8a1d8822f5591962b4d8d68",
+   "root": "C4",
+   "upper": "F\u266f4",
+   "semitones": 6
+  }
+ },
+ "07": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "7707476cfb23cad40bfd5343dec07bc2867c2a8d73eb188b9974de3a7e9ef76f",
+   "svg_sha256": "14a4a3a21577b4327c3530788ebd34e2c83d2fa59ae9a2b5c8294084c421d614",
+   "root": "C4",
+   "upper": "G4",
+   "semitones": 7
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "d7eb72ce945eab00c393ed38b7cce0023c0309ca6b06891e71e96abfebff41b8",
+   "svg_sha256": "dc97a209e5e65dbb2f9796bd44343eda083f3db58fd254a7043a15bb7fa678a1",
+   "root": "C4",
+   "upper": "G4",
+   "semitones": 7
+  }
+ },
+ "08": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "c5dd07613e4b21ab398fc15fece1ffffe7ca4d90684b9cac2546ab60cc5640e4",
+   "svg_sha256": "16bbb99e08996c47f9b8a8713196056e6ccdff743919312407ed099fda69cb3a",
+   "root": "C4",
+   "upper": "A\u266d4",
+   "semitones": 8
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "c22be36742ae7c6ca8751aa63f0b73e948af79e3557af25925b33bd083b8c5d4",
+   "svg_sha256": "f4c8978d1a515524b61430525fbfe36a9cb8ce365ae35cd2ccaa57e8af76d80d",
+   "root": "C4",
+   "upper": "A\u266d4",
+   "semitones": 8
+  }
+ },
+ "09": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "08d6151add8be9fb959cc992d2786ad4dc378636eedc3b58c42e92574421741e",
+   "svg_sha256": "77fec5261c8ba7bd4bac0d4bc0daee9cc5089bab9424a93afd3114cf07dc1ec7",
+   "root": "C4",
+   "upper": "A4",
+   "semitones": 9
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "859088a17ab08a3e9e78de33f4bfb9d570a21f74417b239faae5956d6816c02b",
+   "svg_sha256": "13d0c157869a3fc16e86898458fb7c89b7769b5fcd925d99ee6dfa6d5394a4ea",
+   "root": "C4",
+   "upper": "A4",
+   "semitones": 9
+  }
+ },
+ "10": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "5b060afb85d0e73cedd0e7c747f7a5e66c2db7f3018d04d871d888ff08a69693",
+   "svg_sha256": "93f33af6d24a871a24293192248bb498fb8a6ccc549667f3102f36bfa10174f1",
+   "root": "C4",
+   "upper": "B\u266d4",
+   "semitones": 10
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "69bb48098b7e670c638cf4accb186abb84a164de119f839985b63c27eb20c758",
+   "svg_sha256": "5e0cdfb77c2143431893717e220cd64e3c32e3baaa26dd1c0ed7120578239308",
+   "root": "C4",
+   "upper": "B\u266d4",
+   "semitones": 10
+  }
+ },
+ "11": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "f103ca282014dd56c411e2776a2557f06b6f612fae83e688031c9fd7f1a07b0d",
+   "svg_sha256": "b17853dc09a18c6091e4b9da4c30ca7b967fe9278293df6e60cb0237b913a8af",
+   "root": "C4",
+   "upper": "B4",
+   "semitones": 11
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "e6934cc7eaa3eb1dd480b14ad939f21a73a0ef14bb7722d205a23c605483fc75",
+   "svg_sha256": "f75a2b6fae27169695e46aba6503386034cb3bfa649bc405101cd37daafe25f9",
+   "root": "C4",
+   "upper": "B4",
+   "semitones": 11
+  }
+ },
+ "12": {
+  "desktop": {
+   "w": 1600,
+   "h": 1540,
+   "png_sha256": "63ba55a6d7b56b489dd921a130aa0d5447d43555ea3fa5327d5cb38fbe07e9b5",
+   "svg_sha256": "200b32a29ead7ac6710a2892e7a66ea9440af89eb89bfbab88daccc89869c1e3",
+   "root": "C4",
+   "upper": "C5",
+   "semitones": 12
+  },
+  "mobile": {
+   "w": 920,
+   "h": 2040,
+   "png_sha256": "3bb6f1acf7aac023007c64c0984a1faf373a040849058eb0c64aaf8f445d3671",
+   "svg_sha256": "72d6ed614b7bfba2f065a47711f22d0077fe96617e0c429b7d9da18facf5645a",
+   "root": "C4",
+   "upper": "C5",
+   "semitones": 12
+  }
+ }
+}

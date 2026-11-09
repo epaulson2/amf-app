@@ -1,0 +1,89 @@
+{
+  "count": 14,
+  "assets": [
+    {
+      "file": "PNG/support_01_interval_atlas_overview.png",
+      "source_file": "ornate_interval_atlas_from_unison_to_octave.png",
+      "title": "Interval atlas overview",
+      "sha256": "f2008ca2b35645fc319d97204c234cfeb930f53aa2759fec647f8aa44d01b198"
+    },
+    {
+      "file": "PNG/support_02_interval_palette_overview.png",
+      "source_file": "ajourné_interval_palette_infographic.png",
+      "title": "Interval palette overview",
+      "sha256": "c4acb1a494f8d3841d9af2e2daa0710b565bb2966b2cf23693e6272879047468"
+    },
+    {
+      "file": "PNG/support_03_interval_atlas_glowing_map.png",
+      "source_file": "interval_atlas_a_gorgeously_glowing_map.png",
+      "title": "Interval atlas glowing map",
+      "sha256": "20a37452fe27a1e34c5cf1ac19655a49c663429cd66db39c36a3fd766307bbe8"
+    },
+    {
+      "file": "PNG/support_04_minor_vs_major_second.png",
+      "source_file": "minor_vs_major_second_infographic.png",
+      "title": "Minor vs major second",
+      "sha256": "85bfda2dcd0531cf845eadc6d5b42ad0b2cbfa38993032771f064d8ddf276935"
+    },
+    {
+      "file": "PNG/support_05_minor_vs_major_third.png",
+      "source_file": "minor_third_vs_major_third_infographic.png",
+      "title": "Minor vs major third",
+      "sha256": "51eb86e9712231c7e4d7ca66c1fe64419940285cb3f8ceae30d7a9944f201e6b"
+    },
+    {
+      "file": "PNG/support_06_minor_vs_major_sixth.png",
+      "source_file": "minor_sixth_vs_major_sixth_infographic.png",
+      "title": "Minor vs major sixth",
+      "sha256": "b4c5a973b24171095ff392932cee0c521d49a7d3697330cb02c2a0013df5ff70"
+    },
+    {
+      "file": "PNG/support_07_seventh_comparison.png",
+      "source_file": "ajourné_interval_palette_seventh_comparison.png",
+      "title": "Seventh comparison",
+      "sha256": "d144f8e2b50a81fc39c9a53cc82091570d5f9b72c3057fb2991cd035c1d9d47b"
+    },
+    {
+      "file": "PNG/support_08_inversion_guide.png",
+      "source_file": "the_interval_palette_inversion_guide.png",
+      "title": "Inversion guide",
+      "sha256": "05c6c1abb8fd53bccd369c3ff7c886359073f4857aaaa55bead421123dca3490"
+    },
+    {
+      "file": "PNG/support_09_plogger_lens_guide.png",
+      "source_file": "plogger_lens_interval_reading_guide.png",
+      "title": "Plogger lens reading guide",
+      "sha256": "2634587f5d0ad7129c8d2a2a345607b5234281afdbacfaf62afa41650690522a"
+    },
+    {
+      "file": "PNG/support_10_register_and_range.png",
+      "source_file": "register_and_range_interval_palette.png",
+      "title": "Register and range",
+      "sha256": "daa27ad35f8dd54c1a3709f79d78106bd2bd141d4d5c07b1dcd7ccab25ce82f1"
+    },
+    {
+      "file": "PNG/support_11_two_counts_one_name.png",
+      "source_file": "two_counts_one_name_interval_palette.png",
+      "title": "Two counts, one name",
+      "sha256": "880b40bf7a105bcb655cf4ee5022c7ce241ba99730799ed293f86f12637ae4f1"
+    },
+    {
+      "file": "PNG/support_12_melodic_and_harmonic.png",
+      "source_file": "melodic_and_harmonic_perfect_fifth.png",
+      "title": "Melodic and harmonic",
+      "sha256": "8062d5ebca38203f96d1a8a0ab4a15a4c1afdf90f5415f52fc231b6f42399434"
+    },
+    {
+      "file": "PNG/support_13_unison_vs_octave.png",
+      "source_file": "perfect_unison_vs_perfect_octave_infographic.png",
+      "title": "Perfect unison vs perfect octave",
+      "sha256": "6dcd65a79c5d455a86eb8b41cc5509f22acd65535830ec7c90da13c6f43cb5e6"
+    },
+    {
+      "file": "PNG/support_14_one_distance_two_spellings.png",
+      "source_file": "one_distance_two_spellings.png",
+      "title": "One distance, two spellings",
+      "sha256": "05bc6f1138202a7a914cccd1dc9dfd8b255cb2cbac379152801bda56770e1723"
+    }
+  ]
+}

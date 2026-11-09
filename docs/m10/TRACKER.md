@@ -24,3 +24,7 @@ Status vocabulary: PASS | PARTIAL | DEPENDENCY (needs ChatGPT graphics) | NOT_VE
 Page length (default state, accordions closed): desktop 42,836 → 33,851 px (−21%); phone 55,127 → 43,516 px (−21%).
 
 Not verified: real devices/iOS, screen readers, measured contrast, dark mode, 200% browser text (only 640 px viewport as a proxy), mobile-menu behaviour (shell untouched), print output visually (render not inspected), ruler-circle crowding at desktop 10–12.
+
+
+## P4 integration (2026-11-09)
+See `P4-LEDGER.md` for the 40-line ledger. Batch 2: 13/13 REPLACE (verified). Batch 1: 13/13 KEEP_EXISTING (identical to deployed; promised new IP-10–12 absent → G2/V03 still open). Batch 3: 1 SUPPLEMENT, 2 SOURCE_ONLY, 11 HOLD_FOR_ART_CORRECTION (graphics dependency for ChatGPT). Evidence: `docs/m10/after-p4/`, `docs/m10/zip-receipt/`.

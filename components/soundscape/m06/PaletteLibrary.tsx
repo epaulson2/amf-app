@@ -3,6 +3,8 @@ import type { ReactNode } from 'react'
 import Md from '../Md'
 import HashOpen from './HashOpen'
 import PaletteIllustratedCard from './PaletteIllustratedCard'
+import PaletteSheet from './PaletteSheet'
+import Image from 'next/image'
 import { BASE } from '@/lib/soundscape/course'
 import { ATLAS, INTERVALS, QUICK_INTRO, noteRecipe, type IntervalRecord } from '@/lib/soundscape/resources/palette'
 import { PLOGGER_LENS_V1, PLOGGER_LINEAGE, hasPlogger, SHAPE_LABEL, DIR_LABEL, FILL_LABEL } from '@/lib/soundscape/resources/interval-identity'
@@ -97,6 +99,13 @@ export default function PaletteLibrary() {
           <p><strong>Colour is an identity label.</strong> Each interval keeps one fixed colour on its stripe, key outlines and map position. It is an artistic aid for remembering, not a fact about the sound, and every colour is always accompanied by the name, note and number.</p>
           <p><strong>The three Plogger marks are a separate, historic lens.</strong> They come from the printed di-chord pictograph of the Plogger framework and are shown in grey, never in the identity colour. They describe a teaching classification, not measured acoustics.</p>
         </div>
+        <figure className="ip6-support">
+          <Image src="/soundscape/resources/interval-palette/support-v1/support_11_two_counts_one_name.png" alt="Two counts, one name. C4 to E4 is a major third: three letter names, four semitones. E4 to G4 is a minor third: three letter names, three semitones. The painted keys mark the lower note with a ball and the upper note with a square." width={1122} height={1402} quality={90} loading="lazy" sizes="(max-width: 640px) 92vw, 420px" />
+          <figcaption>
+            <p className="ip6-small"><strong>Two counts, one name.</strong> An interval’s name counts letters (C–D–E is three letters, so both a major third and a minor third are “thirds”). Its semitone count measures exact distance: C4 to E4 is 4 semitones, E4 to G4 is 3. Same name family, different distance, different colour.</p>
+            <a className="ip6-zoom" href="/soundscape/resources/interval-palette/support-v1/support_11_two_counts_one_name.png" target="_blank" rel="noopener noreferrer">View full-size image (1122×1402 PNG, opens one image) ↗</a>
+          </figcaption>
+        </figure>
       </section>
 
       <section id="map" className="m4-section" aria-labelledby="map-h">
@@ -145,8 +154,12 @@ export default function PaletteLibrary() {
               </div>
               <details className="ip6-tech">
                 <summary>Precise keyboard &amp; Plogger diagram, with how to read it</summary>
-                <Fig id={`IPF-sheet-${nn(r)}`} />
+                <PaletteSheet r={r} printSrc={`${PI}/IPF-sheet-${nn(r)}.print.svg`} />
                 <p className="ip6-small"><strong>How to read this diagram.</strong> {howToRead(r)}</p>
+                <details className="ip6-tech2">
+                  <summary>Plogger contour &amp; shadow detail (earlier native diagram)</summary>
+                  <Fig id={`IPF-sheet-${nn(r)}`} />
+                </details>
               </details>
               <details>
                 <summary>Expand the full chapter text (seven sections)</summary>

@@ -44,3 +44,26 @@ test('M10: learner copy has no implementation jargon, and every Plogger/legend s
   const learner = [PLOGGER_LINEAGE, fs.readFileSync('lib/soundscape/m05/info-svg.ts', 'utf8').split('export function legend')[1].split('assembly helpers')[0], JSON.stringify(ATLAS.editorial)].join('\n')
   for (const bad of ['R2_pictograph', 'DiChordPictograph', '.tsx', 'interval-identity.ts', 'Founder-uploaded', 'Older code']) assert.ok(!learner.includes(bad), bad)
 })
+
+test('M10 P4: the 13 Batch 2 teaching sheets match canonical data, registry hashes, and are safe', async () => {
+  const { createHash } = await import('node:crypto')
+  const reg = JSON.parse(src('lib/soundscape/resources/sheets-v2.json'))
+  const SH: Record<string, string> = { jagged: 'Jagged', rounded: 'Rounded', straight: 'Straight' }, DR: Record<string, string> = { F: 'Fundamental', both: 'Both', O: 'Octave' }, FL: Record<string, string> = { dark: 'Dense', light: 'Open', neutral: 'Midtone', half: 'Hatched' }
+  assert.equal(Object.keys(reg).length, 13)
+  for (const r of INTERVALS) {
+    const nn = String(r.semitones).padStart(2, '0'), D = 'public/soundscape/resources/interval-palette/sheets-v2'
+    for (const v of ['desktop', 'mobile']) {
+      const png = readFileSync(R(`${D}/png/IPF-sheet-${nn}.${v}.png`)), sv = readFileSync(R(`${D}/svg/IPF-sheet-${nn}.${v}.svg`), 'utf8')
+      assert.equal(createHash('sha256').update(png).digest('hex'), reg[nn][v].png_sha256, `${nn} ${v} png hash`)
+      assert.equal(createHash('sha256').update(sv).digest('hex'), reg[nn][v].svg_sha256, `${nn} ${v} svg hash`)
+      assert.doesNotMatch(sv, /<script|<foreignObject|\son[a-z]+=|href="https?:|url\(https?:/i, `${nn} ${v} svg safety`)
+      const t = sv.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
+      assert.ok(t.includes(r.upperName.replace(/\s.*$/, '')), `${nn} ${v} upper note ${r.upperName}`)
+      assert.ok(t.includes(`${r.semitones} semitone`), `${nn} ${v} semitone count`)
+      if (hasPlogger(r.semitones)) { const e = L[r.semitones]; assert.ok(t.includes(`Shape: ${SH[e.shape]}`) && t.includes(`Direction: ${DR[e.dir]}`) && t.includes(`Fill: ${FL[e.fill]}`), `${nn} ${v} plogger`) }
+      else assert.ok(/N\/A at this boundary/.test(t), `${nn} ${v} N/A`)
+      assert.ok(sv.toUpperCase().includes(T[r.id].hex.toUpperCase()), `${nn} identity colour`)
+    }
+  }
+  assert.ok(/C4\s+to\s+D♭4/.test(readFileSync(R('public/soundscape/resources/interval-palette/sheets-v2/svg/IPF-sheet-01.desktop.svg'), 'utf8')), 'IP-01 stays C4 to D♭4')
+})
