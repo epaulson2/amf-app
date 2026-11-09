@@ -15,7 +15,7 @@ with sync_playwright() as p:
         pg.evaluate("document.querySelectorAll('img').forEach(i=>{i.loading='eager'})"); pg.evaluate("document.querySelectorAll('details').forEach(d=>d.open=true)"); pg.wait_for_timeout(2500)
         res[w]=pg.evaluate(JS)
         if w in (390,1280):
-            for sel,name in (('.ip6-gal','gallery'),('#how','how'),('#ip-01','chapter-IP-01'),('#ip-06','chapter-IP-06'),('#ip-04','chapter-IP-04'),('#ip-10','chapter-IP-10'),('#ip-12','chapter-IP-12'),('#ipf-proof-b-p4-tt-p5','cmp-p4-tt-p5'),('#ipf-unison-octave','cmp-unison-octave'),('#compare','compare'),('#plogger','plogger'),('#sources','sources'),('#map','map')):
+            for sel,name in (('.ip6-gal','gallery'),('#how','how'),('#ip-01','chapter-IP-01'),('#ip-06','chapter-IP-06'),('#ip-04','chapter-IP-04'),('#ip-10','chapter-IP-10'),('#ip-12','chapter-IP-12'),('#ipf-proof-b-p4-tt-p5','cmp-p4-tt-p5'),('#ipf-unison-octave','cmp-unison-octave'),('#ipf-invert','cmp-invert'),('#ipf-register','cmp-register'),('#compare','compare'),('#plogger','plogger'),('#sources','sources'),('#map','map')):
                 try: pg.locator(sel).first.screenshot(path=f'{OUT}/{name}-{w}.png')
                 except Exception as e: print('shot fail',sel,e)
             pg.screenshot(path=f'{OUT}/bottom-{w}.png',clip={'x':0,'y':max(0,res[w]['height']-1200),'width':w,'height':1200},full_page=True)

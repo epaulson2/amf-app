@@ -41,7 +41,7 @@ const SECT = ['Meet the interval', 'As a moving melody', 'Two notes together', '
 
 /** What the illustrated card actually shows (V08): name, semitones, two highlighted keys, and (cards 00–09) the same two notes on a treble staff. */
 function pictureRead(r: IntervalRecord) {
-  const staff = r.semitones <= 10 ? ' and, below it, the same two notes on a treble staff, joined by a slur' : ''
+  const staff = r.semitones <= 12 ? ' and, below it, the same two notes on a treble staff, joined by a slur' : ''
   const pair = r.semitones === 0 ? `C4 and C4 (the same key)` : `${r.lowerName} and ${r.upperName}`
   return `The picture names the interval and its ${r.semitones} semitone${r.semitones === 1 ? '' : 's'}, then shows ${pair} highlighted on a keyboard from C4 to C5${staff}. Its colour is this interval’s identity colour: a label for remembering, never a voice and never a fact about the sound.`
 }
@@ -65,6 +65,13 @@ function SupportArt({ file, alt }: { file: string; alt: string }) {
   )
 }
 const SUPPORT_ART: Record<string, { file: string; alt: string }[]> = {
+  'IPF-compare-m2-M2': [{ file: 'support_04_minor_vs_major_second.png', alt: 'Minor second and major second side by side from C4. The minor second is C4 to D♭4, 1 semitone. The major second is C4 to D4, 2 semitones. Each shows the two keys on a keyboard and the notes on a treble staff.' }],
+  'IPF-proof-A-m3-M3': [{ file: 'support_05_minor_vs_major_third.png', alt: 'Minor third and major third from C4. The minor third is C4 to E♭4, 3 semitones. The major third is C4 to E4, 4 semitones. Each shows the two keys on a keyboard and the notes on a treble staff.' }],
+  'IPF-compare-m6-M6': [{ file: 'support_06_minor_vs_major_sixth.png', alt: 'Minor sixth and major sixth from C4. The minor sixth is C4 to A♭4, 8 semitones. The major sixth is C4 to A4, 9 semitones. Each shows the two keys on a keyboard and the notes on a treble staff.' }],
+  'IPF-compare-m7-M7': [{ file: 'support_07_seventh_comparison.png', alt: 'Minor seventh and major seventh from C4. The minor seventh is C4 to B♭4, 10 semitones. The major seventh is C4 to B4, 11 semitones. Each shows the two keys on a keyboard and the notes on a treble staff.' }],
+  'IPF-invert': [{ file: 'support_08_inversion_guide.png', alt: 'Interval inversion. Minor third C4 to E♭4 (3 semitones) inverts to major sixth E♭4 to C5 (9). Major third C4 to E4 (4) inverts to minor sixth E4 to C5 (8). Perfect fourth C4 to F4 (5) inverts to perfect fifth F4 to C5 (7). Each pair adds to 12 semitones, and the interval numbers add to 9.' }],
+  'IPF-register': [{ file: 'support_10_register_and_range.png', alt: 'The same perfect fifth, 7 semitones, in three registers: C3 to G3, C4 to G4 and C5 to G5, each marked on a keyboard.' }],
+  'IPF-intro-05': [{ file: 'support_12_melodic_and_harmonic.png', alt: 'Melodic and harmonic. The perfect fifth C4 to G4, 7 semitones, played one after another (melodic) or at the same time (harmonic), shown on a keyboard and a treble staff.' }],
   'IPF-proof-B-p4-tt-p5': [
     { file: 'support_02_interval_palette_overview.png', alt: 'Perfect fourth, tritone and perfect fifth side by side, each from C4: C4 to F4 is 5 semitones, C4 to F♯4 is 6, C4 to G4 is 7. Each has the two keys marked on a keyboard and the notes on a treble staff.' },
     { file: 'support_14_one_distance_two_spellings.png', alt: 'One distance, two spellings. C4 to F♯4 is an augmented fourth and C4 to G♭4 is a diminished fifth. Both are 6 semitones and use the same key, F♯ or G♭.' },
@@ -80,7 +87,7 @@ const COMPARE: { id: string; h: string; how: string; own: string }[] = [
   { id: 'IPF-invert', h: 'Inversion', how: 'Move the lower note up an octave and the interval changes name: the semitone counts add to 12 and the interval numbers add to 9 (minor third 3 ↔ major sixth 9, major third 4 ↔ minor sixth 8, perfect fourth 5 ↔ perfect fifth 7).', own: 'Play C and E♭; then play E♭ and the C above. Count 3 and then 9.' },
   { id: 'IPF-register', h: 'The same interval in three registers', how: 'The perfect fifth is 7 semitones in every register. How blended or rough it sounds also depends on register, instrument, tuning and context, so the key pattern alone cannot rank intervals.', own: 'Play C with G low on your keyboard, in the middle and high up. Same count, different colour of sound.' },
   { id: 'IPF-intro-04', h: 'What is an interval?', how: 'An interval measures the distance between two notes. Count every key, white and black, from C up to E: four hops. The distance, four semitones, is the interval.', own: 'Count the hops on your own keys from C to E.' },
-  { id: 'IPF-intro-05', h: 'Melodic and harmonic', how: 'The same two notes, C4 and E4. Melodic: one after another. Harmonic: together. The distance does not change; the way the notes meet in time does.', own: 'Play C then E, then C and E together.' },
+  { id: 'IPF-intro-05', h: 'Melodic and harmonic', how: 'The same two notes, C4 and E4. Melodic: one after another. Harmonic: together. The distance does not change; the way the notes meet in time does. The picture above shows the same idea with C4 and G4, a perfect fifth of 7 semitones.', own: 'Play C then E, then C and E together.' },
 ]
 
 export default function PaletteLibrary() {

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1122" height="1402" viewBox="0 0 1122 1402" role="img">
+<title>Interval Inversion</title><desc>Move the lower note one octave above the upper note</desc>
+<defs>
+ <radialGradient id="wash"><stop offset="0%" stop-color="#5366A0" stop-opacity=".075"/><stop offset="72%" stop-color="#5366A0" stop-opacity=".018"/><stop offset="100%" stop-color="#5366A0" stop-opacity="0"/></radialGradient>
+ <radialGradient id="goldwash"><stop offset="0%" stop-color="#F7DCB7" stop-opacity=".60"/><stop offset="100%" stop-color="#F7DCB7" stop-opacity="0"/></radialGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="48%" stop-color="#FCF6EF" stop-opacity=".86"/><stop offset="100%" stop-color="#EBDFEC" stop-opacity=".64"/></linearGradient>
+ <linearGradient id="goldline"><stop offset="0" stop-color="#FFF3C1"/><stop offset=".52" stop-color="#CD9A51"/><stop offset="1" stop-color="#FBDAA2"/></linearGradient>
+ <linearGradient id="shimmer"><stop offset="0" stop-color="#5366A0" stop-opacity=".36"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".75"/><stop offset="1" stop-color="#5366A0" stop-opacity=".27"/></linearGradient>
+ </defs>
+<ellipse cx="280" cy="240" rx="330" ry="160" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="890" cy="315" rx="280" ry="230" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="320" cy="715" rx="290" ry="330" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="850" cy="970" rx="320" ry="380" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="500" cy="1250" rx="480" ry="250" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="720" cy="230" rx="320" ry="130" fill="url(#goldwash)" opacity="0.62" stroke="none" stroke-width="1"/>
+<ellipse cx="220" cy="1070" rx="260" ry="155" fill="url(#goldwash)" opacity="0.62" stroke="none" stroke-width="1"/>
+<ellipse cx="740" cy="1310" rx="270" ry="140" fill="url(#goldwash)" opacity="0.62" stroke="none" stroke-width="1"/>
+<path d="M 100 87 C 276 62, 380 102, 531 72 S 864 92, 1010 63" stroke="#C39F70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.52"/>
+<rect x="70" y="512" width="982" height="214" rx="28" fill="url(#glass)" stroke="#8964A4" stroke-width="1.4" opacity="0.88"/>
+<text x="561" y="556" font-family="'DejaVu Sans',sans-serif" font-size="30" font-weight="bold" font-style="normal" text-anchor="middle" fill="#483448" opacity="1">Minor Third ↔ Major Sixth</text>
+<ellipse cx="301.5" cy="611.0" rx="262.26" ry="46.5" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="90" y="580" width="423" height="62" rx="31.0" fill="url(#glass)" stroke="#8964A4" stroke-width="2" opacity="0.93"/><text x="301.5" y="622.16" font-family="'DejaVu Sans',sans-serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#8964A4" opacity="1">C4–E♭4: 3 st</text>
+<ellipse cx="820.5" cy="611.0" rx="262.26" ry="46.5" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="609" y="580" width="423" height="62" rx="31.0" fill="url(#glass)" stroke="#8964A4" stroke-width="2" opacity="0.93"/><text x="820.5" y="622.16" font-family="'DejaVu Sans',sans-serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#8964A4" opacity="1">E♭4–C5: 9 st</text>
+<text x="562" y="622" font-family="'DejaVu Sans',sans-serif" font-size="42" font-weight="bold" font-style="normal" text-anchor="middle" fill="#8964A4" opacity="1">↔</text>
+<text x="561" y="696" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#44374B" opacity="1">3 + 9 = 12 semitones   •   interval numbers sum to 9</text>
+<rect x="70" y="744" width="982" height="214" rx="28" fill="url(#glass)" stroke="#AB812D" stroke-width="1.4" opacity="0.88"/>
+<text x="561" y="788" font-family="'DejaVu Sans',sans-serif" font-size="30" font-weight="bold" font-style="normal" text-anchor="middle" fill="#483448" opacity="1">Major Third ↔ Minor Sixth</text>
+<ellipse cx="301.5" cy="843.0" rx="262.26" ry="46.5" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="90" y="812" width="423" height="62" rx="31.0" fill="url(#glass)" stroke="#AB812D" stroke-width="2" opacity="0.93"/><text x="301.5" y="854.16" font-family="'DejaVu Serif',serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#AB812D" opacity="1">C4–E4: 4 st</text>
+<ellipse cx="820.5" cy="843.0" rx="262.26" ry="46.5" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="609" y="812" width="423" height="62" rx="31.0" fill="url(#glass)" stroke="#AB812D" stroke-width="2" opacity="0.93"/><text x="820.5" y="854.16" font-family="'DejaVu Serif',serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#AB812D" opacity="1">E4–C5: 8 st</text>
+<text x="562" y="854" font-family="'DejaVu Sans',sans-serif" font-size="42" font-weight="bold" font-style="normal" text-anchor="middle" fill="#AB812D" opacity="1">↔</text>
+<text x="561" y="928" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#44374B" opacity="1">4 + 8 = 12 semitones   •   interval numbers sum to 9</text>
+<rect x="70" y="976" width="982" height="214" rx="28" fill="url(#glass)" stroke="#4F816B" stroke-width="1.4" opacity="0.88"/>
+<text x="561" y="1020" font-family="'DejaVu Sans',sans-serif" font-size="30" font-weight="bold" font-style="normal" text-anchor="middle" fill="#483448" opacity="1">Perfect Fourth ↔ Perfect Fifth</text>
+<ellipse cx="301.5" cy="1075.0" rx="262.26" ry="46.5" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="90" y="1044" width="423" height="62" rx="31.0" fill="url(#glass)" stroke="#4F816B" stroke-width="2" opacity="0.93"/><text x="301.5" y="1086.16" font-family="'DejaVu Serif',serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#4F816B" opacity="1">C4–F4: 5 st</text>
+<ellipse cx="820.5" cy="1075.0" rx="262.26" ry="46.5" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="609" y="1044" width="423" height="62" rx="31.0" fill="url(#glass)" stroke="#4F816B" stroke-width="2" opacity="0.93"/><text x="820.5" y="1086.16" font-family="'DejaVu Serif',serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#4F816B" opacity="1">F4–C5: 7 st</text>
+<text x="562" y="1086" font-family="'DejaVu Sans',sans-serif" font-size="42" font-weight="bold" font-style="normal" text-anchor="middle" fill="#4F816B" opacity="1">↔</text>
+<text x="561" y="1160" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#44374B" opacity="1">5 + 7 = 12 semitones   •   interval numbers sum to 9</text>
+<ellipse cx="561" cy="1290" rx="485" ry="60" fill="url(#goldwash)" opacity="0.66" stroke="none" stroke-width="1"/>
+<ellipse cx="561.0" cy="1293.0" rx="553.04" ry="55.5" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="115" y="1256" width="892" height="74" rx="37.0" fill="url(#glass)" stroke="#5366A0" stroke-width="2" opacity="0.93"/><text x="561.0" y="1306.32" font-family="'DejaVu Serif',serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#5366A0" opacity="1">Inversion moves the lower note up an octave.</text></svg>

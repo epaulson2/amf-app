@@ -31,3 +31,6 @@ See `P4-LEDGER.md` for the 40-line ledger. Batch 2: 13/13 REPLACE (verified). Ba
 
 ## G3 correction delta (2026-11-09)
 See `G3-LEDGER.md`. 5 of 14 published (IP-10, support_02/09/13/14), 9 HOLD with defects listed. V03/G2 remain open for IP-11/12. Evidence `after-g3/`.
+
+## G3 fix round (2026-11-09)
+All 9 held assets repaired and published (14/14 G3). V03/G2 (IP-10–12 flat art) closed. See `G3-LEDGER.md`, `after-g3b/`, `g3-fix/`. Remaining: deploy.

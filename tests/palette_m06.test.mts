@@ -76,5 +76,7 @@ test('M10 G3: served IP-10 card is the verified G3 file; support art files exist
   assert.ok(ill['IP-01'].corrected && !ill['IP-01'].g3, 'IP-01 remains the corrected M09 derivative')
   const man = JSON.parse(src('docs/m10/zip-receipt/g3.manifest.json')).entries
   for (const id of ['support_02_interval_palette_overview', 'support_09_plogger_lens_guide', 'support_13_unison_vs_octave', 'support_14_one_distance_two_spellings']) assert.equal(hx(`public/soundscape/resources/interval-palette/support-v1/${id}.png`), man.find((e: any) => e.id === id).png_sha256, id)
-  assert.equal(hx('public/soundscape/resources/interval-palette/illustrated-v2/g3/IP-10.png'), man.find((e: any) => e.id === 'IP-10').png_sha256)
+  const served = JSON.parse(src('docs/m10/g3-fix/served-hashes.json'))
+  for (const f of Object.keys(served.support)) assert.equal(hx(`public/soundscape/resources/interval-palette/support-v1/${f}`), served.support[f], f)
+  for (const n of [10, 11, 12]) assert.equal(hx(`public/soundscape/resources/interval-palette/illustrated-v2/g3/IP-${n}.png`), ill[`IP-${n}`].sha256_served)
 })

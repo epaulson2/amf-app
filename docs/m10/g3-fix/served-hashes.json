@@ -1,0 +1,22 @@
+{
+ "note": "served support-art hashes; 04,05,06,07,08,10,12 and IP-10..12 regenerated from the G3 generator with defect patches",
+ "support": {
+  "support_11_two_counts_one_name.png": "880b40bf7a105bcb655cf4ee5022c7ce241ba99730799ed293f86f12637ae4f1",
+  "support_06_minor_vs_major_sixth.png": "9f5002bb9d309332710e0f5f3801791dce264cd5d2df269d4426ab2097c03208",
+  "support_04_minor_vs_major_second.png": "a35dc2e941ff7943e4ae9d59ea2c636dcdd1880fe419de1073b0f06eefba34ba",
+  "support_02_interval_palette_overview.png": "b378802a1df06bad5e4ebb6b90249b91dff89ee736f1454ebc5603da334b3805",
+  "support_13_unison_vs_octave.png": "6a9ba0f7f7bf8208291e270a3dcc8fe017ffec6fd5cf5716b38896446c7481c3",
+  "support_09_plogger_lens_guide.png": "d2a494f78c009a5ef2002613c4d48a8268d8320aada54ea7133977fdcdcc1bd7",
+  "support_08_inversion_guide.png": "0516b9526dba21020f2c4b5819226a8f0f8252c6017a53a7a3bbae51895f890a",
+  "support_10_register_and_range.png": "e48abf1417b685d1f9e1ae6fe3b442ef0745113d6babe46e3c6c0fd61a6b700f",
+  "support_07_seventh_comparison.png": "402fc7b9f4d2f345fe0079be847e3ce615c12316d32aaf70f974f535cec68fea",
+  "support_14_one_distance_two_spellings.png": "83f311d50b477b35d3d5e8f6fbd2a03f3ac46f0c68b8e2e96e293c2d9b98edf0",
+  "support_12_melodic_and_harmonic.png": "7957eaaf088e867c7e98f7b90729eed66b651ca4db17fc63de655f762fca4270",
+  "support_05_minor_vs_major_third.png": "a786a7004b9936a76b2f13354d75860089784a48df277a2dcacb9550d8a5f9d9"
+ },
+ "cards": {
+  "IP-10": "ca86236714426318a26feac7c9c3fd87ae7206df8ce0f361886d9c6f9e6804f6",
+  "IP-11": "9bf0cba00f646afd83d8a98c38e48f271687b42c9da471684af112c3db01c478",
+  "IP-12": "93ad8f35c56ea42c51c6fa957fd16b7c1f7b92f885946878a4297fa1af363353"
+ }
+}

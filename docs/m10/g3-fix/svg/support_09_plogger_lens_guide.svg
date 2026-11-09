@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1122" height="1402" viewBox="0 0 1122 1402" role="img">
+<title>The Plogger Lens</title><desc>A historical three-factor classification—not an acoustic measurement</desc>
+<defs>
+ <radialGradient id="wash"><stop offset="0%" stop-color="#5366A0" stop-opacity=".075"/><stop offset="72%" stop-color="#5366A0" stop-opacity=".018"/><stop offset="100%" stop-color="#5366A0" stop-opacity="0"/></radialGradient>
+ <radialGradient id="goldwash"><stop offset="0%" stop-color="#F7DCB7" stop-opacity=".60"/><stop offset="100%" stop-color="#F7DCB7" stop-opacity="0"/></radialGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="48%" stop-color="#FCF6EF" stop-opacity=".86"/><stop offset="100%" stop-color="#EBDFEC" stop-opacity=".64"/></linearGradient>
+ <linearGradient id="goldline"><stop offset="0" stop-color="#FFF3C1"/><stop offset=".52" stop-color="#CD9A51"/><stop offset="1" stop-color="#FBDAA2"/></linearGradient>
+ <linearGradient id="shimmer"><stop offset="0" stop-color="#5366A0" stop-opacity=".36"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".75"/><stop offset="1" stop-color="#5366A0" stop-opacity=".27"/></linearGradient>
+ </defs>
+<ellipse cx="280" cy="240" rx="330" ry="160" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="890" cy="315" rx="280" ry="230" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="320" cy="715" rx="290" ry="330" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="850" cy="970" rx="320" ry="380" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="500" cy="1250" rx="480" ry="250" fill="url(#wash)" opacity="0.9" stroke="none" stroke-width="1"/>
+<ellipse cx="720" cy="230" rx="320" ry="130" fill="url(#goldwash)" opacity="0.62" stroke="none" stroke-width="1"/>
+<ellipse cx="220" cy="1070" rx="260" ry="155" fill="url(#goldwash)" opacity="0.62" stroke="none" stroke-width="1"/>
+<ellipse cx="740" cy="1310" rx="270" ry="140" fill="url(#goldwash)" opacity="0.62" stroke="none" stroke-width="1"/>
+<path d="M 100 87 C 276 62, 380 102, 531 72 S 864 92, 1010 63" stroke="#C39F70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.52"/>
+<ellipse cx="140.0" cy="380.0" rx="155.0" ry="45.0" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="15" y="350" width="250" height="60" rx="30.0" fill="url(#glass)" stroke="#5366A0" stroke-width="2" opacity="0.93"/><text x="140.0" y="390.8" font-family="'DejaVu Serif',serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#5366A0" opacity="1">SHAPE</text>
+<text x="135" y="440" font-family="'DejaVu Serif',serif" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle" fill="#59465E" opacity="1">Jagged / Rounded / Straight</text>
+<ellipse cx="555.0" cy="380.0" rx="155.0" ry="45.0" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="430" y="350" width="250" height="60" rx="30.0" fill="url(#glass)" stroke="#5366A0" stroke-width="2" opacity="0.93"/><text x="555.0" y="390.8" font-family="'DejaVu Serif',serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#5366A0" opacity="1">SHADOW</text>
+<text x="550" y="440" font-family="'DejaVu Serif',serif" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle" fill="#59465E" opacity="1">Fundamental / Both / Octave</text>
+<ellipse cx="923.0" cy="380.0" rx="155.0" ry="45.0" fill="url(#wash)" opacity="0.76" stroke="none" stroke-width="1"/><rect x="798" y="350" width="250" height="60" rx="30.0" fill="url(#glass)" stroke="#5366A0" stroke-width="2" opacity="0.93"/><text x="923.0" y="390.8" font-family="'DejaVu Serif',serif" font-size="27" font-weight="bold" font-style="normal" text-anchor="middle" fill="#5366A0" opacity="1">FILL</text>
+<text x="918" y="440" font-family="'DejaVu Serif',serif" font-size="20" font-weight="normal" font-style="normal" text-anchor="middle" fill="#59465E" opacity="1">Dark / Light / Neutral / Half</text>
+<rect x="54" y="492" width="1012" height="66" rx="20" fill="#4D3B63" stroke="none" stroke-width="1" opacity="0.95"/>
+<text x="90" y="538" font-family="'DejaVu Serif',serif" font-size="25" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF" opacity="1">st</text>
+<text x="180" y="538" font-family="'DejaVu Serif',serif" font-size="25" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF" opacity="1">interval</text>
+<text x="405" y="538" font-family="'DejaVu Serif',serif" font-size="25" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF" opacity="1">shape</text>
+<text x="620" y="538" font-family="'DejaVu Serif',serif" font-size="25" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF" opacity="1">shadow direction</text>
+<text x="875" y="538" font-family="'DejaVu Serif',serif" font-size="25" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF" opacity="1">fill</text>
+<rect x="56" y="574" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.86"/>
+<ellipse cx="104" cy="599" rx="22" ry="21" fill="#C25562" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="608" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">1</text>
+<text x="226" y="608" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">m2</text>
+<text x="431" y="608" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Jagged</text>
+<text x="660" y="608" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Fundamental</text>
+<text x="899" y="608" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Dark</text>
+<rect x="56" y="628" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.68"/>
+<ellipse cx="104" cy="653" rx="22" ry="21" fill="#C17D41" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="662" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">2</text>
+<text x="226" y="662" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">M2</text>
+<text x="431" y="662" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Jagged</text>
+<text x="660" y="662" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Fundamental</text>
+<text x="899" y="662" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Light</text>
+<rect x="56" y="682" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.86"/>
+<ellipse cx="104" cy="707" rx="22" ry="21" fill="#8964A4" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="716" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">3</text>
+<text x="226" y="716" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">m3</text>
+<text x="431" y="716" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Rounded</text>
+<text x="660" y="716" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Fundamental</text>
+<text x="899" y="716" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Dark</text>
+<rect x="56" y="736" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.68"/>
+<ellipse cx="104" cy="761" rx="22" ry="21" fill="#AB812D" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="770" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">4</text>
+<text x="226" y="770" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">M3</text>
+<text x="431" y="770" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Rounded</text>
+<text x="660" y="770" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Fundamental</text>
+<text x="899" y="770" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Light</text>
+<rect x="56" y="790" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.86"/>
+<ellipse cx="104" cy="815" rx="22" ry="21" fill="#4F816B" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="824" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">5</text>
+<text x="226" y="824" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">P4</text>
+<text x="431" y="824" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Straight</text>
+<text x="660" y="824" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Fundamental</text>
+<text x="899" y="824" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Dark</text>
+<rect x="56" y="844" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.68"/>
+<ellipse cx="104" cy="869" rx="22" ry="21" fill="#5366A0" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="878" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">6</text>
+<text x="226" y="878" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">TT</text>
+<text x="431" y="878" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Straight</text>
+<text x="660" y="878" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Both</text>
+<text x="899" y="878" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Neutral</text>
+<rect x="56" y="898" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.86"/>
+<ellipse cx="104" cy="923" rx="22" ry="21" fill="#347B97" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="932" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">7</text>
+<text x="226" y="932" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">P5</text>
+<text x="431" y="932" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Straight</text>
+<text x="660" y="932" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Octave</text>
+<text x="899" y="932" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Light</text>
+<rect x="56" y="952" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.68"/>
+<ellipse cx="104" cy="977" rx="22" ry="21" fill="#A95E86" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="986" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">8</text>
+<text x="226" y="986" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">m6</text>
+<text x="431" y="986" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Rounded</text>
+<text x="660" y="986" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Octave</text>
+<text x="899" y="986" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Dark</text>
+<rect x="56" y="1006" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.86"/>
+<ellipse cx="104" cy="1031" rx="22" ry="21" fill="#B47752" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="1040" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">9</text>
+<text x="226" y="1040" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">M6</text>
+<text x="431" y="1040" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Rounded</text>
+<text x="660" y="1040" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Octave</text>
+<text x="899" y="1040" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Half</text>
+<rect x="56" y="1060" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.68"/>
+<ellipse cx="104" cy="1085" rx="22" ry="21" fill="#367C79" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="1094" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">10</text>
+<text x="226" y="1094" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">m7</text>
+<text x="431" y="1094" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Jagged</text>
+<text x="660" y="1094" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Octave</text>
+<text x="899" y="1094" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Light</text>
+<rect x="56" y="1114" width="1010" height="50" rx="12" fill="url(#glass)" stroke="none" stroke-width="1" opacity="0.86"/>
+<ellipse cx="104" cy="1139" rx="22" ry="21" fill="#7978B3" opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="104" y="1148" font-family="'DejaVu Serif',serif" font-size="23" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF" opacity="1">11</text>
+<text x="226" y="1148" font-family="'DejaVu Serif',serif" font-size="24" font-weight="normal" font-style="normal" text-anchor="middle" fill="#34283D" opacity="1">M7</text>
+<text x="431" y="1148" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Jagged</text>
+<text x="660" y="1148" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Octave</text>
+<text x="899" y="1148" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="normal" text-anchor="middle" fill="#48374E" opacity="1">Dark</text>
+<text x="561" y="1210" font-family="'DejaVu Serif',serif" font-size="24" font-weight="bold" font-style="normal" text-anchor="middle" fill="#634C61" opacity="1">Plogger brackets 1–11 only; unison (0) and octave (12) are N/A.</text>
+<text x="561" y="1265" font-family="'DejaVu Serif',serif" font-size="23" font-weight="normal" font-style="italic" text-anchor="middle" fill="#76596E" opacity="1">Historic teaching lens; consult the exact source diagram for full definitions.</text></svg>
