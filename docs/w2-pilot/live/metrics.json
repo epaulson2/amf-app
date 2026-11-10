@@ -1,0 +1,857 @@
+[
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 3251,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 326,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1400,
+  "firstTryTop": 1998,
+  "recapTop": 2289,
+  "w": 320,
+  "step": 1,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=2#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 4091,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 429,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1383,
+  "firstTryTop": 2034,
+  "recapTop": 3117,
+  "w": 320,
+  "step": 2,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=3#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 4065,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 413,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1509,
+  "firstTryTop": 2434,
+  "recapTop": 3045,
+  "w": 320,
+  "step": 3,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=4#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 4340,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 467,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1226,
+  "firstTryTop": 2681,
+  "recapTop": 3326,
+  "w": 320,
+  "step": 4,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=5#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 4744,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 519,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1492,
+  "firstTryTop": 2634,
+  "recapTop": 3741,
+  "w": 320,
+  "step": 5,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=6#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 4329,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 518,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1480,
+  "firstTryTop": 2230,
+  "recapTop": 3199,
+  "w": 320,
+  "step": 6,
+  "doors": 1,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=7#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 4578,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 544,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1652,
+  "firstTryTop": 2523,
+  "recapTop": 3378,
+  "w": 320,
+  "step": 7,
+  "doors": 1,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=8#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 5077,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 483,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 879,
+  "firstTryTop": 2992,
+  "recapTop": 3811,
+  "w": 320,
+  "step": 8,
+  "doors": 2,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=9#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 3407,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 342,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 884,
+  "recapTop": 2161,
+  "w": 320,
+  "step": 9,
+  "doors": 2,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=10#lesson-step"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 2429,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 224,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "w": 320,
+  "step": 10,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2b"
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "h": 3309,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "w": 320,
+  "step": "sheet"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 2888,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 326,
+  "svgs": [
+   {
+    "w": 348,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1235,
+  "firstTryTop": 1823,
+  "recapTop": 2057,
+  "w": 390,
+  "step": 1,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=2#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 3602,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 429,
+  "svgs": [
+   {
+    "w": 358,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1219,
+  "firstTryTop": 1890,
+  "recapTop": 2713,
+  "w": 390,
+  "step": 2,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=3#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 3595,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 413,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1286,
+  "firstTryTop": 2182,
+  "recapTop": 2706,
+  "w": 390,
+  "step": 3,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=4#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 3953,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 467,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1121,
+  "firstTryTop": 2523,
+  "recapTop": 3053,
+  "w": 390,
+  "step": 4,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=5#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 4243,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 519,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1329,
+  "firstTryTop": 2424,
+  "recapTop": 3343,
+  "w": 390,
+  "step": 5,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=6#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 3791,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 518,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1288,
+  "firstTryTop": 1988,
+  "recapTop": 2755,
+  "w": 390,
+  "step": 6,
+  "doors": 1,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=7#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 4061,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 544,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1438,
+  "firstTryTop": 2294,
+  "recapTop": 2976,
+  "w": 390,
+  "step": 7,
+  "doors": 1,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=8#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 4610,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 483,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 750,
+  "firstTryTop": 2815,
+  "recapTop": 3461,
+  "w": 390,
+  "step": 8,
+  "doors": 2,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=9#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 3028,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 342,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 786,
+  "recapTop": 1895,
+  "w": 390,
+  "step": 9,
+  "doors": 2,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=10#lesson-step"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 2163,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 224,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "w": 390,
+  "step": 10,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2b"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "h": 3232,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 318,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "w": 390,
+  "step": "sheet"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 2624,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 326,
+  "svgs": [
+   {
+    "w": 348,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1169,
+  "firstTryTop": 1713,
+  "recapTop": 1896,
+  "w": 1280,
+  "step": 1,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=2#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 3290,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 429,
+  "svgs": [
+   {
+    "w": 480,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1173,
+  "firstTryTop": 1910,
+  "recapTop": 2562,
+  "w": 1280,
+  "step": 2,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=3#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 3252,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 413,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1221,
+  "firstTryTop": 2096,
+  "recapTop": 2523,
+  "w": 1280,
+  "step": 3,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=4#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 3524,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 467,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1099,
+  "firstTryTop": 2332,
+  "recapTop": 2796,
+  "w": 1280,
+  "step": 4,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=5#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 3700,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 519,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1234,
+  "firstTryTop": 2279,
+  "recapTop": 2972,
+  "w": 1280,
+  "step": 5,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=6#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 3278,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 518,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1221,
+  "firstTryTop": 1828,
+  "recapTop": 2421,
+  "w": 1280,
+  "step": 6,
+  "doors": 1,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=7#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 3129,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 544,
+  "svgs": [
+   {
+    "w": 233,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 233,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1313,
+  "firstTryTop": 1755,
+  "recapTop": 2273,
+  "w": 1280,
+  "step": 7,
+  "doors": 1,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=8#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 3199,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 492,
+  "svgs": [
+   {
+    "w": 283,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 283,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 283,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 829,
+  "firstTryTop": 1690,
+  "recapTop": 2215,
+  "w": 1280,
+  "step": 8,
+  "doors": 2,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=9#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 2646,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 342,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 836,
+  "recapTop": 1693,
+  "w": 1280,
+  "step": 9,
+  "doors": 2,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2a?step=10#lesson-step"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 1941,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 224,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "w": 1280,
+  "step": 10,
+  "doors": 0,
+  "next": "/curriculum/soundscape-path/week-2/lesson-2b"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "h": 2333,
+  "mediaElements": 0,
+  "buttons": 7,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 318,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "w": 1280,
+  "step": "sheet"
+ }
+]

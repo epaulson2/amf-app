@@ -18,3 +18,8 @@ Branch `feat/ajourne-w2-2a-pilot-20261109` (continuing from `8c94a25`). Real rou
 
 ## NOT VERIFIED
 Screen reader, real phone, 200% text, contrast, physical printing, door sources beyond V2 status labels.
+
+## Deployed and verified live
+`deploy/release.sh` from this worktree at `3817f281ce1af2a3a0c2624437156fa9da51a4c2`. `readlink -f /srv/amf-site/current` is `/srv/amf-site/releases/3817f281ce1af2a3a0c2624437156fa9da51a4c2`. Rollback target (previous release, still on disk): `/srv/amf-site/releases/c752630092e8c0eb815ba410db9efcb358389733`.
+Live HTTP 200: `/curriculum/soundscape-path/week-2/lesson-2a` (also `?step=5`, `?step=9`), `/week-2/lesson-2a/practice-sheet`, `/week-2`, `/week-2/lesson-2b`.
+The same gate (`cap.py`) run against the live host: 33 pages, no failures; screenshots in `docs/w2-pilot/live/shots/` (phone 320 and 390, desktop 1280), metrics in `docs/w2-pilot/live/metrics.json`.
