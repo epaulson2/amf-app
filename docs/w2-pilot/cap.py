@@ -1,8 +1,8 @@
-"""Targeted browser gate for the Week 2 Lesson 2A pilot. Usage: python cap.py BASE_URL OUT_DIR
+"""Targeted browser gate for the production Week 2 Lesson 2A. Usage: python cap.py BASE_URL OUT_DIR
 Records separate fields (mediaElements, buttons, audioScripts) and exits 1 if any gate fails."""
 import json, sys
 from playwright.sync_api import sync_playwright
-B = sys.argv[1].rstrip('/') + '/curriculum/soundscape-path/preview/w2-2a'
+B = sys.argv[1].rstrip('/') + '/curriculum/soundscape-path/week-2/lesson-2a'
 O = sys.argv[2].rstrip('/') + '/'
 SPOIL = {2: ['major third', 'minor third', 'perfect fourth', 'major second', 'semitone'], 3: ['major third', 'minor third', 'perfect fourth', 'major second'], 4: ['major third', 'minor third', 'perfect fourth', 'major second'], 5: ['major second', 'perfect fourth of', 'c4 to f4 is a perfect', 'b3', 'five semitones'], 6: ['major second']}
 JS = """()=>{
@@ -18,6 +18,7 @@ JS = """()=>{
   svgs:q('svg.w2-svg').map(s=>({w:Math.round(s.getBoundingClientRect().width),t:!!s.querySelector('title'),d:!!s.querySelector('desc')})),
   firstSvgTop:top(document.querySelector('.m4-step svg.w2-svg')),firstTryTop:top(document.querySelector('.m4-try')),recapTop:top(q('.m4-reading').find(e=>/^recap/i.test(e.innerText))),
   text:(scope.innerText+' '+q('svg.w2-svg title,svg.w2-svg desc').map(x=>x.textContent).join(' ')).toLowerCase()}}"""
+DOORS = {6: 1, 7: 1, 8: 2, 9: 2}
 res, fails = [], []
 with sync_playwright() as p:
     br = p.chromium.launch()
@@ -36,6 +37,13 @@ with sync_playwright() as p:
                     if term in txt: fails.append(f'{w} {s} spoiler "{term}"')
                 if r['firstSvgTop'] is not None and r['firstTryTop'] is not None and r['firstSvgTop'] > r['firstTryTop']: fails.append(f'{w} {s} diagram after exercise')
                 if r['firstSvgTop'] is not None and r['recapTop'] is not None and r['firstSvgTop'] > r['recapTop']: fails.append(f'{w} {s} diagram after recap')
+            if isinstance(s, int):
+                nd = pg.locator('.m4-stepdoors details').count()
+                if nd != DOORS.get(s, 0): fails.append(f'{w} {s} doors {nd} != {DOORS.get(s, 0)}')
+                nxt = pg.locator('.m4-step .m4-nav a.is-primary').first.get_attribute('href')
+                want = f'?step={s + 1}' if s < 10 else '/lesson-2b'
+                if want not in (nxt or ''): fails.append(f'{w} {s} next link {nxt}')
+                r['doors'] = nd; r['next'] = nxt
             res.append(r)
             if (isinstance(s, int) and s in (2, 4, 5, 7)) or s == 'sheet': pg.screenshot(path=f'{O}shots/s{s}_{w}.png', full_page=True)
     br.close()

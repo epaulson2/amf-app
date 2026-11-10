@@ -1,19 +1,7 @@
-import { Keys, letterCount, noteName } from './Diagrams'
+import { Keys } from './Diagrams'
+import { noteName, changeFacts as sheetFacts } from '@/lib/soundscape/week2/lesson2a-facts'
 
 // Lesson 2A practice sheet. Static and print-friendly: no script, no audio. Every note, letter count and semitone count is computed from MIDI numbers.
-const START = { lo: 60, up: 64 }
-const CHANGES = [
-  { id: 1, text: 'Hold C4. Change E4 to F4.', lo: 60, up: 65, moved: 'upper' },
-  { id: 2, text: 'Hold E4. Change C4 to B3.', lo: 59, up: 64, moved: 'lower' },
-  { id: 3, text: 'Hold E4. Change C4 to D4.', lo: 62, up: 64, moved: 'lower' },
-] as const
-const NAME: Record<number, string> = { 2: 'major second', 5: 'perfect fourth' }
-export const sheetFacts = CHANGES.map(c => {
-  const semis = c.up - c.lo
-  const from = c.moved === 'upper' ? c.up - START.up : c.lo - START.lo
-  return { ...c, semis, letters: letterCount(c.lo, c.up), name: NAME[semis], dir: from > 0 ? 'up' : 'down', by: Math.abs(from) }
-})
-
 const Fill = ({ children }: { children: string }) => <label>{children}{children.endsWith("?") ? "" : ":"} <span className="line" /></label>
 
 export default function PracticeSheet() {

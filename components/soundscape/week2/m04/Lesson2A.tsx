@@ -1,15 +1,13 @@
 import type { ReactNode } from 'react'
-import { Stepper, Row, Lead, Reading, Try, Notice, Caveat, Aside, type StepSpec } from '../m04/kit'
+import { Stepper, Row, Lead, Reading, Try, Notice, Caveat, Aside, type StepSpec } from '../../m04/kit'
 import { BASE } from '@/lib/soundscape/course'
 import { Keys, Voices, TwoVoices } from './Diagrams'
 
-// Lesson 2A pilot. Copy is W2_FINAL_CONTENT_LESSON_2A_MANUSCRIPT_V2 (2026-11-07), learner copy only.
+// Lesson 2A (production). Copy is W2_FINAL_CONTENT_LESSON_2A_MANUSCRIPT_V2 (2026-11-07), learner copy only.
 // Own instrument only: nothing here plays sound. Exact diagrams are generated from MIDI numbers (see Diagrams.tsx). No raster art.
-export const PILOT_PATH = `${BASE}/preview/w2-2a`
-export const LESSON_2A_STEPS = [
-  'Where we are', 'Two notes, two voices', 'How far apart? Count the letters', 'Count the semitones', 'Two counts, one name: major and minor',
-  'One stays, one moves: the upper voice', 'The foundation can travel', 'Three changes, one beginning', 'Make three little changes', 'What you learned, and what comes next',
-]
+export const LESSON_PATH = `${BASE}/week-2/lesson-2a`
+import { LESSON_2A_STEPS } from '@/lib/soundscape/course-nav'
+export { LESSON_2A_STEPS }
 
 const Fig = ({ children, cap }: { children: ReactNode; cap: ReactNode }) => <figure className="w2-fig">{children}<figcaption className="m4-cap">{cap}</figcaption></figure>
 const Legend = () => <p className="w2-legend"><span className="w2-key w2-key--lo" aria-hidden="true" /> circle = lower voice · <span className="w2-key w2-key--up" aria-hidden="true" /> square = upper voice</p>
@@ -194,7 +192,7 @@ const steps: StepSpec[] = [
       <p>Listen back to all three. Which would you use in a slow ambient piece? There is no correct answer, and nobody is going to score you. You are free to hear something completely different from the words we use for these intervals.</p>
       <p>Why did we measure all this? When you choose a note for your music, you do not have to guess at its effect. You can find a lower pitch, find a second pitch, and measure the distance. You can then change one note and leave the other alone. The measurement helps you <strong>repeat and describe</strong> a sound. Your ears and your taste choose whether to keep it.</p>
       <Caveat><strong>What to keep.</strong> You can keep three short sketches, and a little two-line drawing if you like. The lesson does not record, upload or grade anything.</Caveat>
-      <Try label="Prefer paper?"><p><a href={`${PILOT_PATH}/practice-sheet`}>Open the printable practice sheet</a>. It has your starting pair, three change cards to fill in, and a place to draw the two lines. It makes no sound; you play on your own instrument.</p></Try>
+      <Try label="Prefer paper?"><p><a href={`${LESSON_PATH}/practice-sheet`}>Open the printable practice sheet</a>. It has your starting pair, three change cards to fill in, and a place to draw the two lines. It makes no sound; you play on your own instrument.</p></Try>
       <Wrapup recap="Three variations from one beginning, made by you." bridge="In the last step, we gather everything together." />
       {doorBox('Musical Worlds', <Aside title="Georgia: a musical conversation above the bass"><p>Georgian polyphonic singing includes several regional traditions that bring distinct vocal parts together. One important approach, associated with the eastern region of Kakheti, is described as polyphonic dialogue over a bass background. The voices do not simply move as identical blocks. Separate lines interact. As you listen, notice whether a lower part seems to continue or return while others make their own turns. This is living music with its own social and historical meaning. It is not a Western counterpoint worksheet, and no single recording shows every regional style.</p><p><em>Listen:</em> <ExtLink href="https://ich.unesco.org/en/video/41554">UNESCO video page</ExtLink> and the <ExtLink href="https://www.youtube.com/watch?v=rg8xrdbnH8E">same video on UNESCO&apos;s channel</ExtLink>. <em>Context:</em> <ExtLink href="https://ich.unesco.org/en/lists?RL=00008">UNESCO lists</ExtLink>.</p><p><em>Try:</em> Record a lower note that stays, then improvise a different upper path against it. This is an original exercise inspired by a broad idea. It is not an imitation of Georgian singing.</p></Aside>)}
       {doorBox('Paint What You Hear', <Aside title="Stillness and movement"><p>Give the lower note a shape or color that can stay. Now draw or paint the upper note as a moving line. Try three versions: one where the upper voice rises, one where the lower voice descends, and one where the two draw closer together. Does the picture help you notice which voice caused the change?</p><p><em>Try:</em> Make a tiny before-and-after picture with paint, pencil, collage or any digital tool. There is no correct color for a perfect fourth.</p><p><em>Privacy:</em> Keep your painting in your own studio. You do not need to upload it.</p></Aside>)}
@@ -206,18 +204,17 @@ const steps: StepSpec[] = [
       <p>We built four of these on the keyboard. C4 to E4 is a <strong>major third</strong> (three letters, four semitones). E4 to G4 is a <strong>minor third</strong> (three letters, three semitones). C4 to F4 is a <strong>perfect fourth</strong> (four letters, five semitones). D4 to E4 is a <strong>major second</strong> (two letters, two semitones). We also found that B3 to E4 is a perfect fourth too, with different notes.</p>
       <p>When one voice holds and the other moves, that is <strong>oblique motion</strong>. It can be the upper voice or the lower voice that moves.</p>
       <Notice>An interval has a name and a measurable distance. But the way you move into it becomes part of the story.</Notice>
-      <p><a href={`${PILOT_PATH}/practice-sheet`}>Open the printable practice sheet</a></p>
+      <p><a href={`${LESSON_PATH}/practice-sheet`}>Open the printable practice sheet</a></p>
       <Lead>Next: Lesson 2B. Last time, one voice stayed. In 2B, both voices are free, and we find the patterns in their journey.</Lead>
     </Row>
   ) },
 ]
 
-export default function Lesson2APilot({ step }: { step: number | 'all' }) {
+export default function Lesson2A({ step }: { step: number | 'all' }) {
   return (
     <>
-      <p className="w2-banner" role="note"><strong>Pilot preview, not live.</strong> Lesson 2A rebuilt on the Week 1 stepper from the V2 manuscript. Own instrument only; this page makes no sound. For founder review.</p>
       <Stepper
-        basePath={PILOT_PATH} eyebrow="Week 2 · Lesson 1 of 3" title="Hold One Voice, Let the Other Explore"
+        basePath={LESSON_PATH} eyebrow="Week 2 · Lesson 1 of 3" title="Hold One Voice, Let the Other Explore"
         deck={<>Two notes can make one beautiful sound. But each note can also have a life of its own.</>}
         steps={steps} current={step} lessonCode="2A"
         prevLesson={{ href: `${BASE}/week-2`, label: 'Week 2 overview' }} nextLesson={{ href: `${BASE}/week-2/lesson-2b`, label: 'Lesson 2B' }}

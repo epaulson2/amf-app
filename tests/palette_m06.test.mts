@@ -33,8 +33,9 @@ test('redesigned Palette has no audio engine, no music controls, no client music
   assert.match(src('components/soundscape/m06/HashOpen.tsx'), /'use client'/)
   for (const p of ['IPF-card-04', 'IPF-sheet-04', 'IPF-proof-C-map']) assert.doesNotMatch(svg(p), /<script|<audio|\son[a-z]+=/i)
 })
-test('Week 2 lesson code and the legacy compact palette are untouched; old route anchors preserved', () => {
-  assert.match(src('components/soundscape/week2/Lesson2A.tsx'), /CompactPalette/)
+test('Lesson 2A (V2) has no in-lesson palette, only an optional pointer; old route anchors preserved', () => {
+  assert.doesNotMatch(src('components/soundscape/week2/m04/Lesson2A.tsx'), /CompactPalette/)
+  assert.match(src('components/soundscape/week2/m04/Lesson2A.tsx'), /interval-palette#ip-04/)
   assert.ok(page.includes('id={r.anchor}'))
 })
 

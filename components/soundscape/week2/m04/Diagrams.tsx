@@ -2,9 +2,9 @@ import { useId, type ReactNode } from 'react'
 
 // Exact music diagrams for the Week 2 pilot. Every position is computed from MIDI numbers (B3=59, C4=60 ... G4=67), nothing is hand-placed or painted.
 // Static server-rendered SVG: no audio, no script. Lower voice = circle, upper voice = square (shape, not colour, carries the meaning).
+import { noteName } from '@/lib/soundscape/week2/lesson2a-facts'
 const NAMES = ['C', 'C♯', 'D', 'D♯', 'E', 'F', 'F♯', 'G', 'G♯', 'A', 'A♯', 'B']
 const BLACK = new Set([1, 3, 6, 8, 10])
-export const noteName = (m: number) => `${NAMES[m % 12]}${Math.floor(m / 12) - 1}`
 const isBlack = (m: number) => BLACK.has(m % 12)
 
 const INK = '#4a3b47'
@@ -131,11 +131,4 @@ export function TwoVoices({ title, desc }: { title: string; desc: string }) {
       })}
     </svg>
   )
-}
-
-/** Letter count between two notes, counting both ends (C4 to E4 = 3). White keys only. */
-export const letterCount = (a: number, b: number) => {
-  const L = [0, 0, 1, 1, 2, 3, 3, 4, 4, 5, 5, 6]
-  const idx = (m: number) => Math.floor(m / 12) * 7 + L[m % 12]
-  return idx(b) - idx(a) + 1
 }
