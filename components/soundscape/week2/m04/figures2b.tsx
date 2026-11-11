@@ -55,7 +55,7 @@ export const s6a = () => {
 }
 /** Step 6, second figure: clearly NOT one of the five. */
 export const s6b = () => (
-  <Fig cap="Illustration only, not one of the five changes: both voices rise by two semitones, so the interval keeps its size (4 and 4). That is parallel in this course."><Voices panels={[P('Not one of the five: parallel', M.C4, M.E4, M.D4, M.Fs4, 'major third, 4', 'major third, 4', { accent: identityHex(4), moves: { lo: '+2', up: '+2' } })]} title="Parallel illustration: C4 + E4 to D4 + F sharp 4" desc="Illustration, not one of the lesson's five changes. Lower voice rises two semitones from C4 to D4. Upper voice rises two semitones from E4 to F sharp 4. The interval stays a major third of four semitones." /></Fig>
+  <Fig cap="Illustration only, not one of the five changes: both voices rise by two semitones, so the interval keeps its size (4 and 4). That is parallel in this course."><Voices panels={[P('Illustration: parallel', M.C4, M.E4, M.D4, M.Fs4, 'major third, 4', 'major third, 4', { accent: identityHex(4), moves: { lo: '+2', up: '+2' } })]} title="Parallel illustration: C4 + E4 to D4 + F sharp 4" desc="Illustration, not one of the lesson's five changes. Lower voice rises two semitones from C4 to D4. Upper voice rises two semitones from E4 to F sharp 4. The interval stays a major third of four semitones." /></Fig>
 )
 
 /** Step 8: five panels, one per locked case. */
