@@ -68,3 +68,20 @@ Browser gate `docs/w2-pilot/cap_lesson.py` against the live host at 320/390/1280
 - Door sources: Musical Worlds (UNESCO) still needs a human click; Smithsonian pages returned 403 to automated checks earlier.
 - Screen reader, real phone, 200% text, colour contrast measurement and physical printing are NOT VERIFIED.
 - The legacy `lesson-2a/b/c.json`, `teaching.json`, `visual-copy.json` and `week2/Parts.tsx` remain in the repo, unused by the routes.
+
+## Batch 2: the 10 supplied infographics (preview on the real site) — AWAITING FOUNDER VISUAL ACCEPTANCE
+
+Source: Drive folder `1kh6Rv0qtMS7TTyumHyUA0R11n_kshilp` (Week 2 Batch 2 - 10 Infographics - Review 2026-11-11), pulled read-only with `~/qcr-tools/amf-shared-assets/pull_w2_batch2.py` (separate script/inbox; the earlier pull is untouched). 22 files accepted, 0 rejected (20 PNG + contact sheet + ZIP). The 20 PNGs are byte-identical to the ZIP's PNGs and match all 20 hashes in its MANIFEST.json; all are RGBA with real alpha. Contact sheet, ZIP, SVGs and the Nov 10 drafts are not on the site. Site hashes: `batch2-SHA256SUMS.txt`.
+
+| Stem (desktop + phone) | Where |
+|---|---|
+| W2-2A-P01_three_changes_practice | 2A step 9 (sheet route unchanged, avoids duplicate) |
+| W2-2B-01_three_motion_families | 2B step 4 (replaces native 3-family figure) |
+| W2-2B-02_contrary_tritone | 2B step 5, after the diminished-fifth explanation (native C4–F♯4 comparison kept) |
+| W2-2B-03_similar_minor_third | 2B step 6 (replaces native similar panel; native parallel illustration kept) |
+| W2-2B-04a…04e | 2B step 8, each behind its own "Show example N" button; not mounted or requested until opened (replaces native 5-panel figure) |
+| W2-2B-P01_two_voice_conversation_practice | 2B practice sheet (replaces blank-lanes drawing) and a reference in step 10 |
+
+Code `f9e08a2`; release `f9e08a2c4beb5e38ecbe275f616f7b31065f7fd1`; rollback = previous release `6fea990ef2507f534681758c2b5291bf8d0ba95a` (still on disk). Checks: tsc clean, build, 32/32 scoped tests, `cap_batch2.py` and `cap_lesson.py` on the live host at 320/390/1280 + print: no failures, one art request per slot, correct phone/desktop variant, no backing, no overflow, no audio. Screenshots: `live-b2/shots/` (`b2_2b_s8_before_*`, `b2_2b_s8_after_*`). 2C untouched.
+
+Open: the 2B step 8 table (V2 text) already prints the answers above the reveals; phone images render at about 0.4–0.5x native (320 px: 0.39–0.40x), so small labels need founder judgment; plural "+1 semitones" in the 04 images (cosmetic, for ChatGPT); not verified: screen reader, real phone, contrast, physical print.

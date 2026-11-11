@@ -1,0 +1,860 @@
+[
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 326,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1400,
+  "firstTryTop": 1998,
+  "recapTop": 2289,
+  "h1": "Where we are",
+  "w": 320,
+  "step": 1,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 429,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1383,
+  "firstTryTop": 2034,
+  "recapTop": 3117,
+  "h1": "Two notes, two voices",
+  "w": 320,
+  "step": 2,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 413,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1509,
+  "firstTryTop": 2434,
+  "recapTop": 3045,
+  "h1": "How far apart? Count the letters",
+  "w": 320,
+  "step": 3,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 467,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1226,
+  "firstTryTop": 2681,
+  "recapTop": 3326,
+  "h1": "Count the semitones",
+  "w": 320,
+  "step": 4,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 519,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1492,
+  "firstTryTop": 2634,
+  "recapTop": 3741,
+  "h1": "Two counts, one name: major and minor",
+  "w": 320,
+  "step": 5,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 518,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1480,
+  "firstTryTop": 2230,
+  "recapTop": 3199,
+  "h1": "One stays, one moves: the upper voice",
+  "w": 320,
+  "step": 6,
+  "lesson": "2a",
+  "doors": 1
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 544,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1652,
+  "firstTryTop": 2523,
+  "recapTop": 3378,
+  "h1": "The foundation can travel",
+  "w": 320,
+  "step": 7,
+  "lesson": "2a",
+  "doors": 1
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 483,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 879,
+  "firstTryTop": 2992,
+  "recapTop": 3811,
+  "h1": "Three changes, one beginning",
+  "w": 320,
+  "step": 8,
+  "lesson": "2a",
+  "doors": 2
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 342,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 884,
+  "recapTop": 2663,
+  "h1": "Make three little changes",
+  "w": 320,
+  "step": 9,
+  "lesson": "2a",
+  "doors": 2
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 224,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "What you learned, and what comes next",
+  "w": 320,
+  "step": 10,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "",
+  "w": 320,
+  "step": "sheet",
+  "lesson": "2a"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 326,
+  "svgs": [
+   {
+    "w": 348,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1235,
+  "firstTryTop": 1823,
+  "recapTop": 2057,
+  "h1": "Where we are",
+  "w": 390,
+  "step": 1,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 429,
+  "svgs": [
+   {
+    "w": 358,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1219,
+  "firstTryTop": 1890,
+  "recapTop": 2713,
+  "h1": "Two notes, two voices",
+  "w": 390,
+  "step": 2,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 413,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1286,
+  "firstTryTop": 2182,
+  "recapTop": 2706,
+  "h1": "How far apart? Count the letters",
+  "w": 390,
+  "step": 3,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 467,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1121,
+  "firstTryTop": 2523,
+  "recapTop": 3053,
+  "h1": "Count the semitones",
+  "w": 390,
+  "step": 4,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 519,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1329,
+  "firstTryTop": 2424,
+  "recapTop": 3343,
+  "h1": "Two counts, one name: major and minor",
+  "w": 390,
+  "step": 5,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 518,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1288,
+  "firstTryTop": 1988,
+  "recapTop": 2755,
+  "h1": "One stays, one moves: the upper voice",
+  "w": 390,
+  "step": 6,
+  "lesson": "2a",
+  "doors": 1
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 544,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1438,
+  "firstTryTop": 2294,
+  "recapTop": 2976,
+  "h1": "The foundation can travel",
+  "w": 390,
+  "step": 7,
+  "lesson": "2a",
+  "doors": 1
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 483,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 750,
+  "firstTryTop": 2815,
+  "recapTop": 3461,
+  "h1": "Three changes, one beginning",
+  "w": 390,
+  "step": 8,
+  "lesson": "2a",
+  "doors": 2
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 342,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 786,
+  "recapTop": 2514,
+  "h1": "Make three little changes",
+  "w": 390,
+  "step": 9,
+  "lesson": "2a",
+  "doors": 2
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 224,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "What you learned, and what comes next",
+  "w": 390,
+  "step": 10,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 318,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "",
+  "w": 390,
+  "step": "sheet",
+  "lesson": "2a"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 326,
+  "svgs": [
+   {
+    "w": 348,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1169,
+  "firstTryTop": 1713,
+  "recapTop": 1896,
+  "h1": "Where we are",
+  "w": 1280,
+  "step": 1,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 429,
+  "svgs": [
+   {
+    "w": 480,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1173,
+  "firstTryTop": 1910,
+  "recapTop": 2562,
+  "h1": "Two notes, two voices",
+  "w": 1280,
+  "step": 2,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 413,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1221,
+  "firstTryTop": 2096,
+  "recapTop": 2523,
+  "h1": "How far apart? Count the letters",
+  "w": 1280,
+  "step": 3,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 467,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1099,
+  "firstTryTop": 2332,
+  "recapTop": 2796,
+  "h1": "Count the semitones",
+  "w": 1280,
+  "step": 4,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 519,
+  "svgs": [
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 234,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1234,
+  "firstTryTop": 2279,
+  "recapTop": 2972,
+  "h1": "Two counts, one name: major and minor",
+  "w": 1280,
+  "step": 5,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 518,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1221,
+  "firstTryTop": 1828,
+  "recapTop": 2421,
+  "h1": "One stays, one moves: the upper voice",
+  "w": 1280,
+  "step": 6,
+  "lesson": "2a",
+  "doors": 1
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 544,
+  "svgs": [
+   {
+    "w": 233,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 233,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1313,
+  "firstTryTop": 1755,
+  "recapTop": 2273,
+  "h1": "The foundation can travel",
+  "w": 1280,
+  "step": 7,
+  "lesson": "2a",
+  "doors": 1
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 492,
+  "svgs": [
+   {
+    "w": 283,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 283,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 283,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 829,
+  "firstTryTop": 1690,
+  "recapTop": 2215,
+  "h1": "Three changes, one beginning",
+  "w": 1280,
+  "step": 8,
+  "lesson": "2a",
+  "doors": 2
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 342,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 836,
+  "recapTop": 2274,
+  "h1": "Make three little changes",
+  "w": 1280,
+  "step": 9,
+  "lesson": "2a",
+  "doors": 2
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 224,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "What you learned, and what comes next",
+  "w": 1280,
+  "step": 10,
+  "lesson": "2a",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 318,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "",
+  "w": 1280,
+  "step": "sheet",
+  "lesson": "2a"
+ }
+]

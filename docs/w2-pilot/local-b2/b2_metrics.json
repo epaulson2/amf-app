@@ -1,0 +1,122 @@
+[
+ {
+  "tag": "2a s9 320px",
+  "src": "W2-2A-P01_three_changes_practice.phone.png",
+  "rendered": "288x480",
+  "scale": 0.4
+ },
+ {
+  "tag": "2b s4 320px",
+  "src": "W2-2B-01_three_motion_families.phone.png",
+  "rendered": "288x471",
+  "scale": 0.39
+ },
+ {
+  "tag": "2b s5 320px",
+  "src": "W2-2B-02_contrary_tritone.phone.png",
+  "rendered": "288x342",
+  "scale": 0.4
+ },
+ {
+  "tag": "2b s6 320px",
+  "src": "W2-2B-03_similar_minor_third.phone.png",
+  "rendered": "288x342",
+  "scale": 0.4
+ },
+ {
+  "tag": "2b s10 320px",
+  "src": "W2-2B-P01_two_voice_conversation_practice.phone.png",
+  "rendered": "288x416",
+  "scale": 0.4
+ },
+ {
+  "tag": "2b s8 after-all 320px",
+  "sizes": [
+   "288x328",
+   "288x328",
+   "288x328",
+   "288x328",
+   "288x328"
+  ]
+ },
+ {
+  "tag": "2a s9 390px",
+  "src": "W2-2A-P01_three_changes_practice.phone.png",
+  "rendered": "358x597",
+  "scale": 0.5
+ },
+ {
+  "tag": "2b s4 390px",
+  "src": "W2-2B-01_three_motion_families.phone.png",
+  "rendered": "358x585",
+  "scale": 0.48
+ },
+ {
+  "tag": "2b s5 390px",
+  "src": "W2-2B-02_contrary_tritone.phone.png",
+  "rendered": "358x425",
+  "scale": 0.5
+ },
+ {
+  "tag": "2b s6 390px",
+  "src": "W2-2B-03_similar_minor_third.phone.png",
+  "rendered": "358x425",
+  "scale": 0.5
+ },
+ {
+  "tag": "2b s10 390px",
+  "src": "W2-2B-P01_two_voice_conversation_practice.phone.png",
+  "rendered": "358x517",
+  "scale": 0.5
+ },
+ {
+  "tag": "2b s8 after-all 390px",
+  "sizes": [
+   "358x408",
+   "358x408",
+   "358x408",
+   "358x408",
+   "358x408"
+  ]
+ },
+ {
+  "tag": "2a s9 1280px",
+  "src": "W2-2A-P01_three_changes_practice.desktop.png",
+  "rendered": "736x558",
+  "scale": 0.63
+ },
+ {
+  "tag": "2b s4 1280px",
+  "src": "W2-2B-01_three_motion_families.desktop.png",
+  "rendered": "878x269",
+  "scale": 0.66
+ },
+ {
+  "tag": "2b s5 1280px",
+  "src": "W2-2B-02_contrary_tritone.desktop.png",
+  "rendered": "878x348",
+  "scale": 0.7
+ },
+ {
+  "tag": "2b s6 1280px",
+  "src": "W2-2B-03_similar_minor_third.desktop.png",
+  "rendered": "878x348",
+  "scale": 0.7
+ },
+ {
+  "tag": "2b s10 1280px",
+  "src": "W2-2B-P01_two_voice_conversation_practice.desktop.png",
+  "rendered": "878x562",
+  "scale": 0.7
+ },
+ {
+  "tag": "2b s8 after-all 1280px",
+  "sizes": [
+   "878x274",
+   "878x274",
+   "878x274",
+   "878x274",
+   "878x274"
+  ]
+ }
+]

@@ -1,0 +1,785 @@
+[
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 230,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1492,
+  "recapTop": 1754,
+  "h1": "Where we are",
+  "w": 320,
+  "step": 1,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1332,
+  "firstTryTop": 1853,
+  "recapTop": 2428,
+  "h1": "Two lines, each with a path",
+  "w": 320,
+  "step": 2,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 275,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1062,
+  "firstTryTop": null,
+  "recapTop": 2279,
+  "h1": "Before we name it: two journeys",
+  "w": 320,
+  "step": 3,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 426,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 2408,
+  "recapTop": 3335,
+  "h1": "Three families of motion",
+  "w": 320,
+  "step": 4,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 702,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 2049,
+  "firstTryTop": 3652,
+  "recapTop": 4687,
+  "h1": "Moving apart: the tritone",
+  "w": 320,
+  "step": 5,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 591,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 2698,
+  "firstTryTop": 3101,
+  "recapTop": 3862,
+  "h1": "Moving together: similar motion, and the word \"parallel\"",
+  "w": 320,
+  "step": 6,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 295,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1540,
+  "recapTop": 2093,
+  "h1": "Two kinds of words",
+  "w": 320,
+  "step": 7,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 14,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 394,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 2727,
+  "recapTop": 3488,
+  "h1": "Five ways to change the same beginning",
+  "w": 320,
+  "step": 8,
+  "lesson": "2b",
+  "doors": 2
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 367,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1690,
+  "recapTop": 2330,
+  "h1": "Which voice changed the interval?",
+  "w": 320,
+  "step": 9,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 476,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 906,
+  "firstTryTop": 1999,
+  "recapTop": 3308,
+  "h1": "Draw a conversation",
+  "w": 320,
+  "step": 10,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 177,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "What you learned, and what comes next",
+  "w": 320,
+  "step": 11,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 320,
+  "cw": 320,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 210,
+  "svgs": [
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "",
+  "w": 320,
+  "step": "sheet",
+  "lesson": "2b"
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 230,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1230,
+  "recapTop": 1463,
+  "h1": "Where we are",
+  "w": 390,
+  "step": 1,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 358,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1108,
+  "firstTryTop": 1588,
+  "recapTop": 2077,
+  "h1": "Two lines, each with a path",
+  "w": 390,
+  "step": 2,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 275,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 914,
+  "firstTryTop": null,
+  "recapTop": 2101,
+  "h1": "Before we name it: two journeys",
+  "w": 390,
+  "step": 3,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 426,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 2182,
+  "recapTop": 2936,
+  "h1": "Three families of motion",
+  "w": 390,
+  "step": 4,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 702,
+  "svgs": [
+   {
+    "w": 318,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 288,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1850,
+  "firstTryTop": 3346,
+  "recapTop": 4151,
+  "h1": "Moving apart: the tritone",
+  "w": 390,
+  "step": 5,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 591,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 2382,
+  "firstTryTop": 2793,
+  "recapTop": 3409,
+  "h1": "Moving together: similar motion, and the word \"parallel\"",
+  "w": 390,
+  "step": 6,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 295,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1308,
+  "recapTop": 1803,
+  "h1": "Two kinds of words",
+  "w": 390,
+  "step": 7,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 14,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 394,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 2405,
+  "recapTop": 3051,
+  "h1": "Five ways to change the same beginning",
+  "w": 390,
+  "step": 8,
+  "lesson": "2b",
+  "doors": 2
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 367,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1430,
+  "recapTop": 1954,
+  "h1": "Which voice changed the interval?",
+  "w": 390,
+  "step": 9,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 476,
+  "svgs": [
+   {
+    "w": 358,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 761,
+  "firstTryTop": 1825,
+  "recapTop": 3091,
+  "h1": "Draw a conversation",
+  "w": 390,
+  "step": 10,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 177,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "What you learned, and what comes next",
+  "w": 390,
+  "step": 11,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 390,
+  "cw": 390,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 210,
+  "svgs": [
+   {
+    "w": 318,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "",
+  "w": 390,
+  "step": "sheet",
+  "lesson": "2b"
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 230,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1215,
+  "recapTop": 1398,
+  "h1": "Where we are",
+  "w": 1280,
+  "step": 1,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 370,
+  "svgs": [
+   {
+    "w": 480,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1048,
+  "firstTryTop": 1545,
+  "recapTop": 1935,
+  "h1": "Two lines, each with a path",
+  "w": 1280,
+  "step": 2,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 275,
+  "svgs": [
+   {
+    "w": 233,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 233,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 944,
+  "firstTryTop": null,
+  "recapTop": 1602,
+  "h1": "Before we name it: two journeys",
+  "w": 1280,
+  "step": 3,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 426,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1713,
+  "recapTop": 2304,
+  "h1": "Three families of motion",
+  "w": 1280,
+  "step": 4,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 702,
+  "svgs": [
+   {
+    "w": 233,
+    "t": true,
+    "d": true
+   },
+   {
+    "w": 233,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 1672,
+  "firstTryTop": 2487,
+  "recapTop": 3119,
+  "h1": "Moving apart: the tritone",
+  "w": 1280,
+  "step": 5,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 591,
+  "svgs": [
+   {
+    "w": 317,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 2016,
+  "firstTryTop": 2428,
+  "recapTop": 2892,
+  "h1": "Moving together: similar motion, and the word \"parallel\"",
+  "w": 1280,
+  "step": 6,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 295,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1261,
+  "recapTop": 1627,
+  "h1": "Two kinds of words",
+  "w": 1280,
+  "step": 7,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 14,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 405,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1804,
+  "recapTop": 2268,
+  "h1": "Five ways to change the same beginning",
+  "w": 1280,
+  "step": 8,
+  "lesson": "2b",
+  "doors": 2
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 367,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": 1212,
+  "recapTop": 1639,
+  "h1": "Which voice changed the interval?",
+  "w": 1280,
+  "step": 9,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 476,
+  "svgs": [
+   {
+    "w": 480,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": 834,
+  "firstTryTop": 1736,
+  "recapTop": 2843,
+  "h1": "Draw a conversation",
+  "w": 1280,
+  "step": 10,
+  "lesson": "2b",
+  "doors": 1
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 177,
+  "svgs": [],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "What you learned, and what comes next",
+  "w": 1280,
+  "step": 11,
+  "lesson": "2b",
+  "doors": 0
+ },
+ {
+  "sw": 1280,
+  "cw": 1280,
+  "mediaElements": 0,
+  "buttons": 9,
+  "audioScripts": 0,
+  "audioCtrl": 0,
+  "words": 210,
+  "svgs": [
+   {
+    "w": 318,
+    "t": true,
+    "d": true
+   }
+  ],
+  "firstSvgTop": null,
+  "firstTryTop": null,
+  "recapTop": null,
+  "h1": "",
+  "w": 1280,
+  "step": "sheet",
+  "lesson": "2b"
+ }
+]
