@@ -1,0 +1,510 @@
+{
+ "folder_id": "1Mlc0sZFlKqmrHOooHnv39R4v3jdN9Q8a",
+ "accepted": [
+  {
+   "name": "Ajourne_Week2_All_28_Individually_Named_Infographic_Drafts_v1.zip",
+   "sha256": "6c98122d393049fedc4b6f08b4430eed8e5bf091641edb4a6d8a8d9303ab497b",
+   "bytes": 9284319,
+   "type": "zip"
+  },
+  {
+   "name": "W2-2A-01_two_independent_voices.desktop.png",
+   "sha256": "584a7db81e46f308b4e26561568b6da9ccd20bbb37e46de2d125a8fd96639314",
+   "bytes": 1629842,
+   "type": "png",
+   "width": 1448,
+   "height": 1086
+  },
+  {
+   "name": "W2-2A-01_two_independent_voices.phone.png",
+   "sha256": "219a8aaf98f71149f321f4b76505448580135d6943e79008435bf676376d06d0",
+   "bytes": 1461917,
+   "type": "png",
+   "width": 941,
+   "height": 1672
+  },
+  {
+   "name": "W2-2A-02_letter_names_vs_semitone_moves.desktop.png",
+   "sha256": "18f8cf190609df7cfa106f0c6adf57c65ce83252d7b4ea6c86cbd2cc862bc366",
+   "bytes": 99354,
+   "type": "png",
+   "width": 1500,
+   "height": 880
+  },
+  {
+   "name": "W2-2A-02_letter_names_vs_semitone_moves.phone.png",
+   "sha256": "15fc5e5d3f7e2ff3dfb8bd792066c2a6bf3a1b64a9b1fbac7957caef155cb25a",
+   "bytes": 95912,
+   "type": "png",
+   "width": 780,
+   "height": 1400
+  },
+  {
+   "name": "W2-2A-03_major_vs_minor_third.desktop.png",
+   "sha256": "9e69dec5d46f8cee471cbbee76565018aee6d44df5b4ccc4b470e4cee73139d1",
+   "bytes": 1820598,
+   "type": "png",
+   "width": 1448,
+   "height": 1086
+  },
+  {
+   "name": "W2-2A-03_major_vs_minor_third.phone.png",
+   "sha256": "2b62070eb00c9c07fb1bd7cc2e2618d0f83d5b6b51aefa472bd4c999f971bff8",
+   "bytes": 1677304,
+   "type": "png",
+   "width": 941,
+   "height": 1672
+  },
+  {
+   "name": "W2-2A-P01_practice_sheet.desktop.png",
+   "sha256": "5fe4dc397623bf14a47608267790de195efc587bd4783cd377a45bb79e4a3a80",
+   "bytes": 74479,
+   "type": "png",
+   "width": 1500,
+   "height": 990
+  },
+  {
+   "name": "W2-2A-P01_practice_sheet.phone.png",
+   "sha256": "932d6c4d49c3ca4e4fd32d158b64f52f22cbdd864b9c6aa961467074effb1364",
+   "bytes": 67838,
+   "type": "png",
+   "width": 780,
+   "height": 1520
+  },
+  {
+   "name": "W2-2B-01_three_motion_families.desktop.png",
+   "sha256": "fa24a75d3eda132c020dbd8bec1a626c45b45ed9bb96084bfa94f9f962e09dfd",
+   "bytes": 82529,
+   "type": "png",
+   "width": 1500,
+   "height": 990
+  },
+  {
+   "name": "W2-2B-01_three_motion_families.phone.png",
+   "sha256": "b9cd2fb07210c7a2f598069c41557f290caa4d285a3b3ae7c6f460fc5c54c0d6",
+   "bytes": 96191,
+   "type": "png",
+   "width": 780,
+   "height": 1600
+  },
+  {
+   "name": "W2-2B-02_contrary_motion_diminished_fifth.desktop.png",
+   "sha256": "7801ffe8e3c977a3f0e2484b318cb556d473ae7ecd492e03cacf60a8b2b3cd7e",
+   "bytes": 98740,
+   "type": "png",
+   "width": 1500,
+   "height": 990
+  },
+  {
+   "name": "W2-2B-02_contrary_motion_diminished_fifth.phone.png",
+   "sha256": "f472a6149b6e925123da75b0a7d5abcab7663ba537afbeaee12b4c130ce36979",
+   "bytes": 86016,
+   "type": "png",
+   "width": 780,
+   "height": 1600
+  },
+  {
+   "name": "W2-2B-03_similar_motion_minor_third.desktop.png",
+   "sha256": "29e60d4d2eb377f63909f3b1c8b7ef615004623c94b422a4808554403496330e",
+   "bytes": 97497,
+   "type": "png",
+   "width": 1500,
+   "height": 990
+  },
+  {
+   "name": "W2-2B-03_similar_motion_minor_third.phone.png",
+   "sha256": "969574c750b2e3fad4384b2ade0bca89c6584f176337c47335883c3fd0feb316",
+   "bytes": 84306,
+   "type": "png",
+   "width": 780,
+   "height": 1600
+  },
+  {
+   "name": "W2-2B-04_five_transformations.desktop.png",
+   "sha256": "4bd86fdf6725be03f0b2904d15ec8b9e35606817987962d84b9abb31bb65342e",
+   "bytes": 107349,
+   "type": "png",
+   "width": 1500,
+   "height": 1220
+  },
+  {
+   "name": "W2-2B-04_five_transformations.phone.png",
+   "sha256": "b95be46a117e274611a15048b85dd753fc3849005c9847dd31e5c50889eda144",
+   "bytes": 132802,
+   "type": "png",
+   "width": 780,
+   "height": 2200
+  },
+  {
+   "name": "W2-2B-P01_practice_sheet.desktop.png",
+   "sha256": "00a063c1f8f23fd49350e4bc28aa01ea7d6f10edf90cb73bddef8276670b387f",
+   "bytes": 68843,
+   "type": "png",
+   "width": 1500,
+   "height": 990
+  },
+  {
+   "name": "W2-2B-P01_practice_sheet.phone.png",
+   "sha256": "1d11c1d112726d991d2a15add764f0df5ab487fa4d618c414b01a5d1259c2c39",
+   "bytes": 68657,
+   "type": "png",
+   "width": 780,
+   "height": 1520
+  },
+  {
+   "name": "W2-2C-01_two_voice_paths.desktop.png",
+   "sha256": "043c740f4bb8c2ecb3835646edb060b6577242a976eb152c1b38fe6eeb768ba2",
+   "bytes": 63409,
+   "type": "png",
+   "width": 1500,
+   "height": 1050
+  },
+  {
+   "name": "W2-2C-01_two_voice_paths.phone.png",
+   "sha256": "115a02f40e562a6e0c289243ec92f86459d80d047a669077265330c1bf05796b",
+   "bytes": 69143,
+   "type": "png",
+   "width": 780,
+   "height": 1720
+  },
+  {
+   "name": "W2-2C-02_held_C_upper_melody.desktop.png",
+   "sha256": "c90ad3a528d3eee51c2b8836a9af34a237eff14a96ab400b9ebe8681461bbf07",
+   "bytes": 89465,
+   "type": "png",
+   "width": 1500,
+   "height": 990
+  },
+  {
+   "name": "W2-2C-02_held_C_upper_melody.phone.png",
+   "sha256": "3231f55cc2d59ba04c0dedcf7b50dc341d3274ace02f2183dba0257d09a0e253",
+   "bytes": 107677,
+   "type": "png",
+   "width": 780,
+   "height": 1600
+  },
+  {
+   "name": "W2-2C-03_quiet_vs_moving_foundation.desktop.png",
+   "sha256": "23c5220c314068a0e5939a6f0f9e634597fb95d51212782861218adbb77a34dd",
+   "bytes": 86435,
+   "type": "png",
+   "width": 1500,
+   "height": 990
+  },
+  {
+   "name": "W2-2C-03_quiet_vs_moving_foundation.phone.png",
+   "sha256": "6ce7d1f42a9b20e1950b15074ad8e99789d922067ad4c01369582caa92152a69",
+   "bytes": 96708,
+   "type": "png",
+   "width": 780,
+   "height": 1600
+  },
+  {
+   "name": "W2-2C-04_paths_and_vertical_intervals.desktop.png",
+   "sha256": "73dc3200b8e2c7b88ffa65717ba6a29ed377482c38d549802570e1ac8d9782b9",
+   "bytes": 79793,
+   "type": "png",
+   "width": 1500,
+   "height": 1120
+  },
+  {
+   "name": "W2-2C-04_paths_and_vertical_intervals.phone.png",
+   "sha256": "4875e5b4a2319d75dd3e1b57a8df7b7bc6adb921862df0698236abfae0ec3d3b",
+   "bytes": 89264,
+   "type": "png",
+   "width": 780,
+   "height": 1900
+  },
+  {
+   "name": "W2-2C-P01_practice_sheet.desktop.png",
+   "sha256": "56bd344b84edcec531fc702e3358b0e4969a6b38b5d30a76babd63b6ff4ff3a4",
+   "bytes": 65263,
+   "type": "png",
+   "width": 1500,
+   "height": 990
+  },
+  {
+   "name": "W2-2C-P01_practice_sheet.phone.png",
+   "sha256": "922b2a40b519fb679a884ed17287f859b649d33e418d548a796ea5d0371ec8f5",
+   "bytes": 62751,
+   "type": "png",
+   "width": 780,
+   "height": 1520
+  }
+ ],
+ "rejected": [],
+ "zip_members": {
+  "Ajourne_Week2_All_28_Individually_Named_Infographic_Drafts_v1.zip": [
+   {
+    "member": "MANIFEST.json",
+    "bytes": 11666,
+    "sha256": "a11a7aa9d6595caff3559b48e5ab5d8106b7c03854253ebca8976e91602b5936"
+   },
+   {
+    "member": "W2-2A-01_two_independent_voices.desktop.png",
+    "bytes": 1629842,
+    "sha256": "584a7db81e46f308b4e26561568b6da9ccd20bbb37e46de2d125a8fd96639314"
+   },
+   {
+    "member": "W2-2A-01_two_independent_voices.phone.png",
+    "bytes": 1461917,
+    "sha256": "219a8aaf98f71149f321f4b76505448580135d6943e79008435bf676376d06d0"
+   },
+   {
+    "member": "W2-2A-02_letter_names_vs_semitone_moves.desktop.png",
+    "bytes": 96625,
+    "sha256": "f7555567170e169250850b3022c0af89765c6185da08edad9ca076a1baa8a3a2"
+   },
+   {
+    "member": "W2-2A-02_letter_names_vs_semitone_moves.desktop.svg",
+    "bytes": 8775,
+    "sha256": "fde443bacda251be63c4df69a672f188f3871e43242233ebff56ea4709b75ba7"
+   },
+   {
+    "member": "W2-2A-02_letter_names_vs_semitone_moves.phone.artist_reference.png",
+    "bytes": 1694380,
+    "sha256": "ccc813db7601cecb579b825c8f498d6d2d22761d31bc24d1e742452df0c4e3c5"
+   },
+   {
+    "member": "W2-2A-02_letter_names_vs_semitone_moves.phone.png",
+    "bytes": 93431,
+    "sha256": "119798a7b7290dd55a43e5eeea379bda696205bf1a3ac7b9a19c873591a74318"
+   },
+   {
+    "member": "W2-2A-02_letter_names_vs_semitone_moves.phone.svg",
+    "bytes": 8845,
+    "sha256": "b6e3989725bd6c0331b2b7075df312dc6482cbf336cfdfcec1962a076532f182"
+   },
+   {
+    "member": "W2-2A-03_major_vs_minor_third.desktop.png",
+    "bytes": 1820598,
+    "sha256": "9e69dec5d46f8cee471cbbee76565018aee6d44df5b4ccc4b470e4cee73139d1"
+   },
+   {
+    "member": "W2-2A-03_major_vs_minor_third.phone.png",
+    "bytes": 1677304,
+    "sha256": "2b62070eb00c9c07fb1bd7cc2e2618d0f83d5b6b51aefa472bd4c999f971bff8"
+   },
+   {
+    "member": "W2-2A-P01_practice_sheet.desktop.png",
+    "bytes": 74479,
+    "sha256": "5fe4dc397623bf14a47608267790de195efc587bd4783cd377a45bb79e4a3a80"
+   },
+   {
+    "member": "W2-2A-P01_practice_sheet.desktop.svg",
+    "bytes": 4590,
+    "sha256": "58d22cc22ca870f1469f0f195e57cde869ff412a29790875c6cf96cb62905b48"
+   },
+   {
+    "member": "W2-2A-P01_practice_sheet.phone.png",
+    "bytes": 67838,
+    "sha256": "932d6c4d49c3ca4e4fd32d158b64f52f22cbdd864b9c6aa961467074effb1364"
+   },
+   {
+    "member": "W2-2A-P01_practice_sheet.phone.svg",
+    "bytes": 4581,
+    "sha256": "8582717c52586da1999c6346876077971ffc5a6809abd4076f02820edee1b5be"
+   },
+   {
+    "member": "W2-2B-01_three_motion_families.desktop.png",
+    "bytes": 82529,
+    "sha256": "fa24a75d3eda132c020dbd8bec1a626c45b45ed9bb96084bfa94f9f962e09dfd"
+   },
+   {
+    "member": "W2-2B-01_three_motion_families.desktop.svg",
+    "bytes": 13836,
+    "sha256": "8be1c7efd1e7d84355bcd2fdd739d78a97d69218d10418758c3799ac7589c101"
+   },
+   {
+    "member": "W2-2B-01_three_motion_families.phone.png",
+    "bytes": 96191,
+    "sha256": "b9cd2fb07210c7a2f598069c41557f290caa4d285a3b3ae7c6f460fc5c54c0d6"
+   },
+   {
+    "member": "W2-2B-01_three_motion_families.phone.svg",
+    "bytes": 13818,
+    "sha256": "5d2671c78c9621c3a26bddea5e668a4a73e604c30a6a5c2481a09ee617190c43"
+   },
+   {
+    "member": "W2-2B-02_contrary_motion_diminished_fifth.desktop.png",
+    "bytes": 98740,
+    "sha256": "7801ffe8e3c977a3f0e2484b318cb556d473ae7ecd492e03cacf60a8b2b3cd7e"
+   },
+   {
+    "member": "W2-2B-02_contrary_motion_diminished_fifth.desktop.svg",
+    "bytes": 9285,
+    "sha256": "441e3c5095ccb670a5f6d01c0572f786c16bbd960fd6eb9fcfd08dc13becb4b2"
+   },
+   {
+    "member": "W2-2B-02_contrary_motion_diminished_fifth.phone.png",
+    "bytes": 86016,
+    "sha256": "f472a6149b6e925123da75b0a7d5abcab7663ba537afbeaee12b4c130ce36979"
+   },
+   {
+    "member": "W2-2B-02_contrary_motion_diminished_fifth.phone.svg",
+    "bytes": 8934,
+    "sha256": "5c94fbf128eeb3db6239965c3e3aeeca177245dd3ead30f7bc7b7cdf30abcfc3"
+   },
+   {
+    "member": "W2-2B-03_similar_motion_minor_third.desktop.png",
+    "bytes": 97497,
+    "sha256": "29e60d4d2eb377f63909f3b1c8b7ef615004623c94b422a4808554403496330e"
+   },
+   {
+    "member": "W2-2B-03_similar_motion_minor_third.desktop.svg",
+    "bytes": 9304,
+    "sha256": "1b63d52d7d78f7e6c82e17e8de5db6f7620e7d6748e9516c417ff7e04c656837"
+   },
+   {
+    "member": "W2-2B-03_similar_motion_minor_third.phone.png",
+    "bytes": 84306,
+    "sha256": "969574c750b2e3fad4384b2ade0bca89c6584f176337c47335883c3fd0feb316"
+   },
+   {
+    "member": "W2-2B-03_similar_motion_minor_third.phone.svg",
+    "bytes": 8938,
+    "sha256": "338f4a04a3808ae678e89ba09e29ab7192fbbf84200d0f868353da3a88c5c120"
+   },
+   {
+    "member": "W2-2B-04_five_transformations.desktop.png",
+    "bytes": 107349,
+    "sha256": "4bd86fdf6725be03f0b2904d15ec8b9e35606817987962d84b9abb31bb65342e"
+   },
+   {
+    "member": "W2-2B-04_five_transformations.desktop.svg",
+    "bytes": 20954,
+    "sha256": "34c6b615860bc1ec2943275a172df798258d93d28fc85198bcb1ae7ef5b419be"
+   },
+   {
+    "member": "W2-2B-04_five_transformations.phone.png",
+    "bytes": 132802,
+    "sha256": "b95be46a117e274611a15048b85dd753fc3849005c9847dd31e5c50889eda144"
+   },
+   {
+    "member": "W2-2B-04_five_transformations.phone.svg",
+    "bytes": 20976,
+    "sha256": "9dc81aaa4e5b03f06b52c45f65abf04a1ec531e89691c78e0597a5fca08db07f"
+   },
+   {
+    "member": "W2-2B-P01_practice_sheet.desktop.png",
+    "bytes": 68843,
+    "sha256": "00a063c1f8f23fd49350e4bc28aa01ea7d6f10edf90cb73bddef8276670b387f"
+   },
+   {
+    "member": "W2-2B-P01_practice_sheet.desktop.svg",
+    "bytes": 5127,
+    "sha256": "fde4c635e0f6333d51abf67c09ecd3128b7bf3446681edb83c46f8da9f0fcda6"
+   },
+   {
+    "member": "W2-2B-P01_practice_sheet.phone.png",
+    "bytes": 68657,
+    "sha256": "1d11c1d112726d991d2a15add764f0df5ab487fa4d618c414b01a5d1259c2c39"
+   },
+   {
+    "member": "W2-2B-P01_practice_sheet.phone.svg",
+    "bytes": 5116,
+    "sha256": "21c4f92561f6f3998f73e7378c7ae8da65223ee482f88fdf29da044a9a2541e0"
+   },
+   {
+    "member": "W2-2C-01_two_voice_paths.desktop.png",
+    "bytes": 63409,
+    "sha256": "043c740f4bb8c2ecb3835646edb060b6577242a976eb152c1b38fe6eeb768ba2"
+   },
+   {
+    "member": "W2-2C-01_two_voice_paths.desktop.svg",
+    "bytes": 7738,
+    "sha256": "738131214d66fdb371199c87f079e772975d202caee332e3f3a79c3b3a03bf64"
+   },
+   {
+    "member": "W2-2C-01_two_voice_paths.phone.png",
+    "bytes": 69143,
+    "sha256": "115a02f40e562a6e0c289243ec92f86459d80d047a669077265330c1bf05796b"
+   },
+   {
+    "member": "W2-2C-01_two_voice_paths.phone.svg",
+    "bytes": 7721,
+    "sha256": "ec01df004dfb5acb8b1e54624e67616a26a0672d0c8d585f3e7f6a2a30c391ca"
+   },
+   {
+    "member": "W2-2C-02_held_C_upper_melody.desktop.png",
+    "bytes": 89465,
+    "sha256": "c90ad3a528d3eee51c2b8836a9af34a237eff14a96ab400b9ebe8681461bbf07"
+   },
+   {
+    "member": "W2-2C-02_held_C_upper_melody.desktop.svg",
+    "bytes": 11149,
+    "sha256": "18dd9a0997fa1af83b23525f86961ce975bc2bd34b61af9bbb00a1fdba555760"
+   },
+   {
+    "member": "W2-2C-02_held_C_upper_melody.phone.png",
+    "bytes": 107677,
+    "sha256": "3231f55cc2d59ba04c0dedcf7b50dc341d3274ace02f2183dba0257d09a0e253"
+   },
+   {
+    "member": "W2-2C-02_held_C_upper_melody.phone.svg",
+    "bytes": 11044,
+    "sha256": "1d6c0421b37bff84fd516039fb475962f75cd41f96c94b2df9cee800f44f0784"
+   },
+   {
+    "member": "W2-2C-03_quiet_vs_moving_foundation.desktop.png",
+    "bytes": 86435,
+    "sha256": "23c5220c314068a0e5939a6f0f9e634597fb95d51212782861218adbb77a34dd"
+   },
+   {
+    "member": "W2-2C-03_quiet_vs_moving_foundation.desktop.svg",
+    "bytes": 8288,
+    "sha256": "857b687d43d2f17c6929bee3c030e19cd43ff83c040bc8ece20f641dc10df2ad"
+   },
+   {
+    "member": "W2-2C-03_quiet_vs_moving_foundation.phone.png",
+    "bytes": 96708,
+    "sha256": "6ce7d1f42a9b20e1950b15074ad8e99789d922067ad4c01369582caa92152a69"
+   },
+   {
+    "member": "W2-2C-03_quiet_vs_moving_foundation.phone.svg",
+    "bytes": 8695,
+    "sha256": "e0503e7218e17b9c33d735e648828f1da70b9a7af09323d5130a528769d98deb"
+   },
+   {
+    "member": "W2-2C-04_paths_and_vertical_intervals.desktop.png",
+    "bytes": 79793,
+    "sha256": "73dc3200b8e2c7b88ffa65717ba6a29ed377482c38d549802570e1ac8d9782b9"
+   },
+   {
+    "member": "W2-2C-04_paths_and_vertical_intervals.desktop.svg",
+    "bytes": 8490,
+    "sha256": "a314349a70361f5f6dc031880ce43e2fb8ef3623c453d9065aa94afd486f0bdf"
+   },
+   {
+    "member": "W2-2C-04_paths_and_vertical_intervals.phone.png",
+    "bytes": 89264,
+    "sha256": "4875e5b4a2319d75dd3e1b57a8df7b7bc6adb921862df0698236abfae0ec3d3b"
+   },
+   {
+    "member": "W2-2C-04_paths_and_vertical_intervals.phone.svg",
+    "bytes": 8528,
+    "sha256": "2e79fafe9376e461fdbfbc3793a2ccb2d54a0f0805bafe22ef23846df6005117"
+   },
+   {
+    "member": "W2-2C-P01_practice_sheet.desktop.png",
+    "bytes": 65263,
+    "sha256": "56bd344b84edcec531fc702e3358b0e4969a6b38b5d30a76babd63b6ff4ff3a4"
+   },
+   {
+    "member": "W2-2C-P01_practice_sheet.desktop.svg",
+    "bytes": 6452,
+    "sha256": "de5571d4b2d7a96241b7cf3f5bd3f61b9f045acb91a9661ba6061e2eec9c946e"
+   },
+   {
+    "member": "W2-2C-P01_practice_sheet.phone.png",
+    "bytes": 62751,
+    "sha256": "922b2a40b519fb679a884ed17287f859b649d33e418d548a796ea5d0371ec8f5"
+   },
+   {
+    "member": "W2-2C-P01_practice_sheet.phone.svg",
+    "bytes": 6439,
+    "sha256": "9efb2420b9b68e5d6dab4a1ebf6ae3ee8728cea4542afea30e9043176b5c8927"
+   }
+  ]
+ }
+}

@@ -1,0 +1,334 @@
+{
+  "version": "v1",
+  "status": "VISUAL_REVIEW_DRAFTS_ONLY",
+  "primary_png_count": 28,
+  "editable_svg_count": 24,
+  "artist_reference_count": 1,
+  "source_basis": "AMF V2 2B/2C lessons verified from repository, canonical Interval Palette colors and deterministic keyboard geometry",
+  "cautions": [
+    "Individual PNGs are independent source files: not contact sheets",
+    "2A-01 and 2A-03 image-generated keyboards still require native truth/geometry reconstruction before deployment",
+    "2A-02/2B/2C source diagrams are deterministic SVG, but all still need mobile compositing and artistic founder review",
+    "Nothing in this pack is deployed, approved by the founder or transferred to Claude automatically"
+  ],
+  "files": [
+    {
+      "name": "W2-2A-01_two_independent_voices.desktop.png",
+      "format": "png",
+      "size_bytes": 1629842,
+      "sha256": "584a7db81e46f308b4e26561568b6da9ccd20bbb37e46de2d125a8fd96639314"
+    },
+    {
+      "name": "W2-2A-01_two_independent_voices.phone.png",
+      "format": "png",
+      "size_bytes": 1461917,
+      "sha256": "219a8aaf98f71149f321f4b76505448580135d6943e79008435bf676376d06d0"
+    },
+    {
+      "name": "W2-2A-02_letter_names_vs_semitone_moves.desktop.png",
+      "format": "png",
+      "size_bytes": 96625,
+      "sha256": "f7555567170e169250850b3022c0af89765c6185da08edad9ca076a1baa8a3a2"
+    },
+    {
+      "name": "W2-2A-02_letter_names_vs_semitone_moves.desktop.svg",
+      "format": "svg",
+      "size_bytes": 8775,
+      "sha256": "fde443bacda251be63c4df69a672f188f3871e43242233ebff56ea4709b75ba7"
+    },
+    {
+      "name": "W2-2A-02_letter_names_vs_semitone_moves.phone.artist_reference.png",
+      "format": "png",
+      "size_bytes": 1694380,
+      "sha256": "ccc813db7601cecb579b825c8f498d6d2d22761d31bc24d1e742452df0c4e3c5"
+    },
+    {
+      "name": "W2-2A-02_letter_names_vs_semitone_moves.phone.png",
+      "format": "png",
+      "size_bytes": 93431,
+      "sha256": "119798a7b7290dd55a43e5eeea379bda696205bf1a3ac7b9a19c873591a74318"
+    },
+    {
+      "name": "W2-2A-02_letter_names_vs_semitone_moves.phone.svg",
+      "format": "svg",
+      "size_bytes": 8845,
+      "sha256": "b6e3989725bd6c0331b2b7075df312dc6482cbf336cfdfcec1962a076532f182"
+    },
+    {
+      "name": "W2-2A-03_major_vs_minor_third.desktop.png",
+      "format": "png",
+      "size_bytes": 1820598,
+      "sha256": "9e69dec5d46f8cee471cbbee76565018aee6d44df5b4ccc4b470e4cee73139d1"
+    },
+    {
+      "name": "W2-2A-03_major_vs_minor_third.phone.png",
+      "format": "png",
+      "size_bytes": 1677304,
+      "sha256": "2b62070eb00c9c07fb1bd7cc2e2618d0f83d5b6b51aefa472bd4c999f971bff8"
+    },
+    {
+      "name": "W2-2A-P01_practice_sheet.desktop.png",
+      "format": "png",
+      "size_bytes": 74479,
+      "sha256": "5fe4dc397623bf14a47608267790de195efc587bd4783cd377a45bb79e4a3a80"
+    },
+    {
+      "name": "W2-2A-P01_practice_sheet.desktop.svg",
+      "format": "svg",
+      "size_bytes": 4590,
+      "sha256": "58d22cc22ca870f1469f0f195e57cde869ff412a29790875c6cf96cb62905b48"
+    },
+    {
+      "name": "W2-2A-P01_practice_sheet.phone.png",
+      "format": "png",
+      "size_bytes": 67838,
+      "sha256": "932d6c4d49c3ca4e4fd32d158b64f52f22cbdd864b9c6aa961467074effb1364"
+    },
+    {
+      "name": "W2-2A-P01_practice_sheet.phone.svg",
+      "format": "svg",
+      "size_bytes": 4581,
+      "sha256": "8582717c52586da1999c6346876077971ffc5a6809abd4076f02820edee1b5be"
+    },
+    {
+      "name": "W2-2B-01_three_motion_families.desktop.png",
+      "format": "png",
+      "size_bytes": 82529,
+      "sha256": "fa24a75d3eda132c020dbd8bec1a626c45b45ed9bb96084bfa94f9f962e09dfd"
+    },
+    {
+      "name": "W2-2B-01_three_motion_families.desktop.svg",
+      "format": "svg",
+      "size_bytes": 13836,
+      "sha256": "8be1c7efd1e7d84355bcd2fdd739d78a97d69218d10418758c3799ac7589c101"
+    },
+    {
+      "name": "W2-2B-01_three_motion_families.phone.png",
+      "format": "png",
+      "size_bytes": 96191,
+      "sha256": "b9cd2fb07210c7a2f598069c41557f290caa4d285a3b3ae7c6f460fc5c54c0d6"
+    },
+    {
+      "name": "W2-2B-01_three_motion_families.phone.svg",
+      "format": "svg",
+      "size_bytes": 13818,
+      "sha256": "5d2671c78c9621c3a26bddea5e668a4a73e604c30a6a5c2481a09ee617190c43"
+    },
+    {
+      "name": "W2-2B-02_contrary_motion_diminished_fifth.desktop.png",
+      "format": "png",
+      "size_bytes": 98740,
+      "sha256": "7801ffe8e3c977a3f0e2484b318cb556d473ae7ecd492e03cacf60a8b2b3cd7e"
+    },
+    {
+      "name": "W2-2B-02_contrary_motion_diminished_fifth.desktop.svg",
+      "format": "svg",
+      "size_bytes": 9285,
+      "sha256": "441e3c5095ccb670a5f6d01c0572f786c16bbd960fd6eb9fcfd08dc13becb4b2"
+    },
+    {
+      "name": "W2-2B-02_contrary_motion_diminished_fifth.phone.png",
+      "format": "png",
+      "size_bytes": 86016,
+      "sha256": "f472a6149b6e925123da75b0a7d5abcab7663ba537afbeaee12b4c130ce36979"
+    },
+    {
+      "name": "W2-2B-02_contrary_motion_diminished_fifth.phone.svg",
+      "format": "svg",
+      "size_bytes": 8934,
+      "sha256": "5c94fbf128eeb3db6239965c3e3aeeca177245dd3ead30f7bc7b7cdf30abcfc3"
+    },
+    {
+      "name": "W2-2B-03_similar_motion_minor_third.desktop.png",
+      "format": "png",
+      "size_bytes": 97497,
+      "sha256": "29e60d4d2eb377f63909f3b1c8b7ef615004623c94b422a4808554403496330e"
+    },
+    {
+      "name": "W2-2B-03_similar_motion_minor_third.desktop.svg",
+      "format": "svg",
+      "size_bytes": 9304,
+      "sha256": "1b63d52d7d78f7e6c82e17e8de5db6f7620e7d6748e9516c417ff7e04c656837"
+    },
+    {
+      "name": "W2-2B-03_similar_motion_minor_third.phone.png",
+      "format": "png",
+      "size_bytes": 84306,
+      "sha256": "969574c750b2e3fad4384b2ade0bca89c6584f176337c47335883c3fd0feb316"
+    },
+    {
+      "name": "W2-2B-03_similar_motion_minor_third.phone.svg",
+      "format": "svg",
+      "size_bytes": 8938,
+      "sha256": "338f4a04a3808ae678e89ba09e29ab7192fbbf84200d0f868353da3a88c5c120"
+    },
+    {
+      "name": "W2-2B-04_five_transformations.desktop.png",
+      "format": "png",
+      "size_bytes": 107349,
+      "sha256": "4bd86fdf6725be03f0b2904d15ec8b9e35606817987962d84b9abb31bb65342e"
+    },
+    {
+      "name": "W2-2B-04_five_transformations.desktop.svg",
+      "format": "svg",
+      "size_bytes": 20954,
+      "sha256": "34c6b615860bc1ec2943275a172df798258d93d28fc85198bcb1ae7ef5b419be"
+    },
+    {
+      "name": "W2-2B-04_five_transformations.phone.png",
+      "format": "png",
+      "size_bytes": 132802,
+      "sha256": "b95be46a117e274611a15048b85dd753fc3849005c9847dd31e5c50889eda144"
+    },
+    {
+      "name": "W2-2B-04_five_transformations.phone.svg",
+      "format": "svg",
+      "size_bytes": 20976,
+      "sha256": "9dc81aaa4e5b03f06b52c45f65abf04a1ec531e89691c78e0597a5fca08db07f"
+    },
+    {
+      "name": "W2-2B-P01_practice_sheet.desktop.png",
+      "format": "png",
+      "size_bytes": 68843,
+      "sha256": "00a063c1f8f23fd49350e4bc28aa01ea7d6f10edf90cb73bddef8276670b387f"
+    },
+    {
+      "name": "W2-2B-P01_practice_sheet.desktop.svg",
+      "format": "svg",
+      "size_bytes": 5127,
+      "sha256": "fde4c635e0f6333d51abf67c09ecd3128b7bf3446681edb83c46f8da9f0fcda6"
+    },
+    {
+      "name": "W2-2B-P01_practice_sheet.phone.png",
+      "format": "png",
+      "size_bytes": 68657,
+      "sha256": "1d11c1d112726d991d2a15add764f0df5ab487fa4d618c414b01a5d1259c2c39"
+    },
+    {
+      "name": "W2-2B-P01_practice_sheet.phone.svg",
+      "format": "svg",
+      "size_bytes": 5116,
+      "sha256": "21c4f92561f6f3998f73e7378c7ae8da65223ee482f88fdf29da044a9a2541e0"
+    },
+    {
+      "name": "W2-2C-01_two_voice_paths.desktop.png",
+      "format": "png",
+      "size_bytes": 63409,
+      "sha256": "043c740f4bb8c2ecb3835646edb060b6577242a976eb152c1b38fe6eeb768ba2"
+    },
+    {
+      "name": "W2-2C-01_two_voice_paths.desktop.svg",
+      "format": "svg",
+      "size_bytes": 7738,
+      "sha256": "738131214d66fdb371199c87f079e772975d202caee332e3f3a79c3b3a03bf64"
+    },
+    {
+      "name": "W2-2C-01_two_voice_paths.phone.png",
+      "format": "png",
+      "size_bytes": 69143,
+      "sha256": "115a02f40e562a6e0c289243ec92f86459d80d047a669077265330c1bf05796b"
+    },
+    {
+      "name": "W2-2C-01_two_voice_paths.phone.svg",
+      "format": "svg",
+      "size_bytes": 7721,
+      "sha256": "ec01df004dfb5acb8b1e54624e67616a26a0672d0c8d585f3e7f6a2a30c391ca"
+    },
+    {
+      "name": "W2-2C-02_held_C_upper_melody.desktop.png",
+      "format": "png",
+      "size_bytes": 89465,
+      "sha256": "c90ad3a528d3eee51c2b8836a9af34a237eff14a96ab400b9ebe8681461bbf07"
+    },
+    {
+      "name": "W2-2C-02_held_C_upper_melody.desktop.svg",
+      "format": "svg",
+      "size_bytes": 11149,
+      "sha256": "18dd9a0997fa1af83b23525f86961ce975bc2bd34b61af9bbb00a1fdba555760"
+    },
+    {
+      "name": "W2-2C-02_held_C_upper_melody.phone.png",
+      "format": "png",
+      "size_bytes": 107677,
+      "sha256": "3231f55cc2d59ba04c0dedcf7b50dc341d3274ace02f2183dba0257d09a0e253"
+    },
+    {
+      "name": "W2-2C-02_held_C_upper_melody.phone.svg",
+      "format": "svg",
+      "size_bytes": 11044,
+      "sha256": "1d6c0421b37bff84fd516039fb475962f75cd41f96c94b2df9cee800f44f0784"
+    },
+    {
+      "name": "W2-2C-03_quiet_vs_moving_foundation.desktop.png",
+      "format": "png",
+      "size_bytes": 86435,
+      "sha256": "23c5220c314068a0e5939a6f0f9e634597fb95d51212782861218adbb77a34dd"
+    },
+    {
+      "name": "W2-2C-03_quiet_vs_moving_foundation.desktop.svg",
+      "format": "svg",
+      "size_bytes": 8288,
+      "sha256": "857b687d43d2f17c6929bee3c030e19cd43ff83c040bc8ece20f641dc10df2ad"
+    },
+    {
+      "name": "W2-2C-03_quiet_vs_moving_foundation.phone.png",
+      "format": "png",
+      "size_bytes": 96708,
+      "sha256": "6ce7d1f42a9b20e1950b15074ad8e99789d922067ad4c01369582caa92152a69"
+    },
+    {
+      "name": "W2-2C-03_quiet_vs_moving_foundation.phone.svg",
+      "format": "svg",
+      "size_bytes": 8695,
+      "sha256": "e0503e7218e17b9c33d735e648828f1da70b9a7af09323d5130a528769d98deb"
+    },
+    {
+      "name": "W2-2C-04_paths_and_vertical_intervals.desktop.png",
+      "format": "png",
+      "size_bytes": 79793,
+      "sha256": "73dc3200b8e2c7b88ffa65717ba6a29ed377482c38d549802570e1ac8d9782b9"
+    },
+    {
+      "name": "W2-2C-04_paths_and_vertical_intervals.desktop.svg",
+      "format": "svg",
+      "size_bytes": 8490,
+      "sha256": "a314349a70361f5f6dc031880ce43e2fb8ef3623c453d9065aa94afd486f0bdf"
+    },
+    {
+      "name": "W2-2C-04_paths_and_vertical_intervals.phone.png",
+      "format": "png",
+      "size_bytes": 89264,
+      "sha256": "4875e5b4a2319d75dd3e1b57a8df7b7bc6adb921862df0698236abfae0ec3d3b"
+    },
+    {
+      "name": "W2-2C-04_paths_and_vertical_intervals.phone.svg",
+      "format": "svg",
+      "size_bytes": 8528,
+      "sha256": "2e79fafe9376e461fdbfbc3793a2ccb2d54a0f0805bafe22ef23846df6005117"
+    },
+    {
+      "name": "W2-2C-P01_practice_sheet.desktop.png",
+      "format": "png",
+      "size_bytes": 65263,
+      "sha256": "56bd344b84edcec531fc702e3358b0e4969a6b38b5d30a76babd63b6ff4ff3a4"
+    },
+    {
+      "name": "W2-2C-P01_practice_sheet.desktop.svg",
+      "format": "svg",
+      "size_bytes": 6452,
+      "sha256": "de5571d4b2d7a96241b7cf3f5bd3f61b9f045acb91a9661ba6061e2eec9c946e"
+    },
+    {
+      "name": "W2-2C-P01_practice_sheet.phone.png",
+      "format": "png",
+      "size_bytes": 62751,
+      "sha256": "922b2a40b519fb679a884ed17287f859b649d33e418d548a796ea5d0371ec8f5"
+    },
+    {
+      "name": "W2-2C-P01_practice_sheet.phone.svg",
+      "format": "svg",
+      "size_bytes": 6439,
+      "sha256": "9efb2420b9b68e5d6dab4a1ebf6ae3ee8728cea4542afea30e9043176b5c8927"
+    }
+  ]
+}
