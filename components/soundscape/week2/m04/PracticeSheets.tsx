@@ -1,3 +1,4 @@
+import { Art } from './Art'
 import { Keys, BlankLanes } from './Diagrams'
 import { M } from '@/lib/soundscape/week2/lesson2a-facts'
 
@@ -15,8 +16,8 @@ export function Sheet2B() {
       <Keys from={M.C4} to={M.G4} kw={40} marks={[{ midi: M.C4, voice: 'lower', label: 'C4' }, { midi: M.E4, voice: 'upper', label: 'E4' }]} title="Reference keyboard, C4 to G4" desc="White keys from C4 up to G4. C4 is marked with a circle as the lower voice and E4 with a square as the upper voice." />
       <p style={{ fontSize: 14 }}>Circle = lower voice. Square = upper voice.</p>
       <h2>2. Draw your path (15 to 20 seconds)</h2>
-      <p>Write a note name in each box for each moment. Draw each voice as a line through time. Write the interval size between the lanes.</p>
-      <BlankLanes cols={6} title="Blank two-lane path sheet" desc="An upper lane and a lower lane, each divided into six moments, with blank boxes for note names. Nothing is filled in." />
+      <p>Sketch each voice as a line through time on the lanes below. Write a note name where a line changes, and the interval size at each moment underneath.</p>
+      <div className="w2-art w2-art--sheet"><Art stem="W2-2B-P01_two_voice_conversation_practice" alt="Practice page: draw a two-voice conversation. Two lanes, upper voice starting on E4 and lower voice starting on C4, over a timeline from 0 to 20 seconds, with empty dashed lines to sketch each voice." lazy={false} /></div>
       <p>Interval size at each moment: <Line w="3em" /> <Line w="3em" /> <Line w="3em" /> <Line w="3em" /> <Line w="3em" /> <Line w="3em" /></p>
       <h2>3. Name each move</h2>
       {[1, 2, 3, 4, 5].map(n => (

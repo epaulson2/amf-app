@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Art } from './Art'
 import { Stepper, Row, Lead, Reading, Try, Notice, Caveat, Aside, type StepSpec } from '../../m04/kit'
 import { BASE } from '@/lib/soundscape/course'
 import { Keys, Voices, TwoVoices, identityHex } from './Diagrams'
@@ -189,6 +190,7 @@ const steps: StepSpec[] = [
         </ol>
         <p>Each comparison can be only five to ten seconds long. Before you make each change, try hearing the new note in your head. Hum it or point to it on the keyboard first. Then play it and check yourself.</p>
       </Try>
+      <div className="w2-art w2-art--sheet"><Art stem="W2-2A-P01_three_changes_practice" alt="Practice page: try three little changes. Begin with C4 and E4. One: keep C4 and move E4 up one semitone. Two: keep E4 and move C4 down one semitone. Three: keep E4 and move C4 up a whole step. Each has blank lines for your new pair and what changed in the sound." /></div>
       <p>Listen back to all three. Which would you use in a slow ambient piece? There is no correct answer, and nobody is going to score you. You are free to hear something completely different from the words we use for these intervals.</p>
       <p>Why did we measure all this? When you choose a note for your music, you do not have to guess at its effect. You can find a lower pitch, find a second pitch, and measure the distance. You can then change one note and leave the other alone. The measurement helps you <strong>repeat and describe</strong> a sound. Your ears and your taste choose whether to keep it.</p>
       <Caveat><strong>What to keep.</strong> You can keep three short sketches, and a little two-line drawing if you like. The lesson does not record, upload or grade anything.</Caveat>

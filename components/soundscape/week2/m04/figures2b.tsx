@@ -79,3 +79,27 @@ export const s10 = () => (
 export const sheetLink = () => (
   <p className="m4-notice">Prefer paper? <a href="/curriculum/soundscape-path/week-2/lesson-2b/practice-sheet">Open the printable two-lane path sheet</a>. It makes no sound and has no answers on it.</p>
 )
+
+// ---- Batch 2 supplied artwork (review candidates, not final approval). Placed where the founder specified. ----
+import { Art } from './Art'
+import { ArtReveal } from './ArtReveal'
+const Pic = ({ children }: { children: React.ReactNode }) => <div className="w2-art">{children}</div>
+/** Step 4: the three movement families, after they are introduced. */
+export const a01 = () => <Pic><Art stem="W2-2B-01_three_motion_families" alt="Three motion families drawn as two voice paths that all start from C4 and E4. Oblique: C4 holds while E4 rises to F4. Contrary: C4 falls to B3 while E4 rises to F4. Similar: C4 rises to D4 while E4 rises to F4." /></Pic>
+/** Step 5: after the contrary motion and six semitones have been explained. */
+export const a02 = () => <Pic><Art stem="W2-2B-02_contrary_tritone" alt="Contrary motion. The lower voice falls from C4 to B3, minus one semitone. The upper voice rises from E4 to F4, plus one semitone. The resulting pair B3 and F4 is a diminished fifth, six semitones." /></Pic>
+/** Step 6: after similar motion is introduced. */
+export const a03 = () => <Pic><Art stem="W2-2B-03_similar_minor_third" alt="Similar motion. The lower voice rises from C4 to D4, plus two semitones. The upper voice rises from E4 to F4, plus one semitone. The resulting pair D4 and F4 is a minor third, three semitones." /></Pic>
+/** Step 8: five separate worked examples, each behind its own reveal. Never shown together on load. */
+export const a04set = () => (
+  <div className="w2-reveals">
+    <p className="w2-reveal-lead">Try each change on your own instrument first. Then open its example to check yourself.</p>
+    <ArtReveal n={1} label="hold C4, move E4" stem="W2-2B-04a_only_upper_rises" alt="Example 1, only the upper voice rises. C4 holds and E4 rises one semitone to F4. Oblique motion. The pair C4 and F4 is a perfect fourth, five semitones." />
+    <ArtReveal n={2} label="hold E4, move C4" stem="W2-2B-04b_only_lower_falls" alt="Example 2, only the lower voice falls. E4 holds and C4 falls one semitone to B3. Oblique motion. The pair B3 and E4 is a perfect fourth, five semitones." />
+    <ArtReveal n={3} label="hold E4, move C4" stem="W2-2B-04c_only_lower_rises" alt="Example 3, only the lower voice rises. E4 holds and C4 rises two semitones to D4. Oblique motion. The pair D4 and E4 is a major second, two semitones." />
+    <ArtReveal n={4} label="move both voices" stem="W2-2B-04d_both_move_apart" alt="Example 4, both voices move apart. C4 falls one semitone to B3 and E4 rises one semitone to F4. Contrary motion. The pair B3 and F4 is a diminished fifth, six semitones." />
+    <ArtReveal n={5} label="move both voices" stem="W2-2B-04e_both_rise" alt="Example 5, both voices rise. C4 rises two semitones to D4 and E4 rises one semitone to F4. Similar motion. The pair D4 and F4 is a minor third, three semitones." />
+  </div>
+)
+/** Step 10: the answer-free two-lane drawing page, shown as a reference for the practice. */
+export const aP01 = () => <Pic><Art stem="W2-2B-P01_two_voice_conversation_practice" alt="Practice page: draw a two-voice conversation. Two lanes, upper voice starting on E4 and lower voice starting on C4, over a timeline from 0 to 20 seconds, with empty dashed lines to sketch each voice and a blank line for which voice changed most." /></Pic>
