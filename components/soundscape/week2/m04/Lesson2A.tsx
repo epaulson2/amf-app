@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { Stepper, Row, Lead, Reading, Try, Notice, Caveat, Aside, type StepSpec } from '../../m04/kit'
 import { BASE } from '@/lib/soundscape/course'
-import { Keys, Voices, TwoVoices } from './Diagrams'
+import { Keys, Voices, TwoVoices, identityHex } from './Diagrams'
 
 // Lesson 2A (production). Copy is W2_FINAL_CONTENT_LESSON_2A_MANUSCRIPT_V2 (2026-11-07), learner copy only.
 // Own instrument only: nothing here plays sound. Exact diagrams are generated from MIDI numbers (see Diagrams.tsx). No raster art.
@@ -26,7 +26,7 @@ const ExtLink = ({ href, children }: { href: string; children: ReactNode }) => <
 const doorBox = (kind: string, children: ReactNode) => <div className="m4-stepdoors"><p>Optional side door · {kind}. Never required.</p>{children}</div>
 const Grid = ({ children }: { children: ReactNode }) => <div className="w2-grid">{children}</div>
 
-const P = (title: string, lo: number, up: number, lo2: number, up2: number, a: string, b: string) => ({ title, before: { lo, up }, after: { lo: lo2, up: up2 }, labelBefore: a, labelAfter: b })
+const P = (title: string, lo: number, up: number, lo2: number, up2: number, a: string, b: string) => ({ title, before: { lo, up }, after: { lo: lo2, up: up2 }, labelBefore: a, labelAfter: b, accent: identityHex(up2 - lo2) })
 
 const steps: StepSpec[] = [
   { short: LESSON_2A_STEPS[0], sub: 'Two notes can make one beautiful sound. But each note can also have a life of its own.', body: (
@@ -99,7 +99,7 @@ const steps: StepSpec[] = [
       <p>Now we can name both intervals. Take C4 to E4. It is a third by letters, and it measures four semitones. We call a third of <strong>four</strong> semitones a <strong>major third</strong>. Take E4 to G4. It is also a third by letters, but it measures <strong>three</strong> semitones. We call a third of three semitones a <strong>minor third</strong>.</p>
       <p>So the number and the size answer two different questions. The number asks how many letter names apart the notes are. The quality, which is the word <em>major</em> or <em>minor</em> or <em>perfect</em>, asks how large the interval is among the possibilities for that number.</p>
       <p>Here is a rule that will carry you through the whole week. Seconds, thirds, sixths and sevenths each come in two sizes, a wider one called <strong>major</strong> and a narrower one called <strong>minor</strong>. The two sizes differ by exactly one semitone. Fourths and fifths come in a different family. Their usual size is called <strong>perfect</strong>. We will meet a perfect fourth in the next step. You do not need to memorize a table. You only need the idea that the quality tells you the size.</p>
-      <div className="w2-inline"><Fig cap="Major third: 3 letters, 4 semitones."><Keys from={60} to={64} kw={48} marks={[{ midi: 60, voice: 'lower', label: 'C4' }, { midi: 64, voice: 'upper', label: 'E4' }]} letters={{ from: 60, to: 64 }} hops={[60, 61, 62, 63, 64]} title="Major third, C4 to E4" desc="C4 to E4. Letters numbered 1, 2, 3 beneath the white keys. Four semitone moves counted above. Labelled major third: three letters, four semitones." /></Fig><Fig cap="Minor third: 3 letters, 3 semitones."><Keys from={64} to={67} kw={48} marks={[{ midi: 64, voice: 'lower', label: 'E4' }, { midi: 67, voice: 'upper', label: 'G4' }]} letters={{ from: 64, to: 67 }} hops={[64, 65, 66, 67]} title="Minor third, E4 to G4" desc="E4 to G4. Letters numbered 1, 2, 3 beneath the white keys. Three semitone moves counted above. Labelled minor third: three letters, three semitones." /></Fig><Legend /></div>
+      <div className="w2-inline"><Fig cap="Major third: 3 letters, 4 semitones."><Keys accent={identityHex(4)} from={60} to={64} kw={48} marks={[{ midi: 60, voice: 'lower', label: 'C4' }, { midi: 64, voice: 'upper', label: 'E4' }]} letters={{ from: 60, to: 64 }} hops={[60, 61, 62, 63, 64]} title="Major third, C4 to E4" desc="C4 to E4. Letters numbered 1, 2, 3 beneath the white keys. Four semitone moves counted above. Labelled major third: three letters, four semitones." /></Fig><Fig cap="Minor third: 3 letters, 3 semitones."><Keys accent={identityHex(3)} from={64} to={67} kw={48} marks={[{ midi: 64, voice: 'lower', label: 'E4' }, { midi: 67, voice: 'upper', label: 'G4' }]} letters={{ from: 64, to: 67 }} hops={[64, 65, 66, 67]} title="Minor third, E4 to G4" desc="E4 to G4. Letters numbered 1, 2, 3 beneath the white keys. Three semitone moves counted above. Labelled minor third: three letters, three semitones." /></Fig><Legend /></div>
       <p>You can already say something exact. C4 to E4 is a major third, three letters, four semitones. E4 to G4 is a minor third, three letters, three semitones. They are the same kind of thing at different sizes, and they differ by one semitone.</p>
       <Try label="Build both on your keyboard">
         <ol>
